@@ -1,6 +1,6 @@
 # Knowledge Base — Schema
 
-> **Portability note:** This file is named `CLAUDE.md` for Claude Code. Rename it to match your LLM agent's convention (e.g. `AGENTS.md` for Codex). The instructions are AI-agnostic.
+>所有的 wiki 必须使用简体中文!
 
 This is an LLM-maintained knowledge base. The LLM writes and maintains all wiki content. The human curates sources, directs analysis, and asks questions. All data is stored as plain files in universal formats (markdown, images) — the human owns the data and can use any AI agent or tool over it.
 
