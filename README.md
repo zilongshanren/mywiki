@@ -1,6 +1,6 @@
 # LLM Knowledge Base Template
 
-A ready-to-use template repo to fork - for building LLM-maintained knowledge bases with Obsidian based on the LLM knowledge base pattern created by [Andrej Karpathy](https://github.com/karpathy).
+A ready-to-use template for building LLM-maintained knowledge bases with Obsidian.
 
 ## Design principles
 
@@ -14,8 +14,8 @@ A ready-to-use template repo to fork - for building LLM-maintained knowledge bas
 
 ## Quick start
 
-1. Fork this repo, or copy or unzip this folder and rename it to your topic (e.g. `kb-my-topic/)
-2. Run `git init` in the folder (if not already forked) — the wiki is just markdown files, so you get version history for free
+1. Copy or unzip this folder and rename it to your topic (e.g. `my-topic-kb/`)
+2. Run `git init` in the folder — the wiki is just markdown files, so you get version history for free
 3. If not using Claude Code, rename `CLAUDE.md` to match your agent (e.g. `AGENTS.md` for Codex)
 4. Open the folder as an Obsidian vault (wikilinks and attachment path are pre-configured in `.obsidian/app.json`)
 5. Install community plugins: **Marp Slides**, **Dataview**, **Breadcrumbs**, **Excalidraw** (all optional)
@@ -49,11 +49,3 @@ The LLM reads sources from `raw/`, compiles them into interlinked wiki pages in 
 See `CLAUDE.md` for the full schema, conventions, and workflows.
 See `_prompts/` for the compilation and update prompts.
 See `docs/` for the usage guide and founding documents.
-
-## Attribution
-
-This project is based on the LLM knowledge base pattern created by [Andrej Karpathy](https://github.com/karpathy). The core idea — using LLMs to incrementally compile and maintain a persistent wiki from raw source documents — originates from his work and writings on the topic. The founding documents in `docs/` capture his original vision; this template packages it into a ready-to-use structure.
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
