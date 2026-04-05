@@ -1,90 +1,87 @@
 ---
 tags: [overview, synthesis]
 date: 2026-04-05
-sources: 24
+sources: 7
 ---
 
 # 知识库综述
 
-本知识库目前包含**五大主题**，覆盖从认知/设计哲学到物理硬件约束的全栈技术视角：
+本知识库目前包含两组看起来不相干、实际高度呼应的源材料：
 
-- **软件设计哲学**——[[john-ousterhout|John Ousterhout]] 的 *A Philosophy of Software Design*
-- **编程语言基础**——[[sussman-abelson|Sussman & Abelson]] 的 SICP
-- **计算机体系结构**——[[hennessy-patterson|Hennessy & Patterson]] 的 CAQA + CSAPP
-- **游戏引擎架构**——[[jason-gregory|Jason Gregory]] 的 *Game Engine Architecture*
-- **实时渲染**——*Real-Time Rendering* + [[jasper-flick|Jasper Flick]] 的 Custom SRP 实践
+- **[[john-ousterhout|John Ousterhout]] 的 A Philosophy of Software Design（APoSD）前 5 章的学习笔记（Day 1–6）**——一个以[[complexity|复杂性]]为敌的软件设计哲学框架。
+- **[[jasper-flick|Jasper Flick]] 的 Unity Custom SRP 6.1.0 教程**——一次对具体渲染管线的微型重构与调试可视化添加。
 
-这些看似独立的主题共享一条贯穿的主线：**在"人的认知能力"和"物理硬件约束"之间，设计能长期演进的系统**。
+它们共享同一个核心主题：**复杂性管理**。APoSD 给出原理与框架，Custom SRP 给出一份在真实引擎代码里实践这些原理的微观样本。
 
-## 主题一：复杂性是首要敌人（APoSD）
+## 主题一：复杂性是首要敌人
 
-Ousterhout 开宗明义——**软件开发的最大限制是理解系统的能力，不是技术**。这把软件设计从"怎么写代码"翻转到"怎么管理认知负荷"。[[complexity|复杂性]]被精确定义为"任何使系统难以理解和修改的东西"——**读者视角**，不是写者视角。
+Ousterhout 开宗明义——**软件开发的最大限制是理解系统的能力，不是技术**。这把软件设计的议题从「怎么写代码」翻转到「怎么管理认知负荷」。[[complexity|复杂性]]被精确定义为「任何使系统难以理解和修改的东西」——**读者视角**，不是写者视角。
 
-复杂性以三种症状出现：**[[change-amplification|变更放大]]**、**[[cognitive-load|认知负荷]]**、**[[unknown-unknowns|未知的未知]]**。有两个根源：**[[dependencies|依赖]]**和**[[obscurity|模糊性]]**。**渐进累积**让[[zero-tolerance|零容忍]]成为唯一出路。
+复杂性以三种症状出现：
+- **[[change-amplification]]**：改一个决策要改多个地方
+- **[[cognitive-load]]**：需要知道太多
+- **[[unknown-unknowns]]**：不知道自己不知道（最危险）
 
-核心正面构造是 **[[deep-modules|深模块]]**（强大功能 + 简单接口），引擎是 **[[information-hiding|信息隐藏]]**。对立面是 **[[shallow-modules|浅模块]]** 及其病态形态 **[[classitis]]**。[[strategic-programming|战略编程]]是日常实践。
+有两个根源：**[[dependencies]]**（依赖）和 **[[obscurity]]**（模糊性）。
 
-## 主题二：编程语言是思维的放大器（SICP）
+复杂性**渐进累积**——没有灾难性错误，只有无数个局部合理的小妥协。**[[zero-tolerance|零容忍]]**是唯一能让复杂性从指数增长降到线性增长的纪律。
 
-SICP 用 Scheme 讲**思维**——**[[elements-of-programming|三要素]]**（原子、组合、抽象）。**[[procedural-abstraction|过程抽象]]**是 1985 年就已经强调的信息隐藏，和 APoSD 的理论完全一致——SICP 给出 what，APoSD 给出 how。
+## 主题二：深模块是正面构造
 
-[[higher-order-functions|高阶函数]]把 [[lambda-calculus|Lambda 演算]] 的数学抽象带到工程中：函数作为一等公民。识别重复模式抽出高阶函数——"**代码重复是思维还没到位的信号**"。
+Ousterhout 最核心的正面构造是 **[[deep-modules|深模块]]**：**强大功能 + 简单接口**。接口被重新定义为**成本**——调用者必须承担的认知负担——而功能是收益。这颠覆了「接口是提供服务」的通常直觉。
 
-**[[recursive-vs-iterative-process|递归语法 vs 递归过程]]** 让你理解代码的性能——[[tail-call-optimization|尾调用优化]]的语言支持分歧决定能不能用优雅的尾递归。**[[order-of-growth|增长阶]]** 是粗描述，常被**常数系数**和**缓存行为**打败。**[[probabilistic-algorithms|概率算法]]** 不是妥协，是精确解不可行时的合理工程选择。
+深度的标杆：**[[unix-io|Unix I/O]]** 的 5 个系统调用隐藏几十万行实现；**[[garbage-collector|垃圾回收器]]**是零接口的极限深模块。
 
-## 主题三：物理硬件是最终约束（CAQA + CSAPP）
+对立面是 **[[shallow-modules|浅模块]]**——接口复杂度接近实现复杂度，抽象为零。当浅模块成为系统性倾向，就是 **[[classitis]]**——「类越多越好」的教条。**[[java-io|Java I/O]]** 的三件套是经典病例。
 
-**[[amdahls-law|Amdahl 定律]]** 给出并行加速的残酷上界。**[[dennard-scaling|Dennard Scaling]]** 的崩塌（~2004）制造了 **[[power-wall|功耗墙]]**——频率免费提升的时代结束了。
+**核心认知转变**：**好的抽象不是把代码分割成更小块，而是让调用者理解更少的东西**。分割是手段，不是目的。
 
-**[[memory-hierarchy|存储层次]]** 跨越 5 个数量级延迟；一次 DRAM miss = 100 次 L1 hit。**[[locality-principle|局部性原理]]** 让 cache 有效；**[[aos-vs-soa|AoS vs SoA]]** 直接决定 cache 利用率——**Unity DOTS 的 10-100× 性能提升来自数据布局，不是代码更快**。
+## 主题三：信息隐藏是深度的引擎
 
-**CSAPP** 的信息系统视角：**[[bits-and-context|信息 = 比特 + 上下文]]**、**[[compilation-pipeline|编译四阶段]]**、**[[virtual-memory|虚拟内存]]**——这些底层抽象塑造了所有上层程序的性能特性。
+**[[information-hiding|信息隐藏]]**是达成深度的技术——每个模块封装代表设计决策的「知识」，让它们活在实现里、不出现在接口上。
 
-## 主题四：游戏引擎融合所有这些约束
+关键区分：**`private` ≠ 信息隐藏**。`private` 是访问控制；信息隐藏是设计哲学。一个用 public 字段的类可以做到完美信息隐藏；满屏 private 的类也可能通过 getter 把一切漏个干净。
 
-[[jason-gregory|Jason Gregory]] 的定义：游戏是**[[soft-real-time|软实时]]的、交互式的、基于智能体的计算机模拟**——每个词都限定引擎的必然设计。
+信息隐藏的反面是 **[[information-leakage|信息泄漏]]**——同一份知识存在于多个模块。**[[temporal-decomposition|时序分解]]** 是常见制造者：按时间顺序切模块，而不是按知识归属。
 
-**[[game-engine|引擎]]**存在的根本原因是**生存**（每个游戏都需要同样的基础设施）。**[[data-driven-architecture|数据驱动架构]]**是引擎与游戏专用软件的分水岭。**[[engine-layering|分层]]**是第一纪律。
+反直觉推论：**有时让类稍微大一点反而改善信息隐藏**——Clean Code 的「小类优先」教条在此失效。
 
-**[[engine-evolution|引擎演化史]]**从 BSP Tree 到 Lumen/Nanite——**技术决定游戏设计**（BSP 的限制逼出第一代 FPS 的室内美学）。**[[unity-vs-unreal|Unity vs Unreal]]** 是两种哲学（工具 vs 框架）的对立，移动端 vs AAA 的分野。
+## 主题四：战术 vs 战略
 
-## 主题五：渲染管线是游戏引擎的心脏
+面对复杂性，有两种编程心态的对立：
 
-**[[rendering-pipeline|渲染管线]]** 四阶段（Application/Geometry/Rasterization/Pixel）是并行运行的 pipeline——**瓶颈决定帧率**。**[[tbdr-vs-imr|TBDR vs IMR]]** 是移动端和桌面端 GPU 架构的根本分野。
+- **[[tactical-programming|战术编程]]**：目标是让东西工作。短视，制造复利陷阱。极端形态是**[[tactical-tornado|战术龙卷风]]**——高速产出但成本外部化。
+- **[[strategic-programming|战略编程]]**：目标是「一个优秀的设计，恰好也能工作」。需要**投资心态**，建议 **10–20% 时间花在设计投资**。
 
-完整链路：
-- Application 阶段：**[[draw-call|DrawCall]]**、**[[culling|Culling]]**、**[[batching|Batching]]** 的 CPU 决策。
-- Geometry Processing：**[[mvp-transform|MVP 变换]]** 把顶点推过 **[[coordinate-spaces|一系列坐标空间]]**，**[[z-buffer|Z-Buffer]]** 解决隐面。
-- Rasterization：**[[rasterization|三角形 → fragment]]**、**[[aliasing|走样]]** 的信号处理根源。
-- Pixel Processing：**[[fragment-shader|片元着色]]**、**[[early-z-late-z|Early-Z]]**、**[[hsr-tbdr|HSR]]**、**[[overdraw|Overdraw]]**——每一层都是性能争夺战。
+战略编程**不是完美主义，是复利**。每个工程师、持续、小投资——战略编程是**文化**，不是项目。
 
-## 跨主题的关键连接
+## 具象化：Custom SRP 6.1.0 作为原理实践
 
-几条贯穿多个主题的线索值得注意：
+[[custom-srp|Custom SRP 6.1.0]] 教程本身是一次小规模但干净的战略编程样本：
 
-**[[aos-vs-soa]] 贯穿 4 个主题**：CAQA（cache 理论）→ CSAPP（底层实现）→ GEA（ECS 设计）→ 游戏开发（DOTS 性能）。**同一个概念，从物理到工程到实践。**
+- **消除 [[change-amplification]]**：把「相机目标的选择」集中到 `SetupPass.Record` 一处，其他 Pass 只通过 `textures.cameraTarget` 使用。
+- **[[deep-modules|深模块]]思想的体现**：[[render-graph|Render Graph]] API 让 Pass 作者只声明资源依赖和执行函数，隐藏资源生命周期、Pass 排序、内存 aliasing 等复杂性。
+- **[[debug-visualization|调试可视化]]作为小型深模块**：调用者只需 `showColorLUT = true`，底层处理所有状态与绘制。
 
-**[[information-hiding]] 横跨 APoSD 和 SICP**：1985 年 Sussman/Abelson 的"过程即黑盒" = 2018 年 Ousterhout 的"信息隐藏"。**同一个洞察被两次独立发现**。
+## 游戏开发中的应用
 
-**[[amdahls-law]] 约束整个系统设计**：从 CAQA 的性能公式，到 DOTS 的数据并行重构，到 GPU/TPU 的专用化。
+Ousterhout 的框架特别适合游戏开发，因为游戏项目有几个放大复杂性的特征：需求高速变化、跨学科协作、实时系统的隐式顺序。典型问题与对策收录在：
 
-**[[soft-real-time|实时约束]] → [[rendering-pipeline|渲染管线设计]] → [[tbdr-vs-imr|GPU 架构分野]]**：所有渲染优化的起点。
-
-**[[engine-evolution|技术债的历史周期]]** 与 [[tactical-programming]]/[[strategic-programming]] 形成对话——每代引擎架构都是对上代债务的偿还。
+- [[classitis-in-games]]——Manager 癌症、事件系统滥用
+- [[resource-system-design]]——信息隐藏与虚假抽象的典型战场
+- [[ecs]]——把隐式依赖变显式的例证
+- [[rendering-api-depth]]——接口深度在渲染 API 中的体现
+- [[unity-complexity-patterns]]——综合的复杂性观察
 
 ## 开放问题 / 张力
 
-- **深度 vs SRP 的张力**：Ousterhout 和 Clean Code 在"类应该多大"上冲突；SICP 用过程抽象回避这个问题。
-- **数据导向 vs 面向对象**：ECS/DOTS 的性能胜出 vs OOP 的灵活性——仍在演化。
-- **[[probabilistic-algorithms|概率算法]] vs 确定算法**：工程选择而非技术选择。
-- **[[power-wall|功耗墙]]的长期出路**：专用化（TPU）、能效（M1）、架构多样性（RISC-V）。
-- **工具 vs 框架**：Unity vs Unreal 的哲学对立未解。
+- **深度 vs SRP**：Ousterhout 和 Clean Code 在「类应该多大」上直接冲突。本知识库目前只收录了 APoSD 的视角，Clean Code 的反驳未独立成文。
+- **合理的浅模块**：Ousterhout 承认存在合理场景（边界适配、框架强制、测试隔离），但没有给出清晰的判断边界。
+- **GC 的边界**：[[garbage-collector]] 作为极限深模块的例子，在对暂停时间敏感的游戏场景下会失效——深度抽象的边界在哪里？
+- **战略编程的度量**：10-20% 投资、深度公式（实现行数/接口行数）都是启发式，没有严格的工程度量方法。
 
 ## 待补充的来源
 
-- APoSD 第 6 章以后（Define Errors Out of Existence、Design It Twice）。
-- RTR 第 7 章以后（Shading、Texturing、Lighting）。
-- GEA 物理、动画、音频、AI 等核心系统章节。
-- SICP 第 2 章（数据抽象）、第 3 章（状态、环境）。
-- CAQA 流水线、ILP、多核章节。
-- CSAPP 后续章节（机器表示、进程、并发）。
+- APoSD 后续章节（第 5 章 Information Hiding 之后的部分、General-Purpose Modules、Define Errors Out of Existence、Design It Twice 等）。
+- Clean Code 和设计模式的第一手资料，用于补全对照。
+- 更多游戏引擎代码实践案例（目前只有 Custom SRP 这一个）。
