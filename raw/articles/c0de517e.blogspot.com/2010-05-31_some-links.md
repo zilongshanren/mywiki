@@ -1,0 +1,23 @@
+---
+title: Some links...
+url: http://c0de517e.blogspot.com/2010/05/some-links.html
+published: '2010-05-31'
+source_blog: C0DE517E
+source_site: http://c0de517e.blogspot.com/
+category: graphics
+fetched: '2026-04-13'
+---
+
+No time to work on the blog lately. Just posting some links.
+
+[Practical Examples in Data Oriented Design](https://docs.google.com/present/view?id=0AYqySQy4JUK1ZGNzNnZmNWpfMzJkaG5yM3pjZA&hl=en)- again shows why the scenetree is a retarded idea, but it's more that just that
+
+[Fast and slow if statements: branch prediction in modern processors](http://igoro.com/archive/fast-and-slow-if-statements-branch-prediction-in-modern-processors/)- you should already know that...
+
+[RSA Animate Drive: the surprising truth about what motivates us](http://www.youtube.com/watch?v=u6XAPnuFjJc)- must see if you're in a leadership position
+
+I won't post the link here, but I feel relieved that finally Intel killed Larrabee. Even if it could have been a cool toy for some kids, I think it they succeeded to put it into a gaming console (the only way in my point of view, it could have survived commercially on a consumer-level. I doubt on PC-DirectX it could have ever made much sense) it would have been for the industry only a chore, worse than what ps3 turned out to be.
+
+## No comments:
+
+Post a Comment

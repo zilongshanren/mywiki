@@ -1,0 +1,14 @@
+---
+title: Ralph Baer Donates Papers To Strong Museum's Game History Center
+url: https://www.gamedeveloper.com/art/ralph-baer-donates-papers-to-strong-museum-s-game-history-center
+author: Kyle Orland
+published: '2011-05-11'
+source_blog: Gamasutra.com - Expert Blogs
+source_site: https://www.gamasutra.com/blogs/expert/
+category: game programming
+fetched: '2026-04-13'
+---
+
+![Game Developer Game Developer logo in a gray background | Game Developer](../../assets/de0d06fe69cb2dbe.png)
+
+Magnavox Odyssey creator and video gaming pioneer Ralph Baer has donated decades worth of diagrams, schematics, notes and patent documents to the International Center for the History of Electronic Games (ICHEG), the organization announced today. The collection illuminates Baer's career in the electronics and toy industries since 1960, from 1968's video tennis playing "Brown Box" prototype to 1972's cartridge-based Odyssey console, and on through the creation of countless toys and electronics, including the seminal electronic game [Simon](http://en.wikipedia.org/wiki/Simon_(game)). "I am very pleased to see these materials preserved and very much aware of the importance of ICHEG’s efforts to preserve these and other materials that document the history of electronic games," Baer said in a statement. ICHEG's collection also includes [papers from ](http://www.gamasutra.com/view/news/31339/ICHEG_Acquires_MULE_Creator_Buntens_Historical_Artifacts.php)[M.U.L.E.](http://www.gamasutra.com/view/news/31339/ICHEG_Acquires_MULE_Creator_Buntens_Historical_Artifacts.php)[ creator Dani Bunten Berry](http://www.gamasutra.com/view/news/31339/ICHEG_Acquires_MULE_Creator_Buntens_Historical_Artifacts.php) as well as [magazines and games donated by media outlet 1UP](http://www.gamasutra.com/view/news/32914/1UP_Donates_Collection_Of_CGW_Issues_Games_To_ICHEG.php). Part of Rochester's Strong Museum of Play, ICHEG's collection includes over 26,000 games, selections from which have been displayed and playable as part of the museum's [5,000 sq. ft. eGameRevolution exhibit](http://www.gamasutra.com/view/news/31666/Strongs_eGameRevolution_Exhibit_Gives_Game_History_Its_First_Permanent_Home.php) since November. Baer was [awarded the Presidential Medal of Technology](http://www.gamasutra.com/view/news/8130/Baer_To_Be_Honored_In_White_House_Ceremony.php) in 2006, [won a Game Developers Choice Award](http://www.gamasutra.com/php-bin/news_index.php?story=16733) in 2008 and was [inducted into the Inventor's Hall of Fame](http://www.gamasutra.com/view/news/27921/Video_Game_Pioneer_Ralph_Baer_Inducted_Into_Inventors_Hall_Of_Fame.php) in 2010.

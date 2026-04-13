@@ -1,0 +1,36 @@
+---
+title: State of the docs, March 2, 2012 – Mozilla Hacks - the Web developer blog
+url: https://hacks.mozilla.org/2012/03/state-of-the-docs-march-2-2012/
+author: Janet Swisher
+published: '2012-03-03'
+source_blog: Mozilla Hacks – the Web developer blog
+source_site: https://hacks.mozilla.org/
+category: graphics
+fetched: '2026-04-13'
+---
+
+To organize and prioritize documentation work on [Mozilla Developer Network](https://developer.mozilla.org), we are setting up a system for [topic drivers](https://developer.mozilla.org/Project:en/Topic_drivers). The person who is the driver for each topic area will prioritize the work for that subject and help ensure that things get written when appropriate. If you’re interested in driving the docs for a particular area, speak up on the [dev-mdc](https://lists.mozilla.org/listinfo/dev-mdc) mailing list, or in the #devmo channel on irc.mozilla.org. If you have questions about the docs for a particular topic area, seek out that topic’s driver in IRC, e-mail, or Twitter (or ask the community in general if you can’t find that person).
+
+Here’s a sampling of the activity of our splendid documentation community over the past couple of weeks.
+
+## Web standards docs
+
+**Vikash Agrawal**started an[Introduction to HTML](https://developer.mozilla.org/en/HTML/Intro)page.**Louis Remi Babé**added a section converting angles to[Using deviceorientation in 3D transforms](https://developer.mozilla.org/en/Using_Deviceorientation_In_3D_Transforms).**Leo Balter**added a section on array-like objects to[Array slice](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice).**Owen Coutts**added an example to[DeviceMotionEvent](https://developer.mozilla.org/en/DOM/DeviceMotionEvent).**David Desandro**added a section about setTimeout to[Function bind](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind).**ender7**corrected the return values for[Node.compareDocumentPosition](https://developer.mozilla.org/en/DOM/Node.compareDocumentPosition).**Hans Hillen**expanded or created pages for a whole slew of (about 16)[ARIA techniques](https://developer.mozilla.org/en/ARIA/ARIA_Techniques)and attributes.**Jürgen Jeka**added deprecation notices to several DOM reference pages.**Daniel Lewis**added code for a compatibility shim to[Date toISOString](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toISOString).**Kevin Lim**(a.k.a. Kevin Lim the Mighty of Monte Vista) wrote a bunch of docs on[File System API](https://developer.mozilla.org/en/DOM/File_API/File_System_API)and its children articles (14) and[Basic concepts about the File System API](https://developer.mozilla.org/en/DOM/File_APIs/Filesystem/Basic_Concepts_About_the_Filesystem_API).**Jérémie Patonnier**created pages for the SVG attributes[markerHeight](https://developer.mozilla.org/en/SVG/Attribute/markerHeight)and[markerWidth](https://developer.mozilla.org/en/SVG/Attribute/markerWidth).**Jean-Yves Perrier**wrote an explanation of what[CSS3](https://developer.mozilla.org/en/CSS/CSS3)is and is not; created[border-image-source](https://developer.mozilla.org/en/CSS/border-image-source)and[border-bottom-left-radius](https://developer.mozilla.org/en/CSS/border-image-repeat>border-image-repeast</a>, expanded the pages for CSS <a href=),[border-top-left-radius](https://developer.mozilla.org/en/CSS/border-top-left-radius),[border-top-right-radius](https://developer.mozilla.org/en/CSS/border-top-right-radius), and[border-bottom-right-radius](https://developer.mozilla.org/en/CSS/border-bottom-right-radius); and made a bunch of other improvements to the CSS reference.**Thierry Régagnon**added specification status info to several CSS pages, such as[background-color](https://developer.mozilla.org/en/CSS/background-color)and[background-attachment](https://developer.mozilla.org/en/CSS/background-attachment), added browser compatibility to[Child selectors](https://developer.mozilla.org/en/CSS/Child_selectors)and[Adjacent sibling selectors](https://developer.mozilla.org/en/CSS/Adjacent_sibling_selectors), and translated[CSS attr](https://developer.mozilla.org/en/CSS/attr)into French.**Vasilis van Gemert**added Safari compatibility info to[:any](https://developer.mozilla.org/en/CSS/%3Aany).**Rob W**corrected and improved[Node.insertBefore](https://developer.mozilla.org/en/DOM/Node.insertBefore)and added compatibility info on that page and[element.addEventListener](https://developer.mozilla.org/en/DOM/element.addEventListener).**wesj**added an example to[SVGLength](https://developer.mozilla.org/en/DOM/SVGLength).
+
+## Mozilla technology docs
+
+**Archaeopteryx**created reference pages for a bunch of Mozilla preferences, such as[browser.download.lastDir.savePerSite](https://developer.mozilla.org/en/Preferences/browser.download.lastDir.savePerSite)and[browser.search.context.loadInBackground](https://developer.mozilla.org/en/Preferences/browser.search.context.loadInBackground).**Mark Giffin**created an[FAQ page about app manifests](https://developer.mozilla.org/en/Apps/FAQs/About_app_manifests).**Axel Grude**created[nsIMsgHeaderParser](https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIMsgHeaderParser).**Nicholas Nethercote**expanded[Common causes of memory leaks in extensions](https://developer.mozilla.org/en/Extensions/Common_causes_of_memory_leaks_in_extensions), which**Nmaier**and**Girish Sharma**also edited.**pc.wiz.tt**updated and expanded[How to embed the JavaScript engine](https://developer.mozilla.org/en/How_to_embed_the_JavaScript_engine).**Neil Rashbrook**updated[nsIWinApphelper](https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIWinAppHelper)and added content to[mozIPersonalDictionary](https://developer.mozilla.org/en/XPCOM_Interface_Reference/mozIPersonalDictionary).**Colby Russell**expanded the Overlays section of[DOM Inspector internals](https://developer.mozilla.org/en/DOM_Inspector/Internals).**wesj**added an example to[nsIStackFrame](https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIStackFrame).**yyss**translated[Firefox 11 for developers](https://developer.mozilla.org/en/Firefox_11_for_developers)into Japanese.**Jennifer Zickerman**created a page for[Thunderbird enterprise tips](https://developer.mozilla.org/Thunderbird_Enterprise_Tips).
+
+## Mozilla project docs
+
+**felipc**created a list of[existing tools](https://developer.mozilla.org/En/Debugging/Existing_Tools)for debugging Mozilla code.**Anthony Hughes**created a page about the[Mozmill tests commit policy](https://developer.mozilla.org/en/Mozmill_Tests/Commit_Policy).
+
+## About
+[
+Janet Swisher ](https://developer.mozilla.org)
+
+Janet is the Community Lead and Project Manager for MDN Web Docs. She joined Mozilla in 2010, and has been involved in open source software since 2004 and in technical communication since the 20th century. She lives in Austin, Texas, with her husband and a standard poodle.
+
+## 2 comments
+
+GézaMarch 11th, 2012 at 08:26Janet SwisherMarch 11th, 2012 at 12:37

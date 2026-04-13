@@ -1,0 +1,19 @@
+---
+title: HDR Videos Part 1. Luma Encoding
+url: https://www.jonolick.com/home/hdr-videos-part-1-luma-encoding
+author: York Asian Escorts link
+published: '2016-10-31'
+source_blog: Jon Olick - Home
+source_site: https://www.jonolick.com/home
+category: graphics
+fetched: '2026-04-13'
+---
+
+|
+In this series of blog posts, I'm going to cover various parts of the research and development behind Bink 2 HDR.
+So first thing is deciding on an encoding. Of which there are a very many to choose from. There is...
+Just to name a few. Additionally with video games, we have additional constraints such as texture filtering and performance considerations, etc... For example, bi-linear filtering is a linear operation, and the luma representation would have to operate correctly under linear transforms (or at least be fast enough to decode so that it wouldn't matter to first decode then interpolate). Additional x 2 for a video format like Bink, we need to consider various compression artifacts and what those would look like. With so many different formats to choose from, you have to take a step back and instead look at the actual encoding used by the output itself - as that really determines what is best (or used directly). Which leads me to the next topic of SMPTE 2084. SMPTE-2084 ... aka High Dynamic Range Electro-Optical Transfer Function of Mastering Reference Displays (try saying that 5 times fast!) SMPTE-2084 is the format to which Dolby Vision and HDR10 displays use - so its basically the narrow part of the pipeline. Everything you want to display has to go through this non-linear encoding at some point before being displayed on the TV (decoded back to linear in the process as well). The SMPTE-2084 format is locked behind a pay wall (yay) - which I have purchased and will boil it down for you to what I believe is the most important parts. The format defines luma in absolute values between 0 to 10,000 cd/m^2 (candelas per square meter). However, with the caveat that in real implementations of the spec, 10k luma won't actually be representable in anything but pure white color. Additionally, actual displays vary from the absolute curve due to output limitations and effects of non-ideal viewing environments.While the format supports 10, 12, 14, and 16-bit Luma representations, as currently deployed Dolby Vision is 12-bit and HDR10 is 10-bit. 14 and 16-bit is not widely deployed - if deployed at all anywhere other than the reference monitor. Additionally, these are positive numbers only. No negative values. The code to encode/decode a SMPTE-2084 is as follows. #define SMPTE_2084_M1 (2610.f/4096*0.25f) #define SMPTE_2084_M2 (2523.f/4096*128) #define SMPTE_2084_C1 (3424.f/4096) #define SMPTE_2084_C2 (2413.f/4096*32) #define SMPTE_2084_C3 (2392.f/4096*32) // Gives a value of 0 .. 10,000 in linear absolute brightness float smpte2084_decode(unsigned v, int bits) { float fv, num, denom; fv = v / ((1 << bits)-1.f); fv = fv > 1.f ? 1.f : fv; // Clamp 0 .. 1 fv = powf(fv, 1.f/SMPTE_2084_M2); num = fv - SMPTE_2084_C1; num = num < 0.f ? 0.f : num; denom = SMPTE_2084_C2 - SMPTE_2084_C3 * fv; return powf(num / denom, 1.f/SMPTE_2084_M1) * 10000.f; } // Gives a value between 0 and 2^bits-1 (non-linear) unsigned smpte2084_encode(float v, int bits) { float n, tmp; v /= 10000.f; v = v > 1.f ? 1.f : v < 0.f ? 0.f : v; // Clamp 0 .. 1 tmp = powf(v, SMPTE_2084_M1); n = powf((SMPTE_2084_C1 + SMPTE_2084_C2 * tmp) / (1 + SMPTE_2084_C3 * tmp), SMPTE_2084_M2); return (int)floorf(((1 << bits)-1) * n + 0.5f); } The pretty nice thing about the limited range here (10 to 12 bits) is that you can pre-generate a table to decode into floats and store it in a texture or constant buffer or whatever. This makes decoding rather inexpensive! There are still some open questions here regarding its suitability as a video encoding format that I have. Namely...
+To be continued....
+|
+## Archives
+## Categories |

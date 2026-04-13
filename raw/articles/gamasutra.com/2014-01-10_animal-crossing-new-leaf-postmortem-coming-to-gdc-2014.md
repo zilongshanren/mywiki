@@ -1,0 +1,18 @@
+---
+title: 'Animal Crossing: New Leaf postmortem coming to GDC 2014'
+url: https://www.gamedeveloper.com/audio/-i-animal-crossing-new-leaf-i-postmortem-coming-to-gdc-2014
+author: Game Developer
+published: '2014-01-10'
+source_blog: Gamasutra.com - Expert Blogs
+source_site: https://www.gamasutra.com/blogs/expert/
+category: game programming
+fetched: '2026-04-13'
+---
+
+![Game Developer Game Developer logo in a gray background | Game Developer](../../assets/de0d06fe69cb2dbe.png)
+
+For March's [Game Developers Conference 2014](http://www.gdconf.com/), we're very happy to announce a new addition to our lineup of excellent sessions. Nintendo's Aya Kyogoku and Katsuya Eguchi are teaming up to deliver a postmortem talk on acclaimed title Animal Crossing: New Leaf for 3DS. The pair plan to discuss what it was like to develop a game in such a storied franchise. Attendees can expect to learn more about the challenges of trying to provide both old and new players with an Animal Crossing game that was fresh and interesting, while at the same time striving to keep the franchise true to its unique legacy. Aya Kyogoku is the project leader of Software Development Group 2 at Nintendo EAD. She joined the company in 2003 and most recently served as director on Animal Crossing: New Leaf. Prior to that, she worked on games like The Legend of Zelda: Twilight Princess and Animal Crossing: City Folk. Katsuya Eguchi is the producer and manager of Software Development Group 2 at Nintendo EAD. He joined the company in 1986, and prior to his work producing Animal Crossing: New Leaf he served as director or producer on multiple well-known Nintendo titles, including Star Fox, Wii Sports and Nintendo Land. He previously spoke at GDC 2006 about his work on [Animal Crossing: Wild World](http://www.gamasutra.com/view/feature/131056/gdc_is_that_a_franchise_in_your_.php). Like most game postmortems, this will be an hour-long session -- we'll have more scheduling details about the talk as GDC gets closer, but we figure this is a session you might like to know about early!
+
+# More essential GDC details
+
+GDC is in its 28th year, and is the world's largest and longest-running professionals-only game industry event, and will once again [take place at the Moscone Convention Center](http://www.gdconf.com) in San Francisco, California during March 17-21, 2014. You can register for the event by visiting the [info page on the official GDC 2014 website](http://www.gdconf.com/attend/passes.html). Early Bird pricing, with discounts up to 30 percent, will remain in effect until January 31st, and some passes -- including the Indie Games Summit pass -- are available in limited quantities, so interested parties should register now. GDC 2014's Main Conference, held on Wednesday-Friday, will contain seven Tracks: Advocacy, Audio, Design, Production, Programming, Visual Arts, and Business, Marketing & Management. We have lots more planned for GDC 2014, including our [Independent Games Festival](http://www.igf.com/) (with over 1,000 entries across student and main competitions) and of course plenty more [sessions](http://www.gamasutra.com/view/news/208069/Ellies_buddy_AI_in_The_Last_Of_Us_explained_at_GDC_2014.php) to be announced. So make sure to mark your calendars now and start planning: GDC 2014 is March 17-21, 2014 at the Moscone Convention Center in San Francisco, California. More information about Game Developers Conference 2014 is available via [its official website](http://www.gdconf.com). Gamasura and GDC are sibling organizations under parent company UBM Tech

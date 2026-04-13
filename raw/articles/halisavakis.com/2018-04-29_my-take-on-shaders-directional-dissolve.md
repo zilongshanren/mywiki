@@ -1,0 +1,45 @@
+---
+title: 'My take on shaders: Directional Dissolve'
+url: https://halisavakis.com/my-take-on-shaders-directional-dissolve/
+published: '2018-04-29'
+source_blog: Technically Art – Harry Alisavakis
+source_site: https://halisavakis.com
+category: graphics
+fetched: '2026-04-13'
+---
+
+I know exactly what you’re thinking: “Hasn’t this gorgeous-looking guy already made a dissolve shader post in [this link](http://halisavakis.com/my-take-on-shaders-dissolve-shader/)? How much longer is he going to milk that dissolve-shader cow?”. And you wouldn’t be totally mistaken (especially about the “gorgeous” part). I like dissolving effects; they’re simple, they can pretty much only be done with shaders and they can really juice up a game. So, yes, this is a post for another dissolve shader and there’s also another one coming soon™; deal with it.
+
+It probably doesn’t really help my case, but this dissolving shader actually is pretty interesting. While it works in a very similar fashion as the previous one, it is totally independent from any textures and it’s almost independent from the object’s UV coordinates. Plus, the cool thing is that the displacement is done according to a specific direction in world space. Therefore, if the given dissolve direction is, for example, the world’s up direction, the object will start dissolving from the top to the bottom regardless of it’s orientation. Awesome side-effect of this: cheap liquid simulation! If the object is, say, 50% dissolved from the top, regardless of the orientation, it can look as if it’s a liquid. However, if you want a more awesome and a definitely better shader for liquid simulation, you should check [this tweet by Minionsart](https://twitter.com/minionsart/status/986374665399685121).
+
+Let’s return to the shader at hand though and see some code:
+
+Shader "Custom/DirectionalDissolve" { Properties { _Color ("Color", Color) = (1,1,1,1) _MainTex ("Albedo (RGB)", 2D) = "white" {} _DissolveAmount("Dissolve amount", Range(-3,3)) = 0 _Direction("Direction", vector) = (0,1,0,0) [HDR]_Emission("Emission", Color) = (1,1,1,1) _EmissionThreshold("Emission threshold", float) = 0.1 _NoiseSize("Noise size", float ) = 1 } SubShader { Tags { "RenderType"="Opaque" "DisableBatching" = "True"} LOD 200 Cull off CGPROGRAM #pragma surface surf Lambert addshadow vertex:vert // Use shader model 3.0 target, to get nicer looking lighting #pragma target 3.0 sampler2D _MainTex; struct Input { float2 uv_MainTex; float3 worldPosAdj; }; fixed4 _Color; float _DissolveAmount; half4 _Direction; fixed4 _Emission; float _EmissionThreshold; float _NoiseSize; void vert (inout appdata_full v, out Input o) { UNITY_INITIALIZE_OUTPUT(Input,o); o.worldPosAdj = mul (unity_ObjectToWorld, v.vertex.xyz); } // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader. // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing. // #pragma instancing_options assumeuniformscaling UNITY_INSTANCING_BUFFER_START(Props) // put more per-instance properties here UNITY_INSTANCING_BUFFER_END(Props) float random (float2 input) { return frac(sin(dot(input, float2(12.9898,78.233)))* 43758.5453123); } void surf (Input IN, inout SurfaceOutput o) { fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color; //Clipping half test = (dot(IN.worldPosAdj, normalize(_Direction)) + 1) / 2; clip (test - _DissolveAmount); //Emission noise float squares = step(0.5, random(floor(IN.uv_MainTex * _NoiseSize) * _DissolveAmount)); half emissionRing = step(test - _EmissionThreshold, _DissolveAmount) * squares; o.Albedo = c.rgb; o.Emission = _Emission * emissionRing; o.Alpha = c.a; } ENDCG } FallBack "Diffuse" }
+
+As you see, this time I start with a surface shader too. And there’s really not a bunch going on. But there are some pretty cool takeaways from this effect, so bear with me. As extra properties, I added a float which controls the amount of dissolving. You might notice that it’s not going from 0 to 1, but I’ll come back to that a bit later. I, obviously, added a vector that represents the direction of the dissolving, a color for the emission on the edge of the dissolving which I marked as HDR to have some extra brightness for cool bloom effects, a threshold that influences the emission area and, finally, a float that adjusts the size of the noise for the pixelated emission edge (as seen in the featured image).
+
+Right of the bat, we see something quite interesting. In line 12 there’s a new tag I haven’t used before in any posts: “DisableBathing” = “True”. Now that sounds weird for a number of reasons. Generally speaking, batching is good. Basically, sometimes Unity will see multiple instances of the shame mesh and it will batch them together, to improve performance. So that’s certainly good. But this mean ol’ tag disables that. And for the purposes of the effect we actually want to disable it. The reason is, that when Unity batches a bunch of the same meshes together, the object space coordinates (which we kinda use for the dissolving) all get unified, and they stop referring to each instance’s actual object coordinates. Disabling batching allows us to use object space coordinates for each separate object, and that’s cool. I also use the “Cull off” directive in line 14 so that we can see the back-faces of the object as it’s dissolving.
+
+Stuff are also happening in line 17, even if it doesn’t seem too important. Instead of the standard lighting model, I’m using the Lambert lighting model, so that the shadow of the object will also get clipped along with the dissolving. I’m also using a vertex function called “vert” later, so in order to let the shader know that, I’m using the “vertex:vert” directive.
+
+In the “Input” struct I added a field called “worldPosAdj”, to pass the adjusted vertex coordinates of the object from the vertex shader onto the surface shader. After I redeclare the properties mentioned above, I define a small vertex function. As I said, this function is responsible for passing the modified object space coordinates so that I can use them in the surface shader. In order to initialize the “Input” object, I have to use the “UNITY_INITIALIZE_OUTPUT” in line 37. Then, in line 38, I convert the vertex coordinates of the object in world space and save it in the “worldPosAdj” field. This line is actually the most interesting of all. You might be confused by the use of the object to world space conversion, as the clipping occurs in object space, and it’s not using an absolute height value or something. This conversion however is allowing us to dissolve the object in a direction that corresponds to a global direction. Therefore, the rotation of the object, or the local directional vectors don’t matter. If I didn’t add the object to world conversion, the object would still get clipped, but the direction of the clipping would correspond to it’s local rotation. Don’t think I can explain it that well here, so just try removing the conversion and see for yourself! 😀
+
+In lines 49-51 I define a random function, the same I used in the [random stripes mask](http://halisavakis.com/my-take-on-shaders-random-stripes-mask/) shader, to use it for the pixelated emissive noise. Moving on to the surface shader, after I get the object’s color as per usual, I perform the clipping test by using a dot product with the “worldPosAdj” field and the direction vector given from the properties. After I remap the result of the dot product, I use the “clip” function to remove all the pixels if the value of “test – _DissolveAmount” is less than zero. The reason “_DissolveAmount” is not just going from 0 to 1, is because the result of the dot product might not just cap at [-1,1], so you need more jiggle room on the dissolve amount limits.
+
+In lines 59-60 I add the emissive noise first by using the random function with the UV coordinates of the object to get a nice mask that consists of squares. Afterwards, I calculate the area of the ring under the dissolved area that I want to be emissive and I multiply it with the square mask. Feeding that to the “o.Emission” output and we’re ready to go!
+
+It sure didn’t seem like it, but there was a lot of stuff to talk about concerning this simple shader! I’m glad it’s out of the way though. See you in the [next one](http://halisavakis.com/my-take-on-shaders-spherical-mask-dissolve/)!
+
+## Comments
+
+Really nice shader, like it a lot.
+
+I’m a noob with shaders though, and I tried to use it for Line Renderers and I can not manage to get it working, it simply does not render the lines.
+
+Author
+
+Thanks!
+
+I didn’t try it on a line renderer, but since this one uses object space coordinates it’s kinda expected to be wonky on a line. I’d suggest a simpler version of the dissolve shader, like this one: http://halisavakis.com/my-take-on-shaders-dissolve-shader/
+
+I’d also try an unlit variant, since you probably don’t want that much lighting detail and shadows on your line.

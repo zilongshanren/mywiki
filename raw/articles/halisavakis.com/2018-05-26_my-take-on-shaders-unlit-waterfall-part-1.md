@@ -1,0 +1,46 @@
+---
+title: 'My take on shaders: Unlit waterfall (Part 1)'
+url: https://halisavakis.com/my-take-on-shaders-unlit-waterfall-part-1/
+published: '2018-05-26'
+source_blog: Technically Art – Harry Alisavakis
+source_site: https://halisavakis.com
+category: graphics
+fetched: '2026-04-13'
+---
+
+After I noticed the amazingly cool waterfall from [this reddit post](https://redd.it/8fv1t4), I felt the urge to try something like this myself. And I can say I had forgotten what it’s like to play around with unlit shaders for more stylized effects. It’s nice, kinda freeing, since you just focus on the visuals and not as much on the technical aspect. So, this waterfall was a fun little challenge for me, and this post is to share my results with all y’all. The effect we’ll be recreating is this one:
+
+Since this whole scene actually uses 3 custom shaders (not counting the skybox), the whole thing will be split into 2 parts: in this one I’ll cover just the waterfall and in the next one I’ll cover the water and the foam particles shader.
+
+Before I go into the shader code, I wanted first to share a bit about what’s happening in the effect and my overall thinking process. First of all, when I came across the effect I thought it used some kind of noise texture. However that texture should be somewhat stretched on the y axis to have those nice streaks, and it should also be banded into segments, instead of having the whole [0,1] range. Then, I thought that the noise should also be somewhat wavy, hence I had to add a bit of displacement. Also, to get a more interesting effect, I thought about blending 4 colors together that change according to the y coordinate of the UVs and according to the banded noise. Finally, at the bottom of the cylinder I needed a white segment that used some wavy displacement in order to give the impression of a bit of foam when it reaches the water.
+
+Let’s see how that looks in shaderish:
+
+Shader "Unlit/WaterfallShader" { Properties { _NoiseTex ("Noise texture", 2D) = "white" {} _DisplGuide("Displacement guide", 2D) = "white" {} _DisplAmount("Displacement amount", float) = 0 [HDR]_ColorBottomDark("Color bottom dark", color) = (1,1,1,1) [HDR]_ColorTopDark("Color top dark", color) = (1,1,1,1) [HDR]_ColorBottomLight("Color bottom light", color) = (1,1,1,1) [HDR]_ColorTopLight("Color top light", color) = (1,1,1,1) _BottomFoamThreshold("Bottom foam threshold", Range(0,1)) = 0.1 } SubShader { Tags { "RenderType"="Opaque" } LOD 100 Pass { CGPROGRAM #pragma vertex vert #pragma fragment frag // make fog work #pragma multi_compile_fog #include "UnityCG.cginc" struct appdata { float4 vertex : POSITION; float2 uv : TEXCOORD0; }; struct v2f { float4 vertex : SV_POSITION; float2 uv : TEXCOORD0; float2 noiseUV : TEXCOORD1; float2 displUV : TEXCOORD2; UNITY_FOG_COORDS(3) }; sampler2D _NoiseTex; float4 _NoiseTex_ST; sampler2D _DisplGuide; float4 _DisplGuide_ST; fixed4 _ColorBottomDark; fixed4 _ColorTopDark; fixed4 _ColorBottomLight; fixed4 _ColorTopLight; half _DisplAmount; half _BottomFoamThreshold; v2f vert (appdata v) { v2f o; o.vertex = UnityObjectToClipPos(v.vertex); o.noiseUV = TRANSFORM_TEX(v.uv, _NoiseTex); o.displUV = TRANSFORM_TEX(v.uv, _DisplGuide); o.uv = v.uv; UNITY_TRANSFER_FOG(o,o.vertex); return o; } fixed4 frag (v2f i) : SV_Target { //Displacement half2 displ = tex2D(_DisplGuide, i.displUV + _Time.y / 5).xy; displ = ((displ * 2) - 1) * _DisplAmount; //Noise half noise = tex2D(_NoiseTex, float2(i.noiseUV.x, i.noiseUV.y + _Time.y / 5) + displ).x; noise = round(noise * 5.0) / 5.0; fixed4 col = lerp(lerp(_ColorBottomDark, _ColorTopDark, i.uv.y), lerp(_ColorBottomLight, _ColorTopLight, i.uv.y), noise); col = lerp(fixed4(1,1,1,1), col, step(_BottomFoamThreshold, i.uv.y + displ.y)); UNITY_APPLY_FOG(i.fogCoord, col); return col; } ENDCG } } Fallback "VertexLit" }
+
+First of all, I declare the properties I need for all the functionality I mentioned above: The noise texture, the displacement texture and amount, the four colors (marked as HDR to take advantage of some nice bloom) and a float which determines the height of the foam at the bottom.
+
+In the v2f struct (lines 35-42) I add 2 more float2 fields: the “noiseUV” and “displUV” fields. This is necessary in order to take advantage of the scale and offset properties in the material inspector, so that we can stretch the noise and the displacement texture as we want.
+
+In lines 44-53 I redeclare my properties, and not only them. I also declare 2 float4 fields, “_NoiseTex_ST” and “_DisplGuide_ST”. Those fields keep the scaling and offset (translation as it used to be called) of the noise and displacement textures respectively, as they’re set in the material inspector. Basically, the added “_ST” directive gives us access to those fields, and we can use them to apply the scaling and offset of the textures to their respective UV coordinates. This is actually happening in the vertex shader. As you can see, in lines 59-60, I use the “TRANSFORM_TEX” macro using the vertex uv coordinates and each sampler’s name. This is a built-in macro that applies the scaling and offset of the texture from the material inspector and returns the resulting UVs. The operation it performs is not really magical, it’s something along the lines of “(v.uv * _NoiseTex_ST.xy) + _NoiseTex_ST.zw”. But since we have a built-in macro for that, why not use it? ¯\_(ツ)_/¯
+
+By the way, here’s the noise texture I used for this effect, it’s just some uniform cloud texture I generated from Photoshop:
+
+Let’s demonstrate now why we actually need to stretch the texture:
+
+I think it’s pretty clear that in order to get that streak-y form, we’d need the texture to be stretched in the y axis. And sure, we could just stretch the cylinder, but come on, we both know that wouldn’t be as practical.
+
+Let’s move onto the fragment shader. First of all, I sample the displacement texture, using the converted UV coordinates from the vertex shader and adding some offset over time. Here the speed is hard-coded as _Time.y / 5, but the wiser thing would be to expose a new property called “speed” to control that. Since I want the displacement to happen in the x and y axis, I use the red and green channels of the displacement texture, exactly as shown in this [old post about displacement](http://halisavakis.com/my-take-on-shaders-waving-displacement/). I even use the same texture for it, this one here:
+
+After I move the displacement to a [-_DisplacementAmount, _DisplacementAmount] range, I sample the noise texture using its respective UV coordinates to which I also add some offset over time (again hard-coded) as well as the displacement which was calculated above. This will give me a displaced noise that looks like this:![](../../assets/11f2ff0762f21379.png)
+
+
+Which is cool and wavy and all, but since we were going for something more stylized, that smooth transition from 0 to 1 really grinds our stylized gears. This is why we need to give this “hard”, stylized, banded look that kinda resembles the aesthetic of Zelda: Breath of the Wild. We still need the values to go from 0 to 1, but instead of getting all the values in between, we’d like to have intervals of, say, 0.2, in order to only get the values in the set {0.0, 0.2, 0.4, 0.6, 0.8, 1.0}. This is achieved through line 74. The round function on a value that goes from 0 to 1 will just give either 0 or 1 (depending if that value is below or above 0.5 respectively). Therefore, if we first multiply our noise by 5, the round function will return either 0,1,2,3,4 or 5. And if we divide by 5, we get either 0, 0.2, 0.4, 0.6, 0.8 or 1, which is what we wanted! Here’s a visual representation of this:
+
+This is exactly what we want to get that stylized feel. Since I had that banded noise, I could now interpolate through my four colors like I do in line 76. The first inner lerp will give me the color that corresponds to the darker bands of the noise as it interpolates from the top to the bottom of the waterfall. In a similar manner, the second inner lerp will give me the color that corresponds to the lighter bands of the noise, as it goes from the top to the bottom of the waterfall. Those 2 colors are then interpolated by the outer lerp according to the banded noise. It might seem a bit confusing at first, but if you play a bit with the colors it will make sense!
+
+Finally, before I return the color, in line 77 I add the foam at the bottom using another lerp function. This one goes from a hard-coded white (that sounds like a fancy shade of white, but, again, the wise thing would be to expose that too) to the color calculated before based on whether the y component of the displaced UV coordinates of the waterfall is smaller or larger than the threshold that’s passed as a property.
+
+## Conclusion
+
+That’s it for this part of the waterfall shader. The other 2 shaders are really much simpler than this one, but they’re also pretty fun and useful. So stay tuned for them, and I’ll see you in the [next one](http://halisavakis.com/my-take-on-shaders-unlit-waterfall-part-2/)!

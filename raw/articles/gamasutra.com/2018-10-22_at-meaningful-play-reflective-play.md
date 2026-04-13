@@ -1,0 +1,73 @@
+---
+title: 'At Meaningful Play: Reflective Play'
+url: https://www.gamedeveloper.com/audio/at-meaningful-play-reflective-play
+author: Mars Ashton
+published: '2018-10-22'
+source_blog: Gamasutra.com - Expert Blogs
+source_site: https://www.gamasutra.com/blogs/expert/
+category: game programming
+fetched: '2026-04-13'
+---
+
+![Game Developer Logo Game Developer Logo](../../assets/2f51b74e2f257c6f.png)
+
+
+![Game Developer Logo Game Developer Logo](../../assets/2f51b74e2f257c6f.png)
+
+**Featured Blog | **This community-written post highlights the best of what the game industry has to offer. Read more like it on the __Game Developer Blogs.__
+
+# At Meaningful Play: Reflective Play
+
+By exploring the capacity for games to initiate "Reflective Play", often derived from "Walking Sims", we explore ways in which the medium can be formed. Part of a series exploring topics from Michigan State University's Meaningful Play Conference.
+
+![Game Developer Game Developer logo in a gray background | Game Developer](../../assets/de0d06fe69cb2dbe.png)
+
+In this series of articles, Mars Ashton does a deep dive into a number of topics related to submitted papers, talks and games found at this year’s [Meaningful Play Conference](http://meaningfulplay.msu.edu/) at Michigan State University. For this article, Mars takes both small steps and long strides toward discussing the role of merely WALKING in games to explore how some of the most basic actions a player can take provide some of the most impactful moments in the games we create.
+
+As we make games it can be easy to overlook the raw, powerful capacity of the most simplest of actions available to the player. When making a platformer we are advised to emphasize the jump at all costs. We iterate, enforcing the role of the jump as a fun, purposeful action that serves numerous purposes. If mastered, it can lead to a complex series of jumps that allow the player to reach new areas. Joined with other maneuvers, it may allow you to navigate complex corridors and jumping puzzles. Animated with care, it can deviate from one singular motion into a complex layering of poses that alternate randomly between several poses to feel unique and different each time it is performed. In this way it becomes wonderful to use as intended.
+
+That jump mechanic? It looks great. It feels great. It serves many purposes!
+
+If we give the mere act of moving the same treatment, one may again study dynamic animation and the way a character could place their feet appropriately on uneven terrain. You may implement idle animations that play after the character doesn’t move. You may tweak the way in which the character accelerates into a sprint or slides into a braking pose after a solid amount of distance is covered. You might want to add in evasive or acrobatic options to slide, wall run or roll too. It could help the player feel more like the theme you are presenting, after all.
+
+Add on, add on, add on.
+
+What if...we keep it simple? What if your initial concept doesn’t begin by complicating these actions? By trying out new ways of doing some of the most fundamental actions we can better understand their capacity to serve a function. In this way it can even allow us to explore what functions it could provide. For those of us designing under the weight of popular, mainstream franchises and large-scale budgets, we may not be able to afford the luxury of experimenting at work. I get it. Pushing the boundaries on this isn’t going to appeal to the broader market, maintain your customer base and keep people as engaged and locked in.
+
+It will, however, allow us to help the medium grow as an art form and improve its own capacity to tell stories and help us communicate with one another on a deeper and more meaningful level.
+
+If you consider the differences between how we move in virtual worlds and how we move in the real world you’ll quickly realize how little we actually move throughout spaces. We sit, we lay or we jog. Staying active is an important part of healthy living, of course, but we are limited by the restrictions of our endurance and capabilities to move. In games we don’t suffer from these restrictions. We leap as if it is the primary method of moving through a space. We roll in an effort to move more quickly. We jump off walls, double jump, dash and fly in ways that are effortless and derived from an infinite source of energy.
+
+Knowing this, why do we mock virtual experiences that focus on movement that we are naturally accustomed to? Being able to leap across a chasm like a superhero feeds into power fantasies and represents freedom, spirit and mastery over things we cannot mastery in the same way in the real world. We understand this on a fundamental level. So what about being able to take a walk through a world you would never be able to see in real life? How is this different? How is this not feeding certain fantasies and satisfying our natural curiosities to discover, explore and practice dominion over the environments we inhabit?
+
+[Mary Flanagan](http://maryflanagan.com/), artist, author, educator and designer created [[domestic]](http://maryflanagan.com/work/domestic/), one of the first of what we may now refer to as a “Walking Sim”, that premiered in Sydney, Australia at the Playthings Exhibition in 2003. Utilizing Unreal Engine 3, the experience explores memory and space in a game environment. Upon first glance it may resemble an unfinished or conceptual level. This is intentional, however, as the uncomfortable nature of the textures displayed on the walls of the level that warp and shift are supposed to represent memory in visual form. While this may be slated as an “art game”, it no less serves as an example of how particular simple actions can be utilized. As the player moves through a space they are presented with a number of messages. Moving along is a form of progression through the experience, even. Looking away could be ignoring such a message. Focusing on such a message could lead to the player’s understanding, evaluation and reflection of the message.
+
+This is where things can get weird.
+
+During my one and only playthrough of [thatgamecompany’s Journey](http://thatgamecompany.com/journey/) I encountered another player during my slow and steady walk toward a mountain peak. In a game largely about just walking along towards are very obvious goal, having someone walking along at my side was a powerful thing. With very little ways to communicate with one another it forced us to take a quiet stroll through unknown territory together. What this journey was all about, I did not know, but there was solace in the fact that I was experiencing this moment with another person. More than that, I was terrified whenever they would stop walking along my side. I became anxious during these moments, hoping they would keep up, wondering if my internet was failing me or if their attention was pulled away from our stroll to pay attention to something else. It was then that I realized the very essence of this experience…
+
+Reflection.
+
+During the experience of Journey I am given a number of moments to stand, stop, and think back on where I have been so far. With the ever-present mountain looming over me I know my objective as clear as day, but, I am compelled to just take in my surroundings. I think about the scenes that play out between each shift in environments, the mysterious hooded figure and ultimately the point of it all. It then makes me consider my own situation and state of mind. Am I not wandering through life in the same way? While deep thought like this isn’t always at the forefront of my mind during these moments I still feel a certain connection with that moment that is personal and deep-seeded. I wasn’t alone. Through my pressure-sensitive chirping capabilities I could communicate a certain level of frustration or enthusiasm but I could not learn more about my companion. In this way, I was quite alone.
+
+Then, it happened.
+
+Eventually our journey lead to a walkway with forceful winds that could push us over the edge if we didn’t take cover behind wind-blocking walls. So, we took turns, steadily making our way toward the ascending cliff path beyond the wall. Before I knew it, my trusted companion fell after seemingly getting impatient and jumping ahead before the powerful gust had passed. My heart raced, I had to ease up on the iron grip I had on my PS4 controller and I froze solid. I couldn’t believe it. I lost a friend. It felt like and all I could do was watch as they fell to their demise. Then, as I carried on the adventure mumbling incoherently, my camera panned back to reveal a lower level...
+
+They survived.
+
+As [Tracy Fullerton](https://www.tracyfullerton.com/) shared her keynote speech, “Three Miles an Hour: Designing Games for the Speed of Thought”, she noted the concept of “Reflective Play”. That is, moments in which we allow the player to just sit still or move along and don’t ask the player questions, expect input or encourage activity. With “Walking Sims” becoming more prevalent, despite its namesake being grounded in origins of disapproval, this term accurately describes the very thing those games hope to provide players. The ability to chill, absorb the moment, and factor in their real world experiences into the mix to ponder, practice mindfulness and be considerate of the current situation.
+
+The act of walking is a very important and thoughtful mechanic in this case, but at the core of it is the player’s ability to just think about the situation and what lead to these moments. Without throwing common feedback methods, warnings, messages, popups and voice overs at them to egg them on to keep progressing through the game it allows the player freedom to just...be. They can think, exercise mindfulness and self-awareness and be more considerate of their own selves and feelings.
+
+Tracy’s brilliant and award-winning project, [“Walden, a game”](https://www.waldengame.com/), is based off of a portion of Henry David Thoreau’s life. Henry was a fan of walks, even calling the walks he would take on a daily basis adventures of the day. In his essay [“Walking”](https://www.theatlantic.com/magazine/archive/1862/06/walking/304674/) he notes that “Two or three hours’ walking will carry me to as strange a country as I expect ever to see”. Tracy’s talk included this quote too, rightfully so, as it describes the way walking can lead our mind and body to some of the most inspirational, thoughtful and introspective places they can go.
+
+While [The Stanley Parable](https://store.steampowered.com/app/221910/The_Stanley_Parable/) subverts the player’s expectations to provide commentary and humorous moments, other games mostly about walking tell stories of a different nature. [Tacoma](https://tacoma.game/) tasks players with investigating clues left within real-time augmented reality recordings that can be sped up, reversed and otherwise manipulated. [Virginia](https://505games.com/games/virginia), a mystery adventure game, follows an FBI agent as she takes on a case involving a missing child in a rural town. Other titles include [Lieve Oma](https://vltmn.itch.io/lieve-oma), [Dear Esther](http://www.thechineseroom.co.uk/games/dear-esther/), [Gone Home](https://gonehome.game/), [That Dragon, Cancer](http://www.thatdragoncancer.com/) and [Fragments of Him](http://fragmentsofhim.com/). All of them offer an experience from a particular character’s perspective, often taking on a role that should be relatable in some form, and tailor storytelling to allow the player to engage AS that character. While the mechanics for these games are typically not full of depth, the way in which they are coordinated with the game’s overall theme, message and purpose serves as supplemental strengths.
+
+With [Flux](https://nujakujata.itch.io/flux), mentioned in my [previous Meaningful Play article](http://www.gamasutra.com/blogs/MarsAshton/20181003/327768/On_Meaningful_Play_Design_Thinking_X_Game_Design.php), Reflective Play is at the heart of the game’s design. As the game has been tested at public exhibitions or in an academic setting I’ve witnessed the audience enthusiastic about the concept of what I have labeled as a “Fidget Game”. Like the toys that inspired the namesake, Flux allows players to press buttons and acquire virtual feedback in their own way, as they please, at the pace they choose to cause the player to “ride”. Or, not at all and listen to an emotional audio track composed by the talented [Quantum Dylan](https://soundcloud.com/quantumdylan). Coupled with a soundtrack you can customize, moments in the game play out as the player dictates. Go for a ride, chill, and carry on with the Interactive Fiction component as you see fit.
+
+Meaningful Play brought wonderful talks my way beyond the scope of the conference itself. I found myself regularly being accompanied by amazing developers and downright great people for lunch and dinner each day. I reached out to [Alec Holowka](http://infiniteammo.com/) for one such occasion prior to his keynote speech "Nuance in the Woods: Exploring Meaning in Games" (later renamed "Moments in the Woods"). We discussed some observations I made when I was testing Night in the Woods for him and the game's publisher [Finji](http://finji.co/). After being blocked off from it initially, players eventually get access to a section of town that leads to a church, a homeless man and (maybe) some nefarious teens. I told Alec about my own experiences of visiting that church space and feeling...reflective. There are a number of important moments that occur in that space but one thing really stuck out to me. The space is peculiar in that it is absent of almost any clutter, background assets or any sense of "stuff" you'd see on the walls and floor of a church. This was powerful to me. I felt as though the game's main character Mae had a fairly complicated relationship with faith and the role her Mom has there as a job. So when you arrive the atmosphere reflects this not only in a traditional way but in an accidental way. I asked Alec why the area felt so empty and clean. His response: They simply ran out of time and focused on other aspects of the game that were a priority.
+
+When we formalize games we talk about flow, balance, loss aversion and such. When we talk about games, though, we share stories. Experiences. These moments are the essence of everything we create and define and provide in our games. By embracing and accepting games about Reflective Play I believe we can continue to explore the capacities of the medium and not whether we call it art, but why we call it art and how many forms it can take.
+
+Be. Reflect. Think. Reflect.

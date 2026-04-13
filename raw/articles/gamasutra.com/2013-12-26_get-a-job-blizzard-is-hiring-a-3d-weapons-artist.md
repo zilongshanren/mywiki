@@ -1,0 +1,21 @@
+---
+title: 'Get a job: Blizzard is hiring a 3D weapons artist'
+url: https://www.gamedeveloper.com/art/get-a-job-blizzard-is-hiring-a-3d-weapons-artist
+published: '2013-12-26'
+source_blog: Gamasutra.com - Expert Blogs
+source_site: https://www.gamasutra.com/blogs/expert/
+category: game programming
+fetched: '2026-04-13'
+---
+
+December 26, 2013
+
+![Game Developer Game Developer logo in a gray background | Game Developer](../../assets/de0d06fe69cb2dbe.png)
+
+The Gamasutra Job Board is the most diverse, active and established board of its kind for the video game industry! Here is just one of the [many, many positions](http://www.gamasutra.com/jobs/) being advertised right now.
+
+Location: Irvine, CA Do you laugh manically as you lay waste to your opponents with the most badass weapon you can find? Is your portfolio really an armory full of swords, firearms, and other weapons of destruction? Do you have a love of the mechanical and an insatiable need to figure out how everything under the hood fits together? Is there a framed picture of the BFG on your mantle instead of pictures of your family? If so, Blizzard Entertainment, the developer of the most epic games in the world, is seeking a 3D Artist specializing in weapons to help develop Blizzard’s next hit game! Work alongside a team of the best artists, engineers, and designers on the planet and enjoy the support of a company whose culture is centered on collaborative game development. We are gamers at heart at Blizzard – across all levels - and it shows in our craft. The ideal candidate has experience modeling and texturing weapon, and equipment assets in a stylized universe. A solid grasp of form, color, and light for both 2D and 3D art assets is essential. The 3D weapons artist should also have experience working with a diverse range of equipment, vehicles, and mechanical characters. Responsibilities Assist lead artist in developing the overall style and pipeline for character weapons and equipment. Creation of hi and low poly models, textures, and materials for use as real-time game assets. Work with lead artists to ensure timely completion of character assets at the desired quality bar. Serve as an active participant in team art discussions, critiques and reviews. Requirements A minimum of 3 years’ experience in game development modeling and texturing weapons, equipment. or vehicles using Maya, Z-Bush / Mudbox, and Photoshop. An exceptional understanding of hard surface modeling techniques for use in creating complex mechanical objects, such as, weapons and vehicles. Superior eye for light, shade, color, and detail in creating texture maps and materials. Self-motivation, good communication skills, and a great team-player attitude. Able to work creatively as part of a large or small group. A passion for video games. Pluses Have shipped AAA PC or console titles as a 3D Artist specializing in equipment, weapons, or vehicles. Experience in creating mechanical characters and vehicles. Skill in one or more related disciplines – illustration, animation, visual effects, or technical art. Understanding of the visual style of Blizzard games and a passion to push it to the next level. Required Application Materials - Resume - Cover Letter, which should include: Why you are interested in working at Blizzard. What games you are currently playing. - Portfolio Requirements: Only digital applications will be accepted such as a website, blog or online album. Physical media will not be accepted. An art test might be required. **Only Resumes with Cover Letters will be considered. Blizzard Entertainment, Inc. and its affiliated companies is an equal opportunity and affirmative action employer.
+
+# About the Gamasutra Job Board
+
+Whether you're just starting out, looking for something new, or just seeing what's out there, the Gamasutra Job Board is the place where game developers move ahead in their careers. Gamasutra's Job Board is the most diverse, most active, and most established board of its kind in the video game industry, serving companies of all sizes, from indie to triple-A. Looking for a new job? [Get started here](http://jobs.gamasutra.com/browse-jobs/). Are you a recruiter looking for talent? [Post jobs here](http://employer.gamasutra.com/employerx/).

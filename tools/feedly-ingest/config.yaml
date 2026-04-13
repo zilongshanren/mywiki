@@ -1,0 +1,26 @@
+# Paths are resolved relative to this config file's directory.
+output:
+  articles_dir: ../../raw/articles
+  assets_dir: ../../raw/assets
+
+fetch:
+  user_agent: "MyWiki-Ingest/0.1 (+https://github.com/lionqu/MyWiki)"
+  timeout_seconds: 10          # below this we assume the server is unreachable
+  rate_limit_per_domain: 1.0   # requests per second per domain
+  max_retries: 2               # SSL/timeout failures rarely recover — keep low
+
+discovery:
+  try_sitemap: true
+  try_archive: true
+  try_wayback: true            # fallback — catches deleted or migrated posts
+  wayback_cdx_url: "http://web.archive.org/cdx/search/cdx"
+  wayback_filter: "statuscode:200&filter=mimetype:text/html"
+
+extract:
+  download_images: true        # store remote images in raw/assets/ and rewrite links
+  min_content_chars: 200       # below this, treat extraction as failed
+  min_article_date: "2010-01-01"  # drop any article whose published date is before this
+
+state:
+  db_path: state/seen.sqlite
+  cache_dir: state/cache

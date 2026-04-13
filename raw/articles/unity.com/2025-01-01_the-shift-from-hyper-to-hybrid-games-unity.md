@@ -1,0 +1,11 @@
+---
+title: The Shift from Hyper to Hybrid Games | Unity
+url: https://unity.com/blog/the-shift-from-hyper-to-hybrid-games-and-why-it-matters-for-everyone
+published: '2025-01-01'
+source_blog: Unity Blog RSS Feed
+source_site: https://unity.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+"Unity", Unity logos, and other Unity trademarks are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere ([more info here](https://unity.com/legal/trademarks)). Other names or brands are trademarks of their respective owners.

@@ -1,0 +1,46 @@
+---
+title: Alfred Reinold Baudisch - Software Engineer, Database Architect, Artist
+url: https://alfredbaudisch.com/1/
+published: '2022-07-30'
+source_blog: Alfred Reinold Baudisch
+source_site: https://alfredbaudisch.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+![In-game vertex painting with Unreal Engine (Wash Car Effect)](../../assets/45d2dde34a8a2151.png)
+
+
+![In-game vertex painting with Unreal Engine (Wash Car Effect)](../../assets/45d2dde34a8a2151.png)
+
+As stated in the experiment page, the intention here is to add and remove dirt to meshes dynamically during runtime. Unfortunately, with this...
+
+Polyglot Software Engineer and PostgreSQL Database Architect with 30 years of experience, a specialist in data modeling, software, and system architecture. Current stack: Elixir and Phoenix since 2015. From Curitiba 🇧🇷, living in Copenhagen 🇩🇰.
+
+Hyper-learner, indie game developer and aspiring 3D digital artist.
+
+As stated in the experiment page, the intention here is to add and remove dirt to meshes dynamically during runtime. Unfortunately, with this...
+
+The easiest way to accomplish runtime painting of splat maps, in order to dynamically change the blending of textures in-game, is to use vertex colors...
+
+This page lists issues and inconsistencies I've found with Godot's 3D Workflow and 3D Features (some of them apply to 2D as well). They are not bugs,...
+
+Godot makes my heart feel warm, even if it frustrates me sometimes (as I have previously described in a post), but most of the time it makes me love...
+
+I learn and create a lot of things very fast. I also experiment with a lot of different subjects, using many different tools. This is only possible...
+
+The project started officially on 10th of May, I only worked on it for a few days on the weekends. Camera System Developed a 3rd person camera system,...
+
+I created a quick and simple solution in Unreal Engine to make actors and static meshes transparent (see-through) when the character is behind or...
+
+He's a creative mastermind, he makes high production indie game development videos and documentaries that can take as much as 400 hours of work. He...
+
+He didn't know how to make games, but by improvising every aspect of game development, he made and published an ambitious 3D game. He didn't know...
+
+Interview in English. In this podcast with Jake Birkett from Grey Alien Games, we talk about how to work full-time with indie game development, how to...
+
+As the first update related to the Godot Software Development book, this is just a quick post to show something that I did yesterday with Godot: it's...
+
+Today I finished the game Alba: A Wildlife Adventure. In the game you control a small girl who walks around an island discovering animals, cleaning up...
+
+Those are all the items that were left out of the previously posted "Artistic Influence Map". All of these also influenced (and continue to...

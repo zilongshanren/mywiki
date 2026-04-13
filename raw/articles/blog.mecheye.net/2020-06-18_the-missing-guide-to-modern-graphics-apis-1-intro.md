@@ -1,0 +1,63 @@
+---
+title: The Missing Guide to Modern Graphics APIs – 1. Intro
+url: https://blog.mecheye.net/2020/06/modern-graphics-apis-1-intro/
+author: Jasper St Pierre
+published: '2020-06-18'
+source_blog: Clean Rinse
+source_site: https://blog.mecheye.net
+category: graphics
+fetched: '2026-04-13'
+---
+
+There’s a certain opinion that graphics programming is a lot more difficult than it used to be. The so-called “Modern APIs”, that is, Direct3D 12, Metal, and Vulkan, introduce a new graphics programming paradigm that can be difficult and opaque to someone new to the field. Bizarrely, they can be even more difficult for someone who grew up on older APIs like “classic” OpenGL. Compared to what you might be used to, it seems surprisingly heavy, and the amount of “boilerplate” is very high.
+
+There’s no end of “Vulkan Tutorials” out there on the web. I am not aiming to create another one. What makes these APIs hard to use is the lack of a true reference on the problem space: the conceptual understanding of what a modern GPU is, what it looks like, and what it’s best at doing. This goes hand in hand with architecting your graphics engine, as well.
+
+When left to our own devices, fed tiny nibbles of information here and there, we’ll use our imagination and come up with our own mental model of what a GPU is and how it works. Unfortunately, the universe is against us here; a combination of decades of inaccurate marketing to a gaming populus most interested in just comparing raw specs, legitimate differences in GPU architecture between vendors, and the sheer mass of code tucked away in drivers to win benchmarks have made it incredibly difficult to build that mental model effectively. How are we supposed to understand modern APIs that promise to expose the whole GPU to us, but don’t tell us what our hardware even is? Every senior graphics programmer I’ve talked to had to go through several difficult sessions of “unlearning”, of tearing down mental models made with incomplete or outdated information.
+
+My goal in this series is to take a certain kind of graphics programmer, one who might be familiar with old-school OpenGL, or Direct3D 11, and give them “the talk”: How and why graphics has been shifting towards these newer modern APIs, the conceptual models that senior graphics programmers think in terms of these days, and of course, what your GPU is actually doing. What, actually, is a fence in Vulkan, and how does that differ from a barrier? What’s a command queue? Can someone explain D3D12 root signatures to me? Are search engines smart enough yet to notice that this paragraph is really just a blatant attempt at exploiting their algorithms?
+
+My ambition is for this series to become a companion piece to Fabien Giesen’s “[A Trip through the Graphics Pipeline, 2011](https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/)“, but focused on modern API design and newer industry developments, instead of just desktop GPU design. While not strictly a prerequisite, I consider it to be vital reading for any working graphics engineer. At the very least, I will assume you are familiar with a rough understanding of the graphics pipeline, as established by classic OpenGL.
+
+Everyone is familiar with the general knowledge that GPUs are complex, incredibly powerful pieces of equipment, and one of their biggest benefits is that they process data in parallel. GPU programming is incredibly tricky, and quickly becoming its own specialization in the industry, powering machine learning, data science, and other important things. With large frameworks and engines like Unreal, or TensorFlow, written by massive companies with thousands of employees, I think this leads to the impression that GPUs work something like this:
+
+![A large amount of code goes into a block box, and a video game magically appears on the other side.](../../assets/115283c947e2bab7.png)
+
+
+Let’s be clear: graphics programming is a complex, difficult field with incredible challenges to solve, active research, confusing overloaded lingo, and frustrating alienating nights as you hopelessly flip signs and transpose matrices with reckless abandon, feeling like an impostor… much like any other discipline. It will all seem like magic until something “clicks”, and often times that’s a missing principle or piece of information that nobody bothered to explain, because it seems so obvious in retrospect. And as innovation continues to march on, as the stack becomes larger and larger, we build everything new on top of the burial grounds of ideas past, and it becomes even more difficult to see the pieces for what they are. So let’s go back to the beginning… and I can think of no better place to start, than with OpenGL. OpenGL is probably the most well-known graphics API out there, and, conveniently for us, has a strict stance on backwards compatibility, letting us back and forward through a 20 year legacy of graphics development, just by observing the different endpoints in order, so let’s start at the very, very beginning. You can still pretty easily open up a window and draw the [famous triangle](https://www.google.com/search?q=opengl+triangle&tbm=isch) with the following:
+
+glBegin(GL_TRIANGLES); glVertex3f(0.0, -1.0, 0.0); glColor4f(1.0, 0.0, 0.0, 1.0); glVertex3f(-1.0, 1.0, 0.0); glColor4f(0.0, 1.0, 0.0, 1.0); glVertex3f(1.0, 1.0, 0.0); glColor4f(0.0, 0.0, 1.0, 1.0); glEnd();
+
+So, here we are, programming an infamously complex piece of equipment, with just a few lines of code. This raises a genuine question: What’s wrong with this approach? What has changed in the 20 years since, that we’ve needed to add so many more things? There are many, many answers to this line of inquiry:
+
+- What if I want to draw my triangle in a different way? Like, say I want it to rotate, how do I do that? What about if I want to give it a texture? Or two?
+- My game is rendering upwards of 1,000,000 triangles per frame. Does this scale to that amount? If not, what’s slow?
+- What is going on under the hood? How is the GPU coming into play, other than “triangle happen”? How can I use this to inform my code’s architecture, and make reasonable guesses about what will be slow, and what will be fast?
+
+Much like everything in engineering, these questions reolve around *tradeoffs*. These three lines of questioning are ones of features, performance, and transparency, respectively, weighted against the tradeoff of simplicity. If you only need to draw a handful of triangles, and maybe a few colors and textures, and you are comfortable in that environment, and then maybe OpenGL is still the right option for you! For others though, there are roadblocks in the way of higher performance, and modern APIs offer alternative solutions to these problems.
+
+The OpenGL API was invented in a time before the term “GPU” was even coined, and certainly before it was imagined that every modern computer would have one, pushing large amounts of triangles to the screen. It was designed for industrial use, on specialty servers in a closet providing real graphics horsepower, with programs like AutoCAD connected to it. But it has been kept alive over the years as new versions coming out, each one expanding the amount of flexibility and scalability provided.
+
+It would be far too long a post if I went over the full history of ideas tried and eventually abandoned in OpenGL, but one of the first major inventions to come along with the “GPU” was the idea of a bit of memory on the GPU itself. This is RAM memory, just like your regular computer has RAM memory. The idea is that uploading 1,000,000 triangles from the CPU to the GPU is infeasible to do every frame, so maybe instead, we can upload the data once, and then just refer back to it later. This saves a large amount of memory bandwidth, and became the idea of “vertex buffers”. Don’t worry too much about the exact details of the code below, just note the rough steps:
+
+// Prepare our vertex data. struct vertex { float pos[3]; float color[4]; }; const struct vertex vertexData[] = { { { 0.0, -1.0, 0.0, }, { 1.0, 0.0, 0.0, 1.0, }, }, { { -1.0, 1.0, 0.0, }, { 0.0, 1.0, 0.0, 1.0, }, }, { { 1.0, 1.0, 0.0, }, { 0.0, 0.0, 1.0, 1.0, }, }, }; // Now upload it to the GPU. int buffer; glGenBuffers(1, &buffer); glBindBuffer(GL_ARRAY_BUFFER, buffer); glBufferData(buffer, sizeof(vertexData), vertexData, GL_STATIC_DRAW); // Tell OpenGL how to interpret the raw data. glVertexPointer(3, GL_FLOAT, sizeof(struct vertex), offsetof(struct vertex, pos)); glColorPointer(4, GL_FLOAT, sizeof(struct vertex), offsetof(struct vertex, color)); // Now draw our triangle. We're drawing a total of 3 vertices, // starting at the first (0th) vertex in the data. glDrawArrays(GL_TRIANGLES, 0, 3);
+
+This lets us lay our data out in a consistent format up-front, and then instead of needing to feed each vertex to OpenGL separately, we can first upload a giant bundle of data, and it does the expensive transfer once, presumably during a loading screen. Whenever the GPU needs to pull a vertex out to render, it already has it in its RAM.
+
+An important thing to note, however, is that this tradeoff *only makes sense* if you have some reason to believe that *uploading to the GPU is expensive*. We’ll come to see why this is true in future installments of the series, and the particular nuances and details of what a statement like this means, but for now, I’ll just ask you to treat it as just a declaration from on high; that it is true.
+
+Now, we’ve traded off simplicity for some alternative answers to the above questions. While the code *has* become a lot more complicated, for the same exact triangle, so it might seem like a wash, but our scalability has improved, since we can draw the same triangle by referring to the same bit of GPU memory, and our transparency has improved; now we understand the concept of “GPU memory”. Given this addition to our mental model, we can now imagine how some piece of software might emulate the glBegin() set of APIs on top of a “memory-ful API”, by automatically allocating and filling in vertex buffers under the hood, uploading to them when necessary, and submitting the proper draw calls. One of the goals of a “graphics driver” is to be this bridge between the API that the user is programming against, and the dirty details of what the GPU is doing. We still don’t yet have a complete mental model of how the GPU accomplishes tasks, but we at least understand that it involves “memory”, if nothing else than to store our triangle’s vertices.
+
+As you can imagine, the amount of code required to emulate older APIs and ideas can be quite large, and that invites bugs. If you’ve ever wondered where your triangle went after writing a lot of graphics code, you’ll come to appreciate how many details and cruft are in APIs like this, and how many opportunities a driver has to get it wrong, or to accidentally invoke undefined behavior. As the graphics landscape has evolved, we’ve continually added additional flexibility, scalability, and transparency, and the new “modern APIs” are scorched-earth realizations of these ideals. Moving more of this complex management code from the driver to the application increases transparency, in that we now have more control over the GPU, at the expense of us application writers having to do more of what the driver was doing before.
+
+Once you understand what the code in the driver was doing for you previously, understanding modern APIs becomes a lot easier, and it will also help you architect your graphics code in a way that lets you get the most performance out of your GPU, even on older APIs. Modern APIs run on pretty much the exact same hardware as the older ones, so it’s more codifying and designing a new set of APIs, keeping in mind best practices that have been scattered around the industry for decades… albiet some of them being more “secret knowledge”, passed from hardware vendor to game developer under some form of NDA, and spreading semi-publicly from there.
+
+Next time, we’ll be exploring this idea of “best practices” further, by looking at the driving motivations behind one of the modern API’s newest inventions, the “PSO”. See you then.
+
+Great post! Interesting and clear explanation. Thank you! Can I count on the next installment of the series?
+
+I’m impressed.
+
+This is the wonderful, curiosity-inspiring introduction I was hoping for.
+
+Thanks a lot!

@@ -1,0 +1,29 @@
+---
+title: Pandora's Box Direction
+url: http://david.fancyfishgames.com/2013/03/pandoras-box-direction.html
+author: Legend
+published: '2013-03-04'
+source_blog: The Legend of GameDev
+source_site: http://david.fancyfishgames.com/
+category: graphics
+fetched: '2026-04-13'
+---
+
+## Monday, March 4, 2013
+
+
+### Pandora's Box Direction
+
+Recently, sandbox games have gained a lot of popularity. Sandbox games allow the player to be creative, and provide many options for playing and solving problems. This freedom is what makes sandbox games so interesting, but it also usually correlates to a lack of direction in the game. In linear games, the player is constantly directed, with the game difficulty slowly increasing to challenge the player and keep them engaged until the end. With sandbox games, the player is usually thrown into a world and gets to do whatever they want. But without any direction, challenge or "end," instead of keeping the player engaged, the intrigue of the game will slowly wear off and they eventually stop playing. While obviously gameplay evolution and direction could keep the player engaged longer, adding strong direction would only ruin the freedom and spirit that makes sandbox games so successful.
+
+A very successful sandbox game that has very little direction is Minecraft. I recently played the game, and enjoyed it a lot. In the beginning, there was a simple goal: survival. There were many ways to be creative to accomplish that goal - building structures, digging trenches, mining resources, crafting equipment, growing food, etc. Eventually, my fortress became impenetrable by the enemies in the game, and direction was lost. Survival was guaranteed, and from that point on, the game was all about exploring, experimenting in the world, and being creative. The multiplayer aspect improved this part of the game, as you could show your inventions to friends and work together on building projects. However, eventually, without challenge or direction, the game started to get dull. This is not to say Minecraft is a bad game, it entertained me for a long time before it got dull. But, I think with more direction, the game could have been even better and lasted even longer. For instance, I did create a netherword portal and explore it a little out of curiosity, but given there wasn't much there of value and it was very dangerous, I stayed out of the netherword for the most part. I feel like if there was direction, a reason to enter the netherworld, that could have added a whole new part of the game where I had to leave my comfort zone and learn to deal with the new challenges and enemies of the netherworld.
+
+A smaller, less well known game by the same developer, is called Minicraft. Minicraft was made in 48 hours, and on it's surface, it looks a lot like a 2D version of Minecraft. However, Minicraft provides direction throughout the entire game without ruining the sandbox feel. The goal of the game is not to survive, but to defeat the Air Wizard. To defeat the Air Wizard, you'll need Gem equipment, and to get Gem equipment, you'll need to go down three levels of caves, each more dangerous than the last. The game suffers from rough edges and poor balancing due to the short development time, but there is direction to the game and the difficulty increases as you progress, without FORCING the player to do anything, keeping the freedom and spirit of sandbox games.
+
+This form of direction I like to call Pandora's Box Direction (or player-initiated direction). Whether due to curiosity or need, the player is compelled to open Pandora's Box. Like in the myth, when opened, Pandora's Box increases the challenge and difficulty of the game, forcing the player to learn how to deal with that challenge by manipulating the sandbox. Quite possibly, in order to deal with the new threat, they feel compelled to open a new Pandora's Box, helping them deal with the first threat but releasing an even bigger threat. This creates a chain of direction, that always keeps the player on their toes and continues to give them reason to build and modify their sandbox. This chain allows the developer to balance the challenges at each box, but ultimately leaves the decision of when to open the box up to the player. This kind of direction can also create a plot, where at each "box" they learn something new, and are lead slowly but surely to some final confrontation. The direction could be completely linear, but because the player is given freedom of when to open the boxes, and freedom of how to deal with the new challenges, the game retains it's creative sandbox feel. It's like recreating that exciting first stage of Minecraft many times, each time with new enemies, challenges, and resources to keep the player engaged. For example, in Minecraft, mining diamonds could unleash a dragon from underground, who is angry you stole its treasure. Because the dragon can fly and burn wooden structures, players would have to completely rethink their defenses. And perhaps the best way to slay a dragon is to use a magic system, which requires resources unique to the netherworld, opening up a whole new pandora's box.
+
+Sandbox games without direction can still be great games, but I personally believe that the challenges should continue evolving, so the difficulty never bottoms out. A player shouldn't quit the game because they end up finding it dull, but because they have reached some climax and ending. The Pandora's Box method is the best way to achieve this while staying within the open style that sandbox games create. I plan to experiment with this method and hope others do too!
+
+## No comments:
+
+## Post a Comment

@@ -1,0 +1,36 @@
+---
+title: Public Member Functions
+url: http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/protocol_c_c_standard_touch_delegate-p/
+published: '2012-01-26'
+source_blog: Learn & Master Cocos2D Game Development
+source_site: http://www.learn-cocos2d.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+`#include <CCTouchDelegateProtocol.h>`
+
+
+
+[List of all members.](/)
+
+Public Member Functions
+|
+void | **ccTouchesBegan:withEvent:** (NSSet *touches,[withEvent] UIEvent *event) |
+void | **ccTouchesMoved:withEvent:** (NSSet *touches,[withEvent] UIEvent *event) |
+void | **ccTouchesEnded:withEvent:** (NSSet *touches,[withEvent] UIEvent *event) |
+void | **ccTouchesCancelled:withEvent:** (NSSet *touches,[withEvent] UIEvent *event) |
+
+
+## Detailed Description
+
+[CCStandardTouchDelegate](../../../../../api-ref/1.0/cocos2d-iphone/html/protocol_c_c_standard_touch_delegate-p/).
+
+This type of delegate is the same one used by CocoaTouch. You will receive all the events (Began,Moved,Ended,Cancelled).
+
+**Since:**- v0.8
+
+
+The documentation for this protocol was generated from the following file:
+
+- CCTouchDelegateProtocol.h

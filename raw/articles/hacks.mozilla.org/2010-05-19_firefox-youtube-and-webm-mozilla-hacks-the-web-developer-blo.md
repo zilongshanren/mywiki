@@ -1,0 +1,32 @@
+---
+title: Firefox, YouTube and WebM – Mozilla Hacks - the Web developer blog
+url: https://hacks.mozilla.org/2010/05/firefox-youtube-and-webm/
+author: Christopher Blizzard
+published: '2010-05-19'
+source_blog: Mozilla Hacks – the Web developer blog
+source_site: https://hacks.mozilla.org/
+category: graphics
+fetched: '2026-04-13'
+---
+
+Five important items of note today relating to [Mozilla’s support for the VP8 codec](http://blog.mozilla.com/blog/2010/05/19/open-web-open-video-and-webm/):
+
+1. **Google will be releasing VP8 under an open source and royalty-free basis.** VP8 is a high-quality video codec that Google acquired when they purchased the company [On2](http://www.on2.com). The VP8 codec represents a vast improvement in quality-per-bit over Theora and is comparable in quality to H.264.
+
+2. **The VP8 codec will be combined with the Vorbis audio codec and a subset of the Matroska container format to build a new standard for Open Video on the web called WebM.** You can find out more about the project at its new site: [http://www.webmproject.org/](http://www.webmproject.org/).
+
+3. **We will include support for WebM in Firefox.** You can get super-early [WebM](http://nightly.mozilla.org/webm) builds of Firefox 4 pre-alpha today. WebM will also be included in Google Chrome and Opera.
+
+4. **Every video on YouTube will be transcoded into WebM.** They have about 1.2 million videos available today and will be working through their back catalog over time. But they have committed to supporting everything.
+
+5. **This is something that is supported by many partners, not just Google and others.** Content providers like Brightcove have signed up to support WebM as part of a full HTML5 video solution. Hardware companies, encoding providers and other parts of the video stack are all part of the list of companies backing WebM. Even Adobe will be supporting WebM in Flash. Firefox, with its market share and principled leadership and YouTube, with its video reach are the most important partners in this solution, but we are only a small part of the larger ecosystem of video.
+
+We’re extremely excited to see Google joining us to support Open Video. They are making technology available on terms consistent with the Open Web and the W3C Royalty-Free licensing terms. And – most importantly – they are committing to support a full open video stack on the world’s largest video site. This changes the landscape for video and moves the baseline for what other sites have to do to maintain parity and keep up with upcoming advances in video technology, not to mention compatibility with the set of browsers that are growing their userbase and advancing technology on the web.
+
+At Mozilla, we’ve wanted video on the web to move as fast as the rest of the web. That has required a baseline of open technology to build on. Theora was a good start, but VP8 is better. Expect us to start pushing on video innovation with vigor. We’ll innovate like the web has, moving from the edges in, with dozens of small revolutions that add up to something larger than the sum of those parts. VP8 is one of those pieces, [HTML5 ](http://caniuse.com/#agents=All&eras=All&cats=HTML5&statuses=rec,pr,cr,wd,ietf)is another. If you watch this weblog, you can start to see those [other pieces starting to emerge as well](http://hacks.mozilla.org/2010/04/beyond-html5-experiments-with-interactive-audio/). The web is creeping into more and more technologies, with Firefox leading the way. We intend to keep leading the web beyond HTML5 to the next place it needs to be.
+
+Today is a day of great change. Tomorrow will be another.
+
+## 98 comments
+
+NinoMay 19th, 2010 at 09:40Wladimir PalantMay 19th, 2010 at 09:41Christopher BlizzardMay 19th, 2010 at 10:07Chris WeeklyMay 19th, 2010 at 09:48Matt WoodMay 19th, 2010 at 09:48SkatoxMay 19th, 2010 at 09:49Peter WooleyMay 19th, 2010 at 09:52Robert NymanMay 19th, 2010 at 09:54guiodicMay 19th, 2010 at 09:55Tiago SáMay 19th, 2010 at 10:01Hans WurestMay 19th, 2010 at 10:03Tiago SáMay 19th, 2010 at 10:05Hans WurestMay 19th, 2010 at 10:34Wim LeersMay 19th, 2010 at 10:41Jon GallowayMay 19th, 2010 at 11:02CyMay 19th, 2010 at 10:04Jon PritchardMay 19th, 2010 at 10:04Christopher BlizzardMay 19th, 2010 at 10:18jpvincentMay 19th, 2010 at 10:31Shawn WilsherMay 19th, 2010 at 10:44Christopher BlizzardMay 19th, 2010 at 10:51stephMay 19th, 2010 at 10:41Daniel BaumanMay 19th, 2010 at 10:42Jake McGrawMay 19th, 2010 at 10:47Hans WurestMay 19th, 2010 at 11:32Christopher BlizzardMay 19th, 2010 at 10:54sandmanMay 19th, 2010 at 11:00Alexandre PlennevauxMay 19th, 2010 at 11:02marcoosMay 19th, 2010 at 11:05Brendan MillerMay 19th, 2010 at 11:07gunnMay 19th, 2010 at 12:11memaiMay 19th, 2010 at 11:34Jan SchejbalMay 19th, 2010 at 11:45Asa DotzlerMay 19th, 2010 at 11:56David SmithMay 19th, 2010 at 13:59David SmithMay 19th, 2010 at 14:11aaMay 19th, 2010 at 12:04Leonid TsarevMay 19th, 2010 at 12:14BenMay 19th, 2010 at 12:24Kenneth PardueMay 19th, 2010 at 12:26Ms2gerMay 19th, 2010 at 12:27Kelly ClowersMay 19th, 2010 at 12:35julroy67May 19th, 2010 at 14:36ChessMay 19th, 2010 at 12:44marquinosMay 19th, 2010 at 13:02BigboyMay 19th, 2010 at 13:07JonasMay 19th, 2010 at 13:10Kelly ClowersMay 20th, 2010 at 10:41AndyMay 19th, 2010 at 13:25OverlordMay 20th, 2010 at 04:22DuvMay 19th, 2010 at 13:51nMay 19th, 2010 at 13:56BillMay 19th, 2010 at 13:59blitzMay 19th, 2010 at 14:00EarthLaunchMay 19th, 2010 at 15:26Brendan MillerMay 19th, 2010 at 15:47dudeMay 19th, 2010 at 18:01Brett ZamirMay 19th, 2010 at 19:22David OliverMay 20th, 2010 at 00:45voracityMay 20th, 2010 at 05:16papyromancerMay 20th, 2010 at 17:22OJMay 19th, 2010 at 20:10Matt BrubeckMay 20th, 2010 at 16:08carolMay 20th, 2010 at 07:03Piero GiustiMay 20th, 2010 at 09:02StifuMay 20th, 2010 at 12:04Ken SaundersMay 20th, 2010 at 23:32Ken SaundersMay 21st, 2010 at 00:14DanMay 21st, 2010 at 14:08Matt BrubeckMay 21st, 2010 at 14:09alireza jafarianJune 22nd, 2010 at 01:46Gabriel DibbleJuly 13th, 2010 at 10:30TranJuly 28th, 2010 at 08:48saivertAugust 4th, 2010 at 08:15Rick WilsonNovember 28th, 2010 at 19:16AaronJanuary 24th, 2011 at 15:02nicholasreddigDecember 17th, 2010 at 14:43JERCEN RCLANDJanuary 8th, 2012 at 15:59LucasFebruary 3rd, 2013 at 21:14Robert Nyman [Editor]February 4th, 2013 at 03:03

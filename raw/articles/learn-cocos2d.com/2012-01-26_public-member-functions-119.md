@@ -1,0 +1,41 @@
+---
+title: Public Member Functions
+url: http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_layer_gradient/
+published: '2012-01-26'
+source_blog: Learn & Master Cocos2D Game Development
+source_site: http://www.learn-cocos2d.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+`#include <CCLayer.h>`
+
+
+| id |
+|
+
+[CCLayerGradient](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_layer_gradient/) is a subclass of [CCLayerColor](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_layer_color/) that draws gradients across the background.
+
+All features from [CCLayerColor](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_layer_color/) are valid, plus the following new features:
+
+Color is interpolated between the startColor and endColor along the given vector (starting at the origin, ending at the terminus). If no vector is supplied, it defaults to (0, -1) -- a fade from top to bottom.
+
+If 'compressedInterpolation' is disabled, you will not see either the start or end color for non-cardinal vectors; a smooth gradient implying both end points will be still be drawn, however.
+
+If ' compressedInterpolation' is enabled (default mode) you will see both the start and end colors of the gradient.
+
+BOOL CCLayerGradient::compressedInterpolation` [read, write, assign]` |
+
+Whether or not the interpolation will be compressed in order to display all the colors of the gradient both in canonical and non canonical vectors Default: YES
+
+GLubyte CCLayerGradient::endOpacity` [read, write, assign]` |
+
+The ending color.
+
+GLubyte CCLayerGradient::startOpacity` [read, write, assign]` |
+
+The starting opacity.
+
+CGPoint CCLayerGradient::vector` [read, write, assign]` |
+
+The vector along which to fade color.

@@ -1,0 +1,34 @@
+---
+title: Five years of GPU DB
+url: https://anteru.net/blog/2020/five-years-of-gpu-db
+published: '2020-09-27'
+source_blog: Anteru's blog
+source_site: https://anteru.net
+category: graphics
+fetched: '2026-04-13'
+---
+
+It certainly doesn’t feel like this, but just a few weeks ago the [GPU DB](https://db.thegpu.guru) I created had it’s fifth anniversary. If you’re not familiar with the project, please take a moment check out [the website](https://db.thegpu.guru). The GPU database is (yet another) database which contains information about modern GPUs. Over the last few years, it has helped me and a few folks I worked with in my job to identify the right GPU for a given task or figure out the differences between specific SKUs.
+
+Before we delve into the details and the changes over the years, it’s always good to understand the motivation for a project. Why did I start this in the first place? Back in 2015, when I started working in developer relations, figuring out what generation a GPU belonged to, or which ASIC was used on a GPU was not quite as simple as it should be. A lot of folks would resort to Wikipedia, but there’s really no great way to deep link directly to a single GPU entry there – it’s mostly lists. Additionally, Wikipedia just provides the raw numbers, but it’s not structured data – which means that individual entries don’t necessarily have to match. It’s quite simple to derive a lot of the numbers: For instance, bandwidth is a function of bus width, memory technology, and clock frequency, so inferring it from there ensures that the numbers always match, but it requires an understanding of the data.
+
+The various GPU vendors have their own databases, but of course there’s no easy way to compare between vendors this way. Finally, there are more complete databases of individual GPUs and their specific features, but they typically don’t answer questions like the previously mentioned “which GPUs was this ASIC used on” or “what configuration does the compute unit have”. After a market survey, I came to the conclusion that it can’t be that hard with a hundred or so different GPU families in the market. Why not do the modelling myself and be done with it?
+
+A few weeks later, I had a prototype working. Technology-wise it’s quite boring, the backend stores all data in a SQL database, the frontend is mostly Python, with a few bits of JavaScript thrown in. This got replaced with Typescript in recent years, and helper libraries like jQuery got removed as browser became more mature. On the code side, the actual implementation clocks in (as of today) at 2254 lines of Python code (+ 267 lines of comments), 1269 lines of SASS, 971 lines of HTML templates and 512 lines of Typescript. By all accounts, that’s not a lot, and it’s definitely one of the smaller projects.
+
+While the final statistics are not that impressive, it still has been an interesting project which evolved a lot over the years. My initial plan was to provide the basic data interface and then act on feedback to drive the development. This highly opportunistic approach has seemed to pay off by adding features with a lot of value-add and not getting bogged down by busy work. In the last five years, I’ve added quite a few big features based on usage and user feedback:
+
+- A print layout was added – this removes a lot of the coloring and hides a few items, which proved to be useful for PDF exports.
+- Support for embedding results was added. This is currently used by the
+[Beyond3D](https://beyond3d.com)forum. - The embedding results already had support for themes, but the DB itself didn’t. Dark themes are surprisingly popular these days, so the DB eventually learned to respect the user preference and also got a settings menu to allow toggling between them.
+- The API has been tweaked a few times until I settled on
+[GraphQL](https://graphql.org). If you’re curious how to use it, check out my[GraphQL tutorial](https://anteru.net/blog/2019/getting-started-with-graphql). - A timeline was added – this turned out to be a major feature, as the timeline script I used had some (minor) bugs which required workarounds, and also a lot of data preparation work to make it run relatively quickly.
+
+Those were the big ticket items, but they were not the main items in terms of development effort. On the contrary: The vast majority of the work went into small stuff which makes a difference on the usability or performance side. For instance, the search tokenizer knows a lot about GPU naming schemes these days, so it knows that a “R7265” is most likely a “R7 265”, but “A100” should not be split. The GraphQL API stopped exposing the transistor count as an integer once GPU transistor counts started … to overflow 32-bit integers. Various queries have been tweaked over the years to keep the page responsive. The by far biggest – and often least visible – changes were required on the model side due to the unrelenting march of technology. Two examples:
+
+- Support for more complex GPU configurations: As time went by, the compute units got more complicated – new features like double-rate half-precision operations appeared, some GPUs had different memory types despite using the same ASIC, etc. This results in several overhauls of the data model, settling in on the current one which allows for two levels of specialization: Each ASIC can get further customized into a variant (by reducing the number of compute units, for instance), and then each SKU can tweak some features (like disabling double-precision support.)
+- Compute units with multiple independent execution units were added. Some GPUs can issue instructions to different units concurrently (this has been actually a thing for many years), and despite being taken into account previously, it was not modelled in the DB until recently.
+
+Overall, it’s hard to judge how much of a success the database has been. I know of some folks for which it’s the first stop when a new GPU comes out. At the same time, my rather primitive tracking indicates that it’s a super-niche product.
+
+For me, my interest in GPU hardware remains the main motivation to get back to the database. Every time a GPU launches, I try to add it in a timely manner but also use the opportunity to check if there have been any quirks I could fix at the same time. Maybe this has been one of the reasons I never lost motivation – it’s a super well-defined project which works, and the *required* maintenance is easy to schedule. For a major GPU launch with multiple SKUs, it’s usually a few minutes to enter the data, and sometimes a few hours to improve the model depending on the complexity of the new GPU architecture, but it’s always clear what the goal is. And with that, we’re done for today – I hope this post helped you understand the difficulties and the work involved in this seemingly very simple project.

@@ -1,0 +1,105 @@
+---
+title: Integrating C++11 in your diet
+url: http://c0de517e.blogspot.com/2013/05/integrating-c11-in-your-diet.html
+published: '2013-05-13'
+source_blog: C0DE517E
+source_site: http://c0de517e.blogspot.com/
+category: graphics
+fetched: '2026-04-13'
+---
+
+Even for a guy like me who despises C++ and is happy to escape from it as often as possible, the reality of daily work still involves mostly C++ programming.
+
+Being "good" at C++ is mostly a matter of having a good diet. Of course you try to write "sane" C++, staying C as much as possible, using a "safe" subset of the language (
+
+[1](http://www.stroustrup.com/JSF-AV-rules.pdf)[2](http://www.aristeia.com/books.html)[3](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml)etc...), using static code checkers (vs2012 analysis at least, even if I've found it to be quite lax) and so on, these things have been written over an over. The bottom line is, you find your subset of things that are usable and of rules that never should be broken.
+Now, parts of the new C++11 standard are coming into mainstream compilers (read, Visual Studio 2012) and so I had to update my "diet" to incorporate a few new, useful features (mostly C++ trying to look like C#, which ain't bad).
+
+This is my small list of things you should consider to start using (at least on PC, for tools etc...).
+
+**Use today**:[Auto](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2546.htm)- Variable type inference. Really, makes a big difference in readability and it's essential for things like stl iterators and so on. It's "deeper" than just shorthand notation as well, as it infers type it always avoids nasty implicit conversions and forces you to write everything explicitly. Also, it propagates changes, so if you change a type (e.g. constness) of a function parameter, you don't have to waste time on all the local types. It also enables new things with templates (but who cares) and lambdas. Note:[VaX now supports auto and it shows the inferred type](http://forums.wholetomato.com/forum/topic.asp?TOPIC_ID=10920)![Lambdas](../../assets/4595db3958b8037b.img)- Simple, much better than function pointers, and also support closures which are the real deal, with a decent, explicit syntax. As C++ doesn't have garbage collection they have restrictions lambdas in other languages don't face, that's to say, you have to think of how you capture things and what are their lifetimes, but it's something we're used to by now (and made "easier" by the explicit capturing syntax, which forces you to think about what you're doing). Still you might want to fallback to regular functor objects when you need to make more explicit what you're doing in the "capturing" constructor/destructor but that's fine. Be sure to know what they really are ([typeless objects on the stack](http://stackoverflow.com/questions/12202656/c11-lambda-implementation-and-memory-model)... actually, their type can be captured locally by "auto", it avoids a conversion to function<>). Note that "auto" also works on lamba parameters, which is really great, and that you can pass "captureless" lambdas as function pointers too.[Type traits](http://www.cplusplus.com/reference/type_traits/)are fundamental, now you can static_assert away all your hacks (e.g. memset to zero a type? assert is POD...). True, we had them in Boost already, so this could be seen as "minor", but not many companies in my line of work would like to depend on Boost (even if depending only on traits is reasonable), re-implementing them is not trivial (unlike say, static_assert) and so this being part of the official standard is great. Also, the availability of Boost's ones lowers the preoccupation about compatibility.[Range based for](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2930.html)- int array[5] = { 1, 2, 3, 4, 5 }; for (int& x : array)... Small, but saves some typing and every other language does have it...[Override and Final](https://blogs.oracle.com/pcarlini/entry/c_11_tidbits_explicit_overrides)for virtual functions. Maybe in then years we'll even have "out" for non-const reference/pointer parameters...**Would use today, but not yet widespread**(that to me, means non implemented by VS2012...):[Non-static member initializer](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2756.htm)- The ability to initialize member variables at the point of declaration, instead of having to add code to your constructors[Constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2235.pdf)- Compile-time constant expressions. Could be nifty, i.e. can remove the need of hacks to do compiletime conversion of strings to hashes...[Delegating constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1986.pdf)- (suported in VS2013) A small addition, calling constructors from initializer lists of other constructors, it's useful but we already have workarounds and anyhow, you should really initialize things outside your constructor and never use exceptions. Even less interesting is[constructor inheritance](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2540.htm).[Raw string literals](http://impactcore.blogspot.ca/2011/03/c0x-raw-string-literals-simple-example.html)- (supported in VS2013) Another small addition, but important in some contexts, now you can have string literals that don't need escape codes, which is handy.[Unrestricted unions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2544.pdf)- Will enable having unions of types with non-trivial constructors which are not allowed today. No new syntax == good[Sizeof of member variables without an instance](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2253.html)- The lack of this is really counter-intuitive and maddening**Questionable/proceed with care/better to be avoided if possible**:*Tl;Dr; don't use anything that adds more rules/alternative syntax for things that can be done already. Don't use templates, especially if you think you really found a cool way to use them (i.e. for anything that does not have to do with collections). Don't read Alexandrescu. Don't be smart.*[Initializer lists](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2672.htm)- (suported in VS2013) These are nice, but they add more ways/rules to the resolution of constructors which is never great, function resolution rules in C++ are already way too complex. In some cases they're ok or even the only way to go (containers), but I would prefer to avoid them in custom classes and if there is another way around.[Variadic templates](http://www.cplusplus.com/articles/EhvU7k9E/)- (supported in VS2013) more template hackery. The syntax is quite ugly as well (...... or ...,... or ... ..., yes, let's try everything), but to be fair there are certain uses that might be worth allowing them in your code. An example is std::tuple. For "library" code only.[R-value references](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3053.html#Introduction)- They generated a lot of noise and you probably know about them (surely, you'll need to know about them), they do make a big difference in the STL ([see this for an introduction](http://thbecker.net/articles/rvalue_references/section_01.html)) but the truth is, you probably already are careful to avoid temporaries (or objects!) and you don't do much work in your constructors... This is mostly good news for the STL and for the rare reasonable uses of templates (unfortunately, we didn't get[concepts](http://en.wikipedia.org/wiki/Concepts_%28C%2B%2B%29)... so yes, C++ templates are still awful). They are[complex](http://www.codesynthesis.com/~boris/blog/2012/03/06/rvalue-reference-pitfalls/). And that is NOT good, C++ is already obscure enough.[Typed enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2347.pdf)- This is actually nice, but it adds yet more things to remember to the language, I'm undecided. The main good part of it is that typed enums don't automatically cast to integers (remember that vice-versa is already not true)[No_except](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3050.html). You shoulnd't use exceptions anyways.[Extern templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1987.htm)- Could reduce code bloat due to templates by not having them instantiated in all translation units. It doesn't mean you don't have to have all your templates in your headers though, it's a bit of a mess to use. You shouldn't use many templates anyhow, right? It's better to use less templates than think "extern" will patch the issue**Minor/Already doable with C++98 workarounds/Not often needed**[__FUNC__](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2340.htm)- Officially added to the existing __FILE__ and __LINE__[Minimal GC support](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2670.htm)- You're not likely going to use this, but it's good-to-know.[Static_assert](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1720.html)- Chances are that you already know what this is and have macros defined. This new one has a better output from the compiler than your own stuff. The standardization of[type traits](http://www.cplusplus.com/reference/type_traits/)is what makes static_assert very useful though.[Alignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2341.pdf)- Chances are that you already have some compiler-dependent functions and macros etc defined (and also that you have aligned containers and aligned new, which C++11 still lacks... but hey, support for GC! no aligned new but support for GC... bah...). Chances are, they are clearer, more complete and easier to use than std::align, std::aligned_storage, std::max_align_t and all the crap. Also VS2012.2 std::align seems broken :|[Decltype](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3276.pdf)- "Grabs" a type from an expression, fixes some old problems with templates, chances are that you'll never run into this other than some questionable uses in typedef decltype(expression)[Nullptr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2431.pdf)- Fairly minor, tl;dr NULL is now (also) called nullptr, which is a little bit better[Foward declaration of enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2764.pdf)- Fairly minor, does what it says[Explicit conversion operator](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2437.pdf)- (supported in VS2013) Patches an ugly hole in the language with implicit conversions. You should ban all the implicit conversions (don't implement custom cast operators and mark all constructors as explicit) anyways and always use member functions instead, so you shouldn't find yourself needing it often...It has some usefulness with templates (which you should mostly avoid anyhow...)[Explicitly deleting or defaulting auto-generated class functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2346.htm)- Today, you should always remember to declare the functions C++ currently automatically implements for classes (private without implementation if you're not implementing them). This new extension will make that somewhat easier.
+
+I've left out the new library features. C++11 introduced support for concurrency (atomics, threading support, fences,
+
+Truth is, they are all nice enough and even needed, but they still fall short of what most people will need when crafting high performance applications (the domain of C++? surely, what we do in realtime rendering...) and chances are you already have rolled your own, optimized versions over these years which could still be even better than what the early compilers will provide on a given platform. E.G. over all these years we still don't have fundamental stuff like a
+
+
+C++ as a language is still so much behind on what matters for performance (regardless of Bjarne's wet dreams), we are and we will still be crafting our own stuff/relying on compiler extensions and intrinsics. We did well with that, we'll do well still.
+
+
+
+It doesn't even attempt to deprecate anything, it managed to kill the most useful features devoted at simplifying it (template concepts!), it adds a TON of new syntax while keeping the old defaults (no_except, the controls for automatic class functions...) thus hoping that you just remember to use it, and it adds a TON of features squarely aimed at crazy-template-metaprogramming users that most sane people will never allow anyways.
+
+We don't do obfuscated C++ contests because it would be to easy already, with C++11, it would become really crazy...
+
+[tasks, futures etc...](http://msdn.microsoft.com/en-us/magazine/hh852594.aspx)) new smart pointers (unique/shared/weak with their corresponding "make" functions), containers ([unordered_map, unordered_set, forward_list, array](http://www.cplusplus.com/reference/stl/)and[std::optional](http://en.cppreference.com/w/cpp/utility/optional)) and so on.Truth is, they are all nice enough and even needed, but they still fall short of what most people will need when crafting high performance applications (the domain of C++? surely, what we do in realtime rendering...) and chances are you already have rolled your own, optimized versions over these years which could still be even better than what the early compilers will provide on a given platform. E.G. over all these years we still don't have fundamental stuff like a
+
+[fixed_vector](https://code.google.com/p/rdestl/source/browse/fixed_vector.h), static_vector, and sorted/unsorted vector/list hybrid (buckets), concurrency is made of threads and not real tasks/jobs (thread pools), still no SIMD/instruction level parallelism etc.C++ as a language is still so much behind on what matters for performance (regardless of Bjarne's wet dreams), we are and we will still be crafting our own stuff/relying on compiler extensions and intrinsics. We did well with that, we'll do well still.
+
+*Rant (can't be avoided when I write about C++)*: You'll be hearing (or already heard) a lot about "modern" C++, referring to C++11. It's a marketing lie, as most of what they did. Fundamentally, C++11 does not address any of the big issues C++ suffers from (bad defaults, pitfalls, half-arsed templates etc... basically the[SIZE of the language](http://simpleprogrammer.com/2012/12/01/why-c-is-not-back/)and the quality of it), instead it's mostly concerned with "catching up" the back of the box feature list (and making an half-arsed attempt at that, as most things can't be done properly anyways...).It doesn't even attempt to deprecate anything, it managed to kill the most useful features devoted at simplifying it (template concepts!), it adds a TON of new syntax while keeping the old defaults (no_except, the controls for automatic class functions...) thus hoping that you just remember to use it, and it adds a TON of features squarely aimed at crazy-template-metaprogramming users that most sane people will never allow anyways.
+
+We don't do obfuscated C++ contests because it would be to easy already, with C++11, it would become really crazy...
+
+If you want a full overview, see:
+
+[http://en.wikipedia.org/wiki/C%2B%2B11](http://en.wikipedia.org/wiki/C%2B%2B11)[http://www.cplusplus.com/articles/EzywvCM9/](http://www.cplusplus.com/articles/EzywvCM9/)[http://blog.smartbear.com/software-quality/bid/167271/The-Biggest-Changes-in-C-11-and-Why-You-Should-Care](http://blog.smartbear.com/software-quality/bid/167271/The-Biggest-Changes-in-C-11-and-Why-You-Should-Care)- Compiler support:
+[http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)[http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx](http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx)- Bonus: How many ways there are to construct objects now?
+[http://herbsutter.com/2013/05/09/gotw-1-solution/](http://herbsutter.com/2013/05/09/gotw-1-solution/)[http://herbsutter.com/2013/05/13/gotw-2-solution-temporary-objects/](http://herbsutter.com/2013/05/13/gotw-2-solution-temporary-objects/)[http://herbsutter.com/2013/04/05/complex-initialization-for-a-const-variable/](http://herbsutter.com/2013/04/05/complex-initialization-for-a-const-variable/)
+
+## 5 comments:
+
+nice post. just disagree on one thing though : C++ is the best language in the world :)
+
+I think you've missed a trick with rvalue references, they are not as complex as you think (though there is some 'interesting' overlap between rvalue references and auto .. also search for universal references)
+
+
+
+
+
+C++ as a language has a heritage that is impossible to ignore - C. That is the single most important reason why C++ is how it is today. If you want to cast off the chains of C then in my opinion the logical progression is to program in D.
+
+C++11 represents a lot of hard work from some of the best minds in the industry, however C++ is not perfect. I doubt it ever will be, but it will always serve the purpose for which it was intended, to imbue C programmers with the tools necessary to create higher level object oriented abstractions.
+
+C++ development is in fact accelerating, C++14 is already being worked on, and the new features are already appearing in cutting edge compilers such as Clang.
+
+I know from experience that TMP is generally avoided in the games industry, but not always for the right reasons. Just as you have already decided that rvalue references are just 'too complicated', this is the same as saying it's too much effort to learn something new. TMP has a great name, but it's not as complex as it sounds, constructs like SFINAE are actually remarkably elegant solutions for problems which would normally be solved with C-style macros, without sacrificing type-safety or performance.
+
+The problem with rvalues is not that they are conceptually complex, but that they add more resolution rules which in turn add more pitfalls.
+
+
+
+
+
+Now, I wouldn't ban them from a project, but it's one of these things, like templates, that I would allow only from experts and after a good review process to make sure you really need to use them and there are no other ways around.
+
+In case of rvalue references as I wrote, most times we don't want objects, surely we don't want fat objects, even less fat objects with complex constructors. So the whole issue of copying around and creating temporaries should be most of the times a non-issue, and thus, rvalues offer little benefits.
+
+The C "heritage" is a lame excuse, sorry. Most of the evils in C++ come from decisions on the part of the language that is new, not the part that keeps compatibility with C. E.G. to name a few: the "explicit" keyword horror, the "automatic" class functions scandal, the incredibly naive templates, a standard library that can't really be used in interfaces, etc etc etc.
+
+Last but not least, it's not at all a problem of effort and of learning new things. It's a problem of complexity and handling large teams. I think from what you write that you've worked in c++ teams at companies. How many programmers on average will be even just able to understand your average STL compile error (thanks standards committee from non giving us contracts)? And we're just talking about STL, containers, not crazy metaprogramming things... Not to mention that templates make code much bigger, compile times much longer, are a hell to debug and so on and so forth.
+
+The same goes for SFINAE and other tricks like that. Yes, they are neat, usually neat abuses of systems that were never meant to do that... They are HACKS.
+
+
+
+
+
+Now, let me be clear. Hacks can be beautiful, elegant, great. E.G. like boost::lambda was. And you can do whatever in C++ as you can overload whatever and templates are turing complete.
+
+That said, let me be SUPER clear. The problem with all these is that if on a level you can look at them and masturbate all day long on how pretty they are and how smart you are to use them. But. They are not ideomatic in the language. They were never thought that way, they are not supported. You use them in a team and then what? Tools won't know what you're doing, your team won't know, your new hires won't know. They will either accept that this magic works in way they don't understand (let's again think of things like boost::lambda) or they have to become experts in your extensions to the language...
+
+I will never allow such things to happen in my teams.
+
+Templates already abused in most cases, they were, lets be honest, designed for parametric polymorphism, for "generics", not for metaprogramming. They are not scheme's hygienic macros and even if they can do a lot of things, they SUCK at it.
+
+"It doesn't even attempt to deprecate anything"
+
+
+
+
+
+http://www.cplusplus.com/reference/memory/auto_ptr/
+
+"Note: This class template is deprecated as of C++11."
+
+Post a Comment

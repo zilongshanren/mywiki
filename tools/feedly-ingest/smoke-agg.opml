@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>smoke test - aggregator</title></head>
+  <body>
+    <outline text="Blogs">
+      <outline type="rss"
+               text="Graphics Programming Weekly — Jendrik Illner"
+               xmlUrl="https://www.jendrikillner.com/index.xml"
+               htmlUrl="https://www.jendrikillner.com/"/>
+    </outline>
+  </body>
+</opml>

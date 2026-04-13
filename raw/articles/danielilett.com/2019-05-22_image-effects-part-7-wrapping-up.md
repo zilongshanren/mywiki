@@ -1,0 +1,412 @@
+---
+title: Image Effects | Part 7 - Wrapping Up
+url: https://danielilett.com/2019-05-22-tut1-7-smo-end/
+author: Daniel Ilett
+published: '2019-05-22'
+source_blog: Daniel Ilett
+source_site: https://danielilett.com/
+category: graphics
+fetched: '2026-04-13'
+---
+
+We’ve written a lot of shaders so far! Hopefully you have a solid grasp on the basics of image effect shaders and have some ideas on where to take things in your own time. This article will recap what we’ve learned and go into a bit more detail on some aspects of shader programming that were glossed over a little in previous articles. I hope this isn’t too much of an info-dump!
+
+## ShaderLab, Nvidia Cg, GLSL and HLSL
+
+`HLSL`
+
+stands for High-Level Shading Language, and `GLSL`
+
+stands for Open GL Shading Language. When you write code in a shading language, it is compiled into a special kind of program that can run directly on a GPU (Graphics Processing Unit). Unity provides its own special language called `ShaderLab`
+
+, which acts as a middleman between the Unity Engine and the shading language, providing several shortcuts and macros to make life easier for us. The actual shading language you write inside a ShaderLab file is, by default, `Nvidia Cg`
+
+, a portable language which uses the common feature set of GLSL and HLSL for compatibility with a wide range of devices. Its syntax is close to that of HLSL.
+
+![Shader Banner](../../assets/8d184f05231327b1.jpg)
+
+
+## Object Space, World Space, Clip Space and Screen Space
+
+A 3D model, saved in a format such as `.obj`
+
+or `.fbx`
+
+, stores a list of every vertex in the model, as well as their positions. That position data is relative to some ‘origin point’ of the model, and usually doesn’t have any inherent meaning - a vertex with position (2, 0, 0) is just twice as far away from the origin as a vertex with position (1, 0, 0). This is called `object space`
+
+.
+
+Inside a scene in Unity, you could have several different models. Each vertex of each model is no longer positioned relative to its own model; it is positioned relative to some new ‘world’ origin point. Or, more accurately, a vertex is positioned relative to its own object origin point, and the object origin point is positioned relative to a world origin point. This is called `world space`
+
+. The vertex positions still typically have no inherent meaning besides their relative positioning, although in Unity, a distance of one “unit” is typically taken to mean one metre.
+
+So far, none of these spaces are taking a ‘viewer’ such as a camera or a person into account. When you place a camera into a scene in Unity, it has several properties of its own:
+
+- Near clip distance: any object closer to the camera than the near clip distance is not rendered (it is
+`culled`
+
+); - Far clip distance: any object further away from the camera than the far clip distance is also culled;
+- Field-of-view (FOV): Assuming the near and far clip distances are used to define the top and bottom of a rectangular-based pyramid with the top cut off, the FOV describes the ‘angle’ or ‘steepness’ of the pyramid;
+- Aspect ratio: Depending on the shape of the screen region (or render texture) the camera is rendering to, the rectangular shape of the base and top of the pyramid.
+
+The pyramid shape described here is the `view frustum`
+
+. Objects outside of it are culled. The objects that are left exist in a new space called `clip space`
+
+; here, a vertex is positioned relative to the object origin point, which is positioned relative to the world origin point, which is positioned relative to the camera’s position. Still with me? Until now, all spaces exist in abstract terms, untied to any physical entity, apart from perhaps the camera’s aspect ratio.
+
+![Camera Frustum](../../assets/133e49d5f61be77e.jpg)
+
+
+A process called `projection`
+
+transforms the positions such that the x-, y- and z-coordinates are normalised between 0 and 1. Positions touching the left edge or right edge have x-positions of 0 or 1 respectively; positions on the bottom edge or top edge of the frustum have y-positions or 0 or 1 respectively; and positions touching the near clip plane or far clip plane have z-positions of 0 or 1 respectively. Sometimes the y-axis or z-axis is flipped, depending on the platform or the graphics API being used. This is sometimes called `normalised clip space`
+
+, but it’s typically just a middle step towards `screen space`
+
+, when the remaining scene elements are mapped to the physical screen. This final space is, of course, tied to something tangible - the pixels on your screen.
+
+## Structs
+
+A `struct`
+
+is essentially the same in a shading language as it is in `C`
+
+; it is a collection of data. More accurately, it is a datatype that we can use in place of other datatype such as `float`
+
+or `int`
+
+, and we can use a struct type to return several variables from a function.
+
+```
+struct myStruct
+{
+float3 myVector;
+int myInt;
+};
+```
+
+
+## Texture Mapping
+
+If we wish to apply a texture over a model, we must know where each bit of the texture goes on the model. To do this, we assign `texture coordinates`
+
+(also known as `UV coordinates`
+
+due to the axes being called `u`
+
+and `v`
+
+instead of `x`
+
+and `y`
+
+) to each vertex of the model. Those UV coordinates correspond to which position on the texture will be applied to that vertex, and all pixels on a model between vertices use UV coordinates interpolated between those of the vertices. UV coordinates are normalised between 0 and 1, where (0, 0) means the bottom-left of an image, and (1, 1) means the top-right.
+
+## Vertex and Fragment Shaders
+
+A `vertex shader`
+
+takes in a list of vertices of a model, as well as properties of those vertices: their position in object space, their UV coordinates, a vertex colour, and so on. The vertex shader transforms the input data into a format usable by the fragment shader.
+
+Data is passed to the vertex shader inside a struct - this is commonly named `appdata`
+
+, as we saw. This struct contains the vertex properties I just listed.
+
+Between the vertex shader and the fragment shader stages of the graphics pipeline, a process called `rasterisation`
+
+fills the space between the vertices and converts the resulting region into a collection of `fragments`
+
+- usually, a fragment corresponds to a pixel on the screen. Hence, a fragment shader is sometimes known as a ‘pixel shader’.
+
+The `fragment shader`
+
+receives data output by the vertex shader inside a struct. That struct is commonly called `v2f`
+
+, and it can contain more or fewer variables than `appdata`
+
+, or even completely unrelated data. The fragment shader operates on every fragment/pixel sent to it, and outputs a colour value to be output to the screen.
+
+## Texture Sampling
+
+To use textures inside a fragment shader, a variable of type `sampler2D`
+
+is defined as a global variable in the shader file. For all image effects, a texture called `_MainTex`
+
+is defined and automatically sent to the shader by Unity - although we must also define it in the `Properties`
+
+block at the top of the ShaderLab file:
+
+```
+Properties
+{
+_MainTex("Main Texture", 2D) = "white" {}
+}
+...
+// Inside shader.
+sampler2D _MainTex;
+```
+
+
+The Properties syntax is a bit strange - we’re defining the `_MainTex`
+
+texture to be full-white by default if no data is passed to it by Unity.
+
+Unity provides a function called `tex2D`
+
+to sample the texture. `Sampling`
+
+is the process of supplying a texture and a UV position to retrieve a colour value, and it looks like this:
+
+```
+float3 col = tex2D(_MainTex, i.uv);
+```
+
+
+There are other useful automatically generated properties of samplers. If we define a variable called `_MainTex_ST`
+
+, we gain access to the texture scale and offset properties - those can be modified in the Unity Editor in the Inspector. To ensure the correct UV coordinates are generated to sample the texture, in the vertex shader you can use the `TRANSFORM_TEX()`
+
+macro to take the scale and offset parameters into account.
+
+```
+// Below _MainTex declaration.
+float4 _MainTex_ST;
+// Inside vertex shader.
+o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+```
+
+
+## TEXCOORD
+
+We often used Unity’s built-in vertex shader and data structs throughout the series, but we did come across `TEXCOORD`
+
+once or twice inside the `appdata`
+
+or `v2f`
+
+structs. It stands for ‘texture coordinates’, and Unity exposes a number of channels named `TEXCOORD0`
+
+, `TEXCOORD1`
+
+and so on - the number of channels [differs by GPU and Unity version](https://forum.unity.com/threads/number-of-uv-channels-depending-on-platform.583966/). These semantics tell Unity what level of precision to use and how to pass the data to the GPU, but they can also be used to pass arbitrary data not necessarily related to texture coordinates if need be. There is a limit to the amount of data you may pass between shaders.
+
+## The Depth Buffer
+
+Objects might be drawn onto the screen in an arbitrary order. Without any checking for occlusion - that is, objects hiding other objects from view - we might erroneously draw an object over something closer to the camera. We solve this problem using the ‘depth’ of each fragment. When a fragment is rendered to the screen, its distance in the z-direction is recorded in a 2D array called the `depth buffer`
+
+. When another fragment at the same (x, Y) pixel position on-screen tries to draw itself, its own z-distance (called the ‘depth value’) is compared to the value already in the depth buffer; if it is higher, then that means the existing pixel is closer to the camera and is obscuring the new pixel, so the new one is discarded and not drawn. Else, the new pixel is drawn over the old one and its depth value is recorded in the depth buffer.
+
+![Depth Buffer](../../assets/b310451a6c450e3a.jpg)
+
+
+## Transparency
+
+The above description doesn’t apply to transparent objects. When a transparent pixel is going to be drawn, it still checks the depth buffer to ensure it doesn’t incorrectly draw over an opaque object that it is behind. However, it won’t write into the depth buffer if it is drawn, nor does it replace the colour on the screen when drawn - instead, its colour is ‘blended’ with the existing colour value on screen. To ensure transparency is represented correctly, all opaque objects are drawn first, then transparent objects are drawn, starting with the object furthest back in the z-direction and progressively getting closer to the camera with each object.
+
+## Swizzling
+
+`Swizzling`
+
+is a feature in shading languages that let us pick and choose components of vectors to build new vectors. For example:
+
+```
+float4 myVec = float4(1.0, 2.0, 3.0, 4.0);
+float3 myNewVec = myVec.xxy;
+```
+
+
+In this case, the value of `myNewVec`
+
+will be `(1.0, 1.0, 2.0)`
+
+. This is called a ‘swizzling operator’, and we can take all kinds of combinations of values; it’s worth noting that `.xyzw`
+
+and `.rgba`
+
+both mean the same thing and we can pick components in all kinds of orders:
+
+```
+float4 myOtherNewVec = myVec.wxxz;
+float3 myOtherOtherNewVec = myVec.gbr;
+```
+
+
+It’s a powerful shorthand. If you look at the HSV conversion code we used in Part 4, it extensively uses swizzling.
+
+## Matrices
+
+Matrices are 2D collections of data. In shaders, they contain an array of numbers with a given dimension - say, `float2x2`
+
+, or `float3x4`
+
+. There are several nice features of matrices which make it easier to perform calculations, and although we didn’t use them very often, we did see one niche usage; we considered a matrix to consist of several row vectors, and we indexed the matrix as if it were an array of row vectors using array indexing [ ] syntax.
+
+```
+float3x3 myMatrix = float3x3(
+1.0, 1.1, 1.2,
+2.1, 2.3, 2.4,
+3.0, 4.9, 5.7
+);
+float3 myVec = myMatrix[2]; // = float3(3.0, 4.9, 5.7)
+```
+
+
+## Lerp, Saturate and Step Functions
+
+We’ve seen interpolation quite a lot, and we use the `lerp`
+
+function in shaders to perform an interpolation between two values. The amount of interpolation is controlled through a third parameter - when this value is equal to 0, the first parameter is picked; when the third parameter is equal to 1, the second parameter is picked; and any value of the third parameter between 0 and 1 blends between the first and second parameter values a proportional amount and returns that.
+
+```
+float firstVal = 2.0;
+float secondVal = 6.0;
+float test1 = lerp(firstVal, secondVal, 0.0); // = 2.0
+float test2 = lerp(firstVal, secondVal, 0.5); // = 4.0
+float test3 = lerp(secondVal, firstVal, 0.0); // = 6.0
+```
+
+
+The `saturate`
+
+function is like the spiritual inverse of `lerp`
+
+, taking only one parameter - when the input is 0 or below, the output is 0; when the input is 1 or above, the output is 1; and when the input is between 0 or 1, that is what is output. It’s great for providing a bound to a variable without using an if-statement.
+
+```
+float firstVal = 1.2;
+float secondVal = 0.7;
+float test1 = saturate(firstVal); // = 1.0
+float test2 = saturate(secondVal); // = 0.7
+```
+
+
+The `step`
+
+function is used to determine whether one value is larger than another. It takes two parameters, and when the second is greater than or equal to the first, the function returns 1; otherwise, it returns 0.
+
+```
+float firstVal = 9.0;
+float secondVal = 6.2;
+float test1 = step(firstVal, secondVal); // = 0.0
+float test2 = step(secondVal, firstVal); // = 1.0
+```
+
+
+## Wrap Mode
+
+Sometimes we use UV coordinates less than 0 or more than 1 to sample an image, i.e. sampling ‘outside’ an image. The value returned by the function depends on the `wrap mode`
+
+of the texture, as specified in scripting or in the texture import settings within the Unity Editor.
+
+A wrap mode of `Repeat`
+
+acts as if the image tiles itself infinitely. In this case, the UV coordinates are essentially ‘modulo 1’, so a UV coordinate of (3.7, 5.8) becomes (0.7, 0.8).
+
+A wrap mode of `Clamp`
+
+will take the pixel on the very edge of the texture. A UV of (1.2, 0.7) becomes (1.0, 0.7); each component of the UV is clamped between 0 and 1.
+
+A wrap mode of `Mirror`
+
+will repeat the texture, but instead of tiling the texture as-is, the texture is mirrored. Textures next to those outside the original texture boundaries are also mirrored infinitely.
+
+Finally, the `MirrorOnce`
+
+wrap mode will only mirror the original texture once - so, you end up with a 3x3 grid of textures - then it clamps the image similarly to the `Clamp`
+
+setting.
+
+## UsePass
+
+When writing shaders, sometimes it’s useful not to have to reinvent the wheel. We can utilise `UsePass`
+
+to take a shader `Pass`
+
+from a different shader file and paste it into the one we’re writing. The syntax is that we use the name of the shader (as defined in ShaderLab at the very top of the file) and the name of the pass (this is optional, so we have to ensure we do this for all passes we want to `UsePass`
+
+).
+
+```
+//Inside some other shader file:
+Shader "Example/MyShader"
+{
+...
+Pass
+{
+Name "MyPass"
+...
+}
+...
+}
+// Inside the shader we are currently writing:
+UsePass "Example/MyShader/MYPASS"
+```
+
+
+The pass name needs to be in upper-case when using `UsePass`
+
+, since Unity internally refers to passes in this way.
+
+## Graphics.Blit
+
+This function is used in C# scripts in order to copy pixel colour values from one texture to another. It can choose to just copy pixel colours as-is, or pass them through a material first, thereby doing some extra post-processing on the material. It can even specify which shader pass to use. It’s commonly used in the `OnRenderImage()`
+
+function, which is called when Unity finishes rendering a scene.
+
+```
+public Material mat;
+...
+private void OnRenderImage(RenderTexture src, RenderTexture dst)
+{
+Graphics.Blit(src, dst, mat, 2);
+}
+```
+
+
+In this example, pixels from the `src`
+
+texture are copied into the `dst`
+
+texture, after being processed by the `mat`
+
+material using the third shader pass in the file (shader passes are zero-indexed).
+
+## RGB and HSV Colour Space
+
+By default, all colour data in shader code uses the RGB colour space. We are required to output a colour in the fragment shader in this format (with a fourth component for transparency/alpha). However, it’s not the only colour space and it’s not always the most useful one to use. RGB stands for “Red, Green, Blue”, as each channel in this colour space represents how much of each of those colours are contained in the overall colour. Another colour space is called HSV, meaning “Hue, Saturation, Value” - ‘hue’ controls what most people would call the “colour”; ‘saturation’ controls how colourful that colour is (full saturation bright, while low saturation is dull); and “value” is also sometimes called “brightness” or “lightness” (HSB or HSL) and controls how light or dark the colour is.
+
+We would find it far easier to modify the hue, saturation or brightness of the image when colours are represented in this space as opposed to RGB, so sometimes in our shaders we convert between spaces, modify properties, then convert back to RGB. There’s no built-in function for this - a solution needs to be written yourself and included in the shader.
+
+![Pixelated Shader](../../assets/b707b3df5c855e16.jpg)
+
+
+## Upsampling and Downsampling
+
+Sometimes we need to change the size of the texture we are working on. Increasing the resolution is called upsampling, and the opposite is downsampling. When using `Graphics.Blit()`
+
+, it is intelligent enough to know how to copy pixels from one texture to the other based on the settings of the texture, so it’s perfectly possible to set the two input textures to different sizes in order to upsample or downsample. If we want a lower-resolution image to be displayed on screen, it’s best to downsample to an intermediate texture with its `FilterMode`
+
+set to ‘Point’; this ensures it will not interpolate values when the image is upsampled.
+
+We saw this most prominently in our pixelated image shaders.
+
+```
+protected override void OnRenderImage(RenderTexture src, RenderTexture dst)
+{
+int width = src.width / pixelSize;
+int height = src.height / pixelSize;
+RenderTexture temp =
+RenderTexture.GetTemporary(width, height, 0, src.format);
+// Make sure the upsampling does not interpolate.
+temp.filterMode = FilterMode.Point;
+// Obtain a smaller version of the source input.
+Graphics.Blit(src, temp);
+Graphics.Blit(temp, dst, material);
+}
+```
+
+
+# Conclusion
+
+This article concludes the Super Mario Odyssey shader series. I hope you’ve learned a lot about shaders - I’ll be back soon with another series on different types of shader.

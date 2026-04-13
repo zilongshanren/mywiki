@@ -1,0 +1,24 @@
+---
+title: 'Solium Infernum part 8: Moving on up. - Game Wisdom'
+url: https://game-wisdom.com/series/solium-infernum-part-8-moving-on-up
+author: Josh Bycer
+published: '2010-01-31'
+source_blog: Game Wisdom
+source_site: https://game-wisdom.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+Welcome to the end of my game diary on SI, hopefully for those trying to learn the ropes my past entries have helped along with the manual. In terms of game mechanics I’ve touched on just about every major mechanic in the game except for one: secret objectives. Now before I get things rolling I do want to mention that while my 8 entries about SI have gotten the main elements of the game down there is still so much to cover, you could pretty much have an entry on each skill tree and their uses. Not to mention with a healthy influx of patches from Vic, what works now may not work in the future. Case in point my mention that the higher your rank the better starting legion you have, with the new patch that is no longer true. Now your starting legion is based on your combined stats, I haven’t started a game using the new rule set yet so I don’t know the affect it has had on the game. Here’s hoping that a new edition of the manual will be made at some point. Simply put the best way to learn the game is to have the manual handy and just dive in, I’m just glad that my PBEM games came after me starting these entries, as it has helped my understanding of the game.
+
+With that said let’s talk about secrets. In previous entries I talked about the main ways to earn prestige: winning fights and vendettas, capturing PoPs, insults and public objectives. There is a reason why they are called public, as you can also have secret objectives. On the orders screen you’ll see the option to draw a secret objective, the amount you can draw and keep is based on your intellect. Once you have drawn one you are stuck with it unless you reach level 6 intellect and use the ritual unholy revelation to get rid of it, or another player uses it on you. Secret objectives available are chosen at random for you and can be just about anything, each objective comes with a prestige award for completing them. The big difference though is that if you fail a secret objective you lose prestige equal to the award. Other player’s with a high enough intellect can see what secret objectives you have picked, and try to stop you from achieving them. This part reminds me of Ticket to Ride, a board game with a PC version of it, in the game each player had objectives to meet by connecting two cities together, however no one knows what everyone’s goals are. This led to the mechanic of tricking the other players or trying to block the other players while completing your goals.
+
+Well my game is over with me coming out on top by a huge margin, here is the glorious victory screen:
+
+I guess after 8 entries I should give my opinion of SI. Overall I enjoyed SI but I do have some complaints about it. First is the difficulty curve, without a tutorial you are pretty much left to fend for yourself with a copy of the manual at your side. This was one of the reasons why I did this series of entries about the game. There are some UI annoyances I have, such as there is no way to quickly jump from the bazaar to the orders screen with a push of a button. Also I wish on the bazaar screen for buying manuscripts that I could see which ones in the set I already have without having to jump back and forth between the tribute screen.
+
+One other problem with SI compared to Armageddon Empires was the randomness factor that the additional factions added to it. For those that didn’t play AE, the free expansion brought with it the chance of running into a faction in the wasteland, each faction had its own tricks and game changing rules. One side if you didn’t kill them after X amount of turns they would blow up the world ending the game. This is a small complaint as this feature was not available at launch, hopefully something along these lines will come with whatever Vic cooks up for the expansion. My final complaint about SI is the necessity of multiplayer for it; one of the complaints of AE was the lack of multiplayer which for any game that has Collectible card game elements in it hurts. The problem with SI is that the AI at this point isn’t devious enough to be a major challenge to TBS vets. The act of diplomacy and espionage in SI only really works when you have other people to play with.
+
+And that is that, if anyone is looking to get a game going shoot me an email. I like to say that I’m a moderate player at this point.
+
+Josh

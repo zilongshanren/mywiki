@@ -1,0 +1,27 @@
+---
+title: b2DistanceInput Struct Reference
+url: http://www.learn-cocos2d.com/box2d-api-reference/API/structb2_distance_input/
+published: '2010-01-01'
+source_blog: Learn & Master Cocos2D Game Development
+source_site: http://www.learn-cocos2d.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+# b2DistanceInput Struct Reference
+
+`#include <`[b2Distance.h](/)>
+
+
+[List of all members.](/)
+
+
+## Detailed Description
+
+Input for b2Distance. You have to option to use the shape radii in the computation. Even
+
+
+## Member Data Documentation
+
+
+The documentation for this struct was generated from the following file:

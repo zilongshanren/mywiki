@@ -1,0 +1,567 @@
+# Tracked blogs — authoritative list for `ingest.py run`.
+# Edit freely: new entries are picked up on next run, `enabled: false`
+# pauses a blog without losing its metadata, and `sync` merges new
+# OPML entries without touching your edits.
+blogs:
+- title: Alan Zucconi
+  site_url: https://www.alanzucconi.com/
+  feed_url: http://www.alanzucconi.com/feed/
+  category: game programming
+- title: Alfred Reinold Baudisch
+  site_url: https://alfredbaudisch.com
+  feed_url: https://alfredbaudisch.com/feed/
+  category: game programming
+- title: Ming-Lun "Allen" Chou | 周明倫
+  site_url: https://allenchou.net
+  feed_url: http://allenchou.net/feed/
+  category: game programming
+- title: Bart Wronski
+  site_url: https://bartwronski.com
+  feed_url: http://bartwronski.com/feed/
+  category: game programming
+- title: 笨木头与游戏开发
+  site_url: http://www.benmutou.com
+  feed_url: http://feed.feedsky.com/benmutou
+  category: game programming
+- title: 云风的 BLOG
+  site_url: https://blog.codingnow.com/
+  feed_url: http://blog.codingnow.com/atom.xml
+  category: game programming
+- title: Eyas's Blog
+  site_url: https://blog.eyas.sh/
+  feed_url: https://blog.eyas.sh/feed/rss.xml
+  category: game programming
+- title: Gemserk
+  site_url: https://blog.gemserk.com/
+  feed_url: http://blog.gemserk.com/feed/
+  category: game programming
+- title: Justbilt
+  site_url: http://blog.justbilt.com/
+  feed_url: http://post.justbilt.com/atom.xml
+  category: game programming
+- title: Wolfire Games Blog
+  site_url: http://blog.wolfire.com/
+  feed_url: http://feeds.wolfire.com/WolfireGames
+  category: game programming
+- title: Bronson Zgeb
+  site_url: https://bronsonzgeb.com
+  feed_url: https://bronsonzgeb.com/index.php/feed/
+  category: game programming
+- title: Catchvar - Engineering, Product Development, and Startups
+  site_url: http://www.catchvar.com
+  feed_url: http://catchvar.com/feed/index.xml
+  category: game programming
+- title: Chickensoft — Open source tools for Godot and C# Blog
+  site_url: https://chickensoft.games/blog
+  feed_url: https://chickensoft.games/blog/rss.xml
+  category: game programming
+- title: Clinton Brennan
+  site_url: http://clintonbrennan.com
+  feed_url: http://clintonbrennan.com/feed/
+  category: game programming
+- title: 博客园 - clayman
+  site_url: http://www.cnblogs.com/clayman/
+  feed_url: http://feed.cnblogs.com/blog/u/56161/rss
+  category: game programming
+- title: 博客园 - Milo Yip
+  site_url: http://www.cnblogs.com/miloyip/
+  feed_url: http://feed.cnblogs.com/blog/u/66551/rss
+  category: game programming
+- title: Cyan
+  site_url: https://cyangamedev.wordpress.com
+  feed_url: https://cyangamedev.wordpress.com/feed/
+  category: game programming
+- title: Da Viking Code
+  site_url: https://davikingcode.com/blog
+  feed_url: https://davikingcode.com/blog/feed/
+  category: game programming
+- title: deWiTTERS
+  site_url: https://dewitters.com
+  feed_url: http://www.koonsolo.com/news/feed/
+  category: game programming
+- title: 'David Richeson: Division by Zero'
+  site_url: https://divisbyzero.com
+  feed_url: http://divisbyzero.com/feed/
+  category: game programming
+- title: TomF's Tech Blog
+  site_url: http://eelpi.gotdns.org/blog.wiki.html
+  feed_url: http://tomforsyth1000.github.io/blog.wiki.xml
+  category: game programming
+- title: Elias Daler's blog
+  site_url: https://eliasdaler.github.io/
+  feed_url: https://eliasdaler.github.io/feed.xml
+  category: game programming
+- title: Elias Daler | Re:creation
+  site_url: https://eliasdaler.wordpress.com
+  feed_url: https://eliasdaler.wordpress.com/feed/
+  category: game programming
+- title: The Code Corsair
+  site_url: http://www.elopezr.com
+  feed_url: http://www.elopezr.com/feed/
+  category: game programming
+- title: Essential Math Weblog
+  site_url: https://www.essentialmath.com/blog
+  feed_url: http://www.essentialmath.com/blog/?feed=rss2
+  category: game programming
+- title: Evan Todd
+  site_url: https://etodd.io/
+  feed_url: http://etodd.io/feed/
+  category: game programming
+- title: Blog | Execution Unit
+  site_url: http://www.executionunit.com/blog/
+  feed_url: http://www.executionunit.com/blog/feeds/rss/
+  category: game programming
+- title: 萤火之森
+  site_url: http://frankorz.com/
+  feed_url: http://frankorz.com/atom.xml
+  category: game programming
+- title: 'FRGMNTS: Bite Size Fiction'
+  site_url: https://frgmnts.blog
+  feed_url: https://frgmnts.blog/podcast/rss.xml
+  category: game programming
+- title: Gamasutra.com - Expert Blogs
+  site_url: https://www.gamasutra.com/blogs/expert/
+  feed_url: http://www.gamasutra.com/blogs/rss-expert/
+  category: game programming
+- title: Game Wisdom
+  site_url: https://game-wisdom.com
+  feed_url: http://game-wisdom.com/feed
+  category: game programming
+- title: Game Dev Bill
+  site_url: https://gamedevbill.com/
+  feed_url: https://gamedevbill.com/feed/
+  category: game programming
+- title: Gamedev Coder Diary
+  site_url: https://gamedevcoder.wordpress.com
+  feed_url: http://gamedevcoder.wordpress.com/feed/
+  category: game programming
+- title: Envato Tuts+ Game Development
+  site_url: https://gamedevelopment.tutsplus.com
+  feed_url: http://feeds.feedburner.com/gamedevtuts
+  category: game programming
+- title: games.greggman.com
+  site_url: https://games.greggman.com/game
+  feed_url: http://feeds.feedburner.com/Gamesgreggmancom
+  category: game programming
+- title: Game Torrahod
+  site_url: https://gametorrahod.com/
+  feed_url: https://gametorrahod.com/rss/
+  category: game programming
+- title: A-programmer's-cave
+  site_url: https://giordi91.github.io/
+  feed_url: https://giordi91.github.io/index.xml
+  category: game programming
+- title: Grey Alien Games
+  site_url: http://greyaliengames.com/blog
+  feed_url: http://greyaliengames.com/blog/feed/
+  category: game programming
+- title: Gu Lu's Blog
+  site_url: http://gulu.logdown.com
+  feed_url: http://gulu.logdown.com/posts.atom
+  category: game programming
+- title: headerphile
+  site_url: http://headerphile.com
+  feed_url: http://headerphile.com/feed/
+  category: game programming
+- title: Interplay of Light
+  site_url: https://interplayoflight.wordpress.com
+  feed_url: http://interplayoflight.wordpress.com/feed/
+  category: game programming
+- title: Journal of Computer Graphics Techniques
+  site_url: http://jcgt.org
+  feed_url: http://www.jcgt.org/feed.xml
+  category: game programming
+- title: Kloonigames
+  site_url: https://www.kloonigames.com/blog
+  feed_url: http://www.kloonigames.com/blog/feed
+  category: game programming
+- title: 怪怪杂志-Quibbler by 康上明学
+  site_url: http://ksmx.me/
+  feed_url: http://ksmx.me/rss/
+  category: game programming
+- title: rasie1's blog
+  site_url: https://kvachev.com/blog/
+  feed_url: https://kvachev.com/blog/index.xml
+  category: game programming
+- title: Learn & Master Cocos2D Game Development
+  site_url: http://www.learn-cocos2d.com
+  feed_url: http://feeds.feedburner.com/LearnMasterCocos2dForIphoneGameDevelopment
+  category: game programming
+- title: Let's Make Games
+  site_url: https://letsmakegames.info/
+  feed_url: https://letsmakegames.info/atom.xml
+  category: game programming
+- title: lisyarus blog
+  site_url: https://lisyarus.github.io/blog
+  feed_url: https://lisyarus.github.io/blog/feed.xml
+  category: game programming
+- title: L's Blog
+  site_url: http://www.liuocean.com/
+  feed_url: http://www.liuocean.com/feed/
+  category: game programming
+- title: lucida
+  site_url: http://lucida.me/
+  feed_url: http://zh.lucida.me/atom.xml
+  category: game programming
+- title: Ignacio Castaño
+  site_url: http://www.ludicon.com/castano/blog
+  feed_url: http://castano.ludicon.com/blog/feed/
+  category: game programming
+- title: Blog 3.0
+  site_url: http://martindevans.me
+  feed_url: http://martindevans.me/rss.xml
+  category: game programming
+- title: Mastering Emacs
+  site_url: https://www.masteringemacs.org/feed
+  feed_url: http://www.masteringemacs.org/feed/
+  category: game programming
+- title: Pem's Code Blog
+  site_url: http://mepem.com/pemcode
+  feed_url: http://mepem.com/pemcode/?feed=rss2
+  category: game programming
+- title: Mikkelsen and 3D Graphics
+  site_url: http://mmikkelsen3d.blogspot.com/
+  feed_url: http://mmikkelsen3d.blogspot.com/feeds/posts/default
+  category: game programming
+- title: T-machine.org
+  site_url: https://new.t-machine.org
+  feed_url: http://t-machine.org/index.php/feed/
+  category: game programming
+- title: nklein software
+  site_url: http://nklein.com
+  feed_url: http://nklein.com/feed/
+  category: game programming
+- title: opengl-tutorial.org
+  site_url: http://www.opengl-tutorial.org
+  feed_url: http://feeds.feedburner.com/Opengl-tutorialorg
+  category: game programming
+- title: Our Machinery
+  site_url: https://ourmachinery.com/
+  feed_url: http://ourmachinery.com/index.xml
+  category: game programming
+- title: Puppyblog
+  site_url: https://www.puppygames.net/blog
+  feed_url: http://www.puppygames.net/blog/?feed=rss2
+  category: game programming
+- title: Random tower of games
+  site_url: https://randomtower.blogspot.com/
+  feed_url: http://randomtower.blogspot.com/feeds/posts/default
+  category: game programming
+- title: Raph Levien’s blog
+  site_url: https://raphlinus.github.io/
+  feed_url: https://raphlinus.github.io/feed.xml
+  category: game programming
+- title: Ricky Reusser
+  site_url: http://rickyreusser.com
+  feed_url: http://rickyreusser.com/feed.xml
+  category: game programming
+- title: roboryantron
+  site_url: http://www.roboryantron.com/
+  feed_url: http://www.roboryantron.com/feeds/posts/default
+  category: game programming
+- title: Robotality
+  site_url: http://robotality.com/blog
+  feed_url: http://thegreystudios.com/blog/?feed=rss2
+  category: game programming
+- title: Rust Game Development Working Group
+  site_url: https://rust-gamedev.github.io/
+  feed_url: https://rust-gamedev.github.io/feed.xml
+  category: game programming
+- title: Sea of Memes
+  site_url: http://www.sea-of-memes.com
+  feed_url: http://www.sea-of-memes.com/rss.xml
+  category: game programming
+- title: Seba's Lab
+  site_url: https://www.sebaslab.com/
+  feed_url: http://blog.sebaslab.com/feed/
+  category: game programming
+- title: Seshbot Programs
+  site_url: http://seshbot.com/
+  feed_url: http://seshbot.com/atom.xml
+  category: game programming
+- title: BLOG RSS
+  site_url: https://shaderbits.com/blog
+  feed_url: http://shaderbits.com/rss.xml
+  category: game programming
+- title: Roland Smeenk
+  site_url: https://smeenk.com/
+  feed_url: https://smeenk.com/feed/
+  category: game programming
+- title: sprite-kit.com
+  site_url: http://www.sprite-kit.com
+  feed_url: http://feeds.feedburner.com/Sprite-kit
+  category: game programming
+- title: 'Home - Tick''s Tales: Up All Knight'
+  site_url: http://www.tickstales.com/home/
+  feed_url: http://www.tickstales.com/home?format=RSS
+  category: game programming
+- title: Tony Bai
+  site_url: https://tonybai.com
+  feed_url: http://tonybai.com/feed/
+  category: game programming
+- title: Tarek Sherif
+  site_url: https://tsherif.wordpress.com
+  feed_url: https://tsherif.wordpress.com/feed/
+  category: game programming
+- title: The Undead Dev
+  site_url: https://www.undeaddev.com
+  feed_url: http://www.notanotherzombiegame.com/feed/
+  category: game programming
+- title: Unity Blog RSS Feed
+  site_url: https://unity.com
+  feed_url: http://blogs.unity3d.com/feed/
+  category: game programming
+  path_prefixes:
+  - /blog/
+- title: Wicked Engine
+  site_url: https://wickedengine.net
+  feed_url: https://turanszkij.wordpress.com/feed/
+  category: game programming
+- title: Will Thimbleby – Will Thimbleby
+  site_url: https://will.thimbleby.net
+  feed_url: http://will.thimbleby.net/blog/feed/
+  category: game programming
+- title: Will Usher's Blog
+  site_url: https://www.willusher.io/
+  feed_url: https://www.willusher.io/atom.xml
+  category: game programming
+- title: YKode
+  site_url: https://www.ykode.com
+  feed_url: https://www.ykode.com/rss.xml
+  category: game programming
+- title: 3D Game Engine Programming
+  site_url: https://www.3dgep.com/
+  feed_url: http://3dgep.com/?feed=rss2
+  category: graphics
+- title: Adrian Courrèges
+  site_url: http://www.adriancourreges.com/
+  feed_url: http://www.adriancourreges.com/atom.xml
+  category: graphics
+- title: Allar's Blog
+  site_url: https://allarsblog.com/
+  feed_url: http://forecourse.com/feed/
+  category: graphics
+- title: AnKi 3D Engine Dev Blog
+  site_url: https://anki3d.org
+  feed_url: http://anki3d.org/feed/
+  category: graphics
+- title: Anteru's blog
+  site_url: https://anteru.net
+  feed_url: https://anteru.net/rss.xml
+  category: graphics
+- title: apoorvaj.io
+  site_url: https://apoorvaj.io/
+  feed_url: https://apoorvaj.io/rss.xml
+  category: graphics
+- title: Aras' website
+  site_url: https://aras-p.info/
+  feed_url: http://feeds.feedburner.com/LostInTheTriangles
+  category: graphics
+- title: Bases and Frames
+  site_url: https://basesandframes.wordpress.com
+  feed_url: https://basesandframes.wordpress.com/feed/
+  category: graphics
+- title: FrostKiwi's Secrets
+  site_url: https://blog.frost.kiwi
+  feed_url: https://blog.frost.kiwi/feed.xml
+  category: graphics
+- title: Clean Rinse
+  site_url: https://blog.mecheye.net
+  feed_url: https://blog.mecheye.net/feed/
+  category: graphics
+- title: PlayCanvas
+  site_url: https://blog.playcanvas.com
+  feed_url: http://blog.playcanvas.com/feed/
+  category: graphics
+- title: Self Shadow
+  site_url: https://blog.selfshadow.com/
+  feed_url: http://blog.selfshadow.com/feed/
+  category: graphics
+- title: Shawn Hargreaves Blog
+  site_url: https://blogs.msdn.microsoft.com/shawnhar
+  feed_url: http://blogs.msdn.com/b/shawnhar/rss.aspx
+  category: graphics
+- title: C0DE517E
+  site_url: http://c0de517e.blogspot.com/
+  feed_url: http://c0de517e.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Bartosz Ciechanowski
+  site_url: https://ciechanow.ski/
+  feed_url: https://ciechanow.ski/atom.xml
+  category: graphics
+- title: Ming Wai Chan
+  site_url: https://cmwdexint.com
+  feed_url: https://cmwdexint.com/feed/
+  category: graphics
+- title: Daniel Ilett
+  site_url: https://danielilett.com/
+  feed_url: https://danielilett.com/feed.xml
+  category: graphics
+- title: The Legend of GameDev
+  site_url: http://david.fancyfishgames.com/
+  feed_url: http://david.fancyfishgames.com/feeds/posts/default
+  category: graphics
+- title: Dead Voxels
+  site_url: http://deadvoxels.blogspot.com/
+  feed_url: http://deadvoxels.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Diary of a Graphics Programmer
+  site_url: http://diaryofagraphicsprogrammer.blogspot.com/
+  feed_url: http://diaryofagraphicsprogrammer.blogspot.com/feeds/posts/default
+  category: graphics
+- title: direct to video
+  site_url: https://directtovideo.wordpress.com
+  feed_url: http://directtovideo.wordpress.com/feed/
+  category: graphics
+- title: new Chad()
+  site_url: https://englercj.github.io
+  feed_url: https://englercj.github.io/rss.xml
+  category: graphics
+- title: The ryg blog
+  site_url: https://fgiesen.wordpress.com
+  feed_url: https://fgiesen.wordpress.com/feed/
+  category: graphics
+- title: Game Engine Architecture
+  site_url: http://gameenginebook.blogspot.com/
+  feed_url: http://gameenginebook.blogspot.com/feeds/posts/default
+  category: graphics
+- title: gameKnife
+  site_url: http://gameknife.github.io/
+  feed_url: http://gameknife.github.io/atom.xml
+  category: graphics
+- title: Graphic Rants
+  site_url: http://graphicrants.blogspot.com/
+  feed_url: http://graphicrants.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Graphics Runner
+  site_url: http://graphicsrunner.blogspot.com/
+  feed_url: http://graphicsrunner.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Mozilla Hacks – the Web developer blog
+  site_url: https://hacks.mozilla.org/
+  feed_url: https://hacks.mozilla.org/feed/
+  category: graphics
+- title: The Hacks of Life
+  site_url: http://hacksoflife.blogspot.com/
+  feed_url: http://hacksoflife.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Technically Art – Harry Alisavakis
+  site_url: https://halisavakis.com
+  feed_url: https://halisavakis.com/category/technically-art/feed/
+  category: graphics
+- title: Weekly on Jendrik Illner - 3D Programmer
+  site_url: https://www.jendrikillner.com/tags/weekly/
+  feed_url: https://www.jendrikillner.com/tags/weekly/index.xml
+  category: graphics
+- title: Jon Olick - Home
+  site_url: https://www.jonolick.com/home
+  feed_url: http://www.jonolick.com/2/feed
+  category: graphics
+- title: Joost's Dev Blog
+  site_url: http://joostdevblog.blogspot.com/
+  feed_url: http://joostdevblog.blogspot.com/feeds/posts/default
+  category: graphics
+- title: The blog of Kyle Halladay
+  site_url: http://kylehalladay.com
+  feed_url: http://kylehalladay.com/atom.xml
+  category: graphics
+- title: Linden Reid
+  site_url: https://lindenreid.wordpress.com
+  feed_url: https://lindseyreidblog.wordpress.com/feed/
+  category: graphics
+- title: Linden Reid
+  site_url: https://lindenreidblog.com
+  feed_url: https://lindenreidblog.com/feed/
+  category: graphics
+- title: Light is beautiful
+  site_url: https://lousodrome.net/blog/light/
+  feed_url: http://lousodrome.net/blog/light/feed/
+  category: graphics
+- title: Mental Grain
+  site_url: https://mentalgrain.com
+  feed_url: http://mentalgrain.com/feed/
+  category: graphics
+- title: Metal by Example
+  site_url: https://metalbyexample.com
+  feed_url: http://metalbyexample.com/feed/
+  category: graphics
+- title: GM Shaders
+  site_url: https://mini.gmshaders.com
+  feed_url: https://mini.gmshaders.com/feed
+  category: graphics
+- title: Moments in Graphics
+  site_url: http://momentsingraphics.de/
+  feed_url: http://momentsingraphics.de/RSS.xml
+  category: graphics
+- title: null program
+  site_url: https://nullprogram.com
+  feed_url: http://nullprogram.com/feed/
+  category: graphics
+- title: Outerra
+  site_url: https://outerra.blogspot.com/
+  feed_url: http://outerra.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Ray Tracey's blog
+  site_url: http://raytracey.blogspot.com/
+  feed_url: http://raytracey.blogspot.com/feeds/posts/default
+  category: graphics
+- title: Real-Time Rendering
+  site_url: https://www.realtimerendering.com/blog
+  feed_url: http://www.realtimerendering.com/blog/feed/
+  category: graphics
+- title: WebGL - Web Graphics Library
+  site_url: https://www.reddit.com/r/webgl/
+  feed_url: https://www.reddit.com/r/webgl/.rss
+  category: graphics
+- title: markus buretorp
+  site_url: http://www.rgba.se/
+  feed_url: http://www.rgba.se/feeds/posts/default
+  category: graphics
+- title: Ronja’s Shader Tutorials
+  site_url: https://www.ronja-tutorials.com/
+  feed_url: https://www.ronja-tutorials.com/feed.xml
+  category: graphics
+- title: CodeItNow
+  site_url: https://www.rorydriscoll.com
+  feed_url: http://www.rorydriscoll.com/feed/atom/
+  category: graphics
+- title: Simonschreibt.
+  site_url: https://simonschreibt.de
+  feed_url: https://simonschreibt.de/feed/
+  category: graphics
+- title: Blog - Stephanie Hurlburt
+  site_url: http://stephaniehurlburt.com/blog/
+  feed_url: http://stephaniehurlburt.com/blog?format=RSS
+  category: graphics
+- title: 阿祥的開發日常
+  site_url: https://tedsieblog.wordpress.com
+  feed_url: https://tedsieblog.wordpress.com/feed/
+  category: graphics
+- title: The Instruction Limit
+  site_url: https://theinstructionlimit.com
+  feed_url: http://theinstructionlimit.com/feed
+  category: graphics
+- title: Maister's Graphics Adventures
+  site_url: https://themaister.net/blog
+  feed_url: http://themaister.net/blog/feed/
+  category: graphics
+- title: Max Slater
+  site_url: https://thenumb.at/
+  feed_url: https://thenumb.at/index.xml
+  category: graphics
+- title: Vertex Fragment
+  site_url: https://www.vertexfragment.com/
+  feed_url: https://www.vertexfragment.com/index.xml
+  category: graphics
+- title: Warren Moore's Blog
+  site_url: http://warrenmoore.net/
+  feed_url: http://warrenmoore.net/feed.xml
+  category: graphics
+- title: ben🌱ui
+  site_url: https://benui.ca/
+  feed_url: https://benui.ca/feed.xml
+  category: unreal engine
+- title: Tom Looman
+  site_url: https://www.tomlooman.com/
+  feed_url: http://www.tomlooman.com/feed/
+  category: unreal engine

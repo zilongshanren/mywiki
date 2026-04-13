@@ -1,0 +1,14 @@
+---
+title: 'Obituary: Pioneer game artist Paul Steed'
+url: https://www.gamedeveloper.com/art/obituary-pioneer-game-artist-paul-steed
+author: Eric Caoili
+published: '2012-08-13'
+source_blog: Gamasutra.com - Expert Blogs
+source_site: https://www.gamasutra.com/blogs/expert/
+category: game programming
+fetched: '2026-04-13'
+---
+
+![Game Developer Game Developer logo in a gray background | Game Developer](../../assets/de0d06fe69cb2dbe.png)
+
+Renowned game artist and industry veteran Paul Steed, best known for his landmark 3D modeling work in id Software titles like the Quake and Doom series, has passed away. Details regarding his death have not been disclosed. Steed spent more than two decades of his life working in the industry, getting his start as an artist and 3D modeler, and eventually [transitioning into an entrepreneur](http://gamasutra.com/view/news/108540/Best_Of_GDC_Paul_Steed_On_The_Trip_From_Artist_to_Entrepreneur.php) and even heading a studio with his most recent role at UTV Ignition Entertainment. His contributions to the industry are immeasurable -- more than a few game artists have honed their craft by referring to Steed's work, reading his tutorials and [Thinking Outside the Box column](http://www.loonygames.com/content/1.1/totb/), and poring over [his books on animating and modeling game characters](http://www.amazon.com/Paul-Steed/e/B001K8D2G0/ref=sr_ntt_srch_lnk_3?qid=1344872336&sr=1-3). Steed also frequently gave talks at universities, hosted and sponsored contests, participated in discussions at game development online communities, and served as an advisory board member and speaker for the Game Developers Conference. He got his first industry job at Origin in the early '90s, working on the Wing Commander franchise and other titles for four years. He eventually went on to companies like Iguana Entertainment and Virgin Interactive. It was at id, though, where Steed gained fame amongst game developers for his work on modeling and animating characters for the company's shooters. He eventually parted ways with the company over creative differences after working there for four years. After id, Steed bounced around at WildTangent, Atari, and even Microsoft's Xbox Advanced Technology Group, where he worked on the development of Xbox 360 and the XNA tools. He spent five years as president and COO of outsourcing company Exigent before landing at UTV Ignition. During [his Game Career Seminar keynote speech](http://gamasutra.com/view/news/108540/Best_Of_GDC_Paul_Steed_On_The_Trip_From_Artist_to_Entrepreneur.php) at GDC 2008, he proclaimed, "This is not a job. It's a lifestyle, requiring your heart, your soul and putting all your passion into it. I'm here today because I will never stop." Steed is survived by his wife and children.

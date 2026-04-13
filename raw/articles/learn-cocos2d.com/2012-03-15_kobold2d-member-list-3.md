@@ -1,0 +1,53 @@
+---
+title: 'Kobold2D: Member List'
+url: http://www.learn-cocos2d.com/api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper-members/
+published: '2012-03-15'
+source_blog: Learn & Master Cocos2D Game Development
+source_site: http://www.learn-cocos2d.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+This is the complete list of members for
+
+[KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/), including all inherited members.
+
+[achievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#aff1619ea13a49560fea870eade698635) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[achievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#aff1619ea13a49560fea870eade698635) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[addPlayersToMatch:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a562188196c7131284ee7ccc1859b6415)(GKMatchRequest *request) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[authenticateLocalPlayer](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a16a4f5fcb14493b1ee479ce1574c9a03)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[cancelMatchmakingRequest](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#aecca43d904e7b1241da908cfff2a6d33)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[currentMatch](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ab41dc6b9ed490f3fa07269079db3ae20) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[currentMatch](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ab41dc6b9ed490f3fa07269079db3ae20) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[delegate](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#afe39e18f3a19468301f636dc7d558fa1) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[delegate](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#afe39e18f3a19468301f636dc7d558fa1) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[disconnectCurrentMatch](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a5b2c13355efd3e052026d5407b269ff8)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[findMatchForRequest:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a6595a0598aed0ba508f2cf67d296ac2b)(GKMatchRequest *request) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[getAchievementByID:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a6f765695c511b566771637f40751e123)(NSString *identifier) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[getLocalPlayerFriends](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a840ab10272bc16c15d8981fa59ff9838)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[getPlayerInfo:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a81d147398984ecfbca285bf65b25c359)(NSArray *players) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[isGameCenterAvailable](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#adb56c9982b76300c02359196e110f362) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[isGameCenterAvailable](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#adb56c9982b76300c02359196e110f362) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[lastError](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a906545fac5e5e699b2b050810e2ffa2c) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[lastError](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a906545fac5e5e699b2b050810e2ffa2c) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[loadAchievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ace6186035eeb4eb5c0e158f46ea6827c)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[matchStarted](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ad9624cf3d81ca21fbe59d3a7468e4c55) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [protected]` |
+[matchStarted](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ad9624cf3d81ca21fbe59d3a7468e4c55) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | |
+[queryMatchmakingActivity](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a69241e7f6f49dd0255e01e1f4a5502d6)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[reportAchievementWithID:percentComplete:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a3fbc94e70318213ab17c6857f5f6cb9f)(NSString *identifier,[percentComplete] float percent) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[reportCachedAchievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a466ecb17890504d034bef6652d1ca5b3)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[resetAchievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a368026de52716f75eae3b54124af5eec)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[retrieveScoresForPlayers:category:range:playerScope:timeScope:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a624a84f16ab06af16b19f8ff8d706991)(NSArray *players,[category] NSString *category,[range] NSRange range,[playerScope] GKLeaderboardPlayerScope playerScope,[timeScope] GKLeaderboardTimeScope timeScope) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[retrieveTopTenAllTimeGlobalScores](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a97259f4b8135bba56e688e3222edd244)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[saveCachedAchievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a8f1153a73683014ee50e8c6775600000)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[sendDataToAllPlayers:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ae8ce7c4cb9d22d1ec01ac4421b0c896f)(NSData *data) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[sendDataToAllPlayers:length:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a5ebd303db6a4e89dd7ca564b531bf396)(void *data,[length] NSUInteger length) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[sendDataToAllPlayers:length:reliable:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a71e55b95fd04d26c044f59c9c52e3fc9)(void *data,[length] NSUInteger length,[reliable] BOOL reliable) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[sendDataToAllPlayers:reliable:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ae0394962cc21ec16dcd99ab76c8f1c25)(NSData *data,[reliable] BOOL reliable) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[setupMatchInvitationHandlerWithMinPlayers:maxPlayers:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ab7de10c81f37396d35ec467399ecbc8f)(int minPlayers,[maxPlayers] int maxPlayers) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[sharedGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a07c168c3582e77b9ba56118730419bd1)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual, static]` |
+[showAchievements](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a1d1103c5ba3cb70dbc89c01970289f35)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[showLeaderboard](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a9b087c1d1cebe551133659efd2963f94)() | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[showMatchmakerWithInvite:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#aca71ea1fc6fb24cb974257ce8f791bf2)(GKInvite *invite) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[showMatchmakerWithRequest:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#a21169bbded5becaef675eb37f35d817c)(GKMatchRequest *request) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |
+[submitScore:category:](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/#ac688b7d3bb9ffe809cd88785ff9d9e6b)(int64_t score,[category] NSString *category) | [KKGameKitHelper](../../../../../api-ref/latest/Kobold2D/html/interface_k_k_game_kit_helper/) | ` [virtual]` |

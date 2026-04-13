@@ -1,0 +1,45 @@
+---
+title: Public Member Functions
+url: http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_label_atlas/
+published: '2012-01-26'
+source_blog: Learn & Master Cocos2D Game Development
+source_site: http://www.learn-cocos2d.com
+category: game programming
+fetched: '2026-04-13'
+---
+
+`#include <CCLabelAtlas.h>`
+
+
+| id |
+|
+
+[CCLabelAtlas](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_label_atlas/) is a subclass of [CCAtlasNode](http://www.learn-cocos2d.com/).
+
+It can be as a replacement of CCLabel since it is MUCH faster.
+
+[CCLabelAtlas](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_label_atlas/) versus CCLabel:
+
+A more flexible class is [CCLabelBMFont](http://www.learn-cocos2d.com/api-ref/1.0/cocos2d-iphone/html/interface_c_c_label_b_m_font/). It supports variable width characters and it also has a nice editor.
+
+| id CCLabelAtlas::initWithString:charMapFile:itemWidth:itemHeight:startCharMap: | ( | NSString * | string, |
+| [charMapFile] NSString * | charmapfile, |
+||
+| [itemWidth] NSUInteger | w, |
+||
+| [itemHeight] NSUInteger | h, |
+||
+| [startCharMap] unsigned char | c |
+||
+| ) | ` [virtual]` |
+
+| id CCLabelAtlas::labelWithString:charMapFile:itemWidth:itemHeight:startCharMap: | ( | NSString * | string, |
+| [charMapFile] NSString * | charmapfile, |
+||
+| [itemWidth] NSUInteger | w, |
+||
+| [itemHeight] NSUInteger | h, |
+||
+| [startCharMap] unsigned char | c |
+||
+| ) | ` [static, virtual]` |

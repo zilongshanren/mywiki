@@ -1,0 +1,40 @@
+---
+title: Cel Shading | Series Introduction
+url: https://danielilett.com/2019-05-29-tut2-intro/
+author: Daniel Ilett
+published: '2019-05-29'
+source_blog: Daniel Ilett
+source_site: https://danielilett.com/
+category: graphics
+fetched: '2026-04-13'
+---
+
+There are many types of lighting model for adding character to your scene. Many modern games opt for a photorealistic style, attempting to mimic the way light behaves in the real world - techniques such as raytracing take this to the next level by simulating the way light refracts through, is absorbed by, and reflects off surfaces. But it’s certainly not the only way to light your scene - many games gain a stronger sense of identity through highly stylised aesthetics, including cel-shading.
+
+You might have heard cel-shading also referred to as “toon lighting” or simply a “cartoonish” style; it was popularised in the early-to-mid noughties by games such as *Jet Set Radio* and *The Legend of Zelda: The Wind Waker*. The key to cel-shading is to modify the lighting of models such that there is at least one hard cut between lit and unlit sections. On top of that, it’s common to either use block colours in your textures, or to add bold outlines around model geometry, or to bake strong outlines into the texture. We’re going to look mostly at the base lighting ramp, then consider fresnel/rim lighting and an outline, plus normal mapping.
+
+As with the last shader series, this one will be released in parts! Look out for incoming tutorial articles on the following dates:
+
+## Part 0 - [Lighting Models](https://danielilett.com/2019-06-01-tut2-0-lighting-models/)
+
+This part will introduce the theory behind different lighting models, looking at the basic calculations involved in lighting and the vectors involved in lighting interactions.
+
+## Part 1 - [Diffuse Lighting](https://danielilett.com/2019-06-05-tut2-1-diffuse/)
+
+Diffuse lighting is the basis of the Phong shading model - lighting is proportional to the angle between a surface and the light source.
+
+## Part 2 - [Cel Shading](https://danielilett.com/2019-06-08-tut2-2-cel-shading/)
+
+The main characteristic of a cel-shading effect is to introduce hard cuts into the lighting calculation such that the result appears “cartoonish”. The effect looks even better when specular lighting is applied, where bright highlights appear on smooth surfaces.
+
+## Part 3 - [Fresnel and Normals](https://danielilett.com/2019-06-12-tut2-3-fresnel/)
+
+Fresnel lighting is sometimes called “rim lighting” and arises when an object is viewed at a shallow angle, such as the “edges” of a sphere. Normal mapping gives our lighting higher fidelity without adding object geometry.
+
+## Part 4 - [Edge Detection](https://danielilett.com/2019-06-15-tut2-4-edge-outline/)
+
+The final piece of the cel-shading puzzle is a bold outline, commonly used to make objects stand out in conjunction with the simplified and stylised lighting effects.
+
+## Part 5 - [Wrapping Up](https://danielilett.com/2019-06-23-tut2-5-cel-shading-end/)
+
+This article will consolidate the key points covered throughout the series into a single resource.

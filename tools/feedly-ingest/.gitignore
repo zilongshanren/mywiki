@@ -1,0 +1,6 @@
+state/
+feedly_export.opml
+feedly-opml-*.opml
+__pycache__/
+*.pyc
+.venv/
