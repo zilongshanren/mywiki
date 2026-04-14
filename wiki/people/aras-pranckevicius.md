@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 引擎工程师]
 date: 2026-04-14
-sources: 3
+sources: 7
 ---
 
 # Aras Pranckevičius
@@ -23,9 +23,18 @@ sources: 3
 - [[compute-vs-raster-points]]
 - [[image-resampling-filters]]
 - [[rapidhash]]
+- [[pcg3d-hash]]
+- [[worley-voronoi-noise]]
+- [[lossless-float-image-compression]]
+- [[openexr-format]]
+- [[meshoptimizer-vertex-codec]]
 
 ## Sources
 
 - [[sources/aras-rapidhash-unity-port]]
 - [[sources/aras-gpu-point-rasterization]]
 - [[sources/aras-blender-vse-image-filtering]]
+- [[sources/aras-more-hash-function-tests]]
+- [[sources/aras-voronoi-hashing-osl]]
+- [[sources/aras-lossless-float-image-compression]]
+- [[sources/aras-openexr-vs-tinyexr]]

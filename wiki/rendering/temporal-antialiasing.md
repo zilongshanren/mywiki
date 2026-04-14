@@ -63,7 +63,9 @@ TAA 被诟病「整个画面都在糊」——这是事实。它是一个**妥�
 - [[taa-history-rectification]]
 - [[rasterization]]
 - [[emilio-lopez-ros]]
+- [[temporal-supersampling]] — Wronski 对 AC4 TAA 的祖师级复盘，覆盖 motion vector pipeline 的全部踩坑
 
 ## Sources
 
 - [[sources/elopezr-taa-holy-trail]]
+- [[sources/bartwronski-temporal-supersampling]]

@@ -1,0 +1,118 @@
+{
+  "batch_id": "batch-w13-ak",
+  "agent_note": "bartwronski.com 2014 年系列：SSR 复盘、TAA/时域超采样祖师文、GCN 占用率深度解析。跳过 2 篇意见类（数学工具箱、DCC workflow）。新增 5 个概念页（2 rendering + 2 computer-systems + 1 alias）和 3 个源摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-01-19_on-pursuit-of-good-free-mathematics-toolbox.md",
+      "status": "skipped_offtopic",
+      "reason": "作者对免费数学软件（Octave/Maxima/Sage 等）的个人意见，没有图形 / 渲染 / 系统技术实质，不适合入库"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-01-25_the-future-of-screenspace-reflections.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-future-of-ssr",
+      "title": "The future of screenspace reflections"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-02-25_why-big-game-studios-usually-use-single-main-3d-software-env.md",
+      "status": "skipped_offtopic",
+      "reason": "作者对大厂为什么偏好单一 DCC 工具链（Max/Maya/Modo）的工作流意见，不是技术文章"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-03-15_temporal-supersampling-and-antialiasing.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-temporal-supersampling",
+      "title": "Temporal supersampling and antialiasing"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-03-27_gcn-two-ways-of-latency-hiding-and-wave-occupancy.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-gcn-latency-hiding",
+      "title": "GCN – two ways of latency hiding and wave occupancy"
+    }
+  ],
+  "concepts_created": [
+    "screenspace-reflections",
+    "temporal-supersampling",
+    "gcn-wave-occupancy",
+    "gpu-latency-hiding"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-future-of-ssr",
+    "bartwronski-temporal-supersampling",
+    "bartwronski-gcn-latency-hiding"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "replace_line",
+      "match": "sources: 4",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bartwronski-future-of-ssr]]\n- [[sources/bartwronski-temporal-supersampling]]\n- [[sources/bartwronski-gcn-latency-hiding]]"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[screenspace-reflections]]\n- [[temporal-supersampling]]\n- [[temporal-antialiasing]]\n- [[gcn-wave-occupancy]]\n- [[gpu-latency-hiding]]"
+    },
+    {
+      "file": "wiki/rendering/temporal-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-supersampling]] — Wronski 对 AC4 TAA 的祖师级复盘，覆盖 motion vector pipeline 的全部踩坑"
+    },
+    {
+      "file": "wiki/rendering/temporal-antialiasing.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bartwronski-temporal-supersampling]]"
+    },
+    {
+      "file": "wiki/rendering/motion-vectors.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-supersampling]] — Wronski 记录了 AC4 把所有物体 motion vectors 做对所付出的工程代价"
+    },
+    {
+      "file": "wiki/rendering/motion-vectors.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bartwronski-temporal-supersampling]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[screenspace-reflections]] | Wronski 的 SSR 落地复盘：三类先天缺陷与稳定化技术栈 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[temporal-supersampling]] | 把超采样分摊到连续多帧的一般化框架，TAA 是其特例 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gcn-wave-occupancy]] | GCN 波前占用率：VGPR 预算、何时重要、何时反而害人 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gpu-latency-hiding]] | GPU 用 ILP 与 TLP 两条互斥路径隐藏内存延迟 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-future-of-ssr]] | Wronski：屏幕空间反射的 Good / Bad / Ugly（AC4 复盘） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-temporal-supersampling]] | Wronski：时域超采样与 TAA 的祖师级长文（AC4 实战） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-gcn-latency-hiding]] | Wronski：GCN 两种延迟隐藏机制与 wave occupancy |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | batch-w13-ak Wronski 2014 系列（SSR / TAA / GCN）\n\nWorker AK 处理 bartwronski.com 2014 年 5 篇，ingest 3 篇（future-of-SSR、temporal-supersampling、GCN latency hiding），跳过 2 篇意见类。新增 4 个概念页：[[screenspace-reflections]]、[[temporal-supersampling]]、[[gcn-wave-occupancy]]、[[gpu-latency-hiding]]；3 个源摘要；给 [[bartosz-wronski]] 增补 3 条 source 与概念引用；给 [[temporal-antialiasing]] 与 [[motion-vectors]] 增补 Wronski 祖师文引用。"
+}

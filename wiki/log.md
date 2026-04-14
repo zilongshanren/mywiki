@@ -221,3 +221,15 @@ Patch：[[early-z-late-z]] 补 Conservative Depth 相关链接与新 source；[[
 ## [2026-04-14] ingest | Wave-12 Worker AJ (momentsingraphics.de Peters papers ×5)
 
 处理 Christoph Peters 博客上的 5 个条目：3 篇论文摘要页（Moment Shadow Mapping I3D 2015、Trigonometric Moment Transient Imaging SGA 2015、Beyond Hard Shadows I3D 2016）全部 ingest；2 篇 meta（about、publication-list）跳过。新增 2 概念页 moment-shadow-mapping、trigonometric-moment-transient-imaging，3 source 摘要。christoph-peters 人物页通过 patch 追加新贡献行与 source 链接；shadow-mapping-basics 追加到 MSM 的相关链接。全部内容围绕 Peters 的「矩方法」统一母题——把带界信号压成几阶矩、用经典矩问题闭式解在 GPU 上重建。
+
+## [2026-04-14] ingest | batch-w13-ak Wronski 2014 系列（SSR / TAA / GCN）
+
+Worker AK 处理 bartwronski.com 2014 年 5 篇，ingest 3 篇（future-of-SSR、temporal-supersampling、GCN latency hiding），跳过 2 篇意见类。新增 4 个概念页：[[screenspace-reflections]]、[[temporal-supersampling]]、[[gcn-wave-occupancy]]、[[gpu-latency-hiding]]；3 个源摘要；给 [[bartosz-wronski]] 增补 3 条 source 与概念引用；给 [[temporal-antialiasing]] 与 [[motion-vectors]] 增补 Wronski 祖师文引用。
+
+## [2026-04-14] ingest | Wave-13 Worker AL (aras-p.info ×5)
+
+处理 5 篇 aras-p.info 文章，ingest 4 篇技术稿、跳过 1 篇 blog list meta 页。新增 5 概念页（pcg3d-hash、worley-voronoi-noise、lossless-float-image-compression、openexr-format、meshoptimizer-vertex-codec）、4 source 摘要；为已存在的 aras-pranckevicius 与 non-cryptographic-hash 补链接与历史背景。
+
+## [2026-04-14] ingest | Wave-13 Worker AM (raphlinus.github.io ×5)
+
+处理 Raph Levien 博客 5 篇。跳过 2017 Recurse 个人项目清单；2018 Direct2D smooth resize 文章作为已有 smooth-window-resize 概念的 Windows 侧深挖，创建 source summary + 概念页补丁，不重复概念页；新增 3 个概念页：gpgpu-string-unescaping（monoid 同态 + parallel prefix scan 并行化状态机）、gpgpu-json-parsing（scan/scatter/sort 绕过栈处理 Dyck 语言）、ecs-for-rust-ui（xi-win-ui 的整数 id + state splitting + data flow 三板斧）。

@@ -51,7 +51,9 @@ velocity 本身也是 aliased 的——它和深度、stencil 一样，在几何
 - [[taa-history-rectification]]
 - [[mvp-transform]]
 - [[coordinate-spaces]]
+- [[temporal-supersampling]] — Wronski 记录了 AC4 把所有物体 motion vectors 做对所付出的工程代价
 
 ## Sources
 
 - [[sources/elopezr-taa-holy-trail]]
+- [[sources/bartwronski-temporal-supersampling]]

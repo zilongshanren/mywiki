@@ -48,6 +48,7 @@ Raph 在 2020 年说过一句冷静的话：**反应式 UI 在 Rust 里可能永
 - [[rust-gui-ecosystem]]
 - [[smooth-window-resize]]
 - [[raph-linus]]
+- [[ecs-for-rust-ui]] — Druid 更早的原型 xi-win-ui 的「类 ECS」架构，整数 id + state splitting + data flow 的组合拳
 
 ## Sources
 

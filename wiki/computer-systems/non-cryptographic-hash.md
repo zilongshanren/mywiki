@@ -1,7 +1,7 @@
 ---
 tags: [哈希, 性能, simd]
 date: 2026-04-14
-sources: 1
+sources: 3
 ---
 
 # 非加密哈希函数（Non-Cryptographic Hash）
@@ -14,6 +14,10 @@ Aras Pranckevičius 在 2016 年做过一次大规模评测。十年后回看，
 
 - **xxHash**（2014）→ **XXH3**（2020）：xxHash 几乎成了「现代非加密哈希」的代名词，XXH3 是它针对小输入和 SIMD 重写的版本。
 - **wyhash**（2020+）→ **rapidhash**（2024+）：wyhash 一度在质量榜单上压过 XXH3；它的作者后来推出了 [[rapidhash]] 作为后继，是当前最快的通用 64 位哈希之一。
+
+这一演进的起点可以回到 Aras 在 2016 年做的第一次横向评测：当时 xxHash、CityHash、FarmHash、SpookyHash、Murmur、mum-hash 等都还健在，结论是「64 位系统默认 CityHash64、32 位系统默认 xxHash32、短字符串 FNV-1a」。那次测试也暴露了几个日后反复出现的问题：32 位目标上 64 位哈希会掉一个数量级，FarmHash 与 mum-hash 在不同编译器下哈希值不一致（不能跨平台 checksum），Murmur/Spooky 在依赖非对齐读取的平台上会悄悄算错。
+
+另一条演进线是「专用形态」的哈希。程序化噪声场景（Worley/[[worley-voronoi-noise|Voronoi]]）需要 3D→3D 的整数哈希，以前只能拿 Jenkins Lookup3「拼三次」凑出来；2020 年 JCGT 论文里的 [[pcg3d-hash|PCG3D]] 直接给了一个紧凑专用版，实测快 4 倍。这也是老哈希函数的一个共性教训：1990 年代它们是为「乘法很贵」的假设优化的，今天的 CPU/GPU 上这条假设已经反转。
 
 ## 评测维度
 
@@ -47,7 +51,11 @@ rapidhash 的核心循环依赖 64×64→128 的整数乘法（`umul128`/`__uint
 - [[bottleneck-analysis]]
 - [[cpu-performance-formula]]
 - [[locality-principle]]
+- [[pcg3d-hash]]
+- [[worley-voronoi-noise]]
 
 ## Sources
 
 - [[sources/aras-rapidhash-unity-port]]
+- [[sources/aras-more-hash-function-tests]]
+- [[sources/aras-voronoi-hashing-osl]]

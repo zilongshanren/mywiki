@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 146
+sources: 157
 ---
 
 # 知识库索引
@@ -43,6 +43,7 @@ sources: 146
 | [[c-interface-oop]] | C 语言的接口表 + data 组合式 OOP（云风） |
 | [[simple-cpp-mark-sweep-gc]] | 200 行的 C++ 标记清除 GC 玩具（云风） |
 | [[c-serialization-metadata]] | 基于自定义元信息的 C 结构序列化与图合并算法（云风） |
+| [[ecs-for-rust-ui]] | Rust UI 的「类 ECS」架构：整数 id + state splitting + data flow 对抗借用检查器（Raph Levien 2018）|
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -100,6 +101,9 @@ CAQA + CSAPP 的底层视角。
 | [[calling-conventions-x86]] | x86 32 位 cdecl / stdcall / fastcall 三路汇编 diff |
 | [[linux-graphics-stack-dri]] | Linux 图形栈 DRI/DRM/KMS 的命名迷雾与真实分层 |
 | [[malloc-wrapper-debug]] | 给 malloc 加壳：狗牌、泄漏检测与 __FILE__/__LINE__ 定位 |
+| [[gcn-wave-occupancy]] | GCN 波前占用率：VGPR 预算、何时重要、何时反而害人 |
+| [[gpu-latency-hiding]] | GPU 用 ILP 与 TLP 两条互斥路径隐藏内存延迟 |
+| [[meshoptimizer-vertex-codec]] | 非 LZ 的 delta/预测顶点压缩器，在浮点图像上也赢 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -270,6 +274,14 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[deferred-alpha-lighting]] | Deferred 渲染下给透明物打光的四条路 |
 | [[moment-shadow-mapping]] | 四阶矩 + Hausdorff 矩问题闭式解的可过滤硬阴影；2016 扩展到体积/软阴影/半透明 |
 | [[trigonometric-moment-transient-imaging]] | 三角矩问题闭式解把 AMCW lidar 的瞬态成像推到瞬态视频级速度 |
+| [[screenspace-reflections]] | Wronski 的 SSR 落地复盘：三类先天缺陷与稳定化技术栈 |
+| [[temporal-supersampling]] | 把超采样分摊到连续多帧的一般化框架，TAA 是其特例 |
+| [[pcg3d-hash]] | GPU 友好的 3D→3D 整数哈希，替换 1997 年的 Jenkins Lookup3 |
+| [[worley-voronoi-noise]] | Worley / Voronoi 噪声节点的原理与哈希依赖 |
+| [[lossless-float-image-compression]] | 多层浮点图像的无损压缩评测：EXR vs JPEG-XL vs meshoptimizer |
+| [[openexr-format]] | OpenEXR 格式、压缩模式与官方库 vs tinyexr 选型 |
+| [[gpgpu-string-unescaping]] | 状态机作为 monoid 同态：parallel prefix scan 并行化 JSON 字符串反转义 |
+| [[gpgpu-json-parsing]] | Dyck 语言的 scan + scatter + sort 流水线：把 JSON 括号结构搬到 GPU 并绕过栈 |
 
 ## 经典案例（wiki/examples/）
 
@@ -490,6 +502,17 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/peters-moment-shadow-mapping]] | Peters & Klein：四阶矩阴影贴图原论文（I3D 2015） |
 | [[sources/peters-trigonometric-moment-transient-imaging]] | Peters et al.：三角矩 + AMCW lidar 的快速瞬态成像（SGA 2015） |
 | [[sources/peters-beyond-hard-shadows-msm]] | Peters et al.：MSM 扩展到单次散射/软阴影/半透明遮挡（I3D 2016） |
+| [[sources/bartwronski-future-of-ssr]] | Wronski：屏幕空间反射的 Good / Bad / Ugly（AC4 复盘） |
+| [[sources/bartwronski-temporal-supersampling]] | Wronski：时域超采样与 TAA 的祖师级长文（AC4 实战） |
+| [[sources/bartwronski-gcn-latency-hiding]] | Wronski：GCN 两种延迟隐藏机制与 wave occupancy |
+| [[sources/aras-more-hash-function-tests]] | Aras 2016：非加密哈希横向评测（多平台多尺寸） |
+| [[sources/aras-voronoi-hashing-osl]] | Aras 2025：Blender Voronoi 节点换 PCG3D 哈希的完整故事 |
+| [[sources/aras-lossless-float-image-compression]] | Aras 2025：EXR/HTJ2K/JPEG-XL/meshoptimizer 浮点图像压缩横评 |
+| [[sources/aras-openexr-vs-tinyexr]] | Aras 2025：tinyexr vs OpenEXR 官方库的体积、速度、特性对比 |
+| [[sources/raphlinus-smooth-resize-direct2d]] | Raph Levien 2018：Direct2D smooth resize 悬赏与三路径失败分析 |
+| [[sources/raphlinus-gpu-unescaping]] | Raph Levien 2018：用 monoid 同态把字符串反转义搬到 GPGPU |
+| [[sources/raphlinus-ecs-ui-rust]] | Raph Levien 2018：xi-win-ui 的「类 ECS」Rust GUI 架构笔记 |
+| [[sources/raphlinus-gpu-json-parsing]] | Raph Levien 2018：scan + scatter + sort 并行解析 Dyck 语言 |
 
 ## 元（wiki/meta/）
 

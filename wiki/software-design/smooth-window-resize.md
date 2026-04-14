@@ -1,7 +1,7 @@
 ---
 tags: [gui, 窗口系统, 桌面, 同步]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 平滑窗口缩放（Smooth Window Resize）
@@ -21,6 +21,8 @@ Tristan Hume 2019 年总结的配方是：用 `CAMetalLayer` 而不是 `MTKView`
 Windows 的新 flip model 是高性能路径（让 DWM 直接拿到 app 的 swapchain 表面、支持 wait object 做 latency 优化），代价是内容与窗口绘制**去同步化**。旧的 `DXGI_SWAP_EFFECT_SEQUENTIAL` 与 D2D `HwndRenderTarget` 走"redirection buffer"——先把整个窗口内容拷进一块由 DWM 管理的缓冲区，天然与窗口帧同步，所以不抖。
 
 Raph 在 xi-win 里给出的可行配方是**双模式切换**：稳定状态跑 flip model 拿性能，收到 `WM_ENTERSIZEMOVE` 时临时切回 redirection buffer 路径，收到 `WM_EXITSIZEMOVE` 时再切回来。Direct3D 上类似地可以用 sequential 呈现模式代替 flip。
+
+[[raph-linus]] 2018 年在 xi-win 遇到这个问题时做过系统性的尝试并把三条路都走了一遍。**HWND render target** 走老的 redirection buffer 路径——resize 时最平滑，但无法指定 GPU，在 Optimus 混合显卡 + 外接显示器上会出现对角线撕裂。**DXGI_SWAP_EFFECT_SEQUENTIAL** 的好处是可以编程选择 adapter（优先独显），resize 的同步行为和 HWND 接近，代价是 incremental present 退化成全表面拷贝——指定 dirty rect 似乎被忽略。**Flip swap effect** 是官方推荐的「最先进」路径，但它的 present 时机和 WM_SIZE 派发完全没有同步点；他实验出来的近似配方是 Present(SyncInterval=0) 后紧接 DwmFlush，让下一帧对齐到 vsync 之后一点——在高性能组合（独显 + 外接）能工作，在弱组合（集成显卡 + 笔记本屏）失败。他为这个问题开出 2500 美元的悬赏 PR，并坦承愿意为一个令人信服的「做不到」证明付一半赏金。
 
 ## 事件循环的同步性
 
@@ -43,3 +45,4 @@ immediate mode GUI（如 dear imgui）常用的"layout 和 draw 在同一次调�
 ## Sources
 
 - [[sources/raphlinus-smooth-resize-test]]
+- [[sources/raphlinus-smooth-resize-direct2d]]

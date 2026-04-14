@@ -57,6 +57,7 @@ Rust GUI 不一定要收敛到**单一**架构。可能最终会是多峰稳态�
 - [[smooth-window-resize]]
 - [[raph-linus]]
 - [[fearless-simd]]
+- [[ecs-for-rust-ui]] — 2018 年 xi-win-ui 的原始架构笔记
 
 ## Sources
 

@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w13-am",
+  "agent_note": "Raph Levien batch: skip 2017 Recurse personal log; extend existing smooth-window-resize with 2018 Direct2D deep-dive patch; ingest 3 new concept pages (gpgpu-string-unescaping, gpgpu-json-parsing under rendering/; ecs-for-rust-ui under software-design/).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raphlinus.github.io/2017-10-12_what-im-working-on-at-recurse-center.md",
+      "status": "skipped_offtopic",
+      "reason": "personal project update at Recurse Center (Ghilbert proof system, Apple //e tinkering, crossword SAT solver, snowflake hash) — no single technical thesis, off-topic per orchestrator's explicit instruction"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-04-08_smooth-resize-in-direct2d.md",
+      "status": "patched_existing",
+      "source_slug": "raphlinus-smooth-resize-direct2d",
+      "title": "Smooth resize in Direct2D",
+      "note": "Extends existing smooth-window-resize concept with Direct2D-specific HWND vs Sequential vs Flip deep-dive. New source summary created; concept page updated via patch only."
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-04-25_a-sketch-of-string-unescaping-on-gpgpu.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-gpu-unescaping",
+      "title": "A sketch of string unescaping on GPGPU",
+      "new_concept": "gpgpu-string-unescaping"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-05-08_entity-component-system-architecture-for-ui-in-rust.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-ecs-ui-rust",
+      "title": "Entity-Component-System architecture for UI in Rust",
+      "new_concept": "ecs-for-rust-ui"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-05-10_towards-gpgpu-json-parsing.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-gpu-json-parsing",
+      "title": "Towards GPGPU JSON parsing",
+      "new_concept": "gpgpu-json-parsing"
+    }
+  ],
+  "concepts_created": [
+    "gpgpu-string-unescaping",
+    "gpgpu-json-parsing",
+    "ecs-for-rust-ui"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "raphlinus-smooth-resize-direct2d",
+    "raphlinus-gpu-unescaping",
+    "raphlinus-ecs-ui-rust",
+    "raphlinus-gpu-json-parsing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/software-design/smooth-window-resize.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/software-design/smooth-window-resize.md",
+      "operation": "append_to_section",
+      "section": "## Windows 的药方：flip model vs redirection buffer",
+      "content": "\n[[raph-linus]] 2018 年在 xi-win 遇到这个问题时做过系统性的尝试并把三条路都走了一遍。**HWND render target** 走老的 redirection buffer 路径——resize 时最平滑，但无法指定 GPU，在 Optimus 混合显卡 + 外接显示器上会出现对角线撕裂。**DXGI_SWAP_EFFECT_SEQUENTIAL** 的好处是可以编程选择 adapter（优先独显），resize 的同步行为和 HWND 接近，代价是 incremental present 退化成全表面拷贝——指定 dirty rect 似乎被忽略。**Flip swap effect** 是官方推荐的「最先进」路径，但它的 present 时机和 WM_SIZE 派发完全没有同步点；他实验出来的近似配方是 Present(SyncInterval=0) 后紧接 DwmFlush，让下一帧对齐到 vsync 之后一点——在高性能组合（独显 + 外接）能工作，在弱组合（集成显卡 + 笔记本屏）失败。他为这个问题开出 2500 美元的悬赏 PR，并坦承愿意为一个令人信服的「做不到」证明付一半赏金。"
+    },
+    {
+      "file": "wiki/software-design/smooth-window-resize.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/raphlinus-smooth-resize-direct2d]]"
+    },
+    {
+      "file": "wiki/software-design/reactive-ui-rust.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-for-rust-ui]] — Druid 更早的原型 xi-win-ui 的「类 ECS」架构，整数 id + state splitting + data flow 的组合拳"
+    },
+    {
+      "file": "wiki/software-design/rust-gui-ecosystem.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-for-rust-ui]] — 2018 年 xi-win-ui 的原始架构笔记"
+    },
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-for-rust-ui]] — Raph Levien 把 ECS 想法借到 Rust GUI 的 hybrid 架构，与游戏 ECS 的 database 模型形成对照"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Smooth resize in Direct2D | [[smooth-window-resize]]（Windows 侧 HWND / Sequential / Flip 路径细节）|\n| A sketch of string unescaping on GPGPU | [[gpgpu-string-unescaping]] |\n| ECS architecture for UI in Rust | [[ecs-for-rust-ui]] |\n| Towards GPGPU JSON parsing | [[gpgpu-json-parsing]] |"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpgpu-string-unescaping]]\n- [[gpgpu-json-parsing]]\n- [[ecs-for-rust-ui]]"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/raphlinus-smooth-resize-direct2d]]\n- [[sources/raphlinus-gpu-unescaping]]\n- [[sources/raphlinus-ecs-ui-rust]]\n- [[sources/raphlinus-gpu-json-parsing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[ecs-for-rust-ui]] | Rust UI 的「类 ECS」架构：整数 id + state splitting + data flow 对抗借用检查器（Raph Levien 2018）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpgpu-string-unescaping]] | 状态机作为 monoid 同态：parallel prefix scan 并行化 JSON 字符串反转义 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpgpu-json-parsing]] | Dyck 语言的 scan + scatter + sort 流水线：把 JSON 括号结构搬到 GPU 并绕过栈 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-smooth-resize-direct2d]] | Raph Levien 2018：Direct2D smooth resize 悬赏与三路径失败分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-gpu-unescaping]] | Raph Levien 2018：用 monoid 同态把字符串反转义搬到 GPGPU |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-ecs-ui-rust]] | Raph Levien 2018：xi-win-ui 的「类 ECS」Rust GUI 架构笔记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-gpu-json-parsing]] | Raph Levien 2018：scan + scatter + sort 并行解析 Dyck 语言 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-13 Worker AM (raphlinus.github.io ×5)\n\n处理 Raph Levien 博客 5 篇。跳过 2017 Recurse 个人项目清单；2018 Direct2D smooth resize 文章作为已有 smooth-window-resize 概念的 Windows 侧深挖，创建 source summary + 概念页补丁，不重复概念页；新增 3 个概念页：gpgpu-string-unescaping（monoid 同态 + parallel prefix scan 并行化状态机）、gpgpu-json-parsing（scan/scatter/sort 绕过栈处理 Dyck 语言）、ecs-for-rust-ui（xi-win-ui 的整数 id + state splitting + data flow 三板斧）。"
+}

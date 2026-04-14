@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 3
+sources: 7
 ---
 
 # Raph Levien
@@ -33,6 +33,10 @@ sources: 3
 | Towards fearless SIMD | [[fearless-simd]] |
 | The smooth resize test | [[smooth-window-resize]] |
 | Rust 2021: GUI | [[rust-gui-ecosystem]]、[[reactive-ui-rust]] |
+| Smooth resize in Direct2D | [[smooth-window-resize]]（Windows 侧 HWND / Sequential / Flip 路径细节）|
+| A sketch of string unescaping on GPGPU | [[gpgpu-string-unescaping]] |
+| ECS architecture for UI in Rust | [[ecs-for-rust-ui]] |
+| Towards GPGPU JSON parsing | [[gpgpu-json-parsing]] |
 
 ## 相关
 
@@ -40,9 +44,16 @@ sources: 3
 - [[reactive-ui-rust]]
 - [[smooth-window-resize]]
 - [[fearless-simd]]
+- [[gpgpu-string-unescaping]]
+- [[gpgpu-json-parsing]]
+- [[ecs-for-rust-ui]]
 
 ## Sources
 
 - [[sources/raphlinus-fearless-simd]]
 - [[sources/raphlinus-smooth-resize-test]]
 - [[sources/raphlinus-rust-2021-gui]]
+- [[sources/raphlinus-smooth-resize-direct2d]]
+- [[sources/raphlinus-gpu-unescaping]]
+- [[sources/raphlinus-ecs-ui-rust]]
+- [[sources/raphlinus-gpu-json-parsing]]

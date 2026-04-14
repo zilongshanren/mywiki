@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, 图像处理]
 date: 2026-04-14
-sources: 4
+sources: 7
 ---
 
 # Bart Wronski（Bartosz Wroński）
@@ -32,6 +32,11 @@ sources: 4
 - [[iir-filter-deconvolution]]
 - [[poisson-disk-sampling]]
 - [[gpu-printf-debugging]]
+- [[screenspace-reflections]]
+- [[temporal-supersampling]]
+- [[temporal-antialiasing]]
+- [[gcn-wave-occupancy]]
+- [[gpu-latency-hiding]]
 
 ## Sources
 
@@ -39,3 +44,6 @@ sources: 4
 - [[sources/bartwronski-iir-deconvolution]]
 - [[sources/bartwronski-poisson-sampling]]
 - [[sources/bartwronski-csharprenderer-debug]]
+- [[sources/bartwronski-future-of-ssr]]
+- [[sources/bartwronski-temporal-supersampling]]
+- [[sources/bartwronski-gcn-latency-hiding]]
