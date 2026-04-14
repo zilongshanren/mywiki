@@ -18,6 +18,7 @@ aos-vs-soa
 apoorva-joshi
 applicative-vs-normal-order
 aras-pranckevicius
+async-compute
 async-offline-culling
 automatic-differentiation
 avoid-unsigned-types
@@ -90,6 +91,7 @@ custom-srp
 cyanilux
 cycle-detection-floyd-brent
 d3d12-resource-binding
+d3d12-work-graphs
 daniel-ilett
 data-driven-architecture
 data-structure-invariants
@@ -150,6 +152,7 @@ game-physics-engine
 game-resource-pack-format
 gameknife
 garbage-collector
+gaussian-splatting-web
 gcn-wave-occupancy
 gkengine
 gknext-renderer
@@ -234,6 +237,7 @@ md5-model-format
 memory-hierarchy
 mesh-warps-and-tessellation
 meshes-of-navigation-recast
+meshlets-and-mesh-shaders
 meshoptimizer-vertex-codec
 metal-3d-rendering-pipeline
 metal-api-overview
@@ -289,6 +293,7 @@ ping-pong-surfaces
 pinhole-camera
 planar-mapping
 planar-rotation-dct
+playcanvas-webgpu-editor
 poisson-disk-sampling
 pokemon-terastallize-shader
 polynomial-root-finding-gpu
@@ -339,6 +344,7 @@ separable-gaussian-blur
 shader-code-golfing
 shader-color-interpolation
 shader-graph-lighting-primer
+shader-instruction-cost
 shader-prototyping-tools
 shader-vector-math-primer
 shaderlab-hlsl-basics
@@ -374,6 +380,7 @@ strategy-vs-switch
 stratified-sampling
 stylized-water-shader
 substitution-model
+supersplat-pwa
 surface-angle-silhouette
 sussman-abelson
 swap-and-pop-removal

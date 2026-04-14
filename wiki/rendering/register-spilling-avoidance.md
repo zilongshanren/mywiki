@@ -1,7 +1,7 @@
 ---
 tags: [渲染, GPU, 着色器优化, 性能, 寄存器]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 寄存器溢出与规避（Register Spilling）
@@ -40,6 +40,11 @@ for (int i = 0; i != 6; ++i)
 ```
 
 如果循环真的按变量 `i` 执行，`i` 也不是编译期常量——也会触发 spill。解法：`[[unroll]]`，让编译器展开成 `sum += numbers[0]; sum += numbers[1]; ...`。
+
+Kostas Anagnostou 在 [[shader-instruction-cost]] 里给出了 ISA 级别的直接证据：GCN/RDNA 硬件指令的寄存器号是**编译期常数**，所以编译器对动态 VGPR 下标只有两条路——
+- **uniform 下标**：`v_movrels_b32` 以 `m0` 为相对偏移访问相邻 VGPR（相对便宜）；
+- **thread-variant 下标**：编译器**对每一个可能值做一次 cmp+cndmask**（`v_cmp_eq_i32 + v_cndmask_b32`），一个 4 元数组就是 4 遍。数组越大，展开越长——再大就只能 spill 到 local memory。
+这是 `[[unroll]]` 规则背后的硬件原因。
 
 ## 三条规避规则
 
@@ -85,7 +90,9 @@ Nsight 上的两个主要证据：
 - [[gpu-printf-debugging]]
 - [[sse-tricks]]
 - [[cache-friendliness]]
+- [[shader-instruction-cost]] — 同一类 ISA 展开现象的完整分类
 
 ## Sources
 
 - [[sources/peters-gpu-polynomial-roots]]
+- [[sources/interplay-hidden-shader-cost]]

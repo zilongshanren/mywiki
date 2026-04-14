@@ -1,0 +1,34 @@
+{
+  "batch_id": "batch-w34-cv",
+  "worker": "P8 Wiki Ingest Worker CV",
+  "items": [
+    {
+      "source": "raw/articles/jendrikillner.com/2024-01-07_graphics-programming-weekly-issue-321-january-7th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "链接聚合型周刊（Graphics Programming Weekly #321），无原创深度内容，按先前批次惯例跳过。"
+    },
+    {
+      "source": "raw/articles/jendrikillner.com/2024-01-14_graphics-programming-weekly-issue-322-january-14th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "链接聚合型周刊（Graphics Programming Weekly #322），无原创深度内容，按先前批次惯例跳过。"
+    },
+    {
+      "source": "raw/articles/jendrikillner.com/2024-01-21_graphics-programming-weekly-issue-323-january-21st-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "链接聚合型周刊（Graphics Programming Weekly #323），无原创深度内容，按先前批次惯例跳过。"
+    },
+    {
+      "source": "raw/articles/jendrikillner.com/2024-01-28_graphics-programming-weekly-issue-324-january-28th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "链接聚合型周刊（Graphics Programming Weekly #324），无原创深度内容，按先前批次惯例跳过。"
+    },
+    {
+      "source": "raw/articles/jendrikillner.com/2024-02-04_graphics-programming-weekly-issue-325-february-4th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "链接聚合型周刊（Graphics Programming Weekly #325），无原创深度内容，按先前批次惯例跳过。"
+    }
+  ],
+  "new_pages": [],
+  "updated_pages": [],
+  "notes": "全部 5 条均为 Jendrik Illner 的 Graphics Programming Weekly 链接聚合，按既定策略全部 skipped_offtopic。"
+}

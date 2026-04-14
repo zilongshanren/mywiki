@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 363
+sources: 371
 ---
 
 # 知识库索引
@@ -427,6 +427,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mipmap-generation-sampling]] | Mipmap 的 LOD 选择机制与 `texture2D` bias 参数的廉价 blur 用法 |
 | [[webgpu-intro]] | WebGPU/WGSL 入门：跨平台 + 显式 pipeline + 原生 compute shader |
 | [[async-offline-culling]] | 离线标注 + 异步粗筛 + 渲染精筛的大型场景剔除设计 |
+| [[playcanvas-webgpu-editor]] | PlayCanvas Editor 正式支持 WebGPU：视觉一致性优先 + beta 开关 |
+| [[supersplat-pwa]] | SuperSplat 0.17.1：compute 重写 2× 加速 + PWA 文件关联 |
+| [[gaussian-splatting-web]] | Web 上的 3DGS 工作流：压缩 PLY + SuperSplat + Editor 集成 |
+| [[d3d12-work-graphs]] | D3D12 work graphs：GPU 自己生产/消费任务的新管线，含 CPU 端 PSO、launch 模式、与 compute+indirect 的性能对比 |
+| [[shader-instruction-cost]] | shader 指令的三类隐藏成本：无原生实现、硬件非等价、外部资源依赖（含 atan2 展开、waterfall loop、LDS bank conflict） |
+| [[meshlets-and-mesh-shaders]] | mesh shader 管线 + meshlet 遮挡剔除：数据结构、threadgroup 调参、AS hi-z cull 的 −44% 实测 |
+| [[async-compute]] | D3D12 async compute 方法论：pairing 互补性、bubble 风险、pass 重排的免费收益 |
 
 ## 经典案例（wiki/examples/）
 
@@ -505,6 +512,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[cloudwu]] | 云风，skynet / ejoy2d 作者，前网易游戏引擎程序员 |
 | [[elias-daler]] | Elias Daler，独立游戏开发者，Re:creation / Edbr 引擎作者 |
 | [[marco-giordano]] | Marco Giordano（giordi91），自研 DX12/Vulkan 引擎作者，博客 A programmer's cave |
+| [[will-eastcott]] | PlayCanvas 联合创始人/CEO，WebGPU 与 3DGS 工具链主推者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -871,6 +879,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cloudwu-vfs-new-ideas]] | 云风：对 VFS "不变快照" 假设的反思 |
 | [[sources/cloudwu-ltask-rewrite]] | 云风：ltask 调度器重构，删掉独占线程服务 |
 | [[sources/cloudwu-ant-engine-mobile-optimization]] | 云风：移动端能耗优化与魔兽式场景剔除设想 |
+| [[sources/playcanvas-webgpu-editor]] | Eastcott：PlayCanvas Editor 正式支持 WebGPU 的工程公告 |
+| [[sources/playcanvas-supersplat-pwa]] | Eastcott：SuperSplat 0.17.1 的 2× 加速与 PWA 化 |
+| [[sources/playcanvas-editor-gaussian-splat]] | Eastcott：PlayCanvas Editor 原生集成 3D Gaussian Splat |
+| [[sources/interplay-workgraphs-intro]] | Kostas：work graph 入门 + shadow 三级分类实例 |
+| [[sources/interplay-workgraphs-performance]] | Kostas：work graph vs compute+indirect 在 SSSR 上慢 3× |
+| [[sources/interplay-hidden-shader-cost]] | Kostas：shader 指令 ISA 级别隐藏成本分类 |
+| [[sources/interplay-meshlets-mesh-shaders]] | Kostas：mesh shader + AS hi-z 遮挡剔除，St Miguel gbuffer −44% |
+| [[sources/interplay-async-compute]] | Kostas：async compute 的 pairing 方法论与 pass 重排收益 |
 
 ## 元（wiki/meta/）
 

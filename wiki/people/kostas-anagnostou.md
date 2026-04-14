@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 10
+sources: 15
 ---
 
 # Kostas Anagnostou
@@ -9,6 +9,8 @@ sources: 10
 英国图形程序员，博客 **Interplay of Light**（interplayoflight.wordpress.com）的作者。长期活跃在 D3D11 及之后的实时渲染实践线上，博客以简短、工程向的笔记为主——从 depth testing 的 API 细节、FX Composer / SharpDX 等原型工具对比，到 deferred shading、光照、GPU 调试等。他也是 Playground Games（Forza Horizon 系列）的高级图形工程师。
 
 对这个 wiki 而言，Anagnostou 早期（2013）的几篇博客是**图形程序员日常原型与调试工具栈**的一个样本切片：那是 XNA 式微、SharpDX 兴起、FX Composer 停更、Unity 被当作 shader prototyping 工具使用的过渡时期。
+
+他 2024–2025 年的博客集中在**现代 GPU 前沿**——D3D12 work graphs 的实操教程与性能调查、mesh shaders + meshlet 遮挡剔除、async compute 的 pairing 方法论、以及 shader 指令隐藏成本的 ISA 级别分析。这些文章把他从「工具链与原型」的早期身份推进到「现代 GPU-driven 管线观察者」的新阶段。
 
 ## 相关
 
@@ -32,6 +34,10 @@ sources: 10
 - [[deferred-sdf-rendering]] —— 2017 年把 SDF raymarch 结果写进 Unity G-Buffer + SV_Depth 的 hybrid 实验
 - [[multidraw-indirect-occlusion-culling]] —— 2018 年 GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch
 - [[hybrid-raytraced-shadows-reflections]] —— 2018 年用 compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射
+- [[d3d12-work-graphs]] —— 2024 年两篇 workgraph 教程 + 性能对比（SSSR 改造，发现比 compute+indirect 慢 3×，但结构上消除了 compaction/drain）
+- [[meshlets-and-mesh-shaders]] —— 2025 年在 St Miguel/Bistro 上做的 mesh shader + AS hi-z 遮挡剔除实测（gbuffer -44%、z-prepass -48%）
+- [[async-compute]] —— 2025 年关于 pairing 策略与 pass 重排的实操笔记
+- [[shader-instruction-cost]] —— 2025 年 ISA 级别分析 atan2/waterfall/LDS bank conflict 等隐藏成本
 
 ## Sources
 
@@ -59,3 +65,8 @@ sources: 10
 - [[sources/interplay-bgfx-gpu-driven-port]]
 - [[sources/interplay-digital-dragons-gpu-driven]]
 - [[sources/interplay-hybrid-raytraced-shadows-reflections]]
+- [[sources/interplay-workgraphs-intro]]
+- [[sources/interplay-workgraphs-performance]]
+- [[sources/interplay-hidden-shader-cost]]
+- [[sources/interplay-meshlets-mesh-shaders]]
+- [[sources/interplay-async-compute]]

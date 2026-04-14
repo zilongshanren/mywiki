@@ -1,0 +1,91 @@
+{
+  "batch_id": "batch-w34-cw",
+  "agent_note": "PlayCanvas blog ×5：跳过 2 篇（marketing + VSCode setup），整合 3 篇为 WebGPU + Gaussian Splat 双主线。新增 3 概念（playcanvas-webgpu-editor / supersplat-pwa / gaussian-splatting-web），1 人物（will-eastcott），3 source 摘要。对既有 webgpu-intro 追加 PlayCanvas Editor 落地 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-02-08_massive-upgrade-for-the-playcanvas-developer-site-playcanvas.md",
+      "status": "skipped_offtopic",
+      "reason": "marketing / site redesign 公告，无技术实质"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-04-15_using-visual-studio-code-with-playcanvas-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "VSCode 环境配置指南，属工具 setup 教程而非技术主题"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-04-18_build-webgpu-apps-today-with-playcanvas-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-webgpu-editor",
+      "title": "Build WebGPU Apps Today with PlayCanvas"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-05-22_a-faster-supersplat-with-pwa-support-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-pwa",
+      "title": "A Faster SuperSplat with PWA Support"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-06-05_create-3d-gaussian-splat-apps-with-the-playcanvas-editor-pla.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-editor-gaussian-splat",
+      "title": "Create 3D Gaussian Splat Apps with the PlayCanvas Editor"
+    }
+  ],
+  "concepts_created": [
+    "playcanvas-webgpu-editor",
+    "supersplat-pwa",
+    "gaussian-splatting-web"
+  ],
+  "people_created": [
+    "will-eastcott"
+  ],
+  "source_summaries_created": [
+    "playcanvas-webgpu-editor",
+    "playcanvas-supersplat-pwa",
+    "playcanvas-editor-gaussian-splat"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/webgpu-intro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[playcanvas-webgpu-editor]] —— 商业 web 引擎把 WebGPU 落地到 Editor 的工程路径\n- [[gaussian-splatting-web]] —— WebGPU compute 的第一个消费级落地（3DGS 工具链）\n- [[supersplat-pwa]]\n- [[will-eastcott]]"
+    },
+    {
+      "file": "wiki/rendering/webgpu-intro.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/playcanvas-webgpu-editor]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[playcanvas-webgpu-editor]] | PlayCanvas Editor 正式支持 WebGPU：视觉一致性优先 + beta 开关 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[supersplat-pwa]] | SuperSplat 0.17.1：compute 重写 2× 加速 + PWA 文件关联 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gaussian-splatting-web]] | Web 上的 3DGS 工作流：压缩 PLY + SuperSplat + Editor 集成 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[will-eastcott]] | PlayCanvas 联合创始人/CEO，WebGPU 与 3DGS 工具链主推者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-webgpu-editor]] | Eastcott：PlayCanvas Editor 正式支持 WebGPU 的工程公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-pwa]] | Eastcott：SuperSplat 0.17.1 的 2× 加速与 PWA 化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-editor-gaussian-splat]] | Eastcott：PlayCanvas Editor 原生集成 3D Gaussian Splat |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-34 Worker CW (blog.playcanvas.com ×5)\n\n处理 5 篇 PlayCanvas 博客：跳过 2 篇（2024-02 site redesign marketing、2024-04 VSCode setup 教程），整合 3 篇 WebGPU + 3DGS 工程公告。新增 3 概念页（playcanvas-webgpu-editor, supersplat-pwa, gaussian-splatting-web）、1 人物（will-eastcott）、3 source 摘要。对既有 [[webgpu-intro]] 追加 PlayCanvas Editor 落地相关交叉链接与 source 引用。"
+}

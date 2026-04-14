@@ -465,3 +465,11 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-33 Worker CU (cloudwu 2024/01-05 ×5)
 
 处理云风 2024 年 1-5 月的月度归档共 5 篇。4 篇围绕 Ant Engine 的技术笔记（开源宣言、VFS 重构设想、ltask 调度器重构、移动端能耗优化与大型场景剔除设想）全部 ingest，5 月那篇个人职业生涯告别信跳过。新增 4 个概念页：ant-engine / ltask-scheduler / mobile-energy-optimization / async-offline-culling，4 个 source 摘要。cloudwu 人物页与 game-engine-vfs 概念页通过 patch 扩写。
+
+## [2026-04-14] ingest | Wave-34 Worker CW (blog.playcanvas.com ×5)
+
+处理 5 篇 PlayCanvas 博客：跳过 2 篇（2024-02 site redesign marketing、2024-04 VSCode setup 教程），整合 3 篇 WebGPU + 3DGS 工程公告。新增 3 概念页（playcanvas-webgpu-editor, supersplat-pwa, gaussian-splatting-web）、1 人物（will-eastcott）、3 source 摘要。对既有 [[webgpu-intro]] 追加 PlayCanvas Editor 落地相关交叉链接与 source 引用。
+
+## [2026-04-14] ingest | Wave-34 Worker CX (interplayoflight.wordpress.com 2024-2025 现代 GPU 5 篇)
+
+处理 5 篇 Kostas Anagnostou 2024-2025 年的高价值现代 GPU 技术文章，全部 ingest。workgraphs 两篇合并为单一概念页 [[d3d12-work-graphs]]；另外三篇各自建页：[[shader-instruction-cost]]、[[meshlets-and-mesh-shaders]]、[[async-compute]]。新建 5 个 source 摘要。通过 patch 扩写 kostas-anagnostou 人物页与 register-spilling-avoidance（后者补充 VGPR 动态下标的 ISA 级别佐证）。4 个新概念、0 个人物、5 个源摘要、6 条 patch、9 条 index 行。

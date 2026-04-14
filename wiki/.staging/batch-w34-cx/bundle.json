@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w34-cx",
+  "agent_note": "Kostas Anagnostou 2024-2025 年 Interplay of Light 的 5 篇高价值现代 GPU 技术笔记。Work graphs 两篇（intro + performance part 2）整合为单个概念页 d3d12-work-graphs（含 CPU/HLSL 语法、launch 模式、backing memory、AMD ring buffer 硬件线索、与 compute+ExecuteIndirect 的性能对比）。另外三篇各自独立：shader-instruction-cost（三分类 ISA 隐藏成本，含 atan2 展开、quarter-rate transcendentals、waterfall loop、LDS bank conflict）、meshlets-and-mesh-shaders（meshlet 数据结构、meshoptimizer、AS hi-z 遮挡剔除、NVidia/AMD 尺寸建议矛盾）、async-compute（pairing 方法论、bubble 风险、SM 动态分配、pass 重排作为免费优化）。shader-instruction-cost 对已有的 register-spilling-avoidance 有补充价值——通过 patch 加入 VGPR 动态下标的 ISA 级别佐证。kostas-anagnostou 人物页已存在，通过 patch 扩写相关链接与 sources。不新建 people。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2024-06-29_a-quick-introduction-to-workgraphs.md",
+      "status": "ingested",
+      "source_slug": "interplay-workgraphs-intro",
+      "title": "A quick introduction to workgraphs"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2024-09-09_an-introduction-to-workgraphs-part-2-performance.md",
+      "status": "ingested",
+      "source_slug": "interplay-workgraphs-performance",
+      "title": "An introduction to workgraphs part 2: Performance"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-01-19_the-hidden-cost-of-shader-instructions.md",
+      "status": "ingested",
+      "source_slug": "interplay-hidden-shader-cost",
+      "title": "The hidden cost of shader instructions"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-05-05_meshlets-and-mesh-shaders.md",
+      "status": "ingested",
+      "source_slug": "interplay-meshlets-mesh-shaders",
+      "title": "Meshlets and Mesh Shaders"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-05-27_async-compute-all-the-things.md",
+      "status": "ingested",
+      "source_slug": "interplay-async-compute",
+      "title": "Async compute all the things"
+    }
+  ],
+  "concepts_created": [
+    "d3d12-work-graphs",
+    "shader-instruction-cost",
+    "meshlets-and-mesh-shaders",
+    "async-compute"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "interplay-workgraphs-intro",
+    "interplay-workgraphs-performance",
+    "interplay-hidden-shader-cost",
+    "interplay-meshlets-mesh-shaders",
+    "interplay-async-compute"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "# Kostas Anagnostou",
+      "content": "\n他 2024–2025 年的博客集中在**现代 GPU 前沿**——D3D12 work graphs 的实操教程与性能调查、mesh shaders + meshlet 遮挡剔除、async compute 的 pairing 方法论、以及 shader 指令隐藏成本的 ISA 级别分析。这些文章把他从「工具链与原型」的早期身份推进到「现代 GPU-driven 管线观察者」的新阶段。"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[d3d12-work-graphs]] —— 2024 年两篇 workgraph 教程 + 性能对比（SSSR 改造，发现比 compute+indirect 慢 3×，但结构上消除了 compaction/drain）\n- [[meshlets-and-mesh-shaders]] —— 2025 年在 St Miguel/Bistro 上做的 mesh shader + AS hi-z 遮挡剔除实测（gbuffer -44%、z-prepass -48%）\n- [[async-compute]] —— 2025 年关于 pairing 策略与 pass 重排的实操笔记\n- [[shader-instruction-cost]] —— 2025 年 ISA 级别分析 atan2/waterfall/LDS bank conflict 等隐藏成本"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-workgraphs-intro]]\n- [[sources/interplay-workgraphs-performance]]\n- [[sources/interplay-hidden-shader-cost]]\n- [[sources/interplay-meshlets-mesh-shaders]]\n- [[sources/interplay-async-compute]]"
+    },
+    {
+      "file": "wiki/rendering/register-spilling-avoidance.md",
+      "operation": "append_to_section",
+      "section": "## 典型触发模式",
+      "content": "\nKostas Anagnostou 在 [[shader-instruction-cost]] 里给出了 ISA 级别的直接证据：GCN/RDNA 硬件指令的寄存器号是**编译期常数**，所以编译器对动态 VGPR 下标只有两条路——\n- **uniform 下标**：`v_movrels_b32` 以 `m0` 为相对偏移访问相邻 VGPR（相对便宜）；\n- **thread-variant 下标**：编译器**对每一个可能值做一次 cmp+cndmask**（`v_cmp_eq_i32 + v_cndmask_b32`），一个 4 元数组就是 4 遍。数组越大，展开越长——再大就只能 spill 到 local memory。\n这是 `[[unroll]]` 规则背后的硬件原因。"
+    },
+    {
+      "file": "wiki/rendering/register-spilling-avoidance.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-instruction-cost]] — 同一类 ISA 展开现象的完整分类"
+    },
+    {
+      "file": "wiki/rendering/register-spilling-avoidance.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-hidden-shader-cost]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[d3d12-work-graphs]] | D3D12 work graphs：GPU 自己生产/消费任务的新管线，含 CPU 端 PSO、launch 模式、与 compute+indirect 的性能对比 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-instruction-cost]] | shader 指令的三类隐藏成本：无原生实现、硬件非等价、外部资源依赖（含 atan2 展开、waterfall loop、LDS bank conflict） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[meshlets-and-mesh-shaders]] | mesh shader 管线 + meshlet 遮挡剔除：数据结构、threadgroup 调参、AS hi-z cull 的 −44% 实测 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[async-compute]] | D3D12 async compute 方法论：pairing 互补性、bubble 风险、pass 重排的免费收益 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-workgraphs-intro]] | Kostas：work graph 入门 + shadow 三级分类实例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-workgraphs-performance]] | Kostas：work graph vs compute+indirect 在 SSSR 上慢 3× |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-hidden-shader-cost]] | Kostas：shader 指令 ISA 级别隐藏成本分类 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-meshlets-mesh-shaders]] | Kostas：mesh shader + AS hi-z 遮挡剔除，St Miguel gbuffer −44% |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-async-compute]] | Kostas：async compute 的 pairing 方法论与 pass 重排收益 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-34 Worker CX (interplayoflight.wordpress.com 2024-2025 现代 GPU 5 篇)\n\n处理 5 篇 Kostas Anagnostou 2024-2025 年的高价值现代 GPU 技术文章，全部 ingest。workgraphs 两篇合并为单一概念页 [[d3d12-work-graphs]]；另外三篇各自建页：[[shader-instruction-cost]]、[[meshlets-and-mesh-shaders]]、[[async-compute]]。新建 5 个 source 摘要。通过 patch 扩写 kostas-anagnostou 人物页与 register-spilling-avoidance（后者补充 VGPR 动态下标的 ISA 级别佐证）。4 个新概念、0 个人物、5 个源摘要、6 条 patch、9 条 index 行。"
+}

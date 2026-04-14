@@ -1,7 +1,7 @@
 ---
 tags: [渲染, gpu, api, webgpu, wgsl, 跨平台, compute]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # WebGPU 与 WGSL 入门
@@ -63,7 +63,12 @@ GameMaker 宣称会在 runtime 层把 GLSL 自动翻译成 WGSL，这也是大�
 - [[gpgpu-transform-feedback-ios]]
 - [[shaderlab-hlsl-basics]]
 - [[xor-shader-artist]]
+- [[playcanvas-webgpu-editor]] —— 商业 web 引擎把 WebGPU 落地到 Editor 的工程路径
+- [[gaussian-splatting-web]] —— WebGPU compute 的第一个消费级落地（3DGS 工具链）
+- [[supersplat-pwa]]
+- [[will-eastcott]]
 
 ## Sources
 
 - [[sources/xor-mini-webgpu]]
+- [[sources/playcanvas-webgpu-editor]]
