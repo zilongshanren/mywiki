@@ -52,6 +52,8 @@ sRGB 的 TRC 是近似 γ≈2.2 的分段幂函数，**代价是编码后的值�
 - [[oklab-color-space]] — 感知均匀色彩空间，混合 / 渐变时用
 - [[display-edid-colorspace]] — 从 EDID 读出显示器原生 gamut
 - [[bartosz-ciechanowski]]
+- [[color-banding]] — 量化精度不足在深色渐变上的可见性
+- [[perceptual-colormaps]] — 感知均匀 colormap 的科学可视化标准
 
 ## Sources
 

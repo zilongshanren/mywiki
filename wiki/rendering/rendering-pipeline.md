@@ -50,6 +50,8 @@ sources: 2
 - [[tbdr-vs-imr]]
 - [[overdraw]]
 - [[unity-procedural-mesh]] —— 用 Unity Mesh API 从零喂 vertex/index buffer 的最小例子
+- [[metal-api-overview]] —— Metal 如何用显式对象图把这条管线落到 iOS
+- [[cametal-layer-drawable]] —— iOS 上 swapchain 的落地形式
 
 ## Sources
 

@@ -1,0 +1,99 @@
+{
+  "batch_id": "batch-w10-ad",
+  "agent_note": "5 篇 blog.frost.kiwi。2 篇入库（color-banding、thermal-camera colormap），3 篇按协调指示跳过（joyo kanji 是日语学习，genshin anki 是 Anki 牌组分享，tunneling ssh over https 是网络基础设施）。frost-kiwi 人物页已存在，只加 source 链接。color-lut / color-space 概念页已存在，通过 patch 追加相关链接。新增 2 概念页：color-banding（高价值，色带理论 + 一行 GLSL + 五家业界对比）、perceptual-colormaps（matplotlib colormap → DaVinci Resolve .cube 烘焙流程 + 感知均匀色图科学可视化）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.frost.kiwi/2022-02-14_joyo-kanji-unicode-lists-and-the-horrors-of-cjk-regional-var.md",
+      "status": "skipped_offtopic",
+      "reason": "日语常用汉字表与 CJK Unicode 区域变体，属于语言学/字符编码主题，与图形/引擎/系统/语言实现无关。"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2022-05-03_genshin-impact-anki-deck.md",
+      "status": "skipped_offtopic",
+      "reason": "分享作者自制的原神日语学习 Anki 牌组，日语学习内容，非技术主题。"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2023-10-19_how-to-and-how-not-to-fix-color-banding.md",
+      "status": "ingested",
+      "source_slug": "frost-kiwi-color-banding",
+      "title": "How to (and how not to) fix color banding"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2024-03-01_thermal-camera-luts-and-colormaps-for-davinci-resolve.md",
+      "status": "ingested",
+      "source_slug": "frost-kiwi-thermal-colormaps",
+      "title": "Thermal Camera LUTs and colormaps for DaVinci Resolve"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2025-03-27_tunneling-ssh-over-https.md",
+      "status": "skipped_offtopic",
+      "reason": "通过 HTTPS 隧道透穿限制性代理跑 SSH 的网络运维技巧，属于 sysadmin / 网络基础设施主题，与图形/引擎/系统主题不相关。"
+    }
+  ],
+  "concepts_created": [
+    "color-banding",
+    "perceptual-colormaps"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "frost-kiwi-color-banding",
+    "frost-kiwi-thermal-colormaps"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[perceptual-colormaps]] — matplotlib 感知均匀 colormap 烘成 1D .cube LUT 给 DaVinci Resolve 热成像调色\n- [[color-banding]] — dither 去色带的理论与 Jimenez 一行 GLSL 噪声"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/frost-kiwi-thermal-colormaps]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-banding]] — 量化精度不足在深色渐变上的可见性\n- [[perceptual-colormaps]] — 感知均匀 colormap 的科学可视化标准"
+    },
+    {
+      "file": "wiki/rendering/dither-alpha-clipping.md",
+      "operation": "append_to_section",
+      "section": "## 和其他 dither 的关系",
+      "content": "- **[[color-banding|去色带 dither]]**——以量化步长的幅度叠加 Interleaved Gradient Noise 到渐变上，打散深色大面积 posterization。和 alpha dither 完全对称：这里是把量化阶梯恢复为连续感知，那里是把连续 alpha 量化成二值 discard。"
+    },
+    {
+      "file": "wiki/people/frost-kiwi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-banding]]\n- [[perceptual-colormaps]]"
+    },
+    {
+      "file": "wiki/people/frost-kiwi.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/frost-kiwi-color-banding]]\n- [[sources/frost-kiwi-thermal-colormaps]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-banding]]                     | 色带根源 + Jimenez 一行 GLSL dither + 大厂去带方案横评                            |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[perceptual-colormaps]]              | matplotlib 感知均匀 colormap 烘成 .cube 1D LUT 给 DaVinci Resolve |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/frost-kiwi-color-banding]] | Frost：一行 GLSL dither 消色带 + 五家业界实现横评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/frost-kiwi-thermal-colormaps]] | Frost：matplotlib colormap → DaVinci Resolve .cube 工具脚本 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-10 Worker AD (blog.frost.kiwi ×5)\n\n处理 5 篇 blog.frost.kiwi 文章。新增 2 概念页（color-banding、perceptual-colormaps）、2 source 摘要。跳过 3 篇（joyo-kanji 是日语学习，genshin impact anki deck 是 Anki 牌组分享，tunneling ssh over https 是网络运维）。最大亮点是 color-banding 长文——Jimenez 的一行 Interleaved Gradient Noise + 五家业界去带方案（Valve / Alien: Isolation / ReShade Deband / AE Ramp Scatter / KDE KWin blur + Windows Acrylic）横向拆解，加上一套相机翻拍 16-bit PNG 测屏幕真实位深的零成本自检法。perceptual-colormaps 把 matplotlib viridis 族和 DaVinci Resolve .cube 1D LUT 工作流打通，和 [[color-lut]] 游戏用法形成对称补充。frost-kiwi 人物页与 color-lut/color-space/dither-alpha-clipping 概念页通过 patch 追加相关链接与 source 引用。"
+}

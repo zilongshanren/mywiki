@@ -62,6 +62,7 @@ Catlike Coding 的 [[custom-srp]] 教程展示的是一种中间层设计：把�
 - [[buffer-renaming]] —— 老 API 的"深"与现代 API 的"浅"取舍
 - [[gpu-hazard-tracking]] —— 同一问题的深浅两种 API 设计
 - [[jasper-st-pierre]]
+- [[metal-api-overview]] —— Apple Metal 作为「抽象下界」的自我定位
 
 ## Sources
 

@@ -47,6 +47,9 @@ Dither 在 shader 里还有两个相邻用法：
 
 本质都是"用高频换低频"的同一个信号处理技巧——只不过这里被应用在 alpha 通道上。
 
+- **[[color-banding|去色带 dither]]**——以量化步长的幅度叠加 Interleaved Gradient Noise 到渐变上，打散深色大面积 posterization。和 alpha dither 完全对称：这里是把量化阶梯恢复为连续感知，那里是把连续 alpha 量化成二值 discard。
+
 ## Sources
 
 - [[sources/danielilett-dither-transparency]]
+- [[sources/simonschreibt-diablo3-trees]] —— Blizzard 用两张贴片 + alpha8 做 Diablo 3 树的案例，典型的 alpha cutout 替代高多边形几何

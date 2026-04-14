@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形]
 date: 2026-04-14
-sources: 2
+sources: 4
 ---
 
 # Jaruat Frost（frost.kiwi / Wladislav Artsimovich）
@@ -16,8 +16,12 @@ Wladislav Artsimovich，笔名 Jaruat Frost，博客 **FrostKiwi's Secrets**（b
 - [[analytical-antialiasing]]
 - [[aliasing]]
 - [[msaa-ssaa]]
+- [[color-banding]]
+- [[perceptual-colormaps]]
 
 ## Sources
 
 - [[sources/frost-kiwi-luts-in-video-games]]
 - [[sources/frost-kiwi-analytical-anti-aliasing]]
+- [[sources/frost-kiwi-color-banding]]
+- [[sources/frost-kiwi-thermal-colormaps]]

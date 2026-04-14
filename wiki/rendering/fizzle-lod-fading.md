@@ -46,6 +46,7 @@ fizzle 最大的槽点是近距离下能看到颗粒感。解决方案：
 - [[z-fighting]]
 - [[texture-dissolve]] —— 同样基于 `clip`，但是面向可见的 VFX 演出，不是 LOD 切换
 - [[dither-alpha-clipping]] —— 同样用 `clip(col.a - threshold)` 的技术在 Bayer 矩阵上的通用版本
+- [[normal-decal-edge-blending]] —— Fallout 3 的做法：直接在 LOD 里把 decal 壳删掉，作为最简单也最有效的 LOD 策略
 
 ## Sources
 

@@ -49,6 +49,7 @@ sources: 1
 - [[unity-grabpass-blur]] —— Unity GrabPass + 可分高斯模糊的入门实现
 - [[texture-encoded-state]] —— 把 per-pixel 时间戳/状态塞进纹理通道，供 fragment shader 消费
 - [[shader-vector-math-primer]]
+- [[metal-shading-language-basics]] —— MSL 的 fragment 函数限定符与 `[[stage_in]]` 插值语义
 
 ## Sources
 

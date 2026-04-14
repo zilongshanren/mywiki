@@ -25,13 +25,16 @@ buffer-renaming
 cache-friendliness
 cached-shadowmaps
 calling-conventions-x86
+cametal-layer-drawable
 change-amplification
 christoph-peters
+chromatic-aberration-post
 classitis
 classitis-in-games
 closure
 cognitive-load
 collision-detection-gjk-epa
+color-banding
 color-lut
 color-space
 compact-vertex-format
@@ -138,6 +141,8 @@ low-discrepancy-sequence
 matthaeus-chajdas
 max-slater
 memory-hierarchy
+metal-api-overview
+metal-shading-language-basics
 microfacet-brdf
 modular-design
 motion-vectors
@@ -146,6 +151,7 @@ mttf-reliability
 mvp-transform
 needlets
 non-cryptographic-hash
+normal-decal-edge-blending
 normal-map-blending
 obscurity
 occlusion-culling
@@ -153,7 +159,9 @@ oklab-color-space
 order-of-growth
 overdraw
 overview
+painted-foliage-bent-planes
 particle-custom-vertex-streams
+perceptual-colormaps
 perspective-correct-interpolation
 physically-based-shading
 pineda-edge-rasterization
@@ -162,6 +170,7 @@ planar-mapping
 poisson-disk-sampling
 polynomial-root-finding-gpu
 power-wall
+prebaked-corner-occlusion
 probabilistic-algorithms
 procedural-abstraction
 procedural-rendering-ps2
@@ -194,6 +203,7 @@ shaderlab-hlsl-basics
 shadow-mapping-basics
 shallow-modules
 shaping-functions
+simon-trumpler
 smooth-window-resize
 soft-real-time
 spectral-brdf
@@ -239,6 +249,7 @@ volumetric-fog-froxels
 volumetric-raymarching-intro
 volumetric-video-playback
 voxel-ambient-occlusion
+warren-moore
 xor-shader-artist
 z-buffer
 z-fighting

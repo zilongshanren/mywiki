@@ -37,6 +37,7 @@ ROTR 里 AO 通常是半分辨率计算的，最终要 upscale 回全分辨率�
 - [[depth-aware-upsampling]]
 - [[z-buffer]]
 - [[cache-friendliness]]
+- [[prebaked-corner-occlusion]] —— SSAO 时代之前的 lightmap / 顶点色烘焙 AO，以及 Sims 4 的手贴 AO mesh 补丁方案
 
 ## Sources
 

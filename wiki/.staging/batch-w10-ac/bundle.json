@@ -1,0 +1,131 @@
+{
+  "batch_id": "batch-w10-ac",
+  "agent_note": "simonschreibt.de 5 篇 Game Art Tricks 拆解文 (Deus Ex occlusion / Diablo 3 trees / Divine Divinity 2D reflection / Fallout 3 edges / Teleglitch RGB)。新增 4 个概念页 + 1 个人物页 + 5 个 source 摘要。全部 5 篇都是技术美术 / VFX 干货，无跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-2.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-deus-ex-occlusion",
+      "title": "Deus Ex: Occlusion"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-3.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-diablo3-trees",
+      "title": "Diablo 3: Trees"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-4.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-divine-divinity-reflection",
+      "title": "Divine Divinity: 2D Reflection"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-5.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-fallout3-edges",
+      "title": "Fallout 3: Worn Edges"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-6.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-teleglitch-rgb",
+      "title": "Teleglitch: RGB Flickering"
+    }
+  ],
+  "concepts_created": [
+    "prebaked-corner-occlusion",
+    "painted-foliage-bent-planes",
+    "normal-decal-edge-blending",
+    "chromatic-aberration-post"
+  ],
+  "people_created": ["simon-trumpler"],
+  "source_summaries_created": [
+    "simonschreibt-deus-ex-occlusion",
+    "simonschreibt-diablo3-trees",
+    "simonschreibt-divine-divinity-reflection",
+    "simonschreibt-fallout3-edges",
+    "simonschreibt-teleglitch-rgb"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/hbao-interleaved-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[prebaked-corner-occlusion]] —— SSAO 时代之前的 lightmap / 顶点色烘焙 AO，以及 Sims 4 的手贴 AO mesh 补丁方案"
+    },
+    {
+      "file": "wiki/rendering/normal-map-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normal-decal-edge-blending]] —— 用独立几何层承载 normal map 来掩盖低多边形 mesh 的硬边过渡"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[chromatic-aberration-post]] —— 独立通道 UV 偏移，Teleglitch / Deadlight 的故障艺术后处理"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[chromatic-aberration-post]] —— URP 内建的色差 volume override 的底层实现"
+    },
+    {
+      "file": "wiki/rendering/dither-alpha-clipping.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/simonschreibt-diablo3-trees]] —— Blizzard 用两张贴片 + alpha8 做 Diablo 3 树的案例，典型的 alpha cutout 替代高多边形几何"
+    },
+    {
+      "file": "wiki/rendering/fizzle-lod-fading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normal-decal-edge-blending]] —— Fallout 3 的做法：直接在 LOD 里把 decal 壳删掉，作为最简单也最有效的 LOD 策略"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[prebaked-corner-occlusion]] | SSAO 之前的角落遮蔽：lightmap 烘焙、UE1 的 bug 成为 feature、Sims 4 手贴 AO mesh |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[painted-foliage-bent-planes]] | Diablo 3 两张三角形 + hand-painted alpha 做细剪影树，固定相机反哺美术技巧 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[normal-decal-edge-blending]] | Fallout 3 / CryEngine 的 decal 壳技巧：把破损边缘从主 mesh 解耦到一层薄几何 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[chromatic-aberration-post]] | 三通道 UV 偏移后处理：真实色差 vs 数字 glitch，Teleglitch / Deadlight 案例 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[simon-trumpler]] | Simon Trümpler，simonschreibt.de 作者，技术美术 / Game Art Tricks 博主 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-deus-ex-occlusion]] | Simon：Deus Ex 的预烘焙角落遮蔽与 UE1 lightmap bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-diablo3-trees]] | Simon：Diablo 3 如何用两张三角形画出细剪影的树 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-divine-divinity-reflection]] | Simon：Divine Divinity 2D 水面反射的猜测与读者讨论 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-fallout3-edges]] | Simon：Fallout 3 用 normal decal 壳掩盖低多边形石头的硬边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-teleglitch-rgb]] | Simon：Teleglitch 传送器的 RGB 通道独立偏移特效 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-10 Worker AC (simonschreibt.de ×5)\n\n处理 5 篇 simonschreibt.de Game Art Tricks 拆解文（Deus Ex occlusion、Diablo 3 trees、Divine Divinity 2D reflection、Fallout 3 edges、Teleglitch RGB）。新增 4 个概念页（prebaked-corner-occlusion、painted-foliage-bent-planes、normal-decal-edge-blending、chromatic-aberration-post）、1 个人物页（simon-trumpler）、5 个源摘要。给 hbao-interleaved-sampling、normal-map-blending、crt-shader-effects、urp-volume-post-processing、dither-alpha-clipping、fizzle-lod-fading 提了 6 条 patch。5 篇全部保留（Simon 的博客本来就是纯技术美术干货）。"
+}

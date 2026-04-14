@@ -35,6 +35,7 @@ Unity 从 **Universal Render Pipeline**（URP，前身 LWRP）开始，抛弃了
 - [[crt-shader-effects]] —— 一个典型的通过 Blit feature 叠加 Volume 效果的案例
 - [[scriptable-render-pipeline]]
 - [[custom-srp]]
+- [[chromatic-aberration-post]] —— URP 内建的色差 volume override 的底层实现
 
 ## Sources
 

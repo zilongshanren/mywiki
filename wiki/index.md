@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 113
+sources: 123
 ---
 
 # 知识库索引
@@ -240,6 +240,15 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[hybrid-raytracing-pipeline]]        | VB primary + 短距离硬件光追 secondary + cache 远场                          |
 | [[bindless-rendering]]                | CPU 只组织 GPU 只索引，让着色器自由访问任意资源                                       |
 | [[analytical-antialiasing]]           | 已知形状数学方程时，在 shader 里按 SDF 淡出一像素的反走样                                |
+| [[metal-api-overview]] | Metal 的对象模型：device/queue/buffer/encoder/library/pipeline-state |
+| [[metal-shading-language-basics]] | MSL 函数限定符、属性限定符与插值语义的最小讲义 |
+| [[cametal-layer-drawable]] | CAMetalLayer / CAMetalDrawable——iOS 上 swapchain 的 Core Animation 版本 |
+| [[prebaked-corner-occlusion]] | SSAO 之前的角落遮蔽：lightmap 烘焙、UE1 的 bug 成为 feature、Sims 4 手贴 AO mesh |
+| [[painted-foliage-bent-planes]] | Diablo 3 两张三角形 + hand-painted alpha 做细剪影树，固定相机反哺美术技巧 |
+| [[normal-decal-edge-blending]] | Fallout 3 / CryEngine 的 decal 壳技巧：把破损边缘从主 mesh 解耦到一层薄几何 |
+| [[chromatic-aberration-post]] | 三通道 UV 偏移后处理：真实色差 vs 数字 glitch，Teleglitch / Deadlight 案例 |
+| [[color-banding]]                     | 色带根源 + Jimenez 一行 GLSL dither + 大厂去带方案横评                            |
+| [[perceptual-colormaps]]              | matplotlib 感知均匀 colormap 烘成 .cube 1D LUT 给 DaVinci Resolve |
 
 ## 经典案例（wiki/examples/）
 
@@ -302,6 +311,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[gameknife]] | 中国独立引擎开发者，gkEngine 与 gkNextRenderer 作者 |
 | [[allen-chou]] | Allen Chou（周明倫），Naughty Dog gameplay programmer，DigiPen 出身，Game Physics Series 作者 |
 | [[frost-kiwi]] | Wladislav Artsimovich / Jaruat Frost，以交互式 WebGL 技术博客闻名 |
+| [[warren-moore]] | Warren Moore，Metal by Example 博客与同名书作者 |
+| [[simon-trumpler]] | Simon Trümpler，simonschreibt.de 作者，技术美术 / Game Art Tricks 博主 |
 
 ## 源摘要（wiki/sources/）
 
@@ -420,6 +431,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/allenchou-rusher-2-composite-commands]] | Allen Chou：ActionScript 3 / Rusher 2 框架下 Serial / Parallel 复合命令用法 |
 | [[sources/frost-kiwi-luts-in-video-games]] | Frost：1D/3D LUT 在视频游戏中的各种用法（L4D tinting 到 Resolve 调色） |
 | [[sources/frost-kiwi-analytical-anti-aliasing]] | Frost：SSAA/MSAA/FXAA/AAA 对比长文与 AAA 实现细节 |
+| [[sources/metalbyexample-up-and-running-1]] | Warren Moore：Metal 第 1 篇——清屏到红色 |
+| [[sources/metalbyexample-up-and-running-2]] | Warren Moore：Metal 第 2 篇——带色三角形与 MSL 入门 |
+| [[sources/metalbyexample-whats-and-wherefores]] | Warren Moore：Metal 的「抽象下界」立场与未来判断 |
+| [[sources/simonschreibt-deus-ex-occlusion]] | Simon：Deus Ex 的预烘焙角落遮蔽与 UE1 lightmap bug |
+| [[sources/simonschreibt-diablo3-trees]] | Simon：Diablo 3 如何用两张三角形画出细剪影的树 |
+| [[sources/simonschreibt-divine-divinity-reflection]] | Simon：Divine Divinity 2D 水面反射的猜测与读者讨论 |
+| [[sources/simonschreibt-fallout3-edges]] | Simon：Fallout 3 用 normal decal 壳掩盖低多边形石头的硬边 |
+| [[sources/simonschreibt-teleglitch-rgb]] | Simon：Teleglitch 传送器的 RGB 通道独立偏移特效 |
+| [[sources/frost-kiwi-color-banding]] | Frost：一行 GLSL dither 消色带 + 五家业界实现横评 |
+| [[sources/frost-kiwi-thermal-colormaps]] | Frost：matplotlib colormap → DaVinci Resolve .cube 工具脚本 |
 
 ## 元（wiki/meta/）
 

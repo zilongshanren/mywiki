@@ -181,3 +181,15 @@ Robin Green *Bases and Frames* 5 篇全部入库：needlets、faster math functi
 ## [2026-04-14] ingest | Wave-9 Worker Z (blog.frost.kiwi ×5)
 
 处理 5 篇 blog.frost.kiwi 文章。入库 2 篇图形长文：LUT 在视频游戏里的用途（link to 已有 [[color-lut]]），以及 Analytical Anti-Aliasing（新增概念页）。跳过 3 篇：WaniKani userscript（非技术）、just-a-textbox（个人工作流 HTML）、jo-mpeg-converted-to-c（源码倾倒，无实质技术分析）。新增 1 概念页（analytical-antialiasing）、1 人物页（frost-kiwi）、2 source 摘要。给 color-lut / aliasing / msaa-ssaa / sdf-2d-primitives 打补丁加链接。
+
+## [2026-04-14] ingest | Wave-10 Worker AB (metalbyexample.com ×5)
+
+处理 5 篇 Warren Moore 的 Metal by Example 文章。跳过 2 篇（about-the-author、the-book）纯元信息页。入库 3 篇 Up and Running 系列实质教程，新增 3 concept 页（metal-api-overview、metal-shading-language-basics、cametal-layer-drawable）、1 人物页（warren-moore）、3 source 摘要。最大收获是把 Metal 作为「iOS 上抽象下界」的自我定位补进了 wiki——它与 d3d12-resource-binding 形成一对显式 API 的姊妹章节，与 rendering-api-depth 上的深浅讨论直接呼应。
+
+## [2026-04-14] ingest | Wave-10 Worker AC (simonschreibt.de ×5)
+
+处理 5 篇 simonschreibt.de Game Art Tricks 拆解文（Deus Ex occlusion、Diablo 3 trees、Divine Divinity 2D reflection、Fallout 3 edges、Teleglitch RGB）。新增 4 个概念页（prebaked-corner-occlusion、painted-foliage-bent-planes、normal-decal-edge-blending、chromatic-aberration-post）、1 个人物页（simon-trumpler）、5 个源摘要。给 hbao-interleaved-sampling、normal-map-blending、crt-shader-effects、urp-volume-post-processing、dither-alpha-clipping、fizzle-lod-fading 提了 6 条 patch。5 篇全部保留（Simon 的博客本来就是纯技术美术干货）。
+
+## [2026-04-14] ingest | Wave-10 Worker AD (blog.frost.kiwi ×5)
+
+处理 5 篇 blog.frost.kiwi 文章。新增 2 概念页（color-banding、perceptual-colormaps）、2 source 摘要。跳过 3 篇（joyo-kanji 是日语学习，genshin impact anki deck 是 Anki 牌组分享，tunneling ssh over https 是网络运维）。最大亮点是 color-banding 长文——Jimenez 的一行 Interleaved Gradient Noise + 五家业界去带方案（Valve / Alien: Isolation / ReShade Deband / AE Ramp Scatter / KDE KWin blur + Windows Acrylic）横向拆解，加上一套相机翻拍 16-bit PNG 测屏幕真实位深的零成本自检法。perceptual-colormaps 把 matplotlib viridis 族和 DaVinci Resolve .cube 1D LUT 工作流打通，和 [[color-lut]] 游戏用法形成对称补充。frost-kiwi 人物页与 color-lut/color-space/dither-alpha-clipping 概念页通过 patch 追加相关链接与 source 引用。

@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w10-ab",
+  "agent_note": "metalbyexample.com 5 篇。about-the-author 与 the-book 两篇纯元信息跳过。Up and Running Part 1 / Part 2 与 The Whats and Wherefores of Metal 3 篇实质教程全部入库——它们共同覆盖了 Metal 的对象模型（device/queue/buffer/encoder/library/pipeline-state）、MSL 入门语法与 CAMetalLayer 这层 swapchain 胶水。新增 3 concept 页（metal-api-overview、metal-shading-language-basics、cametal-layer-drawable）+ 1 人物页（warren-moore）+ 3 source 摘要。patches 把 Metal 相关链接接入 draw-call、fragment-shader、rendering-pipeline、rendering-api-depth。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/metalbyexample.com/2014-06-22_about-the-author.md",
+      "status": "skipped_offtopic",
+      "reason": "纯作者简介页，没有技术内容（批次说明中已指示跳过）。"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-06-22_the-book.md",
+      "status": "skipped_offtopic",
+      "reason": "《Metal by Example》一书的销售/元信息页，没有技术正文（批次说明中已指示跳过）。"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-08-25_up-and-running-with-metal-part-1-clearing-the-screen.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-up-and-running-1",
+      "title": "Up and Running with Metal, Part 1: Clearing the Screen"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-08-26_up-and-running-with-metal-part-2-drawing-triangles.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-up-and-running-2",
+      "title": "Up and Running with Metal, Part 2: Drawing Triangles"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-08-28_the-whats-and-wherefores-of-metal.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-whats-and-wherefores",
+      "title": "The Whats and Wherefores of Metal"
+    }
+  ],
+  "concepts_created": [
+    "metal-api-overview",
+    "metal-shading-language-basics",
+    "cametal-layer-drawable"
+  ],
+  "people_created": [
+    "warren-moore"
+  ],
+  "source_summaries_created": [
+    "metalbyexample-up-and-running-1",
+    "metalbyexample-up-and-running-2",
+    "metalbyexample-whats-and-wherefores"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## Vulkan/Metal 的价值",
+      "content": "\n具体 Metal 对象模型见 [[metal-api-overview]]——command queue / command buffer / command encoder 这一套就是显式 API 共通的 CPU 侧成本下压机制。"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-api-overview]] —— iOS 上降 CPU 驱动开销的显式 API"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-shading-language-basics]] —— MSL 的 fragment 函数限定符与 `[[stage_in]]` 插值语义"
+    },
+    {
+      "file": "wiki/rendering/rendering-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-api-overview]] —— Metal 如何用显式对象图把这条管线落到 iOS\n- [[cametal-layer-drawable]] —— iOS 上 swapchain 的落地形式"
+    },
+    {
+      "file": "wiki/game-development/rendering-api-depth.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-api-overview]] —— Apple Metal 作为「抽象下界」的自我定位"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-api-overview]] | Metal 的对象模型：device/queue/buffer/encoder/library/pipeline-state |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-shading-language-basics]] | MSL 函数限定符、属性限定符与插值语义的最小讲义 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cametal-layer-drawable]] | CAMetalLayer / CAMetalDrawable——iOS 上 swapchain 的 Core Animation 版本 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[warren-moore]] | Warren Moore，Metal by Example 博客与同名书作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-up-and-running-1]] | Warren Moore：Metal 第 1 篇——清屏到红色 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-up-and-running-2]] | Warren Moore：Metal 第 2 篇——带色三角形与 MSL 入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-whats-and-wherefores]] | Warren Moore：Metal 的「抽象下界」立场与未来判断 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-10 Worker AB (metalbyexample.com ×5)\n\n处理 5 篇 Warren Moore 的 Metal by Example 文章。跳过 2 篇（about-the-author、the-book）纯元信息页。入库 3 篇 Up and Running 系列实质教程，新增 3 concept 页（metal-api-overview、metal-shading-language-basics、cametal-layer-drawable）、1 人物页（warren-moore）、3 source 摘要。最大收获是把 Metal 作为「iOS 上抽象下界」的自我定位补进了 wiki——它与 d3d12-resource-binding 形成一对显式 API 的姊妹章节，与 rendering-api-depth 上的深浅讨论直接呼应。"
+}

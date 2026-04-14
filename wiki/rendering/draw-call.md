@@ -36,6 +36,8 @@ sources: 2
 
 移动端 Vulkan/Metal 的价值是**降低 CPU driver overhead**，不是 GPU 更快。
 
+具体 Metal 对象模型见 [[metal-api-overview]]——command queue / command buffer / command encoder 这一套就是显式 API 共通的 CPU 侧成本下压机制。
+
 ## 相关
 
 - [[rendering-pipeline]]
@@ -46,6 +48,7 @@ sources: 2
 - [[gpu-hazard-tracking]] —— 为什么 D3D12/Vulkan 要求你自己声明 barrier
 - [[buffer-renaming]] —— 老驱动的隐式魔法与 D3D12/Vulkan 的显式化
 - [[draw-procedural-gpu]] —— 把一次 draw call 打到极致：CPU 只发命令，vertex 数据全部由 GPU buffer 提供
+- [[metal-api-overview]] —— iOS 上降 CPU 驱动开销的显式 API
 
 ## Sources
 
