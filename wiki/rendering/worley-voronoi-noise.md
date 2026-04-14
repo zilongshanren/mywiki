@@ -1,7 +1,7 @@
 ---
 tags: [程序化纹理, 噪声, shader]
 date: 2026-04-14
-sources: 1
+sources: 3
 ---
 
 # Worley / Voronoi 噪声
@@ -39,7 +39,10 @@ Blender 的 Voronoi 节点需要在 **四处**同时维持行为一致：Cycles 
 - [[non-cryptographic-hash]]
 - [[layered-grid-noise]]
 - [[sdf-2d-primitives]]
+- [[cellular-texture-generation]] —— ryg 在 Werkkzeug3 里总结的**离线**细胞纹理生成：为什么树反而最慢，以及空间递归细分如何做到近似 O(|pixels|)
 
 ## Sources
 
 - [[sources/aras-voronoi-hashing-osl]]
+- [[sources/ryg-cellular-textures-1]]
+- [[sources/ryg-cellular-textures-2]]

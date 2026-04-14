@@ -30,6 +30,8 @@ cache-friendliness
 cached-shadowmaps
 calling-conventions-x86
 cametal-layer-drawable
+carry-save-adder-pixel-avg
+cellular-texture-generation
 change-amplification
 christoph-peters
 chromatic-aberration-post
@@ -62,6 +64,7 @@ cyanilux
 d3d12-resource-binding
 daniel-ilett
 data-driven-architecture
+data-structure-invariants
 debug-visualization
 deep-modules
 deferred-alpha-lighting
@@ -96,6 +99,7 @@ fast-translucency-wraplight
 faster-math-functions
 fearless-simd
 fizzle-lod-fading
+floyd-steinberg-dithering
 flynn-taxonomy
 fourier-srgb-spectral-upsampling
 fragment-shader
@@ -138,6 +142,7 @@ jason-gregory
 jasper-flick
 jasper-st-pierre
 java-io
+java-vector-math-limitations
 jeremiah-van-oosten
 john-ousterhout
 journey-sand-specular

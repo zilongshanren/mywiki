@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 157
+sources: 166
 ---
 
 # 知识库索引
@@ -44,6 +44,7 @@ sources: 157
 | [[simple-cpp-mark-sweep-gc]] | 200 行的 C++ 标记清除 GC 玩具（云风） |
 | [[c-serialization-metadata]] | 基于自定义元信息的 C 结构序列化与图合并算法（云风） |
 | [[ecs-for-rust-ui]] | Rust UI 的「类 ECS」架构：整数 id + state splitting + data flow 对抗借用检查器（Raph Levien 2018）|
+| [[data-structure-invariants]] | ryg：每加一条访问路径就多一条不变量——tail-pointer-to-pointer 与 sentinel 节点是清理之法 |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -68,6 +69,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[functions-as-vectors]] | 函数作为无限维向量：Fourier / 球谐的统一视角 |
 | [[cpp-runtime-reflection]] | libclang 元程序生成 C++ 运行时类型表 |
 | [[swap-and-pop-removal]] | 无序数组删除的 swap-and-pop 技巧：O(n) → O(1) |
+| [[java-vector-math-limitations]] | Java 做向量数学的两个痛点：无运算符重载、无栈分配 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -104,6 +106,7 @@ CAQA + CSAPP 的底层视角。
 | [[gcn-wave-occupancy]] | GCN 波前占用率：VGPR 预算、何时重要、何时反而害人 |
 | [[gpu-latency-hiding]] | GPU 用 ILP 与 TLP 两条互斥路径隐藏内存延迟 |
 | [[meshoptimizer-vertex-codec]] | 非 LZ 的 delta/预测顶点压缩器，在浮点图像上也赢 |
+| [[carry-save-adder-pixel-avg]] | 用 CSA 恒等式对 A8R8G8B8 / R5G6B5 做无溢出、可选 rounding bias 的 SWAR 平均 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -282,6 +285,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[openexr-format]] | OpenEXR 格式、压缩模式与官方库 vs tinyexr 选型 |
 | [[gpgpu-string-unescaping]] | 状态机作为 monoid 同态：parallel prefix scan 并行化 JSON 字符串反转义 |
 | [[gpgpu-json-parsing]] | Dyck 语言的 scan + scatter + sort 流水线：把 JSON 括号结构搬到 GPU 并绕过栈 |
+| [[cellular-texture-generation]] | ryg 的 Werkkzeug3 细胞纹理离线生成：为什么树最慢、spatial subdivision 为什么最快 |
+| [[floyd-steinberg-dithering]] | Floyd–Steinberg 误差扩散 dither 与 JVM 上的四步优化 |
 
 ## 经典案例（wiki/examples/）
 
@@ -513,6 +518,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/raphlinus-gpu-unescaping]] | Raph Levien 2018：用 monoid 同态把字符串反转义搬到 GPGPU |
 | [[sources/raphlinus-ecs-ui-rust]] | Raph Levien 2018：xi-win-ui 的「类 ECS」Rust GUI 架构笔记 |
 | [[sources/raphlinus-gpu-json-parsing]] | Raph Levien 2018：scan + scatter + sort 并行解析 Dyck 语言 |
+| [[sources/ryg-cellular-textures-1]] | ryg：Werkkzeug3 细胞纹理的四种算法对比（为什么树最慢） |
+| [[sources/ryg-cellular-textures-2]] | ryg：空间递归细分算法把细胞纹理生成推到近似 O(|pixels|) |
+| [[sources/ryg-carry-save-adders]] | ryg：CSA 恒等式与打包像素的无溢出平均 SWAR 技巧 |
+| [[sources/ryg-data-structures-and-invariants]] | ryg：数据结构不变量的诞生与 sentinel / pointer-to-pointer 清理法 |
+| [[sources/elopezr-floyd-steinberg-dithering]] | López Ros：Android 上把 Floyd–Steinberg 压榨 30% 的四次迭代 |
+| [[sources/elopezr-dragon-mania]] | López Ros：MIDP 老引擎 Android port 从 3 fps 抢救到 15 fps |
+| [[sources/elopezr-will-of-flame]] | López Ros：自研 Java Android 引擎的独立射击游戏项目档案 |
+| [[sources/elopezr-wof-editors]] | López Ros：Python/wxPython 的关卡+复合实体编辑器 |
+| [[sources/elopezr-java-vector-math]] | López Ros：Java 缺运算符重载与值类型，如何毁了向量数学 |
 
 ## 元（wiki/meta/）
 

@@ -59,6 +59,7 @@ SSE 的「非正交」是历史尘埃 + intrinsics 命名灾难叠加的产物�
 - [[latency-vs-throughput]]
 - [[fabian-giesen]]
 - [[fearless-simd]] —— Raph Levien 提出的 Rust 可移植 SIMD 愿景，同样踩到 runtime feature 选档与 inlining 组合的坑
+- [[carry-save-adder-pixel-avg]] —— 用 CSA 恒等式在没有硬件 pavgb 的情况下做打包像素的无溢出平均
 
 ## Sources
 

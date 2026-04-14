@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w14-ao",
+  "agent_note": "全部 5 篇均为 2010 年 Angelo Pesce 的早期工作流/观点/链接贴，非技术内容，全部跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-01-11_how-do-you-do-your-work.md",
+      "status": "skipped_offtopic",
+      "reason": "个人工作流/办公桌布置随笔，讨论显示器摆放、便利贴、常用工具等，无技术实质。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-01-14_links.md",
+      "status": "skipped_offtopic",
+      "reason": "随手链接合集（PTex、Java7、Eric Lippert 博客、两个 flash 小游戏等），无原创技术内容。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-05_the-pitfalls-of-experience.md",
+      "status": "skipped_offtopic",
+      "reason": "关于经验如何阻碍创新的职业随想，非软件工程/渲染技术内容。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-24_ergonomy-rant.md",
+      "status": "skipped_offtopic",
+      "reason": "以相机类比吐槽引擎功能攀比，主张注重迭代速度而非花哨特性，属观点随笔而非技术讲解。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-27_iphone-ipad-ipod.md",
+      "status": "skipped_offtopic",
+      "reason": "2010 年寻找 iPhone 上免 Objective-C 的 C/C++ 开发方案的个人记录，信息已严重过时。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-14] ingest | Wave-14 Worker AO (c0de517e 2010 早期杂文 ×5)\n\n处理 5 篇 Angelo Pesce 2010 年早期博文，全部为工作流/观点/链接合集类非技术内容，全部跳过。无新增页面与补丁。"
+}

@@ -233,3 +233,11 @@ Worker AK 处理 bartwronski.com 2014 年 5 篇，ingest 3 篇（future-of-SSR�
 ## [2026-04-14] ingest | Wave-13 Worker AM (raphlinus.github.io ×5)
 
 处理 Raph Levien 博客 5 篇。跳过 2017 Recurse 个人项目清单；2018 Direct2D smooth resize 文章作为已有 smooth-window-resize 概念的 Windows 侧深挖，创建 source summary + 概念页补丁，不重复概念页；新增 3 个概念页：gpgpu-string-unescaping（monoid 同态 + parallel prefix scan 并行化状态机）、gpgpu-json-parsing（scan/scatter/sort 绕过栈处理 Dyck 语言）、ecs-for-rust-ui（xi-win-ui 的整数 id + state splitting + data flow 三板斧）。
+
+## [2026-04-14] ingest | batch-w14-an fgiesen.wordpress.com 2010 年系列（细胞纹理 / CSA / 不变量）
+
+Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 篇意见类（we-dont-need-new-multimedia-formats）。新增 3 个概念页：[[cellular-texture-generation]]（rendering，ryg Werkkzeug3 细胞纹理离线生成）、[[carry-save-adder-pixel-avg]]（computer-systems，CSA 打包像素平均 SWAR）、[[data-structure-invariants]]（software-design，不变量诞生与清理法）；4 个源摘要（ryg-cellular-textures-1 / -2 / carry-save-adders / data-structures-and-invariants）。[[fabian-giesen]] sources 5→9 并增补概念引用；[[worley-voronoi-noise]] 增补对离线生成篇的交叉引用；[[sse-tricks]] 指向 CSA 打包像素技巧。
+
+## [2026-04-14] ingest | Wave-14 Worker AP (elopezr.com 2014 早期 ×5)
+
+处理 5 篇 Emilio López Ros 2014 年早期博文，全部 ingested。新增 2 概念页（floyd-steinberg-dithering, java-vector-math-limitations）、5 源摘要。emilio-lopez-ros 人物页已存在，追加 5 条 source 链接并在风格段补一段早期 Android / Java 时期的背景。另补丁 dither-alpha-clipping 增加与 Floyd–Steinberg 的对照。

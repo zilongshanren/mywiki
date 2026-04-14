@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w14-ap",
+  "agent_note": "5 篇 elopezr.com 2014 年早期作品：2 篇游戏/工具 postmortem（Dragon Mania、Will of Flame + 配套编辑器）+ 2 篇工程技术文（Floyd-Steinberg dither、Java vector math）。新增 2 概念页 + 5 源摘要。emilio-lopez-ros 已存在，仅追加 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/elopezr.com/2014-03-09_dithering-algorithm.md",
+      "status": "ingested",
+      "source_slug": "elopezr-floyd-steinberg-dithering",
+      "title": "Dithering Algorithm"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-03-09_dragon-mania.md",
+      "status": "ingested",
+      "source_slug": "elopezr-dragon-mania",
+      "title": "Dragon Mania"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-03-09_will-of-flame.md",
+      "status": "ingested",
+      "source_slug": "elopezr-will-of-flame",
+      "title": "Will of Flame"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-03-10_wof-scenario-entity-editors.md",
+      "status": "ingested",
+      "source_slug": "elopezr-wof-editors",
+      "title": "WoF Scenario/Entity Editors"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-06-15_java-and-vector-math.md",
+      "status": "ingested",
+      "source_slug": "elopezr-java-vector-math",
+      "title": "Java and Vector Math"
+    }
+  ],
+  "concepts_created": [
+    "floyd-steinberg-dithering",
+    "java-vector-math-limitations"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "elopezr-floyd-steinberg-dithering",
+    "elopezr-dragon-mania",
+    "elopezr-will-of-flame",
+    "elopezr-wof-editors",
+    "elopezr-java-vector-math"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/elopezr-floyd-steinberg-dithering]]\n- [[sources/elopezr-dragon-mania]]\n- [[sources/elopezr-will-of-flame]]\n- [[sources/elopezr-wof-editors]]\n- [[sources/elopezr-java-vector-math]]"
+    },
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "append_to_section",
+      "section": "## 风格",
+      "content": "\n此外他在 2014 年前后还写过一组**早期 Android / Java 手游开发时期**的短文（Gameloft《Dragon Mania》性能抢救、独立项目《Will of Flame》的自研引擎、Floyd–Steinberg dither、Java 向量数学的吐槽），虽然不如后来的 AAA 拆解重磅，但能看到一个图形程序员从 MIDP 时代的低端机优化走到 RenderDoc 拆解 ROTR 的完整轨迹。"
+    },
+    {
+      "file": "wiki/rendering/dither-alpha-clipping.md",
+      "operation": "append_to_section",
+      "section": "## 和其他 dither 的关系",
+      "content": "- **[[floyd-steinberg-dithering|Floyd–Steinberg 误差扩散]]**——真正解决**颜色量化**的经典 dither，顺序扫描每个像素并把量化误差 7/3/5/1 分配给右下邻居，视觉质量显著好于有序 Bayer，但不可并行。和 alpha dither 的区别在于作用通道（颜色 vs alpha）和输出形态（连续像素 vs 二值 discard），共享的是同一个"高频换低频"信号处理直觉。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[floyd-steinberg-dithering]] | Floyd–Steinberg 误差扩散 dither 与 JVM 上的四步优化 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[java-vector-math-limitations]] | Java 做向量数学的两个痛点：无运算符重载、无栈分配 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-floyd-steinberg-dithering]] | López Ros：Android 上把 Floyd–Steinberg 压榨 30% 的四次迭代 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-dragon-mania]] | López Ros：MIDP 老引擎 Android port 从 3 fps 抢救到 15 fps |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-will-of-flame]] | López Ros：自研 Java Android 引擎的独立射击游戏项目档案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-wof-editors]] | López Ros：Python/wxPython 的关卡+复合实体编辑器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-java-vector-math]] | López Ros：Java 缺运算符重载与值类型，如何毁了向量数学 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-14 Worker AP (elopezr.com 2014 早期 ×5)\n\n处理 5 篇 Emilio López Ros 2014 年早期博文，全部 ingested。新增 2 概念页（floyd-steinberg-dithering, java-vector-math-limitations）、5 源摘要。emilio-lopez-ros 人物页已存在，追加 5 条 source 链接并在风格段补一段早期 Android / Java 时期的背景。另补丁 dither-alpha-clipping 增加与 Floyd–Steinberg 的对照。"
+}

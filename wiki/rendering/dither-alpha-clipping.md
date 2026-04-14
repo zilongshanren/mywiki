@@ -48,6 +48,7 @@ Dither 在 shader 里还有两个相邻用法：
 本质都是"用高频换低频"的同一个信号处理技巧——只不过这里被应用在 alpha 通道上。
 
 - **[[color-banding|去色带 dither]]**——以量化步长的幅度叠加 Interleaved Gradient Noise 到渐变上，打散深色大面积 posterization。和 alpha dither 完全对称：这里是把量化阶梯恢复为连续感知，那里是把连续 alpha 量化成二值 discard。
+- **[[floyd-steinberg-dithering|Floyd–Steinberg 误差扩散]]**——真正解决**颜色量化**的经典 dither，顺序扫描每个像素并把量化误差 7/3/5/1 分配给右下邻居，视觉质量显著好于有序 Bayer，但不可并行。和 alpha dither 的区别在于作用通道（颜色 vs alpha）和输出形态（连续像素 vs 二值 discard），共享的是同一个"高频换低频"信号处理直觉。
 
 ## Sources
 

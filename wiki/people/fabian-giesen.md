@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 5
+sources: 9
 ---
 
 # Fabian "ryg" Giesen
@@ -38,6 +38,9 @@ sources: 5
 - [[unorm-float-conversion]]
 - [[sse-tricks]]
 - [[adaptive-arithmetic-coding]]
+- [[cellular-texture-generation]]
+- [[carry-save-adder-pixel-avg]]
+- [[data-structure-invariants]]
 
 ## Sources
 
@@ -47,3 +50,7 @@ sources: 5
 - [[sources/ryg-trip-through-graphics-pipeline-2011-part-6]]
 - [[sources/ryg-models-for-adaptive-arithmetic-coding]]
 - [[sources/c0de517e-tiled-hardware-speculations]] —— 评论区给出 TBDR bin buffer / vertex split / in-order blending / triangle density 等硬件侧权威修正
+- [[sources/ryg-cellular-textures-1]]
+- [[sources/ryg-cellular-textures-2]]
+- [[sources/ryg-carry-save-adders]]
+- [[sources/ryg-data-structures-and-invariants]]
