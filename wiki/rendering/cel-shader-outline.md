@@ -68,6 +68,7 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[procedural-greeble]] —— 同样依赖 manifold mesh 的顶点外推
 - [[stylized-water-shader]] —— 同作者同风格，共享 ramp lighting 思路
 - [[texture-dissolve]]
+- [[sprite-outline-8-direction]] —— 2D sprite 上的同思路「复制副本做外框」
 
 ## Sources
 

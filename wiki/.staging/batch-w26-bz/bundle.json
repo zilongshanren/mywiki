@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w26-bz",
+  "agent_note": "5 篇 simonschreibt.de (Simon Trümpler) 早期 Game Art Tricks 短文。全部 ingest。新增 5 个概念：八方向 sprite 描边、Teleglitch 径向外推视野阴影、Deus Ex 动画 parallax 布料褶皱、mipmap/moire 扫描线、WoW 气球 Lit Sphere/MatCap 着色。simon-trumpler 人物页已存在，只向 registry 追加一条 sources 链接 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt-7.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-teleglitch-viewcones",
+      "title": "Teleglitch: Viewcones"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-21_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-cell-shading",
+      "title": "Cell Shading"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-22_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-deus-ex-folds",
+      "title": "Deus Ex 3: Folds"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-23_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-deus-ex-scanlines",
+      "title": "Deus Ex: Scanlines"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2013-01-24_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-wow-balloon",
+      "title": "World of Warcraft: Balloon"
+    }
+  ],
+  "concepts_created": [
+    "sprite-outline-8-direction",
+    "extruded-wall-shadow-viewcone",
+    "animated-parallax-cloth-fold",
+    "mipmap-moire-scanline",
+    "lit-sphere-matcap-shading"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "simonschreibt-teleglitch-viewcones",
+    "simonschreibt-cell-shading",
+    "simonschreibt-deus-ex-folds",
+    "simonschreibt-deus-ex-scanlines",
+    "simonschreibt-wow-balloon"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/simonschreibt-cell-shading]]\n- [[sources/simonschreibt-teleglitch-viewcones]]\n- [[sources/simonschreibt-deus-ex-folds]]\n- [[sources/simonschreibt-deus-ex-scanlines]]\n- [[sources/simonschreibt-wow-balloon]]"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sprite-outline-8-direction]]\n- [[extruded-wall-shadow-viewcone]]\n- [[animated-parallax-cloth-fold]]\n- [[mipmap-moire-scanline]]\n- [[lit-sphere-matcap-shading]]"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sprite-outline-8-direction]] —— 2D sprite 上的同思路「复制副本做外框」"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sprite-outline-8-direction]] | 八方向位移实现的 2D sprite 描边 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[extruded-wall-shadow-viewcone]] | Teleglitch 式径向外推墙面伪造视野阴影 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[animated-parallax-cloth-fold]] | Deus Ex 风旗——动画 parallax + 低分辨率 noise 伪造布料褶皱 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mipmap-moire-scanline]] | 故意放弃 mipmap / 用 moiré 伪造 CRT 扫描线 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[lit-sphere-matcap-shading]] | Lit Sphere / MatCap——把光照响应烘进一张球面查找表 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-teleglitch-viewcones]] | Simon：Teleglitch 视野阴影是径向外推的黑色几何 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-cell-shading]] | Simon：3D shell extrude + 2D 8-direction sprite 描边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-deus-ex-folds]] | Simon：Deus Ex 奥运风旗是动画 parallax，不是顶点动画 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-deus-ex-scanlines]] | Simon：Deus Ex 屏幕扫描线很可能是 mipmap 缺失下的 moiré |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-wow-balloon]] | Simon：WoW 热气球的中心辉光是 Lit Sphere / MatCap shader |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-26 Worker BZ (simonschreibt.de ×5)\n\n处理 5 篇 Simon Trümpler 早期 Game Art Tricks 短文（Teleglitch 视野阴影、cell shading 描边、Deus Ex 布料褶皱、Deus Ex 屏幕扫描线、WoW 热气球 lit sphere）。新增 5 个 rendering 概念页（sprite-outline-8-direction, extruded-wall-shadow-viewcone, animated-parallax-cloth-fold, mipmap-moire-scanline, lit-sphere-matcap-shading）、5 个 source 摘要。simon-trumpler 人物页已存在，追加 sources 与 相关 链接。"
+}

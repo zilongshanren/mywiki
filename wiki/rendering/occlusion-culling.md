@@ -70,6 +70,7 @@ DICE 在 Frostbite 引擎里选了另一条路：把 occluder 低模送到 SPU �
 - [[cached-shadowmaps]] — 时间维度的 caster 剔除
 - [[z-buffer]]
 - [[stephen-hill]]
+- [[gpu-based-occlusion-culling]] —— Kostas 的 DX11 GPU-driven HZB + stream compaction retrofit
 
 ## Sources
 

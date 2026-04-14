@@ -63,6 +63,7 @@ GPU 硬件里的 **Hi-Z** 是固定功能路径上的加速结构，外部着色
 - [[z-buffer]]
 - [[reversed-z]] — 深度约定会影响 max / min 的含义
 - [[sparse-shadows-cone-tracing]] —— Karis 2012 列出的屏幕空间 trace 友好结构之一（min/max depth mipmap）
+- [[gpu-based-occlusion-culling]] —— HZB 在 GPU-driven instance culling 里的典型用法
 
 ## Sources
 

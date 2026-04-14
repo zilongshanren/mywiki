@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 独立游戏]
 date: 2026-04-14
-sources: 2
+sources: 5
 ---
 
 # Evan Todd
@@ -14,8 +14,13 @@ sources: 2
 - [[component-entity-data-binding]]
 - [[ecs]]
 - [[a-star-pathfinding]]
+- [[csharp-runtime-script-compilation]]
+- [[tools-first-iteration-loop]]
 
 ## Sources
 
 - [[sources/etodd-meshes-of-navigation]]
 - [[sources/etodd-refactoring-with-components]]
+- [[sources/etodd-component-binding-behind-the-scenes]]
+- [[sources/etodd-tools-are-everything]]
+- [[sources/etodd-csharp-runtime-compilation]]

@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 279
+sources: 292
 ---
 
 # 知识库索引
@@ -79,6 +79,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[lua-design-philosophy]] | Roberto/Luiz 访谈：Lua 的机制而非法策、有栈协程、可移植性偏执（云风译） |
 | [[c-tagged-union-dispatch]] | C 语言用 tagged union 做类型安全的多变体接口分发（云风） |
 | [[cycle-detection-floyd-brent]] | Floyd 龟兔与 Brent 变体；Brent 作为迭代加深的一个实例 |
+| [[csharp-runtime-script-compilation]] | C# 自身作脚本：CodeDomProvider + AppDomain shadow copy 实现热重载 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -366,6 +367,14 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[procedural-greeble]] | n 边形 polygon extrusion + 随机 length 生成科幻 mesh 表面细节 |
 | [[stylized-water-shader]] | camera depth texture 差 + 顶点噪声 sin 波动的卡通水面 |
 | [[cel-shader-outline]] | ramp 纹理硬色阶光照 + 法线 extrude + stencil mask 描边 |
+| [[unity-postprocessing-adventures]] | Kostas：Unity 低层 API 搭体积光束后处理 pipeline（2015） |
+| [[unreal-frame-breakdown]] | Kostas：UE4.17 默认 deferred 管线的 RenderDoc 逐 pass 拆解（三篇合一） |
+| [[gpu-based-occlusion-culling]] | Kostas：DX11 GPU-driven HZB + stream compaction + indirect draw 的 retrofit |
+| [[sprite-outline-8-direction]] | 八方向位移实现的 2D sprite 描边 |
+| [[extruded-wall-shadow-viewcone]] | Teleglitch 式径向外推墙面伪造视野阴影 |
+| [[animated-parallax-cloth-fold]] | Deus Ex 风旗——动画 parallax + 低分辨率 noise 伪造布料褶皱 |
+| [[mipmap-moire-scanline]] | 故意放弃 mipmap / 用 moiré 伪造 CRT 扫描线 |
+| [[lit-sphere-matcap-shading]] | Lit Sphere / MatCap——把光照响应烘进一张球面查找表 |
 
 ## 经典案例（wiki/examples/）
 
@@ -398,6 +407,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[z-order-top-down-2d]] | 俯视角 2D 游戏的 z-order：静态分层 vs 动态按底边 Y 排序 |
 | [[html5-game-apis-2012]] | 2012 年浏览器游戏 API 可用性地图：WebGL / Web Audio / PointerLock / Gamepad / WebSocket |
 | [[runtime-editor-console-connection]] | _The Witcher 2_ 的编辑器-主机实时调参工具链：命令式网络协议，美术电视前调光照/色彩 |
+| [[tools-first-iteration-loop]] | Evan Todd：内容管线和工具优先级高于一切引擎特性 |
 
 ## 人物（wiki/people/）
 
@@ -724,6 +734,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/jasper-bytecode]] | Jasper：ACPI / 字体 / BPF——被藏起来的字节码解释器 |
 | [[sources/jasper-barriers]] | Jasper：GNOME 3.8 压力式消息托盘背后的 XI 2.3 pointer barrier pressure |
 | [[sources/jasper-xplain]] | Jasper：Xplain 交互式 X11 深度科普系列启动公告 |
+| [[sources/etodd-component-binding-behind-the-scenes]] | Todd：Property/Binding/Command 的实现细节 |
+| [[sources/etodd-tools-are-everything]] | Todd：工具优先于特性，内容管线决定游戏 |
+| [[sources/etodd-csharp-runtime-compilation]] | Todd：C# 运行时编译 + AppDomain shadow copy 热重载 |
+| [[sources/interplay-unity-postprocessing]] | Anagnostou：Unity 里的多步体积光束后处理实验（2015） |
+| [[sources/interplay-unreal-frame-part1]] | Anagnostou：How Unreal Renders a Frame Part 1（粒子 / Z-prepass / occlusion / HZB / shadow） |
+| [[sources/interplay-unreal-frame-part2]] | Anagnostou：How Unreal Renders a Frame Part 2（light grid / volumetric fog / g-prepass / AO / lighting） |
+| [[sources/interplay-unreal-frame-part3]] | Anagnostou：How Unreal Renders a Frame Part 3（SSR / 大气 / 透明物 / 折射 / 后处理链） |
+| [[sources/interplay-gpu-occlusion-culling]] | Anagnostou：DX11 GPU-based occlusion culling 实验 |
+| [[sources/simonschreibt-teleglitch-viewcones]] | Simon：Teleglitch 视野阴影是径向外推的黑色几何 |
+| [[sources/simonschreibt-cell-shading]] | Simon：3D shell extrude + 2D 8-direction sprite 描边 |
+| [[sources/simonschreibt-deus-ex-folds]] | Simon：Deus Ex 奥运风旗是动画 parallax，不是顶点动画 |
+| [[sources/simonschreibt-deus-ex-scanlines]] | Simon：Deus Ex 屏幕扫描线很可能是 mipmap 缺失下的 moiré |
+| [[sources/simonschreibt-wow-balloon]] | Simon：WoW 热气球的中心辉光是 Lit Sphere / MatCap shader |
 
 ## 元（wiki/meta/）
 

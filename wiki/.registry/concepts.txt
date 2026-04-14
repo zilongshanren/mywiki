@@ -10,6 +10,7 @@ alpha-compositing
 amdahls-law
 analytical-antialiasing
 angelo-pesce
+animated-parallax-cloth-fold
 aos-vs-soa
 apoorva-joshi
 applicative-vs-normal-order
@@ -72,6 +73,7 @@ cpp-runtime-reflection
 cpu-performance-formula
 creative-coding-process
 crt-shader-effects
+csharp-runtime-script-compilation
 cubic-equation-solver-hlsl
 cuda-memory-hierarchy
 culling
@@ -115,6 +117,7 @@ environment-probe-placement
 evan-todd
 exponential-map-rotations
 exposure-fusion
+extruded-wall-shadow-viewcone
 fabian-giesen
 false-abstraction
 fast-exponentiation
@@ -142,6 +145,7 @@ gknext-renderer
 gpgpu-json-parsing
 gpgpu-string-unescaping
 gpgpu-transform-feedback-ios
+gpu-based-occlusion-culling
 gpu-driven-grass-tiles
 gpu-fence-timeline-semaphore
 gpu-hazard-tracking
@@ -194,6 +198,7 @@ lexical-scoping
 linden-reid
 linear-allocator
 linux-graphics-stack-dri
+lit-sphere-matcap-shading
 local-tonemapping
 locality-principle
 log
@@ -213,6 +218,7 @@ meshoptimizer-vertex-codec
 metal-api-overview
 metal-shading-language-basics
 microfacet-brdf
+mipmap-moire-scanline
 modular-design
 moment-shadow-mapping
 motion-vectors
@@ -313,6 +319,7 @@ spectral-brdf
 spectral-rendering
 spectral-zucconi-rainbow
 spherical-harmonics
+sprite-outline-8-direction
 sprite-shaders-unity
 sse-tricks
 stencil-buffer
@@ -343,6 +350,7 @@ texture-encoded-state
 thin-lens-model
 tiled-light-culling
 tiled-light-prepass
+tools-first-iteration-loop
 triangle-primitives
 triangle-setup
 trigonometric-moment-transient-imaging
@@ -351,12 +359,14 @@ two-texture-sampling-tricks
 unity-complexity-patterns
 unity-grabpass-blur
 unity-image-effect-basics
+unity-postprocessing-adventures
 unity-procedural-mesh
 unity-surface-shaders
 unity-vs-unreal
 unix-io
 unknown-unknowns
 unorm-float-conversion
+unreal-frame-breakdown
 urp-volume-post-processing
 uv-displacement-image-effect
 uv-manipulation-nodes

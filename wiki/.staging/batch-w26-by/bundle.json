@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w26-by",
+  "agent_note": "5 篇 Kostas Anagnostou 高信号技术博客。3 篇 How Unreal Renders a Frame 合并到单一概念 unreal-frame-breakdown (sources=3)。新增 unity-postprocessing-adventures、unreal-frame-breakdown、gpu-based-occlusion-culling 三个概念页，不重建已存在的 kostas-anagnostou / deferred-rendering / occlusion-culling / hierarchical-z-buffer / volumetric-fog-froxels / temporal-antialiasing。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2015-07-03_adventures-in-postprocessing-with-unity.md",
+      "status": "ingested",
+      "source_slug": "interplay-unity-postprocessing",
+      "title": "Adventures in postprocessing with Unity"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2017-10-25_how-unreal-renders-a-frame.md",
+      "status": "ingested",
+      "source_slug": "interplay-unreal-frame-part1",
+      "title": "How Unreal Renders a Frame"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2017-10-25_how-unreal-renders-a-frame-part-2.md",
+      "status": "ingested",
+      "source_slug": "interplay-unreal-frame-part2",
+      "title": "How Unreal Renders a Frame part 2"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2017-10-25_how-unreal-renders-a-frame-part-3.md",
+      "status": "ingested",
+      "source_slug": "interplay-unreal-frame-part3",
+      "title": "How Unreal Renders a Frame part 3"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2017-11-15_experiments-in-gpu-based-occlusion-culling.md",
+      "status": "ingested",
+      "source_slug": "interplay-gpu-occlusion-culling",
+      "title": "Experiments in GPU-based occlusion culling"
+    }
+  ],
+  "concepts_created": [
+    "unity-postprocessing-adventures",
+    "unreal-frame-breakdown",
+    "gpu-based-occlusion-culling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "interplay-unity-postprocessing",
+    "interplay-unreal-frame-part1",
+    "interplay-unreal-frame-part2",
+    "interplay-unreal-frame-part3",
+    "interplay-gpu-occlusion-culling"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-postprocessing-adventures]] —— 2015 年在 Unity 里搭体积光束后处理 pipeline 的实验\n- [[unreal-frame-breakdown]] —— 2017 年用 RenderDoc 逐 pass 拆解 UE4.17 默认 deferred 管线（三篇合一）\n- [[gpu-based-occlusion-culling]] —— 2017 年 DX11 上的 GPU-driven HZB + stream compaction + indirect draw retrofit"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-unity-postprocessing]]\n- [[sources/interplay-unreal-frame-part1]]\n- [[sources/interplay-unreal-frame-part2]]\n- [[sources/interplay-unreal-frame-part3]]\n- [[sources/interplay-gpu-occlusion-culling]]"
+    },
+    {
+      "file": "wiki/rendering/occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-based-occlusion-culling]] —— Kostas 的 DX11 GPU-driven HZB + stream compaction retrofit"
+    },
+    {
+      "file": "wiki/rendering/hierarchical-z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-based-occlusion-culling]] —— HZB 在 GPU-driven instance culling 里的典型用法"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-postprocessing-adventures]] —— 前一代屏幕空间体积光束的 Unity 实现\n- [[unreal-frame-breakdown]] —— UE4 的 froxel 体积雾 compute pipeline"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unreal-frame-breakdown]] —— UE4.17 默认 deferred 管线的 RenderDoc 逐 pass 拆解"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[unity-postprocessing-adventures]] | Kostas：Unity 低层 API 搭体积光束后处理 pipeline（2015） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[unreal-frame-breakdown]] | Kostas：UE4.17 默认 deferred 管线的 RenderDoc 逐 pass 拆解（三篇合一） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-based-occlusion-culling]] | Kostas：DX11 GPU-driven HZB + stream compaction + indirect draw 的 retrofit |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-unity-postprocessing]] | Anagnostou：Unity 里的多步体积光束后处理实验（2015） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-unreal-frame-part1]] | Anagnostou：How Unreal Renders a Frame Part 1（粒子 / Z-prepass / occlusion / HZB / shadow） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-unreal-frame-part2]] | Anagnostou：How Unreal Renders a Frame Part 2（light grid / volumetric fog / g-prepass / AO / lighting） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-unreal-frame-part3]] | Anagnostou：How Unreal Renders a Frame Part 3（SSR / 大气 / 透明物 / 折射 / 后处理链） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-gpu-occlusion-culling]] | Anagnostou：DX11 GPU-based occlusion culling 实验 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-26 Worker BY (interplayoflight.wordpress.com ×5)\n\n处理 5 篇 Kostas Anagnostou 技术博客。新增 3 概念页：unity-postprocessing-adventures、unreal-frame-breakdown（3 篇 How Unreal Renders a Frame 合一，sources=3）、gpu-based-occlusion-culling；新增 5 个 source 摘要页。不重建 kostas-anagnostou / deferred-rendering / occlusion-culling / hierarchical-z-buffer / volumetric-fog-froxels / temporal-antialiasing。"
+}

@@ -1,7 +1,7 @@
 ---
 tags: [游戏引擎, ecs, 组件, 数据绑定, 解耦]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 组件间数据绑定：端口化的组件实体模型
@@ -53,6 +53,14 @@ sources: 1
 
 代价是 factory 本身变得冗长，而且需要一个类型系统能做"两个字段绑在一起"的运行时表达。Todd 在原文里承认还没完全解决优雅的 API 表达。
 
+## 实现细节：Property / Binding / Command
+
+Todd 在同年 6 月的「Behind the scenes」详谈了实现。核心是一个泛型 `Property<T>` 容器：它的 setter 会通知所有挂在自己身上的 `Binding<T>`，Binding 再同步另一端的值。Binding 有多种变体——单向、双向、跨类型 lambda 投影（例如 `x => Matrix.CreateRotationY(x)` 把朝向角变成矩阵）、多输入合成、惰性求值。Property 还能接 Setter/Getter delegate，把第三方对象（例如 XNA `AudioListener.Position`）直接 wrap 进 Property，无需拷贝。
+
+为了让 dataflow 系统也能描述事件，Todd 借鉴 MVVM 加了 `Command` / `CommandBinding`——Property 管值的同步，Command 管事件的同步。在「玩家走路播放脚步声」的例子里，`SoundComponent.Play` 就是被 `TimerComponent.OnElapsed` 这个 Command 触发的。
+
+他用「crouch 按键」做了 OOP vs Binding 的对照：OOP 要在 `Player.Update` 里写 `if (Keys.Crouch) height = 1 else 2`，把行为埋进过程式更新；Binding 写法是一行声明 `collisionComponent.Height = (crouchKeyPressed ? 1 : 2)`——**从过程式变成声明式，像写 HTML markup 描述行为关系**。Todd 还提了一个迁移技巧：把所有旧的过程式代码先塞进一个「Blob 组件」，再慢慢拆成自包含的小组件。
+
 ## 相关
 
 - [[ecs]]
@@ -65,3 +73,4 @@ sources: 1
 ## Sources
 
 - [[sources/etodd-refactoring-with-components]]
+- [[sources/etodd-component-binding-behind-the-scenes]]

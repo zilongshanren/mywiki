@@ -1,0 +1,106 @@
+{
+  "batch_id": "batch-w26-bx",
+  "agent_note": "etodd.io 5 篇：跳过 2 篇 career/devlog；component-binding 'behind the scenes' 作为现有 component-entity-data-binding 的实现细节补丁；新增 csharp-runtime-script-compilation 与 tools-first-iteration-loop 两个概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/etodd.io/2011-02-23_back-on-track.md",
+      "status": "skipped_offtopic",
+      "reason": "career / devlog 进度更新，无技术内容"
+    },
+    {
+      "path": "raw/articles/etodd.io/2011-06-22_game-dev-job-macs-and-re-focusing-my-project.md",
+      "status": "skipped_offtopic",
+      "reason": "career / devlog 进度更新（找游戏开发工作 + 项目 refocus），无技术内容"
+    },
+    {
+      "path": "raw/articles/etodd.io/2011-06-27_as-promised-component-binding-behind-the-scenes.md",
+      "status": "ingested",
+      "source_slug": "etodd-component-binding-behind-the-scenes",
+      "title": "As promised: Component Binding 'BEHIND THE SCENES'",
+      "note": "扩展现有 component-entity-data-binding 概念页（Property/Binding/Command 实现细节），通过 patch 追加 Sources 链接与一段实现细节小节"
+    },
+    {
+      "path": "raw/articles/etodd.io/2011-11-25_tools-are-everything.md",
+      "status": "ingested",
+      "source_slug": "etodd-tools-are-everything",
+      "title": "Tools are everything",
+      "note": "opinion 但有具体例子（XACT、editor↔game 切换、tween API），新建 tools-first-iteration-loop 概念页"
+    },
+    {
+      "path": "raw/articles/etodd.io/2011-12-10_c-for-scripting-runtime-compilation.md",
+      "status": "ingested",
+      "source_slug": "etodd-csharp-runtime-compilation",
+      "title": "C# for scripting - runtime compilation",
+      "note": "新建 csharp-runtime-script-compilation 概念页：CodeDomProvider + AppDomain shadow copy + CodeDomProvider 走 LoadFile 的二级坑"
+    }
+  ],
+  "concepts_created": [
+    "csharp-runtime-script-compilation",
+    "tools-first-iteration-loop"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "etodd-component-binding-behind-the-scenes",
+    "etodd-tools-are-everything",
+    "etodd-csharp-runtime-compilation"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/component-entity-data-binding.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/game-engines/component-entity-data-binding.md",
+      "operation": "append_to_section",
+      "section": "## 工程价值",
+      "content": "\n## 实现细节：Property / Binding / Command\n\nTodd 在同年 6 月的「Behind the scenes」详谈了实现。核心是一个泛型 `Property<T>` 容器：它的 setter 会通知所有挂在自己身上的 `Binding<T>`，Binding 再同步另一端的值。Binding 有多种变体——单向、双向、跨类型 lambda 投影（例如 `x => Matrix.CreateRotationY(x)` 把朝向角变成矩阵）、多输入合成、惰性求值。Property 还能接 Setter/Getter delegate，把第三方对象（例如 XNA `AudioListener.Position`）直接 wrap 进 Property，无需拷贝。\n\n为了让 dataflow 系统也能描述事件，Todd 借鉴 MVVM 加了 `Command` / `CommandBinding`——Property 管值的同步，Command 管事件的同步。在「玩家走路播放脚步声」的例子里，`SoundComponent.Play` 就是被 `TimerComponent.OnElapsed` 这个 Command 触发的。\n\n他用「crouch 按键」做了 OOP vs Binding 的对照：OOP 要在 `Player.Update` 里写 `if (Keys.Crouch) height = 1 else 2`，把行为埋进过程式更新；Binding 写法是一行声明 `collisionComponent.Height = (crouchKeyPressed ? 1 : 2)`——**从过程式变成声明式，像写 HTML markup 描述行为关系**。Todd 还提了一个迁移技巧：把所有旧的过程式代码先塞进一个「Blob 组件」，再慢慢拆成自包含的小组件。"
+    },
+    {
+      "file": "wiki/game-engines/component-entity-data-binding.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/etodd-component-binding-behind-the-scenes]]"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 5"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[csharp-runtime-script-compilation]]\n- [[tools-first-iteration-loop]]"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/etodd-component-binding-behind-the-scenes]]\n- [[sources/etodd-tools-are-everything]]\n- [[sources/etodd-csharp-runtime-compilation]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[csharp-runtime-script-compilation]] | C# 自身作脚本：CodeDomProvider + AppDomain shadow copy 实现热重载 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[tools-first-iteration-loop]] | Evan Todd：内容管线和工具优先级高于一切引擎特性 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-component-binding-behind-the-scenes]] | Todd：Property/Binding/Command 的实现细节 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-tools-are-everything]] | Todd：工具优先于特性，内容管线决定游戏 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-csharp-runtime-compilation]] | Todd：C# 运行时编译 + AppDomain shadow copy 热重载 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-26 Worker BX (etodd.io ×5)\n\n处理 5 篇 etodd.io 文章。新增 2 概念页（csharp-runtime-script-compilation, tools-first-iteration-loop）、3 source 摘要。给现有 component-entity-data-binding 追加 Property/Binding/Command 实现细节小节。给 evan-todd 人物页追加新概念与新 source 链接。跳过 2 篇 career/devlog 进度文。"
+}

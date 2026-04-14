@@ -369,3 +369,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-25 Worker BW (blog.mecheye.net ×5)
 
 处理 5 篇 Jasper St. Pierre 的博文。跳过 1 篇 GNOME Shell Extension 提交指南（非技术）。纳入 The Linux Graphics Stack（2012 栈综述）、Bytecode（ACPI/字体/BPF 字节码考古）、Barriers（XI 2.3 pointer barrier pressure）、Xplain（交互式 X11 科普系列启动公告）。新增 4 概念页（x11-composite-redirection、wayland-compositor-model、bytecode-everywhere、x11-pointer-barrier）、4 source 摘要，并给既有 linux-graphics-stack-dri / jasper-st-pierre 两页打 patch 加相关链接与 Source 列表。
+
+## [2026-04-14] ingest | Wave-26 Worker BX (etodd.io ×5)
+
+处理 5 篇 etodd.io 文章。新增 2 概念页（csharp-runtime-script-compilation, tools-first-iteration-loop）、3 source 摘要。给现有 component-entity-data-binding 追加 Property/Binding/Command 实现细节小节。给 evan-todd 人物页追加新概念与新 source 链接。跳过 2 篇 career/devlog 进度文。
+
+## [2026-04-14] ingest | Wave-26 Worker BY (interplayoflight.wordpress.com ×5)
+
+处理 5 篇 Kostas Anagnostou 技术博客。新增 3 概念页：unity-postprocessing-adventures、unreal-frame-breakdown（3 篇 How Unreal Renders a Frame 合一，sources=3）、gpu-based-occlusion-culling；新增 5 个 source 摘要页。不重建 kostas-anagnostou / deferred-rendering / occlusion-culling / hierarchical-z-buffer / volumetric-fog-froxels / temporal-antialiasing。
+
+## [2026-04-14] ingest | Wave-26 Worker BZ (simonschreibt.de ×5)
+
+处理 5 篇 Simon Trümpler 早期 Game Art Tricks 短文（Teleglitch 视野阴影、cell shading 描边、Deus Ex 布料褶皱、Deus Ex 屏幕扫描线、WoW 热气球 lit sphere）。新增 5 个 rendering 概念页（sprite-outline-8-direction, extruded-wall-shadow-viewcone, animated-parallax-cloth-fold, mipmap-moire-scanline, lit-sphere-matcap-shading）、5 个 source 摘要。simon-trumpler 人物页已存在，追加 sources 与 相关 链接。

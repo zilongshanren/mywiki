@@ -38,6 +38,8 @@ Froxel volumetric 留给真正需要光在 3D 空间里和几何交互的场景�
 - [[deferred-rendering]]
 - [[rendering-pipeline]]
 - [[volumetric-raymarching-intro]] — 另一条体积渲染路线：per-fragment raymarching
+- [[unity-postprocessing-adventures]] —— 前一代屏幕空间体积光束的 Unity 实现
+- [[unreal-frame-breakdown]] —— UE4 的 froxel 体积雾 compute pipeline
 
 ## Sources
 

@@ -31,6 +31,11 @@ sources: 5
 - [[normal-decal-edge-blending]]
 - [[chromatic-aberration-post]]
 - [[prebaked-corner-occlusion]]
+- [[sprite-outline-8-direction]]
+- [[extruded-wall-shadow-viewcone]]
+- [[animated-parallax-cloth-fold]]
+- [[mipmap-moire-scanline]]
+- [[lit-sphere-matcap-shading]]
 
 ## Sources
 
@@ -39,3 +44,8 @@ sources: 5
 - [[sources/simonschreibt-divine-divinity-reflection]]
 - [[sources/simonschreibt-fallout3-edges]]
 - [[sources/simonschreibt-teleglitch-rgb]]
+- [[sources/simonschreibt-cell-shading]]
+- [[sources/simonschreibt-teleglitch-viewcones]]
+- [[sources/simonschreibt-deus-ex-folds]]
+- [[sources/simonschreibt-deus-ex-scanlines]]
+- [[sources/simonschreibt-wow-balloon]]

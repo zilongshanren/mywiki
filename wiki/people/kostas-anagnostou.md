@@ -26,6 +26,9 @@ sources: 5
 - [[divergent-gradient-in-branches]] —— 分支内 shader-computed uv 的 tex2D 隐形性能坑
 - [[tessellation-fur-rendering]] —— D3D11 isoline domain 生成 fur 的 64×64 方案
 - [[skysaga-rendering-tech]] —— Meandros 引擎（SkySaga: Infinite Isles）完整管线总览
+- [[unity-postprocessing-adventures]] —— 2015 年在 Unity 里搭体积光束后处理 pipeline 的实验
+- [[unreal-frame-breakdown]] —— 2017 年用 RenderDoc 逐 pass 拆解 UE4.17 默认 deferred 管线（三篇合一）
+- [[gpu-based-occlusion-culling]] —— 2017 年 DX11 上的 GPU-driven HZB + stream compaction + indirect draw retrofit
 
 ## Sources
 
@@ -43,3 +46,8 @@ sources: 5
 - [[sources/interplay-branches-texture-sampling]]
 - [[sources/interplay-fur-tessellation]]
 - [[sources/interplay-skysaga-rendering]]
+- [[sources/interplay-unity-postprocessing]]
+- [[sources/interplay-unreal-frame-part1]]
+- [[sources/interplay-unreal-frame-part2]]
+- [[sources/interplay-unreal-frame-part3]]
+- [[sources/interplay-gpu-occlusion-culling]]
