@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 305
+sources: 309
 ---
 
 # 知识库索引
@@ -83,6 +83,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[csharp-runtime-script-compilation]] | C# 自身作脚本：CodeDomProvider + AppDomain shadow copy 实现热重载 |
 | [[rpp-stl-replacement]] | Slater 的 rpp：Rust 风格 C++20 STL 替代（region 分配器 / brand / 协程 / 反射） |
 | [[continuous-probability]] | 连续概率速成：PDF/CDF、期望方差、Markov/Chebyshev、Dirac delta（MC 系列 Part 1） |
+| [[sigmoid-functions]] | tanh/erf/倒平方根 sigmoid 的听感、速度与多项式变形近似 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -132,6 +133,7 @@ CAQA + CSAPP 的底层视角。
 | [[bytecode-everywhere]] | ACPI / 字体 CFF / TrueType hinting / BPF / DWARF / VDBE——藏在系统里的字节码 VM 考古 |
 | [[x11-pointer-barrier]] | XI 2.3 的 pointer barrier pressure：把"推屏幕边"从 timeout 升级为一等公民手势 |
 | [[open-addressing-hashtable]] | Robin Hood 线性探测 + backshift 删除：Slater 的哈希表工程对照组 |
+| [[undefined-behavior-c-cpp]] | C/C++ 未定义行为的三阵营分析、历史与治理策略（Raph Levien） |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -385,6 +387,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[metal-compute-image-filter]] | 用 Metal compute kernel 做图像滤镜链（thread_position_in_grid / 懒求值 provider 协议）|
 | [[neural-graphics-primitives]] | 神经图形原语：MLP + 位置编码 / Instant NGP 哈希编码把图像/SDF/NeRF 全部写成 coord→value |
 | [[spherical-integration]] | 球面积分里的 $\sin\theta$ 从何而来：参数化 + 叉积 + 第一基本形式 |
+| [[hybrid-hair-rendering]] | Wronski 的混合 deferred/forward 头发 trick：按 alpha 阈值把发丝拆成实心 + 边缘两段分别处理 |
 
 ## 经典案例（wiki/examples/）
 
@@ -770,6 +773,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/slater-spherical-integration]] | Slater：球面积分里 $\sin\theta$ 的直观 + 形式推导 |
 | [[sources/slater-oxidizing-cpp]] | Slater：rpp —— Rust 灵感的 C++20 STL 替代与 region 分配器 |
 | [[sources/slater-continuous-probability]] | Slater：Monte Carlo 速成 Part 1 — 连续概率基础 |
+| [[sources/raphlinus-undefined-behavior]] | Raph Levien：C/C++ 未定义行为的历史、虚拟机模型与治理 |
+| [[sources/raphlinus-favorite-sigmoids]] | Raph Levien：数字合成器里的 sigmoid 比较与多项式变形近似 |
+| [[sources/bartwronski-hair-rendering-tricks]] | Wronski：Witcher 3 / Cyberpunk 原型期的头发 alpha-test 四 pass 混合管线 + Witcher 2 SSS hack |
+| [[sources/bartwronski-csharprenderer-volumetric-fog]] | Wronski：CSharpRenderer 框架更新，附 Siggraph 2014 froxel 体积雾 compute shader demo 代码 |
 
 ## 元（wiki/meta/）
 

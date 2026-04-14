@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 7
+sources: 9
 ---
 
 # Raph Levien
@@ -37,6 +37,8 @@ sources: 7
 | A sketch of string unescaping on GPGPU | [[gpgpu-string-unescaping]] |
 | ECS architecture for UI in Rust | [[ecs-for-rust-ui]] |
 | Towards GPGPU JSON parsing | [[gpgpu-json-parsing]] |
+| With Undefined Behavior, Anything is Possible | [[undefined-behavior-c-cpp]] |
+| A Few of My Favorite Sigmoids | [[sigmoid-functions]] |
 
 ## 相关
 
@@ -47,6 +49,8 @@ sources: 7
 - [[gpgpu-string-unescaping]]
 - [[gpgpu-json-parsing]]
 - [[ecs-for-rust-ui]]
+- [[undefined-behavior-c-cpp]]
+- [[sigmoid-functions]]
 
 ## Sources
 
@@ -57,3 +61,5 @@ sources: 7
 - [[sources/raphlinus-gpu-unescaping]]
 - [[sources/raphlinus-ecs-ui-rust]]
 - [[sources/raphlinus-gpu-json-parsing]]
+- [[sources/raphlinus-undefined-behavior]]
+- [[sources/raphlinus-favorite-sigmoids]]

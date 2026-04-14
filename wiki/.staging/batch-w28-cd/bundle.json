@@ -1,0 +1,93 @@
+{
+  "batch_id": "batch-w28-cd",
+  "agent_note": "5 篇 raphlinus.github.io，其中 3 篇按 constraints 跳过（书评/转职帖/合成器 devlog），2 篇技术性文章（C/C++ UB 分析、sigmoid 数学）正式 ingest。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-06-23_notes-on-lost-in-math.md",
+      "status": "skipped_offtopic",
+      "reason": "Sabine Hossenfelder 物理学科普书的读书笔记，属于 book review / 哲学评论，无软件技术内容"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-08-17_with-undefined-behavior-anything-is-possible.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-undefined-behavior",
+      "title": "With Undefined Behavior, Anything is Possible"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-08-28_a-new-adventure.md",
+      "status": "skipped_offtopic",
+      "reason": "个人职业变动帖（Raph 加入 Google Fonts），career announcement，无技术内容"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-09-05_a-few-of-my-favorite-sigmoids.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-favorite-sigmoids",
+      "title": "A Few of My Favorite Sigmoids"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-09-19_synthesizer-progress-update.md",
+      "status": "skipped_offtopic",
+      "reason": "合成器 synthesizer-io 项目进度 devlog，非技术深度内容"
+    }
+  ],
+  "concepts_created": [
+    "undefined-behavior-c-cpp",
+    "sigmoid-functions"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "raphlinus-undefined-behavior",
+    "raphlinus-favorite-sigmoids"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| With Undefined Behavior, Anything is Possible | [[undefined-behavior-c-cpp]] |\n| A Few of My Favorite Sigmoids | [[sigmoid-functions]] |"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[undefined-behavior-c-cpp]]\n- [[sigmoid-functions]]"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/raphlinus-undefined-behavior]]\n- [[sources/raphlinus-favorite-sigmoids]]"
+    },
+    {
+      "file": "wiki/computer-systems/faster-math-functions.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sigmoid-functions]] — Raph Levien 用「多项式变形」思路打败学术论文里的 tanh/erf 近似"
+    },
+    {
+      "file": "wiki/programming-languages/avoid-unsigned-types.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[undefined-behavior-c-cpp]] — C/C++ 有符号溢出是 UB 的源头之一"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[undefined-behavior-c-cpp]] | C/C++ 未定义行为的三阵营分析、历史与治理策略（Raph Levien） |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[sigmoid-functions]] | tanh/erf/倒平方根 sigmoid 的听感、速度与多项式变形近似 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-undefined-behavior]] | Raph Levien：C/C++ 未定义行为的历史、虚拟机模型与治理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-favorite-sigmoids]] | Raph Levien：数字合成器里的 sigmoid 比较与多项式变形近似 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Batch w28-cd（raphlinus.github.io ×5）\n\n处理 5 篇 Raph Levien 博客文章。Ingest 2 篇：UB 分析（新概念 undefined-behavior-c-cpp）与 sigmoid 数学（新概念 sigmoid-functions）；跳过 3 篇（物理书评、职业帖、合成器 devlog）。新增 2 source 摘要、对 raph-linus / faster-math-functions / avoid-unsigned-types 追加交叉引用。"
+}

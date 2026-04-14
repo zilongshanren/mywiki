@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w28-ce",
+  "agent_note": "All 5 anteru.net posts are software engineering workflow/opinion pieces from 2010 — reporting compiler bugs (process advice), C++ unit test framework comparison (outdated: GoogleTest vs Boost.Test pre-Catch2), build engineering (CMake/Bazaar/Python glue generalities), Bazaar 2.2 release announcement (pure VCS news), and a graphics-research test harness write-up (Lua+Python+pdiff plumbing). None land on the wiki's core topic set (graphics/rendering/engines/systems/PL theory) with enough technical substance to warrant concept pages. The existing matthaeus-chajdas person page already covers Anteru's graphics-focused contributions; these five posts belong to his systems-engineering side which the wiki explicitly excludes (see person page: 'wiki 只收录其中的渲染 / 编译器方向内容'). Skipping all 5.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2010-06-28_reporting-compiler-bugs.md",
+      "status": "skipped_offtopic",
+      "reason": "软件工程工作流建议：如何写一份好的编译器 bug 报告（最小复现、打包、预处理器输出）。属于通用 process advice，没有具体的编译器内部原理或图形/引擎/系统话题落点。人物页已明确声明本 wiki 不收录 Anteru 的系统工程向内容。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-07-05_c-unit-testing-frameworks-revisited.md",
+      "status": "skipped_offtopic",
+      "reason": "2010 年 C++ 单元测试框架选型比较（Google Test vs Boost.Test）。内容已经严重过时（Catch2 / doctest 尚未出现），且本身是工具对比，不属于渲染/引擎/系统/PL 核心话题。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-07-19_build-engineering.md",
+      "status": "skipped_offtopic",
+      "reason": "关于构建工程实践的泛论：CMake、Bazaar、Python 胶水脚本、依赖管理。属于软件工程 opinion 文章，没有引擎/图形/系统方面的具体技术内容可提炼成概念页。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-08-16_bazaar-2-2-has-been-released.md",
+      "status": "skipped_offtopic",
+      "reason": "Bazaar 2.2 版本发布公告。纯 VCS 工具新闻，与 wiki 所有话题无关。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-11-01_automated-testing-on-my-latest-research-project.md",
+      "status": "skipped_offtopic",
+      "reason": "研究项目的自动化测试基础设施笔记：Lua 脚本驱动渲染器 + Python 多进程 + pdiff/ImageMagick 对比 + HTML 报表。属于测试工作流工程说明，虽然背景是图形算法，但文章本身讲的是测试管道搭建，没有具体的图形/渲染技术内容可萃取。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-14] ingest | Wave-28 Worker CE (anteru.net ×5 systems-engineering)\n\n处理 5 篇 anteru.net 2010 年软件工程类文章：reporting compiler bugs、C++ unit testing frameworks revisited、build engineering、Bazaar 2.2 发布、research project 自动化测试。全部跳过：都是 process/opinion/工具新闻，没有图形/引擎/系统/PL 的核心技术内容落点；且 matthaeus-chajdas 人物页已明确只收录 Anteru 的渲染/编译器方向文章。无概念页、无 source 摘要、无 patch。"
+}

@@ -57,6 +57,7 @@ C++ 标准库自身 `size_t` 的选择被普遍认为是历史包袱——`std::
 - [[red-flags]]
 - [[information-leakage]]
 - [[matthaeus-chajdas]]
+- [[undefined-behavior-c-cpp]] — C/C++ 有符号溢出是 UB 的源头之一
 
 ## Sources
 

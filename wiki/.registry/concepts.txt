@@ -168,6 +168,7 @@ hlsl-derivation-correctness
 homogeneous-rasterization-transpose-bug
 hsr-tbdr
 html5-game-apis-2012
+hybrid-hair-rendering
 hybrid-raytracing-pipeline
 iir-filter-deconvolution
 image-convolution-kernel
@@ -316,6 +317,7 @@ shallow-modules
 shaping-functions
 sharpdx-assimp-pipeline
 shockwave-effect
+sigmoid-functions
 simon-trumpler
 simple-cpp-mark-sweep-gc
 skysaga-rendering-tech
@@ -366,6 +368,7 @@ triangle-setup
 trigonometric-moment-transient-imaging
 triplanar-mapping
 two-texture-sampling-tricks
+undefined-behavior-c-cpp
 unity-complexity-patterns
 unity-grabpass-blur
 unity-image-effect-basics

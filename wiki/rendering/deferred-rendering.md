@@ -57,6 +57,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[deferred-alpha-lighting]] —— deferred 下给透明物打光的四条方案综述
 - [[skysaga-rendering-tech]] —— Meandros 引擎：token command stream + 4-RT G-Buffer + G-Buffer modification 天气系统
 - [[unreal-frame-breakdown]] —— UE4.17 默认 deferred 管线的 RenderDoc 逐 pass 拆解
+- [[hybrid-hair-rendering]] —— Wronski 的混合 deferred/forward 头发 trick，规避 fat G-Buffer 分支与 alpha-test 锯齿
 
 ## Sources
 

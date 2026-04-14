@@ -44,6 +44,7 @@ Creative Assembly 在 Develop 2012 提出的方案，也是 Kostas 这篇文章�
 - [[tiled-light-prepass]] — 本文原型所用的引擎
 - [[dither-alpha-clipping]] — 屏幕门类方案的近亲
 - [[kostas-anagnostou]]
+- [[hybrid-hair-rendering]] —— 另一种 deferred + alpha 的 hack：头发按「实心 + 边缘」两段分别走 deferred / forward
 
 ## Sources
 

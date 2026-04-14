@@ -393,3 +393,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-27 Worker CC (thenumb.at Max Slater ×5)
 
 处理 5 篇 Max Slater 技术长文：Neural Graphics Primitives、Optimizing Open Addressing、Spherical Integration、Oxidizing C++、Monte Carlo Crash Course Part 1 (Continuous Probability)。新增 5 概念页（neural-graphics-primitives, open-addressing-hashtable, spherical-integration, rpp-stl-replacement, continuous-probability）、5 source 摘要。max-slater 人物页已存在，追加 5 source 链接。Part 1 (2025-03-29) 与已有 Part 5 QMC (slater-qmc-crash-course) 独立收录。
+
+## [2026-04-14] ingest | Batch w28-cd（raphlinus.github.io ×5）
+
+处理 5 篇 Raph Levien 博客文章。Ingest 2 篇：UB 分析（新概念 undefined-behavior-c-cpp）与 sigmoid 数学（新概念 sigmoid-functions）；跳过 3 篇（物理书评、职业帖、合成器 devlog）。新增 2 source 摘要、对 raph-linus / faster-math-functions / avoid-unsigned-types 追加交叉引用。
+
+## [2026-04-14] ingest | Wave-28 Worker CE (anteru.net ×5 systems-engineering)
+
+处理 5 篇 anteru.net 2010 年软件工程类文章：reporting compiler bugs、C++ unit testing frameworks revisited、build engineering、Bazaar 2.2 发布、research project 自动化测试。全部跳过：都是 process/opinion/工具新闻，没有图形/引擎/系统/PL 的核心技术内容落点；且 matthaeus-chajdas 人物页已明确只收录 Anteru 的渲染/编译器方向文章。无概念页、无 source 摘要、无 patch。
+
+## [2026-04-14] ingest | Wave-28 Worker CF (bartwronski.com 2014 ×5)
+
+处理 5 篇 Bart Wronski 2014 年博客。Ingest 2 篇：Hair rendering trick(s)（Witcher 3 / Cyberpunk 原型期 4 pass 混合 deferred/forward 头发管线 + Witcher 2 SSS hack）、CSharpRenderer + volumetric fog code（Siggraph 2014 talk 配套开源 froxel 体积雾 compute shader demo 发布公告）。跳过 3 篇：Sony A7 相机评测、Python 科学工具链主观感受、CSharpRenderer 10 月功能 roll-up。新增 1 概念页 hybrid-hair-rendering、2 source 摘要（hair-rendering-tricks, csharprenderer-volumetric-fog）。bartosz-wronski 与 volumetric-fog-froxels 既有页通过 patch 追加 source 链接与交叉引用。

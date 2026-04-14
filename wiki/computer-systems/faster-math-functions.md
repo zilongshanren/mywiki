@@ -64,6 +64,7 @@ Robin 自己在给 tutorial 补料时临时加了一个叫 BitLog 的「快速�
 - [[fast-exponentiation]] — 快速幂（整数版，另一条支线）
 - [[sse-tricks]] — SSE 上实现向量化数学函数
 - [[robin-green]]
+- [[sigmoid-functions]] — Raph Levien 用「多项式变形」思路打败学术论文里的 tanh/erf 近似
 
 ## Sources
 

@@ -1,0 +1,106 @@
+{
+  "batch_id": "batch-w28-cf",
+  "agent_note": "Bart Wronski 2014 × 5: ingested 2 (hair rendering trick + CSharpRenderer volumetric fog code release); skipped 3 off-topic/low-substance posts (Sony A7 camera review, Python scientific toolbox opinion, CSharpRenderer framework feature roll-up). bartosz-wronski page already exists — do not recreate; patch its sources/source_count instead. volumetric-fog-froxels exists — only add source link + brief note. Created 1 new concept (hybrid-hair-rendering) + 2 source summaries.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-07-20_hair-rendering-trick-s.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-hair-rendering-tricks",
+      "title": "Hair rendering trick(s)"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-07-31_sony-a7-review.md",
+      "status": "skipped_offtopic",
+      "reason": "Sony A7 相机评测，纯个人摄影器材 review，非技术图形内容"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-08-20_major-c-net-graphics-framework-update-volumetric-fog-code.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-csharprenderer-volumetric-fog",
+      "title": "Major C#/.NET graphics framework update + volumetric fog code!"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-09-16_python-as-scientific-toolbox-8-months-later.md",
+      "status": "skipped_offtopic",
+      "reason": "作者使用 Python 科学工具链 8 个月的主观感受/吐槽，非具体技术内容"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-10-18_csharprenderer-framework-update.md",
+      "status": "skipped_offtopic",
+      "reason": "CSharpRenderer 框架另一次小功能 roll-up 公告，无独立技术洞察（与 8 月 volumetric fog 发布 post 重复，且本身已有 bartwronski-csharprenderer-debug 等源页覆盖该框架）"
+    }
+  ],
+  "concepts_created": [
+    "hybrid-hair-rendering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-hair-rendering-tricks",
+    "bartwronski-csharprenderer-volumetric-fog"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "replace_line",
+      "match": "sources: 7",
+      "content": "sources: 9"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-hair-rendering-tricks]]\n- [[sources/bartwronski-csharprenderer-volumetric-fog]]"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hybrid-hair-rendering]]\n- [[volumetric-fog-froxels]]"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bartosz-wronski]] —— 原 AC4/Scimitar 引擎 compute shader 作者，其 Siggraph 2014 talk 是这条技术的源头参考"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-csharprenderer-volumetric-fog]] —— Wronski Siggraph 2014 talk 配套的开源 demo compute shader 代码"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hybrid-hair-rendering]] —— Wronski 的混合 deferred/forward 头发 trick，规避 fat G-Buffer 分支与 alpha-test 锯齿"
+    },
+    {
+      "file": "wiki/rendering/deferred-alpha-lighting.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hybrid-hair-rendering]] —— 另一种 deferred + alpha 的 hack：头发按「实心 + 边缘」两段分别走 deferred / forward"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hybrid-hair-rendering]] | Wronski 的混合 deferred/forward 头发 trick：按 alpha 阈值把发丝拆成实心 + 边缘两段分别处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-hair-rendering-tricks]] | Wronski：Witcher 3 / Cyberpunk 原型期的头发 alpha-test 四 pass 混合管线 + Witcher 2 SSS hack |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-csharprenderer-volumetric-fog]] | Wronski：CSharpRenderer 框架更新，附 Siggraph 2014 froxel 体积雾 compute shader demo 代码 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-28 Worker CF (bartwronski.com 2014 ×5)\n\n处理 5 篇 Bart Wronski 2014 年博客。Ingest 2 篇：Hair rendering trick(s)（Witcher 3 / Cyberpunk 原型期 4 pass 混合 deferred/forward 头发管线 + Witcher 2 SSS hack）、CSharpRenderer + volumetric fog code（Siggraph 2014 talk 配套开源 froxel 体积雾 compute shader demo 发布公告）。跳过 3 篇：Sony A7 相机评测、Python 科学工具链主观感受、CSharpRenderer 10 月功能 roll-up。新增 1 概念页 hybrid-hair-rendering、2 source 摘要（hair-rendering-tricks, csharprenderer-volumetric-fog）。bartosz-wronski 与 volumetric-fog-froxels 既有页通过 patch 追加 source 链接与交叉引用。"
+}

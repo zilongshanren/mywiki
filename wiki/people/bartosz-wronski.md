@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, 图像处理]
 date: 2026-04-14
-sources: 7
+sources: 9
 ---
 
 # Bart Wronski（Bartosz Wroński）
@@ -44,6 +44,8 @@ sources: 7
 - [[runtime-editor-console-connection]]
 - [[chromatic-aberration-post]]
 - [[thin-lens-model]]
+- [[hybrid-hair-rendering]]
+- [[volumetric-fog-froxels]]
 
 ## Sources
 
@@ -57,3 +59,5 @@ sources: 7
 - [[sources/bartwronski-bokeh-insane-pt1]]
 - [[sources/bartwronski-temporal-ssao]]
 - [[sources/bartwronski-editor-console-connection]]
+- [[sources/bartwronski-hair-rendering-tricks]]
+- [[sources/bartwronski-csharprenderer-volumetric-fog]]
