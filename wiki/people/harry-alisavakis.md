@@ -17,6 +17,7 @@ sources: 1
 - [[unity-image-effect-basics]] —— 2017 年 *My take on shaders* 系列第一篇讲的就是这个
 - [[night-time-tint-shader]]
 - [[bluk-2d-fog-sprite-shader]]
+- [[watercolour-shader-experiments]] —— Cyan 为 #TechnicallyAChallenge 「水彩」主题做的三层 shader breakdown
 
 ## Sources
 

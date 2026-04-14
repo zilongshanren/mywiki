@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w17-aw",
+  "agent_note": "Max Slater 4 篇技术长文（hot reload / Hamming hats / exponential rotations / autodiff）。skip 1 篇 graphics-blogroll 链接堆。新建 4 个概念页（binary-hot-reload / hamming-code-hat-puzzle / exponential-map-rotations / automatic-differentiation）和 4 个 source 摘要。max-slater 已存在，patch 追加 4 条贡献和 source 链接。3d-rotation-math 已存在，patch 追加 exp-map 交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/thenumb.at/2018-07-25_exile-hot-reloading.md",
+      "status": "ingested",
+      "source_slug": "slater-exile-hot-reloading",
+      "title": "Exile: Hot Reloading"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2022-03-29_hamming-hats.md",
+      "status": "ingested",
+      "source_slug": "slater-hamming-hats",
+      "title": "Hamming Hats"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2022-04-04_graphics-blogroll.md",
+      "status": "skipped_offtopic",
+      "reason": "纯链接 / blogroll 列表，无技术内容可抽取"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2022-04-15_exponentially-better-rotations.md",
+      "status": "ingested",
+      "source_slug": "slater-exponential-rotations",
+      "title": "Exponentially Better Rotations"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2022-07-31_differentiable-programming-from-scratch.md",
+      "status": "ingested",
+      "source_slug": "slater-autodiff",
+      "title": "Differentiable Programming from Scratch"
+    }
+  ],
+  "concepts_created": [
+    "binary-hot-reload",
+    "hamming-code-hat-puzzle",
+    "exponential-map-rotations",
+    "automatic-differentiation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "slater-exile-hot-reloading",
+    "slater-hamming-hats",
+    "slater-exponential-rotations",
+    "slater-autodiff"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-exile-hot-reloading]]\n- [[sources/slater-hamming-hats]]\n- [[sources/slater-exponential-rotations]]\n- [[sources/slater-autodiff]]"
+    },
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[exponential-map-rotations]] — 用矩阵指数 / 对数把四种表示串起来，并支持 Karcher mean 平均一组旋转"
+    },
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-exponential-rotations]] — Max Slater 用 $\\exp/\\log$ 把 Rodrigues 公式推到李代数视角"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[binary-hot-reload]] | C++ 二进制热重载：DLL swap + 五道状态归属坑（memory/threads/fnptr/strings/structs） |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[hamming-code-hat-puzzle]] | 31 人帽子谜题的 Hamming 码最优策略：胜率 31/32 与对称性上界 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[automatic-differentiation]] | autodiff 全景：dual number forward / DAG backward / JAX 梯度即图变换 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[exponential-map-rotations]] | 矩阵指数 / 对数统一四种旋转表示，给出 slerp 等价物与 Karcher mean 平均算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-exile-hot-reloading]] | Slater：Exile C++ 引擎的 DLL 热重载实现与五道坑 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-hamming-hats]] | Slater：Hamming 码解 31 人帽子谜题的最优策略证明 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-exponential-rotations]] | Slater：用矩阵 exp/log 统一旋转表示与 Karcher mean |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-autodiff]] | Slater：autodiff 从零到 JAX 视角，附图像反模糊 demo |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-17 Worker AW (thenumb.at Max Slater ×5)\n\n处理 5 篇 thenumb.at Max Slater 长文：4 篇技术 ingest（hot reload / Hamming hats / exponential rotations / autodiff），1 篇 graphics-blogroll 跳过（纯链接列表）。新建 4 概念页（binary-hot-reload, hamming-code-hat-puzzle, exponential-map-rotations, automatic-differentiation）和 4 source 摘要。Patch max-slater 人物页追加 4 source；patch 3d-rotation-math 追加 exp-map 交叉引用与 source。"
+}

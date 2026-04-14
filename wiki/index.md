@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 189
+sources: 203
 ---
 
 # 知识库索引
@@ -70,6 +70,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[cpp-runtime-reflection]] | libclang 元程序生成 C++ 运行时类型表 |
 | [[swap-and-pop-removal]] | 无序数组删除的 swap-and-pop 技巧：O(n) → O(1) |
 | [[java-vector-math-limitations]] | Java 做向量数学的两个痛点：无运算符重载、无栈分配 |
+| [[hamming-code-hat-puzzle]] | 31 人帽子谜题的 Hamming 码最优策略：胜率 31/32 与对称性上界 |
+| [[automatic-differentiation]] | autodiff 全景：dual number forward / DAG backward / JAX 梯度即图变换 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -111,6 +113,7 @@ CAQA + CSAPP 的底层视角。
 | [[nsmutablearray-circular-buffer]] | `__NSArrayM` 其实是循环缓冲 deque，两端 O(1) |
 | [[nsdictionary-linear-probing]] | `__NSDictionaryI` = 开放寻址 + 线性探测 + indexed ivars 紧凑存储 |
 | [[objc-runtime-internals]] | Modern Obj-C runtime：class cluster / non-fragile ivars / indexed ivars / lazy binding |
+| [[binary-hot-reload]] | C++ 二进制热重载：DLL swap + 五道状态归属坑（memory/threads/fnptr/strings/structs） |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -204,6 +207,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[jump-flooding-algorithm]]           | GPU 距离场：对数趟指数步长的 3×3 洪填                                            |
 | [[oklab-color-space]]                 | 两次矩阵乘一次立方根得到的感知均匀色彩空间                                              |
 | [[3d-rotation-math]]                  | Euler / Axis-Angle / 四元数：3D 旋转的数学形式                                |
+| [[exponential-map-rotations]]         | 矩阵指数 / 对数统一四种旋转表示，给出 slerp 等价物与 Karcher mean 平均算法                       |
+| [[render-textures-unity]]             | Unity 的 GPU-side 中间贴图：color format 命名规范与 AsyncGPUReadback 异步回读                |
+| [[triplanar-mapping]]                 | 三轴平面投影 + 法线加权混合：解决程序化几何 / 大物体的 UV 拉伸                                            |
+| [[orthographic-depth]]                | 正交相机的 Scene Depth：buffer 本身线性 + 平台差异 + 深度差/世界坐标重建的正交版                          |
+| [[watercolour-shader-experiments]]    | Cyan 的水彩观感三层 shader：mesh + Blit 后处理 + 假 decal                                  |
 | [[layered-grid-noise]]                | 黄金角旋转 + 多层 shift/scale 的廉价伪随机散布                                    |
 | [[shadow-mapping-basics]]             | Shadow mapping 入门：hard / soft / bias / PCF / Phong                 |
 | [[microfacet-brdf]]                   | $D\,F\,G$ 微表面 BRDF + 多次散射能量补偿                                      |
@@ -331,6 +339,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[a-star-pathfinding]] | A* 与动态环境下的寻路取舍，g(n) 是游戏性的入口 |
 | [[composite-command-pattern]] | 命令模式与 Serial / Parallel 复合命令：跨帧执行的可组合工作单元 |
 | [[meshes-of-navigation-recast]] | 导航网格与 Recast 的体素化生成管线 |
+| [[procedural-mesh-primitives]] | Torus / UV-sphere / ellipsoid 的参数化顶点公式与拓扑结构 |
+| [[mesh-warps-and-tessellation]] | Stellation、extrusion 与 fan/centroid/triforce 三角化：CPU 侧 per-face 几何算法 |
 
 ## 人物（wiki/people/）
 
@@ -567,6 +577,20 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/ronja-basic-shader]] | Ronja 004：UnityObjectToClipPos + TRANSFORM_TEX + tex2D 组出第一个 Unlit shader |
 | [[sources/ronja-surface-shader-basics]] | Ronja 005：从手写 Unlit 转 Surface Shader，SurfaceOutputStandard 七字段速查 |
 | [[sources/alanzucconi-flixel-retro-crt]] | Zucconi：Flixel 2.5 上的 CPU 版 CRT 通道错位后处理（2012） |
+| [[sources/slater-exile-hot-reloading]] | Slater：Exile C++ 引擎的 DLL 热重载实现与五道坑 |
+| [[sources/slater-hamming-hats]] | Slater：Hamming 码解 31 人帽子谜题的最优策略证明 |
+| [[sources/slater-exponential-rotations]] | Slater：用矩阵 exp/log 统一旋转表示与 Karcher mean |
+| [[sources/slater-autodiff]] | Slater：autodiff 从零到 JAX 视角，附图像反模糊 demo |
+| [[sources/lindenreid-procedural-stellation]] | Reid：把三角形拱成 tetrahedron 做程序化星体 |
+| [[sources/lindenreid-procedural-extrusion]] | Reid：沿法线把三角形挤成三棱柱 |
+| [[sources/lindenreid-procedural-torus]] | Reid：圆环作为两层嵌套圆的参数方程 |
+| [[sources/lindenreid-procedural-sphere-ellipsoid]] | Reid：UV-sphere 与各向异性 ellipsoid 的参数化 |
+| [[sources/lindenreid-mesh-tessellation-triangulation]] | Reid：Fan / Centroid / Triforce 三种实用三角化算法 |
+| [[sources/cyan-render-textures]] | Cyan：Unity Render Texture 与 AsyncGPUReadback 异步回读 |
+| [[sources/cyan-voronoi]] | Cyan：Shader Graph Voronoi 节点拆解与 cell 边缘 Custom Function |
+| [[sources/cyan-triplanar-mapping]] | Cyan：World-space UV 与 Triplanar Mapping 的 Shader Graph 实现 |
+| [[sources/cyan-orthographic-depth]] | Cyan：正交相机下 Scene Depth 节点的平台差异与深度差/世界坐标重建 |
+| [[sources/cyan-watercolour-shader-experiments]] | Cyan：水彩观感的三层 URP shader（mesh + Blit + decal）|
 
 ## 元（wiki/meta/）
 

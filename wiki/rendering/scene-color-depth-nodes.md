@@ -73,6 +73,7 @@ Scene Depth 的"不线性"是 perspective projection 本身的性质——[[reve
 - [[blit-render-feature]]
 - [[fragment-shader]]
 - [[alpha-blending]]
+- [[orthographic-depth]] —— 正交相机下 Scene Depth 必须用 Raw 模式，平台差异和深度差技巧的正交版
 
 ## Sources
 

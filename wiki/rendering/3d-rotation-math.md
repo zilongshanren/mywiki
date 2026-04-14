@@ -77,7 +77,9 @@ Xor 的总结一句话：**旋转总是发生在某一个平面上**。2D 里只
 - [[fragment-shader]]
 - [[xor-shader-artist]]
 - [[shader-vector-math-primer]] —— shader 向量运算的几何直觉（dot/cross/normalize）
+- [[exponential-map-rotations]] — 用矩阵指数 / 对数把四种表示串起来，并支持 Karcher mean 平均一组旋转
 
 ## Sources
 
 - [[sources/xor-mini-3d-rotation]]
+- [[sources/slater-exponential-rotations]] — Max Slater 用 $\exp/\log$ 把 Rodrigues 公式推到李代数视角

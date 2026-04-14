@@ -44,6 +44,7 @@ planar mapping 还是 [[sdf-2d-primitives|2D SDF]] 教程的前置——SDF 示�
 - [[fragment-shader]]
 - [[sdf-2d-primitives]] —— 用世界坐标喂 SDF 函数
 - [[normal-map-blending]] —— triplanar 中不同方向采样的法线合并
+- [[triplanar-mapping]] —— 三轴投影 + 法线加权混合，解决平面映射在垂直面上的拉伸
 
 ## Sources
 

@@ -14,10 +14,12 @@ aos-vs-soa
 apoorva-joshi
 applicative-vs-normal-order
 aras-pranckevicius
+automatic-differentiation
 bartosz-ciechanowski
 bartosz-wronski
 batching
 bezier-curve-triangulation
+binary-hot-reload
 bindless-rendering
 bits-and-context
 blit-render-feature
@@ -95,6 +97,7 @@ engine-layering
 environment
 environment-probe-placement
 evan-todd
+exponential-map-rotations
 exposure-fusion
 fabian-giesen
 false-abstraction
@@ -127,6 +130,7 @@ gpu-image-editor-brush
 gpu-latency-hiding
 gpu-printf-debugging
 greedy-voxel-meshing
+hamming-code-hat-puzzle
 harry-alisavakis
 hbao-interleaved-sampling
 hennessy-patterson
@@ -173,6 +177,7 @@ malloc-wrapper-debug
 matthaeus-chajdas
 max-slater
 memory-hierarchy
+mesh-warps-and-tessellation
 meshes-of-navigation-recast
 meshoptimizer-vertex-codec
 metal-api-overview
@@ -197,6 +202,7 @@ occlusion-culling
 oklab-color-space
 openexr-format
 order-of-growth
+orthographic-depth
 overdraw
 overview
 painted-foliage-bent-planes
@@ -216,6 +222,7 @@ power-wall
 prebaked-corner-occlusion
 probabilistic-algorithms
 procedural-abstraction
+procedural-mesh-primitives
 procedural-rendering-ps2
 projected-solid-angle-sampling
 quasi-monte-carlo
@@ -227,6 +234,7 @@ recursive-vs-iterative-process
 red-flags
 register-spilling-avoidance
 render-graph
+render-textures-unity
 rendering-api-depth
 rendering-pipeline
 resource-system-design
@@ -288,6 +296,7 @@ tiled-light-prepass
 triangle-primitives
 triangle-setup
 trigonometric-moment-transient-imaging
+triplanar-mapping
 unity-complexity-patterns
 unity-grabpass-blur
 unity-image-effect-basics
@@ -309,6 +318,7 @@ volumetric-raymarching-intro
 volumetric-video-playback
 voxel-ambient-occlusion
 warren-moore
+watercolour-shader-experiments
 worley-voronoi-noise
 xor-shader-artist
 z-buffer

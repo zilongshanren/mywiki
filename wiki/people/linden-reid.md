@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader教程]
 date: 2026-04-14
-sources: 3
+sources: 8
 ---
 
 # Linden Reid
@@ -15,6 +15,7 @@ sources: 3
 - **Basic Math for Shaders**（2018）—— 面向"自认数学差"的读者的 shader 向量数学速成，见 [[shader-vector-math-primer]]。
 - **Intro to Procedural Geometry**（2018 系列）—— 用 Unity Mesh API 从零构造 plane、cube、法线与 UV，见 [[unity-procedural-mesh]]。
 - **Foggy Window Shader**（2018）—— 用 GrabPass + 可分 Gaussian blur + 纹理编码时间做可交互雾气窗户，见 [[unity-grabpass-blur]] 与 [[texture-encoded-state]]。
+- **Limit Theory Procedural Geometry**（2017）—— 早期为 Procedural Reality 的 Limit Theory 写的一组 CPU 侧程序化几何教程，覆盖参数化基元（torus、sphere、ellipsoid）与 per-face 变形/细分（stellation、extrusion、fan/centroid/triforce triangulation），见 [[procedural-mesh-primitives]] 与 [[mesh-warps-and-tessellation]]。
 
 ## 相关
 
@@ -24,9 +25,16 @@ sources: 3
 - [[texture-encoded-state]]
 - [[ronja-bohm]] —— 同赛道的另一位 Unity shader 教程作者
 - [[harry-alisavakis]] —— 同赛道
+- [[procedural-mesh-primitives]]
+- [[mesh-warps-and-tessellation]]
 
 ## Sources
 
 - [[sources/lindenreid-basic-math-for-shaders]]
 - [[sources/lindenreid-procedural-geometry-part2]]
 - [[sources/lindenreid-foggy-window-shader]]
+- [[sources/lindenreid-procedural-stellation]]
+- [[sources/lindenreid-procedural-extrusion]]
+- [[sources/lindenreid-procedural-torus]]
+- [[sources/lindenreid-procedural-sphere-ellipsoid]]
+- [[sources/lindenreid-mesh-tessellation-triangulation]]

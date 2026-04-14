@@ -265,3 +265,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-16 Worker AV (alanzucconi.com 2012 ×5)
 
 处理 alanzucconi.com 2012 年 5 篇早期博客。仅 ingest 1 篇技术内容（Flixel 2.5 上的 CRT RGB 通道偏移 CPU 实现），新增 1 个 source 摘要 `alanzucconi-flixel-retro-crt` 并 patch 到现有 `crt-shader-effects` 与 `alan-zucconi`。跳过 4 篇非技术：RAPTUS postmortem / RAPTUS 评论汇编 / Indie Games Expo 2012 见闻 / Still time devlog #1。
+
+## [2026-04-14] ingest | Wave-17 Worker AW (thenumb.at Max Slater ×5)
+
+处理 5 篇 thenumb.at Max Slater 长文：4 篇技术 ingest（hot reload / Hamming hats / exponential rotations / autodiff），1 篇 graphics-blogroll 跳过（纯链接列表）。新建 4 概念页（binary-hot-reload, hamming-code-hat-puzzle, exponential-map-rotations, automatic-differentiation）和 4 source 摘要。Patch max-slater 人物页追加 4 source；patch 3d-rotation-math 追加 exp-map 交叉引用与 source。
+
+## [2026-04-14] ingest | Wave-17 Worker AX (lindenreid.wordpress.com Limit Theory procgen ×5)
+
+处理 Linden Reid 2017 年为 Limit Theory 写的 5 篇 CPU 侧程序化几何教程（stellation、extrusion、torus、sphere/ellipsoid、tessellation-triangulation）。按 orchestrator 建议合并成 2 个新概念页：procedural-mesh-primitives（参数化基元：torus + sphere + ellipsoid）和 mesh-warps-and-tessellation（per-face warp 与三角化算法）。新增 5 个 source 摘要；对已有的 linden-reid 人物页和 unity-procedural-mesh 打补丁以添加交叉引用和新 source 链接。linden-reid 的 sources 从 3 更新为 8。
+
+## [2026-04-14] ingest | Wave-17 Worker AY (cyangamedev.wordpress.com ×5)
+
+处理 Cyan 5 篇 Shader Graph / URP 教程：Render Textures、Voronoi、World-space UVs & Triplanar、Orthographic Depth、Watercolour Shader Experiments。新增 4 个概念页（render-textures-unity / triplanar-mapping / orthographic-depth / watercolour-shader-experiments）+ 5 个 source 摘要。Voronoi 一篇与已有 worley-voronoi-noise 重叠（算法和哈希依赖部分），改为 patch 形式追加 Cyan 的 Shader Graph 实现说明 + source link。cyanilux 人物页 sources 5→10。无新人物。

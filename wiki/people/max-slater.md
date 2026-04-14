@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形程序员, 渲染, 数学]
 date: 2026-04-14
-sources: 5
+sources: 9
 ---
 
 # Max Slater
@@ -40,3 +40,7 @@ sources: 5
 - [[sources/slater-exile-voxel-rendering]]
 - [[sources/slater-exile-reflection]]
 - [[sources/slater-compiler-bug]]
+- [[sources/slater-exile-hot-reloading]]
+- [[sources/slater-hamming-hats]]
+- [[sources/slater-exponential-rotations]]
+- [[sources/slater-autodiff]]

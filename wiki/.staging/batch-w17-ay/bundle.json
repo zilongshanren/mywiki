@@ -1,0 +1,168 @@
+{
+  "batch_id": "batch-w17-ay",
+  "agent_note": "Cyan (cyangamedev.wordpress.com) 5 篇 Shader Graph / URP 教程：Render Textures、Voronoi、World-space UVs & Triplanar、Orthographic Depth、Watercolour Shader Experiments。新增 4 个概念页（render-textures-unity / triplanar-mapping / orthographic-depth / watercolour-shader-experiments），Voronoi 一篇仅作为 patch 加到现有 worley-voronoi-noise 页和 cyanilux 人物页（避免重复）。cyanilux 已有人物页，本批次更新 sources 数。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2019-07-08_render-textures.md",
+      "status": "ingested",
+      "source_slug": "cyan-render-textures",
+      "title": "Render Textures",
+      "new_concept": "render-textures-unity"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2019-07-16_voronoi.md",
+      "status": "ingested",
+      "source_slug": "cyan-voronoi",
+      "title": "Voronoi",
+      "note": "no new concept created — patches existing worley-voronoi-noise instead (Shader Graph node + F2-F1 implementation level detail, the existing concept page already covers algorithm and hash dependency)"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-01-28_world-space-uvs-triplanar-mapping.md",
+      "status": "ingested",
+      "source_slug": "cyan-triplanar-mapping",
+      "title": "World space UVs & Triplanar Mapping",
+      "new_concept": "triplanar-mapping"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-03-05_orthographic-depth.md",
+      "status": "ingested",
+      "source_slug": "cyan-orthographic-depth",
+      "title": "Orthographic Depth",
+      "new_concept": "orthographic-depth"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-10-06_watercolour-shader-experiments.md",
+      "status": "ingested",
+      "source_slug": "cyan-watercolour-shader-experiments",
+      "title": "Watercolour Shader Experiments",
+      "new_concept": "watercolour-shader-experiments"
+    }
+  ],
+  "concepts_created": [
+    "render-textures-unity",
+    "triplanar-mapping",
+    "orthographic-depth",
+    "watercolour-shader-experiments"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cyan-render-textures",
+    "cyan-voronoi",
+    "cyan-triplanar-mapping",
+    "cyan-orthographic-depth",
+    "cyan-watercolour-shader-experiments"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-textures-unity]]\n- [[triplanar-mapping]]\n- [[orthographic-depth]]\n- [[watercolour-shader-experiments]]\n- [[worley-voronoi-noise]]"
+    },
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cyan-render-textures]]\n- [[sources/cyan-voronoi]]\n- [[sources/cyan-triplanar-mapping]]\n- [[sources/cyan-orthographic-depth]]\n- [[sources/cyan-watercolour-shader-experiments]]"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cyanilux|Cyan]] 的 [Voronoi 教程](https://cyangamedev.wordpress.com/2019/07/16/voronoi/) 把 Unity Shader Graph 内置 Voronoi 节点的 30 行 HLSL 拆给入门者看，并给了两种 cell 边缘（F2-F1 与两次循环法）的 Custom Function 实现"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cyan-voronoi]]"
+    },
+    {
+      "file": "wiki/rendering/planar-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triplanar-mapping]] —— 三轴投影 + 法线加权混合，解决平面映射在垂直面上的拉伸"
+    },
+    {
+      "file": "wiki/rendering/scene-color-depth-nodes.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[orthographic-depth]] —— 正交相机下 Scene Depth 必须用 Raw 模式，平台差异和深度差技巧的正交版"
+    },
+    {
+      "file": "wiki/rendering/blit-render-feature.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-textures-unity]] —— Blit feature 内部就是分配临时 RT 然后做 ping-pong\n- [[watercolour-shader-experiments]] —— 用 Blit Render Feature 实现的全屏水彩描边 + vignette + 扭曲"
+    },
+    {
+      "file": "wiki/rendering/blit-render-feature.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/rendering/blit-render-feature.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cyan-watercolour-shader-experiments]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[watercolour-shader-experiments]] —— Cyan 为 #TechnicallyAChallenge 「水彩」主题做的三层 shader breakdown"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[render-textures-unity]]             | Unity 的 GPU-side 中间贴图：color format 命名规范与 AsyncGPUReadback 异步回读                |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[triplanar-mapping]]                 | 三轴平面投影 + 法线加权混合：解决程序化几何 / 大物体的 UV 拉伸                                            |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[orthographic-depth]]                | 正交相机的 Scene Depth：buffer 本身线性 + 平台差异 + 深度差/世界坐标重建的正交版                          |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[watercolour-shader-experiments]]    | Cyan 的水彩观感三层 shader：mesh + Blit 后处理 + 假 decal                                  |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-render-textures]] | Cyan：Unity Render Texture 与 AsyncGPUReadback 异步回读 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-voronoi]] | Cyan：Shader Graph Voronoi 节点拆解与 cell 边缘 Custom Function |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-triplanar-mapping]] | Cyan：World-space UV 与 Triplanar Mapping 的 Shader Graph 实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-orthographic-depth]] | Cyan：正交相机下 Scene Depth 节点的平台差异与深度差/世界坐标重建 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-watercolour-shader-experiments]] | Cyan：水彩观感的三层 URP shader（mesh + Blit + decal）|"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-17 Worker AY (cyangamedev.wordpress.com ×5)\n\n处理 Cyan 5 篇 Shader Graph / URP 教程：Render Textures、Voronoi、World-space UVs & Triplanar、Orthographic Depth、Watercolour Shader Experiments。新增 4 个概念页（render-textures-unity / triplanar-mapping / orthographic-depth / watercolour-shader-experiments）+ 5 个 source 摘要。Voronoi 一篇与已有 worley-voronoi-noise 重叠（算法和哈希依赖部分），改为 patch 形式追加 Cyan 的 Shader Graph 实现说明 + source link。cyanilux 人物页 sources 5→10。无新人物。"
+}

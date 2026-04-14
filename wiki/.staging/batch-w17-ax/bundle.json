@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w17-ax",
+  "agent_note": "5 篇 Linden Reid 2017 年 Limit Theory 程序化几何教程（stellation / extrusion / torus / sphere-ellipsoid / tessellation-triangulation）。与已有的 unity-procedural-mesh 主题相关但不重复——后者讲 Unity Mesh API 侧的顶点/索引喂养，本批是更上游的 CPU 侧几何算法。按照 orchestrator 的建议合并成 2 个新概念页：procedural-mesh-primitives（torus + sphere + ellipsoid，作为参数化基元）和 mesh-warps-and-tessellation（stellation + extrusion + fan/centroid/triforce triangulation，作为 per-face 变形与细分）。linden-reid 人物页已存在，只打补丁。5 个 source 摘要全新。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-04_procedural-stellation-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-stellation",
+      "title": "Procedural Stellation Tutorial",
+      "contributes_to_concept": "mesh-warps-and-tessellation"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-05_procedural-mesh-extrusion-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-extrusion",
+      "title": "Procedural Mesh Extrusion Tutorial",
+      "contributes_to_concept": "mesh-warps-and-tessellation"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-06_procedural-torus-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-torus",
+      "title": "Procedural Torus Tutorial",
+      "contributes_to_concept": "procedural-mesh-primitives"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-07_procedural-sphere-ellipsoid-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-sphere-ellipsoid",
+      "title": "Procedural Sphere / Ellipsoid Tutorial",
+      "contributes_to_concept": "procedural-mesh-primitives"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-03_simple-mesh-tessellation-triangulation-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-mesh-tessellation-triangulation",
+      "title": "Simple Mesh Tessellation & Triangulation Tutorial",
+      "contributes_to_concept": "mesh-warps-and-tessellation"
+    }
+  ],
+  "concepts_created": [
+    "procedural-mesh-primitives",
+    "mesh-warps-and-tessellation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "lindenreid-procedural-stellation",
+    "lindenreid-procedural-extrusion",
+    "lindenreid-procedural-torus",
+    "lindenreid-procedural-sphere-ellipsoid",
+    "lindenreid-mesh-tessellation-triangulation"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 8"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## 主要教程线",
+      "content": "- **Limit Theory Procedural Geometry**（2017）—— 早期为 Procedural Reality 的 Limit Theory 写的一组 CPU 侧程序化几何教程，覆盖参数化基元（torus、sphere、ellipsoid）与 per-face 变形/细分（stellation、extrusion、fan/centroid/triforce triangulation），见 [[procedural-mesh-primitives]] 与 [[mesh-warps-and-tessellation]]。"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-mesh-primitives]]\n- [[mesh-warps-and-tessellation]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/lindenreid-procedural-stellation]]\n- [[sources/lindenreid-procedural-extrusion]]\n- [[sources/lindenreid-procedural-torus]]\n- [[sources/lindenreid-procedural-sphere-ellipsoid]]\n- [[sources/lindenreid-mesh-tessellation-triangulation]]"
+    },
+    {
+      "file": "wiki/game-development/unity-procedural-mesh.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-mesh-primitives]] —— 参数化基元（torus / sphere / ellipsoid）的顶点公式\n- [[mesh-warps-and-tessellation]] —— per-face 变形（stellation / extrusion）与三角化（fan / centroid / triforce）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[procedural-mesh-primitives]] | Torus / UV-sphere / ellipsoid 的参数化顶点公式与拓扑结构 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[mesh-warps-and-tessellation]] | Stellation、extrusion 与 fan/centroid/triforce 三角化：CPU 侧 per-face 几何算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-stellation]] | Reid：把三角形拱成 tetrahedron 做程序化星体 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-extrusion]] | Reid：沿法线把三角形挤成三棱柱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-torus]] | Reid：圆环作为两层嵌套圆的参数方程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-sphere-ellipsoid]] | Reid：UV-sphere 与各向异性 ellipsoid 的参数化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-mesh-tessellation-triangulation]] | Reid：Fan / Centroid / Triforce 三种实用三角化算法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-17 Worker AX (lindenreid.wordpress.com Limit Theory procgen ×5)\n\n处理 Linden Reid 2017 年为 Limit Theory 写的 5 篇 CPU 侧程序化几何教程（stellation、extrusion、torus、sphere/ellipsoid、tessellation-triangulation）。按 orchestrator 建议合并成 2 个新概念页：procedural-mesh-primitives（参数化基元：torus + sphere + ellipsoid）和 mesh-warps-and-tessellation（per-face warp 与三角化算法）。新增 5 个 source 摘要；对已有的 linden-reid 人物页和 unity-procedural-mesh 打补丁以添加交叉引用和新 source 链接。linden-reid 的 sources 从 3 更新为 8。"
+}

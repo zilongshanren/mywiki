@@ -45,6 +45,8 @@ Unity（以及大多数现代图形 API 的默认状态）使用**顺时针 wind
 - [[compact-vertex-format]]
 - [[greedy-voxel-meshing]] —— 运行时程序化 mesh 的另一个常见场景
 - [[linden-reid]]
+- [[procedural-mesh-primitives]] —— 参数化基元（torus / sphere / ellipsoid）的顶点公式
+- [[mesh-warps-and-tessellation]] —— per-face 变形（stellation / extrusion）与三角化（fan / centroid / triforce）
 
 ## Sources
 

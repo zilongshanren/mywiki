@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 技术美术, shader, unity]
 date: 2026-04-14
-sources: 5
+sources: 10
 ---
 
 # Cyan（Cyanilux）
@@ -20,6 +20,11 @@ Cyan（Twitter `@Cyanilux`）是活跃在 Unity 社区的独立技术美术和 s
 - [[crt-shader-effects]]
 - [[particle-custom-vertex-streams]]
 - [[harry-alisavakis]]
+- [[render-textures-unity]]
+- [[triplanar-mapping]]
+- [[orthographic-depth]]
+- [[watercolour-shader-experiments]]
+- [[worley-voronoi-noise]]
 
 ## Sources
 
@@ -28,3 +33,8 @@ Cyan（Twitter `@Cyanilux`）是活跃在 Unity 社区的独立技术美术和 s
 - [[sources/cyan-retro-crt-shader]]
 - [[sources/cyan-scene-color-depth]]
 - [[sources/cyan-particle-custom-vertex-streams]]
+- [[sources/cyan-render-textures]]
+- [[sources/cyan-voronoi]]
+- [[sources/cyan-triplanar-mapping]]
+- [[sources/cyan-orthographic-depth]]
+- [[sources/cyan-watercolour-shader-experiments]]

@@ -1,7 +1,7 @@
 ---
 tags: [unity, urp, 后处理, shadergraph, 渲染]
 date: 2026-04-14
-sources: 2
+sources: 3
 ---
 
 # Blit Render Feature（URP 自定义后处理的补救路径）
@@ -46,8 +46,11 @@ Unity 2022 开始 URP 内建了 **Fullscreen Graph** 和 **Fullscreen Pass Rende
 - [[render-graph]]
 - [[crt-shader-effects]]
 - [[scene-color-depth-nodes]]
+- [[render-textures-unity]] —— Blit feature 内部就是分配临时 RT 然后做 ping-pong
+- [[watercolour-shader-experiments]] —— 用 Blit Render Feature 实现的全屏水彩描边 + vignette + 扭曲
 
 ## Sources
 
 - [[sources/cyan-urp-post-processing]]
 - [[sources/cyan-retro-crt-shader]]
+- [[sources/cyan-watercolour-shader-experiments]]
