@@ -1,7 +1,7 @@
 ---
 tags: [unity, shader, 后处理, blur, 透明物体]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # Unity GrabPass + 可分高斯模糊
@@ -52,7 +52,10 @@ Reid 的教程承认自己用了"懒汉实现"——在**同一 pass** 里对原
 - [[laplacian-pyramid]]
 - [[texture-encoded-state]] —— 同一篇教程的第二部分：用纹理编码 mouse + 时间驱动 blur 强度
 - [[linden-reid]]
+- [[harry-alisavakis]] —— *My take on shaders* 第五篇用 GrabPass 把任何 image effect 移植成「物体绑定式后处理」
+- [[uv-displacement-image-effect]] —— 把同样的 displacement 套到 GrabPass 纹理上即得折射 / 玻璃 / 热浪
 
 ## Sources
 
 - [[sources/lindenreid-foggy-window-shader]]
+- [[sources/halisavakis-image-effects-grabpass]]

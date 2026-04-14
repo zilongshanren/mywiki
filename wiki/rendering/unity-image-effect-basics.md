@@ -1,7 +1,7 @@
 ---
 tags: [rendering, shader, unity, post-processing, tutorial]
 date: 2026-04-14
-sources: 2
+sources: 7
 ---
 
 # Unity Image Effect 基础（Built-in 管线）
@@ -55,6 +55,8 @@ URP 和 HDRP 放弃了 `OnRenderImage` 回调，原因包括移动端上连续 b
 - [[image-convolution-kernel]]
 - [[separable-gaussian-blur]]
 - [[daniel-ilett]]
+- [[image-effect-mask-blend]] —— 用第二张灰度纹理把全屏后处理限制到局部
+- [[uv-displacement-image-effect]] —— UV 位移类后处理（冲击波 / 水波 / 热浪）
 
 ## Sources
 
@@ -64,3 +66,8 @@ URP 和 HDRP 放弃了 `OnRenderImage` 回调，原因包括移动端上连续 b
 - [[sources/danielilett-image-effects-colour-transforms]]
 - [[sources/danielilett-image-effects-depth-silhouette]]
 - [[sources/danielilett-image-effects-blurring]]
+- [[sources/halisavakis-image-effects-simple-masks]]
+- [[sources/halisavakis-image-effects-chromatic-aberration]]
+- [[sources/halisavakis-image-effects-grabpass]]
+- [[sources/halisavakis-image-effects-simple-displacement]]
+- [[sources/halisavakis-image-effects-waving-displacement]]

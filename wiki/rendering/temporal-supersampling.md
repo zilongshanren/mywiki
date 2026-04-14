@@ -42,6 +42,8 @@ Wronski 对 AC4 的复盘里明确列出了落地过程中的痛：
 
 文章里 SSAO 的 temporal 化是一个「**一天就接完**」的反例：3 个 spiral 采样图案轮换，深度 rejection 就够（按 AO 定义，深度连续区域本来就应该相似），所以没有最终帧那种 ghost 问题。副作用是需要两张额外 history texture，但 blur 半径减小反而补回来。Wronski 强烈建议所有屏幕空间效果都做一遍 temporal 分量。
 
+Wronski 在 2014 年 4 月又专门写了一篇 [[sources/bartwronski-temporal-ssao|before/after 演示文]]，补做了 AC4 上 temporal SSAO 的对比截图和视频。里面额外解释了几个实现细节：采样图案按 3 帧轮换（每个屏幕像素位置本身也 unique），在 **blur 之前**做 temporal 是为了保留细节——blur 后低通已经把信息丢了；rejection 用的 depth 是免费的，因为 Scalable AO 已经把 16-bit 深度压进 AO 纹理的两个 8-bit 通道；motion 下的等效样本数会到几百倍（不同屏幕位置的 unique 图案被重投影汇到一起）。他也强调自己的动机和 DICE（_Battlefield 3_）/Epic（_Gears_）不同：后两者是为了 flicker 降噪，只对不稳定像素做混合；Wronski 的思路是**尽可能多保留历史**，因为目的是真正的多样本超采样。
+
 ## 相关
 
 - [[temporal-antialiasing]]
@@ -56,3 +58,4 @@ Wronski 对 AC4 的复盘里明确列出了落地过程中的痛：
 ## Sources
 
 - [[sources/bartwronski-temporal-supersampling]]
+- [[sources/bartwronski-temporal-ssao]]

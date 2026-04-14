@@ -82,6 +82,7 @@ N = f / D     （f-number）
 - [[mvp-transform]] — 投影矩阵的几何基础
 - [[rendering-pipeline]]
 - [[bartosz-ciechanowski]]
+- [[scatter-bokeh-dof]] — 从薄透镜 CoC 出发的散射式景深实现（_The Witcher 2_ 路线）
 
 ## Sources
 

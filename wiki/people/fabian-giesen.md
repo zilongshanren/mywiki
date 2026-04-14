@@ -54,3 +54,8 @@ sources: 9
 - [[sources/ryg-cellular-textures-2]]
 - [[sources/ryg-carry-save-adders]]
 - [[sources/ryg-data-structures-and-invariants]]
+- [[sources/ryg-cycle-detection]]
+- [[sources/ryg-64-bit-tidbits]]
+- [[sources/ryg-view-frustum-culling]]
+- [[sources/ryg-frustum-culling-notes]]
+- [[sources/ryg-finish-your-derivations]]

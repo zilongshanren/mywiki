@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 238
+sources: 251
 ---
 
 # 知识库索引
@@ -78,6 +78,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[avoid-unsigned-types]] | 默认避免 C++ unsigned 类型：保住 sanity check 的能力 |
 | [[lua-design-philosophy]] | Roberto/Luiz 访谈：Lua 的机制而非法策、有栈协程、可移植性偏执（云风译） |
 | [[c-tagged-union-dispatch]] | C 语言用 tagged union 做类型安全的多变体接口分发（云风） |
+| [[cycle-detection-floyd-brent]] | Floyd 龟兔与 Brent 变体；Brent 作为迭代加深的一个实例 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -121,6 +122,7 @@ CAQA + CSAPP 的底层视角。
 | [[objc-runtime-internals]] | Modern Obj-C runtime：class cluster / non-fragile ivars / indexed ivars / lazy binding |
 | [[binary-hot-reload]] | C++ 二进制热重载：DLL swap + 五道状态归属坑（memory/threads/fnptr/strings/structs） |
 | [[rust-disassembly-tour]] | Rust 的 i128/解构/数组/iterator 在 Compiler Explorer 里到底变成了什么汇编 |
+| [[x64-platform-tidbits]] | x86-64 C 提升规则坑与 PS3 PPU GCC 的指针 wrap 保守性；结构体 trick |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -337,6 +339,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[divergent-gradient-in-branches]] | if 分支里 shader-computed uv 的 tex2D：编译器静默展平、如何修 |
 | [[tessellation-fur-rendering]] | D3D11 isoline domain 的 64×64 毛发生成 + master strand 插值 + Phone Wire AA |
 | [[skysaga-rendering-tech]] | SkySaga/Meandros 引擎总览：token stream、deferred PBR、voxel AO、G-Buffer 天气、3D LUT |
+| [[image-effect-mask-blend]] | 灰度遮罩混合：把全屏后处理限制到画面局部 |
+| [[uv-displacement-image-effect]] | UV 位移后处理：冲击波 / 水波 / 折射的统一抽象 |
+| [[scatter-bokeh-dof]] | _The Witcher 2_ 的散射式 bokeh 景深：点精灵 + vertex shader 放大 + premultiplied additive 累加 |
+| [[view-frustum-culling-ryg]] | ryg 的 AABB-vs-frustum 方法链：从 8 顶点到 SPU ≈24 cycle/box 的 SIMD p/n-vertex |
+| [[hlsl-derivation-correctness]] | 写完 shader 数学后的 5 分钟检查单：对称性 / 避角度 / 反三角恒等式 / 避数值微分 |
 
 ## 经典案例（wiki/examples/）
 
@@ -368,6 +375,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[mesh-warps-and-tessellation]] | Stellation、extrusion 与 fan/centroid/triforce 三角化：CPU 侧 per-face 几何算法 |
 | [[z-order-top-down-2d]] | 俯视角 2D 游戏的 z-order：静态分层 vs 动态按底边 Y 排序 |
 | [[html5-game-apis-2012]] | 2012 年浏览器游戏 API 可用性地图：WebGL / Web Audio / PointerLock / Gamepad / WebSocket |
+| [[runtime-editor-console-connection]] | _The Witcher 2_ 的编辑器-主机实时调参工具链：命令式网络协议，美术电视前调光照/色彩 |
 
 ## 人物（wiki/people/）
 
@@ -653,6 +661,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/interplay-branches-texture-sampling]] | Anagnostou：if 分支内 tex2D gradient 的隐形性能坑（2014） |
 | [[sources/interplay-fur-tessellation]] | Anagnostou：D3D11 isoline tessellation 渲染 fur 的原型方案（2014） |
 | [[sources/interplay-skysaga-rendering]] | Anagnostou：SkySaga Meandros 引擎完整管线总览（2015） |
+| [[sources/halisavakis-image-effects-simple-masks]] | Alisavakis：image effect 的灰度遮罩混合 |
+| [[sources/halisavakis-image-effects-chromatic-aberration]] | Alisavakis：自写的 RGB 三通道色差后处理 |
+| [[sources/halisavakis-image-effects-grabpass]] | Alisavakis：GrabPass 把 image effect 移植到物体上 |
+| [[sources/halisavakis-image-effects-simple-displacement]] | Alisavakis：灰度遮罩驱动的 UV 位移与冲击波雏形 |
+| [[sources/halisavakis-image-effects-waving-displacement]] | Alisavakis：RG 向量场 + _Time 滚动的水波位移 |
+| [[sources/bartwronski-bokeh-insane-pt1]] | Wronski：_The Witcher 2_ 的 scatter bokeh 实现与 2014 年 C# 重实现（2014） |
+| [[sources/bartwronski-temporal-ssao]] | Wronski：AC4 上 temporal SSAO 的 before/after 演示与原理解释（2014） |
+| [[sources/bartwronski-editor-console-connection]] | Wronski：_The Witcher 2_ X360 编辑器-主机实时调参工具链复盘（2014） |
+| [[sources/ryg-cycle-detection]] | ryg：Floyd 与 Brent 环检测；Brent 是迭代加深的实例 |
+| [[sources/ryg-64-bit-tidbits]] | ryg：x86-64 C 提升规则坑与 PS3 PPU GCC 的指针包装 |
+| [[sources/ryg-view-frustum-culling]] | ryg：AABB-vs-frustum 方法链，从 baseline 到 SPU SIMD |
+| [[sources/ryg-frustum-culling-notes]] | ryg：culling 层级设计、cone vs frustum、clip-space 2D bbox 的多用途 |
+| [[sources/ryg-finish-your-derivations]] | ryg：写完 shader 数学的 5 分钟检查单，Oren-Nayar 化简为示范 |
 
 ## 元（wiki/meta/）
 

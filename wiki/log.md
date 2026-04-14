@@ -321,3 +321,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-21 Worker BK (interplayoflight.wordpress.com ×5)
 
 处理 interplayoflight 5 篇。按 P9 指令 skip readings-on-physically-based-rendering（纯 PBR reading list，无新技术内容）。Ingest 4 篇：(1) educational normalised Blinn-Phong—给美术的 PBR 教学 FX Composer shader；(2) branches and texture sampling—HLSL if 分支内 shader-computed uv 触发 compiler flatten 的隐形性能坑；(3) rendering fur using tessellation—D3D11 isoline domain + master strand + Phone Wire AA；(4) SkySaga/Meandros engine tech 总览—token stream + deferred + voxel AO + G-Buffer weather modification + 3D LUT。新增 4 概念页（normalised-blinn-phong-shader, divergent-gradient-in-branches, tessellation-fur-rendering, skysaga-rendering-tech）、4 source 摘要。补丁更新 kostas-anagnostou 人物页和 microfacet-brdf / physically-based-shading / fragment-shader / deferred-rendering / deferred-grass-shader / voxel-ambient-occlusion / greedy-voxel-meshing / color-lut / journey-sand-specular 九张相邻概念页。
+
+## [2026-04-14] ingest | Wave-22 Worker BL (halisavakis.com image-effect series ×5)
+
+处理 halisavakis.com 2017-05 到 2017-06 的 image effect 教程连载 5 篇。新增 2 个概念页（image-effect-mask-blend、合并的 uv-displacement-image-effect），5 个 source 摘要。chromatic-aberration / grabpass 命中已存在概念页（chromatic-aberration-post / unity-grabpass-blur / unity-image-effect-basics），全走 patch。harry-alisavakis 人物页已存在，补 patch 链入新页与 sources。
+
+## [2026-04-14] ingest | Wave-22 Worker BM (bartwronski.com ×5)
+
+处理 bartwronski.com 5 篇。按 P9 指令 skip 两篇 C#/.NET graphics framework 框架发布 / GitHub 迁移公告（无实质技术内容）。Ingest 3 篇：(1) bokeh-depth-of-field-going-insane-part-1—_The Witcher 2_ 的 scatter bokeh DoF，点精灵 + vertex shader 放大 + premultiplied additive，附 C# 重实现的 indexed draw / procedural vertex from ID / double-width atlas 优化；(2) temporal-supersampling-pt-2-ssao-demonstration—AC4 上 temporal SSAO 的 before/after，3 采样图案轮换 + 深度 rejection + 0.9 历史权重，关键点：在 blur **前**做 temporal、Scalable AO 把深度塞进 AO 纹理所以 rejection 免费、动机和 DICE/Epic 不同（追求多样本而非降 flicker）；(3) runtime-editor-console-connection-in-the-witcher-2—Witcher 2 X360 的编辑器-主机实时调参工具链，复用脚本调试网络通道，支持 camera 劫持 / streaming layer / 灯光 add-move / 环境预设 / post-process shader reload，诚实复盘 streaming 工具因实体系统混淆玩法逻辑和视觉表现而失败。新增 2 概念页（scatter-bokeh-dof, runtime-editor-console-connection）、3 source 摘要。补丁更新 bartosz-wronski 人物页（+3 sources, +2 concepts）、temporal-supersampling（AC4 SSAO 细节补充 + new source）、thin-lens-model / chromatic-aberration-post / alpha-blending / draw-procedural-gpu / hbao-interleaved-sampling 五张相邻概念页的相关章节。
+
+## [2026-04-14] ingest | Wave-22 Worker BN (fgiesen.wordpress.com 2010-10 ×5)
+
+处理 5 篇 ryg 2010 年 10 月的技术文章：环检测算法、64 位平台小坑、视锥剔除（两篇合并）、shader 数学化简清单。新增 4 概念页（cycle-detection-floyd-brent、x64-platform-tidbits、view-frustum-culling-ryg、hlsl-derivation-correctness）、5 source 摘要。fabian-giesen 人物页已存在，仅补 5 条 source 链接。frustum 两篇合并成一页是按 P9 指示。

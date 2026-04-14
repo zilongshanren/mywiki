@@ -1,0 +1,153 @@
+{
+  "batch_id": "batch-w22-bl",
+  "agent_note": "halisavakis.com 5 篇 image-effect 系列连载（2017-05 到 2017-06）。chromatic-aberration 和 grabpass 命中已存在概念页（chromatic-aberration-post / unity-grabpass-blur / unity-image-effect-basics），全部走 patch 不直改。simple-masks 提取为新概念 image-effect-mask-blend；simple-displacement + waving-displacement 按 P9 指令合并为单个新概念 uv-displacement-image-effect（两篇内容连续，第二篇是第一篇的进化版）。harry-alisavakis 人物页已存在，只补 patch。共 5 个 source 摘要、2 个新概念页、3 个 patch（含人物页 sources 链接）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2017-05-03_my-take-on-shaders-simple-masks-introduction-to-image-effect.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-simple-masks",
+      "title": "My take on shaders: Simple masks (Introduction to image effects part III)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-05-10_my-take-on-shaders-chromatic-aberration-introduction-to-imag.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-chromatic-aberration",
+      "title": "My take on shaders: Chromatic Aberration (Introduction to image effects part IV)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-05-17_my-take-on-shaders-grabpass.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-grabpass",
+      "title": "My take on shaders: GrabPass"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-05-25_my-take-on-shaders-simple-displacement.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-simple-displacement",
+      "title": "My take on shaders: Simple Displacement"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-01_my-take-on-shaders-waving-displacement.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-waving-displacement",
+      "title": "My take on shaders: Waving Displacement"
+    }
+  ],
+  "concepts_created": [
+    "image-effect-mask-blend",
+    "uv-displacement-image-effect"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "halisavakis-image-effects-simple-masks",
+    "halisavakis-image-effects-chromatic-aberration",
+    "halisavakis-image-effects-grabpass",
+    "halisavakis-image-effects-simple-displacement",
+    "halisavakis-image-effects-waving-displacement"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[image-effect-mask-blend]] —— 2017 年 *My take on shaders* 第三篇\n- [[uv-displacement-image-effect]] —— 第六、七篇合并的 UV 位移后处理"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-image-effects-simple-masks]]\n- [[sources/halisavakis-image-effects-chromatic-aberration]]\n- [[sources/halisavakis-image-effects-grabpass]]\n- [[sources/halisavakis-image-effects-simple-displacement]]\n- [[sources/halisavakis-image-effects-waving-displacement]]"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-image-effect-basics]] —— Alisavakis 2017 教程的实现骨架\n- [[harry-alisavakis]] —— *My take on shaders* 第四篇用对角线均匀偏移做的 R/G/B 三通道色差版本"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-image-effects-chromatic-aberration]]"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "replace_line",
+      "match": "tags: [渲染, 后处理, 色差, 屏幕效果, vfx]",
+      "content": "tags: [渲染, 后处理, 色差, 屏幕效果, vfx, unity]"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/unity-grabpass-blur.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[harry-alisavakis]] —— *My take on shaders* 第五篇用 GrabPass 把任何 image effect 移植成「物体绑定式后处理」\n- [[uv-displacement-image-effect]] —— 把同样的 displacement 套到 GrabPass 纹理上即得折射 / 玻璃 / 热浪"
+    },
+    {
+      "file": "wiki/rendering/unity-grabpass-blur.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-image-effects-grabpass]]"
+    },
+    {
+      "file": "wiki/rendering/unity-grabpass-blur.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[image-effect-mask-blend]] —— 用第二张灰度纹理把全屏后处理限制到局部\n- [[uv-displacement-image-effect]] —— UV 位移类后处理（冲击波 / 水波 / 热浪）"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-image-effects-simple-masks]]\n- [[sources/halisavakis-image-effects-chromatic-aberration]]\n- [[sources/halisavakis-image-effects-grabpass]]\n- [[sources/halisavakis-image-effects-simple-displacement]]\n- [[sources/halisavakis-image-effects-waving-displacement]]"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 7"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[image-effect-mask-blend]] | 灰度遮罩混合：把全屏后处理限制到画面局部 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[uv-displacement-image-effect]] | UV 位移后处理：冲击波 / 水波 / 折射的统一抽象 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-simple-masks]] | Alisavakis：image effect 的灰度遮罩混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-chromatic-aberration]] | Alisavakis：自写的 RGB 三通道色差后处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-grabpass]] | Alisavakis：GrabPass 把 image effect 移植到物体上 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-simple-displacement]] | Alisavakis：灰度遮罩驱动的 UV 位移与冲击波雏形 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-waving-displacement]] | Alisavakis：RG 向量场 + _Time 滚动的水波位移 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-22 Worker BL (halisavakis.com image-effect series ×5)\n\n处理 halisavakis.com 2017-05 到 2017-06 的 image effect 教程连载 5 篇。新增 2 个概念页（image-effect-mask-blend、合并的 uv-displacement-image-effect），5 个 source 摘要。chromatic-aberration / grabpass 命中已存在概念页（chromatic-aberration-post / unity-grabpass-blur / unity-image-effect-basics），全走 patch。harry-alisavakis 人物页已存在，补 patch 链入新页与 sources。"
+}

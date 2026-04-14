@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w22-bm",
+  "agent_note": "bartwronski.com 5 篇。按 P9 指令 skip 两篇 C#/.NET graphics framework 框架发布公告（纯工具宣告无技术干货）。Ingest 3 篇：(1) bokeh-insane-part-1—Witcher 2 的 scatter bokeh DoF，点精灵硬核方案；(2) temporal-supersampling-pt-2-ssao—AC4 上 temporal SSAO 的 before/after 演示和原理解释，作为 temporal-supersampling 现有页的补丁 + 新 source；(3) runtime-editor-console-connection—Witcher 2 X360 的编辑器-主机实时调参工具链。新增 2 概念页（scatter-bokeh-dof, runtime-editor-console-connection）、3 source 摘要。bartosz-wronski 人物页已存在只发 patch。temporal-supersampling 页面 append 一条 SSAO 二次文章的 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-04-07_bokeh-depth-of-field-going-insane-part-1.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-bokeh-insane-pt1",
+      "title": "Bokeh depth of field – going insane! part 1"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-04-10_c-net-graphics-framework.md",
+      "status": "skipped_offtopic",
+      "reason": "按 P9 指令 skip：C# 图形框架发布公告，介绍框架的用途和下载链接，没有实质渲染技术内容"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-04-27_temporal-supersampling-pt-2-ssao-demonstration.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-temporal-ssao",
+      "title": "Temporal supersampling pt. 2 – SSAO demonstration"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-05-13_runtime-editor-console-connection-in-the-witcher-2.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-editor-console-connection",
+      "title": "Runtime editor-console connection in The Witcher 2"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-06-08_c-net-graphics-framework-on-github-updates.md",
+      "status": "skipped_offtopic",
+      "reason": "按 P9 指令 skip：框架的 GitHub 迁移和更新通告，无实质技术内容"
+    }
+  ],
+  "concepts_created": [
+    "scatter-bokeh-dof",
+    "runtime-editor-console-connection"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-bokeh-insane-pt1",
+    "bartwronski-temporal-ssao",
+    "bartwronski-editor-console-connection"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/temporal-supersampling.md",
+      "operation": "append_to_section",
+      "section": "## SSAO 的特殊例子",
+      "content": "\nWronski 在 2014 年 4 月又专门写了一篇 [[sources/bartwronski-temporal-ssao|before/after 演示文]]，补做了 AC4 上 temporal SSAO 的对比截图和视频。里面额外解释了几个实现细节：采样图案按 3 帧轮换（每个屏幕像素位置本身也 unique），在 **blur 之前**做 temporal 是为了保留细节——blur 后低通已经把信息丢了；rejection 用的 depth 是免费的，因为 Scalable AO 已经把 16-bit 深度压进 AO 纹理的两个 8-bit 通道；motion 下的等效样本数会到几百倍（不同屏幕位置的 unique 图案被重投影汇到一起）。他也强调自己的动机和 DICE（_Battlefield 3_）/Epic（_Gears_）不同：后两者是为了 flicker 降噪，只对不稳定像素做混合；Wronski 的思路是**尽可能多保留历史**，因为目的是真正的多样本超采样。"
+    },
+    {
+      "file": "wiki/rendering/temporal-supersampling.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bartwronski-temporal-ssao]]"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Bokeh depth of field – going insane! part 1 | [[scatter-bokeh-dof]] |\n| Temporal supersampling pt. 2 – SSAO demonstration | [[temporal-supersampling]] 的 AC4 实测补充 |\n| Runtime editor-console connection in The Witcher 2 | [[runtime-editor-console-connection]] |"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scatter-bokeh-dof]]\n- [[runtime-editor-console-connection]]\n- [[chromatic-aberration-post]]\n- [[thin-lens-model]]"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bartwronski-bokeh-insane-pt1]]\n- [[sources/bartwronski-temporal-ssao]]\n- [[sources/bartwronski-editor-console-connection]]"
+    },
+    {
+      "file": "wiki/rendering/thin-lens-model.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scatter-bokeh-dof]] — 从薄透镜 CoC 出发的散射式景深实现（_The Witcher 2_ 路线）"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scatter-bokeh-dof]] — scatter 路线允许做**物理正确**的色差：把不同波长烘成不同大小的 bokeh 光斑而不是 RGB 偏移"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scatter-bokeh-dof]] — premultiplied additive blend + 最终除法归一的近似 OIT，用于 scatter bokeh 精灵累加"
+    },
+    {
+      "file": "wiki/rendering/draw-procedural-gpu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scatter-bokeh-dof]] — 用 SV_VertexID 生成 bokeh sprite quad 顶点，避免 VB 读带宽"
+    },
+    {
+      "file": "wiki/rendering/hbao-interleaved-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/bartwronski-temporal-ssao]] — AC4 上把 Scalable AO + temporal supersampling 挂起来的实测前后对比；和 HBAO interleaved 是同一家族的另一套降噪思路"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[scatter-bokeh-dof]] | _The Witcher 2_ 的散射式 bokeh 景深：点精灵 + vertex shader 放大 + premultiplied additive 累加 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[runtime-editor-console-connection]] | _The Witcher 2_ 的编辑器-主机实时调参工具链：命令式网络协议，美术电视前调光照/色彩 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-bokeh-insane-pt1]] | Wronski：_The Witcher 2_ 的 scatter bokeh 实现与 2014 年 C# 重实现（2014） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-temporal-ssao]] | Wronski：AC4 上 temporal SSAO 的 before/after 演示与原理解释（2014） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-editor-console-connection]] | Wronski：_The Witcher 2_ X360 编辑器-主机实时调参工具链复盘（2014） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-22 Worker BM (bartwronski.com ×5)\n\n处理 bartwronski.com 5 篇。按 P9 指令 skip 两篇 C#/.NET graphics framework 框架发布 / GitHub 迁移公告（无实质技术内容）。Ingest 3 篇：(1) bokeh-depth-of-field-going-insane-part-1—_The Witcher 2_ 的 scatter bokeh DoF，点精灵 + vertex shader 放大 + premultiplied additive，附 C# 重实现的 indexed draw / procedural vertex from ID / double-width atlas 优化；(2) temporal-supersampling-pt-2-ssao-demonstration—AC4 上 temporal SSAO 的 before/after，3 采样图案轮换 + 深度 rejection + 0.9 历史权重，关键点：在 blur **前**做 temporal、Scalable AO 把深度塞进 AO 纹理所以 rejection 免费、动机和 DICE/Epic 不同（追求多样本而非降 flicker）；(3) runtime-editor-console-connection-in-the-witcher-2—Witcher 2 X360 的编辑器-主机实时调参工具链，复用脚本调试网络通道，支持 camera 劫持 / streaming layer / 灯光 add-move / 环境预设 / post-process shader reload，诚实复盘 streaming 工具因实体系统混淆玩法逻辑和视觉表现而失败。新增 2 概念页（scatter-bokeh-dof, runtime-editor-console-connection）、3 source 摘要。补丁更新 bartosz-wronski 人物页（+3 sources, +2 concepts）、temporal-supersampling（AC4 SSAO 细节补充 + new source）、thin-lens-model / chromatic-aberration-post / alpha-blending / draw-procedural-gpu / hbao-interleaved-sampling 五张相邻概念页的相关章节。"
+}

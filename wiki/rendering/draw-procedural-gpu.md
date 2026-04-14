@@ -90,6 +90,7 @@ DrawProcedural 是一家子 API 的最简入口：
 - [[gpu-fence-timeline-semaphore]]
 - [[fragment-shader]]
 - [[procedural-rendering-ps2]] —— PS2 时代另一种意义上的 procedural rendering
+- [[scatter-bokeh-dof]] — 用 SV_VertexID 生成 bokeh sprite quad 顶点，避免 VB 读带宽
 
 ## Sources
 

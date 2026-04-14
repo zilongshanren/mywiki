@@ -1,7 +1,7 @@
 ---
-tags: [渲染, 后处理, 色差, 屏幕效果, vfx]
+tags: [渲染, 后处理, 色差, 屏幕效果, vfx, unity]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 色差后处理（Chromatic Aberration as Post-Process）
@@ -50,7 +50,11 @@ RGB 偏移常和 **scanline / interlace / vignette / bloom / grain** 一起被�
 - [[crt-shader-effects]] — 同属「屏幕设备模拟」家族
 - [[urp-volume-post-processing]]
 - [[thin-lens-model]] — 真实光学色差的来源
+- [[unity-image-effect-basics]] —— Alisavakis 2017 教程的实现骨架
+- [[harry-alisavakis]] —— *My take on shaders* 第四篇用对角线均匀偏移做的 R/G/B 三通道色差版本
+- [[scatter-bokeh-dof]] — scatter 路线允许做**物理正确**的色差：把不同波长烘成不同大小的 bokeh 光斑而不是 RGB 偏移
 
 ## Sources
 
 - [[sources/simonschreibt-teleglitch-rgb]]
+- [[sources/halisavakis-image-effects-chromatic-aberration]]

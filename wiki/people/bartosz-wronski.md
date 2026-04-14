@@ -23,6 +23,9 @@ sources: 7
 | Gradient-descent optimized recursive filters for deconvolution | [[iir-filter-deconvolution]] |
 | Poisson disk/square sampling generator for rendering | [[poisson-disk-sampling]] |
 | New debugging options in CSharpRenderer | [[gpu-printf-debugging]]、[[debug-visualization]] |
+| Bokeh depth of field – going insane! part 1 | [[scatter-bokeh-dof]] |
+| Temporal supersampling pt. 2 – SSAO demonstration | [[temporal-supersampling]] 的 AC4 实测补充 |
+| Runtime editor-console connection in The Witcher 2 | [[runtime-editor-console-connection]] |
 
 ## 相关
 
@@ -37,6 +40,10 @@ sources: 7
 - [[temporal-antialiasing]]
 - [[gcn-wave-occupancy]]
 - [[gpu-latency-hiding]]
+- [[scatter-bokeh-dof]]
+- [[runtime-editor-console-connection]]
+- [[chromatic-aberration-post]]
+- [[thin-lens-model]]
 
 ## Sources
 
@@ -47,3 +54,6 @@ sources: 7
 - [[sources/bartwronski-future-of-ssr]]
 - [[sources/bartwronski-temporal-supersampling]]
 - [[sources/bartwronski-gcn-latency-hiding]]
+- [[sources/bartwronski-bokeh-insane-pt1]]
+- [[sources/bartwronski-temporal-ssao]]
+- [[sources/bartwronski-editor-console-connection]]

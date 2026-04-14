@@ -72,6 +72,7 @@ cuda-memory-hierarchy
 culling
 custom-srp
 cyanilux
+cycle-detection-floyd-brent
 d3d12-resource-binding
 daniel-ilett
 data-driven-architecture
@@ -151,6 +152,7 @@ hero-wavelength-spectral-sampling
 hierarchical-rasterization
 hierarchical-z-buffer
 higher-order-functions
+hlsl-derivation-correctness
 homogeneous-rasterization-transpose-bug
 hsr-tbdr
 html5-game-apis-2012
@@ -158,6 +160,7 @@ hybrid-raytracing-pipeline
 iir-filter-deconvolution
 image-convolution-kernel
 image-effect-colour-transform
+image-effect-mask-blend
 image-resampling-filters
 index
 information-hiding
@@ -265,10 +268,12 @@ retro-rendering-techniques
 reversed-z
 robin-green
 ronja-bohm
+runtime-editor-console-connection
 rust-disassembly-tour
 rust-gui-ecosystem
 sampler-filter-wrap-modes
 sampling-theorem-sinc
+scatter-bokeh-dof
 scene-color-depth-nodes
 screenspace-reflections
 scriptable-render-pipeline
@@ -334,10 +339,12 @@ unix-io
 unknown-unknowns
 unorm-float-conversion
 urp-volume-post-processing
+uv-displacement-image-effect
 uv-manipulation-nodes
 variable-length-bresenham
 vector-dot-product
 vertex-vector-interpolation-artifact
+view-frustum-culling-ryg
 virtual-memory
 virtualized-volume-textures
 visibility-buffer
@@ -348,6 +355,7 @@ voxel-ambient-occlusion
 warren-moore
 watercolour-shader-experiments
 worley-voronoi-noise
+x64-platform-tidbits
 xor-shader-artist
 z-buffer
 z-fighting

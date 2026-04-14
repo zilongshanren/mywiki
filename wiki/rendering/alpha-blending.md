@@ -55,6 +55,7 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[dither-alpha-clipping]] —— 用不透明物 + Bayer 阈值 discard 伪造半透，规避 alpha blending 的排序和深度问题
 - [[deferred-alpha-lighting]] —— deferred 管线下透明物体打光的四条路径
 - [[dual-depth-buffer-thickness]] —— 用 `Min` 混合在一个 pass 内求厚度
+- [[scatter-bokeh-dof]] — premultiplied additive blend + 最终除法归一的近似 OIT，用于 scatter bokeh 精灵累加
 
 ## Sources
 

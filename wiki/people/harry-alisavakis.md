@@ -18,6 +18,8 @@ sources: 1
 - [[night-time-tint-shader]]
 - [[bluk-2d-fog-sprite-shader]]
 - [[watercolour-shader-experiments]] —— Cyan 为 #TechnicallyAChallenge 「水彩」主题做的三层 shader breakdown
+- [[image-effect-mask-blend]] —— 2017 年 *My take on shaders* 第三篇
+- [[uv-displacement-image-effect]] —— 第六、七篇合并的 UV 位移后处理
 
 ## Sources
 
@@ -25,3 +27,8 @@ sources: 1
 - [[sources/halisavakis-bluk-2d-fog-sprite]]
 - [[sources/halisavakis-image-effects-intro]]
 - [[sources/halisavakis-night-time-shader]]
+- [[sources/halisavakis-image-effects-simple-masks]]
+- [[sources/halisavakis-image-effects-chromatic-aberration]]
+- [[sources/halisavakis-image-effects-grabpass]]
+- [[sources/halisavakis-image-effects-simple-displacement]]
+- [[sources/halisavakis-image-effects-waving-displacement]]

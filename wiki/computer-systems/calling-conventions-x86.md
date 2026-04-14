@@ -38,6 +38,7 @@ movl  %esp, %ebp      ; 新的 base pointer = 当前栈顶
 - [[memory-hierarchy]]
 - [[sse-tricks]]
 - [[register-spilling-avoidance]]
+- [[x64-platform-tidbits]] —— x86-64 上 C 整数提升规则导致地址计算被迫多一条指令；以及 32 位写入隐式清零高 32 位的设计
 
 ## Sources
 
