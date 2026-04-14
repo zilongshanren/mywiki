@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 133
+sources: 146
 ---
 
 # 知识库索引
@@ -39,6 +39,10 @@ sources: 133
 | [[smooth-window-resize]] | 桌面 GUI 平滑窗口缩放：swapchain、WM、事件循环的同步体检 |
 | [[rust-gui-ecosystem]] | Rust GUI 生态的多峰现状与 linebender（Druid / Xilem / Vello）路线 |
 | [[reactive-ui-rust]] | Rust 下反应式 UI 架构：lens、Elm、Xilem 的假设 |
+| [[c-opaque-struct-modules]] | C 语言下的不透明结构模块与伪 friend 技巧（云风） |
+| [[c-interface-oop]] | C 语言的接口表 + data 组合式 OOP（云风） |
+| [[simple-cpp-mark-sweep-gc]] | 200 行的 C++ 标记清除 GC 玩具（云风） |
+| [[c-serialization-metadata]] | 基于自定义元信息的 C 结构序列化与图合并算法（云风） |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -95,6 +99,7 @@ CAQA + CSAPP 的底层视角。
 | [[fearless-simd]] | Rust 下可移植 SIMD 的双层 trait 方案与 runtime 选档难题 |
 | [[calling-conventions-x86]] | x86 32 位 cdecl / stdcall / fastcall 三路汇编 diff |
 | [[linux-graphics-stack-dri]] | Linux 图形栈 DRI/DRM/KMS 的命名迷雾与真实分层 |
+| [[malloc-wrapper-debug]] | 给 malloc 加壳：狗牌、泄漏检测与 __FILE__/__LINE__ 定位 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -113,6 +118,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[game-physics-engine]] | 约束式刚体物理引擎的三段流水线：broadphase、collision detection、sequential impulse resolution |
 | [[collision-detection-gjk-epa]] | 凸几何碰撞检测三件套：GJK 判相交、EPA 补 contact、MPR 一步到位 |
 | [[component-entity-data-binding]] | 组件实体模型中的 I/O 端口式数据绑定（Evan Todd 2011） |
+| [[game-engine-vfs]] | 游戏引擎虚拟文件系统：Linux VFS 简化版与 auto fallback |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -257,6 +263,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[virtualized-volume-textures]] | Karis：2D 虚拟纹理和 SVO 思路扩展到 irradiance volume |
 | [[tiled-light-culling]] | Karis：把 specular cone + 能量守恒引入 tile 级光源剔除 |
 | [[sparse-shadows-cone-tracing]] | Karis 2012：diffuse 走 shadow map，远 specular 走 cone trace——UE5 Lumen 的起点笔记 |
+| [[instant-radiosity-vpl]] | Instant Radiosity 与虚拟点光源（RSM 版） |
+| [[parallax-corrected-cubemap]] | 视差修正 cubemap 与非专烘焙 cubemap 的 BoxScale 修正 |
+| [[vertex-vector-interpolation-artifact]] | 归一化 view/light 向量在大三角形上的插值陷阱 |
+| [[dual-depth-buffer-thickness]] | Min 混合在单 pass 里求物体厚度的 ShaderX6 技巧 |
+| [[deferred-alpha-lighting]] | Deferred 渲染下给透明物打光的四条路 |
+| [[moment-shadow-mapping]] | 四阶矩 + Hausdorff 矩问题闭式解的可过滤硬阴影；2016 扩展到体积/软阴影/半透明 |
+| [[trigonometric-moment-transient-imaging]] | 三角矩问题闭式解把 AMCW lidar 的瞬态成像推到瞬态视频级速度 |
 
 ## 经典案例（wiki/examples/）
 
@@ -325,6 +338,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[kostas-anagnostou]] | Interplay of Light 博主，Playground Games 图形工程师 |
 | [[people/evan-todd]] | Evan Todd，etodd.io / Lemma / Deceiver 独立开发者 |
 | [[brian-karis]] | Epic UE5 Nanite/Lumen 技术负责人，前 Human Head（Prey 2），UE4 Real Shading 作者 |
+| [[cloudwu]] | 云风，skynet / ejoy2d 作者，前网易游戏引擎程序员 |
 
 ## 源摘要（wiki/sources/）
 
@@ -463,6 +477,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/karis-virtualized-volume-textures]] | Karis：把 2D virtual texture 和 SVO 思路搬到 irradiance volume |
 | [[sources/karis-tiled-light-culling]] | Karis：tile 级 per-light 剔除加入 specular cone 方向约束 |
 | [[sources/karis-sparse-shadows-tracing]] | Karis：next-gen 渲染需要多几何表示 + cone trace，UE5 Lumen 的雏形 |
+| [[sources/cloudwu-c-module-interface]] | 云风：C 语言模块化与接口设计 |
+| [[sources/cloudwu-cpp-mark-sweep-gc]] | 云风：200 行的 C++ 标记清除 GC |
+| [[sources/cloudwu-c-serialization-and-c-oop]] | 云风：C 结构序列化、C OOP 与 protected |
+| [[sources/cloudwu-game-engine-vfs]] | 云风：实现一个简单的虚拟文件系统 |
+| [[sources/cloudwu-malloc-wrapper]] | 云风：给 malloc 加壳 |
+| [[sources/interplay-instant-radiosity-light-prepass]] | Anagnostou：在 light prepass 上跑 Instant Radiosity |
+| [[sources/interplay-parallax-corrected-cubemap]] | Anagnostou：用任意 cubemap 做视差修正反射的 hack |
+| [[sources/interplay-interpolate-view-light-vectors]] | Anagnostou：大三角形上归一化向量的插值 bug |
+| [[sources/interplay-dual-depth-thickness]] | Anagnostou：ShaderX6 厚度技巧的 front/back 分流改进 |
+| [[sources/interplay-lighting-alpha-deferred]] | Anagnostou：deferred 下给透明物打光的四条路 |
+| [[sources/peters-moment-shadow-mapping]] | Peters & Klein：四阶矩阴影贴图原论文（I3D 2015） |
+| [[sources/peters-trigonometric-moment-transient-imaging]] | Peters et al.：三角矩 + AMCW lidar 的快速瞬态成像（SGA 2015） |
+| [[sources/peters-beyond-hard-shadows-msm]] | Peters et al.：MSM 扩展到单次散射/软阴影/半透明遮挡（I3D 2016） |
 
 ## 元（wiki/meta/）
 

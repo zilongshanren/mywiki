@@ -23,6 +23,9 @@ sources: 3
 | Spectral rendering, part 2: Real-time rendering | [[hero-wavelength-spectral-sampling]]、[[spectral-brdf]] |
 | Finding Real Polynomial Roots on GPUs | [[polynomial-root-finding-gpu]]、[[register-spilling-avoidance]] |
 | Sampling Projected Spherical Caps in Real Time | [[projected-solid-angle-sampling]] |
+| Moment Shadow Mapping (I3D 2015) | [[moment-shadow-mapping]] |
+| Beyond Hard Shadows: MSM for Single Scattering, Soft Shadows, Translucent Occluders (I3D 2016) | [[moment-shadow-mapping]]（应用扩展） |
+| Solving Trigonometric Moment Problems for Fast Transient Imaging (SGA 2015) | [[trigonometric-moment-transient-imaging]] |
 
 ## 相关
 
@@ -30,6 +33,8 @@ sources: 3
 - [[color-space]]
 - [[polynomial-root-finding-gpu]]
 - [[projected-solid-angle-sampling]]
+- [[moment-shadow-mapping]]
+- [[trigonometric-moment-transient-imaging]]
 
 ## Sources
 
@@ -37,3 +42,6 @@ sources: 3
 - [[sources/peters-spectral-rendering-2-real-time]]
 - [[sources/peters-gpu-polynomial-roots]]
 - [[sources/peters-projected-spherical-caps]]
+- [[sources/peters-moment-shadow-mapping]]
+- [[sources/peters-beyond-hard-shadows-msm]]
+- [[sources/peters-trigonometric-moment-transient-imaging]]

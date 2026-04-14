@@ -1,0 +1,151 @@
+{
+  "batch_id": "batch-w12-ai",
+  "agent_note": "interplayoflight.wordpress.com 2013 年 Kostas Anagnostou 五篇技术短文，主题分布在 GI / IBL / shader 陷阱 / SSS 厚度 / deferred alpha 光照。全部 ingest，每篇对应一个新概念页（全部放 wiki/rendering/）和一个 source 摘要。kostas-anagnostou 已存在，仅通过 add_source_link 补五条 Sources；对 deferred-rendering、alpha-blending、tiled-light-prepass、fast-translucency-wraplight 补『相关』链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-03-21_instant-radiosity-and-light-prepass-rendering.md",
+      "status": "ingested",
+      "source_slug": "interplay-instant-radiosity-light-prepass",
+      "title": "Instant Radiosity and light-prepass rendering"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-04-29_parallax-corrected-cubemapping-with-any-cubemap.md",
+      "status": "ingested",
+      "source_slug": "interplay-parallax-corrected-cubemap",
+      "title": "Parallax-corrected cubemapping with any cubemap"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-05-17_correctly-interpolating-view-light-vectors-on-large-triangle.md",
+      "status": "ingested",
+      "source_slug": "interplay-interpolate-view-light-vectors",
+      "title": "Correctly interpolating view/light vectors on large triangles"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-07-16_dual-depth-buffering-for-translucency-rendering.md",
+      "status": "ingested",
+      "source_slug": "interplay-dual-depth-thickness",
+      "title": "Dual depth buffering for translucency rendering"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-09-24_lighting-alpha-objects-in-deferred-rendering-environments.md",
+      "status": "ingested",
+      "source_slug": "interplay-lighting-alpha-deferred",
+      "title": "Lighting alpha objects in deferred rendering environments"
+    }
+  ],
+  "concepts_created": [
+    "instant-radiosity-vpl",
+    "parallax-corrected-cubemap",
+    "vertex-vector-interpolation-artifact",
+    "dual-depth-buffer-thickness",
+    "deferred-alpha-lighting"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "interplay-instant-radiosity-light-prepass",
+    "interplay-parallax-corrected-cubemap",
+    "interplay-interpolate-view-light-vectors",
+    "interplay-dual-depth-thickness",
+    "interplay-lighting-alpha-deferred"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-instant-radiosity-light-prepass]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-parallax-corrected-cubemap]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-interpolate-view-light-vectors]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-dual-depth-thickness]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-lighting-alpha-deferred]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[instant-radiosity-vpl]] —— 他在 Hieroglyph light prepass 上的一次反弹 GI 原型\n- [[parallax-corrected-cubemap]] —— 非专烘焙 cubemap 的 BoxScale hack\n- [[vertex-vector-interpolation-artifact]] —— FX Composer 归一化导致的 Blinn 高光撕裂\n- [[dual-depth-buffer-thickness]] —— ShaderX6 thickness 技巧的 front/back 分流改进\n- [[deferred-alpha-lighting]] —— deferred 下透明物打光的四条路径综述"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[instant-radiosity-vpl]] —— 大量 VPL 的间接光，天然适合 deferred / light prepass 消费\n- [[deferred-alpha-lighting]] —— deferred 下给透明物打光的四条方案综述"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-alpha-lighting]] —— deferred 管线下透明物体打光的四条路径\n- [[dual-depth-buffer-thickness]] —— 用 `Min` 混合在一个 pass 内求厚度"
+    },
+    {
+      "file": "wiki/rendering/tiled-light-prepass.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[instant-radiosity-vpl]] —— light prepass 擅长消费大量 VPL 的经典示例\n- [[deferred-alpha-lighting]] —— 在 Hieroglyph light prepass 上验证的 UV unwrap lightmap 方案"
+    },
+    {
+      "file": "wiki/rendering/fast-translucency-wraplight.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dual-depth-buffer-thickness]] —— 为假 SSS 提供动态厚度的单 pass 方案"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[instant-radiosity-vpl]] | Instant Radiosity 与虚拟点光源（RSM 版） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[parallax-corrected-cubemap]] | 视差修正 cubemap 与非专烘焙 cubemap 的 BoxScale 修正 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vertex-vector-interpolation-artifact]] | 归一化 view/light 向量在大三角形上的插值陷阱 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dual-depth-buffer-thickness]] | Min 混合在单 pass 里求物体厚度的 ShaderX6 技巧 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[deferred-alpha-lighting]] | Deferred 渲染下给透明物打光的四条路 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-instant-radiosity-light-prepass]] | Anagnostou：在 light prepass 上跑 Instant Radiosity |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-parallax-corrected-cubemap]] | Anagnostou：用任意 cubemap 做视差修正反射的 hack |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-interpolate-view-light-vectors]] | Anagnostou：大三角形上归一化向量的插值 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-dual-depth-thickness]] | Anagnostou：ShaderX6 厚度技巧的 front/back 分流改进 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-lighting-alpha-deferred]] | Anagnostou：deferred 下给透明物打光的四条路 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-12 Worker AI (interplayoflight.wordpress.com ×5)\n\n处理 5 篇 Kostas Anagnostou 2013 年 Interplay of Light 博客的技术短文。全部 ingest。新增 5 概念页（instant-radiosity-vpl, parallax-corrected-cubemap, vertex-vector-interpolation-artifact, dual-depth-buffer-thickness, deferred-alpha-lighting），5 source 摘要。kostas-anagnostou 已存在，通过 add_source_link 补 5 条 Sources 并在『相关』区追加新概念链接。对 deferred-rendering、alpha-blending、tiled-light-prepass、fast-translucency-wraplight 补『相关』交叉链接。"
+}

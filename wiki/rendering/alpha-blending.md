@@ -53,6 +53,8 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[fragment-shader]]
 - [[hsr-tbdr]]
 - [[dither-alpha-clipping]] —— 用不透明物 + Bayer 阈值 discard 伪造半透，规避 alpha blending 的排序和深度问题
+- [[deferred-alpha-lighting]] —— deferred 管线下透明物体打光的四条路径
+- [[dual-depth-buffer-thickness]] —— 用 `Min` 混合在一个 pass 内求厚度
 
 ## Sources
 

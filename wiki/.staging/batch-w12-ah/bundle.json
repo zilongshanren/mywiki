@@ -1,0 +1,125 @@
+{
+  "batch_id": "batch-w12-ah",
+  "agent_note": "Cloud Wu (云风) 2010 年上半年的 5 篇博客，覆盖 C 模块化、简易 C++ GC、C 结构序列化与 C OOP、游戏引擎 VFS、malloc 加壳。全部为高质量工程设计笔记，无 off-topic。新建 cloudwu 人物页与 6 个新概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-01-28_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-c-module-interface",
+      "title": "C 语言模块化与接口设计"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-02-28_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-cpp-mark-sweep-gc",
+      "title": "200 行的 C++ 标记清除 GC"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-03-31_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-c-serialization-and-c-oop",
+      "title": "C 结构序列化、C OOP 与 protected 吐槽"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-04-12_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-game-engine-vfs",
+      "title": "实现一个简单的虚拟文件系统"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-05-27_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-malloc-wrapper",
+      "title": "给 malloc 加壳"
+    }
+  ],
+  "concepts_created": [
+    "c-opaque-struct-modules",
+    "c-interface-oop",
+    "simple-cpp-mark-sweep-gc",
+    "c-serialization-metadata",
+    "game-engine-vfs",
+    "malloc-wrapper-debug"
+  ],
+  "people_created": [
+    "cloudwu"
+  ],
+  "source_summaries_created": [
+    "cloudwu-c-module-interface",
+    "cloudwu-cpp-mark-sweep-gc",
+    "cloudwu-c-serialization-and-c-oop",
+    "cloudwu-game-engine-vfs",
+    "cloudwu-malloc-wrapper"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/software-design/modular-design.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- C 实现范式：[[c-opaque-struct-modules]]、[[c-interface-oop]]"
+    },
+    {
+      "file": "wiki/software-design/information-hiding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- C 语言实践：[[c-opaque-struct-modules]]、[[malloc-wrapper-debug]]"
+    },
+    {
+      "file": "wiki/software-design/interface-vs-implementation.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- C 语言的接口成本案例：[[c-opaque-struct-modules]]、[[game-engine-vfs]]、[[malloc-wrapper-debug]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[c-opaque-struct-modules]] | C 语言下的不透明结构模块与伪 friend 技巧（云风） |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[c-interface-oop]] | C 语言的接口表 + data 组合式 OOP（云风） |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[simple-cpp-mark-sweep-gc]] | 200 行的 C++ 标记清除 GC 玩具（云风） |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[c-serialization-metadata]] | 基于自定义元信息的 C 结构序列化与图合并算法（云风） |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-engine-vfs]] | 游戏引擎虚拟文件系统：Linux VFS 简化版与 auto fallback |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[malloc-wrapper-debug]] | 给 malloc 加壳：狗牌、泄漏检测与 __FILE__/__LINE__ 定位 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[cloudwu]] | 云风，skynet / ejoy2d 作者，前网易游戏引擎程序员 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-c-module-interface]] | 云风：C 语言模块化与接口设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-cpp-mark-sweep-gc]] | 云风：200 行的 C++ 标记清除 GC |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-c-serialization-and-c-oop]] | 云风：C 结构序列化、C OOP 与 protected |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-game-engine-vfs]] | 云风：实现一个简单的虚拟文件系统 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-malloc-wrapper]] | 云风：给 malloc 加壳 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | batch-w12-ah Cloud Wu 2010 H1 ×5\n\n处理 5 篇云风 2010 年上半年博客，全部 ingested（无 off-topic）。主题覆盖 C 模块化/接口 friend 技巧、极简 C++ mark-sweep GC、C 自描述结构序列化、C 接口式 OOP、游戏引擎 VFS、malloc 调试壳。新建 1 人物页 (cloudwu)、6 概念页 (c-opaque-struct-modules, c-interface-oop, simple-cpp-mark-sweep-gc, c-serialization-metadata, game-engine-vfs, malloc-wrapper-debug)、5 source 摘要。向 modular-design / information-hiding / interface-vs-implementation 追加相关链接。"
+}

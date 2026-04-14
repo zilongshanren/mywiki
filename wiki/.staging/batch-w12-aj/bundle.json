@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w12-aj",
+  "agent_note": "momentsingraphics.de Peters papers 第 12 波：3 篇论文摘要页（moment shadow mapping、trigonometric moment transient imaging、beyond hard shadows）产出 2 个新概念 + 3 个 source 摘要；2 篇 meta（about / publication-list）跳过。christoph-peters 已存在，使用 patch 追加新 source 链接与贡献行。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/momentsingraphics.de/2015-01-01_about.md",
+      "status": "skipped_offtopic",
+      "reason": "About 页面，Peters 本人简介（已经被已有 christoph-peters 人物页覆盖），无新技术内容。"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2015-01-01_moment-shadow-mapping.md",
+      "status": "ingested",
+      "source_slug": "peters-moment-shadow-mapping",
+      "title": "Moment Shadow Mapping (I3D 2015)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2015-01-01_solving-trigonometric-moment-problems-for-fast-transient-ima.md",
+      "status": "ingested",
+      "source_slug": "peters-trigonometric-moment-transient-imaging",
+      "title": "Solving Trigonometric Moment Problems for Fast Transient Imaging (SIGGRAPH Asia 2015)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-01-01_beyond-hard-shadows-moment-shadow-maps-for-single-scattering.md",
+      "status": "ingested",
+      "source_slug": "peters-beyond-hard-shadows-msm",
+      "title": "Beyond Hard Shadows: MSM for Single Scattering, Soft Shadows, Translucent Occluders (I3D 2016)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-01-01_publication-list.md",
+      "status": "skipped_offtopic",
+      "reason": "Publication list 页面，纯导航/元数据，无技术正文。"
+    }
+  ],
+  "concepts_created": [
+    "moment-shadow-mapping",
+    "trigonometric-moment-transient-imaging"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "peters-moment-shadow-mapping",
+    "peters-trigonometric-moment-transient-imaging",
+    "peters-beyond-hard-shadows-msm"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Moment Shadow Mapping (I3D 2015) | [[moment-shadow-mapping]] |\n| Beyond Hard Shadows: MSM for Single Scattering, Soft Shadows, Translucent Occluders (I3D 2016) | [[moment-shadow-mapping]]（应用扩展） |\n| Solving Trigonometric Moment Problems for Fast Transient Imaging (SGA 2015) | [[trigonometric-moment-transient-imaging]] |"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[moment-shadow-mapping]]\n- [[trigonometric-moment-transient-imaging]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/peters-moment-shadow-mapping]]\n- [[sources/peters-beyond-hard-shadows-msm]]\n- [[sources/peters-trigonometric-moment-transient-imaging]]"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[moment-shadow-mapping]] — 用四阶矩 + Hausdorff 矩问题把 VSM 的「可过滤阴影」路线推到接近 ground truth 的质量"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[moment-shadow-mapping]] | 四阶矩 + Hausdorff 矩问题闭式解的可过滤硬阴影；2016 扩展到体积/软阴影/半透明 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[trigonometric-moment-transient-imaging]] | 三角矩问题闭式解把 AMCW lidar 的瞬态成像推到瞬态视频级速度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-moment-shadow-mapping]] | Peters & Klein：四阶矩阴影贴图原论文（I3D 2015） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-trigonometric-moment-transient-imaging]] | Peters et al.：三角矩 + AMCW lidar 的快速瞬态成像（SGA 2015） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-beyond-hard-shadows-msm]] | Peters et al.：MSM 扩展到单次散射/软阴影/半透明遮挡（I3D 2016） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-12 Worker AJ (momentsingraphics.de Peters papers ×5)\n\n处理 Christoph Peters 博客上的 5 个条目：3 篇论文摘要页（Moment Shadow Mapping I3D 2015、Trigonometric Moment Transient Imaging SGA 2015、Beyond Hard Shadows I3D 2016）全部 ingest；2 篇 meta（about、publication-list）跳过。新增 2 概念页 moment-shadow-mapping、trigonometric-moment-transient-imaging，3 source 摘要。christoph-peters 人物页通过 patch 追加新贡献行与 source 链接；shadow-mapping-basics 追加到 MSM 的相关链接。全部内容围绕 Peters 的「矩方法」统一母题——把带界信号压成几阶矩、用经典矩问题闭式解在 GPU 上重建。"
+}

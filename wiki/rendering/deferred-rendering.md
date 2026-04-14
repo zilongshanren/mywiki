@@ -53,6 +53,8 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[visibility-buffer]] —— thin-gbuffer + 后续 compute shading 的现代替代方案
 - [[tiled-light-culling]] —— per-tile 光源剔除机制，Karis 加入 specular cone 剔除
 - [[sparse-shadows-cone-tracing]] —— Karis 2012：shadow map 只管 diffuse，远处 specular 走 cone trace
+- [[instant-radiosity-vpl]] —— 大量 VPL 的间接光，天然适合 deferred / light prepass 消费
+- [[deferred-alpha-lighting]] —— deferred 下给透明物打光的四条方案综述
 
 ## Sources
 

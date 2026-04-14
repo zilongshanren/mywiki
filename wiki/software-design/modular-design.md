@@ -42,6 +42,7 @@ Ousterhout 对模块化的核心陈述：
 - 模块的理想形态：[[deep-modules]]
 - 模块化失败的形态：[[shallow-modules]]、[[classitis]]
 - 实现工具：[[information-hiding]]、[[abstraction]]
+- C 实现范式：[[c-opaque-struct-modules]]、[[c-interface-oop]]
 
 ## Sources
 

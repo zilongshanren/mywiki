@@ -23,6 +23,9 @@ blit-render-feature
 bottleneck-analysis
 brian-karis
 buffer-renaming
+c-interface-oop
+c-opaque-struct-modules
+c-serialization-metadata
 cache-friendliness
 cached-shadowmaps
 calling-conventions-x86
@@ -33,6 +36,7 @@ chromatic-aberration-post
 classitis
 classitis-in-games
 closure
+cloudwu
 cognitive-load
 collision-detection-gjk-epa
 color-banding
@@ -60,6 +64,7 @@ daniel-ilett
 data-driven-architecture
 debug-visualization
 deep-modules
+deferred-alpha-lighting
 deferred-grass-shader
 deferred-rendering
 dennard-scaling
@@ -72,6 +77,7 @@ display-edid-colorspace
 dither-alpha-clipping
 draw-call
 draw-procedural-gpu
+dual-depth-buffer-thickness
 early-z-late-z
 ecs
 elements-of-programming
@@ -96,6 +102,7 @@ frame-profiler-overlay
 frost-kiwi
 functions-as-vectors
 game-engine
+game-engine-vfs
 game-physics-engine
 gameknife
 garbage-collector
@@ -120,6 +127,7 @@ image-resampling-filters
 index
 information-hiding
 information-leakage
+instant-radiosity-vpl
 interface-vs-implementation
 jason-gregory
 jasper-flick
@@ -143,6 +151,7 @@ local-tonemapping
 locality-principle
 log
 low-discrepancy-sequence
+malloc-wrapper-debug
 matthaeus-chajdas
 max-slater
 memory-hierarchy
@@ -151,6 +160,7 @@ metal-api-overview
 metal-shading-language-basics
 microfacet-brdf
 modular-design
+moment-shadow-mapping
 motion-vectors
 msaa-ssaa
 mttf-reliability
@@ -166,6 +176,7 @@ order-of-growth
 overdraw
 overview
 painted-foliage-bent-planes
+parallax-corrected-cubemap
 particle-custom-vertex-streams
 perceptual-colormaps
 perspective-correct-interpolation
@@ -212,6 +223,7 @@ shallow-modules
 shaping-functions
 sharpdx-assimp-pipeline
 simon-trumpler
+simple-cpp-mark-sweep-gc
 smooth-window-resize
 soft-real-time
 sparse-shadows-cone-tracing
@@ -244,6 +256,7 @@ tiled-light-culling
 tiled-light-prepass
 triangle-primitives
 triangle-setup
+trigonometric-moment-transient-imaging
 unity-complexity-patterns
 unity-grabpass-blur
 unity-procedural-mesh
@@ -254,6 +267,7 @@ unknown-unknowns
 unorm-float-conversion
 urp-volume-post-processing
 uv-manipulation-nodes
+vertex-vector-interpolation-artifact
 virtual-memory
 virtualized-volume-textures
 visibility-buffer

@@ -53,6 +53,8 @@ Light prepass 是早年 PS3/Xbox 360 带宽紧张时代的产物（Crysis 2、Un
 - [[fragment-shader]]
 - [[early-z-late-z]]
 - [[tiled-light-culling]] —— 和本页讲的管线结构不是同一件事：light culling 指 tile 级 per-light 剔除机制，和 deferred / forward+ / light prepass 的管线形态正交
+- [[instant-radiosity-vpl]] —— light prepass 擅长消费大量 VPL 的经典示例
+- [[deferred-alpha-lighting]] —— 在 Hieroglyph light prepass 上验证的 UV unwrap lightmap 方案
 
 ## Sources
 

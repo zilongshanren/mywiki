@@ -16,6 +16,11 @@ sources: 5
 - [[tangent-free-normal-mapping]] —— 他试验并验证的免 tangent 技术
 - [[shader-prototyping-tools]] —— 他对 FX Composer / Unity / SharpDX 的对比
 - [[sharpdx-assimp-pipeline]] —— 他的 SharpDX + Assimp 模型加载实验
+- [[instant-radiosity-vpl]] —— 他在 Hieroglyph light prepass 上的一次反弹 GI 原型
+- [[parallax-corrected-cubemap]] —— 非专烘焙 cubemap 的 BoxScale hack
+- [[vertex-vector-interpolation-artifact]] —— FX Composer 归一化导致的 Blinn 高光撕裂
+- [[dual-depth-buffer-thickness]] —— ShaderX6 thickness 技巧的 front/back 分流改进
+- [[deferred-alpha-lighting]] —— deferred 下透明物打光的四条路径综述
 
 ## Sources
 
@@ -24,3 +29,8 @@ sources: 5
 - [[sources/interplay-tangent-free-normal-mapping]]
 - [[sources/interplay-unity-as-fxcomposer]]
 - [[sources/interplay-sharpdx-model-loading]]
+- [[sources/interplay-instant-radiosity-light-prepass]]
+- [[sources/interplay-parallax-corrected-cubemap]]
+- [[sources/interplay-interpolate-view-light-vectors]]
+- [[sources/interplay-dual-depth-thickness]]
+- [[sources/interplay-lighting-alpha-deferred]]

@@ -44,6 +44,7 @@ Ousterhout 对模块价值的核心比喻：
 - 深度的源头：[[deep-modules]]
 - 成本端：[[shallow-modules]]
 - 核心工具：[[abstraction]]、[[information-hiding]]
+- C 语言的接口成本案例：[[c-opaque-struct-modules]]、[[game-engine-vfs]]、[[malloc-wrapper-debug]]
 
 ## Sources
 

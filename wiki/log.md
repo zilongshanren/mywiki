@@ -209,3 +209,15 @@ Patch：[[early-z-late-z]] 补 Conservative Depth 相关链接与新 source；[[
 ## [2026-04-14] ingest | Wave-11 Worker AG (graphicrants.blogspot.com ×5)
 
 处理 5 篇 Brian Karis 的 Graphic Rants 博文。新增 3 概念页（virtualized-volume-textures, tiled-light-culling, sparse-shadows-cone-tracing）、1 人物页（brian-karis，Epic UE5 Nanite/Lumen 负责人）、3 source 摘要。跳过 2 篇：2010 年的 rgbd 帖被作者本人完全标为 hogwash 并删除正文；2011 年的 new-prey-2-screenshot 是宣传截图帖无技术实现内容。2012 年这两篇（tiled-light-culling + sparse-shadows-cone-tracing）是极高价值的 next-gen 渲染架构笔记——十年后 UE5 Lumen 几乎一字不差地实现了其中的核心假设（多几何表示 + cone trace + visibility 独立于光源跨光源共享）。patch 了 5 张已存在页：deferred-rendering / tiled-light-prepass / sdf-ray-marched-shadows / hierarchical-z-buffer / physically-based-shading。
+
+## [2026-04-14] ingest | batch-w12-ah Cloud Wu 2010 H1 ×5
+
+处理 5 篇云风 2010 年上半年博客，全部 ingested（无 off-topic）。主题覆盖 C 模块化/接口 friend 技巧、极简 C++ mark-sweep GC、C 自描述结构序列化、C 接口式 OOP、游戏引擎 VFS、malloc 调试壳。新建 1 人物页 (cloudwu)、6 概念页 (c-opaque-struct-modules, c-interface-oop, simple-cpp-mark-sweep-gc, c-serialization-metadata, game-engine-vfs, malloc-wrapper-debug)、5 source 摘要。向 modular-design / information-hiding / interface-vs-implementation 追加相关链接。
+
+## [2026-04-14] ingest | Wave-12 Worker AI (interplayoflight.wordpress.com ×5)
+
+处理 5 篇 Kostas Anagnostou 2013 年 Interplay of Light 博客的技术短文。全部 ingest。新增 5 概念页（instant-radiosity-vpl, parallax-corrected-cubemap, vertex-vector-interpolation-artifact, dual-depth-buffer-thickness, deferred-alpha-lighting），5 source 摘要。kostas-anagnostou 已存在，通过 add_source_link 补 5 条 Sources 并在『相关』区追加新概念链接。对 deferred-rendering、alpha-blending、tiled-light-prepass、fast-translucency-wraplight 补『相关』交叉链接。
+
+## [2026-04-14] ingest | Wave-12 Worker AJ (momentsingraphics.de Peters papers ×5)
+
+处理 Christoph Peters 博客上的 5 个条目：3 篇论文摘要页（Moment Shadow Mapping I3D 2015、Trigonometric Moment Transient Imaging SGA 2015、Beyond Hard Shadows I3D 2016）全部 ingest；2 篇 meta（about、publication-list）跳过。新增 2 概念页 moment-shadow-mapping、trigonometric-moment-transient-imaging，3 source 摘要。christoph-peters 人物页通过 patch 追加新贡献行与 source 链接；shadow-mapping-basics 追加到 MSM 的相关链接。全部内容围绕 Peters 的「矩方法」统一母题——把带界信号压成几阶矩、用经典矩问题闭式解在 GPU 上重建。

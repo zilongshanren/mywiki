@@ -74,6 +74,7 @@ HTTPRequest 的对照：
 - 结果：[[deep-modules]]
 - 常见陷阱：[[temporal-decomposition]]
 - 语言机制 vs 设计哲学的区分
+- C 语言实践：[[c-opaque-struct-modules]]、[[malloc-wrapper-debug]]
 
 ## Sources
 

@@ -56,6 +56,7 @@ GPU Gems 的 *Real-Time Approximations to Subsurface Scattering* 给出了更精
 - [[microfacet-brdf]] — 和镜面反射叠加时的参考骨架
 - [[shader-vector-math-primer]] — $H = \langle L + N \rangle$ 的来历
 - [[alan-zucconi]]
+- [[dual-depth-buffer-thickness]] —— 为假 SSS 提供动态厚度的单 pass 方案
 
 ## Sources
 
