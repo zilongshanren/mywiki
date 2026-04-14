@@ -1,0 +1,86 @@
+{
+  "batch_id": "batch-w24-br",
+  "agent_note": "Alan Zucconi 批次（5 篇）：按指令跳过 still-time devlog + 两篇 most-anticipated games 推荐。实际 ingest 2 篇技术文章——to-voronoi-and-beyond（以 patch 形式补到已有的 worley-voronoi-noise，不新建概念页）+ how-to-find-the-main-colours-in-an-image（新建 color-quantization-kmeans 概念页，区别于已有的 color-quantization-retro 每通道砍级数路线）。alan-zucconi 人物页已存在，补 2 条 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alanzucconi.com/2013-04-20_still-time-development-log-4-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "个人开发 devlog，无技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-02-24_to-voronoi-and-beyond-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-to-voronoi-beyond",
+      "title": "To Voronoi and Beyond"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-05-16_the-3-most-anticipated-games-2d-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏期待清单，非技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-05-23_the-most-anticipated-space-games-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏期待清单，非技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-05-24_how-to-find-the-main-colours-in-an-image-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-main-colours-kmeans",
+      "title": "How to find the main colours in an image"
+    }
+  ],
+  "concepts_created": [
+    "color-quantization-kmeans"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "alanzucconi-to-voronoi-beyond",
+    "alanzucconi-main-colours-kmeans"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[alan-zucconi]] 的 [To Voronoi and Beyond](https://www.alanzucconi.com/2015/02/24/to-voronoi-and-beyond/) 教程——用 Minkowski 距离统一 Euclidean/Manhattan，演示 shader 里 brute-force `_Points[100]` 数组 + O(N) 每像素扫描的朴素实现，并引用 Chris Wellons 的 cone projection 做 O(N) 的替代方案"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/alanzucconi-to-voronoi-beyond]]"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[worley-voronoi-noise]] —— 2015 年的 To Voronoi and Beyond 教程补充到此页\n- [[color-quantization-kmeans]] —— 2015 年用 K-Means 从截图提主色"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/alanzucconi-to-voronoi-beyond]]\n- [[sources/alanzucconi-main-colours-kmeans]]"
+    },
+    {
+      "file": "wiki/rendering/color-quantization-retro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-quantization-kmeans]] —— 另一种颜色量化思路：连续空间里用 K-Means 找 k 个主色而非每通道砍级数，互补场景"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-quantization-kmeans]] | K-Means 从图像提取 k 个主色 + silhouette 自动选 k |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-to-voronoi-beyond]] | Zucconi：Voronoi 图的距离度量、应用与 Unity shader 朴素实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-main-colours-kmeans]] | Zucconi：用 K-Means + silhouette 从截图里自动提取主色 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-24 Worker BR (alanzucconi.com ×5)\n\n处理 5 篇 Alan Zucconi 文章：3 篇跳过（1 篇 devlog + 2 篇游戏期待清单）；2 篇技术文章 ingest。To Voronoi and Beyond 以补丁形式增强已有的 [[worley-voronoi-noise]]（新增 Minkowski 距离插值、brute-force shader 实现、Wellons cone projection 等要点），不新建概念页。How to find the main colours in an image 新建 [[color-quantization-kmeans]] 概念页——与已有的 [[color-quantization-retro]] 形成互补的两种'颜色量化'含义（前者 K-Means 找主色，后者每通道砍级数模仿老主机）。补 [[alan-zucconi]] 人物页的 2 条 source 链接。"
+}

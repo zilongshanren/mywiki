@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 技术美术]
 date: 2026-04-14
-sources: 1
+sources: 5
 ---
 
 # Harry Alisavakis
@@ -20,6 +20,9 @@ sources: 1
 - [[watercolour-shader-experiments]] —— Cyan 为 #TechnicallyAChallenge 「水彩」主题做的三层 shader breakdown
 - [[image-effect-mask-blend]] —— 2017 年 *My take on shaders* 第三篇
 - [[uv-displacement-image-effect]] —— 第六、七篇合并的 UV 位移后处理
+- [[custom-mask-shaders]] —— 2017 年 *My take on shaders* 第四 / 五篇，圆盘 + 圆环 in-shader mask
+- [[shockwave-effect]] —— 第七篇，圆环 mask × UV 位移做的 2D 冲击波命中反馈
+- [[stencil-portal-shader-antichamber]] —— 第八篇，用 stencil buffer 复刻 Antichamber 风格的「窗口可见」物体
 
 ## Sources
 
@@ -32,3 +35,7 @@ sources: 1
 - [[sources/halisavakis-image-effects-grabpass]]
 - [[sources/halisavakis-image-effects-simple-displacement]]
 - [[sources/halisavakis-image-effects-waving-displacement]]
+- [[sources/halisavakis-image-effects-custom-masks-i]]
+- [[sources/halisavakis-image-effects-custom-masks-ii]]
+- [[sources/halisavakis-image-effects-shockwave]]
+- [[sources/halisavakis-image-effects-stencil-antichamber]]

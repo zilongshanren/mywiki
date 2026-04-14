@@ -1,7 +1,7 @@
 ---
 tags: [程序化纹理, 噪声, shader]
 date: 2026-04-14
-sources: 4
+sources: 5
 ---
 
 # Worley / Voronoi 噪声
@@ -41,6 +41,7 @@ Blender 的 Voronoi 节点需要在 **四处**同时维持行为一致：Cycles 
 - [[sdf-2d-primitives]]
 - [[cellular-texture-generation]] —— ryg 在 Werkkzeug3 里总结的**离线**细胞纹理生成：为什么树反而最慢，以及空间递归细分如何做到近似 O(|pixels|)
 - [[cyanilux|Cyan]] 的 [Voronoi 教程](https://cyangamedev.wordpress.com/2019/07/16/voronoi/) 把 Unity Shader Graph 内置 Voronoi 节点的 30 行 HLSL 拆给入门者看，并给了两种 cell 边缘（F2-F1 与两次循环法）的 Custom Function 实现
+- [[alan-zucconi]] 的 [To Voronoi and Beyond](https://www.alanzucconi.com/2015/02/24/to-voronoi-and-beyond/) 教程——用 Minkowski 距离统一 Euclidean/Manhattan，演示 shader 里 brute-force `_Points[100]` 数组 + O(N) 每像素扫描的朴素实现，并引用 Chris Wellons 的 cone projection 做 O(N) 的替代方案
 
 ## Sources
 
@@ -48,3 +49,4 @@ Blender 的 Voronoi 节点需要在 **四处**同时维持行为一致：Cycles 
 - [[sources/ryg-cellular-textures-1]]
 - [[sources/ryg-cellular-textures-2]]
 - [[sources/cyan-voronoi]]
+- [[sources/alanzucconi-to-voronoi-beyond]]

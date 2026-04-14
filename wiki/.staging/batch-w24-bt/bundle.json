@@ -1,0 +1,118 @@
+{
+  "batch_id": "batch-w24-bt",
+  "agent_note": "lindenreid.wordpress.com 2017-12 五篇 Unity shader/程序化几何教程。新增 3 个概念页（procedural-greeble, stylized-water-shader, cel-shader-outline）、4 个 source 摘要（含 dissolve 的 patch-only 摘要）。linden-reid 人物页已存在，patch 增加 sources 链接。texture-dissolve 概念页重叠，只打 patch 增加 Linden 版本的 source。unity-graphics-setup 为纯 setup 指南，跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-13_procedural-greeble-tutorial.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-greeble",
+      "title": "Procedural Greeble Tutorial"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-15_simple-water-shader-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-stylized-water-shader",
+      "title": "Simple Water Shader in Unity"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-16_dissolve-shader-in-unity.md",
+      "status": "ingested_patch_only",
+      "source_slug": "lindenreid-dissolve-shader",
+      "title": "Dissolve Shader in Unity",
+      "note": "Overlaps existing texture-dissolve concept. Created source summary only; concept page patched with new source link and comparison note."
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-18_unity-graphics-setup.md",
+      "status": "skipped_offtopic",
+      "reason": "Unity editor configuration walkthrough (HDR / color space / ambient lighting checkboxes). Pure setup guide without conceptual content."
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-19_cel-shader-with-outline-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-cel-shader-outline",
+      "title": "Cel Shader with Outline in Unity"
+    }
+  ],
+  "concepts_created": [
+    "procedural-greeble",
+    "stylized-water-shader",
+    "cel-shader-outline"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "lindenreid-procedural-greeble",
+    "lindenreid-stylized-water-shader",
+    "lindenreid-dissolve-shader",
+    "lindenreid-cel-shader-outline"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cel-shader-outline]] —— Linden Reid 的 dissolve 示例与 cel 光照同 shader，可拆分组合"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/lindenreid-dissolve-shader]] —— Linden Reid 的 Unity 版实现，多层 `_ColorThreshold` 堆叠边缘色 + 可选 `color.a` 全局 fade"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/lindenreid-procedural-greeble]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/lindenreid-stylized-water-shader]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/lindenreid-dissolve-shader]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/lindenreid-cel-shader-outline]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## 主要教程线",
+      "content": "- **2017-12 Unity Shader 系列** —— 2017 年 12 月的四连发：[[procedural-greeble]]（n 边形 extrusion + 随机 length 做科幻细节）、[[stylized-water-shader]]（camera depth texture + 顶点噪声的卡通水面）、[[texture-dissolve]]（多层 `_ColorThreshold` 的演出用 dissolve）、[[cel-shader-outline]]（ramp lighting + stencil 描边）。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-greeble]] | n 边形 polygon extrusion + 随机 length 生成科幻 mesh 表面细节 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stylized-water-shader]] | camera depth texture 差 + 顶点噪声 sin 波动的卡通水面 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cel-shader-outline]] | ramp 纹理硬色阶光照 + 法线 extrude + stencil mask 描边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-greeble]] | Linden Reid：n 边形 polygon 的 procedural greeble |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-stylized-water-shader]] | Linden Reid：Unity 风格化水面 shader |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-dissolve-shader]] | Linden Reid：Unity dissolve shader 与多层边缘色 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-cel-shader-outline]] | Linden Reid：Unity cel shader + stencil 描边 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-24 Worker BT (lindenreid.wordpress.com 2017-12 ×5)\n\nLinden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 3 概念页（procedural-greeble / stylized-water-shader / cel-shader-outline）、4 source 摘要。texture-dissolve 概念已存在，只 patch 加 source 链接。unity-graphics-setup 纯编辑器配置指南跳过。linden-reid 人物页补 4 条 source 链接与「2017-12 Unity Shader 系列」小节。"
+}

@@ -60,6 +60,8 @@ UV 位移看上去不起眼，但几乎所有「画面要会动」的效果都�
 - [[fragment-shader]]
 - [[uv-manipulation-nodes]]
 - [[harry-alisavakis]]
+- [[shockwave-effect]] —— 圆环 mask × UV 位移的最经典组合
+- [[custom-mask-shaders]] —— 提供 in-shader 圆环 mask 作为位移强度场
 
 ## Sources
 

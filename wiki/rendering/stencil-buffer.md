@@ -44,6 +44,7 @@ sources: 1
 - [[z-buffer]]
 - [[early-z-late-z]]
 - [[depth-aware-upsampling]] —— stencil 标记深度不连续像素、分派 simple/complex shader 的 ROTR trick
+- [[stencil-portal-shader-antichamber]] —— Antichamber 风格「mask + object 配对」的最小 Unity 实现
 
 ## Sources
 

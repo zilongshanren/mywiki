@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity]
 date: 2026-04-14
-sources: 6
+sources: 8
 ---
 
 # Alan Zucconi
@@ -25,6 +25,8 @@ sources: 6
 - [[journey-sand-specular]]
 - [[physically-based-shading]]
 - [[gpu-driven-grass-tiles]] —— Marco Giordano 的 grass 系统直接用了 Alan Wolfe 的蓝噪声采样代码
+- [[worley-voronoi-noise]] —— 2015 年的 To Voronoi and Beyond 教程补充到此页
+- [[color-quantization-kmeans]] —— 2015 年用 K-Means 从截图提主色
 
 ## Sources
 
@@ -34,3 +36,5 @@ sources: 6
 - [[sources/alanzucconi-volumetric-rendering]]
 - [[sources/alanzucconi-journey-sand-specular]]
 - [[sources/alanzucconi-flixel-retro-crt]]
+- [[sources/alanzucconi-to-voronoi-beyond]]
+- [[sources/alanzucconi-main-colours-kmeans]]

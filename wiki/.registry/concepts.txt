@@ -40,6 +40,7 @@ calling-conventions-x86
 cametal-layer-drawable
 cantor-szudzik-pairing
 carry-save-adder-pixel-avg
+cel-shader-outline
 cellular-texture-generation
 change-amplification
 christoph-peters
@@ -52,6 +53,7 @@ cognitive-load
 collision-detection-gjk-epa
 color-banding
 color-lut
+color-quantization-kmeans
 color-quantization-retro
 color-space
 compact-vertex-format
@@ -72,6 +74,7 @@ crt-shader-effects
 cubic-equation-solver-hlsl
 cuda-memory-hierarchy
 culling
+custom-mask-shaders
 custom-srp
 cyanilux
 cycle-detection-floyd-brent
@@ -253,6 +256,7 @@ prebaked-corner-occlusion
 probabilistic-algorithms
 procedural-abstraction
 procedural-checkerboard
+procedural-greeble
 procedural-mesh-primitives
 procedural-rendering-ps2
 projected-solid-angle-sampling
@@ -296,6 +300,7 @@ shadow-mapping-basics
 shallow-modules
 shaping-functions
 sharpdx-assimp-pipeline
+shockwave-effect
 simon-trumpler
 simple-cpp-mark-sweep-gc
 skysaga-rendering-tech
@@ -310,10 +315,12 @@ spherical-harmonics
 sprite-shaders-unity
 sse-tricks
 stencil-buffer
+stencil-portal-shader-antichamber
 stephen-hill
 steven-sell
 strategic-programming
 stratified-sampling
+stylized-water-shader
 substitution-model
 sussman-abelson
 swap-and-pop-removal

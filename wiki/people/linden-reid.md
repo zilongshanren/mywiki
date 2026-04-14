@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader教程]
 date: 2026-04-14
-sources: 8
+sources: 12
 ---
 
 # Linden Reid
@@ -16,6 +16,7 @@ sources: 8
 - **Intro to Procedural Geometry**（2018 系列）—— 用 Unity Mesh API 从零构造 plane、cube、法线与 UV，见 [[unity-procedural-mesh]]。
 - **Foggy Window Shader**（2018）—— 用 GrabPass + 可分 Gaussian blur + 纹理编码时间做可交互雾气窗户，见 [[unity-grabpass-blur]] 与 [[texture-encoded-state]]。
 - **Limit Theory Procedural Geometry**（2017）—— 早期为 Procedural Reality 的 Limit Theory 写的一组 CPU 侧程序化几何教程，覆盖参数化基元（torus、sphere、ellipsoid）与 per-face 变形/细分（stellation、extrusion、fan/centroid/triforce triangulation），见 [[procedural-mesh-primitives]] 与 [[mesh-warps-and-tessellation]]。
+- **2017-12 Unity Shader 系列** —— 2017 年 12 月的四连发：[[procedural-greeble]]（n 边形 extrusion + 随机 length 做科幻细节）、[[stylized-water-shader]]（camera depth texture + 顶点噪声的卡通水面）、[[texture-dissolve]]（多层 `_ColorThreshold` 的演出用 dissolve）、[[cel-shader-outline]]（ramp lighting + stencil 描边）。
 
 ## 相关
 
@@ -38,3 +39,7 @@ sources: 8
 - [[sources/lindenreid-procedural-torus]]
 - [[sources/lindenreid-procedural-sphere-ellipsoid]]
 - [[sources/lindenreid-mesh-tessellation-triangulation]]
+- [[sources/lindenreid-procedural-greeble]]
+- [[sources/lindenreid-stylized-water-shader]]
+- [[sources/lindenreid-dissolve-shader]]
+- [[sources/lindenreid-cel-shader-outline]]

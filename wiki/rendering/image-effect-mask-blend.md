@@ -46,6 +46,7 @@ return maskedCol * m + col * (1 - m);
 - [[unity-grabpass-blur]]
 - [[fragment-shader]]
 - [[harry-alisavakis]]
+- [[custom-mask-shaders]] —— 把贴图 mask 升级为 in-shader SDF 圆盘 / 圆环 mask，解锁动态参数化
 
 ## Sources
 

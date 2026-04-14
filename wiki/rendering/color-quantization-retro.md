@@ -61,6 +61,7 @@ col = lerp(col,        _GBLightest, saturate(gb - 2));
 - [[image-effect-colour-transform]]
 - [[color-banding]]
 - [[sampler-filter-wrap-modes]] —— FilterMode.Point 的位置
+- [[color-quantization-kmeans]] —— 另一种颜色量化思路：连续空间里用 K-Means 找 k 个主色而非每通道砍级数，互补场景
 
 ## Sources
 

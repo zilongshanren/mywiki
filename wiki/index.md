@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 264
+sources: 274
 ---
 
 # 知识库索引
@@ -355,6 +355,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[two-texture-sampling-tricks]] | Xor：texture atlas 下的 UV 归一化与跨贴图映射 |
 | [[shadertoy-basics]] | Xor：ShaderToy 格式与移植到游戏引擎的清单 |
 | [[fractal-texturing]] | Xor：按深度离散缩放并 blend 的一致 LOD 技巧 |
+| [[color-quantization-kmeans]] | K-Means 从图像提取 k 个主色 + silhouette 自动选 k |
+| [[custom-mask-shaders]] | Alisavakis：in-shader 圆盘 / 圆环 SDF mask 的最小实现 |
+| [[shockwave-effect]] | Alisavakis：圆环 mask × UV 位移做 2D 冲击波命中反馈 |
+| [[stencil-portal-shader-antichamber]] | Alisavakis：用 stencil buffer 复刻 Antichamber 的「窗口可见」物体 |
+| [[procedural-greeble]] | n 边形 polygon extrusion + 随机 length 生成科幻 mesh 表面细节 |
+| [[stylized-water-shader]] | camera depth texture 差 + 顶点噪声 sin 波动的卡通水面 |
+| [[cel-shader-outline]] | ramp 纹理硬色阶光照 + 法线 extrude + stencil mask 描边 |
 
 ## 经典案例（wiki/examples/）
 
@@ -698,6 +705,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/xor-mini-two-textures]] | Xor：GameMaker texture page 与 UV 归一化 |
 | [[sources/xor-mini-shadertoy]] | Xor：ShaderToy 移植到 GameMaker 的清单 |
 | [[sources/xor-mini-fractal-texturing]] | Xor：按深度离散缩放 UV 的一致细节技巧 |
+| [[sources/alanzucconi-to-voronoi-beyond]] | Zucconi：Voronoi 图的距离度量、应用与 Unity shader 朴素实现 |
+| [[sources/alanzucconi-main-colours-kmeans]] | Zucconi：用 K-Means + silhouette 从截图里自动提取主色 |
+| [[sources/halisavakis-image-effects-custom-masks-i]] | Alisavakis：in-shader 圆盘 mask 的 5 行实现 |
+| [[sources/halisavakis-image-effects-custom-masks-ii]] | Alisavakis：把圆盘 mask 改成圆环 mask 的推导 |
+| [[sources/halisavakis-image-effects-shockwave]] | Alisavakis：圆环 mask × UV 位移 = 冲击波 |
+| [[sources/halisavakis-image-effects-stencil-antichamber]] | Alisavakis：用 stencil buffer 做 Antichamber 风格的「窗口可见」物体 |
+| [[sources/lindenreid-procedural-greeble]] | Linden Reid：n 边形 polygon 的 procedural greeble |
+| [[sources/lindenreid-stylized-water-shader]] | Linden Reid：Unity 风格化水面 shader |
+| [[sources/lindenreid-dissolve-shader]] | Linden Reid：Unity dissolve shader 与多层边缘色 |
+| [[sources/lindenreid-cel-shader-outline]] | Linden Reid：Unity cel shader + stencil 描边 |
 
 ## 元（wiki/meta/）
 

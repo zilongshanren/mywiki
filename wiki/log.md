@@ -345,3 +345,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-23 Worker BQ (Xor GM Shaders ×5)
 
 处理 5 篇 Xor/mini.gmshaders.com 教程：raymarching、mini-rotation、mini-two-textures、mini-shadertoy、fractal-texturing。新增 4 个概念页（raymarching-intro、two-texture-sampling-tricks、shadertoy-basics、fractal-texturing）和 5 个 source summary。Mini: Rotation 仅打补丁到现有 [[3d-rotation-math]]。对 xor-shader-artist、volumetric-raymarching-intro、sdf-ray-marched-shadows、texel-pixel-conversion 发起交叉链接补丁。
+
+## [2026-04-14] ingest | Wave-24 Worker BR (alanzucconi.com ×5)
+
+处理 5 篇 Alan Zucconi 文章：3 篇跳过（1 篇 devlog + 2 篇游戏期待清单）；2 篇技术文章 ingest。To Voronoi and Beyond 以补丁形式增强已有的 [[worley-voronoi-noise]]（新增 Minkowski 距离插值、brute-force shader 实现、Wellons cone projection 等要点），不新建概念页。How to find the main colours in an image 新建 [[color-quantization-kmeans]] 概念页——与已有的 [[color-quantization-retro]] 形成互补的两种'颜色量化'含义（前者 K-Means 找主色，后者每通道砍级数模仿老主机）。补 [[alan-zucconi]] 人物页的 2 条 source 链接。
+
+## [2026-04-14] ingest | Wave-24 Worker BS (halisavakis.com ×5)
+
+处理 4 篇 halisavakis.com *My take on shaders* 教程：custom-masks part I/II（合并）、shockwave、stencil antichamber。跳过 1 篇 postmortem。新增 3 概念页（custom-mask-shaders、shockwave-effect、stencil-portal-shader-antichamber）和 4 source 摘要。补丁打到 harry-alisavakis、image-effect-mask-blend、uv-displacement-image-effect、stencil-buffer 四页。
+
+## [2026-04-14] ingest | Wave-24 Worker BT (lindenreid.wordpress.com 2017-12 ×5)
+
+Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 3 概念页（procedural-greeble / stylized-water-shader / cel-shader-outline）、4 source 摘要。texture-dissolve 概念已存在，只 patch 加 source 链接。unity-graphics-setup 纯编辑器配置指南跳过。linden-reid 人物页补 4 条 source 链接与「2017-12 Unity Shader 系列」小节。

@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w24-bs",
+  "agent_note": "halisavakis.com 4 篇技术 + 1 篇 postmortem。custom-masks part I/II 合并成 1 个概念页 custom-mask-shaders；shockwave 单独一页；stencil antichamber 单独一页。postmortem 文件按指令跳过。harry-alisavakis 已存在仅打补丁。补丁也加到 image-effect-mask-blend、uv-displacement-image-effect、stencil-buffer 三个相关页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-07_my-take-on-shaders-custom-masks-part-i.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-custom-masks-i",
+      "title": "My take on shaders: Custom masks (Part I)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-14_my-take-on-shaders-custom-masks-part-ii.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-custom-masks-ii",
+      "title": "My take on shaders: Custom masks (Part II)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-21_my-take-on-shaders-shockwave-effect.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-shockwave",
+      "title": "My take on shaders: Shockwave effect"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-28_my-take-on-shaders-stencil-shader-antichamber-effect.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-stencil-antichamber",
+      "title": "My take on shaders: Stencil shader (Antichamber effect)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-07-12_postmortem-breach-prometheus-game-jam-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "postmortem，按 batch 指令跳过"
+    }
+  ],
+  "concepts_created": [
+    "custom-mask-shaders",
+    "shockwave-effect",
+    "stencil-portal-shader-antichamber"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "halisavakis-image-effects-custom-masks-i",
+    "halisavakis-image-effects-custom-masks-ii",
+    "halisavakis-image-effects-shockwave",
+    "halisavakis-image-effects-stencil-antichamber"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[custom-mask-shaders]] —— 2017 年 *My take on shaders* 第四 / 五篇，圆盘 + 圆环 in-shader mask\n- [[shockwave-effect]] —— 第七篇，圆环 mask × UV 位移做的 2D 冲击波命中反馈\n- [[stencil-portal-shader-antichamber]] —— 第八篇，用 stencil buffer 复刻 Antichamber 风格的「窗口可见」物体"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-image-effects-custom-masks-i]]\n- [[sources/halisavakis-image-effects-custom-masks-ii]]\n- [[sources/halisavakis-image-effects-shockwave]]\n- [[sources/halisavakis-image-effects-stencil-antichamber]]"
+    },
+    {
+      "file": "wiki/rendering/image-effect-mask-blend.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[custom-mask-shaders]] —— 把贴图 mask 升级为 in-shader SDF 圆盘 / 圆环 mask，解锁动态参数化"
+    },
+    {
+      "file": "wiki/rendering/uv-displacement-image-effect.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shockwave-effect]] —— 圆环 mask × UV 位移的最经典组合\n- [[custom-mask-shaders]] —— 提供 in-shader 圆环 mask 作为位移强度场"
+    },
+    {
+      "file": "wiki/rendering/stencil-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stencil-portal-shader-antichamber]] —— Antichamber 风格「mask + object 配对」的最小 Unity 实现"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[custom-mask-shaders]] | Alisavakis：in-shader 圆盘 / 圆环 SDF mask 的最小实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shockwave-effect]] | Alisavakis：圆环 mask × UV 位移做 2D 冲击波命中反馈 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stencil-portal-shader-antichamber]] | Alisavakis：用 stencil buffer 复刻 Antichamber 的「窗口可见」物体 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-custom-masks-i]] | Alisavakis：in-shader 圆盘 mask 的 5 行实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-custom-masks-ii]] | Alisavakis：把圆盘 mask 改成圆环 mask 的推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-shockwave]] | Alisavakis：圆环 mask × UV 位移 = 冲击波 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-stencil-antichamber]] | Alisavakis：用 stencil buffer 做 Antichamber 风格的「窗口可见」物体 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-24 Worker BS (halisavakis.com ×5)\n\n处理 4 篇 halisavakis.com *My take on shaders* 教程：custom-masks part I/II（合并）、shockwave、stencil antichamber。跳过 1 篇 postmortem。新增 3 概念页（custom-mask-shaders、shockwave-effect、stencil-portal-shader-antichamber）和 4 source 摘要。补丁打到 harry-alisavakis、image-effect-mask-blend、uv-displacement-image-effect、stencil-buffer 四页。"
+}

@@ -1,7 +1,7 @@
 ---
 tags: [渲染, shader, vfx, alpha, unity]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 纹理驱动的溶解效果（Texture Dissolve）
@@ -63,7 +63,9 @@ o.Emission = _Emission + isGlowing * _GlowColor;
 - [[planar-mapping]] —— dissolve 纹理的坐标来源之一
 - [[layered-grid-noise]] —— 程序化生成 dissolve pattern
 - [[particle-custom-vertex-streams]] —— 粒子系统通过 AgePercent 驱动逐粒子 dissolve
+- [[cel-shader-outline]] —— Linden Reid 的 dissolve 示例与 cel 光照同 shader，可拆分组合
 
 ## Sources
 
 - [[sources/ronja-texture-dissolve]]
+- [[sources/lindenreid-dissolve-shader]] —— Linden Reid 的 Unity 版实现，多层 `_ColorThreshold` 堆叠边缘色 + 可选 `color.a` 全局 fade
