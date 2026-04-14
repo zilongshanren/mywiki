@@ -39,6 +39,16 @@ sources: 1
 - [[early-z-late-z]]
 - [[overdraw]]
 - [[tbdr-vs-imr]]
+- [[compute-vs-raster-points]] —— 单像素点的 2×2 quad overshading 现象
+- [[gpu-image-editor-brush]] —— 2D 图像编辑器把笔刷合成写成 fragment shader + ping-pong framebuffer
+- [[shaping-functions]] — step/smoothstep/lerp/sin/frac 等片元着色器基础塑形原语
+- [[uv-manipulation-nodes]] —— Shader Graph 里的 UV 变换节点
+- [[sampler-filter-wrap-modes]] —— 纹理采样器的 Filter / Wrap 设置
+- [[scene-color-depth-nodes]] —— 透明物体如何读回场景颜色与深度
+- [[particle-custom-vertex-streams]] —— 粒子系统到 shader 的逐粒子数据通道
+- [[unity-grabpass-blur]] —— Unity GrabPass + 可分高斯模糊的入门实现
+- [[texture-encoded-state]] —— 把 per-pixel 时间戳/状态塞进纹理通道，供 fragment shader 消费
+- [[shader-vector-math-primer]]
 
 ## Sources
 

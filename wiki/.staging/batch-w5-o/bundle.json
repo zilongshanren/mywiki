@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w5-o",
+  "agent_note": "Batch focused on blog.mecheye.net (Jasper St. Pierre). Ingested the headline 'How to write a renderer for modern graphics APIs' (2023) and the 'DRI' (2016) Linux graphics stack explainer. Skipped 3 off-topic posts: Shellshock (bash governance / security culture, not graphics/systems programming), GNOME 3.8 pressure barriers (UI trivia), and GNOME invisible borders (UI trivia). New person page created for Jasper St. Pierre.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.mecheye.net/2023-09-03_how-to-write-a-renderer-for-modern-graphics-apis.md",
+      "status": "ingested",
+      "source_slug": "jasper-how-to-write-a-renderer",
+      "title": "How to write a renderer for modern graphics APIs"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2016-01-19_dri.md",
+      "status": "ingested",
+      "source_slug": "jasper-dri-linux-graphics-stack",
+      "title": "\"DRI\" (Linux graphics stack terminology)"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2014-10-05_shellshock-will-happen-again.md",
+      "status": "skipped_offtopic",
+      "reason": "About bash maintainer governance and the Shellshock disclosure — open-source project health / security culture commentary, not graphics, rendering, systems programming, or languages."
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2013-03-19_barriers.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME 3.8 release-note post about pressure-barrier message tray (a UI discoverability feature using X server pointer barriers). Desktop UI trivia, not graphics engineering or systems content."
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2011-08-09_one-is-the-loneliest-border.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME 3.0 release-note post about 'invisible borders' for window resize — UI polish feature, no transferable rendering/systems insight."
+    }
+  ],
+  "concepts_created": [
+    "gpu-hazard-tracking",
+    "gpu-fence-timeline-semaphore",
+    "buffer-renaming",
+    "linux-graphics-stack-dri"
+  ],
+  "people_created": [
+    "jasper-st-pierre"
+  ],
+  "source_summaries_created": [
+    "jasper-how-to-write-a-renderer",
+    "jasper-dri-linux-graphics-stack"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-hazard-tracking]] —— 为什么 D3D12/Vulkan 要求你自己声明 barrier\n- [[buffer-renaming]] —— 老驱动的隐式魔法与 D3D12/Vulkan 的显式化"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/jasper-how-to-write-a-renderer]]"
+    },
+    {
+      "file": "wiki/rendering/render-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-hazard-tracking]] —— render graph 要替人处理的核心问题\n- [[sources/jasper-how-to-write-a-renderer]] —— Jasper 把 render pass 描述成 dataflow graph 的视角"
+    },
+    {
+      "file": "wiki/rendering/d3d12-resource-binding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-hazard-tracking]]\n- [[gpu-fence-timeline-semaphore]]\n- [[buffer-renaming]]"
+    },
+    {
+      "file": "wiki/rendering/d3d12-resource-binding.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/jasper-how-to-write-a-renderer]]"
+    },
+    {
+      "file": "wiki/game-development/rendering-api-depth.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[buffer-renaming]] —— 老 API 的\"深\"与现代 API 的\"浅\"取舍\n- [[gpu-hazard-tracking]] —— 同一问题的深浅两种 API 设计\n- [[jasper-st-pierre]]"
+    },
+    {
+      "file": "wiki/game-development/rendering-api-depth.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/jasper-how-to-write-a-renderer]]"
+    },
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-fence-timeline-semaphore]] —— 线性分配器帧循环回收的前置条件\n- [[buffer-renaming]] —— 现代 API 用线性分配器取代驱动隐式 renaming"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-hazard-tracking]] | D3D12/Vulkan 为何要求用户自己声明 barrier |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-fence-timeline-semaphore]] | GPU→CPU 单调计数器作为资源生命周期基础设施 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[buffer-renaming]] | 老驱动的隐式 buffer 版本化与现代 API 的拆除 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[linux-graphics-stack-dri]] | Linux 图形栈 DRI/DRM/KMS 的命名迷雾与真实分层 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jasper-st-pierre]] | Linux 图形栈 / 现代图形 API 长期布道者，出货游戏渲染器工程师 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-how-to-write-a-renderer]] | Jasper：现代图形 API 渲染器的三条轴线（draw call / render pass / data upload） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-dri-linux-graphics-stack]] | Jasper：拆开 DRI/DRM/KMS/libdrm/wl_drm 的命名迷雾 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-5 Worker O (blog.mecheye.net ×5)\n\n处理 5 篇 Jasper St. Pierre（blog.mecheye.net）文章。新增 4 概念页（gpu-hazard-tracking, gpu-fence-timeline-semaphore, buffer-renaming, linux-graphics-stack-dri）、1 人物页（jasper-st-pierre）、2 source 摘要。跳过 3 篇非技术内容（Shellshock 项目治理、GNOME 3.8 pressure barriers、GNOME invisible borders）。核心收获：Jasper《How to write a renderer for modern graphics APIs》的 draw call / render pass / data upload 三轴规划视角，以及 Linux 图形栈 DRI/DRM/KMS 命名一次性拆清。"
+}

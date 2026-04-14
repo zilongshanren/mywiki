@@ -1,7 +1,7 @@
 ---
 tags: [游戏开发, 渲染, 深模块, aposd]
 date: 2026-04-05
-sources: 1
+sources: 2
 ---
 
 # 渲染 API 的深度
@@ -57,7 +57,14 @@ Catlike Coding 的 [[custom-srp]] 教程展示的是一种中间层设计：把�
 - [[deep-modules]]
 - [[interface-vs-implementation]]
 - [[custom-srp]]
+- [[rendering-pipeline]]
+- [[draw-call]]
+- [[buffer-renaming]] —— 老 API 的"深"与现代 API 的"浅"取舍
+- [[gpu-hazard-tracking]] —— 同一问题的深浅两种 API 设计
+- [[jasper-st-pierre]]
 
 ## Sources
 
 - [[sources/aposd-day04]]
+- [[sources/rtr-day02]]
+- [[sources/jasper-how-to-write-a-renderer]]

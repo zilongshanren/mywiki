@@ -1,0 +1,57 @@
+{
+  "batch_id": "batch-w3-g",
+  "agent_note": "anteru.net 5 篇里只有 2025-02-16 assisted environment probe placement 一篇是技术内容。其他四篇（version numbers 软工随笔、Deus Ex 3 trailer 观后感、Ubuntu 19.10 netplan 运维、home server hardware 组装日记）全部属于 topicality gate 明确列出的 skip 类别。新建 1 概念页、1 源摘要、1 人物页。没有 patches——该主题在 wiki 中是全新领域，没有可以增量丰富的既有概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_assisted-environment-probe-placement.md",
+      "status": "ingested",
+      "source_slug": "chajdas-assisted-probe-placement",
+      "title": "Assisted environment probe placement"
+    },
+    {
+      "path": "raw/articles/anteru.net/2017-11-19_version-numbers.md",
+      "status": "skipped_offtopic",
+      "reason": "一篇关于 release versioning 实践与 semver 的软工随笔，内容是「请给你的 release 打 tag」级别的观念文，缺少工程深度，也与渲染/引擎/系统/语言核心主题无直接关系。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-07-08_deus-ex-3-trailer-or-what-you-can-do-for-a-few-hundred-per-f.md",
+      "status": "skipped_offtopic",
+      "reason": "2010 年 Deus Ex 3 CGI trailer 观后感，属于 topicality gate 明确列出的 trailer reviews 类别，内容是主观视觉观察（景深、头发、ray-traced 盾），无技术实质。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2019-10-26_fixing-network-after-ubuntu-19-04-to-19-10-upgrade.md",
+      "status": "skipped_offtopic",
+      "reason": "Ubuntu 19.04 → 19.10 升级后 systemd-resolved/netplan 故障排查笔记，属于 topicality gate 明确列出的 personal sysadmin/network 类别。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2015-01-19_building-your-own-home-server-part-1.md",
+      "status": "skipped_offtopic",
+      "reason": "家庭服务器硬件组装日记（ECC 内存、Atom 主板、NAS 硬盘、UPS 选购），属于 topicality gate 明确列出的 home-server 类别。"
+    }
+  ],
+  "concepts_created": [
+    "environment-probe-placement"
+  ],
+  "people_created": [
+    "matthaeus-chajdas"
+  ],
+  "source_summaries_created": [
+    "chajdas-assisted-probe-placement"
+  ],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[environment-probe-placement]] | 反射探针辅助放置：候选生成 + 相似度聚类 + 美术挑选 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[matthaeus-chajdas]] | Matthäus \"Anteru\" Chajdas，AMD GPU/编译器方向，anteru.net 博主 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chajdas-assisted-probe-placement]] | Chajdas：环境探针辅助放置（CWW11 回顾） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-3 Worker G (anteru.net ×5)\n\n处理 5 篇 anteru.net 文章，仅 1 篇技术内容入库（2025 assisted environment probe placement）。新增 1 概念页 [[environment-probe-placement]]、1 人物页 [[matthaeus-chajdas]]、1 源摘要。跳过 4 篇非技术内容（version numbers 软工随笔 / Deus Ex 3 trailer 观后感 / Ubuntu netplan 运维 / home server 硬件组装）。"
+}

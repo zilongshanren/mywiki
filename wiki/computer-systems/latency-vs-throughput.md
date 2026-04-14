@@ -42,6 +42,7 @@ sources: 1
 - [[amdahls-law]]
 - [[cpu-performance-formula]]
 - [[memory-hierarchy]]
+- [[cuda-memory-hierarchy]] —— GPU 用大量驻留 warp 掩盖 memory latency，occupancy 不足时 stall 暴露
 
 ## Sources
 

@@ -41,6 +41,8 @@ sources: 2
 - [[early-z-late-z]]
 - [[alpha-blending]]
 - [[coordinate-spaces]]
+- [[hierarchical-z-buffer]] — Z-buffer 的 max-downsample 金字塔，用于遮挡剔除
+- [[scene-color-depth-nodes]] —— 在 shader 里采样 `_CameraDepthTexture` 并线性化
 
 ## Sources
 

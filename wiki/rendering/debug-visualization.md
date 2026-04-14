@@ -1,7 +1,7 @@
 ---
 tags: [unity, 渲染, 调试]
 date: 2026-04-05
-sources: 1
+sources: 2
 ---
 
 # 渲染调试可视化
@@ -69,7 +69,10 @@ else { ... }                            // 右上
 - [[color-lut]]
 - [[custom-srp]]
 - [[scriptable-render-pipeline]]
+- [[gpu-printf-debugging]] —— shader 端打印到 UAV append buffer
+- [[bartosz-wronski]]
 
 ## Sources
 
 - [[sources/custom-srp-6-1-0]]
+- [[sources/bartwronski-csharprenderer-debug]]

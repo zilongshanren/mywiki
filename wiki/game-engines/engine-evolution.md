@@ -58,6 +58,7 @@ sources: 1
 - [[rendering-pipeline]]
 - [[deferred-rendering]]
 - [[tactical-programming]]——技术债的心态对比
+- [[gkengine]] / [[gknext-renderer]] —— 一个中国独立开发者 2013 → 2025 的引擎演化个案
 
 ## Sources
 

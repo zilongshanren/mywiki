@@ -31,6 +31,7 @@ sources: 1
 - [[z-buffer]]
 - [[reversed-z]]
 - [[coordinate-spaces]]
+- [[fizzle-lod-fading]] —— LOD 同位 alpha blending 会 z-fight，fizzle 是规避方案之一
 
 ## Sources
 

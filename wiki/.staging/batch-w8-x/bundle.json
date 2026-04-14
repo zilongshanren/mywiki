@@ -1,0 +1,123 @@
+{
+  "batch_id": "batch-w8-x",
+  "agent_note": "gameknife.github.io 5 files — 中国独立引擎开发者，包含 gkNextRenderer YearOne (2025)、Bruce Merry TBDR 调优译文 (2014)、寻路算法 (2019)、gkEngine 特性清单 (2015)。跳过 1 篇非技术私活。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/gameknife.github.io/2025-05-16_gknextrenderer-yearone.md",
+      "status": "ingested",
+      "source_slug": "gameknife-gknextrenderer-yearone",
+      "title": "gkNextRenderer - YearOne"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2014-02-28_tile-basedjia-gou-xia-de-xing-neng-diao-xiao.md",
+      "status": "ingested",
+      "source_slug": "gameknife-tbdr-performance-tuning",
+      "title": "Tile-Based 架构下的性能调校（Bruce Merry 译）"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2019-08-25_xun-lu-suan-fa-zhong-xin-qi-fa.md",
+      "status": "ingested",
+      "source_slug": "gameknife-pathfinding-review",
+      "title": "寻路算法-重新启发"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2015-03-11_gkengineji-zhu-te-xing.md",
+      "status": "ingested",
+      "source_slug": "gameknife-gkengine-features",
+      "title": "gkENGINE 技术特性"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2015-03-20_yi-ge-bu-xiang-guan-ling-yu-de-si-huo.md",
+      "status": "skipped_offtopic",
+      "reason": "个人闲篇 / 朋友请托的非游戏 Web 开发私活随笔，没有实质性图形 / 引擎 / 系统技术内容"
+    }
+  ],
+  "concepts_created": [
+    "visibility-buffer",
+    "hybrid-raytracing-pipeline",
+    "bindless-rendering",
+    "gknext-renderer",
+    "gkengine",
+    "a-star-pathfinding"
+  ],
+  "people_created": ["gameknife"],
+  "source_summaries_created": [
+    "gameknife-gknextrenderer-yearone",
+    "gameknife-tbdr-performance-tuning",
+    "gameknife-pathfinding-review",
+    "gameknife-gkengine-features"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/tbdr-vs-imr.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/gameknife-tbdr-performance-tuning]] —— Bruce Merry 的 OpenGL Insights TBDR 调优章节中译本，覆盖 frame data、glDiscardFramebuffer、HSR 与 depth-only-pass 的实战权衡"
+    },
+    {
+      "file": "wiki/rendering/hsr-tbdr.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/gameknife-tbdr-performance-tuning]] —— PowerVR HSR 与 discard/alphaTest/alphaToCoverage 破坏机制的经典描述"
+    },
+    {
+      "file": "wiki/game-engines/engine-evolution.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gkengine]] / [[gknext-renderer]] —— 一个中国独立开发者 2013 → 2025 的引擎演化个案"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[visibility-buffer]] —— thin-gbuffer + 后续 compute shading 的现代替代方案"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[visibility-buffer]] | 用 thin-gbuffer + 反查替代传统 G-Buffer，化解高 overdraw 代价 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hybrid-raytracing-pipeline]] | VB primary + 短距离硬件光追 secondary + cache 远场 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bindless-rendering]] | CPU 只组织 GPU 只索引，让着色器自由访问任意资源 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[gknext-renderer]] | gameknife 2024 年启动的 Vulkan 实时光追开源引擎，YearOne 总结 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[gkengine]] | gameknife 2013–2015 的跨平台独立引擎，CryEngine 风格，gkNextEngine 的前身 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[a-star-pathfinding]] | A* 与动态环境下的寻路取舍，g(n) 是游戏性的入口 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[gameknife]] | 中国独立引擎开发者，gkEngine 与 gkNextRenderer 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-gknextrenderer-yearone]] | gameknife：从 DX11 追赶现代渲染的一年总结 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-tbdr-performance-tuning]] | Bruce Merry TBDR 性能调校中译（gameknife 译） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-pathfinding-review]] | gameknife：A* 与动态环境寻路的重新审视 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-gkengine-features]] | gameknife：gkEngine 2015 年技术特性清单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-8 Worker X (gameknife.github.io ×5)\n\n处理 5 篇 gameknife.github.io 文章。新增 6 个概念页（visibility-buffer、hybrid-raytracing-pipeline、bindless-rendering、gknext-renderer、gkengine、a-star-pathfinding）、1 个人物页（gameknife）、4 个源摘要。给 tbdr-vs-imr、hsr-tbdr、engine-evolution、deferred-rendering 提了 4 条 patch。跳过 1 篇非技术私活随笔。"
+}

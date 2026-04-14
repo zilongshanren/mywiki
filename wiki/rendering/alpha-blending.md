@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 透明]
 date: 2026-04-05
-sources: 1
+sources: 2
 ---
 
 # Alpha Blending（透明混合）
@@ -13,6 +13,8 @@ C_final = C_src × α_src + C_dst × (1 - α_src)
 ```
 
 （这是最常见的 SrcAlpha + OneMinusSrcAlpha 混合。）
+
+这是 [[alpha-compositing|Porter-Duff source-over]] 算子在硬件 blend state 上的实例化。如果纹理和 framebuffer 用 **预乘 α**，GPU 的 blend state 可以直接写成 `GL_ONE, GL_ONE_MINUS_SRC_ALPHA`——这是数学上正确且可组合的默认值。
 
 ## 为什么透明比不透明难
 
@@ -36,13 +38,23 @@ C_final = C_src × α_src + C_dst × (1 - α_src)
 
 **二值丢弃**（`if (a < threshold) discard;`），不是混合。破坏 [[early-z-late-z|Early-Z]] 和 [[hsr-tbdr|HSR]]。
 
+## 线性空间问题
+
+blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直接混合，红绿过渡会在中间出现不自然的变暗——参见 [[color-space]]。
+
 ## 相关
 
+- [[alpha-compositing]] — 合成数学的完整推导
+- [[color-space]] — 混合必须在线性域
+- [[compute-vs-raster-points]] — 固定功能 blending 的 in-order 队列瓶颈
+- [[fizzle-lod-fading]] — deferred 管线下用 discard 噪声替代 alpha blending 做 LOD 过渡
 - [[z-buffer]]
 - [[early-z-late-z]]
 - [[fragment-shader]]
 - [[hsr-tbdr]]
+- [[dither-alpha-clipping]] —— 用不透明物 + Bayer 阈值 discard 伪造半透，规避 alpha blending 的排序和深度问题
 
 ## Sources
 
 - [[sources/rtr-day05]]
+- [[sources/ciechanow-alpha-compositing]]

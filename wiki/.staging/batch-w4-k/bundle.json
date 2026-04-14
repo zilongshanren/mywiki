@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w4-k",
+  "agent_note": "Ingested 2 of 5 (3dgep.com): DirectX 12 Lesson 3 + CUDA memory model. Skipped 3dgep coordinate-systems primer (already covered by coordinate-spaces), C++ fast-track Part 2 (project setup tutorial), and C++ fast-track Part 16 physics (intro-only Verlet example). Created new person page jeremiah-van-oosten, 3 new concept pages (d3d12-resource-binding, linear-allocator, cuda-memory-hierarchy), 2 source summaries.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/3dgep.com/2018-06-08_learning-directx-12-lesson-3.md",
+      "status": "ingested",
+      "source_slug": "3dgep-learning-directx12-lesson3",
+      "title": "Learning DirectX 12 - Lesson 3"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-11-25_cuda-memory-model.md",
+      "status": "ingested",
+      "source_slug": "3dgep-cuda-memory-model",
+      "title": "CUDA Memory Model"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-01-28_3d-math-primer-for-game-programmers-coordinate-systems.md",
+      "status": "skipped_offtopic",
+      "reason": "Content (left/right-handed systems, object/world/camera space) is already covered by existing [[coordinate-spaces]] page; no new concepts to add."
+    },
+    {
+      "path": "raw/articles/3dgep.com/2019-09-18_c-fast-track-part-2-the-template.md",
+      "status": "skipped_offtopic",
+      "reason": "Visual Studio project template setup walkthrough; no technical substance on engines, rendering, or systems."
+    },
+    {
+      "path": "raw/articles/3dgep.com/2020-02-25_c-fast-track-for-games-programming-part-16-physics.md",
+      "status": "skipped_offtopic",
+      "reason": "Introductory Verlet integration for a falling ball in a 2D template; too basic to warrant a dedicated page and nothing we don't already handle at a higher level."
+    }
+  ],
+  "concepts_created": [
+    "d3d12-resource-binding",
+    "linear-allocator",
+    "cuda-memory-hierarchy"
+  ],
+  "people_created": [
+    "jeremiah-van-oosten"
+  ],
+  "source_summaries_created": [
+    "3dgep-learning-directx12-lesson3",
+    "3dgep-cuda-memory-model"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[d3d12-resource-binding]] —— D3D12 里 draw call 前的 descriptor / barrier 对齐开销"
+    },
+    {
+      "file": "wiki/rendering/render-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[d3d12-resource-binding]] —— 同样的\"延迟决策到 Draw 前一刻\"思路在 D3D12 封装层"
+    },
+    {
+      "file": "wiki/computer-systems/memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cuda-memory-hierarchy]] —— GPU 侧的 5 层显式内存模型"
+    },
+    {
+      "file": "wiki/computer-systems/latency-vs-throughput.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cuda-memory-hierarchy]] —— GPU 用大量驻留 warp 掩盖 memory latency，occupancy 不足时 stall 暴露"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[d3d12-resource-binding]] | D3D12 的描述符、堆、资源状态跨线程管理四件套 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[linear-allocator]] | O(1) 推指针式分配器，帧内临时数据的默认选择 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cuda-memory-hierarchy]] | CUDA kernel 可见的 5 种内存：register/local/shared/global/constant |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jeremiah-van-oosten]] | 3dgep.com 作者，Learning DirectX 12 系列教程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-learning-directx12-lesson3]] | van Oosten：D3D12 Lesson 3，资源绑定与状态跟踪封装 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-cuda-memory-model]] | van Oosten：CUDA 五种内存 + 矩阵乘 tiling 优化 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-4 Worker K (3dgep.com ×5)\n\n处理 3dgep.com 5 篇。Ingest 2 篇（DirectX 12 Lesson 3、CUDA Memory Model），skip 3 篇（3D 数学 coordinate-systems 与 [[coordinate-spaces]] 重复；C++ fast-track Part 2 是 VS 项目模板搭建；Part 16 Physics 仅入门级 Verlet 示例）。新增 3 概念页（d3d12-resource-binding、linear-allocator、cuda-memory-hierarchy）、1 人物页（jeremiah-van-oosten）、2 source 摘要。4 个 existing page 补丁。"
+}

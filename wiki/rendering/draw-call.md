@@ -42,8 +42,14 @@ sources: 2
 - [[batching]]
 - [[bottleneck-analysis]]
 - [[draw-call|SRP Batcher 相关见 Custom SRP 系列]]
+- [[d3d12-resource-binding]] —— D3D12 里 draw call 前的 descriptor / barrier 对齐开销
+- [[gpu-hazard-tracking]] —— 为什么 D3D12/Vulkan 要求你自己声明 barrier
+- [[buffer-renaming]] —— 老驱动的隐式魔法与 D3D12/Vulkan 的显式化
+- [[draw-procedural-gpu]] —— 把一次 draw call 打到极致：CPU 只发命令，vertex 数据全部由 GPU buffer 提供
 
 ## Sources
 
 - [[sources/rtr-day02]]
 - [[sources/rtr-day06]]
+- [[sources/aras-blender-vse-image-filtering]]
+- [[sources/jasper-how-to-write-a-renderer]]

@@ -32,7 +32,11 @@ sources: 1
 
 - [[rasterization]]
 - [[perspective-correct-interpolation]]
+- [[pineda-edge-rasterization]]
+- [[triangle-setup]]
+- [[unity-procedural-mesh]] —— 顶点索引、winding order 的手工演练
 
 ## Sources
 
 - [[sources/rtr-day04]]
+- [[sources/ryg-trip-through-graphics-pipeline-2011-part-6]]

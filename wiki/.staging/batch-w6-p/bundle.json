@@ -1,0 +1,69 @@
+{
+  "batch_id": "batch-w6-p",
+  "agent_note": "PlayCanvas blog 批次：5 篇里 3 篇跳过（PLAYHACK 活动营销、团队成员采访、每周更新 changelog），2 篇技术性足够——Profiler 浮层发布与 MRCS 体积视频集成。产出 2 概念页 + 2 source summary。未创建人物页：Will Eastcott 与 Steven Yau 在本批次只贡献了引擎博客短文，暂不单独立传，等后续批次积累更多材料再考虑。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2015-02-01_build-a-game-for-a-loved-one-this-month-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "PLAYHACK 情人节主题 game jam 营销公告，纯活动宣传，无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2015-11-17_performance-matters-introducing-the-playcanvas-profiler-play.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-profiler",
+      "title": "Performance Matters: Introducing the PlayCanvas Profiler"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2014-06-23_meet-the-playcanvas-team-vaios-kalpias-illias-playcanvas-blo.md",
+      "status": "skipped_offtopic",
+      "reason": "团队成员 Vaios Kalpias-Illias 的个人访谈，属于招聘/品牌内容，无技术实质"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2014-07-11_playcanvas-update-11-07-14-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "每周 changelog + Develop Awards 提名新闻，无技术深度"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2023-02-01_playcanvas-now-supports-microsoft-volumetric-video-playback.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-volumetric-video",
+      "title": "PlayCanvas now supports Microsoft volumetric video playback"
+    }
+  ],
+  "concepts_created": [
+    "frame-profiler-overlay",
+    "volumetric-video-playback"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "playcanvas-profiler",
+    "playcanvas-volumetric-video"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/bottleneck-analysis.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-profiler]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[frame-profiler-overlay]] | 帧内性能剖析器浮层：即开即看的一帧耗时分解 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volumetric-video-playback]] | 体积视频（全息视频）在 WebXR 跨设备回放的工程实践 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-profiler]] | PlayCanvas Profiler 发布公告：帧耗时分解 + 启动时间轴 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-volumetric-video]] | PlayCanvas 集成 MRCS 体积视频到 WebXR AR/VR 的项目复盘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-6 Worker P (blog.playcanvas.com ×5)\n\n处理 5 篇 PlayCanvas 官方博客。3 篇跳过（PLAYHACK 活动营销、团队成员采访、每周 changelog），2 篇技术性足够入库：Profiler 浮层发布与 MRCS 体积视频 WebXR 集成复盘。新增 2 概念页（frame-profiler-overlay, volumetric-video-playback）、2 source 摘要，未新增人物页。"
+}

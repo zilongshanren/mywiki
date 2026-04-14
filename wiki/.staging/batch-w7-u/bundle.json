@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w7-u",
+  "agent_note": "vertexfragment.com 批次：5 篇里 4 篇入库，跳过 Beyond the Storm v0.6 changelog（协调器已明确为 game changelog）。新增 4 概念页 + 1 人物页（Steven Sell 首次出现）+ 4 source 摘要。Patches 挂到 ecs、poisson-disk-sampling、deferred-rendering。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/vertexfragment.com/2022-10-31_gpu-accelerated-diamond-square-generation.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-diamond-square-gpu",
+      "title": "GPU Accelerated Diamond-Square Generation"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2020-08-27_unity-dots-character-controller.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-dots-character-controller",
+      "title": "Unity DOTS Character Controller"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2021-10-18_c-list-removal-performance.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-list-removal",
+      "title": "C# List Removal Performance"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2023-12-19_beyond-the-storm-v0-6.md",
+      "status": "skipped_offtopic",
+      "reason": "独立游戏 Beyond the Storm v0.6 版本更新日志，协调器已明确标记为 changelog，非技术工程内容"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2020-12-17_unity-deferred-grass-rendering.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-deferred-grass",
+      "title": "Unity Deferred Grass Rendering"
+    }
+  ],
+  "concepts_created": [
+    "diamond-square-noise",
+    "kinematic-character-controller",
+    "swap-and-pop-removal",
+    "deferred-grass-shader"
+  ],
+  "people_created": [
+    "steven-sell"
+  ],
+  "source_summaries_created": [
+    "vertexfragment-diamond-square-gpu",
+    "vertexfragment-dots-character-controller",
+    "vertexfragment-list-removal",
+    "vertexfragment-deferred-grass"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[kinematic-character-controller]] — DOTS 下 kinematic 角色控制器的 component/system/job 拆分实例"
+    },
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/vertexfragment-dots-character-controller]]"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[swap-and-pop-removal]] — active list 随机消费场景下的 O(1) 删除技巧"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/vertexfragment-list-removal]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-grass-shader]] — 延迟管线下用 alpha cutout + tessellation + geometry shader 做草地"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/vertexfragment-deferred-grass]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[diamond-square-noise]] | Diamond-Square 有状态噪声与 compute shader 加速实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[deferred-grass-shader]] | 延迟管线下的草地方案：alpha cutout + tessellation + geometry shader |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[kinematic-character-controller]] | Unity DOTS 下 kinematic 角色控制器的设计与 edge case |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[swap-and-pop-removal]] | 无序数组删除的 swap-and-pop 技巧：O(n) → O(1) |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[steven-sell]] | Steven Sell，Vertex Fragment 博客与 Realms/Beyond the Storm 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-diamond-square-gpu]] | Sell：Diamond-Square 三种实现对比与 GPU 加速复盘 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-dots-character-controller]] | Sell：Unity DOTS kinematic 角色控制器详细实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-list-removal]] | Sell：C# List.RemoveAt 性能陷阱与 swap-and-pop 解法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-deferred-grass]] | Sell：Unity 延迟管线下的 5 阶段草地着色方案 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-7 Worker U (vertexfragment.com ×5)\n\n处理 5 篇 Steven Sell 的 Vertex Fragment 技术 ramble。1 篇跳过（Beyond the Storm v0.6 游戏 changelog），4 篇入库：Diamond-Square 的 GPU compute 加速、Unity DOTS kinematic 角色控制器、C# List.RemoveAt 的 swap-and-pop 优化、Unity 延迟管线下的草地着色器。新增 4 概念页（diamond-square-noise, kinematic-character-controller, swap-and-pop-removal, deferred-grass-shader）、1 人物页（steven-sell）、4 source 摘要。Patches 挂到 ecs、poisson-disk-sampling、deferred-rendering。"
+}

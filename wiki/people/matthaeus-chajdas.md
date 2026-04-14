@@ -1,0 +1,24 @@
+---
+tags: [人物, 作者, 渲染, gpu, 编译器]
+date: 2026-04-14
+sources: 1
+---
+
+# Matthäus G. "Anteru" Chajdas
+
+**Matthäus G. Chajdas**（网名 Anteru）是 AMD 的图形 / GPU 编译器方向工程师，博客 [anteru.net](https://anteru.net) 涵盖实时渲染研究、shader 编译器、API 设计与系统工程笔记。他的硕士 / 博士工作都在慕尼黑工大 Rüdiger Westermann 组，早期发表过 *Assisted Environment Probe Placement*（2011）等实时渲染辅助工具类论文。
+
+## 风格
+
+- **偏工程性的研究**：问题通常来自真实生产痛点（美术手工放探针），解法是工具化的预处理 + 美术 in-the-loop。
+- **补完式写作**：发表多年后仍然回到原论文写博客补说明，解答读者对失败模式、采样密度、聚类启发式的具体疑问。
+- **博客混合体**：技术文章之外，也混有系统管理笔记、硬件组装、产品试玩评论。本 wiki 只收录其中的渲染 / 编译器方向内容。
+
+## 相关
+
+- [[environment-probe-placement]]
+- [[rendering-pipeline]]
+
+## Sources
+
+- [[sources/chajdas-assisted-probe-placement]]

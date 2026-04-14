@@ -1,0 +1,36 @@
+{
+  "batch_id": "batch-w9-aa",
+  "agent_note": "gametorrahod.com batch — all 5 files off-topic. 2 Thai-language personal blog posts (commute fatigue, cooking stew), 1 Ableton Live video preprocessing workflow (DAW/ffmpeg tooling, not graphics/engine), 1 'I'm coming back to DOTS' meta-announcement with zero technical content, 1 SEO/SPA/prerendering article about game marketing websites (web dev, not game engine/graphics). No ingestions.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/gametorrahod.com/2018-03-26_preprocess-a-reference-video-for-working-with-ableton-live.md",
+      "status": "skipped_offtopic",
+      "reason": "Ableton Live DAW 视频预处理教程，使用 Handbrake 和 ffmpeg 调整关键帧，属于音乐制作工具链，与图形/引擎/系统主题无关。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2024-04-22_dear-unity-dots-readers.md",
+      "status": "skipped_offtopic",
+      "reason": "博主宣布回归 DOTS 写作的个人近况贴，包含远程工作、烘焙、Arkham Horror LCG 等生活话题，没有任何 DOTS/ECS 技术内容。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2018-08-28_khwaamehnuue-ykh-ngkaaredinthaang.md",
+      "status": "skipped_offtopic",
+      "reason": "泰语个人随笔，谈通勤疲劳与自由职业生活节奏，与技术主题无关。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2018-09-14_stuu.md",
+      "status": "skipped_offtopic",
+      "reason": "泰语烹饪博文，讲程序员做炖菜（stew）的做法与 Maillard 反应，非技术内容。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2019-10-13_search-engine-optimization-research-for-localized-game-websi.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏宣传网站的 SEO/SPA/预渲染研究，属于前端 Web 开发与营销议题，与图形/引擎/系统主题不沾边。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": []
+}

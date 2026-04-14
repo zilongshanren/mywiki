@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w4-j",
+  "agent_note": "Wave-4 Worker J: 5 Stephen Hill / selfshadow.com articles. 4 ingested as high-value technical content (multi-faceted part 2, blending in detail, PBS SIGGRAPH 2014, practical dynamic visibility), 1 skipped (self-shadow-6 is a bare syllabus page for the 2022 SIGGRAPH spectral course — pure metadata, no technical substance). Created 5 concept pages, 1 person page, 4 source summaries, and patches to 2 existing pages.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.selfshadow.com/2018-06-04_a-multi-faceted-exploration-part-2.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-multi-faceted-part-2",
+      "title": "A Multi-Faceted Exploration (Part 2)"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2012-07-10_blending-in-detail.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-blending-in-detail",
+      "title": "Blending in Detail"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2014-08-12_physically-based-shading-at-siggraph-2014.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-pbs-siggraph-2014",
+      "title": "Physically based Shading at SIGGRAPH 2014"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2011-09-22_practical-dynamic-visibility-for-games.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-practical-visibility",
+      "title": "Practical, Dynamic Visibility for Games"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_self-shadow-6.md",
+      "status": "skipped_offtopic",
+      "reason": "Pure course syllabus / abstract page for SIGGRAPH 2022 spectral rendering course — no technical substance beyond the talk list. Existing [[spectral-rendering]] and [[spectral-brdf]] pages already cover this topic from substantive sources."
+    }
+  ],
+  "concepts_created": [
+    "microfacet-brdf",
+    "normal-map-blending",
+    "occlusion-culling",
+    "hierarchical-z-buffer",
+    "physically-based-shading"
+  ],
+  "people_created": [
+    "stephen-hill"
+  ],
+  "source_summaries_created": [
+    "selfshadow-multi-faceted-part-2",
+    "selfshadow-blending-in-detail",
+    "selfshadow-pbs-siggraph-2014",
+    "selfshadow-practical-visibility"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[occlusion-culling]] —— 遮挡剔除的具体方案（HZB 查询 / SPU 软光栅）\n- [[hierarchical-z-buffer]] —— max-downsample 金字塔：遮挡剔除的基础数据结构"
+    },
+    {
+      "file": "wiki/rendering/cached-shadowmaps.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[occlusion-culling]] —— Conviction 的 HZB shadow caster culling 是另一种阴影优化思路"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hierarchical-z-buffer]] — Z-buffer 的 max-downsample 金字塔，用于遮挡剔除"
+    },
+    {
+      "file": "wiki/rendering/spectral-brdf.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[microfacet-brdf]] — 光谱 BRDF 底下的微表面骨架"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[microfacet-brdf]] | $D\\,F\\,G$ 微表面 BRDF + 多次散射能量补偿 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[physically-based-shading]] | PBR 着色的整体框架与 SIGGRAPH course 脉络 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[normal-map-blending]] | Reoriented Normal Mapping：最短弧四元数混合法线贴图 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[occlusion-culling]] | HZB 查询 vs SPU 软光栅：两种动态遮挡剔除方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hierarchical-z-buffer]] | max-downsample 的 Z 金字塔：保守遮挡查询 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[stephen-hill]] | Selfshadow 博客 / SIGGRAPH PBS course 组织者 / Lucasfilm ILMxLAB |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-multi-faceted-part-2]] | Hill：微表面多次散射补偿 lobe 的推导与 Fms 修正 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-blending-in-detail]] | Hill & Barré-Brisebois：Reoriented Normal Mapping |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-pbs-siggraph-2014]] | Hill：SIGGRAPH 2014 PBS 课程导读 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-practical-visibility]] | Hill & Collin：Conviction HZB + Battlefield SPU 软光栅遮挡 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-4 Worker J (blog.selfshadow.com / Stephen Hill ×5)\n\n处理 5 篇 Stephen Hill（Selfshadow）博客文章。4 篇成功摄入：A Multi-Faceted Exploration Part 2（微表面多次散射补偿推导 + Fms 修正）、Blending in Detail（Reoriented Normal Mapping 原文）、Physically Based Shading at SIGGRAPH 2014（PBS course 导读）、Practical Dynamic Visibility for Games（Conviction HZB 与 Battlefield SPU 软光栅遮挡剔除）。跳过 1 篇（self-shadow-6，是 SIGGRAPH 2022 spectral course 的纯 syllabus 页，无技术实质）。新增 5 个概念页（microfacet-brdf、physically-based-shading、normal-map-blending、occlusion-culling、hierarchical-z-buffer）、1 个人物页（stephen-hill）、4 个 source 摘要，并向 culling / cached-shadowmaps / z-buffer / spectral-brdf 四个已有页补 `## 相关` 交叉引用。"
+}

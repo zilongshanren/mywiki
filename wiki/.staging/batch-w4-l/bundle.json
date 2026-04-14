@@ -1,0 +1,119 @@
+{
+  "batch_id": "batch-w4-l",
+  "agent_note": "5 篇 basesandframes.wordpress.com 文章全部入库。作者按原文 frontmatter 记作 Robin Green（不是任务说明里提到的 Chris Green——Chris Green 是 Valve 的 SDF text rendering 作者，两人不同；Bases and Frames 博客的实际作者 Robin Green 是前 Sony SCEA R&D 工程师、GDC 2003 *SH Lighting: Gritty Details* paper 的作者）。创建了 robin-green.md 而非 chris-green.md——请 orchestrator 核对。所有新增概念页都按照「图形 / 系统」的类别分到 wiki/rendering/ 或 wiki/computer-systems/。SH 文章通过 existing_page_patches 给 spherical-harmonics 页补了 robin-green 的交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-05-22_implementing-needlets.md",
+      "status": "ingested",
+      "source_slug": "green-implementing-needlets",
+      "title": "Implementing Needlets"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-05-17_faster-math-functions.md",
+      "status": "ingested",
+      "source_slug": "green-faster-math-functions",
+      "title": "Faster Math Functions"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-05-11_spherical-harmonic-lighting-the-gritty-details.md",
+      "status": "ingested",
+      "source_slug": "green-sh-lighting-gritty-details",
+      "title": "Spherical Harmonic Lighting: The Gritty Details"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2017-05-12_extracting-your-display-colorspace.md",
+      "status": "ingested",
+      "source_slug": "green-display-edid-colorspace",
+      "title": "Extracting your display Colorspace"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-07-25_procedural-rendering-on-ps2.md",
+      "status": "ingested",
+      "source_slug": "green-procedural-rendering-ps2",
+      "title": "Procedural Rendering on PS2"
+    }
+  ],
+  "concepts_created": [
+    "needlets",
+    "faster-math-functions",
+    "procedural-rendering-ps2",
+    "display-edid-colorspace"
+  ],
+  "people_created": [
+    "robin-green"
+  ],
+  "source_summaries_created": [
+    "green-implementing-needlets",
+    "green-faster-math-functions",
+    "green-sh-lighting-gritty-details",
+    "green-display-edid-colorspace",
+    "green-procedural-rendering-ps2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[needlets]] — 球面上的局部化 wavelet 基，SH 在 occlusion mask 边界振铃时的替代方案\n- [[robin-green]] — GDC 2003 *SH Lighting: The Gritty Details* 的作者"
+    },
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/green-sh-lighting-gritty-details]]\n- [[sources/green-implementing-needlets]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[display-edid-colorspace]] — 从 EDID 读出显示器原生 gamut"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/green-display-edid-colorspace]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[needlets]] | 球面 wavelet 基，SH 遮挡振铃问题的替代方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-rendering-ps2]] | PS2 VU + DMA chain 的过程式几何管线 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[display-edid-colorspace]] | 从 EDID 读出显示器原生 primaries + 白点 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[faster-math-functions]] | 无 libm 场景下手写 sin/cos/exp/pow——minimax 多项式，不是 Taylor |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[robin-green]] | 前 Sony SCEA R&D，GDC 2003 *SH Lighting: Gritty Details* 作者，Bases and Frames 博主 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-sh-lighting-gritty-details]] | Robin Green：SH 光照在 PS2 上的落地回顾 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-implementing-needlets]] | Robin Green：Needlet 球面 wavelet 的实现配方 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-faster-math-functions]] | Robin Green：GDC 2002/2003 *Faster Math Functions* tutorial 回顾 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-display-edid-colorspace]] | Robin Green：用 PowerShell + WMI 抽 EDID 色度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-procedural-rendering-ps2]] | Robin Green：GDC 2001 PS2 过程式几何 demo 回顾 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-4 Worker L (basesandframes.wordpress.com ×5)\n\n处理 5 篇 Robin Green *Bases and Frames* 技术文章（needlets / faster math / SH lighting / EDID colorspace / PS2 procedural）。新增 4 概念页（needlets, faster-math-functions, procedural-rendering-ps2, display-edid-colorspace）、1 人物页（robin-green）、5 source 摘要。对 spherical-harmonics 和 color-space 两个既有概念页补了相关链接和 sources 引用。注：任务说明写的是 'Chris Green'，但原文 frontmatter 和内容都指向 Robin Green（前 Sony SCEA R&D），按事实记录。"
+}

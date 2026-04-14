@@ -1,0 +1,133 @@
+{
+  "batch_id": "batch-w2-f",
+  "agent_note": "momentsingraphics.de × 5. High-value: Christoph Peters spectral rendering series (parts 1+2), GPU polynomial roots, projected spherical caps sampling. Skipped the 2016 WordPress/Markdeep setup post per orchestrator instructions (non-technical blogging meta).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/momentsingraphics.de/2025-11-06_spectral-rendering-part-1-spectra.md",
+      "status": "ingested",
+      "source_slug": "peters-spectral-rendering-1-spectra",
+      "title": "Spectral rendering, part 1: Spectra"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2025-11-13_spectral-rendering-part-2-real-time-rendering.md",
+      "status": "ingested",
+      "source_slug": "peters-spectral-rendering-2-real-time",
+      "title": "Spectral rendering, part 2: Real-time rendering"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2023-10-31_finding-real-polynomial-roots-on-gpus.md",
+      "status": "ingested",
+      "source_slug": "peters-gpu-polynomial-roots",
+      "title": "Finding Real Polynomial Roots on GPUs"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2019-05-22_sampling-projected-spherical-caps-in-real-time.md",
+      "status": "ingested",
+      "source_slug": "peters-projected-spherical-caps",
+      "title": "Sampling Projected Spherical Caps in Real Time (i3D 2019)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-08-20_using-markdeep-for-a-wordpress-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "Blogging tool setup guide (Markdeep + WordPress + MathJax). Per orchestrator's special notes: skip unless substantial technical content; this is a tooling/meta post with no graphics/rendering substance."
+    }
+  ],
+  "concepts_created": [
+    "spectral-rendering",
+    "fourier-srgb-spectral-upsampling",
+    "hero-wavelength-spectral-sampling",
+    "spectral-brdf",
+    "polynomial-root-finding-gpu",
+    "register-spilling-avoidance",
+    "projected-solid-angle-sampling"
+  ],
+  "people_created": ["christoph-peters"],
+  "source_summaries_created": [
+    "peters-spectral-rendering-1-spectra",
+    "peters-spectral-rendering-2-real-time",
+    "peters-gpu-polynomial-roots",
+    "peters-projected-spherical-caps"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[spectral-rendering]] — 彻底绕开「RGB 当作颜色」的物理近似\n- [[fourier-srgb-spectral-upsampling]] — 把 sRGB 纹理升格为反射率谱"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/peters-spectral-rendering-1-spectra]]"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fourier-srgb-spectral-upsampling]] — 另一种 3D LUT 的用法：sRGB → Fourier sRGB 光谱上采样预处理"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hero-wavelength-spectral-sampling]] — 类似的分层抖动思路在波长维度的应用\n- [[projected-solid-angle-sampling]] — 球形面光源的高效采样"
+    },
+    {
+      "file": "wiki/rendering/gpu-printf-debugging.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[register-spilling-avoidance]] — shader 性能悬崖的另一常见来源\n- [[polynomial-root-finding-gpu]] — 典型的「溢出杀死性能」案例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spectral-rendering]] | 光谱渲染：把 RGB 三元组换成波长积分的现代实时方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fourier-srgb-spectral-upsampling]] | Fourier sRGB：sRGB 纹理到反射率谱的 BC1 可压缩上采样 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hero-wavelength-spectral-sampling]] | 波长分层抖动 + 光源谱 CDF LUT 的 MC 采样策略 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spectral-brdf]] | 「base color + 纯白」两个权重把 PBR BRDF 改造成光谱 BRDF |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[polynomial-root-finding-gpu]] | GLSL 里的 bracketed Newton bisection 实现与高度优化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[register-spilling-avoidance]] | shader 寄存器溢出的识别与系统化规避手册 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[projected-solid-angle-sampling]] | 球形面光源 + 漫反射表面的实时零方差采样（cut disk 分解） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[christoph-peters]] | Christoph Peters，momentsingraphics.de，矩/傅里叶系数压缩带界信号的图形研究者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-spectral-rendering-1-spectra]] | Peters：光谱渲染三部曲 Part 1 — 光谱从哪来 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-spectral-rendering-2-real-time]] | Peters：光谱渲染三部曲 Part 2 — 实时路径追踪里的波长 MC 采样 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-gpu-polynomial-roots]] | Peters：GPU 上的多项式实根求解与反寄存器溢出设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-projected-spherical-caps]] | Peters & Dachsbacher i3D 2019：球形光源投影立体角的实时采样 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-2 Worker F (momentsingraphics.de ×5)\n\n处理 5 篇 Christoph Peters 的 Moments in Graphics 博客文章。新增 7 个概念页（spectral-rendering, fourier-srgb-spectral-upsampling, hero-wavelength-spectral-sampling, spectral-brdf, polynomial-root-finding-gpu, register-spilling-avoidance, projected-solid-angle-sampling）、1 个人物页（christoph-peters）、4 个 source 摘要。跳过 1 篇非技术博客工具设置文章（2016 Markdeep + WordPress）。光谱渲染三部曲是重点贡献，把光谱渲染从「离线奢侈品」重新框定为实时可用方案，和既有 [[color-space]] 形成自然的升级路径。"
+}

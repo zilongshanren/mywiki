@@ -59,6 +59,9 @@ Pass 声明它使用的 buffer 和可选的 texture，然后提供一个静态 l
 - [[scriptable-render-pipeline]]
 - [[rendering-api-depth]]
 - [[deep-modules]]——Render Graph 作为深模块的例证
+- [[d3d12-resource-binding]] —— 同样的「延迟决策到 Draw 前一刻」思路在 D3D12 封装层
+- [[gpu-hazard-tracking]] —— render graph 要替人处理的核心问题
+- [[sources/jasper-how-to-write-a-renderer]] —— Jasper 把 render pass 描述成 dataflow graph 的视角
 
 ## Sources
 

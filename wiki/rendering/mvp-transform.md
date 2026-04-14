@@ -36,13 +36,23 @@ vertex_local → [M] → world → [V] → view → [P] → clip
 - DirectX：left-handed（历史）。
 - 投影矩阵在两者间略不同，NDC Y 方向约定也不同。
 
+## 物理对应
+
+投影矩阵的 `fovY` 不是数学参数——它对应真实相机 **field of view**。参见 [[pinhole-camera]]，那里给出 `FoV = 2·atan(sensor/(2·distance))` 的物理推导，以及为什么游戏引擎的标准相机等价于针孔模型（无景深）。需要 bokeh / DoF 时参见 [[thin-lens-model]]。
+
 ## 相关
 
 - [[coordinate-spaces]]
+- [[pinhole-camera]] — 虚拟相机的物理本体
+- [[thin-lens-model]]
 - [[rendering-pipeline]]
 - [[z-buffer]]
 - [[perspective-correct-interpolation]]
+- [[motion-vectors]] — 两帧 MVP 之差用来生成屏幕空间运动矢量，是 temporal 技术的基础
+- [[3d-rotation-math]] — 旋转矩阵的三种来源（Euler / Axis-Angle / 四元数）
+- [[shader-vector-math-primer]] —— 从零解释 "矩阵乘向量 = 换坐标系" 的入门版本
 
 ## Sources
 
 - [[sources/rtr-day03]]
+- [[sources/ciechanow-cameras-and-lenses]]

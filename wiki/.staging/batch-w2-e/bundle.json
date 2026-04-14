@@ -1,0 +1,151 @@
+{
+  "batch_id": "batch-w2-e",
+  "agent_note": "Ingested 2 high-value elopezr.com technical posts (ROTR frame analysis + TAA deep-dive). Skipped 3: pinhole-camera post is a personal travel anecdote with shallow physics recap already fully covered by existing wiki/rendering/pinhole-camera.md; football-simulation is a 2014 prototype postmortem without substantive engine content; sub-the-fixer is a Python/regex subtitle tool unrelated to graphics. Created 8 new concept pages (TAA trio + 5 ROTR techniques), 1 person page (Emilio López Ros), and 2 source summaries.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/elopezr.com/2018-01-14_a-real-life-pinhole-camera.md",
+      "status": "skipped_offtopic",
+      "reason": "personal travel story from Thailand honeymoon with brief pinhole camera physics recap already fully covered by the existing wiki/rendering/pinhole-camera.md; no new technical content to ingest"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2018-12-31_the-rendering-of-rise-of-the-tomb-raider.md",
+      "status": "ingested",
+      "source_slug": "elopezr-rotr-rendering",
+      "title": "The Rendering of Rise of the Tomb Raider"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-06-15_football-simulation.md",
+      "status": "skipped_offtopic",
+      "reason": "short 2014 Gameloft football-manager prototype postmortem with only superficial mentions of state-machine AI and UI refactor; no technical depth that warrants a wiki page"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2022-01-02_temporal-aa-and-the-quest-for-the-holy-trail.md",
+      "status": "ingested",
+      "source_slug": "elopezr-taa-holy-trail",
+      "title": "Temporal AA and the Quest for the Holy Trail"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-03-09_sub-the-fixer.md",
+      "status": "skipped_offtopic",
+      "reason": "Python + wxPython subtitle (.srt) OCR fixer tool with regex rules; unrelated to graphics, rendering, game engines, or software design"
+    }
+  ],
+  "concepts_created": [
+    "temporal-antialiasing",
+    "motion-vectors",
+    "taa-history-rectification",
+    "tiled-light-prepass",
+    "hbao-interleaved-sampling",
+    "depth-aware-upsampling",
+    "fizzle-lod-fading",
+    "volumetric-fog-froxels"
+  ],
+  "people_created": ["emilio-lopez-ros"],
+  "source_summaries_created": [
+    "elopezr-rotr-rendering",
+    "elopezr-taa-holy-trail"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/pinhole-camera.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[emilio-lopez-ros]] — 曾在 Thailand 寺庙里遇见一个真实的 camera obscura 并写了篇短文"
+    },
+    {
+      "file": "wiki/rendering/aliasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-antialiasing]] — 用跨帧分散计算的方式一次性处理所有形式的 aliasing\n- [[taa-history-rectification]] — TAA 的 ghosting/flicker 修正技术族"
+    },
+    {
+      "file": "wiki/rendering/msaa-ssaa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-antialiasing]] — 现代 AAA 的事实标准 AA，MSAA 在延迟渲染下被它取代"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiled-light-prepass]] — Crystal Dynamics Foundation 引擎的 thin G-Buffer + 二次几何提交方案\n- [[fizzle-lod-fading]] — deferred 管线下用 discard 噪声替代 alpha blending 做 LOD fade"
+    },
+    {
+      "file": "wiki/rendering/early-z-late-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fizzle-lod-fading]] — 用 discard 保留 early-z 能力、避免 alpha blending 的工程选择\n- [[depth-aware-upsampling]] — 用 stencil 提前分类像素、再用 early stencil discard 分派 simple/complex shader"
+    },
+    {
+      "file": "wiki/rendering/stencil-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[depth-aware-upsampling]] — stencil 标记深度不连续像素、分派 simple/complex shader 的 ROTR trick"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fizzle-lod-fading]] — 在 deferred 管线下用 noise discard 替代 alpha blending 做 LOD 过渡"
+    },
+    {
+      "file": "wiki/rendering/z-fighting.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fizzle-lod-fading]] — LOD 同位 alpha blending 会 z-fight，fizzle 是其规避方案之一"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[motion-vectors]] — 两帧 MVP 之差用来生成屏幕空间运动矢量，是 temporal 技术的基础"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[temporal-antialiasing]] | TAA 的 jitter + reprojection + rectification 全流程 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[motion-vectors]] | 屏幕空间运动矢量——所有 temporal 技术的基础 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[taa-history-rectification]] | color clamping 与 depth/stencil/velocity rejection 的组合拳 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tiled-light-prepass]] | ROTR Foundation 引擎的 thin G-Buffer + 二次几何提交方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hbao-interleaved-sampling]] | 把 HBAO 拆成 16 个 4×4 块并行、再 blur 合并的 cache-friendly trick |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[depth-aware-upsampling]] | 用 stencil 分派 simple/complex shader 的半分辨率 upsample |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fizzle-lod-fading]] | 用 discard 噪声替代 alpha blending 的 LOD 过渡方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volumetric-fog-froxels]] | frustum-aligned 3D 格网上的 compute-based 体积光流水线 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[emilio-lopez-ros]] | The Code Corsair 博主，AAA 帧分析与 TAA tutorial 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-rotr-rendering]] | López：Rise of the Tomb Raider 逐帧渲染分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-taa-holy-trail]] | López：TAA 完整 tutorial（jitter 到 rectification 全流程） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-2 Worker E (elopezr.com ×5)\n\n处理 5 篇 elopezr.com 文章。新增 8 个概念页（temporal-antialiasing, motion-vectors, taa-history-rectification, tiled-light-prepass, hbao-interleaved-sampling, depth-aware-upsampling, fizzle-lod-fading, volumetric-fog-froxels）、1 个人物页（emilio-lopez-ros）、2 个 source 摘要（ROTR 帧分析、TAA tutorial）。跳过 3 篇：a-real-life-pinhole-camera 是个人旅行随笔且物理内容已被现有 pinhole-camera.md 覆盖；football-simulation 是 2014 原型项目随笔无技术深度；sub-the-fixer 是 Python 字幕修复工具与图形/引擎无关。"
+}

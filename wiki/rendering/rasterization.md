@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 光栅化]
 date: 2026-04-05
-sources: 1
+sources: 3
 ---
 
 # 光栅化（Rasterization）
@@ -43,7 +43,13 @@ sources: 1
 - [[msaa-ssaa]]
 - [[triangle-primitives]]
 - [[perspective-correct-interpolation]]
+- [[pineda-edge-rasterization]] —— GPU 光栅化的算法本体
+- [[hierarchical-rasterization]] —— coarse rasterizer 的剔除层
+- [[triangle-setup]] —— 边方程系数的来源
+- [[compute-vs-raster-points]] —— 何时 compute shader 比硬件光栅化更快
 
 ## Sources
 
 - [[sources/rtr-day04]]
+- [[sources/ryg-trip-through-graphics-pipeline-2011-part-6]]
+- [[sources/aras-gpu-point-rasterization]]

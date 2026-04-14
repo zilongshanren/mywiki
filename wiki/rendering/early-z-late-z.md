@@ -38,6 +38,8 @@ TBDR 在 tile 粒度上做的 **HSR（Hidden Surface Removal）**比 Early-Z 更
 - [[hsr-tbdr]]
 - [[overdraw]]
 - [[fragment-shader]]
+- [[fizzle-lod-fading]] —— 用 discard 保留 early-z 能力、避免 alpha blending 的工程选择
+- [[depth-aware-upsampling]] —— 用 stencil 提前分类像素、再用 early stencil discard 分派 simple/complex shader
 
 ## Sources
 

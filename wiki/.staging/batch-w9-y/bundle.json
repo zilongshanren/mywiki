@@ -1,0 +1,91 @@
+{
+  "batch_id": "batch-w9-y",
+  "agent_note": "5 篇 allenchou.net 中 ingest 2 篇（Game Physics Introduction、Rusher 2 Composite Commands），跳过 3 篇（Bunnyhill Flash 演示内容单薄且技术栈过时、Joining Naughty Dog 和 DigiPen 均为纯 career/school 博文）。新增 3 概念页（game-physics-engine、collision-detection-gjk-epa、composite-command-pattern）、1 人物页（allen-chou）、2 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/allenchou.net/2011-02-28_simple-bunnyhill-demos-ming-lun-allen-chou-zhou-ming-lun.md",
+      "status": "skipped_offtopic",
+      "reason": "2011 年 Flash Player Incubator / Molehill API 的 2D 引擎 Bunnyhill 两个演示。技术栈早已作古（Flash Player），内容只是场景图节点的一段代码片段，没有足以独立成页的技术洞察；评论区也基本是编译错误求助。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2011-10-24_rusher-2-composite-commands-ming-lun-allen-chou-zhou-ming-lu.md",
+      "status": "ingested",
+      "source_slug": "allenchou-rusher-2-composite-commands",
+      "title": "Rusher 2 – Composite Commands"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2014-02-03_joining-naughty-dogs-kennel-ming-lun-allen-chou-zhou-ming-lu.md",
+      "status": "skipped_offtopic",
+      "reason": "纯 career 叙事——GDC 偶遇 Naughty Dog recruiter、电话面试、被录取的经过。无技术内容。作为 Allen Chou 本人背景信息已编入 people 页。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2015-07-25_digipen-wo-de-you-xi-xue-xiao-ming-lun-allen-chou-zhou-ming.md",
+      "status": "skipped_offtopic",
+      "reason": "介绍 DigiPen 游戏学校的学程、就业服务中心、学生社团等。纯 career / school 博文，无软件工程或图形技术内容。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2013-12-18_game-physics-introduction-acknowledgements-ming-lun-allen-ch.md",
+      "status": "ingested",
+      "source_slug": "allenchou-game-physics-introduction",
+      "title": "Game Physics: Introduction & Acknowledgements"
+    }
+  ],
+  "concepts_created": [
+    "game-physics-engine",
+    "collision-detection-gjk-epa",
+    "composite-command-pattern"
+  ],
+  "people_created": [
+    "allen-chou"
+  ],
+  "source_summaries_created": [
+    "allenchou-game-physics-introduction",
+    "allenchou-rusher-2-composite-commands"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/engine-layering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-physics-engine]] —— 典型 middleware 层的物理子系统：broadphase / collision detection / resolution 三段流水线"
+    },
+    {
+      "file": "wiki/game-engines/game-engine.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-physics-engine]] —— 引擎 middleware 层的标配之一，约束式刚体物理流水线"
+    },
+    {
+      "file": "wiki/game-development/kinematic-character-controller.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/allenchou-game-physics-introduction]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-physics-engine]] | 约束式刚体物理引擎的三段流水线：broadphase、collision detection、sequential impulse resolution |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[collision-detection-gjk-epa]] | 凸几何碰撞检测三件套：GJK 判相交、EPA 补 contact、MPR 一步到位 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[composite-command-pattern]] | 命令模式与 Serial / Parallel 复合命令：跨帧执行的可组合工作单元 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[allen-chou]] | Allen Chou（周明倫），Naughty Dog gameplay programmer，DigiPen 出身，Game Physics Series 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allenchou-game-physics-introduction]] | Allen Chou：约束式刚体物理引擎的流水线概览与术语表 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allenchou-rusher-2-composite-commands]] | Allen Chou：ActionScript 3 / Rusher 2 框架下 Serial / Parallel 复合命令用法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-9 Worker Y (allenchou.net ×5)\n\n处理 5 篇 allenchou.net 博客。Ingest 2 篇：Game Physics Introduction（约束式刚体物理引擎三段流水线概览）与 Rusher 2 Composite Commands（命令模式 Serial/Parallel 子命令教程）。跳过 3 篇：Bunnyhill Flash Molehill 演示（技术栈过时且内容单薄）、Joining Naughty Dog's Kennel（career 叙事）、DigiPen 我的游戏学校（school 博文）。新增 3 个概念页（game-physics-engine、collision-detection-gjk-epa、composite-command-pattern）、1 个人物页（allen-chou，Naughty Dog gameplay programmer）、2 个 source 摘要。对 engine-layering / game-engine 做了 ## 相关 交叉链接补丁，对 kinematic-character-controller 做了 source 链接补丁。"
+}

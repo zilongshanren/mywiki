@@ -1,0 +1,154 @@
+{
+  "batch_id": "batch-w7-s",
+  "agent_note": "5 篇 cyangamedev.wordpress.com（作者 Cyan / @Cyanilux）Unity Shader Graph 与 URP 教程，全部 ingest。新增 7 个渲染概念页（urp-volume-post-processing、blit-render-feature、uv-manipulation-nodes、sampler-filter-wrap-modes、crt-shader-effects、scene-color-depth-nodes、particle-custom-vertex-streams）、1 个人物页（cyanilux）、5 个 source 摘要。CRT shader 一篇关联了已有的 [[harry-alisavakis]]（挑战赛主办人）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-06-22_post-processing-in-the-universal-rp.md",
+      "status": "ingested",
+      "source_slug": "cyan-urp-post-processing",
+      "title": "Post Processing in the Universal RP"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-01-14_uv-based-nodes.md",
+      "status": "ingested",
+      "source_slug": "cyan-uv-based-nodes",
+      "title": "UV-Based Nodes"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-09-10_retro-crt-shader-breakdown.md",
+      "status": "ingested",
+      "source_slug": "cyan-retro-crt-shader",
+      "title": "Retro CRT Shader Breakdown"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2019-06-01_scene-color-depth-nodes.md",
+      "status": "ingested",
+      "source_slug": "cyan-scene-color-depth",
+      "title": "Scene Color & Depth Nodes"
+    },
+    {
+      "path": "raw/articles/cyangamedev.wordpress.com/2020-07-19_passing-particle-system-data-into-shadergraph-custom-vertex.md",
+      "status": "ingested",
+      "source_slug": "cyan-particle-custom-vertex-streams",
+      "title": "Passing Particle System Data into Shadergraph (Custom Vertex Streams)"
+    }
+  ],
+  "concepts_created": [
+    "urp-volume-post-processing",
+    "blit-render-feature",
+    "uv-manipulation-nodes",
+    "sampler-filter-wrap-modes",
+    "crt-shader-effects",
+    "scene-color-depth-nodes",
+    "particle-custom-vertex-streams"
+  ],
+  "people_created": [
+    "cyanilux"
+  ],
+  "source_summaries_created": [
+    "cyan-urp-post-processing",
+    "cyan-uv-based-nodes",
+    "cyan-retro-crt-shader",
+    "cyan-scene-color-depth",
+    "cyan-particle-custom-vertex-streams"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/scriptable-render-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[urp-volume-post-processing]] —— URP 的 Volume 后处理系统（PPv3）\n- [[blit-render-feature]] —— URP 自定义后处理的补救路径\n- [[cyanilux]]"
+    },
+    {
+      "file": "wiki/rendering/scriptable-render-pipeline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cyan-urp-post-processing]]"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[uv-manipulation-nodes]] —— Shader Graph 里的 UV 变换节点\n- [[sampler-filter-wrap-modes]] —— 纹理采样器的 Filter / Wrap 设置\n- [[scene-color-depth-nodes]] —— 透明物体如何读回场景颜色与深度\n- [[particle-custom-vertex-streams]] —— 粒子系统到 shader 的逐粒子数据通道"
+    },
+    {
+      "file": "wiki/rendering/reversed-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scene-color-depth-nodes]] —— Shader Graph 里 Scene Depth 的三档模式（Raw / Linear01 / Eye）与 reversed Z 的交互"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scene-color-depth-nodes]] —— 在 shader 里采样 `_CameraDepthTexture` 并线性化"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[particle-custom-vertex-streams]] —— 粒子系统通过 AgePercent 驱动逐粒子 dissolve"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cyanilux]] —— 常参与 #TechnicallyAChallenge 挑战赛的 shader 教程作者\n- [[crt-shader-effects]] —— Cyan 为 Retro 主题做的作品"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-volume-post-processing]] | URP 基于体积的后处理系统（PPv3）的架构与使用 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[blit-render-feature]] | 在 URP 无扩展点时通过 ScriptableRendererFeature 做自定义全屏后处理 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[uv-manipulation-nodes]] | Shader Graph 中 Tiling/Offset、Rotate、Flipbook、Polar 等 UV 操作节点 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sampler-filter-wrap-modes]] | 纹理采样器的 Point/Linear/Trilinear 与 Repeat/Clamp/Mirror 的语义与陷阱 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[crt-shader-effects]] | 把复古 CRT 拆解为 5 个正交 shader trick 的 breakdown |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[scene-color-depth-nodes]] | Shader Graph 里 Scene Color / Scene Depth 节点的跨管线行为与深度相交技术 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[particle-custom-vertex-streams]] | 通过 TEXCOORD 把 AgePercent / StableRandom / Custom Data 传进 shader |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[cyanilux]] | Cyan（@Cyanilux），Unity Shader Graph / URP 教程作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-urp-post-processing]] | Cyan：URP 后处理（Volume + Blit Render Feature） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-uv-based-nodes]] | Cyan：Shader Graph 的 UV 操作节点总览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-retro-crt-shader]] | Cyan：复古 CRT shader 的 5 效果拆解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-scene-color-depth]] | Cyan：Scene Color / Scene Depth 节点跨管线行为 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyan-particle-custom-vertex-streams]] | Cyan：粒子系统到 Shader Graph 的逐粒子数据通道 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-7 Worker S (cyangamedev.wordpress.com ×5)\n\n处理 5 篇 Cyan（@Cyanilux）的 Unity Shader Graph / URP 技术教程，全部 ingest。新增 7 个渲染概念页（urp-volume-post-processing、blit-render-feature、uv-manipulation-nodes、sampler-filter-wrap-modes、crt-shader-effects、scene-color-depth-nodes、particle-custom-vertex-streams）、1 人物页（cyanilux）、5 个 source 摘要。对 scriptable-render-pipeline / fragment-shader / reversed-z / z-buffer / texture-dissolve / harry-alisavakis 7 处存量页面发出 append_to_section 补丁，交叉链接 URP 后处理、Shader Graph 节点、深度相交、粒子 VFX 等主题。"
+}

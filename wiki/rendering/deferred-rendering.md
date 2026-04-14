@@ -45,7 +45,16 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[rendering-pipeline]]
 - [[fragment-shader]]
 - [[engine-evolution]]
+- [[cached-shadowmaps]] —— 利用帧间相干性缓存远级联阴影
+- [[tbdr-vs-imr]] —— TBDR 的 tile memory 让 deferred 的带宽成本几乎为零
+- [[tiled-light-prepass]] —— ROTR Foundation 引擎的 thin G-Buffer + 二次几何提交方案
+- [[fizzle-lod-fading]] —— deferred 管线下用 discard 噪声替代 alpha blending 做 LOD fade
+- [[deferred-grass-shader]] — 延迟管线下用 alpha cutout + tessellation + geometry shader 做草地
+- [[visibility-buffer]] —— thin-gbuffer + 后续 compute shading 的现代替代方案
 
 ## Sources
 
 - [[sources/gea-day02]]
+- [[sources/c0de517e-cached-shadowmaps]]
+- [[sources/elopezr-rotr-rendering]]
+- [[sources/vertexfragment-deferred-grass]]

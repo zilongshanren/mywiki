@@ -1,0 +1,145 @@
+{
+  "batch_id": "batch-w7-t",
+  "agent_note": "Linden Reid (lindenreidblog.com) batch：跳过 2 篇职业建议（how-to-start-a-career / how-to-be-successful-at-game-jam），按 topicality gate 要求。ingest 3 篇技术教程（shader 数学、程序化几何、foggy window shader）。新增 1 人物页（linden-reid）、4 概念页（shader-vector-math-primer、unity-procedural-mesh、unity-grabpass-blur、texture-encoded-state）、3 source 摘要。foggy window 一篇拆成 2 个概念页：GrabPass+blur 和 texture-encoded-state，因为后者在其他教程线里（GPU 粒子、flow map）复用性很强，单独成页便于交叉引用。把新概念交叉链到 coordinate-spaces、mvp-transform、fragment-shader、culling、triangle-primitives、gpu-image-editor-brush、3d-rotation-math、image-resampling-filters、rendering-pipeline 等既有页面。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-02-20_how-to-start-a-career-in-games.md",
+      "status": "skipped_offtopic",
+      "reason": "职业建议文章（如何进入游戏行业），非技术内容，topicality gate 明确要求跳过"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2019-01-25_how-to-be-successful-at-a-game-jam.md",
+      "status": "skipped_offtopic",
+      "reason": "game jam 参赛技巧文章，软性建议为主，非图形/引擎/系统技术内容，topicality gate 明确要求跳过"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-08-25_basic-math-for-shaders.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-basic-math-for-shaders",
+      "title": "Basic Math for Shaders"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-02-24_intro-to-procedural-geometry-part-2.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-procedural-geometry-part2",
+      "title": "Intro to Procedural Geometry, Part 2"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-11-19_foggy-window-shader-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-foggy-window-shader",
+      "title": "Foggy Window Shader in Unity"
+    }
+  ],
+  "concepts_created": [
+    "shader-vector-math-primer",
+    "unity-procedural-mesh",
+    "unity-grabpass-blur",
+    "texture-encoded-state"
+  ],
+  "people_created": [
+    "linden-reid"
+  ],
+  "source_summaries_created": [
+    "lindenreid-basic-math-for-shaders",
+    "lindenreid-procedural-geometry-part2",
+    "lindenreid-foggy-window-shader"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-vector-math-primer]] —— 面向初学者的 shader 向量数学 + 坐标空间切换直觉"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-vector-math-primer]] —— 从零解释 \"矩阵乘向量 = 换坐标系\" 的入门版本"
+    },
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-vector-math-primer]] —— shader 向量运算的几何直觉（dot/cross/normalize）"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-grabpass-blur]] —— Unity GrabPass + 可分高斯模糊的入门实现\n- [[texture-encoded-state]] —— 把 per-pixel 时间戳/状态塞进纹理通道，供 fragment shader 消费\n- [[shader-vector-math-primer]]"
+    },
+    {
+      "file": "wiki/rendering/rendering-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-procedural-mesh]] —— 用 Unity Mesh API 从零喂 vertex/index buffer 的最小例子"
+    },
+    {
+      "file": "wiki/rendering/triangle-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-procedural-mesh]] —— 顶点索引、winding order 的手工演练"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-procedural-mesh]] —— 新手最容易踩的坑：winding order 写反 → 整个面被背面剔除"
+    },
+    {
+      "file": "wiki/rendering/image-resampling-filters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-grabpass-blur]] —— Unity 里做全屏 Gaussian blur 的入门实现与教学取舍"
+    },
+    {
+      "file": "wiki/rendering/gpu-image-editor-brush.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[texture-encoded-state]] —— 同类思路的教程级最小示例（鼠标 brush 写时间戳到纹理）"
+    },
+    {
+      "file": "wiki/people/ronja-bohm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linden-reid]] —— 同赛道的另一位 Unity shader 教程作者"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-vector-math-primer]] | Shader 需要的那点向量数学：dot/cross/normalize 的几何直觉 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[unity-grabpass-blur]] | Unity GrabPass + 可分离 Gaussian blur 的入门实现与教学取舍 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texture-encoded-state]] | 把 per-pixel 状态（时间戳/强度）编码进纹理通道供 shader 消费 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unity-procedural-mesh]] | Unity Mesh API：vertices + triangles + winding order 的最小闭环 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[linden-reid]] | Linden Reid，面向初学者的 Unity shader 与程序化几何教程作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-basic-math-for-shaders]] | Reid：shader 向量数学入门（视觉化 > 抽象符号） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-procedural-geometry-part2]] | Reid：Unity Mesh API 从零构造 cube + winding order |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-foggy-window-shader]] | Reid：GrabPass + 可分 blur + 纹理编码时间的可交互雾化窗户 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-7 Worker T (lindenreid.wordpress.com ×5)\n\n处理 5 篇 Linden Reid 博客，按 topicality gate 跳过 2 篇职业建议（how-to-start-a-career-in-games、how-to-be-successful-at-a-game-jam），ingest 3 篇技术教程。新增 4 概念页（shader-vector-math-primer、unity-procedural-mesh、unity-grabpass-blur、texture-encoded-state）、1 人物页（linden-reid）、3 source 摘要。foggy window 一篇拆成 2 个概念页：GrabPass+blur 技术本身放在 [[unity-grabpass-blur]]，而把时间戳编码进纹理通道这一更通用 trick 单独成页 [[texture-encoded-state]]，便于与 GPU 粒子、flow map、[[gpu-image-editor-brush]] 等既有谱系交叉引用。把 [[linden-reid]] 与 [[ronja-bohm]] 在 \"面向初学者的 Unity shader 教程作者\" 这条线上互相连接。"
+}

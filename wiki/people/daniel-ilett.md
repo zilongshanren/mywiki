@@ -1,0 +1,26 @@
+---
+tags: [人物, 作者, shader, unity, 技术美术]
+date: 2026-04-14
+sources: 4
+---
+
+# Daniel Ilett
+
+Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术美术与教育者，博客 `danielilett.com` 自 2019 年起持续更新，覆盖从"第一个 HelloWorld shader"到卡通渲染、图像后处理、SDF 等进阶主题的系列教程。他也在 Unity Asset Store 发布多款付费 shader 包——*Snapshot Shaders Pro / 2*（后处理特效合集）、*Retro Shaders Pro*（PS1/N64 风格像素着色器）、*Shader Toolbox*——并通过 Patreon 提供早鸟访问和视频积分。
+
+他的写作风格偏手把手式：先讲清楚 ShaderLab / HLSL 的每一行语法，再把效果一步步搭出来，适合从零开始的 shader 新手。在内建管线时代他的系列以 Surface Shader 为主，迁移到 Unity 6 + URP 之后教程整体改写成面向 `HLSLPROGRAM` 代码块的写法。
+
+## 相关
+
+- [[diffuse-lighting-lambertian]]
+- [[unity-surface-shaders]]
+- [[shaderlab-hlsl-basics]]
+- [[retro-rendering-techniques]]
+- [[dither-alpha-clipping]]
+
+## Sources
+
+- [[sources/danielilett-cel-shading-part-1]]
+- [[sources/danielilett-your-first-shader]]
+- [[sources/danielilett-retro-terrain-lit]]
+- [[sources/danielilett-dither-transparency]]

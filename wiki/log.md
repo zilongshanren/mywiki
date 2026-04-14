@@ -29,3 +29,155 @@
 ## [2026-04-05] update | 初次编译整个 wiki
 
 从所有 raw 源初次编译出完整 wiki：35 篇概念/案例/人物/源摘要页，加上 overview、index、log。所有内容使用简体中文。目录结构：software-design、examples、game-development、rendering、people、sources。
+
+## [2026-04-05] ingest | SICP Day 1-6
+
+收录 SICP 前 6 天学习笔记：编程三要素、过程抽象、递归 vs 迭代、增长阶、概率素数判定、高阶函数。创建 wiki/programming-languages/ 下 14 篇概念页：elements-of-programming、substitution-model、applicative-vs-normal-order、environment、procedural-abstraction、lexical-scoping、closure、recursive-vs-iterative-process、tail-call-optimization、higher-order-functions、lambda-calculus、order-of-growth、fast-exponentiation、probabilistic-algorithms。发现与 APoSD information-hiding 的直接呼应。
+
+## [2026-04-05] ingest | Real-Time Rendering Day 1-6
+
+收录 RTR 前 6 天学习笔记：渲染管线架构、Application 阶段、Geometry Processing、Rasterization、Pixel Processing、一帧完整生命。创建 wiki/rendering/ 下 19 篇新概念页：rendering-pipeline、bottleneck-analysis、tbdr-vs-imr、draw-call、culling、batching、mvp-transform、coordinate-spaces、z-buffer、z-fighting、reversed-z、perspective-correct-interpolation、rasterization、aliasing、msaa-ssaa、triangle-primitives、fragment-shader、early-z-late-z、hsr-tbdr、alpha-blending、stencil-buffer、overdraw、deferred-rendering。
+
+## [2026-04-05] ingest | Game Engine Architecture Day 1-2
+
+收录 Jason Gregory 的 Game Engine Architecture 前 2 天学习笔记：引擎定义、三角度分析、引擎演化史（BSP → Lumen/Nanite）。创建 wiki/game-engines/ 下 6 篇概念页：game-engine、data-driven-architecture、soft-real-time、engine-layering、unity-vs-unreal、engine-evolution。
+
+## [2026-04-05] ingest | Computer Architecture Day 1-2 & CSAPP Day 1
+
+收录 CAQA 前 2 天与 CSAPP 第 1 天学习笔记：Amdahl 定律、Flynn 分类法、CPU 性能公式、存储层次、局部性原理、AoS vs SoA、Dennard Scaling 崩塌、功耗墙、MTTF 可靠性、信息=比特+上下文、编译四阶段、虚拟内存。创建 wiki/computer-systems/ 下 14 篇概念页。
+
+## [2026-04-05] update | 大规模知识域扩展
+
+从 7 源扩展到 24 源，wiki 文章从 47 扩展到 101 篇。新增 4 个概念类别（programming-languages、computer-systems、game-engines、rendering 大幅扩展）、3 位作者（sussman-abelson、hennessy-patterson、jason-gregory）。更新 index、overview 大幅重写以反映五大主题架构和跨主题连接。更新 ecs、rendering-api-depth 以引入新 sources。
+
+## [2026-04-05] lint | Wiki 健康检查
+
+健康度评分 A-。发现 28 项改进点，分布 6 类：低入链页面（7）、概念缺口（10）、缺失交叉引用（12）、数据缺口（7）、样式一致性（1）、待研究问题（6）。无坏链，无 frontmatter 缺失，无 index 遗漏，无孤儿页。报告见 output/reports/lint-report.md。
+
+## [2026-04-05] query | 如何用这些内容提升品味
+
+用户问如何用本 wiki 提升设计品味。基于 Ousterhout 的 Red Flag 训练、APoSD 各章的品味判断、SICP 的抽象模式、概率算法的工程哲学，综合出五条可执行的品味训练方法 + 30 天练习计划。归档为 wiki/meta/taste-development.md，更新 index。
+
+## [2026-04-14] ingest | Ciechanowski — Color Spaces
+
+收录 Bartosz Ciechanowski 2019 年长文 Color Spaces。创建 wiki/rendering/color-space.md、wiki/people/bartosz-ciechanowski.md、wiki/sources/ciechanow-color-spaces.md，更新 alpha-blending 以指向线性域运算要求。
+
+## [2026-04-14] ingest | Ciechanowski — Alpha Compositing
+
+收录 Bartosz Ciechanowski 2019 年长文 Alpha Compositing。创建 wiki/rendering/alpha-compositing.md（Porter-Duff over 与预乘 α）、wiki/sources/ciechanow-alpha-compositing.md，扩展 alpha-blending 以引用它作为数学推导来源。
+
+## [2026-04-14] ingest | Ciechanowski — Cameras and Lenses
+
+收录 Bartosz Ciechanowski 2020 年长文 Cameras and Lenses。创建 wiki/rendering/pinhole-camera.md（针孔模型 + cos⁴ 暗角）与 wiki/rendering/thin-lens-model.md（焦距 / 光圈 / 景深 / bokeh / 像差），以及 wiki/sources/ciechanow-cameras-and-lenses.md。更新 mvp-transform 以指向虚拟相机的物理本体。
+
+## [2026-04-14] update | Sprint 1 colossal raw batch 规划
+
+盘点 raw/articles/ 实际体量：125 个域名 / 17,360 篇文章，相对现有 24 sources 是 ~700× 的扩展。既定策略：按主题相关性 + 权威度切 sprint 批次，Sprint 1 先闭环跑通 ciechanow.ski 三篇高相关文章的完整 ingest 流程（4 新概念页 / 1 人物页 / 3 source 摘要 / 2 存量页反向链接）。向用户汇报 scope，待其拍板后续 sprint 边界。
+
+## [2026-04-14] update | Multi-Agent Team 拓扑落地
+
+搭建 P9 orchestrator + P8 worker 并行编译 team：3124 行 tiered manifest (tier1 bartwronski/aras-p/fgiesen/ciechanow/etc. 1231 files + tier2 ronja/halisavakis/danielilett/etc. 903 + tier3 unity/playcanvas/etc. 1042)。协议文件 `_prompts/worker-ingest.md` 定义了 staging bundle JSON schema 与冲突规避四条铁律：worker 不得直写 index/log/overview/已存在概念页，所有补强通过 `wiki/.staging/batch-*/bundle.json` 的 `existing_page_patches` 数组提交，orchestrator 串行 apply。registry 快照随 prompt 传入防止 worker 重复创造已有概念。
+
+## [2026-04-14] ingest | Wave-1 Worker A (bartwronski.com ×5)
+
+处理 5 篇 bartwronski.com 技术文章。新增 6 概念页（local-tonemapping、exposure-fusion、laplacian-pyramid、iir-filter-deconvolution、poisson-disk-sampling、gpu-printf-debugging）、1 人物页（bartosz-wronski）、4 source 摘要。跳过 1 篇个人音乐数据分析教程。最大收获是 exposure-fusion 文章，把 Bart Wronski 从 God of War 到 Pixel HDR+ 两段经历串起来，覆盖了一个完整的 LTM 算法家族。
+
+## [2026-04-14] ingest | Wave-1 Worker B (fgiesen.wordpress.com ×5)
+
+处理 5 篇 ryg 博客文章，全部 ingest 无 skip。新增 7 个概念页（unorm-float-conversion, sampling-theorem-sinc, sse-tricks, pineda-edge-rasterization, hierarchical-rasterization, triangle-setup, adaptive-arithmetic-coding）、1 个人物页（fabian-giesen）、5 个 source 摘要。Pineda 算法 / coarse rast / triangle setup 三个相关概念互相 cross-link，并补强了既有 rasterization、rendering-pipeline、triangle-primitives 页面。涉及主题：GPU 数值精度、信号处理、SIMD x86、桌面 GPU 光栅化、自适应熵编码。
+
+## [2026-04-14] ingest | Wave-1 Worker C (aras-p.info ×5)
+
+处理 5 篇 Aras Pranckevičius 文章。3 篇技术性的 ingested（rapidhash 移植、点云硬件 vs compute 光栅化、Blender VSE 图像滤波考古），2 篇 Blender VSE 周年回顾 skipped_offtopic。新增 4 概念页（non-cryptographic-hash, rapidhash, compute-vs-raster-points, image-resampling-filters）、1 人物页（aras-pranckevicius）、3 source 摘要。对 overdraw / alpha-blending / fragment-shader / rasterization / aliasing / draw-call / bottleneck-analysis 七个既有页提交相关链接 patch。
+
+## [2026-04-14] ingest | Wave-2 Worker D (c0de517e.blogspot.com ×5)
+
+处理 Angelo Pesce 的 5 篇博客。Ingest 2 篇技术文：`cached-shadowmaps`（cascaded shadow 的帧间相干性缓存，引自 Mike Day SIGGRAPH 2012）、`tiled-hardware-speculations`（TBDR vs IMR 的软件侧推演，评论区 Fabian Giesen 的硬件侧修正价值极高）。Skip 3 篇：failed-builds（工作流吐槽）、i-support-anita（政治立场）、dos-nostalgia（个人怀旧 + DOS workstation 折腾）。新增 1 概念页（cached-shadowmaps）、1 人物页（angelo-pesce）、2 source 摘要。对 tbdr-vs-imr / hsr-tbdr / deferred-rendering / culling / fabian-giesen 发送增量 patch。
+
+## [2026-04-14] ingest | Wave-2 Worker E (elopezr.com ×5)
+
+处理 5 篇 elopezr.com 文章。新增 8 个概念页（temporal-antialiasing, motion-vectors, taa-history-rectification, tiled-light-prepass, hbao-interleaved-sampling, depth-aware-upsampling, fizzle-lod-fading, volumetric-fog-froxels）、1 个人物页（emilio-lopez-ros）、2 个 source 摘要（ROTR 帧分析、TAA tutorial）。跳过 3 篇：a-real-life-pinhole-camera 是个人旅行随笔且物理内容已被现有 pinhole-camera.md 覆盖；football-simulation 是 2014 原型项目随笔无技术深度；sub-the-fixer 是 Python 字幕修复工具与图形/引擎无关。
+
+## [2026-04-14] ingest | Wave-2 Worker F (momentsingraphics.de ×5)
+
+处理 5 篇 Christoph Peters 的 Moments in Graphics 博客文章。新增 7 个概念页（spectral-rendering, fourier-srgb-spectral-upsampling, hero-wavelength-spectral-sampling, spectral-brdf, polynomial-root-finding-gpu, register-spilling-avoidance, projected-solid-angle-sampling）、1 个人物页（christoph-peters）、4 个 source 摘要。跳过 1 篇非技术博客工具设置文章（2016 Markdeep + WordPress）。光谱渲染三部曲是重点贡献，把光谱渲染从「离线奢侈品」重新框定为实时可用方案，和既有 [[color-space]] 形成自然的升级路径。
+
+## [2026-04-14] ingest | Wave-3 Worker G (anteru.net ×5)
+
+处理 5 篇 anteru.net 文章，仅 1 篇技术内容入库（2025 assisted environment probe placement）。新增 1 概念页 [[environment-probe-placement]]、1 人物页 [[matthaeus-chajdas]]、1 源摘要。跳过 4 篇非技术内容（version numbers 软工随笔 / Deus Ex 3 trailer 观后感 / Ubuntu netplan 运维 / home server 硬件组装）。
+
+## [2026-04-14] ingest | Wave-3 Worker H (thenumb.at / Max Slater ×5)
+
+处理 Max Slater（thenumb.at）的 5 篇全技术长文，全部 ingest 无跳过：QMC 速成第 5 章、Exile 体素渲染管线、Exile libclang 元程序反射、Functions are Vectors（泛函分析视角的 Fourier / 球谐）、MSVC interference analysis codegen bug。新增 10 个概念页（quasi-monte-carlo / stratified-sampling / low-discrepancy-sequence / greedy-voxel-meshing / voxel-ambient-occlusion / compact-vertex-format / spherical-harmonics / functions-as-vectors / cpp-runtime-reflection / compiler-interference-analysis-bug）、1 个人物页（max-slater）、5 个 source summary。对 poisson-disk-sampling / fourier-srgb-spectral-upsampling / sampling-theorem-sinc / compilation-pipeline 四个现有页面添加交叉链接补丁。
+
+## [2026-04-14] ingest | Wave-3 Worker I (mini.gmshaders.com / Xor ×5)
+
+处理 5 篇 Xor 在 GM Shaders Mini 上的 shader 教程：Mini: JFA、Mini: OkLab、Mini: 3D Rotation、Efficient Chaos、GM Shaders: Shadowmaps。新增 5 个概念页（jump-flooding-algorithm、oklab-color-space、3d-rotation-math、layered-grid-noise、shadow-mapping-basics）、1 个人物页（xor-shader-artist）、5 个 source 摘要。向 color-space / cached-shadowmaps / poisson-disk-sampling / mvp-transform 四个已有页补了 `## 相关` 交叉引用。全部 5 篇成功摄入，无 skip。
+
+## [2026-04-14] ingest | Wave-4 Worker J (blog.selfshadow.com / Stephen Hill ×5)
+
+处理 Stephen Hill 5 篇。4 篇成功摄入：multi-faceted part 2（微表面多次散射补偿）、blending in detail（Reoriented Normal Mapping）、PBS SIGGRAPH 2014 导读、practical dynamic visibility（HZB + SPU 软光栅遮挡）。跳过 self-shadow-6 空 syllabus。新增 5 概念页、1 人物页、4 source 摘要，4 条 patch。
+
+## [2026-04-14] ingest | Wave-4 Worker K (3dgep.com ×5)
+
+3dgep.com 5 篇 Ingest 2 / Skip 3：D3D12 Lesson 3、CUDA Memory Model 入库；3D math coord primer 重复、C++ fast-track Part 2 / 16 太入门跳过。新增 3 概念页、1 人物页、2 source，4 条 patch。
+
+## [2026-04-14] ingest | Wave-4 Worker L (basesandframes / Robin Green ×5)
+
+Robin Green *Bases and Frames* 5 篇全部入库：needlets、faster math functions、SH lighting gritty details、EDID colorspace、PS2 procedural rendering。新增 4 概念页、1 人物页 robin-green、5 source 摘要。对 spherical-harmonics 和 color-space 补了交叉引用和 source。注：任务描述误将作者写为 Chris Green，Worker 按原文 frontmatter 正确识别为 Robin Green。
+
+## [2026-04-14] ingest | Wave-5 Worker M (raphlinus.github.io ×5)
+
+处理 5 篇 Raph Levien 博客文章。新增 4 概念页（smooth-window-resize、rust-gui-ecosystem、reactive-ui-rust、fearless-simd）、1 人物页（raph-linus）、3 source 摘要。跳过 2 篇（2022 年终反思、2017 Recurse Center 混合项目清单）——缺乏单一技术主线。引入 linebender 栈（Vello / Druid / Xilem）作为 Rust GUI 生态的锚点，与 sse-tricks 建立 SIMD 跨链。
+
+## [2026-04-14] ingest | Wave-5 Worker N (apoorvaj.io ×5)
+
+处理 5 篇 Apoorva Joshi *apoorvaj.io* 文章：2 入库 + 3 跳过。入库：*The experiment*（x86 32 位 cdecl/stdcall/fastcall 三路汇编 diff）→ [[calling-conventions-x86]]；*Zooming and panning*（Papaya GPU 图像编辑器的 textured quad 缩放 + fragment shader 笔刷）→ [[gpu-image-editor-brush]]。新增 1 人物页 [[apoorva-joshi]]（前 Activision path tracing）、2 source 摘要。跳过：*Cross-platform consistency*（UI 哲学散文）、*Vibe-coding a tax calculator*（Claude Code 工作流随笔）、*Stop over-engineering static websites*（博客 build 工具链）。对 fragment-shader 和 image-resampling-filters 两个既有页各补了一条相关链接。
+
+## [2026-04-14] ingest | Wave-5 Worker O (blog.mecheye.net ×5)
+
+处理 5 篇 Jasper St. Pierre（blog.mecheye.net）文章。新增 4 概念页（gpu-hazard-tracking, gpu-fence-timeline-semaphore, buffer-renaming, linux-graphics-stack-dri）、1 人物页（jasper-st-pierre）、2 source 摘要。跳过 3 篇非技术内容（Shellshock 项目治理、GNOME 3.8 pressure barriers、GNOME invisible borders）。核心收获：Jasper《How to write a renderer for modern graphics APIs》的 draw call / render pass / data upload 三轴规划视角，以及 Linux 图形栈 DRI/DRM/KMS 命名一次性拆清。
+
+## [2026-04-14] ingest | Wave-6 Worker P (blog.playcanvas.com ×5)
+
+处理 5 篇 PlayCanvas 官方博客。3 篇跳过（PLAYHACK 活动营销、团队成员采访、每周 changelog），2 篇技术性足够入库：Profiler 浮层发布与 MRCS 体积视频 WebXR 集成复盘。新增 2 概念页（frame-profiler-overlay, volumetric-video-playback）、2 source 摘要，未新增人物页。
+
+## [2026-04-14] ingest | Wave-6 Worker Q (halisavakis.com ×5)
+
+处理 5 篇 halisavakis.com 文章。吸收 1 篇 ShaderQuest 塑形函数教程，跳过 4 篇 Technically Art 周报（仅为 Twitter 作品集锦）。新增 1 概念页（shaping-functions）、1 人物页（harry-alisavakis）、1 source 摘要。
+
+## [2026-04-14] ingest | Wave-6 Worker R (ronja-tutorials.com ×5)
+
+处理 5 篇 Ronja Böhm 的 Unity shader 教程，全数 ingest，无 skip。新增 5 概念页（planar-mapping、texture-dissolve、sdf-2d-primitives、sdf-ray-marched-shadows、draw-procedural-gpu）、1 人物页（ronja-bohm，Ferris Systems）、5 source 摘要。建立 SDF 线（primitives → shadows）与现有 [[jump-flooding-algorithm]] 形成互补（解析函数 vs 纹理化距离场）。把 [[texture-dissolve]] 与已有 [[fizzle-lod-fading]] 做了意图差异的对比（VFX 演出 vs 隐藏 LOD 切换）。[[draw-procedural-gpu]] 作为 GPU-driven 渲染路径的入门接入 [[custom-srp]] 和 [[compute-vs-raster-points]]。
+
+## [2026-04-14] ingest | Wave-7 Worker S (cyangamedev.wordpress.com ×5)
+
+处理 5 篇 Cyan（@Cyanilux）的 Unity Shader Graph / URP 技术教程，全部 ingest。新增 7 个渲染概念页（urp-volume-post-processing、blit-render-feature、uv-manipulation-nodes、sampler-filter-wrap-modes、crt-shader-effects、scene-color-depth-nodes、particle-custom-vertex-streams）、1 人物页（cyanilux）、5 个 source 摘要。对 scriptable-render-pipeline / fragment-shader / reversed-z / z-buffer / texture-dissolve / harry-alisavakis 7 处存量页面发出 append_to_section 补丁，交叉链接 URP 后处理、Shader Graph 节点、深度相交、粒子 VFX 等主题。
+
+## [2026-04-14] ingest | Wave-7 Worker T (lindenreid.wordpress.com ×5)
+
+处理 5 篇 Linden Reid 博客，按 topicality gate 跳过 2 篇职业建议（how-to-start-a-career-in-games、how-to-be-successful-at-a-game-jam），ingest 3 篇技术教程。新增 4 概念页（shader-vector-math-primer、unity-procedural-mesh、unity-grabpass-blur、texture-encoded-state）、1 人物页（linden-reid）、3 source 摘要。foggy window 一篇拆成 2 个概念页：GrabPass+blur 技术本身放在 [[unity-grabpass-blur]]，而把时间戳编码进纹理通道这一更通用 trick 单独成页 [[texture-encoded-state]]，便于与 GPU 粒子、flow map、[[gpu-image-editor-brush]] 等既有谱系交叉引用。把 [[linden-reid]] 与 [[ronja-bohm]] 在 "面向初学者的 Unity shader 教程作者" 这条线上互相连接。
+
+## [2026-04-14] ingest | Wave-7 Worker U (vertexfragment.com ×5)
+
+处理 5 篇 Steven Sell 的 Vertex Fragment 技术 ramble。1 篇跳过（Beyond the Storm v0.6 游戏 changelog），4 篇入库：Diamond-Square 的 GPU compute 加速、Unity DOTS kinematic 角色控制器、C# List.RemoveAt 的 swap-and-pop 优化、Unity 延迟管线下的草地着色器。新增 4 概念页（diamond-square-noise, kinematic-character-controller, swap-and-pop-removal, deferred-grass-shader）、1 人物页（steven-sell）、4 source 摘要。Patches 挂到 ecs、poisson-disk-sampling、deferred-rendering。
+
+## [2026-04-14] ingest | Wave-8 Worker V (danielilett.com ×5)
+
+处理 5 篇 danielilett.com shader 教程与资产包文档。Ingest 4 篇——2 篇真教程（Cel Shading Part 1 的 Lambert 漫反射、Your First Shader 的 URP 代码 shader 骨架）和 2 篇含实质技术的资产包文档（Retro Terrain Lit 的 PS1/N64 复古技术清单、Dither Transparency 的 Bayer dither alpha clipping 参数）。跳过 1 篇纯营销 overview（Snapshot Shaders 2）。新增 5 个渲染概念页（diffuse-lighting-lambertian、unity-surface-shaders、shaderlab-hlsl-basics、retro-rendering-techniques、dither-alpha-clipping）、1 个人物页（daniel-ilett）、4 个 source 摘要。对 fizzle-lod-fading / alpha-blending / shader-vector-math-primer 三个现有页面做了交叉链接补丁。
+
+## [2026-04-14] ingest | Wave-8 Worker W (alanzucconi.com ×5)
+
+处理 5 篇 Alan Zucconi 的经典 Unity shader 教程，全部入库。新增 5 概念页（spectral-zucconi-rainbow、diffraction-grating-shader、fast-translucency-wraplight、volumetric-raymarching-intro、journey-sand-specular）、1 人物页（alan-zucconi）、5 source 摘要。Patches 挂到 spectral-rendering、physically-based-shading、microfacet-brdf、volumetric-fog-froxels、sdf-ray-marched-shadows。
+
+## [2026-04-14] ingest | Wave-8 Worker X (gameknife.github.io ×5)
+
+处理 5 篇 gameknife.github.io 文章。新增 6 个概念页（visibility-buffer、hybrid-raytracing-pipeline、bindless-rendering、gknext-renderer、gkengine、a-star-pathfinding）、1 个人物页（gameknife）、4 个源摘要。给 tbdr-vs-imr、hsr-tbdr、engine-evolution、deferred-rendering 提了 4 条 patch。跳过 1 篇非技术私活随笔。
+
+## [2026-04-14] ingest | Wave-9 Worker Y (allenchou.net ×5)
+
+处理 5 篇 allenchou.net 博客。Ingest 2 篇：Game Physics Introduction（约束式刚体物理引擎三段流水线概览）与 Rusher 2 Composite Commands（命令模式 Serial/Parallel 子命令教程）。跳过 3 篇：Bunnyhill Flash Molehill 演示（技术栈过时且内容单薄）、Joining Naughty Dog's Kennel（career 叙事）、DigiPen 我的游戏学校（school 博文）。新增 3 个概念页（game-physics-engine、collision-detection-gjk-epa、composite-command-pattern）、1 个人物页（allen-chou，Naughty Dog gameplay programmer）、2 个 source 摘要。对 engine-layering / game-engine 做了 ## 相关 交叉链接补丁，对 kinematic-character-controller 做了 source 链接补丁。
+
+## [2026-04-14] ingest | Wave-9 Worker Z (blog.frost.kiwi ×5)
+
+处理 5 篇 blog.frost.kiwi 文章。入库 2 篇图形长文：LUT 在视频游戏里的用途（link to 已有 [[color-lut]]），以及 Analytical Anti-Aliasing（新增概念页）。跳过 3 篇：WaniKani userscript（非技术）、just-a-textbox（个人工作流 HTML）、jo-mpeg-converted-to-c（源码倾倒，无实质技术分析）。新增 1 概念页（analytical-antialiasing）、1 人物页（frost-kiwi）、2 source 摘要。给 color-lut / aliasing / msaa-ssaa / sdf-2d-primitives 打补丁加链接。

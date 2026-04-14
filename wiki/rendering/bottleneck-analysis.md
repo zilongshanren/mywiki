@@ -29,7 +29,9 @@ sources: 1
 - [[rendering-pipeline]]
 - [[draw-call]]
 - [[overdraw]]
+- [[non-cryptographic-hash]] —— Burst 与原生 C 的 codegen 差异是不显眼的瓶颈子类
 
 ## Sources
 
 - [[sources/rtr-day01]]
+- [[sources/playcanvas-profiler]]

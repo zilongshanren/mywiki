@@ -1,0 +1,94 @@
+{
+  "batch_id": "batch-w2-d",
+  "agent_note": "C0DE517E (Angelo Pesce) 共 5 篇：2 篇技术文（cached shadowmaps、tiled hardware speculations）被 ingest；3 篇非技术文（failed builds 吐槽、i-support-anita 政治立场、dos-nostalgia 个人怀旧）全部 skip。新增 1 个概念页 cached-shadowmaps、1 个人物页 angelo-pesce、2 个 source 摘要。tiled-hardware-speculations 的评论区里 Fabian Giesen (ryg) 的硬件侧修正内容非常有价值，已完整写进 source 摘要并在 fabian-giesen 人物页加了 source 链接 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-08-18_service-update-cached-shadowmaps.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-cached-shadowmaps",
+      "title": "Service Update: Cached Shadowmaps"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-09_do-you-have-failed-builds.md",
+      "status": "skipped_offtopic",
+      "reason": "A short opinion rant about the build-failure concept and decoupling philosophy. No concrete engineering content, no novel technique, and no substantive takeaway beyond 'decouple your components'. Treated as a non-technical workflow rant per protocol."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-08-30_i-support-anita.md",
+      "status": "skipped_offtopic",
+      "reason": "Personal political stance post supporting Anita Sarkeesian during the Gamergate era. Entirely non-technical; no rendering, engine, or software-design content."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2022-04-10_dos-nostalgia-on-using-a-modern-dos-workstation.md",
+      "status": "skipped_offtopic",
+      "reason": "Personal nostalgia / retrocomputing write-up about setting up a ThinkPad 240x as a DOS workstation. Almost entirely memoir + hardware-shopping diary. Some DOS audio/VESA trivia exists but is not generalisable software-engineering or graphics knowledge."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-08-07_tiled-hardware-speculations.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-tiled-hardware-speculations",
+      "title": "Tiled hardware (speculations)"
+    }
+  ],
+  "concepts_created": ["cached-shadowmaps"],
+  "people_created": ["angelo-pesce"],
+  "source_summaries_created": [
+    "c0de517e-cached-shadowmaps",
+    "c0de517e-tiled-hardware-speculations"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/tbdr-vs-imr.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cached-shadowmaps]] —— 远级联阴影跨帧缓存的相干性优化\n- [[sources/c0de517e-tiled-hardware-speculations]] —— Angelo Pesce 对 TBDR 内部权衡的软件侧推演 + Fabian Giesen 的硬件侧修正"
+    },
+    {
+      "file": "wiki/rendering/tbdr-vs-imr.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-tiled-hardware-speculations]]"
+    },
+    {
+      "file": "wiki/rendering/hsr-tbdr.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-tiled-hardware-speculations]] —— Pesce + ryg 讨论 alpha test / programmable blending 在 TBDR 上的真正开销"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cached-shadowmaps]] —— 利用帧间相干性缓存远级联阴影\n- [[tbdr-vs-imr]] —— TBDR 的 tile memory 让 deferred shading 的带宽成本几乎为零"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cached-shadowmaps]] —— 时间维度的「culling」：帧间不变的投射者不重绘"
+    },
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-tiled-hardware-speculations]] —— 评论区给出 TBDR bin buffer、vertex split、in-order blending、triangle density 等硬件侧权威修正"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cached-shadowmaps]] | 级联阴影的帧间相干性缓存 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[angelo-pesce]] | Angelo Pesce（C0DE517E），图形程序员，长年博客输出思辨性笔记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-cached-shadowmaps]] | Pesce：远级联阴影缓存的半成品想法 + Mike Day 的完整实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-tiled-hardware-speculations]] | Pesce + ryg：TBDR vs IMR 的软件侧推演与硬件侧修正 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-2 Worker D (c0de517e.blogspot.com ×5)\n\n处理 Angelo Pesce 的 5 篇博客。Ingest 2 篇技术文：`cached-shadowmaps`（cascaded shadow 的帧间相干性缓存，引自 Mike Day SIGGRAPH 2012）、`tiled-hardware-speculations`（TBDR vs IMR 的软件侧推演，评论区 Fabian Giesen 的硬件侧修正价值极高）。Skip 3 篇：failed-builds（工作流吐槽）、i-support-anita（政治立场）、dos-nostalgia（个人怀旧 + DOS workstation 折腾）。新增 1 概念页（cached-shadowmaps）、1 人物页（angelo-pesce）、2 source 摘要。对 tbdr-vs-imr / hsr-tbdr / deferred-rendering / culling / fabian-giesen 发送增量 patch。"
+}

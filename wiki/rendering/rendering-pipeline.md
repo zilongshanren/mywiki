@@ -41,6 +41,7 @@ sources: 2
 - [[draw-call]]、[[culling]]、[[batching]]（Application 阶段）
 - [[mvp-transform]]、[[coordinate-spaces]]、[[z-buffer]]（Geometry Processing）
 - [[rasterization]]、[[aliasing]]、[[msaa-ssaa]]（Rasterization）
+- [[pineda-edge-rasterization]]、[[hierarchical-rasterization]]、[[triangle-setup]]（光栅化硬件实现）
 - [[fragment-shader]]、[[early-z-late-z]]、[[alpha-blending]]（Pixel Processing）
 
 ## 相关
@@ -48,6 +49,7 @@ sources: 2
 - [[bottleneck-analysis]]
 - [[tbdr-vs-imr]]
 - [[overdraw]]
+- [[unity-procedural-mesh]] —— 用 Unity Mesh API 从零喂 vertex/index buffer 的最小例子
 
 ## Sources
 

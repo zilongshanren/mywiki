@@ -1,0 +1,149 @@
+{
+  "batch_id": "batch-w3-h",
+  "agent_note": "Max Slater (thenumb.at) 5 篇：QMC、Exile voxel rendering、Exile reflection、Functions are Vectors、MSVC compiler bug。全部技术长文，无 off-topic。新增人物页 max-slater。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/thenumb.at/2025-08-02_monte-carlo-crash-course.md",
+      "status": "ingested",
+      "source_slug": "slater-qmc-crash-course",
+      "title": "Monte Carlo Crash Course – Quasi-Monte Carlo"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2018-08-26_exile-voxel-rendering-pipeline.md",
+      "status": "ingested",
+      "source_slug": "slater-exile-voxel-rendering",
+      "title": "Exile: Voxel Rendering Pipeline"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2018-08-14_exile-reflection.md",
+      "status": "ingested",
+      "source_slug": "slater-exile-reflection",
+      "title": "Exile: Reflection"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2023-07-29_functions-are-vectors.md",
+      "status": "ingested",
+      "source_slug": "slater-functions-are-vectors",
+      "title": "Functions are Vectors"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2021-12-26_a-compiler-bug.md",
+      "status": "ingested",
+      "source_slug": "slater-compiler-bug",
+      "title": "A Compiler Bug"
+    }
+  ],
+  "concepts_created": [
+    "quasi-monte-carlo",
+    "stratified-sampling",
+    "low-discrepancy-sequence",
+    "greedy-voxel-meshing",
+    "voxel-ambient-occlusion",
+    "compact-vertex-format",
+    "spherical-harmonics",
+    "functions-as-vectors",
+    "cpp-runtime-reflection",
+    "compiler-interference-analysis-bug"
+  ],
+  "people_created": ["max-slater"],
+  "source_summaries_created": [
+    "slater-qmc-crash-course",
+    "slater-exile-voxel-rendering",
+    "slater-exile-reflection",
+    "slater-functions-are-vectors",
+    "slater-compiler-bug"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[quasi-monte-carlo]] — QMC 把「随机」换成「低差异」的另一条降方差路线\n- [[stratified-sampling]] — 负相关采样的更便宜变种\n- [[low-discrepancy-sequence]] — Halton / Sobol 等 QMC 常用点列\n- [[max-slater]]"
+    },
+    {
+      "file": "wiki/rendering/fourier-srgb-spectral-upsampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[functions-as-vectors]] — 「函数是无限维向量」的泛函分析视角是这类正交基方法的根\n- [[spherical-harmonics]] — 同一视角下在球面上的 Fourier 基"
+    },
+    {
+      "file": "wiki/rendering/sampling-theorem-sinc.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[functions-as-vectors]] — sinc 插值作为「函数即向量」视角下 Laplace 特征基的应用"
+    },
+    {
+      "file": "wiki/computer-systems/compilation-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[compiler-interference-analysis-bug]] — MSVC 在干涉分析阶段把两个活跃临时量塞到同一栈槽的真实案例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[quasi-monte-carlo]] | 确定性点列换近线性收敛的 QMC 基础 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stratified-sampling]] | 分层采样：便宜的负相关方差缩减 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[low-discrepancy-sequence]] | Halton / Sobol 等 QMC 常用点列 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[greedy-voxel-meshing]] | Minecraft 风 voxel 世界的经典网格化算法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[voxel-ambient-occlusion]] | mesh 阶段烘焙四级 AO 的免费方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[compact-vertex-format]] | 每顶点 8 字节的位打包技巧 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spherical-harmonics]] | 球面上的 Fourier 基：L2 压掉整张 diffuse envmap |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[functions-as-vectors]] | 函数作为无限维向量：Fourier / 球谐的统一视角 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[cpp-runtime-reflection]] | libclang 元程序生成 C++ 运行时类型表 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[compiler-interference-analysis-bug]] | MSVC 把两个活跃临时量塞到同一栈槽的 codegen bug |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[max-slater]] | Max Slater（thenumb.at），前 Pixar / Activision 图形工程师 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-qmc-crash-course]] | Slater：Monte Carlo 速成 Part 5 — Quasi-Monte Carlo |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-exile-voxel-rendering]] | Slater：Exile 引擎的体素渲染管线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-exile-reflection]] | Slater：Exile 引擎的 libclang 元程序反射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-functions-are-vectors]] | Slater：Functions are Vectors — 函数即无限维向量 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-compiler-bug]] | Slater：MSVC 2019 interference analysis 的栈重叠 codegen bug |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-3 Worker H (thenumb.at / Max Slater ×5)\n\n处理 Max Slater（thenumb.at）的 5 篇全技术长文，全部 ingest 无跳过：QMC 速成第 5 章、Exile 体素渲染管线、Exile libclang 元程序反射、Functions are Vectors（泛函分析视角的 Fourier / 球谐）、MSVC interference analysis codegen bug。新增 10 个概念页（quasi-monte-carlo / stratified-sampling / low-discrepancy-sequence / greedy-voxel-meshing / voxel-ambient-occlusion / compact-vertex-format / spherical-harmonics / functions-as-vectors / cpp-runtime-reflection / compiler-interference-analysis-bug）、1 个人物页（max-slater）、5 个 source summary。对 poisson-disk-sampling / fourier-srgb-spectral-upsampling / sampling-theorem-sinc / compilation-pipeline 四个现有页面添加交叉链接补丁。"
+}

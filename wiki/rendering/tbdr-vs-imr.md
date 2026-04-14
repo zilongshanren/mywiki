@@ -53,9 +53,12 @@ TBDR 下 MSAA 数据留在片上内存，写回时只写 resolve 结果——成
 - [[early-z-late-z]]
 - [[overdraw]]
 - [[msaa-ssaa]]
+- [[cached-shadowmaps]] —— 远级联阴影跨帧缓存的相干性优化
 
 ## Sources
 
 - [[sources/rtr-day01]]
 - [[sources/rtr-day05]]
 - [[sources/rtr-day06]]
+- [[sources/c0de517e-tiled-hardware-speculations]]
+- [[sources/gameknife-tbdr-performance-tuning]] —— Bruce Merry 的 OpenGL Insights TBDR 调优章节中译本，覆盖 frame data、glDiscardFramebuffer、HSR 与 depth-only-pass 的实战权衡

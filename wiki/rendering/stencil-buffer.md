@@ -43,6 +43,7 @@ sources: 1
 - [[fragment-shader]]
 - [[z-buffer]]
 - [[early-z-late-z]]
+- [[depth-aware-upsampling]] —— stencil 标记深度不连续像素、分派 simple/complex shader 的 ROTR trick
 
 ## Sources
 

@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w8-v",
+  "agent_note": "5 篇 danielilett.com 中，4 篇 ingest：2 篇真教程（Cel Shading Part 1 / Your First Shader）+ 2 篇资产包文档页（Retro Terrain Lit / Dither Transparency）其实包含具体技术细节。Snapshot Shaders 2 是纯营销 overview，跳过。新增 5 个渲染概念页、1 个人物页（daniel-ilett）、4 个 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2019-06-05_cel-shading-part-1-diffuse-lighting.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-1",
+      "title": "Cel Shading | Part 1 - Diffuse Lighting"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2025-10-15_your-first-shader-unity-shader-code-basics-01.md",
+      "status": "ingested",
+      "source_slug": "danielilett-your-first-shader",
+      "title": "Your First Shader | Unity Shader Code Basics 01"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-retro-terrain-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-terrain-lit",
+      "title": "Retro Shaders Pro for URP - Retro Terrain Lit"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-dither-transparency.md",
+      "status": "ingested",
+      "source_slug": "danielilett-dither-transparency",
+      "title": "Shader Toolbox for URP - Dither Transparency"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-for-urp.md",
+      "status": "skipped_offtopic",
+      "reason": "纯资产包营销 overview，没有技术细节——只是列特性卖点和升级价格。另外两篇 Retro Terrain Lit / Dither Transparency 虽然也是资产包文档但包含具体参数和技术描述，故 ingest。"
+    }
+  ],
+  "concepts_created": [
+    "diffuse-lighting-lambertian",
+    "unity-surface-shaders",
+    "shaderlab-hlsl-basics",
+    "retro-rendering-techniques",
+    "dither-alpha-clipping"
+  ],
+  "people_created": [
+    "daniel-ilett"
+  ],
+  "source_summaries_created": [
+    "danielilett-cel-shading-part-1",
+    "danielilett-your-first-shader",
+    "danielilett-retro-terrain-lit",
+    "danielilett-dither-transparency"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/fizzle-lod-fading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dither-alpha-clipping]] —— 同样用 `clip(col.a - threshold)` 的技术在 Bayer 矩阵上的通用版本"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dither-alpha-clipping]] —— 用不透明物 + Bayer 阈值 discard 伪造半透，规避 alpha blending 的排序和深度问题"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[diffuse-lighting-lambertian]] —— 点乘在 Lambert 光照里的经典用法"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[diffuse-lighting-lambertian]] | Lambert 漫反射：所有光照模型的共同基座与 Unity 的两条实现路径 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[unity-surface-shaders]] | Unity 内建管线的 Surface Shader 抽象：填 surf 函数，Unity 生成所有变体 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shaderlab-hlsl-basics]] | URP shader 的 ShaderLab + HLSL 两层结构最小骨架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[retro-rendering-techniques]] | PS1/N64 复古渲染清单：顶点吸附、色深量化、3-point 采样、vertex lit |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dither-alpha-clipping]] | 用 Bayer 矩阵 discard 伪造半透明，规避 alpha blending 的排序地狱 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[daniel-ilett]] | Daniel Ilett，Unity shader 教程作者与资产包（Snapshot / Retro / Toolbox）开发者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-1]] | Daniel Ilett：Cel Shading 系列 1，Lambert 漫反射的 Unity 实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-your-first-shader]] | Daniel Ilett：Unity 6 + URP 的第一个代码 shader，ShaderLab+HLSL 最小骨架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-terrain-lit]] | Daniel Ilett：Retro Terrain Lit shader 参数与 PS1/N64 复古技术清单 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-dither-transparency]] | Daniel Ilett：URP Lit shader 的 Bayer dither 伪透明参数集 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-8 Worker V (danielilett.com ×5)\n\n处理 5 篇 danielilett.com shader 教程与资产包文档。Ingest 4 篇——2 篇真教程（Cel Shading Part 1 的 Lambert 漫反射、Your First Shader 的 URP 代码 shader 骨架）和 2 篇含实质技术的资产包文档（Retro Terrain Lit 的 PS1/N64 复古技术清单、Dither Transparency 的 Bayer dither alpha clipping 参数）。跳过 1 篇纯营销 overview（Snapshot Shaders 2）。新增 5 个渲染概念页（diffuse-lighting-lambertian、unity-surface-shaders、shaderlab-hlsl-basics、retro-rendering-techniques、dither-alpha-clipping）、1 个人物页（daniel-ilett）、4 个 source 摘要。对 fizzle-lod-fading / alpha-blending / shader-vector-math-primer 三个现有页面做了交叉链接补丁。"
+}

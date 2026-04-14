@@ -38,6 +38,8 @@ sources: 1
 - [[rendering-pipeline]]
 - [[z-buffer]]
 - [[perspective-correct-interpolation]]
+- [[planar-mapping]] —— 用 world-space xz 生成 UV 的最简例子
+- [[shader-vector-math-primer]] —— 面向初学者的 shader 向量数学 + 坐标空间切换直觉
 
 ## Sources
 

@@ -1,0 +1,94 @@
+{
+  "batch_id": "batch-w9-z",
+  "agent_note": "Frost / blog.frost.kiwi 5 篇批次：2 篇图形长文（LUT + Analytical AA）深度入库，3 篇跳过（WaniKani userscript、just-a-textbox HTML、jo_mpeg C port 代码倾倒）。新增 Frost 人物页与 analytical-antialiasing 概念页，color-lut 已存在仅做补充 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.frost.kiwi/2022-05-11_userscript-japanese-prompts-for-wanikani.md",
+      "status": "skipped_offtopic",
+      "reason": "WaniKani 日语学习 userscript，与图形/引擎/系统无关（orchestrator 已预先标注跳过）"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2024-02-28_how-video-games-use-luts-and-how-you-can-too.md",
+      "status": "ingested",
+      "source_slug": "frost-kiwi-luts-in-video-games",
+      "title": "How video games use LUTs and how you can too"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2024-11-20_aaa-analytical-anti-aliasing.md",
+      "status": "ingested",
+      "source_slug": "frost-kiwi-analytical-anti-aliasing",
+      "title": "AAA - Analytical Anti-Aliasing"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2022-02-15_just-a-textbox.md",
+      "status": "skipped_offtopic",
+      "reason": "一个单文件的 HTML textbox 用于离线粘贴日语文本到 YomiChan——个人工作流工具，非图形/软件工程"
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2022-02-18_jo-mpeg-converted-to-c.md",
+      "status": "skipped_offtopic",
+      "reason": "文章体量几乎全部是 jo_mpeg.h 的源码贴出，正文只说「把 C++ 引用改成指针就编译为 C 了」，没有实质性技术分析或可提炼概念"
+    }
+  ],
+  "concepts_created": ["analytical-antialiasing"],
+  "people_created": ["frost-kiwi"],
+  "source_summaries_created": [
+    "frost-kiwi-luts-in-video-games",
+    "frost-kiwi-analytical-anti-aliasing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[frost-kiwi]] — Frost 关于视频游戏如何使用 1D/3D LUT 的长文（Left 4 Dead tinting、DaVinci Resolve 调色 LUT 烘焙）"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/frost-kiwi-luts-in-video-games]]"
+    },
+    {
+      "file": "wiki/rendering/aliasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[analytical-antialiasing]] —— 已知 SDF 时直接在 shader 里淡出一像素的「另一条路」"
+    },
+    {
+      "file": "wiki/rendering/aliasing.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/frost-kiwi-analytical-anti-aliasing]]"
+    },
+    {
+      "file": "wiki/rendering/msaa-ssaa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[analytical-antialiasing]] —— 对已知 SDF 形状的「反向做法」：shader 内按距离淡出一像素"
+    },
+    {
+      "file": "wiki/rendering/sdf-2d-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[analytical-antialiasing]] —— 用 SDF 做完美的「一像素宽」边缘反走样"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[analytical-antialiasing]] | 已知形状数学方程时，在 shader 里按 SDF 淡出一像素的反走样 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[frost-kiwi]] | Wladislav Artsimovich / Jaruat Frost，以交互式 WebGL 技术博客闻名 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/frost-kiwi-luts-in-video-games]] | Frost：1D/3D LUT 在视频游戏中的各种用法（L4D tinting 到 Resolve 调色） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/frost-kiwi-analytical-anti-aliasing]] | Frost：SSAA/MSAA/FXAA/AAA 对比长文与 AAA 实现细节 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-9 Worker Z (blog.frost.kiwi ×5)\n\n处理 5 篇 blog.frost.kiwi 文章。入库 2 篇图形长文：LUT 在视频游戏里的用途（link to 已有 [[color-lut]]），以及 Analytical Anti-Aliasing（新增概念页）。跳过 3 篇：WaniKani userscript（非技术）、just-a-textbox（个人工作流 HTML）、jo-mpeg-converted-to-c（源码倾倒，无实质技术分析）。新增 1 概念页（analytical-antialiasing）、1 人物页（frost-kiwi）、2 source 摘要。给 color-lut / aliasing / msaa-ssaa / sdf-2d-primitives 打补丁加链接。"
+}

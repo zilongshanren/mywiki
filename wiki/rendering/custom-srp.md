@@ -29,6 +29,7 @@ Catlike Coding 的 **Custom SRP** 是一个 Unity [[scriptable-render-pipeline|S
 - [[render-graph]]
 - [[debug-visualization]]
 - [[rendering-api-depth]]
+- [[draw-procedural-gpu]] —— 自定义 SRP 里常用的 GPU-driven 绘制入口
 
 ## 作者
 

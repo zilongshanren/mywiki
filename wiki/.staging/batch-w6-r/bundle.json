@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w6-r",
+  "agent_note": "Ronja Böhm (Ferris Systems) batch: 5 pure Unity shader tutorials ingested cleanly. Created Ronja person page + 5 concept pages (planar-mapping, texture-dissolve, sdf-2d-primitives, sdf-ray-marched-shadows, draw-procedural-gpu) + 5 source summaries. No off-topic skips. Linked aggressively into existing concepts: jump-flooding-algorithm, shadow-mapping-basics, fizzle-lod-fading, fragment-shader, coordinate-spaces, custom-srp, compute-vs-raster-points, draw-call.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-04-23_planar-mapping.md",
+      "status": "ingested",
+      "source_slug": "ronja-planar-mapping",
+      "title": "Planar Mapping"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-12-15_texture-dissolve.md",
+      "status": "ingested",
+      "source_slug": "ronja-texture-dissolve",
+      "title": "Texture Dissolve"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-11-10_2d-signed-distance-field-basics.md",
+      "status": "ingested",
+      "source_slug": "ronja-2d-sdf-basics",
+      "title": "2D Signed Distance Field Basics"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-12-01_2d-sdf-shadows.md",
+      "status": "ingested",
+      "source_slug": "ronja-2d-sdf-shadows",
+      "title": "2D SDF Shadows"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2020-09-16_graphics-drawprocedural.md",
+      "status": "ingested",
+      "source_slug": "ronja-draw-procedural",
+      "title": "Graphics.DrawProcedural"
+    }
+  ],
+  "concepts_created": [
+    "planar-mapping",
+    "texture-dissolve",
+    "sdf-2d-primitives",
+    "sdf-ray-marched-shadows",
+    "draw-procedural-gpu"
+  ],
+  "people_created": [
+    "ronja-bohm"
+  ],
+  "source_summaries_created": [
+    "ronja-planar-mapping",
+    "ronja-texture-dissolve",
+    "ronja-2d-sdf-basics",
+    "ronja-2d-sdf-shadows",
+    "ronja-draw-procedural"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/jump-flooding-algorithm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sdf-2d-primitives]] —— 另一条路：直接在 shader 里用解析函数描述 SDF\n- [[sdf-ray-marched-shadows]] —— SDF 的典型消费者之一\n- [[ronja-bohm]]"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sdf-ray-marched-shadows]] —— 2D SDF 场景里的 raymarch 软阴影路径（和 shadow map 无关的另一个谱系）"
+    },
+    {
+      "file": "wiki/rendering/fizzle-lod-fading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[texture-dissolve]] —— 同样基于 `clip`，但是面向可见的 VFX 演出，不是 LOD 切换"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[draw-procedural-gpu]] —— 把一次 draw call 打到极致：CPU 只发命令，vertex 数据全部由 GPU buffer 提供"
+    },
+    {
+      "file": "wiki/rendering/compute-vs-raster-points.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[draw-procedural-gpu]] —— 另一种 GPU-driven 渲染路径：compute 写 buffer、DrawProcedural 直接消费"
+    },
+    {
+      "file": "wiki/rendering/custom-srp.md",
+      "operation": "append_to_section",
+      "section": "## 相关概念",
+      "content": "- [[draw-procedural-gpu]] —— 自定义 SRP 里常用的 GPU-driven 绘制入口"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planar-mapping]] —— 用 world-space xz 生成 UV 的最简例子"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[planar-mapping]] | 用顶点位置的两个分量直接当 UV：最简单的程序化 UV 生成 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texture-dissolve]] | 纹理驱动的 clip 溶解 VFX + HDR 边缘发光 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sdf-2d-primitives]] | 2D SDF 基元（圆、矩形）、空间变换与可视化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sdf-ray-marched-shadows]] | 用 SDF sphere-trace 做 2D 软阴影：iq 单行技巧的完整拆解 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[draw-procedural-gpu]] | Unity Graphics.DrawProcedural：GPU-driven 渲染的最小入口 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[ronja-bohm]] | Ronja Böhm（Ferris Systems），Unity shader 教程作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-planar-mapping]] | Ronja：用世界坐标 xz 生成 UV 的三阶段演进 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-texture-dissolve]] | Ronja：纹理驱动的 clip 溶解 + HDR 边缘发光 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-2d-sdf-basics]] | Ronja：2D SDF 基元、变换作用在采样点上、fwidth 抗锯齿 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-2d-sdf-shadows]] | Ronja：SDF sphere-tracing 软阴影的 `min(d/t)` 单行技巧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-draw-procedural]] | Ronja：DrawProcedural + StructuredBuffer 的 GPU-driven 入门 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-6 Worker R (ronja-tutorials.com ×5)\n\n处理 5 篇 Ronja Böhm 的 Unity shader 教程，全数 ingest，无 skip。新增 5 概念页（planar-mapping、texture-dissolve、sdf-2d-primitives、sdf-ray-marched-shadows、draw-procedural-gpu）、1 人物页（ronja-bohm，Ferris Systems）、5 source 摘要。建立 SDF 线（primitives → shadows）与现有 [[jump-flooding-algorithm]] 形成互补（解析函数 vs 纹理化距离场）。把 [[texture-dissolve]] 与已有 [[fizzle-lod-fading]] 做了意图差异的对比（VFX 演出 vs 隐藏 LOD 切换）。[[draw-procedural-gpu]] 作为 GPU-driven 渲染路径的入门接入 [[custom-srp]] 和 [[compute-vs-raster-points]]。"
+}

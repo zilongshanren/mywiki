@@ -38,6 +38,7 @@ TBDR 架构的 HSR 可在 tile 粒度上**完全消除 overdraw**——若不被
 - [[early-z-late-z]]
 - [[fragment-shader]]
 - [[culling]]
+- [[compute-vs-raster-points]] —— 高密度点云用 compute shader 比硬件光栅化更快
 
 ## Sources
 

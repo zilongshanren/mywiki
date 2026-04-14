@@ -48,3 +48,5 @@ TBDR 处理 tile 时，把该 tile 的所有三角形收集到片上内存后，
 ## Sources
 
 - [[sources/rtr-day05]]
+- [[sources/c0de517e-tiled-hardware-speculations]] —— Pesce + ryg 讨论 alpha test / programmable blending 在 TBDR 上的真正开销
+- [[sources/gameknife-tbdr-performance-tuning]] —— PowerVR HSR 与 discard/alphaTest/alphaToCoverage 破坏机制的经典描述

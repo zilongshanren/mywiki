@@ -48,6 +48,7 @@ sources: 2
 - [[aos-vs-soa]]
 - [[cache-friendliness]]
 - [[cpu-performance-formula]]
+- [[cuda-memory-hierarchy]] —— GPU 侧的 5 层显式内存模型
 
 ## Sources
 

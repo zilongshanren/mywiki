@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w3-i",
+  "agent_note": "Wave-3 Worker I: 5 Xor / GM Shaders Mini articles (JFA, OKLab, 3D Rotation, Efficient Chaos, Shadow Mapping). All ingested — pure shader / graphics tutorials. Created 5 concept pages, 1 person page (Xor), 5 source summaries, and 4 patches to existing pages.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2023-05-19_mini-jfa.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-jfa",
+      "title": "Mini: JFA"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2023-12-02_mini-oklab.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-oklab",
+      "title": "Mini: OkLab"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-10-19_mini-3d-rotation.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-3d-rotation",
+      "title": "Mini: 3D Rotation"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-07-10_efficient-chaos.md",
+      "status": "ingested",
+      "source_slug": "xor-efficient-chaos",
+      "title": "Efficient Chaos"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2024-03-23_gm-shaders-shadowmaps.md",
+      "status": "ingested",
+      "source_slug": "xor-shadowmaps",
+      "title": "GM Shaders: Shadowmaps"
+    }
+  ],
+  "concepts_created": [
+    "jump-flooding-algorithm",
+    "oklab-color-space",
+    "3d-rotation-math",
+    "layered-grid-noise",
+    "shadow-mapping-basics"
+  ],
+  "people_created": [
+    "xor-shader-artist"
+  ],
+  "source_summaries_created": [
+    "xor-mini-jfa",
+    "xor-mini-oklab",
+    "xor-mini-3d-rotation",
+    "xor-efficient-chaos",
+    "xor-shadowmaps"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[oklab-color-space]] — 感知均匀色彩空间，混合 / 渐变时用"
+    },
+    {
+      "file": "wiki/rendering/cached-shadowmaps.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shadow-mapping-basics]] — shadow mapping 的基础流程（hard / soft / Phong）"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shadow-mapping-basics]] — 软阴影的黄金角 Fibonacci 圆盘采样是同一个思路"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[3d-rotation-math]] — 旋转矩阵的三种来源（Euler / Axis-Angle / 四元数）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[jump-flooding-algorithm]] | GPU 距离场：对数趟指数步长的 3×3 洪填 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[oklab-color-space]] | 两次矩阵乘一次立方根得到的感知均匀色彩空间 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[3d-rotation-math]] | Euler / Axis-Angle / 四元数：3D 旋转的数学形式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[layered-grid-noise]] | 黄金角旋转 + 多层 shift/scale 的廉价伪随机散布 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shadow-mapping-basics]] | Shadow mapping 入门：hard / soft / bias / PCF / Phong |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[xor-shader-artist]] | Xor / GM Shaders，Shadertoy + GameMaker 方向的 shader 艺术家与教程作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-jfa]] | Xor：JFA 在 GPU 上生成距离场 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-oklab]] | Xor：OKLab 感知均匀色彩混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-3d-rotation]] | Xor：Euler / Axis-Angle 3D 旋转入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-efficient-chaos]] | Xor：黄金角分层网格的廉价伪随机 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-shadowmaps]] | Xor：shadow mapping 完整入门教程 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-3 Worker I (mini.gmshaders.com / Xor ×5)\n\n处理 5 篇 Xor 在 GM Shaders Mini 上的 shader 教程：Mini: JFA、Mini: OkLab、Mini: 3D Rotation、Efficient Chaos、GM Shaders: Shadowmaps。新增 5 个概念页（jump-flooding-algorithm、oklab-color-space、3d-rotation-math、layered-grid-noise、shadow-mapping-basics）、1 个人物页（xor-shader-artist）、5 个 source 摘要。向 color-space / cached-shadowmaps / poisson-disk-sampling / mvp-transform 四个已有页补了 `## 相关` 交叉引用。全部 5 篇成功摄入，无 skip。"
+}

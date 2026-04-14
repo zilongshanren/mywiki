@@ -1,0 +1,125 @@
+{
+  "batch_id": "batch-w1-a",
+  "agent_note": "5 篇 bartwronski.com 文章。1 篇个人音乐数据分析教程跳过；4 篇技术文章全部入库。最大亮点是 exposure-fusion 长文。注意：concept 页里引用了 [[guided-filter]]，该词不在 registry，是有意留下的 gap link，待后续补。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2020-01-06_analyze-your-own-activity-data-using-google-takeout-music-li.md",
+      "status": "skipped_offtopic",
+      "reason": "Google Takeout 个人音乐听歌数据分析教程，工具是 pandas/matplotlib，内容是 GDPR 数据下载 + 个人听歌统计，与图形/引擎/系统/语言均无关。"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2022-09-05_gradient-descent-optimized-recursive-filters-for-deconvoluti.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-iir-deconvolution",
+      "title": "Gradient-descent optimized recursive filters for deconvolution / deblurring"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-09-14_new-debugging-options-in-csharprenderer-framework.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-csharprenderer-debug",
+      "title": "New debugging options in CSharpRenderer framework"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-08-08_poisson-disk-square-sampling-generator-for-rendering.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-poisson-sampling",
+      "title": "Poisson disk/square sampling generator for rendering"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2022-02-28_exposure-fusion-local-tonemapping-for-real-time-rendering.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-exposure-fusion",
+      "title": "Exposure Fusion – local tonemapping for real-time rendering"
+    }
+  ],
+  "concepts_created": [
+    "local-tonemapping",
+    "exposure-fusion",
+    "laplacian-pyramid",
+    "iir-filter-deconvolution",
+    "poisson-disk-sampling",
+    "gpu-printf-debugging"
+  ],
+  "people_created": [
+    "bartosz-wronski"
+  ],
+  "source_summaries_created": [
+    "bartwronski-exposure-fusion",
+    "bartwronski-iir-deconvolution",
+    "bartwronski-poisson-sampling",
+    "bartwronski-csharprenderer-debug"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/debug-visualization.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-printf-debugging]]\n- [[bartosz-wronski]]"
+    },
+    {
+      "file": "wiki/rendering/debug-visualization.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-csharprenderer-debug]]"
+    },
+    {
+      "file": "wiki/rendering/aliasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[poisson-disk-sampling]]\n- [[iir-filter-deconvolution]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[local-tonemapping]]\n- [[exposure-fusion]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[local-tonemapping]] | 局部色调映射的动机与方法谱 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[exposure-fusion]] | Mertens Laplacian 金字塔分尺度融合算法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[laplacian-pyramid]] | 多分辨率图像分解的基础工具 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[iir-filter-deconvolution]] | 递归滤波器精确反演卷积模糊 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[poisson-disk-sampling]] | 渐进 Poisson 采样序列与渲染用途 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-printf-debugging]] | 用 UAV append buffer 实现 shader printf |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[bartosz-wronski]] | Bart Wronski，前 Sony Santa Monica / Google Pixel HDR+ |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-exposure-fusion]] | Wronski：Exposure Fusion 与局部色调映射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-iir-deconvolution]] | Wronski：梯度下降学 IIR 滤波器反卷积 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-poisson-sampling]] | Wronski：Poisson 采样生成器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-csharprenderer-debug]] | Wronski：CSharpRenderer GPU printf 与 surface snapshot |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-1 Worker A (bartwronski.com ×5)\n\n处理 5 篇 bartwronski.com 技术文章。新增 6 概念页（local-tonemapping、exposure-fusion、laplacian-pyramid、iir-filter-deconvolution、poisson-disk-sampling、gpu-printf-debugging）、1 人物页（bartosz-wronski）、4 source 摘要。跳过 1 篇个人音乐数据分析教程。最大收获是 exposure-fusion 文章，把 Bart Wronski 从 God of War 到 Pixel HDR+ 两段经历串起来，覆盖了一个完整的 LTM 算法家族。"
+}

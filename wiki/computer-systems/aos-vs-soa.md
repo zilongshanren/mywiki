@@ -65,6 +65,7 @@ healths:    [h|h|h|...]
 - [[amdahls-law]]
 - [[ecs]]
 - [[cache-friendliness]]
+- [[sse-tricks]] —— SSE 性能为何依赖 SoA 而非水平指令
 
 ## Sources
 

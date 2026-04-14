@@ -41,6 +41,8 @@ sources: 1
 - [[aliasing]]
 - [[rasterization]]
 - [[tbdr-vs-imr]]
+- [[temporal-antialiasing]] —— 现代 AAA 的事实标准 AA，MSAA 在延迟渲染下被它取代
+- [[analytical-antialiasing]] —— 对已知 SDF 形状的「反向做法」：shader 内按距离淡出一像素
 
 ## Sources
 

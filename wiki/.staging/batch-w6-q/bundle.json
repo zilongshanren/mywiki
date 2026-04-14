@@ -1,0 +1,58 @@
+{
+  "batch_id": "batch-w6-q",
+  "agent_note": "Harry Alisavakis 的 5 篇：4 篇 Technically Art 周报是 Twitter 艺术作品汇总（无实质技术内容，跳过）；ShaderQuest Part 6 是塑形函数教程（吸收）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2020-09-18_technically-art-issue-68-18-09-2020.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 周报，仅为 Twitter 作品嵌入合集（merge instancing、portal VFX、waterfall、cloud shader 等），无教学/技术叙述内容，属于策展目录而非技术文章"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2020-07-12_technically-art-issue-59-10-07-2020.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 周报，纯 Twitter 作品集锦（VFX 挑战、HDRP terrain、Niagara 等推文片段），无实质技术阐释"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2021-10-15_technically-art-issue-113-15-10-2021.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 周报，以 #PortfolioDay 作品与 TechnicallyAChallenge 参赛作品为主，无技术教学深度"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2021-04-16_technically-art-issue-94-16-04-2021.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 周报，Foil Card 挑战赛与 Portfolio Day 的作品列表，缺乏可提炼的原创技术内容"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2021-09-12_shaderquest-part-6-shaping-functions.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-shaderquest-shaping-functions",
+      "title": "ShaderQuest Part 6: Shaping functions"
+    }
+  ],
+  "concepts_created": ["shaping-functions"],
+  "people_created": ["harry-alisavakis"],
+  "source_summaries_created": ["halisavakis-shaderquest-shaping-functions"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shaping-functions]] — step/smoothstep/lerp/sin/frac 等片元着色器基础塑形原语"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shaping-functions]] | step/smoothstep/lerp/sin/frac 等着色器塑形函数与时间动画 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[harry-alisavakis]] | Harry Alisavakis，Technically Art 博客作者、ShaderQuest 系列教程作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-shaderquest-shaping-functions]] | Alisavakis：ShaderQuest 第六篇，着色器塑形函数入门 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-6 Worker Q (halisavakis.com ×5)\n\n处理 5 篇 halisavakis.com 文章。吸收 1 篇 ShaderQuest 塑形函数教程，跳过 4 篇 Technically Art 周报（仅为 Twitter 作品集锦）。新增 1 概念页（shaping-functions）、1 人物页（harry-alisavakis）、1 source 摘要。"
+}

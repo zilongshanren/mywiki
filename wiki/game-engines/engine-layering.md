@@ -50,6 +50,7 @@ Gregory 说得直白：**循环依赖是引擎设计的死刑**。一旦出现�
 - [[game-engine]]
 - [[dependencies]]
 - [[classitis-in-games]]
+- [[game-physics-engine]] —— 典型 middleware 层的物理子系统：broadphase / collision detection / resolution 三段流水线
 
 ## Sources
 

@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w8-w",
+  "agent_note": "alanzucconi.com 批次：5 篇经典 Unity shader 教程全部入库。新增 5 概念页（spectral-zucconi-rainbow、diffraction-grating-shader、fast-translucency-wraplight、volumetric-raymarching-intro、journey-sand-specular）+ 1 人物页（alan-zucconi）+ 5 source 摘要。Patches 挂到 spectral-rendering、physically-based-shading、microfacet-brdf、volumetric-fog-froxels、sdf-ray-marched-shadows。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alanzucconi.com/2017-07-15_improving-the-rainbow-part-2-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-improving-rainbow-2",
+      "title": "Improving the Rainbow – Part 2"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2017-08-30_fast-subsurface-scattering-in-unity-part-1-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-fast-sss-1",
+      "title": "Fast Subsurface Scattering in Unity – Part 1"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2017-07-15_cd-rom-shader-diffraction-grating-part-2-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-cdrom-diffraction-2",
+      "title": "CD-ROM Shader: Diffraction Grating – Part 2"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2016-07-01_volumetric-rendering-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-volumetric-rendering",
+      "title": "Volumetric Rendering – Part 1"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2019-10-08_journey-sand-shader-specular-reflection-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-journey-sand-specular",
+      "title": "Journey Sand Shader: Specular Reflection"
+    }
+  ],
+  "concepts_created": [
+    "spectral-zucconi-rainbow",
+    "diffraction-grating-shader",
+    "fast-translucency-wraplight",
+    "volumetric-raymarching-intro",
+    "journey-sand-specular"
+  ],
+  "people_created": [
+    "alan-zucconi"
+  ],
+  "source_summaries_created": [
+    "alanzucconi-improving-rainbow-2",
+    "alanzucconi-cdrom-diffraction-2",
+    "alanzucconi-fast-sss-1",
+    "alanzucconi-volumetric-rendering",
+    "alanzucconi-journey-sand-specular"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/spectral-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[spectral-zucconi-rainbow]] — shader art 场景下 branchless 的波长→RGB 廉价拟合"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fast-translucency-wraplight]] — Frostbite 2 的廉价假 SSS：反向光方向 + subsurface distortion\n- [[journey-sand-specular]] — 风格化多路 specular 拆分（rim Fresnel + ocean Blinn-Phong）"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[journey-sand-specular]] — Blinn-Phong 作为 NDF 起点的风格化使用"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[volumetric-raymarching-intro]] — 另一条体积渲染路线：per-fragment raymarching"
+    },
+    {
+      "file": "wiki/rendering/sdf-ray-marched-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[volumetric-raymarching-intro]] — raymarching 的入门与体积渲染动机"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spectral-zucconi-rainbow]] | Branchless 的波长→RGB 拟合（Zucconi 改进 GPU Gems bump 方案） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[diffraction-grating-shader]] | CD-ROM 彩虹反射：grating 方程 + 从 UV 算切向 + spectral_zucconi6 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fast-translucency-wraplight]] | Barré-Brisebois / Frostbite 2 的廉价假 SSS：反向光 + subsurface distortion |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volumetric-raymarching-intro]] | Volumetric raycasting 到 raymarching：把 cube 当 portal 做体积渲染 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[journey-sand-specular]] | Journey 沙丘高光分解：Fresnel rim + Blinn-Phong ocean specular |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[alan-zucconi]] | Alan Zucconi，Unity shader 教程作者（彩虹 / 衍射 / SSS / 体积 / Journey） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-improving-rainbow-2]] | Zucconi：branchless 波长→RGB 拟合 `spectral_zucconi(6)` |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-cdrom-diffraction-2]] | Zucconi：CD-ROM 衍射光栅着色器 + 从 UV 推切向 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-fast-sss-1]] | Zucconi：Barré-Brisebois / Frostbite 廉价假 SSS 移植到 Unity |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-volumetric-rendering]] | Zucconi：体积 raycasting 与 raymarching 入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-journey-sand-specular]] | Zucconi：Journey 沙丘 rim lighting + ocean specular 拆解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-8 Worker W (alanzucconi.com ×5)\n\n处理 5 篇 Alan Zucconi 的经典 Unity shader 教程，全部入库。新增 5 概念页（spectral-zucconi-rainbow、diffraction-grating-shader、fast-translucency-wraplight、volumetric-raymarching-intro、journey-sand-specular）、1 人物页（alan-zucconi）、5 source 摘要。Patches 挂到 spectral-rendering、physically-based-shading、microfacet-brdf、volumetric-fog-froxels、sdf-ray-marched-shadows。"
+}

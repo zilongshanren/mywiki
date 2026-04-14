@@ -1,0 +1,81 @@
+{
+  "batch_id": "batch-w5-n",
+  "agent_note": "5 篇 apoorvaj.io 文章中 2 篇入库、3 篇跳过。入库的是 2015 *Zooming and panning*（GPU 图像编辑器 Papaya，fragment shader 笔刷 + textured quad 缩放）和 2016 *The experiment*（x86 32 位 cdecl/stdcall/fastcall 三路汇编 diff）。跳过：*Cross-platform consistency*（UI 哲学散文，几乎没技术内容）、*Vibe-coding a tax calculator*（Claude Code workflow 随笔，非图形/系统）、*Stop over-engineering static websites*（博客 build 工具随笔）。作者 Apoorva Joshi 新建，前 Activision path tracing，Papaya 开源图像编辑器作者，常驻丹麦。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/apoorvaj.io/2016-09-04_the-experiment.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-calling-conventions",
+      "title": "The experiment (cdecl/stdcall/fastcall diff)"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2015-07-03_zooming-and-panning.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-zooming-and-panning",
+      "title": "Zooming and panning (Papaya GPU image editor)"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2016-08-13_cross-platform-consistency.md",
+      "status": "skipped_offtopic",
+      "reason": "关于 native UI vs. 自绘 UI 的哲学散文，核心论点是『跨平台一致性比 OS native 更重要』。技术内容只有一句『选 ImGui 不选 Qt 能把 Papaya 的 Linux 依赖从 61 降到 28』，不足以支撑一个概念页或对现有页的实质性补充。"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2026-02-13_vibe-coding-a-tax-calculator.md",
+      "status": "skipped_offtopic",
+      "reason": "作者用 Claude Code 两个晚上做了一个丹麦个税计算器 taxman.dk 的随笔，主题是 AI 辅助开发工作流，不属于图形 / 渲染 / 系统 / 游戏引擎范畴。"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2025-10-04_stop-over-engineering-static-websites.md",
+      "status": "skipped_offtopic",
+      "reason": "关于抛弃 Astro + Netlify CI、改用本地 Pandoc + wrangler 部署静态博客的随笔，内容是 Python 脚本的完整转储，属于 web 工具链话题，非图形/系统。"
+    }
+  ],
+  "concepts_created": [
+    "calling-conventions-x86",
+    "gpu-image-editor-brush"
+  ],
+  "people_created": [
+    "apoorva-joshi"
+  ],
+  "source_summaries_created": [
+    "apoorvaj-calling-conventions",
+    "apoorvaj-zooming-and-panning"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-image-editor-brush]] —— 2D 图像编辑器把笔刷合成写成 fragment shader + ping-pong framebuffer"
+    },
+    {
+      "file": "wiki/rendering/image-resampling-filters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-image-editor-brush]] —— textured quad 缩放把 nearest/linear 选择交给硬件采样器"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-image-editor-brush]] | GPU 图像编辑器的缩放平移 + fragment shader 笔刷（Papaya vs GIMP） |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[calling-conventions-x86]] | x86 32 位 cdecl / stdcall / fastcall 三路汇编 diff |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[apoorva-joshi]] | Apoorva Joshi，前 Activision path tracing，Papaya 开源 GPU 图像编辑器作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-calling-conventions]] | Joshi：cdecl/stdcall/fastcall 三路汇编 diff |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-zooming-and-panning]] | Joshi：Papaya GPU 图像编辑器笔刷与缩放的性能拆解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-5 Worker N (apoorvaj.io ×5)\n\n处理 5 篇 Apoorva Joshi *apoorvaj.io* 文章：2 入库 + 3 跳过。入库：*The experiment*（x86 32 位 cdecl/stdcall/fastcall 三路汇编 diff）→ [[calling-conventions-x86]]；*Zooming and panning*（Papaya GPU 图像编辑器的 textured quad 缩放 + fragment shader 笔刷）→ [[gpu-image-editor-brush]]。新增 1 人物页 [[apoorva-joshi]]（前 Activision path tracing）、2 source 摘要。跳过：*Cross-platform consistency*（UI 哲学散文）、*Vibe-coding a tax calculator*（Claude Code 工作流随笔）、*Stop over-engineering static websites*（博客 build 工具链）。对 fragment-shader 和 image-resampling-filters 两个既有页各补了一条相关链接。"
+}

@@ -42,6 +42,7 @@ C source → [预处理] → [编译] → [汇编] → [链接] → 可执行文
 
 - [[bits-and-context]]
 - [[virtual-memory]]
+- [[compiler-interference-analysis-bug]] — MSVC 把两个活跃临时量塞到同一栈槽的真实案例
 
 ## Sources
 

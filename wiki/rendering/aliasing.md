@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 信号处理]
 date: 2026-04-05
-sources: 1
+sources: 4
 ---
 
 # 走样与反走样（Aliasing & Anti-aliasing）
@@ -36,7 +36,18 @@ TBDR 架构把 multisample 数据留在**片上内存**，写回时 resolve，�
 
 - [[msaa-ssaa]]
 - [[rasterization]]
+- [[sampling-theorem-sinc]] —— sinc 重建核的来源（傅里叶 / Lagrange 双视角）
+- [[poisson-disk-sampling]] —— 低差异采样序列
+- [[iir-filter-deconvolution]] —— 模糊反卷积也是重建问题
+- [[image-resampling-filters]] —— Bilinear / Bicubic / Mitchell-Netravali 与缩小时的 box filter
+- [[temporal-antialiasing]] —— 用跨帧分散计算一次性处理所有 aliasing
+- [[taa-history-rectification]] —— TAA 的 ghosting / flicker 修正技术族
+- [[analytical-antialiasing]] —— 已知 SDF 时直接在 shader 里淡出一像素的「另一条路」
 
 ## Sources
 
 - [[sources/rtr-day04]]
+- [[sources/ryg-sinc-and-polynomial-interpolation]]
+- [[sources/bartwronski-poisson-sampling]]
+- [[sources/aras-blender-vse-image-filtering]]
+- [[sources/frost-kiwi-analytical-anti-aliasing]]

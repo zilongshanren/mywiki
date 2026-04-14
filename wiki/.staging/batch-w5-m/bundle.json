@@ -1,0 +1,91 @@
+{
+  "batch_id": "batch-w5-m",
+  "agent_note": "Raph Levien batch: ingested 3 technical posts (smooth-resize, rust-2021-gui, fearless-simd); skipped 2 personal/reflection posts (2022 reflections, 2017 recurse-center dump). Created Raph Levien person page + 4 concept pages + 3 source summaries. Raph is the linebender/Vello/Druid/Xilem author and a new author in this wiki.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raphlinus.github.io/2022-12-31_raphs-reflections-and-wishes-for-2023.md",
+      "status": "skipped_offtopic",
+      "reason": "Year-in-review / personal reflections post. Raph discusses happiness, project management style, and goals for 2023. Technical substance (Vello, Xilem, Euler spirals) is only mentioned at the roadmap level without technical depth — the substantive versions live in his earlier deep-dive posts."
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2017-10-12_what-im-working-on-at-recurse-center.md",
+      "status": "skipped_offtopic",
+      "reason": "Batch-retrospective post listing 7 unrelated personal side projects (Ghilbert proof assistant, xi cache viz, snowflake hash, Apple 2 font rendering, Apple 2 cassette loading, SAT-solver crosswords, FM synth). No single thread deep enough to warrant a concept page; mostly a Recurse Center 'what I did' note."
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2019-06-21_the-smooth-resize-test.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-smooth-resize-test",
+      "title": "The smooth resize test"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2020-09-28_rust-2021-gui.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-rust-2021-gui",
+      "title": "Rust 2021: GUI"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2018-10-19_towards-fearless-simd.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-fearless-simd",
+      "title": "Towards fearless SIMD"
+    }
+  ],
+  "concepts_created": [
+    "smooth-window-resize",
+    "rust-gui-ecosystem",
+    "reactive-ui-rust",
+    "fearless-simd"
+  ],
+  "people_created": [
+    "raph-linus"
+  ],
+  "source_summaries_created": [
+    "raphlinus-smooth-resize-test",
+    "raphlinus-rust-2021-gui",
+    "raphlinus-fearless-simd"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/sse-tricks.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fearless-simd]] —— Raph Levien 提出的 Rust 可移植 SIMD 愿景，同样踩到 runtime feature 选档与 inlining 组合的坑"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[smooth-window-resize]] | 桌面 GUI 平滑窗口缩放：swapchain、WM、事件循环的同步体检 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[rust-gui-ecosystem]] | Rust GUI 生态的多峰现状与 linebender（Druid / Xilem / Vello）路线 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[reactive-ui-rust]] | Rust 下反应式 UI 架构：lens、Elm、Xilem 的假设 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[fearless-simd]] | Rust 下可移植 SIMD 的双层 trait 方案与 runtime 选档难题 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[raph-linus]] | Raph Levien，Google Fonts / linebender，Vello / Druid / Xilem 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-smooth-resize-test]] | Raph：把窗口拖拽抖动当作 GUI 架构体检 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-rust-2021-gui]] | Raph：Rust GUI 生态现状、Druid 定位、收敛难题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-fearless-simd]] | Raph：Rust 下可移植 SIMD 的愿景与双层 trait 探索 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-5 Worker M (raphlinus.github.io ×5)\n\n处理 5 篇 Raph Levien 博客文章。新增 4 概念页（smooth-window-resize、rust-gui-ecosystem、reactive-ui-rust、fearless-simd）、1 人物页（raph-linus）、3 source 摘要。跳过 2 篇（2022 年终反思、2017 Recurse Center 混合项目清单）——缺乏单一技术主线。引入 linebender 栈（Vello / Druid / Xilem）作为 Rust GUI 生态的锚点，与 sse-tricks 建立 SIMD 跨链。"
+}

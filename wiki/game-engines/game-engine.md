@@ -42,6 +42,7 @@ Gregory 对游戏的定义：**软实时的、交互式的、基于智能体的�
 - [[engine-layering]]
 - [[unity-vs-unreal]]
 - [[engine-evolution]]
+- [[game-physics-engine]] —— 引擎 middleware 层的标配之一，约束式刚体物理流水线
 
 ## Sources
 

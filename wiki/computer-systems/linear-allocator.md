@@ -1,0 +1,49 @@
+---
+tags: [内存, 分配器, 性能]
+date: 2026-04-14
+sources: 1
+---
+
+# 线性分配器（Linear Allocator）
+
+**最简单的一种内存分配器**：一块连续缓冲 + 一个偏移指针。每次分配只做 `ptr += size`，释放则整体 reset。O(1) 分配、几乎零开销，非常适合**生命周期一致、使用周期短**的内存——典型场景是一帧内的临时数据。
+
+## 结构
+
+- 一段预分配的内存页（page），记录 `base`、`offset`、`pageSize`
+- `Allocate(size, alignment)`：把 offset 对齐后取出一段，向前推进
+- 单页满了就挂一个新页到 page pool
+- `Reset()`：所有 offset 回到 0，整批释放——**不支持单个 free**
+
+## 碎片
+
+- **内部碎片**：对齐把请求 padding 上去。典型例子是只存一个 4×4 矩阵的 constant buffer，请求 64B 但 D3D12 要求 256B 对齐，浪费 192B
+- **外部碎片**：连续两次分配对齐不同时，中间留下的空洞
+
+碎片是代价，换来的是**单调推进指针**的速度——写入一个原子变量就完事，不存在自由链表、合并、搜索。
+
+## 为什么游戏引擎爱用
+
+- **每帧的动态数据**天然满足"分配一批，一次回收"：粒子、UI 顶点、动态常量、立即模式 debug 绘制
+- [[d3d12-resource-binding|D3D12 的 UploadBuffer]] 就是典型的线性分配器，用一段 upload heap 存每帧上传给 GPU 的数据
+- 命令缓冲（command buffer）的存储本身也常用线性分配
+- 可和 [[cache-friendliness|缓存友好]] 策略协同：顺序分配意味着顺序读取
+
+## 变种
+
+- **Stack allocator**：额外记录一个"标记"，允许 pop 到某个 checkpoint
+- **Double-buffered / ring**：两段交替 reset，让当前帧使用 buffer A 时上一帧的 buffer B 在 GPU 上执行
+- **Frame allocator**：多个命令列表各持一个独立的线性分配器，避免线程争用
+
+## 相关
+
+- [[d3d12-resource-binding]]
+- [[cache-friendliness]]
+- [[virtual-memory]]
+- [[render-graph]]
+- [[gpu-fence-timeline-semaphore]] —— 线性分配器帧循环回收的前置条件
+- [[buffer-renaming]] —— 现代 API 用线性分配器取代驱动隐式 renaming
+
+## Sources
+
+- [[sources/3dgep-learning-directx12-lesson3]]
