@@ -1,0 +1,133 @@
+{
+  "batch_id": "batch-w23-bo",
+  "agent_note": "Daniel Ilett Image Effects Part 4/5/6（edge detection + bloom / retro NES-SNES-GB + CRT / Kuwahara oil painting）。Part 7 wrapping-up 与 cel-shading-introduction 按指令跳过。新增 4 个 rendering 概念页 + 3 个 source 摘要；daniel-ilett 人物页已存在，追加 source 链接与相关概念。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2019-05-11_image-effects-part-4-edgy-talk.md",
+      "status": "ingested",
+      "source_slug": "danielilett-image-effects-edge-detection-bloom",
+      "title": "Image Effects Part 4 — Edgy Talk"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-05-15_image-effects-part-5-retro-arcade.md",
+      "status": "ingested",
+      "source_slug": "danielilett-image-effects-retro-crt",
+      "title": "Image Effects Part 5 — Retro Arcade"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-05-18_image-effects-part-6-painting-joy.md",
+      "status": "ingested",
+      "source_slug": "danielilett-image-effects-kuwahara",
+      "title": "Image Effects Part 6 — Painting Joy"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-05-22_image-effects-part-7-wrapping-up.md",
+      "status": "skipped_offtopic",
+      "reason": "series conclusion / recap — no new technical content (per orchestrator instruction)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-05-29_cel-shading-series-introduction.md",
+      "status": "skipped_offtopic",
+      "reason": "series introduction / meta — no new technical content (per orchestrator instruction)"
+    }
+  ],
+  "concepts_created": [
+    "sobel-edge-detection",
+    "bloom-threshold-blur-composite",
+    "color-quantization-retro",
+    "kuwahara-filter"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-image-effects-edge-detection-bloom",
+    "danielilett-image-effects-retro-crt",
+    "danielilett-image-effects-kuwahara"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sobel-edge-detection]]\n- [[bloom-threshold-blur-composite]]\n- [[color-quantization-retro]]\n- [[kuwahara-filter]]\n- [[crt-shader-effects]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-image-effects-edge-detection-bloom]]\n- [[sources/danielilett-image-effects-retro-crt]]\n- [[sources/danielilett-image-effects-kuwahara]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "replace_line",
+      "match": "sources: 8",
+      "content": "sources: 11"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sobel-edge-detection]] —— 3x3 卷积核提取屏幕空间边缘\n- [[bloom-threshold-blur-composite]] —— 阈值/模糊/合成三步简易 Bloom\n- [[color-quantization-retro]] —— NES/SNES/GB 颜色量化与像素化\n- [[kuwahara-filter]] —— 保边的油画风格化滤镜"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-image-effects-edge-detection-bloom]]\n- [[sources/danielilett-image-effects-retro-crt]]\n- [[sources/danielilett-image-effects-kuwahara]]"
+    },
+    {
+      "file": "wiki/rendering/unity-image-effect-basics.md",
+      "operation": "replace_line",
+      "match": "sources: 7",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/rendering/image-convolution-kernel.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sobel-edge-detection]] —— 不可合并的一对 3x3 方向核\n- [[kuwahara-filter]] —— 非线性"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-quantization-retro]] —— NES/SNES/GB 色阶量化与像素化下采样"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-quantization-retro]] —— NES/SNES/GB 整数截断量化与 Game Boy 色阶级联 lerp"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sobel-edge-detection]] | Sobel-Feldman 算子：屏幕空间边缘检测与 Neon 掩膜 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bloom-threshold-blur-composite]] | 简易 Bloom 三步：阈值 + 模糊 + 合成，UsePass 跨 shader 复用 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-quantization-retro]] | NES/SNES/GB 色彩量化 + 像素化下采样 + FilterMode.Point |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[kuwahara-filter]] | Kuwahara 保边非线性滤镜：油画/笔刷风格化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-image-effects-edge-detection-bloom]] | Ilett：Image Effects Part 4 - Sobel 边缘检测 + 简易 Bloom |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-image-effects-retro-crt]] | Ilett：Image Effects Part 5 - NES/SNES/GB 颜色量化 + CRT 扫描线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-image-effects-kuwahara]] | Ilett：Image Effects Part 6 - Kuwahara 油画滤镜 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-23 Worker BO (danielilett.com image effects 4/5/6)\n\n处理 Daniel Ilett Image Effects 系列 Part 4/5/6：Sobel 边缘检测 + 简易 Bloom、NES/SNES/GB 色彩量化 + CRT 扫描线、Kuwahara 油画滤镜。新增 4 个概念页（sobel-edge-detection, bloom-threshold-blur-composite, color-quantization-retro, kuwahara-filter）和 3 个 source 摘要。按指令跳过 Part 7 wrapping-up 与 cel-shading-introduction 两篇 meta 文章。对 daniel-ilett、unity-image-effect-basics、image-convolution-kernel、crt-shader-effects、retro-rendering-techniques 五个既有页面做反向链接 patch。"
+}

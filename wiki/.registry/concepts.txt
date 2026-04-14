@@ -24,6 +24,7 @@ binary-hot-reload
 bindless-rendering
 bits-and-context
 blit-render-feature
+bloom-threshold-blur-composite
 bluk-2d-fog-sprite-shader
 bottleneck-analysis
 bresenham-lines
@@ -51,6 +52,7 @@ cognitive-load
 collision-detection-gjk-epa
 color-banding
 color-lut
+color-quantization-retro
 color-space
 compact-vertex-format
 compilation-pipeline
@@ -119,6 +121,7 @@ fizzle-lod-fading
 floyd-steinberg-dithering
 flynn-taxonomy
 fourier-srgb-spectral-upsampling
+fractal-texturing
 fragment-shader
 frame-profiler-overlay
 frost-kiwi
@@ -178,6 +181,7 @@ journey-sand-specular
 jump-flooding-algorithm
 kinematic-character-controller
 kostas-anagnostou
+kuwahara-filter
 lambda-calculus
 laplacian-pyramid
 latency-vs-throughput
@@ -248,6 +252,7 @@ power-wall
 prebaked-corner-occlusion
 probabilistic-algorithms
 procedural-abstraction
+procedural-checkerboard
 procedural-mesh-primitives
 procedural-rendering-ps2
 projected-solid-angle-sampling
@@ -255,6 +260,7 @@ quasi-monte-carlo
 raph-linus
 rapidhash
 rasterization
+raymarching-intro
 reactive-ui-rust
 recursive-vs-iterative-process
 red-flags
@@ -281,9 +287,11 @@ sdf-2d-primitives
 sdf-ray-marched-shadows
 separable-gaussian-blur
 shader-code-golfing
+shader-color-interpolation
 shader-prototyping-tools
 shader-vector-math-primer
 shaderlab-hlsl-basics
+shadertoy-basics
 shadow-mapping-basics
 shallow-modules
 shaping-functions
@@ -292,12 +300,14 @@ simon-trumpler
 simple-cpp-mark-sweep-gc
 skysaga-rendering-tech
 smooth-window-resize
+sobel-edge-detection
 soft-real-time
 sparse-shadows-cone-tracing
 spectral-brdf
 spectral-rendering
 spectral-zucconi-rainbow
 spherical-harmonics
+sprite-shaders-unity
 sse-tricks
 stencil-buffer
 stephen-hill
@@ -329,6 +339,7 @@ triangle-primitives
 triangle-setup
 trigonometric-moment-transient-imaging
 triplanar-mapping
+two-texture-sampling-tricks
 unity-complexity-patterns
 unity-grabpass-blur
 unity-image-effect-basics

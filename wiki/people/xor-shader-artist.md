@@ -30,6 +30,10 @@ sources: 5
 | Mini: Code Golfing | [[shader-code-golfing]] — shader 压缩技巧与数学恒等式 |
 | Functions: Dot Product | [[vector-dot-product]] — 点乘的条纹 / 衰减 / Lambert 用法 |
 | Mini: Creative Code | [[creative-coding-process]] — 创意编程的四步工作流 |
+| Raymarching | [[raymarching-intro]] —— sphere-assisted ray marching 的入门 |
+| Mini: Two Textures | [[two-texture-sampling-tricks]] —— atlas 下的 UV 归一化 |
+| Mini: ShaderToy | [[shadertoy-basics]] —— ShaderToy 格式与移植清单 |
+| Fractal Texturing | [[fractal-texturing]] —— 按深度离散化 UV 并 blend 的 LOD 技巧 |
 
 ## 和其它作者的对比
 
@@ -50,6 +54,10 @@ sources: 5
 - [[shader-code-golfing]]
 - [[vector-dot-product]]
 - [[creative-coding-process]]
+- [[raymarching-intro]]
+- [[two-texture-sampling-tricks]]
+- [[shadertoy-basics]]
+- [[fractal-texturing]]
 
 ## Sources
 
@@ -63,3 +71,8 @@ sources: 5
 - [[sources/xor-mini-code-golfing]]
 - [[sources/xor-mini-dot-product]]
 - [[sources/xor-mini-creative-code]]
+- [[sources/xor-mini-raymarching]]
+- [[sources/xor-mini-rotation]]
+- [[sources/xor-mini-two-textures]]
+- [[sources/xor-mini-shadertoy]]
+- [[sources/xor-mini-fractal-texturing]]

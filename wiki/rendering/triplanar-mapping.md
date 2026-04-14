@@ -1,7 +1,7 @@
 ---
 tags: [shader, shadergraph, uv, 纹理, 渲染]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # Triplanar Mapping（按法线方向混合三次平面映射）
@@ -69,7 +69,9 @@ triplanar 的甜区是 **没有可用 UV** 或 **UV 拉伸严重**的情况：
 - [[normal-map-blending]]
 - [[uv-manipulation-nodes]]
 - [[fragment-shader]]
+- [[ronja-bohm]] —— 2018 年第 010 篇教程：手写 vertex/fragment 版 triplanar，含 object→world 法线的逆转置矩阵推导
 
 ## Sources
 
 - [[sources/cyan-triplanar-mapping]]
+- [[sources/ronja-triplanar-mapping]]

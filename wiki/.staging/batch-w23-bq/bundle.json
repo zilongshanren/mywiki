@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w23-bq",
+  "agent_note": "Xor GM Shaders 批次 (5 篇)：1 篇补丁到 3d-rotation-math，4 篇新概念 + 全部 5 篇 source summary。raymarching 新建独立页 raymarching-intro（sphere-tracing 3D 入门，区别于现有 volumetric-raymarching-intro 的体积 shell 路线和 sdf-ray-marched-shadows 的阴影路线）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-09-16_raymarching.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-raymarching",
+      "title": "Raymarching"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-09-24_mini-rotation.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-rotation",
+      "title": "Mini: Rotation"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-10-01_mini-two-textures.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-two-textures",
+      "title": "Mini: Two Textures"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-10-07_mini-shadertoy.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-shadertoy",
+      "title": "Mini: ShaderToy"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-10-15_fractal-texturing.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-fractal-texturing",
+      "title": "Fractal Texturing"
+    }
+  ],
+  "concepts_created": [
+    "raymarching-intro",
+    "two-texture-sampling-tricks",
+    "shadertoy-basics",
+    "fractal-texturing"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "xor-mini-raymarching",
+    "xor-mini-rotation",
+    "xor-mini-two-textures",
+    "xor-mini-shadertoy",
+    "xor-mini-fractal-texturing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/xor-mini-rotation]] —— Xor 2022 年讲 2D 旋转推导与 3D 按对轴叠加的前置教程"
+    },
+    {
+      "file": "wiki/rendering/volumetric-raymarching-intro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[raymarching-intro]] —— sphere-traced 表面 raymarching 的入门路线"
+    },
+    {
+      "file": "wiki/rendering/sdf-ray-marched-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[raymarching-intro]] —— sphere tracing 的基础结构"
+    },
+    {
+      "file": "wiki/rendering/texel-pixel-conversion.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[two-texture-sampling-tricks]] —— atlas 下的 UV 归一化与多纹理采样"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Raymarching | [[raymarching-intro]] —— sphere-assisted ray marching 的入门 |\n| Mini: Two Textures | [[two-texture-sampling-tricks]] —— atlas 下的 UV 归一化 |\n| Mini: ShaderToy | [[shadertoy-basics]] —— ShaderToy 格式与移植清单 |\n| Fractal Texturing | [[fractal-texturing]] —— 按深度离散化 UV 并 blend 的 LOD 技巧 |"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[raymarching-intro]]\n- [[two-texture-sampling-tricks]]\n- [[shadertoy-basics]]\n- [[fractal-texturing]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-mini-raymarching]]\n- [[sources/xor-mini-rotation]]\n- [[sources/xor-mini-two-textures]]\n- [[sources/xor-mini-shadertoy]]\n- [[sources/xor-mini-fractal-texturing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[raymarching-intro]] | Xor：sphere-assisted ray marching 的 SDF 入门 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[two-texture-sampling-tricks]] | Xor：texture atlas 下的 UV 归一化与跨贴图映射 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shadertoy-basics]] | Xor：ShaderToy 格式与移植到游戏引擎的清单 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fractal-texturing]] | Xor：按深度离散缩放并 blend 的一致 LOD 技巧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-raymarching]] | Xor：sphere-traced raymarching 入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-rotation]] | Xor：从 2D 三角到 3D 欧拉角的 shader 旋转入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-two-textures]] | Xor：GameMaker texture page 与 UV 归一化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-shadertoy]] | Xor：ShaderToy 移植到 GameMaker 的清单 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-fractal-texturing]] | Xor：按深度离散缩放 UV 的一致细节技巧 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-23 Worker BQ (Xor GM Shaders ×5)\n\n处理 5 篇 Xor/mini.gmshaders.com 教程：raymarching、mini-rotation、mini-two-textures、mini-shadertoy、fractal-texturing。新增 4 个概念页（raymarching-intro、two-texture-sampling-tricks、shadertoy-basics、fractal-texturing）和 5 个 source summary。Mini: Rotation 仅打补丁到现有 [[3d-rotation-math]]。对 xor-shader-artist、volumetric-raymarching-intro、sdf-ray-marched-shadows、texel-pixel-conversion 发起交叉链接补丁。"
+}

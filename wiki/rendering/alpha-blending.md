@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 透明]
 date: 2026-04-05
-sources: 2
+sources: 3
 ---
 
 # Alpha Blending（透明混合）
@@ -56,8 +56,11 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[deferred-alpha-lighting]] —— deferred 管线下透明物体打光的四条路径
 - [[dual-depth-buffer-thickness]] —— 用 `Min` 混合在一个 pass 内求厚度
 - [[scatter-bokeh-dof]] — premultiplied additive blend + 最终除法归一的近似 OIT，用于 scatter bokeh 精灵累加
+- [[sprite-shaders-unity]] —— Unity sprite shader 的透明三件套起点
+- [[ronja-bohm]] —— 2018 年第 006 篇教程：Unity `Queue=Transparent` + `Blend SrcAlpha OneMinusSrcAlpha` + `ZWrite Off`
 
 ## Sources
 
 - [[sources/rtr-day05]]
 - [[sources/ciechanow-alpha-compositing]]
+- [[sources/ronja-basic-transparency]]

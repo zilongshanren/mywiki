@@ -101,6 +101,7 @@ float3 col = geometry + s1 * col1 + s2 * col2;
 - [[sampling-theorem-sinc]]
 - [[volumetric-raymarching-intro]] —— raymarching 的入门与体积渲染动机
 - [[sparse-shadows-cone-tracing]] —— Brian Karis 2012：把 SDF cone trace 用于远处 specular 阴影，是 UE5 Lumen 反射架构的起点
+- [[raymarching-intro]] —— sphere tracing 的基础结构
 
 ## Sources
 

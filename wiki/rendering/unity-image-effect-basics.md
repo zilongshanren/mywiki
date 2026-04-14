@@ -1,7 +1,7 @@
 ---
 tags: [rendering, shader, unity, post-processing, tutorial]
 date: 2026-04-14
-sources: 7
+sources: 10
 ---
 
 # Unity Image Effect 基础（Built-in 管线）
@@ -57,6 +57,10 @@ URP 和 HDRP 放弃了 `OnRenderImage` 回调，原因包括移动端上连续 b
 - [[daniel-ilett]]
 - [[image-effect-mask-blend]] —— 用第二张灰度纹理把全屏后处理限制到局部
 - [[uv-displacement-image-effect]] —— UV 位移类后处理（冲击波 / 水波 / 热浪）
+- [[sobel-edge-detection]] —— 3x3 卷积核提取屏幕空间边缘
+- [[bloom-threshold-blur-composite]] —— 阈值/模糊/合成三步简易 Bloom
+- [[color-quantization-retro]] —— NES/SNES/GB 颜色量化与像素化
+- [[kuwahara-filter]] —— 保边的油画风格化滤镜
 
 ## Sources
 
@@ -71,3 +75,6 @@ URP 和 HDRP 放弃了 `OnRenderImage` 回调，原因包括移动端上连续 b
 - [[sources/halisavakis-image-effects-grabpass]]
 - [[sources/halisavakis-image-effects-simple-displacement]]
 - [[sources/halisavakis-image-effects-waving-displacement]]
+- [[sources/danielilett-image-effects-edge-detection-bloom]]
+- [[sources/danielilett-image-effects-retro-crt]]
+- [[sources/danielilett-image-effects-kuwahara]]

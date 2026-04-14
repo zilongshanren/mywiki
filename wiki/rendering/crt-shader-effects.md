@@ -54,6 +54,7 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 - [[cyanilux]]
 - [[chromatic-aberration-post]] —— 独立通道 UV 偏移，Teleglitch / Deadlight 的故障艺术后处理
 - [[sources/alanzucconi-flixel-retro-crt]] —— Alan Zucconi 2012 年的 Flixel/AS3 版本，CPU `BitmapData.copyChannel` + 矩阵微缩放在 Flash 时代实现的 RGB 通道错位
+- [[color-quantization-retro]] —— NES/SNES/GB 色阶量化与像素化下采样
 
 ## Sources
 

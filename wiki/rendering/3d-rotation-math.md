@@ -84,3 +84,4 @@ Xor 的总结一句话：**旋转总是发生在某一个平面上**。2D 里只
 - [[sources/xor-mini-3d-rotation]]
 - [[sources/slater-exponential-rotations]] — Max Slater 用 $\exp/\log$ 把 Rodrigues 公式推到李代数视角
 - [[sources/3dgep-math-primer-matrices]] —— 给出绕 X/Y/Z 轴的标准 4×4 旋转矩阵和 Rodrigues 形式的展开
+- [[sources/xor-mini-rotation]] —— Xor 2022 年讲 2D 旋转推导与 3D 按对轴叠加的前置教程

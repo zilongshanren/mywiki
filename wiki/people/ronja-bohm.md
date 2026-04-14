@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, shader, unity]
 date: 2026-04-14
-sources: 10
+sources: 15
 ---
 
 # Ronja Böhm（Ferris Systems）
@@ -42,6 +42,11 @@ sources: 10
 - [[jump-flooding-algorithm]]
 - [[fragment-shader]]
 - [[linden-reid]] —— 同赛道的另一位 Unity shader 教程作者
+- [[sprite-shaders-unity]] —— 第 007 篇教程抽出的 Unity sprite shader 概念
+- [[shader-color-interpolation]] —— 第 009 篇的 lerp / 凸组合推导
+- [[procedural-checkerboard]] —— 第 011 篇的程序化棋盘
+- [[alpha-blending]] —— 第 006 篇 Basic Transparency
+- [[triplanar-mapping]] —— 第 010 篇 Triplanar
 
 ## Sources
 
@@ -55,3 +60,8 @@ sources: 10
 - [[sources/ronja-variables]]
 - [[sources/ronja-basic-shader]]
 - [[sources/ronja-surface-shader-basics]]
+- [[sources/ronja-basic-transparency]]
+- [[sources/ronja-sprite-shaders]]
+- [[sources/ronja-color-interpolation]]
+- [[sources/ronja-triplanar-mapping]]
+- [[sources/ronja-checkerboard-pattern]]

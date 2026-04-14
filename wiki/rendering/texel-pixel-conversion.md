@@ -35,6 +35,7 @@ vec2 new_coords = pixel * u_texel;         // 像素 → 纹理
 - [[coordinate-spaces]]
 - [[shader-vector-math-primer]]
 - [[xor-shader-artist]]
+- [[two-texture-sampling-tricks]] —— atlas 下的 UV 归一化与多纹理采样
 
 ## Sources
 

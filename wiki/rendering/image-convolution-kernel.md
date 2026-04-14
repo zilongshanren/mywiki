@@ -64,6 +64,8 @@ Image effect 默认沿用 Clamp，一般不需要改。
 - [[unity-image-effect-basics]]
 - [[fragment-shader]]
 - [[sampler-filter-wrap-modes]]
+- [[sobel-edge-detection]] —— 不可合并的一对 3x3 方向核
+- [[kuwahara-filter]] —— 非线性
 
 ## Sources
 

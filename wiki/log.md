@@ -333,3 +333,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-22 Worker BN (fgiesen.wordpress.com 2010-10 ×5)
 
 处理 5 篇 ryg 2010 年 10 月的技术文章：环检测算法、64 位平台小坑、视锥剔除（两篇合并）、shader 数学化简清单。新增 4 概念页（cycle-detection-floyd-brent、x64-platform-tidbits、view-frustum-culling-ryg、hlsl-derivation-correctness）、5 source 摘要。fabian-giesen 人物页已存在，仅补 5 条 source 链接。frustum 两篇合并成一页是按 P9 指示。
+
+## [2026-04-14] ingest | Wave-23 Worker BO (danielilett.com image effects 4/5/6)
+
+处理 Daniel Ilett Image Effects 系列 Part 4/5/6：Sobel 边缘检测 + 简易 Bloom、NES/SNES/GB 色彩量化 + CRT 扫描线、Kuwahara 油画滤镜。新增 4 个概念页（sobel-edge-detection, bloom-threshold-blur-composite, color-quantization-retro, kuwahara-filter）和 3 个 source 摘要。按指令跳过 Part 7 wrapping-up 与 cel-shading-introduction 两篇 meta 文章。对 daniel-ilett、unity-image-effect-basics、image-convolution-kernel、crt-shader-effects、retro-rendering-techniques 五个既有页面做反向链接 patch。
+
+## [2026-04-14] ingest | Wave-23 Worker BP (ronja-tutorials.com 006-011 ×5)
+
+处理 ronja-tutorials.com 2018-04 到 2018-05 的 shader 系列 006/007/009/010/011 共 5 篇。新增 3 概念页（sprite-shaders-unity、shader-color-interpolation、procedural-checkerboard），5 份 source 摘要。basic-transparency 命中 alpha-blending、triplanar 命中 triplanar-mapping，均走 patch。ronja-bohm 人物页已存在，补 patch 追加 5 个 source 与新概念链接（sources 10→15）。
+
+## [2026-04-14] ingest | Wave-23 Worker BQ (Xor GM Shaders ×5)
+
+处理 5 篇 Xor/mini.gmshaders.com 教程：raymarching、mini-rotation、mini-two-textures、mini-shadertoy、fractal-texturing。新增 4 个概念页（raymarching-intro、two-texture-sampling-tricks、shadertoy-basics、fractal-texturing）和 5 个 source summary。Mini: Rotation 仅打补丁到现有 [[3d-rotation-math]]。对 xor-shader-artist、volumetric-raymarching-intro、sdf-ray-marched-shadows、texel-pixel-conversion 发起交叉链接补丁。

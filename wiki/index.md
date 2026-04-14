@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 251
+sources: 264
 ---
 
 # 知识库索引
@@ -344,6 +344,17 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[scatter-bokeh-dof]] | _The Witcher 2_ 的散射式 bokeh 景深：点精灵 + vertex shader 放大 + premultiplied additive 累加 |
 | [[view-frustum-culling-ryg]] | ryg 的 AABB-vs-frustum 方法链：从 8 顶点到 SPU ≈24 cycle/box 的 SIMD p/n-vertex |
 | [[hlsl-derivation-correctness]] | 写完 shader 数学后的 5 分钟检查单：对称性 / 避角度 / 反三角恒等式 / 避数值微分 |
+| [[sobel-edge-detection]] | Sobel-Feldman 算子：屏幕空间边缘检测与 Neon 掩膜 |
+| [[bloom-threshold-blur-composite]] | 简易 Bloom 三步：阈值 + 模糊 + 合成，UsePass 跨 shader 复用 |
+| [[color-quantization-retro]] | NES/SNES/GB 色彩量化 + 像素化下采样 + FilterMode.Point |
+| [[kuwahara-filter]] | Kuwahara 保边非线性滤镜：油画/笔刷风格化 |
+| [[sprite-shaders-unity]] | Unity sprite shader：Cull Off + 顶点色 + 透明三件套 |
+| [[shader-color-interpolation]] | shader 颜色插值：加法错误、凸组合、`lerp` 与 mask-driven 混合 |
+| [[procedural-checkerboard]] | 程序化棋盘：`floor + frac*2` 量化 → 奇偶 → 多维求和 |
+| [[raymarching-intro]] | Xor：sphere-assisted ray marching 的 SDF 入门 |
+| [[two-texture-sampling-tricks]] | Xor：texture atlas 下的 UV 归一化与跨贴图映射 |
+| [[shadertoy-basics]] | Xor：ShaderToy 格式与移植到游戏引擎的清单 |
+| [[fractal-texturing]] | Xor：按深度离散缩放并 blend 的一致 LOD 技巧 |
 
 ## 经典案例（wiki/examples/）
 
@@ -674,6 +685,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/ryg-view-frustum-culling]] | ryg：AABB-vs-frustum 方法链，从 baseline 到 SPU SIMD |
 | [[sources/ryg-frustum-culling-notes]] | ryg：culling 层级设计、cone vs frustum、clip-space 2D bbox 的多用途 |
 | [[sources/ryg-finish-your-derivations]] | ryg：写完 shader 数学的 5 分钟检查单，Oren-Nayar 化简为示范 |
+| [[sources/danielilett-image-effects-edge-detection-bloom]] | Ilett：Image Effects Part 4 - Sobel 边缘检测 + 简易 Bloom |
+| [[sources/danielilett-image-effects-retro-crt]] | Ilett：Image Effects Part 5 - NES/SNES/GB 颜色量化 + CRT 扫描线 |
+| [[sources/danielilett-image-effects-kuwahara]] | Ilett：Image Effects Part 6 - Kuwahara 油画滤镜 |
+| [[sources/ronja-basic-transparency]] | Ronja：Unity 透明 shader 的 Queue+Blend+ZWrite 三件套 |
+| [[sources/ronja-sprite-shaders]] | Ronja：Cull Off + 顶点色让透明 shader 变 sprite shader |
+| [[sources/ronja-color-interpolation]] | Ronja：lerp 的凸组合推导与 mask-driven 混合 |
+| [[sources/ronja-triplanar-mapping]] | Ronja：手写 triplanar，含法线逆转置矩阵推导 |
+| [[sources/ronja-checkerboard-pattern]] | Ronja：floor+frac 量化奇偶生成程序化棋盘 |
+| [[sources/xor-mini-raymarching]] | Xor：sphere-traced raymarching 入门 |
+| [[sources/xor-mini-rotation]] | Xor：从 2D 三角到 3D 欧拉角的 shader 旋转入门 |
+| [[sources/xor-mini-two-textures]] | Xor：GameMaker texture page 与 UV 归一化 |
+| [[sources/xor-mini-shadertoy]] | Xor：ShaderToy 移植到 GameMaker 的清单 |
+| [[sources/xor-mini-fractal-texturing]] | Xor：按深度离散缩放 UV 的一致细节技巧 |
 
 ## 元（wiki/meta/）
 

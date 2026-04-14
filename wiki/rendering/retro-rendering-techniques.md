@@ -45,6 +45,7 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[dither-alpha-clipping]] —— dither 在 alpha 通道上的同源用法
 - [[coordinate-spaces]] —— vertex snapping 选哪个空间
 - [[sampler-filter-wrap-modes]] —— point / 双线性 / 各向异性的完整对比
+- [[color-quantization-retro]] —— NES/SNES/GB 整数截断量化与 Game Boy 色阶级联 lerp
 
 ## Sources
 

@@ -1,0 +1,140 @@
+{
+  "batch_id": "batch-w23-bp",
+  "agent_note": "ronja-tutorials.com 系列 006/007/009/010/011 共 5 篇（2018-04 到 2018-05）。basic-transparency 命中已存在的 alpha-blending，走 patch + source-only；triplanar-mapping 命中已存在（Cyan 版），走 patch + source-only。新增 3 个概念页：sprite-shaders-unity（007）、shader-color-interpolation（009，含加法错误→凸组合→lerp 的完整推导）、procedural-checkerboard（011）。ronja-bohm 人物页已存在，只补 patch 追加 5 个 source 链接和新概念页。5 份 source 摘要全部新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-04-06_basic-transparency.md",
+      "status": "ingested",
+      "source_slug": "ronja-basic-transparency",
+      "title": "Basic Transparency"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-04-13_sprite-shaders.md",
+      "status": "ingested",
+      "source_slug": "ronja-sprite-shaders",
+      "title": "Sprite Shaders"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-05-03_color-interpolation.md",
+      "status": "ingested",
+      "source_slug": "ronja-color-interpolation",
+      "title": "Color Interpolation"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-05-11_triplanar-mapping.md",
+      "status": "ingested",
+      "source_slug": "ronja-triplanar-mapping",
+      "title": "Triplanar Mapping"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-05-18_checkerboard-pattern.md",
+      "status": "ingested",
+      "source_slug": "ronja-checkerboard-pattern",
+      "title": "Checkerboard Pattern"
+    }
+  ],
+  "concepts_created": [
+    "sprite-shaders-unity",
+    "shader-color-interpolation",
+    "procedural-checkerboard"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "ronja-basic-transparency",
+    "ronja-sprite-shaders",
+    "ronja-color-interpolation",
+    "ronja-triplanar-mapping",
+    "ronja-checkerboard-pattern"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sprite-shaders-unity]] —— Unity sprite shader 的透明三件套起点\n- [[ronja-bohm]] —— 2018 年第 006 篇教程：Unity `Queue=Transparent` + `Blend SrcAlpha OneMinusSrcAlpha` + `ZWrite Off`"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-basic-transparency]]"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/rendering/triplanar-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ronja-bohm]] —— 2018 年第 010 篇教程：手写 vertex/fragment 版 triplanar，含 object→world 法线的逆转置矩阵推导"
+    },
+    {
+      "file": "wiki/rendering/triplanar-mapping.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-triplanar-mapping]]"
+    },
+    {
+      "file": "wiki/rendering/triplanar-mapping.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/people/ronja-bohm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sprite-shaders-unity]] —— 第 007 篇教程抽出的 Unity sprite shader 概念\n- [[shader-color-interpolation]] —— 第 009 篇的 lerp / 凸组合推导\n- [[procedural-checkerboard]] —— 第 011 篇的程序化棋盘\n- [[alpha-blending]] —— 第 006 篇 Basic Transparency\n- [[triplanar-mapping]] —— 第 010 篇 Triplanar"
+    },
+    {
+      "file": "wiki/people/ronja-bohm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-basic-transparency]]\n- [[sources/ronja-sprite-shaders]]\n- [[sources/ronja-color-interpolation]]\n- [[sources/ronja-triplanar-mapping]]\n- [[sources/ronja-checkerboard-pattern]]"
+    },
+    {
+      "file": "wiki/people/ronja-bohm.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 15"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sprite-shaders-unity]] | Unity sprite shader：Cull Off + 顶点色 + 透明三件套 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-color-interpolation]] | shader 颜色插值：加法错误、凸组合、`lerp` 与 mask-driven 混合 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-checkerboard]] | 程序化棋盘：`floor + frac*2` 量化 → 奇偶 → 多维求和 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-basic-transparency]] | Ronja：Unity 透明 shader 的 Queue+Blend+ZWrite 三件套 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-sprite-shaders]] | Ronja：Cull Off + 顶点色让透明 shader 变 sprite shader |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-color-interpolation]] | Ronja：lerp 的凸组合推导与 mask-driven 混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-triplanar-mapping]] | Ronja：手写 triplanar，含法线逆转置矩阵推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-checkerboard-pattern]] | Ronja：floor+frac 量化奇偶生成程序化棋盘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-23 Worker BP (ronja-tutorials.com 006-011 ×5)\n\n处理 ronja-tutorials.com 2018-04 到 2018-05 的 shader 系列 006/007/009/010/011 共 5 篇。新增 3 概念页（sprite-shaders-unity、shader-color-interpolation、procedural-checkerboard），5 份 source 摘要。basic-transparency 命中 alpha-blending、triplanar 命中 triplanar-mapping，均走 patch。ronja-bohm 人物页已存在，补 patch 追加 5 个 source 与新概念链接（sources 10→15）。"
+}
