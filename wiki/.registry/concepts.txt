@@ -15,6 +15,7 @@ apoorva-joshi
 applicative-vs-normal-order
 aras-pranckevicius
 automatic-differentiation
+avoid-unsigned-types
 bartosz-ciechanowski
 bartosz-wronski
 batching
@@ -64,6 +65,7 @@ cpp-runtime-reflection
 cpu-performance-formula
 creative-coding-process
 crt-shader-effects
+cubic-equation-solver-hlsl
 cuda-memory-hierarchy
 culling
 custom-srp
@@ -84,6 +86,7 @@ depth-texture-silhouette
 diamond-square-noise
 diffraction-grating-shader
 diffuse-lighting-lambertian
+directx11-early-pitfalls
 display-edid-colorspace
 dither-alpha-clipping
 draw-call
@@ -144,6 +147,7 @@ hero-wavelength-spectral-sampling
 hierarchical-rasterization
 hierarchical-z-buffer
 higher-order-functions
+homogeneous-rasterization-transpose-bug
 hsr-tbdr
 hybrid-raytracing-pipeline
 iir-filter-deconvolution
@@ -201,6 +205,7 @@ mvp-transform
 needlets
 night-time-tint-shader
 non-cryptographic-hash
+non-linearly-quantized-msm
 normal-decal-edge-blending
 normal-map-blending
 nsdictionary-linear-probing
@@ -210,6 +215,7 @@ obscurity
 occlusion-culling
 oklab-color-space
 openexr-format
+opengl-loader
 order-of-growth
 orthographic-depth
 overdraw
@@ -293,6 +299,7 @@ tactical-programming
 tactical-tornado
 tail-call-optimization
 tangent-free-normal-mapping
+tangent-space-normal-mapping
 taste-development
 tbdr-vs-imr
 temporal-antialiasing

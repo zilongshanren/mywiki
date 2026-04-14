@@ -18,7 +18,13 @@ sources: 1
 
 - [[environment-probe-placement]]
 - [[rendering-pipeline]]
+- [[directx11-early-pitfalls]]
+- [[homogeneous-rasterization-transpose-bug]]
+- [[avoid-unsigned-types]]
 
 ## Sources
 
 - [[sources/chajdas-assisted-probe-placement]]
+- [[sources/anteru-directx11-hints]]
+- [[sources/anteru-homogeneous-rasterization-gotcha]]
+- [[sources/anteru-avoid-unsigned-types]]

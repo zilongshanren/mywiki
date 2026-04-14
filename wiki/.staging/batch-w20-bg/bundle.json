@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w20-bg",
+  "agent_note": "anteru.net 2010 早期 5 篇：跳过 XP retail/OEM hack 与 Bazaar VCS 推荐 2 篇非主题；ingest 3 篇——DX11 早期踩坑笔记、齐次坐标光栅化转置 bug、unsigned 类型默认避免。matthaeus-chajdas 已存在，仅追加新 source 链接补丁。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2010-01-18_changing-xp-from-retail-to-oem.md",
+      "status": "skipped_offtopic",
+      "reason": "Windows XP retail->OEM 注册激活 hack，与软件工程 / 渲染 / 引擎 / 系统主题无关（按任务指示跳过）"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-03-01_directx11-hints.md",
+      "status": "ingested",
+      "source_slug": "anteru-directx11-hints",
+      "title": "DirectX11 hints"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-03-08_bazaar-for-version-control.md",
+      "status": "skipped_offtopic",
+      "reason": "2010 年对 Bazaar VCS 的个人推荐，工具早已边缘化，且无可复用的工程洞见（按任务指示跳过）"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-05-03_triangle-rasterization-in-homogeneous-coordinates-gotcha.md",
+      "status": "ingested",
+      "source_slug": "anteru-homogeneous-rasterization-gotcha",
+      "title": "Triangle rasterization in homogeneous coordinates gotcha"
+    },
+    {
+      "path": "raw/articles/anteru.net/2010-05-17_avoid-unsigned-types-by-default.md",
+      "status": "ingested",
+      "source_slug": "anteru-avoid-unsigned-types",
+      "title": "Avoid unsigned types by default"
+    }
+  ],
+  "concepts_created": [
+    "directx11-early-pitfalls",
+    "homogeneous-rasterization-transpose-bug",
+    "avoid-unsigned-types"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "anteru-directx11-hints",
+    "anteru-homogeneous-rasterization-gotcha",
+    "anteru-avoid-unsigned-types"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-directx11-hints]]\n- [[sources/anteru-homogeneous-rasterization-gotcha]]\n- [[sources/anteru-avoid-unsigned-types]]"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[directx11-early-pitfalls]]\n- [[homogeneous-rasterization-transpose-bug]]\n- [[avoid-unsigned-types]]"
+    },
+    {
+      "file": "wiki/rendering/triangle-setup.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[homogeneous-rasterization-transpose-bug]] — 齐次坐标 setup 矩阵的转置陷阱"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[directx11-early-pitfalls]] | DX11 早期开发踩坑：tessellation / compute / HLSL 工程笔记 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[homogeneous-rasterization-transpose-bug]] | 齐次坐标三角形光栅化中 setup 矩阵被转置导致的 z 插值 bug |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[avoid-unsigned-types]] | 默认避免 C++ unsigned 类型：保住 sanity check 的能力 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-directx11-hints]] | Chajdas：DirectX 11 早期开发踩坑笔记（tessellation / CS / HLSL） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-homogeneous-rasterization-gotcha]] | Chajdas：齐次坐标三角形光栅化的转置陷阱与 debug 教训 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-avoid-unsigned-types]] | Chajdas：默认避免 C++ unsigned 类型（重述 Scott Meyers 论点） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-20 Worker BG (anteru.net 2010 ×5)\n\n处理 anteru.net 2010 年 5 篇早期文章。Ingest 3 篇技术内容：DX11 早期踩坑笔记 → [[directx11-early-pitfalls]]，齐次坐标光栅化转置 bug → [[homogeneous-rasterization-transpose-bug]]（与 [[triangle-setup]] 互链），默认避免 unsigned 类型 → [[avoid-unsigned-types]]。新增 3 个 source 摘要，并为已有的 [[matthaeus-chajdas]] 人物页追加 3 个新作品链接。跳过 XP retail/OEM hack 与 Bazaar VCS 推荐 2 篇（非主题或工具已过时）。"
+}

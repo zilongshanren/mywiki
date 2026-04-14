@@ -74,6 +74,7 @@ Nsight 指标显示优化后 **FMA pipe 吞吐率 78%**、**L2 吞吐率低**，
 - [[register-spilling-avoidance]] — 更系统的 spill 规避手册
 - [[gpu-printf-debugging]] — shader 优化离不开 profiling
 - [[christoph-peters]]
+- [[cubic-equation-solver-hlsl]] — 度 3 的闭式 HLSL 子例程，工具箱的另一端
 
 ## Sources
 

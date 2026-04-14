@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w20-bf",
+  "agent_note": "Wave-20 BF: 5 momentsingraphics.de articles, all Peters MSM-related extensions. 2 new concept pages (cubic-equation-solver-hlsl, non-linearly-quantized-msm) capture distinct novel material; the GDCE talk + JCGT2016 demo + JCGT2017 paper are recorded as source summaries with patches to existing moment-shadow-mapping page. christoph-peters person page already exists and was extended with 5 additional source links via patch.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-01-01_rendering-antialiased-shadows-with-moment-shadow-mapping.md",
+      "status": "ingested",
+      "source_slug": "peters-msm-gdce2016-talk",
+      "title": "Rendering Antialiased Shadows with Moment Shadow Mapping (GDCE 2016 talk)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-09-10_how-to-solve-a-cubic-equation-revisited.md",
+      "status": "ingested",
+      "source_slug": "peters-cubic-equation-revisited",
+      "title": "How to Solve a Cubic Equation, Revisited"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2016-09-25_new-shadow-demo-with-documented-hlsl-code.md",
+      "status": "ingested",
+      "source_slug": "peters-msm-jcgt2016-demo",
+      "title": "New Shadow Demo with Documented HLSL Code (MSMDemoV2)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2017-01-01_improved-moment-shadow-maps-for-translucent-occluders-soft-s.md",
+      "status": "ingested",
+      "source_slug": "peters-improved-msm-jcgt2017",
+      "title": "Improved Moment Shadow Maps for Translucent Occluders, Soft Shadows and Single Scattering (JCGT 2017)"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2017-01-01_non-linearly-quantized-moment-shadow-maps.md",
+      "status": "ingested",
+      "source_slug": "peters-non-linearly-quantized-msm",
+      "title": "Non-linearly Quantized Moment Shadow Maps (HPG 2017)"
+    }
+  ],
+  "concepts_created": [
+    "cubic-equation-solver-hlsl",
+    "non-linearly-quantized-msm"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "peters-msm-gdce2016-talk",
+    "peters-cubic-equation-revisited",
+    "peters-msm-jcgt2016-demo",
+    "peters-improved-msm-jcgt2017",
+    "peters-non-linearly-quantized-msm"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/moment-shadow-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[non-linearly-quantized-msm]] — 64/32 bit 非线性量化 + on-chip compute filtering（HPG 2017）\n- [[cubic-equation-solver-hlsl]] — 解码端的三次方程闭式 HLSL 子例程"
+    },
+    {
+      "file": "wiki/rendering/moment-shadow-mapping.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/peters-msm-gdce2016-talk]]\n- [[sources/peters-msm-jcgt2016-demo]]\n- [[sources/peters-improved-msm-jcgt2017]]\n- [[sources/peters-non-linearly-quantized-msm]]\n- [[sources/peters-cubic-equation-revisited]]"
+    },
+    {
+      "file": "wiki/rendering/polynomial-root-finding-gpu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cubic-equation-solver-hlsl]] — 度 3 的闭式 HLSL 子例程，工具箱的另一端"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/peters-msm-gdce2016-talk]]\n- [[sources/peters-cubic-equation-revisited]]\n- [[sources/peters-msm-jcgt2016-demo]]\n- [[sources/peters-improved-msm-jcgt2017]]\n- [[sources/peters-non-linearly-quantized-msm]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cubic-equation-solver-hlsl]]\n- [[non-linearly-quantized-msm]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cubic-equation-solver-hlsl]] | Peters 的 ~30 行 HLSL 三次方程闭式求解（三实根专用，2× Blinn 速度） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[non-linearly-quantized-msm]] | 非线性量化 MSM：64/32 bit + on-chip compute Gaussian filter（HPG 2017） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-msm-gdce2016-talk]] | Peters：GDCE 2016 一小时 MSM 落地讲座 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-cubic-equation-revisited]] | Peters：HLSL 三次方程快速闭式解（2016） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-msm-jcgt2016-demo]] | Peters：MSMDemoV2，带文档的 HLSL shadow demo（2016-09） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-improved-msm-jcgt2017]] | Peters et al.：MSM 三类应用 + 改进（JCGT 2017） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-non-linearly-quantized-msm]] | Peters：非线性量化 MSM 与 on-chip compute filtering（HPG 2017） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-20 Worker BF (momentsingraphics.de ×5, MSM extensions)\n\n处理 5 篇 momentsingraphics.de 上 Christoph Peters 关于 moment shadow mapping 的扩展工作：GDCE 2016 讲座、cubic equation 快速 HLSL 求解、JCGT 2016 demo 发布、JCGT 2017 改进论文、HPG 2017 非线性量化论文。新增 2 个概念页（cubic-equation-solver-hlsl、non-linearly-quantized-msm），5 个源摘要页，并对 moment-shadow-mapping、polynomial-root-finding-gpu、christoph-peters 三页打补丁补全相关与 sources 链接。"
+}

@@ -20,14 +20,20 @@ sources: 2
 |---|---|
 | The experiment | [[calling-conventions-x86]] |
 | Zooming and panning | [[gpu-image-editor-brush]] |
+| What is OpenGL loading? | [[opengl-loader]] |
+| Normal Mapping | [[tangent-space-normal-mapping]] |
 
 ## 相关
 
 - [[calling-conventions-x86]]
 - [[gpu-image-editor-brush]]
 - [[fragment-shader]]
+- [[opengl-loader]]
+- [[tangent-space-normal-mapping]]
 
 ## Sources
 
 - [[sources/apoorvaj-calling-conventions]]
 - [[sources/apoorvaj-zooming-and-panning]]
+- [[sources/apoorvaj-opengl-loading]]
+- [[sources/apoorvaj-normal-mapping]]

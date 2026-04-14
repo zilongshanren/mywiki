@@ -48,8 +48,15 @@ MSM 的承诺是：**用 VSM 的存储预算拿到接近 ray-traced 硬阴影的
 - [[polynomial-root-finding-gpu]] — MSM 解码需要的稳定求根
 - [[spectral-rendering]] — 同作者的另一个「矩方法」应用
 - [[volumetric-fog-froxels]] — single scattering 的邻近话题
+- [[non-linearly-quantized-msm]] — 64/32 bit 非线性量化 + on-chip compute filtering（HPG 2017）
+- [[cubic-equation-solver-hlsl]] — 解码端的三次方程闭式 HLSL 子例程
 
 ## Sources
 
 - [[sources/peters-moment-shadow-mapping]]
 - [[sources/peters-beyond-hard-shadows-msm]]
+- [[sources/peters-msm-gdce2016-talk]]
+- [[sources/peters-msm-jcgt2016-demo]]
+- [[sources/peters-improved-msm-jcgt2017]]
+- [[sources/peters-non-linearly-quantized-msm]]
+- [[sources/peters-cubic-equation-revisited]]

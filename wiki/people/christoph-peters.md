@@ -35,6 +35,8 @@ sources: 3
 - [[projected-solid-angle-sampling]]
 - [[moment-shadow-mapping]]
 - [[trigonometric-moment-transient-imaging]]
+- [[cubic-equation-solver-hlsl]]
+- [[non-linearly-quantized-msm]]
 
 ## Sources
 
@@ -45,3 +47,8 @@ sources: 3
 - [[sources/peters-moment-shadow-mapping]]
 - [[sources/peters-beyond-hard-shadows-msm]]
 - [[sources/peters-trigonometric-moment-transient-imaging]]
+- [[sources/peters-msm-gdce2016-talk]]
+- [[sources/peters-cubic-equation-revisited]]
+- [[sources/peters-msm-jcgt2016-demo]]
+- [[sources/peters-improved-msm-jcgt2017]]
+- [[sources/peters-non-linearly-quantized-msm]]

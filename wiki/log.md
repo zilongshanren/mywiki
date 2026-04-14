@@ -297,3 +297,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-19 Worker BE (giordi91.github.io Marco Giordano ×3)
 
 处理 Marco Giordano (giordi91) 的 3 篇博客：Rust 反汇编导览、GPU 驱动草地、句柄式资源管理。全部 ingest，新增 1 人物页（marco-giordano）、3 概念页（rust-disassembly-tour / gpu-driven-grass-tiles / handle-based-resource-manager）、3 source 摘要。新概念页与既有的 deferred-grass-shader / resource-system-design 形成『同题不同解』对照组，双向 patch 交叉链接；另外 patch culling / alan-zucconi / kostas-anagnostou 追加引用。
+
+## [2026-04-14] ingest | Wave-20 Worker BF (momentsingraphics.de ×5, MSM extensions)
+
+处理 5 篇 momentsingraphics.de 上 Christoph Peters 关于 moment shadow mapping 的扩展工作：GDCE 2016 讲座、cubic equation 快速 HLSL 求解、JCGT 2016 demo 发布、JCGT 2017 改进论文、HPG 2017 非线性量化论文。新增 2 个概念页（cubic-equation-solver-hlsl、non-linearly-quantized-msm），5 个源摘要页，并对 moment-shadow-mapping、polynomial-root-finding-gpu、christoph-peters 三页打补丁补全相关与 sources 链接。
+
+## [2026-04-14] ingest | Wave-20 Worker BG (anteru.net 2010 ×5)
+
+处理 anteru.net 2010 年 5 篇早期文章。Ingest 3 篇技术内容：DX11 早期踩坑笔记 → [[directx11-early-pitfalls]]，齐次坐标光栅化转置 bug → [[homogeneous-rasterization-transpose-bug]]（与 [[triangle-setup]] 互链），默认避免 unsigned 类型 → [[avoid-unsigned-types]]。新增 3 个 source 摘要，并为已有的 [[matthaeus-chajdas]] 人物页追加 3 个新作品链接。跳过 XP retail/OEM hack 与 Bazaar VCS 推荐 2 篇（非主题或工具已过时）。
+
+## [2026-04-14] ingest | Wave-20 Worker BH (apoorvaj.io ×5)
+
+处理 apoorvaj.io 5 篇。Ingest 2 篇技术贴：what-is-opengl-loading（X-macro 手写 GL loader 取代 GLEW）、normal-mapping（切线空间 TBN + 视差家族）。新增 2 概念页（opengl-loader, tangent-space-normal-mapping）、2 source 摘要。Skip 3 篇：cross-platform-consistency（按指令重复 skip）、before-we-begin / acknowledgements（meta）。补丁更新 apoorva-joshi 人物页与三张相邻法线贴图概念页。

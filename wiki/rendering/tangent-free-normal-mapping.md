@@ -41,6 +41,7 @@ $$
 - [[fragment-shader]]
 - [[compact-vertex-format]] —— 另一个从顶点格式里省字节的角度
 - [[microfacet-brdf]]
+- [[tangent-space-normal-mapping]] —— 传统的预计算 TBN 方案，本页是它的 derivative-based 替代
 
 ## Sources
 

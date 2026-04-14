@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 219
+sources: 229
 ---
 
 # 知识库索引
@@ -74,6 +74,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[automatic-differentiation]] | autodiff 全景：dual number forward / DAG backward / JAX 梯度即图变换 |
 | [[cantor-szudzik-pairing]] | Cantor 与 Szudzik 两种 2D → 1D 配对函数的对比 |
 | [[lua-cpp-binding]] | 手写最小的 Lua/C++ 嵌入封装：栈式 API、点路径取值、表遍历、pcall 调函数 |
+| [[avoid-unsigned-types]] | 默认避免 C++ unsigned 类型：保住 sanity check 的能力 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -322,6 +323,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[variable-length-bresenham]] | 支持"从起点沿方向走 range 步"的展开版 Bresenham |
 | [[performance-conscious-webgl]] | WebGL 实例化渲染中的三个 JS 性能陷阱（Float32Array.set / 字符串 key / super） |
 | [[gpu-driven-grass-tiles]] | Marco Giordano：蓝噪声预烘焙 + vertex 扩展 + compute culling + 间接绘制的 GPU 驱动草地方案 |
+| [[cubic-equation-solver-hlsl]] | Peters 的 ~30 行 HLSL 三次方程闭式求解（三实根专用，2× Blinn 速度） |
+| [[non-linearly-quantized-msm]] | 非线性量化 MSM：64/32 bit + on-chip compute Gaussian filter（HPG 2017） |
+| [[directx11-early-pitfalls]] | DX11 早期开发踩坑：tessellation / compute / HLSL 工程笔记 |
+| [[homogeneous-rasterization-transpose-bug]] | 齐次坐标三角形光栅化中 setup 矩阵被转置导致的 z 插值 bug |
+| [[opengl-loader]] | OpenGL 为何不能静态链接，及手写 X-macro loader 的取舍 |
+| [[tangent-space-normal-mapping]] | 切线空间 TBN 推导 + parallax / steep / POM 视差家族 |
 
 ## 经典案例（wiki/examples/）
 
@@ -618,6 +625,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/giordi91-rust-disassembly-part-1]] | Marco Giordano：Rust 语言特性反汇编导览 |
 | [[sources/giordi91-grass-shader]] | Marco Giordano：GPU 驱动瓦片化草地系统 |
 | [[sources/giordi91-handle-resource-management]] | Marco Giordano：句柄 + manager 式资源管理 |
+| [[sources/peters-msm-gdce2016-talk]] | Peters：GDCE 2016 一小时 MSM 落地讲座 |
+| [[sources/peters-cubic-equation-revisited]] | Peters：HLSL 三次方程快速闭式解（2016） |
+| [[sources/peters-msm-jcgt2016-demo]] | Peters：MSMDemoV2，带文档的 HLSL shadow demo（2016-09） |
+| [[sources/peters-improved-msm-jcgt2017]] | Peters et al.：MSM 三类应用 + 改进（JCGT 2017） |
+| [[sources/peters-non-linearly-quantized-msm]] | Peters：非线性量化 MSM 与 on-chip compute filtering（HPG 2017） |
+| [[sources/anteru-directx11-hints]] | Chajdas：DirectX 11 早期开发踩坑笔记（tessellation / CS / HLSL） |
+| [[sources/anteru-homogeneous-rasterization-gotcha]] | Chajdas：齐次坐标三角形光栅化的转置陷阱与 debug 教训 |
+| [[sources/anteru-avoid-unsigned-types]] | Chajdas：默认避免 C++ unsigned 类型（重述 Scott Meyers 论点） |
+| [[sources/apoorvaj-opengl-loading]] | Joshi：从零写一个 OpenGL loader 替换 GLEW |
+| [[sources/apoorvaj-normal-mapping]] | Joshi：tangent space 法线贴图与 parallax 家族 WebGL demo |
 
 ## 元（wiki/meta/）
 

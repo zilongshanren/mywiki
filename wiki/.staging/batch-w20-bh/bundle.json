@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w20-bh",
+  "agent_note": "apoorvaj.io 5 篇：2 篇有料技术贴（OpenGL loading、Normal mapping）已 ingest；cross-platform-consistency 按指令再次 skip；before-we-begin / acknowledgements 是 meta，skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/apoorvaj.io/2016-08-13_cross-platform-consistency.md",
+      "status": "skipped_offtopic",
+      "reason": "按 batch 指令：上一波已 skip，本波继续 skip"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2016-08-20_what-is-opengl-loading.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-opengl-loading",
+      "title": "What is OpenGL loading?"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2016-11-30_before-we-begin.md",
+      "status": "skipped_offtopic",
+      "reason": "meta / 系列开篇导言，无技术内容"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2017-03-04_normal-mapping.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-normal-mapping",
+      "title": "Normal Mapping"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2017-09-25_acknowledgements.md",
+      "status": "skipped_offtopic",
+      "reason": "meta / 致谢页，无技术内容"
+    }
+  ],
+  "concepts_created": ["opengl-loader", "tangent-space-normal-mapping"],
+  "people_created": [],
+  "source_summaries_created": ["apoorvaj-opengl-loading", "apoorvaj-normal-mapping"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "replace_line",
+      "match": "| Zooming and panning | [[gpu-image-editor-brush]] |",
+      "content": "| Zooming and panning | [[gpu-image-editor-brush]] |\n| What is OpenGL loading? | [[opengl-loader]] |\n| Normal Mapping | [[tangent-space-normal-mapping]] |"
+    },
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-loader]]\n- [[tangent-space-normal-mapping]]"
+    },
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/apoorvaj-opengl-loading]]\n- [[sources/apoorvaj-normal-mapping]]"
+    },
+    {
+      "file": "wiki/rendering/normal-map-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tangent-space-normal-mapping]] —— 切线空间法线贴图的基础推导与视差扩展"
+    },
+    {
+      "file": "wiki/rendering/tangent-free-normal-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tangent-space-normal-mapping]] —— 传统的预计算 TBN 方案，本页是它的 derivative-based 替代"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tangent-space-normal-mapping]] —— 切线空间作为「让光照向量计算更简单」的局部坐标架"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-loader]] | OpenGL 为何不能静态链接，及手写 X-macro loader 的取舍 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tangent-space-normal-mapping]] | 切线空间 TBN 推导 + parallax / steep / POM 视差家族 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-opengl-loading]] | Joshi：从零写一个 OpenGL loader 替换 GLEW |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-normal-mapping]] | Joshi：tangent space 法线贴图与 parallax 家族 WebGL demo |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-20 Worker BH (apoorvaj.io ×5)\n\n处理 apoorvaj.io 5 篇。Ingest 2 篇技术贴：what-is-opengl-loading（X-macro 手写 GL loader 取代 GLEW）、normal-mapping（切线空间 TBN + 视差家族）。新增 2 概念页（opengl-loader, tangent-space-normal-mapping）、2 source 摘要。Skip 3 篇：cross-platform-consistency（按指令重复 skip）、before-we-begin / acknowledgements（meta）。补丁更新 apoorva-joshi 人物页与三张相邻法线贴图概念页。"
+}

@@ -40,6 +40,7 @@ sources: 1
 - [[rendering-pipeline]]
 - [[perspective-correct-interpolation]]
 - [[fabian-giesen]]
+- [[homogeneous-rasterization-transpose-bug]] — 齐次坐标 setup 矩阵的转置陷阱
 
 ## Sources
 

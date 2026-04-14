@@ -51,6 +51,7 @@ Hill 在 SM3.0 虚拟指令集上的对照：Linear / UDN 约 5 条，PD / White
 - [[3d-rotation-math]] — 最短弧四元数正是 3D 旋转的一种表示
 - [[normal-decal-edge-blending]] —— 用独立几何层承载 normal map 来掩盖低多边形 mesh 的硬边过渡
 - [[tangent-free-normal-mapping]] —— 配对优化：不再需要预计算 TBN 的 per-pixel 切线构造
+- [[tangent-space-normal-mapping]] —— 切线空间法线贴图的基础推导与视差扩展
 
 ## Sources
 
