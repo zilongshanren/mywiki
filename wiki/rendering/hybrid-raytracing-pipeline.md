@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 光线追踪, gpu, 管线]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 混合光追管线（Hybrid Ray Tracing Pipeline）
@@ -32,7 +32,9 @@ sources: 1
 - [[bindless-rendering]]
 - [[deferred-rendering]]
 - [[gknext-renderer]]
+- [[hybrid-raytraced-shadows-reflections]] —— Kostas Anagnostou 2018 年 compute shader 手写 BVH hybrid raytracer：硬阴影 + 镜面反射的早期范例
 
 ## Sources
 
 - [[sources/gameknife-gknextrenderer-yearone]]
+- [[sources/interplay-hybrid-raytraced-shadows-reflections]]

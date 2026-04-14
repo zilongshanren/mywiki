@@ -58,6 +58,8 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[skysaga-rendering-tech]] —— Meandros 引擎：token command stream + 4-RT G-Buffer + G-Buffer modification 天气系统
 - [[unreal-frame-breakdown]] —— UE4.17 默认 deferred 管线的 RenderDoc 逐 pass 拆解
 - [[hybrid-hair-rendering]] —— Wronski 的混合 deferred/forward 头发 trick，规避 fat G-Buffer 分支与 alpha-test 锯齿
+- [[valve-ambient-cube]] —— DX9 世代 deferred 管线里给动画几何填 ambient 的穷人 SH
+- [[deferred-sdf-rendering]] —— 把 SDF raymarch 的 albedo/normal/depth 写进 G-Buffer，让 SDF 与多边形共存于同一条 deferred 管线
 
 ## Sources
 
@@ -65,3 +67,5 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[sources/c0de517e-cached-shadowmaps]]
 - [[sources/elopezr-rotr-rendering]]
 - [[sources/vertexfragment-deferred-grass]]
+- [[sources/elopezr-clos2-rendering]]
+- [[sources/interplay-deferred-sdf-rendering]]

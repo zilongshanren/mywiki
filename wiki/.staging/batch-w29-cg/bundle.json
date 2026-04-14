@@ -1,0 +1,80 @@
+{
+  "batch_id": "batch-w29-cg",
+  "agent_note": "5 篇 elopezr.com：3 篇 2014 早期游戏 postmortem（match-3、the-cube、cars）按 w14 先例跳过（devlog 味浓、无技术深度）；replay-system-using-unity 为短 Unity tips，判为 skipped（内容薄、缺代码、关键意见是 shadow UnityEngine.Input + Script Execution Order，不足以支撑独立概念页）；CLOS2 frame breakdown 为高价值 AAA 帧拆解，ingested。新增 1 概念页（valve-ambient-cube）+ 1 源摘要。emilio-lopez-ros 已存在，仅追加 source 链接与风格段落。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/elopezr.com/2014-06-15_match-3.md",
+      "status": "skipped_offtopic",
+      "reason": "2014 早期 Gameloft match-3 原型 postmortem，与 w14 批次的 dragon-mania/will-of-flame 同属 devlog 风格，已约定跳过"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-06-15_replay-system-using-unity.md",
+      "status": "skipped_offtopic",
+      "reason": "短篇 Unity tips（shadow UnityEngine.Input class、Update vs FixedUpdate 的 replay 记录位置），核心观点是 Script Execution Order + 类名隐藏，技术密度不足以支撑独立概念页，且没有可复用的系统架构视角"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-06-15_the-cube.md",
+      "status": "skipped_offtopic",
+      "reason": "2014 早期益智游戏原型 postmortem，同 match-3"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2014-08-05_cars.md",
+      "status": "skipped_offtopic",
+      "reason": "2014 早期赛车原型 postmortem，同 match-3"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2015-11-28_the-rendering-of-castlevania-lords-of-shadow-2.md",
+      "status": "ingested",
+      "source_slug": "elopezr-clos2-rendering",
+      "title": "The Rendering of Castlevania: Lords of Shadow 2"
+    }
+  ],
+  "concepts_created": [
+    "valve-ambient-cube"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "elopezr-clos2-rendering"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/elopezr-clos2-rendering]]"
+    },
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "replace_line",
+      "match": "| The Rendering of Rise of the Tomb Raider | [[tiled-light-prepass]]、[[hbao-interleaved-sampling]]、[[depth-aware-upsampling]]、[[fizzle-lod-fading]]、[[volumetric-fog-froxels]] |",
+      "content": "| The Rendering of Rise of the Tomb Raider | [[tiled-light-prepass]]、[[hbao-interleaved-sampling]]、[[depth-aware-upsampling]]、[[fizzle-lod-fading]]、[[volumetric-fog-froxels]] |\n| The Rendering of Castlevania: Lords of Shadow 2 | [[valve-ambient-cube]]、[[deferred-rendering]] 的 DX9 世代实例 |"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/elopezr-clos2-rendering]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[valve-ambient-cube]] —— DX9 世代 deferred 管线里给动画几何填 ambient 的穷人 SH"
+    },
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[valve-ambient-cube]] —— 非正交的六方向紧凑表示，shader 指令更便宜，精度逊于 L2 SH"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[valve-ambient-cube]] | Valve HL2 的六方向常数环境光，SH 的穷人替代 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-clos2-rendering]] | López Ros：Castlevania LoS2 的 DX9 延迟管线逐 pass 拆解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-29 Worker CG (elopezr.com CLOS2 ×5)\n\n处理 5 篇 elopezr.com：跳过 4 篇（match-3、the-cube、cars 三篇 2014 早期 postmortem 沿袭 w14 先例；replay-system-using-unity 技术密度不足）。Ingest 1 篇：The Rendering of Castlevania: Lords of Shadow 2（2015）——DX9 世代延迟管线 + Valve Ambient Cube + box light 的 AAA 帧拆解。新增 1 概念页（valve-ambient-cube）与 1 源摘要。emilio-lopez-ros 人物页追加 source 链接与文章表条目。"
+}

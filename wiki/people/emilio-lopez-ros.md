@@ -20,6 +20,7 @@ sources: 2
 | 文章 | 贡献的概念 |
 |---|---|
 | The Rendering of Rise of the Tomb Raider | [[tiled-light-prepass]]、[[hbao-interleaved-sampling]]、[[depth-aware-upsampling]]、[[fizzle-lod-fading]]、[[volumetric-fog-froxels]] |
+| The Rendering of Castlevania: Lords of Shadow 2 | [[valve-ambient-cube]]、[[deferred-rendering]] 的 DX9 世代实例 |
 | Temporal AA and the Quest for the Holy Trail | [[temporal-antialiasing]]、[[motion-vectors]]、[[taa-history-rectification]] |
 
 ## 相关
@@ -37,3 +38,4 @@ sources: 2
 - [[sources/elopezr-will-of-flame]]
 - [[sources/elopezr-wof-editors]]
 - [[sources/elopezr-java-vector-math]]
+- [[sources/elopezr-clos2-rendering]]

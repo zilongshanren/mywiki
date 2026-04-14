@@ -63,6 +63,7 @@ $$
 - [[needlets]] — 球面上的局部化 wavelet 基，遮挡振铃时的替代方案
 - [[max-slater]]
 - [[robin-green]] — GDC 2003 *SH Lighting: The Gritty Details* 的作者
+- [[valve-ambient-cube]] —— 非正交的六方向紧凑表示，shader 指令更便宜，精度逊于 L2 SH
 
 ## Sources
 

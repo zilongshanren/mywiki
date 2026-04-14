@@ -1,0 +1,158 @@
+{
+  "batch_id": "batch-w29-ch",
+  "agent_note": "5 篇 Kostas Anagnostou / Interplay of Light 技术博客：deferred SDF、GPU-driven occlusion 系列 3 篇（Part 2 MultiDrawIndirect + LOD、bgfx 移植、Digital Dragons 20K 规模化）、以及 hybrid raytraced shadows + reflections 的 compute shader 实现。5 篇全部 ingest，无 skip。新增 3 个概念页与 5 个 source 摘要；对 kostas-anagnostou、gpu-based-occlusion-culling、hybrid-raytracing-pipeline、deferred-rendering、sdf-ray-marched-shadows 5 个既有页面发 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2017-12-12_deferred-signed-distance-field-rendering.md",
+      "status": "ingested",
+      "source_slug": "interplay-deferred-sdf-rendering",
+      "title": "Deferred Signed Distance Field rendering"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2018-01-15_experiments-in-gpu-based-occlusion-culling-part-2-multidrawi.md",
+      "status": "ingested",
+      "source_slug": "interplay-multidraw-indirect-occlusion",
+      "title": "Experiments in GPU-based occlusion culling part 2: MultiDrawIndirect and mesh lodding"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2018-03-05_porting-gpu-driven-occlusion-culling-to-bgfx.md",
+      "status": "ingested",
+      "source_slug": "interplay-bgfx-gpu-driven-port",
+      "title": "Porting GPU driven occlusion culling to bgfx"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2018-05-25_gpu-driven-rendering-experiments-at-the-digital-dragons-conf.md",
+      "status": "ingested",
+      "source_slug": "interplay-digital-dragons-gpu-driven",
+      "title": "GPU Driven rendering experiments at the Digital Dragons conference"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2018-07-04_hybrid-raytraced-shadows-and-reflections.md",
+      "status": "ingested",
+      "source_slug": "interplay-hybrid-raytraced-shadows-reflections",
+      "title": "Hybrid raytraced shadows and reflections"
+    }
+  ],
+  "concepts_created": [
+    "deferred-sdf-rendering",
+    "multidraw-indirect-occlusion-culling",
+    "hybrid-raytraced-shadows-reflections"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "interplay-deferred-sdf-rendering",
+    "interplay-multidraw-indirect-occlusion",
+    "interplay-bgfx-gpu-driven-port",
+    "interplay-digital-dragons-gpu-driven",
+    "interplay-hybrid-raytraced-shadows-reflections"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-sdf-rendering]] —— 2017 年把 SDF raymarch 结果写进 Unity G-Buffer + SV_Depth 的 hybrid 实验\n- [[multidraw-indirect-occlusion-culling]] —— 2018 年 GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch\n- [[hybrid-raytraced-shadows-reflections]] —— 2018 年用 compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-deferred-sdf-rendering]]\n- [[sources/interplay-multidraw-indirect-occlusion]]\n- [[sources/interplay-bgfx-gpu-driven-port]]\n- [[sources/interplay-digital-dragons-gpu-driven]]\n- [[sources/interplay-hybrid-raytraced-shadows-reflections]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-based-occlusion-culling.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/rendering/gpu-based-occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[multidraw-indirect-occlusion-culling]] —— Part 2：NVAPI `MultiDrawIndexedInstancedIndirect` + mesh LOD + programmable vertex fetch，把整条 pipeline 压到「批量化一切」\n- [[hybrid-raytraced-shadows-reflections]] —— 复用同一套 global buffer + args buffer 数据布局做 compute shader 光追"
+    },
+    {
+      "file": "wiki/rendering/gpu-based-occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-multidraw-indirect-occlusion]]\n- [[sources/interplay-bgfx-gpu-driven-port]]\n- [[sources/interplay-digital-dragons-gpu-driven]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hybrid-raytraced-shadows-reflections]] —— Kostas Anagnostou 2018 年 compute shader 手写 BVH hybrid raytracer：硬阴影 + 镜面反射的早期范例"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-hybrid-raytraced-shadows-reflections]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-sdf-rendering]] —— 把 SDF raymarch 的 albedo/normal/depth 写进 G-Buffer，让 SDF 与多边形共存于同一条 deferred 管线"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-deferred-sdf-rendering]]"
+    },
+    {
+      "file": "wiki/rendering/sdf-ray-marched-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-sdf-rendering]] —— 把 SDF 渲染塞进 deferred G-Buffer 的 hybrid 实验（Kostas Anagnostou）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[deferred-sdf-rendering]] | Kostas Anagnostou：把 SDF raymarch 结果写进 Unity G-Buffer + SV_Depth，让 SDF 与多边形在 deferred 管线共存 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[multidraw-indirect-occlusion-culling]] | GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch + 批量化一切的 DX11 retrofit |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hybrid-raytraced-shadows-reflections]] | Kostas Anagnostou：compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射的早期全景实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-deferred-sdf-rendering]] | Anagnostou：deferred SDF rendering |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-multidraw-indirect-occlusion]] | Anagnostou：GPU-based occlusion culling Part 2 (MultiDraw + LOD) |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-bgfx-gpu-driven-port]] | Anagnostou：把 GPU-driven 剔除移植到 bgfx |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-digital-dragons-gpu-driven]] | Anagnostou：Digital Dragons 大会版 20K 规模化 profiling |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-hybrid-raytraced-shadows-reflections]] | Anagnostou：compute shader 手写 hybrid raytracer 的硬阴影与反射 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-29 Worker CH (interplayoflight.wordpress.com ×5)\n\n处理 5 篇 Kostas Anagnostou / Interplay of Light 技术博客：2017 年的 deferred SDF rendering 实验、2018 年 GPU-driven occlusion 系列 Part 2（MultiDraw + LOD）、bgfx 移植、Digital Dragons 大会版 20K 规模化、2018 年 hybrid raytraced shadows + reflections 的 compute shader 实现。全部 ingest 无 skip。新增 3 个概念页（deferred-sdf-rendering / multidraw-indirect-occlusion-culling / hybrid-raytraced-shadows-reflections）与 5 个 source 摘要；对 kostas-anagnostou、gpu-based-occlusion-culling、hybrid-raytracing-pipeline、deferred-rendering、sdf-ray-marched-shadows 5 个既有页面发了 patch。"
+}

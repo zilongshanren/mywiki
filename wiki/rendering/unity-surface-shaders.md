@@ -35,3 +35,4 @@ Surface Shader 把光照循环、阴影接收、雾、lightmap 采样都藏在�
 
 - [[sources/danielilett-cel-shading-part-1]]
 - [[sources/ronja-surface-shader-basics]] — Ronja 005，把手写 Unlit 逐步转换成 Surface Shader 的骨架演示
+- [[sources/danielilett-cel-shading-part-2]] — 自定义 Lighting 函数（`#pragma surface surf Cel`）替代内建 Standard 光照的具体示例

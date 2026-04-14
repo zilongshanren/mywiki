@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 5
+sources: 10
 ---
 
 # Kostas Anagnostou
@@ -29,6 +29,9 @@ sources: 5
 - [[unity-postprocessing-adventures]] —— 2015 年在 Unity 里搭体积光束后处理 pipeline 的实验
 - [[unreal-frame-breakdown]] —— 2017 年用 RenderDoc 逐 pass 拆解 UE4.17 默认 deferred 管线（三篇合一）
 - [[gpu-based-occlusion-culling]] —— 2017 年 DX11 上的 GPU-driven HZB + stream compaction + indirect draw retrofit
+- [[deferred-sdf-rendering]] —— 2017 年把 SDF raymarch 结果写进 Unity G-Buffer + SV_Depth 的 hybrid 实验
+- [[multidraw-indirect-occlusion-culling]] —— 2018 年 GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch
+- [[hybrid-raytraced-shadows-reflections]] —— 2018 年用 compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射
 
 ## Sources
 
@@ -51,3 +54,8 @@ sources: 5
 - [[sources/interplay-unreal-frame-part2]]
 - [[sources/interplay-unreal-frame-part3]]
 - [[sources/interplay-gpu-occlusion-culling]]
+- [[sources/interplay-deferred-sdf-rendering]]
+- [[sources/interplay-multidraw-indirect-occlusion]]
+- [[sources/interplay-bgfx-gpu-driven-port]]
+- [[sources/interplay-digital-dragons-gpu-driven]]
+- [[sources/interplay-hybrid-raytraced-shadows-reflections]]

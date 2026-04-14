@@ -405,3 +405,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-28 Worker CF (bartwronski.com 2014 ×5)
 
 处理 5 篇 Bart Wronski 2014 年博客。Ingest 2 篇：Hair rendering trick(s)（Witcher 3 / Cyberpunk 原型期 4 pass 混合 deferred/forward 头发管线 + Witcher 2 SSS hack）、CSharpRenderer + volumetric fog code（Siggraph 2014 talk 配套开源 froxel 体积雾 compute shader demo 发布公告）。跳过 3 篇：Sony A7 相机评测、Python 科学工具链主观感受、CSharpRenderer 10 月功能 roll-up。新增 1 概念页 hybrid-hair-rendering、2 source 摘要（hair-rendering-tricks, csharprenderer-volumetric-fog）。bartosz-wronski 与 volumetric-fog-froxels 既有页通过 patch 追加 source 链接与交叉引用。
+
+## [2026-04-14] ingest | Wave-29 Worker CG (elopezr.com CLOS2 ×5)
+
+处理 5 篇 elopezr.com：跳过 4 篇（match-3、the-cube、cars 三篇 2014 早期 postmortem 沿袭 w14 先例；replay-system-using-unity 技术密度不足）。Ingest 1 篇：The Rendering of Castlevania: Lords of Shadow 2（2015）——DX9 世代延迟管线 + Valve Ambient Cube + box light 的 AAA 帧拆解。新增 1 概念页（valve-ambient-cube）与 1 源摘要。emilio-lopez-ros 人物页追加 source 链接与文章表条目。
+
+## [2026-04-14] ingest | Wave-29 Worker CH (interplayoflight.wordpress.com ×5)
+
+处理 5 篇 Kostas Anagnostou / Interplay of Light 技术博客：2017 年的 deferred SDF rendering 实验、2018 年 GPU-driven occlusion 系列 Part 2（MultiDraw + LOD）、bgfx 移植、Digital Dragons 大会版 20K 规模化、2018 年 hybrid raytraced shadows + reflections 的 compute shader 实现。全部 ingest 无 skip。新增 3 个概念页（deferred-sdf-rendering / multidraw-indirect-occlusion-culling / hybrid-raytraced-shadows-reflections）与 5 个 source 摘要；对 kostas-anagnostou、gpu-based-occlusion-culling、hybrid-raytracing-pipeline、deferred-rendering、sdf-ray-marched-shadows 5 个既有页面发了 patch。
+
+## [2026-04-14] ingest | batch-w29-ci Daniel Ilett Cel Shading Parts 0/2/3/4/5
+
+处理 Daniel Ilett 2019 年 Cel Shading 系列 5 篇（Part 0 理论 / Part 2 自定义 Lighting / Part 3 bump+fresnel / Part 4 描边 / Part 5 Stencil ID + ramp 纹理）。新增 1 概念页 cel-shading-pipeline（合并 5 部曲为一条完整的 Unity 内建管线卡通渲染流水线）、5 个 source 摘要；为 diffuse-lighting-lambertian、cel-shader-outline、unity-surface-shaders、daniel-ilett 发补丁追加 source 链接与 `[[cel-shading-pipeline]]` 相关条目。未创建新人物页（daniel-ilett 已存在）。

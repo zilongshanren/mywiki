@@ -27,10 +27,16 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[color-quantization-retro]]
 - [[kuwahara-filter]]
 - [[crt-shader-effects]]
+- [[cel-shading-pipeline]]
 
 ## Sources
 
 - [[sources/danielilett-cel-shading-part-1]]
+- [[sources/danielilett-cel-shading-part-0]]
+- [[sources/danielilett-cel-shading-part-2]]
+- [[sources/danielilett-cel-shading-part-3]]
+- [[sources/danielilett-cel-shading-part-4]]
+- [[sources/danielilett-cel-shading-part-5]]
 - [[sources/danielilett-your-first-shader]]
 - [[sources/danielilett-retro-terrain-lit]]
 - [[sources/danielilett-dither-transparency]]

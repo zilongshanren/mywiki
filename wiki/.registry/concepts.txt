@@ -43,6 +43,7 @@ cametal-layer-drawable
 cantor-szudzik-pairing
 carry-save-adder-pixel-avg
 cel-shader-outline
+cel-shading-pipeline
 cellular-texture-generation
 change-amplification
 christoph-peters
@@ -91,6 +92,7 @@ deep-modules
 deferred-alpha-lighting
 deferred-grass-shader
 deferred-rendering
+deferred-sdf-rendering
 dennard-scaling
 dependencies
 depth-aware-upsampling
@@ -169,6 +171,7 @@ homogeneous-rasterization-transpose-bug
 hsr-tbdr
 html5-game-apis-2012
 hybrid-hair-rendering
+hybrid-raytraced-shadows-reflections
 hybrid-raytracing-pipeline
 iir-filter-deconvolution
 image-convolution-kernel
@@ -229,6 +232,7 @@ moment-shadow-mapping
 motion-vectors
 msaa-ssaa
 mttf-reliability
+multidraw-indirect-occlusion-culling
 mvp-transform
 needlets
 neural-graphics-primitives
@@ -383,6 +387,7 @@ unreal-frame-breakdown
 urp-volume-post-processing
 uv-displacement-image-effect
 uv-manipulation-nodes
+valve-ambient-cube
 variable-length-bresenham
 vector-dot-product
 vertex-vector-interpolation-artifact

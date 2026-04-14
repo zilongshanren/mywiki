@@ -1,0 +1,131 @@
+{
+  "batch_id": "batch-w29-ci",
+  "agent_note": "Daniel Ilett Cel Shading 系列 Parts 0/2/3/4/5 合并为单一概念页 cel-shading-pipeline。Part 0 Phong 理论补丁到 diffuse-lighting-lambertian；Part 4 描边补丁到 cel-shader-outline；Part 2 自定义 Lighting 补丁到 unity-surface-shaders；5 个 source summary 全入库；daniel-ilett 人物页追加相关与 sources 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2019-06-01_cel-shading-part-0-lighting-models.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-0",
+      "title": "Cel Shading Part 0 - Lighting Models"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-06-08_cel-shading-part-2-cel-shaded-lighting.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-2",
+      "title": "Cel Shading Part 2 - Cel-shaded Lighting"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-06-12_cel-shading-part-3-bump-mapping-and-fresnel-lighting.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-3",
+      "title": "Cel Shading Part 3 - Bump Mapping and Fresnel Lighting"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-06-15_cel-shading-part-4-edge-outlining.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-4",
+      "title": "Cel Shading Part 4 - Edge Outlining"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2019-06-23_cel-shading-part-5-finishing-touches.md",
+      "status": "ingested",
+      "source_slug": "danielilett-cel-shading-part-5",
+      "title": "Cel Shading Part 5 - Finishing Touches"
+    }
+  ],
+  "concepts_created": ["cel-shading-pipeline"],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-cel-shading-part-0",
+    "danielilett-cel-shading-part-2",
+    "danielilett-cel-shading-part-3",
+    "danielilett-cel-shading-part-4",
+    "danielilett-cel-shading-part-5"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/diffuse-lighting-lambertian.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-0]] — Phong 光照家族的四分量拆解（ambient/diffuse/specular/fresnel）"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cel-shading-pipeline]] —— Daniel Ilett 5 部曲版本，同样的 cel+outline 思路但从 Phong 光照开始逐步搭建，含 bump/fresnel/stencil-ID 等扩展"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-4]] — Daniel Ilett 版的同一双 pass + stencil 描边，含 ShaderLab 字段（Ref/Comp/Pass/Fail/ZFail）逐条解释"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-5]] — Stencil ID 化修复 + lighting ramp 纹理替换硬阶"
+    },
+    {
+      "file": "wiki/rendering/unity-surface-shaders.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-2]] — 自定义 Lighting 函数（`#pragma surface surf Cel`）替代内建 Standard 光照的具体示例"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cel-shading-pipeline]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-0]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-2]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-3]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-4]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-cel-shading-part-5]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cel-shading-pipeline]] | Daniel Ilett 5 部曲：Phong 光照 → 量化 diffuse/specular → bump+fresnel → stencil 描边 → ramp 纹理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-0]] | Ilett：Phong 光照家族的四分量理论铺垫 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-2]] | Ilett：自定义 Lighting 函数 + fwidth/smoothstep 做 diffuse 硬阶与 specular |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-3]] | Ilett：bump map 与 Fresnel rim 光的最小改动接入 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-4]] | Ilett：沿法线外推 + stencil buffer 的双 pass 描边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-cel-shading-part-5]] | Ilett：Stencil ID 化 + lighting ramp 纹理替换硬阶 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | batch-w29-ci Daniel Ilett Cel Shading Parts 0/2/3/4/5\n\n处理 Daniel Ilett 2019 年 Cel Shading 系列 5 篇（Part 0 理论 / Part 2 自定义 Lighting / Part 3 bump+fresnel / Part 4 描边 / Part 5 Stencil ID + ramp 纹理）。新增 1 概念页 cel-shading-pipeline（合并 5 部曲为一条完整的 Unity 内建管线卡通渲染流水线）、5 个 source 摘要；为 diffuse-lighting-lambertian、cel-shader-outline、unity-surface-shaders、daniel-ilett 发补丁追加 source 链接与 `[[cel-shading-pipeline]]` 相关条目。未创建新人物页（daniel-ilett 已存在）。"
+}

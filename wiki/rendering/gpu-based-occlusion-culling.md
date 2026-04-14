@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 可见性, 剔除, gpu-driven, compute-shader, stream-compaction]
 date: 2026-04-14
-sources: 1
+sources: 4
 ---
 
 # GPU 侧的实例级遮挡剔除实验
@@ -61,7 +61,12 @@ sources: 1
 - [[gpu-driven-grass-tiles]] —— 引用本文的 GPU-driven grass 实践
 - [[compute-shader]]
 - [[kostas-anagnostou]]
+- [[multidraw-indirect-occlusion-culling]] —— Part 2：NVAPI `MultiDrawIndexedInstancedIndirect` + mesh LOD + programmable vertex fetch，把整条 pipeline 压到「批量化一切」
+- [[hybrid-raytraced-shadows-reflections]] —— 复用同一套 global buffer + args buffer 数据布局做 compute shader 光追
 
 ## Sources
 
 - [[sources/interplay-gpu-occlusion-culling]]
+- [[sources/interplay-multidraw-indirect-occlusion]]
+- [[sources/interplay-bgfx-gpu-driven-port]]
+- [[sources/interplay-digital-dragons-gpu-driven]]

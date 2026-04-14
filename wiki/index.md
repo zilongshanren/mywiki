@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 309
+sources: 320
 ---
 
 # 知识库索引
@@ -388,6 +388,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[neural-graphics-primitives]] | 神经图形原语：MLP + 位置编码 / Instant NGP 哈希编码把图像/SDF/NeRF 全部写成 coord→value |
 | [[spherical-integration]] | 球面积分里的 $\sin\theta$ 从何而来：参数化 + 叉积 + 第一基本形式 |
 | [[hybrid-hair-rendering]] | Wronski 的混合 deferred/forward 头发 trick：按 alpha 阈值把发丝拆成实心 + 边缘两段分别处理 |
+| [[valve-ambient-cube]] | Valve HL2 的六方向常数环境光，SH 的穷人替代 |
+| [[deferred-sdf-rendering]] | Kostas Anagnostou：把 SDF raymarch 结果写进 Unity G-Buffer + SV_Depth，让 SDF 与多边形在 deferred 管线共存 |
+| [[multidraw-indirect-occlusion-culling]] | GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch + 批量化一切的 DX11 retrofit |
+| [[hybrid-raytraced-shadows-reflections]] | Kostas Anagnostou：compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射的早期全景实验 |
+| [[cel-shading-pipeline]] | Daniel Ilett 5 部曲：Phong 光照 → 量化 diffuse/specular → bump+fresnel → stencil 描边 → ramp 纹理 |
 
 ## 经典案例（wiki/examples/）
 
@@ -777,6 +782,17 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/raphlinus-favorite-sigmoids]] | Raph Levien：数字合成器里的 sigmoid 比较与多项式变形近似 |
 | [[sources/bartwronski-hair-rendering-tricks]] | Wronski：Witcher 3 / Cyberpunk 原型期的头发 alpha-test 四 pass 混合管线 + Witcher 2 SSS hack |
 | [[sources/bartwronski-csharprenderer-volumetric-fog]] | Wronski：CSharpRenderer 框架更新，附 Siggraph 2014 froxel 体积雾 compute shader demo 代码 |
+| [[sources/elopezr-clos2-rendering]] | López Ros：Castlevania LoS2 的 DX9 延迟管线逐 pass 拆解 |
+| [[sources/interplay-deferred-sdf-rendering]] | Anagnostou：deferred SDF rendering |
+| [[sources/interplay-multidraw-indirect-occlusion]] | Anagnostou：GPU-based occlusion culling Part 2 (MultiDraw + LOD) |
+| [[sources/interplay-bgfx-gpu-driven-port]] | Anagnostou：把 GPU-driven 剔除移植到 bgfx |
+| [[sources/interplay-digital-dragons-gpu-driven]] | Anagnostou：Digital Dragons 大会版 20K 规模化 profiling |
+| [[sources/interplay-hybrid-raytraced-shadows-reflections]] | Anagnostou：compute shader 手写 hybrid raytracer 的硬阴影与反射 |
+| [[sources/danielilett-cel-shading-part-0]] | Ilett：Phong 光照家族的四分量理论铺垫 |
+| [[sources/danielilett-cel-shading-part-2]] | Ilett：自定义 Lighting 函数 + fwidth/smoothstep 做 diffuse 硬阶与 specular |
+| [[sources/danielilett-cel-shading-part-3]] | Ilett：bump map 与 Fresnel rim 光的最小改动接入 |
+| [[sources/danielilett-cel-shading-part-4]] | Ilett：沿法线外推 + stencil buffer 的双 pass 描边 |
+| [[sources/danielilett-cel-shading-part-5]] | Ilett：Stencil ID 化 + lighting ramp 纹理替换硬阶 |
 
 ## 元（wiki/meta/）
 
