@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w11-ag",
+  "agent_note": "5 篇 graphicrants.blogspot.com（Brian Karis）。2 篇跳过：rgbd 被作者本人整段标注为 hogwash 并公开致歉（意外价值为零），new-prey-2-screenshot 只是 Prey 2 宣传截图帖。3 篇核心技术文入库——都是 Karis 在 Human Head 做 Prey 2 的早期 next-gen 渲染研究，而这些想法后来一字不差地长成了 UE5 Lumen 的架构。新增 3 概念页（virtualized-volume-textures, tiled-light-culling, sparse-shadows-cone-tracing）、1 人物页（brian-karis，新）、3 source 摘要。tiled-light-culling 和现有的 tiled-light-prepass 是正交概念（culling 是剔除机制，prepass 是管线结构），在两张页面间交叉链接。给 deferred-rendering / tiled-light-prepass / sdf-ray-marched-shadows / hierarchical-z-buffer / physically-based-shading 追加相关链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2010-01-03_rgbd.md",
+      "status": "skipped_offtopic",
+      "reason": "作者 Brian Karis 本人在文首整段划掉原内容，明确声明『This entire post turned out to be hogwash. I'm wiping it out to prevent the spread of misinformation』。残存的评论区是 Sean Barrett 指出数学错误的反驳讨论，信息价值为零、也没有可供 wiki 化的技术结论。Karis 本人的 truth-over-comfort 态度值得在人物页上简单提一句但不单独建源页。"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2011-01-30_virtualized-volume-textures.md",
+      "status": "ingested",
+      "source_slug": "karis-virtualized-volume-textures",
+      "title": "Virtualized volume textures"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2011-08-10_new-prey-2-screenshot.md",
+      "status": "skipped_offtopic",
+      "reason": "Prey 2 新截图宣传帖，只简单提到截图里有 HDR circular bokeh DOF 和 SSR 但明确写『I can't talk yet about how it works』。没有技术实现内容，评论区主要是画面品味与平台版本争论。按 P9 指示跳过。"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2012-04-29_tiled-light-culling.md",
+      "status": "ingested",
+      "source_slug": "karis-tiled-light-culling",
+      "title": "Tiled Light Culling"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2012-05-14_sparse-shadows-through-tracing.md",
+      "status": "ingested",
+      "source_slug": "karis-sparse-shadows-tracing",
+      "title": "Sparse shadows through tracing"
+    }
+  ],
+  "concepts_created": [
+    "virtualized-volume-textures",
+    "tiled-light-culling",
+    "sparse-shadows-cone-tracing"
+  ],
+  "people_created": [
+    "brian-karis"
+  ],
+  "source_summaries_created": [
+    "karis-virtualized-volume-textures",
+    "karis-tiled-light-culling",
+    "karis-sparse-shadows-tracing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiled-light-culling]] —— per-tile 光源剔除机制，Karis 加入 specular cone 剔除\n- [[sparse-shadows-cone-tracing]] —— Karis 2012：shadow map 只管 diffuse，远处 specular 走 cone trace"
+    },
+    {
+      "file": "wiki/rendering/tiled-light-prepass.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiled-light-culling]] —— 和本页讲的管线结构不是同一件事：light culling 指 tile 级 per-light 剔除机制，和 deferred / forward+ / light prepass 的管线形态正交"
+    },
+    {
+      "file": "wiki/rendering/sdf-ray-marched-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sparse-shadows-cone-tracing]] —— Brian Karis 2012：把 SDF cone trace 用于远处 specular 阴影，是 UE5 Lumen 反射架构的起点"
+    },
+    {
+      "file": "wiki/rendering/hierarchical-z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sparse-shadows-cone-tracing]] —— Karis 2012 列出的屏幕空间 trace 友好结构之一（min/max depth mipmap）"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiled-light-culling]] —— Brian Karis：用能量守恒和 specular cone 做 tile 级剔除\n- [[brian-karis]] —— UE4 Real Shading 的作者"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[virtualized-volume-textures]] | Karis：2D 虚拟纹理和 SVO 思路扩展到 irradiance volume |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tiled-light-culling]] | Karis：把 specular cone + 能量守恒引入 tile 级光源剔除 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sparse-shadows-cone-tracing]] | Karis 2012：diffuse 走 shadow map，远 specular 走 cone trace——UE5 Lumen 的起点笔记 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[brian-karis]] | Epic UE5 Nanite/Lumen 技术负责人，前 Human Head（Prey 2），UE4 Real Shading 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-virtualized-volume-textures]] | Karis：把 2D virtual texture 和 SVO 思路搬到 irradiance volume |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-tiled-light-culling]] | Karis：tile 级 per-light 剔除加入 specular cone 方向约束 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-sparse-shadows-tracing]] | Karis：next-gen 渲染需要多几何表示 + cone trace，UE5 Lumen 的雏形 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-11 Worker AG (graphicrants.blogspot.com ×5)\n\n处理 5 篇 Brian Karis 的 Graphic Rants 博文。新增 3 概念页（virtualized-volume-textures, tiled-light-culling, sparse-shadows-cone-tracing）、1 人物页（brian-karis，Epic UE5 Nanite/Lumen 负责人）、3 source 摘要。跳过 2 篇：2010 年的 rgbd 帖被作者本人完全标为 hogwash 并删除正文；2011 年的 new-prey-2-screenshot 是宣传截图帖无技术实现内容。2012 年这两篇（tiled-light-culling + sparse-shadows-cone-tracing）是极高价值的 next-gen 渲染架构笔记——十年后 UE5 Lumen 几乎一字不差地实现了其中的核心假设（多几何表示 + cone trace + visibility 独立于光源跨光源共享）。patch 了 5 张已存在页：deferred-rendering / tiled-light-prepass / sdf-ray-marched-shadows / hierarchical-z-buffer / physically-based-shading。"
+}

@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w11-ae",
+  "agent_note": "interplayoflight.wordpress.com (Kostas Anagnostou) 前 5 篇 2013 年技术博客：tools of the trade / depth testing / tangent-free normal mapping / Unity as FX Composer / SharpDX + Assimp。5 篇全部入库，覆盖 shader prototyping 工具链演化、Early-Z 救援机制、免 TBN 法线贴图。新增 4 个概念页（tangent-free-normal-mapping, shader-prototyping-tools, sharpdx-assimp-pipeline, conservative-depth）、1 个人物页（kostas-anagnostou）、5 个 source 摘要。对 early-z-late-z / normal-map-blending 等既有页面只 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-01-12_tools-of-the-trade.md",
+      "status": "ingested",
+      "source_slug": "interplay-tools-of-the-trade",
+      "title": "Tools of the Trade"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-01-17_order-and-types-of-depth-testing.md",
+      "status": "ingested",
+      "source_slug": "interplay-depth-testing",
+      "title": "Order and Types of Depth Testing"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-01-21_normal-mapping-without-precomputed-tangents.md",
+      "status": "ingested",
+      "source_slug": "interplay-tangent-free-normal-mapping",
+      "title": "Normal Mapping Without Precomputed Tangents"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-02-04_using-unity-as-an-fx-composer-replacement-for-shader-prototy.md",
+      "status": "ingested",
+      "source_slug": "interplay-unity-as-fxcomposer",
+      "title": "Using Unity as an FX Composer Replacement for Shader Prototyping"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-03-03_sharpdx-and-3d-model-loading.md",
+      "status": "ingested",
+      "source_slug": "interplay-sharpdx-model-loading",
+      "title": "SharpDX and 3D Model Loading"
+    }
+  ],
+  "concepts_created": [
+    "tangent-free-normal-mapping",
+    "shader-prototyping-tools",
+    "sharpdx-assimp-pipeline",
+    "conservative-depth"
+  ],
+  "people_created": ["kostas-anagnostou"],
+  "source_summaries_created": [
+    "interplay-tools-of-the-trade",
+    "interplay-depth-testing",
+    "interplay-tangent-free-normal-mapping",
+    "interplay-unity-as-fxcomposer",
+    "interplay-sharpdx-model-loading"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/early-z-late-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[conservative-depth]] —— `SV_DepthGreaterEqual` / `[earlydepthstencil]` 两条 Early-Z 救援通道"
+    },
+    {
+      "file": "wiki/rendering/early-z-late-z.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-depth-testing]] —— Anagnostou 的 D3D11 depth testing 阶段与 Conservative Depth / `[earlydepthstencil]` 整理"
+    },
+    {
+      "file": "wiki/rendering/normal-map-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tangent-free-normal-mapping]] —— 配对优化：不再需要预计算 TBN 的 per-pixel 切线构造"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tangent-free-normal-mapping]] | 用 `dFdx`/`dFdy` 在 pixel shader 里构造 TBN，免顶点存切线 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-prototyping-tools]] | FX Composer / RenderMonkey / Unity / SharpDX 原型工具横评 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sharpdx-assimp-pipeline]] | C# + D3D11 的 XNA 式原型：SharpDX + Assimp 模型加载 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[conservative-depth]] | `SV_DepthGreaterEqual` / `[earlydepthstencil]`：两条 Early-Z 救援通道 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[kostas-anagnostou]] | Interplay of Light 博主，Playground Games 图形工程师 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-tools-of-the-trade]] | Anagnostou：shader 原型与调试工具栈总览（2013） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-depth-testing]] | Anagnostou：D3D11 depth testing 阶段与 Early-Z 救援语义 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-tangent-free-normal-mapping]] | Anagnostou：Christian Schüler 免 TBN 法线贴图的 FX Composer 实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-unity-as-fxcomposer]] | Anagnostou：Unity 免费版替代 FX Composer 做 shader 原型 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-sharpdx-model-loading]] | Anagnostou：SharpDX + Assimp 补齐 XNA 式内容管线 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-11 Worker AE (interplayoflight.wordpress.com ×5)\n\n处理 Kostas Anagnostou / Interplay of Light 2013 年前 5 篇技术博客：tools of the trade、depth testing 阶段、tangent-free normal mapping、Unity as FX Composer replacement、SharpDX + Assimp model loading。5 篇全部入库。\n\n新增概念页 4：[[tangent-free-normal-mapping]]、[[shader-prototyping-tools]]、[[sharpdx-assimp-pipeline]]、[[conservative-depth]]。新增人物页 1：[[kostas-anagnostou]]。新增 source 摘要 5：interplay-tools-of-the-trade / interplay-depth-testing / interplay-tangent-free-normal-mapping / interplay-unity-as-fxcomposer / interplay-sharpdx-model-loading。\n\nPatch：[[early-z-late-z]] 补 Conservative Depth 相关链接与新 source；[[normal-map-blending]] 补 tangent-free 优化相关链接。"
+}

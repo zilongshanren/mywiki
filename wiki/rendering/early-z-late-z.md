@@ -40,7 +40,9 @@ TBDR 在 tile 粒度上做的 **HSR（Hidden Surface Removal）**比 Early-Z 更
 - [[fragment-shader]]
 - [[fizzle-lod-fading]] —— 用 discard 保留 early-z 能力、避免 alpha blending 的工程选择
 - [[depth-aware-upsampling]] —— 用 stencil 提前分类像素、再用 early stencil discard 分派 simple/complex shader
+- [[conservative-depth]] —— `SV_DepthGreaterEqual` / `[earlydepthstencil]` 两条 Early-Z 救援通道
 
 ## Sources
 
 - [[sources/rtr-day05]]
+- [[sources/interplay-depth-testing]] —— Anagnostou 的 D3D11 depth testing 阶段与 Conservative Depth / `[earlydepthstencil]` 整理

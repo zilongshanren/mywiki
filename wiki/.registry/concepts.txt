@@ -21,6 +21,7 @@ bindless-rendering
 bits-and-context
 blit-render-feature
 bottleneck-analysis
+brian-karis
 buffer-renaming
 cache-friendliness
 cached-shadowmaps
@@ -41,8 +42,10 @@ compact-vertex-format
 compilation-pipeline
 compiler-interference-analysis-bug
 complexity
+component-entity-data-binding
 composite-command-pattern
 compute-vs-raster-points
+conservative-depth
 continuous-design
 coordinate-spaces
 cpp-runtime-reflection
@@ -77,6 +80,7 @@ engine-evolution
 engine-layering
 environment
 environment-probe-placement
+evan-todd
 exposure-fusion
 fabian-giesen
 false-abstraction
@@ -126,6 +130,7 @@ john-ousterhout
 journey-sand-specular
 jump-flooding-algorithm
 kinematic-character-controller
+kostas-anagnostou
 lambda-calculus
 laplacian-pyramid
 latency-vs-throughput
@@ -141,6 +146,7 @@ low-discrepancy-sequence
 matthaeus-chajdas
 max-slater
 memory-hierarchy
+meshes-of-navigation-recast
 metal-api-overview
 metal-shading-language-basics
 microfacet-brdf
@@ -198,14 +204,17 @@ scene-color-depth-nodes
 scriptable-render-pipeline
 sdf-2d-primitives
 sdf-ray-marched-shadows
+shader-prototyping-tools
 shader-vector-math-primer
 shaderlab-hlsl-basics
 shadow-mapping-basics
 shallow-modules
 shaping-functions
+sharpdx-assimp-pipeline
 simon-trumpler
 smooth-window-resize
 soft-real-time
+sparse-shadows-cone-tracing
 spectral-brdf
 spectral-rendering
 spectral-zucconi-rainbow
@@ -223,6 +232,7 @@ taa-history-rectification
 tactical-programming
 tactical-tornado
 tail-call-optimization
+tangent-free-normal-mapping
 taste-development
 tbdr-vs-imr
 temporal-antialiasing
@@ -230,6 +240,7 @@ temporal-decomposition
 texture-dissolve
 texture-encoded-state
 thin-lens-model
+tiled-light-culling
 tiled-light-prepass
 triangle-primitives
 triangle-setup
@@ -244,6 +255,7 @@ unorm-float-conversion
 urp-volume-post-processing
 uv-manipulation-nodes
 virtual-memory
+virtualized-volume-textures
 visibility-buffer
 volumetric-fog-froxels
 volumetric-raymarching-intro

@@ -1,0 +1,81 @@
+{
+  "batch_id": "batch-w11-af",
+  "agent_note": "etodd.io 2010-2011 早期独立游戏开发博客。5 篇里只有 2 篇有工程实质：meshes-of-navigation (Recast navmesh) 和 refactoring-with-components (组件数据绑定)。其余 3 篇是 changelog/vision 文，全部 skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/etodd.io/2010-02-04_update.md",
+      "status": "skipped_offtopic",
+      "reason": "纯状态更新：网络调优、pistol 武器、Ubuntu .deb 打包。无工程实质"
+    },
+    {
+      "path": "raw/articles/etodd.io/2010-04-09_new-maps-new-weapon-new-money-system-new-game-mode.md",
+      "status": "skipped_offtopic",
+      "reason": "changelog 文：新地图、molotov 武器、购买 UI、wave 模式，全部是游戏内容而非技术"
+    },
+    {
+      "path": "raw/articles/etodd.io/2010-05-08_meshes-of-navigation.md",
+      "status": "ingested",
+      "source_slug": "etodd-meshes-of-navigation",
+      "title": "Meshes of navigation"
+    },
+    {
+      "path": "raw/articles/etodd.io/2010-12-28_further-deets.md",
+      "status": "skipped_offtopic",
+      "reason": "Lemma 早期 vision 文，混合设计随笔和零散技术点（Xbox CLR float 性能、hardware instancing），主体是游戏概念，无单一可沉淀概念"
+    },
+    {
+      "path": "raw/articles/etodd.io/2011-02-02_refactoring-with-components.md",
+      "status": "ingested",
+      "source_slug": "etodd-refactoring-with-components",
+      "title": "Refactoring with components"
+    }
+  ],
+  "concepts_created": [
+    "meshes-of-navigation-recast",
+    "component-entity-data-binding"
+  ],
+  "people_created": [
+    "evan-todd"
+  ],
+  "source_summaries_created": [
+    "etodd-meshes-of-navigation",
+    "etodd-refactoring-with-components"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[component-entity-data-binding]] — Evan Todd 2011 年手写的组件数据绑定方案，和 DOTS 的全局 System 查询形成哲学对比"
+    },
+    {
+      "file": "wiki/game-development/a-star-pathfinding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[meshes-of-navigation-recast]] — Recast 的体素化 navmesh 生成管线"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[meshes-of-navigation-recast]] | 导航网格与 Recast 的体素化生成管线 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[component-entity-data-binding]] | 组件实体模型中的 I/O 端口式数据绑定（Evan Todd 2011） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[people/evan-todd]] | Evan Todd，etodd.io / Lemma / Deceiver 独立开发者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-meshes-of-navigation]] | Todd：把 Recast 接入 A3P 的 navmesh 管线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-refactoring-with-components]] | Todd：端口式的组件数据绑定方案 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-11 Worker AF (etodd.io ×5)\n\n处理 5 篇 etodd.io 2010-2011 早期独立游戏博客。Ingest 2 篇（meshes-of-navigation、refactoring-with-components），skip 3 篇 changelog/vision 文。新增 2 概念页（meshes-of-navigation-recast, component-entity-data-binding）、1 人物页（evan-todd）、2 source 摘要。对 ecs.md、a-star-pathfinding.md 打补丁补相关链接。"
+}

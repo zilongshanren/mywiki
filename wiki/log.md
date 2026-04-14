@@ -193,3 +193,19 @@ Robin Green *Bases and Frames* 5 篇全部入库：needlets、faster math functi
 ## [2026-04-14] ingest | Wave-10 Worker AD (blog.frost.kiwi ×5)
 
 处理 5 篇 blog.frost.kiwi 文章。新增 2 概念页（color-banding、perceptual-colormaps）、2 source 摘要。跳过 3 篇（joyo-kanji 是日语学习，genshin impact anki deck 是 Anki 牌组分享，tunneling ssh over https 是网络运维）。最大亮点是 color-banding 长文——Jimenez 的一行 Interleaved Gradient Noise + 五家业界去带方案（Valve / Alien: Isolation / ReShade Deband / AE Ramp Scatter / KDE KWin blur + Windows Acrylic）横向拆解，加上一套相机翻拍 16-bit PNG 测屏幕真实位深的零成本自检法。perceptual-colormaps 把 matplotlib viridis 族和 DaVinci Resolve .cube 1D LUT 工作流打通，和 [[color-lut]] 游戏用法形成对称补充。frost-kiwi 人物页与 color-lut/color-space/dither-alpha-clipping 概念页通过 patch 追加相关链接与 source 引用。
+
+## [2026-04-14] ingest | Wave-11 Worker AE (interplayoflight.wordpress.com ×5)
+
+处理 Kostas Anagnostou / Interplay of Light 2013 年前 5 篇技术博客：tools of the trade、depth testing 阶段、tangent-free normal mapping、Unity as FX Composer replacement、SharpDX + Assimp model loading。5 篇全部入库。
+
+新增概念页 4：[[tangent-free-normal-mapping]]、[[shader-prototyping-tools]]、[[sharpdx-assimp-pipeline]]、[[conservative-depth]]。新增人物页 1：[[kostas-anagnostou]]。新增 source 摘要 5：interplay-tools-of-the-trade / interplay-depth-testing / interplay-tangent-free-normal-mapping / interplay-unity-as-fxcomposer / interplay-sharpdx-model-loading。
+
+Patch：[[early-z-late-z]] 补 Conservative Depth 相关链接与新 source；[[normal-map-blending]] 补 tangent-free 优化相关链接。
+
+## [2026-04-14] ingest | Wave-11 Worker AF (etodd.io ×5)
+
+处理 5 篇 etodd.io 2010-2011 早期独立游戏博客。Ingest 2 篇（meshes-of-navigation、refactoring-with-components），skip 3 篇 changelog/vision 文。新增 2 概念页（meshes-of-navigation-recast, component-entity-data-binding）、1 人物页（evan-todd）、2 source 摘要。对 ecs.md、a-star-pathfinding.md 打补丁补相关链接。
+
+## [2026-04-14] ingest | Wave-11 Worker AG (graphicrants.blogspot.com ×5)
+
+处理 5 篇 Brian Karis 的 Graphic Rants 博文。新增 3 概念页（virtualized-volume-textures, tiled-light-culling, sparse-shadows-cone-tracing）、1 人物页（brian-karis，Epic UE5 Nanite/Lumen 负责人）、3 source 摘要。跳过 2 篇：2010 年的 rgbd 帖被作者本人完全标为 hogwash 并删除正文；2011 年的 new-prey-2-screenshot 是宣传截图帖无技术实现内容。2012 年这两篇（tiled-light-culling + sparse-shadows-cone-tracing）是极高价值的 next-gen 渲染架构笔记——十年后 UE5 Lumen 几乎一字不差地实现了其中的核心假设（多几何表示 + cone trace + visibility 独立于光源跨光源共享）。patch 了 5 张已存在页：deferred-rendering / tiled-light-prepass / sdf-ray-marched-shadows / hierarchical-z-buffer / physically-based-shading。

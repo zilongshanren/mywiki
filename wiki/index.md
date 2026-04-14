@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 123
+sources: 133
 ---
 
 # 知识库索引
@@ -112,6 +112,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[gkengine]] | gameknife 2013–2015 的跨平台独立引擎，CryEngine 风格，gkNextEngine 的前身 |
 | [[game-physics-engine]] | 约束式刚体物理引擎的三段流水线：broadphase、collision detection、sequential impulse resolution |
 | [[collision-detection-gjk-epa]] | 凸几何碰撞检测三件套：GJK 判相交、EPA 补 contact、MPR 一步到位 |
+| [[component-entity-data-binding]] | 组件实体模型中的 I/O 端口式数据绑定（Evan Todd 2011） |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -249,6 +250,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[chromatic-aberration-post]] | 三通道 UV 偏移后处理：真实色差 vs 数字 glitch，Teleglitch / Deadlight 案例 |
 | [[color-banding]]                     | 色带根源 + Jimenez 一行 GLSL dither + 大厂去带方案横评                            |
 | [[perceptual-colormaps]]              | matplotlib 感知均匀 colormap 烘成 .cube 1D LUT 给 DaVinci Resolve |
+| [[tangent-free-normal-mapping]] | 用 `dFdx`/`dFdy` 在 pixel shader 里构造 TBN，免顶点存切线 |
+| [[shader-prototyping-tools]] | FX Composer / RenderMonkey / Unity / SharpDX 原型工具横评 |
+| [[sharpdx-assimp-pipeline]] | C# + D3D11 的 XNA 式原型：SharpDX + Assimp 模型加载 |
+| [[conservative-depth]] | `SV_DepthGreaterEqual` / `[earlydepthstencil]`：两条 Early-Z 救援通道 |
+| [[virtualized-volume-textures]] | Karis：2D 虚拟纹理和 SVO 思路扩展到 irradiance volume |
+| [[tiled-light-culling]] | Karis：把 specular cone + 能量守恒引入 tile 级光源剔除 |
+| [[sparse-shadows-cone-tracing]] | Karis 2012：diffuse 走 shadow map，远 specular 走 cone trace——UE5 Lumen 的起点笔记 |
 
 ## 经典案例（wiki/examples/）
 
@@ -275,6 +283,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[kinematic-character-controller]] | Unity DOTS 下 kinematic 角色控制器的设计与 edge case |
 | [[a-star-pathfinding]] | A* 与动态环境下的寻路取舍，g(n) 是游戏性的入口 |
 | [[composite-command-pattern]] | 命令模式与 Serial / Parallel 复合命令：跨帧执行的可组合工作单元 |
+| [[meshes-of-navigation-recast]] | 导航网格与 Recast 的体素化生成管线 |
 
 ## 人物（wiki/people/）
 
@@ -313,6 +322,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[frost-kiwi]] | Wladislav Artsimovich / Jaruat Frost，以交互式 WebGL 技术博客闻名 |
 | [[warren-moore]] | Warren Moore，Metal by Example 博客与同名书作者 |
 | [[simon-trumpler]] | Simon Trümpler，simonschreibt.de 作者，技术美术 / Game Art Tricks 博主 |
+| [[kostas-anagnostou]] | Interplay of Light 博主，Playground Games 图形工程师 |
+| [[people/evan-todd]] | Evan Todd，etodd.io / Lemma / Deceiver 独立开发者 |
+| [[brian-karis]] | Epic UE5 Nanite/Lumen 技术负责人，前 Human Head（Prey 2），UE4 Real Shading 作者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -441,6 +453,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/simonschreibt-teleglitch-rgb]] | Simon：Teleglitch 传送器的 RGB 通道独立偏移特效 |
 | [[sources/frost-kiwi-color-banding]] | Frost：一行 GLSL dither 消色带 + 五家业界实现横评 |
 | [[sources/frost-kiwi-thermal-colormaps]] | Frost：matplotlib colormap → DaVinci Resolve .cube 工具脚本 |
+| [[sources/interplay-tools-of-the-trade]] | Anagnostou：shader 原型与调试工具栈总览（2013） |
+| [[sources/interplay-depth-testing]] | Anagnostou：D3D11 depth testing 阶段与 Early-Z 救援语义 |
+| [[sources/interplay-tangent-free-normal-mapping]] | Anagnostou：Christian Schüler 免 TBN 法线贴图的 FX Composer 实测 |
+| [[sources/interplay-unity-as-fxcomposer]] | Anagnostou：Unity 免费版替代 FX Composer 做 shader 原型 |
+| [[sources/interplay-sharpdx-model-loading]] | Anagnostou：SharpDX + Assimp 补齐 XNA 式内容管线 |
+| [[sources/etodd-meshes-of-navigation]] | Todd：把 Recast 接入 A3P 的 navmesh 管线 |
+| [[sources/etodd-refactoring-with-components]] | Todd：端口式的组件数据绑定方案 |
+| [[sources/karis-virtualized-volume-textures]] | Karis：把 2D virtual texture 和 SVO 思路搬到 irradiance volume |
+| [[sources/karis-tiled-light-culling]] | Karis：tile 级 per-light 剔除加入 specular cone 方向约束 |
+| [[sources/karis-sparse-shadows-tracing]] | Karis：next-gen 渲染需要多几何表示 + cone trace，UE5 Lumen 的雏形 |
 
 ## 元（wiki/meta/）
 

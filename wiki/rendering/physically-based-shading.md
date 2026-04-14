@@ -40,6 +40,8 @@ sources: 1
 - [[stephen-hill]]
 - [[fast-translucency-wraplight]] — Frostbite 2 的廉价假 SSS：反向光方向 + subsurface distortion
 - [[journey-sand-specular]] — 风格化多路 specular 拆分（rim Fresnel + ocean Blinn-Phong）
+- [[tiled-light-culling]] —— Brian Karis：用能量守恒和 specular cone 做 tile 级剔除
+- [[brian-karis]] —— UE4 Real Shading 的作者
 
 ## Sources
 

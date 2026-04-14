@@ -61,6 +61,7 @@ ECS 本身引入了新的复杂性：
 - [[amdahls-law]]
 - [[data-driven-architecture]]
 - [[kinematic-character-controller]] — DOTS 下 kinematic 角色控制器的 component/system/job 拆分实例
+- [[component-entity-data-binding]] — Evan Todd 2011 年手写的组件数据绑定方案，和 DOTS 的全局 System 查询形成哲学对比
 
 ## Sources
 

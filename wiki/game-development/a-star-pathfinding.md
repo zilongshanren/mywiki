@@ -51,6 +51,7 @@ A\* 只是搜索策略，真正麻烦的是"在什么图上搜"。NavMesh（体�
 
 - [[game-engine]]
 - [[kinematic-character-controller]]
+- [[meshes-of-navigation-recast]] — Recast 的体素化 navmesh 生成管线
 
 ## Sources
 
