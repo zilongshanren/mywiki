@@ -1,0 +1,52 @@
+{
+  "batch_id": "batch-w25-bv",
+  "agent_note": "单文件批次。aras-p.info 的 Syntonic Dentiforms redux —— 把 2004 年 D3D9 demo 挖出来移植到 sokol_gfx 跨后端（Windows/DX11、Linux/GL、macOS/Metal、Web/WebGL2），并大刀阔斧砍掉当年过度抽象的 C++（216 文件 24k 行 → 49 文件 6k 行）。没有创建新概念页：最相关的两个概念 [[classitis]] 和 [[aras-pranckevicius]] 都已存在，只做 surgical patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/aras-p.info/2026-04-13_syntonic-dentiforms-redux-aras-website.md",
+      "status": "ingested",
+      "source_slug": "aras-syntonic-dentiforms-redux",
+      "title": "Syntonic Dentiforms redux"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["aras-syntonic-dentiforms-redux"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/software-design/classitis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- 图形/引擎实例：[[sources/aras-syntonic-dentiforms-redux]] —— Aras 回头看自己 2004 年的 demo，把 `IAnimChannel`/`CAnimChannel<T>`/`IAnimStream<T>`/`CAbstractTimedAnimStream<T>`……14 个模板接口压成 3 个具体类型，整个项目 216 文件 24k 行 → 49 文件 6k 行"
+    },
+    {
+      "file": "wiki/software-design/classitis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/aras-syntonic-dentiforms-redux]]"
+    },
+    {
+      "file": "wiki/people/aras-pranckevicius.md",
+      "operation": "append_to_section",
+      "section": "## 主要贡献",
+      "content": "- **2004 demo 考古**：把 nesnausk! 时代的《Syntonic Dentiforms》从 D3D9 + D3DX 移植到 sokol_gfx 跨后端，并对着 22 年前的过度抽象（`IAnimChannel`/`IAnimStream<T>`/traits/listeners……）做了一次 [[classitis]] 级别的大砍，216 → 49 文件、24k → 6k 行（见 [[sources/aras-syntonic-dentiforms-redux]]）。"
+    },
+    {
+      "file": "wiki/people/aras-pranckevicius.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[classitis]]\n- [[shadow-mapping-basics]]"
+    },
+    {
+      "file": "wiki/people/aras-pranckevicius.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/aras-syntonic-dentiforms-redux]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/aras-syntonic-dentiforms-redux]] | Aras 把 2004 年自己的 demo 移植到 sokol_gfx 跨后端并砍掉 classitis 级的抽象 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-25 Worker BV (aras-p.info ×1)\n\n批次 batch-w25-bv：1 篇。Syntonic Dentiforms redux —— Aras 把 2004 年 D3D9 demo 移植到 sokol_gfx（Windows/Linux/Mac/Web），并把原本 216 文件 24k 行的 C++ 抽象重灾区砍成 49 文件 6k 行。新增 1 source 摘要；patch 到 [[classitis]] 与 [[aras-pranckevicius]]。未新建概念页：相关概念均已存在。"
+}

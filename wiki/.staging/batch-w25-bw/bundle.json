@@ -1,0 +1,107 @@
+{
+  "batch_id": "batch-w25-bw",
+  "agent_note": "blog.mecheye.net 五篇：一篇 GNOME Shell 提交指南跳过；四篇技术文全部纳入。The Linux Graphics Stack 是 linux-graphics-stack-dri 的前身栈概览，两者互补而非重复：DRI 一文讲命名去重、Stack 一文讲两条路径+Wayland 对比，因此未修改既有 linux-graphics-stack-dri 页，只在其上 patch 一条相关链接。三个新概念页均落在 computer-systems/。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.mecheye.net/2012-02-25_requirements-and-tips-for-getting-your-gnome-shell-extension.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME Shell Extension 网站提交指南，非技术内容（扩展商店的运营与审核规则）"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2012-06-16_the-linux-graphics-stack.md",
+      "status": "ingested",
+      "source_slug": "jasper-linux-graphics-stack",
+      "title": "The Linux Graphics Stack"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2012-12-09_bytecode.md",
+      "status": "ingested",
+      "source_slug": "jasper-bytecode",
+      "title": "Bytecode"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2013-03-19_barriers.md",
+      "status": "ingested",
+      "source_slug": "jasper-barriers",
+      "title": "Barriers"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2013-12-28_xplain.md",
+      "status": "ingested",
+      "source_slug": "jasper-xplain",
+      "title": "Xplain"
+    }
+  ],
+  "concepts_created": [
+    "x11-composite-redirection",
+    "wayland-compositor-model",
+    "bytecode-everywhere",
+    "x11-pointer-barrier"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "jasper-linux-graphics-stack",
+    "jasper-bytecode",
+    "jasper-barriers",
+    "jasper-xplain"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/linux-graphics-stack-dri.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[x11-composite-redirection]] —— Expose 模型、COMPOSITE 扩展、TFP 与 unredirection\n- [[wayland-compositor-model]] —— Wayland 为何把 display server 与 compositor 合并"
+    },
+    {
+      "file": "wiki/computer-systems/linux-graphics-stack-dri.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/jasper-linux-graphics-stack]]"
+    },
+    {
+      "file": "wiki/people/jasper-st-pierre.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[x11-composite-redirection]]\n- [[wayland-compositor-model]]\n- [[x11-pointer-barrier]]\n- [[bytecode-everywhere]]"
+    },
+    {
+      "file": "wiki/people/jasper-st-pierre.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/jasper-linux-graphics-stack]]\n- [[sources/jasper-bytecode]]\n- [[sources/jasper-barriers]]\n- [[sources/jasper-xplain]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[x11-composite-redirection]] | X11 Expose 模型、COMPOSITE 扩展、Texture-from-Pixmap 与 unredirection 的合成链路 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[wayland-compositor-model]] | Wayland compositor = display server，2000–3000 SLOC 取代 mutter 的 X 同步胶水 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[bytecode-everywhere]] | ACPI / 字体 CFF / TrueType hinting / BPF / DWARF / VDBE——藏在系统里的字节码 VM 考古 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[x11-pointer-barrier]] | XI 2.3 的 pointer barrier pressure：把\"推屏幕边\"从 timeout 升级为一等公民手势 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-linux-graphics-stack]] | Jasper：Linux 图形栈两条路径 + Wayland 动因综述（2012） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-bytecode]] | Jasper：ACPI / 字体 / BPF——被藏起来的字节码解释器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-barriers]] | Jasper：GNOME 3.8 压力式消息托盘背后的 XI 2.3 pointer barrier pressure |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-xplain]] | Jasper：Xplain 交互式 X11 深度科普系列启动公告 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-25 Worker BW (blog.mecheye.net ×5)\n\n处理 5 篇 Jasper St. Pierre 的博文。跳过 1 篇 GNOME Shell Extension 提交指南（非技术）。纳入 The Linux Graphics Stack（2012 栈综述）、Bytecode（ACPI/字体/BPF 字节码考古）、Barriers（XI 2.3 pointer barrier pressure）、Xplain（交互式 X11 科普系列启动公告）。新增 4 概念页（x11-composite-redirection、wayland-compositor-model、bytecode-everywhere、x11-pointer-barrier）、4 source 摘要，并给既有 linux-graphics-stack-dri / jasper-st-pierre 两页打 patch 加相关链接与 Source 列表。"
+}

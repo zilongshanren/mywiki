@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w25-bu",
+  "agent_note": "全部跳过。4 篇为博客 meta（新布局、引擎链接清单、作业贴、协同设计实验），1 篇 small-brdf-visualizer 是作者明确声明为玩具的 FXComposer HLSL 片段，附带大段寻找 shader IDE 的离题抱怨，作者自己建议读者改用 BRDFLab 或 Disney BRDF Explorer，技术价值低于现有 [[microfacet-brdf]] / [[physically-based-shading]]。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-27_new-layout.md",
+      "status": "skipped_offtopic",
+      "reason": "博客改版说明，纯 meta"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-28_small-brdf-visualizer.md",
+      "status": "skipped_offtopic",
+      "reason": "作者自述是玩具级 FXComposer HLSL 片段，主体内容是吐槽 shader IDE，并引导读者使用 BRDFLab/Disney BRDF Explorer；技术增量低于现有 microfacet-brdf 页面"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-03_3d-engines-out-there.md",
+      "status": "skipped_offtopic",
+      "reason": "开源 3D 引擎链接清单，无分析性内容"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-06_homework.md",
+      "status": "skipped_offtopic",
+      "reason": "meta 贴，向读者布置作业"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-14_collaborative-design-experiment.md",
+      "status": "skipped_offtopic",
+      "reason": "邀请读者协同设计的 meta 贴，非技术内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-14] ingest | Wave-25 Worker BU (c0de517e ×5 all-skip)\n\n批次 batch-w25-bu：全部跳过。4 篇 meta（new-layout、3d-engines-out-there、homework、collaborative-design-experiment），1 篇 small-brdf-visualizer 为作者自述玩具级 HLSL 片段，技术增量不及现有 [[microfacet-brdf]]。"
+}

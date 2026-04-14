@@ -30,6 +30,7 @@ bottleneck-analysis
 bresenham-lines
 brian-karis
 buffer-renaming
+bytecode-everywhere
 c-interface-oop
 c-opaque-struct-modules
 c-serialization-metadata
@@ -372,7 +373,10 @@ volumetric-video-playback
 voxel-ambient-occlusion
 warren-moore
 watercolour-shader-experiments
+wayland-compositor-model
 worley-voronoi-noise
+x11-composite-redirection
+x11-pointer-barrier
 x64-platform-tidbits
 xor-shader-artist
 z-buffer

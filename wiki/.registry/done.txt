@@ -345,3 +345,14 @@ raw/articles/lindenreid.wordpress.com/2017-12-15_simple-water-shader-in-unity.md
 raw/articles/lindenreid.wordpress.com/2017-12-16_dissolve-shader-in-unity.md
 raw/articles/lindenreid.wordpress.com/2017-12-18_unity-graphics-setup.md
 raw/articles/lindenreid.wordpress.com/2017-12-19_cel-shader-with-outline-in-unity.md
+raw/articles/c0de517e.blogspot.com/2010-02-27_new-layout.md
+raw/articles/c0de517e.blogspot.com/2010-02-28_small-brdf-visualizer.md
+raw/articles/c0de517e.blogspot.com/2010-03-03_3d-engines-out-there.md
+raw/articles/c0de517e.blogspot.com/2010-03-06_homework.md
+raw/articles/c0de517e.blogspot.com/2010-03-14_collaborative-design-experiment.md
+raw/articles/aras-p.info/2026-04-13_syntonic-dentiforms-redux-aras-website.md
+raw/articles/blog.mecheye.net/2012-02-25_requirements-and-tips-for-getting-your-gnome-shell-extension.md
+raw/articles/blog.mecheye.net/2012-06-16_the-linux-graphics-stack.md
+raw/articles/blog.mecheye.net/2012-12-09_bytecode.md
+raw/articles/blog.mecheye.net/2013-03-19_barriers.md
+raw/articles/blog.mecheye.net/2013-12-28_xplain.md

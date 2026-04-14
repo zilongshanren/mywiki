@@ -357,3 +357,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-24 Worker BT (lindenreid.wordpress.com 2017-12 ×5)
 
 Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 3 概念页（procedural-greeble / stylized-water-shader / cel-shader-outline）、4 source 摘要。texture-dissolve 概念已存在，只 patch 加 source 链接。unity-graphics-setup 纯编辑器配置指南跳过。linden-reid 人物页补 4 条 source 链接与「2017-12 Unity Shader 系列」小节。
+
+## [2026-04-14] ingest | Wave-25 Worker BU (c0de517e ×5 all-skip)
+
+批次 batch-w25-bu：全部跳过。4 篇 meta（new-layout、3d-engines-out-there、homework、collaborative-design-experiment），1 篇 small-brdf-visualizer 为作者自述玩具级 HLSL 片段，技术增量不及现有 [[microfacet-brdf]]。
+
+## [2026-04-14] ingest | Wave-25 Worker BV (aras-p.info ×1)
+
+批次 batch-w25-bv：1 篇。Syntonic Dentiforms redux —— Aras 把 2004 年 D3D9 demo 移植到 sokol_gfx（Windows/Linux/Mac/Web），并把原本 216 文件 24k 行的 C++ 抽象重灾区砍成 49 文件 6k 行。新增 1 source 摘要；patch 到 [[classitis]] 与 [[aras-pranckevicius]]。未新建概念页：相关概念均已存在。
+
+## [2026-04-14] ingest | Wave-25 Worker BW (blog.mecheye.net ×5)
+
+处理 5 篇 Jasper St. Pierre 的博文。跳过 1 篇 GNOME Shell Extension 提交指南（非技术）。纳入 The Linux Graphics Stack（2012 栈综述）、Bytecode（ACPI/字体/BPF 字节码考古）、Barriers（XI 2.3 pointer barrier pressure）、Xplain（交互式 X11 科普系列启动公告）。新增 4 概念页（x11-composite-redirection、wayland-compositor-model、bytecode-everywhere、x11-pointer-barrier）、4 source 摘要，并给既有 linux-graphics-stack-dri / jasper-st-pierre 两页打 patch 加相关链接与 Source 列表。

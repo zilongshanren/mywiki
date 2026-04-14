@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 引擎工程师]
 date: 2026-04-14
-sources: 7
+sources: 8
 ---
 
 # Aras Pranckevičius
@@ -16,6 +16,7 @@ sources: 7
 - **Blender VSE**：从 4.1 开始持续推动 VSE 的性能、滤波质量、scopes 可视化等改进；将 waveform/vectorscope 从 CPU 搬到 GPU compute shader（见 [[compute-vs-raster-points]]）。
 - **基准与对比**：长年维护非加密哈希函数评测系列，并把 [[rapidhash]] 移植到 Unity Burst（见 [[non-cryptographic-hash]]）。
 - **图像滤波考古**：详细复盘了 Bilinear/Bicubic 在不同软件里「同名异义」的混乱，以及 DirectX 9 时代遗留的「半 texel 偏移」问题（见 [[image-resampling-filters]]）。
+- **2004 demo 考古**：把 nesnausk! 时代的《Syntonic Dentiforms》从 D3D9 + D3DX 移植到 sokol_gfx 跨后端，并对着 22 年前的过度抽象（`IAnimChannel`/`IAnimStream<T>`/traits/listeners……）做了一次 [[classitis]] 级别的大砍，216 → 49 文件、24k → 6k 行（见 [[sources/aras-syntonic-dentiforms-redux]]）。
 
 ## 相关
 
@@ -28,6 +29,8 @@ sources: 7
 - [[lossless-float-image-compression]]
 - [[openexr-format]]
 - [[meshoptimizer-vertex-codec]]
+- [[classitis]]
+- [[shadow-mapping-basics]]
 
 ## Sources
 
@@ -38,3 +41,4 @@ sources: 7
 - [[sources/aras-voronoi-hashing-osl]]
 - [[sources/aras-lossless-float-image-compression]]
 - [[sources/aras-openexr-vs-tinyexr]]
+- [[sources/aras-syntonic-dentiforms-redux]]

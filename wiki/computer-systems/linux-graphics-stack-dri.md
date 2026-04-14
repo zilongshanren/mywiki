@@ -1,7 +1,7 @@
 ---
 tags: [linux, 图形栈, 系统, 内核, mesa]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # Linux 图形栈：DRI / DRM / KMS
@@ -59,7 +59,10 @@ Mesa 里有一套叫 **Gallium3D** 的驱动 building block 框架，AMD/Nouveau
 - [[jasper-st-pierre]] —— Linux 图形栈/窗口系统长期贡献者
 - [[gpu-hazard-tracking]] —— 用户态 Mesa 驱动本地的状态追踪工作
 - [[rendering-api-depth]] —— 驱动 = 典型深模块
+- [[x11-composite-redirection]] —— Expose 模型、COMPOSITE 扩展、TFP 与 unredirection
+- [[wayland-compositor-model]] —— Wayland 为何把 display server 与 compositor 合并
 
 ## Sources
 
 - [[sources/jasper-dri-linux-graphics-stack]]
+- [[sources/jasper-linux-graphics-stack]]

@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 系统工程师]
 date: 2026-04-14
-sources: 2
+sources: 6
 ---
 
 # Jasper St. Pierre
@@ -27,8 +27,16 @@ Jasper 的写作偏**"把一件事讲明白"的结构科普**：从下往上梳�
 - [[buffer-renaming]]
 - [[rendering-api-depth]]
 - [[render-graph]]
+- [[x11-composite-redirection]]
+- [[wayland-compositor-model]]
+- [[x11-pointer-barrier]]
+- [[bytecode-everywhere]]
 
 ## Sources
 
 - [[sources/jasper-how-to-write-a-renderer]]
 - [[sources/jasper-dri-linux-graphics-stack]]
+- [[sources/jasper-linux-graphics-stack]]
+- [[sources/jasper-bytecode]]
+- [[sources/jasper-barriers]]
+- [[sources/jasper-xplain]]

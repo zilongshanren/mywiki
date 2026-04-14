@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 274
+sources: 279
 ---
 
 # 知识库索引
@@ -123,6 +123,10 @@ CAQA + CSAPP 的底层视角。
 | [[binary-hot-reload]] | C++ 二进制热重载：DLL swap + 五道状态归属坑（memory/threads/fnptr/strings/structs） |
 | [[rust-disassembly-tour]] | Rust 的 i128/解构/数组/iterator 在 Compiler Explorer 里到底变成了什么汇编 |
 | [[x64-platform-tidbits]] | x86-64 C 提升规则坑与 PS3 PPU GCC 的指针 wrap 保守性；结构体 trick |
+| [[x11-composite-redirection]] | X11 Expose 模型、COMPOSITE 扩展、Texture-from-Pixmap 与 unredirection 的合成链路 |
+| [[wayland-compositor-model]] | Wayland compositor = display server，2000–3000 SLOC 取代 mutter 的 X 同步胶水 |
+| [[bytecode-everywhere]] | ACPI / 字体 CFF / TrueType hinting / BPF / DWARF / VDBE——藏在系统里的字节码 VM 考古 |
+| [[x11-pointer-barrier]] | XI 2.3 的 pointer barrier pressure：把"推屏幕边"从 timeout 升级为一等公民手势 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -715,6 +719,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/lindenreid-stylized-water-shader]] | Linden Reid：Unity 风格化水面 shader |
 | [[sources/lindenreid-dissolve-shader]] | Linden Reid：Unity dissolve shader 与多层边缘色 |
 | [[sources/lindenreid-cel-shader-outline]] | Linden Reid：Unity cel shader + stencil 描边 |
+| [[sources/aras-syntonic-dentiforms-redux]] | Aras 把 2004 年自己的 demo 移植到 sokol_gfx 跨后端并砍掉 classitis 级的抽象 |
+| [[sources/jasper-linux-graphics-stack]] | Jasper：Linux 图形栈两条路径 + Wayland 动因综述（2012） |
+| [[sources/jasper-bytecode]] | Jasper：ACPI / 字体 / BPF——被藏起来的字节码解释器 |
+| [[sources/jasper-barriers]] | Jasper：GNOME 3.8 压力式消息托盘背后的 XI 2.3 pointer barrier pressure |
+| [[sources/jasper-xplain]] | Jasper：Xplain 交互式 X11 深度科普系列启动公告 |
 
 ## 元（wiki/meta/）
 

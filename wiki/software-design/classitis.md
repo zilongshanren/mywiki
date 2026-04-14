@@ -1,7 +1,7 @@
 ---
 tags: [软件设计, 反模式, aposd]
 date: 2026-04-05
-sources: 2
+sources: 3
 ---
 
 # Classitis（类炎症）
@@ -65,8 +65,10 @@ Clean Code 主张「函数不超过 N 行」「类要小」。Ousterhout 反驳�
 - 游戏开发视角：[[classitis-in-games]]
 - 经典案例：[[java-io]] vs [[unix-io]]
 - [[cpp-multi-paradigm-discipline]] —— 云风评注 Effective C++ 3rd 的 Item 1：把 C++ 当成语言联邦、定义团队子集
+- 图形/引擎实例：[[sources/aras-syntonic-dentiforms-redux]] —— Aras 回头看自己 2004 年的 demo，把 `IAnimChannel`/`CAnimChannel<T>`/`IAnimStream<T>`/`CAbstractTimedAnimStream<T>`……14 个模板接口压成 3 个具体类型，整个项目 216 文件 24k 行 → 49 文件 6k 行
 
 ## Sources
 
 - [[sources/aposd-day04]]
 - [[sources/aposd-day05]]
+- [[sources/aras-syntonic-dentiforms-redux]]
