@@ -65,3 +65,4 @@ $$
 ## Sources
 
 - [[sources/slater-functions-are-vectors]]
+- [[sources/slater-neural-graphics-primitives]]

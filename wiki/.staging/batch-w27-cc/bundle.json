@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w27-cc",
+  "agent_note": "5 Max Slater (thenumb.at) high-quality technical posts. All ingested. 2025-03-29 Monte Carlo Crash Course is Part 1 Continuous Probability — distinct from existing slater-qmc-crash-course which is Part 5 QMC. Created 5 new concept pages and 5 new source summaries. max-slater person page already exists; reuse it.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/thenumb.at/2022-11-27_exploring-neural-graphics-primitives.md",
+      "status": "ingested",
+      "source_slug": "slater-neural-graphics-primitives",
+      "title": "Exploring Neural Graphics Primitives"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2023-01-08_optimizing-open-addressing.md",
+      "status": "ingested",
+      "source_slug": "slater-optimizing-open-addressing",
+      "title": "Optimizing Open Addressing"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2023-01-08_spherical-integration.md",
+      "status": "ingested",
+      "source_slug": "slater-spherical-integration",
+      "title": "Spherical Integration"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2024-01-06_oxidizing-c.md",
+      "status": "ingested",
+      "source_slug": "slater-oxidizing-cpp",
+      "title": "Oxidizing C++"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2025-03-29_monte-carlo-crash-course.md",
+      "status": "ingested",
+      "source_slug": "slater-continuous-probability",
+      "title": "Monte Carlo Crash Course — Continuous Probability (Part 1)"
+    }
+  ],
+  "concepts_created": [
+    "neural-graphics-primitives",
+    "open-addressing-hashtable",
+    "spherical-integration",
+    "rpp-stl-replacement",
+    "continuous-probability"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "slater-neural-graphics-primitives",
+    "slater-optimizing-open-addressing",
+    "slater-spherical-integration",
+    "slater-oxidizing-cpp",
+    "slater-continuous-probability"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "replace_line",
+      "match": "sources: 9",
+      "content": "sources: 14"
+    },
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-neural-graphics-primitives]]\n- [[sources/slater-optimizing-open-addressing]]\n- [[sources/slater-spherical-integration]]\n- [[sources/slater-oxidizing-cpp]]\n- [[sources/slater-continuous-probability]]"
+    },
+    {
+      "file": "wiki/rendering/quasi-monte-carlo.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[continuous-probability]] — 同系列 Part 1，数学前置\n- [[spherical-integration]] — 同系列所需的积分坐标变换"
+    },
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-spherical-integration]]"
+    },
+    {
+      "file": "wiki/rendering/projected-solid-angle-sampling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-spherical-integration]]"
+    },
+    {
+      "file": "wiki/programming-languages/functions-as-vectors.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/slater-neural-graphics-primitives]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[neural-graphics-primitives]] | 神经图形原语：MLP + 位置编码 / Instant NGP 哈希编码把图像/SDF/NeRF 全部写成 coord→value |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spherical-integration]] | 球面积分里的 $\\sin\\theta$ 从何而来：参数化 + 叉积 + 第一基本形式 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[open-addressing-hashtable]] | Robin Hood 线性探测 + backshift 删除：Slater 的哈希表工程对照组 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[rpp-stl-replacement]] | Slater 的 rpp：Rust 风格 C++20 STL 替代（region 分配器 / brand / 协程 / 反射） |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[continuous-probability]] | 连续概率速成：PDF/CDF、期望方差、Markov/Chebyshev、Dirac delta（MC 系列 Part 1） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-neural-graphics-primitives]] | Slater：神经图形原语——激活函数谱系 + 位置编码 + Instant NGP 哈希 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-optimizing-open-addressing]] | Slater：开放寻址哈希表 benchmark —— Robin Hood + backshift 胜出 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-spherical-integration]] | Slater：球面积分里 $\\sin\\theta$ 的直观 + 形式推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-oxidizing-cpp]] | Slater：rpp —— Rust 灵感的 C++20 STL 替代与 region 分配器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-continuous-probability]] | Slater：Monte Carlo 速成 Part 1 — 连续概率基础 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-27 Worker CC (thenumb.at Max Slater ×5)\n\n处理 5 篇 Max Slater 技术长文：Neural Graphics Primitives、Optimizing Open Addressing、Spherical Integration、Oxidizing C++、Monte Carlo Crash Course Part 1 (Continuous Probability)。新增 5 概念页（neural-graphics-primitives, open-addressing-hashtable, spherical-integration, rpp-stl-replacement, continuous-probability）、5 source 摘要。max-slater 人物页已存在，追加 5 source 链接。Part 1 (2025-03-29) 与已有 Part 5 QMC (slater-qmc-crash-course) 独立收录。"
+}

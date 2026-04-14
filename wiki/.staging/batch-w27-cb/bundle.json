@@ -1,0 +1,210 @@
+{
+  "batch_id": "batch-w27-cb",
+  "agent_note": "metalbyexample.com 第二批 5 篇。linear-algebra 作为 source-only 摘要（与 mvp-transform / shader-vector-math-primer 重叠）；feature-sets 是短参考文，source-only 不新建概念页；Part 3 lighting、textures-and-samplers、image-processing 三篇各新建一个概念页（metal-3d-rendering-pipeline / metal-texture-sampler / metal-compute-image-filter）。warren-moore 人物页已存在，仅追加贡献表与 Sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/metalbyexample.com/2014-09-14_linear-algebra-for-graphics-programming.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-linear-algebra",
+      "title": "Linear Algebra for Graphics Programming",
+      "note": "与 mvp-transform / shader-vector-math-primer 内容完全重叠，只做 source 摘要 + patch（不新建概念页）"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-09-22_up-and-running-with-metal-part-3-lighting-and-rendering-in-3.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-up-and-running-3",
+      "title": "Up and Running with Metal, Part 3: Lighting and Rendering in 3D",
+      "note": "新建 metal-3d-rendering-pipeline 概念页（OBJ / uniforms / vertex descriptor / depth state / Blinn-Phong）"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-09-24_feature-sets-and-capabilities.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-feature-sets",
+      "title": "Feature Sets and Capabilities",
+      "note": "短参考文（A7 vs A8 GPU 能力差异）。source-only，patch metal-api-overview 追加 feature-set 一段"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-09-29_textures-and-samplers-in-metal.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-textures-and-samplers",
+      "title": "Textures and Samplers in Metal",
+      "note": "新建 metal-texture-sampler 概念页"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2014-10-14_fundamentals-of-image-processing-in-metal.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-image-processing",
+      "title": "Fundamentals of Image Processing in Metal",
+      "note": "新建 metal-compute-image-filter 概念页（compute shader 图像处理 + filter chain）"
+    }
+  ],
+  "concepts_created": [
+    "metal-3d-rendering-pipeline",
+    "metal-texture-sampler",
+    "metal-compute-image-filter"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "metalbyexample-linear-algebra",
+    "metalbyexample-up-and-running-3",
+    "metalbyexample-feature-sets",
+    "metalbyexample-textures-and-samplers",
+    "metalbyexample-image-processing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 5"
+    },
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## 对象家族",
+      "content": "\n### Feature set：按 GPU 家族分层的能力查询\n\nMetal 从 iOS 8 GM 开始引入 `MTLFeatureSet` + `[device supportsFeatureSet:]`，用来区分不同 GPU 家族的能力差异。2014 年枚举只有 `GPUFamily1_v1`（A7）和 `GPUFamily2_v1`（A8）两项，差异集中在两点：A7 的 render pass color attachment 上限是 4、A8 提到 8（意味着 A8 才能开完整的 [[deferred-rendering|deferred G-buffer]]）；A8 新增 [ASTC](https://en.wikipedia.org/wiki/Adaptive_Scalable_Texture_Compression) 纹理压缩支持。多年以后这条 API 路径扩展到了 Apple Silicon 的 `GPUFamily9`，功能分层也远不止当年两条——但设计哲学没变：**问能力而不是问型号**，让 app 对未来硬件自然兼容。\n\nWarren 文里提到一个调试小细节：`MTLCreateDefaultSystemDevice` 在 debugger 下返回 `MTLDebugDevice`（带参数 validation 的 wrapper），脱离 debugger 才返回设备特定驱动类如 `AGXG3Device` / `AGXG4PDevice`——这就是 Metal validation 层的实现机制。\n"
+    },
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-up-and-running-3]]\n- [[sources/metalbyexample-feature-sets]]"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "append_to_section",
+      "section": "## 为什么分开，不预乘？",
+      "content": "\nMetal 教程里的实践做法是**一次性给 shader 送三把矩阵**（见 [[metal-3d-rendering-pipeline]]）：`modelViewProjection` 用于 vertex 主变换、`modelView` 用于光照所需的 view-space 位置、`normalMatrix = transpose(inverse(modelView))` 的 3×3 块用于法线变换。normal 单独要一把矩阵是因为**非均匀缩放会扭歪法线**——点乘 M，法线必须乘 `(M⁻¹)ᵀ` 才保留垂直性。这条规则对所有带 scale 的 rigging 都适用。\n"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-linear-algebra]] —— Warren Moore 从 Metal 视角给出 OpenGL Z=[-1,1] 与 Metal Z=[0,1] 的 clip-space 差异"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-linear-algebra]] —— Warren Moore 的 Metal 视角版：从 handedness / 齐次坐标 / column-major 存储讲起，适合 C++/Objective-C 程序员"
+    },
+    {
+      "file": "wiki/rendering/sampler-filter-wrap-modes.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/sampler-filter-wrap-modes.md",
+      "operation": "append_to_section",
+      "section": "## 和 Sampler State 资源的解耦",
+      "content": "\n## Metal 的具体落地\n\n[[metal-texture-sampler|Metal 的 sampler]] 把这些概念系统地实现成两种形式：**host 侧的 `MTLSamplerState`**（填 `MTLSamplerDescriptor` 创建，用 `[[sampler(n)]]` 在 shader 里引用）和 **MSL 源码里的 `constexpr sampler`**（编译期构造，整个函数共享一份）。Metal 独有 `address::clamp_to_zero`——越界返回黑色或透明，OpenGL 里没有对应项；其余四种 address mode（clamp_to_edge / repeat / mirrored_repeat）和两种 filter（nearest / linear）都和上面讲的一致。因为 constexpr sampler 参数必须静态，运行时需要切换 sampler 配置就只能走 host 侧那条路。\n"
+    },
+    {
+      "file": "wiki/rendering/sampler-filter-wrap-modes.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-textures-and-samplers]]"
+    },
+    {
+      "file": "wiki/rendering/image-convolution-kernel.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/image-convolution-kernel.md",
+      "operation": "append_to_section",
+      "section": "## 为什么 image effect 常用 3x3 而不是更大",
+      "content": "\n## 在 compute shader 里写卷积\n\n把卷积搬进 [[metal-compute-image-filter|Metal compute kernel]] 只是把 `tex2D` 换成 `texture.read(gid + offset)`、把 texel offset 换成整数——数学不变，但**边界行为**变成你的责任。compute kernel 没有隐含的 sampler，越界读取返回黑色（undefined），卷积出来的图像边缘会有一圈黑边。解法要么 kernel 内部手动 bounds check，要么走回 sampler 采样路径（用 `texture.sample(sampler, uv)` 而不是 `texture.read(gid)`）。Warren 的 *Fundamentals of Image Processing in Metal* 就踩到这个坑——评论区有专门的讨论。\n\nCompute 版本的另一个教训：**1-to-1 的像素映射不适合用 compute shader**。同样的 saturation 滤镜放进 fragment shader 能跑满 60fps，扔进 compute kernel 反而掉到 12fps——因为 compute 失去了光栅化器、hierarchical Z 这类「免费」硬件加速。Compute 真正的价值在于**非 1-to-1 的计算**（直方图、reduction、不规则邻域访问），单纯的逐像素滤镜应当优先留在 fragment stage。\n"
+    },
+    {
+      "file": "wiki/rendering/image-convolution-kernel.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-image-processing]]"
+    },
+    {
+      "file": "wiki/rendering/separable-gaussian-blur.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/separable-gaussian-blur.md",
+      "operation": "append_to_section",
+      "section": "## 可分离之外：现代做法",
+      "content": "\n## 反面教材：Metal 教程里的不可分离 Gaussian\n\n[[metal-compute-image-filter|Warren Moore 的 image processing 教程]]在 compute kernel 里直接写了双重循环 `for(j) for(i)`——没有用可分离性，每像素 `N²` 次采样。他的 kernel 还把预计算的 2D 权重矩阵做成一张 `MTLPixelFormatR32Float` 的查找纹理传进去，kernel 里 `weights.read(kernelIndex).rrrr` 取出标量权重。灵活性很好（改半径只需重建权重纹理），但性能代价直接——`N=15` 时就是 225 次 texture fetch/像素，和 2×N=30 的可分离版本差了一个数量级。教程的定位是入门而非性能演示，但对读者是个提醒：可分离这条优化路径之所以存在，正是因为「显式写双重循环」的实现是真的会慢。\n"
+    },
+    {
+      "file": "wiki/rendering/separable-gaussian-blur.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-image-processing]]"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 8"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Linear Algebra for Graphics Programming | [[mvp-transform]]、[[shader-vector-math-primer]]（支线参考文）|\n| Up and Running with Metal, Part 3: Lighting and Rendering in 3D | [[metal-3d-rendering-pipeline]]、[[normalised-blinn-phong-shader]] |\n| Feature Sets and Capabilities | [[metal-api-overview]] 的 feature-set 小节 |\n| Textures and Samplers in Metal | [[metal-texture-sampler]] |\n| Fundamentals of Image Processing in Metal | [[metal-compute-image-filter]] |"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-3d-rendering-pipeline]]\n- [[metal-texture-sampler]]\n- [[metal-compute-image-filter]]"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/metalbyexample-linear-algebra]]\n- [[sources/metalbyexample-up-and-running-3]]\n- [[sources/metalbyexample-feature-sets]]\n- [[sources/metalbyexample-textures-and-samplers]]\n- [[sources/metalbyexample-image-processing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-3d-rendering-pipeline]] | Metal 最小 3D 渲染管线：OBJ + MVP uniform + vertex descriptor + depth state + Blinn-Phong |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-texture-sampler]] | Metal 的 MTLTexture / MTLSamplerState 与 MSL constexpr sampler 两种写法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-compute-image-filter]] | 用 Metal compute kernel 做图像滤镜链（thread_position_in_grid / 懒求值 provider 协议）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-linear-algebra]] | Warren Moore：Metal 视角的图形数学支线（Metal Z=[0,1] clip space 等约定）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-up-and-running-3]] | Warren Moore：Metal 第 3 篇——带 Blinn-Phong 光照的 3D 茶壶 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-feature-sets]] | Warren Moore：A7/A8 GPU 家族能力差异与 MTLFeatureSet 查询 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-textures-and-samplers]] | Warren Moore：Metal 纹理与采样器、constexpr sampler 与坐标系翻转 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-image-processing]] | Warren Moore：Metal compute kernel 做图像滤镜链（saturation + Gaussian blur）|"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-27 Worker CB (metalbyexample.com ×5)\n\n处理 metalbyexample.com 第二批 5 篇，全部 ingest。新增 3 概念页（metal-3d-rendering-pipeline / metal-texture-sampler / metal-compute-image-filter）和 5 source 摘要。linear-algebra 与 mvp-transform / shader-vector-math-primer 重叠，按约束只作 source-only + patch。feature-sets 是短参考文（A7/A8 GPU 能力差异），source-only + metal-api-overview patch。warren-moore 人物页追加五条贡献与新 sources 链接。"
+}

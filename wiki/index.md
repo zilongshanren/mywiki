@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 292
+sources: 305
 ---
 
 # 知识库索引
@@ -46,6 +46,7 @@ sources: 292
 | [[ecs-for-rust-ui]] | Rust UI 的「类 ECS」架构：整数 id + state splitting + data flow 对抗借用检查器（Raph Levien 2018）|
 | [[data-structure-invariants]] | ryg：每加一条访问路径就多一条不变量——tail-pointer-to-pointer 与 sentinel 节点是清理之法 |
 | [[cpp-multi-paradigm-discipline]] | 把 C++ 当语言联邦：团队必须定义子集（云风评 Effective C++ 3rd Item 1） |
+| [[strategy-vs-switch]] | Fowler 经典重构：用 Strategy 模式替代类型码驱动的 switch |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -80,6 +81,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[c-tagged-union-dispatch]] | C 语言用 tagged union 做类型安全的多变体接口分发（云风） |
 | [[cycle-detection-floyd-brent]] | Floyd 龟兔与 Brent 变体；Brent 作为迭代加深的一个实例 |
 | [[csharp-runtime-script-compilation]] | C# 自身作脚本：CodeDomProvider + AppDomain shadow copy 实现热重载 |
+| [[rpp-stl-replacement]] | Slater 的 rpp：Rust 风格 C++20 STL 替代（region 分配器 / brand / 协程 / 反射） |
+| [[continuous-probability]] | 连续概率速成：PDF/CDF、期望方差、Markov/Chebyshev、Dirac delta（MC 系列 Part 1） |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -128,6 +131,7 @@ CAQA + CSAPP 的底层视角。
 | [[wayland-compositor-model]] | Wayland compositor = display server，2000–3000 SLOC 取代 mutter 的 X 同步胶水 |
 | [[bytecode-everywhere]] | ACPI / 字体 CFF / TrueType hinting / BPF / DWARF / VDBE——藏在系统里的字节码 VM 考古 |
 | [[x11-pointer-barrier]] | XI 2.3 的 pointer barrier pressure：把"推屏幕边"从 timeout 升级为一等公民手势 |
+| [[open-addressing-hashtable]] | Robin Hood 线性探测 + backshift 删除：Slater 的哈希表工程对照组 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -149,6 +153,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[game-engine-vfs]] | 游戏引擎虚拟文件系统：Linux VFS 简化版与 auto fallback |
 | [[handle-based-resource-manager]] | C++/Vulkan 引擎里 manager + 32 位不透明句柄 + magic number 校验的资源管理范式 |
 | [[game-resource-pack-format]] | 网易资源包 / 补丁格式与新引擎设想（云风） |
+| [[scene-graph-matrix-stack-visitor]] | 场景图遍历：矩阵栈 + 访问者模式的组合拳 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -375,6 +380,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[animated-parallax-cloth-fold]] | Deus Ex 风旗——动画 parallax + 低分辨率 noise 伪造布料褶皱 |
 | [[mipmap-moire-scanline]] | 故意放弃 mipmap / 用 moiré 伪造 CRT 扫描线 |
 | [[lit-sphere-matcap-shading]] | Lit Sphere / MatCap——把光照响应烘进一张球面查找表 |
+| [[metal-3d-rendering-pipeline]] | Metal 最小 3D 渲染管线：OBJ + MVP uniform + vertex descriptor + depth state + Blinn-Phong |
+| [[metal-texture-sampler]] | Metal 的 MTLTexture / MTLSamplerState 与 MSL constexpr sampler 两种写法 |
+| [[metal-compute-image-filter]] | 用 Metal compute kernel 做图像滤镜链（thread_position_in_grid / 懒求值 provider 协议）|
+| [[neural-graphics-primitives]] | 神经图形原语：MLP + 位置编码 / Instant NGP 哈希编码把图像/SDF/NeRF 全部写成 coord→value |
+| [[spherical-integration]] | 球面积分里的 $\sin\theta$ 从何而来：参数化 + 叉积 + 第一基本形式 |
 
 ## 经典案例（wiki/examples/）
 
@@ -747,6 +757,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/simonschreibt-deus-ex-folds]] | Simon：Deus Ex 奥运风旗是动画 parallax，不是顶点动画 |
 | [[sources/simonschreibt-deus-ex-scanlines]] | Simon：Deus Ex 屏幕扫描线很可能是 mipmap 缺失下的 moiré |
 | [[sources/simonschreibt-wow-balloon]] | Simon：WoW 热气球的中心辉光是 Lit Sphere / MatCap shader |
+| [[sources/allenchou-matrix-stack-visitor]] | Allen Chou：用访问者模式持有矩阵栈遍历场景图 |
+| [[sources/allenchou-shader-primer]] | Allen Chou：Molehill 时代的最小 VS/FS shader 入门 |
+| [[sources/allenchou-switch-vs-strategy]] | Allen Chou：blend mode 重构示例（switch → Strategy） |
+| [[sources/metalbyexample-linear-algebra]] | Warren Moore：Metal 视角的图形数学支线（Metal Z=[0,1] clip space 等约定）|
+| [[sources/metalbyexample-up-and-running-3]] | Warren Moore：Metal 第 3 篇——带 Blinn-Phong 光照的 3D 茶壶 |
+| [[sources/metalbyexample-feature-sets]] | Warren Moore：A7/A8 GPU 家族能力差异与 MTLFeatureSet 查询 |
+| [[sources/metalbyexample-textures-and-samplers]] | Warren Moore：Metal 纹理与采样器、constexpr sampler 与坐标系翻转 |
+| [[sources/metalbyexample-image-processing]] | Warren Moore：Metal compute kernel 做图像滤镜链（saturation + Gaussian blur）|
+| [[sources/slater-neural-graphics-primitives]] | Slater：神经图形原语——激活函数谱系 + 位置编码 + Instant NGP 哈希 |
+| [[sources/slater-optimizing-open-addressing]] | Slater：开放寻址哈希表 benchmark —— Robin Hood + backshift 胜出 |
+| [[sources/slater-spherical-integration]] | Slater：球面积分里 $\sin\theta$ 的直观 + 形式推导 |
+| [[sources/slater-oxidizing-cpp]] | Slater：rpp —— Rust 灵感的 C++20 STL 替代与 region 分配器 |
+| [[sources/slater-continuous-probability]] | Slater：Monte Carlo 速成 Part 1 — 连续概率基础 |
 
 ## 元（wiki/meta/）
 

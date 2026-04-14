@@ -1,7 +1,7 @@
 ---
 tags: [rendering, shader, post-processing, convolution, image-processing]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 图像卷积核（Convolution Kernel）
@@ -56,6 +56,12 @@ Image effect 默认沿用 Clamp，一般不需要改。
 
 除了"N² 采样爆炸"的性能账，更根本的原因是：大卷积核的 **有效半径翻倍等于时间代价翻倍**，而人类视觉对"更大的模糊半径"的感知是亚线性的——实务上想扩大模糊半径，常用的办法是**先下采样到半分辨率再用小核卷积**（`Dual Kawase`、`Bloom pyramid`），这比直接把 kernel 加大划算得多。
 
+## 在 compute shader 里写卷积
+
+把卷积搬进 [[metal-compute-image-filter|Metal compute kernel]] 只是把 `tex2D` 换成 `texture.read(gid + offset)`、把 texel offset 换成整数——数学不变，但**边界行为**变成你的责任。compute kernel 没有隐含的 sampler，越界读取返回黑色（undefined），卷积出来的图像边缘会有一圈黑边。解法要么 kernel 内部手动 bounds check，要么走回 sampler 采样路径（用 `texture.sample(sampler, uv)` 而不是 `texture.read(gid)`）。Warren 的 *Fundamentals of Image Processing in Metal* 就踩到这个坑——评论区有专门的讨论。
+
+Compute 版本的另一个教训：**1-to-1 的像素映射不适合用 compute shader**。同样的 saturation 滤镜放进 fragment shader 能跑满 60fps，扔进 compute kernel 反而掉到 12fps——因为 compute 失去了光栅化器、hierarchical Z 这类「免费」硬件加速。Compute 真正的价值在于**非 1-to-1 的计算**（直方图、reduction、不规则邻域访问），单纯的逐像素滤镜应当优先留在 fragment stage。
+
 ## 相关
 
 - [[separable-gaussian-blur]]
@@ -70,3 +76,4 @@ Image effect 默认沿用 Clamp，一般不需要改。
 ## Sources
 
 - [[sources/danielilett-image-effects-blurring]]
+- [[sources/metalbyexample-image-processing]]

@@ -1,7 +1,7 @@
 ---
 tags: [渲染, metal, apple, 图形api, 显式api]
 date: 2026-04-14
-sources: 3
+sources: 5
 ---
 
 # Metal API 概览（Device / Queue / Buffer / Encoder / Pipeline）
@@ -35,6 +35,12 @@ Metal 的公开类型**大量使用 Objective-C 协议**（`id<MTLDevice>`、`id
 
 - **`MTLBuffer`**：无类型字节缓冲，`newBufferWithBytes:length:options:`。与 CPU 共享的内存区域由 `MTLResourceOptions` 决定（Shared / Managed / Private）。
 - **`MTLTexture`**：1D/2D/3D 图像，也可以是 slice 数组。framebuffer 其实就是一个 [[cametal-layer-drawable|CAMetalDrawable]] 背后的 2D texture。
+
+### Feature set：按 GPU 家族分层的能力查询
+
+Metal 从 iOS 8 GM 开始引入 `MTLFeatureSet` + `[device supportsFeatureSet:]`，用来区分不同 GPU 家族的能力差异。2014 年枚举只有 `GPUFamily1_v1`（A7）和 `GPUFamily2_v1`（A8）两项，差异集中在两点：A7 的 render pass color attachment 上限是 4、A8 提到 8（意味着 A8 才能开完整的 [[deferred-rendering|deferred G-buffer]]）；A8 新增 [ASTC](https://en.wikipedia.org/wiki/Adaptive_Scalable_Texture_Compression) 纹理压缩支持。多年以后这条 API 路径扩展到了 Apple Silicon 的 `GPUFamily9`，功能分层也远不止当年两条——但设计哲学没变：**问能力而不是问型号**，让 app 对未来硬件自然兼容。
+
+Warren 文里提到一个调试小细节：`MTLCreateDefaultSystemDevice` 在 debugger 下返回 `MTLDebugDevice`（带参数 validation 的 wrapper），脱离 debugger 才返回设备特定驱动类如 `AGXG3Device` / `AGXG4PDevice`——这就是 Metal validation 层的实现机制。
 
 ## 最小一帧的 7 步骤
 
@@ -75,3 +81,5 @@ Warren 反复强调：Metal 是**你能选的最低一层**，而非没有抽象
 - [[sources/metalbyexample-up-and-running-1]]
 - [[sources/metalbyexample-up-and-running-2]]
 - [[sources/metalbyexample-whats-and-wherefores]]
+- [[sources/metalbyexample-up-and-running-3]]
+- [[sources/metalbyexample-feature-sets]]

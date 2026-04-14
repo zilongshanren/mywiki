@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形程序员, 渲染, 数学]
 date: 2026-04-14
-sources: 9
+sources: 14
 ---
 
 # Max Slater
@@ -44,3 +44,8 @@ sources: 9
 - [[sources/slater-hamming-hats]]
 - [[sources/slater-exponential-rotations]]
 - [[sources/slater-autodiff]]
+- [[sources/slater-neural-graphics-primitives]]
+- [[sources/slater-optimizing-open-addressing]]
+- [[sources/slater-spherical-integration]]
+- [[sources/slater-oxidizing-cpp]]
+- [[sources/slater-continuous-probability]]

@@ -15,8 +15,13 @@ Allen Chou（Ming-Lun "Allen" Chou，周明倫）是一位台湾出身的游戏�
 - [[game-physics-engine]]
 - [[collision-detection-gjk-epa]]
 - [[composite-command-pattern]]
+- [[scene-graph-matrix-stack-visitor]]
+- [[strategy-vs-switch]]
 
 ## Sources
 
 - [[sources/allenchou-game-physics-introduction]]
 - [[sources/allenchou-rusher-2-composite-commands]]
+- [[sources/allenchou-matrix-stack-visitor]]
+- [[sources/allenchou-shader-primer]]
+- [[sources/allenchou-switch-vs-strategy]]

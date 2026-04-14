@@ -381,3 +381,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-26 Worker BZ (simonschreibt.de ×5)
 
 处理 5 篇 Simon Trümpler 早期 Game Art Tricks 短文（Teleglitch 视野阴影、cell shading 描边、Deus Ex 布料褶皱、Deus Ex 屏幕扫描线、WoW 热气球 lit sphere）。新增 5 个 rendering 概念页（sprite-outline-8-direction, extruded-wall-shadow-viewcone, animated-parallax-cloth-fold, mipmap-moire-scanline, lit-sphere-matcap-shading）、5 个 source 摘要。simon-trumpler 人物页已存在，追加 sources 与 相关 链接。
+
+## [2026-04-14] ingest | Batch w27-ca Worker (allenchou.net ×5)
+
+处理 5 篇 allenchou.net 早期博客（2011 ActionScript3/Molehill 时期）。建 2 概念页：scene-graph-matrix-stack-visitor（游戏引擎，访问者模式 + 矩阵栈遍历场景图）、strategy-vs-switch（软件设计，Fowler 经典重构）。建 3 source 摘要。allen-chou 人物页已存在，追加三条 source 链接与两条相关概念。shader-primer 与既有 shader-vector-math-primer 主题不冲突（前者讲管线，后者讲向量数学），仅做交叉链接。跳过 2 篇：packing-my-stuff（生活更新）、bunnyhill-interface-design（个人 API 意见稿）。
+
+## [2026-04-14] ingest | Wave-27 Worker CB (metalbyexample.com ×5)
+
+处理 metalbyexample.com 第二批 5 篇，全部 ingest。新增 3 概念页（metal-3d-rendering-pipeline / metal-texture-sampler / metal-compute-image-filter）和 5 source 摘要。linear-algebra 与 mvp-transform / shader-vector-math-primer 重叠，按约束只作 source-only + patch。feature-sets 是短参考文（A7/A8 GPU 能力差异），source-only + metal-api-overview patch。warren-moore 人物页追加五条贡献与新 sources 链接。
+
+## [2026-04-14] ingest | Wave-27 Worker CC (thenumb.at Max Slater ×5)
+
+处理 5 篇 Max Slater 技术长文：Neural Graphics Primitives、Optimizing Open Addressing、Spherical Integration、Oxidizing C++、Monte Carlo Crash Course Part 1 (Continuous Probability)。新增 5 概念页（neural-graphics-primitives, open-addressing-hashtable, spherical-integration, rpp-stl-replacement, continuous-probability）、5 source 摘要。max-slater 人物页已存在，追加 5 source 链接。Part 1 (2025-03-29) 与已有 Part 5 QMC (slater-qmc-crash-course) 独立收录。

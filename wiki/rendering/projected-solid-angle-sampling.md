@@ -45,3 +45,4 @@ cut disk 本身是可以高效采样的——论文给出专门的 `SampleCutUni
 ## Sources
 
 - [[sources/peters-projected-spherical-caps]]
+- [[sources/slater-spherical-integration]]

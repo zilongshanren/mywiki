@@ -69,3 +69,4 @@ $$
 - [[sources/slater-functions-are-vectors]]
 - [[sources/green-sh-lighting-gritty-details]]
 - [[sources/green-implementing-needlets]]
+- [[sources/slater-spherical-integration]]

@@ -1,0 +1,96 @@
+{
+  "batch_id": "batch-w27-ca",
+  "agent_note": "allenchou.net 早期 ActionScript3 / Molehill 时代的 5 篇小文。2 篇建新概念页（scene-graph-matrix-stack-visitor 游戏引擎层、strategy-vs-switch 软件设计层），shader-primer 不建新概念——只做 source 摘要并补齐现有 shader/rendering pipeline 概念链接。packing-my-stuff 与 bunnyhill-interface-design 按指令跳过。allen-chou 人物页已存在，仅追加新 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/allenchou.net/2011-02-11_matrix-stack-and-the-visitor-pattern-ming-lun-allen-chou-zho.md",
+      "status": "ingested",
+      "source_slug": "allenchou-matrix-stack-visitor",
+      "title": "Matrix Stack and the Visitor Pattern"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2011-02-17_shader-primer-ming-lun-allen-chou-zhou-ming-lun.md",
+      "status": "ingested",
+      "source_slug": "allenchou-shader-primer",
+      "title": "Shader Primer"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2011-02-18_switch-vs-strategy-ming-lun-allen-chou-zhou-ming-lun.md",
+      "status": "ingested",
+      "source_slug": "allenchou-switch-vs-strategy",
+      "title": "Switch vs Strategy"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2011-07-19_packing-my-stuff-ming-lun-allen-chou-zhou-ming-lun.md",
+      "status": "skipped_offtopic",
+      "reason": "meta / 生活更新（搬家去 DigiPen），无技术内容"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2011-09-25_some-thoughts-on-bunnyhill-interface-design-ming-lun-allen-c.md",
+      "status": "skipped_offtopic",
+      "reason": "Bunnyhill 个人引擎 API 设计意见稿，无可复用抽象，且与已有 scene-graph 文章高度重叠"
+    }
+  ],
+  "concepts_created": [
+    "scene-graph-matrix-stack-visitor",
+    "strategy-vs-switch"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "allenchou-matrix-stack-visitor",
+    "allenchou-shader-primer",
+    "allenchou-switch-vs-strategy"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/allen-chou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/allenchou-matrix-stack-visitor]]"
+    },
+    {
+      "file": "wiki/people/allen-chou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/allenchou-shader-primer]]"
+    },
+    {
+      "file": "wiki/people/allen-chou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/allenchou-switch-vs-strategy]]"
+    },
+    {
+      "file": "wiki/people/allen-chou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scene-graph-matrix-stack-visitor]]\n- [[strategy-vs-switch]]"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/allenchou-shader-primer]] —— Allen Chou 从 shader 在管线里的位置切入的最小 VS/FS 入门对照，补齐"向量数学之外"的背景"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[scene-graph-matrix-stack-visitor]] | 场景图遍历：矩阵栈 + 访问者模式的组合拳 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[strategy-vs-switch]] | Fowler 经典重构：用 Strategy 模式替代类型码驱动的 switch |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allenchou-matrix-stack-visitor]] | Allen Chou：用访问者模式持有矩阵栈遍历场景图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allenchou-shader-primer]] | Allen Chou：Molehill 时代的最小 VS/FS shader 入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allenchou-switch-vs-strategy]] | Allen Chou：blend mode 重构示例（switch → Strategy） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Batch w27-ca Worker (allenchou.net ×5)\n\n处理 5 篇 allenchou.net 早期博客（2011 ActionScript3/Molehill 时期）。建 2 概念页：scene-graph-matrix-stack-visitor（游戏引擎，访问者模式 + 矩阵栈遍历场景图）、strategy-vs-switch（软件设计，Fowler 经典重构）。建 3 source 摘要。allen-chou 人物页已存在，追加三条 source 链接与两条相关概念。shader-primer 与既有 shader-vector-math-primer 主题不冲突（前者讲管线，后者讲向量数学），仅做交叉链接。跳过 2 篇：packing-my-stuff（生活更新）、bunnyhill-interface-design（个人 API 意见稿）。"
+}

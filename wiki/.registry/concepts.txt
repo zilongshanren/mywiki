@@ -67,6 +67,7 @@ composite-command-pattern
 compute-vs-raster-points
 conservative-depth
 continuous-design
+continuous-probability
 coordinate-spaces
 cpp-multi-paradigm-discipline
 cpp-runtime-reflection
@@ -215,8 +216,11 @@ memory-hierarchy
 mesh-warps-and-tessellation
 meshes-of-navigation-recast
 meshoptimizer-vertex-codec
+metal-3d-rendering-pipeline
 metal-api-overview
+metal-compute-image-filter
 metal-shading-language-basics
+metal-texture-sampler
 microfacet-brdf
 mipmap-moire-scanline
 modular-design
@@ -226,6 +230,7 @@ msaa-ssaa
 mttf-reliability
 mvp-transform
 needlets
+neural-graphics-primitives
 night-time-tint-shader
 non-cryptographic-hash
 non-linearly-quantized-msm
@@ -238,6 +243,7 @@ objc-runtime-internals
 obscurity
 occlusion-culling
 oklab-color-space
+open-addressing-hashtable
 openexr-format
 opengl-loader
 order-of-growth
@@ -285,6 +291,7 @@ retro-rendering-techniques
 reversed-z
 robin-green
 ronja-bohm
+rpp-stl-replacement
 runtime-editor-console-connection
 rust-disassembly-tour
 rust-gui-ecosystem
@@ -292,6 +299,7 @@ sampler-filter-wrap-modes
 sampling-theorem-sinc
 scatter-bokeh-dof
 scene-color-depth-nodes
+scene-graph-matrix-stack-visitor
 screenspace-reflections
 scriptable-render-pipeline
 sdf-2d-primitives
@@ -319,6 +327,7 @@ spectral-brdf
 spectral-rendering
 spectral-zucconi-rainbow
 spherical-harmonics
+spherical-integration
 sprite-outline-8-direction
 sprite-shaders-unity
 sse-tricks
@@ -327,6 +336,7 @@ stencil-portal-shader-antichamber
 stephen-hill
 steven-sell
 strategic-programming
+strategy-vs-switch
 stratified-sampling
 stylized-water-shader
 substitution-model

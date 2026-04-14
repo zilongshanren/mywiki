@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, metal, apple]
 date: 2026-04-14
-sources: 3
+sources: 8
 ---
 
 # Warren Moore
@@ -22,6 +22,11 @@ sources: 3
 | Up and Running with Metal, Part 1: Clearing the Screen | [[metal-api-overview]]、[[cametal-layer-drawable]] |
 | Up and Running with Metal, Part 2: Drawing Triangles | [[metal-shading-language-basics]]、[[metal-api-overview]] |
 | The Whats and Wherefores of Metal | [[metal-api-overview]]、[[rendering-api-depth]] |
+| Linear Algebra for Graphics Programming | [[mvp-transform]]、[[shader-vector-math-primer]]（支线参考文）|
+| Up and Running with Metal, Part 3: Lighting and Rendering in 3D | [[metal-3d-rendering-pipeline]]、[[normalised-blinn-phong-shader]] |
+| Feature Sets and Capabilities | [[metal-api-overview]] 的 feature-set 小节 |
+| Textures and Samplers in Metal | [[metal-texture-sampler]] |
+| Fundamentals of Image Processing in Metal | [[metal-compute-image-filter]] |
 
 ## 相关
 
@@ -30,9 +35,17 @@ sources: 3
 - [[cametal-layer-drawable]]
 - [[rendering-api-depth]]
 - [[draw-call]]
+- [[metal-3d-rendering-pipeline]]
+- [[metal-texture-sampler]]
+- [[metal-compute-image-filter]]
 
 ## Sources
 
 - [[sources/metalbyexample-up-and-running-1]]
 - [[sources/metalbyexample-up-and-running-2]]
 - [[sources/metalbyexample-whats-and-wherefores]]
+- [[sources/metalbyexample-linear-algebra]]
+- [[sources/metalbyexample-up-and-running-3]]
+- [[sources/metalbyexample-feature-sets]]
+- [[sources/metalbyexample-textures-and-samplers]]
+- [[sources/metalbyexample-image-processing]]

@@ -1,7 +1,7 @@
 ---
 tags: [shader, 纹理, 采样, gpu, 渲染]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 采样器的 Filter / Wrap 模式
@@ -31,6 +31,10 @@ Filter Mode 和 Wrap Mode 并不独立。例如带 mipmap 的纹理用 Repeat �
 
 Shader Graph 允许在 `Sample Texture 2D` 的 `Sampler(SS)` 输入上连一个独立的 Sampler State 资源。这是在**覆盖**纹理 Inspector 里的默认设置——例如同一张贴图既用 Linear+Repeat 做墙面、又想在另一个 material 里用 Point+Clamp 做像素风 UI，就可以通过两个不同 Sampler State 解耦，而不需要两张纹理资源。
 
+## Metal 的具体落地
+
+[[metal-texture-sampler|Metal 的 sampler]] 把这些概念系统地实现成两种形式：**host 侧的 `MTLSamplerState`**（填 `MTLSamplerDescriptor` 创建，用 `[[sampler(n)]]` 在 shader 里引用）和 **MSL 源码里的 `constexpr sampler`**（编译期构造，整个函数共享一份）。Metal 独有 `address::clamp_to_zero`——越界返回黑色或透明，OpenGL 里没有对应项；其余四种 address mode（clamp_to_edge / repeat / mirrored_repeat）和两种 filter（nearest / linear）都和上面讲的一致。因为 constexpr sampler 参数必须静态，运行时需要切换 sampler 配置就只能走 host 侧那条路。
+
 ## 相关
 
 - [[uv-manipulation-nodes]]
@@ -40,3 +44,4 @@ Shader Graph 允许在 `Sample Texture 2D` 的 `Sampler(SS)` 输入上连一个�
 ## Sources
 
 - [[sources/cyan-uv-based-nodes]]
+- [[sources/metalbyexample-textures-and-samplers]]

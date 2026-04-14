@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 数学]
 date: 2026-04-05
-sources: 3
+sources: 4
 ---
 
 # MVP 变换
@@ -25,6 +25,8 @@ vertex_local → [M] → world → [V] → view → [P] → clip
 - **光照计算需要 World 或 View 空间位置**（法线、方向光、相机距离）。
 - 阴影映射需要把顶点变到 light 的 clip space——重用 world position 省一次变换。
 - 后处理需要从 clip 还原到 view（depth reconstruction）。
+
+Metal 教程里的实践做法是**一次性给 shader 送三把矩阵**（见 [[metal-3d-rendering-pipeline]]）：`modelViewProjection` 用于 vertex 主变换、`modelView` 用于光照所需的 view-space 位置、`normalMatrix = transpose(inverse(modelView))` 的 3×3 块用于法线变换。normal 单独要一把矩阵是因为**非均匀缩放会扭歪法线**——点乘 M，法线必须乘 `(M⁻¹)ᵀ` 才保留垂直性。这条规则对所有带 scale 的 rigging 都适用。
 
 ## 相关坐标空间
 
@@ -57,3 +59,4 @@ vertex_local → [M] → world → [V] → view → [P] → clip
 - [[sources/rtr-day03]]
 - [[sources/ciechanow-cameras-and-lenses]]
 - [[sources/3dgep-math-primer-matrices]] —— Jeremiah van Oosten 从线性变换公理一路推到 4×4 齐次矩阵，解释为什么平移必须靠齐次坐标
+- [[sources/metalbyexample-linear-algebra]] —— Warren Moore 从 Metal 视角给出 OpenGL Z=[-1,1] 与 Metal Z=[0,1] 的 clip-space 差异

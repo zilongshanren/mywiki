@@ -34,6 +34,8 @@ Monte Carlo 的精度取决于方差；QMC 把方差这个概率概念换成了�
 - [[low-discrepancy-sequence]] — 让 QMC 真正有优势的点列类
 - [[poisson-disk-sampling]] — 渐进性 + 空间均匀的另一条路
 - [[max-slater]]
+- [[continuous-probability]] — 同系列 Part 1，数学前置
+- [[spherical-integration]] — 同系列所需的积分坐标变换
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 tags: [rendering, shader, post-processing, blur, gaussian, unity]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 可分离 Gaussian Blur（与 Box Blur）
@@ -86,6 +86,10 @@ float w = gaussian(x, sigma);
 
 这些手段都是基于"Box/Gaussian 是可分离的"这个最根本的前提。
 
+## 反面教材：Metal 教程里的不可分离 Gaussian
+
+[[metal-compute-image-filter|Warren Moore 的 image processing 教程]]在 compute kernel 里直接写了双重循环 `for(j) for(i)`——没有用可分离性，每像素 `N²` 次采样。他的 kernel 还把预计算的 2D 权重矩阵做成一张 `MTLPixelFormatR32Float` 的查找纹理传进去，kernel 里 `weights.read(kernelIndex).rrrr` 取出标量权重。灵活性很好（改半径只需重建权重纹理），但性能代价直接——`N=15` 时就是 225 次 texture fetch/像素，和 2×N=30 的可分离版本差了一个数量级。教程的定位是入门而非性能演示，但对读者是个提醒：可分离这条优化路径之所以存在，正是因为「显式写双重循环」的实现是真的会慢。
+
 ## 相关
 
 - [[image-convolution-kernel]]
@@ -100,3 +104,4 @@ float w = gaussian(x, sigma);
 ## Sources
 
 - [[sources/danielilett-image-effects-blurring]]
+- [[sources/metalbyexample-image-processing]]
