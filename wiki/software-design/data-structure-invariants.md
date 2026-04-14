@@ -58,6 +58,8 @@ ryg 提出的设计直觉简单但深刻：
 - [[change-amplification]]
 - [[information-hiding]]
 - [[obscurity]]
+- [[ring-buffer-virtual-stream]] —— 用单调计数器把「满 / 空」二义性压进无符号减法的不变量里
+- [[negative-space-in-programming]] —— 好的不变量让一类 bug 根本写不出来，这是负空间的典型形态
 
 ## Sources
 

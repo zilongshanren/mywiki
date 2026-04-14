@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w30-cl",
+  "agent_note": "5 篇 ryg (fgiesen.wordpress.com) 2010-2011 技术文章全部 ingest。DCT 平面旋转、PPC int/float LHS、negative space 编程哲学、ring buffer 虚拟流模型、texture swizzle 嵌套分块+减-与增量。全部是高价值 ryg 材料，包括 philosophical 的 negative-space 那篇也有明确可操作内容，不跳过。fabian-giesen 人物页已存在，不新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/fgiesen.wordpress.com/2010-11-05_planar-rotations-and-the-dct.md",
+      "status": "ingested",
+      "source_slug": "ryg-planar-rotations-and-dct",
+      "title": "Planar rotations and the DCT"
+    },
+    {
+      "path": "raw/articles/fgiesen.wordpress.com/2010-11-06_more-ppc-compiler-babysitting.md",
+      "status": "ingested",
+      "source_slug": "ryg-more-ppc-compiler-babysitting",
+      "title": "More PPC compiler babysitting"
+    },
+    {
+      "path": "raw/articles/fgiesen.wordpress.com/2010-12-11_negative-space-in-programming.md",
+      "status": "ingested",
+      "source_slug": "ryg-negative-space-in-programming",
+      "title": "Negative space in programming"
+    },
+    {
+      "path": "raw/articles/fgiesen.wordpress.com/2010-12-14_ring-buffers-and-queues.md",
+      "status": "ingested",
+      "source_slug": "ryg-ring-buffers-and-queues",
+      "title": "Ring buffers and queues"
+    },
+    {
+      "path": "raw/articles/fgiesen.wordpress.com/2011-01-17_texture-tiling-and-swizzling.md",
+      "status": "ingested",
+      "source_slug": "ryg-texture-tiling-and-swizzling",
+      "title": "Texture tiling and swizzling"
+    }
+  ],
+  "concepts_created": [
+    "planar-rotation-dct",
+    "ppc-int-float-lhs",
+    "negative-space-in-programming",
+    "ring-buffer-virtual-stream",
+    "texture-swizzle-nested-tiling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "ryg-planar-rotations-and-dct",
+    "ryg-more-ppc-compiler-babysitting",
+    "ryg-negative-space-in-programming",
+    "ryg-ring-buffers-and-queues",
+    "ryg-texture-tiling-and-swizzling"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planar-rotation-dct]]\n- [[ppc-int-float-lhs]]\n- [[negative-space-in-programming]]\n- [[ring-buffer-virtual-stream]]\n- [[texture-swizzle-nested-tiling]]"
+    },
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ryg-planar-rotations-and-dct]]\n- [[sources/ryg-more-ppc-compiler-babysitting]]\n- [[sources/ryg-negative-space-in-programming]]\n- [[sources/ryg-ring-buffers-and-queues]]\n- [[sources/ryg-texture-tiling-and-swizzling]]"
+    },
+    {
+      "file": "wiki/software-design/data-structure-invariants.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ring-buffer-virtual-stream]] —— 用单调计数器把「满 / 空」二义性压进无符号减法的不变量里\n- [[negative-space-in-programming]] —— 好的不变量让一类 bug 根本写不出来，这是负空间的典型形态"
+    },
+    {
+      "file": "wiki/computer-systems/cache-friendliness.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[texture-swizzle-nested-tiling]] —— GPU 纹理通过嵌套分块把空间相邻映射到地址相邻"
+    },
+    {
+      "file": "wiki/software-design/complexity.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[negative-space-in-programming]] —— ryg：程序的形状由「不做什么」决定"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[planar-rotation-dct]] | DCT 平面旋转的四种实现与 FMA 时代的优化观 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[ppc-int-float-lhs]] | PPC 整浮点转换的 Load-Hit-Store 停顿与编译器 workaround |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[ring-buffer-virtual-stream]] | SPSC 环形缓冲区：数组索引 vs 虚拟流位置 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[negative-space-in-programming]] | ryg：程序的形状由「不做什么」决定 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texture-swizzle-nested-tiling]] | 纹理 swizzle 与嵌套分块的「减-与」通用地址增量 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ryg-planar-rotations-and-dct]] | ryg：DCT 平面旋转四种实现与 FMA 时代的重新定位 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ryg-more-ppc-compiler-babysitting]] | ryg：Xbox 360 PPC 上 int→float 的 LHS 与编译器盲区 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ryg-negative-space-in-programming]] | ryg：程序真正的形状是留白决定的 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ryg-ring-buffers-and-queues]] | ryg：SPSC FIFO 的两种语义与虚拟流的胜利 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ryg-texture-tiling-and-swizzling]] | ryg：嵌套分块 swizzle 与减-与地址增量 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-30 Worker CL (fgiesen.wordpress.com ×5)\n\n处理 5 篇 ryg 2010-2011 技术文章：DCT 平面旋转四种实现（planar-rotation-dct）、PPC int→float LHS（ppc-int-float-lhs）、编程的负空间哲学（negative-space-in-programming）、环形缓冲区虚拟流模型（ring-buffer-virtual-stream）、纹理嵌套分块 swizzle 与减-与增量（texture-swizzle-nested-tiling）。全部 ingest，新增 5 概念页 + 5 source 摘要。fabian-giesen 人物页 sources+6 相关 patch；data-structure-invariants / cache-friendliness / complexity 三页 patch 增加交叉引用。"
+}

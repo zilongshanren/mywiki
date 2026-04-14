@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w30-ck",
+  "agent_note": "alanzucconi.com 早期 5 篇：3 篇 most-anticipated-games 系列（游戏预览，非技术），1 篇 Python web scraping 教程（BeautifulSoup+cv2 下载截图，非图形/引擎核心），均跳过。唯一保留的是 2015-06-10 的 'A gentle introduction to shaders in Unity' Part 1——Built-in RP 时代的 ShaderLab + Cg/HLSL 骨架介绍，与现有 shaderlab-hlsl-basics（URP 版）和 unity-surface-shaders 高度重叠，仅 patch 不创建新概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alanzucconi.com/2015-05-26_how-to-retrieve-all-the-images-from-a-website-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "Python + BeautifulSoup + cv2 抓取 ScreenshotSaturday 截图的教程，与图形/渲染/引擎/系统主题无关"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-05-30_the-most-anticipated-puzzle-games-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "独立 puzzle 游戏预览合集（Relativity / Induction 等），无技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-06-06_the-most-anticipated-music-games-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "独立 music 游戏预览合集（Shape of the World / Panoramical / Soundself），无技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-06-10_a-gentle-introduction-to-shaders-in-unity-shader-tutorial.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-shader-intro-unity",
+      "title": "A Gentle Introduction to Shaders in Unity (Part 1)"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2015-06-13_the-most-anticipated-platform-games.md",
+      "status": "skipped_offtopic",
+      "reason": "独立 platform 游戏预览合集（Rain World / Hue / CHROMA），无技术内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["alanzucconi-shader-intro-unity"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alanzucconi-shader-intro-unity]]"
+    },
+    {
+      "file": "wiki/rendering/shaderlab-hlsl-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/alanzucconi-shader-intro-unity]] — Alan Zucconi 2015 的 Built-in RP 版 Shader 入门（ShaderLab + Cg/HLSL 骨架，`UNITY_MATRIX_MVP` 而非 `TransformObjectToHClip`），是本页 URP 视角的历史对照"
+    },
+    {
+      "file": "wiki/rendering/unity-surface-shaders.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/alanzucconi-shader-intro-unity]] — 2015 年 Built-in RP 时代 Zucconi 的 Shader 系列 Part 1，介绍 Surface vs Vertex/Fragment 的分工取舍"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-shader-intro-unity]] | Zucconi 2015：Unity Built-in RP 下的 Shader 入门骨架（ShaderLab + Cg/HLSL，Surface vs Vertex/Fragment 取舍） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-30 Worker CK (alanzucconi.com ×5)\n\n处理 5 篇 alanzucconi.com 2015 年早期文章。新增 1 source 摘要（alanzucconi-shader-intro-unity，Built-in RP 时代 Shader 系列 Part 1），patch 了 alan-zucconi 人物页和 shaderlab-hlsl-basics / unity-surface-shaders 两个概念页的 Sources 段。跳过 4 篇：3 篇 most-anticipated-games 游戏预览合集 + 1 篇 Python/BeautifulSoup 抓取截图的 web scraping 教程。无新概念页、无新人物页。"
+}

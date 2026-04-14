@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 技术美术]
 date: 2026-04-14
-sources: 5
+sources: 10
 ---
 
 # Harry Alisavakis
@@ -23,6 +23,10 @@ sources: 5
 - [[custom-mask-shaders]] —— 2017 年 *My take on shaders* 第四 / 五篇，圆盘 + 圆环 in-shader mask
 - [[shockwave-effect]] —— 第七篇，圆环 mask × UV 位移做的 2D 冲击波命中反馈
 - [[stencil-portal-shader-antichamber]] —— 第八篇，用 stencil buffer 复刻 Antichamber 风格的「窗口可见」物体
+- [[random-stripes-mask-shader]] —— 2017 *My take on shaders* 第十篇，一维 hash + floor + step 做的横向随机条纹
+- [[glitch-image-effect]] —— 第十二篇，两套条纹 mask + 波浪位移 + 色差的三件套 glitch 后处理，附单旋钮控制器
+- [[abzu-portal-cards-shader]] —— *How I'd do it* 系列开篇，复刻 ABZÛ 的远景透明 card，按距离 fade
+- [[world-screen-space-position-shader]] —— *Shader bits* 系列开篇，worldPos / screenPos 在 vertex-fragment 与 surface shader 两种风格下的取法备忘
 
 ## Sources
 
@@ -39,3 +43,8 @@ sources: 5
 - [[sources/halisavakis-image-effects-custom-masks-ii]]
 - [[sources/halisavakis-image-effects-shockwave]]
 - [[sources/halisavakis-image-effects-stencil-antichamber]]
+- [[sources/halisavakis-dissolve-shader]]
+- [[sources/halisavakis-random-stripes-mask]]
+- [[sources/halisavakis-glitch-image-effect]]
+- [[sources/halisavakis-abzu-portal-cards]]
+- [[sources/halisavakis-shader-bits-world-screen-pos]]

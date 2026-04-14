@@ -41,6 +41,11 @@ sources: 9
 - [[cellular-texture-generation]]
 - [[carry-save-adder-pixel-avg]]
 - [[data-structure-invariants]]
+- [[planar-rotation-dct]]
+- [[ppc-int-float-lhs]]
+- [[negative-space-in-programming]]
+- [[ring-buffer-virtual-stream]]
+- [[texture-swizzle-nested-tiling]]
 
 ## Sources
 
@@ -59,3 +64,8 @@ sources: 9
 - [[sources/ryg-view-frustum-culling]]
 - [[sources/ryg-frustum-culling-notes]]
 - [[sources/ryg-finish-your-derivations]]
+- [[sources/ryg-planar-rotations-and-dct]]
+- [[sources/ryg-more-ppc-compiler-babysitting]]
+- [[sources/ryg-negative-space-in-programming]]
+- [[sources/ryg-ring-buffers-and-queues]]
+- [[sources/ryg-texture-tiling-and-swizzling]]

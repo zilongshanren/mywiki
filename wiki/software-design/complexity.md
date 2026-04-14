@@ -51,6 +51,7 @@ Ousterhout 给出一个粗糙但有用的表达：
 - 症状：[[change-amplification]]、[[cognitive-load]]、[[unknown-unknowns]]
 - 根源：[[dependencies]]、[[obscurity]]
 - 对策：[[tactical-programming]] vs [[strategic-programming]]、[[deep-modules]]、[[information-hiding]]
+- [[negative-space-in-programming]] —— ryg：程序的形状由「不做什么」决定
 
 ## Sources
 

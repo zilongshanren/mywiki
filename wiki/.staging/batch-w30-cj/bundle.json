@@ -1,0 +1,169 @@
+{
+  "batch_id": "batch-w30-cj",
+  "agent_note": "Harry Alisavakis 5 篇 shader 教程：dissolve / random-stripes / glitch / ABZÛ portal cards / shader-bits world+screen pos。Dissolve 与已有 texture-dissolve 概念页重合，只做 patch（补充 surface shader 的 Cull Off + addshadow 踩坑与 burn ramp 实现细节，并挂 source 链接）。其余 4 篇新建概念页：random-stripes-mask-shader、glitch-image-effect、abzu-portal-cards-shader、world-screen-space-position-shader。5 份 source summary 全入库；harry-alisavakis / coordinate-spaces / custom-mask-shaders / chromatic-aberration-post / uv-displacement-image-effect 追加相关链接补丁。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2017-07-22_my-take-on-shaders-dissolve-shader.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-dissolve-shader",
+      "title": "My take on shaders: Dissolve shader"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-08-26_my-take-on-shaders-random-stripes-mask.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-random-stripes-mask",
+      "title": "My take on shaders: Random stripes mask"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-09-23_my-take-on-shaders-glitch-image-effect.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-glitch-image-effect",
+      "title": "My take on shaders: Glitch image effect"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-09-25_how-id-do-it-abzu-portal-cards.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-abzu-portal-cards",
+      "title": "How I'd do it: ABZÛ portal cards"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-10-11_shader-bits-world-and-screen-space-position.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-shader-bits-world-screen-pos",
+      "title": "Shader bits: World and screen space position"
+    }
+  ],
+  "concepts_created": [
+    "random-stripes-mask-shader",
+    "glitch-image-effect",
+    "abzu-portal-cards-shader",
+    "world-screen-space-position-shader"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "halisavakis-dissolve-shader",
+    "halisavakis-random-stripes-mask",
+    "halisavakis-glitch-image-effect",
+    "halisavakis-abzu-portal-cards",
+    "halisavakis-shader-bits-world-screen-pos"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "append_to_section",
+      "section": "## 实现细节和坑",
+      "content": "- **`Cull Off` 必不可少**：Alisavakis 在 2017 年的 surface shader 版本里强调，dissolve 切出的洞会让玩家看到网格背面——不关 culling 就是看不见的空洞，像穿帮的纸片。\n- **`#pragma surface surf Lambert addshadow`**：Unity surface shader 默认生成的 shadow caster pass 不会跟着 `clip`，所以物体消失了影子还在。Alisavakis 花了很久才找到要显式加 `addshadow` 让 shadow pass 复用 surf 函数的 clip 逻辑，这个坑 2017 年 Unity 手册里没写清楚。\n- **burn 带是同一张 slice guide 的第二次使用**：不丢弃、而是在 `test < _BurnSize` 的像素上查一张 1D color ramp 做 emission，`test * (1 / _BurnSize)` 当 U 坐标；换 ramp 就换烧焦色调（橘红 → 白、黄 → 黑）。和 dissolve 边界天然配准，因为来自同一个 `test` 值。"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-dissolve-shader]] —— Alisavakis 的 surface shader 版，诚实记录了 `Cull Off` 与 `addshadow` 两个 2017 年 Unity 新手常踩的坑，以及 burn ramp 的 1D lut 实现"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[random-stripes-mask-shader]] —— 2017 *My take on shaders* 第十篇，一维 hash + floor + step 做的横向随机条纹\n- [[glitch-image-effect]] —— 第十二篇，两套条纹 mask + 波浪位移 + 色差的三件套 glitch 后处理，附单旋钮控制器\n- [[abzu-portal-cards-shader]] —— *How I'd do it* 系列开篇，复刻 ABZÛ 的远景透明 card，按距离 fade\n- [[world-screen-space-position-shader]] —— *Shader bits* 系列开篇，worldPos / screenPos 在 vertex-fragment 与 surface shader 两种风格下的取法备忘"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-dissolve-shader]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-random-stripes-mask]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-glitch-image-effect]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-abzu-portal-cards]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/halisavakis-shader-bits-world-screen-pos]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[world-screen-space-position-shader]] —— Unity shader 里拿 worldPos / screenPos 的四种写法备忘"
+    },
+    {
+      "file": "wiki/rendering/custom-mask-shaders.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[random-stripes-mask-shader]] —— 同系列的另一路：用一维 hash 做行级随机条纹 mask，配合 glitch 后处理"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## 两种不同的目的",
+      "content": "\nAlisavakis 在 [[glitch-image-effect|glitch 后处理]] 里直接采用「数字意义上的 RGB 偏移」这一派：三通道各自独立偏移、和距中心无关、可随条纹 mask 每帧变化——典型的 VHS / CRT 故障美学而非光学色差。"
+    },
+    {
+      "file": "wiki/rendering/uv-displacement-image-effect.md",
+      "operation": "append_to_section",
+      "section": "## 最朴素的形式：用一张灰度图当位移场",
+      "content": "\n这套位移操作在 [[glitch-image-effect|glitch 后处理]] 里被复用了两次：一次用波浪位移（`sin(uv.y * freq)` 合成的 R/G 双通道 mask）做磁带式纵向抖动，一次用 [[random-stripes-mask-shader|随机条纹 mask]] 做逐行水平撕裂。两次都只改变计算 `displUV` 的那一行，最终采样路径完全一致——说明「UV 位移」是一套统一的抽象。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[random-stripes-mask-shader]] | `floor + hash + step` 生成行级随机条纹 mask，作为 glitch / CRT 效果的积木 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[glitch-image-effect]] | 两套随机条纹 mask + 波浪位移 + 色差的 Unity glitch 后处理，含单旋钮控制器 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[abzu-portal-cards-shader]] | ABZÛ 里按相机距离 fade 的透明贴片：兼具远景美化和玩家引导 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[world-screen-space-position-shader]] | Unity shader 里拿 worldPos / screenPos 的四种模板（v/f × surface） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-dissolve-shader]] | Alisavakis：Unity surface shader 版 dissolve，Cull Off + addshadow 坑点 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-random-stripes-mask]] | Alisavakis：一维 hash + step 生成随机条纹 mask 的最小范例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-glitch-image-effect]] | Alisavakis：条纹 + 波浪 + 色差三件套 glitch + 单旋钮控制器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-abzu-portal-cards]] | Alisavakis：复刻 ABZÛ 按距离 fade 的 portal card 透明贴片 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-shader-bits-world-screen-pos]] | Alisavakis：Unity shader worldPos / screenPos 的四种写法备忘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-30 Worker CJ (halisavakis.com ×5)\n\n处理 Harry Alisavakis 5 篇 shader 教程（dissolve / random-stripes / glitch / ABZÛ portal cards / shader-bits world+screen pos）。新增 4 概念页（random-stripes-mask-shader、glitch-image-effect、abzu-portal-cards-shader、world-screen-space-position-shader）、5 source 摘要；dissolve 篇与已有 texture-dissolve 重合，只补 Cull Off / addshadow 坑点 + burn ramp 实现 + source 链接。harry-alisavakis / coordinate-spaces / custom-mask-shaders / chromatic-aberration-post / uv-displacement-image-effect 追加相关链接补丁。"
+}

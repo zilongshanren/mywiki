@@ -38,6 +38,7 @@ sources: 2
 - [[locality-principle]]
 - [[aos-vs-soa]]
 - [[order-of-growth]]
+- [[texture-swizzle-nested-tiling]] —— GPU 纹理通过嵌套分块把空间相邻映射到地址相邻
 
 ## Sources
 

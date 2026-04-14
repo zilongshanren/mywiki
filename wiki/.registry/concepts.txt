@@ -1,6 +1,7 @@
 3d-rotation-math
 a-star-pathfinding
 abstraction
+abzu-portal-cards-shader
 adaptive-arithmetic-coding
 alan-zucconi
 aliasing
@@ -145,6 +146,7 @@ garbage-collector
 gcn-wave-occupancy
 gkengine
 gknext-renderer
+glitch-image-effect
 gpgpu-json-parsing
 gpgpu-string-unescaping
 gpgpu-transform-feedback-ios
@@ -235,6 +237,7 @@ mttf-reliability
 multidraw-indirect-occlusion-culling
 mvp-transform
 needlets
+negative-space-in-programming
 neural-graphics-primitives
 night-time-tint-shader
 non-cryptographic-hash
@@ -267,9 +270,11 @@ pineda-edge-rasterization
 ping-pong-surfaces
 pinhole-camera
 planar-mapping
+planar-rotation-dct
 poisson-disk-sampling
 polynomial-root-finding-gpu
 power-wall
+ppc-int-float-lhs
 prebaked-corner-occlusion
 probabilistic-algorithms
 procedural-abstraction
@@ -279,6 +284,7 @@ procedural-mesh-primitives
 procedural-rendering-ps2
 projected-solid-angle-sampling
 quasi-monte-carlo
+random-stripes-mask-shader
 raph-linus
 rapidhash
 rasterization
@@ -294,6 +300,7 @@ rendering-pipeline
 resource-system-design
 retro-rendering-techniques
 reversed-z
+ring-buffer-virtual-stream
 robin-green
 ronja-bohm
 rpp-stl-replacement
@@ -363,6 +370,7 @@ tessellation-fur-rendering
 texel-pixel-conversion
 texture-dissolve
 texture-encoded-state
+texture-swizzle-nested-tiling
 thin-lens-model
 tiled-light-culling
 tiled-light-prepass
@@ -402,6 +410,7 @@ voxel-ambient-occlusion
 warren-moore
 watercolour-shader-experiments
 wayland-compositor-model
+world-screen-space-position-shader
 worley-voronoi-noise
 x11-composite-redirection
 x11-pointer-barrier

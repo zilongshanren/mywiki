@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 320
+sources: 331
 ---
 
 # 知识库索引
@@ -84,6 +84,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[rpp-stl-replacement]] | Slater 的 rpp：Rust 风格 C++20 STL 替代（region 分配器 / brand / 协程 / 反射） |
 | [[continuous-probability]] | 连续概率速成：PDF/CDF、期望方差、Markov/Chebyshev、Dirac delta（MC 系列 Part 1） |
 | [[sigmoid-functions]] | tanh/erf/倒平方根 sigmoid 的听感、速度与多项式变形近似 |
+| [[negative-space-in-programming]] | ryg：程序的形状由「不做什么」决定 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -134,6 +135,9 @@ CAQA + CSAPP 的底层视角。
 | [[x11-pointer-barrier]] | XI 2.3 的 pointer barrier pressure：把"推屏幕边"从 timeout 升级为一等公民手势 |
 | [[open-addressing-hashtable]] | Robin Hood 线性探测 + backshift 删除：Slater 的哈希表工程对照组 |
 | [[undefined-behavior-c-cpp]] | C/C++ 未定义行为的三阵营分析、历史与治理策略（Raph Levien） |
+| [[planar-rotation-dct]] | DCT 平面旋转的四种实现与 FMA 时代的优化观 |
+| [[ppc-int-float-lhs]] | PPC 整浮点转换的 Load-Hit-Store 停顿与编译器 workaround |
+| [[ring-buffer-virtual-stream]] | SPSC 环形缓冲区：数组索引 vs 虚拟流位置 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -393,6 +397,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[multidraw-indirect-occlusion-culling]] | GPU-driven 剔除 Part 2：NVAPI MultiDraw + mesh LOD + programmable vertex fetch + 批量化一切的 DX11 retrofit |
 | [[hybrid-raytraced-shadows-reflections]] | Kostas Anagnostou：compute shader 手写 BVH hybrid raytracer 做硬阴影与镜面反射的早期全景实验 |
 | [[cel-shading-pipeline]] | Daniel Ilett 5 部曲：Phong 光照 → 量化 diffuse/specular → bump+fresnel → stencil 描边 → ramp 纹理 |
+| [[random-stripes-mask-shader]] | `floor + hash + step` 生成行级随机条纹 mask，作为 glitch / CRT 效果的积木 |
+| [[glitch-image-effect]] | 两套随机条纹 mask + 波浪位移 + 色差的 Unity glitch 后处理，含单旋钮控制器 |
+| [[abzu-portal-cards-shader]] | ABZÛ 里按相机距离 fade 的透明贴片：兼具远景美化和玩家引导 |
+| [[world-screen-space-position-shader]] | Unity shader 里拿 worldPos / screenPos 的四种模板（v/f × surface） |
+| [[texture-swizzle-nested-tiling]] | 纹理 swizzle 与嵌套分块的「减-与」通用地址增量 |
 
 ## 经典案例（wiki/examples/）
 
@@ -793,6 +802,17 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-cel-shading-part-3]] | Ilett：bump map 与 Fresnel rim 光的最小改动接入 |
 | [[sources/danielilett-cel-shading-part-4]] | Ilett：沿法线外推 + stencil buffer 的双 pass 描边 |
 | [[sources/danielilett-cel-shading-part-5]] | Ilett：Stencil ID 化 + lighting ramp 纹理替换硬阶 |
+| [[sources/halisavakis-dissolve-shader]] | Alisavakis：Unity surface shader 版 dissolve，Cull Off + addshadow 坑点 |
+| [[sources/halisavakis-random-stripes-mask]] | Alisavakis：一维 hash + step 生成随机条纹 mask 的最小范例 |
+| [[sources/halisavakis-glitch-image-effect]] | Alisavakis：条纹 + 波浪 + 色差三件套 glitch + 单旋钮控制器 |
+| [[sources/halisavakis-abzu-portal-cards]] | Alisavakis：复刻 ABZÛ 按距离 fade 的 portal card 透明贴片 |
+| [[sources/halisavakis-shader-bits-world-screen-pos]] | Alisavakis：Unity shader worldPos / screenPos 的四种写法备忘 |
+| [[sources/alanzucconi-shader-intro-unity]] | Zucconi 2015：Unity Built-in RP 下的 Shader 入门骨架（ShaderLab + Cg/HLSL，Surface vs Vertex/Fragment 取舍） |
+| [[sources/ryg-planar-rotations-and-dct]] | ryg：DCT 平面旋转四种实现与 FMA 时代的重新定位 |
+| [[sources/ryg-more-ppc-compiler-babysitting]] | ryg：Xbox 360 PPC 上 int→float 的 LHS 与编译器盲区 |
+| [[sources/ryg-negative-space-in-programming]] | ryg：程序真正的形状是留白决定的 |
+| [[sources/ryg-ring-buffers-and-queues]] | ryg：SPSC FIFO 的两种语义与虚拟流的胜利 |
+| [[sources/ryg-texture-tiling-and-swizzling]] | ryg：嵌套分块 swizzle 与减-与地址增量 |
 
 ## 元（wiki/meta/）
 

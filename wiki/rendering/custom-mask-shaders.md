@@ -61,6 +61,7 @@ Alisavakis 这两支 shader 几乎不依赖任何高级技巧（没有三角函�
 - [[shaping-functions]] —— `pow`/`saturate` 控制柔边的通用思想
 - [[fragment-shader]]
 - [[harry-alisavakis]]
+- [[random-stripes-mask-shader]] —— 同系列的另一路：用一维 hash 做行级随机条纹 mask，配合 glitch 后处理
 
 ## Sources
 

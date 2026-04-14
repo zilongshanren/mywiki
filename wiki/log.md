@@ -417,3 +417,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | batch-w29-ci Daniel Ilett Cel Shading Parts 0/2/3/4/5
 
 处理 Daniel Ilett 2019 年 Cel Shading 系列 5 篇（Part 0 理论 / Part 2 自定义 Lighting / Part 3 bump+fresnel / Part 4 描边 / Part 5 Stencil ID + ramp 纹理）。新增 1 概念页 cel-shading-pipeline（合并 5 部曲为一条完整的 Unity 内建管线卡通渲染流水线）、5 个 source 摘要；为 diffuse-lighting-lambertian、cel-shader-outline、unity-surface-shaders、daniel-ilett 发补丁追加 source 链接与 `[[cel-shading-pipeline]]` 相关条目。未创建新人物页（daniel-ilett 已存在）。
+
+## [2026-04-14] ingest | Wave-30 Worker CJ (halisavakis.com ×5)
+
+处理 Harry Alisavakis 5 篇 shader 教程（dissolve / random-stripes / glitch / ABZÛ portal cards / shader-bits world+screen pos）。新增 4 概念页（random-stripes-mask-shader、glitch-image-effect、abzu-portal-cards-shader、world-screen-space-position-shader）、5 source 摘要；dissolve 篇与已有 texture-dissolve 重合，只补 Cull Off / addshadow 坑点 + burn ramp 实现 + source 链接。harry-alisavakis / coordinate-spaces / custom-mask-shaders / chromatic-aberration-post / uv-displacement-image-effect 追加相关链接补丁。
+
+## [2026-04-14] ingest | Wave-30 Worker CK (alanzucconi.com ×5)
+
+处理 5 篇 alanzucconi.com 2015 年早期文章。新增 1 source 摘要（alanzucconi-shader-intro-unity，Built-in RP 时代 Shader 系列 Part 1），patch 了 alan-zucconi 人物页和 shaderlab-hlsl-basics / unity-surface-shaders 两个概念页的 Sources 段。跳过 4 篇：3 篇 most-anticipated-games 游戏预览合集 + 1 篇 Python/BeautifulSoup 抓取截图的 web scraping 教程。无新概念页、无新人物页。
+
+## [2026-04-14] ingest | Wave-30 Worker CL (fgiesen.wordpress.com ×5)
+
+处理 5 篇 ryg 2010-2011 技术文章：DCT 平面旋转四种实现（planar-rotation-dct）、PPC int→float LHS（ppc-int-float-lhs）、编程的负空间哲学（negative-space-in-programming）、环形缓冲区虚拟流模型（ring-buffer-virtual-stream）、纹理嵌套分块 swizzle 与减-与增量（texture-swizzle-nested-tiling）。全部 ingest，新增 5 概念页 + 5 source 摘要。fabian-giesen 人物页 sources+6 相关 patch；data-structure-invariants / cache-friendliness / complexity 三页 patch 增加交叉引用。

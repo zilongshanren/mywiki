@@ -1,7 +1,7 @@
 ---
 tags: [渲染, shader, vfx, alpha, unity]
 date: 2026-04-14
-sources: 2
+sources: 3
 ---
 
 # 纹理驱动的溶解效果（Texture Dissolve）
@@ -53,6 +53,9 @@ o.Emission = _Emission + isGlowing * _GlowColor;
 - **阴影 pass 同步**：如果 dissolve 影响可见性但阴影 pass 还把整个网格投影出来，就会看到「模型消失了但影子还在」的 bug。Unity 的 surface shader 自动生成的 shadow caster pass 会继承 `clip`——但纯手写的 vertex/fragment shader 需要显式在 shadow caster pass 里重复这个 clip 逻辑。
 - **半透明不适用**：`clip` 是二值的，天然配合不透明管线。要真正的淡出（半透明 fade）需要换成 `alpha = smoothstep(...)` 并走 transparent 队列，但那会失去 [[early-z-late-z|early-z]] 等一大批优化——和 fizzle 面对的权衡一样。
 - **不透明度精度**：单通道灰度纹理 + float 比较的精度足够平滑，不需要多重采样；边界不会出现锯齿因为 `smoothstep` 把过渡拉开了。
+- **`Cull Off` 必不可少**：Alisavakis 在 2017 年的 surface shader 版本里强调，dissolve 切出的洞会让玩家看到网格背面——不关 culling 就是看不见的空洞，像穿帮的纸片。
+- **`#pragma surface surf Lambert addshadow`**：Unity surface shader 默认生成的 shadow caster pass 不会跟着 `clip`，所以物体消失了影子还在。Alisavakis 花了很久才找到要显式加 `addshadow` 让 shadow pass 复用 surf 函数的 clip 逻辑，这个坑 2017 年 Unity 手册里没写清楚。
+- **burn 带是同一张 slice guide 的第二次使用**：不丢弃、而是在 `test < _BurnSize` 的像素上查一张 1D color ramp 做 emission，`test * (1 / _BurnSize)` 当 U 坐标；换 ramp 就换烧焦色调（橘红 → 白、黄 → 黑）。和 dissolve 边界天然配准，因为来自同一个 `test` 值。
 
 ## 相关
 
@@ -69,3 +72,4 @@ o.Emission = _Emission + isGlowing * _GlowColor;
 
 - [[sources/ronja-texture-dissolve]]
 - [[sources/lindenreid-dissolve-shader]] —— Linden Reid 的 Unity 版实现，多层 `_ColorThreshold` 堆叠边缘色 + 可选 `color.a` 全局 fade
+- [[sources/halisavakis-dissolve-shader]] —— Alisavakis 的 surface shader 版，诚实记录了 `Cull Off` 与 `addshadow` 两个 2017 年 Unity 新手常踩的坑，以及 burn ramp 的 1D lut 实现

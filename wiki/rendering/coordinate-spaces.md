@@ -43,6 +43,7 @@ sources: 1
 - [[md5-model-format]] —— 关节本地空间 → 对象空间的具体例子
 - [[gpu-skinning-matrix-palette]] —— inverse bind pose 把顶点在多个空间间来回搬
 - [[tangent-space-normal-mapping]] —— 切线空间作为「让光照向量计算更简单」的局部坐标架
+- [[world-screen-space-position-shader]] —— Unity shader 里拿 worldPos / screenPos 的四种写法备忘
 
 ## Sources
 
