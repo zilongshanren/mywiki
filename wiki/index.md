@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 166
+sources: 179
 ---
 
 # 知识库索引
@@ -107,6 +107,10 @@ CAQA + CSAPP 的底层视角。
 | [[gpu-latency-hiding]] | GPU 用 ILP 与 TLP 两条互斥路径隐藏内存延迟 |
 | [[meshoptimizer-vertex-codec]] | 非 LZ 的 delta/预测顶点压缩器，在浮点图像上也赢 |
 | [[carry-save-adder-pixel-avg]] | 用 CSA 恒等式对 A8R8G8B8 / R5G6B5 做无溢出、可选 rounding bias 的 SWAR 平均 |
+| [[gpgpu-transform-feedback-ios]] | 在 OpenGL ES 3.0 Transform Feedback 上榨出 GPGPU 的历史 hack |
+| [[nsmutablearray-circular-buffer]] | `__NSArrayM` 其实是循环缓冲 deque，两端 O(1) |
+| [[nsdictionary-linear-probing]] | `__NSDictionaryI` = 开放寻址 + 线性探测 + indexed ivars 紧凑存储 |
+| [[objc-runtime-internals]] | Modern Obj-C runtime：class cluster / non-fragile ivars / indexed ivars / lazy binding |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -287,6 +291,15 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpgpu-json-parsing]] | Dyck 语言的 scan + scatter + sort 流水线：把 JSON 括号结构搬到 GPU 并绕过栈 |
 | [[cellular-texture-generation]] | ryg 的 Werkkzeug3 细胞纹理离线生成：为什么树最慢、spatial subdivision 为什么最快 |
 | [[floyd-steinberg-dithering]] | Floyd–Steinberg 误差扩散 dither 与 JVM 上的四步优化 |
+| [[texel-pixel-conversion]] | 纹素与像素之间的换算 |
+| [[ping-pong-surfaces]] | 两张 surface 跑任意多趟 shader |
+| [[shader-code-golfing]] | shader 代码压缩的技巧与等式 |
+| [[vector-dot-product]] | 点乘作为条纹 / 衰减 / Lambert 的瑞士军刀 |
+| [[creative-coding-process]] | Xor 的灵感 → 原型 → 打磨 → 迭代工作流 |
+| [[bezier-curve-triangulation]] | 用切线法线 + hyperbola 段数把 Bézier 曲线描边交给 GPU 三角形 |
+| [[bluk-2d-fog-sprite-shader]] | BLUK 风格的距离相关 2D 雾精灵着色器 |
+| [[unity-image-effect-basics]] | Unity built-in 管线的 image effect 全屏后处理骨架 |
+| [[night-time-tint-shader]] | 饱和/蓝偏/变暗三合一的夜色全屏后处理 |
 
 ## 经典案例（wiki/examples/）
 
@@ -527,6 +540,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/elopezr-will-of-flame]] | López Ros：自研 Java Android 引擎的独立射击游戏项目档案 |
 | [[sources/elopezr-wof-editors]] | López Ros：Python/wxPython 的关卡+复合实体编辑器 |
 | [[sources/elopezr-java-vector-math]] | López Ros：Java 缺运算符重载与值类型，如何毁了向量数学 |
+| [[sources/xor-mini-texels-pixels]] | Xor：纹素与像素之间的换算 |
+| [[sources/xor-mini-recursive-shaders]] | Xor：多趟 shader 与 ping-pong surface |
+| [[sources/xor-mini-code-golfing]] | Xor：shader code golf 技巧与恒等式 |
+| [[sources/xor-mini-dot-product]] | Xor：点乘在 shader 里的三种用法 |
+| [[sources/xor-mini-creative-code]] | Xor：从虫洞到飓风的 shader creative coding 流程 |
+| [[sources/ciechanow-exploring-gpgpu-ios]] | Ciechanowski：在 A7 iOS 上用 Transform Feedback 做 GPGPU 的过时但经典 hack |
+| [[sources/ciechanow-drawing-bezier-curves]] | Ciechanowski：Revolved 里 Bézier 曲线描边的 GPU 三角化方案 |
+| [[sources/ciechanow-exposing-nsmutablearray]] | Ciechanowski：逆向 `__NSArrayM` 发现它是循环缓冲 deque |
+| [[sources/ciechanow-exposing-nsdictionary]] | Ciechanowski：逆向 `__NSDictionaryI` 发现它是 indexed ivars + 线性探测 |
+| [[sources/ciechanow-nsdictionary-objectforkey-assembly]] | Ciechanowski：`objectForKey:` 的 60 条 ARM64 汇编逐行译读 |
+| [[sources/halisavakis-bluk-2d-fog-sprite]] | Alisavakis：BLUK 视觉风格的 2D 雾精灵着色器拆解 |
+| [[sources/halisavakis-image-effects-intro]] | Alisavakis：Unity image effect 入门教程 |
+| [[sources/halisavakis-night-time-shader]] | Alisavakis：夜色全屏后处理示例 |
 
 ## 元（wiki/meta/）
 

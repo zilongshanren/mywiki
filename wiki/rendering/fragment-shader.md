@@ -50,6 +50,8 @@ sources: 1
 - [[texture-encoded-state]] —— 把 per-pixel 时间戳/状态塞进纹理通道，供 fragment shader 消费
 - [[shader-vector-math-primer]]
 - [[metal-shading-language-basics]] —— MSL 的 fragment 函数限定符与 `[[stage_in]]` 插值语义
+- [[unity-image-effect-basics]] —— 以片元着色器为主的全屏后处理骨架
+- [[bluk-2d-fog-sprite-shader]] —— 用 worldPos-camera 距离驱动染色的 2D 雾片元着色器
 
 ## Sources
 

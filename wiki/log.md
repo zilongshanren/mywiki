@@ -241,3 +241,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-14 Worker AP (elopezr.com 2014 早期 ×5)
 
 处理 5 篇 Emilio López Ros 2014 年早期博文，全部 ingested。新增 2 概念页（floyd-steinberg-dithering, java-vector-math-limitations）、5 源摘要。emilio-lopez-ros 人物页已存在，追加 5 条 source 链接并在风格段补一段早期 Android / Java 时期的背景。另补丁 dither-alpha-clipping 增加与 Floyd–Steinberg 的对照。
+
+## [2026-04-14] ingest | Wave-15 Worker AQ (Xor GM Shaders Mini ×5)
+
+处理 5 篇 Xor 的 GM Shaders Mini 2022 年 8-9 月文章（texels/pixels、recursive/ping-pong、code golfing、dot product、creative code）。新增 5 个渲染概念页（texel-pixel-conversion, ping-pong-surfaces, shader-code-golfing, vector-dot-product, creative-coding-process）和 5 个 source 摘要。对 xor-shader-artist 人物页追加 5 条贡献；给 diffuse-lighting-lambertian 和 shader-vector-math-primer 补链。无跳过。
+
+## [2026-04-14] ingest | Wave-15 Worker AR (ciechanow.ski 2014 早期 ×5)
+
+处理 5 篇 Bartosz Ciechanowski 2014 年的早期文章——这是他博客刚开始时的硬核低层时期，远早于后来的交互可视化。Exploring GPGPU on iOS（A7 + Transform Feedback 的 GPGPU hack，作者本人已标为 historical reference）、Drawing Bézier Curves（Revolved 应用里的曲线描边三角化，博客上首篇带交互 demo）、Exposing NSMutableArray（`class-dump` + Hopper 逆向出 `__NSArrayM` 是循环缓冲 deque，1.625× 扩容、从不收缩）、Exposing NSDictionary（逆向 `__NSDictionaryI` 发现用 indexed ivars + 线性探测 + 质数 size 表 + 62% 装载率上限）、以及后者的 ARM64 汇编附录页。新增 5 概念页（gpgpu-transform-feedback-ios / bezier-curve-triangulation / nsmutablearray-circular-buffer / nsdictionary-linear-probing / objc-runtime-internals）、5 source 摘要。bartosz-ciechanowski 已存在，仅 patch 风格 + 贡献表 + 相关 + sources。
+
+## [2026-04-14] ingest | Wave-15 Worker AS (halisavakis.com ×5)
+
+处理 halisavakis.com 早期文章 5 篇。新增 3 概念页（bluk-2d-fog-sprite-shader、unity-image-effect-basics、night-time-tint-shader）、3 source 摘要。跳过 2 篇（Sling Toss 隐私政策、Leucos Ludum Dare postmortem）。补丁 harry-alisavakis 人物页与 fragment-shader 概念页的交叉引用。

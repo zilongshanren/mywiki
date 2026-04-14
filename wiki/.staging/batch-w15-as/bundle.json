@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w15-as",
+  "agent_note": "halisavakis.com batch 3/3: 3 early shader tutorials ingested, 2 non-technical skipped (privacy policy + Ludum Dare postmortem).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2016-12-01_harry-alisavakis-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Sling Toss 应用的隐私政策模板页，纯法律文本，无技术内容"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-04-05_how-id-do-it-bluk-visuals.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-bluk-2d-fog-sprite",
+      "title": "How I'd do it: BLUK visuals"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-04-12_my-take-on-shaders-introduction-to-image-effects.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-image-effects-intro",
+      "title": "My take on shaders: Introduction to image effects"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-04-19_my-take-on-shaders-night-time-shader-introduction-to-image-e.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-night-time-shader",
+      "title": "My take on shaders: Night time shader (Introduction to image effects part II)"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-04-26_postmortem-leucos-ludum-dare-38-entry.md",
+      "status": "skipped_offtopic",
+      "reason": "Ludum Dare 38 游戏 jam 作品 Leucos 的 postmortem，偏设计感受/游戏体会，无可沉淀的图形或引擎技术点"
+    }
+  ],
+  "concepts_created": [
+    "bluk-2d-fog-sprite-shader",
+    "unity-image-effect-basics",
+    "night-time-tint-shader"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "halisavakis-bluk-2d-fog-sprite",
+    "halisavakis-image-effects-intro",
+    "halisavakis-night-time-shader"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-image-effect-basics]] —— 2017 年 *My take on shaders* 系列第一篇讲的就是这个\n- [[night-time-tint-shader]]\n- [[bluk-2d-fog-sprite-shader]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-bluk-2d-fog-sprite]]\n- [[sources/halisavakis-image-effects-intro]]\n- [[sources/halisavakis-night-time-shader]]"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-image-effect-basics]] —— 以片元着色器为主的全屏后处理骨架\n- [[bluk-2d-fog-sprite-shader]] —— 用 worldPos-camera 距离驱动染色的 2D 雾片元着色器"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bluk-2d-fog-sprite-shader]] | BLUK 风格的距离相关 2D 雾精灵着色器 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[unity-image-effect-basics]] | Unity built-in 管线的 image effect 全屏后处理骨架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[night-time-tint-shader]] | 饱和/蓝偏/变暗三合一的夜色全屏后处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-bluk-2d-fog-sprite]] | Alisavakis：BLUK 视觉风格的 2D 雾精灵着色器拆解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-image-effects-intro]] | Alisavakis：Unity image effect 入门教程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-night-time-shader]] | Alisavakis：夜色全屏后处理示例 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-15 Worker AS (halisavakis.com ×5)\n\n处理 halisavakis.com 早期文章 5 篇。新增 3 概念页（bluk-2d-fog-sprite-shader、unity-image-effect-basics、night-time-tint-shader）、3 source 摘要。跳过 2 篇（Sling Toss 隐私政策、Leucos Ludum Dare postmortem）。补丁 harry-alisavakis 人物页与 fragment-shader 概念页的交叉引用。"
+}

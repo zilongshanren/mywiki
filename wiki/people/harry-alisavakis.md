@@ -14,7 +14,13 @@ sources: 1
 - [[fragment-shader]]
 - [[cyanilux]] —— 常参与 #TechnicallyAChallenge 挑战赛的 shader 教程作者
 - [[crt-shader-effects]] —— Cyan 为 Retro 主题做的作品
+- [[unity-image-effect-basics]] —— 2017 年 *My take on shaders* 系列第一篇讲的就是这个
+- [[night-time-tint-shader]]
+- [[bluk-2d-fog-sprite-shader]]
 
 ## Sources
 
 - [[sources/halisavakis-shaderquest-shaping-functions]]
+- [[sources/halisavakis-bluk-2d-fog-sprite]]
+- [[sources/halisavakis-image-effects-intro]]
+- [[sources/halisavakis-night-time-shader]]

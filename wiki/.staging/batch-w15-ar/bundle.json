@@ -1,0 +1,119 @@
+{
+  "batch_id": "batch-w15-ar",
+  "agent_note": "5 篇 ciechanow.ski 2014 年早期文章：1 篇 iOS GPGPU（Transform Feedback 滥用）+ 1 篇 Bezier 曲线描边三角化（博客第一篇带交互 demo 的雏形）+ 2 篇 Foundation 逆向工程（__NSArrayM 循环缓冲 / __NSDictionaryI 线性探测）+ 1 篇 ARM64 汇编附录页（是 NSDictionary 主文的姊妹页）。5 个概念页新增：gpgpu-transform-feedback-ios / bezier-curve-triangulation / nsmutablearray-circular-buffer / nsdictionary-linear-probing / objc-runtime-internals。bartosz-ciechanowski 人物页已存在，仅追加 sources 链接 + 增补风格小节反映早期 iOS/逆向时期。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ciechanow.ski/2014-01-05_exploring-gpgpu-on-ios-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-exploring-gpgpu-ios",
+      "title": "Exploring GPGPU on iOS"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2014-02-18_drawing-bezier-curves-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-drawing-bezier-curves",
+      "title": "Drawing Bézier Curves"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2014-03-05_exposing-nsmutablearray-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-exposing-nsmutablearray",
+      "title": "Exposing NSMutableArray"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2014-04-08_exposing-nsdictionary-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-exposing-nsdictionary",
+      "title": "Exposing NSDictionary"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2014-04-08_nsdictionaryi-objectforkey-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-nsdictionary-objectforkey-assembly",
+      "title": "__NSDictionaryI objectForKey: (ARM64 汇编附录)"
+    }
+  ],
+  "concepts_created": [
+    "gpgpu-transform-feedback-ios",
+    "bezier-curve-triangulation",
+    "nsmutablearray-circular-buffer",
+    "nsdictionary-linear-probing",
+    "objc-runtime-internals"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "ciechanow-exploring-gpgpu-ios",
+    "ciechanow-drawing-bezier-curves",
+    "ciechanow-exposing-nsmutablearray",
+    "ciechanow-exposing-nsdictionary",
+    "ciechanow-nsdictionary-objectforkey-assembly"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "append_to_section",
+      "section": "## 风格",
+      "content": "\n在 2014 年前后（他博客刚开始的时期），Ciechanowski 还经历过一段**硬核低层挖坟**的阶段——Transform Feedback 滥用 GPGPU、`class-dump` + Hopper 逆向 Foundation 的 `__NSArrayM` 和 `__NSDictionaryI`、手工翻译 ARM64 汇编。这些文章没有后来那种 WebGL 交互 demo，但同样是「从第一原理问一个问题：这东西真正怎么工作？」的一脉——只不过问题对象从「光在哪里折射」变成了「循环缓冲区在 ARM64 上长什么样」。Bezier 曲线那一篇是博客上**第一篇带交互 demo** 的文章，可以视为他后来风格的雏形。"
+    },
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Exploring GPGPU on iOS | [[gpgpu-transform-feedback-ios]] |\n| Drawing Bézier Curves | [[bezier-curve-triangulation]] |\n| Exposing NSMutableArray | [[nsmutablearray-circular-buffer]]、[[objc-runtime-internals]] |\n| Exposing NSDictionary | [[nsdictionary-linear-probing]]、[[objc-runtime-internals]] |"
+    },
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpgpu-transform-feedback-ios]]\n- [[bezier-curve-triangulation]]\n- [[nsmutablearray-circular-buffer]]\n- [[nsdictionary-linear-probing]]\n- [[objc-runtime-internals]]"
+    },
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/ciechanow-exploring-gpgpu-ios]]\n- [[sources/ciechanow-drawing-bezier-curves]]\n- [[sources/ciechanow-exposing-nsmutablearray]]\n- [[sources/ciechanow-exposing-nsdictionary]]\n- [[sources/ciechanow-nsdictionary-objectforkey-assembly]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gpgpu-transform-feedback-ios]] | 在 OpenGL ES 3.0 Transform Feedback 上榨出 GPGPU 的历史 hack |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[nsmutablearray-circular-buffer]] | `__NSArrayM` 其实是循环缓冲 deque，两端 O(1) |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[nsdictionary-linear-probing]] | `__NSDictionaryI` = 开放寻址 + 线性探测 + indexed ivars 紧凑存储 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[objc-runtime-internals]] | Modern Obj-C runtime：class cluster / non-fragile ivars / indexed ivars / lazy binding |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bezier-curve-triangulation]] | 用切线法线 + hyperbola 段数把 Bézier 曲线描边交给 GPU 三角形 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-exploring-gpgpu-ios]] | Ciechanowski：在 A7 iOS 上用 Transform Feedback 做 GPGPU 的过时但经典 hack |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-drawing-bezier-curves]] | Ciechanowski：Revolved 里 Bézier 曲线描边的 GPU 三角化方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-exposing-nsmutablearray]] | Ciechanowski：逆向 `__NSArrayM` 发现它是循环缓冲 deque |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-exposing-nsdictionary]] | Ciechanowski：逆向 `__NSDictionaryI` 发现它是 indexed ivars + 线性探测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-nsdictionary-objectforkey-assembly]] | Ciechanowski：`objectForKey:` 的 60 条 ARM64 汇编逐行译读 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-15 Worker AR (ciechanow.ski 2014 早期 ×5)\n\n处理 5 篇 Bartosz Ciechanowski 2014 年的早期文章——这是他博客刚开始时的硬核低层时期，远早于后来的交互可视化。Exploring GPGPU on iOS（A7 + Transform Feedback 的 GPGPU hack，作者本人已标为 historical reference）、Drawing Bézier Curves（Revolved 应用里的曲线描边三角化，博客上首篇带交互 demo）、Exposing NSMutableArray（`class-dump` + Hopper 逆向出 `__NSArrayM` 是循环缓冲 deque，1.625× 扩容、从不收缩）、Exposing NSDictionary（逆向 `__NSDictionaryI` 发现用 indexed ivars + 线性探测 + 质数 size 表 + 62% 装载率上限）、以及后者的 ARM64 汇编附录页。新增 5 概念页（gpgpu-transform-feedback-ios / bezier-curve-triangulation / nsmutablearray-circular-buffer / nsdictionary-linear-probing / objc-runtime-internals）、5 source 摘要。bartosz-ciechanowski 已存在，仅 patch 风格 + 贡献表 + 相关 + sources。"
+}

@@ -25,6 +25,11 @@ sources: 5
 | Mini: 3D Rotation | [[3d-rotation-math]] — Euler / Axis-Angle / 四元数的比较 |
 | Efficient Chaos | [[layered-grid-noise]] — 用黄金角打破周期性的廉价噪声 |
 | GM Shaders: Shadowmaps | [[shadow-mapping-basics]] — Shadow mapping 入门与软阴影采样 |
+| Mini: Texels and Pixels | [[texel-pixel-conversion]] — 纹素与像素之间的换算 |
+| Mini: Recursive Shaders | [[ping-pong-surfaces]] — 多趟 / 反馈 shader 的 ping-pong surface |
+| Mini: Code Golfing | [[shader-code-golfing]] — shader 压缩技巧与数学恒等式 |
+| Functions: Dot Product | [[vector-dot-product]] — 点乘的条纹 / 衰减 / Lambert 用法 |
+| Mini: Creative Code | [[creative-coding-process]] — 创意编程的四步工作流 |
 
 ## 和其它作者的对比
 
@@ -40,6 +45,11 @@ sources: 5
 - [[layered-grid-noise]]
 - [[shadow-mapping-basics]]
 - [[fragment-shader]]
+- [[texel-pixel-conversion]]
+- [[ping-pong-surfaces]]
+- [[shader-code-golfing]]
+- [[vector-dot-product]]
+- [[creative-coding-process]]
 
 ## Sources
 
@@ -48,3 +58,8 @@ sources: 5
 - [[sources/xor-mini-3d-rotation]]
 - [[sources/xor-efficient-chaos]]
 - [[sources/xor-shadowmaps]]
+- [[sources/xor-mini-texels-pixels]]
+- [[sources/xor-mini-recursive-shaders]]
+- [[sources/xor-mini-code-golfing]]
+- [[sources/xor-mini-dot-product]]
+- [[sources/xor-mini-creative-code]]

@@ -17,9 +17,11 @@ aras-pranckevicius
 bartosz-ciechanowski
 bartosz-wronski
 batching
+bezier-curve-triangulation
 bindless-rendering
 bits-and-context
 blit-render-feature
+bluk-2d-fog-sprite-shader
 bottleneck-analysis
 brian-karis
 buffer-renaming
@@ -56,6 +58,7 @@ continuous-design
 coordinate-spaces
 cpp-runtime-reflection
 cpu-performance-formula
+creative-coding-process
 crt-shader-effects
 cuda-memory-hierarchy
 culling
@@ -116,6 +119,7 @@ gkengine
 gknext-renderer
 gpgpu-json-parsing
 gpgpu-string-unescaping
+gpgpu-transform-feedback-ios
 gpu-fence-timeline-semaphore
 gpu-hazard-tracking
 gpu-image-editor-brush
@@ -178,9 +182,13 @@ msaa-ssaa
 mttf-reliability
 mvp-transform
 needlets
+night-time-tint-shader
 non-cryptographic-hash
 normal-decal-edge-blending
 normal-map-blending
+nsdictionary-linear-probing
+nsmutablearray-circular-buffer
+objc-runtime-internals
 obscurity
 occlusion-culling
 oklab-color-space
@@ -196,6 +204,7 @@ perceptual-colormaps
 perspective-correct-interpolation
 physically-based-shading
 pineda-edge-rasterization
+ping-pong-surfaces
 pinhole-camera
 planar-mapping
 poisson-disk-sampling
@@ -230,6 +239,7 @@ screenspace-reflections
 scriptable-render-pipeline
 sdf-2d-primitives
 sdf-ray-marched-shadows
+shader-code-golfing
 shader-prototyping-tools
 shader-vector-math-primer
 shaderlab-hlsl-basics
@@ -265,6 +275,7 @@ tbdr-vs-imr
 temporal-antialiasing
 temporal-decomposition
 temporal-supersampling
+texel-pixel-conversion
 texture-dissolve
 texture-encoded-state
 thin-lens-model
@@ -275,6 +286,7 @@ triangle-setup
 trigonometric-moment-transient-imaging
 unity-complexity-patterns
 unity-grabpass-blur
+unity-image-effect-basics
 unity-procedural-mesh
 unity-surface-shaders
 unity-vs-unreal
@@ -283,6 +295,7 @@ unknown-unknowns
 unorm-float-conversion
 urp-volume-post-processing
 uv-manipulation-nodes
+vector-dot-product
 vertex-vector-interpolation-artifact
 virtual-memory
 virtualized-volume-textures

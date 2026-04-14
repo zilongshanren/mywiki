@@ -30,3 +30,4 @@ Daniel Ilett 的教程把 Unity 里做 diffuse 的两种写法并列给出：
 ## Sources
 
 - [[sources/danielilett-cel-shading-part-1]]
+- [[sources/xor-mini-dot-product]]

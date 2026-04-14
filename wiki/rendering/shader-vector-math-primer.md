@@ -67,6 +67,7 @@ Reid 自己的观察：她大学数学挂过，但图形数学学得很好。区
 - [[microfacet-brdf]]
 - [[linden-reid]]
 - [[diffuse-lighting-lambertian]] —— 点乘在 Lambert 光照里的经典用法
+- [[vector-dot-product]] —— Xor 从 shader 实战视角再讲一遍点乘
 
 ## Sources
 

@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w15-aq",
+  "agent_note": "5 篇 Xor 的 GM Shaders Mini 系列 2022 年 8-9 月文章：texels/pixels、recursive/ping-pong、code golfing、dot product、creative code。全部 ingest，未跳过。新增 5 个渲染概念页 + 5 个 source 摘要。xor-shader-artist 人物页已存在，给出 append patch；未新增人物页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-08-12_mini-texels-and-pixels.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-texels-pixels",
+      "title": "Mini: Texels and Pixels"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-08-19_mini-recursive-shaders.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-recursive-shaders",
+      "title": "Mini: Recursive shaders"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-08-26_mini-code-golfing.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-code-golfing",
+      "title": "Mini: Code Golfing"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-09-03_functions-dot-product.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-dot-product",
+      "title": "Functions: Dot Product"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-09-10_mini-creative-code.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-creative-code",
+      "title": "Mini: Creative Code"
+    }
+  ],
+  "concepts_created": [
+    "texel-pixel-conversion",
+    "ping-pong-surfaces",
+    "shader-code-golfing",
+    "vector-dot-product",
+    "creative-coding-process"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "xor-mini-texels-pixels",
+    "xor-mini-recursive-shaders",
+    "xor-mini-code-golfing",
+    "xor-mini-dot-product",
+    "xor-mini-creative-code"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Mini: Texels and Pixels | [[texel-pixel-conversion]] — 纹素与像素之间的换算 |\n| Mini: Recursive Shaders | [[ping-pong-surfaces]] — 多趟 / 反馈 shader 的 ping-pong surface |\n| Mini: Code Golfing | [[shader-code-golfing]] — shader 压缩技巧与数学恒等式 |\n| Functions: Dot Product | [[vector-dot-product]] — 点乘的条纹 / 衰减 / Lambert 用法 |\n| Mini: Creative Code | [[creative-coding-process]] — 创意编程的四步工作流 |"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[texel-pixel-conversion]]\n- [[ping-pong-surfaces]]\n- [[shader-code-golfing]]\n- [[vector-dot-product]]\n- [[creative-coding-process]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-mini-texels-pixels]]\n- [[sources/xor-mini-recursive-shaders]]\n- [[sources/xor-mini-code-golfing]]\n- [[sources/xor-mini-dot-product]]\n- [[sources/xor-mini-creative-code]]"
+    },
+    {
+      "file": "wiki/rendering/diffuse-lighting-lambertian.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-mini-dot-product]]"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vector-dot-product]] —— Xor 从 shader 实战视角再讲一遍点乘"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texel-pixel-conversion]] | 纹素与像素之间的换算 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ping-pong-surfaces]] | 两张 surface 跑任意多趟 shader |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-code-golfing]] | shader 代码压缩的技巧与等式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vector-dot-product]] | 点乘作为条纹 / 衰减 / Lambert 的瑞士军刀 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[creative-coding-process]] | Xor 的灵感 → 原型 → 打磨 → 迭代工作流 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-texels-pixels]] | Xor：纹素与像素之间的换算 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-recursive-shaders]] | Xor：多趟 shader 与 ping-pong surface |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-code-golfing]] | Xor：shader code golf 技巧与恒等式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-dot-product]] | Xor：点乘在 shader 里的三种用法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-creative-code]] | Xor：从虫洞到飓风的 shader creative coding 流程 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-15 Worker AQ (Xor GM Shaders Mini ×5)\n\n处理 5 篇 Xor 的 GM Shaders Mini 2022 年 8-9 月文章（texels/pixels、recursive/ping-pong、code golfing、dot product、creative code）。新增 5 个渲染概念页（texel-pixel-conversion, ping-pong-surfaces, shader-code-golfing, vector-dot-product, creative-coding-process）和 5 个 source 摘要。对 xor-shader-artist 人物页追加 5 条贡献；给 diffuse-lighting-lambertian 和 shader-vector-math-primer 补链。无跳过。"
+}
