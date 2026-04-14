@@ -93,6 +93,7 @@ early-z-late-z
 ecs
 ecs-for-rust-ui
 elements-of-programming
+elias-daler
 emilio-lopez-ros
 engine-evolution
 engine-layering
@@ -126,6 +127,7 @@ gknext-renderer
 gpgpu-json-parsing
 gpgpu-string-unescaping
 gpgpu-transform-feedback-ios
+gpu-driven-grass-tiles
 gpu-fence-timeline-semaphore
 gpu-hazard-tracking
 gpu-image-editor-brush
@@ -134,6 +136,7 @@ gpu-printf-debugging
 gpu-skinning-matrix-palette
 greedy-voxel-meshing
 hamming-code-hat-puzzle
+handle-based-resource-manager
 harry-alisavakis
 hbao-interleaved-sampling
 hennessy-patterson
@@ -176,7 +179,9 @@ locality-principle
 log
 lossless-float-image-compression
 low-discrepancy-sequence
+lua-cpp-binding
 malloc-wrapper-debug
+marco-giordano
 matthaeus-chajdas
 max-slater
 md5-model-format
@@ -247,6 +252,7 @@ retro-rendering-techniques
 reversed-z
 robin-green
 ronja-bohm
+rust-disassembly-tour
 rust-gui-ecosystem
 sampler-filter-wrap-modes
 sampling-theorem-sinc
@@ -329,4 +335,5 @@ worley-voronoi-noise
 xor-shader-artist
 z-buffer
 z-fighting
+z-order-top-down-2d
 zero-tolerance

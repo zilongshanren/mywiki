@@ -24,6 +24,7 @@ sources: 6
 - [[volumetric-raymarching-intro]]
 - [[journey-sand-specular]]
 - [[physically-based-shading]]
+- [[gpu-driven-grass-tiles]] —— Marco Giordano 的 grass 系统直接用了 Alan Wolfe 的蓝噪声采样代码
 
 ## Sources
 

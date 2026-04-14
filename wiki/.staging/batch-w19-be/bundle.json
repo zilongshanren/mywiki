@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w19-be",
+  "agent_note": "giordi91.github.io 3 篇 Marco Giordano 文章：Rust 反汇编导览、GPU 驱动草地瓦片、句柄式资源管理。三篇都技术、都 ingest。marco-giordano 是新作者，创建人物页。两个新概念页（gpu-driven-grass-tiles、handle-based-resource-manager）与现有 deferred-grass-shader / resource-system-design 构成『同题不同解』对照组，在两侧都以 patch 追加交叉链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/giordi91.github.io/2020-05-23_rust-disassembly-part-1.md",
+      "status": "ingested",
+      "source_slug": "giordi91-rust-disassembly-part-1",
+      "title": "Rust Disassembly: part 1"
+    },
+    {
+      "path": "raw/articles/giordi91.github.io/2020-09-25_grass-shader.md",
+      "status": "ingested",
+      "source_slug": "giordi91-grass-shader",
+      "title": "Grass Shader"
+    },
+    {
+      "path": "raw/articles/giordi91.github.io/2020-11-13_engine-resources-management-a-handle-approach.md",
+      "status": "ingested",
+      "source_slug": "giordi91-handle-resource-management",
+      "title": "Engine Resources Management: a handle approach"
+    }
+  ],
+  "concepts_created": [
+    "rust-disassembly-tour",
+    "gpu-driven-grass-tiles",
+    "handle-based-resource-manager"
+  ],
+  "people_created": [
+    "marco-giordano"
+  ],
+  "source_summaries_created": [
+    "giordi91-rust-disassembly-part-1",
+    "giordi91-grass-shader",
+    "giordi91-handle-resource-management"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/deferred-grass-shader.md",
+      "operation": "append_to_section",
+      "section": "## 和相关概念的连结",
+      "content": "\n另一条完全不同的路线见 [[gpu-driven-grass-tiles]]——[[marco-giordano]] 的方案用蓝噪声预烘焙 + vertex shader 扩展 + compute culling + 间接绘制 + 4 路 scan 压 LOD，把决策全部搬到 GPU，而不是让 tessellation/geometry shader 在 raster 阶段动态生成。两者是同题不同解的典型对照：Steven Sell 赢在单 shader 自洽、易接 Unity 管线；Marco 赢在可扩展性与性能上限。"
+    },
+    {
+      "file": "wiki/game-development/resource-system-design.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[handle-based-resource-manager]] —— C++/Vulkan 引擎侧对同一问题的 handle + manager + memory pool 答案，和 Addressables 的设计哲学对应"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-driven-grass-tiles]] —— compute shader 做瓦片级 frustum vote + scan compact + draw indirect 的一个完整落地"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-driven-grass-tiles]] —— Marco Giordano 的 grass 系统直接用了 Alan Wolfe 的蓝噪声采样代码"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-driven-grass-tiles]] —— Marco Giordano 的 GPU driven culling 直接参考了 Kostas 的 multi-draw indirect / occlusion culling 实验"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-driven-grass-tiles]] | Marco Giordano：蓝噪声预烘焙 + vertex 扩展 + compute culling + 间接绘制的 GPU 驱动草地方案 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[handle-based-resource-manager]] | C++/Vulkan 引擎里 manager + 32 位不透明句柄 + magic number 校验的资源管理范式 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[rust-disassembly-tour]] | Rust 的 i128/解构/数组/iterator 在 Compiler Explorer 里到底变成了什么汇编 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[marco-giordano]] | Marco Giordano（giordi91），自研 DX12/Vulkan 引擎作者，博客 A programmer's cave |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/giordi91-rust-disassembly-part-1]] | Marco Giordano：Rust 语言特性反汇编导览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/giordi91-grass-shader]] | Marco Giordano：GPU 驱动瓦片化草地系统 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/giordi91-handle-resource-management]] | Marco Giordano：句柄 + manager 式资源管理 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-19 Worker BE (giordi91.github.io Marco Giordano ×3)\n\n处理 Marco Giordano (giordi91) 的 3 篇博客：Rust 反汇编导览、GPU 驱动草地、句柄式资源管理。全部 ingest，新增 1 人物页（marco-giordano）、3 概念页（rust-disassembly-tour / gpu-driven-grass-tiles / handle-based-resource-manager）、3 source 摘要。新概念页与既有的 deferred-grass-shader / resource-system-design 形成『同题不同解』对照组，双向 patch 交叉链接；另外 patch culling / alan-zucconi / kostas-anagnostou 追加引用。"
+}

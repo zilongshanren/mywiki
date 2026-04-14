@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w19-bd",
+  "agent_note": "全部 5 篇均为 jendrikillner.com 的 Graphics Programming Weekly 链接聚合周报（issue 2/3/4/5/7），属于 news-style roundup，按 topicality gate 全部跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2017-08-06_graphics-programming-weekly-issue-2-august-6-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "Graphics Programming Weekly 链接聚合周报（issue 2），news-style roundup，无原创技术内容。"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2017-08-13_graphics-programming-weekly-issue-3-august-13-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "Graphics Programming Weekly 链接聚合周报（issue 3），news-style roundup，无原创技术内容。"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2017-08-20_graphics-programming-weekly-issue-4-august-20-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "Graphics Programming Weekly 链接聚合周报（issue 4），news-style roundup，无原创技术内容。"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2017-08-27_graphics-programming-weekly-issue-5-august-27-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "Graphics Programming Weekly 链接聚合周报（issue 5），news-style roundup，无原创技术内容。"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2017-09-10_graphics-programming-weekly-issue-7-september-10-2017.md",
+      "status": "skipped_offtopic",
+      "reason": "Graphics Programming Weekly 链接聚合周报（issue 7），news-style roundup，无原创技术内容。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-14] ingest | Wave-19 Worker BD (jendrikillner.com weekly ×5)\n\n全部 5 篇 Graphics Programming Weekly（issue 2/3/4/5/7）均为链接聚合周报，按 topicality gate 全部跳过，未生成任何 wiki 页面。"
+}

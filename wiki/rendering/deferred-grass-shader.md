@@ -37,6 +37,8 @@ sources: 1
 
 这套方案依赖 [[deferred-rendering]] 的 G-Buffer 布局、靠 [[fragment-shader]] 的 alpha discard 绕开透明度限制、由 tessellation 填充几何密度，再靠几何 shear 解决视角退化。它的整体气质和 [[compute-vs-raster-points]] 里「生成大量小几何体」的思路接近，但走的是 geometry shader 这条旧派路线而不是 compute/indirect draw。生产环境里现代引擎更倾向 compute + indirect，但 geometry shader 方案胜在单 shader 自洽、易于接入既有管线。
 
+另一条完全不同的路线见 [[gpu-driven-grass-tiles]]——[[marco-giordano]] 的方案用蓝噪声预烘焙 + vertex shader 扩展 + compute culling + 间接绘制 + 4 路 scan 压 LOD，把决策全部搬到 GPU，而不是让 tessellation/geometry shader 在 raster 阶段动态生成。两者是同题不同解的典型对照：Steven Sell 赢在单 shader 自洽、易接 Unity 管线；Marco 赢在可扩展性与性能上限。
+
 ## Sources
 
 - [[sources/vertexfragment-deferred-grass]]

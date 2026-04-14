@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 212
+sources: 219
 ---
 
 # 知识库索引
@@ -73,6 +73,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[hamming-code-hat-puzzle]] | 31 人帽子谜题的 Hamming 码最优策略：胜率 31/32 与对称性上界 |
 | [[automatic-differentiation]] | autodiff 全景：dual number forward / DAG backward / JAX 梯度即图变换 |
 | [[cantor-szudzik-pairing]] | Cantor 与 Szudzik 两种 2D → 1D 配对函数的对比 |
+| [[lua-cpp-binding]] | 手写最小的 Lua/C++ 嵌入封装：栈式 API、点路径取值、表遍历、pcall 调函数 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -115,6 +116,7 @@ CAQA + CSAPP 的底层视角。
 | [[nsdictionary-linear-probing]] | `__NSDictionaryI` = 开放寻址 + 线性探测 + indexed ivars 紧凑存储 |
 | [[objc-runtime-internals]] | Modern Obj-C runtime：class cluster / non-fragile ivars / indexed ivars / lazy binding |
 | [[binary-hot-reload]] | C++ 二进制热重载：DLL swap + 五道状态归属坑（memory/threads/fnptr/strings/structs） |
+| [[rust-disassembly-tour]] | Rust 的 i128/解构/数组/iterator 在 Compiler Explorer 里到底变成了什么汇编 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -134,6 +136,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[collision-detection-gjk-epa]] | 凸几何碰撞检测三件套：GJK 判相交、EPA 补 contact、MPR 一步到位 |
 | [[component-entity-data-binding]] | 组件实体模型中的 I/O 端口式数据绑定（Evan Todd 2011） |
 | [[game-engine-vfs]] | 游戏引擎虚拟文件系统：Linux VFS 简化版与 auto fallback |
+| [[handle-based-resource-manager]] | C++/Vulkan 引擎里 manager + 32 位不透明句柄 + magic number 校验的资源管理范式 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -318,6 +321,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[bresenham-lines]] | 1962 年的整数直线算法，tile-grid 上的经典工具 |
 | [[variable-length-bresenham]] | 支持"从起点沿方向走 range 步"的展开版 Bresenham |
 | [[performance-conscious-webgl]] | WebGL 实例化渲染中的三个 JS 性能陷阱（Float32Array.set / 字符串 key / super） |
+| [[gpu-driven-grass-tiles]] | Marco Giordano：蓝噪声预烘焙 + vertex 扩展 + compute culling + 间接绘制的 GPU 驱动草地方案 |
 
 ## 经典案例（wiki/examples/）
 
@@ -347,6 +351,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[meshes-of-navigation-recast]] | 导航网格与 Recast 的体素化生成管线 |
 | [[procedural-mesh-primitives]] | Torus / UV-sphere / ellipsoid 的参数化顶点公式与拓扑结构 |
 | [[mesh-warps-and-tessellation]] | Stellation、extrusion 与 fan/centroid/triforce 三角化：CPU 侧 per-face 几何算法 |
+| [[z-order-top-down-2d]] | 俯视角 2D 游戏的 z-order：静态分层 vs 动态按底边 Y 排序 |
 
 ## 人物（wiki/people/）
 
@@ -389,6 +394,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[people/evan-todd]] | Evan Todd，etodd.io / Lemma / Deceiver 独立开发者 |
 | [[brian-karis]] | Epic UE5 Nanite/Lumen 技术负责人，前 Human Head（Prey 2），UE4 Real Shading 作者 |
 | [[cloudwu]] | 云风，skynet / ejoy2d 作者，前网易游戏引擎程序员 |
+| [[elias-daler]] | Elias Daler，独立游戏开发者，Re:creation / Edbr 引擎作者 |
+| [[marco-giordano]] | Marco Giordano（giordi91），自研 DX12/Vulkan 引擎作者，博客 A programmer's cave |
 
 ## 源摘要（wiki/sources/）
 
@@ -606,6 +613,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/vertexfragment-variable-length-bresenham]] | Steven Sell：可变长度 Bresenham 及现代 CPU 上的反优化胜出 |
 | [[sources/vertexfragment-performance-conscious-webgl]] | Steven Sell：WebGL 中三个反直觉的 JS 性能陷阱 |
 | [[sources/vertexfragment-cantor-szudzik-pairing]] | Steven Sell：Cantor 与 Szudzik 配对函数对比 |
+| [[sources/eliasdaler-lua-cpp-binding-series]] | Daler：Lua 与 C++ 绑定教程三连（Part 1/2/2.5） |
+| [[sources/eliasdaler-z-order-top-down-2d]] | Daler：俯视角 2D 游戏的 z-order 算法 |
+| [[sources/giordi91-rust-disassembly-part-1]] | Marco Giordano：Rust 语言特性反汇编导览 |
+| [[sources/giordi91-grass-shader]] | Marco Giordano：GPU 驱动瓦片化草地系统 |
+| [[sources/giordi91-handle-resource-management]] | Marco Giordano：句柄 + manager 式资源管理 |
 
 ## 元（wiki/meta/）
 

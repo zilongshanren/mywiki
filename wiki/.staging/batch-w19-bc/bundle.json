@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w19-bc",
+  "agent_note": "Elias Daler (eliasdaler.wordpress.com) early posts: Lua+C++ binder series consolidated into one concept; Z-order in top-down 2D as separate concept; hello post skipped as blog intro.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/eliasdaler.wordpress.com/2013-10-11_hello.md",
+      "status": "skipped_offtopic",
+      "reason": "blog intro post, no technical content (per task instructions)"
+    },
+    {
+      "path": "raw/articles/eliasdaler.wordpress.com/2013-10-11_using-lua-with-c-part-1.md",
+      "status": "ingested",
+      "source_slug": "eliasdaler-lua-cpp-binding-series",
+      "title": "Using Lua with C++ (Part 1)"
+    },
+    {
+      "path": "raw/articles/eliasdaler.wordpress.com/2013-10-20_using-lua-with-c-part-2.md",
+      "status": "ingested",
+      "source_slug": "eliasdaler-lua-cpp-binding-series",
+      "title": "Using Lua with C++ (Part 2)"
+    },
+    {
+      "path": "raw/articles/eliasdaler.wordpress.com/2013-11-17_using-lua-with-c-part-2-5.md",
+      "status": "ingested",
+      "source_slug": "eliasdaler-lua-cpp-binding-series",
+      "title": "Using Lua with C++ (Part 2.5)"
+    },
+    {
+      "path": "raw/articles/eliasdaler.wordpress.com/2013-11-20_z-order-in-top-down-2d-games.md",
+      "status": "ingested",
+      "source_slug": "eliasdaler-z-order-top-down-2d",
+      "title": "Z-order in top-down 2d games"
+    }
+  ],
+  "concepts_created": ["lua-cpp-binding", "z-order-top-down-2d"],
+  "people_created": ["elias-daler"],
+  "source_summaries_created": ["eliasdaler-lua-cpp-binding-series", "eliasdaler-z-order-top-down-2d"],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[lua-cpp-binding]] | 手写最小的 Lua/C++ 嵌入封装：栈式 API、点路径取值、表遍历、pcall 调函数 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[z-order-top-down-2d]] | 俯视角 2D 游戏的 z-order：静态分层 vs 动态按底边 Y 排序 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[elias-daler]] | Elias Daler，独立游戏开发者，Re:creation / Edbr 引擎作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/eliasdaler-lua-cpp-binding-series]] | Daler：Lua 与 C++ 绑定教程三连（Part 1/2/2.5） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/eliasdaler-z-order-top-down-2d]] | Daler：俯视角 2D 游戏的 z-order 算法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-19 Worker BC (eliasdaler.wordpress.com x5)\n\n处理 Elias Daler 博客 5 篇早期文章。Lua+C++ 系列三篇（Part 1/2/2.5）合并为单一概念 [[lua-cpp-binding]]；[[z-order-top-down-2d]] 为独立概念。新增人物 [[elias-daler]]、2 个 source 摘要。跳过 hello 介绍文。"
+}

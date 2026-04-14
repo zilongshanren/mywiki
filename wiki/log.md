@@ -289,3 +289,11 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-18 Worker BB (blog.mecheye.net 早期 GNOME ×5)
 
 5 篇 2011-2012 年 Jasper St Pierre 关于 GNOME Shell 开关控件、不可见边框、扩展 API 重构、GJS introspection 与 prefs.js 的博客笔记。均为桌面环境 / 插件框架内容，与图形渲染、引擎、系统编程主题无关，全部跳过，未生成任何 wiki 页面。
+
+## [2026-04-14] ingest | Wave-19 Worker BC (eliasdaler.wordpress.com x5)
+
+处理 Elias Daler 博客 5 篇早期文章。Lua+C++ 系列三篇（Part 1/2/2.5）合并为单一概念 [[lua-cpp-binding]]；[[z-order-top-down-2d]] 为独立概念。新增人物 [[elias-daler]]、2 个 source 摘要。跳过 hello 介绍文。
+
+## [2026-04-14] ingest | Wave-19 Worker BE (giordi91.github.io Marco Giordano ×3)
+
+处理 Marco Giordano (giordi91) 的 3 篇博客：Rust 反汇编导览、GPU 驱动草地、句柄式资源管理。全部 ingest，新增 1 人物页（marco-giordano）、3 概念页（rust-disassembly-tour / gpu-driven-grass-tiles / handle-based-resource-manager）、3 source 摘要。新概念页与既有的 deferred-grass-shader / resource-system-design 形成『同题不同解』对照组，双向 patch 交叉链接；另外 patch culling / alan-zucconi / kostas-anagnostou 追加引用。

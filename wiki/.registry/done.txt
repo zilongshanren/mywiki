@@ -257,3 +257,16 @@ raw/articles/blog.mecheye.net/2011-08-09_one-is-the-loneliest-border.md
 raw/articles/blog.mecheye.net/2011-08-19_well-do-it-live.md
 raw/articles/blog.mecheye.net/2012-02-04_gjs-improvements.md
 raw/articles/blog.mecheye.net/2012-02-07_more-extension-api-breaks-improvements.md
+raw/articles/eliasdaler.wordpress.com/2013-10-11_hello.md
+raw/articles/eliasdaler.wordpress.com/2013-10-11_using-lua-with-c-part-1.md
+raw/articles/eliasdaler.wordpress.com/2013-10-20_using-lua-with-c-part-2.md
+raw/articles/eliasdaler.wordpress.com/2013-11-17_using-lua-with-c-part-2-5.md
+raw/articles/eliasdaler.wordpress.com/2013-11-20_z-order-in-top-down-2d-games.md
+raw/articles/jendrikillner.com/2017-08-06_graphics-programming-weekly-issue-2-august-6-2017.md
+raw/articles/jendrikillner.com/2017-08-13_graphics-programming-weekly-issue-3-august-13-2017.md
+raw/articles/jendrikillner.com/2017-08-20_graphics-programming-weekly-issue-4-august-20-2017.md
+raw/articles/jendrikillner.com/2017-08-27_graphics-programming-weekly-issue-5-august-27-2017.md
+raw/articles/jendrikillner.com/2017-09-10_graphics-programming-weekly-issue-7-september-10-2017.md
+raw/articles/giordi91.github.io/2020-05-23_rust-disassembly-part-1.md
+raw/articles/giordi91.github.io/2020-09-25_grass-shader.md
+raw/articles/giordi91.github.io/2020-11-13_engine-resources-management-a-handle-approach.md

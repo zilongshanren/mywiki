@@ -21,6 +21,7 @@ sources: 5
 - [[vertex-vector-interpolation-artifact]] —— FX Composer 归一化导致的 Blinn 高光撕裂
 - [[dual-depth-buffer-thickness]] —— ShaderX6 thickness 技巧的 front/back 分流改进
 - [[deferred-alpha-lighting]] —— deferred 下透明物打光的四条路径综述
+- [[gpu-driven-grass-tiles]] —— Marco Giordano 的 GPU driven culling 直接参考了 Kostas 的 multi-draw indirect / occlusion culling 实验
 
 ## Sources
 

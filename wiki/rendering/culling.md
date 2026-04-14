@@ -38,6 +38,7 @@ UE5 Nanite 等把 culling 移到 GPU，用 compute shader 并行剔除，突破 
 - [[occlusion-culling]] —— 遮挡剔除的具体方案（HZB 查询 / SPU 软光栅）
 - [[hierarchical-z-buffer]] —— max-downsample 金字塔：遮挡剔除的基础数据结构
 - [[unity-procedural-mesh]] —— 新手最容易踩的坑：winding order 写反 → 整个面被背面剔除
+- [[gpu-driven-grass-tiles]] —— compute shader 做瓦片级 frustum vote + scan compact + draw indirect 的一个完整落地
 
 ## Sources
 

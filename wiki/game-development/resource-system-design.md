@@ -60,6 +60,7 @@ using (var bullet = ResourceManager.Load<GameObject>("bullet"))
 - [[information-leakage]]
 - [[false-abstraction]]
 - [[deep-modules]]
+- [[handle-based-resource-manager]] —— C++/Vulkan 引擎侧对同一问题的 handle + manager + memory pool 答案，和 Addressables 的设计哲学对应
 
 ## Sources
 
