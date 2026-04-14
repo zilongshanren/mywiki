@@ -32,3 +32,4 @@ Daniel Ilett 的教程把 Unity 里做 diffuse 的两种写法并列给出：
 - [[sources/danielilett-cel-shading-part-1]]
 - [[sources/xor-mini-dot-product]]
 - [[sources/danielilett-cel-shading-part-0]] — Phong 光照家族的四分量拆解（ambient/diffuse/specular/fresnel）
+- [[sources/danielilett-shader-graph-lighting-basics]] —— Shader Graph Lit 图的黑盒视角：把光照公式交给 Unity，TA 只关心 Base Color/Normal/Metallic/Smoothness/Emission/AO 的贴图准备

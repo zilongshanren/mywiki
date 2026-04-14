@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 11
+sources: 15
 ---
 
 # Daniel Ilett
@@ -28,6 +28,10 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[kuwahara-filter]]
 - [[crt-shader-effects]]
 - [[cel-shading-pipeline]]
+- [[godot-visual-shaders]]
+- [[shader-graph-lighting-primer]]
+- [[mgs-stealth-camo-shader]]
+- [[pokemon-terastallize-shader]]
 
 ## Sources
 
@@ -47,3 +51,7 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-image-effects-edge-detection-bloom]]
 - [[sources/danielilett-image-effects-retro-crt]]
 - [[sources/danielilett-image-effects-kuwahara]]
+- [[sources/danielilett-godot-visual-shaders]]
+- [[sources/danielilett-shader-graph-lighting-basics]]
+- [[sources/danielilett-mgs-stealth-camo]]
+- [[sources/danielilett-pokemon-terastallize]]

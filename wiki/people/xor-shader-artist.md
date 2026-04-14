@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, shader, gamemaker]
 date: 2026-04-14
-sources: 5
+sources: 10
 ---
 
 # Xor（GM Shaders）
@@ -34,6 +34,11 @@ sources: 5
 | Mini: Two Textures | [[two-texture-sampling-tricks]] —— atlas 下的 UV 归一化 |
 | Mini: ShaderToy | [[shadertoy-basics]] —— ShaderToy 格式与移植清单 |
 | Fractal Texturing | [[fractal-texturing]] —— 按深度离散化 UV 并 blend 的 LOD 技巧 |
+| Mini: MRT | [[multiple-render-targets]] —— 一次 draw 写多附件的 G-Buffer / Object ID 技术 |
+| Mini: Noise 3 | 延伸 [[classic-shader-noise]] 的 Simplex 章节，并补齐 tileable noise |
+| Mini: Mipmaps | [[mipmap-generation-sampling]] —— LOD 选择、`bias` 参数的廉价 blur 用法 |
+| Mini: WebGPU | [[webgpu-intro]] —— GM 视角的 WebGPU/WGSL 入门 |
+| Mini: Blur Philosophy | 延伸 [[separable-gaussian-blur]]：box → Gaussian → kernel → separable 的 dos/avoids 清单 |
 
 ## 和其它作者的对比
 
@@ -62,6 +67,10 @@ sources: 5
 - [[env-mapping-cubemap-shader]]
 - [[shader-color-interpolation]]
 - [[shaderlab-hlsl-basics]]
+- [[multiple-render-targets]]
+- [[mipmap-generation-sampling]]
+- [[webgpu-intro]]
+- [[separable-gaussian-blur]]
 
 ## Sources
 
@@ -85,3 +94,8 @@ sources: 5
 - [[sources/xor-mini-noise-2]]
 - [[sources/xor-mini-environments]]
 - [[sources/xor-mini-hlsl]]
+- [[sources/xor-mini-mrt]]
+- [[sources/xor-mini-noise-3]]
+- [[sources/xor-mini-mipmaps]]
+- [[sources/xor-mini-webgpu]]
+- [[sources/xor-mini-blur-philosophy]]

@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 中文博客, 游戏引擎]
 date: 2026-04-14
-sources: 5
+sources: 9
 ---
 
 # 云风（Cloud Wu）
@@ -16,6 +16,7 @@ sources: 5
 - skynet：面向游戏服务器的 Lua/C actor 框架
 - ejoy2d：2D 游戏引擎
 - 十余年的个人博客 blog.codingnow.com，系统性的工程思考输出
+- Ant Engine：2017 年底开始研发、2024 年 1 月开源的移动端 3D 游戏引擎（Lua + C，ECS 架构）
 
 ## 关联概念
 
@@ -42,6 +43,10 @@ sources: 5
 - [[zeromq-messaging-patterns]]
 - [[snapshot-diff-persistence]]
 - [[lua-incremental-gc]]
+- [[ant-engine]]
+- [[ltask-scheduler]]
+- [[mobile-energy-optimization]]
+- [[async-offline-culling]]
 
 ## Sources
 
@@ -58,3 +63,7 @@ sources: 5
 - [[sources/cloudwu-mmo-io-snapshot-diff]]
 - [[sources/cloudwu-zeromq-patterns]]
 - [[sources/cloudwu-lua-incremental-gc]]
+- [[sources/cloudwu-ant-engine-open-source]]
+- [[sources/cloudwu-vfs-new-ideas]]
+- [[sources/cloudwu-ltask-rewrite]]
+- [[sources/cloudwu-ant-engine-mobile-optimization]]

@@ -119,3 +119,4 @@ float3 diffuseSmooth = tex2D(_LightingRamp, float2(diffuse * 0.5 + 0.5, 0.5));
 - [[sources/danielilett-cel-shading-part-3]]
 - [[sources/danielilett-cel-shading-part-4]]
 - [[sources/danielilett-cel-shading-part-5]]
+- [[sources/danielilett-godot-visual-shaders]] —— 系列延伸到 Godot：Dissolve / Hologram / Hull Outline 在 VisualShader 里的等价实现

@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 350
+sources: 363
 ---
 
 # 知识库索引
@@ -167,6 +167,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[handle-based-resource-manager]] | C++/Vulkan 引擎里 manager + 32 位不透明句柄 + magic number 校验的资源管理范式 |
 | [[game-resource-pack-format]] | 网易资源包 / 补丁格式与新引擎设想（云风） |
 | [[scene-graph-matrix-stack-visitor]] | 场景图遍历：矩阵栈 + 访问者模式的组合拳 |
+| [[ant-engine]] | 云风自研的移动端 3D 引擎，2024 年开源 |
+| [[ltask-scheduler]] | Ant Engine 的低延迟任务调度器，与 skynet 的高吞吐路线对立 |
+| [[mobile-energy-optimization]] | 手机游戏达到 60fps 之后如何继续做能耗优化 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -416,6 +419,14 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[classic-shader-noise]] | 经典噪声家族（hash/value/Perlin/Worley/Voronoi/fBm）在同一手写骨架下对比 |
 | [[env-mapping-cubemap-shader]] | 无 cubemap 环境下用等距柱状 HDRI 做天空盒与反射的 shader 写法 |
 | [[dynamic-resolution-scaling]] | 变分辨率渲染：统一缩放 + stretch blit + 锐化补偿，降像素计算量的经典手段 |
+| [[godot-visual-shaders]] | Daniel Ilett 把 Unity Dissolve/Hologram/Hull Outline 迁到 Godot VisualShader，对比两个可视化编辑器的抽象哲学差异 |
+| [[shader-graph-lighting-primer]] | Shader Graph Lit 输出栈速览：Base Color/Normal/Metallic/Smoothness/Emission/AO 的槽位含义与贴图陷阱（roughness↔smoothness 翻转）|
+| [[mgs-stealth-camo-shader]] | MGS 潜行迷彩复刻：URP Opaque Texture + Scene Color + Simple Noise remap 偏移 Screen Position 的最短『透过物体看背景』骨架 |
+| [[pokemon-terastallize-shader]] | Pokémon 太晶化复刻：DDX/DDY 叉积重建 flat normal + 贴图烘 Triangle ID + HSV 随机反射色 |
+| [[multiple-render-targets]] | MRT：一次 draw 写多张附件，G-Buffer / Object ID / 自建 depth 的硬件前提 |
+| [[mipmap-generation-sampling]] | Mipmap 的 LOD 选择机制与 `texture2D` bias 参数的廉价 blur 用法 |
+| [[webgpu-intro]] | WebGPU/WGSL 入门：跨平台 + 显式 pipeline + 原生 compute shader |
+| [[async-offline-culling]] | 离线标注 + 异步粗筛 + 渲染精筛的大型场景剔除设计 |
 
 ## 经典案例（wiki/examples/）
 
@@ -847,6 +858,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cloudwu-mmo-io-snapshot-diff]] | 云风：梦幻西游服务器快照差分持久化优化 |
 | [[sources/cloudwu-zeromq-patterns]] | 云风：ZeroMQ Guide 读书笔记与游戏服务器架构建议 |
 | [[sources/cloudwu-lua-incremental-gc]] | 云风：Lua 5.1 增量式 GC 源码剖析（双白色乒乓） |
+| [[sources/danielilett-godot-visual-shaders]] | Daniel Ilett 2024：Godot VisualShader 初体验，Dissolve/Hologram/Hull Outline 三例对比 Unity Shader Graph |
+| [[sources/danielilett-shader-graph-lighting-basics]] | Daniel Ilett 2024：Unity Shader Graph Basics Part 6，Lit 图完整输出栈逐槽讲解 |
+| [[sources/danielilett-mgs-stealth-camo]] | Daniel Ilett 2024：Shader Graph 复刻 MGS Stealth Camo，Scene Color + 噪声 UV 偏移 |
+| [[sources/danielilett-pokemon-terastallize]] | Daniel Ilett 2024：Shader Graph 复刻 Pokémon 太晶化，DDX/DDY flat normal + 贴图烘 Triangle ID |
+| [[sources/xor-mini-mrt]] | Xor：GameMaker 下的 Multiple Render Targets，延迟渲染与 Object ID outline |
+| [[sources/xor-mini-noise-3]] | Xor：Simplex noise、函数 vs 纹理的取舍、tileable noise |
+| [[sources/xor-mini-mipmaps]] | Xor：mipmap 的生成、LOD 选择原理，以及把 bias 参数当廉价 blur 用 |
+| [[sources/xor-mini-webgpu]] | Xor：WebGPU 与 WGSL 的 GM 视角入门 |
+| [[sources/xor-mini-blur-philosophy]] | Xor：box → Gaussian → kernel → separable 的 blur 演进与 dos/avoids 清单 |
+| [[sources/cloudwu-ant-engine-open-source]] | 云风：Ant Engine 开源宣言及自研引擎论证 |
+| [[sources/cloudwu-vfs-new-ideas]] | 云风：对 VFS "不变快照" 假设的反思 |
+| [[sources/cloudwu-ltask-rewrite]] | 云风：ltask 调度器重构，删掉独占线程服务 |
+| [[sources/cloudwu-ant-engine-mobile-optimization]] | 云风：移动端能耗优化与魔兽式场景剔除设想 |
 
 ## 元（wiki/meta/）
 

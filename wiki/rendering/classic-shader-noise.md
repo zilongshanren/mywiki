@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 噪声, shader, 程序纹理, 数学]
 date: 2026-04-14
-sources: 2
+sources: 3
 ---
 
 # 经典 shader 噪声函数家族
@@ -64,6 +64,21 @@ return noise_sum / weight_sum;
 
 几个经验值：每层把坐标放大 2 倍、每层把权重乘 0.5（persistence），以及**用一个非 90° 倍数的旋转矩阵**——否则相邻 octave 会对齐出栅格感。这与 [[layered-grid-noise]] 里黄金角旋转的动机一模一样：**打破周期性需要无理数角度**。对 Perlin 做 fBm 得到云、烟、山脉；对 Worley 做 fBm 得到岩石和细胞聚类。
 
+## Simplex Noise：把方形 cell 倾斜成三角
+
+[[sources/xor-mini-noise-3|Noise 3]] 补上了 Ken Perlin 的另一发明 **Simplex noise**。Perlin 在 N 维需要 `2^N` 次哈希采样（2D=4，3D=8，4D=16），Simplex 把空间**倾斜成等边三角形网格**后每个点只需 `N+1` 个邻居——2D=3，3D=4，4D=5。做法是：先 `p += F*(p.x+p.y)` 把坐标斜到 rhombus（`F = 0.366025`），`floor(skew)` 拿 cell，`sub = skew - cell`，再按 `sub.x > sub.y` 判断走上三角还是下三角；3 个顶点到采样点的相对位移用权重 `max(0.5 - d², 0)⁴` 做软 falloff，最后按各顶点的梯度做点积求和。2D 场景下 Simplex 的代码复杂度盖过了采样节省——**真正的增益要到 3D/4D 才显现**。Wikipedia 的 Simplex noise 条目有完整常数推导。
+
+## Functions vs Textures：算 or 查？
+
+噪声既可以**现算**（函数式，fragment shader 每像素跑完整公式）也可以**烘焙**（预算到一张纹理然后采样）。Xor 给出的取舍表相当实用：
+
+| 形态 | 优势 | 劣势 |
+|---|---|---|
+| Functions | 无限范围、动态参数、高精度、任意维度 | 高代价尤其 fractal 多 octave、跨硬件不一致、可能出 artifact |
+| Textures | 任意复杂噪声一次预算、多设备一致、可人手编辑 | 动画不便、额外 VRAM、受纹理尺寸限制、需 tileable |
+
+如果选纹理路线就得解决**tileable noise**。技巧非常简单：坚持方形 cell，并在每次 hash 前 `mod(cell, s)`，s 就是 tile 尺寸。value/Perlin/Worley/Voronoi 都适用。Fractal 版不能用 143° 旋转（会破坏方形约束），改用 `p = p.yx * 2.0 + 9.0`——swap + scale + translate——同样能打破 octave 对齐又保住 tileability。`gpu_set_texrepeat(true)` 是这一路线的天然搭档。
+
 ## 家族关系速查
 
 | 名字 | 核心操作 | 连续性 | 典型用途 |
@@ -87,8 +102,10 @@ return noise_sum / weight_sum;
 - [[pcg3d-hash]] — 现代 GPU 上 Worley 推荐的哈希
 - [[xor-shader-artist]]
 - [[fragment-shader]]
+- [[mipmap-generation-sampling]] —— 纹理路线的噪声离不开 LOD 和 bias 的配合
 
 ## Sources
 
 - [[sources/xor-mini-noise]]
 - [[sources/xor-mini-noise-2]]
+- [[sources/xor-mini-noise-3]] —— Simplex noise、函数 vs 纹理权衡、tileable noise

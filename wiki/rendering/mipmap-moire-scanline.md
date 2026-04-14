@@ -25,6 +25,7 @@ sources: 1
 - [[mipmap-filtering]]
 - [[aliasing]] —— moiré 是频域层面的 aliasing
 - [[chromatic-aberration-post]]
+- [[mipmap-generation-sampling]] —— 正常情况下 mipmap 消 moiré 的机制，这里是对它的反向利用
 
 ## Sources
 

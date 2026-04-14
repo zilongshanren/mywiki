@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w33-cu",
+  "agent_note": "云风 2024 年 1-5 月月度归档。4 篇技术笔记全部围绕 Ant Engine 展开：开源宣言、VFS 重构设想、ltask 调度器重构、移动端能耗优化与大型场景剔除设想；5 月那篇为个人职业生涯告别信，跳过。新建 4 个概念页（ant-engine / ltask-scheduler / mobile-energy-optimization / async-offline-culling），4 个 source 摘要。cloudwu 人物页已存在——通过 patch 扩写相关链接与 sources。game-engine-vfs 与 cloudwu 人物页通过 patch 增补。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-01-17_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ant-engine-open-source",
+      "title": "Ant Engine 开源"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-02-22_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-vfs-new-ideas",
+      "title": "关于虚拟文件系统的一些新想法"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-03-22_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ltask-rewrite",
+      "title": "重构 ltask 的任务调度器"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-04-17_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ant-engine-mobile-optimization",
+      "title": "Ant Engine 移动端优化与大型场景剔除设想"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-05-06_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "个人职业生涯告别信：离开阿里、回顾网易/简悦创业经历、下一步做独立游戏。纯粹的人生阶段回顾，没有新的技术内容。"
+    }
+  ],
+  "concepts_created": [
+    "ant-engine",
+    "ltask-scheduler",
+    "mobile-energy-optimization",
+    "async-offline-culling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-ant-engine-open-source",
+    "cloudwu-vfs-new-ideas",
+    "cloudwu-ltask-rewrite",
+    "cloudwu-ant-engine-mobile-optimization"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 主要工作",
+      "content": "- Ant Engine：2017 年底开始研发、2024 年 1 月开源的移动端 3D 游戏引擎（Lua + C，ECS 架构）"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ant-engine]]\n- [[ltask-scheduler]]\n- [[mobile-energy-optimization]]\n- [[async-offline-culling]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-ant-engine-open-source]]\n- [[sources/cloudwu-vfs-new-ideas]]\n- [[sources/cloudwu-ltask-rewrite]]\n- [[sources/cloudwu-ant-engine-mobile-optimization]]"
+    },
+    {
+      "file": "wiki/game-engines/game-engine-vfs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ant-engine]] —— 以这套 VFS 为核心模块\n- [[sources/cloudwu-vfs-new-ideas]] —— 云风 2024 年对 \"不变快照\" 假设的反思，设想退化为纯内存可增删的树"
+    },
+    {
+      "file": "wiki/game-engines/game-engine-vfs.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-vfs-new-ideas]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ant-engine]] | 云风自研的移动端 3D 引擎，2024 年开源 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ltask-scheduler]] | Ant Engine 的低延迟任务调度器，与 skynet 的高吞吐路线对立 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[mobile-energy-optimization]] | 手机游戏达到 60fps 之后如何继续做能耗优化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[async-offline-culling]] | 离线标注 + 异步粗筛 + 渲染精筛的大型场景剔除设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ant-engine-open-source]] | 云风：Ant Engine 开源宣言及自研引擎论证 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-vfs-new-ideas]] | 云风：对 VFS \"不变快照\" 假设的反思 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ltask-rewrite]] | 云风：ltask 调度器重构，删掉独占线程服务 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ant-engine-mobile-optimization]] | 云风：移动端能耗优化与魔兽式场景剔除设想 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-33 Worker CU (cloudwu 2024/01-05 ×5)\n\n处理云风 2024 年 1-5 月的月度归档共 5 篇。4 篇围绕 Ant Engine 的技术笔记（开源宣言、VFS 重构设想、ltask 调度器重构、移动端能耗优化与大型场景剔除设想）全部 ingest，5 月那篇个人职业生涯告别信跳过。新增 4 个概念页：ant-engine / ltask-scheduler / mobile-energy-optimization / async-offline-culling，4 个 source 摘要。cloudwu 人物页与 game-engine-vfs 概念页通过 patch 扩写。"
+}

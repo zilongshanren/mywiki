@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 延迟渲染]
 date: 2026-04-05
-sources: 1
+sources: 2
 ---
 
 # 延迟渲染（Deferred Rendering）
@@ -61,6 +61,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[valve-ambient-cube]] —— DX9 世代 deferred 管线里给动画几何填 ambient 的穷人 SH
 - [[deferred-sdf-rendering]] —— 把 SDF raymarch 的 albedo/normal/depth 写进 G-Buffer，让 SDF 与多边形共存于同一条 deferred 管线
 - [[dynamic-resolution-scaling]] —— gameknife 2013 年在 gkEngine 上把 deferred lighting 与半分辨率 SSAO/shadow mask、0.75× 全局缩放 + 锐化 pass 组合成一套像素省量方案
+- [[multiple-render-targets]] —— G-Buffer 的硬件前提：一次 draw 写多附件
 
 ## Sources
 

@@ -13,10 +13,12 @@ analytical-antialiasing
 angelo-pesce
 animated-dotted-outline-shader
 animated-parallax-cloth-fold
+ant-engine
 aos-vs-soa
 apoorva-joshi
 applicative-vs-normal-order
 aras-pranckevicius
+async-offline-culling
 automatic-differentiation
 avoid-unsigned-types
 bartosz-ciechanowski
@@ -153,6 +155,7 @@ gkengine
 gknext-renderer
 glitch-image-effect
 go-goroutine-channels
+godot-visual-shaders
 gpgpu-json-parsing
 gpgpu-string-unescaping
 gpgpu-transform-feedback-ios
@@ -219,6 +222,7 @@ locality-principle
 log
 lossless-float-image-compression
 low-discrepancy-sequence
+ltask-scheduler
 lua-cpp-binding
 lua-design-philosophy
 lua-incremental-gc
@@ -236,14 +240,18 @@ metal-api-overview
 metal-compute-image-filter
 metal-shading-language-basics
 metal-texture-sampler
+mgs-stealth-camo-shader
 microfacet-brdf
+mipmap-generation-sampling
 mipmap-moire-scanline
+mobile-energy-optimization
 modular-design
 moment-shadow-mapping
 motion-vectors
 msaa-ssaa
 mttf-reliability
 multidraw-indirect-occlusion-culling
+multiple-render-targets
 mvp-transform
 needlets
 negative-space-in-programming
@@ -282,6 +290,7 @@ pinhole-camera
 planar-mapping
 planar-rotation-dct
 poisson-disk-sampling
+pokemon-terastallize-shader
 polynomial-root-finding-gpu
 power-wall
 ppc-int-float-lhs
@@ -329,6 +338,7 @@ sdf-ray-marched-shadows
 separable-gaussian-blur
 shader-code-golfing
 shader-color-interpolation
+shader-graph-lighting-primer
 shader-prototyping-tools
 shader-vector-math-primer
 shaderlab-hlsl-basics
@@ -423,6 +433,7 @@ warren-moore
 watercolour-shader-experiments
 waving-grass-shader-vertex-offset
 wayland-compositor-model
+webgpu-intro
 windows-bmp-format
 world-screen-space-position-shader
 worley-voronoi-noise

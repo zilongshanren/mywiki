@@ -78,3 +78,4 @@ Scene Depth 的"不线性"是 perspective projection 本身的性质——[[reve
 ## Sources
 
 - [[sources/cyan-scene-color-depth]]
+- [[sources/danielilett-mgs-stealth-camo]] —— MGS Stealth Camo 是 `Scene Color` 最短的实战样板：URP Opaque Texture + Transparent shader + Simple Noise remap → Screen Position 偏移

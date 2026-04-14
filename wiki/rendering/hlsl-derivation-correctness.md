@@ -82,3 +82,4 @@ C = sqrt((1.0 - vdotn*vdotn) * (1.0 - ldotn*ldotn)) / max(vdotn, ldotn);
 ## Sources
 
 - [[sources/ryg-finish-your-derivations]]
+- [[sources/danielilett-pokemon-terastallize]] —— DDX/DDY 的实战：用 `cross(DDY(WorldPos), DDX(WorldPos))` 在 shader 里重建 flat-shaded 法线，不改 mesh import

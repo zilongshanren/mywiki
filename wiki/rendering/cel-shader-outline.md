@@ -71,6 +71,7 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[sprite-outline-8-direction]] —— 2D sprite 上的同思路「复制副本做外框」
 - [[cel-shading-pipeline]] —— Daniel Ilett 5 部曲版本，同样的 cel+outline 思路但从 Phong 光照开始逐步搭建，含 bump/fresnel/stencil-ID 等扩展
 - [[animated-dotted-outline-shader]] —— 同一两 pass 管线上把 outline fragment 改成 `sin(distance)` 距离场 + `_Time` 相位平移的动画虚线
+- [[godot-visual-shaders]] —— Godot VisualShader 里的等价实现：StandardMaterial + Next Pass 挂 ShaderMaterial、Cull Mode → Front
 
 ## Sources
 

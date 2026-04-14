@@ -1,7 +1,7 @@
 ---
 tags: [rendering, shader, post-processing, blur, gaussian, unity]
 date: 2026-04-14
-sources: 2
+sources: 3
 ---
 
 # 可分离 Gaussian Blur（与 Box Blur）
@@ -86,6 +86,10 @@ float w = gaussian(x, sigma);
 
 这些手段都是基于"Box/Gaussian 是可分离的"这个最根本的前提。
 
+## Xor 的 Blur Philosophy：dos and avoids
+
+[[xor-shader-artist|Xor]] 在 [[sources/xor-mini-blur-philosophy|Blur Philosophy]] 里把多年踩坑沉淀成两张清单。**Dos**：separable 多 pass、kernel 预计算、启用 linear filter（让双线性插值两 texel 合采一次）、在 **linear color space（gamma 正确）** 做 blur、能下采样就下采样——最好按 2 的幂次跳。**Avoids**：尽量少样本（texture fetch 在移动端贵得离谱）、谨慎处理边界（sprite padding 或 wrap mode 二选一）、surface 不要堆——两张 [[ping-pong-surfaces]] 通常够用、循环里不要调 `sin` / `cos`（把昂贵算式提到 loop 外）。他自己坦言之所以写这篇免费科普，是因为早期那版被 ShaderToy/Godot/Construct 到处抄的 Gaussian shader 有错误，必须公开更正——这是开源贡献者的一种补救礼仪。文章最后推了 **[Dual-Kawase blur](https://github.com/XorDev/Dual-Kawase/wiki)**：下采样金字塔 + 极少采样的对数级扩展，半径翻倍只加 2 pass，是当前社区公认最合算的实时大半径模糊方案之一。
+
 ## 反面教材：Metal 教程里的不可分离 Gaussian
 
 [[metal-compute-image-filter|Warren Moore 的 image processing 教程]]在 compute kernel 里直接写了双重循环 `for(j) for(i)`——没有用可分离性，每像素 `N²` 次采样。他的 kernel 还把预计算的 2D 权重矩阵做成一张 `MTLPixelFormatR32Float` 的查找纹理传进去，kernel 里 `weights.read(kernelIndex).rrrr` 取出标量权重。灵活性很好（改半径只需重建权重纹理），但性能代价直接——`N=15` 时就是 225 次 texture fetch/像素，和 2×N=30 的可分离版本差了一个数量级。教程的定位是入门而非性能演示，但对读者是个提醒：可分离这条优化路径之所以存在，正是因为「显式写双重循环」的实现是真的会慢。
@@ -100,8 +104,11 @@ float w = gaussian(x, sigma);
 - [[depth-texture-silhouette]]
 - [[image-resampling-filters]]
 - [[laplacian-pyramid]]
+- [[mipmap-generation-sampling]] —— `texture2D` 的 bias 参数可作为 blur 的廉价替代或加强剂
+- [[ping-pong-surfaces]]
 
 ## Sources
 
 - [[sources/danielilett-image-effects-blurring]]
 - [[sources/metalbyexample-image-processing]]
+- [[sources/xor-mini-blur-philosophy]] —— Xor 的 box → Gaussian → kernel → separable 演进，附 dos/avoids 清单和 Dual-Kawase 推荐

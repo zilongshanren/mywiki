@@ -453,3 +453,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-32 Worker CR (cloudwu 2010-11 ~ 2011-03)
 
 处理云风 blog 五篇月度归档。4 篇技术全部 ingest：Go 语言初步、梦幻西游服务器 IO 优化、ZeroMQ 模式、Lua 5.1 增量式 GC 源码剖析。新增 5 概念页 (go-goroutine-channels, connection-multiplexer-gateway, snapshot-diff-persistence, zeromq-messaging-patterns, lua-incremental-gc) 与 4 source 摘要。1 篇（2011-01 父亲业委会维权信件）skip 为非技术。cloudwu 人物页追加新源与相关概念。
+
+## [2026-04-14] ingest | Wave-33 Worker CS (danielilett.com ×5)
+
+处理 5 篇 danielilett.com 2024 年教程，4 篇 ingested / 1 篇 skipped。新建 4 概念页（godot-visual-shaders / shader-graph-lighting-primer / mgs-stealth-camo-shader / pokemon-terastallize-shader），4 source 摘要。跳过 games-shaders-tutorials（链接索引页）。Patch 到 daniel-ilett（追加 4 概念 + 4 sources）、scene-color-depth-nodes（stealth camo 作为最短 Scene Color 实战）、hlsl-derivation-correctness（terastallize 是 DDX/DDY 的 practical 样板）、cel-shader-outline（Godot hull outline 的跨引擎等价）、diffuse-lighting-lambertian、cel-shading-pipeline。关键 takeaways：(1) Godot VisualShader 没有 World Position 节点、要用 Varying 机制手搭，但 VisualShaderNodeCustom 的 `_get_global_code()` 比 Unity Custom Function 更强；(2) Shader Graph Lit 图的 roughness↔smoothness 语义翻转是新手陷阱；(3) Scene Color = URP _CameraOpaqueTexture 的『透过物体看背景』骨架；(4) DDX/DDY 叉积在 shader 端重建 flat normal 是不改 mesh 的最便宜方案，Shader Graph 缺 Primitive ID 时只能用贴图烘 Triangle ID 的 workaround。
+
+## [2026-04-14] ingest | Wave-33 Worker CT (mini.gmshaders.com ×5)
+
+处理 5 篇 Xor 的 mini.gmshaders.com 技术短文，全部 ingested。新增 3 个概念页（multiple-render-targets、mipmap-generation-sampling、webgpu-intro），5 个 source 摘要（xor-mini-mrt / xor-mini-noise-3 / xor-mini-mipmaps / xor-mini-webgpu / xor-mini-blur-philosophy）。Noise 3 以 patch 形式延伸 classic-shader-noise 的 Simplex 章节和函数 vs 纹理讨论；Blur Philosophy 以 patch 形式给 separable-gaussian-blur 加了 dos/avoids 清单和 Dual-Kawase 引用。人物页 xor-shader-artist 新增 5 条贡献记录与 source 链接。另 patch 到 deferred-rendering（MRT 关联）、mipmap-moire-scanline（正向反向 mipmap 对照）。
+
+## [2026-04-14] ingest | Wave-33 Worker CU (cloudwu 2024/01-05 ×5)
+
+处理云风 2024 年 1-5 月的月度归档共 5 篇。4 篇围绕 Ant Engine 的技术笔记（开源宣言、VFS 重构设想、ltask 调度器重构、移动端能耗优化与大型场景剔除设想）全部 ingest，5 月那篇个人职业生涯告别信跳过。新增 4 个概念页：ant-engine / ltask-scheduler / mobile-energy-optimization / async-offline-culling，4 个 source 摘要。cloudwu 人物页与 game-engine-vfs 概念页通过 patch 扩写。
