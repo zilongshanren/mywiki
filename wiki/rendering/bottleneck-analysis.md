@@ -30,8 +30,10 @@ sources: 1
 - [[draw-call]]
 - [[overdraw]]
 - [[non-cryptographic-hash]] —— Burst 与原生 C 的 codegen 差异是不显眼的瓶颈子类
+- [[dynamic-resolution-scaling]] —— 瓶颈识别结论是 Pixel-bound 后的下一步：按比例砍像素计算量
 
 ## Sources
 
 - [[sources/rtr-day01]]
 - [[sources/playcanvas-profiler]]
+- [[sources/gameknife-gkengine-rendering-optimization]] —— Intel GPA 逐 pass 时间分析的实战范例，把『先剖析再修改』的方法论落到具体 shader 指令数

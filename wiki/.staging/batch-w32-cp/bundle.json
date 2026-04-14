@@ -1,0 +1,96 @@
+{
+  "batch_id": "batch-w32-cp",
+  "agent_note": "gameknife.github.io 5 篇中跳过 3 篇（skill 元页、mu-biao-shi-xing-chen-da-hai 个人目标、wisde 婚礼邀请系统非技术）。gkengine 渲染优化新建 dynamic-resolution-scaling 概念页；vc100 工具链只做 source 摘要+patch 到 gkengine。两篇均 patch 到 gkengine / gameknife 已有页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/gameknife.github.io/2010-10-01_skill.md",
+      "status": "skipped_offtopic",
+      "reason": "疑似个人简历 / skill 元页，非技术主题"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2013-06-11_gkenginexuan-ran-you-hua.md",
+      "status": "ingested",
+      "source_slug": "gameknife-gkengine-rendering-optimization",
+      "title": "gkENGINE 渲染优化"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2015-03-21_zhi-zuo-zi-ding-yi-vc100gong-ju-lian.md",
+      "status": "ingested",
+      "source_slug": "gameknife-custom-vc100-toolchain",
+      "title": "制作自定义 vc100 工具链"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2015-05-04_zhe-yi-ci-de-mu-biao-shi-xing-chen-da-hai.md",
+      "status": "skipped_offtopic",
+      "reason": "个人目标宣言（目标是星辰大海），非技术内容"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2015-06-12_hun-li-yao-qing-xi-tong-wisde-kai-fa-yu-zong-jie.md",
+      "status": "skipped_offtopic",
+      "reason": "婚礼邀请系统 WISDE 开发总结，生活项目非图形/引擎技术"
+    }
+  ],
+  "concepts_created": [
+    "dynamic-resolution-scaling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "gameknife-gkengine-rendering-optimization",
+    "gameknife-custom-vc100-toolchain"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/gkengine.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dynamic-resolution-scaling]] —— gameknife 2013 年为 gkEngine 做的变分辨率优化，0.75× + 锐化 pass 把 GTX 560 从 104 FPS 推到 241 FPS"
+    },
+    {
+      "file": "wiki/game-engines/gkengine.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/gameknife-gkengine-rendering-optimization]] —— 2013：Intel GPA 剖析 + 三轮优化（半分辨率 SSAO/shadow mask、0.75 全局缩放 + 锐化、tex2Dlod→tex2Dgrad、IBasePipe 引入 deferred shading 分支）\n- [[sources/gameknife-custom-vc100-toolchain]] —— 2015：从 VS2013 剥离出 50 MB vc100 独立工具链，绕开 gkEngine 依赖 Havok/ToolkitPro 锁死 VS2010 的问题"
+    },
+    {
+      "file": "wiki/people/gameknife.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/gameknife-gkengine-rendering-optimization]]\n- [[sources/gameknife-custom-vc100-toolchain]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dynamic-resolution-scaling]] —— gameknife 2013 年在 gkEngine 上把 deferred lighting 与半分辨率 SSAO/shadow mask、0.75× 全局缩放 + 锐化 pass 组合成一套像素省量方案"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/gameknife-gkengine-rendering-optimization]] —— gkEngine 从 deferred lighting 演进到可切换 deferred shading 的一次实战：DP 减半但 G-Buffer 带宽涨 50 %，Hybrid Deferred Shading 的国产实验"
+    },
+    {
+      "file": "wiki/rendering/bottleneck-analysis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dynamic-resolution-scaling]] —— 瓶颈识别结论是 Pixel-bound 后的下一步：按比例砍像素计算量"
+    },
+    {
+      "file": "wiki/rendering/bottleneck-analysis.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/gameknife-gkengine-rendering-optimization]] —— Intel GPA 逐 pass 时间分析的实战范例，把『先剖析再修改』的方法论落到具体 shader 指令数"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dynamic-resolution-scaling]] | 变分辨率渲染：统一缩放 + stretch blit + 锐化补偿，降像素计算量的经典手段 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-gkengine-rendering-optimization]] | gameknife 2013：gkEngine 渲染优化三轮复盘，104→241 FPS |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-custom-vc100-toolchain]] | gameknife 2015：从 VS2013 剥离出 50 MB 独立 vc100 工具链 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-32 Worker CP (gameknife.github.io ×5)\n\n处理 5 篇 gameknife.github.io 博客，2 篇 ingested / 3 篇 skipped。新增 1 概念页 dynamic-resolution-scaling（变分辨率渲染：半分辨率 SSAO/shadow mask 边界白边 workaround、0.75× + 锐化补偿、tex2Dlod→tex2Dgrad 陷阱），2 源摘要（gkengine-rendering-optimization / custom-vc100-toolchain）。patch 到 gkengine、people/gameknife、deferred-rendering、bottleneck-analysis。跳过 skill 元页、mu-biao-shi-xing-chen-da-hai（个人目标宣言）、WISDE 婚礼邀请系统。"
+}

@@ -41,6 +41,7 @@ GC 的深度有例外场景：对暂停时间敏感的应用（游戏、实时�
 - 体现的原则：[[deep-modules]]、[[information-hiding]]
 - 类似经典：[[unix-io]]
 - 反面：[[false-abstraction]]
+- [[lua-incremental-gc]] —— Lua 5.1 的增量 GC：五阶段状态机 + 双白色乒乓 + FIXEDBIT 保护字符串
 
 ## Sources
 

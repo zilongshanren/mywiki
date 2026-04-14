@@ -71,6 +71,7 @@ interface i_gcholder : virtual i_gcobject {
 - [[garbage-collector]]
 - [[c-interface-oop]]
 - [[cloudwu]]
+- [[lua-incremental-gc]] —— 云风也剖析过 Lua 5.1 增量 GC 的乒乓白色与 FIXEDBIT
 
 ## Sources
 

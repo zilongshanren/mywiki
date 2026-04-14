@@ -30,3 +30,5 @@ sources: 4
 - [[sources/gameknife-tbdr-performance-tuning]]
 - [[sources/gameknife-pathfinding-review]]
 - [[sources/gameknife-gkengine-features]]
+- [[sources/gameknife-gkengine-rendering-optimization]]
+- [[sources/gameknife-custom-vc100-toolchain]]

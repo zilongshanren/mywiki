@@ -1,0 +1,47 @@
+{
+  "batch_id": "batch-w32-cq",
+  "agent_note": "gametorrahod.com 批次 5 篇，仅 1 篇技术内容可吸收。Apple App Thinning（iOS 9 分发优化三件套）新建概念页 ios-app-thinning 并挂到 game-development/。其余 4 篇均跳过：Nintendo CEO 追忆文、Jam 选择过载心理学、YouTube H.264 音画同步微调（ffmpeg -itsoffset 小贴士，非工程主题）、AWS S3+Route53 个人静态站托管教程（Web 运维，不沾图形/引擎/系统）。作者 Sirawat Pitaksarit 为泰国独立游戏开发者，不单独建人物页（整个 gametorrahod 批次命中率极低，待后续有更多技术文再考虑）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/gametorrahod.com/2016-11-10_bnnaambatr-phmepn-ceo.md",
+      "status": "skipped_offtopic",
+      "reason": "泰语追忆文，纪念 Nintendo 前 CEO 岩田聪。包含 Pokemon Gold/Silver 压缩工具、N64 逆向 Red/Green 战斗系统、Smash Bros. Melee 救火调 bug 等程序员轶事，但整体是人物传记与情感抒发，缺乏可提炼的具体技术原理。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2016-11-10_jam-experiment-taweluue-kmaak-y-dkhaaytk.md",
+      "status": "skipped_offtopic",
+      "reason": "消费者心理学 Iyengar & Lepper 2000 年 Jam Experiment 三部曲（果酱/论文/巧克力），讲 choice overload 与 IAP 设计的遥远类比，与图形/引擎/系统主题无关。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2016-11-10_maaruucchakkab-app-thinning-kh-ng-apple.md",
+      "status": "ingested",
+      "source_slug": "gametorrahod-ios-app-thinning",
+      "title": "มารู้จักกับ App Thinning (ของ Apple)"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2016-11-10_youtubes-audio-delay-of-an-h-264-file-is-0-1-seconds-and-her.md",
+      "status": "skipped_offtopic",
+      "reason": "ffmpeg -itsoffset -0.1 修正 YouTube/Facebook/Twitter 上传 H.264 后的音画同步偏差，纯平台经验贴与命令行小抄，没有编解码或渲染原理可沉淀。"
+    },
+    {
+      "path": "raw/articles/gametorrahod.com/2016-11-15_ohstewbswntawong-khnekhaamaaduukaethbaimmii-aich-aws-raakhaa.md",
+      "status": "skipped_offtopic",
+      "reason": "个人静态主页托管成本对比教程：S3 放 bucket 当静态站、Route 53 做 DNS+注册、与 HostGator/P&T/Digital Ocean 比价。属于 Web hosting / 云运维话题，与图形/引擎/系统/语言主题不沾边。"
+    }
+  ],
+  "concepts_created": ["ios-app-thinning"],
+  "people_created": [],
+  "source_summaries_created": ["gametorrahod-ios-app-thinning"],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ios-app-thinning]] | Apple 在 iOS 9 上推出的 App Slicing + Bitcode + On-Demand Resources 分发瘦身三件套 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-ios-app-thinning]] | Sirawat Pitaksarit：Apple App Thinning 三件套速览（Unity 视角） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-32 Worker CQ (gametorrahod.com ×5)\n\n处理 gametorrahod.com 5 篇泰语博文。仅 1 篇命中主题：新建 [[ios-app-thinning]] 概念页 + gametorrahod-ios-app-thinning 源摘要。其余 4 篇跳过（Nintendo CEO 追忆、Jam Experiment 消费心理学、YouTube H.264 音画偏差小贴士、AWS S3+Route53 个人站托管教程）。"
+}

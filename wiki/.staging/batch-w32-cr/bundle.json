@@ -1,0 +1,119 @@
+{
+  "batch_id": "batch-w32-cr",
+  "agent_note": "云风 2010-11 ~ 2011-03 五篇月度归档：4 篇技术，1 篇家事直接 skip。新增 5 概念 (go-goroutine-channels, connection-multiplexer-gateway, snapshot-diff-persistence, zeromq-messaging-patterns, lua-incremental-gc) + 4 source。cloudwu 人物页追加新源与新相关。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-11-18_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-go-first-impressions",
+      "title": "Go 语言初步"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-12-24_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-mmo-io-snapshot-diff",
+      "title": "梦幻西游服务器 IO 的一点优化"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2011-01-31_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "全篇讲云风父亲在小区业委会与政府文件的维权信件，纯家事/社会议题，无任何技术内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2011-02-25_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-zeromq-patterns",
+      "title": "ZeroMQ 的模式"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2011-03-31_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-lua-incremental-gc",
+      "title": "Lua 5.1 增量式 GC 剖析"
+    }
+  ],
+  "concepts_created": [
+    "go-goroutine-channels",
+    "connection-multiplexer-gateway",
+    "snapshot-diff-persistence",
+    "zeromq-messaging-patterns",
+    "lua-incremental-gc"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-go-first-impressions",
+    "cloudwu-mmo-io-snapshot-diff",
+    "cloudwu-zeromq-patterns",
+    "cloudwu-lua-incremental-gc"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[go-goroutine-channels]]\n- [[connection-multiplexer-gateway]]\n- [[zeromq-messaging-patterns]]\n- [[snapshot-diff-persistence]]\n- [[lua-incremental-gc]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cloudwu-go-first-impressions]]\n- [[sources/cloudwu-mmo-io-snapshot-diff]]\n- [[sources/cloudwu-zeromq-patterns]]\n- [[sources/cloudwu-lua-incremental-gc]]"
+    },
+    {
+      "file": "wiki/programming-languages/lua-design-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-incremental-gc]] —— Lua 5.1 增量式 GC 与 FIXEDBIT 钉住保留字、让元方法比较退化为指针比较"
+    },
+    {
+      "file": "wiki/programming-languages/garbage-collector.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-incremental-gc]] —— Lua 5.1 的增量 GC：五阶段状态机 + 双白色乒乓 + FIXEDBIT 保护字符串"
+    },
+    {
+      "file": "wiki/programming-languages/simple-cpp-mark-sweep-gc.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-incremental-gc]] —— 云风也剖析过 Lua 5.1 增量 GC 的乒乓白色与 FIXEDBIT"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[go-goroutine-channels]] | Go 的 goroutine / chan / select 与 CSP 风格并发 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[lua-incremental-gc]] | Lua 5.1 增量式 GC 的五阶段状态机与双白色乒乓 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[connection-multiplexer-gateway]] | 游戏服务器 N 对 1 连接汇聚网关的协议与实现 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[snapshot-diff-persistence]] | 用快照差分把 MMO 全量存盘的 IO 压 90% |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[zeromq-messaging-patterns]] | ZeroMQ 的 req/rep、pub/sub、push/pull 三种消息模式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-go-first-impressions]] | 云风：Go 语言初步与 240 行重写连接网关 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-mmo-io-snapshot-diff]] | 云风：梦幻西游服务器快照差分持久化优化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-zeromq-patterns]] | 云风：ZeroMQ Guide 读书笔记与游戏服务器架构建议 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-lua-incremental-gc]] | 云风：Lua 5.1 增量式 GC 源码剖析（双白色乒乓） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-32 Worker CR (cloudwu 2010-11 ~ 2011-03)\n\n处理云风 blog 五篇月度归档。4 篇技术全部 ingest：Go 语言初步、梦幻西游服务器 IO 优化、ZeroMQ 模式、Lua 5.1 增量式 GC 源码剖析。新增 5 概念页 (go-goroutine-channels, connection-multiplexer-gateway, snapshot-diff-persistence, zeromq-messaging-patterns, lua-incremental-gc) 与 4 source 摘要。1 篇（2011-01 父亲业委会维权信件）skip 为非技术。cloudwu 人物页追加新源与相关概念。"
+}

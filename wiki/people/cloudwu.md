@@ -37,6 +37,11 @@ sources: 5
 - [[c-tagged-union-dispatch]]
 - [[game-resource-pack-format]]
 - [[cpp-multi-paradigm-discipline]]
+- [[go-goroutine-channels]]
+- [[connection-multiplexer-gateway]]
+- [[zeromq-messaging-patterns]]
+- [[snapshot-diff-persistence]]
+- [[lua-incremental-gc]]
 
 ## Sources
 
@@ -49,3 +54,7 @@ sources: 5
 - [[sources/cloudwu-c-tagged-union-dispatch]]
 - [[sources/cloudwu-resource-pack-format]]
 - [[sources/cloudwu-effective-cpp-comments]]
+- [[sources/cloudwu-go-first-impressions]]
+- [[sources/cloudwu-mmo-io-snapshot-diff]]
+- [[sources/cloudwu-zeromq-patterns]]
+- [[sources/cloudwu-lua-incremental-gc]]

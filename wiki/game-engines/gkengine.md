@@ -60,8 +60,11 @@ sources: 2
 - [[engine-evolution]]
 - [[deferred-rendering]]
 - [[tbdr-vs-imr]]
+- [[dynamic-resolution-scaling]] —— gameknife 2013 年为 gkEngine 做的变分辨率优化，0.75× + 锐化 pass 把 GTX 560 从 104 FPS 推到 241 FPS
 
 ## Sources
 
 - [[sources/gameknife-gkengine-features]]
 - [[sources/gameknife-gknextrenderer-yearone]]
+- [[sources/gameknife-gkengine-rendering-optimization]] —— 2013：Intel GPA 剖析 + 三轮优化（半分辨率 SSAO/shadow mask、0.75 全局缩放 + 锐化、tex2Dlod→tex2Dgrad、IBasePipe 引入 deferred shading 分支）
+- [[sources/gameknife-custom-vc100-toolchain]] —— 2015：从 VS2013 剥离出 50 MB vc100 独立工具链，绕开 gkEngine 依赖 Havok/ToolkitPro 锁死 VS2010 的问题

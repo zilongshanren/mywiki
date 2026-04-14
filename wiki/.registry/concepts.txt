@@ -69,6 +69,7 @@ complexity
 component-entity-data-binding
 composite-command-pattern
 compute-vs-raster-points
+connection-multiplexer-gateway
 conservative-depth
 continuous-design
 continuous-probability
@@ -110,6 +111,7 @@ divergent-gradient-in-branches
 draw-call
 draw-procedural-gpu
 dual-depth-buffer-thickness
+dynamic-resolution-scaling
 early-z-late-z
 ecs
 ecs-for-rust-ui
@@ -150,6 +152,7 @@ gcn-wave-occupancy
 gkengine
 gknext-renderer
 glitch-image-effect
+go-goroutine-channels
 gpgpu-json-parsing
 gpgpu-string-unescaping
 gpgpu-transform-feedback-ios
@@ -189,6 +192,7 @@ information-hiding
 information-leakage
 instant-radiosity-vpl
 interface-vs-implementation
+ios-app-thinning
 jason-gregory
 jasper-flick
 jasper-st-pierre
@@ -217,6 +221,7 @@ lossless-float-image-compression
 low-discrepancy-sequence
 lua-cpp-binding
 lua-design-philosophy
+lua-incremental-gc
 malloc-wrapper-debug
 marco-giordano
 matthaeus-chajdas
@@ -338,6 +343,7 @@ simon-trumpler
 simple-cpp-mark-sweep-gc
 skysaga-rendering-tech
 smooth-window-resize
+snapshot-diff-persistence
 sobel-edge-detection
 soft-real-time
 sparse-shadows-cone-tracing
@@ -428,3 +434,4 @@ z-buffer
 z-fighting
 z-order-top-down-2d
 zero-tolerance
+zeromq-messaging-patterns

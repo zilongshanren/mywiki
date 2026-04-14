@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 343
+sources: 350
 ---
 
 # 知识库索引
@@ -86,6 +86,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[sigmoid-functions]] | tanh/erf/倒平方根 sigmoid 的听感、速度与多项式变形近似 |
 | [[negative-space-in-programming]] | ryg：程序的形状由「不做什么」决定 |
 | [[nested-loop-optimization]] | 嵌套循环性能迷思的基准反驳：Nested 快于 Single 快于 LINQ，可读性优先 |
+| [[go-goroutine-channels]] | Go 的 goroutine / chan / select 与 CSP 风格并发 |
+| [[lua-incremental-gc]] | Lua 5.1 增量式 GC 的五阶段状态机与双白色乒乓 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -140,6 +142,9 @@ CAQA + CSAPP 的底层视角。
 | [[ppc-int-float-lhs]] | PPC 整浮点转换的 Load-Hit-Store 停顿与编译器 workaround |
 | [[ring-buffer-virtual-stream]] | SPSC 环形缓冲区：数组索引 vs 虚拟流位置 |
 | [[windows-bmp-format]] | Windows GDI 位图族考古：DIB / DDB / DIB Section / HBITMAP / stock bitmap |
+| [[connection-multiplexer-gateway]] | 游戏服务器 N 对 1 连接汇聚网关的协议与实现 |
+| [[snapshot-diff-persistence]] | 用快照差分把 MMO 全量存盘的 IO 压 90% |
+| [[zeromq-messaging-patterns]] | ZeroMQ 的 req/rep、pub/sub、push/pull 三种消息模式 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -410,6 +415,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[surface-angle-silhouette]] | 基于 `1 - abs(dot(V, N))` 的延迟管线后处理剪影，兼带 camera-ray 反投影套路 |
 | [[classic-shader-noise]] | 经典噪声家族（hash/value/Perlin/Worley/Voronoi/fBm）在同一手写骨架下对比 |
 | [[env-mapping-cubemap-shader]] | 无 cubemap 环境下用等距柱状 HDRI 做天空盒与反射的 shader 写法 |
+| [[dynamic-resolution-scaling]] | 变分辨率渲染：统一缩放 + stretch blit + 锐化补偿，降像素计算量的经典手段 |
 
 ## 经典案例（wiki/examples/）
 
@@ -443,6 +449,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[html5-game-apis-2012]] | 2012 年浏览器游戏 API 可用性地图：WebGL / Web Audio / PointerLock / Gamepad / WebSocket |
 | [[runtime-editor-console-connection]] | _The Witcher 2_ 的编辑器-主机实时调参工具链：命令式网络协议，美术电视前调光照/色彩 |
 | [[tools-first-iteration-loop]] | Evan Todd：内容管线和工具优先级高于一切引擎特性 |
+| [[ios-app-thinning]] | Apple 在 iOS 9 上推出的 App Slicing + Bitcode + On-Demand Resources 分发瘦身三件套 |
 
 ## 人物（wiki/people/）
 
@@ -833,6 +840,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/xor-mini-noise-2]] | Xor：Worley / Voronoi / fractal noise 的手写实现与 fBm octave 模板 |
 | [[sources/xor-mini-environments]] | Xor：等距柱状 HDRI 纹理做 skybox 与反射（GameMaker 无 cubemap 替代方案） |
 | [[sources/xor-mini-hlsl]] | Xor：GLSL ES → HLSL 语法速查（struct+semantic、函数改名、纹理/采样器分离） |
+| [[sources/gameknife-gkengine-rendering-optimization]] | gameknife 2013：gkEngine 渲染优化三轮复盘，104→241 FPS |
+| [[sources/gameknife-custom-vc100-toolchain]] | gameknife 2015：从 VS2013 剥离出 50 MB 独立 vc100 工具链 |
+| [[sources/gametorrahod-ios-app-thinning]] | Sirawat Pitaksarit：Apple App Thinning 三件套速览（Unity 视角） |
+| [[sources/cloudwu-go-first-impressions]] | 云风：Go 语言初步与 240 行重写连接网关 |
+| [[sources/cloudwu-mmo-io-snapshot-diff]] | 云风：梦幻西游服务器快照差分持久化优化 |
+| [[sources/cloudwu-zeromq-patterns]] | 云风：ZeroMQ Guide 读书笔记与游戏服务器架构建议 |
+| [[sources/cloudwu-lua-incremental-gc]] | 云风：Lua 5.1 增量式 GC 源码剖析（双白色乒乓） |
 
 ## 元（wiki/meta/）
 

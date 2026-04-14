@@ -441,3 +441,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-31 Worker CO (mini.gmshaders.com ×5)
 
 处理 5 篇 Xor Mini 系列短文。新增 2 概念页（classic-shader-noise 合并 noise + noise2 两篇、env-mapping-cubemap-shader）与 5 源摘要（xor-mini-interpolation / noise / noise-2 / environments / hlsl）。Mini: Interpolation patch 到 shader-color-interpolation、Mini: HLSL patch 到 shaderlab-hlsl-basics；worley-voronoi-noise、layered-grid-noise、xor-shader-artist 追加交叉引用与源链接。无人物新增、无跳过。
+
+## [2026-04-14] ingest | Wave-32 Worker CP (gameknife.github.io ×5)
+
+处理 5 篇 gameknife.github.io 博客，2 篇 ingested / 3 篇 skipped。新增 1 概念页 dynamic-resolution-scaling（变分辨率渲染：半分辨率 SSAO/shadow mask 边界白边 workaround、0.75× + 锐化补偿、tex2Dlod→tex2Dgrad 陷阱），2 源摘要（gkengine-rendering-optimization / custom-vc100-toolchain）。patch 到 gkengine、people/gameknife、deferred-rendering、bottleneck-analysis。跳过 skill 元页、mu-biao-shi-xing-chen-da-hai（个人目标宣言）、WISDE 婚礼邀请系统。
+
+## [2026-04-14] ingest | Wave-32 Worker CQ (gametorrahod.com ×5)
+
+处理 gametorrahod.com 5 篇泰语博文。仅 1 篇命中主题：新建 [[ios-app-thinning]] 概念页 + gametorrahod-ios-app-thinning 源摘要。其余 4 篇跳过（Nintendo CEO 追忆、Jam Experiment 消费心理学、YouTube H.264 音画偏差小贴士、AWS S3+Route53 个人站托管教程）。
+
+## [2026-04-14] ingest | Wave-32 Worker CR (cloudwu 2010-11 ~ 2011-03)
+
+处理云风 blog 五篇月度归档。4 篇技术全部 ingest：Go 语言初步、梦幻西游服务器 IO 优化、ZeroMQ 模式、Lua 5.1 增量式 GC 源码剖析。新增 5 概念页 (go-goroutine-channels, connection-multiplexer-gateway, snapshot-diff-persistence, zeromq-messaging-patterns, lua-incremental-gc) 与 4 source 摘要。1 篇（2011-01 父亲业委会维权信件）skip 为非技术。cloudwu 人物页追加新源与相关概念。

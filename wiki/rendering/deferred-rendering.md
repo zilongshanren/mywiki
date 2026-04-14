@@ -60,6 +60,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[hybrid-hair-rendering]] —— Wronski 的混合 deferred/forward 头发 trick，规避 fat G-Buffer 分支与 alpha-test 锯齿
 - [[valve-ambient-cube]] —— DX9 世代 deferred 管线里给动画几何填 ambient 的穷人 SH
 - [[deferred-sdf-rendering]] —— 把 SDF raymarch 的 albedo/normal/depth 写进 G-Buffer，让 SDF 与多边形共存于同一条 deferred 管线
+- [[dynamic-resolution-scaling]] —— gameknife 2013 年在 gkEngine 上把 deferred lighting 与半分辨率 SSAO/shadow mask、0.75× 全局缩放 + 锐化 pass 组合成一套像素省量方案
 
 ## Sources
 
@@ -69,3 +70,4 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[sources/vertexfragment-deferred-grass]]
 - [[sources/elopezr-clos2-rendering]]
 - [[sources/interplay-deferred-sdf-rendering]]
+- [[sources/gameknife-gkengine-rendering-optimization]] —— gkEngine 从 deferred lighting 演进到可切换 deferred shading 的一次实战：DP 减半但 G-Buffer 带宽涨 50 %，Hybrid Deferred Shading 的国产实验
