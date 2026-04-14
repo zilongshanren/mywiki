@@ -43,6 +43,7 @@ Custom SRP 6.1.0 为颜色 LUT 添加了调试可视化：
 - [[frost-kiwi]] — Frost 关于视频游戏如何使用 1D/3D LUT 的长文（Left 4 Dead tinting、DaVinci Resolve 调色 LUT 烘焙）
 - [[perceptual-colormaps]] — matplotlib 感知均匀 colormap 烘成 1D .cube LUT 给 DaVinci Resolve 热成像调色
 - [[color-banding]] — dither 去色带的理论与 Jimenez 一行 GLSL 噪声
+- [[skysaga-rendering-tech]] —— SkySaga 用 per-biome 3D LUT 取代 Reinhard/Filmic tonemap 做风格化 color grading
 
 ## Sources
 

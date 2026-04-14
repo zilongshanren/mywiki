@@ -1,0 +1,150 @@
+{
+  "batch_id": "batch-w21-bk",
+  "agent_note": "interplayoflight 5 篇。按 P9 指令 skip readings-on-physically-based-rendering（纯 reading list）。其余 4 篇全 ingest：educational normalised Blinn-Phong、branches & texture sampling、fur rendering via tessellation、SkySaga Meandros 引擎总览。4 篇 source、4 个新概念页（normalised-blinn-phong-shader / divergent-gradient-in-branches / tessellation-fur-rendering / skysaga-rendering-tech）。kostas-anagnostou 人物页已存在，补丁更新。不重复创建人物页和 physically-based-shading、microfacet-brdf、fragment-shader、deferred-rendering 等已存在的概念页，只发 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-12-23_an-educational-normalised-blinn-phong-shader.md",
+      "status": "ingested",
+      "source_slug": "interplay-normalised-blinn-phong",
+      "title": "An educational, normalised, Blinn-Phong shader"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-12-30_readings-on-physically-based-rendering.md",
+      "status": "skipped_offtopic",
+      "reason": "按 P9 指令 skip：纯 PBR reading list，没有新技术内容；相关 SIGGRAPH 课程引用在 physically-based-shading 和 microfacet-brdf 页已覆盖"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2014-03-25_branches-and-texture-sampling.md",
+      "status": "ingested",
+      "source_slug": "interplay-branches-texture-sampling",
+      "title": "Branches and texture sampling"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2014-12-31_rendering-fur-using-tessellation.md",
+      "status": "ingested",
+      "source_slug": "interplay-fur-tessellation",
+      "title": "Rendering Fur using Tessellation"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2015-04-08_the-rendering-technology-of-skysaga-infinite-isles.md",
+      "status": "ingested",
+      "source_slug": "interplay-skysaga-rendering",
+      "title": "The Rendering Technology of SkySaga: Infinite Isles"
+    }
+  ],
+  "concepts_created": [
+    "normalised-blinn-phong-shader",
+    "divergent-gradient-in-branches",
+    "tessellation-fur-rendering",
+    "skysaga-rendering-tech"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "interplay-normalised-blinn-phong",
+    "interplay-branches-texture-sampling",
+    "interplay-fur-tessellation",
+    "interplay-skysaga-rendering"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normalised-blinn-phong-shader]] —— 2013 年给美术同事做的 PBR 教学 FX Composer 工程\n- [[divergent-gradient-in-branches]] —— 分支内 shader-computed uv 的 tex2D 隐形性能坑\n- [[tessellation-fur-rendering]] —— D3D11 isoline domain 生成 fur 的 64×64 方案\n- [[skysaga-rendering-tech]] —— Meandros 引擎（SkySaga: Infinite Isles）完整管线总览"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/interplay-normalised-blinn-phong]]\n- [[sources/interplay-branches-texture-sampling]]\n- [[sources/interplay-fur-tessellation]]\n- [[sources/interplay-skysaga-rendering]]"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normalised-blinn-phong-shader]] —— 归一化 Blinn-Phong 作为 microfacet BRDF 教学起点，演示能量守恒 / Fresnel / gloss 线性化"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normalised-blinn-phong-shader]] —— 面向美术的 PBR 教学 shader，每个 PBR 组件可切换演示"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[divergent-gradient-in-branches]] —— 2×2 quad gradient 在分支中未定义时编译器如何静默展平"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skysaga-rendering-tech]] —— Meandros 引擎：token command stream + 4-RT G-Buffer + G-Buffer modification 天气系统"
+    },
+    {
+      "file": "wiki/rendering/deferred-grass-shader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tessellation-fur-rendering]] —— 同时代的另一条路线：isoline tessellation + geometry shader 扩线，同一 pipeline 可渲草地"
+    },
+    {
+      "file": "wiki/rendering/voxel-ambient-occlusion.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skysaga-rendering-tech]] —— SkySaga 的两尺度 AO：per-corner 烘焙 + voxel 3D occupancy 的光传播 midscale AO"
+    },
+    {
+      "file": "wiki/rendering/greedy-voxel-meshing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skysaga-rendering-tech]] —— Meandros 引擎中 greedy meshing + chunk-based occlusion 的组合应用"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skysaga-rendering-tech]] —— SkySaga 用 per-biome 3D LUT 取代 Reinhard/Filmic tonemap 做风格化 color grading"
+    },
+    {
+      "file": "wiki/rendering/journey-sand-specular.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[normalised-blinn-phong-shader]] —— 正向参照：归一化 Blinn-Phong 的 PBR 教学分解"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[normalised-blinn-phong-shader]] | Anagnostou 给美术的归一化 Blinn-Phong 教学 shader：能量守恒 / Fresnel / gloss 线性化 / Toksvig AA |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[divergent-gradient-in-branches]] | if 分支里 shader-computed uv 的 tex2D：编译器静默展平、如何修 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tessellation-fur-rendering]] | D3D11 isoline domain 的 64×64 毛发生成 + master strand 插值 + Phone Wire AA |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[skysaga-rendering-tech]] | SkySaga/Meandros 引擎总览：token stream、deferred PBR、voxel AO、G-Buffer 天气、3D LUT |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-normalised-blinn-phong]] | Anagnostou：归一化 Blinn-Phong 的 PBR 教学 shader（2013） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-branches-texture-sampling]] | Anagnostou：if 分支内 tex2D gradient 的隐形性能坑（2014） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-fur-tessellation]] | Anagnostou：D3D11 isoline tessellation 渲染 fur 的原型方案（2014） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-skysaga-rendering]] | Anagnostou：SkySaga Meandros 引擎完整管线总览（2015） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-21 Worker BK (interplayoflight.wordpress.com ×5)\n\n处理 interplayoflight 5 篇。按 P9 指令 skip readings-on-physically-based-rendering（纯 PBR reading list，无新技术内容）。Ingest 4 篇：(1) educational normalised Blinn-Phong—给美术的 PBR 教学 FX Composer shader；(2) branches and texture sampling—HLSL if 分支内 shader-computed uv 触发 compiler flatten 的隐形性能坑；(3) rendering fur using tessellation—D3D11 isoline domain + master strand + Phone Wire AA；(4) SkySaga/Meandros engine tech 总览—token stream + deferred + voxel AO + G-Buffer weather modification + 3D LUT。新增 4 概念页（normalised-blinn-phong-shader, divergent-gradient-in-branches, tessellation-fur-rendering, skysaga-rendering-tech）、4 source 摘要。补丁更新 kostas-anagnostou 人物页和 microfacet-brdf / physically-based-shading / fragment-shader / deferred-rendering / deferred-grass-shader / voxel-ambient-occlusion / greedy-voxel-meshing / color-lut / journey-sand-specular 九张相邻概念页。"
+}

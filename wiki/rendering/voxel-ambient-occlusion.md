@@ -43,6 +43,7 @@ return 3 - side0 - side1 - corner;      // 否则按数量递减
 - [[greedy-voxel-meshing]] — AO 的产生时机
 - [[compact-vertex-format]] — AO 值的存储位置
 - [[hbao-interleaved-sampling]] — 通用几何上的 AO 方案，对比之下体素的奢侈
+- [[skysaga-rendering-tech]] —— SkySaga 的两尺度 AO：per-corner 烘焙 + voxel 3D occupancy 的光传播 midscale AO
 
 ## Sources
 

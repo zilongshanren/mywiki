@@ -32,6 +32,7 @@ buffer-renaming
 c-interface-oop
 c-opaque-struct-modules
 c-serialization-metadata
+c-tagged-union-dispatch
 cache-friendliness
 cached-shadowmaps
 calling-conventions-x86
@@ -61,6 +62,7 @@ compute-vs-raster-points
 conservative-depth
 continuous-design
 coordinate-spaces
+cpp-multi-paradigm-discipline
 cpp-runtime-reflection
 cpu-performance-formula
 creative-coding-process
@@ -89,6 +91,7 @@ diffuse-lighting-lambertian
 directx11-early-pitfalls
 display-edid-colorspace
 dither-alpha-clipping
+divergent-gradient-in-branches
 draw-call
 draw-procedural-gpu
 dual-depth-buffer-thickness
@@ -122,6 +125,7 @@ functions-as-vectors
 game-engine
 game-engine-vfs
 game-physics-engine
+game-resource-pack-format
 gameknife
 garbage-collector
 gcn-wave-occupancy
@@ -149,6 +153,7 @@ hierarchical-z-buffer
 higher-order-functions
 homogeneous-rasterization-transpose-bug
 hsr-tbdr
+html5-game-apis-2012
 hybrid-raytracing-pipeline
 iir-filter-deconvolution
 image-convolution-kernel
@@ -184,6 +189,7 @@ log
 lossless-float-image-compression
 low-discrepancy-sequence
 lua-cpp-binding
+lua-design-philosophy
 malloc-wrapper-debug
 marco-giordano
 matthaeus-chajdas
@@ -208,6 +214,7 @@ non-cryptographic-hash
 non-linearly-quantized-msm
 normal-decal-edge-blending
 normal-map-blending
+normalised-blinn-phong-shader
 nsdictionary-linear-probing
 nsmutablearray-circular-buffer
 objc-runtime-internals
@@ -278,6 +285,7 @@ shaping-functions
 sharpdx-assimp-pipeline
 simon-trumpler
 simple-cpp-mark-sweep-gc
+skysaga-rendering-tech
 smooth-window-resize
 soft-real-time
 sparse-shadows-cone-tracing
@@ -305,6 +313,7 @@ tbdr-vs-imr
 temporal-antialiasing
 temporal-decomposition
 temporal-supersampling
+tessellation-fur-rendering
 texel-pixel-conversion
 texture-dissolve
 texture-encoded-state

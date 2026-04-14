@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w21-bi",
+  "agent_note": "云风 blog.codingnow.com 2010 年 6-10 月 5 个月度归档。Ingest 4 篇技术贴：Lua 访谈校译稿（Roberto/Luiz）、C tagged union dispatch、网易资源包格式、Effective C++ 3rd 评注。Skip 2010-09 新西兰南岛游记（旅行随笔）。新增 4 概念页 + 4 source 摘要，补丁更新 cloudwu / lua-cpp-binding / closure / classitis 相邻页面。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-06-29_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-masterminds-lua-chapter",
+      "title": "《编程之魂》第七章 Lua 校译稿"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-07-28_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-c-tagged-union-dispatch",
+      "title": "C 语言里类型安全的多变体接口（XEvent 风格）"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-08-31_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-resource-pack-format",
+      "title": "网易资源包格式与下一代设想"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-09-26_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "新西兰南岛自驾游游记，无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2010-10-26_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-effective-cpp-comments",
+      "title": "Effective C++ 3rd 评注节选（Item 1）"
+    }
+  ],
+  "concepts_created": [
+    "lua-design-philosophy",
+    "c-tagged-union-dispatch",
+    "game-resource-pack-format",
+    "cpp-multi-paradigm-discipline"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-masterminds-lua-chapter",
+    "cloudwu-c-tagged-union-dispatch",
+    "cloudwu-resource-pack-format",
+    "cloudwu-effective-cpp-comments"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-design-philosophy]]\n- [[c-tagged-union-dispatch]]\n- [[game-resource-pack-format]]\n- [[cpp-multi-paradigm-discipline]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cloudwu-masterminds-lua-chapter]]\n- [[sources/cloudwu-c-tagged-union-dispatch]]\n- [[sources/cloudwu-resource-pack-format]]\n- [[sources/cloudwu-effective-cpp-comments]]"
+    },
+    {
+      "file": "wiki/programming-languages/lua-cpp-binding.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "\n## 相关\n\n- [[lua-design-philosophy]] —— Lua 作者本人对脚本语言定位、机制 vs 法策、有栈协程的论述"
+    },
+    {
+      "file": "wiki/programming-languages/closure.md",
+      "operation": "append_to_section",
+      "section": "## 实现原理",
+      "content": "\n\n参见 [[lua-design-philosophy]]：Lua 的 `for` 循环之所以能做成通用且紧凑的形式，正是因为闭包能保留生成器函数在循环之间的内部状态。"
+    },
+    {
+      "file": "wiki/software-design/classitis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cpp-multi-paradigm-discipline]] —— 云风评注 Effective C++ 3rd 的 Item 1：把 C++ 当成语言联邦、定义团队子集"
+    },
+    {
+      "file": "wiki/game-engines/game-engine-vfs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-resource-pack-format]] —— 云风对网易《大话西游》资源包 / 补丁包格式的设计回顾与下一代设想"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[lua-design-philosophy]] | Roberto/Luiz 访谈：Lua 的机制而非法策、有栈协程、可移植性偏执（云风译） |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[c-tagged-union-dispatch]] | C 语言用 tagged union 做类型安全的多变体接口分发（云风） |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[cpp-multi-paradigm-discipline]] | 把 C++ 当语言联邦：团队必须定义子集（云风评 Effective C++ 3rd Item 1） |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-resource-pack-format]] | 网易资源包 / 补丁格式与新引擎设想（云风） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-masterminds-lua-chapter]] | 云风：《编程之魂》第七章 Lua 访谈校译稿 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-c-tagged-union-dispatch]] | 云风：C 语言 tagged union 风格的多变体接口 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-resource-pack-format]] | 云风：网易资源包格式回顾与新设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-effective-cpp-comments]] | 云风：Effective C++ 3rd Item 1 评注 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-21 Worker BI (blog.codingnow.com 2010-06..10 ×5)\n\n处理云风博客 2010 年 6-10 月 5 个月度归档。Ingest 4 篇：Lua 访谈校译（Roberto/Luiz on Lua 设计哲学、机制 vs 法策、有栈协程、ANSI C 偏执）、C tagged union dispatch（XEvent 风格的类型安全多变体接口）、网易资源包格式（允许空洞、二进制 diff 补丁、新引擎 FAT 风格分块设想）、Effective C++ 3rd Item 1 评注（C++ 当语言联邦、团队必须定义子集）。Skip 2010-09 新西兰南岛自驾游记。新增 4 概念页（lua-design-philosophy, c-tagged-union-dispatch, game-resource-pack-format, cpp-multi-paradigm-discipline）+ 4 source 摘要，补丁更新 cloudwu / lua-cpp-binding / closure / classitis / game-engine-vfs。"
+}

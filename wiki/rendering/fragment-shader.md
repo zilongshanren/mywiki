@@ -52,6 +52,7 @@ sources: 1
 - [[metal-shading-language-basics]] —— MSL 的 fragment 函数限定符与 `[[stage_in]]` 插值语义
 - [[unity-image-effect-basics]] —— 以片元着色器为主的全屏后处理骨架
 - [[bluk-2d-fog-sprite-shader]] —— 用 worldPos-camera 距离驱动染色的 2D 雾片元着色器
+- [[divergent-gradient-in-branches]] —— 2×2 quad gradient 在分支中未定义时编译器如何静默展平
 
 ## Sources
 

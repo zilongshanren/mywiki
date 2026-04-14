@@ -309,3 +309,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-20 Worker BH (apoorvaj.io ×5)
 
 处理 apoorvaj.io 5 篇。Ingest 2 篇技术贴：what-is-opengl-loading（X-macro 手写 GL loader 取代 GLEW）、normal-mapping（切线空间 TBN + 视差家族）。新增 2 概念页（opengl-loader, tangent-space-normal-mapping）、2 source 摘要。Skip 3 篇：cross-platform-consistency（按指令重复 skip）、before-we-begin / acknowledgements（meta）。补丁更新 apoorva-joshi 人物页与三张相邻法线贴图概念页。
+
+## [2026-04-14] ingest | Wave-21 Worker BI (blog.codingnow.com 2010-06..10 ×5)
+
+处理云风博客 2010 年 6-10 月 5 个月度归档。Ingest 4 篇：Lua 访谈校译（Roberto/Luiz on Lua 设计哲学、机制 vs 法策、有栈协程、ANSI C 偏执）、C tagged union dispatch（XEvent 风格的类型安全多变体接口）、网易资源包格式（允许空洞、二进制 diff 补丁、新引擎 FAT 风格分块设想）、Effective C++ 3rd Item 1 评注（C++ 当语言联邦、团队必须定义子集）。Skip 2010-09 新西兰南岛自驾游记。新增 4 概念页（lua-design-philosophy, c-tagged-union-dispatch, game-resource-pack-format, cpp-multi-paradigm-discipline）+ 4 source 摘要，补丁更新 cloudwu / lua-cpp-binding / closure / classitis / game-engine-vfs。
+
+## [2026-04-14] ingest | Wave-21 Worker BJ (blog.playcanvas.com ×5)
+
+处理 5 篇早期 PlayCanvas 博客（2012-2013）。4 篇营销/社区公告跳过（引擎介绍、D.E.M.O. FPS 案例、Answers 社区发布、Dungeon Fury 移动版），仅 1 篇 HTML5 游戏开发 API 清单被沉淀——新增 1 概念页 [[html5-game-apis-2012]] + 1 source 摘要 [[sources/playcanvas-html5-game-apis]]。不新增人物页。
+
+## [2026-04-14] ingest | Wave-21 Worker BK (interplayoflight.wordpress.com ×5)
+
+处理 interplayoflight 5 篇。按 P9 指令 skip readings-on-physically-based-rendering（纯 PBR reading list，无新技术内容）。Ingest 4 篇：(1) educational normalised Blinn-Phong—给美术的 PBR 教学 FX Composer shader；(2) branches and texture sampling—HLSL if 分支内 shader-computed uv 触发 compiler flatten 的隐形性能坑；(3) rendering fur using tessellation—D3D11 isoline domain + master strand + Phone Wire AA；(4) SkySaga/Meandros engine tech 总览—token stream + deferred + voxel AO + G-Buffer weather modification + 3D LUT。新增 4 概念页（normalised-blinn-phong-shader, divergent-gradient-in-branches, tessellation-fur-rendering, skysaga-rendering-tech）、4 source 摘要。补丁更新 kostas-anagnostou 人物页和 microfacet-brdf / physically-based-shading / fragment-shader / deferred-rendering / deferred-grass-shader / voxel-ambient-occlusion / greedy-voxel-meshing / color-lut / journey-sand-specular 九张相邻概念页。

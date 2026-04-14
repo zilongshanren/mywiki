@@ -22,6 +22,10 @@ sources: 5
 - [[dual-depth-buffer-thickness]] —— ShaderX6 thickness 技巧的 front/back 分流改进
 - [[deferred-alpha-lighting]] —— deferred 下透明物打光的四条路径综述
 - [[gpu-driven-grass-tiles]] —— Marco Giordano 的 GPU driven culling 直接参考了 Kostas 的 multi-draw indirect / occlusion culling 实验
+- [[normalised-blinn-phong-shader]] —— 2013 年给美术同事做的 PBR 教学 FX Composer 工程
+- [[divergent-gradient-in-branches]] —— 分支内 shader-computed uv 的 tex2D 隐形性能坑
+- [[tessellation-fur-rendering]] —— D3D11 isoline domain 生成 fur 的 64×64 方案
+- [[skysaga-rendering-tech]] —— Meandros 引擎（SkySaga: Infinite Isles）完整管线总览
 
 ## Sources
 
@@ -35,3 +39,7 @@ sources: 5
 - [[sources/interplay-interpolate-view-light-vectors]]
 - [[sources/interplay-dual-depth-thickness]]
 - [[sources/interplay-lighting-alpha-deferred]]
+- [[sources/interplay-normalised-blinn-phong]]
+- [[sources/interplay-branches-texture-sampling]]
+- [[sources/interplay-fur-tessellation]]
+- [[sources/interplay-skysaga-rendering]]

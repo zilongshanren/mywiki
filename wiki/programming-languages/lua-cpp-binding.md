@@ -35,3 +35,7 @@ sources: 3
 ## Sources
 
 - [[sources/eliasdaler-lua-cpp-binding-series]]
+
+## 相关
+
+- [[lua-design-philosophy]] —— Lua 作者本人对脚本语言定位、机制 vs 法策、有栈协程的论述

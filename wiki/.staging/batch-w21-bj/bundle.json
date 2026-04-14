@@ -1,0 +1,47 @@
+{
+  "batch_id": "batch-w21-bj",
+  "agent_note": "5 篇早期 PlayCanvas 博客（2012-2013），4 篇是营销/社区公告类（引擎介绍、FPS demo 案例、Answers Q&A 发布、Dungeon Fury 移动版），无架构深度，均跳过。仅第 3 篇 html5-apis-for-game-developers 是一张 2012 年浏览器游戏开发 API 可用性清单，作为历史快照值得沉淀——新增 1 个概念页（html5-game-apis-2012，归入 game-development）和 1 份 source 摘要。不为作者 Dave Evans 建人物页（除这份清单外无实质技术输出）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-06-26_introduction-to-playcanvas-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "PlayCanvas 产品发布介绍，纯营销，无引擎架构或 WebGL 技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-08-08_making-a-multiplayer-3rd-person-shooter-in-html5-playcanvas.md",
+      "status": "skipped_offtopic",
+      "reason": "D.E.M.O. 多人 FPS 的市场稿，只罗列使用了哪些 HTML5 API（WebGL/Web Audio/WebSocket/PointerLock/Gamepad/Fullscreen），无实现细节；关键信息已并入 html5-game-apis-2012 概念页作为背景"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-08-19_html5-apis-for-game-developers-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-html5-game-apis",
+      "title": "HTML5 APIs for game developers"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-01-29_playcanvas-community-part-1-announcing-playcanvas-answers-pl.md",
+      "status": "skipped_offtopic",
+      "reason": "PlayCanvas Answers Q&A 站点上线公告，社区运营内容，无技术"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-02-28_dungeon-fury-3d-browser-gaming-arrives-on-mobile-playcanvas.md",
+      "status": "skipped_offtopic",
+      "reason": "Dungeon Fury 移动版 WebGL 游戏发布稿，只列举各移动浏览器当时的兼容状态，无架构或渲染技术细节"
+    }
+  ],
+  "concepts_created": ["html5-game-apis-2012"],
+  "people_created": [],
+  "source_summaries_created": ["playcanvas-html5-game-apis"],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[html5-game-apis-2012]] | 2012 年浏览器游戏 API 可用性地图：WebGL / Web Audio / PointerLock / Gamepad / WebSocket |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-html5-game-apis]] | Evans：2012 年 HTML5 游戏开发 API 可用性清单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-21 Worker BJ (blog.playcanvas.com ×5)\n\n处理 5 篇早期 PlayCanvas 博客（2012-2013）。4 篇营销/社区公告跳过（引擎介绍、D.E.M.O. FPS 案例、Answers 社区发布、Dungeon Fury 移动版），仅 1 篇 HTML5 游戏开发 API 清单被沉淀——新增 1 概念页 [[html5-game-apis-2012]] + 1 source 摘要 [[sources/playcanvas-html5-game-apis]]。不新增人物页。"
+}

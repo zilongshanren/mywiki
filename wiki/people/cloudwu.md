@@ -33,6 +33,10 @@ sources: 5
 - [[c-serialization-metadata]]
 - [[game-engine-vfs]]
 - [[malloc-wrapper-debug]]
+- [[lua-design-philosophy]]
+- [[c-tagged-union-dispatch]]
+- [[game-resource-pack-format]]
+- [[cpp-multi-paradigm-discipline]]
 
 ## Sources
 
@@ -41,3 +45,7 @@ sources: 5
 - [[sources/cloudwu-c-serialization-and-c-oop]]
 - [[sources/cloudwu-game-engine-vfs]]
 - [[sources/cloudwu-malloc-wrapper]]
+- [[sources/cloudwu-masterminds-lua-chapter]]
+- [[sources/cloudwu-c-tagged-union-dispatch]]
+- [[sources/cloudwu-resource-pack-format]]
+- [[sources/cloudwu-effective-cpp-comments]]

@@ -41,6 +41,7 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 - [[spherical-harmonics]] — 环境光积分的另一种常用展开
 - [[stephen-hill]]
 - [[journey-sand-specular]] — Blinn-Phong 作为 NDF 起点的风格化使用
+- [[normalised-blinn-phong-shader]] —— 归一化 Blinn-Phong 作为 microfacet BRDF 教学起点，演示能量守恒 / Fresnel / gloss 线性化
 
 ## Sources
 

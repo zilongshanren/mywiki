@@ -42,6 +42,7 @@ sources: 1
 - [[journey-sand-specular]] — 风格化多路 specular 拆分（rim Fresnel + ocean Blinn-Phong）
 - [[tiled-light-culling]] —— Brian Karis：用能量守恒和 specular cone 做 tile 级剔除
 - [[brian-karis]] —— UE4 Real Shading 的作者
+- [[normalised-blinn-phong-shader]] —— 面向美术的 PBR 教学 shader，每个 PBR 组件可切换演示
 
 ## Sources
 

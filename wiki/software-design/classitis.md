@@ -64,6 +64,7 @@ Clean Code 主张「函数不超过 N 行」「类要小」。Ousterhout 反驳�
 - 反面：[[deep-modules]]
 - 游戏开发视角：[[classitis-in-games]]
 - 经典案例：[[java-io]] vs [[unix-io]]
+- [[cpp-multi-paradigm-discipline]] —— 云风评注 Effective C++ 3rd 的 Item 1：把 C++ 当成语言联邦、定义团队子集
 
 ## Sources
 

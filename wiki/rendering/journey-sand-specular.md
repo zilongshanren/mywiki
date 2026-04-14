@@ -72,6 +72,7 @@ Part 5 再加一条"沙粒闪烁"——用一张随机的 glitter normal map + �
 - [[physically-based-shading]] — 非风格化的路径
 - [[shader-vector-math-primer]] — 半程向量 $H$、Fresnel 的几何直觉
 - [[alan-zucconi]]
+- [[normalised-blinn-phong-shader]] —— 正向参照：归一化 Blinn-Phong 的 PBR 教学分解
 
 ## Sources
 

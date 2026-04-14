@@ -39,6 +39,10 @@ sources: 1
 
 另一条完全不同的路线见 [[gpu-driven-grass-tiles]]——[[marco-giordano]] 的方案用蓝噪声预烘焙 + vertex shader 扩展 + compute culling + 间接绘制 + 4 路 scan 压 LOD，把决策全部搬到 GPU，而不是让 tessellation/geometry shader 在 raster 阶段动态生成。两者是同题不同解的典型对照：Steven Sell 赢在单 shader 自洽、易接 Unity 管线；Marco 赢在可扩展性与性能上限。
 
+## 相关
+
+- [[tessellation-fur-rendering]] —— 同时代的另一条路线：isoline tessellation + geometry shader 扩线，同一 pipeline 可渲草地
+
 ## Sources
 
 - [[sources/vertexfragment-deferred-grass]]

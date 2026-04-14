@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 229
+sources: 238
 ---
 
 # 知识库索引
@@ -45,6 +45,7 @@ sources: 229
 | [[c-serialization-metadata]] | 基于自定义元信息的 C 结构序列化与图合并算法（云风） |
 | [[ecs-for-rust-ui]] | Rust UI 的「类 ECS」架构：整数 id + state splitting + data flow 对抗借用检查器（Raph Levien 2018）|
 | [[data-structure-invariants]] | ryg：每加一条访问路径就多一条不变量——tail-pointer-to-pointer 与 sentinel 节点是清理之法 |
+| [[cpp-multi-paradigm-discipline]] | 把 C++ 当语言联邦：团队必须定义子集（云风评 Effective C++ 3rd Item 1） |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -75,6 +76,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[cantor-szudzik-pairing]] | Cantor 与 Szudzik 两种 2D → 1D 配对函数的对比 |
 | [[lua-cpp-binding]] | 手写最小的 Lua/C++ 嵌入封装：栈式 API、点路径取值、表遍历、pcall 调函数 |
 | [[avoid-unsigned-types]] | 默认避免 C++ unsigned 类型：保住 sanity check 的能力 |
+| [[lua-design-philosophy]] | Roberto/Luiz 访谈：Lua 的机制而非法策、有栈协程、可移植性偏执（云风译） |
+| [[c-tagged-union-dispatch]] | C 语言用 tagged union 做类型安全的多变体接口分发（云风） |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -138,6 +141,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[component-entity-data-binding]] | 组件实体模型中的 I/O 端口式数据绑定（Evan Todd 2011） |
 | [[game-engine-vfs]] | 游戏引擎虚拟文件系统：Linux VFS 简化版与 auto fallback |
 | [[handle-based-resource-manager]] | C++/Vulkan 引擎里 manager + 32 位不透明句柄 + magic number 校验的资源管理范式 |
+| [[game-resource-pack-format]] | 网易资源包 / 补丁格式与新引擎设想（云风） |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -329,6 +333,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[homogeneous-rasterization-transpose-bug]] | 齐次坐标三角形光栅化中 setup 矩阵被转置导致的 z 插值 bug |
 | [[opengl-loader]] | OpenGL 为何不能静态链接，及手写 X-macro loader 的取舍 |
 | [[tangent-space-normal-mapping]] | 切线空间 TBN 推导 + parallax / steep / POM 视差家族 |
+| [[normalised-blinn-phong-shader]] | Anagnostou 给美术的归一化 Blinn-Phong 教学 shader：能量守恒 / Fresnel / gloss 线性化 / Toksvig AA |
+| [[divergent-gradient-in-branches]] | if 分支里 shader-computed uv 的 tex2D：编译器静默展平、如何修 |
+| [[tessellation-fur-rendering]] | D3D11 isoline domain 的 64×64 毛发生成 + master strand 插值 + Phone Wire AA |
+| [[skysaga-rendering-tech]] | SkySaga/Meandros 引擎总览：token stream、deferred PBR、voxel AO、G-Buffer 天气、3D LUT |
 
 ## 经典案例（wiki/examples/）
 
@@ -359,6 +367,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[procedural-mesh-primitives]] | Torus / UV-sphere / ellipsoid 的参数化顶点公式与拓扑结构 |
 | [[mesh-warps-and-tessellation]] | Stellation、extrusion 与 fan/centroid/triforce 三角化：CPU 侧 per-face 几何算法 |
 | [[z-order-top-down-2d]] | 俯视角 2D 游戏的 z-order：静态分层 vs 动态按底边 Y 排序 |
+| [[html5-game-apis-2012]] | 2012 年浏览器游戏 API 可用性地图：WebGL / Web Audio / PointerLock / Gamepad / WebSocket |
 
 ## 人物（wiki/people/）
 
@@ -635,6 +644,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/anteru-avoid-unsigned-types]] | Chajdas：默认避免 C++ unsigned 类型（重述 Scott Meyers 论点） |
 | [[sources/apoorvaj-opengl-loading]] | Joshi：从零写一个 OpenGL loader 替换 GLEW |
 | [[sources/apoorvaj-normal-mapping]] | Joshi：tangent space 法线贴图与 parallax 家族 WebGL demo |
+| [[sources/cloudwu-masterminds-lua-chapter]] | 云风：《编程之魂》第七章 Lua 访谈校译稿 |
+| [[sources/cloudwu-c-tagged-union-dispatch]] | 云风：C 语言 tagged union 风格的多变体接口 |
+| [[sources/cloudwu-resource-pack-format]] | 云风：网易资源包格式回顾与新设计 |
+| [[sources/cloudwu-effective-cpp-comments]] | 云风：Effective C++ 3rd Item 1 评注 |
+| [[sources/playcanvas-html5-game-apis]] | Evans：2012 年 HTML5 游戏开发 API 可用性清单 |
+| [[sources/interplay-normalised-blinn-phong]] | Anagnostou：归一化 Blinn-Phong 的 PBR 教学 shader（2013） |
+| [[sources/interplay-branches-texture-sampling]] | Anagnostou：if 分支内 tex2D gradient 的隐形性能坑（2014） |
+| [[sources/interplay-fur-tessellation]] | Anagnostou：D3D11 isoline tessellation 渲染 fur 的原型方案（2014） |
+| [[sources/interplay-skysaga-rendering]] | Anagnostou：SkySaga Meandros 引擎完整管线总览（2015） |
 
 ## 元（wiki/meta/）
 

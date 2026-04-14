@@ -38,6 +38,7 @@ AO 值在 mesh 生成时就计算并烘到顶点属性里，保持「静态 mesh
 - [[voxel-ambient-occlusion]] — 两者通常一起实现
 - [[compact-vertex-format]] — 合并后还需要压缩每顶点数据
 - [[max-slater]]
+- [[skysaga-rendering-tech]] —— Meandros 引擎中 greedy meshing + chunk-based occlusion 的组合应用
 
 ## Sources
 
