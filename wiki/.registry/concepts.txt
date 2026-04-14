@@ -76,6 +76,7 @@ deferred-rendering
 dennard-scaling
 dependencies
 depth-aware-upsampling
+depth-texture-silhouette
 diamond-square-noise
 diffraction-grating-shader
 diffuse-lighting-lambertian
@@ -136,6 +137,8 @@ higher-order-functions
 hsr-tbdr
 hybrid-raytracing-pipeline
 iir-filter-deconvolution
+image-convolution-kernel
+image-effect-colour-transform
 image-resampling-filters
 index
 information-hiding
@@ -239,6 +242,7 @@ screenspace-reflections
 scriptable-render-pipeline
 sdf-2d-primitives
 sdf-ray-marched-shadows
+separable-gaussian-blur
 shader-code-golfing
 shader-prototyping-tools
 shader-vector-math-primer

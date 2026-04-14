@@ -50,3 +50,8 @@ URP / HDRP 时代 Unity **放弃了 Surface Shader 的模板生成**——所有
 ## Sources
 
 - [[sources/danielilett-your-first-shader]]
+- [[sources/danielilett-image-effects-shader-primer]]
+- [[sources/ronja-structure]] — Ronja 001，Shader/SubShader/Pass 的层级拆解
+- [[sources/ronja-hlsl]] — Ronja 002，HLSL 标量/向量/swizzle/控制流速通
+- [[sources/ronja-variables]] — Ronja 003，object data / interpolators / uniforms 三种数据来源
+- [[sources/ronja-basic-shader]] — Ronja 004，UnityCG.cginc 辅助下的最简 Unlit + Tint 成品

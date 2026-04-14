@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, shader, unity]
 date: 2026-04-14
-sources: 5
+sources: 10
 ---
 
 # Ronja Böhm（Ferris Systems）
@@ -50,3 +50,8 @@ sources: 5
 - [[sources/ronja-2d-sdf-basics]]
 - [[sources/ronja-2d-sdf-shadows]]
 - [[sources/ronja-draw-procedural]]
+- [[sources/ronja-structure]]
+- [[sources/ronja-hlsl]]
+- [[sources/ronja-variables]]
+- [[sources/ronja-basic-shader]]
+- [[sources/ronja-surface-shader-basics]]

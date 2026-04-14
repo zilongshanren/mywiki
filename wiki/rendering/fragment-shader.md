@@ -56,3 +56,4 @@ sources: 1
 ## Sources
 
 - [[sources/rtr-day05]]
+- [[sources/ronja-basic-shader]] — 最简 fragment 函数签名 `fixed4 frag(v2f) : SV_TARGET` 的入门解释

@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 179
+sources: 189
 ---
 
 # 知识库索引
@@ -300,6 +300,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[bluk-2d-fog-sprite-shader]] | BLUK 风格的距离相关 2D 雾精灵着色器 |
 | [[unity-image-effect-basics]] | Unity built-in 管线的 image effect 全屏后处理骨架 |
 | [[night-time-tint-shader]] | 饱和/蓝偏/变暗三合一的夜色全屏后处理 |
+| [[image-effect-colour-transform]] | 逐像素 RGB 线性变换：灰度、Sepia、色调矩阵 |
+| [[depth-texture-silhouette]] | 采样 `_CameraDepthTexture` 按距离着色做剪影/距离雾 |
+| [[image-convolution-kernel]] | 图像卷积核的数学骨架与 fragment shader 写法 |
+| [[separable-gaussian-blur]] | Box/Gaussian Blur 的可分离优化与多 pass 模板 |
 
 ## 经典案例（wiki/examples/）
 
@@ -553,6 +557,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/halisavakis-bluk-2d-fog-sprite]] | Alisavakis：BLUK 视觉风格的 2D 雾精灵着色器拆解 |
 | [[sources/halisavakis-image-effects-intro]] | Alisavakis：Unity image effect 入门教程 |
 | [[sources/halisavakis-night-time-shader]] | Alisavakis：夜色全屏后处理示例 |
+| [[sources/danielilett-image-effects-shader-primer]] | Ilett：Image Effects Part 0 - ShaderLab / HLSL 样板 |
+| [[sources/danielilett-image-effects-colour-transforms]] | Ilett：Image Effects Part 1 - 灰度与 Sepia 颜色变换 |
+| [[sources/danielilett-image-effects-depth-silhouette]] | Ilett：Image Effects Part 2 - 采样深度纹理做剪影 |
+| [[sources/danielilett-image-effects-blurring]] | Ilett：Image Effects Part 3 - Box/Gaussian Blur 与可分离卷积 |
+| [[sources/ronja-structure]] | Ronja 001：Shader/SubShader/Pass 层级结构与 ShaderLab 声明式语义 |
+| [[sources/ronja-hlsl]] | Ronja 002：HLSL 标量/向量/swizzle/控制流速通，反教条写 if |
+| [[sources/ronja-variables]] | Ronja 003：object data / interpolators / uniforms 三种数据来源与语义标签 |
+| [[sources/ronja-basic-shader]] | Ronja 004：UnityObjectToClipPos + TRANSFORM_TEX + tex2D 组出第一个 Unlit shader |
+| [[sources/ronja-surface-shader-basics]] | Ronja 005：从手写 Unlit 转 Surface Shader，SurfaceOutputStandard 七字段速查 |
+| [[sources/alanzucconi-flixel-retro-crt]] | Zucconi：Flixel 2.5 上的 CPU 版 CRT 通道错位后处理（2012） |
 
 ## 元（wiki/meta/）
 

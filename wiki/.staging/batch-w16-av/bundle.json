@@ -1,0 +1,60 @@
+{
+  "batch_id": "batch-w16-av",
+  "agent_note": "alanzucconi.com 2012 早期 5 篇。仅 1 篇 (Flixel CRT 通道偏移) 勉强算技术内容（CPU bitmap 后处理），ingest 为 source 摘要并 patch 到现有 crt-shader-effects 与 alan-zucconi 页。其余 4 篇全是非技术：RAPTUS 游戏 postmortem / 评论 / 独立游戏展见闻 / Still time devlog（时间机制构想），全部 skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alanzucconi.com/2012-01-31_retro-crt-distortion-effect-in-flixel-2-5-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-flixel-retro-crt",
+      "title": "Retro CRT distortion effect in Flixel 2.5"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2012-04-11_raptus-postmortem-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "Flash 游戏 RAPTUS 的叙事 / 主题 postmortem，讨论灵感来源（The Body、Pathos）和死亡哲学，无技术内容"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2012-04-28_raptus-reviews-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "RAPTUS 在 IndieGames / BeefJack / Gameological 等媒体的评论汇编，纯游戏评论"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2012-06-05_indie-games-expo-2012-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "London Indie Games Expo 2012 参展见闻，提到 Ed Key 的 PROTEUS、Darren Grey 的 roguelike talk，无技术深度"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2012-06-26_still-time-development-log-1-alan-zucconi.md",
+      "status": "skipped_offtopic",
+      "reason": "Still time 游戏 devlog，只讨论时间回溯的游戏机制设想（避免悖论的时间线设计），无实现细节"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["alanzucconi-flixel-retro-crt"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/alanzucconi-flixel-retro-crt]] —— Alan Zucconi 2012 年的 Flixel/AS3 版本，CPU `BitmapData.copyChannel` + 矩阵微缩放在 Flash 时代实现的 RGB 通道错位"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/alanzucconi-flixel-retro-crt]]"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/alanzucconi-flixel-retro-crt]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-flixel-retro-crt]] | Zucconi：Flixel 2.5 上的 CPU 版 CRT 通道错位后处理（2012） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-16 Worker AV (alanzucconi.com 2012 ×5)\n\n处理 alanzucconi.com 2012 年 5 篇早期博客。仅 ingest 1 篇技术内容（Flixel 2.5 上的 CRT RGB 通道偏移 CPU 实现），新增 1 个 source 摘要 `alanzucconi-flixel-retro-crt` 并 patch 到现有 `crt-shader-effects` 与 `alan-zucconi`。跳过 4 篇非技术：RAPTUS postmortem / RAPTUS 评论汇编 / Indie Games Expo 2012 见闻 / Still time devlog #1。"
+}

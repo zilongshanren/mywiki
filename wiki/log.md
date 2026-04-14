@@ -253,3 +253,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-15 Worker AS (halisavakis.com ×5)
 
 处理 halisavakis.com 早期文章 5 篇。新增 3 概念页（bluk-2d-fog-sprite-shader、unity-image-effect-basics、night-time-tint-shader）、3 source 摘要。跳过 2 篇（Sling Toss 隐私政策、Leucos Ludum Dare postmortem）。补丁 harry-alisavakis 人物页与 fragment-shader 概念页的交叉引用。
+
+## [2026-04-14] ingest | Wave-16 Worker AT (danielilett.com Image Effects 0-3)
+
+处理 Daniel Ilett 《Image Effects》系列 part 0-3（共 5 个文件，其中 series-introduction 跳过）。新增 4 概念页：image-effect-colour-transform、depth-texture-silhouette、image-convolution-kernel、separable-gaussian-blur；新增 4 个 source 摘要；给 daniel-ilett、unity-image-effect-basics、shaderlab-hlsl-basics、z-buffer 打补丁添加交叉引用和 source 链接。part 0 作为 shader 基础入门没有单独建概念页，而是补到已有的 shaderlab-hlsl-basics / unity-image-effect-basics。
+
+## [2026-04-14] ingest | Wave-16 Worker AU (ronja-tutorials.com 001-005)
+
+处理 Ronja's Shader Tutorials 2018 基础系列 5 篇（Structure / HLSL / Variables / Basic Shader / Surface Shader Basics）。5 篇全部 ingested，新增 5 个 source 摘要页，0 个新概念页（核心概念 shaderlab-hlsl-basics / unity-surface-shaders / fragment-shader / shader-vector-math-primer / rendering-pipeline / coordinate-spaces 全部已存在）。Patch 到 ronja-bohm 人物页追加 5 来源链接，另外给 4 个概念页各追加对应的 source 链接。
+
+## [2026-04-14] ingest | Wave-16 Worker AV (alanzucconi.com 2012 ×5)
+
+处理 alanzucconi.com 2012 年 5 篇早期博客。仅 ingest 1 篇技术内容（Flixel 2.5 上的 CRT RGB 通道偏移 CPU 实现），新增 1 个 source 摘要 `alanzucconi-flixel-retro-crt` 并 patch 到现有 `crt-shader-effects` 与 `alan-zucconi`。跳过 4 篇非技术：RAPTUS postmortem / RAPTUS 评论汇编 / Indie Games Expo 2012 见闻 / Still time devlog #1。

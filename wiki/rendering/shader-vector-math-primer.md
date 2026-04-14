@@ -72,3 +72,4 @@ Reid 自己的观察：她大学数学挂过，但图形数学学得很好。区
 ## Sources
 
 - [[sources/lindenreid-basic-math-for-shaders]]
+- [[sources/ronja-hlsl]] — Ronja 对 HLSL 标量/向量类型与 swizzle 语法的简明版

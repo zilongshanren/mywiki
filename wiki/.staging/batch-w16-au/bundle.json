@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w16-au",
+  "agent_note": "Ronja 001-005 基础系列。核心概念 (shaderlab-hlsl-basics, unity-surface-shaders, fragment-shader, shader-vector-math-primer, rendering-pipeline) 全部已存在，无新建概念页。5 篇都做了 source summary，并 patch 到 ronja-bohm 人物页追加 5 个来源链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-03-20_structure.md",
+      "status": "ingested",
+      "source_slug": "ronja-structure",
+      "title": "Structure (Ronja 001)"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-03-21_hlsl.md",
+      "status": "ingested",
+      "source_slug": "ronja-hlsl",
+      "title": "HLSL (Ronja 002)"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-03-22_variables.md",
+      "status": "ingested",
+      "source_slug": "ronja-variables",
+      "title": "Variables (Ronja 003)"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-03-23_basic-shader.md",
+      "status": "ingested",
+      "source_slug": "ronja-basic-shader",
+      "title": "Basic Shader (Ronja 004)"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2018-03-30_surface-shader-basics.md",
+      "status": "ingested",
+      "source_slug": "ronja-surface-shader-basics",
+      "title": "Surface Shader Basics (Ronja 005)"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "ronja-structure",
+    "ronja-hlsl",
+    "ronja-variables",
+    "ronja-basic-shader",
+    "ronja-surface-shader-basics"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ronja-bohm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-structure]]\n- [[sources/ronja-hlsl]]\n- [[sources/ronja-variables]]\n- [[sources/ronja-basic-shader]]\n- [[sources/ronja-surface-shader-basics]]"
+    },
+    {
+      "file": "wiki/rendering/shaderlab-hlsl-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-structure]] — Ronja 001，Shader/SubShader/Pass 的层级拆解\n- [[sources/ronja-hlsl]] — Ronja 002，HLSL 标量/向量/swizzle/控制流速通\n- [[sources/ronja-variables]] — Ronja 003，object data / interpolators / uniforms 三种数据来源\n- [[sources/ronja-basic-shader]] — Ronja 004，UnityCG.cginc 辅助下的最简 Unlit + Tint 成品"
+    },
+    {
+      "file": "wiki/rendering/unity-surface-shaders.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-surface-shader-basics]] — Ronja 005，把手写 Unlit 逐步转换成 Surface Shader 的骨架演示"
+    },
+    {
+      "file": "wiki/rendering/fragment-shader.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-basic-shader]] — 最简 fragment 函数签名 `fixed4 frag(v2f) : SV_TARGET` 的入门解释"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ronja-hlsl]] — Ronja 对 HLSL 标量/向量类型与 swizzle 语法的简明版"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-structure]] | Ronja 001：Shader/SubShader/Pass 层级结构与 ShaderLab 声明式语义 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-hlsl]] | Ronja 002：HLSL 标量/向量/swizzle/控制流速通，反教条写 if |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-variables]] | Ronja 003：object data / interpolators / uniforms 三种数据来源与语义标签 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-basic-shader]] | Ronja 004：UnityObjectToClipPos + TRANSFORM_TEX + tex2D 组出第一个 Unlit shader |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ronja-surface-shader-basics]] | Ronja 005：从手写 Unlit 转 Surface Shader，SurfaceOutputStandard 七字段速查 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-16 Worker AU (ronja-tutorials.com 001-005)\n\n处理 Ronja's Shader Tutorials 2018 基础系列 5 篇（Structure / HLSL / Variables / Basic Shader / Surface Shader Basics）。5 篇全部 ingested，新增 5 个 source 摘要页，0 个新概念页（核心概念 shaderlab-hlsl-basics / unity-surface-shaders / fragment-shader / shader-vector-math-primer / rendering-pipeline / coordinate-spaces 全部已存在）。Patch 到 ronja-bohm 人物页追加 5 来源链接，另外给 4 个概念页各追加对应的 source 链接。"
+}

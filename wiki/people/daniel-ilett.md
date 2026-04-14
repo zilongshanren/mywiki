@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 4
+sources: 8
 ---
 
 # Daniel Ilett
@@ -17,6 +17,11 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[shaderlab-hlsl-basics]]
 - [[retro-rendering-techniques]]
 - [[dither-alpha-clipping]]
+- [[unity-image-effect-basics]]
+- [[image-effect-colour-transform]]
+- [[depth-texture-silhouette]]
+- [[image-convolution-kernel]]
+- [[separable-gaussian-blur]]
 
 ## Sources
 
@@ -24,3 +29,7 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-your-first-shader]]
 - [[sources/danielilett-retro-terrain-lit]]
 - [[sources/danielilett-dither-transparency]]
+- [[sources/danielilett-image-effects-shader-primer]]
+- [[sources/danielilett-image-effects-colour-transforms]]
+- [[sources/danielilett-image-effects-depth-silhouette]]
+- [[sources/danielilett-image-effects-blurring]]

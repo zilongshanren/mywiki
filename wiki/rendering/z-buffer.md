@@ -43,6 +43,7 @@ sources: 2
 - [[coordinate-spaces]]
 - [[hierarchical-z-buffer]] — Z-buffer 的 max-downsample 金字塔，用于遮挡剔除
 - [[scene-color-depth-nodes]] —— 在 shader 里采样 `_CameraDepthTexture` 并线性化
+- [[depth-texture-silhouette]] —— 在 image effect 里采样 `_CameraDepthTexture` 做距离着色
 
 ## Sources
 

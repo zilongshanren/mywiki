@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity]
 date: 2026-04-14
-sources: 5
+sources: 6
 ---
 
 # Alan Zucconi
@@ -32,3 +32,4 @@ sources: 5
 - [[sources/alanzucconi-fast-sss-1]]
 - [[sources/alanzucconi-volumetric-rendering]]
 - [[sources/alanzucconi-journey-sand-specular]]
+- [[sources/alanzucconi-flixel-retro-crt]]

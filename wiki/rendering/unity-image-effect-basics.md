@@ -50,8 +50,17 @@ URP 和 HDRP 放弃了 `OnRenderImage` 回调，原因包括移动端上连续 b
 - [[night-time-tint-shader]]
 - [[bluk-2d-fog-sprite-shader]]
 - [[harry-alisavakis]]
+- [[image-effect-colour-transform]]
+- [[depth-texture-silhouette]]
+- [[image-convolution-kernel]]
+- [[separable-gaussian-blur]]
+- [[daniel-ilett]]
 
 ## Sources
 
 - [[sources/halisavakis-image-effects-intro]]
 - [[sources/halisavakis-night-time-shader]]
+- [[sources/danielilett-image-effects-shader-primer]]
+- [[sources/danielilett-image-effects-colour-transforms]]
+- [[sources/danielilett-image-effects-depth-silhouette]]
+- [[sources/danielilett-image-effects-blurring]]
