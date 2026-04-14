@@ -1,0 +1,125 @@
+{
+  "batch_id": "batch-w31-co",
+  "agent_note": "Xor Mini 系列 5 篇：interpolation 与 hlsl 两篇作为 patch 叠加到已有概念；noise + noise2 合并为一页 classic-shader-noise；environments 新建 env-mapping-cubemap-shader。所有 4 篇源摘要也 patch 追加到 xor-shader-artist 人物页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-10-28_mini-interpolation.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-interpolation",
+      "title": "Mini: Interpolation"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-11-04_noise.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-noise",
+      "title": "Noise"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-11-11_noise-2.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-noise-2",
+      "title": "Noise 2"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-11-24_mini-environments.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-environments",
+      "title": "Mini: Environments"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2022-12-02_mini-hlsl.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-hlsl",
+      "title": "Mini: HLSL"
+    }
+  ],
+  "concepts_created": [
+    "classic-shader-noise",
+    "env-mapping-cubemap-shader"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "xor-mini-interpolation",
+    "xor-mini-noise",
+    "xor-mini-noise-2",
+    "xor-mini-environments",
+    "xor-mini-hlsl"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/shader-color-interpolation.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[classic-shader-noise]] —— value noise 的 sub-cell 插值复用了同一个 `3x²-2x³` cubic smoothstep\n- [[sampler-filter-wrap-modes]] —— 纹理滤波本质也是一种插值，Xor 的 Mini: Interpolation 把 nearest/linear/cubic 拉到同一个数学框架下讲"
+    },
+    {
+      "file": "wiki/rendering/shader-color-interpolation.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/xor-mini-interpolation]] —— Xor：nearest/linear/cubic 滤波的 GLSL 手写实现，cubic 公式与本页 lerp 打通"
+    },
+    {
+      "file": "wiki/rendering/shaderlab-hlsl-basics.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/xor-mini-hlsl]] —— Xor：从 GLSL ES 视角速查 HLSL 语法差异（struct + semantic、`mix→lerp`、`atan(y,x)→atan2(x,y)` 参数翻转、`Texture2D`/`SamplerState` 分离），GameMaker 视角"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[classic-shader-noise]] —— Xor 的 Mini: Noise 两篇把 Worley/Voronoi 和 value/Perlin/fractal 放在同一手写骨架下对比"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/xor-mini-noise-2]] —— Xor：Worley 的 3×3 邻域距离场写法，以及从 Worley 派生 Voronoi 的单处改动"
+    },
+    {
+      "file": "wiki/rendering/layered-grid-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[classic-shader-noise]] —— 经典噪声家族（value/Perlin/Worley/Voronoi/fBm）对照；fBm 和本页的黄金角旋转出发点相同：用非对称角打破 octave 对齐"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[classic-shader-noise]]\n- [[env-mapping-cubemap-shader]]\n- [[shader-color-interpolation]]\n- [[shaderlab-hlsl-basics]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/xor-mini-interpolation]]\n- [[sources/xor-mini-noise]]\n- [[sources/xor-mini-noise-2]]\n- [[sources/xor-mini-environments]]\n- [[sources/xor-mini-hlsl]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[classic-shader-noise]] | 经典噪声家族（hash/value/Perlin/Worley/Voronoi/fBm）在同一手写骨架下对比 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[env-mapping-cubemap-shader]] | 无 cubemap 环境下用等距柱状 HDRI 做天空盒与反射的 shader 写法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-interpolation]] | Xor：nearest/linear/cubic 纹理滤波的 GLSL 手写实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-noise]] | Xor：hash / value noise / Perlin noise 的手写三步骨架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-noise-2]] | Xor：Worley / Voronoi / fractal noise 的手写实现与 fBm octave 模板 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-environments]] | Xor：等距柱状 HDRI 纹理做 skybox 与反射（GameMaker 无 cubemap 替代方案） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-hlsl]] | Xor：GLSL ES → HLSL 语法速查（struct+semantic、函数改名、纹理/采样器分离） |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-31 Worker CO (mini.gmshaders.com ×5)\n\n处理 5 篇 Xor Mini 系列短文。新增 2 概念页（classic-shader-noise 合并 noise + noise2 两篇、env-mapping-cubemap-shader）与 5 源摘要（xor-mini-interpolation / noise / noise-2 / environments / hlsl）。Mini: Interpolation patch 到 shader-color-interpolation、Mini: HLSL patch 到 shaderlab-hlsl-basics；worley-voronoi-noise、layered-grid-noise、xor-shader-artist 追加交叉引用与源链接。无人物新增、无跳过。"
+}

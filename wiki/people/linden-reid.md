@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader教程]
 date: 2026-04-14
-sources: 12
+sources: 15
 ---
 
 # Linden Reid
@@ -28,6 +28,9 @@ sources: 12
 - [[harry-alisavakis]] —— 同赛道
 - [[procedural-mesh-primitives]]
 - [[mesh-warps-and-tessellation]]
+- [[animated-dotted-outline-shader]]
+- [[ice-shader-unity]]
+- [[waving-grass-shader-vertex-offset]]
 
 ## Sources
 
@@ -43,3 +46,6 @@ sources: 12
 - [[sources/lindenreid-stylized-water-shader]]
 - [[sources/lindenreid-dissolve-shader]]
 - [[sources/lindenreid-cel-shader-outline]]
+- [[sources/lindenreid-animated-dotted-outline]]
+- [[sources/lindenreid-ice-shader-unity]]
+- [[sources/lindenreid-waving-grass-shader]]

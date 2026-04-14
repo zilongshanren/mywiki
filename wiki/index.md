@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 331
+sources: 343
 ---
 
 # 知识库索引
@@ -85,6 +85,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[continuous-probability]] | 连续概率速成：PDF/CDF、期望方差、Markov/Chebyshev、Dirac delta（MC 系列 Part 1） |
 | [[sigmoid-functions]] | tanh/erf/倒平方根 sigmoid 的听感、速度与多项式变形近似 |
 | [[negative-space-in-programming]] | ryg：程序的形状由「不做什么」决定 |
+| [[nested-loop-optimization]] | 嵌套循环性能迷思的基准反驳：Nested 快于 Single 快于 LINQ，可读性优先 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -138,6 +139,7 @@ CAQA + CSAPP 的底层视角。
 | [[planar-rotation-dct]] | DCT 平面旋转的四种实现与 FMA 时代的优化观 |
 | [[ppc-int-float-lhs]] | PPC 整浮点转换的 Load-Hit-Store 停顿与编译器 workaround |
 | [[ring-buffer-virtual-stream]] | SPSC 环形缓冲区：数组索引 vs 虚拟流位置 |
+| [[windows-bmp-format]] | Windows GDI 位图族考古：DIB / DDB / DIB Section / HBITMAP / stock bitmap |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -402,6 +404,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[abzu-portal-cards-shader]] | ABZÛ 里按相机距离 fade 的透明贴片：兼具远景美化和玩家引导 |
 | [[world-screen-space-position-shader]] | Unity shader 里拿 worldPos / screenPos 的四种模板（v/f × surface） |
 | [[texture-swizzle-nested-tiling]] | 纹理 swizzle 与嵌套分块的「减-与」通用地址增量 |
+| [[animated-dotted-outline-shader]] | `sin(distance) + clip` + `_Time` 相位平移的动画虚线描边（Linden Reid） |
+| [[ice-shader-unity]] | Fresnel 边缘 + noise-as-normal + GrabPass 扭曲的冰晶 shader（Linden Reid） |
+| [[waving-grass-shader-vertex-offset]] | 世界空间采样风场驱动的 sin/cos 顶点位移草叶动画（Linden Reid） |
+| [[surface-angle-silhouette]] | 基于 `1 - abs(dot(V, N))` 的延迟管线后处理剪影，兼带 camera-ray 反投影套路 |
+| [[classic-shader-noise]] | 经典噪声家族（hash/value/Perlin/Worley/Voronoi/fBm）在同一手写骨架下对比 |
+| [[env-mapping-cubemap-shader]] | 无 cubemap 环境下用等距柱状 HDRI 做天空盒与反射的 shader 写法 |
 
 ## 经典案例（wiki/examples/）
 
@@ -813,6 +821,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/ryg-negative-space-in-programming]] | ryg：程序真正的形状是留白决定的 |
 | [[sources/ryg-ring-buffers-and-queues]] | ryg：SPSC FIFO 的两种语义与虚拟流的胜利 |
 | [[sources/ryg-texture-tiling-and-swizzling]] | ryg：嵌套分块 swizzle 与减-与地址增量 |
+| [[sources/lindenreid-animated-dotted-outline]] | Linden Reid：动画虚线描边——sin 距离场 + 时间相位 |
+| [[sources/lindenreid-ice-shader-unity]] | Linden Reid：冰晶 shader = Fresnel + lazy normal + GrabPass 扭曲 |
+| [[sources/lindenreid-waving-grass-shader]] | Linden Reid：世界空间风场纹理驱动的草叶顶点动画 |
+| [[sources/vertexfragment-demystifying-windows-bitmaps]] | Sell：Windows 位图族对象一次理清 |
+| [[sources/vertexfragment-surface-angle-silhouette]] | Sell：Unity 后处理 v2 下的表面角剪影 |
+| [[sources/vertexfragment-sobel-outline-unity]] | Sell：Unity 后处理下的深度+法线双 Sobel 描边 |
+| [[sources/vertexfragment-demonizing-nested-loops]] | Sell：嵌套循环性能迷思的基准反驳 |
+| [[sources/xor-mini-interpolation]] | Xor：nearest/linear/cubic 纹理滤波的 GLSL 手写实现 |
+| [[sources/xor-mini-noise]] | Xor：hash / value noise / Perlin noise 的手写三步骨架 |
+| [[sources/xor-mini-noise-2]] | Xor：Worley / Voronoi / fractal noise 的手写实现与 fBm octave 模板 |
+| [[sources/xor-mini-environments]] | Xor：等距柱状 HDRI 纹理做 skybox 与反射（GameMaker 无 cubemap 替代方案） |
+| [[sources/xor-mini-hlsl]] | Xor：GLSL ES → HLSL 语法速查（struct+semantic、函数改名、纹理/采样器分离） |
 
 ## 元（wiki/meta/）
 

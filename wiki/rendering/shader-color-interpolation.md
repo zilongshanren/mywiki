@@ -45,7 +45,10 @@ col = _Color * (1 - _Blend) + _SecondaryColor * _Blend
 - [[procedural-checkerboard]] — 典型的「二值 0/1 mask 走 lerp」用法
 - [[oklab-color-space]] — 感知均匀空间里的渐变更好看
 - [[fragment-shader]]
+- [[classic-shader-noise]] —— value noise 的 sub-cell 插值复用了同一个 `3x²-2x³` cubic smoothstep
+- [[sampler-filter-wrap-modes]] —— 纹理滤波本质也是一种插值，Xor 的 Mini: Interpolation 把 nearest/linear/cubic 拉到同一个数学框架下讲
 
 ## Sources
 
 - [[sources/ronja-color-interpolation]]
+- [[sources/xor-mini-interpolation]] —— Xor：nearest/linear/cubic 滤波的 GLSL 手写实现，cubic 公式与本页 lerp 打通

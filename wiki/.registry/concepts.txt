@@ -11,6 +11,7 @@ alpha-compositing
 amdahls-law
 analytical-antialiasing
 angelo-pesce
+animated-dotted-outline-shader
 animated-parallax-cloth-fold
 aos-vs-soa
 apoorva-joshi
@@ -49,6 +50,7 @@ cellular-texture-generation
 change-amplification
 christoph-peters
 chromatic-aberration-post
+classic-shader-noise
 classitis
 classitis-in-games
 closure
@@ -116,6 +118,7 @@ elias-daler
 emilio-lopez-ros
 engine-evolution
 engine-layering
+env-mapping-cubemap-shader
 environment
 environment-probe-placement
 evan-todd
@@ -175,6 +178,7 @@ html5-game-apis-2012
 hybrid-hair-rendering
 hybrid-raytraced-shadows-reflections
 hybrid-raytracing-pipeline
+ice-shader-unity
 iir-filter-deconvolution
 image-convolution-kernel
 image-effect-colour-transform
@@ -238,6 +242,7 @@ multidraw-indirect-occlusion-culling
 mvp-transform
 needlets
 negative-space-in-programming
+nested-loop-optimization
 neural-graphics-primitives
 night-time-tint-shader
 non-cryptographic-hash
@@ -353,6 +358,7 @@ strategy-vs-switch
 stratified-sampling
 stylized-water-shader
 substitution-model
+surface-angle-silhouette
 sussman-abelson
 swap-and-pop-removal
 taa-history-rectification
@@ -409,7 +415,9 @@ volumetric-video-playback
 voxel-ambient-occlusion
 warren-moore
 watercolour-shader-experiments
+waving-grass-shader-vertex-offset
 wayland-compositor-model
+windows-bmp-format
 world-screen-space-position-shader
 worley-voronoi-noise
 x11-composite-redirection

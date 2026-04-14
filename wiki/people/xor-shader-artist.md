@@ -58,6 +58,10 @@ sources: 5
 - [[two-texture-sampling-tricks]]
 - [[shadertoy-basics]]
 - [[fractal-texturing]]
+- [[classic-shader-noise]]
+- [[env-mapping-cubemap-shader]]
+- [[shader-color-interpolation]]
+- [[shaderlab-hlsl-basics]]
 
 ## Sources
 
@@ -76,3 +80,8 @@ sources: 5
 - [[sources/xor-mini-two-textures]]
 - [[sources/xor-mini-shadertoy]]
 - [[sources/xor-mini-fractal-texturing]]
+- [[sources/xor-mini-interpolation]]
+- [[sources/xor-mini-noise]]
+- [[sources/xor-mini-noise-2]]
+- [[sources/xor-mini-environments]]
+- [[sources/xor-mini-hlsl]]

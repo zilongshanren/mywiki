@@ -42,7 +42,9 @@ Sobel 看的是颜色变化，**会把阴影边当作物体边**来描——如�
 - [[bloom-threshold-blur-composite]]
 - [[unity-image-effect-basics]]
 - [[image-effect-colour-transform]]
+- [[surface-angle-silhouette]] —— Steven Sell 同系列的前篇：基于 `dot(V, N)` 的剪影，对平面失效，导致作者改用 Sobel
 
 ## Sources
 
 - [[sources/danielilett-image-effects-edge-detection-bloom]]
+- [[sources/vertexfragment-sobel-outline-unity]] — Steven Sell 的 Unity post-processing v2 stack 实现，深度+法线双 Sobel 合成，含 `OutlineOcclusionCamera` 和 `normal.w = 0` 两种几何排除技巧，以及 Sobel 作屏幕模糊和 height→normal 的副作用应用

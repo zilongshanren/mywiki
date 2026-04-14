@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w31-cn",
+  "agent_note": "5 篇 vertexfragment.com (Steven Sell)。跳过 1 篇 AWS Lambda devops。新增 3 概念页 (windows-bmp-format, surface-angle-silhouette, nested-loop-optimization)；Sobel 教程作为现有 sobel-edge-detection 的补丁源，不新建概念页。4 个 source summary。复用现有 steven-sell 人物页，仅更新 sources 计数与链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/vertexfragment.com/2019-07-31_demystifying-windows-bitmaps.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-demystifying-windows-bitmaps",
+      "title": "Demystifying Windows Bitmaps"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-09-03_surface-angle-silhouette-with-unity-post-processing.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-surface-angle-silhouette",
+      "title": "Surface Angle Silhouette with Unity Post-Processing"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-09-12_sobel-outline-with-unity-post-processing.md",
+      "status": "ingested_as_patch",
+      "source_slug": "vertexfragment-sobel-outline-unity",
+      "title": "Sobel Outline with Unity Post-Processing",
+      "note": "作为现有 sobel-edge-detection 的补丁源，不新建概念页；新建 source summary"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-12-13_demonizing-nested-loops.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-demonizing-nested-loops",
+      "title": "Demonizing Nested Loops"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2020-01-08_triggering-net-core-lambdas-from-multiple-services.md",
+      "status": "skipped_offtopic",
+      "reason": "AWS Lambda DevOps（CloudWatch/SNS/SQS 触发器配置），与图形/引擎/语言/系统主题无关"
+    }
+  ],
+  "concepts_created": [
+    "windows-bmp-format",
+    "surface-angle-silhouette",
+    "nested-loop-optimization"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "vertexfragment-demystifying-windows-bitmaps",
+    "vertexfragment-surface-angle-silhouette",
+    "vertexfragment-sobel-outline-unity",
+    "vertexfragment-demonizing-nested-loops"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/sobel-edge-detection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[surface-angle-silhouette]] —— Steven Sell 同系列的前篇：基于 `dot(V, N)` 的剪影，对平面失效，导致作者改用 Sobel"
+    },
+    {
+      "file": "wiki/rendering/sobel-edge-detection.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/vertexfragment-sobel-outline-unity]] — Steven Sell 的 Unity post-processing v2 stack 实现，深度+法线双 Sobel 合成，含 `OutlineOcclusionCamera` 和 `normal.w = 0` 两种几何排除技巧，以及 Sobel 作屏幕模糊和 height→normal 的副作用应用"
+    },
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "replace_line",
+      "match": "sources: 8",
+      "content": "sources: 12"
+    },
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[windows-bmp-format]]\n- [[surface-angle-silhouette]]\n- [[sobel-edge-detection]]\n- [[nested-loop-optimization]]"
+    },
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/vertexfragment-demystifying-windows-bitmaps]]\n- [[sources/vertexfragment-surface-angle-silhouette]]\n- [[sources/vertexfragment-sobel-outline-unity]]\n- [[sources/vertexfragment-demonizing-nested-loops]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[windows-bmp-format]] | Windows GDI 位图族考古：DIB / DDB / DIB Section / HBITMAP / stock bitmap |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[surface-angle-silhouette]] | 基于 `1 - abs(dot(V, N))` 的延迟管线后处理剪影，兼带 camera-ray 反投影套路 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[nested-loop-optimization]] | 嵌套循环性能迷思的基准反驳：Nested 快于 Single 快于 LINQ，可读性优先 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-demystifying-windows-bitmaps]] | Sell：Windows 位图族对象一次理清 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-surface-angle-silhouette]] | Sell：Unity 后处理 v2 下的表面角剪影 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-sobel-outline-unity]] | Sell：Unity 后处理下的深度+法线双 Sobel 描边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-demonizing-nested-loops]] | Sell：嵌套循环性能迷思的基准反驳 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-31 Worker CN (vertexfragment.com ×5)\n\n处理 5 篇 Steven Sell / Vertex Fragment 文章。新增 3 概念页（windows-bmp-format, surface-angle-silhouette, nested-loop-optimization）、4 source 摘要。Sobel outline 作为现有 sobel-edge-detection 的补丁源合入。跳过 1 篇 AWS Lambda DevOps（非技术图形/系统主题）。复用 steven-sell 人物页，通过补丁更新 sources 计数和链接列表。"
+}

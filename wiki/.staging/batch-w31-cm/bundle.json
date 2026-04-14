@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w31-cm",
+  "agent_note": "5 篇 lindenreid.wordpress.com：3 篇 shader 教程 ingest（animated dotted outline / ice / waving grass），1 篇 tutorials（纯 link index）跳过，1 篇 intro-to-procedural-geometry-part-1 与已有 procedural-mesh-primitives / unity-procedural-mesh 高度重叠，只做 patch 不新建概念。linden-reid 人物页已存在，只追加 Sources 与相关链接。三篇新 shader 均归入 rendering/ 类别。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-24_animated-dotted-outline-shader-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-animated-dotted-outline",
+      "title": "Animated Dotted Outline Shader in Unity"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-12-30_ice-shader-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-ice-shader-unity",
+      "title": "Ice Shader in Unity"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-01-07_waving-grass-shader-in-unity.md",
+      "status": "ingested",
+      "source_slug": "lindenreid-waving-grass-shader",
+      "title": "Waving Grass Shader in Unity"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-01-17_tutorials.md",
+      "status": "skipped_offtopic",
+      "reason": "纯教程索引页（Tutorials 汇总链接），无独立技术内容"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2018-01-20_intro-to-procedural-geometry-part-1.md",
+      "status": "ingested_as_patch",
+      "reason": "内容（Unity Mesh API、vertices/triangles/winding order）与既有 unity-procedural-mesh 和 procedural-mesh-primitives 完全重叠，只做 patch 与 source 记录，不新建概念。",
+      "source_slug": null,
+      "title": "Intro to Procedural Geometry, Part 1"
+    }
+  ],
+  "concepts_created": [
+    "animated-dotted-outline-shader",
+    "ice-shader-unity",
+    "waving-grass-shader-vertex-offset"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "lindenreid-animated-dotted-outline",
+    "lindenreid-ice-shader-unity",
+    "lindenreid-waving-grass-shader"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[animated-dotted-outline-shader]]\n- [[ice-shader-unity]]\n- [[waving-grass-shader-vertex-offset]]"
+    },
+    {
+      "file": "wiki/people/linden-reid.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/lindenreid-animated-dotted-outline]]\n- [[sources/lindenreid-ice-shader-unity]]\n- [[sources/lindenreid-waving-grass-shader]]"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[animated-dotted-outline-shader]] —— 同一两 pass 管线上把 outline fragment 改成 `sin(distance)` 距离场 + `_Time` 相位平移的动画虚线"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/lindenreid-animated-dotted-outline]] —— 动画虚线描边的 fragment shader 扩展"
+    },
+    {
+      "file": "wiki/game-development/unity-procedural-mesh.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/lindenreid-procedural-geometry-part1]] —— Reid 同系列的 Part 1：plane 版最小闭环（4 顶点 + 2 三角形），与 Part 2 的 cube 无缝衔接"
+    },
+    {
+      "file": "wiki/game-development/procedural-mesh-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[waving-grass-shader-vertex-offset]] —— 顶点动画对生成后 mesh 的运行时变形，和 CPU 侧的 warp / tessellation 是互补路线"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[animated-dotted-outline-shader]] | `sin(distance) + clip` + `_Time` 相位平移的动画虚线描边（Linden Reid） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ice-shader-unity]] | Fresnel 边缘 + noise-as-normal + GrabPass 扭曲的冰晶 shader（Linden Reid） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[waving-grass-shader-vertex-offset]] | 世界空间采样风场驱动的 sin/cos 顶点位移草叶动画（Linden Reid） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-animated-dotted-outline]] | Linden Reid：动画虚线描边——sin 距离场 + 时间相位 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-ice-shader-unity]] | Linden Reid：冰晶 shader = Fresnel + lazy normal + GrabPass 扭曲 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/lindenreid-waving-grass-shader]] | Linden Reid：世界空间风场纹理驱动的草叶顶点动画 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-31 Worker CM (lindenreid.wordpress.com ×5)\n\n处理 5 篇 Linden Reid 2017-2018 Unity shader 教程。Ingest 3 篇：动画虚线描边（animated-dotted-outline-shader，`sin(distance)` 距离场 + `_Time` 相位平移）、冰晶 shader（ice-shader-unity，Fresnel 边缘 + lazy noise normal + GrabPass 屏幕扭曲）、摆动草丛（waving-grass-shader-vertex-offset，世界空间风场纹理 + sin/cos 顶点位移 + heightFactor）。跳过 tutorials.md 链接索引页。intro-to-procedural-geometry-part-1 与既有 unity-procedural-mesh / procedural-mesh-primitives 高度重叠，只 patch 不新建。linden-reid 人物页追加 Sources 与相关链接；cel-shader-outline patch 引入动画虚线扩展的交叉引用。"
+}

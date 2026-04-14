@@ -56,3 +56,4 @@ URP / HDRP 时代 Unity **放弃了 Surface Shader 的模板生成**——所有
 - [[sources/ronja-variables]] — Ronja 003，object data / interpolators / uniforms 三种数据来源
 - [[sources/ronja-basic-shader]] — Ronja 004，UnityCG.cginc 辅助下的最简 Unlit + Tint 成品
 - [[sources/alanzucconi-shader-intro-unity]] — Alan Zucconi 2015 的 Built-in RP 版 Shader 入门（ShaderLab + Cg/HLSL 骨架，`UNITY_MATRIX_MVP` 而非 `TransformObjectToHClip`），是本页 URP 视角的历史对照
+- [[sources/xor-mini-hlsl]] —— Xor：从 GLSL ES 视角速查 HLSL 语法差异（struct + semantic、`mix→lerp`、`atan(y,x)→atan2(x,y)` 参数翻转、`Texture2D`/`SamplerState` 分离），GameMaker 视角

@@ -70,9 +70,11 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[texture-dissolve]]
 - [[sprite-outline-8-direction]] —— 2D sprite 上的同思路「复制副本做外框」
 - [[cel-shading-pipeline]] —— Daniel Ilett 5 部曲版本，同样的 cel+outline 思路但从 Phong 光照开始逐步搭建，含 bump/fresnel/stencil-ID 等扩展
+- [[animated-dotted-outline-shader]] —— 同一两 pass 管线上把 outline fragment 改成 `sin(distance)` 距离场 + `_Time` 相位平移的动画虚线
 
 ## Sources
 
 - [[sources/lindenreid-cel-shader-outline]]
 - [[sources/danielilett-cel-shading-part-4]] — Daniel Ilett 版的同一双 pass + stencil 描边，含 ShaderLab 字段（Ref/Comp/Pass/Fail/ZFail）逐条解释
 - [[sources/danielilett-cel-shading-part-5]] — Stencil ID 化修复 + lighting ramp 纹理替换硬阶
+- [[sources/lindenreid-animated-dotted-outline]] —— 动画虚线描边的 fragment shader 扩展

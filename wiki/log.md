@@ -429,3 +429,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-30 Worker CL (fgiesen.wordpress.com ×5)
 
 处理 5 篇 ryg 2010-2011 技术文章：DCT 平面旋转四种实现（planar-rotation-dct）、PPC int→float LHS（ppc-int-float-lhs）、编程的负空间哲学（negative-space-in-programming）、环形缓冲区虚拟流模型（ring-buffer-virtual-stream）、纹理嵌套分块 swizzle 与减-与增量（texture-swizzle-nested-tiling）。全部 ingest，新增 5 概念页 + 5 source 摘要。fabian-giesen 人物页 sources+6 相关 patch；data-structure-invariants / cache-friendliness / complexity 三页 patch 增加交叉引用。
+
+## [2026-04-14] ingest | Wave-31 Worker CM (lindenreid.wordpress.com ×5)
+
+处理 5 篇 Linden Reid 2017-2018 Unity shader 教程。Ingest 3 篇：动画虚线描边（animated-dotted-outline-shader，`sin(distance)` 距离场 + `_Time` 相位平移）、冰晶 shader（ice-shader-unity，Fresnel 边缘 + lazy noise normal + GrabPass 屏幕扭曲）、摆动草丛（waving-grass-shader-vertex-offset，世界空间风场纹理 + sin/cos 顶点位移 + heightFactor）。跳过 tutorials.md 链接索引页。intro-to-procedural-geometry-part-1 与既有 unity-procedural-mesh / procedural-mesh-primitives 高度重叠，只 patch 不新建。linden-reid 人物页追加 Sources 与相关链接；cel-shader-outline patch 引入动画虚线扩展的交叉引用。
+
+## [2026-04-14] ingest | Wave-31 Worker CN (vertexfragment.com ×5)
+
+处理 5 篇 Steven Sell / Vertex Fragment 文章。新增 3 概念页（windows-bmp-format, surface-angle-silhouette, nested-loop-optimization）、4 source 摘要。Sobel outline 作为现有 sobel-edge-detection 的补丁源合入。跳过 1 篇 AWS Lambda DevOps（非技术图形/系统主题）。复用 steven-sell 人物页，通过补丁更新 sources 计数和链接列表。
+
+## [2026-04-14] ingest | Wave-31 Worker CO (mini.gmshaders.com ×5)
+
+处理 5 篇 Xor Mini 系列短文。新增 2 概念页（classic-shader-noise 合并 noise + noise2 两篇、env-mapping-cubemap-shader）与 5 源摘要（xor-mini-interpolation / noise / noise-2 / environments / hlsl）。Mini: Interpolation patch 到 shader-color-interpolation、Mini: HLSL patch 到 shaderlab-hlsl-basics；worley-voronoi-noise、layered-grid-noise、xor-shader-artist 追加交叉引用与源链接。无人物新增、无跳过。

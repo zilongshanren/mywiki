@@ -70,6 +70,7 @@ Reid 在文章里明确提到这是 **UV-sphere** 方法，还有另一类 **ico
 - [[triangle-primitives]]
 - [[rendering-pipeline]]
 - [[linden-reid]]
+- [[waving-grass-shader-vertex-offset]] —— 顶点动画对生成后 mesh 的运行时变形，和 CPU 侧的 warp / tessellation 是互补路线
 
 ## Sources
 

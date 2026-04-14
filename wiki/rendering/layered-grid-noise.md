@@ -87,6 +87,7 @@ vec2 p = coord * orient;  // 用的时候再乘
 - [[poisson-disk-sampling]] — 追求真正均匀散布的另一条路
 - [[non-cryptographic-hash]] — hash 噪声的基础
 - [[xor-shader-artist]]
+- [[classic-shader-noise]] —— 经典噪声家族（value/Perlin/Worley/Voronoi/fBm）对照；fBm 和本页的黄金角旋转出发点相同：用非对称角打破 octave 对齐
 
 ## Sources
 

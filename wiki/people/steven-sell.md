@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 8
+sources: 12
 ---
 
 # Steven Sell
@@ -16,6 +16,10 @@ Vertex Fragment 博客（vertexfragment.com）作者，独立游戏 Beyond the S
 - [[swap-and-pop-removal]]
 - [[ecs]]
 - [[deferred-rendering]]
+- [[windows-bmp-format]]
+- [[surface-angle-silhouette]]
+- [[sobel-edge-detection]]
+- [[nested-loop-optimization]]
 
 ## Sources
 
@@ -27,3 +31,7 @@ Vertex Fragment 博客（vertexfragment.com）作者，独立游戏 Beyond the S
 - [[sources/vertexfragment-variable-length-bresenham]]
 - [[sources/vertexfragment-performance-conscious-webgl]]
 - [[sources/vertexfragment-cantor-szudzik-pairing]]
+- [[sources/vertexfragment-demystifying-windows-bitmaps]]
+- [[sources/vertexfragment-surface-angle-silhouette]]
+- [[sources/vertexfragment-sobel-outline-unity]]
+- [[sources/vertexfragment-demonizing-nested-loops]]
