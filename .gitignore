@@ -9,3 +9,27 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Local tool environments and generated artifacts
+tools/**/.DS_Store
+tools/**/.venv/
+tools/**/venv/
+tools/**/__pycache__/
+tools/**/.pytest_cache/
+tools/**/.mypy_cache/
+tools/**/.ruff_cache/
+tools/**/state/
+tools/**/*.pyc
+tools/**/*.pyo
+tools/**/*.pyd
+tools/**/*.log
+tools/**/*.sqlite
+tools/**/*.sqlite3
+tools/**/*.db
+tools/**/*.bin
+tools/**/*.zip
+tools/**/*.tar
+tools/**/*.tar.gz
+tools/**/*.tgz
+tools/**/*.gz
+tools/**/*.xz
