@@ -53,6 +53,7 @@ rapidhash 的核心循环依赖 64×64→128 的整数乘法（`umul128`/`__uint
 - [[locality-principle]]
 - [[pcg3d-hash]]
 - [[worley-voronoi-noise]]
+- [[cantor-szudzik-pairing]] — 双射式的配对函数，在输入有界时可替代哈希作为无碰撞 id
 
 ## Sources
 

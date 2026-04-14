@@ -40,6 +40,8 @@ sources: 1
 - [[perspective-correct-interpolation]]
 - [[planar-mapping]] —— 用 world-space xz 生成 UV 的最简例子
 - [[shader-vector-math-primer]] —— 面向初学者的 shader 向量数学 + 坐标空间切换直觉
+- [[md5-model-format]] —— 关节本地空间 → 对象空间的具体例子
+- [[gpu-skinning-matrix-palette]] —— inverse bind pose 把顶点在多个空间间来回搬
 
 ## Sources
 

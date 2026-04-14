@@ -25,6 +25,7 @@ bits-and-context
 blit-render-feature
 bluk-2d-fog-sprite-shader
 bottleneck-analysis
+bresenham-lines
 brian-karis
 buffer-renaming
 c-interface-oop
@@ -34,6 +35,7 @@ cache-friendliness
 cached-shadowmaps
 calling-conventions-x86
 cametal-layer-drawable
+cantor-szudzik-pairing
 carry-save-adder-pixel-avg
 cellular-texture-generation
 change-amplification
@@ -129,6 +131,7 @@ gpu-hazard-tracking
 gpu-image-editor-brush
 gpu-latency-hiding
 gpu-printf-debugging
+gpu-skinning-matrix-palette
 greedy-voxel-meshing
 hamming-code-hat-puzzle
 harry-alisavakis
@@ -176,6 +179,7 @@ low-discrepancy-sequence
 malloc-wrapper-debug
 matthaeus-chajdas
 max-slater
+md5-model-format
 memory-hierarchy
 mesh-warps-and-tessellation
 meshes-of-navigation-recast
@@ -210,6 +214,7 @@ parallax-corrected-cubemap
 particle-custom-vertex-streams
 pcg3d-hash
 perceptual-colormaps
+performance-conscious-webgl
 perspective-correct-interpolation
 physically-based-shading
 pineda-edge-rasterization
@@ -308,6 +313,7 @@ unknown-unknowns
 unorm-float-conversion
 urp-volume-post-processing
 uv-manipulation-nodes
+variable-length-bresenham
 vector-dot-product
 vertex-vector-interpolation-artifact
 virtual-memory

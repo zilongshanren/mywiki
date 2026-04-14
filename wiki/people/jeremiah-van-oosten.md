@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, directx, 图形教学]
 date: 2026-04-14
-sources: 2
+sources: 7
 ---
 
 # Jeremiah van Oosten
@@ -21,8 +21,17 @@ sources: 2
 - [[linear-allocator]]
 - [[cuda-memory-hierarchy]]
 - [[rendering-api-depth]]
+- [[md5-model-format]]
+- [[gpu-skinning-matrix-palette]]
+- [[shader-vector-math-primer]]
+- [[3d-rotation-math]]
 
 ## Sources
 
 - [[sources/3dgep-learning-directx12-lesson3]]
 - [[sources/3dgep-cuda-memory-model]]
+- [[sources/3dgep-math-primer-vectors]]
+- [[sources/3dgep-math-primer-matrices]]
+- [[sources/3dgep-directx9-intro]]
+- [[sources/3dgep-md5-loading-animating]]
+- [[sources/3dgep-md5-gpu-skinning]]

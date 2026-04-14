@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w18-az",
+  "agent_note": "3dgep.com Jeremiah van Oosten 早期文章 5 篇：两篇数学 primer（向量/矩阵）只做 source 摘要 + 给已有的 shader-vector-math-primer / mvp-transform / 3d-rotation-math 打 patch；DirectX 9 入门作为历史文献仅做 source 摘要 + 链回 jeremiah-van-oosten；MD5 加载与 GPU skinning 两篇创建两个新概念页 md5-model-format 与 gpu-skinning-matrix-palette。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/3dgep.com/2011-02-04_3d-math-primer-for-game-programmers-matrices.md",
+      "status": "ingested",
+      "source_slug": "3dgep-math-primer-matrices",
+      "title": "3D Math Primer for Game Programmers (Matrices)"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-02-04_3d-math-primer-for-game-programmers-vector-operations.md",
+      "status": "ingested",
+      "source_slug": "3dgep-math-primer-vectors",
+      "title": "3D Math Primer for Game Programmers (Vector Operations)"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-02-17_introduction-to-directx-9-for-game-programmers.md",
+      "status": "ingested",
+      "source_slug": "3dgep-directx9-intro",
+      "title": "Introduction to DirectX 9 for Game Programmers"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-03-14_loading-and-animating-md5-models-with-opengl.md",
+      "status": "ingested",
+      "source_slug": "3dgep-md5-loading-animating",
+      "title": "Loading and Animating MD5 Models with OpenGL"
+    },
+    {
+      "path": "raw/articles/3dgep.com/2011-05-14_gpu-skinning-of-md5-models-in-opengl-and-cg.md",
+      "status": "ingested",
+      "source_slug": "3dgep-md5-gpu-skinning",
+      "title": "GPU Skinning of MD5 Models in OpenGL and Cg"
+    }
+  ],
+  "concepts_created": [
+    "md5-model-format",
+    "gpu-skinning-matrix-palette"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "3dgep-math-primer-matrices",
+    "3dgep-math-primer-vectors",
+    "3dgep-directx9-intro",
+    "3dgep-md5-loading-animating",
+    "3dgep-md5-gpu-skinning"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/jeremiah-van-oosten.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/3dgep-math-primer-vectors]]\n- [[sources/3dgep-math-primer-matrices]]\n- [[sources/3dgep-directx9-intro]]\n- [[sources/3dgep-md5-loading-animating]]\n- [[sources/3dgep-md5-gpu-skinning]]"
+    },
+    {
+      "file": "wiki/people/jeremiah-van-oosten.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[md5-model-format]]\n- [[gpu-skinning-matrix-palette]]\n- [[shader-vector-math-primer]]\n- [[3d-rotation-math]]"
+    },
+    {
+      "file": "wiki/rendering/shader-vector-math-primer.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/3dgep-math-primer-vectors]] —— Jeremiah van Oosten 把同一组向量运算（dot/cross/projection）从代数推导角度再讲一遍，配数值算例"
+    },
+    {
+      "file": "wiki/rendering/mvp-transform.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/3dgep-math-primer-matrices]] —— Jeremiah van Oosten 从线性变换公理一路推到 4×4 齐次矩阵，解释为什么平移必须靠齐次坐标"
+    },
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/3dgep-math-primer-matrices]] —— 给出绕 X/Y/Z 轴的标准 4×4 旋转矩阵和 Rodrigues 形式的展开"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[md5-model-format]] —— 关节本地空间 → 对象空间的具体例子\n- [[gpu-skinning-matrix-palette]] —— inverse bind pose 把顶点在多个空间间来回搬"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[md5-model-format]] | id Software 的纯文本骨骼动画格式（.md5mesh + .md5anim），骨骼蒙皮教学的事实标准 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-skinning-matrix-palette]] | 矩阵调色板蒙皮：把骨骼变换搬进 vertex shader，每帧只传 palette 不传顶点 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-math-primer-vectors]] | Jeremiah：3D 数学向量篇——dot/cross/投影分解的几何直觉 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-math-primer-matrices]] | Jeremiah：3D 数学矩阵篇——线性 vs 仿射、行列式、正交矩阵的求逆捷径 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-directx9-intro]] | Jeremiah：D3D9 入门历史文献，COM 释放语义与 fixed-function 末期形态 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-md5-loading-animating]] | Jeremiah：MD5 模型格式解析与 CPU 端骨骼动画完整实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/3dgep-md5-gpu-skinning]] | Jeremiah：把 MD5 蒙皮搬到 vertex shader，矩阵调色板算法的早期典范 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-18 Worker AZ (3dgep.com Jeremiah ×5)\n\n处理 3dgep.com 上 Jeremiah van Oosten 2011 年发布的 5 篇早期教程：3D 数学入门（向量/矩阵）、DirectX 9 入门、MD5 模型加载、MD5 GPU skinning。新增 2 个概念页（md5-model-format, gpu-skinning-matrix-palette）、5 个 source 摘要；数学 primer 与 D3D9 入门内容与既有页面重叠，仅 patch 不重建。jeremiah-van-oosten 人物页追加 5 条 source 链接与 4 条相关概念。"
+}

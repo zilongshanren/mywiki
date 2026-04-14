@@ -1,7 +1,7 @@
 ---
 tags: [index]
 date: 2026-04-14
-sources: 203
+sources: 212
 ---
 
 # 知识库索引
@@ -72,6 +72,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[java-vector-math-limitations]] | Java 做向量数学的两个痛点：无运算符重载、无栈分配 |
 | [[hamming-code-hat-puzzle]] | 31 人帽子谜题的 Hamming 码最优策略：胜率 31/32 与对称性上界 |
 | [[automatic-differentiation]] | autodiff 全景：dual number forward / DAG backward / JAX 梯度即图变换 |
+| [[cantor-szudzik-pairing]] | Cantor 与 Szudzik 两种 2D → 1D 配对函数的对比 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -312,6 +313,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[depth-texture-silhouette]] | 采样 `_CameraDepthTexture` 按距离着色做剪影/距离雾 |
 | [[image-convolution-kernel]] | 图像卷积核的数学骨架与 fragment shader 写法 |
 | [[separable-gaussian-blur]] | Box/Gaussian Blur 的可分离优化与多 pass 模板 |
+| [[md5-model-format]] | id Software 的纯文本骨骼动画格式（.md5mesh + .md5anim），骨骼蒙皮教学的事实标准 |
+| [[gpu-skinning-matrix-palette]] | 矩阵调色板蒙皮：把骨骼变换搬进 vertex shader，每帧只传 palette 不传顶点 |
+| [[bresenham-lines]] | 1962 年的整数直线算法，tile-grid 上的经典工具 |
+| [[variable-length-bresenham]] | 支持"从起点沿方向走 range 步"的展开版 Bresenham |
+| [[performance-conscious-webgl]] | WebGL 实例化渲染中的三个 JS 性能陷阱（Float32Array.set / 字符串 key / super） |
 
 ## 经典案例（wiki/examples/）
 
@@ -591,6 +597,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cyan-triplanar-mapping]] | Cyan：World-space UV 与 Triplanar Mapping 的 Shader Graph 实现 |
 | [[sources/cyan-orthographic-depth]] | Cyan：正交相机下 Scene Depth 节点的平台差异与深度差/世界坐标重建 |
 | [[sources/cyan-watercolour-shader-experiments]] | Cyan：水彩观感的三层 URP shader（mesh + Blit + decal）|
+| [[sources/3dgep-math-primer-vectors]] | Jeremiah：3D 数学向量篇——dot/cross/投影分解的几何直觉 |
+| [[sources/3dgep-math-primer-matrices]] | Jeremiah：3D 数学矩阵篇——线性 vs 仿射、行列式、正交矩阵的求逆捷径 |
+| [[sources/3dgep-directx9-intro]] | Jeremiah：D3D9 入门历史文献，COM 释放语义与 fixed-function 末期形态 |
+| [[sources/3dgep-md5-loading-animating]] | Jeremiah：MD5 模型格式解析与 CPU 端骨骼动画完整实现 |
+| [[sources/3dgep-md5-gpu-skinning]] | Jeremiah：把 MD5 蒙皮搬到 vertex shader，矩阵调色板算法的早期典范 |
+| [[sources/vertexfragment-bresenham-lines]] | Steven Sell：Bresenham 直线算法与 roguelike 动机 |
+| [[sources/vertexfragment-variable-length-bresenham]] | Steven Sell：可变长度 Bresenham 及现代 CPU 上的反优化胜出 |
+| [[sources/vertexfragment-performance-conscious-webgl]] | Steven Sell：WebGL 中三个反直觉的 JS 性能陷阱 |
+| [[sources/vertexfragment-cantor-szudzik-pairing]] | Steven Sell：Cantor 与 Szudzik 配对函数对比 |
 
 ## 元（wiki/meta/）
 

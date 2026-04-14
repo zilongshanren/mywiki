@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 数学, shader]
 date: 2026-04-14
-sources: 1
+sources: 3
 ---
 
 # 3D 旋转的几种数学形式
@@ -83,3 +83,4 @@ Xor 的总结一句话：**旋转总是发生在某一个平面上**。2D 里只
 
 - [[sources/xor-mini-3d-rotation]]
 - [[sources/slater-exponential-rotations]] — Max Slater 用 $\exp/\log$ 把 Rodrigues 公式推到李代数视角
+- [[sources/3dgep-math-primer-matrices]] —— 给出绕 X/Y/Z 轴的标准 4×4 旋转矩阵和 Rodrigues 形式的展开

@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w18-ba",
+  "agent_note": "4 篇 vertexfragment.com (Steven Sell) 技术 ramble：Bresenham 算法两篇 + WebGL 性能 + 配对函数。steven-sell 人物页已存在，未重建。projects.md 按指示跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/vertexfragment.com/2019-01-17_bresenham-lines.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-bresenham-lines",
+      "title": "Bresenham Lines"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-01-17_projects.md",
+      "status": "skipped_offtopic",
+      "reason": "portfolio / projects list, not technical content (per orchestrator instruction)"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-02-19_variable-length-bresenham-lines.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-variable-length-bresenham",
+      "title": "Variable Length Bresenham Lines"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-05-08_performance-conscious-webgl.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-performance-conscious-webgl",
+      "title": "Performance Conscious WebGL"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2019-05-14_pairing-functions-cantor-szudzik.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-cantor-szudzik-pairing",
+      "title": "Pairing Functions: Cantor & Szudzik"
+    }
+  ],
+  "concepts_created": [
+    "bresenham-lines",
+    "variable-length-bresenham",
+    "performance-conscious-webgl",
+    "cantor-szudzik-pairing"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "vertexfragment-bresenham-lines",
+    "vertexfragment-variable-length-bresenham",
+    "vertexfragment-performance-conscious-webgl",
+    "vertexfragment-cantor-szudzik-pairing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/vertexfragment-bresenham-lines]]\n- [[sources/vertexfragment-variable-length-bresenham]]\n- [[sources/vertexfragment-performance-conscious-webgl]]\n- [[sources/vertexfragment-cantor-szudzik-pairing]]"
+    },
+    {
+      "file": "wiki/rendering/rasterization.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bresenham-lines]] — 1962 年的纯整数直线算法，tile-grid 场景下的基础工具\n- [[variable-length-bresenham]] — 支持“从起点沿方向走固定距离”的展开版 Bresenham"
+    },
+    {
+      "file": "wiki/programming-languages/non-cryptographic-hash.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cantor-szudzik-pairing]] — 双射式的配对函数，在输入有界时可替代哈希作为无碰撞 id"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bresenham-lines]] | 1962 年的整数直线算法，tile-grid 上的经典工具 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[variable-length-bresenham]] | 支持“从起点沿方向走 range 步”的展开版 Bresenham |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[performance-conscious-webgl]] | WebGL 实例化渲染中的三个 JS 性能陷阱（Float32Array.set / 字符串 key / super） |"
+    },
+    {
+      "category_header": "## 编程语言与算法（wiki/programming-languages/）",
+      "row": "| [[cantor-szudzik-pairing]] | Cantor 与 Szudzik 两种 2D → 1D 配对函数的对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-bresenham-lines]] | Steven Sell：Bresenham 直线算法与 roguelike 动机 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-variable-length-bresenham]] | Steven Sell：可变长度 Bresenham 及现代 CPU 上的反优化胜出 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-performance-conscious-webgl]] | Steven Sell：WebGL 中三个反直觉的 JS 性能陷阱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-cantor-szudzik-pairing]] | Steven Sell：Cantor 与 Szudzik 配对函数对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-18 Worker BA (vertexfragment.com Steven Sell ×5)\n\n处理 Steven Sell 的 vertexfragment.com 5 篇，跳过 projects portfolio 页，ingest 其余 4 篇：Bresenham 直线、可变长度 Bresenham、Performance Conscious WebGL、Cantor & Szudzik 配对函数。新增 4 概念页（bresenham-lines / variable-length-bresenham / performance-conscious-webgl / cantor-szudzik-pairing）与 4 source 摘要。steven-sell 人物页已存在，仅通过 patch 追加 source 链接。"
+}

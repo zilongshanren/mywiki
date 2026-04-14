@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w18-bb",
+  "agent_note": "全部 5 篇均为 2011-2012 年 GNOME Shell / GJS 早期 UI 与扩展 API 调整的博客笔记，主题与图形渲染、引擎、系统编程等核心 wiki 范畴无关，全部跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.mecheye.net/2011-08-06_shell-like-switch-widget.md",
+      "status": "skipped_offtopic",
+      "reason": "用 HTML/CSS/jQuery 仿 GNOME Shell 开关按钮的 web 控件实现笔记，纯前端 UI 细节，无图形/引擎内容。"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2011-08-09_one-is-the-loneliest-border.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME 3 通过放大 X 窗口加 shape mask 实现不可见拖拽边框，是窗口管理器交互改进，不属于图形或系统编程主题。"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2011-08-19_well-do-it-live.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME Shell 扩展 API 把 main() 拆成 init/enable/disable 的迁移说明，纯插件生命周期讨论。"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2012-02-04_gjs-improvements.md",
+      "status": "skipped_offtopic",
+      "reason": "GJS 引入 Lang.Class 与 GObject introspection 子类化的功能宣告；含一段 Clutter/Cogl 示例但仅为绑定演示，无图形技术内容。"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2012-02-07_more-extension-api-breaks-improvements.md",
+      "status": "skipped_offtopic",
+      "reason": "GNOME Shell 扩展对象与 prefs.js 偏好设置 API 的设计说明，属于桌面环境插件框架范畴。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-14] ingest | Wave-18 Worker BB (blog.mecheye.net 早期 GNOME ×5)\n\n5 篇 2011-2012 年 Jasper St Pierre 关于 GNOME Shell 开关控件、不可见边框、扩展 API 重构、GJS introspection 与 prefs.js 的博客笔记。均为桌面环境 / 插件框架内容，与图形渲染、引擎、系统编程主题无关，全部跳过，未生成任何 wiki 页面。"
+}

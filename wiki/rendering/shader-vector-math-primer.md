@@ -1,7 +1,7 @@
 ---
 tags: [shader, 数学, 向量, 入门]
 date: 2026-04-14
-sources: 1
+sources: 3
 ---
 
 # Shader 向量数学启蒙
@@ -73,3 +73,4 @@ Reid 自己的观察：她大学数学挂过，但图形数学学得很好。区
 
 - [[sources/lindenreid-basic-math-for-shaders]]
 - [[sources/ronja-hlsl]] — Ronja 对 HLSL 标量/向量类型与 swizzle 语法的简明版
+- [[sources/3dgep-math-primer-vectors]] —— Jeremiah van Oosten 把同一组向量运算（dot/cross/projection）从代数推导角度再讲一遍，配数值算例

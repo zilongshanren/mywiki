@@ -47,6 +47,8 @@ sources: 3
 - [[hierarchical-rasterization]] —— coarse rasterizer 的剔除层
 - [[triangle-setup]] —— 边方程系数的来源
 - [[compute-vs-raster-points]] —— 何时 compute shader 比硬件光栅化更快
+- [[bresenham-lines]] — 1962 年的纯整数直线算法，tile-grid 场景下的基础工具
+- [[variable-length-bresenham]] — 支持"从起点沿方向走固定距离"的展开版 Bresenham
 
 ## Sources
 

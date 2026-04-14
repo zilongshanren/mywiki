@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 4
+sources: 8
 ---
 
 # Steven Sell
@@ -23,3 +23,7 @@ Vertex Fragment 博客（vertexfragment.com）作者，独立游戏 Beyond the S
 - [[sources/vertexfragment-dots-character-controller]]
 - [[sources/vertexfragment-list-removal]]
 - [[sources/vertexfragment-deferred-grass]]
+- [[sources/vertexfragment-bresenham-lines]]
+- [[sources/vertexfragment-variable-length-bresenham]]
+- [[sources/vertexfragment-performance-conscious-webgl]]
+- [[sources/vertexfragment-cantor-szudzik-pairing]]

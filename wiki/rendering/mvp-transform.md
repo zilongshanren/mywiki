@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 数学]
 date: 2026-04-05
-sources: 1
+sources: 3
 ---
 
 # MVP 变换
@@ -56,3 +56,4 @@ vertex_local → [M] → world → [V] → view → [P] → clip
 
 - [[sources/rtr-day03]]
 - [[sources/ciechanow-cameras-and-lenses]]
+- [[sources/3dgep-math-primer-matrices]] —— Jeremiah van Oosten 从线性变换公理一路推到 4×4 齐次矩阵，解释为什么平移必须靠齐次坐标

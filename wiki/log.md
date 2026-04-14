@@ -277,3 +277,15 @@ Worker AN 处理 fgiesen.wordpress.com 2010 年 5 篇，ingest 4 篇，跳过 1 
 ## [2026-04-14] ingest | Wave-17 Worker AY (cyangamedev.wordpress.com ×5)
 
 处理 Cyan 5 篇 Shader Graph / URP 教程：Render Textures、Voronoi、World-space UVs & Triplanar、Orthographic Depth、Watercolour Shader Experiments。新增 4 个概念页（render-textures-unity / triplanar-mapping / orthographic-depth / watercolour-shader-experiments）+ 5 个 source 摘要。Voronoi 一篇与已有 worley-voronoi-noise 重叠（算法和哈希依赖部分），改为 patch 形式追加 Cyan 的 Shader Graph 实现说明 + source link。cyanilux 人物页 sources 5→10。无新人物。
+
+## [2026-04-14] ingest | Wave-18 Worker AZ (3dgep.com Jeremiah ×5)
+
+处理 3dgep.com 上 Jeremiah van Oosten 2011 年发布的 5 篇早期教程：3D 数学入门（向量/矩阵）、DirectX 9 入门、MD5 模型加载、MD5 GPU skinning。新增 2 个概念页（md5-model-format, gpu-skinning-matrix-palette）、5 个 source 摘要；数学 primer 与 D3D9 入门内容与既有页面重叠，仅 patch 不重建。jeremiah-van-oosten 人物页追加 5 条 source 链接与 4 条相关概念。
+
+## [2026-04-14] ingest | Wave-18 Worker BA (vertexfragment.com Steven Sell ×5)
+
+处理 Steven Sell 的 vertexfragment.com 5 篇，跳过 projects portfolio 页，ingest 其余 4 篇：Bresenham 直线、可变长度 Bresenham、Performance Conscious WebGL、Cantor & Szudzik 配对函数。新增 4 概念页（bresenham-lines / variable-length-bresenham / performance-conscious-webgl / cantor-szudzik-pairing）与 4 source 摘要。steven-sell 人物页已存在，仅通过 patch 追加 source 链接。
+
+## [2026-04-14] ingest | Wave-18 Worker BB (blog.mecheye.net 早期 GNOME ×5)
+
+5 篇 2011-2012 年 Jasper St Pierre 关于 GNOME Shell 开关控件、不可见边框、扩展 API 重构、GJS introspection 与 prefs.js 的博客笔记。均为桌面环境 / 插件框架内容，与图形渲染、引擎、系统编程主题无关，全部跳过，未生成任何 wiki 页面。
