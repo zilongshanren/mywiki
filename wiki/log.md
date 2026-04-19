@@ -817,3 +817,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-63 Worker GE (nullprogram.com ×5)
 
 处理 5 篇 Chris Wellons (nullprogram) 技术博文。每篇对应独立 URL（非首页重复抓取），全部 ingest。新增 16 概念页（链表+trie+MSI 数据结构三件套、Wasm 三件套 wasmtime-py/指针陷阱/bump allocator、Monocypher AEAD、u-config Frankenwine + Wine syscall + unity 宏改名 + LP64/LLP64、AI 协作三件套 Quilt.cpp/conformance 克隆/C 内存安全、dcmake + CMake DAP + Dear ImGui docking）、1 人物页（chris-wellons）、5 source 摘要。
+
+## [2026-04-19] ingest | Wave-63 Worker gd (agraphicsguynotes.com ×5)
+
+处理 Jiayin Cao 博客 5 篇，4 篇 ingest（TSL shading language / ReSTIR DI 数学 / C++ Fiber 基础 / ReSTIR GI 数学）、1 篇 skip（posts 列表页）。新增 4 概念页（tiny-shading-language、restir-di-math、restir-gi-math、fiber-cpp-basics）、1 人物页（graphics-guy-notes）、4 源摘要。覆盖离线渲染语言设计、ReSTIR 家族数学基础、fiber-based job system 三个主题。

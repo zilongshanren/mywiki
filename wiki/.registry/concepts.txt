@@ -747,3 +747,7 @@ c-memory-safety-even-for-ai
 dcmake
 cmake-dap-debugger
 dear-imgui-docking
+tiny-shading-language
+restir-di-math
+restir-gi-math
+fiber-cpp-basics

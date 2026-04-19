@@ -204,6 +204,7 @@ CAQA + CSAPP 的底层视角。
 | [[u-config-frankenwine]] | 单个 exe 根据 Wine 检测切换 Windows/Linux 身份 |
 | [[wine-linux-syscall]] | Wine 下 Windows 进程直接发 Linux syscall |
 | [[lp64-vs-llp64]] | Unix 和 Windows x64 的 64 位数据模型差异 |
+| [[fiber-cpp-basics]] | Jiayin Cao：fiber 动机、与 thread/C++20 coroutine 的差异、x64 System V ABI 上的最小实现 |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -685,6 +686,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[terrain-virtual-node-texture]] | Anno 1800 的 node-texture 地形（763 slice array + bake）|
 | [[texture-driven-gpu-particles]] | Anno 1800 的 quad + 时间×粒子动画纹理粒子系统 |
 | [[nine-slice-ui]] | 九宫格 UI mesh：角不变形的任意矩形缩放 |
+| [[tiny-shading-language]] | Jiayin Cao：四个月写一门 CPU 路径追踪器的着色语言（Flex+Bison+LLVM + closure tree） |
+| [[restir-di-math]] | ReSTIR DI 背后的数学：SIR/RIS/WRS、邻居 target function 不同为何无偏、uniform MIS weight 的代价 |
+| [[restir-gi-math]] | ReSTIR GI 数学：Primary Sample Space、per-initial-candidate target function、路径 initial candidate 的 GRIS 处理 |
 
 ## 经典案例（wiki/examples/）
 
@@ -829,6 +833,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[thomas-poulet]] | 图形咨询 + 物理游戏独立开发，帧分析系列作者（blog.thomaspoulet.fr）|
 | [[ben-ui]] | benui.ca，UE5 UI/UX 专家，前 Brace Yourself Games Lead Programmer |
 | [[chris-wellons]] | Chris Wellons (skeeto)，nullprogram.com，C/Wasm/Windows 底层 |
+| [[graphics-guy-notes]] | Jiayin Cao，NVIDIA（前 Naughty Dog），SORT/TSL 作者，Zorah ReSTIR PT 实装参与者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1529,6 +1534,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/nullprogram-u-config-wine]] | Wellons：单个 exe 在 Windows/Wine 下双身份 pkg-config |
 | [[sources/nullprogram-ai-programming-quiltcpp]] | Wellons：转向 AI 协作编码与 Quilt.cpp 案例 |
 | [[sources/nullprogram-dcmake]] | Wellons：基于 CMake DAP 的 GUI 调试器 dcmake |
+| [[sources/graphics-guy-tsl-shading-language]] | Cao 2021：为离线渲染器 SORT 写 Tiny Shading Language |
+| [[sources/graphics-guy-restir-di-math]] | Cao 2022：ReSTIR DI 数学补完（SIR/RIS/WRS/邻居复用/visibility reuse） |
+| [[sources/graphics-guy-fiber-cpp-basics]] | Cao 2023：Fiber 基础、与 C++20 coroutine 的对比、x64 最小实现 |
+| [[sources/graphics-guy-restir-gi-math]] | Cao 2025：ReSTIR GI 数学（PSS、per-candidate target function、路径 initial candidate），Zorah/RTX 50 背景 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
