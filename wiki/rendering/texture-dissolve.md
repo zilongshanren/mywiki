@@ -67,9 +67,11 @@ o.Emission = _Emission + isGlowing * _GlowColor;
 - [[layered-grid-noise]] —— 程序化生成 dissolve pattern
 - [[particle-custom-vertex-streams]] —— 粒子系统通过 AgePercent 驱动逐粒子 dissolve
 - [[cel-shader-outline]] —— Linden Reid 的 dissolve 示例与 cel 光照同 shader，可拆分组合
+- [[sources/danielilett-toolbox-urp-dissolve]] —— Ilett 在 Shader Toolbox 里的 dissolve 节点：Plane / Point 两种 origin 模式、Flip Direction、Glow Color/Thickness、Object 或 World 空间切换；随 pack 附带 DissolvePlane.cs 把 Transform plane 自动推给 material
 
 ## Sources
 
 - [[sources/ronja-texture-dissolve]]
 - [[sources/lindenreid-dissolve-shader]] —— Linden Reid 的 Unity 版实现，多层 `_ColorThreshold` 堆叠边缘色 + 可选 `color.a` 全局 fade
 - [[sources/halisavakis-dissolve-shader]] —— Alisavakis 的 surface shader 版，诚实记录了 `Cull Off` 与 `addshadow` 两个 2017 年 Unity 新手常踩的坑，以及 burn ramp 的 1D lut 实现
+- [[sources/danielilett-toolbox-urp-dissolve]] —— Ilett：Plane/Point origin + 自动 script 驱动平面 + glow edge

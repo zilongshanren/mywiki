@@ -48,9 +48,13 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[color-quantization-retro]] —— NES/SNES/GB 整数截断量化与 Game Boy 色阶级联 lerp
 - [[sources/danielilett-retro-godot-retro-lit]] —— Godot 版 Retro Lit，是同一套 PSX 技术的最小可用集：view-space vertex snap、color depth + dither、Bilinear/Point/N64 filtering、Standard/Texel/Unlit 三光照模式
 - [[sources/danielilett-retro-urp-retro-lit]] —— URP 通用版 Retro Lit，在 Terrain 版基础上加 Surface Options（Opaque/Transparent/Alpha Clip/双面）、*Use Flat Shading*（无 Gouraud 插值的面着色）、Specular + Reflection Cubemap（可选复古之上的现代点缀）
+- [[sources/danielilett-retro-urp-retro-vertex-lit]] —— v1.5 后作为兼容页保留：Retro Vertex Lit 的独立 shader 已被合并进 Retro Lit 的 Snapping Mode/Vertex Lit 档，参数列表是 Retro Lit 的真子集（少 Surface Options、光照四档缩成 vertex-only、Dithering 简化为 bool）
+- [[procedural-retro-skybox]] —— Retro Skybox 把色深限制 + dither 搬到天空盒：cubemap 或 gradient 两档 sky base，叠一层双 Worley 噪声程序云，全部参数化
 
 ## Sources
 
 - [[sources/danielilett-retro-terrain-lit]]
 - [[sources/danielilett-retro-godot-retro-lit]]
 - [[sources/danielilett-retro-urp-retro-lit]]
+- [[sources/danielilett-retro-urp-retro-vertex-lit]]
+- [[sources/danielilett-retro-urp-retro-skybox]]

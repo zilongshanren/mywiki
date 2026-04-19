@@ -63,6 +63,8 @@ col = lerp(col,        _GBLightest, saturate(gb - 2));
 - [[sampler-filter-wrap-modes]] —— FilterMode.Point 的位置
 - [[color-quantization-kmeans]] —— 另一种颜色量化思路：连续空间里用 K-Means 找 k 个主色而非每通道砍级数，互补场景
 - [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏 CRT 的 Custom RGB Sliders 模式用整数滑块直接指定 R/G/B 每通道级数，是色阶量化的 UI 极简表达；并暴露 Custom Luminance / RGB / RGB+Intensity 三种自定义 ramp 采样模式
+- [[procedural-retro-skybox]] —— Retro Skybox 把 Color Depth + Color Depth Offset（防整体变暗）+ Screen/Texture/Off Dithering 这一套复古量化搬到天空盒上
+- [[sources/danielilett-retro-urp-retro-skybox]] —— 天空盒版 PSX 色深量化 + 程序噪声云
 
 ## Sources
 

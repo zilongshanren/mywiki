@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 19
+sources: 28
 ---
 
 # Daniel Ilett
@@ -47,6 +47,11 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[hlsl-texture-sampling-basics]]
 - [[srp-batcher-cbuffer]]
 - [[godot-hologram-shader-effects]]
+- [[procedural-retro-skybox]]
+- [[iridescent-bubble-shader]]
+- [[refractive-glass-shader]]
+- [[mesh-triangle-explosion]]
+- [[stochastic-texture-sampling]]
 
 ## Sources
 
@@ -94,3 +99,12 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-retro-urp-retro-lit]]
 - [[sources/danielilett-retro-urp-crt-mesh]]
 - [[sources/danielilett-retro-urp-crt-post-process]]
+- [[sources/danielilett-retro-urp-retro-skybox]]
+- [[sources/danielilett-retro-urp-retro-vertex-lit]]
+- [[sources/danielilett-toolbox-urp-base-lit]]
+- [[sources/danielilett-toolbox-urp-bubble]]
+- [[sources/danielilett-toolbox-urp-dissolve]]
+- [[sources/danielilett-toolbox-urp-glass]]
+- [[sources/danielilett-toolbox-urp-glitter]]
+- [[sources/danielilett-toolbox-urp-mesh-explosion]]
+- [[sources/danielilett-toolbox-urp-stochastic-lit]]

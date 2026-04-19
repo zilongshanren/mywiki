@@ -72,9 +72,17 @@ Eastcott 同时预告了 viewer 的下一个大功能——**annotations**，即
 - [[webgpu-intro]]
 - [[will-eastcott]]
 - [[volumetric-video-playback]]
+- [[sog-compression-format]] —— 2025 年 9 月起 SuperSplat 默认用 SOG 压缩发布；比 Compressed PLY 再缩 2-3×
+- [[splat-transform-cli]] —— SuperSplat 的 CLI 对位：生成 SOG、walk mode 的体素 collision、streamed LOD
+- [[sources/playcanvas-supersplat-studio]] —— Studio（2026-02）：annotations（25/场景）+ post effects（Bloom / Sharpen / Vignette / Color Grading / Chromatic Fringing）+ 多 tonemapping operator（ACES / ACES 2.0 / Hejl / Neutral 等）
+- [[sources/playcanvas-supersplat-walk-lod]] —— Walk Mode（voxel collision + click-to-walk / WASD / pinch-to-move）+ Streamed LOD（基于 SOG 切片按需加载，桌面 4M → 10M+ Gaussian 实用化）+ Easy Upload（主页拖文件直发布）+ PlayCanvas Engine 2.17.0 splat 渲染性能优化
 
 ## Sources
 
 - [[sources/playcanvas-supersplat-2-0-publish]]
 - [[sources/playcanvas-supersplat-2-2-video]]
 - [[sources/playcanvas-supersplat-viewer-oss]]
+- [[sources/playcanvas-supersplat-studio]]
+- [[sources/playcanvas-supersplat-walk-lod]]
+- [[sources/playcanvas-reflct-spotlight]]
+- [[sources/playcanvas-voxelo-spotlight]]

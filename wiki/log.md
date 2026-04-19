@@ -609,3 +609,15 @@ batch-w45-ec：10 篇 jendrikillner 周报（issue 389-398）按既定先例全�
 ## [2026-04-19] ingest | Wave-45 Worker EE (anteru.net papers ×6)
 
 处理 6 篇 anteru.net 论文/项目索引页。Skip 1 篇（consulting.md 服务介绍）。Ingest 5 篇：SpMV Work Graphs (ISCA 2025)、Hybrid Sample-based Surface Rendering (VMV 2012)、Giga-Particle Fluid (HPG 2014)、SRAA (I3D 2011)、Tiled Light Trees (I3D 2017)。新增 2 概念页（subpixel-reconstruction-antialiasing, tiled-light-trees）+ 5 source 摘要。SpMV work graph 作为 d3d12-work-graphs 的 HPC 应用案例，不新建概念页。
+
+## [2026-04-19] ingest | Wave-46 Worker EF (jendrikillner weekly 399-408 all skipped)
+
+batch-w46-ef：10 篇 jendrikillner 周报（issue 399-408）按既定先例全部 skipped_offtopic。
+
+## [2026-04-19] ingest | Wave-46 Worker EG (danielilett Retro Pro skybox/vertex-lit + Shader Toolbox ×10)
+
+处理 10 篇 Ilett URP shader 资产文档。Ingest 9 / Skip 1（retro-shaders-pro-for-urp 概览营销页）。新增 5 概念页（procedural-retro-skybox、iridescent-bubble-shader、refractive-glass-shader、mesh-triangle-explosion、stochastic-texture-sampling）+ 9 source 摘要。关键洞察：Retro Vertex Lit v1.5 合并入 Retro Lit 留为兼容页；`_CameraTransparentTexture` 是 Shader Toolbox pack 层的渲染特性，解决 URP `_CameraOpaqueTexture` 透明互见缺陷；Mesh Explosion 用 BakeFaceColors.cs 预烘三角中心到 vertex color。
+
+## [2026-04-19] ingest | Wave-46 Worker EH (playcanvas blog ×10)
+
+10 篇 blog.playcanvas.com 全部入库。新增 3 概念页（sog-compression-format, splat-transform-cli, playcanvas-esm-scripts）+ 1 人物页（kris-bamrah）+ 10 source 摘要。SOGS→SOG 的迭代史（属性图+PLAS+WebP / Morton / 单文件 `.sog` / WebGPU 压缩端）、SplatTransform CLI、Walk Mode + Streamed LOD 构成 2025 下半年到 2026 初的 3DGS 工具链主线；ESM Scripts 是 PlayCanvas Editor 路径现代化关键。

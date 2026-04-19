@@ -63,6 +63,7 @@ PlayCanvas 现在有三种写 3D 内容的入口：
 - [[will-eastcott]]
 - [[reactive-ui-rust]]
 - [[component-entity-data-binding]]
+- [[playcanvas-esm-scripts]] —— 同期（2025-06）推出的 Editor 路径现代化：`.mjs` + class 继承 `Script` + `@attribute` 的属性声明；和 React 包装构成 PlayCanvas 的多入口矩阵（Editor / Engine / React）
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, playcanvas, react, 3d]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # Mark Lundin
@@ -13,13 +13,16 @@ sources: 1
 - 设计并开源 `@playcanvas/react`（MIT 协议），对标 Three.js 生态里的 React Three Fiber。
 - 采取"薄包装"策略：不重写 ECS，直接映射 JSX 节点到 PlayCanvas 的 Entity + Component；引擎升级几乎对 React 层透明。
 - 推动 PlayCanvas 的**多入口生态**：Editor（可视化）、Engine（命令式）、React（声明式）三条并行路径共享同一内核。
+- 2025-06 主导 PlayCanvas 的 [[playcanvas-esm-scripts|ESM Scripts]] 系统发布：`.mjs` + class 继承 `Script` + `@attribute` JSDoc 属性声明，把 Classic Scripts 时代的 hidden global / 脆弱的脚本加载顺序 / 跨项目复用难解掉，作为新项目的推荐写法。
 
 ## 相关
 
 - [[playcanvas-react-declarative]]
 - [[ecs]]
 - [[will-eastcott]]
+- [[playcanvas-esm-scripts]]
 
 ## Sources
 
 - [[sources/playcanvas-react-declarative-3d]]
+- [[sources/playcanvas-esm-scripts]]

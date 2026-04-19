@@ -194,6 +194,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[playcanvas-engine-2-breaking-changes]] | PlayCanvas Engine 2.0：一次 major bump 的工程学（cruft 清理 + WebGPU 铺路） |
 | [[playcanvas-react-declarative]] | PlayCanvas React：把 PlayCanvas ECS 包成 JSX 的声明式 3D 绑定 |
 | [[skynet-lua-sharetable-patch]] | skynet 跨 VM 共享函数原型的 Lua patch 与 5.5 external strings 展望 |
+| [[playcanvas-esm-scripts]] | PlayCanvas 新脚本系统：`.mjs` + class + `@attribute` JSDoc，替代 Classic Scripts 的 hidden global |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -498,6 +499,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[supersplat-publish-platform]] | SuperSplat 2025 年从编辑器扩张为编辑-发布-托管-社区平台 |
 | [[subpixel-reconstruction-antialiasing]] | Chajdas/McGuire/Luebke 2011：子像素 visibility + 1x shading 的 deferred 抗锯齿 |
 | [[tiled-light-trees]] | O'Donnell/Chajdas 2017：tile 内 light BVH + clustered 混合 |
+| [[procedural-retro-skybox]] | 低色深 + dither + 双 Worley 程序云的 PSX 风天空盒 |
+| [[iridescent-bubble-shader]] | Fresnel × color-ramp × noise flow 的彩虹肥皂泡 + `_CameraTransparentTexture` 折射 |
+| [[refractive-glass-shader]] | URP 下用 `_CameraOpaqueTexture` 做折射玻璃，Fresnel 作边缘 & 混合权重 |
+| [[mesh-triangle-explosion]] | 三角形按法线 / offset / baked-vertex-color 三种模式向外炸开 + 重力 + 随机偏移 |
+| [[stochastic-texture-sampling]] | 每张贴图 3 次随机偏移采样打散 tiling，Heitz-Neyret 思想的轻量实现 |
+| [[sog-compression-format]] | SOGS → SOG：3DGS 的 WebP 级压缩，属性图 + PLAS 排序 + WebP 编码，~95% 缩减 |
+| [[splat-transform-cli]] | SplatTransform CLI：PLY/SPLAT/KSPLAT/SOG/CSV 互转 + 空间变换 + 多文件合并 + SH 瘦身 |
 
 ## 经典案例（wiki/examples/）
 
@@ -591,6 +599,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[oakleaff]] | Oakleaff，GameMaker 业余 3D/shader 开发者，volumetric + cascaded shadow 教程 |
 | [[mark-lundin]] | PlayCanvas 团队，@playcanvas/react 作者 |
 | [[jendrik-illner]] | Jendrik Illner，Graphics Programming Weekly 主理人 |
+| [[kris-bamrah]] | PlayCanvas 团队，Editor 开源与 VSCode Extension 公告的作者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1058,6 +1067,25 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/anteru-workgraph-spmv]] | Chajdas 等：work graph SpMV ISCA 2025 |
 | [[sources/anteru-hybrid-sample-surface]] | Reichl/Chajdas：hybrid 光栅+ray-cast 大 mesh 渲染 VMV 2012 |
 | [[sources/anteru-giga-particle-fluid]] | Reichl/Chajdas：亿级粒子流体交互渲染 HPG 2014 |
+| [[sources/danielilett-retro-urp-retro-skybox]] | Ilett：Retro Skybox 参数手册，PSX 风天空盒 + 程序云 |
+| [[sources/danielilett-retro-urp-retro-vertex-lit]] | Ilett：Retro Vertex Lit 兼容页（v1.5 合并入 Retro Lit） |
+| [[sources/danielilett-toolbox-urp-base-lit]] | Ilett：Shader Toolbox Base Lit，URP default Lit 的 clone 作为 pack 基线 |
+| [[sources/danielilett-toolbox-urp-bubble]] | Ilett：Bubble shader，Fresnel + color ramp + iridescent noise flow + camera texture |
+| [[sources/danielilett-toolbox-urp-dissolve]] | Ilett：Dissolve shader，Plane/Point origin + 附带 DissolvePlane.cs |
+| [[sources/danielilett-toolbox-urp-glass]] | Ilett：Glass shader，refractive index + Fresnel + camera opaque/transparent 双源 |
+| [[sources/danielilett-toolbox-urp-glitter]] | Ilett：Glitter shader，Voronoi cell 粒子 + Fresnel 门控 + 双色随机 |
+| [[sources/danielilett-toolbox-urp-mesh-explosion]] | Ilett：Mesh Explosion shader，三种 expansion mode + BakeFaceColors.cs |
+| [[sources/danielilett-toolbox-urp-stochastic-lit]] | Ilett：Stochastic Lit shader，三次随机偏移采样打散 tiling |
+| [[sources/playcanvas-sogs-20x-compression]] | Eastcott：PlayCanvas Engine 2.7.5 引入 SOGS，~20× 压缩（属性图 + PLAS + WebP） |
+| [[sources/playcanvas-esm-scripts]] | Lundin：PlayCanvas ESM Scripts 发布，`.mjs` + class + import maps |
+| [[sources/playcanvas-splat-transform-cli]] | Eastcott：SplatTransform 开源——3DGS 格式转换/变换/过滤/合并/CSV 导出的 CLI |
+| [[sources/playcanvas-editor-frontend-oss]] | Bamrah：PlayCanvas Editor Frontend 开源，含 Observer/PCUI/PCUI-Graph/Editor API |
+| [[sources/playcanvas-reflct-spotlight]] | Eastcott：Reflct 电商 3DGS viewer 的 three.js → PlayCanvas 迁移（帧率 2×、内存 -80%） |
+| [[sources/playcanvas-sog-opensource]] | Eastcott：SOG 正式开源——Morton order + 单文件 `.sog` + WebGPU 压缩端 |
+| [[sources/playcanvas-vscode-extension]] | Bamrah：新版 VSCode Extension，Disk-mapped FS + TS 类型 + AI-agent 友好 |
+| [[sources/playcanvas-voxelo-spotlight]] | Eastcott：Voxelo UG3D——短视频 → AI 重建 → 3DGS 数字孪生的电商 pipeline |
+| [[sources/playcanvas-supersplat-studio]] | Eastcott：SuperSplat Studio 发布——annotations + post effects + tonemapping |
+| [[sources/playcanvas-supersplat-walk-lod]] | Eastcott：SuperSplat Walk Mode（voxel collision）+ Streamed LOD（SOG 切片）+ Easy Upload |
 
 ## 元（wiki/meta/）
 

@@ -532,3 +532,11 @@ planning-over-rng-game-design
 ai-assisted-reading-workflow
 subpixel-reconstruction-antialiasing
 tiled-light-trees
+procedural-retro-skybox
+iridescent-bubble-shader
+refractive-glass-shader
+mesh-triangle-explosion
+stochastic-texture-sampling
+sog-compression-format
+splat-transform-cli
+playcanvas-esm-scripts

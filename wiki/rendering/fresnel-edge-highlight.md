@@ -38,6 +38,8 @@ Fresnel 的数学基于 `dot(N, V)`——同一个平面上所有像素的法线
 - [[physically-based-shading]]
 - [[uv-manipulation-nodes]] — 立方体边缘光的替代方案
 - [[godot-hologram-shader-effects]] —— Fresnel 作为全息材质边缘辉光的典型用法（Godot）
+- [[iridescent-bubble-shader]] —— 把 Fresnel 值拿去查一张彩虹 color ramp 就是肥皂泡：Ilett 的 Bubble shader 在 Fresnel 基础上叠 noise offset 和 flow direction，让 ramp 查色偏移随时间漂移
+- [[refractive-glass-shader]] —— Fresnel 作为玻璃边缘的增强高光与折射混合权重
 
 ## Sources
 

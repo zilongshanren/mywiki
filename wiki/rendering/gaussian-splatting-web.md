@@ -46,6 +46,10 @@ sources: 5
 - [[compute-vs-raster-points]] —— 点类原语用 compute vs raster 渲染的比较
 - [[alpha-compositing]]
 - [[supersplat-publish-platform]] —— 编辑完之后的发布、视频、embed、WebXR、viewer 开源整套基础设施
+- [[sog-compression-format]] —— 在压缩 PLY 之后的第二代压缩格式（SOGS → SOG），基于属性图 + PLAS 排序 + WebP 编码，~95% 缩减、Morton order、WebGPU 压缩
+- [[splat-transform-cli]] —— CLI 侧工具：格式互转、空间变换、多文件合并、CSV 导出
+- [[sources/playcanvas-reflct-spotlight]] —— Reflct 的 three.js → PlayCanvas 迁移实测：帧率 2×、内存 -80%、SOG 3SH 比之前 2SH 包体还小一半
+- [[sources/playcanvas-voxelo-spotlight]] —— Voxelo 的 AI 短视频 → 3DGS pipeline + SOG 相对 AI 重建 PLY 减 95%+ 实测
 
 ## Sources
 
@@ -54,3 +58,8 @@ sources: 5
 - [[sources/playcanvas-supersplat-2-0-publish]]
 - [[sources/playcanvas-supersplat-2-2-video]]
 - [[sources/playcanvas-supersplat-viewer-oss]]
+- [[sources/playcanvas-sogs-20x-compression]]
+- [[sources/playcanvas-sog-opensource]]
+- [[sources/playcanvas-splat-transform-cli]]
+- [[sources/playcanvas-reflct-spotlight]]
+- [[sources/playcanvas-voxelo-spotlight]]

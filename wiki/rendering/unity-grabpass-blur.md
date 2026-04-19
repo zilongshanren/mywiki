@@ -54,6 +54,8 @@ Reid 的教程承认自己用了"懒汉实现"——在**同一 pass** 里对原
 - [[linden-reid]]
 - [[harry-alisavakis]] —— *My take on shaders* 第五篇用 GrabPass 把任何 image effect 移植成「物体绑定式后处理」
 - [[uv-displacement-image-effect]] —— 把同样的 displacement 套到 GrabPass 纹理上即得折射 / 玻璃 / 热浪
+- [[refractive-glass-shader]] —— URP 下折射通过 `_CameraOpaqueTexture` 读取背景，Shader Toolbox 额外提供 `_CameraTransparentTexture` 让透明物体之间也能互相折射
+- [[iridescent-bubble-shader]] —— 同一套 camera texture 机制，叠 Fresnel + color ramp 做彩虹肥皂泡
 
 ## Sources
 
