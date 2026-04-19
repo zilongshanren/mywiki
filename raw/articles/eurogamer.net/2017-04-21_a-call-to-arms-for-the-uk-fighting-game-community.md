@@ -1,0 +1,72 @@
+---
+title: A call to arms for the UK fighting game community
+url: https://www.eurogamer.net/a-call-to-arms-for-the-uk-fighting-game-community
+author: Ryan Esler
+published: '2017-04-21'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+*Deputy Editor's note: A year ago I reported on Hypespotting 5, one of the UK's biggest fighting game tournaments, after it suffered a raft of technical issues and disappointed some fans. After we ran the article I was contacted by a number of people embedded within the UK fighting game community who defended the scene and called for a deeper look. I thought now, with Hypespotting 6 taking place, it was a great time to do just that and investigate the state of the UK fighting game community.*
+
+*Below is a feature from Ryan Esler, a freelance writer who has been a part of the UK fighting game community since the release of Street Fighter 4 in 2009. He has competed in Scottish tournaments in both Marvel vs Capcom 3 and Tekken and founded the Tekken group W3D. Photos courtesy of Stephanie Lindgren.*
+
+Easter. For some, it's a religious experience. For others, it's a chance to bargain hunt. But for the UK fighting game community, it might just be the most important time of the year.
+
+Once a year, and for five of the past six years, several hundred fighting game players embark on a pilgrimage to Glasgow to compete at Hypespotting, the crowning achievement for the Scottish fighting game community. And being there is a site to behold.
+
+The atmosphere is electric and as the weekend runs on, tensions run high. I see familiar faces, those who attend every year, and a few professional players. Stoic in their appearance, the likes of Ryan Hart, Olivier "Louffy" Hay and many more look on with intent. They analyse every fight, note every move. Behind them sits the more casual players, those who didn't make it out of pools and those who narrowly missed out on a top eight finish. They support the surviving players who push on towards first place. Cheers ring out as Ireland's Chris "Coblecog" McEntee narrowly clutches out round after round with his impressive Cammy. This is why over 400 players travelled across the country and Europe - for moments like this.
+
+To understand why this sense of community is so important to the UK fighting game scene, you need to look at where it's at. Many, if not most, of the players can be found in one of the UK's many fighting game Facebook groups, groups that, unfortunately, thrive on negativity.
+
+And [Street Fighter 5](https://www.eurogamer.net/games/street-fighter-v) is a game that fuels division. It has been embroiled in controversy since it came out in early 2016, with its disastrous launch hampering sales and dominating the online discourse. Since then, Capcom has worked to improve matters, but for many the damage has already been done. Divisive balance patches, a lack of communication from Capcom and delayed DLC characters have done little to turn the debate around. Is Street Fighter 5, then, dead?
+
+These Facebook groups are often the place where the first interaction with the UK FGC occurs, and to put it lightly, it often isn't an affirming one. Esmond "MBA Ez" Fong, co-founder of Northwest UK fighting gaming community MBA Gaming, is no stranger to this kind of negativity. "They feel the need to vent on social media and demand change," he says. It's true, time and time again we see players complain about balance and match-ups, but often with no real discussion. Slowly, these groups descend into anarchy as more players weigh in.
+
+Complaining on social media has become part of the norm when it comes to Street Fighter 5, but it isn't the first game in the series to face such judgement. Justin Xavier, the tournament organizer of VS Fighting, reckons it's "normal for part of the older player base to dislike a new game", which is something Matthew Edwards, community manager at Capcom UK, describes as "unavoidable". Yet, in spite of all the complaints and online furor, over 160 people entered the Street Fighter 5 tournament at Hypespotting. This is nearly 100 down on what Street Fighter 5 pulled in in 2016 (the year the game came out), but it's clear Street Fighter 5 is far from dead.
+
+Just like every other fighting game, Street Fighter 5 has a dedicated fanbase and thanks to events like the Capcom Pro Tour, it's not going anywhere. According to Edwards, Capcom wants to "give Street Fighter players from all over the world a chance to compete and meet their heroes". Players did indeed get the chance to meet their heroes at Hypespotting. Some of these competitors were even lucky enough to beat their heroes in Top 32 - in front of a massive audience.
+
+Street Fighter 5 wasn't the only game to draw big numbers. [Tekken 7](https://www.eurogamer.net/games/tekken-7) filled its available entrant positions and kicked off the Tekken 7 UK Championship with a bang, and it's clear publisher Bandai Namco wants to stay on the right side of the community. Edwin "Mr E" Chuah, Bandai Namco Games UK community chief, says the UK Championship was a response to the community "voicing their demand for more events in the UK prior to the game's release". The lack of events in the UK for Tekken 7 has been a concern for many competitive players as the game has been playable in Asia for two years, and there have been many North American tournaments throughout its development.
+
+The proof of the pudding is in the eating, of course. Thankfully, Namco showed its commitment to the Tekken scene during the tournament itself. During Hypespotting there were a few minor delays that would have resulted in top Tekken players missing their flights home. But Namco stepped in, offering to pay for new flights for these players to ensure they were at their best and free from the worry of potentially missing a flight.
+
+One of these players, Kane "KaneandTrench" Hartfield, went on to win the tournament and retain his crown as the current UK champion for Tekken 7 while solidifying his position at the Grand Finals of the Tekken 7 UK Championship at MCM Comicon London later in May. But is Tekken 7 on the rise in the UK?
+
+One of the issues facing the Tekken community in the UK is that it is disparate. Many Tekken players remain active within their own smaller online communities, such as The Snake Pit and one of the FGC's last remaining forums, Tekken Zaibatsu. But there is hope. "The UK Tekken community that exists now can work together to shape Tekken 7 into one of the biggest fighting game titles out there," Hartfield says, and I agree. If it can pull more players in from the disenfranchised community that exists online, Tekken 7 could become something great.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=J8d_QXBHsPM)
+
+Tekken 7 isn't the only game struggling to gain recognition. Nintendo's Smash Bros. scene is another community that has established itself outside the general populace of the UK FGC. The scene has split off from the main scene so much that Melee was removed from this year's Hypespotting line-up, and Smash Wii U saw a smaller number of entrants than the previous year.
+
+To understand this cataclysmic shift in attendance, you need to understand the Smash community as a whole. The fighting game community has for years looked down its nose at the Smash community, and every so often the debate around whether Smash is a "real fighting game" crops up in groups and forums.
+
+Alan "Afro Smash" Gardner, a top three UK Smash player, sees an insular side to the community he calls home. "Taking care of yourself probably became ingrained in the mindset of the Smash community," he admits. It's a worrisome quote for a scene on the brink. At Hypespotting 5, over 120 entered the Smash tournament. Hypespotting 6 struggled to reach 50.
+
+"Nintendo has very limited to no involvement in the Smash scene," Gardner says, suggesting a possible explanation for the dip in numbers. Certainly compared to the support the likes of Capcom, Bandai Namco and NetherRealm Studios offers their communities, Nintendo's effort is disappointing. But there may be another explanation: the Smash community is divided between two games, to an even greater extent than the Street Fighter community is divided between Street Fighter 5 and Street Fighter 4.
+
+It's not all doom and gloom. David "Gimble" Barrett, one of the tournament organisers, says that while "the majority of people playing Smash only seem interested in playing their game", there is growth. Barrett says UK Smash events such as Albion and Heir can sustain the community. "Heir could potentially be the biggest fighting game event in the UK," he says. So, perhaps the Smash community is perfectly happy with where it is, independent from the larger UK FGC and established in its own right.
+
+Other scenes have gone for a best of both worlds approach. The NetherRealm Studios community is one such example. These players have established themselves in their own right, creating groups such as Outworld Fighters UK on Facebook, and setting up websites such as Test Your Might.
+
+And much like the Smash community, the NRS community has suffered from elitism. Professional esports commentator and competitor Ryan "Ketchup" Neal has seen this himself. "The type of person that judges a game based on what others say is always counterproductive," Neal says. Perhaps that's why the UK scene has grown "incredibly close". This was borne out by the small number of [Mortal Kombat XL](https://www.eurogamer.net/games/mortal-kombat-xl) entrants at Hypespotting, who banded together to play through the weekend. In their own small section of the venue, I saw happy faces. Players had travelled far and wide to compete, to give Mortal Kombat XL a proper send off as [Injustice 2](https://www.eurogamer.net/games/injustice-2) looms large over the horizon.
+
+The NRS community is certainly looking forward to Injustice 2, and while it didn't turn up at Hypespotting this year , it was playable down at iSeries - the largest PC LAN event in the UK. "Injustice 2 will give us a much needed kick-start," UK NRS community member Justin Xavier says. The NRS community has already established itself, with regular streams and online tournaments supported by esports organisation ESL, but it exists online. Jake "Mustard" Neal, the other half of ESL's 'Ketchup & Mustard' commentary duo, wants the NRS community to get out and about, to "support their local scenes".
+
+This, they already do, to an extent. There hasn't been a year when Mortal Kombat X hasn't had somebody representing it at their local scene. And every player I spoke to at Hypespotting about Mortal Kombat and the wider NRS scene was not only excited about the future, but had faith in NetherRealm's vision for community support.
+
+What of the smaller games, some of which came out over a decade ago? Games such as Street Fighter 3: Third Strike, Street Fighter 2: Turbo, Darkstalkers, Ultimate Marvel vs Capcom 3 and Killer Instinct. There are still dedicated scenes that show up and represent at tournaments. The fires still burns brightly.
+
+Christopher "The Janitor" Johnston, a member of the VS staff and organiser of the Killer Instinct and UMVC3 tournaments at Hypespotting 6, helps to keep these communities going by dedicating space to the games. Many of these games were housed in an offshoot room called Affro's Arcade. "It's inspiring to see all these people with a love for the same types of games pull together to create a community," Johnston says.
+
+That, to me, is the UK FGC at its heart. It is a community. Many of these games left their prime behind long ago. Some declare them dead. But if you look hard enough, you will find a community, and if you don't, well, create it. This is, after all, how all fighting game tournaments began - a group of dedicated friends with a handful of monitors and consoles. Ryan "Ketchup" Neal remembers the days when fighting game fans fought in bars. The current scene is "a far cry from the small bars and locations we all used to play in".
+
+Events such as Hypespotting are a chrysalis for what the scene can become. Even smaller games still have much going for them. Marvel, which was cast aside from the main event in its last year, still brings the hype and draws a very respectable crowd for its age. I can't help but feel proud of the UK FGC.
+
+It's easy to get bogged down by negativity online, especially when it appears that a community is unhappy. But the reality is far removed from this mentality. The UK FGC is one big family. And like all families, the FGC has its ups and downs, its arguments and its tantrums. But it continues to support its members through thick and thin and, crucially, it continues to grow year upon year. Today we have many big events that host fighting game tournaments - Hypespotting, VSFighting, Rival Scenes and of course EGX.
+
+Where to next? I would love the UK FGC to find its feet on the playing fields of professional esports, but I fear that will never be achieved with such a fractured community split across so many games. To truly be the best it can be, the UK FGC needs to put aside its petty bickering and stop projecting the wrong image to newcomers. Each year players and organisers break their backs to put on grassroots tournaments, and with events such as the E-League and Red Bull Kumite coming to the fore, there is now a clear path for fighting games to take toward big-budget esports. 2017 is an opportunity to embrace a new outlook, take on the new games and put them on the biggest and best pedestal possible.
+
+Hypespotting is my local major. It is where I cut my teeth six years ago. Now I know half of the 400 entrants. Now, I sit at the back and enjoy watching so many excited players cheer on their favourites. I enjoy the whoops as Coblecog scores another round. I enjoy the tension between rounds. So why not bite the bullet? Suck up your tournament nerves and dive right in. The worst that can happen is you go out without a win, much like I did in Marvel, but at an event like this there's always somebody who'll pat you on your back and give you the encouragement you need to fight on.

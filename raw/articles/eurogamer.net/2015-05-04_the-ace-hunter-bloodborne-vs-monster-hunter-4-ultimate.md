@@ -1,0 +1,53 @@
+---
+title: 'The ace hunter: Bloodborne vs Monster Hunter 4: Ultimate'
+url: https://www.eurogamer.net/a-hunters-dream-bloodborne-vs-monster-hunter-4-ultimate
+author: Jeffrey Matulef
+published: '2015-05-04'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+As someone who writes about video games for a living and plays them in their spare time, it's fairly important that I keep up with what's new and fresh and exciting in this industry. And in 2015, I've been doing a rubbish job of that. You see, this year something like 90 per cent of my gaming time has been split between only two games: Bloodborne and Monster Hunter 4: Ultimate. And why wouldn't it? They're both Essential titles, after all. They're also quite similar! Both are known for their steep difficulty, bombastic bosses, varied weapons, deep combat, and cooperative multiplayer. And yet, only Bloodborne has seen any kind of notable success in the west while Monster Hunter has famously struggled to replicate its craze from Japan.
+
+The reason for this is simple: Monster Hunter 4: Ultimate hides its pleasure beneath a curriculum of endless text, intimidating spreadsheets, tedious gathering, aggressively awkward controls, and muddy, dated visuals. Even when you're not wading through pages worth of prose, the initial gameplay seems as cumbersome as it gets. Picking up items takes ages, attacking locks you into lengthy animations, and your weapons limply clip through the awkwardly detected scales of prehistoric cows. Almost everything you do in Monster Hunter's early game feels rough, tiresome, and trivial.
+
+Comparatively, Bloodborne puts its best foot forward at the off. Its opening minutes are absolutely mesmerising as you awaken in the sprawling Victorian metropolis of Yharnam. While comparing a PS4 game's visuals to that of a 3DS title is woefully unfair, one can't help but marvel at From Software's art direction with its lavish gothic vistas, rain-soaked cobblestone alleyways and crackling fires. Monster Hunter's isolated hubs and minuscule combat arenas set in a barren wilderness seem rather plain in contrast.
+
+More important than how lit looks is how it feels, and Bloodborne feels great from the start. Simply hitting a foe with a gruesome trick weapon in Miyazaki's latest opus lends one a sense of great power as your grizzly blade slams into a werewolf, splashing copious quantities of blood upon your Hunter's garb - a feat greatly aided by some of the most seamless rumble implementation I've ever experienced. Thrust towards an enemy and they'll flinch in pain; shoot them at the right time and they'll fall to their knees; attack them in this state and they'll spray a 90's Nickelodeon gameshow quantity of blood. Not since [Resident Evil 4](https://www.eurogamer.net/games/resident-evil-4) - which Bloodborne draws a lot of inspiration from - has a game made attacking feel so gratifying.
+
+And it's not just how Bloodborne looks and feels that draws you in. Its cryptic story, stitched together from abstruse clues, perplexing dialogue and a heaping dose of your own imagination, ensures that it's a place full of peculiar characters and oblique lore that will keep fans busy deciphering for years to come. Compared to Monster Hunter's generic plot ("our village is in danger, go kill monsters"), it's no contest that Bloodborne's world is far richer, more surprising and full of mystery.
+
+To put it bluntly, the 40 or so hours it takes to complete Bloodborne for the first time trumps Monster Hunter 4: Ultimate in almost every way. And yet, Monster Hunter is the one I'll find myself returning to more in the years to come. Why, you ask? Let me count the ways.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=iTDvYvlyPaE)
+
+First off, Monster Hunter's combat system, while decidedly more impenetrable, is a lot deeper than anything found in Bloodborne. Take its weapons, for example. Bloodborne's wide array of transforming armaments are all impressive looking and fun to stab beasts with, but ultimately none of the weapons are all that different from one another. Some are fast, some are slow, some are long range, some are short, but at the end of the day they're all stabby, slicey instruments that you use at basically the same times during boss battles. You may have to adjust your strategy a little, but by and large if you're good with one weapon in Bloodborne, you'll be good with every weapon in Bloodborne.
+
+Monster Hunter's weapons, however, could not be more different. A Switch Axe and Gunlance don't just look different, but rather have entirely different perks, special abilities and controls. If you evade with the former drawn you'll roll away from danger, while the Gunlance's only evasive move is a not terribly practical backstep. This lack of maneuverability is made up for with a large shield placed in front of your character, but blocking attacks quickly erodes its durability. Meanwhile, a Great Sword deals massive damage, but makes you walk like a snail when its drawn, while the Sword & Shield combo lacks power, but makes up for it in mobility and being the only weapon that allows you to pick up items without sheathing it first. Where Bloodborne's different weapons require slightly different timing windows and stamina conservation, Monster Hunter's frankly bizarre armaments drastically alters your playstyle in a meaningful way.
+
+Furthermore, Monster Hunter does a much better job than Bloodborne at encouraging players to switch weapons. As much as I love Bloodborne (and I do love Bloodborne), its weapon-leveling system leaves something to be desired. In order to strengthen your weapons, you need to collect rare materials. These materials are so rare that you're only able to max out one weapon per playthrough. Only one or two others will even come close. As such, there's little reason to switch weapons by the game's second half as there will be a major discrepancy between the armaments you've leveled up and those you've ignored.
+
+Monster Hunter also requires you to collect rare materials, but these are taken from the carcasses of slain foes. And since every weapon requires different materials to craft, there's often a moment of excitement when you realise you've inadvertently gathered the goods to make a really powerful weapon of a type you're unfamiliar with. Never tried the Hunter's Horn before? Well, you've got the parts to make an ace one and there's no time like the present to learn how to use it!
+
+[Watch on YouTube](https://www.youtube.com/watch?v=8pNnpW3-3mk)
+
+Beyond its weapons, Monster Hunter's titular bosses are more dynamic than those in Bloodborne. This is pretty impressive as Bloodborne's beastly foes have a healthy variety of attacks and phases, yet Monster Hunter's vast array of dinosaurs, giant insects, sharks, baboons and dragons each have upwards of a dozen moves. Many change forms mid-battle, too. Learning each creature's tells and how to avoid it will keep even the most observant player busy trying to suss out patterns, only for the monster to alter its rhythms as it learns from you.
+
+And learn it will! Initially, it's easy to be disappointed by Monster Hunter's mission and crafting structure that requires you to slay the same beasts multiple times to rise the ranks and build your armaments and armour. This is made doubly repetitive by having separate single-player and multiplayer campaigns. Conventional logic dictates that once you can slay a monster once, you should be able to slay that monster again and have an easier go of it. Not so in Monster Hunter! The dynamics change drastically with every fight.
+
+Here's an example: You fight a giant spider called the Nerscylla. Your goal the first time out is simply to slay it. Pretty straight forward. By your second fight with Nerscylla, you realise you need a chunk of its skull to forge a new piece of equipment, so now you're specifically trying to hit its head. This is much harder as that's where those dangerous fangs are, and even Monster's Hunter's fastest weapons require a punishing commitment in mobility to attack with. Your third fight with Nerscylla casts you against the angry arachnid with a new weapon type that you've since crafted, but haven't yet gotten the hang of. This throws all previous strategies out the window. The fourth time you fight Nerscylla it's a new version of her that deals extra damage and elemental attacks. The fifth time she'll be paired up with a second boss on the map. Sometimes they'll converge in the same area and boy howdy, you do *not* want to be caught in the middle of that!
+
+And that's just for single player. Mix in multiplayer missions with multiple bosses running loose like the end of Cabin in the Woods and it only gets crazier.
+
+In terms of difficulty, Monster Hunter occupies both extremes greater than Bloodborne. Monster Hunter 4: Ultimate starts off significantly easier than From's Souls successor, and I can count the number of missions I failed in Monster Hunter's first 40 hours on one hand. With Bloodborne, I'm sure it was in the hundreds. Yet, Monster Hunter's High Rank quests, unlocked a good 40 or 50 hours into the campaign, provide a stiff challenge and it only gets fiercer from there. And if you really want a arduous task, try tackling the multiplayer quests solo. These get much harder than anything in a From game. (And I say this as someone who's conquered every Souls and Bloodborne boss solo.)
+
+Ultimately, Bloodborne and Monster Hunter 4: Ultimate complement each other well. Bloodborne leaves a great first impression, and a great second one too. But after spending roughly 100 hours in Yharnam, its beast slaying starts to wear thin. Monster Hunter 4, however, actively repels you with its slog of a tutorial sprinkled throughout its first 20 hours, yet it somehow only gets better with age. A hunter's dream indeed.
+
+## Read this next
+
+-
+["I will fight tooth and nail to make this thing the best it possibly can be" - Bloodborne's newly-announced animated feature sure sounds like it is in safe hands](https://www.eurogamer.net/bloodborne-animated-feature-adaptation-jacksepticeye-north-star) -
+[Bloodborne is getting an R-rated animated film adaptation, co-produced by YouTuber JackSepticEye](https://www.eurogamer.net/bloodborne-animated-feature-adaptation-announced-jacksepticeye) -
+[Bluepoint pitched a Bloodborne remake, but FromSoftware turned it down, not Sony](https://www.eurogamer.net/bluepoint-pitched-a-bloodborne-remake-but-fromsoftware-turned-it-down-not-sony)

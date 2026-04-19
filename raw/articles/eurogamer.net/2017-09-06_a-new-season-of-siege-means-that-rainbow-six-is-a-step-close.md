@@ -1,0 +1,46 @@
+---
+title: A new season of Siege means that Rainbow Six is a step closer to taking down
+  Counter-Strike
+url: https://www.eurogamer.net/a-new-season-of-siege-means-that-rainbow-six-is-a-step-closer-to-taking-down-counter-strike
+author: Richie Shoemaker
+published: '2017-09-06'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+While Ubisoft's esporting ambitions for Rainbow Six Siege are as explicit in its design as its expanding roster of [League of Legends](https://www.eurogamer.net/games/league-of-legends)-inspired Operatives and strategically-placed cavity walls, with the recent announcement that 2.3m people play the game every day, there's a sense that the counter-terrorism reboot is finally moving into the big, big league.
+
+It's taken just over 18 months for the game to amass 20m registered players, which, when you look at how quickly games like Battlegrounds and Lawbreakers have thrived and bombed, is hardly a lightning-fast assault on the popularity playlist. But with [Overwatch](https://www.eurogamer.net/games/overwatch) on 30m and recalling that Counter-Strike: GO was reported to have around 2.2m unique monthly users at the same stage in its life cycle, Rainbow Six Siege is actually going great guns.
+
+It's worth remembering of course that during its limited and delayed beta run and in many early reviews, while feedback was positive it was hardly indicative of long-term success. It was assumed that veteran Rainbow Six fans would be put off by the flimsy single-player mode, while the hardcore multiplayer crowd would retreat en masse thanks to the less-than-ideal networking and matchmaking systems that had been deployed.
+
+It was an expensive prospect too, given the game's narrow appeal, one that didn't sit well alongside its embrace of micro transactions and vanity item sales. Ubisoft may have had Counter-Strike in its sights, but there seemed little chance Rainbow Six would ever come in range of Valve's equally venerable franchise, let alone take it down. "Rainbow Six Siege is happy to look to the wider world of esports" said our Martin in his review, "yet unlike its inspiration it neglects to lower the price of entry: Ubisoft seems torn between a typical big-budget release and a more focused multiplayer shooter, and the rift often shows."
+
+Ubisoft has since closed that rift - sort of - by further embracing micro transactions (the latest thing being Alpha Packs) and introducing a cut-price Starter Edition, which was followed by a 40 per cent surge in the player base to end its first year with an impressive 10m registered players. Between the occasional free weekend, regular hefty updates and a sensible DLC policy featuring new maps and operators that keeps players on their collective toes rather than fragmenting interest, it's little wonder than Rainbow Six has steadily grown to become the success that it has. The game's second birthday is still a couple of months away, yet another 10m registered players have long been added to the roster.
+
+Given where Rainbow Six is now versus where it started, and indeed where it might soon go in the wake of the imminent Season 3 update, the soon-to-conclude period of renovation dubbed Operation Health may well be looked back on as a defining moment in the game's development. Though it's been a disappointing quarter in terms of new content, Ubisoft insists that Operation Health represents a change in philosophy as well as a productive phase culminating in a whole raft of fixes, upgrades and improvements.
+
+Long overdue has been the way in which updates themselves are rolled out, Ubisoft having now embraced the long established public test server concept while working to remove the last traces of peer-to-peer networking that have caused many a connection error in the past. As well as a successful reworking of the hitbox system, matchmaking is 30 per cent faster for Casual games and by 11 per cent in Ranked. Cancel rates are down by more than 50 per cent across the board, with players backing out in just one match in five when not so long ago it was close to 50 per cent.
+
+The culmination of Operation Health is Tuesday's release of Operation Blood Orchid, an upgrade that puts Rainbow Six Siege back on track in terms of content, while boasting more than 1300 fixes and improvements (a figure that would be impressive if it didn't beg the question of how Ubisoft let its to-do list get so big in the first place). Among the things that will be better/faster/smoother are a new system for thicker smoke effects, improved character textures and animations, upgraded lighting that will eliminate squinting when moving between high contrast areas, new skyboxes and, of course, numerous Operator balancing tweaks and weapon changes (among them the ability for attackers to have two drones in circulation, which is most welcome). A fundamental change to how game data is structured requires Blood Orchid to be a beast among patches (42gb for PC players), but the the payoff is leaner updates in the future. In addition, there's the rather big deal of a dedicated server upgrade (for PC players first), that should eliminate the vast majority of those infrequent but infuriating lag spikes.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=YdQ1cRl38Kg)
+
+Fixes are always important, of course, never more so than now, but if Rainbow Six is going to pull in another 10m players over the course of its third year, it's got to keep doing what the competition can't - mixing things up with new Operators and abilities that work to reinvigorate the tactical meta-game.
+
+With Blood Orchid there are three new additions to the Rainbow roster, together bringing with them a philosophy that seems to be about movement; fanning out and using spaces and channels more effectively, while simultaneously slowing down the play and reintroducing a measure of caution in matches where rush tactics were perhaps was starting to dominate a little too much.
+
+All three new characters feature diversionary special abilities, such as attacker Ying's Candela device, a cluster mine of wall-hugging flashbangs that can be synchronised to help push a coordinated assault. Meanwhile defending compatriot Lesion can deploy regenerating punji stick-inspired Gu Mines that take minimal damage, but reduce an enemy's movement and relay their victim's position once triggered. Polish operator Ela, as well as having a thunderous arsenal, boasts sticky concussion mines that, when wounded, she can use on herself to prompt a revive while disorientating nearby enemies looking to finish her off. Ela is the first operator to have an ability that allows her to go out in a blaze of (non-lethal) glory, which likely means she won't be the last.
+
+If the three new operators (and the dilapidated theme park map) all slot into the established order as well as we hope and expect, it will be good for all levels of the playerbase, but the timing of Blood Orchid's release, not to mention its themes and setting, seems particularly timely given that as part of Season 3, Pro League qualification is being rolled out across four Asian and Pacific territories. Reflecting the game's increasingly competitive global appeal, Ubisoft is inflating the prize pool for next year's Six Invitational to a not insubstantial $500,000. Granted, it's not a huge amount next to the crowd-sourced millions of a [DOTA 2](https://www.eurogamer.net/games/dota-2) International, but by investing more in the games esports appeal we not only get a sense of how far Rainbow Six has progressed but how much confidence there is from Ubisoft that it could go a lot further still. All it perhaps needs is a little more momentum, perhaps just enough that Operation Blood Orchid will be the release to provide it.
+
+It's going to take some time - more than a few years, certainly - before Counter-Strike is brought down. When Rainbow Six first released it seemed somewhat fanciful proposition that it might be the game to land a killing blow to any game save itself. Two years on, it seems that Rainbow Six's dominance isn't just achievable but actually quite desirable and, thus, perhaps, inevitable.
+
+## Read this next
+
+-
+[Metal Gear's Solid Snake joins the roster of Rainbow Six Siege, finally making a crossover with Splinter Cell's Sam Fisher real](https://www.eurogamer.net/metal-gear-solid-crossover-with-rainbow-six-siege-adds-solid-snake-as-operator) -
+[Rainbow Six Siege still struggling after Ubisoft was forced to briefly "intentionally" shut it down following third-party hack](https://www.eurogamer.net/rainbow-six-siege-still-struggling-after-ubisoft-was-forced-to-briefly-intentionally-shut-it-down-following-third-party-hack) -
+[Ubisoft and Tencent form new subsidiary, Vantage Studios, to lead development for the Assassin’s Creed, Far Cry, Rainbow Six franchises](https://www.eurogamer.net/ubisoft-and-tencent-announce-new-subsidiary-vantage-studios-to-lead-development-for-the-assassins-creed-far-cry-rainbow-six-franchises)

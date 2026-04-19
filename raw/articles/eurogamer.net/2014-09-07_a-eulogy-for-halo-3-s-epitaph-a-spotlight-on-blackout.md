@@ -1,0 +1,42 @@
+---
+title: A eulogy for Halo 3's Epitaph, a spotlight on Blackout
+url: https://www.eurogamer.net/a-eulogy-for-halo-3s-epitaph-a-spotlight-on-blackout
+author: Nathan Ditum
+published: '2014-09-07'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+I have spent hundreds of hours playing [Halo 3](https://www.eurogamer.net/games/halo-3), and I'd rank Bungie's trilogy-capping blockbuster in my top five of the last console generation. I know it with an obscene intimacy, from the inside out - its feel, its weapons, the intricacies of its physics and geometry. I have absorbed the game in some essential, comprehensive way, and yet I cannot pull from memory a single certain moment from its story campaign.
+
+Not only is this admission shocking and compelling, it is also at least half true. What I really mean is that I can't affirmatively distinguish between a jumble of moments that might have been in Halo 3, but equally could have appeared in [Halo 2](https://www.eurogamer.net/games/halo-2). Except, actually, it's more like a quarter true, because I *do* remember the bit at the end when the Chief span away into space, marooned on a halved ship like a fly on a cosmic hotdog, and me thinking that while it was better than the cascading waves of fury I'd experienced at the end of Halo 2 it wasn't quite the balloons-and-all parade that three games of genocidal fervour had by rights earned Master Chief and me.
+
+There are two points here: the first that Halo 3's single-player experience was repetitive and forgettable, and the second that judging big modern games - first-person shooters especially - primarily on the basis of their single-player offerings is like determining the value of a house from the outside. Halo 3 wasn't so much a game as a *package*, an overflowing feature set comprised of multiplayer, co-op, customisable maps, video replays and file sharing. It arrived just two months before Call Of Duty 4: Modern Warfare, and together the pair embodied a watershed doctrine of maximalism shaped by industry and economics: stay compelling to thwart the lure of trade-in, exploit the market for downloadable expansions.
+
+Mixed in, no doubt, was the earnest desire to create a game people simply couldn't stop playing. And while I stopped playing Halo 3's campaign the moment the fight was sort-of-finished-until-the-next-one, its multiplayer has persisted (at the time of writing - or rather, not writing in order to play ranked Slayer - the game has an online population of 8500. I will fight them). So, to the point - this is not a celebration of packages. I'm not sure there is much to cheer in Halo 3's bigness, or the disposable ambition of its ultimately unfulfilling checkpoint-chase single-player. Instead, this is an exploration of persistence.
+
+In large and obvious part Halo 3's persistence is down to the two fundamentals which [I've attempted to articulate previously](https://www.eurogamer.net/why-online-shooting-peaked-with-bungies-decade-old-halo-2): the weight and grace of movement in the series, which give an "elusive satisfaction that comes with physically existing in the world of Halo", and the barebones balance of the multiplayer games themselves. Essentially what I've hit upon here are long ways of saying that the game is very good - comprehensively accomplished, from the microscopic building blocks of code that generate and manage objects moving and reacting to each other, to the organising principles of a philosophy of competition. And yes, I have done it again. What I mean to say is: Halo 3 is very good.
+
+But that doesn't quite cover or explain it. Another pleasure has emerged during the time I've spent with Halo 3 - a sort of compulsion, really, an urge to move and jump through its unreal geography. I am captivated by Halo 3's impossible spaces, with the floating boxes of sealed geometry used to host its multiplayer matches. It is a joy that at one time latently drove the game's persistence, and then as the years passed was strengthened and revealed by it.
+
+This reminds me a little of the perverse and unexpected things that can happen when a game is played far beyond its expected lifespan, like [the Orwellian gridlock in a decade-long game of Civilization 2](http://www.reddit.com/comments/uxpil/ive_been_playing_the_same_game_of_civilization_ii/), or [the loyal citizens lingering in the first MMO](http://www.newyorker.com/tech/elements/the-last-survivors-of-meridian-59)). Over the years with Halo 3 I have gradually fallen in love with walls and platforms, with subtle lips of cover and arrangements of space. At one time this joy was innately linked to the actions performed inside these arenas, to the combat advantages conferred by a total knowledge of these maps - the satisfaction of reading the intentions of a flat red radar dot in three-dimensional space, the territorial mastery delivered by a shortcut jump. But eventually these things became pleasurable in and of themselves.
+
+Not that I would ever explore the maps outside of competitive play, but the pleasure of competitive play became as much about interacting with the geography as it was about shooting guns and throwing grenades. This isn't true of all the maps, either - Halo 3's larger multiplayer arenas are fine for the pile-on co-ordination of big team play, but lack the precision and detail of its best places. There is a sweet spot, and Halo 3 works optimally at short to medium range - that is to say the beauty of structure and orientation is most keenly felt in its tighter and more deliberately arranged locations.
+
+This means Epitaph, the Cathedral-like stage which is symbolically perfect for our purposes of worshipping abstractions of architecture. This means Cold Storage, with its broken bridge and its ledges and sightlines. This definitely means Guardian, a map that's beautiful quite apart from its Endor-inspired giant tree setting. Guardian is a space in which distance itself is pleasurable - assessing it, denying it, risking it - thanks to the balance of asymmetrical plotting and the potential for move and counter-move.
+
+And above all, this means Blackout, with its artfully arranged platforms and elaborate layers.
+This Arctic station embodies everything I love about Halo 3's maps. It is abandoned and isolated, the most perfect of all the game's lost snatches of construction, a frozen prison of possibility. And it features so many points of engagement, so many choices and paths, that using its space feels inherently *good*. "Using" is an important word here, because while the poignancy of Halo 3's closed-off multiplayer places comes partly from their non-functional redundancy, as spaces they do function, statically, through their points of articulation and the possibilities of their arrangement.
+
+In practice, this means I love rushing Blackout's tall tower from the central platform using a pillar jump and the sloped roof. It means I daydream about dropping from the tower to the walkway below, sword in hand, ready for the red reticule. It means that during matches I mentally plot routes through the map that give me a sharp jolt of anticipation, the joy of stringing this jump with that run and this climb, a thrill of movements undimmed by repetition, like children dashing through a playground.
+
+In practice, it means I remember every brick and turn of Blackout, every nuance and twitch of Halo 3, even when the game's story has fallen into dust and blur.
+
+## Read this next
+
+-
+["I was Ken Kutaragi" - Peter Moore remembers the three days Microsoft locked itself away before the Xbox 360 launch and pretended to be Sony](https://www.eurogamer.net/i-was-ken-kutaragi-peter-moore-remembers-the-three-days-microsoft-locked-itself-away-before-the-xbox-360-launch-and-pretended-to-be-sony) -
+["I was brought in to start throwing punches" - veteran exec Peter Moore reflects on the particular set of talents Microsoft needed to make Xbox 360 challenge PlayStation 3](https://www.eurogamer.net/i-was-brought-in-to-start-throwing-punches-veteran-exec-peter-moore-reflects-on-the-particular-set-of-talents-microsoft-needed-to-make-xbox-360-challenge-playstation-3) -
+[Classic Halo 3 map The Pit coming to Halo Infinite](https://www.eurogamer.net/classic-halo-3-map-the-pit-coming-to-halo-infinite)

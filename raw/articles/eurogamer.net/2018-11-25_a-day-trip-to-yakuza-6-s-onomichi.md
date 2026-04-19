@@ -1,0 +1,42 @@
+---
+title: A day trip to Yakuza 6's Onomichi
+url: https://www.eurogamer.net/a-day-trip-to-yakuza-6s-onomichi
+author: Malindy Hetfeld
+published: '2018-11-25'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Recently, I've been thinking a lot about video game locales, about maps and whole worlds, both imagined and real. Eventually, I was left with one conviction: there are actually not that many opportunities to experience an environment the same way a game's character does.
+
+Part of it is the notion of escapism tied up with games. You want to swing through a jungle of skyscrapers, instead of fighting through the crowds below. You want to hack your way into government offices and assassinate people at a race track using nothing but a fish. You don't want normal, and that's fine.
+
+Yet I've been obsessed with the juxtaposition between the normal and the leftfield that characterises so much of Japanese media, and which is evident in the locales chosen for the Yakuza series. [I've written about that powerfully surreal feeling of stepping into a Yakuza game before](https://www.eurogamer.net/after-i-stepped-into-yakuzas-world-yakuzas-world-seeped-into-mine). Having just visited Onomichi in Yakuza 6, I was curious how it would feel to visit a place with more immediate memories of visiting its virtual counterpart. And so I did.
+
+I fully expected Yakuza 6's Onomichi to be a condensed version of the real thing - easier to navigate and more interesting for players. Yet to my surprise, I realise that I'm able to find my way to the places featured in-game using the actual in-game map. Upon my arrival I immediately recognised the pier from which Kiryu fishes for magnificent sea creatures. Old men throw their fishing rods into the sea, and the dockworkers sleep on benches nearby. It's thrilling to imagine, just for a second, this town being a hotbed of Yakuza activity. In Yakuza 6, that's entirely the point. I eye the construction cranes a little harder.
+
+In Onomichi, all roads eventually lead to Senkoji. It's where you'll find the temples you see in-game, 25 of them dotted around the mountainside and surrounding park, all standing brick to brick with the area's residential housing. In Yakuza 6, Onomichi was an escape for Haruka in more ways than one, and the town's picturesque image fits the bill. It immediately feels like the sort of place you'd go to avoid everything, if only for a little while. Onomichi selectively fights the label of a sleepy town with tooth and nail whenever the opportunity presents itself however. Its claim to fame as film location - the couple at the centre of Tokyo Story, perhaps Japanese cinema's most celebrated export, travel from Onomichi - sprouted the motion picture museum. Similarly, The Literature Museum swiftly came into existence due to the Path of Literature. This path is of course famous for its poem stones, the only set of collectibles in the Yakuza series I gladly completed.
+
+On the way up, I find the only other temple location featured in the game. Here I also come across the only visual discrepancy between the game and the real Onomichi. Yakuza 6 features a temple called Ryunan, but the real temples you find up here, Hodoji and Kaifukuji, are small affairs, their statues framed by plastic flowers. I don't pray for an EXP boost with the five Jizo statues here, but I enjoy a small break with a great view of the town.
+
+On my way back, two male Japanese students stop me and ask me to take a photo of them and the blackboard of the nearby restaurant. As I turn to look at the restaurant itself, I realise why - it's of course the restaurant that served as inspiration for "La Pente", the place from which you plan your clan activities in Yakuza 6. "Photo OK?" they ask, and I dutifully take a few snaps. As I hand their phones back, I ask them what the deal with the blackboard is. "Oh, it's just a game thing," one of them says. I can't believe the sheer luck of actually meeting someone who might be here for the same reason as me. "Oh, you mean Yakuza?"
+
+Admitting you know about games or anime turns you into a mythical creature, a beacon for the apparently unconfirmed theory that people in other countries have access to Japanese media, too. This revelation is inevitably heralded by three words: "The foreigner knows!"
+
+Suddenly, they're all smiles. They tell me I have the "aura of someone who plays games", whatever that means, and tell me they've come from Mie Prefecture for a day to see this. As someone who frequently wishes it would be easier to meet people with similar interests, the exchange means a lot.
+
+From here on out there's a steep walk up numerous stairs - a walk which Yakuza 6 helpfully edits out. Senkoji isn't on the peak of the mountain, like Yakuza suggests. Instead, it's more of a midway point. The view however, never gets better than this, not when I climb up to the observatory tower and not even when I reach Senkoji's peak, which the game never shows you. There isn't much of a reason to linger on the scenic view in Yakuza 6, apart from taking a few in-game tourism screenshots, but in person it makes you want to linger. A lot of people do, in fact. Everyone who comes up is just silent for a moment, right before the shouts of "kirei!" ("So pretty!") and the picture-taking starts.
+
+Onomichi hasn't tried to capitalise on this magnificent view in any way - the entry to the observatory is free, the only way to spend money is to get drinks and ice cream from vending machines or buy fried oysters or squid on rice from a family-run restaurant with peeling linoleum floor.
+
+One important spot on my tour of Yakuza locales is not to be missed - no, not the homes of the dock workers, which are actually several miles away in eastern Onomichi, but the shopping street. In Yakuza 6, you only get to see the tail end of a street that goes on for almost over a mile. In its depiction Yakuza 6 has been accurate once again - about one in every three shops is shuttered, by the looks of it permanently.
+
+While the street boasts a whole 6 tax-free shops, where foreigners who carry their passport on them, are exempt from paying consumption tax, this whole street feels like it's not meant for anyone in particular. Most of the shops have been family-owned for generations, like the place that sells dishes and expensive lacquerware, or the fruit and vegetable shop manned by the elderly woman who pulled the clementines she's sitting next to off the tree herself ("despite being 83 years old!"). There are cafes. A small toy shop. A shop with dusty window panes selling bedding. Cables and single batteries spilling forth from an electronics shop.
+
+I have no doubt that given time, you can find everything you need here, but you have to dig for it. Maybe these shops exist less to sell you single forks and more to give people an excuse to have a chat with their neighbour. Younger people will likely shop at the department store in nearby Fukuyama, only a 30-minute train ride away.
+
+Just before I'm about to leave, I run into a representative of the local tourism board who asks me if I'm an English-speaking visitor. He then quizzes me about my itinerary, if I've been to the prefecture before and how I've heard about Onomichi. "A video game," I tell him, completely prepared for the raised eyebrow he gives me. I ask if he had any idea the town was featured in one. "We don't do this questionnaire that often in Onomichi," he says, seemingly embarrassed, "We're interested in how we can get foreign tourists to spend more money in the prefecture, and Onomichi..." he makes a sweeping gesture, the message behind it implied, too risqué to admit to out loud. I ask him how many foreign visitors he has interviewed so far, and it turns out that I am number four.
+
+For a moment, I think about telling him to capitalise hard on the connection to this perhaps somewhat niche video game, complete with guided tours, but then I look around. High school girls queuing at a pudding place. Volunteer guides in their seventies pointing out the ferry times to a single new visitor. I think of Kyoto's congested shrines, hotels almost stacked atop of each other in Tokyo, and ultimately decide to leave it be. Some places are just fine the way they are.

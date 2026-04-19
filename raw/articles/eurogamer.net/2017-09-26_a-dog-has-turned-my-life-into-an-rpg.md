@@ -1,0 +1,34 @@
+---
+title: A dog has turned my life into an RPG
+url: https://www.eurogamer.net/a-dog-has-turned-my-life-into-an-rpg
+author: Christian Donlan
+published: '2017-09-26'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+I met a mysterious old man this last Saturday. He told me he was 87, and I did not believe it. Then, to prove it, he lifted his huge round sunglasses and made me stare at his eyes, which were light blue and rather milky with cataracts. "Still don't believe it?" he asked. I told him that I still did not believe it, and he laughed, delighted.
+
+He sat down and told me about his life: all of it. His youth, an engineering diploma of some kind, and a stint in the army where the engineering diploma came up three or four months after he had started as a private. Important people had read his file and decided the engineering stuff meant that he might be officer material. He attended a training school for officers on the outskirts of Brighton, and ended up as a sub-lieutenant: all the duties of a lieutenant, but the other officers never treated him quite right. Also, less money. Still, a pip on the shoulder and plenty to do in Egypt, where he was sent. Where in Egypt? He thought for a second: Aqaba? Is that a place?
+
+On his return to the UK, he was tasked with rounding up deserters on the underground. The tube, he explained. In eight months, he only caught three. In truth, he caught more, he admitted, but could not bring himself to turn them in. I told him I was overjoyed to hear that: They will have remembered you their whole lives, I said, the person who showed them a little kindness. He nodded, but he still felt a bit ashamed of it.
+
+It has not taken much to do this, I should add at this point. It has not taken much to get my life to the point where people come up to me and tell me their life stories.
+
+A week or two before I met the mysterious old man, we got a dog: a rehoused dog, the former owner could no longer look after her. Our dog is a tiny chihuahua. Golden, reddish hair like a fox, and she is sometimes furtive and fleet like a fox too. Most of the time she is entirely calm: she sits with us and follows us with her eyes when we go somewhere. Her name is Cricket.
+
+Cricket has turned my life into an RPG. That is all it took, I now understand. It took a dog. There have been dogs in RPGs before, of course: in [Fable 2](https://www.eurogamer.net/games/fable-2) a dog is there to tempt you off the path of the breadcrumb trail, to help a bit in combat, and to best reflect the way your own behaviour has shaped you. In [Torchlight](https://www.eurogamer.net/games/torchlight), a dog - or a cat - takes your overflow loot back to town and negotiates a fee. In [Torchlight 2](https://www.eurogamer.net/games/torchlight-ii), the dog can even make rudimentary purchases while they're there. But this is not the kind of RPG behaviours that my dog has brought into my life. Cricket has changed two things that, it turns out, do a lot for my experience of the outside world. When I go into town with her, I now discover that I am not allowed in most shops or restaurants. Most business in Brighton are now set decoration - like most businesses are in an RPG. And I also discover, as Cricket and I sit outside Waterstones while my wife and daughter go inside, that people want to come up and talk to me. You know, like in RPGs.
+
+The dog is always the excuse for starting the conversation, but it is never the real point of the conversation. Take the 87 year old man. He just wanted to tell his life story, and it turned out that he was on the point of leaving Brighton. I asked why he was leaving, and he explained that he hated Brighton. I asked why, and he said, not unreasonably, that Brighton was full of young people drinking expensive coffee out of doors, and it always made him think: you're paying too much for that coffee.
+
+This is the vital part of RPGs, isn't it? People in RPGs tell you their stories. I never really saw this before I got Cricket. I am firmly mechanistic in games, so if you'd asked me to describe RPGs I'd have said that they were the games about numbers rather than words. That you went on quests because quests made the numbers go up, and the important people you met along the way were the people you met while you were hitting them. You know, the people who had apparently been swallowing trousers all morning because now they were coughing them up as they died, and those trousers, right, those trousers were filled with numbers related to stamina, to health, to magic power, to fire resistance.
+
+But now I see they're not about that. Not only about that, anyway. RPGs are about the towns where you put away your sword and where everyone wants to talk to you and tell you something. Pure dog territory! Everyone wants to talk about a thing in their life that went wrong, or a thing they had always worried about. I have these conversations now, except I have them outside Churchill Square in Brighton and - granted - nobody sends me into the woods to punch things afterwards. Not yet, anyway.
+
+Here's another thought: the dog gets me out and about too. Due to owning a dog, I've realised that I live quite near the countryside, so I take her for a walk there every evening. It's a bit like grinding in a game, following the same path, passing the same scenery, but with a sense each time that something is improving. Dogs bring stat increases, of a kind, in terms of peace and a place in the world. And when you meet other dog owners you realise that dogs have lore: you are expected to know all about chihuahuas, and to be able to dispense crucial facts and stats about them to anyone you meet who is curious. I feel like I'm part of a guild now, a guild of dog owners.
+
+After I met the man outside the shops the other day, the man who claimed to be 87, and who had let all those deserters go, and had presumably given them a second chance in their own lives - a quest, I guess, with two possible outcomes - Cricket and I sat and thought for a bit. I have no idea what Cricket thought about, but I was thinking about my favourite moment in an RPG: the man you find sleeping under the bridge in Link to the Past. I think he's sleeping anyway. He's certainly camping: he has a fire going and he seems to want to stay away from the rest of the world. It was late in the game when I found him originally. I thought I had sounded out the entire map, and yet here was this hidden space, with this man who just wanted to be left alone, and who gave me an empty bottle for my troubles.
+
+This is the kind of adventure a dog might lead you on, I suspect: a discovery, a conversation, and then a nice drink of water for the dog from that glass bottle. Dogs can drink from bottles, right?

@@ -1,0 +1,40 @@
+---
+title: A few days with the Wonder Boy Anniversary Collection
+url: https://www.eurogamer.net/a-few-days-with-the-wonder-boy-anniversary-collection
+author: Christian Donlan
+published: '2023-02-01'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+The [Wonder Boy](https://www.eurogamer.net/games/wonder-boy) Anniversary Collection is a lovely thing, I think, but a lovely thing that arrives in a fairly ugly situation. This new collection of Wonder Boy games comes out just half a year after the last one. That one had four games, and this one has six - although when you factor in the different platform versions included this time, you're actually getting 21. Anyway, confusing things more, I gather that the two new games that weren't on the previous digital version were included on an exclusive physical copy. I don't think there's an upgrade path if you bought the previous collection, either.
+
+This is pretty poor treatment of the fan community for a series like this. It's also - and I appreciate that this is not all about me - personally annoying, because I have to kick this piece off with a bit of grimness, whereas I really want to just say how much I love these games and how good it is to have them all in one place. But it is grim, and I do also love them. What a situation.
+
+The four games from the previous collection are Wonder Boy, Wonder Boy in Monster Land, Wonder Boy in Monster World and Monster World 4, while the two new ones are Wonder Boy 3: Monster Lair and The Dragon's Trap. Details of its release aside, if you can put it aside, it's undeniably a nice package. Alongside the games themselves, you get those different versions, and you also get extras like galleries and image options. The collection's also got a bunch of maps for the levels, which I would have committed murder to get hold of when I was eleven. I would never want to get into Digital Foundry territory, but I've been playing the games quite a bit over the last few days and the emulation seems fine - they are just as I remember these games playing back in the day.
+
+Hopefully the release issues are relatively clear now. Anyway. Here is the point where I have to leave objectivity behind and wallow in nostalgia. Apologies. The thing is, I love these games, and I suspect I love them for a very specific reason. This collection should probably not have arrived in this manner, but I can't duck the fact that I'm having a pretty fabulous time with it, and I haven't even played all the games in it yet.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=nf02GwebzK0)
+
+Wonder Boy was the guy you got excited about if you went to a SEGA school rather than a Nintendo school in the 1990s, and if all your friends had Master Systems. This is pre-Sonic SEGA, pre-Mega Drive Sega, so you had Alex Kidd, Spy vs Spy - if you were discerning - and Hang-On and Wonder Boy. And a bunch of other stuff I can't remember as well but which I know was important and beloved. Anyway, in our school Wonder Boy was the king.
+
+He was the king because of The Dragon's Trap, which was the game which all other games were measured by in my school, in the absence of Mario and Zelda. And that's interesting really, because The Dragon's Trap was sort of like a squish of Mario and Zelda. It was an RPG - I see that now; had no idea at the time. But it behaved like a platformer. So to me, who didn't understand the RPG bit, it was this deliriously complex platformer in which you could go anywhere, rather than just trucking left to right.
+
+Honestly, you could go anywhere. Jump into the water in Psychofox and you died. Jump in the water in The Dragon's Trap and you ended up under the water, and there was cool stuff there to find. Ditto getting into the sky, or disappearing down a crack between blocks. There was always a screen beyond the screen, a screen where other games just had fail states. You accessed these new screens by following the main campaign and changing between animals, each with their own skills, so I guess you'd call this a Metroidvania by today's standards. But those are today's standards! Back in 1989 or whatever, back in Kent, mates this was a platformer that didn't seem to know when to knock it off.
+
+I think I discovered the other Wonder Boys after The Dragon's Trap, so it's been really nice with this collection to play some of them in order. And what you get - perhaps falsely - is a sense of development, of an idea expanding and evolving with each new game. This isn't a review, and I'm only going to talk about three of the six games here, but, anyway, when Wonder Boy starts out in the first game, it's really just a platforming action game. Start on the left of the screen, move the to the right, avoid obstacles, collect fruit, grab a throwing axe and a skateboard - as you can tell, Wonder Boy is a bit temporally confused - and have at it. It's simple fun shot through with little bits of bracing weirdness, in the form of the enemies, say, or the collectables.
+
+Wonder Boy in Monster Land came after that, and it's the treat for me personally, because nobody I knew owned it at the time, which meant I had a Blockbusters relationship with it, which means that I never played very far into it, which means in turn that the whole game is writhed in mystery and potential.
+
+Now I have played it - now I have it on my Switch - I can tell you it feels like a perfect midway point between the first game, all platformer, and The Dragon's Trap, which is platformer, RPG, Metroidvania, cast-iron banger. In Monster Land you still basically go left to right, and the world is still divided up into stages, but each stage plays out like an RPG. It's a series of bite-sized action RPG chunks!
+
+Which means: loot to collect, enemies to fight, items to equip, shops to shop at and a bit of light exploring. And then, before it gets overwhelming, a boss and you're off to the next stage. It's quite a neat, tidy way of doing things. I loved this game back in the day because of a moment, early on, in which you leap onto a ledge and text on the screen says there's an invisible door hidden behind the wall. What a moment that was back then! What a moment it is now, actually, when I replay it. The world feels filled with secrets.
+
+What I love about these games - and this is personal, I know, but hear me out - is that I loved them back then, and then there was a long period of almost forgetting about them. Unlike with Nintendo games, I didn't spend the next thirty years chatting to die-hard fans of Wonder Boy or replaying them until they cease to be games and become, instead, templates for How Things Should be Done.
+
+This means my memories of Wonder Boy are still fresh, because I haven't accessed them often, and this means in turn that they are fiercely transporting. I played Wonder Boy 1 a few nights back, and yes, I thought, Oh, interesting how this is where the trajectory starts as a basic platformer blah blah blah, but I only thought that after I had blinked back tears at the near-physical sensation of being back in the living room of my stepmother's old house after a day at school, sitting with my new stepbrother and trying to get past the part where two rocks come a bit too close together. Ditto Monster Land - renting in on a sunny Saturday, knowing that as much fun as my friend Gareth and I were going to have that weekend, there would still come Sunday night where we'd have to take it back to the store.
+
+This is where I'm at now, anyway. I've started with what I know, and I'm going to spend the next few weeks exploring - different platform versions of games I know, and games, like the newly included Wonder Boy 3, that I've never played before but have heard much about. The collection's release has been a bit ugly, and I absolutely understand if you bought an earlier version and are now furious. I totally get that. But I can't wait to spend the next few weeks exploring every inch of these games.

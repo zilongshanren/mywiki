@@ -1,0 +1,48 @@
+---
+title: 'A new perspective: How Pokémon X and Y refreshes the series'
+url: https://www.eurogamer.net/a-new-perspective-how-pokemon-x-and-y-refreshes-the-series
+author: Tom Phillips
+published: '2013-09-19'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+After a brief farewell to your hometown you step out into the long grass, empty Pokédex in hand and an untested new Pokémon strapped to your belt. There are baddies to defeat, eight gyms to beat and lots of low-level bug Pokémon in the game's first forest area.
+
+It's fair to say that the now-familiar Pokémon formula is left largely unchanged in X and Y. Two dozen core games later and with Nintendo's palette of colours finally exhausted, this latest dual release presents a familiar scenario. True, there are a few gameplay and story tweaks ([the introduction of Mega Evolution being the most notable example]), but by far the biggest change is the game's vastly upgraded visual style.
+
+The handheld Pokémon series has been edging towards a 3D world for some time, with increasingly dynamic environments in the past few entries. X and Y boast a fresh, fully 3D look that's a blend of Pokémon's classic top-down view with a few cues taken from its long-running TV spin-off. The games retain a top-down perspective for the majority of overworld action, albeit with a slightly zoomed-in camera. It highlights some of the new detail found in the world and keeps the action focused on a more specific area, counteracting the feeling that some earlier environments seemed too empty.
+
+The games' menagerie of Pokémon have received a visual upgrade too, with fully-animated 3D models in battle directly influenced by their anime counterparts. "The animated series is played in around 75 countries and it creates certain expectations when people see these Pokémon in-game," Gamefreak's Junichi Masuda told Eurogamer. But that wasn't to say that the anime had started dictating elements of the games. "It's less about having hard lines between the game and the animation series, and more about us working together to decide what Pokémon would actually be like," he added.
+
+Masuda is a Pokémon veteran, a programmer and composer since the original Red and Green and then director of every core title from 2002's Ruby and Sapphire onwards. While Satoshi Tajiri holds the claim of being franchise creator and colleague Ken Sugimori has shaped Pokémon's trademark design, Masuda has had an enviable all-round perspective on the series. He was still contributing his own music for the games until 2010's Black and White.
+
+X and Y's new design has influenced other things, too - not least the decision to set it in a fictional version of France (previous games focused on regions of Japan, while Black and White moved the action to an adapted version of New York). "With X and Y we wanted to focus on a theme of beauty," Masuda explained. "From a Japanese perspective, when we think of design, food, fashion - a lot of people go to France to receive training. We think it's a country which focuses on beauty and so it was a good inspiration for the new Kalos region." The setting's influence is noticeable in some of Kalos' architecture but not overly forced - the world still feels like a corner of the Pokémon universe, albeit one with cafés that serve limonade and chocolat chaud.
+
+"The animated series... creates certain expectations when people see these Pokémon in-game."
+
+Pokémon X and Y director Junichi Masuda
+
+The enhanced visuals now allow for a range of protagonist designs, too - after picking your gender you are given one of three specific looks to choose from (the differences being skin tone and hair colour). You can then change your character's clothing and accessories in-game with a huge wardrobe of outfits bought via in-game boutiques and available to alter with badges, buttons, ribbons and bows.
+
+But for all that's new in the game, there's a lot for long-term fans to enjoy - not least seeing some of the series' most memorable creatures again in 3D. More than any other recent edition, X and Y's opening areas include a multitude of Kanto species for older Pokéfans to get misty-eyed over. Want to relive Viridian Forest by catching a Caterpie or picking up a Pidgey? You can do just that. The first hour also includes sightings of Psyduck and a chance to catch Pikachu, and a little way after that, a present of an original Red and Blue starter.
+
+One of the few early story tweaks is that you now receive your first Pokémon via a group of friends. (Your choices are tough-shelled grass choice Chespin, vulpine fire beastie Fennekin and the frog-like water option, Froakie). Your pals accompany you through the game's initial locations, and you don't meet the game's Pokémon professor, Augustine Sycamore, until after the first gym. It's at this point you'll receive your Kanto starter, one of Bulbasaur, Charmander and Squirtle. You'll also get to battle the professor, too, Masuda hinted.
+
+The inclusion of so many classic creatures could be seen as an acknowledgement that the series' increasingly long Pokédex was getting swamped by some of the more forgettable later creations. Not so, says Masuda. "Rather than a callback to previous generations, we just wanted to have *lots* of Pokémon in the game," he explained. The inclusion of so many classic species ties into the introduction of Mega Evolution, too. There's no better time to reintroduce some of the series' most-loved creatures than when many of them can get all-new evolutions.
+
+"The decision to include the Red and Blue starter Pokémon came a little later in development," Masuda revealed. "Mega Evolution is one of the big themes of X and Y and we knew we wanted to have those three original starters Mega Evolve - they are iconic to the franchise and from the first games that we worked on."
+
+There was no chance to try Mega Evolution in the game's opening section - you'll need a fully evolved critter and a special Mega Stone item, for starters - but it's clear that Gamefreak has high hopes for how it'll shake up the series' gameplay. "It adds a new depth to battles," Masuda explained. "If you see Mewtwo come out you won't know if it's going to change to the X evolution or the Y evolution." (There are two, version-specific Mewtwo Mega Evolutions, achieved by using the Mega Stone variant found within each game). "Depending on its Mega Evolution its type changes and other abilities change too."
+
+I tried to enquire about what other details would vary between X and Y, but Masuda remained tight-lipped. "The main difference we want people to focus on is the legendary Pokémon on the box of the game," he said. "But there are also differences in how the story plays - a couple of different themes between the games, and different Pokémon available in each game." Which in particular? He wasn't saying. More than ever, Nintendo is remaining secretive about the final number of critters in the game - how many are being added to the series' 649-strong Pokédex and how many classic monsters will appear. Only around 20 new species have been revealed thus far - the rest are deliberately being held back to be a surprise for the game's final release.
+
+With so many Pokémon now available, Masuda admitted that the objective of catching 'em all was now increasingly unlikely for all but the most committed of fans. "We try to avoid making the main goal collecting *all* of the Pokémon that exist," he explained. "At this point, that's a very difficult task for all players. We try to put the focus on the mystery of which Pokémon you'll encounter. And in that respect, having more is probably better." Hence the focus on lots of returning monsters and on keeping what is new under-wraps, especially as fans around the world will be exploring X and Y's secrets together for the first time. The game's global simultaneous release across Europe, North America and Japan is a first for the series, and the culmination of years of work from Gamefreak and Nintendo.
+
+"We really wanted to do a global simultaneous release about seven years ago, but in order to do this we had to have some organisational changes, not just in Gamefreak but in Nintendo and The Pokémon Company," Masuda explained. "Before Diamond and Pearl we were only doing translation from Japanese to English, and then from English on to other different languages. We knew we needed to translate directly from Japanese into all the different languages, beef up our localisation staff and get translation staff who could work directly from Japanese. Over the years we've gradually reduced the amount of time it takes to localise each game, and by the time we got to Black and White, then Black 2 and White 2 we'd really cut it down. And with X and Y we knew it was finally the right time to do this."
+
+The result goes beyond easing the frustration of European fans, left waiting up to a year for their local translation. It now means that anyone, anywhere in the world could be the first to meet and capture a specific species.
+
+There's lots to be excited about in Pokémon X and Y - unseen new breeds, a huge range of returning faces, and a winning formula that has been tweaked, but perhaps wisely left largely familiar. The opening section I played rewarded my long-time inner Pokéfan - exploring the long grass bordering your hometown in X and Y feels as fresh as the first time.
