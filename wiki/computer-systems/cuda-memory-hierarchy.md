@@ -45,12 +45,12 @@ SM 的 register 数与 shared memory 大小是硬上限：
 这个 trade-off 把 [[latency-vs-throughput]] 的哲学推到极致：GPU 用大量驻留 warp 填满 memory latency，一个 warp stall 就切到另一个。如果 occupancy 不足，stall 就真的 stall 了。
 
 ## 相关
-
 - [[memory-hierarchy]]
 - [[latency-vs-throughput]]
 - [[locality-principle]]
 - [[cache-friendliness]]
 - [[flynn-taxonomy]]
+- [[gb10-gpu-blackwell-igpu]] —— consumer Blackwell L1/Shared Memory 128 KB vs datacenter 256 KB 的取舍
 
 ## Sources
 

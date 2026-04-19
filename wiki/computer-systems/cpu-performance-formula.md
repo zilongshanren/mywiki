@@ -37,10 +37,10 @@ Pentium 4（31 级流水线）追求极高 Clock Rate，但 CPI 因分支预测�
 现代 x86 内部把 CISC 指令翻译成 µops（微操作），本质上是动态 RISC 化——IC 的 CISC 优势被抹平。
 
 ## 相关
-
 - [[amdahls-law]]
 - [[dennard-scaling]]
 - [[power-wall]]
+- [[llm-generated-c-compiler-perf]] —— IPC 当诊断指标 vs 优化目标的极端反例
 
 ## Sources
 

@@ -38,11 +38,12 @@ sources: 1
 这个权衡与 APoSD 无直接关系，但"优化需明确目标"的思想相通——不清楚是为 latency 还是 throughput 优化，就会做出错误权衡。
 
 ## 相关
-
 - [[amdahls-law]]
 - [[cpu-performance-formula]]
 - [[memory-hierarchy]]
 - [[cuda-memory-hierarchy]] —— GPU 用大量驻留 warp 掩盖 memory latency，occupancy 不足时 stall 暴露
+- [[gb10-memory-subsystem]] —— GPU 高带宽需求把 CPU 侧 latency 推到 400 ns 的实测案例
+- [[chipset-pcie-latency]] —— chipset 对 PCIe 的延迟与带宽双向影响
 
 ## Sources
 

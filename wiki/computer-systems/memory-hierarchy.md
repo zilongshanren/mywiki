@@ -43,12 +43,15 @@ sources: 2
 10× 级别的性能差距，不靠换算法或并行化，靠数据布局。
 
 ## 相关
-
 - [[locality-principle]]
 - [[aos-vs-soa]]
 - [[cache-friendliness]]
 - [[cpu-performance-formula]]
 - [[cuda-memory-hierarchy]] —— GPU 侧的 5 层显式内存模型
+- [[gb10-memory-subsystem]] —— GB10（Nvidia/Mediatek）五层缓存（含 SLC）与 LPDDR5X 延迟实测
+- [[cache-coherence-cross-cluster]] —— 跨核复合体一致性的两级延迟档位
+- [[chipset-pcie-latency]] —— 主板 chipset 给 PCIe 加的几百 ns 延迟
+- [[split-lock-x86]] —— 跨 cache line atomic 如何破坏整个 memory hierarchy
 
 ## Sources
 

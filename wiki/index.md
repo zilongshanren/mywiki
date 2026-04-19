@@ -170,6 +170,11 @@ CAQA + CSAPP 的底层视角。
 | [[passkeys-webauthn]] | WebAuthn / passkeys 现状：conditional UI 让服务端复杂度陡升 |
 | [[good-parallel-computer]] | Raph Levien 的一篇宣言：我们为什么还没有好的并行计算机 |
 | [[gpu-queues-vs-dispatch-execution]] | 用队列串联 stages 对比 compute shader dispatch+barrier 模型 |
+| [[gb10-memory-subsystem]] | Nvidia/Mediatek GB10（DGX Spark）CPU 侧五层缓存、双簇非对称、LPDDR5X 113 ns 实测 |
+| [[cache-coherence-cross-cluster]] | 同簇 vs 跨簇一致性的两级延迟档位（DSU-120 Snoop Unit vs Coherent Fabric） |
+| [[chipset-pcie-latency]] | 主板 chipset 对 PCIe 延迟/带宽的 500–900 ns 惩罚横测（AM5/Z890/Z170/AM3+） |
+| [[split-lock-x86]] | 跨 cache line 原子操作在 7 代 x86-64 上的惩罚差异；Linux mitigation 的桌面争议 |
+| [[llm-generated-c-compiler-perf]] | LLM 写的 C 编译器当压测负载：move elimination 与零延迟 store forwarding 是救生圈 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -584,6 +589,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[erosion-filter-procedural]] | 单 pass GPU 侵蚀滤波器：沿梯度叠条纹、多 octave 分叉、fade/frequency 保留峰谷 |
 | [[atmospheric-perspective]] | 远山先趋深蓝再变淡，fog trick 的边界与大气散射的替代方案 |
 | [[hair-shader-anisotropic]] | Unity Standard BRDF 之上做各向异性发丝（3 档实现与余弦权重函数） |
+| [[gb10-gpu-blackwell-igpu]] | GB10 iGPU 是 consumer Blackwell 而非 datacenter（cc 12.1 vs 10.0）；24 MB L2 策略 vs RDNA 四层渐进缓存 |
 
 ## 经典案例（wiki/examples/）
 
@@ -683,6 +689,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sirawat-pitaksarit]] | Sirawat Pitaksarit，Unity DOTS / 音频插件开发者（Game Torrahod 博客） |
 | [[daniel-pokladek]] | Daniel Pokladek，Unity shader 学习博客 danielpokladek.me 作者 |
 | [[rune-skovbo-johansen]] | 丹麦独立开发者/前 Unity 工程师（Eye of the Temple, The Big Forest, Phacelle Noise, Erosion Filter） |
+| [[chips-and-cheese]] | Chips and Cheese 集体作者页（CPU/GPU 微架构实测博客） |
+| [[chester-lam]] | Chips and Cheese 主笔，缓存/内存/互连延迟带宽实测的主要贡献者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1256,6 +1264,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/runevision-hair-and-atmosphere]] | Johansen: Unity 发丝着色器三档实现 + 日本远山空气透视观察 |
 | [[sources/runevision-phacelle-noise]] | Johansen: Phacelle Noise—比 Phasor Noise 便宜一个数量级的方向性噪声 |
 | [[sources/runevision-erosion-filter]] | Johansen: Advanced Terrain Erosion Filter—单 pass GPU 过程化山地侵蚀 |
+| [[sources/chipsandcheese-gb10-cpu-memory]] | Chester Lam：GB10 CPU 侧内存子系统实测（2025-12） |
+| [[sources/chipsandcheese-gb10-gpu]] | Chester Lam：GB10 iGPU（consumer Blackwell）分析（2026-03） |
+| [[sources/chipsandcheese-chipset-microbench]] | Chester Lam：主板 chipset 对 PCIe 延迟的影响（2026-03） |
+| [[sources/chipsandcheese-ccc-april-fools]] | Chester Lam：LLM C 编译器与微架构救生圈（2026-04 愚人节） |
+| [[sources/chipsandcheese-split-locks]] | Chester Lam：x86-64 split lock 跨 7 平台横测（2026-04） |
 
 ## 元（wiki/meta/）
 

@@ -669,3 +669,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-51 Worker EU (runevision / Rune Skovbo Johansen ×3)
 
 处理 blog.runevision.com 最近 8 个抓取，实质 3 篇技术文：2025-10 hair shader + atmospheric perspective 合并贴文、2026-01 Phacelle Noise、2026-03 Fast and Gorgeous Erosion Filter。新增 5 概念页（phacelle-noise / directional-noise / erosion-filter-procedural / atmospheric-perspective / hair-shader-anisotropic）、1 人物页（rune-skovbo-johansen）、3 source 摘要。5 篇是首页/月页/归档页对同一文章的重复抓取，skip_duplicate。
+
+## [2026-04-19] ingest | Wave-51 Worker ET (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com（Chester Lam）CPU/GPU 微架构实测分析：GB10 CPU 侧内存子系统、GB10 iGPU（consumer Blackwell）、主板 chipset PCIe 延迟横测、LLM 生成 C 编译器压测微架构（April Fools）、x86-64 split lock 跨 7 平台横测。新增 6 概念页 + 2 人物页（chips-and-cheese collective + chester-lam）+ 5 source 摘要。

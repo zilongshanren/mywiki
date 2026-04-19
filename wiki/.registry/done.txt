@@ -865,3 +865,8 @@ raw/articles/blog.runevision.com/2026-01-22_runevision-blog.md
 raw/articles/blog.runevision.com/2026-01-22_runevision-blog-2.md
 raw/articles/blog.runevision.com/2026-03-30_fast-and-gorgeous-erosion-filter.md
 raw/articles/blog.runevision.com/2026-03-30_runevision-blog.md
+raw/articles/chipsandcheese.com/2025-12-31_inside-nvidia-gb10s-memory-subsystem-from-the-cpu-side.md
+raw/articles/chipsandcheese.com/2026-03-14_analyzing-nvidia-gb10-s-gpu.md
+raw/articles/chipsandcheese.com/2026-03-22_microbenchmarking-chipsets-for-giggles.md
+raw/articles/chipsandcheese.com/2026-04-01_embracing-ai-with-claude-s-c-compiler.md
+raw/articles/chipsandcheese.com/2026-04-08_investigating-split-locks-on-x86-64.md

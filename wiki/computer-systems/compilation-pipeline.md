@@ -39,10 +39,10 @@ C source → [预处理] → [编译] → [汇编] → [链接] → 可执行文
 - Shader 编译也有类似多阶段：HLSL → DXIL/SPIR-V → GPU-specific 指令。
 
 ## 相关
-
 - [[bits-and-context]]
 - [[virtual-memory]]
 - [[compiler-interference-analysis-bug]] — MSVC 把两个活跃临时量塞到同一栈槽的真实案例
+- [[llm-generated-c-compiler-perf]] —— LLM 生成编译器的代码质量如何反向压测微架构
 
 ## Sources
 

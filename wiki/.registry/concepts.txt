@@ -621,3 +621,9 @@ directional-noise
 erosion-filter-procedural
 atmospheric-perspective
 hair-shader-anisotropic
+gb10-memory-subsystem
+cache-coherence-cross-cluster
+gb10-gpu-blackwell-igpu
+chipset-pcie-latency
+split-lock-x86
+llm-generated-c-compiler-perf
