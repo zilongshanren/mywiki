@@ -55,3 +55,4 @@ return lerp(_NearColour, _FarColour, depth);
 ## Sources
 - [[sources/danielilett-image-effects-depth-silhouette]]
 - [[sources/danielilett-shader-code-depth-buffer]] —— URP + HLSL 手写版的 silhouette shader：ZWrite/ZTest 命令、`ComputeScreenPos` + `xy/w`、`Linear01Depth` + `_ZBufferParams`、自定义 shader 补 prepass、Render Objects 做 X-ray
+- [[sources/danielilett-snapshot-pro-silhouette]] —— Snapshot Shaders Pro 的 Silhouette override：把同一套 `Linear01Depth` + `lerp(near, far, depth)` 做成可在 Volume 里混合的产品版，参数裁到只剩 Near/Far Color

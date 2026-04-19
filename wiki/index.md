@@ -623,6 +623,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[triangle-filtering-pipeline]] | Confetti/The Forge 的 Triangle VB 工程化：三级剔除 + ExecuteIndirect + Forward++ |
 | [[ray-tracing-api-debate]] | Wolfgang Engel 2018 年对 DXR 黑盒化的公开质疑与替代路线 |
 | [[the-forge-renderer]] | Confetti 开源跨平台渲染框架，Engel 所谓「下一代 GPU Zen」 |
+| [[sharpen-filter]] | unsharp mask 锐化后处理：原图加高频残差；Snapshot Shaders Pro 的单参数产品化 |
+| [[synthwave-grid-postfx]] | 屏幕像素反推世界坐标后判定到三组正交平面的距离，画出透视正确的无限网格 |
+| [[text-adventure-terminal-postfx]] | ASCII 终端风格后处理：cell 平均亮度索引字符图集、bg/fg 双色 lerp |
 
 ## 经典案例（wiki/examples/）
 
@@ -1395,6 +1398,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boristhebrave-gol-cuda-triton]] | Boris The Brave：Game of Life 在 CUDA / Triton 上 120× 提速阶梯 |
 | [[sources/boristhebrave-gol-multistep]] | Boris The Brave：shared memory 多步融合再把 GoL 提 2.7×，击穿 DRAM 带宽下限 |
 | [[sources/boristhebrave-rhombus-tilings]] | Boris The Brave：无限随机菱形铺砖，三层错位 chunking 消除 Townscaper 边界痕 |
+| [[sources/danielilett-snapshot-pro-sharpen]] | Ilett：Snapshot Shaders Pro - Sharpen unsharp mask 单参数 |
+| [[sources/danielilett-snapshot-pro-silhouette]] | Ilett：Snapshot Shaders Pro - Silhouette 深度剪影 near/far 双色 |
+| [[sources/danielilett-snapshot-pro-snes]] | Ilett：Snapshot Shaders Pro - SNES 每通道色阶量化 |
+| [[sources/danielilett-snapshot-pro-synthwave]] | Ilett：Snapshot Shaders Pro - Synthwave 世界空间网格后处理 |
+| [[sources/danielilett-snapshot-pro-text-adventure]] | Ilett：Snapshot Shaders Pro - Text Adventure ASCII 终端后处理 |
 
 ## 元（wiki/meta/）
 

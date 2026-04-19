@@ -27,8 +27,9 @@ Boris 的实际做法是把算法**相 (phase) 化**。每个 phase 的 chunk �
 通用模板：**Phase 1 独立生成候选；Phase 2 按有限邻域裁剪**。只要候选的「最大影响半径」有上界，Phase 2 就能按 chunk 走。
 
 ## 工程意义
-
 这类算法让「无限世界」可以做成纯函数式查询 `f(coord) -> value`——viewport 移动时只要把暴露出来的新 chunk 求值一下。它也是 Sylves 把 [[poisson-disk-sampling]]、WFC、布局生成等工具搬到**无限域**上的底层技术路线。
+
+新增的 [[infinite-random-rhombus-tilings]] 是这套方法论的又一个实例：底层操作从「矩形过滤」换成「3 菱汇合点翻转」，其余 chunking / 相位 / 纯函数查询的骨架完全复用。
 
 ## Sources
 

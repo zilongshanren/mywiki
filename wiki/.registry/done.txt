@@ -11452,3 +11452,8 @@ raw/articles/boristhebrave.com/2025-09-11_accelerated-game-of-life-with-cuda-tri
 raw/articles/boristhebrave.com/2025-09-21_more-accelerated-game-of-life.md
 raw/articles/boristhebrave.com/2025-10-17_infinite-random-rhombus-tilings.md
 raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-sharpen.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-silhouette.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-snes.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-synthwave.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-text-adventure.md

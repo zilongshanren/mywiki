@@ -62,6 +62,9 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[noperspective-affine-texture]]
 - [[toon-outline-post-process-modes]]
 - [[vortex-distortion]]
+- [[sharpen-filter]]
+- [[synthwave-grid-postfx]]
+- [[text-adventure-terminal-postfx]]
 
 ## Sources
 - [[sources/danielilett-cel-shading-part-1]]
@@ -135,3 +138,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-snapshot-pro-underwater]]
 - [[sources/danielilett-snapshot-pro-vortex]]
 - [[sources/danielilett-snapshot-pro-world-scan]]
+- [[sources/danielilett-snapshot-pro-sharpen]]
+- [[sources/danielilett-snapshot-pro-silhouette]]
+- [[sources/danielilett-snapshot-pro-snes]]
+- [[sources/danielilett-snapshot-pro-synthwave]]
+- [[sources/danielilett-snapshot-pro-text-adventure]]

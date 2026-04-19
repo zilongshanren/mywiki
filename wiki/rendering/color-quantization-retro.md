@@ -67,5 +67,5 @@ col = lerp(col,        _GBLightest, saturate(gb - 2));
 - [[sources/danielilett-retro-urp-retro-skybox]] —— 天空盒版 PSX 色深量化 + 程序噪声云
 
 ## Sources
-
 - [[sources/danielilett-image-effects-retro-crt]]
+- [[sources/danielilett-snapshot-pro-snes]] —— Pro 版把每通道色阶量化做成 Volume override，只暴露 `Banding Levels` 一个滑块，N=6 近 SNES、N=4 近 NES

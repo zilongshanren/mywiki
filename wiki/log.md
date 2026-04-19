@@ -753,3 +753,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-58 Worker FO (boristhebrave.com 2025 混合 ×5)
 
 处理 5 篇 Boris The Brave 2025 文章。新增 2 概念页（gpu-gol-optimization-ladder 把两篇 GoL 加速文合并；infinite-random-rhombus-tilings Townscaper 替代方案）、3 source 摘要。跳过 pure-reason（LLM 预言非技术）与 2026-01-03 infinite-grids（wave 54 已 ingest）。patch boris-the-brave 人物页、infinite-chunked-procedural-generation、cuda-memory-hierarchy 三处已有页面。
+
+## [2026-04-19] ingest | Wave-58 Worker FP (danielilett snapshot-pro ×5: sharpen/silhouette/snes/synthwave/text-adventure)
+
+处理 5 篇 Daniel Ilett *Snapshot Shaders Pro* 产品参考（极短文档）。新增 3 概念页：[[sharpen-filter]]（unsharp mask / 3×3 Laplacian 卷积核）、[[synthwave-grid-postfx]]（屏幕像素反推世界坐标 + 三组正交平面距离判定）、[[text-adventure-terminal-postfx]]（cell 亮度索引字符图集 + fg/bg lerp）。Silhouette 与 SNES 分别复用既有 [[depth-texture-silhouette]] 和 [[color-quantization-retro]]，只追加 source 链接。新增 5 source 摘要。无人物、无跳过。

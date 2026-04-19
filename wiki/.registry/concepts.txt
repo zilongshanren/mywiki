@@ -678,3 +678,6 @@ ray-tracing-api-debate
 the-forge-renderer
 gpu-gol-optimization-ladder
 infinite-random-rhombus-tilings
+sharpen-filter
+synthwave-grid-postfx
+text-adventure-terminal-postfx
