@@ -11506,3 +11506,8 @@ raw/articles/bartwronski.com/2014-09-06_small-coding-projects.md
 raw/articles/bartwronski.com/2014-09-21_review-multithreading-for-visual-effects-crc-press-2014.md
 raw/articles/bartwronski.com/2015-02-19_processing-scanned-dslr-photos-of-film-negatives-in-lightroo.md
 raw/articles/bartwronski.com/2020-03-23_articles-index.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-pixelate.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-posterize.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-radial-blur.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-scanlines.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-sepia-tone.md

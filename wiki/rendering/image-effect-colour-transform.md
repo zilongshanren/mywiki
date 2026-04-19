@@ -40,13 +40,13 @@ HLSL 里一句 `mul(tex.rgb, sepiaVals)` 就完事。这个例子揭示了一个
 3. **为下一步做对照**——下一课的 [[depth-texture-silhouette|Silhouette 深度剪影]]、再下一课的 [[separable-gaussian-blur|Gaussian Blur]] 都开始打破"逐像素独立"的假设：Silhouette 需要多采样一张深度纹理，Blur 需要采样邻居。把颜色变换当起点，后续的"多采样"才看得出代价。
 
 ## 相关
-
 - [[unity-image-effect-basics]]
 - [[fragment-shader]]
 - [[color-space]]
 - [[color-lut]]
 - [[depth-texture-silhouette]]
 - [[separable-gaussian-blur]]
+- [[sources/danielilett-snapshot-pro-sepia-tone]] —— 教程版 Sepia 固化成 Volume override，只留一个 `Blend` 强度旋钮
 
 ## Sources
 

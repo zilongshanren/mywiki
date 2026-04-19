@@ -95,7 +95,6 @@ float w = gaussian(x, sigma);
 [[metal-compute-image-filter|Warren Moore 的 image processing 教程]]在 compute kernel 里直接写了双重循环 `for(j) for(i)`——没有用可分离性，每像素 `N²` 次采样。他的 kernel 还把预计算的 2D 权重矩阵做成一张 `MTLPixelFormatR32Float` 的查找纹理传进去，kernel 里 `weights.read(kernelIndex).rrrr` 取出标量权重。灵活性很好（改半径只需重建权重纹理），但性能代价直接——`N=15` 时就是 225 次 texture fetch/像素，和 2×N=30 的可分离版本差了一个数量级。教程的定位是入门而非性能演示，但对读者是个提醒：可分离这条优化路径之所以存在，正是因为「显式写双重循环」的实现是真的会慢。
 
 ## 相关
-
 - [[image-convolution-kernel]]
 - [[unity-image-effect-basics]]
 - [[sampler-filter-wrap-modes]]
@@ -107,6 +106,8 @@ float w = gaussian(x, sigma);
 - [[laplacian-pyramid]]
 - [[mipmap-generation-sampling]] —— `texture2D` 的 bias 参数可作为 blur 的廉价替代或加强剂
 - [[ping-pong-surfaces]]
+- [[radial-blur-postfx]] —— 空间变化 kernel 强度的分离高斯 blur 变体
+- [[sources/danielilett-snapshot-pro-radial-blur]] —— Pro 版 Radial Blur 的两参数实现
 
 ## Sources
 

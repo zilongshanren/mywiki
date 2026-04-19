@@ -53,7 +53,6 @@ col = lerp(col,        _GBLightest, saturate(gb - 2));
 关键细节是 **`temp.filterMode = FilterMode.Point`**。否则上采样时默认 bilinear 会把像素边缘糊成渐变，丢掉硬边块状感。这种"缩小 → 处理 → 放大并用 point sampling"的模式几乎是所有像素 post-process 的标配。
 
 ## 相关
-
 - [[crt-shader-effects]] —— 扫描线 / 荧光粉 / glitch 叠在量化之后的典型链
 - [[retro-rendering-techniques]] —— PS1/N64 复古技术清单，和本页的 NES/SNES/GB 同源哲学
 - [[dither-alpha-clipping]] —— dither 可以缓解色带，和量化是互补关系
@@ -65,6 +64,9 @@ col = lerp(col,        _GBLightest, saturate(gb - 2));
 - [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏 CRT 的 Custom RGB Sliders 模式用整数滑块直接指定 R/G/B 每通道级数，是色阶量化的 UI 极简表达；并暴露 Custom Luminance / RGB / RGB+Intensity 三种自定义 ramp 采样模式
 - [[procedural-retro-skybox]] —— Retro Skybox 把 Color Depth + Color Depth Offset（防整体变暗）+ Screen/Texture/Off Dithering 这一套复古量化搬到天空盒上
 - [[sources/danielilett-retro-urp-retro-skybox]] —— 天空盒版 PSX 色深量化 + 程序噪声云
+- [[pixelate-postfx]] —— 空间维度的量化，NES 风格需和色阶量化串联
+- [[sources/danielilett-snapshot-pro-posterize]] —— 三通道独立级数 + `Power Ramp` gamma 的通用化 per-channel posterize
+- [[sources/danielilett-snapshot-pro-pixelate]] —— 单参数 Pixelate override，空间量化工具
 
 ## Sources
 - [[sources/danielilett-image-effects-retro-crt]]

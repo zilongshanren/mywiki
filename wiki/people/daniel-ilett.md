@@ -143,3 +143,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-snapshot-pro-snes]]
 - [[sources/danielilett-snapshot-pro-synthwave]]
 - [[sources/danielilett-snapshot-pro-text-adventure]]
+- [[sources/danielilett-snapshot-pro-pixelate]]
+- [[sources/danielilett-snapshot-pro-posterize]]
+- [[sources/danielilett-snapshot-pro-radial-blur]]
+- [[sources/danielilett-snapshot-pro-scanlines]]
+- [[sources/danielilett-snapshot-pro-sepia-tone]]

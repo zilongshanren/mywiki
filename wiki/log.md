@@ -793,3 +793,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-61 Worker FY (bartwronski.com ×5)
 
 处理 5 篇 Bart Wronski 2014–2020 文章。2 篇入库：Poisson 生成器 GUI 更新（patch 回 [[poisson-disk-sampling]] 和 [[bartosz-wronski]]）、《Multithreading for Visual Effects》书评（新建概念 [[vfx-multithreading-patterns]]）。跳过 3 篇：small-coding-projects（项目名片页，CSharpRenderer / Poisson 均已覆盖）、Lightroom 胶片底片教程（摄影）、articles-index（目录页 skip_duplicate）。
+
+## [2026-04-19] ingest | Wave-61 Worker FW (Daniel Ilett Snapshot Pro 最后 5 effects)
+
+处理 5 篇 danielilett.com 产品参考文档（Pixelate / Posterize / Radial Blur / Scanlines / Sepia Tone）。新增 2 概念页（pixelate-postfx, radial-blur-postfx）、5 source 摘要。Scanlines 链 [[crt-shader-effects]]、Posterize 链 [[color-quantization-retro]]、Sepia 链 [[image-effect-colour-transform]]，均不另建概念。Snapshot Shaders Pro 产品文档系列至此完结。

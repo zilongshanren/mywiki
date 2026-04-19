@@ -659,6 +659,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[pix-api-and-dxdmp]] | GDC 2026：PIX API、.dxdmp 崩溃转储、DebugBreak()、PIX 事件透传驱动 |
 | [[dxr-tier-2-clas-ptlas]] | DXR Tier 2.0：CLAS / Cluster Template / Partitioned TLAS |
 | [[advanced-shader-delivery]] | Shader Compiler Plugin + Partial Graphics Programs + DirectStorage 1.4 |
+| [[pixelate-postfx]] | Pixelate 像素化后处理：空间维度量化，与色阶量化正交 |
+| [[radial-blur-postfx]] | Radial Blur：kernel 随径向距离变化的空间变化 blur |
 
 ## 经典案例（wiki/examples/）
 
@@ -1470,6 +1472,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-dx12-gdc-2026-comments]] | Sawicki：GDC 2026 DirectX 12 新特性的应用端点评 |
 | [[sources/bartwronski-poisson-gui]] | Wronski：Poisson 采样生成器加 PyQt GUI + 旋转 disk 模式 |
 | [[sources/bartwronski-multithreading-vfx-review]] | Wronski：《Multithreading for Visual Effects》书评，VFX 工具链多线程改造 |
+| [[sources/danielilett-snapshot-pro-pixelate]] | Ilett：Snapshot Shaders Pro - Pixelate 单参数空间量化 |
+| [[sources/danielilett-snapshot-pro-posterize]] | Ilett：Snapshot Shaders Pro - Posterize 三通道独立色阶 + Power Ramp |
+| [[sources/danielilett-snapshot-pro-radial-blur]] | Ilett：Snapshot Shaders Pro - Radial Blur kernel 随径向距离变化 |
+| [[sources/danielilett-snapshot-pro-scanlines]] | Ilett：Snapshot Shaders Pro - Scanlines 贴图驱动扫描线 |
+| [[sources/danielilett-snapshot-pro-sepia-tone]] | Ilett：Snapshot Shaders Pro - Sepia Tone 单 Blend 参数 luminance 棕褐调色 |
 
 ## 元（wiki/meta/）
 

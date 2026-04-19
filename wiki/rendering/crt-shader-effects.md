@@ -45,7 +45,6 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 它把一种真实光学现象拆成 5 个**相互正交**的小 trick，每一个都是"用 Fraction/Modulo 造周期 + 用 Step/Abs/Power 塑形 + 乘加回最终颜色"的套路，彼此可以独立 toggle。这种模块化是 Shader Graph 作品常见的结构——也是为什么 Cyan 在多处使用 `Keyword` 节点：每个效果独立开关，调试时能把贡献拆开看。同时它暴露了 Shader Graph 的一个代价：每加一个 keyword 变体数翻倍，build 时间和 Shader Variant Collection 会膨胀，而使用不同变体的材质也**无法被 SRP Batcher 合批**。
 
 ## 相关
-
 - [[blit-render-feature]]
 - [[urp-volume-post-processing]] —— CRT 效果常叠加 Volume 里的 Vignette / Film Grain / Chromatic Aberration
 - [[uv-manipulation-nodes]]
@@ -59,6 +58,7 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 - [[sources/danielilett-retro-godot-crt-post-process]] —— 全屏版 CRT + VHS，独有 *Scale In Screen Space / Reference Resolution* 做跨分辨率视觉一致性，*Tracking Color Damage* 走 YIQ 色空间建模 NTSC 磁带色损
 - [[sources/danielilett-retro-urp-crt-mesh]] —— URP 版 CRT Mesh，和 Godot 版近似；Tracking Texture 用 x-by-1 的 RG 双通道编码 UV 偏移 + 扫描线概率
 - [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏版独有 *Interlaced Rendering*（每帧只渲半数行，真实 CRT 交错扫描）、*Custom RGB Sliders*（整数滑块直控 R/G/B 每通道级数）、*Render Pass Event*（插在 URP 内置 post 之前或之后）、以及 Custom Luminance / RGB / RGB+Intensity 三种 ramp 采样模式
+- [[sources/danielilett-snapshot-pro-scanlines]] —— 贴图驱动的扫描线 override，和 Cyan 程序化扫描线做同一件事，选了查表路径换灵活性
 
 ## Sources
 
