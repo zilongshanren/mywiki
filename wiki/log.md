@@ -525,3 +525,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-19] ingest | Wave-38 Worker DJ (jendrikillner.com issues 326-330 — all skipped)
 
 5 篇 jendrikillner.com 每周图形编程链接合辑 2024-02-11 ~ 2024-03-10（issues 326-330）全部 skipped_offtopic（link roundup，沿用 wave 34 先例）。
+
+## [2026-04-19] ingest | Wave-39 Worker DK (jendrikillner 331-340 all skipped)
+
+10 篇 jendrikillner Graphics Programming Weekly（2024-03 ~ 05）全部 skipped_offtopic（link roundup，沿用 wave 34/38 先例）。
+
+## [2026-04-19] ingest | Wave-39 Worker DL (cloudwu 2025-04 ~ 2025-07 ×5)
+
+5 篇云风 blog 月度存档：跳 4（Napier 对数史、单人桌游、育儿、尿酸），入 1——读 Milo Yip 译《游戏引擎架构》笔记，补充 2002~04 在大话西游 64M 内存约束下实现的栈式 / 双端 / 帧分配器与网易内部内存管理器比赛往事。新增 1 source + patch [[linear-allocator]] 的「变种」（双端分配器）+ cloudwu/jason-gregory 链接。
+
+## [2026-04-19] ingest | Wave-39 Worker DM (simonschreibt.de ×5)
+
+5 篇 simonschreibt.de：跳 3（newsletter 归档、Cozy Space Survivors 销售复盘、press kit），入 2——Infinity Nikki 单向窗户（back-face culling + 遮挡体积）与 Shadow Breakdown（shadow map + blob + AO decal 三套合奏）。新增 4 概念（[[one-way-window-backface-culling]]、[[shadow-caster-culling-front-back]]、[[selective-shadow-fade-pass-switch]]、[[blob-shadow-decal-vs-plane]]）+ 2 source + patch [[simon-trumpler]] / [[shadow-mapping-basics]]。

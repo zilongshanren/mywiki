@@ -1,0 +1,96 @@
+{
+  "batch_id": "batch-w39-dm",
+  "agent_note": "simonschreibt 2024-2025: 3 skipped (newsletter archive, Cozy Space Survivors postmortem 以营销/销售为主, press-kit)，2 深度拆解 Infinity Nikki 渲染技巧被保留。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/simonschreibt.de/2024-01-06_newsletter.md",
+      "status": "skipped_offtopic",
+      "reason": "Newsletter 存档页 —— 只是 35 期邮件的链接列表，无技术内容。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2024-03-19_simonschreibt.md",
+      "status": "skipped_offtopic",
+      "reason": "Cozy Space Survivors 发售复盘，主体为销量/市场/本地化/定价/Steam 运营等业务经验，技术信息（Godot HTML5 export、pool 避免 stutter、GodotSteam）片段化且不构成独立技术贡献。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2024-05-28_cozy-space-survivors-press-kit.md",
+      "status": "skipped_offtopic",
+      "reason": "Press Kit 页面，只有 factsheet/pitch/socials/截图链接，无技术内容。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2025-02-23_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-nikki-one-way-window",
+      "title": "Infinity Nikki — One-Way Window"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2025-03-02_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-nikki-shadow",
+      "title": "Infinity Nikki — Shadow Breakdown"
+    }
+  ],
+  "concepts_created": [
+    "one-way-window-backface-culling",
+    "shadow-caster-culling-front-back",
+    "selective-shadow-fade-pass-switch",
+    "blob-shadow-decal-vs-plane"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "simonschreibt-nikki-one-way-window",
+    "simonschreibt-nikki-shadow"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "replace_line",
+      "match": "| Cyberpunk 2077: Phantom Liberty — Broken Edges | [[pom-decal-broken-edges]] |",
+      "content": "| Cyberpunk 2077: Phantom Liberty — Broken Edges | [[pom-decal-broken-edges]] |\n| Infinity Nikki: One-Way Window | [[one-way-window-backface-culling]] · [[shadow-caster-culling-front-back]] |\n| Infinity Nikki: Shadow Breakdown | [[selective-shadow-fade-pass-switch]] · [[blob-shadow-decal-vs-plane]] |"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[one-way-window-backface-culling]]\n- [[shadow-caster-culling-front-back]]\n- [[selective-shadow-fade-pass-switch]]\n- [[blob-shadow-decal-vs-plane]]"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/simonschreibt-nikki-one-way-window]]\n- [[sources/simonschreibt-nikki-shadow]]"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shadow-caster-culling-front-back]] — front-face vs back-face shadow casting 的 peter-panning/light-leak 权衡\n- [[selective-shadow-fade-pass-switch]] — 让单个 actor 的阴影独立淡入淡出（UE Shadow Pass Switch）\n- [[blob-shadow-decal-vs-plane]] — 传统 blob 阴影 vs 投影 decal 的水面/地形处理差异"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[one-way-window-backface-culling]] | 利用 back-face culling 做单向窗户：内部可见、外部被遮挡体积包住 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shadow-caster-culling-front-back]] | shadow map 该用 front-face 还是 back-face 做投射者 —— peter-panning 与 light leak 的抉择 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[selective-shadow-fade-pass-switch]] | 让单个角色的阴影独立淡出：UE Shadow Pass Switch + 多 shadow pass |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[blob-shadow-decal-vs-plane]] | Blob 阴影：对齐平面 vs 投影 decal，水面与高度差的取舍 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-nikki-one-way-window]] | Simon：Infinity Nikki 单向窗户与相机外 NPC 动画剔除 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-nikki-shadow]] | Simon：Infinity Nikki 三套阴影系统——shadow map、blob、AO decal 的合奏 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-39 Worker dm (simonschreibt.de ×5)\n\n处理 5 篇 simonschreibt.de，保留 2 篇 Infinity Nikki 渲染拆解（one-way window、shadow 三件套），跳过 3 篇非技术（newsletter archive、Cozy Space Survivors 销售复盘、press kit）。新增 4 概念页（one-way-window-backface-culling、shadow-caster-culling-front-back、selective-shadow-fade-pass-switch、blob-shadow-decal-vs-plane），2 source 摘要，并补丁 [[simon-trumpler]]、[[shadow-mapping-basics]]。"
+}

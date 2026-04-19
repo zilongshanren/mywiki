@@ -34,6 +34,7 @@ sources: 1
 - **Stack allocator**：额外记录一个"标记"，允许 pop 到某个 checkpoint
 - **Double-buffered / ring**：两段交替 reset，让当前帧使用 buffer A 时上一帧的 buffer B 在 GPU 上执行
 - **Frame allocator**：多个命令列表各持一个独立的线性分配器，避免线程争用
+- **双端分配器（double-ended allocator）**：同一块内存从两端向中间推进，两端的 offset 分别维护。云风在 2002 年前后为大话西游客户端在 64M 内存上写过这类分配器，并可和栈式分配器协同工作——例如一端用栈式跨帧保留资源，另一端用线性分配放当帧临时缓冲。参见 [[sources/cloudwu-game-engine-memory]]。
 
 ## 相关
 
@@ -47,3 +48,4 @@ sources: 1
 ## Sources
 
 - [[sources/3dgep-learning-directx12-lesson3]]
+- [[sources/cloudwu-game-engine-memory]]

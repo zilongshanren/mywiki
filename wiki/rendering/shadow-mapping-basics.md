@@ -137,6 +137,9 @@ v_normal = mat3(u_sha_view) * mat3(world_mat) * in_Normal;
 - [[xor-shader-artist]]
 - [[sdf-ray-marched-shadows]] —— 2D SDF 场景里的 raymarch 软阴影路径（和 shadow map 无关的另一个谱系）
 - [[moment-shadow-mapping]] — 用四阶矩 + Hausdorff 矩问题把 VSM 的「可过滤阴影」路线推到接近 ground truth 的质量
+- [[shadow-caster-culling-front-back]] — front-face vs back-face shadow casting 的 peter-panning/light-leak 权衡
+- [[selective-shadow-fade-pass-switch]] — 让单个 actor 的阴影独立淡入淡出（UE Shadow Pass Switch）
+- [[blob-shadow-decal-vs-plane]] — 传统 blob 阴影 vs 投影 decal 的水面/地形处理差异
 
 ## Sources
 

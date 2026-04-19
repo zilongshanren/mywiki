@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w39-dk",
+  "agent_note": "jendrikillner Graphics Programming Weekly issues 331-340 (Mar-May 2024). Following wave 34/38 precedent — pure link roundups with no substantive Jendrik commentary. All 10 skipped.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2024-03-17_graphics-programming-weekly-issue-331-march-17th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent for jendrikillner weekly)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-03-24_graphics-programming-weekly-issue-332-march-24th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-03-31_graphics-programming-weekly-issue-333-march-31st-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-04-07_graphics-programming-weekly-issue-334-april-7th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-04-14_graphics-programming-weekly-issue-335-april-14th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-04-21_graphics-programming-weekly-issue-336-april-21st-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-04-28_graphics-programming-weekly-issue-337-april-28th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-05-05_graphics-programming-weekly-issue-338-may-5th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-05-12_graphics-programming-weekly-issue-339-may-12th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-05-19_graphics-programming-weekly-issue-340-may-19th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original commentary (per wave 34/38 precedent)"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-39 Worker DK (jendrikillner weekly 331-340)\n\n处理 10 篇 jendrikillner.com Graphics Programming Weekly 周报（2024-03 至 2024-05，期号 331-340）。全部 skipped_offtopic：均为纯链接聚合，无原创评述，延续 wave 34/38 对 jendrikillner weekly 的先例。"
+}

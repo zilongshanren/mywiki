@@ -26,6 +26,7 @@ sources: 2
 - [[data-driven-architecture]]
 - [[soft-real-time]]
 - [[engine-layering]]
+- [[sources/cloudwu-game-engine-memory]] —— 云风读 Milo Yip 译本《游戏引擎架构》的读书笔记，重点共鸣 Console 内存管理章节
 
 ## Sources
 

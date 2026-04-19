@@ -1,0 +1,68 @@
+{
+  "batch_id": "batch-w39-dl",
+  "agent_note": "cloudwu blog.codingnow.com 2025-04 ~ 2025-07 monthly archives. 4/5 articles are off-topic (math history reading notes, single-player board games, parenting diary, jogging / uric-acid control). 1 technical article: cloudwu reading Milo Yip 译《游戏引擎架构》and recalling his own 2002~04 memory-management experience on Console-like 64M constraints.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-04-10_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "math history reading notes on Napier logarithms — popular-science, no CS / engineering substance"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-05-14_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-game-engine-memory",
+      "title": "读《游戏引擎架构》：Console 时代的内存管理回忆"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-05-14_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "single-player board-game review (Legacy of Yu, Kingdom Legacy, Palm Island) — non-technical per batch instructions"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-06-15_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "parenting diary (子女日常、课业、阅读推荐) — non-technical"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-07-20_yun-feng-de-blog-2.md",
+      "status": "skipped_offtopic",
+      "reason": "personal health log on jogging & uric-acid control — non-technical"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["cloudwu-game-engine-memory"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 变种",
+      "content": "- **双端分配器（double-ended allocator）**：同一块内存从两端向中间推进，两端的 offset 分别维护。云风在 2002 年前后为大话西游客户端在 64M 内存上写过这类分配器，并可和栈式分配器协同工作——例如一端用栈式跨帧保留资源，另一端用线性分配放当帧临时缓冲。参见 [[sources/cloudwu-game-engine-memory]]。"
+    },
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-game-engine-memory]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-game-engine-memory]]"
+    },
+    {
+      "file": "wiki/people/jason-gregory.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/cloudwu-game-engine-memory]] —— 云风读 Milo Yip 译本《游戏引擎架构》的读书笔记，重点共鸣 Console 内存管理章节"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-game-engine-memory]] | 云风读《游戏引擎架构》笔记：Console 内存约束下的栈式 / 双端 / 帧分配器与网易内部内存管理器比赛 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-39 Worker DL (blog.codingnow.com 2025-04 ~ 2025-07 ×5)\n\n云风 2025-04 ~ 2025-07 月度存档 5 篇：跳过 4 篇（Napier 对数表史、单人桌游、育儿日常、慢跑降尿酸）；入库 1 篇技术文——读 Milo Yip 译本《游戏引擎架构》笔记，补充云风 2002~04 年在大话西游 64M 内存约束下实现的栈式 / 双端 / 帧分配器与网易内部内存管理器比赛往事。新增 1 个 source 页 cloudwu-game-engine-memory；补丁 [[linear-allocator]] 的「变种」章节引入双端分配器条目，并补充 [[cloudwu]] / [[jason-gregory]] 的 Sources / 相关链接。"
+}

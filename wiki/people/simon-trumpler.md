@@ -26,6 +26,8 @@ sources: 5
 | Teleglitch: RGB Flickering | [[chromatic-aberration-post]] |
 | Anno 1800: Shadows of Beauty | [[camera-relative-sun-shadows]] |
 | Cyberpunk 2077: Phantom Liberty — Broken Edges | [[pom-decal-broken-edges]] |
+| Infinity Nikki: One-Way Window | [[one-way-window-backface-culling]] · [[shadow-caster-culling-front-back]] |
+| Infinity Nikki: Shadow Breakdown | [[selective-shadow-fade-pass-switch]] · [[blob-shadow-decal-vs-plane]] |
 
 ## 相关
 
@@ -40,6 +42,10 @@ sources: 5
 - [[lit-sphere-matcap-shading]]
 - [[camera-relative-sun-shadows]]
 - [[pom-decal-broken-edges]]
+- [[one-way-window-backface-culling]]
+- [[shadow-caster-culling-front-back]]
+- [[selective-shadow-fade-pass-switch]]
+- [[blob-shadow-decal-vs-plane]]
 
 ## Sources
 
@@ -55,3 +61,5 @@ sources: 5
 - [[sources/simonschreibt-wow-balloon]]
 - [[sources/simonschreibt-anno-1800-shadows]]
 - [[sources/simonschreibt-cyberpunk-broken-edges]]
+- [[sources/simonschreibt-nikki-one-way-window]]
+- [[sources/simonschreibt-nikki-shadow]]

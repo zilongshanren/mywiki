@@ -476,6 +476,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sdf-operations-shader]] | SDF 的布尔并差交、onion / hollow、镜像平铺、smooth min 修改清单 |
 | [[godot-hologram-shader-effects]] | Daniel Ilett 的 Godot 全息着色器：PBR + 顶点/切片 glitch + dot/grid/gradient + fresnel 等变体 |
 | [[sprite-batch-instance-draw]] | 用 instance draw + storage buffer 去重 sprite 顶点数据（云风 Soluna） |
+| [[one-way-window-backface-culling]] | 利用 back-face culling 做单向窗户：内部可见、外部被遮挡体积包住 |
+| [[shadow-caster-culling-front-back]] | shadow map 该用 front-face 还是 back-face 做投射者 —— peter-panning 与 light leak 的抉择 |
+| [[selective-shadow-fade-pass-switch]] | 让单个角色的阴影独立淡出：UE Shadow Pass Switch + 多 shadow pass |
+| [[blob-shadow-decal-vs-plane]] | Blob 阴影：对齐平面 vs 投影 decal，水面与高度差的取舍 |
 
 ## 经典案例（wiki/examples/）
 
@@ -977,6 +981,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-hologram-godot-grid]] | Ilett：Godot 全息 Grid 变体——世界空间三轴网格线 + 可滚动 |
 | [[sources/cloudwu-state-sync-broadcast-optimization]] | 云风：Agent 状态同步的广播优化 |
 | [[sources/cloudwu-soluna-2d-pipeline]] | 云风：Soluna 2D 渲染管线优化 |
+| [[sources/cloudwu-game-engine-memory]] | 云风读《游戏引擎架构》笔记：Console 内存约束下的栈式 / 双端 / 帧分配器与网易内部内存管理器比赛 |
+| [[sources/simonschreibt-nikki-one-way-window]] | Simon：Infinity Nikki 单向窗户与相机外 NPC 动画剔除 |
+| [[sources/simonschreibt-nikki-shadow]] | Simon：Infinity Nikki 三套阴影系统——shadow map、blob、AO decal 的合奏 |
 
 ## 元（wiki/meta/）
 

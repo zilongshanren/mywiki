@@ -94,3 +94,4 @@ sources: 9
 - [[sources/cloudwu-factorio-space-age]]
 - [[sources/cloudwu-state-sync-broadcast-optimization]]
 - [[sources/cloudwu-soluna-2d-pipeline]]
+- [[sources/cloudwu-game-engine-memory]]

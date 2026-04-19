@@ -503,3 +503,7 @@ godot-hologram-shader-effects
 agent-state-sync-broadcast
 sprite-batch-instance-draw
 soluna-2d-engine
+one-way-window-backface-culling
+shadow-caster-culling-front-back
+selective-shadow-fade-pass-switch
+blob-shadow-decal-vs-plane
