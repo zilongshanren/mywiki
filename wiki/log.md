@@ -597,3 +597,15 @@ batch-w44-dz：10 篇 jendrikillner 周报（issue 379-388，2025-02-16 ~ 2025-0
 ## [2026-04-19] ingest | Wave-44 Worker EB (cloudwu blog 2025-11~12 ×5)
 
 处理 5 篇 blog.codingnow.com 文章：2 篇入库（卡牌构筑游戏设计、skynet 升级 Lua 5.5），1 篇跳过（育儿非技术），2 篇跳过（与已入库内容重复：EU5 游玩笔记已有 cloudwu-eu5-gameplay-notes；id + kill flag 已有 cloudwu-id-lifetime-kill-flag）。新增 2 概念页（deckbuilder-game-design-patterns, skynet-lua-sharetable-patch）与 2 source 摘要。
+
+## [2026-04-19] ingest | Wave-45 Worker EC (jendrikillner weekly 389-398 all skipped)
+
+batch-w45-ec：10 篇 jendrikillner 周报（issue 389-398）按既定先例全部 skipped_offtopic。
+
+## [2026-04-19] ingest | Wave-45 Worker ED (cloudwu blog 2025-12~2026-02 ×7)
+
+处理 7 篇 blog.codingnow.com 文章：3 篇入库（AI 聊游戏设计、单人桌游介绍、AI 辅助读书），4 篇跳过：1 篇与已入库 cloudwu-deckbuilder-games 重复（月份列表页抓取），2 篇是同日单篇文章的另一份抓取（月份列表页 / cat27 分类页），1 篇跑步攀岩日记非技术内容。新增 2 概念页（planning-over-rng-game-design, ai-assisted-reading-workflow）与 3 source 摘要。
+
+## [2026-04-19] ingest | Wave-45 Worker EE (anteru.net papers ×6)
+
+处理 6 篇 anteru.net 论文/项目索引页。Skip 1 篇（consulting.md 服务介绍）。Ingest 5 篇：SpMV Work Graphs (ISCA 2025)、Hybrid Sample-based Surface Rendering (VMV 2012)、Giga-Particle Fluid (HPG 2014)、SRAA (I3D 2011)、Tiled Light Trees (I3D 2017)。新增 2 概念页（subpixel-reconstruction-antialiasing, tiled-light-trees）+ 5 source 摘要。SpMV work graph 作为 d3d12-work-graphs 的 HPC 应用案例，不新建概念页。

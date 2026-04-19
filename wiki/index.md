@@ -496,6 +496,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[common-shader-pitfalls]] | NaN / 纹理 / mipmap / 精度常见 shader bug |
 | [[shader-art-design-principles]] | Xor 的 shader art 五维自查（构图/光/色/纹理/动作） |
 | [[supersplat-publish-platform]] | SuperSplat 2025 年从编辑器扩张为编辑-发布-托管-社区平台 |
+| [[subpixel-reconstruction-antialiasing]] | Chajdas/McGuire/Luebke 2011：子像素 visibility + 1x shading 的 deferred 抗锯齿 |
+| [[tiled-light-trees]] | O'Donnell/Chajdas 2017：tile 内 light BVH + clustered 混合 |
 
 ## 经典案例（wiki/examples/）
 
@@ -538,6 +540,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[indie-game-dev-rhythm]] | 云风的独立开发方法论：情绪、拆分、重构、代码量 |
 | [[paradox-grand-strategy-economy]] | EU5 经济系统：人口/货币/商品三要素与市场中介 |
 | [[deckbuilder-game-design-patterns]] | 卡牌构筑游戏设计套路：双卡堆、主动刷牌、需求上升代替战斗 |
+| [[planning-over-rng-game-design]] | 规划式游戏设计：dotAGE / Spirit Island / Voidfall 的确定性 + 精算乐趣 |
 
 ## 人物（wiki/people/）
 
@@ -1047,12 +1050,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-retro-urp-retro-lit]] | Ilett：URP 通用 Retro Lit，含 Surface Options + flat shading + specular/cubemap |
 | [[sources/danielilett-retro-urp-crt-mesh]] | Ilett：URP CRT 贴 mesh 变体（CCTV 屏），Tracking Texture RG 双通道编码 |
 | [[sources/danielilett-retro-urp-crt-post-process]] | Ilett：URP 全屏 CRT，独有 Interlaced Rendering + Custom RGB Sliders + Render Pass Event |
+| [[sources/cloudwu-ai-game-design-chat]] | 云风：和 AI 聊游戏设计 |
+| [[sources/cloudwu-solo-boardgames]] | 云风：介绍几款单人桌游（Spirit Island / Voidfall / Friday） |
+| [[sources/cloudwu-ai-reading-workflow]] | 云风：用 AI 辅助读英文小说 |
+| [[sources/anteru-sraa]] | Chajdas：SRAA I3D 2011 论文页 |
+| [[sources/anteru-tiled-light-trees]] | O'Donnell/Chajdas：tiled light trees I3D 2017 论文页 |
+| [[sources/anteru-workgraph-spmv]] | Chajdas 等：work graph SpMV ISCA 2025 |
+| [[sources/anteru-hybrid-sample-surface]] | Reichl/Chajdas：hybrid 光栅+ray-cast 大 mesh 渲染 VMV 2012 |
+| [[sources/anteru-giga-particle-fluid]] | Reichl/Chajdas：亿级粒子流体交互渲染 HPG 2014 |
 
 ## 元（wiki/meta/）
 
 | 文章 | 一句话描述 |
 |---|---|
 | [[taste-development]] | 基于 wiki 内容综合出的品味训练方法 |
+| [[ai-assisted-reading-workflow]] | AI 辅助阅读：机器直译 + LLM 上下文解释的小说阅读工作流 |
 
 ## 特殊页面
 

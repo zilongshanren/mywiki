@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 中文博客, 游戏引擎]
 date: 2026-04-14
-sources: 11
+sources: 14
 ---
 
 # 云风（Cloud Wu）
@@ -73,6 +73,8 @@ sources: 11
 - [[main-thread-task-injection]]
 - [[deckbuilder-game-design-patterns]]
 - [[skynet-lua-sharetable-patch]]
+- [[planning-over-rng-game-design]]
+- [[ai-assisted-reading-workflow]]
 
 ## Sources
 
@@ -112,3 +114,6 @@ sources: 11
 - [[sources/cloudwu-main-thread-task-injection]]
 - [[sources/cloudwu-deckbuilder-games]]
 - [[sources/cloudwu-skynet-lua-55]]
+- [[sources/cloudwu-ai-game-design-chat]]
+- [[sources/cloudwu-solo-boardgames]]
+- [[sources/cloudwu-ai-reading-workflow]]

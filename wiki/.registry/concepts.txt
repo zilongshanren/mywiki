@@ -528,3 +528,7 @@ paradox-grand-strategy-economy
 main-thread-task-injection
 deckbuilder-game-design-patterns
 skynet-lua-sharetable-patch
+planning-over-rng-game-design
+ai-assisted-reading-workflow
+subpixel-reconstruction-antialiasing
+tiled-light-trees

@@ -34,6 +34,7 @@ sources: 2
 - [[multi-target-pathfinding]]
 - [[save-load-driven-data-design]]
 - [[immediate-vs-retained-mode]]
+- [[planning-over-rng-game-design]] —— 规划式游戏的确定性战斗与精算乐趣
 
 ## Sources
 

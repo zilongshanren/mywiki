@@ -69,6 +69,7 @@ Karis 在 Prey 2 当前世代（360/PS3）上的实际做法是**把 deferred �
 - [[culling]] —— normal cone / backface 剔除是同类思路
 - [[sparse-shadows-cone-tracing]] —— Karis 后续一篇：把 specular shadow 留给 cone trace
 - [[brian-karis]]
+- [[tiled-light-trees]] —— O'Donnell & Chajdas I3D 2017：tile 内再建 BVH 解决 clustered shading 的"坏 tile"问题（高深度方差下光源列表膨胀），并用 tree + clustered 混合方案在几乎所有场景下都不慢于任一单路
 
 ## Sources
 

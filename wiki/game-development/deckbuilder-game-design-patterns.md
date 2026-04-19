@@ -40,6 +40,7 @@ Dawnmaker 完全去掉了战斗，只有持续增长的粮食 / 危机需求—�
 - [[determinism-vs-smart-ai-gameplay]]
 - [[indie-game-dev-rhythm]]
 - [[single-hub-logistics-model]]
+- [[planning-over-rng-game-design]] —— 并列的规划式游戏设计路线（dotAGE / Spirit Island / Voidfall）
 
 ## Sources
 

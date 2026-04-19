@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, gpu, 编译器]
 date: 2026-04-14
-sources: 1
+sources: 6
 ---
 
 # Matthäus G. "Anteru" Chajdas
@@ -22,6 +22,9 @@ sources: 1
 - [[homogeneous-rasterization-transpose-bug]]
 - [[avoid-unsigned-types]]
 - [[parquet-vs-csv-json]]
+- [[subpixel-reconstruction-antialiasing]] —— I3D 2011，deferred 管线的子像素可见性 + 1x 着色重建
+- [[tiled-light-trees]] —— I3D 2017（与 O'Donnell/Frostbite），tile 内 light BVH + clustered shading 混合
+- [[d3d12-work-graphs]] —— ISCA 2025 把 work graph 从图形移植到 SpMV
 
 ## Sources
 
@@ -30,3 +33,8 @@ sources: 1
 - [[sources/anteru-homogeneous-rasterization-gotcha]]
 - [[sources/anteru-avoid-unsigned-types]]
 - [[sources/anteru-data-formats-csv-json]]
+- [[sources/anteru-sraa]]
+- [[sources/anteru-tiled-light-trees]]
+- [[sources/anteru-workgraph-spmv]]
+- [[sources/anteru-hybrid-sample-surface]]
+- [[sources/anteru-giga-particle-fluid]]

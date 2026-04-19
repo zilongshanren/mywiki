@@ -64,6 +64,7 @@ sources: 1
 - [[ltask-scheduler]]
 - [[gameplay-architecture]]
 - [[deckbuilder-game-design-patterns]] —— 三款卡牌构筑游戏的设计启发
+- [[planning-over-rng-game-design]] —— dotAGE 作者独自做 9 年的案例
 
 ## Sources
 
