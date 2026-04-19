@@ -813,3 +813,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-63 Worker GC (benui.ca ×5)
 
 处理 5 篇 benui.ca（Ben UI，UE5 UI 专家）。ingest 2 篇（ui-as-communication、ux-opinions），新增 2 概念页（ui-as-communication、ux-opinions-checklist）、1 人物页（ben-ui）、2 source 摘要。skip 3 篇：ui-resources 纯外链书单、unannounced-project 简历占位、why-i-refuse-to-use-ai 为 AI 观点文（非技术）。
+
+## [2026-04-19] ingest | Wave-63 Worker GE (nullprogram.com ×5)
+
+处理 5 篇 Chris Wellons (nullprogram) 技术博文。每篇对应独立 URL（非首页重复抓取），全部 ingest。新增 16 概念页（链表+trie+MSI 数据结构三件套、Wasm 三件套 wasmtime-py/指针陷阱/bump allocator、Monocypher AEAD、u-config Frankenwine + Wine syscall + unity 宏改名 + LP64/LLP64、AI 协作三件套 Quilt.cpp/conformance 克隆/C 内存安全、dcmake + CMake DAP + Dear ImGui docking）、1 人物页（chris-wellons）、5 source 摘要。

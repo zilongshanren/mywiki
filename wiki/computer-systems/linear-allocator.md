@@ -44,6 +44,9 @@ sources: 1
 - [[gpu-fence-timeline-semaphore]] —— 线性分配器帧循环回收的前置条件
 - [[buffer-renaming]] —— 现代 API 用线性分配器取代驱动隐式 renaming
 - [[cheat-by-solving-less]] —— Ben Supnik 把 bump allocator 作为「解一个更小问题」的标本
+- [[bump-allocator-wasm-guest]] — Wasm guest 端的 bump 分配器模式
+- [[hash-trie-intrusive]] — 配合 arena 使用的无 resize 哈希结构
+- [[msi-hash-table]] — 同样配合 arena 使用的扁平索引表
 
 ## Sources
 

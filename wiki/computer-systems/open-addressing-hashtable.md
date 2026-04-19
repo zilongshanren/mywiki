@@ -55,11 +55,11 @@ Cuckoo hashing 家族里最工程友好的一支。每个桶容纳一小把 key�
 - `std::unordered_map` 在所有维度上都被打败，但它的 API 仍然在标准库里，原因纯粹是兼容性债务。
 
 ## 相关
-
 - [[cache-friendliness]] — flat 数据结构快的根本原因
 - [[linear-allocator]] — 另一种「连续内存就是快」的例子
 - [[gpu-latency-hiding]] — CPU 乱序执行和 GPU 藏延迟是一个思想
 - [[max-slater]]
+- [[msi-hash-table]] — Chris Wellons 的 MSI (Mask-Step-Index) 变体
 
 ## Sources
 

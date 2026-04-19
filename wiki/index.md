@@ -59,6 +59,9 @@ sources: 371
 | [[future-proofing-tests]] | Ben Supnik 的三问测试：什么时候可以给未来设计 |
 | [[cheat-by-solving-less]] | 打败专家靠作弊——只解一个更小的问题 |
 | [[good-software-no-double-check]] | Agent 过度防御的新气味，用不变量和静态类型代替重复检查 |
+| [[dcmake]] | CMake 的多平台 GUI 调试器 |
+| [[cmake-dap-debugger]] | CMake 3.27+ 的 DAP 调试模式 |
+| [[dear-imgui-docking]] | Dear ImGui 的 docking 分支 |
 
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
@@ -108,6 +111,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[header-file-vs-pub-export]] | `pub` 内联标注把维护成本转嫁为消费者阅读成本 |
 | [[free-vs-member-functions-performance]] | 2017 年 Klaus 主张的「free function 更快」8 年后被重测：基本是噪声 |
 | [[pade-approximants]] | 有理函数逼近 Taylor 级数，介于 Taylor 与 Minimax 之间的中间台阶 |
+| [[hash-trie-intrusive]] | 链表节点兼任哈希 trie 的侵入式结构 |
+| [[unity-build-macro-renaming]] | C 里用 `#define` + unity build 合并同名符号的平台层 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
@@ -191,6 +196,14 @@ CAQA + CSAPP 的底层视角。
 | [[estrin-scheme]] | 代数重排 Horner 以缩短依赖链，给乱序 CPU 做并行多项式求值 |
 | [[system-load-formula]] | 多子系统合成整体负载的公式（inverse product + average 混合） |
 | [[vfx-multithreading-patterns]] | VFX 工具链把遗留代码改造成多线程 / 任务化的几类模式（Houdini / Presto / LibEE） |
+| [[msi-hash-table]] | Mask-Step-Index 扁平 open addressing 哈希表 |
+| [[wasm-pointer-sign-trap]] | Wasm 把整数视作有符号导致的指针截断陷阱 |
+| [[wasmtime-py]] | bytecodealliance 的 wasmtime Python 绑定 |
+| [[bump-allocator-wasm-guest]] | Wasm guest 端用 bump 分配器代替 malloc |
+| [[monocypher-aead]] | Monocypher AEAD 接口及其 Wasm 包装 |
+| [[u-config-frankenwine]] | 单个 exe 根据 Wine 检测切换 Windows/Linux 身份 |
+| [[wine-linux-syscall]] | Wine 下 Windows 进程直接发 Linux syscall |
+| [[lp64-vs-llp64]] | Unix 和 Windows x64 的 64 位数据模型差异 |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -815,6 +828,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ming-wai-chan]] | Ming Wai Chan（cmwdexint），Unity URP 实用贴士 |
 | [[thomas-poulet]] | 图形咨询 + 物理游戏独立开发，帧分析系列作者（blog.thomaspoulet.fr）|
 | [[ben-ui]] | benui.ca，UE5 UI/UX 专家，前 Brace Yourself Games Lead Programmer |
+| [[chris-wellons]] | Chris Wellons (skeeto)，nullprogram.com，C/Wasm/Windows 底层 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1510,14 +1524,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/thomas-poulet-blueprint-validation]] | Poulet：UE 蓝图资产验证的两处坑 |
 | [[sources/benui-ui-as-communication]] | Ben UI：UI 作为传达，十种媒介与冗余原则 |
 | [[sources/benui-ux-opinions]] | Ben UI：must/should/may 级 UX 意见清单 |
+| [[sources/nullprogram-linked-list-intrusive-index]] | Wellons：链表 + 侵入 trie + MSI 索引 的渐进叠加 |
+| [[sources/nullprogram-python-wasmtime]] | Wellons：用 wasmtime-py 把 Wasm 作为 Python 扩展机制 |
+| [[sources/nullprogram-u-config-wine]] | Wellons：单个 exe 在 Windows/Wine 下双身份 pkg-config |
+| [[sources/nullprogram-ai-programming-quiltcpp]] | Wellons：转向 AI 协作编码与 Quilt.cpp 案例 |
+| [[sources/nullprogram-dcmake]] | Wellons：基于 CMake DAP 的 GUI 调试器 dcmake |
 
 ## 元（wiki/meta/）
-
 | 文章 | 一句话描述 |
 |---|---|
 | [[taste-development]] | 基于 wiki 内容综合出的品味训练方法 |
 | [[ai-assisted-reading-workflow]] | AI 辅助阅读：机器直译 + LLM 上下文解释的小说阅读工作流 |
 | [[llm-rule-hallucination]] | LLM 在冷门规则 / 新知识上的幻觉模式：自信度与知识边界完全解耦 |
+| [[quilt-cpp-ai-driven-clone]] | Wellons 4 天用 AI 克隆 Quilt 的案例 |
+| [[ai-driven-conformance-clone]] | 用 AI 克隆既有 CLI 工具的 conformance 测试法 |
+| [[c-memory-safety-even-for-ai]] | 为何 AI 协作时代应选 C++ 而非 C |
 
 ## 特殊页面
 
