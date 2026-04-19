@@ -733,6 +733,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[infinite-random-rhombus-tilings]] | Townscaper 替代方案：3 菱汇合点翻转 + 三层错位 chunking，无全局细分、无 chunk 边界 |
 | [[ue-observability-stack]] | UE 物理游戏调试工具五档（On-screen → GDT → Visual Logger → ImGui → Ariadne）|
 | [[ue-asset-validator-blueprint]] | UE 蓝图资产验证：GeneratedClass + Subobject Data Subsystem |
+| [[ui-as-communication]] | Ben UI：UI 作为把想法搬进玩家脑袋的通道，十种传达媒介与优先级 |
+| [[ux-opinions-checklist]] | Ben UI：按钮/快捷键/输入/文字/桌面软件的 RFC 2119 级 UX 清单 |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -812,6 +814,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[adam-sawicki]] | AMD D3D12MA / VMA 作者，asawicki.info 博主，DX12 低层与 GPU 内存专家 |
 | [[ming-wai-chan]] | Ming Wai Chan（cmwdexint），Unity URP 实用贴士 |
 | [[thomas-poulet]] | 图形咨询 + 物理游戏独立开发，帧分析系列作者（blog.thomaspoulet.fr）|
+| [[ben-ui]] | benui.ca，UE5 UI/UX 专家，前 Brace Yourself Games Lead Programmer |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1505,6 +1508,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/thomas-poulet-physics-tools-ue5]] | Poulet：UE5 物理游戏的五档可观测性工具栈 |
 | [[sources/thomas-poulet-anno-1800-frame]] | Poulet：Anno 1800 完整帧分析（自研引擎、forward+MSAA、node-texture 地形、FFT ocean）|
 | [[sources/thomas-poulet-blueprint-validation]] | Poulet：UE 蓝图资产验证的两处坑 |
+| [[sources/benui-ui-as-communication]] | Ben UI：UI 作为传达，十种媒介与冗余原则 |
+| [[sources/benui-ux-opinions]] | Ben UI：must/should/may 级 UX 意见清单 |
 
 ## 元（wiki/meta/）
 

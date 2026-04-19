@@ -11526,3 +11526,8 @@ raw/articles/blog.thomaspoulet.fr/2021-09-19_digital-combat-simulator-frame-anal
 raw/articles/blog.thomaspoulet.fr/2024-07-22_the-tools-we-use-to-develop-our-physics-game-in-unreal-engin.md
 raw/articles/blog.thomaspoulet.fr/2025-08-16_anno-1800-frame-analysis-thomas-poulet.md
 raw/articles/blog.thomaspoulet.fr/2025-12-02_validating-blueprints-content-in-unreal-thomas-poulet.md
+raw/articles/benui.ca/2026-01-01_ui-as-communication.md
+raw/articles/benui.ca/2026-01-01_ux-opinions.md
+raw/articles/benui.ca/2026-01-01_ui-resources.md
+raw/articles/benui.ca/2026-01-01_unannounced-project.md
+raw/articles/benui.ca/2026-01-01_why-i-refuse-to-use-ai.md

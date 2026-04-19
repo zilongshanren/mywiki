@@ -809,3 +809,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-62 Worker GB (blog.thomaspoulet.fr ×5)
 
 处理 Thomas Poulet 博客 5 篇全技术文章：3 篇自研引擎帧分析（Ni No Kuni 2 light pre-pass + 艺术家驱动线稿 / DCS 2.7 YUV GBuffer + SDF cloudscape / Anno 1800 node-texture 地形 + 纹理驱动粒子 + 9-slice UI），1 篇 UE5 物理游戏的五档可观测性工具栈（On-screen → GDT → Visual Logger → ImGui → Ariadne），1 篇蓝图资产验证（GeneratedClass + Subobject Data Subsystem）。新增 1 人物页（thomas-poulet）、9 概念页、5 源摘要；跨链 simonschreibt-anno-1800-shadows、unreal-frame-breakdown、cel-shader-outline、particle-custom-vertex-streams、tiled-light-prepass、unreal-insights-counters-traces。
+
+## [2026-04-19] ingest | Wave-63 Worker GC (benui.ca ×5)
+
+处理 5 篇 benui.ca（Ben UI，UE5 UI 专家）。ingest 2 篇（ui-as-communication、ux-opinions），新增 2 概念页（ui-as-communication、ux-opinions-checklist）、1 人物页（ben-ui）、2 source 摘要。skip 3 篇：ui-resources 纯外链书单、unannounced-project 简历占位、why-i-refuse-to-use-ai 为 AI 观点文（非技术）。
