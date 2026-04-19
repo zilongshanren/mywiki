@@ -11546,3 +11546,8 @@ raw/articles/alexharri.com/2024-09-01_the-webs-clipboard-and-how-it-stores-data-
 raw/articles/alexharri.com/2025-08-02_compressing-icelandic-name-declension-patterns-into-a-3-27-k.md
 raw/articles/alexharri.com/2026-01-01_personal-website-alex-harri-jonsson.md
 raw/articles/alexharri.com/2026-01-17_ascii-characters-are-not-pixels-a-deep-dive-into-ascii-rende.md
+raw/articles/agraphicsguynotes.com/2016-11-10_volume-rendering-in-offline-renderer.md
+raw/articles/agraphicsguynotes.com/2018-03-09_how-does-pbrt-verify-bxdf.md
+raw/articles/agraphicsguynotes.com/2018-07-18_sampling-anisotropic-microfacet-brdf.md
+raw/articles/agraphicsguynotes.com/2018-11-29_basic-color-science-for-graphics-engineer.md
+raw/articles/agraphicsguynotes.com/2020-11-13_practical-tips-for-implementing-subsurface-scattering-in-a-r.md

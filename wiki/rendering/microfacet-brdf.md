@@ -36,14 +36,15 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 这也解释了为什么游戏引擎在 2017 年前后开始补「multiscatter」这一项——白色粗糙塑料终于能在 furnace test 里守恒，环境光反射看起来不再发灰。Frostbite、Unreal、Filament 等都实现了类似的补偿。
 
 ## 相关
-
 - [[spectral-brdf]] — 把 base-color + 纯白两权重扩展到整段可见光谱
 - [[spherical-harmonics]] — 环境光积分的另一种常用展开
 - [[stephen-hill]]
 - [[journey-sand-specular]] — Blinn-Phong 作为 NDF 起点的风格化使用
 - [[normalised-blinn-phong-shader]] —— 归一化 Blinn-Phong 作为 microfacet BRDF 教学起点，演示能量守恒 / Fresnel / gloss 线性化
+- [[anisotropic-microfacet-sampling]] — GGX/Beckmann/Blinn 各向异性 importance sampling 推导
+- [[bxdf-unit-test]] — PBRT 的 bsdftest 用 2π 收敛作为 BXDF 正确性检验
 
 ## Sources
-
 - [[sources/selfshadow-multi-faceted-part-2]]
 - [[sources/selfshadow-pbs-siggraph-2014]]
+- [[sources/graphics-guy-anisotropic-microfacet-sampling]]

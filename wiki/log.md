@@ -825,3 +825,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-64 Worker gf (alexharri.com ×5)
 
 处理 5 篇 Alex Harri Jónsson 博客文章。新增 3 概念页（web-clipboard-api、compressed-trie-pattern-matching、ascii-shape-vector-rendering）、1 人物页（alex-harri-jonsson）、3 source 摘要。跳过 2 篇（about-me 首页 + 冰岛开发者薪资/技术调研，后者地区性数据非技术主题）。
+
+## [2026-04-19] ingest | Wave-64 Worker GG (agraphicsguynotes.com ×5)
+
+agraphicsguynotes.com 早期硬核技术文 5 篇全 ingest：2016 离线体积渲染推导、2018 PBRT bsdftest 数学、2018 各向异性 microfacet importance sampling、2018 色彩科学基础、2020 SSS 工程实践。新增 5 概念页（volume-rendering-offline、bxdf-unit-test、anisotropic-microfacet-sampling、color-science-basics、sss-practical-implementation）与 5 source 摘要，patch graphics-guy-notes 人物页追加 sources 链接、microfacet-brdf/color-space/inversion-sampling-prng/path-tracing-basics 互相交叉引用。

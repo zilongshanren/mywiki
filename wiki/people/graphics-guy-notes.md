@@ -11,7 +11,6 @@ sources: 4
 写作风格偏教学：从数学与直觉双线切入，不回避推导，专门补齐论文没写清楚的隐含条件。
 
 ## 相关
-
 - [[sources/graphics-guy-tsl-shading-language]]
 - [[sources/graphics-guy-restir-di-math]]
 - [[sources/graphics-guy-fiber-cpp-basics]]
@@ -20,10 +19,24 @@ sources: 4
 - [[restir-di-math]]
 - [[restir-gi-math]]
 - [[fiber-cpp-basics]]
+- [[sources/graphics-guy-volume-rendering-offline]]
+- [[sources/graphics-guy-pbrt-bxdf-verify]]
+- [[sources/graphics-guy-anisotropic-microfacet-sampling]]
+- [[sources/graphics-guy-color-science-basics]]
+- [[sources/graphics-guy-sss-practical-tips]]
+- [[volume-rendering-offline]]
+- [[bxdf-unit-test]]
+- [[anisotropic-microfacet-sampling]]
+- [[color-science-basics]]
+- [[sss-practical-implementation]]
 
 ## Sources
-
 - [[sources/graphics-guy-tsl-shading-language]]
 - [[sources/graphics-guy-restir-di-math]]
 - [[sources/graphics-guy-fiber-cpp-basics]]
 - [[sources/graphics-guy-restir-gi-math]]
+- [[sources/graphics-guy-volume-rendering-offline]]
+- [[sources/graphics-guy-pbrt-bxdf-verify]]
+- [[sources/graphics-guy-anisotropic-microfacet-sampling]]
+- [[sources/graphics-guy-color-science-basics]]
+- [[sources/graphics-guy-sss-practical-tips]]

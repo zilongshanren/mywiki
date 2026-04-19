@@ -55,9 +55,10 @@ sRGB 的 TRC 是近似 γ≈2.2 的分段幂函数，**代价是编码后的值�
 - [[color-banding]] — 量化精度不足在深色渐变上的可见性
 - [[perceptual-colormaps]] — 感知均匀 colormap 的科学可视化标准
 - [[sources/wolfgang-engel-hdr10-tv-setup]] —— LDR demo 直接上 HDR10 电视会翻车的经验教训；Rec.2100 需 scale 到 300 nits + Rec.709 → Rec.2020 + PQ
+- [[color-science-basics]] — 从 SPD、color matching、CIE XYZ 推 primaries/white point/scaling 的来历
 
 ## Sources
-
 - [[sources/ciechanow-color-spaces]]
 - [[sources/peters-spectral-rendering-1-spectra]]
 - [[sources/green-display-edid-colorspace]]
+- [[sources/graphics-guy-color-science-basics]]

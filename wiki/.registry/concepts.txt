@@ -754,3 +754,8 @@ fiber-cpp-basics
 web-clipboard-api
 compressed-trie-pattern-matching
 ascii-shape-vector-rendering
+volume-rendering-offline
+bxdf-unit-test
+anisotropic-microfacet-sampling
+color-science-basics
+sss-practical-implementation

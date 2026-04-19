@@ -692,6 +692,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[restir-di-math]] | ReSTIR DI 背后的数学：SIR/RIS/WRS、邻居 target function 不同为何无偏、uniform MIS weight 的代价 |
 | [[restir-gi-math]] | ReSTIR GI 数学：Primary Sample Space、per-initial-candidate target function、路径 initial candidate 的 GRIS 处理 |
 | [[ascii-shape-vector-rendering]] | 字符不是像素：6D 形状向量 + 最近邻 + 双层对比度增强的 ASCII 渲染器（Alex Harri） |
+| [[volume-rendering-offline]] | Jiayin Cao：离线渲染中的体积渲染方程推导（补齐 PBRT 跳过的 in-scattering ODE 推导）|
+| [[bxdf-unit-test]] | Jiayin Cao：PBRT bsdftest 用 2π 收敛验证 BXDF 正确性 |
+| [[anisotropic-microfacet-sampling]] | Jiayin Cao：GGX/Beckmann/Blinn 各向异性 importance sampling 推导与 arctan 值域坑 |
+| [[color-science-basics]] | Jiayin Cao：图形工程师的色彩科学基础——从 SPD 到 CIE XYZ 到 Rec.2020 |
+| [[sss-practical-implementation]] | Jiayin Cao：SSS 进 path tracer 的工程实践——消 fireflies 三个 trick 与材质系统重构 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1545,6 +1550,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/alexharri-web-clipboard]] | Alex Harri：Web 剪贴板如何存储不同类型数据 |
 | [[sources/alexharri-icelandic-name-trie]] | Alex Harri：把冰岛人名格变规则压进 3.27 kB trie |
 | [[sources/alexharri-ascii-rendering]] | Alex Harri：ASCII 字符不是像素——形状向量渲染深入 |
+| [[sources/graphics-guy-volume-rendering-offline]] | A Graphics Guy：PBRT 体积渲染章节的 in-scattering ODE 推导补齐 |
+| [[sources/graphics-guy-pbrt-bxdf-verify]] | A Graphics Guy：PBRT bsdftest 如何验证 BXDF 的数学依据 |
+| [[sources/graphics-guy-anisotropic-microfacet-sampling]] | A Graphics Guy：各向异性 GGX/Beckmann/Blinn importance sampling 全推 |
+| [[sources/graphics-guy-color-science-basics]] | A Graphics Guy：从 SPD/CIE XYZ 到 Rec.709/sRGB/Rec.2020 的色彩科学地图 |
+| [[sources/graphics-guy-sss-practical-tips]] | A Graphics Guy：SORT 集成 PBRT 3rd SSS 的 fireflies 消除与材质重构经验 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

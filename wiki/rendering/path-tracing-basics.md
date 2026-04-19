@@ -57,6 +57,9 @@ workshop Part 3（importance sampling）从未写完——取而代之的是**TU
 - [[microfacet-brdf]]
 - [[quasi-monte-carlo]]
 - [[lighthouse-2-optix]] — Jacco Bikker 的 OptiX 7 实时 path tracer 教学框架
+- [[volume-rendering-offline]] — 离线渲染中的体积渲染方程推导
+- [[sss-practical-implementation]] — SSS 集成进 path tracer 的工程坑与 trick
+- [[bxdf-unit-test]] — BXDF 接入前用 bsdftest 提前抓 silent bias
 
 ## Sources
 

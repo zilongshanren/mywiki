@@ -76,6 +76,7 @@ p_y(y) = p_x(x) · |det(dx/dy)|
 - [[pcg3d-hash]]——每像素独立 PRNG 的常见哈希种。
 - [[mulberry32-rng]]——另一端的选择：32-bit Weyl + xor-shift，为「便利优先 + 确定性」场景设计，不追 PCG 的统计严谨度。
 - [[rejection-vs-analytical-sampling]] — 实测结果完全反直觉：打开 `-O1` 后拒绝采样普遍快于解析解
+- [[anisotropic-microfacet-sampling]] — marginal + conditional inversion 的经典工程案例（GGX/Beckmann/Blinn）
 
 ## Sources
 
