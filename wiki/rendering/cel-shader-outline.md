@@ -62,7 +62,6 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - 它只适合**有清晰轮廓的卡通风格**。真实 PBR 场景里这种硬描边会显得突兀，且两遍绘制对移动端带宽敏感。
 
 ## 相关
-
 - [[stencil-buffer]] —— 描边依赖的核心机制
 - [[texture-encoded-state]] —— 把逻辑外化到纹理的范式
 - [[procedural-greeble]] —— 同样依赖 manifold mesh 的顶点外推
@@ -72,11 +71,12 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[cel-shading-pipeline]] —— Daniel Ilett 5 部曲版本，同样的 cel+outline 思路但从 Phong 光照开始逐步搭建，含 bump/fresnel/stencil-ID 等扩展
 - [[animated-dotted-outline-shader]] —— 同一两 pass 管线上把 outline fragment 改成 `sin(distance)` 距离场 + `_Time` 相位平移的动画虚线
 - [[godot-visual-shaders]] —— Godot VisualShader 里的等价实现：StandardMaterial + Next Pass 挂 ShaderMaterial、Cull Mode → Front
+- [[toon-outline-post-process-modes]] —— 六种 toon 描边算法（深度法线 Sobel / object mask / inverted hull）在一个 URP post-process feature 里的并排陈列
 
 ## Sources
-
 - [[sources/lindenreid-cel-shader-outline]]
 - [[sources/danielilett-cel-shading-part-4]] — Daniel Ilett 版的同一双 pass + stencil 描边，含 ShaderLab 字段（Ref/Comp/Pass/Fail/ZFail）逐条解释
 - [[sources/danielilett-cel-shading-part-5]] — Stencil ID 化修复 + lighting ramp 纹理替换硬阶
 - [[sources/lindenreid-animated-dotted-outline]] —— 动画虚线描边的 fragment shader 扩展
 - [[sources/danielilett-snapshot2-outline]] —— 屏幕空间 edge detection 版描边（DepthNormalsColor 三通道），与 inverted-hull stencil 方案的另一极
+- [[sources/danielilett-toon-shaders-pro-outline-post]] —— Toon Shaders Pro 的 Outline Feature：Depth Normal / High Quality Masked / Pixel Width Masked / Hull / Debug 五种算法并列

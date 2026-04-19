@@ -41,7 +41,6 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 把这些限制分别 toggle 出来放在一个 shader 里，本质是把**硬件限制现象学化**——每个 option 都能回到它 1996 年对应的硬件原因。这种"可调的复古"比直接套一个 post-process 滤镜更有用，因为它让效果落在**表面几何和材质采样阶段**，而不是最后一道全屏贴花。
 
 ## 相关
-
 - [[dither-alpha-clipping]] —— dither 在 alpha 通道上的同源用法
 - [[coordinate-spaces]] —— vertex snapping 选哪个空间
 - [[sampler-filter-wrap-modes]] —— point / 双线性 / 各向异性的完整对比
@@ -50,11 +49,12 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[sources/danielilett-retro-urp-retro-lit]] —— URP 通用版 Retro Lit，在 Terrain 版基础上加 Surface Options（Opaque/Transparent/Alpha Clip/双面）、*Use Flat Shading*（无 Gouraud 插值的面着色）、Specular + Reflection Cubemap（可选复古之上的现代点缀）
 - [[sources/danielilett-retro-urp-retro-vertex-lit]] —— v1.5 后作为兼容页保留：Retro Vertex Lit 的独立 shader 已被合并进 Retro Lit 的 Snapping Mode/Vertex Lit 档，参数列表是 Retro Lit 的真子集（少 Surface Options、光照四档缩成 vertex-only、Dithering 简化为 bool）
 - [[procedural-retro-skybox]] —— Retro Skybox 把色深限制 + dither 搬到天空盒：cubemap 或 gradient 两档 sky base，叠一层双 Worley 噪声程序云，全部参数化
+- [[noperspective-affine-texture]] —— HLSL 的 `noperspective` 关键字：一行代码开启 affine warping；Ilett 的手动实现支持 0–1 平滑过渡
 
 ## Sources
-
 - [[sources/danielilett-retro-terrain-lit]]
 - [[sources/danielilett-retro-godot-retro-lit]]
 - [[sources/danielilett-retro-urp-retro-lit]]
 - [[sources/danielilett-retro-urp-retro-vertex-lit]]
 - [[sources/danielilett-retro-urp-retro-skybox]]
+- [[sources/danielilett-retro-shaders-pro-breakdown]] —— 作者自述完整实现细节：vertex snap 空间选择、affine warping 手动路径、LOD-cap 分辨率、dither 双模式、texel-aligned lighting (ddx/ddy)、N64 3-point filtering、VHS tracking、14 种复古色板 filter；还谈 Asset Store 命名权和差评踩坑

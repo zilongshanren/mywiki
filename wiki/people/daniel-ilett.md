@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 35
+sources: 43
 ---
 
 # Daniel Ilett
@@ -11,7 +11,6 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 他的写作风格偏手把手式：先讲清楚 ShaderLab / HLSL 的每一行语法，再把效果一步步搭出来，适合从零开始的 shader 新手。在内建管线时代他的系列以 Surface Shader 为主，迁移到 Unity 6 + URP 之后教程整体改写成面向 `HLSLPROGRAM` 代码块的写法。
 
 ## 相关
-
 - [[diffuse-lighting-lambertian]]
 - [[unity-surface-shaders]]
 - [[shaderlab-hlsl-basics]]
@@ -56,9 +55,14 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[volume-mask-layers]]
 - [[underwater-post-effect]]
 - [[volume-component-scripting]]
+- [[blend-modes-shaderlab]]
+- [[urp-depth-prepass-passes]]
+- [[urp-render-objects-feature]]
+- [[hull-domain-tessellation-urp]]
+- [[noperspective-affine-texture]]
+- [[toon-outline-post-process-modes]]
 
 ## Sources
-
 - [[sources/danielilett-cel-shading-part-1]]
 - [[sources/danielilett-cel-shading-part-0]]
 - [[sources/danielilett-cel-shading-part-2]]
@@ -119,3 +123,11 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-snapshot2-outline]]
 - [[sources/danielilett-snapshot2-underwater]]
 - [[sources/danielilett-snapshot-pro-scripting]]
+- [[sources/danielilett-toon-shaders-pro-toon]]
+- [[sources/danielilett-toon-shaders-pro-toon-graph]]
+- [[sources/danielilett-toon-shaders-pro-terrain]]
+- [[sources/danielilett-toon-shaders-pro-outline-post]]
+- [[sources/danielilett-retro-shaders-pro-breakdown]]
+- [[sources/danielilett-shader-code-transparency]]
+- [[sources/danielilett-shader-code-depth-buffer]]
+- [[sources/danielilett-shader-code-vertex-tessellation]]

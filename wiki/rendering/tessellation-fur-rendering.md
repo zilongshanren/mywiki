@@ -62,13 +62,13 @@ tessellator 通过 isoline domain 产出的是**线 primitive**（line list / li
 把同一个 pipeline 换 shading 就能渲染草——isoline 产点方式、domain shader 的"毛根 + 段顶点"结构对草同样适用，只是 shading 里从 anisotropic rim 换成 diffuse 色带。这说明这个方案的骨架（"在归一化 2D 域上生成密集 1D 几何"）足够通用。现代工业做法里草更多走 [[deferred-grass-shader|alpha cutout + tessellation + geometry shader 的 triangle 路径]] 或 [[gpu-driven-grass-tiles|compute-driven indirect draw]]——前者属于同一时代的另一个解法，后者是 2020 年前后的 GPU-driven 范式。Anagnostou 的 isoline 方案在概念上更干净，但 geometry shader 在现代硬件上是一等性能坑，生产项目不会把 geometry shader 放到热路径上。
 
 ## 相关
-
 - [[deferred-grass-shader]] — alpha cutout + triangle tessellation 的并行解法
 - [[gpu-driven-grass-tiles]] — GPU-driven indirect draw 的现代替代方案
 - [[draw-procedural-gpu]] — 去掉 vertex buffer 的更激进数据流
 - [[fragment-shader]] — 对应毛段的 shading 阶段
 - [[msaa-ssaa]] — 为什么细几何一定要几何 AA
 - [[kostas-anagnostou]]
+- [[hull-domain-tessellation-urp]] —— URP 下 hull/domain tessellation 的基础骨架：5 个 hull attribute、patch constant function、domain 里的 barycentric 插值、距离淡出公式
 
 ## Sources
 

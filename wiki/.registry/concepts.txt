@@ -559,3 +559,9 @@ tweet-shader-280-char
 fragcoord-shader-editor
 spectral-vs-rgb-comparison
 path-tracing-basics
+blend-modes-shaderlab
+urp-depth-prepass-passes
+urp-render-objects-feature
+hull-domain-tessellation-urp
+noperspective-affine-texture
+toon-outline-post-process-modes

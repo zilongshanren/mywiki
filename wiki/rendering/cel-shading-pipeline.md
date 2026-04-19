@@ -103,7 +103,6 @@ float3 diffuseSmooth = tex2D(_LightingRamp, float2(diffuse * 0.5 + 0.5, 0.5));
 所以 2020 年以后这套教程整体被改写——概念和数学完全不变，变的只是"光照循环怎么拿进来"。对 toon shader 的理解本身，这 5 篇仍然是绕不开的入门路径。
 
 ## 相关
-
 - [[diffuse-lighting-lambertian]] —— Lambert 公式在 cel shading 之前的原始形态
 - [[cel-shader-outline]] —— Linden 的纯 ramp 版本，和本文第 5 步共享思路
 - [[unity-surface-shaders]] —— 自定义 Lighting 函数的宿主
@@ -111,12 +110,15 @@ float3 diffuseSmooth = tex2D(_LightingRamp, float2(diffuse * 0.5 + 0.5, 0.5));
 - [[stencil-buffer]] —— 描边 pass 的核心机制
 - [[normalised-blinn-phong-shader]] —— 能量守恒版 Blinn-Phong
 - [[coordinate-spaces]] —— 为什么 outline 必须在 object space 外推
+- [[toon-outline-post-process-modes]] —— Toon Shaders Pro 的六种描边算法目录（屏幕空间 / 物体 mask / inverted hull）
 
 ## Sources
-
 - [[sources/danielilett-cel-shading-part-0]]
 - [[sources/danielilett-cel-shading-part-2]]
 - [[sources/danielilett-cel-shading-part-3]]
 - [[sources/danielilett-cel-shading-part-4]]
 - [[sources/danielilett-cel-shading-part-5]]
 - [[sources/danielilett-godot-visual-shaders]] —— 系列延伸到 Godot：Dissolve / Hologram / Hull Outline 在 VisualShader 里的等价实现
+- [[sources/danielilett-toon-shaders-pro-toon]] —— Toon Shaders Pro 核心 HLSL shader 的参数手册，把 diffuse / specular / rim / shadow 四层各自独立 smoothstep 阈值化的完整开关清单
+- [[sources/danielilett-toon-shaders-pro-toon-graph]] —— 上同 Shader Graph 变体，暴露 CalculateToonLighting subgraph 给 SG 用户再利用
+- [[sources/danielilett-toon-shaders-pro-terrain]] —— Terrain 专版：去掉 base color 接入 splatmap、新增 stochastic texturing 消 tiling、独立 Ambient Light Strength floor

@@ -525,6 +525,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[fragcoord-shader-editor]] | Xor 的 FragCoord.xyz：浏览器内 shader 调试器 |
 | [[spectral-vs-rgb-comparison]] | 各类光源下 RGB vs 光谱渲染的实证对比 |
 | [[path-tracing-basics]] | 最小可行 path tracer 的学习路径（Peters workshop + lectures） |
+| [[blend-modes-shaderlab]] | ShaderLab Blend 命令、11 个 BlendMode 因子、三种常见混合模式 |
+| [[urp-depth-prepass-passes]] | URP 自定义 shader 必补的 DepthOnly / DepthNormals 两个 Pass 及其触发时机 |
+| [[urp-render-objects-feature]] | URP Renderer Feature 无代码做 X-ray、物体 mask、透视显隐 |
+| [[hull-domain-tessellation-urp]] | URP 下 hull/domain tessellation 基础骨架：5 个 attribute + patch constant + domain barycentric |
+| [[noperspective-affine-texture]] | HLSL `noperspective` 关键字与 PSX affine texture warping 的一行切换 |
+| [[toon-outline-post-process-modes]] | Toon 描边的六种算法并列：屏幕空间 Sobel / 物体 mask / inverted hull |
 
 ## 经典案例（wiki/examples/）
 
@@ -1129,6 +1135,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/peters-radiometry-1-backwards]] | Peters：从 radiance 起步的辐射度量积分式重构 |
 | [[sources/peters-radiometry-2-photometry]] | Peters：光谱量、CIE XYZ 与 photometric 单位 |
 | [[sources/peters-spectral-rendering-3-vs-rgb]] | Peters：RGB vs 光谱渲染在多种光源下的实证对比 |
+| [[sources/danielilett-toon-shaders-pro-toon]] | Ilett：Toon Shaders Pro 核心 HLSL shader 参数手册 |
+| [[sources/danielilett-toon-shaders-pro-toon-graph]] | Ilett：Toon Shader Graph 变体，`CalculateToonLighting` subgraph |
+| [[sources/danielilett-toon-shaders-pro-terrain]] | Ilett：Toon Terrain，splatmap + stochastic texturing |
+| [[sources/danielilett-toon-shaders-pro-outline-post]] | Ilett：Toon Outline Post Process，六种描边算法 |
+| [[sources/danielilett-retro-shaders-pro-breakdown]] | Ilett：Retro Shaders Pro 作者自述，PSX/N64/VHS/CRT 全套实现细节 |
+| [[sources/danielilett-shader-code-transparency]] | Ilett：Shader Code Basics 03 — alpha blend / alpha clip / Blend 命令 |
+| [[sources/danielilett-shader-code-depth-buffer]] | Ilett：Shader Code Basics 04 — depth buffer / silhouette / prepass / Render Objects |
+| [[sources/danielilett-shader-code-vertex-tessellation]] | Ilett：Shader Code Basics 05 — vertex displacement + hull/domain tessellation |
 
 ## 元（wiki/meta/）
 

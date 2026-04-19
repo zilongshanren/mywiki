@@ -42,7 +42,6 @@ return lerp(_NearColour, _FarColour, depth);
 - **URP 差异**：URP 下 `_CameraDepthTexture` 需要在 pipeline asset 里显式勾选 Depth Texture；后处理写法也从 `OnRenderImage` 迁移到 [[blit-render-feature]]。
 
 ## 相关
-
 - [[z-buffer]]
 - [[reversed-z]]
 - [[scene-color-depth-nodes]]
@@ -50,7 +49,9 @@ return lerp(_NearColour, _FarColour, depth);
 - [[image-effect-colour-transform]]
 - [[separable-gaussian-blur]]
 - [[coordinate-spaces]]
+- [[urp-depth-prepass-passes]] —— 为什么自定义 shader 要补 DepthOnly / DepthNormals 两个 Pass，以及它们在 URP 里的填充时机
+- [[urp-render-objects-feature]] —— URP 的 Renderer Feature 无代码做 X-ray、物体 mask、透视显隐
 
 ## Sources
-
 - [[sources/danielilett-image-effects-depth-silhouette]]
+- [[sources/danielilett-shader-code-depth-buffer]] —— URP + HLSL 手写版的 silhouette shader：ZWrite/ZTest 命令、`ComputeScreenPos` + `xy/w`、`Linear01Depth` + `_ZBufferParams`、自定义 shader 补 prepass、Render Objects 做 X-ray

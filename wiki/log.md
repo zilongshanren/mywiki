@@ -633,3 +633,11 @@ batch-w47-ei：10 篇 jendrikillner 周报（issue 409-418）按既定先例全�
 ## [2026-04-19] ingest | Wave-47 Batch EK (ryg×5 + Xor×7 + Peters×5)
 
 处理 19 篇跨 3 博客域文章。17 ingested（5 ryg HDR/硬件文 + 7 Xor shader art + 5 Peters path tracing / radiometry / spectral）、2 skipped（ryg `content-creator` 纯观点、Peters `blog.md` 首页索引）。新增 15 个概念页：`x86-simd-integer-multiplies`、`intel-13th-14th-gen-clock-degradation`（computer-systems）；`bc7-solid-color-blocks`、`mrsse-hdr-error-metric`、`unorm-snorm-hardware-conversion`、`density-field-volumetric`、`dot-gyroid-noise`、`radiometry-integral-view`、`photometry-luminance`、`hyperbolic-tangent-shader`、`glsl-mix-function`、`tweet-shader-280-char`、`fragcoord-shader-editor`、`spectral-vs-rgb-comparison`、`path-tracing-basics`（rendering）。17 个 source 摘要。作者页三者皆已存在，通过 patches 扩展贡献表 / 相关 / Sources 三段。
+
+## [2026-04-19] ingest | Wave-48 Worker EL (jendrikillner weekly 419-427 all skipped)
+
+batch-w48-el：10 条全部 skipped_offtopic（周报 419-427 延续先例，gtc-2026.md 验证为 GTC 注册/session 列表非原创技术）。
+
+## [2026-04-19] ingest | Wave-48 Worker EM (Daniel Ilett ×8)
+
+处理 8 篇 Daniel Ilett 文章：Toon Shaders Pro for URP 四件套参数手册 (Toon HLSL / Toon SG / Terrain / Outline Post) + Retro Shaders Pro 作者技术自述 + Shader Code Basics 03-05 (transparency / depth buffer / vertex + tessellation)。新增 6 概念页 (blend-modes-shaderlab, urp-depth-prepass-passes, urp-render-objects-feature, hull-domain-tessellation-urp, noperspective-affine-texture, toon-outline-post-process-modes)、8 源摘要；补 patch 到 cel-shading-pipeline、cel-shader-outline、retro-rendering-techniques、depth-texture-silhouette、tessellation-fur-rendering、shaderlab-hlsl-basics、daniel-ilett。

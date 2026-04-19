@@ -48,7 +48,6 @@ URP / HDRP 时代 Unity **放弃了 Surface Shader 的模板生成**——所有
 这份骨架也是理解**[[unity-surface-shaders|Surface Shader]] 和手写 shader 差异**的分界线：Surface Shader 把这一整套 vertex/fragment 模板内化为"填 `surf` 函数"；URP 手写 shader 把主动权还给了开发者，但也把所有样板代码的负担一并交回。
 
 ## Sources
-
 - [[sources/danielilett-your-first-shader]]
 - [[sources/danielilett-image-effects-shader-primer]]
 - [[sources/ronja-structure]] — Ronja 001，Shader/SubShader/Pass 的层级拆解
@@ -57,3 +56,6 @@ URP / HDRP 时代 Unity **放弃了 Surface Shader 的模板生成**——所有
 - [[sources/ronja-basic-shader]] — Ronja 004，UnityCG.cginc 辅助下的最简 Unlit + Tint 成品
 - [[sources/alanzucconi-shader-intro-unity]] — Alan Zucconi 2015 的 Built-in RP 版 Shader 入门（ShaderLab + Cg/HLSL 骨架，`UNITY_MATRIX_MVP` 而非 `TransformObjectToHClip`），是本页 URP 视角的历史对照
 - [[sources/xor-mini-hlsl]] —— Xor：从 GLSL ES 视角速查 HLSL 语法差异（struct + semantic、`mix→lerp`、`atan(y,x)→atan2(x,y)` 参数翻转、`Texture2D`/`SamplerState` 分离），GameMaker 视角
+- [[sources/danielilett-shader-code-transparency]] —— Part 3：加上 Blend / alpha clip / `[Enum(BlendMode)]` 属性和 `Blend [_Prop] [_Prop]` 这种 ShaderLab-only 的 Property 用法
+- [[sources/danielilett-shader-code-depth-buffer]] —— Part 4：ZWrite/ZTest、`_CameraDepthTexture` 与 `Linear01Depth`、DepthOnly / DepthNormals prepass 的 LightMode tag 机制、URP Render Objects Feature
+- [[sources/danielilett-shader-code-vertex-tessellation]] —— Part 5：vertex displacement (world-space sin wave) 和 hull/domain tessellation 完整骨架
