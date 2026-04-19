@@ -725,3 +725,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-55 Worker FG (tedsieblog.wordpress.com ×5)
 
 处理 5 篇 Ted Sie 中文 Unity 博客。5 全 ingest：动态分屏、L-system 分形、L-system 闪电效果、人群 Waypoint、DOTS Tween case study。新增 5 概念页（dynamic-split-screen / l-system-fractals / l-system-lightning-bolts / unity-crowd-waypoint-system / unity-dots-tween-system）+ 1 人物页（ted-sie）+ 5 source 摘要。（bundle.json 因 API socket 异常未落盘，人工重建 index/log。）
+
+## [2026-04-19] ingest | Wave-56 Worker FH (greyaliengames.com ×5 all skipped)
+
+五篇 greyaliengames.com 月份归档页全部 skip_offtopic：均为 casual 游戏（Shadowhand / Jewel Match / Clutter / Forbidden Solitaire）发行新闻稿与 Jake Birkett 的年度商业/个人 goals 复盘，无渲染、引擎、系统、编程语言等技术内容。
