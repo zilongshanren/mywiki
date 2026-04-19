@@ -774,3 +774,7 @@ ray-differentials
 orthodox-cpp
 middleware-vs-open-source
 native-client-porting
+ibl-multiple-scattering
+split-sum-approximation
+obb-frustum-sat
+ispc-simd-culling

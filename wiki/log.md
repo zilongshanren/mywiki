@@ -861,3 +861,7 @@ GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream
 ## [2026-04-19] ingest | Wave-67 Worker GQ (ronja + lindenreid + themaister index/about ×5)
 
 5 篇全部为 index/about/tutorials 目录页，无实质技术内容，整批 skip。未新增任何 wiki 页。
+
+## [2026-04-19] ingest | Wave-67 Worker GO (bruop.github.io ×3)
+
+Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum culling（顶点 clip-space 测试，SIMD 加速）+ more robust frustum（SAT 分离轴，ISPC 实现）。新增 1 人物、3 source、4 概念。

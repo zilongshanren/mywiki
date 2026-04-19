@@ -712,6 +712,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[d3d12-resource-alignment]] | D3D12 资源对齐的秘密：small alignment、heap alignment、tight alignment |
 | [[compute-shader-dispatch-ids]] | HLSL / GLSL compute shader 线程 ID system-value 速查 |
 | [[ray-differentials]] | 路径追踪里选 mip level 的工程机制，以及双向路径追踪下 Manuka/Takua 的两种绕过方案 |
+| [[ibl-multiple-scattering]] | Fdez-Agüera 2019 的 IBL 多次散射能量补偿 |
+| [[split-sum-approximation]] | Karis 2014 的 IBL 镜面积分分解 |
+| [[obb-frustum-sat]] | OBB × 视锥的分离轴定理剔除，消除 false negative |
+| [[ispc-simd-culling]] | 用 ISPC / AVX2 做 SoA 剔除，10k/0.3ms |
 
 ## 经典案例（wiki/examples/）
 
@@ -861,6 +865,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[steven-wittens]] | Steven Wittens，acko.net 作者，Use.GPU 创建者，UI 与渲染架构评论家 |
 | [[adrian-courreges]] | Adrian Courrèges，frame-analysis 写作范式奠基者；Switch AAA UE4 优化补丁作者 |
 | [[branimir-karadzic]] | Branimir Karadžić，bgfx 作者，Orthodox C++ 提出者 |
+| [[bruno-opsenica]] | Bruno Opsenica（bruop）：BGFX/DX12 渲染库作者，IBL 与 culling SIMD 实战 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1588,6 +1593,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bkaradzic-orthodox-cpp]] | Karadžić：Orthodox C++ 子集主张 |
 | [[sources/bkaradzic-open-source-or-it-didnt-happen]] | Karadžić：独立团队的中间件与开源取舍 |
 | [[sources/bkaradzic-airmech-native-client]] | Karadžić：AirMech 移植到 Native Client 的工程笔记 |
+| [[sources/bruop-ibl-multiple-scattering]] | Bruop：BGFX 中实现 Fdez-Agüera 多次散射 IBL |
+| [[sources/bruop-frustum-culling]] | Bruop：AABB 顶点 clip-space 测试 + AVX2 手写 SIMD |
+| [[sources/bruop-more-robust-frustum-culling]] | Bruop：SAT 分离轴 + ISPC 实现，修掉 false negative |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
