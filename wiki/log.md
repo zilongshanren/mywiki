@@ -721,3 +721,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-55 Worker FE (allarsblog.com ×5)
 
 处理 Michael Allar 5 篇 UE4 工程笔记：救火顾问长文、Marketplace JS hack、编辑器电池 60fps、UMG PreConstruct 顺序、通知气泡偏移。新增 1 人物页（michael-allar）、3 概念页（umg-user-widget-lifecycle / ue4-editor-battery-throttle / ue4-common-perf-pitfalls）、5 source 摘要。无跳过。
+
+## [2026-04-19] ingest | Wave-55 Worker FG (tedsieblog.wordpress.com ×5)
+
+处理 5 篇 Ted Sie 中文 Unity 博客。5 全 ingest：动态分屏、L-system 分形、L-system 闪电效果、人群 Waypoint、DOTS Tween case study。新增 5 概念页（dynamic-split-screen / l-system-fractals / l-system-lightning-bolts / unity-crowd-waypoint-system / unity-dots-tween-system）+ 1 人物页（ted-sie）+ 5 source 摘要。（bundle.json 因 API socket 异常未落盘，人工重建 index/log。）

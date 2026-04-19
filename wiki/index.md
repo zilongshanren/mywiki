@@ -608,6 +608,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[srgb-premultiplied-alpha-compression]] | sRGB × 预乘 alpha × 块压缩的正确顺序 |
 | [[poisson-rect-process]] | 无限平面上的无重叠随机矩形：两相过滤 + 分块无关 |
 | [[infinite-chunked-procedural-generation]] | 无限世界的分块程序化生成方法论：相位化 + 局部有界依赖 |
+| [[l-system-fractals]] | Lindenmayer 系统：公理 + 产生式规则的分形图形生成 |
+| [[l-system-lightning-bolts]] | L-system 衍生：分形闪电效果的随机分支与衰减 |
 
 ## 经典案例（wiki/examples/）
 
@@ -660,6 +662,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[unity-ecs-custom-editor-debug]] | Unity ECS 下用 shadow GameObject + CustomEditor 做可写调试 UI |
 | [[unity-asset-refactoring]] | Prefab/Scene/Asset 里 MonoBehaviour 字段结构批量重构的四步法 |
 | [[umg-user-widget-lifecycle]] | UMG UUserWidget：NativePreConstruct 与蓝图 PreConstruct 顺序 |
+| [[dynamic-split-screen]] | 动态分屏：根据玩家距离在单屏 / 分屏间平滑切换 |
+| [[unity-crowd-waypoint-system]] | Unity 人群 Waypoint 系统：以 NavMesh 为基础的简易群体行为 |
+| [[unity-dots-tween-system]] | Unity DOTS Tween case study：ECS 下缓动动画系统设计 |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -726,6 +731,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |
 | [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |
 | [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |
+| [[ted-sie]] | Ted Sie，Unity 中文技术博客作者（分形 / DOTS / 群体仿真） |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1339,6 +1345,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/allar-ue4-editor-battery-60fps]] | Allar：UE4 编辑器在电池 / UPS 下被钳到 60 FPS |
 | [[sources/allar-umg-native-preconstruct-order]] | Allar：UMG NativePreConstruct 与蓝图 PreConstruct 触发顺序 |
 | [[sources/allar-ue4-notification-offset]] | Allar：UE4 通知气泡位置硬编码在 NotificationManager.cpp |
+| [[sources/tedsie-dynamic-split-screen]] | Ted Sie：动态分屏实现 |
+| [[sources/tedsie-l-system-fractals]] | Ted Sie：L-system 分形图形学 |
+| [[sources/tedsie-l-system-lightning-bolts]] | Ted Sie：L-system 闪电小故事 |
+| [[sources/tedsie-crowd-simulation]] | Ted Sie：简易人群模拟系统 |
+| [[sources/tedsie-dots-tween-system]] | Ted Sie：Unity DOTS tween 系统案例 |
 
 ## 元（wiki/meta/）
 
