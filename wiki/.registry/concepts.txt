@@ -670,3 +670,6 @@ svelto-filters-api
 svelto-on-dots
 ecs-on-gpu-computesharp
 vortex-distortion
+rider-ue5-setup
+project-orion-action-roguelike
+unreal-insights-counters-traces

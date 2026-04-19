@@ -11437,3 +11437,8 @@ raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-vortex.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-world-scan.md
 raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-installation-guide.md
 raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp.md
+raw/articles/tomlooman.com/2026-02-13_setting-up-rider-for-c-and-unreal-engine.md
+raw/articles/tomlooman.com/2026-02-27_project-orion-co-op-action-roguelike-sample-in-unreal-engine.md
+raw/articles/tomlooman.com/2026-03-19_adding-counters-traces-to-unreal-insights-stats-system.md
+raw/articles/tomlooman.com/2026-04-01_all-posts.md
+raw/articles/tomlooman.com/2026-04-01_get-in-touch.md

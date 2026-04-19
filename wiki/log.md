@@ -741,3 +741,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-57 Worker FK (danielilett.com Snapshot Shaders Pro effects + Toon Shaders Pro top pages ×5)
 
 处理 5 篇 Daniel Ilett 产品文档收尾：Snapshot Shaders Pro 的 underwater / vortex / world-scan 三款 effect 参考文档（ingest），Toon Shaders Pro URP 顶层营销页与 install guide（skip，沿用 w47 对顶层/install 文档一贯处理）。新增 1 概念页 vortex-distortion、3 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、underwater-post-effect、world-scan-shader-effect、chromatic-aberration-post 四个既有概念页。
+
+## [2026-04-19] ingest | Wave-57 Worker fm (tomlooman.com Tom Looman UE5 ×3)
+
+处理 Tom Looman 博客 5 篇文章：ingest 3 篇 UE5 干货（Rider 环境搭建、Project Orion 合作 Roguelike 示例、Unreal Insights Counters/Traces），skip_duplicate 2 篇（all-posts 索引页、contact 联系页）。新增 3 概念页（rider-ue5-setup、project-orion-action-roguelike、unreal-insights-counters-traces）、1 人物页（tom-looman）、3 source 摘要。

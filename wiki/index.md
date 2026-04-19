@@ -674,6 +674,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[dynamic-split-screen]] | 动态分屏：根据玩家距离在单屏 / 分屏间平滑切换 |
 | [[unity-crowd-waypoint-system]] | Unity 人群 Waypoint 系统：以 NavMesh 为基础的简易群体行为 |
 | [[unity-dots-tween-system]] | Unity DOTS Tween case study：ECS 下缓动动画系统设计 |
+| [[rider-ue5-setup]] | Tom Looman：UE5 C++ 的 Rider + VS Build Tools 搭建清单 |
+| [[project-orion-action-roguelike]] | Tom Looman 开源 UE5 合作 Roguelike 示例：Action 系统、DoD 投射物、对象池、Significance Manager |
+| [[unreal-insights-counters-traces]] | UE Stats System 与 Unreal Insights 双路径埋点：Counter / Cycle Counter / Named Events |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -743,6 +746,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ted-sie]] | Ted Sie，Unity 中文技术博客作者（分形 / DOTS / 群体仿真） |
 | [[outerra-team]] | Brano Kemen / Angrypig Kralik —— Outerra 行星引擎双人组 |
 | [[sebastiano-mandala]] | Sebastiano Mandalà — Svelto.ECS 作者、Freejam 工程师 |
+| [[tom-looman]] | Tom Looman，前 Epic Games，UE C++ 教程与性能优化长期撰稿者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1374,6 +1378,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-snapshot-pro-underwater]] | Ilett：Snapshot Pro Underwater——bump + fog 简化版水下后处理 |
 | [[sources/danielilett-snapshot-pro-vortex]] | Ilett：Snapshot Pro Vortex——Strength/Center/Offset 三参数极坐标漩涡 |
 | [[sources/danielilett-snapshot-pro-world-scan]] | Ilett：Snapshot Pro World Scan——世界空间扫描条带 + ramp 纹理颜色过渡 |
+| [[sources/tomlooman-rider-ue5-setup]] | Looman：Rider + UE5 C++ 开发环境搭建 |
+| [[sources/tomlooman-project-orion]] | Looman：Project Orion 合作 Roguelike 示例项目总览 |
+| [[sources/tomlooman-unreal-insights-counters]] | Looman：给 Unreal Insights 与 Stats System 加 Counters/Traces |
 
 ## 元（wiki/meta/）
 
