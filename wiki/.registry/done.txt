@@ -11566,3 +11566,8 @@ raw/articles/dolphin-emu.org/2026-02-16_rise-of-the-triforce.md
 raw/articles/dolphin-emu.org/2026-03-12_archives-2026.md
 raw/articles/dolphin-emu.org/2026-03-12_dolphin-progress-report-release-2603-2.md
 raw/articles/dolphin-emu.org/2026-03-12_dolphin-progress-report-release-2603.md
+raw/articles/adriancourreges.com/2017-05-09_beware-of-transparent-pixels-adrian-courreges.md
+raw/articles/adriancourreges.com/2017-12-15_metal-gear-solid-v-graphics-study-adrian-courreges.md
+raw/articles/adriancourreges.com/2018-12-02_ue4-optimized-post-effects-adrian-courreges.md
+raw/articles/adriancourreges.com/2020-12-29_adrian-courreges.md
+raw/articles/adriancourreges.com/2020-12-29_graphics-studies-compilation-adrian-courreges.md

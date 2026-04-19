@@ -837,3 +837,7 @@ agraphicsguynotes.com 早期硬核技术文 5 篇全 ingest：2016 离线体积�
 ## [2026-04-19] defer | Wave-65 GI+GJ (bleuje + dolphin-emu ×10, workers stream-idle timeout)
 
 GI (bleuje 5) 和 GJ (dolphin-emu 5) 两个 worker 都在 730s 附近 stream-idle 超时，零 bundle 落盘。暂标 skip 进 done.txt 以避免下轮 /loop 重新选中；内容需后续会话恢复时用更激进 bundle-first 协议单独处理。
+
+## [2026-04-19] defer | Wave-65 GK (adriancourreges ×5, worker stream-idle timeout)
+
+GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream-idle 模式）。defer 进 done.txt。
