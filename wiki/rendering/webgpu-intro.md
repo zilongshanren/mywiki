@@ -69,6 +69,7 @@ GameMaker 宣称会在 runtime 层把 GLSL 自动翻译成 WGSL，这也是大�
 - [[use-gpu-reactive-runtime]] — Steven Wittens 的声明式 WebGPU 运行时
 
 ## Sources
-
 - [[sources/xor-mini-webgpu]]
 - [[sources/playcanvas-webgpu-editor]]
+- [[sources/hexops-mach-v0-3-released]] — sysgpu 作为 WebGPU 的原生继任者
+- [[sources/hexops-dxcompiler-better-than-microsoft]] — WebGPU 实现背后 WGSL→HLSL→DXIL 的 runtime 困境

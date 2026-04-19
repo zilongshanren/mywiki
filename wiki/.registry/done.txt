@@ -11606,3 +11606,13 @@ raw/articles/cyanilux.com/2025-10-03_gpu-instanced-grass-breakdown.md
 raw/articles/cyanilux.com/2026-01-01_cookies-privacy.md
 raw/articles/cyanilux.com/2026-02-18_breakdowns.md
 raw/articles/cyanilux.com/2026-02-18_tutorials.md
+raw/articles/danielchasehooper.com/2025-08-05_a-fast-growable-array-with-stable-pointers-in-c.md
+raw/articles/danielchasehooper.com/2025-08-13_i-made-a-real-time-build-visualizer.md
+raw/articles/danielchasehooper.com/2025-10-13_hot-reloading-is-better-than-swiftui-previews.md
+raw/articles/danielchasehooper.com/2026-01-01_what-the-fork.md
+raw/articles/danielchasehooper.com/2026-01-07_testing-ai-for-c-programming.md
+raw/articles/devlog.hexops.org/2024-01-07_announcing-mach-nominated-zig-versions.md
+raw/articles/devlog.hexops.org/2024-02-02_mach-v0-3-released-zig-game-engine-graphics-toolkit.md
+raw/articles/devlog.hexops.org/2024-02-09_building-the-directx-shader-compiler-better-than-microsoft.md
+raw/articles/devlog.hexops.org/2026-01-01_2026s.md
+raw/articles/devlog.hexops.org/2026-03-26_announcing-pkgmirror-self-host-your-own-zig-mirror.md

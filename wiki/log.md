@@ -885,3 +885,11 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-19] ingest | Wave-69 Worker gu (cyanilux.com ×5)
 
 处理 5 篇 cyanilux.com 文件：1 篇实质技术文（gpu-instanced-grass-breakdown）ingest；4 篇是栏目 index / 法律页（posts / cookies-privacy / breakdowns / tutorials），跳过。新增 1 概念页（gpu-instanced-grass-urp）、1 source 摘要。给 cyanilux 人物页、gpu-driven-grass-tiles、waving-grass-shader-vertex-offset、shader-graph-custom-function-hlsl 打补丁互连。
+
+## [2026-04-19] ingest | Wave-69 Worker GV (danielchasehooper.com ×5)
+
+处理 5 篇 Daniel Chase Hooper 博客。新增 4 概念页（segment-array, build-process-visualization, swift-dylib-hot-reloading, ai-code-agent-workflow）、1 人物页（daniel-chase-hooper）、5 source 摘要。无跳过。与 [[binary-hot-reload]] / [[linear-allocator]] / [[vibe-coding-workflow]] 建立交叉引用。主题横跨 computer-systems（数据结构 / 构建系统 / 动态链接）与 software-design（AI coding agent 工作流）。
+
+## [2026-04-19] ingest | Wave-69 Worker GW (Hexops / Mach / Stephen Gutekanst ×5)
+
+处理 5 篇 devlog.hexops.org，4 篇入库（nominated Zig / Mach v0.3 / mach-dxcompiler / pkgmirror），1 篇跳过（2026s 是 pkgmirror 公告首页快照，重复）。新增 6 概念页（mach-engine, mach-nominated-zig-versions, sysgpu-webgpu-successor, dxc-dxil-signing, mach-dxcompiler-static-build, zig-package-mirror）、1 人物页（stephen-gutekanst）、4 source 摘要。给 webgpu-intro / zig-c-abi-boundary / slang-shader-language 追加交叉引用。

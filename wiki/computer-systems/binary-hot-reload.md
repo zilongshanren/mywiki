@@ -45,6 +45,8 @@ __declspec(dllexport) void shut_down(engine* state);
 - [[max-slater]]
 - [[zig-c-abi-boundary]] — Zig 想做同样的 DLL 热重载时被 ABI 问题绊住
 - [[sebastian-schoener]]
+- [[swift-dylib-hot-reloading]] — Swift/macOS 版本：dlopen + `@_cdecl` 绕开 name mangling
+- [[daniel-chase-hooper]]
 
 ## Sources
 

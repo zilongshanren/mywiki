@@ -66,6 +66,7 @@ sources: 371
 | [[dom-replacement-rethink]] | DOM/CSS/HTML 的系统性批判与替代路径 |
 | [[middleware-vs-open-source]] | 独立团队在闭源中间件与开源库之间的取舍守则 |
 
+| [[ai-code-agent-workflow]] | Hooper 的精确 prompt 路线：AI 当键盘替代而非大脑替代 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -120,6 +121,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[compressed-trie-pattern-matching]] | 倒序插入 + 子树压缩让 trie 自发泛化出后缀模式匹配，3,600 冰岛名压进 3.27 kB trie（beygla / Alex Harri） |
 | [[orthodox-cpp]] | Orthodox C++（C+）：反 Modern C++ 的最小 C++ 子集主张 |
 
+| [[mach-nominated-zig-versions]] | Zig nightly/stable 之间的月度提名版本机制 |
+| [[zig-package-mirror]] | pkgmirror：自托管 Zig toolchain 与包镜像服务 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -213,6 +216,9 @@ CAQA + CSAPP 的底层视角。
 | [[fiber-cpp-basics]] | Jiayin Cao：fiber 动机、与 thread/C++20 coroutine 的差异、x64 System V ABI 上的最小实现 |
 | [[a-metric-for-memory-fragmentation]] | 用 √Σf² / Σf 打分的内存碎片度量公式 |
 
+| [[segment-array]] | 稳定指针 + 常数时间访问 + arena 友好的增长数组（Hooper / Per Vognsen） |
+| [[build-process-visualization]] | 监听 fork/exec/exit 还原构建时间轴（What The Fork） |
+| [[swift-dylib-hot-reloading]] | 120 行 Swift：用 dlopen 替代 Xcode Previews |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -259,6 +265,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[ecs-on-gpu-computesharp]] | 用 ComputeSharp 把 Svelto component 存到 GPU buffer、engine 以 compute shader 形式跑 |
 | [[native-client-porting]] | AirMech 移植到 NaCl 的工程笔记（archival，可迁移到 Emscripten） |
 
+| [[mach-engine]] | Mach：Zig 写的模块化游戏引擎，核心是标准库式组件 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -723,6 +730,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[dxt-codebooks-sliding-window]] | Zeng 码表与滑窗码表在 DXT 二次压缩中的定位 |
 
 | [[gpu-instanced-grass-urp]] | Cyan 的 URP + Shader Graph GPU 实例化草地：RenderMeshIndirect + compute frustum cull + `_VisibleIDs` 两级索引 |
+| [[sysgpu-webgpu-successor]] | Mach sysgpu：Zig 写的 WebGPU 原生实现与继任者 |
+| [[dxc-dxil-signing]] | DXC/DXIL 工具链与 dxil.dll 专有签名 blob 的历史 |
+| [[mach-dxcompiler-static-build]] | 用 build.zig 重写 DXC 的构建系统并跨平台分发 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -874,6 +884,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[bruno-opsenica]] | Bruno Opsenica（bruop）：BGFX/DX12 渲染库作者，IBL 与 culling SIMD 实战 |
 | [[people/erfan-ahmadi]] | Erfan Ahmadi，Nabla 框架贡献者、The Forge Bokeh DoF UnitTest 作者 |
 
+| [[daniel-chase-hooper]] | 独立开发者，前 Apple，Principle 作者；C / Swift / 工具链 |
+| [[stephen-gutekanst]] | Emi / emidoots，Mach 引擎与 Hexops 作者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1613,6 +1625,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/jonolick-dxt-part4-entropy]] | Olick：DXT Part 4 熵降维到 1.51 bpp |
 
 | [[sources/cyanilux-gpu-instanced-grass]] | Cyan：Unity URP + Shader Graph 的 GPU 实例化草地全流程（含 Unity 6 Instance ID 变化 + `UnityIndirect.cginc` `_Base` 版本踩坑） |
+| [[sources/hooper-segment-array]] | Hooper：增长数组 + 稳定指针 + 10 指令 sa_get |
+| [[sources/hooper-build-visualizer]] | Hooper：用系统调用监听做构建甘特图 |
+| [[sources/hooper-swiftui-hot-reloading]] | Hooper：SwiftUI 热重载 120 行实现 |
+| [[sources/hooper-what-the-fork]] | Hooper：What The Fork 产品页 |
+| [[sources/hooper-testing-ai-c]] | Hooper：老 C 程序员实测 Claude Code / Opus 4.5 |
+| [[sources/hexops-mach-nominated-zig]] | Hexops：Mach 提名 Zig 版本的正式化 |
+| [[sources/hexops-mach-v0-3-released]] | Hexops：Mach v0.3 发布（sysgpu / sysaudio / ECS / Sprite） |
+| [[sources/hexops-dxcompiler-better-than-microsoft]] | Hexops：比微软自己更好地构建 DXC |
+| [[sources/hexops-pkgmirror]] | Hexops：pkgmirror 自托管 Zig 镜像发布 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

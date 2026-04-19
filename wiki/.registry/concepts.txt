@@ -784,3 +784,13 @@ circular-separable-dof
 dxt-entropy-reduction
 dxt-codebooks-sliding-window
 gpu-instanced-grass-urp
+segment-array
+build-process-visualization
+swift-dylib-hot-reloading
+ai-code-agent-workflow
+mach-engine
+mach-nominated-zig-versions
+sysgpu-webgpu-successor
+dxc-dxil-signing
+mach-dxcompiler-static-build
+zig-package-mirror
