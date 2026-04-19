@@ -653,3 +653,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-49 Worker EQ (multi-author, 17 ingested / 3 skipped)
 
 处理 20 个原始文件：17 ingested（Ciechanowski airfoil+moon、Zucconi Minecraft/PCA/Orbital、Apoorva Joshi shader-graph-contract/coordinate-spaces/static-site-antiframework/vibe-coding、Elopez-Ros life-and-death/packing-data、Alisavakis HAZE、Trümpler high-heel/Sims-4-mirrors、Slater Monte Carlo 2/3/4）；3 skipped（moon 重复、Technically Art 140/141 bluesky 聚合无点评）。新增 20 概念页 + 17 source 摘要；无新人物页。
+
+## [2026-04-19] ingest | Wave-49 Worker EP-retry (vertexfragment ×5 + gametorrahod ×5 + etodd ×5)
+
+重跑 batch-w49-ep（上批次因 stream idle timeout 全量丢失产出）。处理 15 篇：vertexfragment 4 技术文（polar coord / 云 upsample / URP 体积雾 / BTS v0.7 devlog）+ ramblings index 跳过；gametorrahod 全部 5 篇 DOTS 深度文；etodd 4 篇（Jujutsu / magic link ×2 / passkeys）+ posts index 跳过。新增 3 概念页（jujutsu-vcs, magic-link-auth, passkeys-webauthn）、1 人物页（sirawat-pitaksarit）、13 source 摘要。

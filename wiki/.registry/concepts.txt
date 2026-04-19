@@ -600,3 +600,6 @@ planar-mirror-rendering
 monte-carlo-integration
 inversion-sampling-prng
 path-tracing-monte-carlo
+jujutsu-vcs
+magic-link-auth
+passkeys-webauthn

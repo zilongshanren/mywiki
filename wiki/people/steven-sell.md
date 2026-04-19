@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 12
+sources: 16
 ---
 
 # Steven Sell
@@ -22,7 +22,6 @@ Vertex Fragment 博客（vertexfragment.com）作者，独立游戏 Beyond the S
 - [[nested-loop-optimization]]
 
 ## Sources
-
 - [[sources/vertexfragment-diamond-square-gpu]]
 - [[sources/vertexfragment-dots-character-controller]]
 - [[sources/vertexfragment-list-removal]]
@@ -35,3 +34,11 @@ Vertex Fragment 博客（vertexfragment.com）作者，独立游戏 Beyond the S
 - [[sources/vertexfragment-surface-angle-silhouette]]
 - [[sources/vertexfragment-sobel-outline-unity]]
 - [[sources/vertexfragment-demonizing-nested-loops]]
+- [[sources/vertexfragment-polar-coordinates]]
+- [[sources/vertexfragment-cloud-upsample]]
+- [[sources/vertexfragment-urp-volumetric-fog]]
+- [[sources/vertexfragment-bts-v07]]
+- [[sources/vertexfragment-polar-coordinates]]
+- [[sources/vertexfragment-cloud-upsample]]
+- [[sources/vertexfragment-urp-volumetric-fog]]
+- [[sources/vertexfragment-bts-v07]]

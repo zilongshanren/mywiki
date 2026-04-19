@@ -165,6 +165,9 @@ CAQA + CSAPP 的底层视角。
 | [[main-thread-task-injection]] | 给任务调度器开洞让主线程事件回调运行指定 coroutine |
 | [[x86-simd-integer-multiplies]] | x86 SIMD 整数乘法指令的硬件演化史 |
 | [[intel-13th-14th-gen-clock-degradation]] | Intel 13 / 14 代 CPU 时钟树退化的软件 work-around |
+| [[jujutsu-vcs]] | Jujutsu VCS：Git-兼容但把 rewrite history 变成默认工作流 |
+| [[magic-link-auth]] | Magic link 登录的陷阱清单（GET 预取、错 tab、phishing、flaky email、rate limit） |
+| [[passkeys-webauthn]] | WebAuthn / passkeys 现状：conditional UI 让服务端复杂度陡升 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -659,6 +662,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[mark-lundin]] | PlayCanvas 团队，@playcanvas/react 作者 |
 | [[jendrik-illner]] | Jendrik Illner，Graphics Programming Weekly 主理人 |
 | [[kris-bamrah]] | PlayCanvas 团队，Editor 开源与 VSCode Extension 公告的作者 |
+| [[sirawat-pitaksarit]] | Sirawat Pitaksarit，Unity DOTS / 音频插件开发者（Game Torrahod 博客） |
 
 ## 源摘要（wiki/sources/）
 
@@ -1211,6 +1215,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/slater-mc-integration]] | Slater：Monte Carlo 积分与维度诅咒 |
 | [[sources/slater-mc-sampling]] | Slater：PRNG、拒绝、逆变换采样 |
 | [[sources/slater-mc-rendering]] | Slater：Monte Carlo 应用到渲染方程（path tracing） |
+| [[sources/vertexfragment-polar-coordinates]] | Steven Sell：用极坐标做 BotW 式水圈纹理效果 |
+| [[sources/vertexfragment-cloud-upsample]] | Steven Sell：quarter-res + jitter + 时间重投影 的体积云升采样 |
+| [[sources/vertexfragment-urp-volumetric-fog]] | Steven Sell：URP 自定义 Pass 里的体积雾 raymarch 实现 |
+| [[sources/vertexfragment-bts-v07]] | Steven Sell：Beyond the Storm v0.7 devlog（草地/雾/云改造 + scope 坍缩） |
+| [[sources/gametorrahod-enableable-generated-code]] | Sirawat：DOTS Enableable 组件的 Roslyn 生成代码三条路径 |
+| [[sources/gametorrahod-chunk-change-version]] | Sirawat：DOTS chunk change version 的六个反直觉陷阱 |
+| [[sources/gametorrahod-thinking-in-cache]] | Sirawat：DOTS 的 cache 视角 + Burst 自动向量化拆解 |
+| [[sources/gametorrahod-ecs-patterns]] | Sirawat：从 Unity 官方包里扒出的 9 个 ECS 编程模式 |
+| [[sources/gametorrahod-audio-random-container]] | Sirawat：Unity 6 AudioResource / AudioRandomContainer 评估笔记 |
+| [[sources/etodd-jujutsu]] | Evan Todd：该不该从 Git 迁到 Jujutsu 的决策框架 |
+| [[sources/etodd-magic-link-pitfalls]] | Evan Todd：magic link 登录的两个非显然陷阱（GET 预取、错 tab） |
+| [[sources/etodd-more-magic-link-pitfalls]] | Evan Todd：magic link 续篇（phishing、flaky email、rate limit） |
+| [[sources/etodd-passkeys-are-too-hard]] | Evan Todd：WebAuthn / passkeys conditional UI 的服务端复杂度问题 |
 
 ## 元（wiki/meta/）
 
