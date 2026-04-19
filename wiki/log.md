@@ -781,3 +781,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-60 Worker FU (blog.selfshadow.com ×5)
 
 处理 5 篇 blog.selfshadow.com 条目（Stephen Hill 的 SIGGRAPH PBS 课程主页）。跳过 2 篇纯 changelog 空壳与 1 篇已在 wiki 中的重复（2014 课程页已存在）。新增 2 个 source 摘要（2012、2025 课程），新增 2 个概念页（openpbr、neural-materials）。Patch stephen-hill 作者页与 physically-based-shading 概念页追加两条 source 链接。
+
+## [2026-04-19] ingest | Wave-60 Worker ft (asawicki.info ×6)
+
+处理 Adam Sawicki 的 6 篇 asawicki.info 原文。3 篇实质技术内容入库（graphics-api history / system load formula / DX12 GDC 2026 long comments），3 篇 skip（home-page 与 RSS 聚合重复；Total Commander 插件公告无技术实体）。新增 1 人物页（adam-sawicki）、5 概念页（graphics-api-history、system-load-formula、pix-api-and-dxdmp、dxr-tier-2-clas-ptlas、advanced-shader-delivery）、3 source 摘要。Patch 到 hlsl-cooperative-vectors-tensor-cores 与 d3d12-work-graphs 做交叉引用。GDC 2026 DX12 公告被 Sawicki 拆成主机级调试工具、ML for DX、Shader Delivery、DirectStorage 1.4、DXR Tier 2 五条线，本批按其中三条独立成页，ML 方向复用既有 Cooperative Vectors 页。

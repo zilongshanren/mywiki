@@ -11490,3 +11490,9 @@ raw/articles/blog.selfshadow.com/2026-01-01_self-shadow-7.md
 raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2012-course-practical-physically-based-shading-in-f.md
 raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2014-course-physically-based-shading-in-theory-and.md
 raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2025-course-physically-based-shading-in-theory-and.md
+raw/articles/asawicki.info/2026-01-20_graphics-apis-yesterday-today-and-tomorrow-a-new-article.md
+raw/articles/asawicki.info/2026-02-26_a-formula-for-overall-system-load.md
+raw/articles/asawicki.info/2026-03-07_total-commander-a-plugin-supporting-a-custom-archive-format.md
+raw/articles/asawicki.info/2026-03-15_adam-sawicki-home-page.md
+raw/articles/asawicki.info/2026-03-15_directx-12-news-from-gdc-2026-my-comments.md
+raw/articles/asawicki.info/2026-03-15_https-asawicki-info-news-rss-php.md

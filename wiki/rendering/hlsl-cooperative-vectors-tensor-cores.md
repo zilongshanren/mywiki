@@ -66,13 +66,16 @@ MATRIX_LAYOUT_MUL_OPTIMAL 让实现按硬件选最佳布局（行列主序或 ti
 Cooperative Vectors preview 被 [Linear Algebra Matrix](https://github.com/microsoft/hlsl-specs/blob/main/proposals/0035-linalg-matrix.md) 提案取代（SM6.10）。API 细节会变，但"通用 shader 访问 Tensor core"这件事确定了——[[mlp-signal-encoding-rendering|神经渲染]] 的实时门槛从此可以降到可接受区间。
 
 ## 相关
-
 - [[mlp-signal-encoding-rendering]]
 - [[neural-graphics-primitives]]
 - [[d3d12-resource-binding]]
 - [[gpu-utilisation-holistic-tuning]]
 - [[kostas-anagnostou]]
+- [[adam-sawicki]]
+- [[pix-api-and-dxdmp]]
+- [[dxr-tier-2-clas-ptlas]]
+- [[advanced-shader-delivery]]
 
 ## Sources
-
 - [[sources/interplay-neural-rendering-2-coopvec]]
+- [[sources/asawicki-dx12-gdc-2026-comments]]

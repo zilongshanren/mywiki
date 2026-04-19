@@ -708,3 +708,8 @@ laplacian-structure-aware-error-diffusion
 sift-single-file-library
 openpbr
 neural-materials
+graphics-api-history
+system-load-formula
+pix-api-and-dxdmp
+dxr-tier-2-clas-ptlas
+advanced-shader-delivery

@@ -81,6 +81,7 @@ Kostas 演示的 "shadowmask 三级分类"（[[culling]] → hi-z raymarch → �
 - [[async-compute]] — 另一个改善 GPU 利用率的手段，Kostas 的读者在评论区问"work graph 内部是不是在做 async compute？"
 - [[sources/anteru-workgraph-spmv]] —— Chajdas 等 ISCA 2025，把 work graph 从图形管线移植到 SpMV，证明"动态输出 + host 往返敏感"的 HPC 场景 work graph 有实质收益（比 rocSPARSE LRB 快 3.35×，内存固定 25 MiB）
 - [[variable-sized-work-pattern]] —— 同类问题的 wave 内尺度解法，和 work graphs 互补（work graphs 跨 threadgroup / 跨 dispatch）
+- [[dxr-tier-2-clas-ptlas]] — DXR Tier 2.0 在光追侧做的三层加速结构拆分，思路与 Work Graphs 对应
 
 ## Sources
 

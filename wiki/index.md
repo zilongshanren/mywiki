@@ -189,6 +189,7 @@ CAQA + CSAPP 的底层视角。
 | [[numpy-tile-reshape-trick]] | reshape + transpose 切瓦片：比 for 循环快 1000×，比 scikit-image 快 15× |
 | [[benchmark-methodology-end-to-end]] | 小 benchmark 不能代替端到端：矩阵测试、优化打开再测、2% 噪声阈值 |
 | [[estrin-scheme]] | 代数重排 Horner 以缩短依赖链，给乱序 CPU 做并行多项式求值 |
+| [[system-load-formula]] | 多子系统合成整体负载的公式（inverse product + average 混合） |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -653,6 +654,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sift-single-file-library]] | jo_sift.h：专利过期后的 SIFT 单文件 C 库 |
 | [[openpbr]] | 开放式 PBR uber-shader 标准（Adobe / Autodesk / ILM） |
 | [[neural-materials]] | 神经材质：把复杂离线 shader graph 压进小 MLP |
+| [[graphics-api-history]] | 图形 API 从固定管线到 Vulkan/D3D12 的三段式演进（Sawicki 科普） |
+| [[pix-api-and-dxdmp]] | GDC 2026：PIX API、.dxdmp 崩溃转储、DebugBreak()、PIX 事件透传驱动 |
+| [[dxr-tier-2-clas-ptlas]] | DXR Tier 2.0：CLAS / Cluster Template / Partitioned TLAS |
+| [[advanced-shader-delivery]] | Shader Compiler Plugin + Partial Graphics Programs + DirectStorage 1.4 |
 
 ## 经典案例（wiki/examples/）
 
@@ -788,6 +793,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[yining-karl-li]] | Disney Animation Hyperion 渲染工程师，Code & Visuals 博主 |
 | [[16bpp]] | 16BPP.net 博主，PSRayTracing 作者，靠全矩阵 benchmark 重测 C++ 性能主张 |
 | [[jon-olick]] | 前 id Software 程序员，JO JPEG / jo_*.h 单文件库系列作者 |
+| [[adam-sawicki]] | AMD D3D12MA / VMA 作者，asawicki.info 博主，DX12 低层与 GPU 内存专家 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1458,6 +1464,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/jonolick-sift-library]] | Jon Olick：jo_sift.h 单文件 SIFT 库 |
 | [[sources/selfshadow-pbs-siggraph-2012]] | Hill：SIGGRAPH 2012 PBS 课程（Disney Principled BRDF 首发） |
 | [[sources/selfshadow-pbs-siggraph-2025]] | Hill：SIGGRAPH 2025 PBS 课程（OpenPBR / EON / 神经材质 / GT7 tone mapping） |
+| [[sources/asawicki-graphics-apis-yesterday-today]] | Sawicki：DirectX/OpenGL/Vulkan 演进史科普 |
+| [[sources/asawicki-system-load-formula]] | Sawicki：整体系统负载公式 + 交互 demo |
+| [[sources/asawicki-dx12-gdc-2026-comments]] | Sawicki：GDC 2026 DirectX 12 新特性的应用端点评 |
 
 ## 元（wiki/meta/）
 
