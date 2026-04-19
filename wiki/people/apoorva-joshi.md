@@ -15,25 +15,33 @@ sources: 2
 - **小项目主义**：Papaya、taxman.dk 这类副业都倾向于「业余晚上手写一遍、去掉框架依赖」。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | The experiment | [[calling-conventions-x86]] |
 | Zooming and panning | [[gpu-image-editor-brush]] |
 | What is OpenGL loading? | [[opengl-loader]] |
 | Normal Mapping | [[tangent-space-normal-mapping]] |
+| The Shader Graph Contract | [[shader-graph-contract]] |
+| Different Coordinate Spaces | [[coordinate-spaces]] 补充 |
+| Stop Over-engineering Static Websites | [[static-site-antiframework]] |
+| Vibe-coding a Tax Calculator | [[vibe-coding-workflow]] |
 
 ## 相关
-
 - [[calling-conventions-x86]]
 - [[gpu-image-editor-brush]]
 - [[fragment-shader]]
 - [[opengl-loader]]
 - [[tangent-space-normal-mapping]]
+- [[shader-graph-contract]]
+- [[static-site-antiframework]]
+- [[vibe-coding-workflow]]
 
 ## Sources
-
 - [[sources/apoorvaj-calling-conventions]]
 - [[sources/apoorvaj-zooming-and-panning]]
 - [[sources/apoorvaj-opengl-loading]]
 - [[sources/apoorvaj-normal-mapping]]
+- [[sources/apoorvaj-shader-graph-contract]]
+- [[sources/apoorvaj-coordinate-spaces]]
+- [[sources/apoorvaj-static-site-antiframework]]
+- [[sources/apoorvaj-vibe-coding]]

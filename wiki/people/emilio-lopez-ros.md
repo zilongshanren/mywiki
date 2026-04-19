@@ -16,21 +16,24 @@ sources: 2
 此外他在 2014 年前后还写过一组**早期 Android / Java 手游开发时期**的短文（Gameloft《Dragon Mania》性能抢救、独立项目《Will of Flame》的自研引擎、Floyd–Steinberg dither、Java 向量数学的吐槽），虽然不如后来的 AAA 拆解重磅，但能看到一个图形程序员从 MIDP 时代的低端机优化走到 RenderDoc 拆解 ROTR 的完整轨迹。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | The Rendering of Rise of the Tomb Raider | [[tiled-light-prepass]]、[[hbao-interleaved-sampling]]、[[depth-aware-upsampling]]、[[fizzle-lod-fading]]、[[volumetric-fog-froxels]] |
 | The Rendering of Castlevania: Lords of Shadow 2 | [[valve-ambient-cube]]、[[deferred-rendering]] 的 DX9 世代实例 |
 | Temporal AA and the Quest for the Holy Trail | [[temporal-antialiasing]]、[[motion-vectors]]、[[taa-history-rectification]] |
+| Life and Death of a Graphics Programmer | [[graphics-programmer-constraints]]、[[shader-permutation-explosion]]、[[clean-code-critique]] |
+| The Art of Packing Data | [[gpu-data-packing]] |
 
 ## 相关
-
 - [[temporal-antialiasing]]
 - [[tiled-light-prepass]]
 - [[rendering-pipeline]]
+- [[graphics-programmer-constraints]]
+- [[clean-code-critique]]
+- [[shader-permutation-explosion]]
+- [[gpu-data-packing]]
 
 ## Sources
-
 - [[sources/elopezr-rotr-rendering]]
 - [[sources/elopezr-taa-holy-trail]]
 - [[sources/elopezr-floyd-steinberg-dithering]]
@@ -39,3 +42,5 @@ sources: 2
 - [[sources/elopezr-wof-editors]]
 - [[sources/elopezr-java-vector-math]]
 - [[sources/elopezr-clos2-rendering]]
+- [[sources/elopezr-graphics-programmer-life]]
+- [[sources/elopezr-art-of-packing-data]]

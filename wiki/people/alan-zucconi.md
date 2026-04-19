@@ -17,7 +17,6 @@ sources: 8
 - **Journey Sand Shader**（2019）——逆向分析《Journey》沙丘的 diffuse、rim、ocean specular、glitter、ripples 六个 pass
 
 ## 相关
-
 - [[spectral-zucconi-rainbow]]
 - [[diffraction-grating-shader]]
 - [[fast-translucency-wraplight]]
@@ -27,9 +26,11 @@ sources: 8
 - [[gpu-driven-grass-tiles]] —— Marco Giordano 的 grass 系统直接用了 Alan Wolfe 的蓝噪声采样代码
 - [[worley-voronoi-noise]] —— 2015 年的 To Voronoi and Beyond 教程补充到此页
 - [[color-quantization-kmeans]] —— 2015 年用 K-Means 从截图提主色
+- [[minecraft-plugin-development]] — 2024 年插件教程
+- [[pca-intro]] — 2025 年 PCA 入门
+- [[keplerian-orbits]] / [[n-body-gravity-simulation]] — 2025 年轨道力学长文
 
 ## Sources
-
 - [[sources/alanzucconi-improving-rainbow-2]]
 - [[sources/alanzucconi-cdrom-diffraction-2]]
 - [[sources/alanzucconi-fast-sss-1]]
@@ -39,3 +40,6 @@ sources: 8
 - [[sources/alanzucconi-to-voronoi-beyond]]
 - [[sources/alanzucconi-main-colours-kmeans]]
 - [[sources/alanzucconi-shader-intro-unity]]
+- [[sources/alanzucconi-minecraft-plugin]]
+- [[sources/alanzucconi-pca-intro]]
+- [[sources/alanzucconi-orbital-mechanics]]

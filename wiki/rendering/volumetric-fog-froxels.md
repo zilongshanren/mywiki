@@ -33,7 +33,6 @@ Foundation 同时还有一个更便宜的 **lit fog**——不做 voxel grid，�
 Froxel volumetric 留给真正需要光在 3D 空间里和几何交互的场景——比如 Lara 站在雾气里被一束聚光灯打穿的那种。
 
 ## 相关
-
 - [[tiled-light-prepass]]
 - [[deferred-rendering]]
 - [[rendering-pipeline]]
@@ -41,6 +40,7 @@ Froxel volumetric 留给真正需要光在 3D 空间里和几何交互的场景�
 - [[unity-postprocessing-adventures]] —— 前一代屏幕空间体积光束的 Unity 实现
 - [[unreal-frame-breakdown]] —— UE4 的 froxel 体积雾 compute pipeline
 - [[bartosz-wronski]] —— 原 AC4/Scimitar 引擎 compute shader 作者，其 Siggraph 2014 talk 是这条技术的源头参考
+- [[haze-urp-volumetric-fog]] — URP 上 froxel 体积雾的可购买工程实现（Harry Alisavakis 的 HAZE）
 
 ## Sources
 

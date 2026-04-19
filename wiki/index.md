@@ -53,6 +53,10 @@ sources: 371
 | [[automated-test-philosophy]] | 自动化测试的目的是防回归而非找 bug |
 | [[ci-cost-optimization-asg]] | 用 Jupyter 把 ASG 调优成最优化题 |
 | [[xlsx-text-versioning]] | xlsx 规范化为可 diff 文本格式；文件锁驱动的无插件编辑链路 |
+| [[static-site-antiframework]] | 反框架：本机 Pandoc + wrangler 替代 JAMstack VM |
+| [[vibe-coding-workflow]] | AI 代理编程工作流：plan mode + per-PR review + 对账测试 |
+| [[graphics-programmer-constraints]] | 图形程序员行业的硬约束与世界观 |
+| [[clean-code-critique]] | 游戏/图形视角对 clean code 的系统批判 |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -545,6 +549,20 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[nanite-tessellation-approach]] | UE5.4 Nanite Tessellation 的流水线：ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数 |
 | [[nanite-reyes-comparison]] | Nanite Tessellation 与 Pixar Reyes 的逐点对照：split 同构、dice 从方格换成不规则等边、shading 频率从 object-space 改为像素 deferred material |
 | [[variable-sized-work-pattern]] | Karis 从 Nanite Tessellation 抽出的通用并行原语：wave 内 pull-based 变长工作分发，顺便解释 Nanite 软光栅为何快于 HW |
+| [[airfoil-lift-physics]] | 升力物理与流体力学入门（Ciechanowski） |
+| [[fluid-flow-visualization]] | Eulerian 箭头 × Lagrangian 粒子 × 标量色图的三重表示 |
+| [[keplerian-orbits]] | Kepler 轨道与两体问题（Ciechanowski Moon × Zucconi Orbital） |
+| [[n-body-gravity-simulation]] | N 体引力的数值积分：Euler / Verlet / symplectic |
+| [[moon-phases-tides]] | 月相、潮汐、食——引力梯度与节点几何 |
+| [[pca-intro]] | PCA 直觉入门：椭球半轴与特征分解 |
+| [[shader-graph-contract]] | Shader graph 的 sink 节点契约（unlit/lit/layered） |
+| [[shader-permutation-explosion]] | shader 排列爆炸与 #stutterstruggle |
+| [[gpu-data-packing]] | UNORM/SNORM/bitfield/BFE/BFI 的 HLSL + RDNA 实战 |
+| [[haze-urp-volumetric-fog]] | Alisavakis HAZE：URP froxel 体积雾商品化实现 |
+| [[planar-mirror-rendering]] | 平面镜 stencil + oblique 投影 + 独立 cull |
+| [[monte-carlo-integration]] | MC 积分基础：1/√M 与维度无关 |
+| [[inversion-sampling-prng]] | PRNG、拒绝、逆变换采样 + Jacobian |
+| [[path-tracing-monte-carlo]] | MC 套渲染方程：cosine-weighted、NEE、MIS、RR |
 
 ## 经典案例（wiki/examples/）
 
@@ -588,6 +606,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[paradox-grand-strategy-economy]] | EU5 经济系统：人口/货币/商品三要素与市场中介 |
 | [[deckbuilder-game-design-patterns]] | 卡牌构筑游戏设计套路：双卡堆、主动刷牌、需求上升代替战斗 |
 | [[planning-over-rng-game-design]] | 规划式游戏设计：dotAGE / Spirit Island / Voidfall 的确定性 + 精算乐趣 |
+| [[minecraft-plugin-development]] | Minecraft plugin vs mod vs data pack 的生态与 Paper/Bukkit 工程 |
+| [[character-height-variation-problem]] | 角色高度变化的 6 种解法（高跟鞋问题） |
 
 ## 人物（wiki/people/）
 
@@ -1174,6 +1194,23 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/karis-how-to-tessellate]] | Karis：Tessellation Table 离线预计算 + 16bit barycentric 量化，密度均匀 remesh |
 | [[sources/karis-nanite-reyes]] | Karis：UE5.4 完整流水线——ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数链式法则 |
 | [[sources/karis-variable-sized-work]] | Karis：wave 内 pull-based 变长工作分发原语，顺便解释 Nanite 软光栅快于 HW 的数据移动论 |
+| [[sources/ciechanow-airfoil]] | Ciechanowski：翼型升力与流体可视化 |
+| [[sources/ciechanow-moon]] | Ciechanowski：月球、Kepler、潮汐与食 |
+| [[sources/alanzucconi-minecraft-plugin]] | Zucconi：Minecraft Paper 插件开发完整教程 |
+| [[sources/alanzucconi-pca-intro]] | Zucconi：PCA 程序员视角直觉入门 |
+| [[sources/alanzucconi-orbital-mechanics]] | Zucconi：轨道力学长文（Kepler + n-body） |
+| [[sources/apoorvaj-shader-graph-contract]] | Joshi：shader graph 的 sink contract 与 Substrate slab |
+| [[sources/apoorvaj-coordinate-spaces]] | Joshi：渲染管线坐标空间链速写 |
+| [[sources/apoorvaj-static-site-antiframework]] | Joshi：停止过度工程化静态网站 |
+| [[sources/apoorvaj-vibe-coding]] | Joshi：Claude Code 两晚做丹麦税计算器 |
+| [[sources/elopezr-graphics-programmer-life]] | López-Ros：图形程序员的生与死——行业痛点 opinion piece |
+| [[sources/elopezr-art-of-packing-data]] | López-Ros：HLSL/RDNA 视角的 GPU 数据打包手册 |
+| [[sources/halisavakis-haze-manual]] | Alisavakis：HAZE URP 体积雾 renderer feature 用户手册 |
+| [[sources/simonschreibt-high-heel-problem]] | Trümpler：角色高跟鞋引发的高度问题 |
+| [[sources/simonschreibt-sims-4-mirrors]] | Trümpler：Sims 4 镜子的 stencil + culling 工艺 |
+| [[sources/slater-mc-integration]] | Slater：Monte Carlo 积分与维度诅咒 |
+| [[sources/slater-mc-sampling]] | Slater：PRNG、拒绝、逆变换采样 |
+| [[sources/slater-mc-rendering]] | Slater：Monte Carlo 应用到渲染方程（path tracing） |
 
 ## 元（wiki/meta/）
 

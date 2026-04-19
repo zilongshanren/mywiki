@@ -9,7 +9,6 @@ sources: 10
 希腊技术美术师（Tech Artist），曾任职于 EA，后加入 Grinding Gear Games（《流放之路》开发商）。他以个人博客 [Technically Art](https://halisavakis.com) 闻名，长期维护「Technically Art」周报，汇总 Twitter 上的实时渲染、VFX 与着色器作品；同时主持名为 `#TechnicallyAChallenge` 的 Discord 技术美术挑战赛。他撰写的 **ShaderQuest** 系列教程面向着色器初学者，由浅入深讲解着色器的数学与艺术基础。
 
 ## 相关
-
 - [[shaping-functions]]
 - [[fragment-shader]]
 - [[cyanilux]] —— 常参与 #TechnicallyAChallenge 挑战赛的 shader 教程作者
@@ -27,9 +26,9 @@ sources: 10
 - [[glitch-image-effect]] —— 第十二篇，两套条纹 mask + 波浪位移 + 色差的三件套 glitch 后处理，附单旋钮控制器
 - [[abzu-portal-cards-shader]] —— *How I'd do it* 系列开篇，复刻 ABZÛ 的远景透明 card，按距离 fade
 - [[world-screen-space-position-shader]] —— *Shader bits* 系列开篇，worldPos / screenPos 在 vertex-fragment 与 surface shader 两种风格下的取法备忘
+- [[haze-urp-volumetric-fog]] —— 作者商品化的 URP froxel 体积雾 renderer feature
 
 ## Sources
-
 - [[sources/halisavakis-shaderquest-shaping-functions]]
 - [[sources/halisavakis-bluk-2d-fog-sprite]]
 - [[sources/halisavakis-image-effects-intro]]
@@ -48,3 +47,4 @@ sources: 10
 - [[sources/halisavakis-glitch-image-effect]]
 - [[sources/halisavakis-abzu-portal-cards]]
 - [[sources/halisavakis-shader-bits-world-screen-pos]]
+- [[sources/halisavakis-haze-manual]]

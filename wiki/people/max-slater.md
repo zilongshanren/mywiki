@@ -16,7 +16,6 @@ sources: 14
 - **以数学工具拆实时渲染**：光谱渲染、QMC、球谐——他愿意从泛函分析讲起再落到 GPU。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Monte Carlo Crash Course – Quasi-Monte Carlo | [[quasi-monte-carlo]]、[[stratified-sampling]]、[[low-discrepancy-sequence]]、[[poisson-disk-sampling]] |
@@ -24,17 +23,21 @@ sources: 14
 | Exile: Voxel Rendering Pipeline | [[greedy-voxel-meshing]]、[[voxel-ambient-occlusion]]、[[compact-vertex-format]] |
 | Exile: Reflection | [[cpp-runtime-reflection]] |
 | A Compiler Bug | [[compiler-interference-analysis-bug]] |
+| Monte Carlo Crash Course – Exponentially Better Integration | [[monte-carlo-integration]] |
+| Monte Carlo Crash Course – Sampling | [[inversion-sampling-prng]] |
+| Monte Carlo Crash Course – Case Study: Rendering | [[path-tracing-monte-carlo]] |
 
 ## 相关
-
 - [[quasi-monte-carlo]]
 - [[functions-as-vectors]]
 - [[greedy-voxel-meshing]]
 - [[cpp-runtime-reflection]]
 - [[compiler-interference-analysis-bug]]
+- [[monte-carlo-integration]]
+- [[inversion-sampling-prng]]
+- [[path-tracing-monte-carlo]]
 
 ## Sources
-
 - [[sources/slater-qmc-crash-course]]
 - [[sources/slater-functions-are-vectors]]
 - [[sources/slater-exile-voxel-rendering]]
@@ -49,3 +52,6 @@ sources: 14
 - [[sources/slater-spherical-integration]]
 - [[sources/slater-oxidizing-cpp]]
 - [[sources/slater-continuous-probability]]
+- [[sources/slater-mc-integration]]
+- [[sources/slater-mc-sampling]]
+- [[sources/slater-mc-rendering]]

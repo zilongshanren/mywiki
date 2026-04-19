@@ -16,7 +16,6 @@ sources: 5
 - **偏向游戏艺术史**——关注的案例跨度从 Deus Ex、Divine Divinity、Teleglitch 这样的小众老作到 Diablo 3、Fallout 3 这样的 AAA。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Deus Ex: Occlusion | [[prebaked-corner-occlusion]] |
@@ -28,9 +27,10 @@ sources: 5
 | Cyberpunk 2077: Phantom Liberty — Broken Edges | [[pom-decal-broken-edges]] |
 | Infinity Nikki: One-Way Window | [[one-way-window-backface-culling]] · [[shadow-caster-culling-front-back]] |
 | Infinity Nikki: Shadow Breakdown | [[selective-shadow-fade-pass-switch]] · [[blob-shadow-decal-vs-plane]] |
+| The High Heel Problem | [[character-height-variation-problem]] |
+| Sims 4 Mirrors | [[planar-mirror-rendering]] |
 
 ## 相关
-
 - [[painted-foliage-bent-planes]]
 - [[normal-decal-edge-blending]]
 - [[chromatic-aberration-post]]
@@ -46,9 +46,10 @@ sources: 5
 - [[shadow-caster-culling-front-back]]
 - [[selective-shadow-fade-pass-switch]]
 - [[blob-shadow-decal-vs-plane]]
+- [[character-height-variation-problem]]
+- [[planar-mirror-rendering]]
 
 ## Sources
-
 - [[sources/simonschreibt-deus-ex-occlusion]]
 - [[sources/simonschreibt-diablo3-trees]]
 - [[sources/simonschreibt-divine-divinity-reflection]]
@@ -63,3 +64,5 @@ sources: 5
 - [[sources/simonschreibt-cyberpunk-broken-edges]]
 - [[sources/simonschreibt-nikki-one-way-window]]
 - [[sources/simonschreibt-nikki-shadow]]
+- [[sources/simonschreibt-high-heel-problem]]
+- [[sources/simonschreibt-sims-4-mirrors]]

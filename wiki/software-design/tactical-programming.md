@@ -40,10 +40,11 @@ sources: 1
 | 生产力曲线 | 初期快，后期慢 | 初期慢，后期快 |
 
 ## 相关
-
 - 极端形态：[[tactical-tornado]]
 - 替代方案：[[strategic-programming]]
 - 造成的陷阱：[[complexity]] 累积
+- [[clean-code-critique]] — 游戏/图形视角下对 clean code 的系统批判
+- [[vibe-coding-workflow]] — AI 辅助下的 tactical 循环
 
 ## Sources
 

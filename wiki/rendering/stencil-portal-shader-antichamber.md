@@ -72,13 +72,13 @@ Stencil {
 整支技术的精神和 [[custom-mask-shaders|in-shader 程序化 mask]] 是一致的——都是「用一种廉价的硬件 / 数学机制来限定屏幕上哪一块允许出某个效果」——只是 stencil 让这块区域能被任意几何（而不仅是圆盘 / 圆环）定义。
 
 ## 相关
-
 - [[stencil-buffer]] —— 硬件 8 bit per-pixel mask 的基本机制
 - [[unity-surface-shaders]] —— 这两支 shader 的模板就是标准 surface shader
 - [[render-textures-unity]] —— 用相机做相同效果的更贵替代方案
 - [[fragment-shader]]
 - [[unity-grabpass-blur]]
 - [[harry-alisavakis]]
+- [[planar-mirror-rendering]] — 用 stencil 区分多面镜子的同源工艺
 
 ## Sources
 

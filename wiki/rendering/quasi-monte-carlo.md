@@ -29,13 +29,15 @@ Monte Carlo 的精度取决于方差；QMC 把方差这个概率概念换成了�
 [[poisson-disk-sampling]] 是早期图形里负相关采样的代表；现代 path tracer 则几乎全面转向 Sobol + Owen scrambling 这类 QMC 方案——它们既比 PRNG 方差小，又比完整分层更能处理高维 BRDF/光源/时间采样。Halton 序列因为实现简单，也常用于离线预烘焙。
 
 ## 相关
-
 - [[stratified-sampling]] — 通过负相关显式降低方差的姊妹技术
 - [[low-discrepancy-sequence]] — 让 QMC 真正有优势的点列类
 - [[poisson-disk-sampling]] — 渐进性 + 空间均匀的另一条路
 - [[max-slater]]
 - [[continuous-probability]] — 同系列 Part 1，数学前置
 - [[spherical-integration]] — 同系列所需的积分坐标变换
+- [[monte-carlo-integration]] — 基础 MC 积分的收敛率（Slater 系列第二章）
+- [[inversion-sampling-prng]] — PRNG + 拒绝 / 逆变换采样（Slater 系列第三章）
+- [[path-tracing-monte-carlo]] — 渲染应用（Slater 系列第四章）
 
 ## Sources
 

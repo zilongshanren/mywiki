@@ -649,3 +649,7 @@ batch-w48-el：10 条全部 skipped_offtopic（周报 419-427 延续先例，gtc
 ## [2026-04-19] ingest | Wave-49 Worker EO (jendrikillner ×8 skip + graphicrants Karis Nanite Tessellation ×5)
 
 Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 2026 Nanite Tessellation 系列 5 篇全 ingest：新增 4 个概念页（tessellation-approaches-overview / nanite-tessellation-approach / nanite-reyes-comparison / variable-sized-work-pattern）+ 5 source 摘要。Patch brian-karis（增 2026 条目）、hull-domain-tessellation-urp（对照 D3D tessellator）、meshlets-and-mesh-shaders 与 d3d12-work-graphs（交叉 variable-sized-work）。
+
+## [2026-04-19] ingest | Wave-49 Worker EQ (multi-author, 17 ingested / 3 skipped)
+
+处理 20 个原始文件：17 ingested（Ciechanowski airfoil+moon、Zucconi Minecraft/PCA/Orbital、Apoorva Joshi shader-graph-contract/coordinate-spaces/static-site-antiframework/vibe-coding、Elopez-Ros life-and-death/packing-data、Alisavakis HAZE、Trümpler high-heel/Sims-4-mirrors、Slater Monte Carlo 2/3/4）；3 skipped（moon 重复、Technically Art 140/141 bluesky 聚合无点评）。新增 20 概念页 + 17 source 摘要；无新人物页。

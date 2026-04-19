@@ -18,7 +18,6 @@ sources: 3
 在 2014 年前后（他博客刚开始的时期），Ciechanowski 还经历过一段**硬核低层挖坟**的阶段——Transform Feedback 滥用 GPGPU、`class-dump` + Hopper 逆向 Foundation 的 `__NSArrayM` 和 `__NSDictionaryI`、手工翻译 ARM64 汇编。这些文章没有后来那种 WebGL 交互 demo，但同样是「从第一原理问一个问题：这东西真正怎么工作？」的一脉——只不过问题对象从「光在哪里折射」变成了「循环缓冲区在 ARM64 上长什么样」。Bezier 曲线那一篇是博客上**第一篇带交互 demo** 的文章，可以视为他后来风格的雏形。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Color Spaces | [[color-space]] |
@@ -30,9 +29,10 @@ sources: 3
 | Exposing NSDictionary | [[nsdictionary-linear-probing]]、[[objc-runtime-internals]] |
 
 三篇都属于「**图形学基础必读清单**」——比任何教科书都更直观。
+| Airfoil | [[airfoil-lift-physics]]、[[fluid-flow-visualization]] |
+| Moon | [[keplerian-orbits]]、[[moon-phases-tides]]、[[n-body-gravity-simulation]] |
 
 ## 相关
-
 - [[color-space]]
 - [[alpha-compositing]]
 - [[pinhole-camera]]
@@ -42,9 +42,13 @@ sources: 3
 - [[nsmutablearray-circular-buffer]]
 - [[nsdictionary-linear-probing]]
 - [[objc-runtime-internals]]
+- [[airfoil-lift-physics]]
+- [[fluid-flow-visualization]]
+- [[keplerian-orbits]]
+- [[moon-phases-tides]]
+- [[n-body-gravity-simulation]]
 
 ## Sources
-
 - [[sources/ciechanow-color-spaces]]
 - [[sources/ciechanow-alpha-compositing]]
 - [[sources/ciechanow-cameras-and-lenses]]
@@ -53,3 +57,5 @@ sources: 3
 - [[sources/ciechanow-exposing-nsmutablearray]]
 - [[sources/ciechanow-exposing-nsdictionary]]
 - [[sources/ciechanow-nsdictionary-objectforkey-assembly]]
+- [[sources/ciechanow-airfoil]]
+- [[sources/ciechanow-moon]]
