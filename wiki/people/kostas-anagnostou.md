@@ -13,7 +13,6 @@ sources: 15
 他 2024–2025 年的博客集中在**现代 GPU 前沿**——D3D12 work graphs 的实操教程与性能调查、mesh shaders + meshlet 遮挡剔除、async compute 的 pairing 方法论、以及 shader 指令隐藏成本的 ISA 级别分析。这些文章把他从「工具链与原型」的早期身份推进到「现代 GPU-driven 管线观察者」的新阶段。
 
 ## 相关
-
 - [[early-z-late-z]] —— Conservative Depth 与 UAV + `[earlydepthstencil]` 的补充
 - [[tangent-free-normal-mapping]] —— 他试验并验证的免 tangent 技术
 - [[shader-prototyping-tools]] —— 他对 FX Composer / Unity / SharpDX 的对比
@@ -38,9 +37,13 @@ sources: 15
 - [[meshlets-and-mesh-shaders]] —— 2025 年在 St Miguel/Bistro 上做的 mesh shader + AS hi-z 遮挡剔除实测（gbuffer -44%、z-prepass -48%）
 - [[async-compute]] —— 2025 年关于 pairing 策略与 pass 重排的实操笔记
 - [[shader-instruction-cost]] —— 2025 年 ISA 级别分析 atan2/waterfall/LDS bank conflict 等隐藏成本
+- [[gpu-utilisation-holistic-tuning]] —— 2025 年的整帧调优方法论（瓶颈分析 + shader 类型选择 + async compute 配对）
+- [[vertex-shader-export-bottleneck]] —— 2025 年受控实验：N 卡 ISBE/PE/TRAM，1→10 float4 export 让 drawcall 成本近 3 倍，AMD GCN 几乎无影响
+- [[spatial-hash-rtao-cache]] —— 2025 年 11 月的 RTAO 加速 + 去噪方案（pcg + xxhash32 双哈希、age eviction、自适应 cell size）
+- [[mlp-signal-encoding-rendering]] —— 2026 年 2 月的小 MLP 在渲染里实测：辐亮度 MLP 赢 SH、辐照度 SH 赢 MLP、BRDF 要 Rusinkiewicz 参数化
+- [[hlsl-cooperative-vectors-tensor-cores]] —— 2026 年 2 月 Agility SDK preview 把大 MLP 加速 173× 的实测
 
 ## Sources
-
 - [[sources/interplay-tools-of-the-trade]]
 - [[sources/interplay-depth-testing]]
 - [[sources/interplay-tangent-free-normal-mapping]]
@@ -70,3 +73,8 @@ sources: 15
 - [[sources/interplay-hidden-shader-cost]]
 - [[sources/interplay-meshlets-mesh-shaders]]
 - [[sources/interplay-async-compute]]
+- [[sources/interplay-gpu-utilisation-holistic]]
+- [[sources/interplay-vertex-shader-exports]]
+- [[sources/interplay-spatial-hash-rtao]]
+- [[sources/interplay-neural-rendering-1-mlp]]
+- [[sources/interplay-neural-rendering-2-coopvec]]

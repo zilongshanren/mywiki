@@ -27,12 +27,12 @@ sources: 2
 在 slang 统一 shader codebase 之后，可以按 material type 分支：primary ray 命中玻璃这类材质时，切回真正的完整 path tracing；命中漫反射材质时走 hybrid 路径。这在工程上是很自然的 SIMD 分支组织。
 
 ## 相关
-
 - [[visibility-buffer]]
 - [[bindless-rendering]]
 - [[deferred-rendering]]
 - [[gknext-renderer]]
 - [[hybrid-raytraced-shadows-reflections]] —— Kostas Anagnostou 2018 年 compute shader 手写 BVH hybrid raytracer：硬阴影 + 镜面反射的早期范例
+- [[spatial-hash-rtao-cache]] —— 静态场景 RTAO 的稀疏哈希缓存方案
 
 ## Sources
 

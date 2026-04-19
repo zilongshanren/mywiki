@@ -95,6 +95,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[nested-loop-optimization]] | 嵌套循环性能迷思的基准反驳：Nested 快于 Single 快于 LINQ，可读性优先 |
 | [[go-goroutine-channels]] | Go 的 goroutine / chan / select 与 CSP 风格并发 |
 | [[lua-incremental-gc]] | Lua 5.1 增量式 GC 的五阶段状态机与双白色乒乓 |
+| [[lua-c-api-dylib-proxy]] | 静态链接 Lua 宿主如何挂第三方 C 扩展：运行期代理 DLL 和构建期 extlua 两代方案 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -531,6 +532,15 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[hull-domain-tessellation-urp]] | URP 下 hull/domain tessellation 基础骨架：5 个 attribute + patch constant + domain barycentric |
 | [[noperspective-affine-texture]] | HLSL `noperspective` 关键字与 PSX affine texture warping 的一行切换 |
 | [[toon-outline-post-process-modes]] | Toon 描边的六种算法并列：屏幕空间 Sobel / 物体 mask / inverted hull |
+| [[gpu-utilisation-holistic-tuning]] | GPU 利用率整体调优：跨 pass 瓶颈配对 + async compute 搭配方法论 |
+| [[vertex-shader-export-bottleneck]] | N 卡 VS export 的 ISBE/PE/TRAM 瓶颈，1→10 float4 export 近 3× 成本 |
+| [[spatial-hash-rtao-cache]] | 稀疏空间哈希做 RTAO 缓存 + 天然去噪，11.4MB 支持 1M cell 自适应大小 |
+| [[mlp-signal-encoding-rendering]] | 小 MLP 作为渲染信号编码器 vs SH：辐亮度赢、辐照度输、BRDF 靠参数化 |
+| [[hlsl-cooperative-vectors-tensor-cores]] | HLSL 通用 shader 访问 Tensor core，大 MLP 推理 173× 加速 |
+| [[metal-decade-history]] | Apple Metal API 十年演进（2014–2024）双篇回顾 |
+| [[hdr-video-edr-metal]] | AVFoundation + Metal HDR 视频管线 + PQ/HLG tonemapping shader |
+| [[metal-4-api-redesign]] | Metal 4 的 API 重塑（显式 residency + command allocator + argument table） |
+| [[slug-gpu-glyph-rendering]] | Lengyel Slug 算法专利释放后 Metal 上的最小实现（winding + bands + fractional coverage） |
 
 ## 经典案例（wiki/examples/）
 
@@ -1143,6 +1153,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-shader-code-transparency]] | Ilett：Shader Code Basics 03 — alpha blend / alpha clip / Blend 命令 |
 | [[sources/danielilett-shader-code-depth-buffer]] | Ilett：Shader Code Basics 04 — depth buffer / silhouette / prepass / Render Objects |
 | [[sources/danielilett-shader-code-vertex-tessellation]] | Ilett：Shader Code Basics 05 — vertex displacement + hull/domain tessellation |
+| [[sources/cloudwu-star-trek-captains-chair]] | 云风：ST:CC 桌游卡牌构筑机制拆解 + 两次 Gemini 规则幻觉实录 |
+| [[sources/cloudwu-soluna-extlua-proxy]] | 云风：soluna 用 `lua_getextraspace` + 临时 VM 做 Lua C API 代理 |
+| [[sources/interplay-gpu-utilisation-holistic]] | Kostas：跨 pass 瓶颈配对和 async compute 搭配方法论 |
+| [[sources/interplay-vertex-shader-exports]] | Kostas：N 卡 VS export 瓶颈的 3080 mobile 受控实验 |
+| [[sources/interplay-spatial-hash-rtao]] | Kostas：spatial hashing 做 RTAO 缓存的完整实现 + 自适应 cell + age eviction |
+| [[sources/interplay-neural-rendering-1-mlp]] | Kostas：小 MLP 在渲染信号上的 compute shader 实测 |
+| [[sources/interplay-neural-rendering-2-coopvec]] | Kostas：Cooperative Vectors preview 把 MLP 推到 Tensor core 的 173× 加速 |
+| [[sources/metalbyexample-decade-early-years]] | Warren Moore：Metal 2014–2019 演进回顾 |
+| [[sources/metalbyexample-decade-modern-era]] | Warren Moore：Metal 2020–2024 演进回顾（核心 raytracing / MetalFX / Vision Pro / residency set） |
+| [[sources/metalbyexample-hdr-video]] | Warren Moore：AVFoundation + Metal HDR 视频完整管线教程 |
+| [[sources/metalbyexample-metal-4-basics]] | Warren Moore：Metal 4 API 迁移入门 |
+| [[sources/metalbyexample-slug]] | Warren Moore：Slug 算法在 Metal 上的最小实现 |
 
 ## 元（wiki/meta/）
 
@@ -1150,6 +1172,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 |---|---|
 | [[taste-development]] | 基于 wiki 内容综合出的品味训练方法 |
 | [[ai-assisted-reading-workflow]] | AI 辅助阅读：机器直译 + LLM 上下文解释的小说阅读工作流 |
+| [[llm-rule-hallucination]] | LLM 在冷门规则 / 新知识上的幻觉模式：自信度与知识边界完全解耦 |
 
 ## 特殊页面
 

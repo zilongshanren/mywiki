@@ -565,3 +565,14 @@ urp-render-objects-feature
 hull-domain-tessellation-urp
 noperspective-affine-texture
 toon-outline-post-process-modes
+llm-rule-hallucination
+lua-c-api-dylib-proxy
+gpu-utilisation-holistic-tuning
+vertex-shader-export-bottleneck
+spatial-hash-rtao-cache
+mlp-signal-encoding-rendering
+hlsl-cooperative-vectors-tensor-cores
+metal-decade-history
+hdr-video-edr-metal
+metal-4-api-redesign
+slug-gpu-glyph-rendering

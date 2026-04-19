@@ -48,7 +48,6 @@ Lua 5.0 起改用了基于寄存器的 VM——选择寄存器架构是为了"�
 - Lua 的核心心智模型是：**面向无人——也包括你自己——意想不到的部署环境而设计**。"它能不能跑在微波炉上？"是他们内部的真笑话。
 
 ## 相关
-
 - [[cloudwu]]
 - [[lua-cpp-binding]]
 - [[closure]]
@@ -59,6 +58,7 @@ Lua 5.0 起改用了基于寄存器的 VM——选择寄存器架构是为了"�
 - [[lua-incremental-gc]] —— Lua 5.1 增量式 GC 与 FIXEDBIT 钉住保留字、让元方法比较退化为指针比较
 - [[lua-class-pattern]] —— 用元表做类型定义的几种套路与取舍
 - [[skynet-lua-sharetable-patch]] —— skynet 对 Lua 的私有 patch 与 5.5 external strings 展望
+- [[lua-c-api-dylib-proxy]] —— 静态链接 Lua 宿主如何挂外部 C 扩展的代理方案（Ant Engine 运行期代理 / soluna 构建期代理）
 
 ## Sources
 

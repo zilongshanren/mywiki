@@ -29,7 +29,6 @@ sources: 8
 | Fundamentals of Image Processing in Metal | [[metal-compute-image-filter]] |
 
 ## 相关
-
 - [[metal-api-overview]]
 - [[metal-shading-language-basics]]
 - [[cametal-layer-drawable]]
@@ -38,9 +37,12 @@ sources: 8
 - [[metal-3d-rendering-pipeline]]
 - [[metal-texture-sampler]]
 - [[metal-compute-image-filter]]
+- [[metal-decade-history]] —— 2024 年十周年双篇回顾（早期 + 现代）
+- [[hdr-video-edr-metal]] —— 2025 年 AVFoundation + Metal 完整 HDR 视频管线 + PQ/HLG tonemapping shader
+- [[metal-4-api-redesign]] —— 2025 年 WWDC25 Metal 4 大版本的 API 重塑指南
+- [[slug-gpu-glyph-rendering]] —— 2026 年专利释放后第一篇 Slug 算法在 Metal 上的最小实现
 
 ## Sources
-
 - [[sources/metalbyexample-up-and-running-1]]
 - [[sources/metalbyexample-up-and-running-2]]
 - [[sources/metalbyexample-whats-and-wherefores]]
@@ -49,3 +51,8 @@ sources: 8
 - [[sources/metalbyexample-feature-sets]]
 - [[sources/metalbyexample-textures-and-samplers]]
 - [[sources/metalbyexample-image-processing]]
+- [[sources/metalbyexample-decade-early-years]]
+- [[sources/metalbyexample-decade-modern-era]]
+- [[sources/metalbyexample-hdr-video]]
+- [[sources/metalbyexample-metal-4-basics]]
+- [[sources/metalbyexample-slug]]

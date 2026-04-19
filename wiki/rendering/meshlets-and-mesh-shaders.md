@@ -113,7 +113,6 @@ Mesh shader 不是做 meshlet cull 的唯一方式：**Frostbite 在 GDC 2016 �
 - 剔除结果直接以 payload 形式交给下游 mesh shader，**不走 memory roundtrip**、不需要 UAV barrier——这点和 [[d3d12-work-graphs]] 想解决的问题是同构的。
 
 ## 相关
-
 - [[culling]] — frustum / occlusion / backface 的上位概念
 - [[gpu-based-occlusion-culling]] — Kostas 把 hi-z occlusion 移植到 mesh shader 的前身
 - [[multidraw-indirect-occlusion-culling]] — compute shader 路径的先驱
@@ -121,6 +120,7 @@ Mesh shader 不是做 meshlet cull 的唯一方式：**Frostbite 在 GDC 2016 �
 - [[compact-vertex-format]] — meshlet 本地化需要考虑的顶点压缩
 - [[d3d12-work-graphs]] — 同样想取消 indirect/barrier 循环的新机制
 - [[bottleneck-analysis]] — 判定 PD/VAF 是不是真正的瓶颈
+- [[vertex-shader-export-bottleneck]] —— 传统 VS export 路径的 ISBE/PE/TRAM 成本，是改 mesh shader 的动机之一
 
 ## Sources
 

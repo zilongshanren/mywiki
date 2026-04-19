@@ -42,12 +42,13 @@ sources: 1
 神经表示是**隐式表示**的一种；图形史上一直在「三角网格 vs 体素 vs 隐式」之间摇摆，神经方法把隐式路线带回聚光灯下。也催生了[可微渲染](https://rgl.epfl.ch/publications)这一整个子领域——通过梯度下降反向恢复几何、材质与光源。
 
 ## 相关
-
 - [[spherical-harmonics]] — 另一种「把信号展开成基函数」的古典手法
 - [[needlets]] — 带局部性的球面基
 - [[functions-as-vectors]] — 把函数视作无限维向量的统一视角
 - [[raymarching-intro]]
 - [[max-slater]]
+- [[mlp-signal-encoding-rendering]] —— 小 MLP 在渲染信号上的实测（辐亮度 / 辐照度 / 深度 / BRDF）
+- [[hlsl-cooperative-vectors-tensor-cores]] —— HLSL 通用 shader 访问 Tensor core 的 API
 
 ## Sources
 

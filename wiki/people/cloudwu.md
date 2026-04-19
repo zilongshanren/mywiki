@@ -26,7 +26,6 @@ sources: 14
 - 2024 下半年在自研游戏过程中反复验证一个立场：micro-management 类游戏里，确定性规则优于"智能 AI"，玩家需要可预测的物流/行为
 
 ## 相关
-
 - [[modular-design]]
 - [[information-hiding]]
 - [[interface-vs-implementation]]
@@ -75,9 +74,10 @@ sources: 14
 - [[skynet-lua-sharetable-patch]]
 - [[planning-over-rng-game-design]]
 - [[ai-assisted-reading-workflow]]
+- [[llm-rule-hallucination]]
+- [[lua-c-api-dylib-proxy]]
 
 ## Sources
-
 - [[sources/cloudwu-c-module-interface]]
 - [[sources/cloudwu-cpp-mark-sweep-gc]]
 - [[sources/cloudwu-c-serialization-and-c-oop]]
@@ -117,3 +117,5 @@ sources: 14
 - [[sources/cloudwu-ai-game-design-chat]]
 - [[sources/cloudwu-solo-boardgames]]
 - [[sources/cloudwu-ai-reading-workflow]]
+- [[sources/cloudwu-star-trek-captains-chair]]
+- [[sources/cloudwu-soluna-extlua-proxy]]

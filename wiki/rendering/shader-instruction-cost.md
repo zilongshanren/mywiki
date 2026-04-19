@@ -62,12 +62,13 @@ v_fma_f32 v0, s9, s1, v0
 通用建议只有一个——**看 ISA，别猜**。编译器在 HLSL → DXIL → target ISA 之间做的事情永远会让人意外。
 
 ## 相关
-
 - [[register-spilling-avoidance]] — 动态数组下标触发的另一类 ISA 膨胀
 - [[gcn-wave-occupancy]] — VGPR 预算如何决定并发
 - [[gpu-latency-hiding]] — 内存延迟能不能被 wave 切换掩盖
 - [[bottleneck-analysis]] — 判定指令成本是否真正有感
 - [[faster-math-functions]]
+- [[gpu-utilisation-holistic-tuning]] —— 跨 pass 层面的瓶颈配对方法论（本文是单 pass 层面隐藏成本）
+- [[vertex-shader-export-bottleneck]] —— N 卡 ISBE/PE/TRAM 是另一类 fixed-function 隐藏成本
 
 ## Sources
 

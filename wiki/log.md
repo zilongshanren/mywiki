@@ -641,3 +641,7 @@ batch-w48-el：10 条全部 skipped_offtopic（周报 419-427 延续先例，gtc
 ## [2026-04-19] ingest | Wave-48 Worker EM (Daniel Ilett ×8)
 
 处理 8 篇 Daniel Ilett 文章：Toon Shaders Pro for URP 四件套参数手册 (Toon HLSL / Toon SG / Terrain / Outline Post) + Retro Shaders Pro 作者技术自述 + Shader Code Basics 03-05 (transparency / depth buffer / vertex + tessellation)。新增 6 概念页 (blend-modes-shaderlab, urp-depth-prepass-passes, urp-render-objects-feature, hull-domain-tessellation-urp, noperspective-affine-texture, toon-outline-post-process-modes)、8 源摘要；补 patch 到 cel-shading-pipeline、cel-shader-outline、retro-rendering-techniques、depth-texture-silhouette、tessellation-fur-rendering、shaderlab-hlsl-basics、daniel-ilett。
+
+## [2026-04-19] ingest | Wave-48 Worker EN (cloudwu 2026-02~04 + Kostas 2025-08~2026-02 + Warren Moore 2024~2026)
+
+处理 17 篇英文博客。云风 7 文里实 ingest 2（Star Trek LLM 幻觉、soluna extlua 代理），3 篇月索引 / 目录页重复，1 篇内容与已入库 2025-09-16 xlsx 同文，2 篇育儿数学课 off-topic。Kostas Anagnostou 5 文全 ingest（硬核渲染：GPU 利用率整体调优、VS export 瓶颈实测、spatial hash RTAO、neural rendering MLP、Cooperative Vectors 硬件加速）。Warren Moore Metal by Example 5 文全 ingest（Metal 十年上下篇、HDR 视频管线、Metal 4 入门、Slug 字体渲染 —— 注意 slug.md 不是 WIP 占位而是真文章）。新增 11 个概念页（10 渲染 + 1 编程语言 + 1 meta），12 个 source 摘要，0 个人物页。

@@ -65,7 +65,6 @@ Warren 文里提到一个调试小细节：`MTLCreateDefaultSystemDevice` 在 de
 Warren 反复强调：Metal 是**你能选的最低一层**，而非没有抽象。好处是你不再被全局状态机的「怎么 shader 编译失败了」折磨；坏处是你**必须**自己管 pipeline state 的组合爆炸、自己管资源 lifetime、自己管 drawable 的同步。换来的是可预测的 CPU 开销与 iOS 设备上真正能跑满的 GPU 利用率。
 
 ## 相关
-
 - [[metal-shading-language-basics]]
 - [[cametal-layer-drawable]]
 - [[rendering-api-depth]] —— 接口深浅维度上，Metal 和 D3D12 都是浅接口
@@ -75,6 +74,10 @@ Warren 反复强调：Metal 是**你能选的最低一层**，而非没有抽象
 - [[draw-call]]
 - [[rendering-pipeline]]
 - [[warren-moore]]
+- [[metal-decade-history]] —— 十年版本演进回顾
+- [[metal-4-api-redesign]] —— Metal 4 的 API 重塑（显式 residency + command allocator + argument table）
+- [[hdr-video-edr-metal]] —— AVFoundation + Metal HDR 视频管线
+- [[slug-gpu-glyph-rendering]] —— 2026 年 Slug 算法在 Metal 上的实现
 
 ## Sources
 
