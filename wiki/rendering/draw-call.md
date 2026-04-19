@@ -39,7 +39,6 @@ sources: 2
 具体 Metal 对象模型见 [[metal-api-overview]]——command queue / command buffer / command encoder 这一套就是显式 API 共通的 CPU 侧成本下压机制。
 
 ## 相关
-
 - [[rendering-pipeline]]
 - [[batching]]
 - [[bottleneck-analysis]]
@@ -49,10 +48,12 @@ sources: 2
 - [[buffer-renaming]] —— 老驱动的隐式魔法与 D3D12/Vulkan 的显式化
 - [[draw-procedural-gpu]] —— 把一次 draw call 打到极致：CPU 只发命令，vertex 数据全部由 GPU buffer 提供
 - [[metal-api-overview]] —— iOS 上降 CPU 驱动开销的显式 API
+- [[opengl-draw-call-batching-sweet-spot]] —— Outerra 实测：per-instance 5k-20k 三角形是跨厂吞吐甜点
 
 ## Sources
-
 - [[sources/rtr-day02]]
 - [[sources/rtr-day06]]
 - [[sources/aras-blender-vse-image-filtering]]
 - [[sources/jasper-how-to-write-a-renderer]]
+- [[sources/outerra-opengl-perf-grass]]
+- [[sources/outerra-opengl-perf-blocks]]

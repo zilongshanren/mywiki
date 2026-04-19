@@ -92,7 +92,6 @@ Xor 自己点名了一个重要的适用边界：**fractal texturing 只对「�
 Xor 的[原文 demo](https://www.shadertoy.com/view/mds3R4) 同屏对比了三种版本：无缩放、fractal、fractal + mipmap。从静态图里已经能看出 fractal 把重复感彻底消除了，mipmap 再进一步把最远处的闪烁压平——两者叠加效果最好。
 
 ## 相关
-
 - [[fragment-shader]]
 - [[msaa-ssaa]] —— aliasing 的更一般背景
 - [[sampling-theorem-sinc]] —— 采样/过滤的理论基础
@@ -101,6 +100,7 @@ Xor 的[原文 demo](https://www.shadertoy.com/view/mds3R4) 同屏对比了三�
 - [[layered-grid-noise]] —— Xor 的另一个「多尺度叠加」技巧
 - [[turbulence-domain-warping]] — 同一多尺度思路的 domain warping 变体
 - [[xor-shader-artist]]
+- [[planet-terrain-dem-pipeline]] —— Outerra 的行星尺度 DEM + fractal resample 管线
 
 ## Sources
 

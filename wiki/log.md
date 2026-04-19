@@ -729,3 +729,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-56 Worker FH (greyaliengames.com ×5 all skipped)
 
 五篇 greyaliengames.com 月份归档页全部 skip_offtopic：均为 casual 游戏（Shadowhand / Jewel Match / Clutter / Forbidden Solitaire）发行新闻稿与 Jake Birkett 的年度商业/个人 goals 复盘，无渲染、引擎、系统、编程语言等技术内容。
+
+## [2026-04-19] ingest | Wave-56 Worker FI (outerra.blogspot.com ×5)
+
+处理 5 篇 Outerra 行星引擎技术博文（2015-2018）：SRTM 30m 数据评估、NasaDEM preliminary 对比、OpenGL 三角形吞吐测试 grass + blocks、GLSL fp64 sin/cos minimax 近似。新增 3 概念页（planet-terrain-dem-pipeline, opengl-draw-call-batching-sweet-spot, fp64-sincos-minimax），1 人物页（outerra-team），5 源摘要。Patch draw-call.md / faster-math-functions.md / fractal-texturing.md 交叉链接。

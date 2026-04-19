@@ -11422,3 +11422,8 @@ raw/articles/greyaliengames.com/2024-12-05_archive-for-december-2024.md
 raw/articles/greyaliengames.com/2025-01-30_archive-for-january-2025.md
 raw/articles/greyaliengames.com/2025-09-15_archive-for-september-2025.md
 raw/articles/greyaliengames.com/2026-01-03_archive-for-january-2026.md
+raw/articles/outerra.blogspot.com/2015-05-27_evaluation-of-30m-elevation-data-in-outerra.md
+raw/articles/outerra.blogspot.com/2016-01-31_opengl-rendering-performance-test-1-procedural-grass.md
+raw/articles/outerra.blogspot.com/2016-02-06_opengl-rendering-performance-test-2-blocks.md
+raw/articles/outerra.blogspot.com/2017-06-13_fp64-approximations-for-sin-cos-for-opengl.md
+raw/articles/outerra.blogspot.com/2018-01-28_preliminary-comparison-of-nasadem-dataset.md

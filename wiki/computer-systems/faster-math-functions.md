@@ -60,11 +60,11 @@ Cephes 数学库里的多项式**长得像** Taylor 但系数略有不同，精�
 Robin 自己在给 tutorial 补料时临时加了一个叫 BitLog 的「快速对数 hack」，后来 Charles Bloom 在 cbloomrants 上一篇把他和原作者 Jack Crenshaw 一起拆了个底掉，并发出改进版本。这条教训值得所有打算发表「快速数学 hack」的人放在心上：**先让 Charles Bloom 当 reviewer**。
 
 ## 相关
-
 - [[fast-exponentiation]] — 快速幂（整数版，另一条支线）
 - [[sse-tricks]] — SSE 上实现向量化数学函数
 - [[robin-green]]
 - [[sigmoid-functions]] — Raph Levien 用「多项式变形」思路打败学术论文里的 tanh/erf 近似
+- [[fp64-sincos-minimax]] —— Outerra 把同一套 minimax 三段式方法论搬到 GLSL fp64 sin/cos
 
 ## Sources
 

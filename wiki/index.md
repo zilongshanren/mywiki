@@ -610,6 +610,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[infinite-chunked-procedural-generation]] | 无限世界的分块程序化生成方法论：相位化 + 局部有界依赖 |
 | [[l-system-fractals]] | Lindenmayer 系统：公理 + 产生式规则的分形图形生成 |
 | [[l-system-lightning-bolts]] | L-system 衍生：分形闪电效果的随机分支与衰减 |
+| [[planet-terrain-dem-pipeline]] | Outerra 行星 DEM 管线：SRTM/NasaDEM + fractal resample 实战 |
+| [[opengl-draw-call-batching-sweet-spot]] | instanced draw 的 5k-20k 三角形跨厂甜点（Outerra 实测） |
+| [[fp64-sincos-minimax]] | GLSL fp64 sin/cos 的 Remez minimax 近似（Outerra） |
 
 ## 经典案例（wiki/examples/）
 
@@ -732,6 +735,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |
 | [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |
 | [[ted-sie]] | Ted Sie，Unity 中文技术博客作者（分形 / DOTS / 群体仿真） |
+| [[outerra-team]] | Brano Kemen / Angrypig Kralik —— Outerra 行星引擎双人组 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1350,6 +1354,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/tedsie-l-system-lightning-bolts]] | Ted Sie：L-system 闪电小故事 |
 | [[sources/tedsie-crowd-simulation]] | Ted Sie：简易人群模拟系统 |
 | [[sources/tedsie-dots-tween-system]] | Ted Sie：Unity DOTS tween 系统案例 |
+| [[sources/outerra-srtm-30m-evaluation]] | Outerra：SRTM 30m 数据评估与 76/30 甜点 |
+| [[sources/outerra-opengl-perf-grass]] | Outerra：procedural grass 的 OpenGL 三角形吞吐测试 |
+| [[sources/outerra-opengl-perf-blocks]] | Outerra：building block 的 OpenGL 三角形吞吐测试 |
+| [[sources/outerra-fp64-sincos]] | Outerra：GLSL fp64 sin/cos 的 minimax 近似实现 |
+| [[sources/outerra-nasadem-comparison]] | Outerra：NasaDEM preliminary 对比 SRTM/Viewfinder |
 
 ## 元（wiki/meta/）
 
