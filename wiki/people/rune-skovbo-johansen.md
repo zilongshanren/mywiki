@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie-gamedev, unity, procedural]
 date: 2026-04-19
-sources: 3
+sources: 4
 ---
 
 # Rune Skovbo Johansen
@@ -18,7 +18,7 @@ sources: 3
 - [[atmospheric-perspective]] — 关于远山色彩的观察与推论
 
 ## Sources
-
 - [[sources/runevision-hair-and-atmosphere]]
 - [[sources/runevision-phacelle-noise]]
 - [[sources/runevision-erosion-filter]]
+- [[sources/runevision-gdc2010-animation]]

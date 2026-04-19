@@ -893,3 +893,15 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-19] ingest | Wave-69 Worker GW (Hexops / Mach / Stephen Gutekanst ×5)
 
 处理 5 篇 devlog.hexops.org，4 篇入库（nominated Zig / Mach v0.3 / mach-dxcompiler / pkgmirror），1 篇跳过（2026s 是 pkgmirror 公告首页快照，重复）。新增 6 概念页（mach-engine, mach-nominated-zig-versions, sysgpu-webgpu-successor, dxc-dxil-signing, mach-dxcompiler-static-build, zig-package-mirror）、1 人物页（stephen-gutekanst）、4 source 摘要。给 webgpu-intro / zig-c-abi-boundary / slang-shader-language 追加交叉引用。
+
+## [2026-04-19] ingest | Wave-70 Worker HB (blog.runevision.com ×5)
+
+blog.runevision.com 早期 2010 年内容：Nordic Game Jam 与 Unity 动画 demo 预告基本为事件通稿，跳过 3 篇；3 月 14 日 GDC 2010 recap 有 Uncharted 动画技术干货，已吸收为 [[sources/runevision-gdc2010-animation]]，并新建 [[additive-animation-layering]] 概念页。另有 1 篇是月度归档页，与 post URL 完全重复，按 skipped_duplicate 处理。
+
+## [2026-04-19] ingest | Wave-70 Worker HA (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 早期文章（2020-12 ~ 2021-01）。4 篇跳过（建站介绍、Nvidia 企业部门传闻、Intel HEDT 路线图回顾、Intel CEO 更替评论）——均无技术实质。1 篇入库：Chester Lam 基于 Nvidia 2017 MCM 论文的 GPU 多 die 架构分析，新增概念页 [[mcm-gpu-design]] 与 source [[sources/chipsandcheese-nvidia-mcm-gpu]]，并补全 Chester Lam / Chips and Cheese 人物页的交叉链接。
+
+## [2026-04-19] ingest | Wave-70 Worker HC (raytracey.blogspot.com 2010 早期 ×5)
+
+处理 5 篇 Sam Lapere 2010 年早期博客。新增 2 概念页（gpu-unbiased-path-tracing, otoy-cloud-rendering）、2 source 摘要。跳过 3 篇纯产品公告（Octane/Arion 一行通告、GDC 嘉宾转载）。更新 sam-lapere 人物页 sources 从 2→4。

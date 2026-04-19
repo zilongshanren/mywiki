@@ -219,6 +219,7 @@ CAQA + CSAPP 的底层视角。
 | [[segment-array]] | 稳定指针 + 常数时间访问 + arena 友好的增长数组（Hooper / Per Vognsen） |
 | [[build-process-visualization]] | 监听 fork/exec/exit 还原构建时间轴（What The Fork） |
 | [[swift-dylib-hot-reloading]] | 120 行 Swift：用 dlopen 替代 Xcode Previews |
+| [[mcm-gpu-design]] | MCM GPU：跨 die 互连代价、L1.5 缓存、CTA 调度与 first-touch 页映射 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -733,6 +734,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sysgpu-webgpu-successor]] | Mach sysgpu：Zig 写的 WebGPU 原生实现与继任者 |
 | [[dxc-dxil-signing]] | DXC/DXIL 工具链与 dxil.dll 专有签名 blob 的历史 |
 | [[mach-dxcompiler-static-build]] | 用 build.zig 重写 DXC 的构建系统并跨平台分发 |
+| [[gpu-unbiased-path-tracing]] | 2010 年 GPU 非偏置渲染器大爆发：Octane / Arion / V-Ray RT / iray 的平行史 |
+| [[otoy-cloud-rendering]] | OTOY 在 AMD RV770 上的早期云渲染/云游戏架构 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -796,6 +799,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ui-as-communication]] | Ben UI：UI 作为把想法搬进玩家脑袋的通道，十种传达媒介与优先级 |
 | [[ux-opinions-checklist]] | Ben UI：按钮/快捷键/输入/文字/桌面软件的 RFC 2119 级 UX 清单 |
 
+| [[additive-animation-layering]] | 叠加式动画层：1 帧 idle + 长周期 wiggle 的变化手法 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1634,6 +1638,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/hexops-mach-v0-3-released]] | Hexops：Mach v0.3 发布（sysgpu / sysaudio / ECS / Sprite） |
 | [[sources/hexops-dxcompiler-better-than-microsoft]] | Hexops：比微软自己更好地构建 DXC |
 | [[sources/hexops-pkgmirror]] | Hexops：pkgmirror 自托管 Zig 镜像发布 |
+| [[sources/runevision-gdc2010-animation]] | Rune Johansen：GDC 2010 现场观察 Uncharted 动画技术 |
+| [[sources/chipsandcheese-nvidia-mcm-gpu]] | Chester Lam：从 Nvidia 2017 论文看下一代 MCM server GPU |
+| [[sources/raytracey-2010-gpu-renderer-landscape]] | Lapere：2010 GPU 非偏置渲染器的集体觉醒 |
+| [[sources/raytracey-otoy-solidworks-cloud]] | Lapere 转载：OTOY RV770 云渲染细节与 SolidWorks 合作 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

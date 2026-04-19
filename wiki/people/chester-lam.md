@@ -11,18 +11,18 @@ sources: 5
 方法学偏好：Nemes 的 Vulkan 微基准、pointer chasing 测延迟、per-thread / shared array 双路测带宽、厂商 performance counter（AMD BKDG、Intel VTune、Arm STALL_BACKEND_MEMBOUND 等）交叉验证。
 
 ## 相关
-
 - [[chips-and-cheese]]
 - [[gb10-memory-subsystem]]
 - [[gb10-gpu-blackwell-igpu]]
 - [[chipset-pcie-latency]]
 - [[split-lock-x86]]
 - [[llm-generated-c-compiler-perf]]
+- [[mcm-gpu-design]]
 
 ## Sources
-
 - [[sources/chipsandcheese-gb10-cpu-memory]]
 - [[sources/chipsandcheese-gb10-gpu]]
 - [[sources/chipsandcheese-chipset-microbench]]
 - [[sources/chipsandcheese-ccc-april-fools]]
 - [[sources/chipsandcheese-split-locks]]
+- [[sources/chipsandcheese-nvidia-mcm-gpu]]

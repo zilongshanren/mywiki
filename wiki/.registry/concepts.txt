@@ -794,3 +794,7 @@ sysgpu-webgpu-successor
 dxc-dxil-signing
 mach-dxcompiler-static-build
 zig-package-mirror
+additive-animation-layering
+mcm-gpu-design
+gpu-unbiased-path-tracing
+otoy-cloud-rendering

@@ -26,9 +26,9 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[llm-generated-c-compiler-perf]]
 
 ## Sources
-
 - [[sources/chipsandcheese-gb10-cpu-memory]]
 - [[sources/chipsandcheese-gb10-gpu]]
 - [[sources/chipsandcheese-chipset-microbench]]
 - [[sources/chipsandcheese-ccc-april-fools]]
 - [[sources/chipsandcheese-split-locks]]
+- [[sources/chipsandcheese-nvidia-mcm-gpu]]

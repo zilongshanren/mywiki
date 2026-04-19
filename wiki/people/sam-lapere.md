@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 路径追踪, GPU]
 date: 2026-04-19
-sources: 2
+sources: 4
 ---
 
 # Sam Lapere
@@ -11,13 +11,15 @@ Ray Tracey 博客（`raytracey.blogspot.com`）作者，GPU 路径追踪长期�
 博客的价值更多是**时间线档案**而非技术教学：他会把学术论文、Jacco Bikker 的 Brigade / [[lighthouse-2-optix|Lighthouse 2]]、NVIDIA 的产品节点穿在一条叙事线上，这是当下路径追踪产品史难得的一手视角。
 
 ## 相关
-
 - [[lighthouse-2-optix]]
 - [[nvidia-omniverse]]
 - [[path-tracing-basics]]
 - [[path-tracing-monte-carlo]]
+- [[gpu-unbiased-path-tracing]]
+- [[otoy-cloud-rendering]]
 
 ## Sources
-
 - [[sources/raytracey-lighthouse-2]]
 - [[sources/raytracey-marbles-rtx-omniverse]]
+- [[sources/raytracey-2010-gpu-renderer-landscape]]
+- [[sources/raytracey-otoy-solidworks-cloud]]
