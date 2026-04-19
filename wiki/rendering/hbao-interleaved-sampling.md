@@ -32,13 +32,13 @@ Interleaved sampling 的做法是：
 ROTR 里 AO 通常是半分辨率计算的，最终要 upscale 回全分辨率——简单的 bilinear 在深度不连续处会糊。这里 Foundation 使用了 [[depth-aware-upsampling]] 的 stencil 技巧：把不连续像素 mark 进 stencil buffer，用一个简单 shader 处理连续区域、用一个复杂 shader 处理不连续区域，早期 stencil discard 保证每个区域只付它该付的成本。
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[depth-aware-upsampling]]
 - [[z-buffer]]
 - [[cache-friendliness]]
 - [[prebaked-corner-occlusion]] —— SSAO 时代之前的 lightmap / 顶点色烘焙 AO，以及 Sims 4 的手贴 AO mesh 补丁方案
 - [[sources/bartwronski-temporal-ssao]] — AC4 上把 Scalable AO + temporal supersampling 挂起来的实测前后对比；和 HBAO interleaved 是同一家族的另一套降噪思路
+- [[ground-truth-ambient-occlusion]] — Steven Wittens 在 Use.GPU 0.14 实现的现代 GTAO，用 IGN + 2x2 quad 预过滤 + 时间累积
 
 ## Sources
 

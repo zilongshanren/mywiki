@@ -11551,3 +11551,8 @@ raw/articles/agraphicsguynotes.com/2018-03-09_how-does-pbrt-verify-bxdf.md
 raw/articles/agraphicsguynotes.com/2018-07-18_sampling-anisotropic-microfacet-brdf.md
 raw/articles/agraphicsguynotes.com/2018-11-29_basic-color-science-for-graphics-engineer.md
 raw/articles/agraphicsguynotes.com/2020-11-13_practical-tips-for-implementing-subsurface-scattering-in-a-r.md
+raw/articles/acko.net/2024-02-05_i-is-for-intent.md
+raw/articles/acko.net/2024-07-24_the-bouquet-residence.md
+raw/articles/acko.net/2025-03-24_occlusion-with-bells-on.md
+raw/articles/acko.net/2025-08-06_html-is-dead-long-live-html.md
+raw/articles/acko.net/2026-03-04_the-l-in-llm-stands-for-lying.md

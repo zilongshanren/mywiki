@@ -52,7 +52,6 @@ GameMaker 宣称会在 runtime 层把 GLSL 自动翻译成 WGSL，这也是大�
 - **最佳入门**：MDN 的 [WebGPU API 指南](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API) + Google 的 [Tour of WGSL](https://google.github.io/tour-of-wgsl/) 基本够用；更多实战可以对照 WebGPU samples 仓库里的 compute / render 模板。
 
 ## 相关
-
 - [[rendering-api-depth]] —— 现代图形 API 的层级与对齐
 - [[d3d12-resource-binding]]
 - [[metal-api-overview]]
@@ -67,6 +66,7 @@ GameMaker 宣称会在 runtime 层把 GLSL 自动翻译成 WGSL，这也是大�
 - [[gaussian-splatting-web]] —— WebGPU compute 的第一个消费级落地（3DGS 工具链）
 - [[supersplat-pwa]]
 - [[will-eastcott]]
+- [[use-gpu-reactive-runtime]] — Steven Wittens 的声明式 WebGPU 运行时
 
 ## Sources
 

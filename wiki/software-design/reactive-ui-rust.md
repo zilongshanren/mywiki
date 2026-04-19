@@ -44,11 +44,11 @@ Druid 之外 Raph 发了一个研究原型 Crochet，目标是**在不丢 lens �
 Raph 在 2020 年说过一句冷静的话：**反应式 UI 在 Rust 里可能永远不会收敛到单一架构**，因为不同应用类型（文档编辑器、3D / 视频、VST 宿主、行业表单）对反应式表达力的需求本来就不同。更务实的合力目标是共享**底层基础设施**——wgpu 做 GPU 抽象、Vello 做 2D 渲染、文本布局、a11y——反应式层之上百花齐放。
 
 ## 相关
-
 - [[rust-gui-ecosystem]]
 - [[smooth-window-resize]]
 - [[raph-linus]]
 - [[ecs-for-rust-ui]] — Druid 更早的原型 xi-win-ui 的「类 ECS」架构，整数 id + state splitting + data flow 的组合拳
+- [[intent-vs-state]] — Steven Wittens 主张 Intent 作为 source of truth，State 是其派生；与 Rust reactive UI 有共通观察
 
 ## Sources
 

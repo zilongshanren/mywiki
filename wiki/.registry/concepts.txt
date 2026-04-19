@@ -759,3 +759,8 @@ bxdf-unit-test
 anisotropic-microfacet-sampling
 color-science-basics
 sss-practical-implementation
+intent-vs-state
+ground-truth-ambient-occlusion
+use-gpu-reactive-runtime
+render-pass-orchestration
+dom-replacement-rethink

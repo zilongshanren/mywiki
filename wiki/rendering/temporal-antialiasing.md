@@ -56,7 +56,6 @@ TAA 的 jitter 同样会在纹理空间造成额外模糊，因为 mipmap 选择
 TAA 被诟病「整个画面都在糊」——这是事实。它是一个**妥协**：用可接受的软度换掉所有形式的 aliasing，在现代延迟渲染 + 物理 BRDF + 随机采样的组合下几乎是唯一工程可行的路。MSAA 在这些管线下性能惩罚太大，也阻碍很多现代光栅化变体。
 
 ## 相关
-
 - [[aliasing]]
 - [[msaa-ssaa]]
 - [[motion-vectors]]
@@ -64,6 +63,7 @@ TAA 被诟病「整个画面都在糊」——这是事实。它是一个**妥�
 - [[rasterization]]
 - [[emilio-lopez-ros]]
 - [[temporal-supersampling]] — Wronski 对 AC4 TAA 的祖师级复盘，覆盖 motion vector pipeline 的全部踩坑
+- [[ground-truth-ambient-occlusion]] — Use.GPU 的 GTAO 靠 3D motion vector + depth/normal bilateral 做 reprojection，与 TAA 同构
 
 ## Sources
 

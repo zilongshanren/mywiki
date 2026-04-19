@@ -62,6 +62,8 @@ sources: 371
 | [[dcmake]] | CMake 的多平台 GUI 调试器 |
 | [[cmake-dap-debugger]] | CMake 3.27+ 的 DAP 调试模式 |
 | [[dear-imgui-docking]] | Dear ImGui 的 docking 分支 |
+| [[intent-vs-state]] | 用户 Intent 作为 source of truth，State 为派生——Wittens 的前端架构观 |
+| [[dom-replacement-rethink]] | DOM/CSS/HTML 的系统性批判与替代路径 |
 
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
@@ -697,6 +699,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[anisotropic-microfacet-sampling]] | Jiayin Cao：GGX/Beckmann/Blinn 各向异性 importance sampling 推导与 arctan 值域坑 |
 | [[color-science-basics]] | Jiayin Cao：图形工程师的色彩科学基础——从 SPD 到 CIE XYZ 到 Rec.2020 |
 | [[sss-practical-implementation]] | Jiayin Cao：SSS 进 path tracer 的工程实践——消 fireflies 三个 trick 与材质系统重构 |
+| [[ground-truth-ambient-occlusion]] | GTAO 完整实现：IGN 噪声、temporal reprojection、bent normal、overscan |
+| [[use-gpu-reactive-runtime]] | Steven Wittens 的声明式/响应式 WebGPU 运行时 |
+| [[render-pass-orchestration]] | Use.GPU 声明式 render pass 编排：well-known names 隐式 wiring、buffer history 一等化 |
 
 ## 经典案例（wiki/examples/）
 
@@ -843,6 +848,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[chris-wellons]] | Chris Wellons (skeeto)，nullprogram.com，C/Wasm/Windows 底层 |
 | [[graphics-guy-notes]] | Jiayin Cao，NVIDIA（前 Naughty Dog），SORT/TSL 作者，Zorah ReSTIR PT 实装参与者 |
 | [[alex-harri-jonsson]] | 冰岛软件工程师，博客 alexharri.com 深挖 Web 剪贴板、trie 压缩、ASCII 渲染等细节主题 |
+| [[steven-wittens]] | Steven Wittens，acko.net 作者，Use.GPU 创建者，UI 与渲染架构评论家 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1555,6 +1561,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/graphics-guy-anisotropic-microfacet-sampling]] | A Graphics Guy：各向异性 GGX/Beckmann/Blinn importance sampling 全推 |
 | [[sources/graphics-guy-color-science-basics]] | A Graphics Guy：从 SPD/CIE XYZ 到 Rec.709/sRGB/Rec.2020 的色彩科学地图 |
 | [[sources/graphics-guy-sss-practical-tips]] | A Graphics Guy：SORT 集成 PBRT 3rd SSS 的 fireflies 消除与材质重构经验 |
+| [[sources/acko-i-is-for-intent]] | Wittens：Intent 作为 source of truth，patch 驱动的前端架构 |
+| [[sources/acko-occlusion-with-bells-on]] | Wittens：Use.GPU 0.14 GTAO + render pass 编排实录 |
+| [[sources/acko-html-is-dead]] | Wittens：DOM/CSS/HTML 批判与替代路径 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

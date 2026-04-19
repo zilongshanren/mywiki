@@ -829,3 +829,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-64 Worker GG (agraphicsguynotes.com ×5)
 
 agraphicsguynotes.com 早期硬核技术文 5 篇全 ingest：2016 离线体积渲染推导、2018 PBRT bsdftest 数学、2018 各向异性 microfacet importance sampling、2018 色彩科学基础、2020 SSS 工程实践。新增 5 概念页（volume-rendering-offline、bxdf-unit-test、anisotropic-microfacet-sampling、color-science-basics、sss-practical-implementation）与 5 source 摘要，patch graphics-guy-notes 人物页追加 sources 链接、microfacet-brdf/color-space/inversion-sampling-prng/path-tracing-basics 互相交叉引用。
+
+## [2026-04-19] ingest | Wave-64 Worker gh (acko.net / Steven Wittens ×5)
+
+处理 5 篇 Steven Wittens（acko.net）文章。3 篇硬技术 ingest：I is for Intent（Intent vs State 架构）、Occlusion with Bells On（Use.GPU 0.14 GTAO）、HTML is Dead（DOM/CSS 批判）。2 篇跳过：Bouquet Residence（CrowdStrike 公关/管理文化评论）、L in LLM Stands for Lying（AI 批评观点文）。新增 1 人物（steven-wittens）、5 概念（intent-vs-state、ground-truth-ambient-occlusion、use-gpu-reactive-runtime、render-pass-orchestration、dom-replacement-rethink）、3 source 摘要。

@@ -46,12 +46,12 @@ velocity -= previousJitter;
 velocity 本身也是 aliased 的——它和深度、stencil 一样，在几何边界上会取到「错」的值。TAA reprojection 用 aliased velocity 反而会把边缘锯齿再引回来。解决方法是 **velocity dilation**：在 3x3 邻域里取最近深度对应的 velocity（depth dilation），或者取最大 magnitude 的 velocity。相当于把边缘的 velocity 往外扩一圈，覆盖掉因为 jitter 漂过来的「空洞」。
 
 ## 相关
-
 - [[temporal-antialiasing]]
 - [[taa-history-rectification]]
 - [[mvp-transform]]
 - [[coordinate-spaces]]
 - [[temporal-supersampling]] — Wronski 记录了 AC4 把所有物体 motion vectors 做对所付出的工程代价
+- [[ground-truth-ambient-occlusion]] — Use.GPU 用 3D motion vector 给 GTAO 做 temporal reprojection
 
 ## Sources
 
