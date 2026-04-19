@@ -708,6 +708,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[ue4-reactive-dynamic-resolution]] | UE4.18 前的反应式 dynamic resolution 补丁，基于 GGPUFrameTime 两档跳变 |
 | [[d3d12-resource-alignment]] | D3D12 资源对齐的秘密：small alignment、heap alignment、tight alignment |
 | [[compute-shader-dispatch-ids]] | HLSL / GLSL compute shader 线程 ID system-value 速查 |
+| [[ray-differentials]] | 路径追踪里选 mip level 的工程机制，以及双向路径追踪下 Manuka/Takua 的两种绕过方案 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1577,6 +1578,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-d3d12-resource-alignment]] | Sawicki：D3D12 资源对齐的秘密（2020） |
 | [[sources/asawicki-compute-shader-sv-cheat-sheet]] | Sawicki：compute shader system-value 速查（2020） |
 | [[sources/asawicki-memory-fragmentation-metric]] | Sawicki：内存碎片度量公式（2022） |
+| [[sources/yiningkarlli-pixar-optix-rtp]] | Yining Karl Li：2013 Pixar OptiX Lighting Preview demo 博客 |
+| [[sources/yiningkarlli-zootopia]] | Yining Karl Li：Zootopia 与 Hyperion、Chiang 毛发模型初登场 |
+| [[sources/yiningkarlli-mipmap-bidirectional]] | Yining Karl Li：Takua 的 camera-based mip level 选择，解 BDPT 下 ray differentials 难题 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

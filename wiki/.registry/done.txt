@@ -11574,3 +11574,6 @@ raw/articles/adriancourreges.com/2020-12-29_graphics-studies-compilation-adrian-
 raw/articles/asawicki.info/2020-04-19_secrets-of-direct3d-12-resource-alignment.md
 raw/articles/asawicki.info/2020-09-29_system-value-semantics-in-compute-shaders-cheat-sheet.md
 raw/articles/asawicki.info/2022-04-06_a-metric-for-memory-fragmentation.md
+raw/articles/blog.yiningkarlli.com/2013-07-27_pixar-optix-lighting-preview-demo.md
+raw/articles/blog.yiningkarlli.com/2016-02-12_zootopia.md
+raw/articles/blog.yiningkarlli.com/2018-10-25_mipmapping-with-bidirectional-techniques.md

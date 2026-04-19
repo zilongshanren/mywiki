@@ -770,3 +770,4 @@ ue4-reactive-dynamic-resolution
 d3d12-resource-alignment
 compute-shader-dispatch-ids
 a-metric-for-memory-fragmentation
+ray-differentials

@@ -24,10 +24,10 @@ RenderMan XPU（Christensen et al. 2025）同样是 wavefront 架构，Disney An
 - **Wavefront**：每个 bounce 切成独立阶段，阶段间可以排序、可以调度，代价是必须把路径状态「外存」在 buffer 里。
 
 ## 相关
-
 - [[hyperion-renderer]]
 - [[path-guiding-production]]
 - [[ptex-gpu-streaming]]
+- [[ray-differentials]] — Hyperion 的 wavefront 架构和 ray differentials 的简化方案
 
 ## Sources
 

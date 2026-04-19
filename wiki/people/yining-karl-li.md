@@ -38,8 +38,10 @@ sources: 4
 - [[nested-dielectrics]]
 
 ## Sources
-
 - [[sources/yiningkarlli-moana-2]]
 - [[sources/yiningkarlli-texture-streaming-siggraph2025]]
 - [[sources/yiningkarlli-path-guiding-siggraph2025]]
 - [[sources/yiningkarlli-zootopia-2]]
+- [[sources/yiningkarlli-pixar-optix-rtp]]
+- [[sources/yiningkarlli-zootopia]]
+- [[sources/yiningkarlli-mipmap-bidirectional]]

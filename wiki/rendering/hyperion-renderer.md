@@ -38,16 +38,17 @@ sources: 4
 并非所有都改了——Chiang 毛发模型（Chiang et al. 2016）自 *Zootopia*（2016）引入后几乎没动过，已成行业事实标准。
 
 ## 相关
-
 - [[wavefront-path-tracing]]
 - [[path-guiding-production]]
 - [[ptex-gpu-streaming]]
 - [[nested-dielectrics]]
 - [[yining-karl-li]]
+- [[ray-differentials]] — Hyperion 用类似 RenderMan 的「单 float 宽度」简化版 ray differentials
 
 ## Sources
-
 - [[sources/yiningkarlli-moana-2]]
 - [[sources/yiningkarlli-zootopia-2]]
 - [[sources/yiningkarlli-texture-streaming-siggraph2025]]
 - [[sources/yiningkarlli-path-guiding-siggraph2025]]
+- [[sources/yiningkarlli-zootopia]]
+- [[sources/yiningkarlli-pixar-optix-rtp]]
