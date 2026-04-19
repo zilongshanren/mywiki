@@ -541,6 +541,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[hdr-video-edr-metal]] | AVFoundation + Metal HDR 视频管线 + PQ/HLG tonemapping shader |
 | [[metal-4-api-redesign]] | Metal 4 的 API 重塑（显式 residency + command allocator + argument table） |
 | [[slug-gpu-glyph-rendering]] | Lengyel Slug 算法专利释放后 Metal 上的最小实现（winding + bands + fractional coverage） |
+| [[tessellation-approaches-overview]] | Karis 2026：动态 tessellation + 位移的选型路径，为什么 tracing 和 Nanite 簇内放大都不行、最终走 Reyes |
+| [[nanite-tessellation-approach]] | UE5.4 Nanite Tessellation 的流水线：ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数 |
+| [[nanite-reyes-comparison]] | Nanite Tessellation 与 Pixar Reyes 的逐点对照：split 同构、dice 从方格换成不规则等边、shading 频率从 object-space 改为像素 deferred material |
+| [[variable-sized-work-pattern]] | Karis 从 Nanite Tessellation 抽出的通用并行原语：wave 内 pull-based 变长工作分发，顺便解释 Nanite 软光栅为何快于 HW |
 
 ## 经典案例（wiki/examples/）
 
@@ -1165,6 +1169,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/metalbyexample-hdr-video]] | Warren Moore：AVFoundation + Metal HDR 视频完整管线教程 |
 | [[sources/metalbyexample-metal-4-basics]] | Warren Moore：Metal 4 API 迁移入门 |
 | [[sources/metalbyexample-slug]] | Warren Moore：Slug 算法在 Metal 上的最小实现 |
+| [[sources/karis-nanite-tessellation-intro]] | Karis：Nanite Tessellation 系列开篇，为什么位移值得做 amplification |
+| [[sources/karis-possible-approaches-tessellation]] | Karis：逐一否决 tracing 与 Nanite 簇内放大，滑向 Reyes |
+| [[sources/karis-how-to-tessellate]] | Karis：Tessellation Table 离线预计算 + 16bit barycentric 量化，密度均匀 remesh |
+| [[sources/karis-nanite-reyes]] | Karis：UE5.4 完整流水线——ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数链式法则 |
+| [[sources/karis-variable-sized-work]] | Karis：wave 内 pull-based 变长工作分发原语，顺便解释 Nanite 软光栅快于 HW 的数据移动论 |
 
 ## 元（wiki/meta/）
 

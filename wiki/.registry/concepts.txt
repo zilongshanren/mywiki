@@ -576,3 +576,7 @@ metal-decade-history
 hdr-video-edr-metal
 metal-4-api-redesign
 slug-gpu-glyph-rendering
+tessellation-approaches-overview
+nanite-tessellation-approach
+nanite-reyes-comparison
+variable-sized-work-pattern

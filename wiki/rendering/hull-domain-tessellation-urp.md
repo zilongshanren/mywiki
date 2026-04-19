@@ -128,11 +128,12 @@ Tessellation 在现代硬件上**不是免费午餐**：每个新顶点都跑一
 [[tessellation-fur-rendering|Kostas Anagnostou 的毛发方案]] 用同样的管线但换 domain：`[domain("isoline")]` + `outputtopology("line")`，把 U/V 两个方向分别当作"第几根毛 / 第几段"，用 domain shader 生成真正的毛几何。管线骨架一模一样，只是 factor 的语义和 domain 里的坐标解释不同。
 
 ## 相关
-
 - [[tessellation-fur-rendering]] —— isoline domain 的专项应用
 - [[vertex-shader]] —— tessellation 之前的阶段
 - [[shaderlab-hlsl-basics]] —— `#pragma` 注册和 CBUFFER 组织
 - [[coordinate-spaces]] —— 在哪个空间做 displacement 的取舍
+- [[tessellation-approaches-overview]] —— Karis 对 D3D hardware tessellator 拓扑均匀方案的批评：密度均匀比拓扑均匀省 31% 三角形
+- [[nanite-tessellation-approach]] —— UE5.4 脱离 D3D tessellator 的软实现
 
 ## Sources
 

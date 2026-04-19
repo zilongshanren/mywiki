@@ -645,3 +645,7 @@ batch-w48-el：10 条全部 skipped_offtopic（周报 419-427 延续先例，gtc
 ## [2026-04-19] ingest | Wave-48 Worker EN (cloudwu 2026-02~04 + Kostas 2025-08~2026-02 + Warren Moore 2024~2026)
 
 处理 17 篇英文博客。云风 7 文里实 ingest 2（Star Trek LLM 幻觉、soluna extlua 代理），3 篇月索引 / 目录页重复，1 篇内容与已入库 2025-09-16 xlsx 同文，2 篇育儿数学课 off-topic。Kostas Anagnostou 5 文全 ingest（硬核渲染：GPU 利用率整体调优、VS export 瓶颈实测、spatial hash RTAO、neural rendering MLP、Cooperative Vectors 硬件加速）。Warren Moore Metal by Example 5 文全 ingest（Metal 十年上下篇、HDR 视频管线、Metal 4 入门、Slug 字体渲染 —— 注意 slug.md 不是 WIP 占位而是真文章）。新增 11 个概念页（10 渲染 + 1 编程语言 + 1 meta），12 个 source 摘要，0 个人物页。
+
+## [2026-04-19] ingest | Wave-49 Worker EO (jendrikillner ×8 skip + graphicrants Karis Nanite Tessellation ×5)
+
+Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 2026 Nanite Tessellation 系列 5 篇全 ingest：新增 4 个概念页（tessellation-approaches-overview / nanite-tessellation-approach / nanite-reyes-comparison / variable-sized-work-pattern）+ 5 source 摘要。Patch brian-karis（增 2026 条目）、hull-domain-tessellation-urp（对照 D3D tessellator）、meshlets-and-mesh-shaders 与 d3d12-work-graphs（交叉 variable-sized-work）。

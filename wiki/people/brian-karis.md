@@ -31,7 +31,6 @@ Nanite 解决了「把几亿三角形的艺术资产原封不动塞进引擎」�
 - **架构连贯**：2010-2012 的博客想法和 2021 的 UE5 Nanite/Lumen 有直接血脉关系——他坚持了十年。
 
 ## 相关
-
 - [[physically-based-shading]]
 - [[microfacet-brdf]]
 - [[deferred-rendering]]
@@ -39,9 +38,17 @@ Nanite 解决了「把几亿三角形的艺术资产原封不动塞进引擎」�
 - [[tiled-light-culling]]
 - [[sparse-shadows-cone-tracing]]
 - [[virtualized-volume-textures]]
+- [[tessellation-approaches-overview]] — 2026 Nanite Tessellation 系列（overview）
+- [[nanite-tessellation-approach]] — UE5.4 dynamic tessellation + displacement 的流水线
+- [[nanite-reyes-comparison]] — 和经典 Reyes 的对照
+- [[variable-sized-work-pattern]] — wave 内变长工作分发原语
 
 ## Sources
-
 - [[sources/karis-virtualized-volume-textures]]
 - [[sources/karis-tiled-light-culling]]
 - [[sources/karis-sparse-shadows-tracing]]
+- [[sources/karis-nanite-tessellation-intro]]
+- [[sources/karis-possible-approaches-tessellation]]
+- [[sources/karis-how-to-tessellate]]
+- [[sources/karis-nanite-reyes]]
+- [[sources/karis-variable-sized-work]]
