@@ -58,12 +58,12 @@ visit(visitor: IVisitor): void {
 - **与图形 API 的默契**：早期固定管线的 OpenGL 就内置了矩阵栈（`glPushMatrix` / `glPopMatrix`），这个模式本质上是把同一思路拿到 CPU 端做场景层次管理。
 
 ## 相关
-
 - [[mvp-transform]]
 - [[coordinate-spaces]]
 - [[rendering-pipeline]]
 - [[composite-command-pattern]] —— 同样是"把操作族抽出来独立演化"的思路
 - [[allen-chou]]
+- [[scene-graph-unnecessary-in-engine]] —— 反面观点：[[angelo-pesce|Pesce]] 认为引擎根本不应该以通用场景图为核心
 
 ## Sources
 

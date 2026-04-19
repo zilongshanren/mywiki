@@ -798,3 +798,7 @@ additive-animation-layering
 mcm-gpu-design
 gpu-unbiased-path-tracing
 otoy-cloud-rendering
+experience-as-noise-filter
+scene-graph-unnecessary-in-engine
+computational-complexity-theory-intro
+patterna-hexcells-np-vs-conp

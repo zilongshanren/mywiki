@@ -17,13 +17,14 @@ sources: 2
 - 常年在博客上分享对 render graph、streaming、material system、debug 可视化的思考；不少早期内容是后来主流技术的前兆。
 
 ## 相关
-
 - [[cached-shadowmaps]]
 - [[tbdr-vs-imr]]
 - [[fabian-giesen]]
 - [[hsr-tbdr]]
+- [[experience-as-noise-filter]]
+- [[scene-graph-unnecessary-in-engine]]
 
 ## Sources
-
 - [[sources/c0de517e-cached-shadowmaps]]
 - [[sources/c0de517e-tiled-hardware-speculations]]
+- [[sources/c0de517e-pitfalls-of-experience]]

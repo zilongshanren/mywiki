@@ -11631,3 +11631,13 @@ raw/articles/raytracey.blogspot.com/2010-01-15_arion-render-a-hybrid-gpu-cpu-unb
 raw/articles/raytracey.blogspot.com/2010-01-22_fuck-yeah.md
 raw/articles/raytracey.blogspot.com/2010-02-23_at-last.md
 raw/articles/raytracey.blogspot.com/2010-03-02_otoy-teams-up-with-solidworks.md
+raw/articles/c0de517e.blogspot.com/2010-01-11_how-do-you-do-your-work-2.md
+raw/articles/c0de517e.blogspot.com/2010-01-14_links-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-05_the-pitfalls-of-experience-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-22_i-ve-just-found-out-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-22_i-ve-just-found-out.md
+raw/articles/blog.s-schoener.com/2016-08-04_blog-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2016-08-04_note-to-myself-image-magick-commands-that-you-will-use-sebas.md
+raw/articles/blog.s-schoener.com/2016-10-03_a-short-introduction-to-computational-complexity-theory-seba.md
+raw/articles/blog.s-schoener.com/2016-10-10_the-computational-complexity-of-patterna-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2017-11-29_how-this-blog-was-setup-sebastian-schoner.md

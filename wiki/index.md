@@ -67,6 +67,7 @@ sources: 371
 | [[middleware-vs-open-source]] | 独立团队在闭源中间件与开源库之间的取舍守则 |
 
 | [[ai-code-agent-workflow]] | Hooper 的精确 prompt 路线：AI 当键盘替代而非大脑替代 |
+| [[experience-as-noise-filter]] | Pesce：经验是噪声过滤器，既筛掉平庸也筛掉天才级的「不可能想法」 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -123,6 +124,8 @@ SICP 及 Lambda 演算传统的核心概念。
 
 | [[mach-nominated-zig-versions]] | Zig nightly/stable 之间的月度提名版本机制 |
 | [[zig-package-mirror]] | pkgmirror：自托管 Zig toolchain 与包镜像服务 |
+| [[computational-complexity-theory-intro]] | 计算复杂度理论入门：$\P/\NP/\coNP$ 与多项式时间归约 |
+| [[patterna-hexcells-np-vs-conp]] | 逻辑消除游戏的玩法复杂度：推理是 $\coNP$-complete 而非 $\NP$-complete |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -267,6 +270,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[native-client-porting]] | AirMech 移植到 NaCl 的工程笔记（archival，可迁移到 Emscripten） |
 
 | [[mach-engine]] | Mach：Zig 写的模块化游戏引擎，核心是标准库式组件 |
+| [[scene-graph-unnecessary-in-engine]] | Pesce：3D 引擎不该把场景图当核心，应按 renderable 类型特化 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1642,6 +1646,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-nvidia-mcm-gpu]] | Chester Lam：从 Nvidia 2017 论文看下一代 MCM server GPU |
 | [[sources/raytracey-2010-gpu-renderer-landscape]] | Lapere：2010 GPU 非偏置渲染器的集体觉醒 |
 | [[sources/raytracey-otoy-solidworks-cloud]] | Lapere 转载：OTOY RV770 云渲染细节与 SolidWorks 合作 |
+| [[sources/c0de517e-pitfalls-of-experience]] | Pesce：经验的陷阱——从 Crysis 深度缓冲 SSAO 反推谈起 |
+| [[sources/schoener-intro-computational-complexity]] | Schöner：$\P/\NP/\coNP$/归约 入门 |
+| [[sources/schoener-complexity-of-patterna]] | Schöner：Patterna/HexCells/Minesweeper 推理问题是 $\coNP$-complete |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

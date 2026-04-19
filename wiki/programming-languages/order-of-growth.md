@@ -36,10 +36,10 @@ sources: 1
 ECS 的缓存友好性用增长阶完全表达不出来——但这恰恰是 SoA 性能优势的真正来源。**增长阶 + 常数 + 缓存**共同决定实际性能。
 
 ## 相关
-
 - [[fast-exponentiation]]
 - [[cache-friendliness]]
 - [[recursive-vs-iterative-process]]
+- [[computational-complexity-theory-intro]] — $\P/\NP$ 和多项式时间作为『高效可解』的操作定义
 
 ## Sources
 

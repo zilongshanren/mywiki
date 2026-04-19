@@ -905,3 +905,11 @@ blog.runevision.com 早期 2010 年内容：Nordic Game Jam 与 Unity 动画 dem
 ## [2026-04-19] ingest | Wave-70 Worker HC (raytracey.blogspot.com 2010 早期 ×5)
 
 处理 5 篇 Sam Lapere 2010 年早期博客。新增 2 概念页（gpu-unbiased-path-tracing, otoy-cloud-rendering）、2 source 摘要。跳过 3 篇纯产品公告（Octane/Arion 一行通告、GDC 嘉宾转载）。更新 sam-lapere 人物页 sources 从 2→4。
+
+## [2026-04-19] ingest | Wave-71 Worker HD (c0de517e.blogspot.com early 2010 ×5)
+
+Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、链接堆、Fravia 讣告及其重复件），仅 `pitfalls-of-experience` 实质性入库。新增 2 概念页（`experience-as-noise-filter`、`scene-graph-unnecessary-in-engine`）、1 source 摘要，并为 `angelo-pesce` 和 `scene-graph-matrix-stack-visitor` 打补丁（后者增补反面观点链接）。
+
+## [2026-04-19] ingest | Wave-71 Worker HE (blog.s-schoener.com ×5)
+
+处理 5 篇 Sebastian Schöner 早期（2016-2017）博客。2 篇计算复杂度理论系列入库：新增概念 computational-complexity-theory-intro（$\P/\NP/\coNP$/归约入门）+ patterna-hexcells-np-vs-conp（纠正『扫雷是 NP-complete』的普遍误解：玩家实际做的推理问题是 $\coNP$-complete）。跳过 3 篇非技术元内容（博客 landing 索引、ImageMagick 个人速查、Jekyll 搭建记）。Sebastian Schöner 人物页已存在，追加复杂度理论主题、相关链接与 2 条 source 引用。
