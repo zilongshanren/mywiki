@@ -785,3 +785,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-60 Worker ft (asawicki.info ×6)
 
 处理 Adam Sawicki 的 6 篇 asawicki.info 原文。3 篇实质技术内容入库（graphics-api history / system load formula / DX12 GDC 2026 long comments），3 篇 skip（home-page 与 RSS 聚合重复；Total Commander 插件公告无技术实体）。新增 1 人物页（adam-sawicki）、5 概念页（graphics-api-history、system-load-formula、pix-api-and-dxdmp、dxr-tier-2-clas-ptlas、advanced-shader-delivery）、3 source 摘要。Patch 到 hlsl-cooperative-vectors-tensor-cores 与 d3d12-work-graphs 做交叉引用。GDC 2026 DX12 公告被 Sawicki 拆成主机级调试工具、ML for DX、Shader Delivery、DirectStorage 1.4、DXR Tier 2 五条线，本批按其中三条独立成页，ML 方向复用既有 Cooperative Vectors 页。
+
+## [2026-04-19] ingest | Wave-61 Worker FX (allenchou.net ×5 all-skipped)
+
+处理 Allen Chou 5 篇博客：3 篇 DigiPen/DigiJam 作品展示页（Photon Bunny / Cooncoaster / Sky Spire）正文仅游戏链接与玩法说明；My Life at Naughty Dog 是办公室生活 brain dump（滑板车、咖喱日、项目代号梗）；GDC Social Tips 是求职社交建议。全部 5 篇 skipped_offtopic，均与 graphics/engine/systems 技术主题无关。allen-chou 人物页保持不变。
