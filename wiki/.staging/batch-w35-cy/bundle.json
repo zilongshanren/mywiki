@@ -1,0 +1,60 @@
+{
+  "batch_id": "batch-w35-cy",
+  "agent_note": "anteru.net 批次：5 篇里 4 篇非技术（open-source 维护观点、systemd 定时器运维、20 年博客 / 10 年从业回顾），仅 data-formats 一篇是实质性数据格式工程讨论。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2024-04-02_open-source-maintenance.md",
+      "status": "skipped_offtopic",
+      "reason": "开源维护主题的个人观点文，不是技术/渲染/系统内容"
+    },
+    {
+      "path": "raw/articles/anteru.net/2024-04-21_replacing-cron-with-systemd-timers.md",
+      "status": "skipped_offtopic",
+      "reason": "Linux 运维笔记（cron → systemd timers），与 wiki 主题不相关"
+    },
+    {
+      "path": "raw/articles/anteru.net/2024-12-29_data-formats-why-csv-and-json-aren-t-the-best.md",
+      "status": "ingested",
+      "source_slug": "anteru-data-formats-csv-json",
+      "title": "Data formats: Why CSV and JSON aren't the best"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-01-13_20-years-of-blogging.md",
+      "status": "skipped_offtopic",
+      "reason": "博客 20 周年回顾，个人职业随笔"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_10-years-in-the-industry.md",
+      "status": "skipped_offtopic",
+      "reason": "从业 10 年回顾，个人职业随笔"
+    }
+  ],
+  "concepts_created": ["parquet-vs-csv-json"],
+  "people_created": [],
+  "source_summaries_created": ["anteru-data-formats-csv-json"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[parquet-vs-csv-json]]"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-data-formats-csv-json]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[parquet-vs-csv-json]] | 表格数据存储：为什么 CSV/JSON 都不够好、Parquet 凭什么成为默认 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-data-formats-csv-json]] | Anteru：CSV/JSON 的失败模式与 Parquet 的生态位 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-35 Worker CY (anteru.net ×5)\n\n处理 5 篇 anteru.net 文章。新增 1 概念页（parquet-vs-csv-json）与 1 source 摘要（anteru-data-formats-csv-json），对已有人物页 matthaeus-chajdas 追加补丁。跳过 4 篇：open-source 维护观点、systemd timers 运维、20 年博客回顾、10 年从业回顾。"
+}
