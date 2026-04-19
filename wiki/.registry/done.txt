@@ -11474,3 +11474,9 @@ raw/articles/blog.yiningkarlli.com/2025-05-11_photography-show-at-disney-animati
 raw/articles/blog.yiningkarlli.com/2025-08-10_siggraph-2025-talk-a-texture-streaming-pipeline-for-real-tim.md
 raw/articles/blog.yiningkarlli.com/2025-08-12_siggraph-2025-course-notes-path-guiding-surfaces-and-volumes.md
 raw/articles/blog.yiningkarlli.com/2025-12-17_zootopia-2.md
+raw/articles/16bpp.net/2025-01-28_16bpp-net-blog-when-greedy-algorithms-can-be-faster.md
+raw/articles/16bpp.net/2025-11-03_the-hypothesis.md
+raw/articles/16bpp.net/2026-03-11_quicker-trig.md
+raw/articles/16bpp.net/2025-01-28_16bpp-net-blog-when-greedy-algorithms-can-be-faster-2.md
+raw/articles/16bpp.net/2026-03-11_quicker-trig-2.md
+raw/articles/16bpp.net/2026-03-16_gotta-go-fast.md

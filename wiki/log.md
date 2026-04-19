@@ -769,3 +769,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-59 Worker FS (blog.yiningkarlli.com ×6)
 
 处理 Yining Karl Li（Disney Animation Hyperion 渲染工程师）博客 6 篇。Ingest 4 篇技术文：Moana 2 / Zootopia 2 / SIGGRAPH 2025 GPU Ptex 纹理流送 / SIGGRAPH 2025 Hyperion 二代 path guiding。跳过 2 篇（个人博客 CSS 重设计、公司内部摄影展）。新增 1 人物页（yining-karl-li）、5 概念页（hyperion-renderer、wavefront-path-tracing、path-guiding-production、ptex-gpu-streaming、nested-dielectrics）、4 source 摘要。给 mipmap-generation-sampling 追加一条交叉引用。
+
+## [2026-04-19] ingest | Wave-59 Worker FR (16bpp.net ×3)
+
+处理 16bpp.net 性能连载 3 篇独立文章 + 2 个月索引重复 + 1 篇 5 天内 follow-up（gotta-go-fast 合并进 quicker-trig）。新增 6 concept（rejection-vs-analytical-sampling、benchmark-methodology-end-to-end、free-vs-member-functions-performance、asin-cg-approximation、estrin-scheme、pade-approximants、psraytracing 共 7 个）+ 1 人物（16bpp）+ 3 source。核心主题：用矩阵 benchmark 重测 C++ 性能老主张，拒绝采样在 -O1 后反超解析解、Nvidia Cg 的 Abramowitz-Stegun asin_cg + Estrin 重写、Synfig 上 free function 对性能无影响。

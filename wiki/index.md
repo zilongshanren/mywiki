@@ -106,6 +106,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[mulberry32-rng]] | 极简 32-bit 确定性 PRNG：Weyl + xor-shift-multiply |
 | [[zig-c-abi-boundary]] | Zig 跨 DLL 只有 C ABI：三文件结构 + comptime 分支的绕法 |
 | [[header-file-vs-pub-export]] | `pub` 内联标注把维护成本转嫁为消费者阅读成本 |
+| [[free-vs-member-functions-performance]] | 2017 年 Klaus 主张的「free function 更快」8 年后被重测：基本是噪声 |
+| [[pade-approximants]] | 有理函数逼近 Taylor 级数，介于 Taylor 与 Minimax 之间的中间台阶 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
@@ -185,6 +187,8 @@ CAQA + CSAPP 的底层视角。
 | [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |
 | [[gpu-gol-optimization-ladder]] | GPU Game of Life 优化阶梯：PyTorch 223 ms → bitpacked 64-bit CUDA + 多步融合 0.68 ms |
 | [[numpy-tile-reshape-trick]] | reshape + transpose 切瓦片：比 for 循环快 1000×，比 scikit-image 快 15× |
+| [[benchmark-methodology-end-to-end]] | 小 benchmark 不能代替端到端：矩阵测试、优化打开再测、2% 噪声阈值 |
+| [[estrin-scheme]] | 代数重排 Horner 以缩短依赖链，给乱序 CPU 做并行多项式求值 |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -641,6 +645,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[path-guiding-production]] | 把 path guiding 从 PPG 论文铺到影片管线的工程账：Hyperion × OpenPGL 的二代系统 |
 | [[ptex-gpu-streaming]] | Disney 的实时 GPU Ptex 纹理流送：小 cache + 激进 LRU + 原始 face 数据流送 |
 | [[nested-dielectrics]] | 水-玻璃-环境多层嵌套介质，Schmidt & Budge 2002 的栈式算法与产线扩展 |
+| [[rejection-vs-analytical-sampling]] | 单位球内均匀采样：打开 -O1 后拒绝采样反超解析解 |
+| [[asin-cg-approximation]] | Nvidia Cg 文档里的 Abramowitz-Stegun 4.4.45 Minimax asin 近似 |
+| [[psraytracing]] | 16bpp.net 的 C++ 路径追踪器，各种性能实验的测试床 |
 
 ## 经典案例（wiki/examples/）
 
@@ -774,6 +781,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[panagiotis-charitos]] | AnKi 3D Engine 作者，anki3d.org 博客作者 |
 | [[pekka-vaananen]] | 30fps.net 博主，芬兰独立渲染研究者，擅长 notebook 式图形实验 |
 | [[yining-karl-li]] | Disney Animation Hyperion 渲染工程师，Code & Visuals 博主 |
+| [[16bpp]] | 16BPP.net 博主，PSRayTracing 作者，靠全矩阵 benchmark 重测 C++ 性能主张 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1436,6 +1444,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/yiningkarlli-texture-streaming-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 GPU Ptex 纹理流送 talk 配文 |
 | [[sources/yiningkarlli-path-guiding-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 Hyperion 二代 path guiding course 配文 |
 | [[sources/yiningkarlli-zootopia-2]] | Yining Karl Li：Zootopia 2 水管嵌套介质 + 二代 path guiding 首次大规模部署 |
+| [[sources/16bpp-greedy-vs-analytical]] | 16BPP：拒绝采样 vs 解析采样，开 O1 后拒绝胜 |
+| [[sources/16bpp-free-functions-hypothesis]] | 16BPP：重测 Klaus 2017「free function 更快」主张 |
+| [[sources/16bpp-quicker-trig-asin-cg]] | 16BPP：从 Taylor/Padé 到 Nvidia Cg Minimax + Estrin 的 asin 近似优化历程 |
 
 ## 元（wiki/meta/）
 

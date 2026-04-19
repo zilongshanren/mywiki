@@ -65,6 +65,10 @@ Robin 自己在给 tutorial 补料时临时加了一个叫 BitLog 的「快速�
 - [[robin-green]]
 - [[sigmoid-functions]] — Raph Levien 用「多项式变形」思路打败学术论文里的 tanh/erf 近似
 - [[fp64-sincos-minimax]] —— Outerra 把同一套 minimax 三段式方法论搬到 GLSL fp64 sin/cos
+- [[asin-cg-approximation]] —— Nvidia Cg 文档里躺了 13 年的 Abramowitz & Stegun 4.4.45 实现，Minimax 3 阶 asin 近似
+- [[pade-approximants]] — 好于 Taylor、还不及 Minimax 的中间台阶
+- [[estrin-scheme]] — 把 Horner 多项式求值改写成可并行的 ILP 风格，Intel 老 i7 上 +17%
+- [[benchmark-methodology-end-to-end]] — 「运行时间永远比数指令更可靠」的一套方法论
 
 ## Sources
 

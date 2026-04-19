@@ -696,3 +696,10 @@ wavefront-path-tracing
 path-guiding-production
 ptex-gpu-streaming
 nested-dielectrics
+rejection-vs-analytical-sampling
+benchmark-methodology-end-to-end
+free-vs-member-functions-performance
+asin-cg-approximation
+estrin-scheme
+pade-approximants
+psraytracing

@@ -85,13 +85,13 @@ double sina_11(double x) {
 Outerra 的贡献是把这套方法论**按在 GPU 端具体落地**，而且把系数直接贴了出来，别的 planet 引擎可以原样复用。
 
 ## 相关
-
 - [[outerra-team]]
 - [[faster-math-functions]]
 - [[planet-terrain-dem-pipeline]]
 - [[sigmoid-functions]]
 - [[sse-tricks]]
 - [[robin-green]]
+- [[asin-cg-approximation]] — 同是 Minimax 3 阶近似，来源是 1964 年 Abramowitz-Stegun 4.4.45，Nvidia Cg 2012 年打包
 
 ## Sources
 
