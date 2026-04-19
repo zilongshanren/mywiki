@@ -58,6 +58,7 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[sprite-shaders-unity]] —— Unity sprite shader 的透明三件套起点
 - [[ronja-bohm]] —— 2018 年第 006 篇教程：Unity `Queue=Transparent` + `Blend SrcAlpha OneMinusSrcAlpha` + `ZWrite Off`
 - [[srgb-premultiplied-alpha-compression]] —— Ben Supnik：linear blending vs sRGB blending 的取舍，以及美术为何有时想要 sRGB blending（partial coverage）
+- [[sources/adrian-transparent-pixels]] —— alpha=0 像素的 RGB 值如何通过 bilinear filtering 污染可见边缘
 
 ## Sources
 

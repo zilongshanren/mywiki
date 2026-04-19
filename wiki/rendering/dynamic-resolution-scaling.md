@@ -29,13 +29,13 @@ gameknife 给出的修法是：**在着色时对右下方像素额外采一次�
 修法是放弃 `ddx` 自动 LOD，改为**用像素线性深度手动计算 mip level**，再走 `tex2Dlod` 显式指定层次。一个意外发现是：`tex2Dlod` 在 DX9 世代实际展开成两条采样指令（GPA 里会显示两次 tex_ld），比 `tex2Dgrad` 反而更贵；把手动 LOD 从 `tex2Dlod` 改成 `tex2Dgrad` 送入计算好的 ddx/ddy，地形 block 的采样次数直接从 26 次砍半到 9 次。
 
 ## 相关
-
 - [[bottleneck-analysis]] —— "先测瓶颈再优化"是变分辨率之所以成立的前提：Pixel-bound 才值得降采样
 - [[deferred-rendering]] —— gkEngine 的变分辨率管线最终配合 deferred shading 切换使用
 - [[sampler-filter-wrap-modes]] —— stretch blit 本质是一次双线性上采样
 - [[mipmap-moire-scanline]] —— mipmap 选择错误会和低分辨率渲染叠加放大失真
 - [[bloom-threshold-blur-composite]] —— bloom 是另一个典型的低频、可降采样的后处理 pass
 - [[gkengine]]
+- [[ue4-reactive-dynamic-resolution]] —— Courrèges 给 UE4.18 前的反应式 dynamic resolution 补丁，Switch 版《DQ XI S》出货采用
 
 ## Sources
 

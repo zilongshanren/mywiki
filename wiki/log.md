@@ -841,3 +841,7 @@ GI (bleuje 5) 和 GJ (dolphin-emu 5) 两个 worker 都在 730s 附近 stream-idl
 ## [2026-04-19] defer | Wave-65 GK (adriancourreges ×5, worker stream-idle timeout)
 
 GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream-idle 模式）。defer 进 done.txt。
+
+## [2026-04-19] ingest | Wave-65 Worker gk (adriancourreges.com ×5)
+
+处理 Adrian Courrèges 5 篇。3 篇硬技术全量 ingest：透明像素陷阱、MGS V / Fox Engine 帧分析（2331 draw / 73 RT，定制 ReShade 绕反调试）、UE4 Switch 优化补丁集（GatherDOF / half-res SSAO / reactive dynres；DQ XI S / Pikmin 4 出货采用）。2 篇 skip_duplicate（首页 + graphics-studies 索引）。新增 3 概念页（mgs-v-fox-engine-frame / gather-bokeh-dof / ue4-reactive-dynamic-resolution）、1 人物页（adrian-courreges）、3 source 摘要。给 srgb-premultiplied-alpha-compression / alpha-blending / scatter-bokeh-dof / dynamic-resolution-scaling / unreal-frame-breakdown / thomas-poulet 7 个 patch。

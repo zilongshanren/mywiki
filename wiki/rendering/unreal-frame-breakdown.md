@@ -98,6 +98,8 @@ AO 分两个 pass：先一张 quarter-res（基于降采样 normal + Hi-Z + 随�
 - [[shadow-mapping-basics]]
 - [[kostas-anagnostou]]
 - [[sources/thomas-poulet-anno-1800-frame]]、[[sources/thomas-poulet-ninokuni-2-frame]]、[[sources/thomas-poulet-dcs-frame]] — Thomas Poulet 的自研引擎帧分析系列
+- [[sources/adrian-mgs-v-graphics-study]] —— Courrèges 的 MGS V 帧分析（[[kostas-anagnostou]] 明言受他 GTA V 研究启发）
+- [[gather-bokeh-dof]] / [[ue4-reactive-dynamic-resolution]] —— UE4 在 Tegra X1 上的两组 drop-in 优化
 
 ## Sources
 

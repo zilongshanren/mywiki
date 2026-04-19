@@ -53,7 +53,6 @@ scatter 路线只在两个场景下值得考虑：
 即使这样，Wronski 本人后续也承认这是一条"疯狂路线"，主要价值是过场质量和实现学习。现代的重新思考见 Wronski 2017 年的 _Separable Bokeh_——把 scatter 问题转成两次可分离 pass，是对同一美学目标的工程让步。
 
 ## 相关
-
 - [[thin-lens-model]] — CoC 的物理推导来自这里
 - [[chromatic-aberration-post]] — scatter 路线允许做"对的"色差
 - [[alpha-blending]] — premultiplied additive 的典型应用
@@ -61,7 +60,10 @@ scatter 路线只在两个场景下值得考虑：
 - [[draw-procedural-gpu]] — procedural vertex from vertex ID
 - [[temporal-supersampling]] — Wronski 自己承认 scatter 的半分辨率接缝"除非做时域超采样"才能消掉
 - [[bartosz-wronski]]
+- [[gather-bokeh-dof]] —— 对偶路线，移动 GPU 上的 drop-in 替代
+- [[mgs-v-fox-engine-frame]] —— Fox Engine 的 DoF 是 scatter 的分级分辨率加强版
 
 ## Sources
-
 - [[sources/bartwronski-bokeh-insane-pt1]]
+- [[sources/adrian-mgs-v-graphics-study]]
+- [[sources/adrian-ue4-optimized-post-effects]]

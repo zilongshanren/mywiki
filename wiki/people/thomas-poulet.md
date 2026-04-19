@@ -13,11 +13,11 @@ Thomas Poulet 是一名图形工程师、咨询顾问，也是独立物理游戏
 他的文章偏工程视角：比起讲技术本身，更关注「这样做是为了解决什么约束」，帧分析里也常常点出不足（例如 DCS 远距离 CSM 的 10000:1 vertex-to-pixel 浪费、Anno 非 bindless 导致的 ExecuteIndirect 爆炸）。
 
 ## 相关
-
 - [[unreal-frame-breakdown]] — Adrian 派的 UE 帧解剖（Kostas Anagnostou）
 - [[simonschreibt-anno-1800-shadows]] — 同一游戏的 VFX 观察（Simon Trümpler）
 - [[ue-observability-stack]]
 - [[ue-asset-validator-blueprint]]
+- [[adrian-courreges]] —— frame-analysis 写作范式的前辈，Poulet 的 Anno / Ni no Kuni / DCS 系列延续这条路线
 
 ## Sources
 

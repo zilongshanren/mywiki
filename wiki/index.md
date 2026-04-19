@@ -702,6 +702,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[ground-truth-ambient-occlusion]] | GTAO 完整实现：IGN 噪声、temporal reprojection、bent normal、overscan |
 | [[use-gpu-reactive-runtime]] | Steven Wittens 的声明式/响应式 WebGPU 运行时 |
 | [[render-pass-orchestration]] | Use.GPU 声明式 render pass 编排：well-known names 隐式 wiring、buffer history 一等化 |
+| [[mgs-v-fox-engine-frame]] | Fox Engine 一帧全流程解剖（MGS V：小 G-Buffer、双 SSAO、早 tonemap、分级 scatter DoF） |
+| [[gather-bokeh-dof]] | Gather 式 bokeh DoF + McIntosh flood-fill，UE4 BokehDOF 的移动端替代（DOOM 2016 技术） |
+| [[ue4-reactive-dynamic-resolution]] | UE4.18 前的反应式 dynamic resolution 补丁，基于 GGPUFrameTime 两档跳变 |
 
 ## 经典案例（wiki/examples/）
 
@@ -849,6 +852,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[graphics-guy-notes]] | Jiayin Cao，NVIDIA（前 Naughty Dog），SORT/TSL 作者，Zorah ReSTIR PT 实装参与者 |
 | [[alex-harri-jonsson]] | 冰岛软件工程师，博客 alexharri.com 深挖 Web 剪贴板、trie 压缩、ASCII 渲染等细节主题 |
 | [[steven-wittens]] | Steven Wittens，acko.net 作者，Use.GPU 创建者，UI 与渲染架构评论家 |
+| [[adrian-courreges]] | Adrian Courrèges，frame-analysis 写作范式奠基者；Switch AAA UE4 优化补丁作者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1564,6 +1568,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/acko-i-is-for-intent]] | Wittens：Intent 作为 source of truth，patch 驱动的前端架构 |
 | [[sources/acko-occlusion-with-bells-on]] | Wittens：Use.GPU 0.14 GTAO + render pass 编排实录 |
 | [[sources/acko-html-is-dead]] | Wittens：DOM/CSS/HTML 批判与替代路径 |
+| [[sources/adrian-transparent-pixels]] | Courrèges：alpha=0 像素的 RGB 值如何污染边缘，flood-fill + 预乘 alpha 双解 |
+| [[sources/adrian-mgs-v-graphics-study]] | Courrèges：MGS V / Fox Engine 一帧完整解剖（定制 ReShade 分支绕反调试） |
+| [[sources/adrian-ue4-optimized-post-effects]] | Courrèges：UE4 在 Tegra X1 上的三组 drop-in 优化补丁（GatherDOF / half-res SSAO / reactive dynres） |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

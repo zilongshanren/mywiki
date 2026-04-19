@@ -52,13 +52,13 @@ BC1/BC3/BC7、ASTC 这些[[bc7-solid-color-blocks|块压缩格式]]把一个 4×
 - HDR 粒子：全链路 linear 不走 sRGB；如果用 R11G11B10F 等 packed float，注意精度塌陷点。
 
 ## 与其他概念的关系
-
 - 基础 decode/encode：[[gamma-correction-srgb]]
 - 预乘 alpha 的数学：[[alpha-compositing]]
 - 硬件 blend state：[[alpha-blending]]
 - 色彩空间 TRC：[[color-space]]
 - 块压缩细节：[[bc7-solid-color-blocks]]
 - [[ben-supnik]]
+- [[sources/adrian-transparent-pixels]] —— Courrèges 用 PS3 XMB 上 Limbo logo 在白背景 fade-in 的灰斑做入门案例，给出美术端 flood-fill + 程序端预乘 alpha 的双策略
 
 ## Sources
 
