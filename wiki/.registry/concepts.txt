@@ -703,3 +703,6 @@ asin-cg-approximation
 estrin-scheme
 pade-approximants
 psraytracing
+ediz-upscaling-critique
+laplacian-structure-aware-error-diffusion
+sift-single-file-library

@@ -11480,3 +11480,8 @@ raw/articles/16bpp.net/2026-03-11_quicker-trig.md
 raw/articles/16bpp.net/2025-01-28_16bpp-net-blog-when-greedy-algorithms-can-be-faster-2.md
 raw/articles/16bpp.net/2026-03-11_quicker-trig-2.md
 raw/articles/16bpp.net/2026-03-16_gotta-go-fast.md
+raw/articles/jonolick.com/2024-01-09_ediz-a-critical-look-at-a-simplistic-image-upscaling-approac.md
+raw/articles/jonolick.com/2024-08-30_laplacian-based-structure-aware-error-diffusion.md
+raw/articles/jonolick.com/2025-01-28_home.md
+raw/articles/jonolick.com/2025-01-28_scale-invariant-feature-transform-sift-single-file-library.md
+raw/articles/jonolick.com/2026-04-14_links.md

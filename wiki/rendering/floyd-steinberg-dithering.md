@@ -40,5 +40,8 @@ Floyd–Steinberg 的权重矩阵是一个固定的 7/3/5/1 （除以 16）分�
 两者共享同一个更大的信号处理直觉——**把低频可见的误差搬到高频不可见的频段**——这也是 [[color-banding|颜色色带 dither]] 和 [[taa-history-rectification|TAA blue noise]] 背后的共同道理。
 
 ## Sources
-
 - [[sources/elopezr-floyd-steinberg-dithering]]
+
+## 相关
+
+- [[laplacian-structure-aware-error-diffusion]] — 用 Laplacian 结构感知替代固定 7/3/5/1 扩散权重，低对比度区 MSSIM +25%

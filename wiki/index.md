@@ -648,6 +648,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rejection-vs-analytical-sampling]] | 单位球内均匀采样：打开 -O1 后拒绝采样反超解析解 |
 | [[asin-cg-approximation]] | Nvidia Cg 文档里的 Abramowitz-Stegun 4.4.45 Minimax asin 近似 |
 | [[psraytracing]] | 16bpp.net 的 C++ 路径追踪器，各种性能实验的测试床 |
+| [[ediz-upscaling-critique]] | Jon Olick：EDIZ 简单上采样方法的五点批判 |
+| [[laplacian-structure-aware-error-diffusion]] | Laplacian 结构感知误差扩散，低对比度区 MSSIM +25% |
+| [[sift-single-file-library]] | jo_sift.h：专利过期后的 SIFT 单文件 C 库 |
 
 ## 经典案例（wiki/examples/）
 
@@ -782,6 +785,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[pekka-vaananen]] | 30fps.net 博主，芬兰独立渲染研究者，擅长 notebook 式图形实验 |
 | [[yining-karl-li]] | Disney Animation Hyperion 渲染工程师，Code & Visuals 博主 |
 | [[16bpp]] | 16BPP.net 博主，PSRayTracing 作者，靠全矩阵 benchmark 重测 C++ 性能主张 |
+| [[jon-olick]] | 前 id Software 程序员，JO JPEG / jo_*.h 单文件库系列作者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1447,6 +1451,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/16bpp-greedy-vs-analytical]] | 16BPP：拒绝采样 vs 解析采样，开 O1 后拒绝胜 |
 | [[sources/16bpp-free-functions-hypothesis]] | 16BPP：重测 Klaus 2017「free function 更快」主张 |
 | [[sources/16bpp-quicker-trig-asin-cg]] | 16BPP：从 Taylor/Padé 到 Nvidia Cg Minimax + Estrin 的 asin 近似优化历程 |
+| [[sources/jonolick-ediz-critique]] | Jon Olick：批判 EDIZ 简单上采样算法 |
+| [[sources/jonolick-laplacian-error-diffusion]] | Jon Olick：介绍 Laplacian 结构感知误差扩散 |
+| [[sources/jonolick-sift-library]] | Jon Olick：jo_sift.h 单文件 SIFT 库 |
 
 ## 元（wiki/meta/）
 
