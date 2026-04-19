@@ -737,3 +737,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-56 Worker FJ (sebaslab.com ×5)
 
 处理 Sebastiano Mandalà 5 篇 Svelto.ECS 文章：ECS 抽象层与模块封装、Svelto 3.3 Filters API、Survival mini example 重写、Svelto-on-DOTS 3.4 更新、ComputeSharp 实现 ECS-on-GPU。新增 1 人物页（sebastiano-mandala）、5 概念页（svelto-ecs / ecs-abstraction-layers / svelto-filters-api / svelto-on-dots / ecs-on-gpu-computesharp）、5 source 摘要。无跳过。Patch 到 dots-ecs-programming-patterns 与 dots-enableable-components 加入 Svelto 对照链接。
+
+## [2026-04-19] ingest | Wave-57 Worker FK (danielilett.com Snapshot Shaders Pro effects + Toon Shaders Pro top pages ×5)
+
+处理 5 篇 Daniel Ilett 产品文档收尾：Snapshot Shaders Pro 的 underwater / vortex / world-scan 三款 effect 参考文档（ingest），Toon Shaders Pro URP 顶层营销页与 install guide（skip，沿用 w47 对顶层/install 文档一贯处理）。新增 1 概念页 vortex-distortion、3 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、underwater-post-effect、world-scan-shader-effect、chromatic-aberration-post 四个既有概念页。

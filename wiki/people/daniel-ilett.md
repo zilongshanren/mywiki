@@ -61,6 +61,7 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[hull-domain-tessellation-urp]]
 - [[noperspective-affine-texture]]
 - [[toon-outline-post-process-modes]]
+- [[vortex-distortion]]
 
 ## Sources
 - [[sources/danielilett-cel-shading-part-1]]
@@ -131,3 +132,6 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-shader-code-transparency]]
 - [[sources/danielilett-shader-code-depth-buffer]]
 - [[sources/danielilett-shader-code-vertex-tessellation]]
+- [[sources/danielilett-snapshot-pro-underwater]]
+- [[sources/danielilett-snapshot-pro-vortex]]
+- [[sources/danielilett-snapshot-pro-world-scan]]

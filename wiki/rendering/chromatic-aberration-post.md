@@ -48,7 +48,6 @@ col.b = tex2D(screen, uv + dir * amt * 0.0).b;
 RGB 偏移常和 **scanline / interlace / vignette / bloom / grain** 一起被塞进一个「故障后处理包」里，彼此正交、可以 toggle 独立的 keyword：参见 [[crt-shader-effects]] 对整组 CRT 特效的拆解。它们都有一个共同的数学形式——**在已合成的 framebuffer 上做非均匀 UV 变形 + 通道级别的采样**，这也是所有 post-process 的共性。
 
 ## 相关
-
 - [[crt-shader-effects]] — 同属「屏幕设备模拟」家族
 - [[urp-volume-post-processing]]
 - [[thin-lens-model]] — 真实光学色差的来源
@@ -56,6 +55,7 @@ RGB 偏移常和 **scanline / interlace / vignette / bloom / grain** 一起被�
 - [[harry-alisavakis]] —— *My take on shaders* 第四篇用对角线均匀偏移做的 R/G/B 三通道色差版本
 - [[scatter-bokeh-dof]] — scatter 路线允许做**物理正确**的色差：把不同波长烘成不同大小的 bokeh 光斑而不是 RGB 偏移
 - [[underwater-post-effect]] —— caustics 的 Color Separation 是色差思路的 caustics 变体
+- [[vortex-distortion]] —— 与色差叠加常见（漩涡越强、色差越强）
 
 ## Sources
 

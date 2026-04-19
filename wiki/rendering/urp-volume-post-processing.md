@@ -30,7 +30,6 @@ Unity 从 **Universal Render Pipeline**（URP，前身 LWRP）开始，抛弃了
 直到 Cyan 写这篇文章时（URP v8），**Ambient Occlusion** 还没进 URP Volume 系统；此外 PPv2 上的 **Motion Blur** 和 **Temporal Anti-aliasing** 在 URP 初期也不全支持。想要自定义后处理效果，当时 Volume 系统**完全不开放扩展点**——只能通过 [[blit-render-feature|自定义 Blit Render Feature]] 绕路实现（这条限制后来 Unity 2022 推出 Fullscreen Graph / Fullscreen Pass Renderer Feature 才缓解）。这是 URP 早期和 HDRP 在架构成熟度上的典型差异。
 
 ## 相关
-
 - [[blit-render-feature]] —— 在 Volume 系统无法扩展时的补救方案
 - [[crt-shader-effects]] —— 一个典型的通过 Blit feature 叠加 Volume 效果的案例
 - [[scriptable-render-pipeline]]
@@ -40,9 +39,9 @@ Unity 从 **Universal Render Pipeline**（URP，前身 LWRP）开始，抛弃了
 - [[volume-mask-layers]] —— Snapshot 2 的 layer/tag/queue 多维 mask 机制
 - [[volume-component-scripting]] —— 三管线 Volume 参数的 C# 运行时修改 API
 - [[underwater-post-effect]] —— Volume override 的水下扭曲 + caustics 组合
+- [[vortex-distortion]] —— Snapshot Pro 的极坐标 UV 漩涡扭曲 Volume override
 
 ## Sources
-
 - [[sources/cyan-urp-post-processing]]
 - [[sources/cyan-retro-crt-shader]]
 - [[sources/danielilett-blur-shaders-pro-scripting]]
@@ -51,3 +50,6 @@ Unity 从 **Universal Render Pipeline**（URP，前身 LWRP）开始，抛弃了
 - [[sources/danielilett-snapshot2-outline]]
 - [[sources/danielilett-snapshot2-underwater]]
 - [[sources/danielilett-snapshot-pro-scripting]]
+- [[sources/danielilett-snapshot-pro-underwater]]
+- [[sources/danielilett-snapshot-pro-vortex]]
+- [[sources/danielilett-snapshot-pro-world-scan]]

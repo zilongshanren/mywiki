@@ -618,6 +618,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[planet-terrain-dem-pipeline]] | Outerra 行星 DEM 管线：SRTM/NasaDEM + fractal resample 实战 |
 | [[opengl-draw-call-batching-sweet-spot]] | instanced draw 的 5k-20k 三角形跨厂甜点（Outerra 实测） |
 | [[fp64-sincos-minimax]] | GLSL fp64 sin/cos 的 Remez minimax 近似（Outerra） |
+| [[vortex-distortion]] | 极坐标下半径相关旋转的 UV 扭曲后处理（漩涡） |
 
 ## 经典案例（wiki/examples/）
 
@@ -1370,6 +1371,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/sebaslab-survival-mini-example]] | Mandalà：Svelto.ECS Survival 示例重写，六层 asmdef + filter 取代 event |
 | [[sources/sebaslab-svelto-on-dots-update]] | Mandalà：Svelto.ECS 3.4 的 DOTS 1.0 集成，废弃 ECB 改用 batched ops |
 | [[sources/sebaslab-ecs-on-gpu-computesharp]] | Mandalà：用 ComputeSharp 把 Svelto ECS 的 component 存到 GPU compute buffer |
+| [[sources/danielilett-snapshot-pro-underwater]] | Ilett：Snapshot Pro Underwater——bump + fog 简化版水下后处理 |
+| [[sources/danielilett-snapshot-pro-vortex]] | Ilett：Snapshot Pro Vortex——Strength/Center/Offset 三参数极坐标漩涡 |
+| [[sources/danielilett-snapshot-pro-world-scan]] | Ilett：Snapshot Pro World Scan——世界空间扫描条带 + ramp 纹理颜色过渡 |
 
 ## 元（wiki/meta/）
 

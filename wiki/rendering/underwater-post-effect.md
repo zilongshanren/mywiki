@@ -51,7 +51,6 @@ Caustics 是水面弯曲把阳光聚焦/发散产生的亮斑，在真实世界�
 把这个 effect 挂在 Local Volume + 水体 Collider 上，配合 Volume 的 **Blend Distance** 参数，玩家穿越水面时就能自动平滑过渡——**不需要一行额外代码**。这是 Volume 系统架构选择"基于体积而非基于事件"带来的直接好处。
 
 ## 相关
-
 - [[urp-volume-post-processing]] —— 所依附的 Volume 系统
 - [[chromatic-aberration-post]] —— Color Separation 的同源思路
 - [[triplanar-projection]] —— Triplanar caustics 的采样方式
@@ -59,7 +58,8 @@ Caustics 是水面弯曲把阳光聚焦/发散产生的亮斑，在真实世界�
 - [[animated-parallax-cloth-fold]] —— Flow map 驱动位移的另一应用
 - [[refractive-glass-shader]] —— 真正的折射，与 UV 扭曲的差异
 - [[fog-shader]] —— 水的吸收需要搭配的效果
+- [[vortex-distortion]] —— 另一种 UV 扭曲后处理（极坐标驱动），可与水下扭曲叠加
 
 ## Sources
-
 - [[sources/danielilett-snapshot2-underwater]]
+- [[sources/danielilett-snapshot-pro-underwater]] —— Snapshot Shaders Pro 的简化版 Underwater（bump + fog，无 caustics / flow map / triplanar）

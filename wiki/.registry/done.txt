@@ -11432,3 +11432,8 @@ raw/articles/sebaslab.com/2022-04-12_svelto-ecs-3-3-and-the-new-filters-api-seba
 raw/articles/sebaslab.com/2022-12-31_the-new-svelto-ecs-survival-mini-example-seba-s-lab.md
 raw/articles/sebaslab.com/2023-03-13_svelto-ecs-3-4-svelto-on-dots-ecs-update-seba-s-lab.md
 raw/articles/sebaslab.com/2023-03-31_svelto-ecs-3-4-internals-how-to-run-ecs-systems-on-the-gpu-s.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-underwater.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-vortex.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-world-scan.md
+raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-installation-guide.md
+raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp.md

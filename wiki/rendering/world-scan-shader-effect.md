@@ -66,5 +66,5 @@ terrainMaterial.SetFloat("_ScanDistance", scanDistance);
 - [[shader-graph-lighting-primer]]
 
 ## Sources
-
 - [[sources/danielilett-shader-graph-terrains]]
+- [[sources/danielilett-snapshot-pro-world-scan]] —— Snapshot Shaders Pro 的 Volume override 版 World Scan，含 ramp 纹理驱动的条带颜色过渡
