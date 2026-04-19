@@ -877,3 +877,7 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-19] ingest | Wave-68 Worker GS (halisavakis 早期 portfolio ×3)
 
 处理 3 篇 halisavakis.com 早期 portfolio 贴：animated-light-cookies（2020）—— Unity Custom Render Texture 做动画光斑，内容极薄仅做 source 摘要；pac-tac-atac（2018 GGJ VR 游戏）与 paul-paul（2019 VR 叙事体验）均为纯作品宣传，无技术内容，skip。新增 1 source 摘要，补 1 条 harry-alisavakis Sources 链接。
+
+## [2026-04-14] ingest | Wave-68 Worker gr (jonolick.com DXT 系列 + WAV ×4)
+
+处理 Jon Olick 4 篇：WAV 单函数写入器（2012）、DXT 压缩 Part 1 codebooks/sliding-windows（2013-02）、Part 3 transposes（2013-07，正文抓取不全）、Part 4 entropy（2013-08）。新增 2 概念页（dxt-entropy-reduction, dxt-codebooks-sliding-window）、4 source 摘要。补 jon-olick 人物页 sources 计数 3→7 及相关链接。Part 4 是系列干货：selection bits 占 LZMA 后 75% 体积，用 rate-distortion 降熵把 2.28 bpp 压到 1.51 bpp / MSE 0.64，比 crunch 质量高 4.3×、速度快 16×。

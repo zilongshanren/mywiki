@@ -719,6 +719,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[streaming-staging-texture-upload]] | Nabla 的固定大小 staging + 流式格式转换纹理上传 |
 | [[frames-in-flight]] | CPU 领先 GPU 录制的机制、timeline semaphore、swapchain 上限 |
 | [[circular-separable-dof]] | Kleber Garcia 的复数可分离圆盘 bokeh gather |
+| [[dxt-entropy-reduction]] | DXT selection bits 熵压缩：1.51 bpp 的 Firefall 方案 |
+| [[dxt-codebooks-sliding-window]] | Zeng 码表与滑窗码表在 DXT 二次压缩中的定位 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1604,6 +1606,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/erfan-ahmadi-frames-in-flight]] | Ahmadi：Frames In Flight 与 timeline semaphore |
 | [[sources/erfan-ahmadi-bokeh-dof-project]] | Ahmadi：The Forge 上三种 Bokeh DoF 实现 |
 | [[sources/halisavakis-animated-light-cookies]] | Alisavakis：Custom Render Texture 驱动的动画 light cookie 小实验 |
+| [[sources/jonolick-wav-one-function]] | Olick：单函数 WAV 写入器（2012 短贴） |
+| [[sources/jonolick-dxt-codebooks-sliding-windows]] | Olick：DXT 压缩之码表与滑窗（Part 1） |
+| [[sources/jonolick-dxt-part3-transposes]] | Olick：DXT Part 3 transpose（正文不完整） |
+| [[sources/jonolick-dxt-part4-entropy]] | Olick：DXT Part 4 熵降维到 1.51 bpp |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

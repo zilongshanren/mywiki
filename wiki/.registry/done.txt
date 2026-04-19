@@ -11597,3 +11597,7 @@ raw/articles/metalbyexample.com/2015-01-11_video-an-introduction-to-3d-graphics-
 raw/articles/halisavakis.com/2020-06-20_animated-light-cookies.md
 raw/articles/halisavakis.com/2018-02-12_pac-tac-atac-global-game-jam-athens-2018.md
 raw/articles/halisavakis.com/2019-01-08_paul-paul.md
+raw/articles/jonolick.com/2012-03-12_wav-file-writer-in-one-function.md
+raw/articles/jonolick.com/2013-02-07_dxt-compression-codebooks-and-sliding-windows.md
+raw/articles/jonolick.com/2013-07-16_dxt-compression-part-3-transposes.md
+raw/articles/jonolick.com/2013-08-16_dxt-compression-part-4-entropy.md
