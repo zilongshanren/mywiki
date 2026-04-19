@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w43-dy",
+  "agent_note": "cloudwu 2025-10~11 五篇博客。4 篇 ingest（Deep Future 复盘 / EU5 经济 / 主线程任务注入 / EU5 游玩笔记），1 篇 skip（2025-11-22 资源包格式文 = 2010 年老文重发，已有 cloudwu-resource-pack-format 覆盖）。新增 3 概念页 + 4 源摘要，无新人物页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-10-12_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-deepfuture-postmortem",
+      "title": "Deep Future 开发复盘"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-11-05_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-eu5-economy",
+      "title": "欧陆风云 5 的经济系统"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-11-22_yun-feng-de-blog-2.md",
+      "status": "skipped_duplicate",
+      "reason": "内容与 2010 年文《网易资源包格式与下一代设想》高度重复（仅去掉了新设计部分），已由 sources/cloudwu-resource-pack-format 完整覆盖。作为 blog 分类页/旧文重发，非新信息。"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-11-22_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-main-thread-task-injection",
+      "title": "嵌入主线程消息循环的任务调度器"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-11-28_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-eu5-gameplay-notes",
+      "title": "欧陆风云 5 游玩笔记"
+    }
+  ],
+  "concepts_created": [
+    "indie-game-dev-rhythm",
+    "paradox-grand-strategy-economy",
+    "main-thread-task-injection"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-deepfuture-postmortem",
+    "cloudwu-eu5-economy",
+    "cloudwu-eu5-gameplay-notes",
+    "cloudwu-main-thread-task-injection"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cloudwu-deepfuture-postmortem]]\n- [[sources/cloudwu-eu5-economy]]\n- [[sources/cloudwu-eu5-gameplay-notes]]\n- [[sources/cloudwu-main-thread-task-injection]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[indie-game-dev-rhythm]]\n- [[paradox-grand-strategy-economy]]\n- [[main-thread-task-injection]]"
+    },
+    {
+      "file": "wiki/game-engines/soluna-2d-engine.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[indie-game-dev-rhythm]]\n- [[main-thread-task-injection]]"
+    },
+    {
+      "file": "wiki/game-engines/soluna-2d-engine.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cloudwu-deepfuture-postmortem]]\n- [[sources/cloudwu-main-thread-task-injection]]"
+    },
+    {
+      "file": "wiki/game-engines/ltask-scheduler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[main-thread-task-injection]]"
+    },
+    {
+      "file": "wiki/game-engines/ltask-scheduler.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cloudwu-main-thread-task-injection]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[indie-game-dev-rhythm]] | 云风的独立开发方法论：情绪、拆分、重构、代码量 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[paradox-grand-strategy-economy]] | EU5 经济系统：人口/货币/商品三要素与市场中介 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[main-thread-task-injection]] | 给任务调度器开洞让主线程事件回调运行指定 coroutine |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-deepfuture-postmortem]] | 云风：Deep Future 桌游数字化 7 周独立开发复盘 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-eu5-economy]] | 云风：EU5 经济系统（人口/货币/商品/市场/贸易） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-eu5-gameplay-notes]] | 云风：EU5 游玩笔记（开荒 / 食物 / 税基） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-main-thread-task-injection]] | 云风：主线程事件循环与 ltask 调度器的融合 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-43 Worker P8-dy (cloudwu 2025-10~11 ×5)\n\n处理 cloudwu 博客 2025-10 至 2025-11 共 5 篇。Ingest 4 篇（Deep Future 7 周独立开发复盘、EU5 经济系统设计分析、主线程任务注入的 ltask 调度器扩展、EU5 游玩笔记）。跳过 1 篇（2025-11-22 资源包格式文是 2010 年老文重发，已有 cloudwu-resource-pack-format 覆盖，非新内容）。新增 3 概念页：indie-game-dev-rhythm（game-development）、paradox-grand-strategy-economy（game-development）、main-thread-task-injection（computer-systems）；新增 4 源摘要；对 cloudwu / soluna-2d-engine / ltask-scheduler 三页追加相关链接与源引用。"
+}

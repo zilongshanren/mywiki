@@ -157,6 +157,7 @@ CAQA + CSAPP 的底层视角。
 | [[sign-extend-without-shift]] | 不用移位的符号/零扩展：`val - (val & sign_bit) * 2` |
 | [[oodle-compression-suite]] | Oodle 三条产品线拆解：Data / Network / Texture，以及 PS5 尺寸缩水的真实原因 |
 | [[mysql-charset-migration]] | MySQL 跨十年升级时 GBK → UTF-8 迁移；`--default-character-set=binary` 与混杂编码 dump 处理 |
+| [[main-thread-task-injection]] | 给任务调度器开洞让主线程事件回调运行指定 coroutine |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -533,6 +534,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[save-load-driven-data-design]] | 以持久化驱动数据模型设计：存档是设计压力测试 |
 | [[determinism-vs-smart-ai-gameplay]] | 微操游戏里确定性规则胜过智能 AI：云风从工厂物流与异星工厂 2.0 学到的 |
 | [[single-hub-logistics-model]] | 异星工厂太空平台的唯一枢纽模型：上帝视角 + 背包式中转 |
+| [[indie-game-dev-rhythm]] | 云风的独立开发方法论：情绪、拆分、重构、代码量 |
+| [[paradox-grand-strategy-economy]] | EU5 经济系统：人口/货币/商品三要素与市场中介 |
 
 ## 人物（wiki/people/）
 
@@ -582,6 +585,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[alexander-sannikov]] | Grinding Gear Games 图形程序员，Radiance Cascades 算法提出者 |
 | [[oakleaff]] | Oakleaff，GameMaker 业余 3D/shader 开发者，volumetric + cascaded shadow 教程 |
 | [[mark-lundin]] | PlayCanvas 团队，@playcanvas/react 作者 |
+| [[jendrik-illner]] | Jendrik Illner，Graphics Programming Weekly 主理人 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1025,6 +1029,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/playcanvas-supersplat-2-0-publish]] | Eastcott：SuperSplat 2.0 发布 + Timeline + .ssproj |
 | [[sources/playcanvas-supersplat-2-2-video]] | Eastcott：SuperSplat 2.2 视频渲染 + embed + 社区 |
 | [[sources/playcanvas-supersplat-viewer-oss]] | Eastcott：SuperSplat Viewer 转 MIT 开源 |
+| [[sources/jendrikillner-recommended-books]] | Illner：图形程序员推荐书单（GPU Zen 3/RTR/PBR/FGED/GEA 等） |
+| [[sources/danielilett-hologram-pro-noise]] | Unity Hologram Pro：Noise 变体（时间×空间×强度×色彩四参数） |
+| [[sources/danielilett-hologram-pro-scanline]] | Unity Hologram Pro：Scanline 变体（贴图调制 alpha，Screen/World 两态） |
+| [[sources/danielilett-hologram-pro-uber]] | Unity Hologram Pro：Uber 变体（Scanline+Glitch+Noise 合一） |
+| [[sources/danielilett-retro-godot-crt-mesh]] | Godot Retro Pro：CRT Mesh 变体 |
+| [[sources/danielilett-retro-godot-crt-post-process]] | Godot Retro Pro：CRT 全屏后处理 + YIQ 磁带色损 |
+| [[sources/cloudwu-deepfuture-postmortem]] | 云风：Deep Future 桌游数字化 7 周独立开发复盘 |
+| [[sources/cloudwu-eu5-economy]] | 云风：EU5 经济系统（人口/货币/商品/市场/贸易） |
+| [[sources/cloudwu-eu5-gameplay-notes]] | 云风：EU5 游玩笔记（开荒/食物/税基） |
+| [[sources/cloudwu-main-thread-task-injection]] | 云风：主线程事件循环与 ltask 调度器的融合 |
 
 ## 元（wiki/meta/）
 

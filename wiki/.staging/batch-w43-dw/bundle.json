@@ -1,0 +1,25 @@
+{
+  "batch_id": "batch-w43-dw",
+  "agent_note": "jendrikillner.com ×10: 8 weekly issues skipped per precedent; GTC-2025 promo post skipped; recommended-books ingested as curated reading list.",
+  "sources_processed": [
+    { "path": "raw/articles/jendrikillner.com/2024-12-21_graphics-programming-weekly-issue-371-december-21st-2024.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2024-12-29_graphics-programming-weekly-issue-372-december-29-2024.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-01-01_gtc-2025.md", "status": "skipped_offtopic", "reason": "Promo post for NVIDIA GTC conference with session catalog links and hardware giveaway; no substantive technical content." },
+    { "path": "raw/articles/jendrikillner.com/2025-01-01_my-recommended-books.md", "status": "ingested", "source_slug": "jendrikillner-recommended-books", "title": "My recommended Books" },
+    { "path": "raw/articles/jendrikillner.com/2025-01-05_graphics-programming-weekly-issue-373-january-5th-2025.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-01-12_graphics-programming-weekly-issue-374-january-12th-2025.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-01-19_graphics-programming-weekly-issue-375.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-01-26_graphics-programming-weekly-issue-376.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-02-02_graphics-programming-weekly-issue-377.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." },
+    { "path": "raw/articles/jendrikillner.com/2025-02-09_graphics-programming-weekly-issue-378.md", "status": "skipped_offtopic", "reason": "Weekly link digest per established precedent." }
+  ],
+  "concepts_created": [],
+  "people_created": ["jendrik-illner"],
+  "source_summaries_created": ["jendrikillner-recommended-books"],
+  "existing_page_patches": [],
+  "index_additions": [
+    { "category_header": "## 人物（wiki/people/）", "row": "| [[jendrik-illner]] | Jendrik Illner，Graphics Programming Weekly 主理人 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/jendrikillner-recommended-books]] | Illner：图形程序员推荐书单（GPU Zen 3/RTR/PBR/FGED/GEA 等） |" }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-43 Worker DW (jendrikillner.com ×10)\n\n处理 10 篇 jendrikillner.com 文章。Weekly 371-378 按既定惯例跳过（链接摘要），GTC-2025 跳过（会议宣传 + 硬件抽奖）；Recommended Books 作为图形程序员推荐书单入库。新增 1 人物页（jendrik-illner）、1 source 摘要。"
+}

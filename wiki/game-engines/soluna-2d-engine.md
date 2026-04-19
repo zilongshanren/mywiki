@@ -36,7 +36,11 @@ Soluna 是 [[cloudwu]] 于 2025 年 2 月在 GitHub 上起的新坑（`cloudwu/s
 - [[sprite-batch-instance-draw]]
 - [[draw-procedural-gpu]]
 - [[batching]]
+- [[indie-game-dev-rhythm]]
+- [[main-thread-task-injection]]
 
 ## Sources
 
 - [[sources/cloudwu-soluna-2d-pipeline]]
+- [[sources/cloudwu-deepfuture-postmortem]]
+- [[sources/cloudwu-main-thread-task-injection]]

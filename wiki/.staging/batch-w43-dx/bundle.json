@@ -1,0 +1,91 @@
+{
+  "batch_id": "batch-w43-dx",
+  "agent_note": "5 Daniel Ilett Pro 文档：3 篇 Unity Hologram Pro 变体（noise/scanline/uber）对齐已有 godot-hologram-shader-effects 主题页，纯 source-only；2 篇 Godot Retro Pro CRT（mesh + post-process）与已有 crt-shader-effects + danielilett-image-effects-retro-crt 技术点重复（桶形畸变/子像素/扫描线/VHS tracking/YIQ 色损），未达新建概念页门槛，也作 source-only + 轻量 patch 指向。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-noise.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-noise",
+      "title": "Hologram Shaders Pro - Noise"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-scanline.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-scanline",
+      "title": "Hologram Shaders Pro - Scanline"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-uber.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-uber",
+      "title": "Hologram Shaders Pro - Uber"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-godot-crt-mesh.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-godot-crt-mesh",
+      "title": "Retro Shaders Pro for Godot - CRT (Mesh)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-godot-crt-post-process.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-godot-crt-post-process",
+      "title": "Retro Shaders Pro for Godot - CRT (Post Process)"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-hologram-pro-noise",
+    "danielilett-hologram-pro-scanline",
+    "danielilett-hologram-pro-uber",
+    "danielilett-retro-godot-crt-mesh",
+    "danielilett-retro-godot-crt-post-process"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-noise]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-scanline]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-uber]]"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-retro-godot-crt-mesh]] —— Daniel Ilett *Retro Shaders Pro for Godot* CRT Mesh 版，把同款 CRT/VHS 滤镜贴到普通网格做游戏内 CCTV 屏\n- [[sources/danielilett-retro-godot-crt-post-process]] —— 全屏版 CRT + VHS，独有 *Scale In Screen Space / Reference Resolution* 做跨分辨率视觉一致性，*Tracking Color Damage* 走 YIQ 色空间建模 NTSC 磁带色损"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-noise]] | Unity Hologram Pro：Noise 变体（时间×空间×强度×色彩四参数） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-scanline]] | Unity Hologram Pro：Scanline 变体（贴图调制 alpha，Screen/World 两态） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-uber]] | Unity Hologram Pro：Uber 变体（Scanline+Glitch+Noise 合一，uber vs variant 取舍） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-godot-crt-mesh]] | Godot Retro Pro：CRT Mesh 变体，CRT/VHS 滤镜贴网格做 CCTV/电视道具 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-godot-crt-post-process]] | Godot Retro Pro：CRT 全屏后处理，Scale In Screen Space + YIQ 磁带色损 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-43 Worker DX (danielilett Pro ×5)\n\n处理 5 篇 Daniel Ilett Pro 产品文档。3 篇 Unity *Hologram Shaders Pro* 变体（Noise/Scanline/Uber）对齐已有 [[godot-hologram-shader-effects]]，纯 source-only + 源链接 patch。2 篇 Godot *Retro Shaders Pro* CRT 变体（Mesh / Post-Process）与已有 [[crt-shader-effects]] + [[sources/danielilett-image-effects-retro-crt]] 技术点重复（桶形畸变 / 子像素 / 扫描线 / VHS tracking / YIQ 色损），未达新概念门槛，作 source-only + 向 [[crt-shader-effects]] 的「相关」段追加两条带说明的源链接（Scale In Screen Space 的跨分辨率一致性、Tracking Color Damage 的 YIQ 色空间建模值得突出）。新增 0 概念、0 人物、5 source 摘要。"
+}

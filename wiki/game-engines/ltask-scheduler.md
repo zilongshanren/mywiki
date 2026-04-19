@@ -50,7 +50,9 @@ ltask 是 [[ant-engine|Ant Engine]] 的并发基础设施，负责把 m 个任�
 - [[soft-real-time]]
 - [[latency-vs-throughput]]
 - [[lua-design-philosophy]]
+- [[main-thread-task-injection]]
 
 ## Sources
 
 - [[sources/cloudwu-ltask-rewrite]]
+- [[sources/cloudwu-main-thread-task-injection]]

@@ -522,3 +522,7 @@ playcanvas-engine-2-breaking-changes
 playcanvas-react-declarative
 supersplat-publish-platform
 mark-lundin
+jendrik-illner
+indie-game-dev-rhythm
+paradox-grand-strategy-economy
+main-thread-task-injection

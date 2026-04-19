@@ -55,6 +55,8 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 - [[chromatic-aberration-post]] —— 独立通道 UV 偏移，Teleglitch / Deadlight 的故障艺术后处理
 - [[sources/alanzucconi-flixel-retro-crt]] —— Alan Zucconi 2012 年的 Flixel/AS3 版本，CPU `BitmapData.copyChannel` + 矩阵微缩放在 Flash 时代实现的 RGB 通道错位
 - [[color-quantization-retro]] —— NES/SNES/GB 色阶量化与像素化下采样
+- [[sources/danielilett-retro-godot-crt-mesh]] —— Daniel Ilett *Retro Shaders Pro for Godot* CRT Mesh 版，把同款 CRT/VHS 滤镜贴到普通网格做游戏内 CCTV 屏
+- [[sources/danielilett-retro-godot-crt-post-process]] —— 全屏版 CRT + VHS，独有 *Scale In Screen Space / Reference Resolution* 做跨分辨率视觉一致性，*Tracking Color Damage* 走 YIQ 色空间建模 NTSC 磁带色损
 
 ## Sources
 

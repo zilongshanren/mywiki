@@ -573,3 +573,15 @@ Evan Todd 5 篇：3 技术 ingest（CI ASG 优化、identity/naming、100k 测�
 ## [2026-04-19] ingest | Wave-42 Worker DV (blog.playcanvas.com 2024-08 ~ 2025-04 ×5)
 
 5 篇 PlayCanvas 博客全部 ingested。新增 3 概念（[[playcanvas-engine-2-breaking-changes]]、[[playcanvas-react-declarative]]、[[supersplat-publish-platform]]）+ 1 人物（[[mark-lundin]]）+ 5 source。patch 到 [[will-eastcott]]、[[supersplat-pwa]]、[[gaussian-splatting-web]]、[[playcanvas-webgpu-editor]]。三主线：Engine 2.0 major bump 清 cruft 给 WebGPU 腾路；PlayCanvas React JSX 声明式 3D；SuperSplat 2025 三版扩张为完整发布平台。
+
+## [2026-04-19] ingest | Wave-43 Worker DW (jendrikillner 371-378 + 2 special ×10)
+
+10 篇 jendrikillner：9 skip（weekly 371-378 link roundup + gtc-2025 NVIDIA 会议宣传）+ 1 ingest（my-recommended-books，图形程序员推荐书单）。新增 [[jendrik-illner]] 人物页 + [[sources/jendrikillner-recommended-books]]。
+
+## [2026-04-19] ingest | Wave-43 Worker DX (danielilett Hologram Pro noise/scanline/uber + Retro CRT ×5)
+
+5 篇全部 ingested 作 source 摘要。3 Unity Hologram Pro 变体对齐已有 [[godot-hologram-shader-effects]]，patch 补 source 链接。2 Godot Retro Pro CRT 与已有 [[crt-shader-effects]] 技术重合（桶形畸变/RGB 子像素/扫描线/VHS tracking/YIQ 色损），patch 补引用，Post-Process 版的 *Scale In Screen Space* + YIQ 建模 NTSC 磁带色损已在 patch content 点出。
+
+## [2026-04-19] ingest | Wave-43 Worker DY (cloudwu 2025-10~11 ×5)
+
+5 篇云风 2025-10~11：4 ingest（[[indie-game-dev-rhythm]] Deep Future 独立开发复盘、[[paradox-grand-strategy-economy]] EU5 经济系统双源、[[main-thread-task-injection]] 主线程事件循环与 ltask 融合）+ 1 skip（资源包老文重发）。3 新概念 + 4 source + patch cloudwu / soluna-2d-engine / ltask-scheduler。

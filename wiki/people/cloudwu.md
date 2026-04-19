@@ -68,6 +68,9 @@ sources: 9
 - [[lua-class-pattern]]
 - [[xlsx-text-versioning]]
 - [[mysql-charset-migration]]
+- [[indie-game-dev-rhythm]]
+- [[paradox-grand-strategy-economy]]
+- [[main-thread-task-injection]]
 
 ## Sources
 
@@ -101,3 +104,7 @@ sources: 9
 - [[sources/cloudwu-lua-class-pattern]]
 - [[sources/cloudwu-xlsx-version-control]]
 - [[sources/cloudwu-mysql-gbk-utf8-migration]]
+- [[sources/cloudwu-deepfuture-postmortem]]
+- [[sources/cloudwu-eu5-economy]]
+- [[sources/cloudwu-eu5-gameplay-notes]]
+- [[sources/cloudwu-main-thread-task-injection]]
