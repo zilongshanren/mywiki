@@ -506,6 +506,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[stochastic-texture-sampling]] | 每张贴图 3 次随机偏移采样打散 tiling，Heitz-Neyret 思想的轻量实现 |
 | [[sog-compression-format]] | SOGS → SOG：3DGS 的 WebP 级压缩，属性图 + PLAS 排序 + WebP 编码，~95% 缩减 |
 | [[splat-transform-cli]] | SplatTransform CLI：PLY/SPLAT/KSPLAT/SOG/CSV 互转 + 空间变换 + 多文件合并 + SH 瘦身 |
+| [[voronoi-lava-shader]] | Voronoi 到边距离驱动的双层 PBR 混合 shader |
+| [[volume-mask-layers]] | URP Volume 后处理的多维 layer/tag/queue mask 机制 |
+| [[underwater-post-effect]] | 屏幕空间水下后处理：flow map UV 扭曲 + triplanar/light-aligned caustics |
+| [[volume-component-scripting]] | Unity 三管线 Volume 参数 C# 运行时修改 API 对比 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1086,6 +1090,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/playcanvas-voxelo-spotlight]] | Eastcott：Voxelo UG3D——短视频 → AI 重建 → 3DGS 数字孪生的电商 pipeline |
 | [[sources/playcanvas-supersplat-studio]] | Eastcott：SuperSplat Studio 发布——annotations + post effects + tonemapping |
 | [[sources/playcanvas-supersplat-walk-lod]] | Eastcott：SuperSplat Walk Mode（voxel collision）+ Streamed LOD（SOG 切片）+ Easy Upload |
+| [[sources/danielilett-toolbox-urp-subgraph-library]] | Ilett：Shader Toolbox URP subgraph 节点库（Better Voronoi / Apply Normal Map 等） |
+| [[sources/danielilett-toolbox-urp-voronoi-lava]] | Ilett：Voronoi Lava 双层 PBR shader 参数手册 |
+| [[sources/danielilett-snapshot2-glitch]] | Ilett：Snapshot 2 Glitch——Offset Texture / Slice Band / Block Artifact 三段 |
+| [[sources/danielilett-snapshot2-masking-layers]] | Ilett：Snapshot 2 Masking Layers——Local vs Global mask 机制 |
+| [[sources/danielilett-snapshot2-outline]] | Ilett：Snapshot 2 Outline——屏幕空间 DepthNormalsColor 三通道描边 |
+| [[sources/danielilett-snapshot2-underwater]] | Ilett：Snapshot 2 Underwater——flow map + triplanar/light-aligned caustics |
+| [[sources/danielilett-snapshot-pro-scripting]] | Ilett：Snapshot Pro Scripting Guide——URP / HDRP / Built-in Volume 三管线 API |
 
 ## 元（wiki/meta/）
 

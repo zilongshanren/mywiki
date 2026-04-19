@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 28
+sources: 35
 ---
 
 # Daniel Ilett
@@ -52,6 +52,10 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[refractive-glass-shader]]
 - [[mesh-triangle-explosion]]
 - [[stochastic-texture-sampling]]
+- [[voronoi-lava-shader]]
+- [[volume-mask-layers]]
+- [[underwater-post-effect]]
+- [[volume-component-scripting]]
 
 ## Sources
 
@@ -108,3 +112,10 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-toolbox-urp-glitter]]
 - [[sources/danielilett-toolbox-urp-mesh-explosion]]
 - [[sources/danielilett-toolbox-urp-stochastic-lit]]
+- [[sources/danielilett-toolbox-urp-subgraph-library]]
+- [[sources/danielilett-toolbox-urp-voronoi-lava]]
+- [[sources/danielilett-snapshot2-glitch]]
+- [[sources/danielilett-snapshot2-masking-layers]]
+- [[sources/danielilett-snapshot2-outline]]
+- [[sources/danielilett-snapshot2-underwater]]
+- [[sources/danielilett-snapshot-pro-scripting]]

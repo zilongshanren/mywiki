@@ -55,6 +55,7 @@ RGB 偏移常和 **scanline / interlace / vignette / bloom / grain** 一起被�
 - [[unity-image-effect-basics]] —— Alisavakis 2017 教程的实现骨架
 - [[harry-alisavakis]] —— *My take on shaders* 第四篇用对角线均匀偏移做的 R/G/B 三通道色差版本
 - [[scatter-bokeh-dof]] — scatter 路线允许做**物理正确**的色差：把不同波长烘成不同大小的 bokeh 光斑而不是 RGB 偏移
+- [[underwater-post-effect]] —— caustics 的 Color Separation 是色差思路的 caustics 变体
 
 ## Sources
 

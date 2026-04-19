@@ -621,3 +621,11 @@ batch-w46-ef：10 篇 jendrikillner 周报（issue 399-408）按既定先例全�
 ## [2026-04-19] ingest | Wave-46 Worker EH (playcanvas blog ×10)
 
 10 篇 blog.playcanvas.com 全部入库。新增 3 概念页（sog-compression-format, splat-transform-cli, playcanvas-esm-scripts）+ 1 人物页（kris-bamrah）+ 10 source 摘要。SOGS→SOG 的迭代史（属性图+PLAS+WebP / Morton / 单文件 `.sog` / WebGPU 压缩端）、SplatTransform CLI、Walk Mode + Streamed LOD 构成 2025 下半年到 2026 初的 3DGS 工具链主线；ESM Scripts 是 PlayCanvas Editor 路径现代化关键。
+
+## [2026-04-19] ingest | Wave-47 Worker EI (jendrikillner weekly 409-418 all skipped)
+
+batch-w47-ei：10 篇 jendrikillner 周报（issue 409-418）按既定先例全部 skipped_offtopic。
+
+## [2026-04-19] ingest | Wave-47 Worker EJ (danielilett Shader Toolbox + Snapshot Shaders 2/Pro ×10)
+
+处理 10 篇 Daniel Ilett 产品文档：Shader Toolbox for URP 的 subgraph library 和 voronoi-lava、Snapshot Shaders 2 的 glitch/masking-layers/outline/underwater 四款 volume effect，以及 Snapshot Shaders Pro 的 scripting guide。跳过 3 篇（两个顶层营销页 + Snapshot 2 install guide）。新增 4 概念页（voronoi-lava-shader、volume-mask-layers、underwater-post-effect、volume-component-scripting）+ 7 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、glitch-image-effect、cel-shader-outline、worley-voronoi-noise、sobel-edge-detection、chromatic-aberration-post 六个既有概念页。

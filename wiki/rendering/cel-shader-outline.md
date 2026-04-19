@@ -79,3 +79,4 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[sources/danielilett-cel-shading-part-4]] — Daniel Ilett 版的同一双 pass + stencil 描边，含 ShaderLab 字段（Ref/Comp/Pass/Fail/ZFail）逐条解释
 - [[sources/danielilett-cel-shading-part-5]] — Stencil ID 化修复 + lighting ramp 纹理替换硬阶
 - [[sources/lindenreid-animated-dotted-outline]] —— 动画虚线描边的 fragment shader 扩展
+- [[sources/danielilett-snapshot2-outline]] —— 屏幕空间 edge detection 版描边（DepthNormalsColor 三通道），与 inverted-hull stencil 方案的另一极

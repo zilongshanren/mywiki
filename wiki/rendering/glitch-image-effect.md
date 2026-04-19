@@ -56,7 +56,9 @@ if (frac(_GlitchEffect) < 0.33) {
 - [[shaping-functions]] —— 用单标量驱动多段行为
 - [[shader-color-interpolation]]
 - [[harry-alisavakis]]
+- [[volume-mask-layers]] —— Snapshot 2 glitch effect 可按 layer 限制作用范围
 
 ## Sources
 
 - [[sources/halisavakis-glitch-image-effect]]
+- [[sources/danielilett-snapshot2-glitch]] —— 同类 glitch 效果的三段独立子效果产品化版本（offset texture / slice band / block artifact）

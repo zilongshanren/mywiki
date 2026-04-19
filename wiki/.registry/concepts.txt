@@ -540,3 +540,7 @@ stochastic-texture-sampling
 sog-compression-format
 splat-transform-cli
 playcanvas-esm-scripts
+voronoi-lava-shader
+volume-mask-layers
+underwater-post-effect
+volume-component-scripting

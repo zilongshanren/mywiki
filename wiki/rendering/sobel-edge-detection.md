@@ -49,3 +49,4 @@ Sobel 看的是颜色变化，**会把阴影边当作物体边**来描——如�
 
 - [[sources/danielilett-image-effects-edge-detection-bloom]]
 - [[sources/vertexfragment-sobel-outline-unity]] — Steven Sell 的 Unity post-processing v2 stack 实现，深度+法线双 Sobel 合成，含 `OutlineOcclusionCamera` 和 `normal.w = 0` 两种几何排除技巧，以及 Sobel 作屏幕模糊和 height→normal 的副作用应用
+- [[sources/danielilett-snapshot2-outline]] —— 三通道（color/depth/normal）屏幕空间 edge detection 的产品化实现

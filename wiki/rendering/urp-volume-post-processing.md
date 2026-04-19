@@ -37,9 +37,17 @@ Unity 从 **Universal Render Pipeline**（URP，前身 LWRP）开始，抛弃了
 - [[custom-srp]]
 - [[chromatic-aberration-post]] —— URP 内建的色差 volume override 的底层实现
 - [[godot-hologram-shader-effects]] —— Godot 端的 PBR + Volume 叠加 glitch/fresnel 的等价实现
+- [[volume-mask-layers]] —— Snapshot 2 的 layer/tag/queue 多维 mask 机制
+- [[volume-component-scripting]] —— 三管线 Volume 参数的 C# 运行时修改 API
+- [[underwater-post-effect]] —— Volume override 的水下扭曲 + caustics 组合
 
 ## Sources
 
 - [[sources/cyan-urp-post-processing]]
 - [[sources/cyan-retro-crt-shader]]
 - [[sources/danielilett-blur-shaders-pro-scripting]]
+- [[sources/danielilett-snapshot2-glitch]]
+- [[sources/danielilett-snapshot2-masking-layers]]
+- [[sources/danielilett-snapshot2-outline]]
+- [[sources/danielilett-snapshot2-underwater]]
+- [[sources/danielilett-snapshot-pro-scripting]]
