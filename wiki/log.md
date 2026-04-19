@@ -865,3 +865,7 @@ GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream
 ## [2026-04-19] ingest | Wave-67 Worker GO (bruop.github.io ×3)
 
 Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum culling（顶点 clip-space 测试，SIMD 加速）+ more robust frustum（SAT 分离轴，ISPC 实现）。新增 1 人物、3 source、4 概念。
+
+## [2026-04-19] ingest | Wave-67 Worker P (erfan-ahmadi.github.io ×3)
+
+处理 3 篇 Erfan Ahmadi 博客（Nabla / The Forge）：纹理流式上传、Frames In Flight 讲解、Bokeh DoF 三种实现并排比较。新增 1 人物页（erfan-ahmadi）、3 概念页（streaming-staging-texture-upload, frames-in-flight, circular-separable-dof）、3 source 摘要。补丁到 gpu-fence-timeline-semaphore / gather-bokeh-dof / scatter-bokeh-dof / the-forge-renderer / buffer-renaming。

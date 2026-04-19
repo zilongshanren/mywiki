@@ -34,13 +34,14 @@ Vulkan 1.0 最初只提供二元 semaphore（signaled / unsignaled），同一�
 Jasper St. Pierre 在《How to write a renderer》里建议"把所有数据上传集中到帧首"，这个建议看似是组织方式，其实是 fence 直接驱动的：**只有把同一帧内所有写入都 pin 到一个 fence 值上，生命周期才干净**。零散地在 draw call 之间插上传，就不得不为每段数据单独追踪 fence 值，很快失控。
 
 ## 相关
-
 - [[buffer-renaming]]
 - [[gpu-hazard-tracking]]
 - [[d3d12-resource-binding]]
 - [[linear-allocator]]
 - [[draw-call]]
+- [[frames-in-flight]] —— CPU 领先 GPU 录制的上限机制
+- [[streaming-staging-texture-upload]] —— 多 submit 上传与 timeline 的耦合
 
 ## Sources
-
 - [[sources/jasper-how-to-write-a-renderer]]
+- [[sources/erfan-ahmadi-frames-in-flight]]

@@ -716,6 +716,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[split-sum-approximation]] | Karis 2014 的 IBL 镜面积分分解 |
 | [[obb-frustum-sat]] | OBB × 视锥的分离轴定理剔除，消除 false negative |
 | [[ispc-simd-culling]] | 用 ISPC / AVX2 做 SoA 剔除，10k/0.3ms |
+| [[streaming-staging-texture-upload]] | Nabla 的固定大小 staging + 流式格式转换纹理上传 |
+| [[frames-in-flight]] | CPU 领先 GPU 录制的机制、timeline semaphore、swapchain 上限 |
+| [[circular-separable-dof]] | Kleber Garcia 的复数可分离圆盘 bokeh gather |
 
 ## 经典案例（wiki/examples/）
 
@@ -866,6 +869,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[adrian-courreges]] | Adrian Courrèges，frame-analysis 写作范式奠基者；Switch AAA UE4 优化补丁作者 |
 | [[branimir-karadzic]] | Branimir Karadžić，bgfx 作者，Orthodox C++ 提出者 |
 | [[bruno-opsenica]] | Bruno Opsenica（bruop）：BGFX/DX12 渲染库作者，IBL 与 culling SIMD 实战 |
+| [[people/erfan-ahmadi]] | Erfan Ahmadi，Nabla 框架贡献者、The Forge Bokeh DoF UnitTest 作者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1596,6 +1600,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bruop-ibl-multiple-scattering]] | Bruop：BGFX 中实现 Fdez-Agüera 多次散射 IBL |
 | [[sources/bruop-frustum-culling]] | Bruop：AABB 顶点 clip-space 测试 + AVX2 手写 SIMD |
 | [[sources/bruop-more-robust-frustum-culling]] | Bruop：SAT 分离轴 + ISPC 实现，修掉 false negative |
+| [[sources/erfan-ahmadi-texture-upload-staging]] | Ahmadi：Nabla 流式 staging 纹理上传 |
+| [[sources/erfan-ahmadi-frames-in-flight]] | Ahmadi：Frames In Flight 与 timeline semaphore |
+| [[sources/erfan-ahmadi-bokeh-dof-project]] | Ahmadi：The Forge 上三种 Bokeh DoF 实现 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

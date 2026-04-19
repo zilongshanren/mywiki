@@ -39,12 +39,13 @@ Jasper St. Pierre 给新手的建议是：**把整帧 uniform 数据打包进一
 Buffer renaming 是一个典型的"驱动替你扛复杂性，代价是性能不可预测"的例子。它在 [[rendering-api-depth|深/浅 API 对比]] 里站的是深模块一侧——接口很简单（"写就行了"），实现非常复杂。Vulkan/D3D12 拆掉这层深模块的决定把复杂性前置到应用层，换来可预测性。
 
 ## 相关
-
 - [[gpu-fence-timeline-semaphore]]
 - [[gpu-hazard-tracking]]
 - [[d3d12-resource-binding]]
 - [[linear-allocator]]
 - [[rendering-api-depth]]
+- [[streaming-staging-texture-upload]] —— 显式 API 下自己做的 staging ring
+- [[frames-in-flight]]
 
 ## Sources
 

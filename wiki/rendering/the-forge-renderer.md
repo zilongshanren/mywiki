@@ -50,7 +50,6 @@ Engel 在致谢里提到的合作者与赞助方：
 2020 年那篇 *Catching Up* 写得非常松弛——Engel 说明了为什么 2018 之后他自己写博客的频率明显下降：公司规模扩张意味着他要管 H1B / O1 签证、401k、房东、税务、IP 律师、假日晚餐……剩下做技术的时间反而不够。他把**发 release notes** 当作替代博客的渠道。这一点顺带解释了 wiki 上 Confetti 这条线为什么文章不多但每篇信息密度都很高——因为那不是随手写的博客，是 release-note 格式的系统总结。
 
 ## 相关
-
 - [[visibility-buffer]]
 - [[triangle-filtering-pipeline]]
 - [[hybrid-raytraced-shadows-reflections]]
@@ -60,6 +59,8 @@ Engel 在致谢里提到的合作者与赞助方：
 - [[bindless-rendering]]
 - [[people/wolfgang-engel]]
 - [[kostas-anagnostou]]
+- [[circular-separable-dof]] —— Erfan Ahmadi 在 The Forge 上的 Bokeh DoF UnitTest 之一
+- [[people/erfan-ahmadi]]
 
 ## Sources
 

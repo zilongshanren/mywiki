@@ -778,3 +778,6 @@ ibl-multiple-scattering
 split-sum-approximation
 obb-frustum-sat
 ispc-simd-culling
+streaming-staging-texture-upload
+frames-in-flight
+circular-separable-dof

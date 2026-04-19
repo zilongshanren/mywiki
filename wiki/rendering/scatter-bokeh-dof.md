@@ -62,6 +62,7 @@ scatter 路线只在两个场景下值得考虑：
 - [[bartosz-wronski]]
 - [[gather-bokeh-dof]] —— 对偶路线，移动 GPU 上的 drop-in 替代
 - [[mgs-v-fox-engine-frame]] —— Fox Engine 的 DoF 是 scatter 的分级分辨率加强版
+- [[circular-separable-dof]] —— gather 家族里性能最接近生产主力的一支
 
 ## Sources
 - [[sources/bartwronski-bokeh-insane-pt1]]

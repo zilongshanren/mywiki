@@ -11588,3 +11588,6 @@ raw/articles/themaister.net/2011-01-01_themaister-s-den.md
 raw/articles/bruop.github.io/2019-08-19_image-based-lighting-with-multiple-scattering.md
 raw/articles/bruop.github.io/2020-12-24_frustum-culling.md
 raw/articles/bruop.github.io/2021-02-17_more-robust-frustum-culling.md
+raw/articles/erfan-ahmadi.github.io/2015-01-01_uploading-textures-to-gpu-the-good-way.md
+raw/articles/erfan-ahmadi.github.io/2017-03-01_frames-in-flight-explained.md
+raw/articles/erfan-ahmadi.github.io/2018-05-04_bokeh-depth-of-field-project.md

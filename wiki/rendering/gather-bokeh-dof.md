@@ -37,13 +37,13 @@ near-field 额外再把 CoC map 自己做 1/8 下采 + blur（取 tile 内的 ma
 出货证明：《Dragon Quest XI S》Switch 版和《Pikmin 4》都用了这套 Gather DoF 的修改分支（Pikmin 4 的 miniature tilt-shift 效果是卖点）。
 
 ## 相关
-
 - [[scatter-bokeh-dof]] — 物理对的另一侧，桌面高档效果
 - [[mgs-v-fox-engine-frame]] — Fox Engine 的 DoF 是 scatter 的多级分辨率加强版
 - [[thin-lens-model]] — CoC 推导
 - [[chromatic-aberration-post]] — scatter 路线才能做"对的"色差
 - [[separable-gaussian-blur]] — creamy bokeh 的低成本近似
 - [[adrian-courreges]]
+- [[circular-separable-dof]] —— Frostbite/EA 的复数可分离圆盘 gather 路线
 
 ## Sources
 
