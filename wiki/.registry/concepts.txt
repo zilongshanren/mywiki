@@ -635,3 +635,7 @@ game-idea-generation
 material-light-validation
 physical-camera-model
 banjo-kazooie-vertex-color-terrain
+unity-input-system-multi-gamepad
+unity-prefabs-as-data
+unity-ecs-custom-editor-debug
+unity-asset-refactoring

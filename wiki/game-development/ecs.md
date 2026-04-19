@@ -51,7 +51,6 @@ ECS 本身引入了新的复杂性：
 这说明设计总是有 trade-off，没有银弹。但方向正确：**把复杂性从隐式变为显式，从散射变为集中**。
 
 ## 相关
-
 - [[deep-modules]]
 - [[information-hiding]]
 - [[dependencies]]——ECS 把依赖变成显式契约
@@ -65,12 +64,13 @@ ECS 本身引入了新的复杂性：
 - [[ecs-particle-system-c]] — 云风用纯 C 实现的 ECS 粒子系统，以及 C/C++ 版本对比的自我怀疑
 - [[ecs-data-oriented-revert]] — 云风对 Ant ECS 的反思：还原面向数据的原始 ECS，不要加太多辅助模块
 - [[ecs-for-rust-ui]] — Raph Levien 把 ECS 想法借到 Rust GUI 的 hybrid 架构，与游戏 ECS 的 database 模型形成对照
+- [[unity-ecs-custom-editor-debug]] — Gemserk 的 shadow GameObject + CustomEditor 方案，给 ECS Entity 做可写调试 UI
 
 ## Sources
-
 - [[sources/aposd-day02]]
 - [[sources/aposd-day04]]
 - [[sources/caqa-day02]]
 - [[sources/csapp-day01]]
 - [[sources/gea-day01]]
 - [[sources/vertexfragment-dots-character-controller]]
+- [[sources/gemserk-custom-editor-ecs]]

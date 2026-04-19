@@ -60,12 +60,12 @@ if (player.level == 5) { unlockAbility("damage_boost"); }
 - **高层渲染接口**：见 [[rendering-api-depth]]。
 
 ## 相关
-
 - [[complexity]]
 - [[classitis-in-games]]
 - [[resource-system-design]]
 - [[ecs]]
 - [[rendering-api-depth]]
+- [[unity-input-system-multi-gamepad]] — legacy Input 的字符串键耦合与多平台差异是"字符串散布"复杂性的又一实例
 
 ## Sources
 

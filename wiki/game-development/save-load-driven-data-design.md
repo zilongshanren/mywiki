@@ -46,11 +46,11 @@ Actor 作为状态机，真正需要持久化的往往**只有当前状态的名
 这和 [[render-graph|render graph]] 思路接近：**分离"声明"和"执行"**，所有命令先收集、帧末统一结算，把并发与时序问题压到最小。
 
 ## 相关
-
 - [[gameplay-layering-object-actor]] — 本原则所在的整体架构
 - [[snapshot-diff-persistence]] — 同作者早期的 snapshot/diff 方案
 - [[c-serialization-metadata]] — 序列化元数据设计
 - [[cloudwu]]
+- [[unity-prefabs-as-data]] — Gemserk 把 Prefab 当数据容器时同样的"运行时/持久表示分离"思路
 
 ## Sources
 

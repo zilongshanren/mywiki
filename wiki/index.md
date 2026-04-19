@@ -609,7 +609,6 @@ APoSD 中反复出现的标杆与反面案例。
 | [[garbage-collector]] | 接口为零的极限深模块 |
 
 ## 游戏开发（wiki/game-development/）
-
 APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 | 文章 | 一句话描述 |
@@ -645,9 +644,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[blender-hard-surface-modeling]] | Blender 硬表面建模：crease + bevel weight + harden normals 少顶点出工业硬棱 |
 | [[indie-pitching-publishers]] | Joost van Dongen 17 年经验：半年全职 pitch、MeetToMatch、X-factor 与 76 页台账 |
 | [[game-idea-generation]] | 避开创意输入同质化：现代艺术馆、博弈论、古建筑作为非游戏灵感源 |
+| [[unity-input-system-multi-gamepad]] | Unity 新旧 Input System 对比与多手柄配对踩坑 |
+| [[unity-prefabs-as-data]] | 把 Prefab/GameObject 当纯数据容器用，拿到层级 / 组件 / Variant / Nested 四种结构能力 |
+| [[unity-ecs-custom-editor-debug]] | Unity ECS 下用 shadow GameObject + CustomEditor 做可写调试 UI |
+| [[unity-asset-refactoring]] | Prefab/Scene/Asset 里 MonoBehaviour 字段结构批量重构的四步法 |
+
 
 ## 人物（wiki/people/）
-
 | 文章 | 一句话描述 |
 |---|---|
 | [[john-ousterhout]] | APoSD 作者，斯坦福 CS 教授 |
@@ -706,9 +709,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 
 | [[alfred-baudisch]] | Alfred Reinold Baudisch，巴西 Elixir/Godot indie dev，《Brazilian Street Food Simulator》作者 |
+| [[gemserk]] | Gemserk / Ariel Coppes，独立工作室，Unity 工程实战博客 |
+
 
 ## 源摘要（wiki/sources/）
-
 | 源 | 一句话描述 |
 |---|---|
 | [[sources/custom-srp-6-1-0]] | Custom SRP 6.1.0 教程摘要 |
@@ -1297,6 +1301,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 
 | [[sources/alfredbaudisch-banjo-godot-terrain]] | Baudisch：在 Godot Visual Shader 里复刻 Banjo-Kazooie N64 vertex-color 地形并扩展到 runtime dirt paint |
+| [[sources/gemserk-new-input-system-ld44]] | Gemserk：Ludum Dare 44 上同时用 legacy 与新 Input System 的复盘 |
+| [[sources/gemserk-prefabs-as-data]] | Gemserk：Unity Prefab/GameObject 当纯数据容器用 |
+| [[sources/gemserk-custom-editor-ecs]] | Gemserk：给 Unity ECS 世界写 CustomEditor 调试工具 |
+| [[sources/gemserk-refactoring-prefab-data]] | Gemserk：Unity Prefab/Scene/Asset 的数据结构批量重构工具 |
+
 
 ## 元（wiki/meta/）
 

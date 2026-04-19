@@ -693,3 +693,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-53 Worker EY (alfredbaudisch.com ×5)
 
 处理 5 篇 alfredbaudisch.com 源文件。3 篇 /project-style/ 栏目页指向同一个 Godot 复刻 Banjo-Kazooie N64 地形的项目，合并为 1 篇 source summary (`alfredbaudisch-banjo-godot-terrain`)。新增概念页 `banjo-kazooie-vertex-color-terrain` 与人物页 `alfred-baudisch`。2 篇 /tools/{blender,godot}/ 栏目聚合页无独立技术内容，skipped_offtopic。交叉链接到 [[retro-rendering-techniques]] 与 [[terrain-splatmap-shader-graph]]。
+
+## [2026-04-19] ingest | Wave-53 Worker EZ (blog.gemserk.com ×5)
+
+处理 5 篇 Gemserk / Ariel 博客。Ingest 4 篇 Unity 工程实战（新旧 Input System 对比与多手柄配对、Prefab/GameObject 作为纯数据容器、ECS CustomEditor shadow GameObject 调试方案、Prefab/Scene/Asset 的数据结构批量重构）；skip 1 篇 zombie-rockers 游戏展示短文。新增 4 概念页、1 人物页（gemserk）、4 source 摘要。3 个已有页面补充 patch（ecs、save-load-driven-data-design、unity-complexity-patterns）。

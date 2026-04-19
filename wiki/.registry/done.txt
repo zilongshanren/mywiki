@@ -11377,3 +11377,8 @@ raw/articles/alfredbaudisch.com/2025-11-30_project-style-shaders.md
 raw/articles/alfredbaudisch.com/2025-11-30_project-style-vertex-colors.md
 raw/articles/alfredbaudisch.com/2025-11-30_tool-blender.md
 raw/articles/alfredbaudisch.com/2025-11-30_tool-godot.md
+raw/articles/blog.gemserk.com/2019-04-30_zombie-rockers.md
+raw/articles/blog.gemserk.com/2019-05-11_using-the-new-unity-s-input-system-during-ludum-dare-44-jam.md
+raw/articles/blog.gemserk.com/2020-05-26_using-unity-prefabs-and-gameobjects-only-for-data.md
+raw/articles/blog.gemserk.com/2020-08-13_using-custom-editors-to-interact-with-unity-ecs-world.md
+raw/articles/blog.gemserk.com/2022-04-24_refactoring-data-stored-in-unity-prefabs-scenes-and-other-as.md
