@@ -1603,6 +1603,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/erfan-ahmadi-texture-upload-staging]] | Ahmadi：Nabla 流式 staging 纹理上传 |
 | [[sources/erfan-ahmadi-frames-in-flight]] | Ahmadi：Frames In Flight 与 timeline semaphore |
 | [[sources/erfan-ahmadi-bokeh-dof-project]] | Ahmadi：The Forge 上三种 Bokeh DoF 实现 |
+| [[sources/halisavakis-animated-light-cookies]] | Alisavakis：Custom Render Texture 驱动的动画 light cookie 小实验 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |

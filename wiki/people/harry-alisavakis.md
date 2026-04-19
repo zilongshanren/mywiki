@@ -48,3 +48,4 @@ sources: 10
 - [[sources/halisavakis-abzu-portal-cards]]
 - [[sources/halisavakis-shader-bits-world-screen-pos]]
 - [[sources/halisavakis-haze-manual]]
+- [[sources/halisavakis-animated-light-cookies]]

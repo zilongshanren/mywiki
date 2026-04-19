@@ -11594,3 +11594,6 @@ raw/articles/erfan-ahmadi.github.io/2018-05-04_bokeh-depth-of-field-project.md
 raw/articles/interplayoflight.wordpress.com/2013-01-02_about-me.md
 raw/articles/interplayoflight.wordpress.com/2013-01-02_let-there-be-light.md
 raw/articles/metalbyexample.com/2015-01-11_video-an-introduction-to-3d-graphics-with-metal-in-swift.md
+raw/articles/halisavakis.com/2020-06-20_animated-light-cookies.md
+raw/articles/halisavakis.com/2018-02-12_pac-tac-atac-global-game-jam-athens-2018.md
+raw/articles/halisavakis.com/2019-01-08_paul-paul.md

@@ -873,3 +873,7 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-19] ingest | Wave-68 Worker GT (Kostas 早期 + Warren Moore 视频)
 
 3 篇全部 skip：Kostas 的 About 页 + 博客首帖（hello-world，无技术内容），Warren Moore 2015 视频公告（外链失效，博客无 transcript）。零新增页面。
+
+## [2026-04-19] ingest | Wave-68 Worker GS (halisavakis 早期 portfolio ×3)
+
+处理 3 篇 halisavakis.com 早期 portfolio 贴：animated-light-cookies（2020）—— Unity Custom Render Texture 做动画光斑，内容极薄仅做 source 摘要；pac-tac-atac（2018 GGJ VR 游戏）与 paul-paul（2019 VR 叙事体验）均为纯作品宣传，无技术内容，skip。新增 1 source 摘要，补 1 条 harry-alisavakis Sources 链接。
