@@ -11580,3 +11580,8 @@ raw/articles/blog.yiningkarlli.com/2018-10-25_mipmapping-with-bidirectional-tech
 raw/articles/bkaradzic.github.io/2011-09-20_open-source-or-it-didn-t-happen.md
 raw/articles/bkaradzic.github.io/2012-01-06_porting-airmech-to-native-client.md
 raw/articles/bkaradzic.github.io/2016-01-16_orthodox-c.md
+raw/articles/ronja-tutorials.com/2021-01-01_shader-basics.md
+raw/articles/ronja-tutorials.com/2021-06-30_posts.md
+raw/articles/lindenreid.wordpress.com/2017-11-04_about.md
+raw/articles/lindenreid.wordpress.com/2017-11-04_unity-shader-tutorials.md
+raw/articles/themaister.net/2011-01-01_themaister-s-den.md

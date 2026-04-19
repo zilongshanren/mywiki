@@ -857,3 +857,7 @@ GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream
 ## [2026-04-19] ingest | Wave-66 Worker GL (bkaradzic ×3)
 
 处理 3 篇 bkaradzic.github.io 文章（Orthodox C++、AirMech 开源守则、AirMech NaCl 移植）。三篇均 ingest。新增人物页 branimir-karadzic；新增 3 概念页（orthodox-cpp、middleware-vs-open-source、native-client-porting）；新增 3 source 摘要。对 cpp-multi-paradigm-discipline 与 rpp-stl-replacement 做了轻量交叉链接 patch。
+
+## [2026-04-19] ingest | Wave-67 Worker GQ (ronja + lindenreid + themaister index/about ×5)
+
+5 篇全部为 index/about/tutorials 目录页，无实质技术内容，整批 skip。未新增任何 wiki 页。
