@@ -853,3 +853,7 @@ GK (adriancourreges 5) worker 无 staging / 零 bundle（与 GI/GJ 同样 stream
 ## [2026-04-19] ingest | Wave-66 Worker gn (blog.yiningkarlli.com early ×3)
 
 处理 Yining Karl Li 博客 3 篇早期文章（2013 Pixar OptiX RTP / 2016 Zootopia / 2018 Mipmapping with Bidirectional Techniques）。新增 1 概念页 [[ray-differentials]]（路径追踪里 mip level 选择的工程机制、BDPT 难题、Manuka shade-before-hit 与 Takua camera-based 两种绕过方案）、3 source 摘要，0 人物页（[[yining-karl-li]] 已存在，追加 3 条 source 链接）。补丁同步 hyperion-renderer / mipmap-generation-sampling / wavefront-path-tracing 三页的相关链接。全部 ingest，无 offtopic skip。
+
+## [2026-04-19] ingest | Wave-66 Worker GL (bkaradzic ×3)
+
+处理 3 篇 bkaradzic.github.io 文章（Orthodox C++、AirMech 开源守则、AirMech NaCl 移植）。三篇均 ingest。新增人物页 branimir-karadzic；新增 3 概念页（orthodox-cpp、middleware-vs-open-source、native-client-porting）；新增 3 source 摘要。对 cpp-multi-paradigm-discipline 与 rpp-stl-replacement 做了轻量交叉链接 patch。

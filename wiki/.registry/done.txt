@@ -11577,3 +11577,6 @@ raw/articles/asawicki.info/2022-04-06_a-metric-for-memory-fragmentation.md
 raw/articles/blog.yiningkarlli.com/2013-07-27_pixar-optix-lighting-preview-demo.md
 raw/articles/blog.yiningkarlli.com/2016-02-12_zootopia.md
 raw/articles/blog.yiningkarlli.com/2018-10-25_mipmapping-with-bidirectional-techniques.md
+raw/articles/bkaradzic.github.io/2011-09-20_open-source-or-it-didn-t-happen.md
+raw/articles/bkaradzic.github.io/2012-01-06_porting-airmech-to-native-client.md
+raw/articles/bkaradzic.github.io/2016-01-16_orthodox-c.md

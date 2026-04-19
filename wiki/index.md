@@ -64,6 +64,7 @@ sources: 371
 | [[dear-imgui-docking]] | Dear ImGui 的 docking 分支 |
 | [[intent-vs-state]] | 用户 Intent 作为 source of truth，State 为派生——Wittens 的前端架构观 |
 | [[dom-replacement-rethink]] | DOM/CSS/HTML 的系统性批判与替代路径 |
+| [[middleware-vs-open-source]] | 独立团队在闭源中间件与开源库之间的取舍守则 |
 
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
@@ -117,6 +118,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[unity-build-macro-renaming]] | C 里用 `#define` + unity build 合并同名符号的平台层 |
 | [[web-clipboard-api]] | Web 剪贴板两套 API 的历史分裂：异步严类型白名单 vs Clipboard Events 任意类型，Google Docs / Figma / Web Custom Formats 的三种绕行方案（Alex Harri） |
 | [[compressed-trie-pattern-matching]] | 倒序插入 + 子树压缩让 trie 自发泛化出后缀模式匹配，3,600 冰岛名压进 3.27 kB trie（beygla / Alex Harri） |
+| [[orthodox-cpp]] | Orthodox C++（C+）：反 Modern C++ 的最小 C++ 子集主张 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
@@ -255,6 +257,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[svelto-filters-api]] | 跨 group 的 entity 子集索引：transient / persistent filter，取代 event / publisher-consumer |
 | [[svelto-on-dots]] | Svelto 接管 DOTS 调度、把 DOTS ECS 当作引擎库而非游戏框架 |
 | [[ecs-on-gpu-computesharp]] | 用 ComputeSharp 把 Svelto component 存到 GPU buffer、engine 以 compute shader 形式跑 |
+| [[native-client-porting]] | AirMech 移植到 NaCl 的工程笔记（archival，可迁移到 Emscripten） |
 
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
@@ -857,6 +860,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[alex-harri-jonsson]] | 冰岛软件工程师，博客 alexharri.com 深挖 Web 剪贴板、trie 压缩、ASCII 渲染等细节主题 |
 | [[steven-wittens]] | Steven Wittens，acko.net 作者，Use.GPU 创建者，UI 与渲染架构评论家 |
 | [[adrian-courreges]] | Adrian Courrèges，frame-analysis 写作范式奠基者；Switch AAA UE4 优化补丁作者 |
+| [[branimir-karadzic]] | Branimir Karadžić，bgfx 作者，Orthodox C++ 提出者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1581,6 +1585,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/yiningkarlli-pixar-optix-rtp]] | Yining Karl Li：2013 Pixar OptiX Lighting Preview demo 博客 |
 | [[sources/yiningkarlli-zootopia]] | Yining Karl Li：Zootopia 与 Hyperion、Chiang 毛发模型初登场 |
 | [[sources/yiningkarlli-mipmap-bidirectional]] | Yining Karl Li：Takua 的 camera-based mip level 选择，解 BDPT 下 ray differentials 难题 |
+| [[sources/bkaradzic-orthodox-cpp]] | Karadžić：Orthodox C++ 子集主张 |
+| [[sources/bkaradzic-open-source-or-it-didnt-happen]] | Karadžić：独立团队的中间件与开源取舍 |
+| [[sources/bkaradzic-airmech-native-client]] | Karadžić：AirMech 移植到 Native Client 的工程笔记 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
