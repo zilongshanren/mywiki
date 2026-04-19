@@ -869,3 +869,7 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-19] ingest | Wave-67 Worker P (erfan-ahmadi.github.io ×3)
 
 处理 3 篇 Erfan Ahmadi 博客（Nabla / The Forge）：纹理流式上传、Frames In Flight 讲解、Bokeh DoF 三种实现并排比较。新增 1 人物页（erfan-ahmadi）、3 概念页（streaming-staging-texture-upload, frames-in-flight, circular-separable-dof）、3 source 摘要。补丁到 gpu-fence-timeline-semaphore / gather-bokeh-dof / scatter-bokeh-dof / the-forge-renderer / buffer-renaming。
+
+## [2026-04-19] ingest | Wave-68 Worker GT (Kostas 早期 + Warren Moore 视频)
+
+3 篇全部 skip：Kostas 的 About 页 + 博客首帖（hello-world，无技术内容），Warren Moore 2015 视频公告（外链失效，博客无 transcript）。零新增页面。

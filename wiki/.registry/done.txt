@@ -11591,3 +11591,6 @@ raw/articles/bruop.github.io/2021-02-17_more-robust-frustum-culling.md
 raw/articles/erfan-ahmadi.github.io/2015-01-01_uploading-textures-to-gpu-the-good-way.md
 raw/articles/erfan-ahmadi.github.io/2017-03-01_frames-in-flight-explained.md
 raw/articles/erfan-ahmadi.github.io/2018-05-04_bokeh-depth-of-field-project.md
+raw/articles/interplayoflight.wordpress.com/2013-01-02_about-me.md
+raw/articles/interplayoflight.wordpress.com/2013-01-02_let-there-be-light.md
+raw/articles/metalbyexample.com/2015-01-11_video-an-introduction-to-3d-graphics-with-metal-in-swift.md
