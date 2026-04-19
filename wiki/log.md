@@ -749,3 +749,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-57 Worker FL (Wolfgang Engel / Diary of a Graphics Programmer ×5)
 
 全 ingest 5 篇 Wolfgang Engel 文章（2017 HDR10 TV setup、2018 Triangle Visibility Buffer 长文、2018 DXR API 之辩、2018 Ray Tracing without API、2020 Catching Up / Forge 历史）。新增 1 人物页 wolfgang-engel，3 概念页 triangle-filtering-pipeline / ray-tracing-api-debate / the-forge-renderer，5 source 摘要。对 visibility-buffer、hybrid-raytraced-shadows-reflections、kostas-anagnostou、color-space、hdr-video-edr-metal 五个现有页做 patch（补充相关链接 + source 引用）。这批把 Confetti / The Forge 这条线完整并入 wiki，和已有的 Kostas Anagnostou / gameknife 两个 VB+hybrid RT 入口形成三角引用。
+
+## [2026-04-19] ingest | Wave-58 Worker FO (boristhebrave.com 2025 混合 ×5)
+
+处理 5 篇 Boris The Brave 2025 文章。新增 2 概念页（gpu-gol-optimization-ladder 把两篇 GoL 加速文合并；infinite-random-rhombus-tilings Townscaper 替代方案）、3 source 摘要。跳过 pure-reason（LLM 预言非技术）与 2026-01-03 infinite-grids（wave 54 已 ingest）。patch boris-the-brave 人物页、infinite-chunked-procedural-generation、cuda-memory-hierarchy 三处已有页面。

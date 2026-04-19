@@ -11447,3 +11447,8 @@ raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-03-30_triangle-visibil
 raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-04-05_ray-tracing-with-the-directx-ray-tracing-api-dxr.md
 raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-09-07_ray-tracing-without-ray-tracing-api.md
 raw/articles/diaryofagraphicsprogrammer.blogspot.com/2020-11-20_catching-up-history-of-the-forge-gpu-zen-ray-tracing-holiday.md
+raw/articles/boristhebrave.com/2025-06-04_a-technique-of-pure-reason.md
+raw/articles/boristhebrave.com/2025-09-11_accelerated-game-of-life-with-cuda-triton.md
+raw/articles/boristhebrave.com/2025-09-21_more-accelerated-game-of-life.md
+raw/articles/boristhebrave.com/2025-10-17_infinite-random-rhombus-tilings.md
+raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md

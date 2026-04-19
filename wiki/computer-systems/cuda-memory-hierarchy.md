@@ -51,6 +51,7 @@ SM 的 register 数与 shared memory 大小是硬上限：
 - [[cache-friendliness]]
 - [[flynn-taxonomy]]
 - [[gb10-gpu-blackwell-igpu]] —— consumer Blackwell L1/Shared Memory 128 KB vs datacenter 256 KB 的取舍
+- [[gpu-gol-optimization-ladder]] —— 用 Game of Life 当标尺，对照 register / shared / global 各档优化的实测收益
 
 ## Sources
 

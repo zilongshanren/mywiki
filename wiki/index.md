@@ -183,6 +183,7 @@ CAQA + CSAPP 的底层视角。
 | [[mono-jit-pipeline]] | Mono JIT 的五阶段管线与值类型导致的 400 行 `dot4` 之灾 |
 | [[pointer-alias-analysis]] | 指针别名分析：几乎所有 load/store/copy 优化的前置条件 |
 | [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |
+| [[gpu-gol-optimization-ladder]] | GPU Game of Life 优化阶梯：PyTorch 223 ms → bitpacked 64-bit CUDA + 多步融合 0.68 ms |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -680,6 +681,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[rider-ue5-setup]] | Tom Looman：UE5 C++ 的 Rider + VS Build Tools 搭建清单 |
 | [[project-orion-action-roguelike]] | Tom Looman 开源 UE5 合作 Roguelike 示例：Action 系统、DoD 投射物、对象池、Significance Manager |
 | [[unreal-insights-counters-traces]] | UE Stats System 与 Unreal Insights 双路径埋点：Counter / Cycle Counter / Named Events |
+| [[infinite-random-rhombus-tilings]] | Townscaper 替代方案：3 菱汇合点翻转 + 三层错位 chunking，无全局细分、无 chunk 边界 |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -1390,6 +1392,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/wolfgang-engel-dxr-api-debate]] | Engel 2018：为什么 RT 不该单独立 API |
 | [[sources/wolfgang-engel-ray-tracing-without-api]] | Engel 2018：The Forge 跨平台 compute hybrid shadow 落地 |
 | [[sources/wolfgang-engel-forge-history]] | Engel 2020：The Forge 历史 + GPU Zen 定位调整 + DXR 回望 |
+| [[sources/boristhebrave-gol-cuda-triton]] | Boris The Brave：Game of Life 在 CUDA / Triton 上 120× 提速阶梯 |
+| [[sources/boristhebrave-gol-multistep]] | Boris The Brave：shared memory 多步融合再把 GoL 提 2.7×，击穿 DRAM 带宽下限 |
+| [[sources/boristhebrave-rhombus-tilings]] | Boris The Brave：无限随机菱形铺砖，三层错位 chunking 消除 Townscaper 边界痕 |
 
 ## 元（wiki/meta/）
 
