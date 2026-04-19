@@ -32,7 +32,6 @@ sources: 1
 课程笔记集合在 [blog.selfshadow.com/publications](https://blog.selfshadow.com/publications/) 上，是学 PBR 的必读起点。
 
 ## 相关
-
 - [[microfacet-brdf]]
 - [[spectral-brdf]]
 - [[spherical-harmonics]]
@@ -43,7 +42,10 @@ sources: 1
 - [[tiled-light-culling]] —— Brian Karis：用能量守恒和 specular cone 做 tile 级剔除
 - [[brian-karis]] —— UE4 Real Shading 的作者
 - [[normalised-blinn-phong-shader]] —— 面向美术的 PBR 教学 shader，每个 PBR 组件可切换演示
+- [[openpbr]] —— 2023+ 的开放式 uber-shader 标准，Kutz / Portsmouth 主笔
+- [[neural-materials]] —— 把离线 shader graph 压进实时推理的神经材质方向
 
 ## Sources
-
 - [[sources/selfshadow-pbs-siggraph-2014]]
+- [[sources/selfshadow-pbs-siggraph-2012]]
+- [[sources/selfshadow-pbs-siggraph-2025]]

@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, pbr]
 date: 2026-04-14
-sources: 4
+sources: 6
 ---
 
 # Stephen Hill（Selfshadow）
@@ -39,8 +39,9 @@ sources: 4
 - [[hierarchical-z-buffer]]
 
 ## Sources
-
 - [[sources/selfshadow-multi-faceted-part-2]]
 - [[sources/selfshadow-blending-in-detail]]
 - [[sources/selfshadow-pbs-siggraph-2014]]
 - [[sources/selfshadow-practical-visibility]]
+- [[sources/selfshadow-pbs-siggraph-2012]]
+- [[sources/selfshadow-pbs-siggraph-2025]]

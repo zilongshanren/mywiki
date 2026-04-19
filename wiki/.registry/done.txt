@@ -11485,3 +11485,8 @@ raw/articles/jonolick.com/2024-08-30_laplacian-based-structure-aware-error-diffu
 raw/articles/jonolick.com/2025-01-28_home.md
 raw/articles/jonolick.com/2025-01-28_scale-invariant-feature-transform-sift-single-file-library.md
 raw/articles/jonolick.com/2026-04-14_links.md
+raw/articles/blog.selfshadow.com/2026-01-01_self-shadow.md
+raw/articles/blog.selfshadow.com/2026-01-01_self-shadow-7.md
+raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2012-course-practical-physically-based-shading-in-f.md
+raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2014-course-physically-based-shading-in-theory-and.md
+raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2025-course-physically-based-shading-in-theory-and.md

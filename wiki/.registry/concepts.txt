@@ -706,3 +706,5 @@ psraytracing
 ediz-upscaling-critique
 laplacian-structure-aware-error-diffusion
 sift-single-file-library
+openpbr
+neural-materials

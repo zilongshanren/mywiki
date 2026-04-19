@@ -777,3 +777,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-14] ingest | Wave-60 Worker FV (jonolick.com ×5)
 
 处理 5 篇 Jon Olick（jonolick.com）文章。3 篇实质：EDIZ 上采样批判、Laplacian 结构感知误差扩散、SIFT 单文件库 jo_sift.h；2 篇 skip_duplicate（home 首页合集、links 外链合集）。新增 3 概念页（ediz-upscaling-critique / laplacian-structure-aware-error-diffusion / sift-single-file-library）、1 人物页（jon-olick）、3 source 摘要。Laplacian 页与既有 floyd-steinberg-dithering 交叉引用。
+
+## [2026-04-19] ingest | Wave-60 Worker FU (blog.selfshadow.com ×5)
+
+处理 5 篇 blog.selfshadow.com 条目（Stephen Hill 的 SIGGRAPH PBS 课程主页）。跳过 2 篇纯 changelog 空壳与 1 篇已在 wiki 中的重复（2014 课程页已存在）。新增 2 个 source 摘要（2012、2025 课程），新增 2 个概念页（openpbr、neural-materials）。Patch stephen-hill 作者页与 physically-based-shading 概念页追加两条 source 链接。

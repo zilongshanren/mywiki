@@ -651,6 +651,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[ediz-upscaling-critique]] | Jon Olick：EDIZ 简单上采样方法的五点批判 |
 | [[laplacian-structure-aware-error-diffusion]] | Laplacian 结构感知误差扩散，低对比度区 MSSIM +25% |
 | [[sift-single-file-library]] | jo_sift.h：专利过期后的 SIFT 单文件 C 库 |
+| [[openpbr]] | 开放式 PBR uber-shader 标准（Adobe / Autodesk / ILM） |
+| [[neural-materials]] | 神经材质：把复杂离线 shader graph 压进小 MLP |
 
 ## 经典案例（wiki/examples/）
 
@@ -1454,6 +1456,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/jonolick-ediz-critique]] | Jon Olick：批判 EDIZ 简单上采样算法 |
 | [[sources/jonolick-laplacian-error-diffusion]] | Jon Olick：介绍 Laplacian 结构感知误差扩散 |
 | [[sources/jonolick-sift-library]] | Jon Olick：jo_sift.h 单文件 SIFT 库 |
+| [[sources/selfshadow-pbs-siggraph-2012]] | Hill：SIGGRAPH 2012 PBS 课程（Disney Principled BRDF 首发） |
+| [[sources/selfshadow-pbs-siggraph-2025]] | Hill：SIGGRAPH 2025 PBS 课程（OpenPBR / EON / 神经材质 / GT7 tone mapping） |
 
 ## 元（wiki/meta/）
 
