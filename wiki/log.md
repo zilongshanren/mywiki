@@ -913,3 +913,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-71 Worker HE (blog.s-schoener.com ×5)
 
 处理 5 篇 Sebastian Schöner 早期（2016-2017）博客。2 篇计算复杂度理论系列入库：新增概念 computational-complexity-theory-intro（$\P/\NP/\coNP$/归约入门）+ patterna-hexcells-np-vs-conp（纠正『扫雷是 NP-complete』的普遍误解：玩家实际做的推理问题是 $\coNP$-complete）。跳过 3 篇非技术元内容（博客 landing 索引、ImageMagick 个人速查、Jekyll 搭建记）。Sebastian Schöner 人物页已存在，追加复杂度理论主题、相关链接与 2 条 source 引用。
+
+## [2026-04-19] ingest | Wave-71 Worker HF (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 2021-01 ~ 2021-02 文章。3 篇入库：BlueSwordM 的现代数据压缩系列 part 1（JPEG 编码管线）、Chips and Cheese 集体作者的三家平台安全栈横评、以及 CTR Safety Revisited（聚焦 Black's Equation 电迁移与静态 OC vs 动态 Boost 的电压退化机理）。2 篇跳过：AMD 未来 CPU 文被作者自己 formally retracted 为传闻站立场，无技术内容；CTR 初评被同月跟进的 Safety Revisited 覆盖得更系统，不重复收录。新增概念页 [[jpeg-codec-pipeline]]、[[cpu-gpu-platform-security-features]]、[[electromigration-voltage-degradation]]，新增 [[blueswordm]] 人物页，patch 了 [[chips-and-cheese]]、[[mttf-reliability]]、[[intel-13th-14th-gen-clock-degradation]] 三处交叉链接。

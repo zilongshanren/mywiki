@@ -17,13 +17,16 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - 原子操作、cache coherence 边角用例
 
 ## 相关
-
 - [[chester-lam]]
 - [[gb10-memory-subsystem]]
 - [[gb10-gpu-blackwell-igpu]]
 - [[chipset-pcie-latency]]
 - [[split-lock-x86]]
 - [[llm-generated-c-compiler-perf]]
+- [[blueswordm]]
+- [[jpeg-codec-pipeline]]
+- [[cpu-gpu-platform-security-features]]
+- [[electromigration-voltage-degradation]]
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -32,3 +35,6 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[sources/chipsandcheese-ccc-april-fools]]
 - [[sources/chipsandcheese-split-locks]]
 - [[sources/chipsandcheese-nvidia-mcm-gpu]]
+- [[sources/chipsandcheese-jpeg-image-compression-overview]]
+- [[sources/chipsandcheese-security-overview]]
+- [[sources/chipsandcheese-ctr-safety-revisited]]

@@ -36,9 +36,9 @@ NVMe SSD 标称 MTTF 1.5M 小时 → AFR ≈ 0.584%。运营 1000 盘一年平�
 - **热更新回滚**：MTTR 最短化的工程实践。
 
 ## 相关
-
 - [[memory-hierarchy]]
 - [[virtual-memory]]
+- [[electromigration-voltage-degradation]] — 电压/电流密度如何把 MTTF 砍掉的物理模型
 
 ## Sources
 

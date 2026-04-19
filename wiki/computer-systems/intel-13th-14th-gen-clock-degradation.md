@@ -49,10 +49,10 @@ mov  [rDest + <idx>], cl         ; 再存低字节
 - 历史教训：2023 年调查过程里走了无数弯路——坏声卡驱动污染向量寄存器、主板厂默认 BIOS 把 253 W TDP 的芯片配 500 A 限流、「禁 E-core 能救」等传言都是干扰噪声。真正的"烟枪"来自客户的 consistent repro，再加上 Oodle workspace 可 dump 的特性。
 
 ## 相关
-
 - [[fabian-giesen]]
 - [[oodle-compression-suite]]
 - [[cpu-performance-formula]]
+- [[electromigration-voltage-degradation]] — 静态 OC 长时高压导致物理退化的一般机理
 
 ## Sources
 

@@ -223,6 +223,8 @@ CAQA + CSAPP 的底层视角。
 | [[build-process-visualization]] | 监听 fork/exec/exit 还原构建时间轴（What The Fork） |
 | [[swift-dylib-hot-reloading]] | 120 行 Swift：用 dlopen 替代 Xcode Previews |
 | [[mcm-gpu-design]] | MCM GPU：跨 die 互连代价、L1.5 缓存、CTA 调度与 first-touch 页映射 |
+| [[cpu-gpu-platform-security-features]] | AMD/Intel/Nvidia 平台安全栈对比：SEV/SME/MxGPU vs TXT/CSME vs Falcon |
+| [[electromigration-voltage-degradation]] | Black's Equation 与静态 OC vs 动态 Boost 的电压退化风险 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -740,6 +742,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mach-dxcompiler-static-build]] | 用 build.zig 重写 DXC 的构建系统并跨平台分发 |
 | [[gpu-unbiased-path-tracing]] | 2010 年 GPU 非偏置渲染器大爆发：Octane / Arion / V-Ray RT / iray 的平行史 |
 | [[otoy-cloud-rendering]] | OTOY 在 AMD RV770 上的早期云渲染/云游戏架构 |
+| [[jpeg-codec-pipeline]] | JPEG 编码三段论：YCbCr+chroma 降采样、8×8 DCT 量化、Huffman 熵编码 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -894,6 +897,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 | [[daniel-chase-hooper]] | 独立开发者，前 Apple，Principle 作者；C / Swift / 工具链 |
 | [[stephen-gutekanst]] | Emi / emidoots，Mach 引擎与 Hexops 作者 |
+| [[blueswordm]] | Chips and Cheese 编解码方向撰稿人 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1649,6 +1653,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-pitfalls-of-experience]] | Pesce：经验的陷阱——从 Crysis 深度缓冲 SSAO 反推谈起 |
 | [[sources/schoener-intro-computational-complexity]] | Schöner：$\P/\NP/\coNP$/归约 入门 |
 | [[sources/schoener-complexity-of-patterna]] | Schöner：Patterna/HexCells/Minesweeper 推理问题是 $\coNP$-complete |
+| [[sources/chipsandcheese-jpeg-image-compression-overview]] | BlueSwordM：JPEG 编码管线与前 JPEG 时代回顾 |
+| [[sources/chipsandcheese-security-overview]] | Chips and Cheese：AMD/Intel/Nvidia 三家平台安全栈横向对比 |
+| [[sources/chipsandcheese-ctr-safety-revisited]] | Chips and Cheese：CTR 安全追踪与电迁移物理复盘 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

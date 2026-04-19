@@ -802,3 +802,6 @@ experience-as-noise-filter
 scene-graph-unnecessary-in-engine
 computational-complexity-theory-intro
 patterna-hexcells-np-vs-conp
+jpeg-codec-pipeline
+cpu-gpu-platform-security-features
+electromigration-voltage-degradation
