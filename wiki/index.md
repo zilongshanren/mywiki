@@ -595,6 +595,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[material-light-validation]] | 以 Arnold 离线渲染器为 ground truth 验证 PBR material 与 light 的流程 |
 | [[physical-camera-model]] | 用真实相机参数（ISO / 快门 / 焦距 / 光圈）驱动渲染的相机 entity 模型 |
 
+
+| [[banjo-kazooie-vertex-color-terrain]] | N64 时代把颜色编码进顶点色做 splat 混合的地形风格，Godot/Blender 复刻路径 |
+
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -700,6 +703,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[chester-lam]] | Chips and Cheese 主笔，缓存/内存/互连延迟带宽实测的主要贡献者 |
 | [[sam-lapere]] | Sam Lapere，OTOY / NVIDIA，Ray Tracey 博客作者，GPU 路径追踪长期记录者 |
 | [[joost-van-dongen]] | Joost van Dongen，Ronimo 共同创始人（Awesomenauts / Proun），Galaxy Grove CEO |
+
+
+| [[alfred-baudisch]] | Alfred Reinold Baudisch，巴西 Elixir/Godot indie dev，《Brazilian Street Food Simulator》作者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1288,6 +1294,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-physically-based-lens-flare]] | Jp：基于 Hullin 论文的物理 lens flare 实现 |
 | [[sources/bitsquid-validating-materials-lights]] | Jp：用 Arnold 验证 Stingray PBR material 与 light |
 | [[sources/bitsquid-physical-cameras-stingray]] | Jp + Olivier Dionne：Stingray 物理相机（entity-based） |
+
+
+| [[sources/alfredbaudisch-banjo-godot-terrain]] | Baudisch：在 Godot Visual Shader 里复刻 Banjo-Kazooie N64 vertex-color 地形并扩展到 runtime dirt paint |
 
 ## 元（wiki/meta/）
 

@@ -50,6 +50,7 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[sources/danielilett-retro-urp-retro-vertex-lit]] —— v1.5 后作为兼容页保留：Retro Vertex Lit 的独立 shader 已被合并进 Retro Lit 的 Snapping Mode/Vertex Lit 档，参数列表是 Retro Lit 的真子集（少 Surface Options、光照四档缩成 vertex-only、Dithering 简化为 bool）
 - [[procedural-retro-skybox]] —— Retro Skybox 把色深限制 + dither 搬到天空盒：cubemap 或 gradient 两档 sky base，叠一层双 Worley 噪声程序云，全部参数化
 - [[noperspective-affine-texture]] —— HLSL 的 `noperspective` 关键字：一行代码开启 affine warping；Ilett 的手动实现支持 0–1 平滑过渡
+- [[banjo-kazooie-vertex-color-terrain]] —— N64 的 vertex-color splat 地形：把硬件约束当美学的另一案例（Godot 复刻）
 
 ## Sources
 - [[sources/danielilett-retro-terrain-lit]]
@@ -58,3 +59,4 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[sources/danielilett-retro-urp-retro-vertex-lit]]
 - [[sources/danielilett-retro-urp-retro-skybox]]
 - [[sources/danielilett-retro-shaders-pro-breakdown]] —— 作者自述完整实现细节：vertex snap 空间选择、affine warping 手动路径、LOD-cap 分辨率、dither 双模式、texel-aligned lighting (ddx/ddy)、N64 3-point filtering、VHS tracking、14 种复古色板 filter；还谈 Asset Store 命名权和差评踩坑
+- [[sources/alfredbaudisch-banjo-godot-terrain]]

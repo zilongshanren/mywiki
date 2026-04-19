@@ -43,11 +43,11 @@ splat0 = Lerp(rockTexture, grassTexture, rockBlend)   // A=rock, B=grass
 这个技巧不是 Unity Terrain 独有，任何有法线的 mesh 都能用——Breath of the Wild 式的 triplanar + 陡坡岩石也是同一思路的进化版。
 
 ## 相关
-
 - [[world-scan-shader-effect]] —— Ilett 在同一张 terrain graph 上加的 emissive 扫描波
 - [[shader-graph-lighting-primer]]
 - [[custom-mask-shaders]]
 - [[retro-rendering-techniques]]
+- [[banjo-kazooie-vertex-color-terrain]] —— N64 风格的「顶点色即 splat」，比 `_Control` 贴图约定更暴力但零带宽
 
 ## Sources
 

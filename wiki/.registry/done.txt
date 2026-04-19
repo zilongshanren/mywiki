@@ -11372,3 +11372,8 @@ raw/articles/bitsquid.blogspot.com/2017-06-22_reprojecting-reflections.md
 raw/articles/bitsquid.blogspot.com/2017-07-03_physically-based-lens-flare.md
 raw/articles/bitsquid.blogspot.com/2017-07-16_validating-materials-and-lights-in-stingray.md
 raw/articles/bitsquid.blogspot.com/2017-09-28_physical-cameras-in-stingray.md
+raw/articles/alfredbaudisch.com/2025-11-30_project-style-photo-texture.md
+raw/articles/alfredbaudisch.com/2025-11-30_project-style-shaders.md
+raw/articles/alfredbaudisch.com/2025-11-30_project-style-vertex-colors.md
+raw/articles/alfredbaudisch.com/2025-11-30_tool-blender.md
+raw/articles/alfredbaudisch.com/2025-11-30_tool-godot.md
