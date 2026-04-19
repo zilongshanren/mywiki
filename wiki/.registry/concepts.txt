@@ -653,3 +653,6 @@ pointer-alias-analysis
 dead-store-elimination
 zig-c-abi-boundary
 header-file-vs-pub-export
+umg-user-widget-lifecycle
+ue4-editor-battery-throttle
+ue4-common-perf-pitfalls

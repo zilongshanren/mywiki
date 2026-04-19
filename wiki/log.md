@@ -717,3 +717,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-55 Worker FF (cybereality.com x5)
 
 处理 5 篇 cybereality.com 博文，全部 skip：两篇 off-topic（GenAI 音乐视频、3D psy-op 观点），三篇 Degine 引擎进度通告（GDC demo / Q1 progress / Valentine's mocap remaster）标题指向 graphics/OpenGL 但正文为 1-3 段无技术细节的宣传帖。未创建任何 wiki 页面。
+
+## [2026-04-19] ingest | Wave-55 Worker FE (allarsblog.com ×5)
+
+处理 Michael Allar 5 篇 UE4 工程笔记：救火顾问长文、Marketplace JS hack、编辑器电池 60fps、UMG PreConstruct 顺序、通知气泡偏移。新增 1 人物页（michael-allar）、3 概念页（umg-user-widget-lifecycle / ue4-editor-battery-throttle / ue4-common-perf-pitfalls）、5 source 摘要。无跳过。

@@ -185,7 +185,6 @@ CAQA + CSAPP 的底层视角。
 | [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |
 
 ## 游戏引擎（wiki/game-engines/）
-
 Game Engine Architecture（Jason Gregory）的核心概念。
 
 | 文章 | 一句话描述 |
@@ -222,6 +221,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[playcanvas-esm-scripts]] | PlayCanvas 新脚本系统：`.mjs` + class + `@attribute` JSDoc，替代 Classic Scripts 的 hidden global |
 | [[zero-bind-gpu-resource-management]] | Bindless + BDA + PushConstant 实现零绑定的现代 GPU 资源管理 |
 | [[slang-shader-language]] | NVIDIA 主推的现代着色器语言：泛型、模块、自动微分 |
+| [[ue4-editor-battery-throttle]] | UE4 编辑器电池模式 60 FPS 硬限制与 r.DontLimitOnBattery |
+| [[ue4-common-perf-pitfalls]] | Allar 救火现场反复出现的 UE4 工程陷阱清单 |
 
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
@@ -658,7 +659,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[unity-prefabs-as-data]] | 把 Prefab/GameObject 当纯数据容器用，拿到层级 / 组件 / Variant / Nested 四种结构能力 |
 | [[unity-ecs-custom-editor-debug]] | Unity ECS 下用 shadow GameObject + CustomEditor 做可写调试 UI |
 | [[unity-asset-refactoring]] | Prefab/Scene/Asset 里 MonoBehaviour 字段结构批量重构的四步法 |
-
+| [[umg-user-widget-lifecycle]] | UMG UUserWidget：NativePreConstruct 与蓝图 PreConstruct 顺序 |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -724,6 +725,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |
 | [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |
 | [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |
+| [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1332,6 +1334,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/schoener-mono-codegen-part-1]] | Schöner：Mono 如何把 `dot4` 变成 400 行汇编 |
 | [[sources/schoener-mono-codegen-part-2]] | Schöner：LLVM vs 自写 pass、别名分析、DSE 方法论 |
 | [[sources/schoener-zig-hot-reload-abi]] | Schöner：Zig 热重载/DLL 场景的 ABI 痛与三文件绕法 |
+| [[sources/allar-ue4-firefighter]] | Allar：UE4 救火顾问的团队与工程教训 |
+| [[sources/allar-marketplace-unknown-usernames]] | Allar：用 Fiddler 修 Epic Marketplace 评论用户名 bug |
+| [[sources/allar-ue4-editor-battery-60fps]] | Allar：UE4 编辑器在电池 / UPS 下被钳到 60 FPS |
+| [[sources/allar-umg-native-preconstruct-order]] | Allar：UMG NativePreConstruct 与蓝图 PreConstruct 触发顺序 |
+| [[sources/allar-ue4-notification-offset]] | Allar：UE4 通知气泡位置硬编码在 NotificationManager.cpp |
 
 ## 元（wiki/meta/）
 
