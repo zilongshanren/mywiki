@@ -102,6 +102,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[lua-c-api-dylib-proxy]] | 静态链接 Lua 宿主如何挂第三方 C 扩展：运行期代理 DLL 和构建期 extlua 两代方案 |
 | [[stackless-vs-stackful-coroutines]] | C++20 协程为何不需要整栈保存 |
 | [[coroutine-awaitable-pattern]] | awaitable 与 coroutine 的分工：名词 vs 动词 |
+| [[mulberry32-rng]] | 极简 32-bit 确定性 PRNG：Weyl + xor-shift-multiply |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
