@@ -67,5 +67,5 @@ SSR 里时域累积几乎是必须的，不然 ray march 本身的噪声会漫�
 - [[niklas-frykholm]]
 
 ## Sources
-
 - [[sources/bitsquid-reprojecting-reflections]]
+(already links to [[sources/bitsquid-reprojecting-reflections]] — no patch needed)

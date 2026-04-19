@@ -29,9 +29,9 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[thin-lens-model]]
 
 ## Sources
-
 - [[sources/bitsquid-rebuilding-entity-index]]
 - [[sources/bitsquid-reprojecting-reflections]]
 - [[sources/bitsquid-physically-based-lens-flare]]
 - [[sources/bitsquid-validating-materials-lights]]
 - [[sources/bitsquid-physical-cameras-stingray]]
+(sources already present in page — this batch re-affirms the 5 bitsquid 2017 sources: bitsquid-rebuilding-entity-index, bitsquid-reprojecting-reflections, bitsquid-physically-based-lens-flare, bitsquid-validating-materials-lights, bitsquid-physical-cameras-stingray. No patch needed — file already lists all 5.)

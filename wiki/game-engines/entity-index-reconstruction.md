@@ -103,5 +103,5 @@ Niklas 的博客特别提到：原始 Entity Index 设计时，Flow / Property �
 - [[niklas-frykholm]]
 
 ## Sources
-
 - [[sources/bitsquid-rebuilding-entity-index]]
+(already links to [[sources/bitsquid-rebuilding-entity-index]] — no patch needed)

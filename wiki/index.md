@@ -592,6 +592,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gb10-gpu-blackwell-igpu]] | GB10 iGPU 是 consumer Blackwell 而非 datacenter（cc 12.1 vs 10.0）；24 MB L2 策略 vs RDNA 四层渐进缓存 |
 | [[lighthouse-2-optix]] | Jacco Bikker 在 OptiX 7 / RTX 上开源的实时 GPU 路径追踪框架 |
 | [[nvidia-omniverse]] | 以实时路径追踪为核心的 NVIDIA USD 协作平台与演示序列 |
+| [[material-light-validation]] | 以 Arnold 离线渲染器为 ground truth 验证 PBR material 与 light 的流程 |
+| [[physical-camera-model]] | 用真实相机参数（ISO / 快门 / 焦距 / 光圈）驱动渲染的相机 entity 模型 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1281,6 +1283,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-where-to-get-original-ideas]] | Joost van Dongen：避开创意输入同质化（Proun 源自 Kandinsky） |
 | [[sources/joostdevblog-robo-maestro-modelling-tricks]] | Joost van Dongen：Blender 硬表面建模 crease / bevel weight / harden normals |
 | [[sources/joostdevblog-pitching-to-publishers]] | Joost van Dongen：17 年 pitch 经验，MeetToMatch、X-factor、bookkeeping |
+| [[sources/bitsquid-rebuilding-entity-index]] | Stingray：Entity Index 的原型链式重构 |
+| [[sources/bitsquid-reprojecting-reflections]] | Jp：SSR 在 TAA 下的几何重投影与多候选启发式 |
+| [[sources/bitsquid-physically-based-lens-flare]] | Jp：基于 Hullin 论文的物理 lens flare 实现 |
+| [[sources/bitsquid-validating-materials-lights]] | Jp：用 Arnold 验证 Stingray PBR material 与 light |
+| [[sources/bitsquid-physical-cameras-stingray]] | Jp + Olivier Dionne：Stingray 物理相机（entity-based） |
 
 ## 元（wiki/meta/）
 

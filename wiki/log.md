@@ -685,3 +685,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-52 Worker EW (joostdevblog.blogspot.com ×5)
 
 处理 5 篇 Joost van Dongen 博客文章。3 篇 ingest（Blender 硬表面建模、发行商 pitch 方法论、创意输入多样化），2 篇 skip（Robo Maestro Steam 发售公告与 Galaxy Grove 里程碑博文均为非技术内容）。新增 3 概念页（blender-hard-surface-modeling / indie-pitching-publishers / game-idea-generation）、1 人物页（joost-van-dongen）、3 source 摘要。
+
+## [2026-04-19] ingest | Wave-52 Worker EX-retry (bitsquid.blogspot.com ×5)
+
+Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Stingray 博客末期 (2017) 技术文章：Entity Index 重构（原型链式 structural sharing）、SSR 重投影（TAA 下的几何解与启发式）、物理 lens flare（Hullin 论文的 Stingray 实现）、Arnold 做 PBR ground truth 的 material/light 验证、entity-based 物理相机。新增 2 概念页（material-light-validation, physical-camera-model）和 5 source 摘要。3 个概念页（entity-index-reconstruction, reprojected-planar-reflection, physically-based-lens-flare）在磁盘上已存在且内容完整——未覆写，仅在 bundle 中以 no-op patch 备案。niklas-frykholm.md 已含全部 5 source 链接，无需修改。
