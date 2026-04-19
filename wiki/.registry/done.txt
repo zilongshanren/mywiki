@@ -11516,3 +11516,8 @@ raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-neon-sobel.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-outlines-fancy.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-oil-painting.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-noise-grain.md
+raw/articles/cmwdexint.com/2021-01-15_urp-and-built-in-rp-feature-mapping.md
+raw/articles/cmwdexint.com/2021-12-02_where-to-find-urp-settings.md
+raw/articles/cmwdexint.com/2022-08-24_disable-fog-for-urp-lit-shadergraph.md
+raw/articles/cmwdexint.com/2022-10-09_exploring-stable-diffusion-setup.md
+raw/articles/cmwdexint.com/2024-01-13_using-spotify-android-sdk-in-unity.md

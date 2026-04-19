@@ -716,3 +716,7 @@ advanced-shader-delivery
 vfx-multithreading-patterns
 pixelate-postfx
 radial-blur-postfx
+urp-builtin-feature-mapping
+urp-settings-locations
+urp-shadergraph-fog-strip
+shader-variant-stripping

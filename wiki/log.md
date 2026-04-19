@@ -801,3 +801,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-62 Worker FZ (danielilett Snapshot Pro ×5)
 
 处理 5 篇 Daniel Ilett Snapshot Shaders Pro 产品参考页：outline-sobel / neon-sobel / outlines-fancy / oil-painting / noise-grain。全部 ingested，0 跳过。新增 5 source 摘要，0 概念页（算法本身 sobel-edge-detection / kuwahara-filter / toon-outline-post-process-modes / classic-shader-noise / crt-shader-effects 均已有），0 人物（daniel-ilett 已存在）。向 sobel / kuwahara / classic-noise / toon-outline / crt 5 个既有概念页追加 source 链接。
+
+## [2026-04-19] ingest | Wave-62 Worker GA (cmwdexint.com ×5)
+
+处理 5 篇 cmwdexint.com / Ming Wai Chan 的 URP 贴士。Ingest 3 篇（URP↔Built-in 映射、URP 设置入口、ShaderGraph 关雾效 + 变体剥离）。新增 4 概念页（urp-builtin-feature-mapping, urp-settings-locations, urp-shadergraph-fog-strip, shader-variant-stripping）、1 人物页（ming-wai-chan）、3 source 摘要。跳过 2 篇：Stable Diffusion 本地安装、Unity × Spotify Android SDK 集成（偏离 graphics/rendering 主题）。

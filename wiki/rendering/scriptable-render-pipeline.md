@@ -30,13 +30,13 @@ TextureHandle target = renderGraph.ImportBackbuffer(
 其他 Pass 都通过 `textures.cameraTarget` 使用。这是一次**消除 [[change-amplification]]** 的小规模重构——把「相机目标选择」这份知识集中到一处。
 
 ## 相关
-
 - [[custom-srp]]
 - [[render-graph]]
 - [[color-lut]]
 - [[urp-volume-post-processing]] —— URP 的 Volume 后处理系统（PPv3）
 - [[blit-render-feature]] —— URP 自定义后处理的补救路径
 - [[cyanilux]]
+- [[urp-builtin-feature-mapping]] —— Built-in RP → URP 的 API 迁移速查（相机回调、LightMode 标签、材质属性、深度/不透明纹理）
 
 ## Sources
 

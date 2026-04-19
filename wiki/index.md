@@ -661,6 +661,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[advanced-shader-delivery]] | Shader Compiler Plugin + Partial Graphics Programs + DirectStorage 1.4 |
 | [[pixelate-postfx]] | Pixelate 像素化后处理：空间维度量化，与色阶量化正交 |
 | [[radial-blur-postfx]] | Radial Blur：kernel 随径向距离变化的空间变化 blur |
+| [[urp-builtin-feature-mapping]] | Built-in RP 与 URP 的 API 一一对照 |
+| [[urp-settings-locations]] | URP 设置入口的散落地图 |
+| [[urp-shadergraph-fog-strip]] | 给指定 ShaderGraph 材质关掉 URP 雾效 |
+| [[shader-variant-stripping]] | Unity 构建期剥 shader 变体（IPreprocessShaders） |
 
 ## 经典案例（wiki/examples/）
 
@@ -797,6 +801,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[16bpp]] | 16BPP.net 博主，PSRayTracing 作者，靠全矩阵 benchmark 重测 C++ 性能主张 |
 | [[jon-olick]] | 前 id Software 程序员，JO JPEG / jo_*.h 单文件库系列作者 |
 | [[adam-sawicki]] | AMD D3D12MA / VMA 作者，asawicki.info 博主，DX12 低层与 GPU 内存专家 |
+| [[ming-wai-chan]] | Ming Wai Chan（cmwdexint），Unity URP 实用贴士 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1482,6 +1487,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-snapshot-pro-outlines-fancy]] | Ilett：Snapshot Pro color+depth+normal 三路 Sobel 合成 |
 | [[sources/danielilett-snapshot-pro-oil-painting]] | Ilett：Snapshot Pro Kuwahara 油画后处理 |
 | [[sources/danielilett-snapshot-pro-noise-grain]] | Ilett：Snapshot Pro 程序化胶片颗粒，Hermite/Quintic 插值 |
+| [[sources/cmwdexint-urp-builtin-feature-mapping]] | cmwdexint：URP 与 Built-in RP 特性映射 |
+| [[sources/cmwdexint-urp-settings-locations]] | cmwdexint：URP 设置面板在哪里找 |
+| [[sources/cmwdexint-urp-shadergraph-fog-disable]] | cmwdexint：关掉 URP Lit ShaderGraph 的雾效 |
 
 ## 元（wiki/meta/）
 
