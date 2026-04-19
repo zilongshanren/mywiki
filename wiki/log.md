@@ -677,3 +677,11 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] update | Manifest prune — 13 off-topic hosts removed
 
 应用户指示剪枝 manifest：直接去掉 game-wisdom.com (3894) + learn-cocos2d.com (1712) + hacks.mozilla.org (1516) + gamasutra.com (1336) 四大巨量非 gfx 站；另清除清晰 off-topic 的 tonybai.com (Chinese Go) + masteringemacs.org (Emacs) + divisbyzero.com (数学) + sea-of-memes.com (Minecraft SEO 垃圾) + blog.eyas.sh (政治) + frgmnts.blog (政治) + claire-blackshaw.com (混杂非技术) + blog.justbilt.com (占位) + circle-group.github.io (学术 ML diffusion)。共 10487 篇移出 manifest，补进 done.txt 标 skipped_offtopic；原 raw/ 文件保留（CLAUDE.md: raw/ 不可修改）。blogs.yaml 同步移除 13 个 entry（312 → 299），防止 feedly-ingest 未来重抓。剩余可处理 5676 篇。
+
+## [2026-04-19] ingest | Wave-52 Worker EV (raytracey.blogspot.com ×5)
+
+处理 5 篇 Sam Lapere（Ray Tracey）博文。Ingest 2 篇：2019 Lighthouse 2（Bikker / OptiX 7 / RTX / blue noise）、2020 Marbles RTX × Omniverse（many-light 实时路径追踪的产品化）。Skip 3 篇：finally.md 怀旧短帖、Omniverse kitchen sink 与 Racer RTX 两篇几乎纯视频的感言贴。新增人物页 sam-lapere、概念页 lighthouse-2-optix / nvidia-omniverse；对 path-tracing-basics / path-tracing-monte-carlo / hybrid-raytracing-pipeline 追加 `## 相关` 交叉引用。
+
+## [2026-04-19] ingest | Wave-52 Worker EW (joostdevblog.blogspot.com ×5)
+
+处理 5 篇 Joost van Dongen 博客文章。3 篇 ingest（Blender 硬表面建模、发行商 pitch 方法论、创意输入多样化），2 篇 skip（Robo Maestro Steam 发售公告与 Galaxy Grove 里程碑博文均为非技术内容）。新增 3 概念页（blender-hard-surface-modeling / indie-pitching-publishers / game-idea-generation）、1 人物页（joost-van-dongen）、3 source 摘要。

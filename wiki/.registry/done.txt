@@ -11357,3 +11357,13 @@ raw/articles/tonybai.com/2026-04-08_dao-ji-shi-33-ge-yue-go-qian-an-quan-fu-ze-r
 raw/articles/tonybai.com/2026-04-09_bie-gao-xiao-er-mei-liao-rust-kai-fa-zhe-qing-yuan-qiu-qiu-b.md
 raw/articles/tonybai.com/2026-04-10_ruby-on-rails-zhi-fu-zui-xin-fang-tan-ai-zheng-zai-tui-gao-d.md
 raw/articles/tonybai.com/2026-04-11_go-command-gong-zuo-zu-cheng-li-zhe-ji-ge-yong-liao-shi-nian.md
+raw/articles/raytracey.blogspot.com/2019-09-15_lighthouse-2-the-new-optix-based-real-time-gpu-path-tracing.md
+raw/articles/raytracey.blogspot.com/2020-05-14_finally.md
+raw/articles/raytracey.blogspot.com/2020-09-10_marbles-rtx-at-night-rendered-in-nvidia-omniverse.md
+raw/articles/raytracey.blogspot.com/2021-08-14_nvidia-omniverse-renders-everything-and-the-kitchen-sink.md
+raw/articles/raytracey.blogspot.com/2022-09-20_nvidia-racer-rtx.md
+raw/articles/joostdevblog.blogspot.com/2021-09-08_where-to-get-original-ideas.md
+raw/articles/joostdevblog.blogspot.com/2021-11-24_neat-tricks-for-modelling-the-robo-maestro-robot.md
+raw/articles/joostdevblog.blogspot.com/2021-11-24_robo-maestro-is-coming-to-steam.md
+raw/articles/joostdevblog.blogspot.com/2024-08-09_tips-for-pitching-to-game-publishers.md
+raw/articles/joostdevblog.blogspot.com/2024-12-19_a-big-step-forward.md

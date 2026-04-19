@@ -64,13 +64,13 @@ Reid 在文章里明确提到这是 **UV-sphere** 方法，还有另一类 **ico
 程序化生成出来的顶点流塞进 [[unity-procedural-mesh|Unity Mesh API]] 或任何其他 [[rendering-pipeline]] 入口都是一样的——参数函数是 CPU 侧的"顶点工厂"，不影响 GPU。真要优化吞吐，这种二维嵌套循环完全可以搬到 [[draw-procedural-gpu|compute shader]] 里跑。
 
 ## 相关
-
 - [[unity-procedural-mesh]] —— Mesh API 侧的最小闭环
 - [[mesh-warps-and-tessellation]] —— 有了基元之后怎么"让它变有趣"
 - [[triangle-primitives]]
 - [[rendering-pipeline]]
 - [[linden-reid]]
 - [[waving-grass-shader-vertex-offset]] —— 顶点动画对生成后 mesh 的运行时变形，和 CPU 侧的 warp / tessellation 是互补路线
+- [[blender-hard-surface-modeling]] —— DCC 侧用 crease + bevel weight 少顶点出硬棱曲面
 
 ## Sources
 

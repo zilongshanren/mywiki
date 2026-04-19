@@ -1,0 +1,37 @@
+---
+tags: [人物, 作者, 游戏引擎, bitsquid, stingray, autodesk]
+date: 2026-04-19
+sources: 5
+---
+
+# Niklas Frykholm
+
+Bitsquid 引擎（2012 年被 Autodesk 收购后更名为 **Stingray**）的共同创始人与长期技术负责人。Bitsquid Blog 是这一代独立引擎里最诚实、最工程化的技术博客之一——从 data-oriented entity system 系列、自定义 Lua 运行时、低层 job scheduler、到 DX12 resource binding，都留下了可供后来者直接挖的第一手设计笔记。
+
+Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管理、句柄化查询、资源和实例分离"这一套做到了工业水准，比 Unity DOTS 要早好几年。本 wave 收录的五篇 2017 年博客属于 Stingray 进入维护期的最后一批技术总结，署名作者包括 Niklas 本人、**Jean-Philippe Guertin (Jp)**、以及渲染工程师 **Olivier Dionne**，内容覆盖 ECS 存储重构、SSR 重投影、物理 lens flare、PBR 验证流程、物理相机——是"一个 AAA 引擎倒闭前最后把所有房间都打扫干净"的记录。
+
+## 主要贡献
+
+- **Bitsquid → Autodesk Stingray**：2012 年起主导的跨平台引擎，被 Warhammer: Vermintide、Fatshark 系列、Helldivers 等一批北欧工作室使用。Stingray 在 2018 年被 Autodesk 宣布停止开发，但其设计影响延续到后来的 Our Machinery / The Machinery 引擎（Niklas 与 Tobias Persson 的后续项目）。
+- **数据导向引擎实践**：Bitsquid Blog 的 *Building a Data-Oriented Entity System* 四部曲是 2014 年同类公开文献里最完整的一份，[[ecs|ECS]]、[[c-opaque-struct-modules|不透明句柄]]、[[id-based-lifetime-with-kill-flag|id + kill flag]]、[[handle-based-resource-manager|句柄式资源]] 的许多工程经验都从这里出来。
+- **物理相机 / 物理 lens flare / PBR 验证**：Jp 和 Olivier Dionne 在 Stingray 末期把 camera / light / material 三环打通，用 Arnold 做地面真值对照，是业界少数公开的 PBR 全链路验证流程。
+
+## 相关
+
+- [[entity-index-reconstruction]] — Stingray Entity Index 的原型链式重构
+- [[reprojected-planar-reflection]] — SSR 在 TAA 下的正确重投影
+- [[physically-based-lens-flare]] — Hullin et al. 论文在 Stingray 中的实现
+- [[material-light-validation]] — Arnold 作为地面真值的 PBR 验证流程
+- [[physical-camera-model]] — 以 sensor / shutter / ISO / aperture 构造的相机实体
+- [[ecs]] — Stingray 数据导向 entity system 是业界 ECS 的早期代表
+- [[screenspace-reflections]]
+- [[physically-based-shading]]
+- [[thin-lens-model]]
+
+## Sources
+
+- [[sources/bitsquid-rebuilding-entity-index]]
+- [[sources/bitsquid-reprojecting-reflections]]
+- [[sources/bitsquid-physically-based-lens-flare]]
+- [[sources/bitsquid-validating-materials-lights]]
+- [[sources/bitsquid-physical-cameras-stingray]]

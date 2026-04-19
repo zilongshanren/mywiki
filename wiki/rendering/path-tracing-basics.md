@@ -51,12 +51,12 @@ workshop Part 3（importance sampling）从未写完——取而代之的是**TU
 - [[moment-shadow-mapping]] — Peters 经典贡献
 
 ## 相关
-
 - [[christoph-peters]]
 - [[radiometry-integral-view]]
 - [[photometry-luminance]]
 - [[microfacet-brdf]]
 - [[quasi-monte-carlo]]
+- [[lighthouse-2-optix]] — Jacco Bikker 的 OptiX 7 实时 path tracer 教学框架
 
 ## Sources
 

@@ -590,6 +590,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[atmospheric-perspective]] | 远山先趋深蓝再变淡，fog trick 的边界与大气散射的替代方案 |
 | [[hair-shader-anisotropic]] | Unity Standard BRDF 之上做各向异性发丝（3 档实现与余弦权重函数） |
 | [[gb10-gpu-blackwell-igpu]] | GB10 iGPU 是 consumer Blackwell 而非 datacenter（cc 12.1 vs 10.0）；24 MB L2 策略 vs RDNA 四层渐进缓存 |
+| [[lighthouse-2-optix]] | Jacco Bikker 在 OptiX 7 / RTX 上开源的实时 GPU 路径追踪框架 |
+| [[nvidia-omniverse]] | 以实时路径追踪为核心的 NVIDIA USD 协作平台与演示序列 |
 
 ## 经典案例（wiki/examples/）
 
@@ -635,6 +637,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[planning-over-rng-game-design]] | 规划式游戏设计：dotAGE / Spirit Island / Voidfall 的确定性 + 精算乐趣 |
 | [[minecraft-plugin-development]] | Minecraft plugin vs mod vs data pack 的生态与 Paper/Bukkit 工程 |
 | [[character-height-variation-problem]] | 角色高度变化的 6 种解法（高跟鞋问题） |
+| [[blender-hard-surface-modeling]] | Blender 硬表面建模：crease + bevel weight + harden normals 少顶点出工业硬棱 |
+| [[indie-pitching-publishers]] | Joost van Dongen 17 年经验：半年全职 pitch、MeetToMatch、X-factor 与 76 页台账 |
+| [[game-idea-generation]] | 避开创意输入同质化：现代艺术馆、博弈论、古建筑作为非游戏灵感源 |
 
 ## 人物（wiki/people/）
 
@@ -691,6 +696,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[rune-skovbo-johansen]] | 丹麦独立开发者/前 Unity 工程师（Eye of the Temple, The Big Forest, Phacelle Noise, Erosion Filter） |
 | [[chips-and-cheese]] | Chips and Cheese 集体作者页（CPU/GPU 微架构实测博客） |
 | [[chester-lam]] | Chips and Cheese 主笔，缓存/内存/互连延迟带宽实测的主要贡献者 |
+| [[sam-lapere]] | Sam Lapere，OTOY / NVIDIA，Ray Tracey 博客作者，GPU 路径追踪长期记录者 |
+| [[joost-van-dongen]] | Joost van Dongen，Ronimo 共同创始人（Awesomenauts / Proun），Galaxy Grove CEO |
 
 ## 源摘要（wiki/sources/）
 
@@ -1269,6 +1276,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-chipset-microbench]] | Chester Lam：主板 chipset 对 PCIe 延迟的影响（2026-03） |
 | [[sources/chipsandcheese-ccc-april-fools]] | Chester Lam：LLM C 编译器与微架构救生圈（2026-04 愚人节） |
 | [[sources/chipsandcheese-split-locks]] | Chester Lam：x86-64 split lock 跨 7 平台横测（2026-04） |
+| [[sources/raytracey-lighthouse-2]] | Lapere：Lighthouse 2，Bikker 基于 OptiX 7 的开源实时路径追踪框架 |
+| [[sources/raytracey-marbles-rtx-omniverse]] | Lapere：Marbles RTX 夜景与 Omniverse 上的 many-light 实时路径追踪 |
+| [[sources/joostdevblog-where-to-get-original-ideas]] | Joost van Dongen：避开创意输入同质化（Proun 源自 Kandinsky） |
+| [[sources/joostdevblog-robo-maestro-modelling-tricks]] | Joost van Dongen：Blender 硬表面建模 crease / bevel weight / harden normals |
+| [[sources/joostdevblog-pitching-to-publishers]] | Joost van Dongen：17 年 pitch 经验，MeetToMatch、X-factor、bookkeeping |
 
 ## 元（wiki/meta/）
 

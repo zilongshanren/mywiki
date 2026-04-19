@@ -58,13 +58,13 @@ sources: 1
 可拆分的子任务（跨平台、本地化等）在开源后被志愿者领走，**独立开发者的有效产能被意外放大了**。
 
 ## 相关
-
 - [[cloudwu]]
 - [[soluna-2d-engine]]
 - [[ltask-scheduler]]
 - [[gameplay-architecture]]
 - [[deckbuilder-game-design-patterns]] —— 三款卡牌构筑游戏的设计启发
 - [[planning-over-rng-game-design]] —— dotAGE 作者独自做 9 年的案例
+- [[indie-pitching-publishers]] —— 独立工作室找发行商的 pitch 方法论（Joost van Dongen）
 
 ## Sources
 

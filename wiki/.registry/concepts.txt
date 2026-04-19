@@ -627,3 +627,8 @@ gb10-gpu-blackwell-igpu
 chipset-pcie-latency
 split-lock-x86
 llm-generated-c-compiler-perf
+lighthouse-2-optix
+nvidia-omniverse
+blender-hard-surface-modeling
+indie-pitching-publishers
+game-idea-generation
