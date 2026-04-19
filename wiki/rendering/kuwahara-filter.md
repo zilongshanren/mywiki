@@ -69,5 +69,5 @@ minVar = lerp(minVar, regionB.variance, t);
 - [[sobel-edge-detection]] —— 与之互补的边缘保留思路
 
 ## Sources
-
 - [[sources/danielilett-image-effects-kuwahara]]
+- [[sources/danielilett-snapshot-pro-oil-painting]] —— Snapshot Pro 产品版 Kuwahara 油画后处理

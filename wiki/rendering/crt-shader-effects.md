@@ -61,8 +61,8 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 - [[sources/danielilett-snapshot-pro-scanlines]] —— 贴图驱动的扫描线 override，和 Cyan 程序化扫描线做同一件事，选了查表路径换灵活性
 
 ## Sources
-
 - [[sources/cyan-retro-crt-shader]]
 - [[sources/alanzucconi-flixel-retro-crt]]
 - [[sources/danielilett-retro-urp-crt-mesh]]
 - [[sources/danielilett-retro-urp-crt-post-process]]
+- [[sources/danielilett-snapshot-pro-noise-grain]] —— 相邻的复古后处理：程序化胶片噪点，与 CRT 静电噪声同美学路线

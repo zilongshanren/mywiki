@@ -1477,6 +1477,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-snapshot-pro-radial-blur]] | Ilett：Snapshot Shaders Pro - Radial Blur kernel 随径向距离变化 |
 | [[sources/danielilett-snapshot-pro-scanlines]] | Ilett：Snapshot Shaders Pro - Scanlines 贴图驱动扫描线 |
 | [[sources/danielilett-snapshot-pro-sepia-tone]] | Ilett：Snapshot Shaders Pro - Sepia Tone 单 Blend 参数 luminance 棕褐调色 |
+| [[sources/danielilett-snapshot-pro-outline-sobel]] | Ilett：Snapshot Pro 基础 color-only Sobel 描边 |
+| [[sources/danielilett-snapshot-pro-neon-sobel]] | Ilett：Snapshot Pro Sobel 掩膜 × HSL 提饱和霓虹 |
+| [[sources/danielilett-snapshot-pro-outlines-fancy]] | Ilett：Snapshot Pro color+depth+normal 三路 Sobel 合成 |
+| [[sources/danielilett-snapshot-pro-oil-painting]] | Ilett：Snapshot Pro Kuwahara 油画后处理 |
+| [[sources/danielilett-snapshot-pro-noise-grain]] | Ilett：Snapshot Pro 程序化胶片颗粒，Hermite/Quintic 插值 |
 
 ## 元（wiki/meta/）
 

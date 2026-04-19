@@ -11511,3 +11511,8 @@ raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-posterize.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-radial-blur.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-scanlines.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-sepia-tone.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-outline-sobel.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-neon-sobel.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-outlines-fancy.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-oil-painting.md
+raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-noise-grain.md

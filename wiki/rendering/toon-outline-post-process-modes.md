@@ -83,5 +83,6 @@ Outline feature 暴露 **Render Pass Event**：before URP 内置 post（color gr
 - [[stencil-buffer]]
 
 ## Sources
-
 - [[sources/danielilett-toon-shaders-pro-outline-post]]
+- [[sources/danielilett-snapshot-pro-outline-sobel]] —— Snapshot Pro 单路 color Sobel 档（Toon Pro 的前身雏形）
+- [[sources/danielilett-snapshot-pro-outlines-fancy]] —— Snapshot Pro 三通道 Sobel 档，等同 Toon Pro 的 Depth Normal Color Outlines

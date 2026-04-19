@@ -105,7 +105,7 @@ return noise_sum / weight_sum;
 - [[dot-gyroid-noise]] — gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声
 
 ## Sources
-
 - [[sources/xor-mini-noise]]
 - [[sources/xor-mini-noise-2]]
 - [[sources/xor-mini-noise-3]] —— Simplex noise、函数 vs 纹理权衡、tileable noise
+- [[sources/danielilett-snapshot-pro-noise-grain]] —— Snapshot Pro 产品版胶片颗粒，Hermite/Quintic 插值二选一

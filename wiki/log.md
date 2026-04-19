@@ -797,3 +797,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-61 Worker FW (Daniel Ilett Snapshot Pro 最后 5 effects)
 
 处理 5 篇 danielilett.com 产品参考文档（Pixelate / Posterize / Radial Blur / Scanlines / Sepia Tone）。新增 2 概念页（pixelate-postfx, radial-blur-postfx）、5 source 摘要。Scanlines 链 [[crt-shader-effects]]、Posterize 链 [[color-quantization-retro]]、Sepia 链 [[image-effect-colour-transform]]，均不另建概念。Snapshot Shaders Pro 产品文档系列至此完结。
+
+## [2026-04-19] ingest | Wave-62 Worker FZ (danielilett Snapshot Pro ×5)
+
+处理 5 篇 Daniel Ilett Snapshot Shaders Pro 产品参考页：outline-sobel / neon-sobel / outlines-fancy / oil-painting / noise-grain。全部 ingested，0 跳过。新增 5 source 摘要，0 概念页（算法本身 sobel-edge-detection / kuwahara-filter / toon-outline-post-process-modes / classic-shader-noise / crt-shader-effects 均已有），0 人物（daniel-ilett 已存在）。向 sobel / kuwahara / classic-noise / toon-outline / crt 5 个既有概念页追加 source 链接。
