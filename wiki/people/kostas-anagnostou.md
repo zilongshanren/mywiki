@@ -42,6 +42,7 @@ sources: 15
 - [[spatial-hash-rtao-cache]] —— 2025 年 11 月的 RTAO 加速 + 去噪方案（pcg + xxhash32 双哈希、age eviction、自适应 cell size）
 - [[mlp-signal-encoding-rendering]] —— 2026 年 2 月的小 MLP 在渲染里实测：辐亮度 MLP 赢 SH、辐照度 SH 赢 MLP、BRDF 要 Rusinkiewicz 参数化
 - [[hlsl-cooperative-vectors-tensor-cores]] —— 2026 年 2 月 Agility SDK preview 把大 MLP 加速 173× 的实测
+- [[people/wolfgang-engel]] —— Confetti / The Forge 负责人，2018 年邀请他把 hybrid shadow 原型移植到 The Forge，同时约稿 GPU Zen 2 culling 章节
 
 ## Sources
 - [[sources/interplay-tools-of-the-trade]]
@@ -78,3 +79,4 @@ sources: 15
 - [[sources/interplay-spatial-hash-rtao]]
 - [[sources/interplay-neural-rendering-1-mlp]]
 - [[sources/interplay-neural-rendering-2-coopvec]]
+- [[sources/wolfgang-engel-ray-tracing-without-api]]

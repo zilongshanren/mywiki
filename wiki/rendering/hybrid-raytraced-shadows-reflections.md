@@ -104,7 +104,6 @@ NSight 的 profile 直接验证这一点：改格式前 shader 是 **TEX bound**
 - Ray-triangle 的 loop 里**每次都要重算顶点 transform**——没有 vertex cache，作者建议把变换后的顶点落回 global memory 作为 tradeoff 探索。
 
 ## 相关
-
 - [[hybrid-raytracing-pipeline]] —— 同一主题的成熟版落地（gkNextRenderer）
 - [[deferred-rendering]] —— hybrid 管线里 primary ray 的替代品
 - [[shadow-mapping-basics]] —— 传统阴影方案
@@ -117,7 +116,10 @@ NSight 的 profile 直接验证这一点：改格式前 shader 是 **TEX bound**
 - [[gpu-latency-hiding]]
 - [[temporal-antialiasing]] —— 1/4 res shadow 靠 TAA 补回质量
 - [[kostas-anagnostou]]
+- [[the-forge-renderer]] —— Confetti 在 2018 年 9 月把这套 hybrid shadow 移植到 The Forge，跨 PC / macOS / iOS / Xbox 运行（含 iPhone 7 Sponza demo）
+- [[ray-tracing-api-debate]] —— Wolfgang Engel 对 DXR 黑盒化的公开质疑，hybrid 移植是这场辩论的工程姿态
+- [[people/wolfgang-engel]]
 
 ## Sources
-
 - [[sources/interplay-hybrid-raytraced-shadows-reflections]]
+- [[sources/wolfgang-engel-ray-tracing-without-api]]

@@ -619,6 +619,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[opengl-draw-call-batching-sweet-spot]] | instanced draw 的 5k-20k 三角形跨厂甜点（Outerra 实测） |
 | [[fp64-sincos-minimax]] | GLSL fp64 sin/cos 的 Remez minimax 近似（Outerra） |
 | [[vortex-distortion]] | 极坐标下半径相关旋转的 UV 扭曲后处理（漩涡） |
+| [[triangle-filtering-pipeline]] | Confetti/The Forge 的 Triangle VB 工程化：三级剔除 + ExecuteIndirect + Forward++ |
+| [[ray-tracing-api-debate]] | Wolfgang Engel 2018 年对 DXR 黑盒化的公开质疑与替代路线 |
+| [[the-forge-renderer]] | Confetti 开源跨平台渲染框架，Engel 所谓「下一代 GPU Zen」 |
 
 ## 经典案例（wiki/examples/）
 
@@ -747,6 +750,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[outerra-team]] | Brano Kemen / Angrypig Kralik —— Outerra 行星引擎双人组 |
 | [[sebastiano-mandala]] | Sebastiano Mandalà — Svelto.ECS 作者、Freejam 工程师 |
 | [[tom-looman]] | Tom Looman，前 Epic Games，UE C++ 教程与性能优化长期撰稿者 |
+| [[wolfgang-engel]] | Confetti 联创、The Forge 主推，ShaderX/GPU Pro/GPU Zen 编辑，Light Pre-Pass 提出者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1381,6 +1385,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/tomlooman-rider-ue5-setup]] | Looman：Rider + UE5 C++ 开发环境搭建 |
 | [[sources/tomlooman-project-orion]] | Looman：Project Orion 合作 Roguelike 示例项目总览 |
 | [[sources/tomlooman-unreal-insights-counters]] | Looman：给 Unreal Insights 与 Stats System 加 Counters/Traces |
+| [[sources/wolfgang-engel-hdr10-tv-setup]] | Engel 2017：LDR demo 上 HDR10 电视翻车 + 标准校准缺位 |
+| [[sources/wolfgang-engel-triangle-visibility-buffer]] | Engel 2018：Triangle VB 全管线长文（The Forge 工程化） |
+| [[sources/wolfgang-engel-dxr-api-debate]] | Engel 2018：为什么 RT 不该单独立 API |
+| [[sources/wolfgang-engel-ray-tracing-without-api]] | Engel 2018：The Forge 跨平台 compute hybrid shadow 落地 |
+| [[sources/wolfgang-engel-forge-history]] | Engel 2020：The Forge 历史 + GPU Zen 定位调整 + DXR 回望 |
 
 ## 元（wiki/meta/）
 

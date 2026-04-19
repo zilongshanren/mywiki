@@ -41,7 +41,6 @@ sRGB 的 TRC 是近似 γ≈2.2 的分段幂函数，**代价是编码后的值�
 > RGB 值不是颜色——色彩空间才是颜色。数学运算在线性域，存储显示在感知域。
 
 ## 相关
-
 - [[alpha-blending]] — 混合必须在线性空间
 - [[color-lut]] — color grading 的查找表
 - [[deferred-rendering]] — G-Buffer 存线性
@@ -55,6 +54,7 @@ sRGB 的 TRC 是近似 γ≈2.2 的分段幂函数，**代价是编码后的值�
 - [[bartosz-ciechanowski]]
 - [[color-banding]] — 量化精度不足在深色渐变上的可见性
 - [[perceptual-colormaps]] — 感知均匀 colormap 的科学可视化标准
+- [[sources/wolfgang-engel-hdr10-tv-setup]] —— LDR demo 直接上 HDR10 电视会翻车的经验教训；Rec.2100 需 scale 到 300 nits + Rec.709 → Rec.2020 + PQ
 
 ## Sources
 

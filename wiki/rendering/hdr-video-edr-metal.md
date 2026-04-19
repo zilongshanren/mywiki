@@ -104,13 +104,13 @@ float3 tonemap_maxrgb(float3 x, float maxIn, float maxOut) {
 - `CVMetalTexture` 生命期管理错会让 cache 资源提前回收，画面出怪
 
 ## 相关
-
 - [[color-space]]
 - [[local-tonemapping]]
 - [[metal-api-overview]]
 - [[cametal-layer-drawable]]
 - [[gamma-correction-srgb]]
 - [[warren-moore]]
+- [[sources/wolfgang-engel-hdr10-tv-setup]] —— 2017 年关于 HDR10 TV 用户端校准复杂度的早期观察
 
 ## Sources
 

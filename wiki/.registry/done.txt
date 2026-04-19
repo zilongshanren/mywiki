@@ -11442,3 +11442,8 @@ raw/articles/tomlooman.com/2026-02-27_project-orion-co-op-action-roguelike-sampl
 raw/articles/tomlooman.com/2026-03-19_adding-counters-traces-to-unreal-insights-stats-system.md
 raw/articles/tomlooman.com/2026-04-01_all-posts.md
 raw/articles/tomlooman.com/2026-04-01_get-in-touch.md
+raw/articles/diaryofagraphicsprogrammer.blogspot.com/2017-04-07_hdr10-tv-setup.md
+raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-03-30_triangle-visibility-buffer.md
+raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-04-05_ray-tracing-with-the-directx-ray-tracing-api-dxr.md
+raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-09-07_ray-tracing-without-ray-tracing-api.md
+raw/articles/diaryofagraphicsprogrammer.blogspot.com/2020-11-20_catching-up-history-of-the-forge-gpu-zen-ray-tracing-holiday.md

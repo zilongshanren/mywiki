@@ -26,13 +26,15 @@ Visibility Buffer 在混合渲染管线里可以 **完美替代 primary ray**：
 反方向也能玩：用一遍 primary ray 替代光栅化，直接写出 visibility buffer，后续走"传统" compute shading 流程。这种 reverse-hybrid 管线里，drawcall 优化、裁剪、batching 几乎被整个消掉。
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[hybrid-raytracing-pipeline]]
 - [[bindless-rendering]]
 - [[draw-call]]
 - [[overdraw]]
+- [[triangle-filtering-pipeline]] —— Confetti / The Forge 的 Triangle VB 工程化管线（三级剔除 + Forward++）
+- [[the-forge-renderer]] —— 跨 DX12 / Vulkan / Metal / Linux / 主机的参考实现
+- [[people/wolfgang-engel]]
 
 ## Sources
-
 - [[sources/gameknife-gknextrenderer-yearone]]
+- [[sources/wolfgang-engel-triangle-visibility-buffer]]
