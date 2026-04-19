@@ -11457,3 +11457,8 @@ raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-silhouette.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-snes.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-synthwave.md
 raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-text-adventure.md
+raw/articles/anki3d.org/2024-06-04_parsing-and-rewriting-spir-v.md
+raw/articles/anki3d.org/2024-08-19_workarounds-for-issues-with-mesh-shaders-vulkan-hlsl.md
+raw/articles/anki3d.org/2024-11-21_gpu-driven-rendering-in-anki.md
+raw/articles/anki3d.org/2025-02-04_simplified-pipeline-barriers.md
+raw/articles/anki3d.org/2025-12-04_minimalist-ray-tracing-leveraging-only-acceleration-structur.md

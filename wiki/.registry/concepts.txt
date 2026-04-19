@@ -681,3 +681,7 @@ infinite-random-rhombus-tilings
 sharpen-filter
 synthwave-grid-postfx
 text-adventure-terminal-postfx
+spirv-parsing-rewriting
+mesh-shader-vulkan-hlsl-per-primitive
+simplified-pipeline-barriers
+minimalist-rt-acceleration-structures

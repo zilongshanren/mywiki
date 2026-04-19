@@ -757,3 +757,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-58 Worker FP (danielilett snapshot-pro ×5: sharpen/silhouette/snes/synthwave/text-adventure)
 
 处理 5 篇 Daniel Ilett *Snapshot Shaders Pro* 产品参考（极短文档）。新增 3 概念页：[[sharpen-filter]]（unsharp mask / 3×3 Laplacian 卷积核）、[[synthwave-grid-postfx]]（屏幕像素反推世界坐标 + 三组正交平面距离判定）、[[text-adventure-terminal-postfx]]（cell 亮度索引字符图集 + fg/bg lerp）。Silhouette 与 SNES 分别复用既有 [[depth-texture-silhouette]] 和 [[color-quantization-retro]]，只追加 source 链接。新增 5 source 摘要。无人物、无跳过。
+
+## [2026-04-19] ingest | Wave-58 Worker FN (anki3d.org ×5)
+
+处理 5 篇 Panagiotis Christopoulos Charitos 在 anki3d.org 的博客（AnKi 3D Engine 作者）：SPIR-V 手动解析改写、Vulkan mesh shader + HLSL PerPrimitiveEXT 坑、GPU-driven 视频、pipeline barrier 简化、土豆级 RT。新增 4 概念页（spirv-parsing-rewriting, mesh-shader-vulkan-hlsl-per-primitive, simplified-pipeline-barriers, minimalist-rt-acceleration-structures）、1 人物页（panagiotis-charitos）、5 source 摘要。Patch 既有 gpu-hazard-tracking / meshlets-and-mesh-shaders / hybrid-raytracing-pipeline 的相关链接。GPU-driven 视频本体只有 Google Slides 链接，博客无可抽取内容，source 页标注为 data gap。

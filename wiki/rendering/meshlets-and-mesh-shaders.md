@@ -122,6 +122,7 @@ Mesh shader 不是做 meshlet cull 的唯一方式：**Frostbite 在 GDC 2016 �
 - [[bottleneck-analysis]] — 判定 PD/VAF 是不是真正的瓶颈
 - [[vertex-shader-export-bottleneck]] —— 传统 VS export 路径的 ISBE/PE/TRAM 成本，是改 mesh shader 的动机之一
 - [[variable-sized-work-pattern]] —— AS 剔除里 `WavePrefixCountBits + WaveActiveCountBits` 是同类
+- [[mesh-shader-vulkan-hlsl-per-primitive]] — HLSL + Vulkan 下 PerPrimitiveEXT 必须手动补的恶性跨厂商坑
 
 ## Sources
 

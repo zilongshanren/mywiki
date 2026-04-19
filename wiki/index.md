@@ -626,6 +626,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sharpen-filter]] | unsharp mask 锐化后处理：原图加高频残差；Snapshot Shaders Pro 的单参数产品化 |
 | [[synthwave-grid-postfx]] | 屏幕像素反推世界坐标后判定到三组正交平面的距离，画出透视正确的无限网格 |
 | [[text-adventure-terminal-postfx]] | ASCII 终端风格后处理：cell 平均亮度索引字符图集、bg/fg 双色 lerp |
+| [[spirv-parsing-rewriting]] | 手写 SPIR-V 解析器：检测 OpKill、改写 HLSL binding |
+| [[mesh-shader-vulkan-hlsl-per-primitive]] | HLSL + Vulkan mesh shader 的 PerPrimitiveEXT 手动 decoration 坑 |
+| [[simplified-pipeline-barriers]] | 把 Vulkan 的 stage/access/layout 压成两个引擎侧 enum |
+| [[minimalist-rt-acceleration-structures]] | 只用 ray query + TLAS instanceCustomIndex 的 potato RT |
 
 ## 经典案例（wiki/examples/）
 
@@ -756,6 +760,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sebastiano-mandala]] | Sebastiano Mandalà — Svelto.ECS 作者、Freejam 工程师 |
 | [[tom-looman]] | Tom Looman，前 Epic Games，UE C++ 教程与性能优化长期撰稿者 |
 | [[wolfgang-engel]] | Confetti 联创、The Forge 主推，ShaderX/GPU Pro/GPU Zen 编辑，Light Pre-Pass 提出者 |
+| [[panagiotis-charitos]] | AnKi 3D Engine 作者，anki3d.org 博客作者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1403,6 +1408,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-snapshot-pro-snes]] | Ilett：Snapshot Shaders Pro - SNES 每通道色阶量化 |
 | [[sources/danielilett-snapshot-pro-synthwave]] | Ilett：Snapshot Shaders Pro - Synthwave 世界空间网格后处理 |
 | [[sources/danielilett-snapshot-pro-text-adventure]] | Ilett：Snapshot Shaders Pro - Text Adventure ASCII 终端后处理 |
+| [[sources/anki-spirv-parsing-rewriting]] | Charitos：手写 SPIR-V 解析与改写 |
+| [[sources/anki-mesh-shader-vulkan-hlsl]] | Charitos：HLSL + Vulkan mesh shader per-primitive 坑 |
+| [[sources/anki-gpu-driven-rendering-video]] | Charitos：AnKi GPU-driven 管线视频（占位，待观后回填） |
+| [[sources/anki-simplified-pipeline-barriers]] | Charitos：pipeline barrier 的激进裁剪 |
+| [[sources/anki-minimalist-ray-tracing]] | Charitos：仅用加速结构的 potato RT |
 
 ## 元（wiki/meta/）
 

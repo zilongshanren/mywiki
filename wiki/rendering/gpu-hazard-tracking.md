@@ -40,12 +40,12 @@ Metal 允许在资源上设 `trackingMode = tracked` 来恢复 D3D11 风格的�
 [[d3d12-resource-binding]] 里的 `ResourceStateTracker` 是同一问题在单引擎层的朴素实现：多线程录制命令列表时，局部状态就地记录，全局状态留到 `ExecuteCommandLists` 时一次性回填。这是"自己做 hazard tracking"的最小工程形态。
 
 ## 相关
-
 - [[d3d12-resource-binding]]
 - [[render-graph]]
 - [[draw-call]]
 - [[gpu-fence-timeline-semaphore]]
 - [[rendering-api-depth]]
+- [[simplified-pipeline-barriers]] — AnKi 把 25+ stage / 30+ access flag 压成两个 enum 的工程化方案
 
 ## Sources
 

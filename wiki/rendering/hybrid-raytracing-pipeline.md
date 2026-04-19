@@ -34,6 +34,7 @@ sources: 2
 - [[hybrid-raytraced-shadows-reflections]] —— Kostas Anagnostou 2018 年 compute shader 手写 BVH hybrid raytracer：硬阴影 + 镜面反射的早期范例
 - [[spatial-hash-rtao-cache]] —— 静态场景 RTAO 的稀疏哈希缓存方案
 - [[lighthouse-2-optix]] — OptiX 7 全路径追踪替代混合管线的对照
+- [[minimalist-rt-acceleration-structures]] — AnKi 的极端版：只用 ray query + TLAS instanceCustomIndex，不要 SBT、不要材质纹理
 
 ## Sources
 
