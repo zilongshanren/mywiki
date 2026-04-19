@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w40-dp",
+  "agent_note": "5 篇 Xor / GM Shaders Mini 的 2025 新文。全部保留（design-choices 不是 meta 而是 shader art 设计原则）。新增 5 个 rendering 概念页 + 5 个 source 页；xor-shader-artist 人物页用 patch 追加贡献表、相关列表、Sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-03-17_turbulence.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-turbulence",
+      "title": "Turbulence"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-10_reading-math-papers.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-reading-math",
+      "title": "Reading Math Papers"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-19_combining-shaders.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-combining-shaders",
+      "title": "Combining Shaders"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-26_common-shader-mistakes.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-common-mistakes",
+      "title": "Common Shader Mistakes"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-05-19_mini-design-choices.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-design-choices",
+      "title": "Mini: Design Choices"
+    }
+  ],
+  "concepts_created": [
+    "turbulence-domain-warping",
+    "reading-math-notation-for-shaders",
+    "shader-combination-strategies",
+    "common-shader-pitfalls",
+    "shader-art-design-principles"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "xor-mini-turbulence",
+    "xor-mini-reading-math",
+    "xor-mini-combining-shaders",
+    "xor-mini-common-mistakes",
+    "xor-mini-design-choices"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Turbulence | [[turbulence-domain-warping]] — 叠加旋转正弦波伪装湍流 |\n| Reading Math Papers | [[reading-math-notation-for-shaders]] — 数学记号→GLSL 查表 |\n| Combining Shaders | [[shader-combination-strategies]] — 单 pass 合并的 5 项 checklist |\n| Common Shader Mistakes | [[common-shader-pitfalls]] — NaN / 纹理 / mipmap / 精度 bug 清单 |\n| Mini: Design Choices | [[shader-art-design-principles]] — 构图/光/色/纹理/动作五维自查 |"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[turbulence-domain-warping]]\n- [[reading-math-notation-for-shaders]]\n- [[shader-combination-strategies]]\n- [[common-shader-pitfalls]]\n- [[shader-art-design-principles]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-mini-turbulence]]\n- [[sources/xor-mini-reading-math]]\n- [[sources/xor-mini-combining-shaders]]\n- [[sources/xor-mini-common-mistakes]]\n- [[sources/xor-mini-design-choices]]"
+    },
+    {
+      "file": "wiki/rendering/creative-coding-process.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-art-design-principles]] — Xor 的 5 维审美自查（构图/光/色/纹理/动作）"
+    },
+    {
+      "file": "wiki/rendering/fractal-texturing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[turbulence-domain-warping]] — 同一多尺度思路的 domain warping 变体"
+    },
+    {
+      "file": "wiki/rendering/separable-gaussian-blur.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-combination-strategies]] — 什么时候不走可分离而塞进单 pass"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[turbulence-domain-warping]] | 叠加旋转正弦波在单 pass 伪装流体 / 火焰 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[reading-math-notation-for-shaders]] | shader 作者读数学论文的记号查表 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-combination-strategies]] | 合并 vs 多趟 pass 的 5 项 checklist |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[common-shader-pitfalls]] | NaN / 纹理 / mipmap / 精度常见 shader bug |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-art-design-principles]] | Xor 的 shader art 五维自查（构图/光/色/纹理/动作） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-turbulence]] | Xor：叠加旋转正弦波做湍流 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-reading-math]] | Xor：读数学论文的记号字典 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-combining-shaders]] | Xor：合并 shader 的 checklist 与嵌套顺序 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-common-mistakes]] | Xor：shader 常见 bug 清单 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-design-choices]] | Xor：shader art 5 维设计自查 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-40 Worker DP (mini.gmshaders.com Xor 2025 ×5)\n\n处理 5 篇 Xor 在 mini.gmshaders.com 2025 年发布的新文（turbulence / reading-math / combining-shaders / common-mistakes / design-choices）。全部保留。新增 5 个 rendering 概念页（turbulence-domain-warping, reading-math-notation-for-shaders, shader-combination-strategies, common-shader-pitfalls, shader-art-design-principles）与 5 个 source 页；给 xor-shader-artist 人物页追加贡献表、相关与 Sources，并在 creative-coding-process / fractal-texturing / separable-gaussian-blur 加反向链接。"
+}

@@ -36,6 +36,7 @@ sources: 1
 - 根源：[[dependencies]]、[[information-leakage]]
 - 对策：[[information-hiding]]、[[deep-modules]]
 - 其他症状：[[cognitive-load]]、[[unknown-unknowns]]
+- [[automated-test-philosophy]] — 按层分的 mock 测试是 change amplification 的典型受害者
 
 ## Sources
 

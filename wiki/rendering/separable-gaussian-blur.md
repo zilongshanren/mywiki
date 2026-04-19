@@ -102,6 +102,7 @@ float w = gaussian(x, sigma);
 - [[unity-grabpass-blur]]
 - [[image-effect-colour-transform]]
 - [[depth-texture-silhouette]]
+- [[shader-combination-strategies]] — 什么时候不走可分离而塞进单 pass
 - [[image-resampling-filters]]
 - [[laplacian-pyramid]]
 - [[mipmap-generation-sampling]] —— `texture2D` 的 bias 参数可作为 blur 的廉价替代或加强剂

@@ -537,3 +537,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-19] ingest | Wave-39 Worker DM (simonschreibt.de ×5)
 
 5 篇 simonschreibt.de：跳 3（newsletter 归档、Cozy Space Survivors 销售复盘、press kit），入 2——Infinity Nikki 单向窗户（back-face culling + 遮挡体积）与 Shadow Breakdown（shadow map + blob + AO decal 三套合奏）。新增 4 概念（[[one-way-window-backface-culling]]、[[shadow-caster-culling-front-back]]、[[selective-shadow-fade-pass-switch]]、[[blob-shadow-decal-vs-plane]]）+ 2 source + patch [[simon-trumpler]] / [[shadow-mapping-basics]]。
+
+## [2026-04-19] ingest | Wave-40 Worker DN (jendrikillner 341-350 all skipped)
+
+10 篇 jendrikillner Graphics Programming Weekly 2024-05 ~ 07（issues 341-350）全部 skipped_offtopic，延续 waves 34/38/39 先例。
+
+## [2026-04-19] ingest | Wave-40 Worker DO (etodd.io 2024-2025 ×5)
+
+Evan Todd 5 篇：3 技术 ingest（CI ASG 优化、identity/naming、100k 测试哲学）+ 2 信仰/艺术随笔 skip。新增 3 software-design 概念（[[identity-problem-naming]]、[[automated-test-philosophy]]、[[ci-cost-optimization-asg]]）+ 3 source + patch evan-todd / change-amplification / false-abstraction / abstraction。
+
+## [2026-04-19] ingest | Wave-40 Worker DP (mini.gmshaders.com Xor 2025 ×5)
+
+5 篇 Xor 2025 年新文（turbulence / reading-math / combining-shaders / common-mistakes / design-choices）全部 ingested。新增 5 rendering 概念 + 5 source + patch xor-shader-artist / creative-coding-process / fractal-texturing / separable-gaussian-blur。

@@ -99,6 +99,7 @@ Xor 的[原文 demo](https://www.shadertoy.com/view/mds3R4) 同屏对比了三�
 - [[triplanar-mapping]] —— 另一条 terrain 纹理路线
 - [[sampler-filter-wrap-modes]]
 - [[layered-grid-noise]] —— Xor 的另一个「多尺度叠加」技巧
+- [[turbulence-domain-warping]] — 同一多尺度思路的 domain warping 变体
 - [[xor-shader-artist]]
 
 ## Sources

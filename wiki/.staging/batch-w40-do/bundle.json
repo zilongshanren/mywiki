@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w40-do",
+  "agent_note": "Evan Todd 2024-2025: 3 篇技术测试 / CI / naming 随笔 ingest；2 篇纯信仰/生活散文 skip。evan-todd 人物页已存在（w1 创建），此批追加 3 条 source 链接并补充技术脉络一句话。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/etodd.io/2024-01-01_waiting-on-tests.md",
+      "status": "ingested",
+      "source_slug": "etodd-waiting-on-tests",
+      "title": "Waiting on Tests"
+    },
+    {
+      "path": "raw/articles/etodd.io/2024-01-09_the-identity-problem.md",
+      "status": "ingested",
+      "source_slug": "etodd-identity-problem",
+      "title": "The Identity Problem"
+    },
+    {
+      "path": "raw/articles/etodd.io/2024-04-19_the-start-of-a-game-development-journal.md",
+      "status": "skipped_offtopic",
+      "reason": "个人信仰与艺术动机随笔，无软件工程 / 图形 / 引擎技术内容。"
+    },
+    {
+      "path": "raw/articles/etodd.io/2024-06-09_catch-your-dream.md",
+      "status": "skipped_offtopic",
+      "reason": "童年 MechWarrior 2 情怀 + 基督教信仰反思；无技术内容。"
+    },
+    {
+      "path": "raw/articles/etodd.io/2025-01-06_zero-to-one-hundred-thousand-tests.md",
+      "status": "ingested",
+      "source_slug": "etodd-zero-to-100k-tests",
+      "title": "Zero to One Hundred Thousand Tests"
+    }
+  ],
+  "concepts_created": [
+    "identity-problem-naming",
+    "automated-test-philosophy",
+    "ci-cost-optimization-asg"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "etodd-waiting-on-tests",
+    "etodd-identity-problem",
+    "etodd-zero-to-100k-tests"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/etodd-waiting-on-tests]]\n- [[sources/etodd-identity-problem]]\n- [[sources/etodd-zero-to-100k-tests]]"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[identity-problem-naming]]\n- [[automated-test-philosophy]]\n- [[ci-cost-optimization-asg]]"
+    },
+    {
+      "file": "wiki/software-design/change-amplification.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[automated-test-philosophy]] — 按层分的 mock 测试是 change amplification 的典型受害者"
+    },
+    {
+      "file": "wiki/software-design/false-abstraction.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[identity-problem-naming]] — identity mismatch 是 false abstraction 的常见来源"
+    },
+    {
+      "file": "wiki/software-design/abstraction.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[identity-problem-naming]] — 抽象的本质是划分 1,000 维空间"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[identity-problem-naming]] | Evan Todd：命名的本质是判断两物是否同一 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[automated-test-philosophy]] | 自动化测试的目的是防回归而非找 bug |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[ci-cost-optimization-asg]] | 用 Jupyter 把 ASG 调优成最优化题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-waiting-on-tests]] | Evan Todd：CI ASG 冷启动调优 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-identity-problem]] | Evan Todd：命名即 identity 分区 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-zero-to-100k-tests]] | Evan Todd：100k 测试之后回看什么是好测试 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-40 Worker do (etodd.io ×5)\n\n处理 Evan Todd 2024-2025 五篇博文：3 篇技术文 ingest（CI ASG 优化、identity / naming、测试哲学），2 篇纯信仰生活散文 skip（start-of-game-dev-journal、catch-your-dream）。新增 3 个 software-design 概念页（identity-problem-naming, automated-test-philosophy, ci-cost-optimization-asg）、3 个 source 摘要；在 evan-todd 人物页追加 3 条 source 链接与 3 条相关概念；对 change-amplification / false-abstraction / abstraction 追加交叉引用。"
+}

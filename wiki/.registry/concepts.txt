@@ -507,3 +507,11 @@ one-way-window-backface-culling
 shadow-caster-culling-front-back
 selective-shadow-fade-pass-switch
 blob-shadow-decal-vs-plane
+identity-problem-naming
+automated-test-philosophy
+ci-cost-optimization-asg
+turbulence-domain-warping
+reading-math-notation-for-shaders
+shader-combination-strategies
+common-shader-pitfalls
+shader-art-design-principles

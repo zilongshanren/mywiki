@@ -49,6 +49,9 @@ sources: 371
 | [[strategy-vs-switch]] | Fowler 经典重构：用 Strategy 模式替代类型码驱动的 switch |
 | [[type-safety-vs-simplicity]] | 类型安全 vs 代码浅显——云风写完 C++ 版粒子系统后的自我怀疑 |
 | [[id-based-lifetime-with-kill-flag]] | ID 索引 + 销毁标记：替代 refcount 的对象生命期管理模式 |
+| [[identity-problem-naming]] | Evan Todd：命名的本质是判断两物是否同一 |
+| [[automated-test-philosophy]] | 自动化测试的目的是防回归而非找 bug |
+| [[ci-cost-optimization-asg]] | 用 Jupyter 把 ASG 调优成最优化题 |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -480,6 +483,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[shadow-caster-culling-front-back]] | shadow map 该用 front-face 还是 back-face 做投射者 —— peter-panning 与 light leak 的抉择 |
 | [[selective-shadow-fade-pass-switch]] | 让单个角色的阴影独立淡出：UE Shadow Pass Switch + 多 shadow pass |
 | [[blob-shadow-decal-vs-plane]] | Blob 阴影：对齐平面 vs 投影 decal，水面与高度差的取舍 |
+| [[turbulence-domain-warping]] | 叠加旋转正弦波在单 pass 伪装流体 / 火焰 |
+| [[reading-math-notation-for-shaders]] | shader 作者读数学论文的记号查表 |
+| [[shader-combination-strategies]] | 合并 vs 多趟 pass 的 5 项 checklist |
+| [[common-shader-pitfalls]] | NaN / 纹理 / mipmap / 精度常见 shader bug |
+| [[shader-art-design-principles]] | Xor 的 shader art 五维自查（构图/光/色/纹理/动作） |
 
 ## 经典案例（wiki/examples/）
 
@@ -984,6 +992,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cloudwu-game-engine-memory]] | 云风读《游戏引擎架构》笔记：Console 内存约束下的栈式 / 双端 / 帧分配器与网易内部内存管理器比赛 |
 | [[sources/simonschreibt-nikki-one-way-window]] | Simon：Infinity Nikki 单向窗户与相机外 NPC 动画剔除 |
 | [[sources/simonschreibt-nikki-shadow]] | Simon：Infinity Nikki 三套阴影系统——shadow map、blob、AO decal 的合奏 |
+| [[sources/etodd-waiting-on-tests]] | Evan Todd：CI ASG 冷启动调优 |
+| [[sources/etodd-identity-problem]] | Evan Todd：命名即 identity 分区 |
+| [[sources/etodd-zero-to-100k-tests]] | Evan Todd：100k 测试之后回看什么是好测试 |
+| [[sources/xor-mini-turbulence]] | Xor：叠加旋转正弦波做湍流 |
+| [[sources/xor-mini-reading-math]] | Xor：读数学论文的记号字典 |
+| [[sources/xor-mini-combining-shaders]] | Xor：合并 shader 的 checklist 与嵌套顺序 |
+| [[sources/xor-mini-common-mistakes]] | Xor：shader 常见 bug 清单 |
+| [[sources/xor-mini-design-choices]] | Xor：shader art 5 维设计自查 |
 
 ## 元（wiki/meta/）
 

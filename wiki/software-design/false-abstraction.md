@@ -46,6 +46,7 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 - 反面：[[abstraction]] 的正确形态
 - 效果：[[obscurity]] 的载体
 - 对比：一个成功的隐藏案例是 [[garbage-collector]]——GC 把内存管理变得真正不相关
+- [[identity-problem-naming]] — identity mismatch 是 false abstraction 的常见来源
 
 ## Sources
 

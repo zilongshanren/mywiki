@@ -43,6 +43,7 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 - 载体：[[deep-modules]]
 - 反面：[[false-abstraction]]
 - 目标：隐藏 [[obscurity]] 意义下的「不重要细节」
+- [[identity-problem-naming]] — 抽象的本质是划分 1,000 维空间
 
 ## Sources
 

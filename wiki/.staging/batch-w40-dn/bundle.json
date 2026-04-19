@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w40-dn",
+  "agent_note": "Jendrik Illner Graphics Programming Weekly issues 341-350 (May-Jul 2024). All are standard curated link roundups with no substantive original analysis by Jendrik himself — consistent with precedent set in waves 34/38/39 for issues 330-340. The underlying linked articles are ingested separately when their authors' blogs are tracked. Skip all 10.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2024-05-26_graphics-programming-weekly-issue-341-may-26th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-06-02_graphics-programming-weekly-issue-342-june-2nd-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-06-09_graphics-programming-weekly-issue-343-june-9th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-06-17_graphics-programming-weekly-issue-344-june-17th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-06-23_graphics-programming-weekly-issue-345-june-23rd-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-06-30_graphics-programming-weekly-issue-346-june-30th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-07-07_graphics-programming-weekly-issue-347-july-7th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-07-14_graphics-programming-weekly-issue-348-july-14th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-07-21_graphics-programming-weekly-issue-349-july-21st-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-07-28_graphics-programming-weekly-issue-350-july-28th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no original Jendrik analysis — same rationale as 330-340 skips in waves 34/38/39"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-40 Worker DN (jendrikillner.com issues 341-350)\n\n全部跳过。10 篇均为 Jendrik Illner 每周图形编程链接汇总（2024 年 5-7 月 issues 341-350），无原创分析，延续 waves 34/38/39 对 issues 330-340 的先例。被链接文章由其作者博客独立 ingest。"
+}

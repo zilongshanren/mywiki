@@ -16,6 +16,9 @@ sources: 5
 - [[a-star-pathfinding]]
 - [[csharp-runtime-script-compilation]]
 - [[tools-first-iteration-loop]]
+- [[identity-problem-naming]]
+- [[automated-test-philosophy]]
+- [[ci-cost-optimization-asg]]
 
 ## Sources
 
@@ -24,3 +27,6 @@ sources: 5
 - [[sources/etodd-component-binding-behind-the-scenes]]
 - [[sources/etodd-tools-are-everything]]
 - [[sources/etodd-csharp-runtime-compilation]]
+- [[sources/etodd-waiting-on-tests]]
+- [[sources/etodd-identity-problem]]
+- [[sources/etodd-zero-to-100k-tests]]

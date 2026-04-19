@@ -39,6 +39,11 @@ sources: 10
 | Mini: Mipmaps | [[mipmap-generation-sampling]] —— LOD 选择、`bias` 参数的廉价 blur 用法 |
 | Mini: WebGPU | [[webgpu-intro]] —— GM 视角的 WebGPU/WGSL 入门 |
 | Mini: Blur Philosophy | 延伸 [[separable-gaussian-blur]]：box → Gaussian → kernel → separable 的 dos/avoids 清单 |
+| Turbulence | [[turbulence-domain-warping]] — 叠加旋转正弦波伪装湍流 |
+| Reading Math Papers | [[reading-math-notation-for-shaders]] — 数学记号→GLSL 查表 |
+| Combining Shaders | [[shader-combination-strategies]] — 单 pass 合并的 5 项 checklist |
+| Common Shader Mistakes | [[common-shader-pitfalls]] — NaN / 纹理 / mipmap / 精度 bug 清单 |
+| Mini: Design Choices | [[shader-art-design-principles]] — 构图/光/色/纹理/动作五维自查 |
 
 ## 和其它作者的对比
 
@@ -73,6 +78,11 @@ sources: 10
 - [[separable-gaussian-blur]]
 - [[bilinear-sample-blur-optimization]]
 - [[vertex-shader-basics]]
+- [[turbulence-domain-warping]]
+- [[reading-math-notation-for-shaders]]
+- [[shader-combination-strategies]]
+- [[common-shader-pitfalls]]
+- [[shader-art-design-principles]]
 
 ## Sources
 
@@ -108,3 +118,8 @@ sources: 10
 - [[sources/xor-mini-anti-aliasing]]
 - [[sources/xor-mini-gamma]]
 - [[sources/xor-mini-sdf]]
+- [[sources/xor-mini-turbulence]]
+- [[sources/xor-mini-reading-math]]
+- [[sources/xor-mini-combining-shaders]]
+- [[sources/xor-mini-common-mistakes]]
+- [[sources/xor-mini-design-choices]]

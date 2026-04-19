@@ -41,6 +41,7 @@ vec2 uv = vec2(length(p), atan(p.y, p.x) / PI - length(p));
 - [[shaping-functions]]
 - [[fragment-shader]]
 - [[xor-shader-artist]]
+- [[shader-art-design-principles]] — Xor 的 5 维审美自查（构图/光/色/纹理/动作）
 
 ## Sources
 
