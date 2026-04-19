@@ -21,10 +21,10 @@ Simon 发现 Anno 1800 默认把太阳位置设为相机的函数：无论玩家
 - Anno 系列至少从 2006 年就在用；Islanders、Islands&Trains 等 low-poly 建造游戏同理
 
 ## 链接到的概念
-
 - [[camera-relative-sun-shadows]]
 - [[shadow-mapping-basics]]
 - [[simon-trumpler]]
+- [[thomas-poulet-anno-1800-frame]] — Anno 1800 完整帧分析（同一引擎不同视角）
 
 ## 原文
 

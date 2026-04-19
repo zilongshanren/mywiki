@@ -720,3 +720,12 @@ urp-builtin-feature-mapping
 urp-settings-locations
 urp-shadergraph-fog-strip
 shader-variant-stripping
+light-prepass-pipeline
+ninokuni-2-line-art
+yuv-gbuffer-layered
+cloudscape-sdf-volumetric
+terrain-virtual-node-texture
+texture-driven-gpu-particles
+nine-slice-ui
+ue-observability-stack
+ue-asset-validator-blueprint

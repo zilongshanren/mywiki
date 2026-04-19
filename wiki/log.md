@@ -805,3 +805,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-62 Worker GA (cmwdexint.com ×5)
 
 处理 5 篇 cmwdexint.com / Ming Wai Chan 的 URP 贴士。Ingest 3 篇（URP↔Built-in 映射、URP 设置入口、ShaderGraph 关雾效 + 变体剥离）。新增 4 概念页（urp-builtin-feature-mapping, urp-settings-locations, urp-shadergraph-fog-strip, shader-variant-stripping）、1 人物页（ming-wai-chan）、3 source 摘要。跳过 2 篇：Stable Diffusion 本地安装、Unity × Spotify Android SDK 集成（偏离 graphics/rendering 主题）。
+
+## [2026-04-19] ingest | Wave-62 Worker GB (blog.thomaspoulet.fr ×5)
+
+处理 Thomas Poulet 博客 5 篇全技术文章：3 篇自研引擎帧分析（Ni No Kuni 2 light pre-pass + 艺术家驱动线稿 / DCS 2.7 YUV GBuffer + SDF cloudscape / Anno 1800 node-texture 地形 + 纹理驱动粒子 + 9-slice UI），1 篇 UE5 物理游戏的五档可观测性工具栈（On-screen → GDT → Visual Logger → ImGui → Ariadne），1 篇蓝图资产验证（GeneratedClass + Subobject Data Subsystem）。新增 1 人物页（thomas-poulet）、9 概念页、5 源摘要；跨链 simonschreibt-anno-1800-shadows、unreal-frame-breakdown、cel-shader-outline、particle-custom-vertex-streams、tiled-light-prepass、unreal-insights-counters-traces。

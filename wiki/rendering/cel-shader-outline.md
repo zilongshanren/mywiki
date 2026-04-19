@@ -80,3 +80,4 @@ Pass 1 把原模型覆盖的所有像素在 stencil buffer 标成 `4`。Pass 2 �
 - [[sources/lindenreid-animated-dotted-outline]] —— 动画虚线描边的 fragment shader 扩展
 - [[sources/danielilett-snapshot2-outline]] —— 屏幕空间 edge detection 版描边（DepthNormalsColor 三通道），与 inverted-hull stencil 方案的另一极
 - [[sources/danielilett-toon-shaders-pro-outline-post]] —— Toon Shaders Pro 的 Outline Feature：Depth Normal / High Quality Masked / Pixel Width Masked / Hull / Debug 五种算法并列
+- 相关：[[ninokuni-2-line-art]] — Ni No Kuni 2 用 MRT + 艺术家数据驱动的线稿

@@ -665,6 +665,13 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[urp-settings-locations]] | URP 设置入口的散落地图 |
 | [[urp-shadergraph-fog-strip]] | 给指定 ShaderGraph 材质关掉 URP 雾效 |
 | [[shader-variant-stripping]] | Unity 构建期剥 shader 变体（IPreprocessShaders） |
+| [[light-prepass-pipeline]] | Wolfgang Engel 的 light pre-pass 三步走管线（Ni No Kuni 2 实例）|
+| [[ninokuni-2-line-art]] | MRT + 艺术家数据驱动的角色线稿管线 |
+| [[yuv-gbuffer-layered]] | DCS 的 5 层 R8G8 array + YUV albedo GBuffer |
+| [[cloudscape-sdf-volumetric]] | SDF 驱动的体积云 cloudscape（DCS 2.7）|
+| [[terrain-virtual-node-texture]] | Anno 1800 的 node-texture 地形（763 slice array + bake）|
+| [[texture-driven-gpu-particles]] | Anno 1800 的 quad + 时间×粒子动画纹理粒子系统 |
+| [[nine-slice-ui]] | 九宫格 UI mesh：角不变形的任意矩形缩放 |
 
 ## 经典案例（wiki/examples/）
 
@@ -724,6 +731,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[project-orion-action-roguelike]] | Tom Looman 开源 UE5 合作 Roguelike 示例：Action 系统、DoD 投射物、对象池、Significance Manager |
 | [[unreal-insights-counters-traces]] | UE Stats System 与 Unreal Insights 双路径埋点：Counter / Cycle Counter / Named Events |
 | [[infinite-random-rhombus-tilings]] | Townscaper 替代方案：3 菱汇合点翻转 + 三层错位 chunking，无全局细分、无 chunk 边界 |
+| [[ue-observability-stack]] | UE 物理游戏调试工具五档（On-screen → GDT → Visual Logger → ImGui → Ariadne）|
+| [[ue-asset-validator-blueprint]] | UE 蓝图资产验证：GeneratedClass + Subobject Data Subsystem |
 
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -802,6 +811,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[jon-olick]] | 前 id Software 程序员，JO JPEG / jo_*.h 单文件库系列作者 |
 | [[adam-sawicki]] | AMD D3D12MA / VMA 作者，asawicki.info 博主，DX12 低层与 GPU 内存专家 |
 | [[ming-wai-chan]] | Ming Wai Chan（cmwdexint），Unity URP 实用贴士 |
+| [[thomas-poulet]] | 图形咨询 + 物理游戏独立开发，帧分析系列作者（blog.thomaspoulet.fr）|
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1490,6 +1500,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cmwdexint-urp-builtin-feature-mapping]] | cmwdexint：URP 与 Built-in RP 特性映射 |
 | [[sources/cmwdexint-urp-settings-locations]] | cmwdexint：URP 设置面板在哪里找 |
 | [[sources/cmwdexint-urp-shadergraph-fog-disable]] | cmwdexint：关掉 URP Lit ShaderGraph 的雾效 |
+| [[sources/thomas-poulet-ninokuni-2-frame]] | Poulet：Ni No Kuni 2 的 light pre-pass + MRT 线稿帧分析 |
+| [[sources/thomas-poulet-dcs-frame]] | Poulet：DCS 2.7 的 YUV GBuffer + SDF cloudscape 帧分析 |
+| [[sources/thomas-poulet-physics-tools-ue5]] | Poulet：UE5 物理游戏的五档可观测性工具栈 |
+| [[sources/thomas-poulet-anno-1800-frame]] | Poulet：Anno 1800 完整帧分析（自研引擎、forward+MSAA、node-texture 地形、FFT ocean）|
+| [[sources/thomas-poulet-blueprint-validation]] | Poulet：UE 蓝图资产验证的两处坑 |
 
 ## 元（wiki/meta/）
 

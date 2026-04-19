@@ -86,5 +86,5 @@ SCOPED_NAMED_EVENT_FSTRING(GetClass()->GetName(), FColor::White);
 - [[project-orion-action-roguelike]] —— Project Orion 里有大量 trace 实装示例
 
 ## Sources
-
 - [[sources/tomlooman-unreal-insights-counters]]
+- 相关：[[ue-observability-stack]] — Thomas Poulet 的五档调试工具栈；[[ue-asset-validator-blueprint]] — 蓝图内容验证

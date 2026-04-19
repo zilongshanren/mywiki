@@ -57,5 +57,5 @@ Cyan 顺带提到：Unity 还有一条 GPU 粒子路径——**Visual Effect Gra
 - [[cyanilux]]
 
 ## Sources
-
 - [[sources/cyan-particle-custom-vertex-streams]]
+- 相关：[[texture-driven-gpu-particles]] — Anno 1800 的 quad + 时间×粒子纹理方案

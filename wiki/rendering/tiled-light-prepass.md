@@ -57,5 +57,5 @@ Light prepass 是早年 PS3/Xbox 360 带宽紧张时代的产物（Crysis 2、Un
 - [[deferred-alpha-lighting]] —— 在 Hieroglyph light prepass 上验证的 UV unwrap lightmap 方案
 
 ## Sources
-
 - [[sources/elopezr-rotr-rendering]]
+- 相关：[[light-prepass-pipeline]] — Engel 原始 light pre-pass，Ni No Kuni 2 里的实例

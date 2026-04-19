@@ -85,7 +85,6 @@ AO 分两个 pass：先一张 quarter-res（基于降采样 normal + Hi-Z + 随�
 - **Refraction 代价是「透明物 / 粒子再绘一次」**——场景里透明物多时这块会吃掉一部分 budget。
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[tiled-deferred-shading]] —— UE4 在 >80 非阴影灯时切换的路径
 - [[volumetric-fog-froxels]]
@@ -98,6 +97,7 @@ AO 分两个 pass：先一张 quarter-res（基于降采样 normal + Hi-Z + 随�
 - [[color-lut]]
 - [[shadow-mapping-basics]]
 - [[kostas-anagnostou]]
+- [[sources/thomas-poulet-anno-1800-frame]]、[[sources/thomas-poulet-ninokuni-2-frame]]、[[sources/thomas-poulet-dcs-frame]] — Thomas Poulet 的自研引擎帧分析系列
 
 ## Sources
 
