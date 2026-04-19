@@ -565,3 +565,863 @@ blogs:
   site_url: https://www.tomlooman.com/
   feed_url: http://www.tomlooman.com/feed/
   category: unreal engine
+- title: 16BPP.net: Blog / Page 1
+  site_url: https://16bpp.net/
+  feed_url: https://16bpp.net/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: James' Space Blog
+  site_url: https://20k.github.io/
+  feed_url: https://20k.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Computer Graphics & Programming with Pekka Väänänen — 30fps.net
+  site_url: https://30fps.net/
+  feed_url: https://30fps.net/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Nikos Papadopoulos - Portfolio
+  site_url: https://www.4rknova.com/
+  feed_url: https://www.4rknova.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Devfault v2
+  site_url: https://acefanatic02.github.io/
+  feed_url: https://acefanatic02.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hackery, Math & Design — Acko.net
+  site_url: https://acko.net/
+  feed_url: https://acko.net/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: A Graphics Guy's Note
+  site_url: https://agraphicsguynotes.com/
+  feed_url: https://agraphicsguynotes.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Alain Galvan · Ray Tracing Driver Engineer at AMD
+  site_url: https://alain.xyz/
+  feed_url: https://alain.xyz/rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: Alan Zucconi - Tutorials for GameDevs
+  site_url: https://www.alanzucconi.com/
+  feed_url: https://www.alanzucconi.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Aleksa Gordić
+  site_url: https://www.aleksagordic.com/
+  feed_url: https://www.aleksagordic.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Personal website | Alex Harri Jónsson
+  site_url: https://alexharri.com/
+  feed_url: https://alexharri.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: alielmorsy
+  site_url: https://alielmorsy.github.io/
+  feed_url: https://alielmorsy.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Answer.AI - Practical AI R&D – Answer.AI
+  site_url: https://www.answer.ai/
+  feed_url: https://www.answer.ai/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Adam Sawicki Home Page - programming, graphics, games, media, C++, Windows, I...
+  site_url: https://asawicki.info/
+  feed_url: https://asawicki.info/news_rss.php
+  category: graphics
+  tags: [jendrik-cited]
+- title: C++ Minor
+  site_url: https://atyuwen.github.io/
+  feed_url: https://atyuwen.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: | Baptiste Genest website
+  site_url: https://baptiste-genest.github.io/
+  feed_url: https://baptiste-genest.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: bitsquid: development blog
+  site_url: https://bitsquid.blogspot.com/
+  feed_url: https://bitsquid.blogspot.com/feeds/posts/default
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home | Branimir Karadžić's Home Page
+  site_url: https://bkaradzic.github.io/
+  feed_url: https://bkaradzic.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: bleuje
+  site_url: https://bleuje.com/
+  feed_url: https://bleuje.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The blog at the bottom of the sea « Programming, Graphics, Gamedev, Exotic Co...
+  site_url: https://blog.demofox.org/
+  feed_url: https://blog.demofox.org/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Blog of Maxime Heckel
+  site_url: https://blog.maximeheckel.com/
+  feed_url: https://blog.maximeheckel.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Mike Swanson's Blog
+  site_url: https://blog.mikeswanson.com/
+  feed_url: https://blog.mikeswanson.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: ubitux/blog
+  site_url: https://blog.pkh.me/
+  feed_url: https://blog.pkh.me/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: PlayStation.Blog – Official PlayStation Blog for news and video updates on Pl...
+  site_url: https://blog.playstation.com/
+  feed_url: http://feeds.feedburner.com/psblog
+  category: graphics
+  tags: [jendrik-cited]
+- title: Blog - runevision
+  site_url: https://blog.runevision.com/
+  feed_url: https://blog.runevision.com/feeds/posts/default
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hi there! | Sebastian Schöner
+  site_url: https://blog.s-schoener.com/
+  feed_url: https://blog.s-schoener.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Thomas Poulet
+  site_url: https://blog.thomaspoulet.fr/
+  feed_url: https://blog.thomaspoulet.fr/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Code & Visuals
+  site_url: https://blog.yiningkarlli.com/
+  feed_url: https://blog.yiningkarlli.com/feeds/posts/default/
+  category: graphics
+  tags: [jendrik-cited]
+- title: BorisTheBrave.Com
+  site_url: https://www.boristhebrave.com/
+  feed_url: https://www.boristhebrave.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Box2D
+  site_url: https://box2d.org/
+  feed_url: https://box2d.org/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: All posts | Bruno Opsenica's Blog
+  site_url: https://bruop.github.io/
+  feed_url: https://bruop.github.io/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Binbun3D
+  site_url: https://bun3d.com/
+  feed_url: https://bun3d.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: C0DE517E
+  site_url: https://c0de517e.blogspot.com/
+  feed_url: https://c0de517e.blogspot.com/feeds/posts/default
+  category: graphics
+  tags: [jendrik-cited]
+- title: c0de517e's weblore: Main Entrance.
+  site_url: https://c0de517e.com/
+  feed_url: https://c0de517e.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Chips and Cheese | Substack
+  site_url: https://chipsandcheese.com/
+  feed_url: https://chipsandcheese.com/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: CIRCLE Group
+  site_url: https://circle-group.github.io/
+  feed_url: https://circle-group.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Claire Blackshaw: Claire Blackshaw
+  site_url: https://claire-blackshaw.com/
+  feed_url: https://www.claire-blackshaw.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Prof. Dr.-Ing. Quirin Meyer / Computer Graphics Lab - Prof. Dr.-Ing. Quirin M...
+  site_url: https://coburggraphicslab.github.io/
+  feed_url: https://CoburgGraphicsLab.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: corsix.org
+  site_url: http://www.corsix.org/
+  feed_url: http://www.corsix.org/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Cowleyfornia Studios
+  site_url: https://cowleyforniastudios.com/
+  feed_url: https://cowleyforniastudios.com/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Romain Guy — Photography
+  site_url: https://www.curious-creature.com/
+  feed_url: https://curious-creature.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Cyanilux Shader Tutorials
+  site_url: https://www.cyanilux.com/
+  feed_url: https://www.cyanilux.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: cybereality » the matrix was a documentary
+  site_url: https://cybereality.com/
+  feed_url: https://cybereality.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Damek Davis | Damek Davis’ Website
+  site_url: https://damek.github.io/
+  feed_url: https://damek.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Dangling Pointers
+  site_url: https://danglingpointers.com/
+  feed_url: https://danglingpointers.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Daniel Hooper
+  site_url: https://danielchasehooper.com/
+  feed_url: https://danielchasehooper.com/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Daniel Pokladek
+  site_url: https://www.danielpokladek.me/
+  feed_url: https://danielpokladek.me/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Making 3D Graphics Fun Again
+  site_url: https://www.deepaksurti.com/
+  feed_url: http://localhost:1313/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hexops' devlog
+  site_url: https://devlog.hexops.org/
+  feed_url: https://devlog.hexops.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Dolphin Emulator - GameCube/Wii games on PC
+  site_url: https://dolphin-emu.org/
+  feed_url: https://dolphin-emu.org/blog/feeds/
+  category: graphics
+  tags: [jendrik-cited]
+- title: dubiousconst282.github.io
+  site_url: https://dubiousconst282.github.io/
+  feed_url: https://dubiousconst282.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Elias Daler
+  site_url: https://edw.is/
+  feed_url: https://edw.is/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Code Corsair – Ahoy World!
+  site_url: https://www.elopezr.com/
+  feed_url: https://www.elopezr.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Eniko does bad things to code
+  site_url: https://enikofox.com/
+  feed_url: https://enikofox.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Enki's blog – Math, Graphics, Programming.
+  site_url: https://enkimute.github.io/
+  feed_url: https://enkimute.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Redirecting…
+  site_url: https://erfan-ahmadi.github.io/
+  feed_url: https://erfan-ahmadi.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Eric Arnebäck
+  site_url: https://erkaman.github.io/
+  feed_url: https://erkaman.github.io/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Eurogamer.net
+  site_url: https://www.eurogamer.net/
+  feed_url: https://www.eurogamer.net/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Fabien Sanglard's Website
+  site_url: https://fabiensanglard.net/
+  feed_url: https://fabiensanglard.net/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Latest Posts – Filmic Worlds
+  site_url: http://filmicworlds.com/
+  feed_url: http://filmicworlds.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Brain Dump
+  site_url: https://floooh.github.io/
+  feed_url: https://floooh.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The GutHub — My humble blog
+  site_url: https://frguthmann.github.io/
+  feed_url: https://frguthmann.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Froyok - Léna Piquet
+  site_url: https://www.froyok.fr/
+  feed_url: https://www.froyok.fr/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Frozen Fractal
+  site_url: https://frozenfractal.com/
+  feed_url: https://frozenfractal.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Games by Mason
+  site_url: https://gamesbymason.com/
+  feed_url: https://gamesbymason.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home | Guillaume's graphics blog
+  site_url: https://gboisse.github.io/
+  feed_url: https://gboisse.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: GDC Vault
+  site_url: https://gdcvault.com/
+  feed_url: https://gdcvault.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: General Arcade | Porting house and co-development studio | General Arcade
+  site_url: https://generalarcade.com/
+  feed_url: https://generalarcade.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Godot Engine - Free and open source 2D and 3D game engine
+  site_url: https://godotengine.org/
+  feed_url: https://godotengine.org/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Thibaud Goiffon
+  site_url: https://gotibo.fr/
+  feed_url: https://gotibo.fr/rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: General Protection Fault
+  site_url: https://gpfault.net/
+  feed_url: https://gpfault.net/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: gpu-primitives-course.github.io
+  site_url: https://gpu-primitives-course.github.io/
+  feed_url: https://gpu-primitives-course.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: gpuhelp.dev
+  site_url: https://gpuhelp.dev/
+  feed_url: https://gpuhelp.dev/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hello from Graphics Programming Discord | Graphics Programming Discord
+  site_url: https://graphics-programming.org/
+  feed_url: https://graphics-programming.org/blog/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home | Halide Compression
+  site_url: https://halide.cx/
+  feed_url: https://halide.cx/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hauke Thiessen – Tales from the (bit) depths
+  site_url: https://haukethiessen.com/
+  feed_url: https://haukethiessen.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: hexaquo
+  site_url: https://hexaquo.at/
+  feed_url: https://hexaquo.at/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: High performance computing on graphics processing units | hgpu.org
+  site_url: https://hgpu.org/
+  feed_url: https://hgpu.org/?feed=rss2
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hugging Face – The AI community building the future.
+  site_url: https://huggingface.co/
+  feed_url: https://huggingface.co/blog/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hugo Daniel
+  site_url: http://hugodaniel.com/
+  feed_url: https://hugodaniel.com/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Imad Rahmoune | Graphics Programmer
+  site_url: https://imadrahmoune.com/
+  feed_url: https://imadrahmoune.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Imad Rahmoune | Graphics Programmer
+  site_url: https://imadrahmoune.com/
+  feed_url: https://imadrahmoune.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Irradiance Blog
+  site_url: https://irradiance.ca/
+  feed_url: https://irradiance.ca/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jorge Jimenez – Game Developer
+  site_url: https://www.iryoku.com/
+  feed_url: https://www.iryoku.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jacco's Blog – Links, Code & Articles
+  site_url: https://jacco.ompf2.com/
+  feed_url: https://jacco.ompf2.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jakub Krehel
+  site_url: https://jakub.kr/
+  feed_url: https://jakub.kr/api/rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home | Jakub's tech blog
+  site_url: https://jakubtomsu.github.io/
+  feed_url: https://jakubtomsu.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jason's Homepage
+  site_url: https://jason.today/
+  feed_url: https://jason.today/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jeremy's Blog
+  site_url: https://www.jeremyong.com/
+  feed_url: https://www.jeremyong.com/%20/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: jglrxavpok’s blog | Random thoughts and progress on my personal projects.
+  site_url: https://jglrxavpok.github.io/
+  feed_url: https://jglrxavpok.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Ji-Ha's Blog
+  site_url: https://jiha-kim.github.io/
+  feed_url: https://jiha-kim.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: JMS55's Blog
+  site_url: https://jms55.github.io/
+  feed_url: https://jms55.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: John Austin
+  site_url: https://johnaustin.io/
+  feed_url: https://johnaustin.io/articles?format=rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jonathan Olson
+  site_url: https://jonathanolson.net/
+  feed_url: https://jonathanolson.net/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: julhe.github.io : julhe.github.io
+  site_url: https://julhe.github.io/
+  feed_url: https://julhe.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Jure Triglav’s Homepage
+  site_url: https://juretriglav.si/
+  feed_url: https://juretriglav.si/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Clever Programming Pun
+  site_url: https://kstocky.github.io/
+  feed_url: https://kstocky.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home - Lucas Alber
+  site_url: https://www.lalber.org/
+  feed_url: https://www.lalber.org/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Larst Of Us
+  site_url: https://larstofus.com/
+  feed_url: https://larstofus.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Lesley Lai
+  site_url: https://lesleylai.info/
+  feed_url: https://lesleylai.info/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: | Homepage for the Linebender organization
+  site_url: https://linebender.org/
+  feed_url: https://linebender.org/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: logdahl.net
+  site_url: https://logdahl.net/
+  feed_url: https://logdahl.net/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home - LunarG
+  site_url: https://www.lunarg.com/
+  feed_url: https://www.lunarg.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: mamoniem.com
+  site_url: https://mamoniem.com/
+  feed_url: https://mamoniem.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Yang Zhou
+  site_url: https://mangosister.github.io/
+  feed_url: https://mangosister.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Marmoset Toolbag | Bake, Texture & Render Amazing 3D Artwork
+  site_url: https://marmoset.co/
+  feed_url: https://marmoset.co/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: matejlou's blog
+  site_url: https://matejlou.blog/
+  feed_url: https://matejlou.blog/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Mike Turitzin
+  site_url: https://miketuritzin.com/
+  feed_url: https://miketuritzin.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Minus Zero
+  site_url: https://minus-ze.ro/
+  feed_url: https://minus-ze.ro/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Moonside Games
+  site_url: https://moonside.games/
+  feed_url: https://moonside.games/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Exploring Language Models | Maarten Grootendorst | Substack
+  site_url: https://newsletter.maartengrootendorst.com/
+  feed_url: https://newsletter.maartengrootendorst.com/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Nicholas Frechette's Blog · Raw bits
+  site_url: https://nfrechette.github.io/
+  feed_url: https://nfrechette.github.io/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Eight million pixels and counting
+  site_url: https://nical.github.io/
+  feed_url: https://nical.github.io/feeds/all.atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Niklas Oberhuber's Posts & Notes
+  site_url: https://obrhubr.org/
+  feed_url: https://obrhubr.org/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: osor.io | Rubén Osorio’s blog
+  site_url: https://osor.io/
+  feed_url: https://osor.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: CPU Performance, Compilers and Android | A blog about CPU performance and com...
+  site_url: https://over17.github.io/
+  feed_url: https://over17.github.io//feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: passivestar
+  site_url: https://passivestar.xyz/
+  feed_url: https://passivestar.xyz/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hey there! · pema.dev
+  site_url: https://pema.dev/
+  feed_url: https://pema.dev/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Linux Hardware Reviews & Performance Benchmarks, Open-Source News - Phoronix
+  site_url: https://www.phoronix.com/
+  feed_url: https://www.phoronix.com/rss.php
+  category: graphics
+  tags: [jendrik-cited]
+- title: Unity Tools | Pinwheel Studio
+  site_url: https://www.pinwheelstud.io/
+  feed_url: https://www.pinwheelstud.io/blog-feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home | pixelcluster's GPU blog
+  site_url: https://pixelcluster.github.io/
+  feed_url: https://pixelcluster.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Pointers Gone Wild
+  site_url: https://pointersgonewild.com/
+  feed_url: https://pointersgonewild.com/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Songyin Wu
+  site_url: https://poiw.github.io/
+  feed_url: https://poiw.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Ponies & Light
+  site_url: https://poniesandlight.co.uk/
+  feed_url: https://poniesandlight.co.uk/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Little Grasshopper
+  site_url: https://prideout.net/
+  feed_url: https://prideout.net/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Randy Gaul’s Game Programming Blog | C++ and Games development discussion and...
+  site_url: https://randygaul.github.io/
+  feed_url: https://randygaul.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: RasterGrid | Software Consultancy
+  site_url: https://www.rastergrid.com/
+  feed_url: https://www.rastergrid.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: real-mrbeam.github.io
+  site_url: https://real-mrbeam.github.io/
+  feed_url: https://real-mrbeam.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Red Blob Games
+  site_url: https://www.redblobgames.com/
+  feed_url: https://www.redblobgames.com/blog/posts.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Nathan Reed’s coding blog
+  site_url: https://www.reedbeta.com/
+  feed_url: https://www.reedbeta.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Geek Blight - Home
+  site_url: https://rg3.name/
+  feed_url: https://rg3.name/index.rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: Home
+  site_url: https://rifintidhamar.github.io/
+  feed_url: https://rifintidhamar.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Romain Guy
+  site_url: https://www.romainguy.dev/
+  feed_url: https://romainguy.dev/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Shader Tutorials by Ronja | Ronja's tutorials
+  site_url: https://www.ronja-tutorials.com/
+  feed_url: https://www.ronja-tutorials.com/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Rust GPU
+  site_url: https://rust-gpu.github.io/
+  feed_url: https://rust-gpu.github.io/blog/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Robin-Yann Storm, Workflow Consultant
+  site_url: https://rystorm.com/
+  feed_url: https://rystorm.com/blog?format=rss
+  category: graphics
+  tags: [jendrik-cited]
+- title: samwho
+  site_url: https://samwho.dev/
+  feed_url: https://samwho.dev/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: saschawillems.de
+  site_url: https://saschawillems.de/
+  feed_url: https://www.saschawillems.de/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: seb-v | Insights into GPU Performance, Optimization, and Beyond
+  site_url: https://seb-v.github.io/
+  feed_url: https://seb-v.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: A Random Walk Through Geek-Space
+  site_url: https://www.sebastiansylvan.com/
+  feed_url: https://www.sebastiansylvan.com/index.xml 
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Slang Shading Language
+  site_url: https://shader-slang.org/
+  feed_url: http://shader-slang.org/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Slang Shading Language
+  site_url: https://shader-slang.org/
+  feed_url: http://shader-slang.org/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Hey there! · shlom.dev
+  site_url: https://www.shlom.dev/
+  feed_url: https://www.shlom.dev/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Application Performance Audit Clermont-Ferrand & Nantes | siliceum
+  site_url: https://www.siliceum.com/en/
+  feed_url: https://www.siliceum.com/en/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Simplygon - The Standard in 3D Games Content Optimization
+  site_url: https://simplygon.com/
+  feed_url: https://simplygon.com/blog/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Stefan-Marr.de · personal and research notes
+  site_url: https://stefan-marr.de/
+  feed_url: https://stefan-marr.de/feed/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: - Stefan Pijnacker
+  site_url: https://stefanpijnacker.nl/
+  feed_url: https://stefanpijnacker.nl/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Mike Blumenkrantz – Super. Good. Code.
+  site_url: https://www.supergoodcode.com/
+  feed_url: https://www.supergoodcode.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Superluminal
+  site_url: https://superluminal.eu/
+  feed_url: https://superluminal.eu/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: SurveyMonkey: The World’s Most Popular Survey Platform
+  site_url: https://www.surveymonkey.com/
+  feed_url: https://www.surveymonkey.com/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Kyriakos Gavras
+  site_url: https://syllogi-graphikon.vercel.app/
+  feed_url: https://syllogi-graphikon.vercel.app/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: tesseractcat's site
+  site_url: https://tesseractc.at/
+  feed_url: https://tesseractc.at/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Abdelhadi | عبدالهادي
+  site_url: https://thegeeko.me/
+  feed_url: https://thegeeko.me/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Orange Duck | Daniel Holden
+  site_url: https://theorangeduck.com/
+  feed_url: https://theorangeduck.com/feeds/pages
+  category: graphics
+  tags: [jendrik-cited]
+- title: The Danger Zone
+  site_url: https://therealmjp.github.io/
+  feed_url: https://therealmjp.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Tobias Alexander Franke - Introducing Tob
+  site_url: https://www.tobias-franke.eu/
+  feed_url: https://www.tobias-franke.eu/rss/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Tom Clabault
+  site_url: https://tomclabault.github.io/
+  feed_url: https://tomclabault.github.io/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: torust.me | technical and non-technical musings from a computer graphics tour...
+  site_url: https://torust.me/
+  feed_url: https://torust.me/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Typefully: Best social media tool for creators & businesses
+  site_url: https://typefully.com/
+  feed_url: https://typefully.com/blog/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: visualrambling.space
+  site_url: https://visualrambling.space/
+  feed_url: https://visualrambling.space/rss.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Vizuara’s AI Newsletter | Substack
+  site_url: https://www.vizuaranewsletter.com/
+  feed_url: https://www.vizuaranewsletter.com/feed
+  category: graphics
+  tags: [jendrik-cited]
+- title: Chris’ Graphics Blog | This is my graphics blog where I’ll post about graphic...
+  site_url: https://wallisc.github.io/
+  feed_url: https://wallisc.github.io//feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: About | Graham Wihlidal
+  site_url: https://www.wihlidal.com/
+  feed_url: https://www.wihlidal.com/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: wolf@nereid.pl
+  site_url: https://wolf.nereid.pl/
+  feed_url: https://wolf.nereid.pl/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Wunk
+  site_url: https://wunkolo.github.io/
+  feed_url: https://wunkolo.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Xavier Chermain’s Page | I am a researcher at INRIA Nancy, in the MFX team si...
+  site_url: https://xavierchermain.github.io/
+  feed_url: https://xavierchermain.github.io/feed.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: Yosoygames – Think out of the box. A site about software, video games, graphi...
+  site_url: https://www.yosoygames.com.ar/wp/
+  feed_url: https://www.yosoygames.com.ar/wp/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: Zero Radiance
+  site_url: https://zero-radiance.github.io/
+  feed_url: https://zero-radiance.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: zeux.io - Home
+  site_url: https://zeux.io/
+  feed_url: https://zeux.io/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: zeux.io - Home
+  site_url: https://zeux.io/
+  feed_url: https://zeux.io/feed/
+  category: graphics
+  tags: [jendrik-cited]
+- title: This is a website!
+  site_url: https://zone.dog/
+  feed_url: https://zone.dog/atom.xml
+  category: graphics
+  tags: [jendrik-cited]
+- title: ZZNEWCLEAR13
+  site_url: https://zznewclear13.github.io/
+  feed_url: https://zznewclear13.github.io/index.xml
+  category: graphics
+  tags: [jendrik-cited]
