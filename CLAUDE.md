@@ -1,8 +1,27 @@
-# Knowledge Base — Schema
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Knowledge Base — Schema
 
 >所有的 wiki 必须使用简体中文!
 
 This is an LLM-maintained knowledge base. The LLM writes and maintains all wiki content. The human curates sources, directs analysis, and asks questions. All data is stored as plain files in universal formats (markdown, images) — the human owns the data and can use any AI agent or tool over it.
+
+## Commands
+
+The only executable code in this repo is the Feedly ingest pipeline under `tools/feedly-ingest/`. It scrapes historical posts from tracked blogs into `raw/articles/<host>/YYYY-MM-DD_slug.md`.
+
+```bash
+cd tools/feedly-ingest
+source .venv/bin/activate   # first run: python -m venv .venv && pip install -r requirements.txt
+
+python ingest.py sync --opml <file.opml> [--categories "a,b,c"]   # merge OPML into blogs.yaml
+python ingest.py list [--category X] [--tag X]                    # inspect tracked blogs
+python ingest.py -v run [--blog X] [--dry-run] [--limit N]        # fetch + extract + save new posts
+```
+
+`blogs.yaml` is the editable source of truth; OPML is only a seed. Incremental by default via `state/seen.sqlite`. Details in `tools/feedly-ingest/README.md`.
 
 ## Architecture
 
@@ -57,6 +76,10 @@ Main content with [[wikilinks]] to related concepts.
 - **`wiki/index.md`** — Content catalog. Every wiki page listed with a link, one-line summary, and metadata. Organised by category. The LLM reads this first when answering queries.
 - **`wiki/overview.md`** — Top-level synthesis page. A narrative that ties together the main themes, key findings, open questions, and tensions across all sources. Not a table of contents — that's the index. Update this whenever an ingest shifts the big picture.
 - **`wiki/log.md`** — Append-only chronological record of operations. Each entry uses the format `## [YYYY-MM-DD] type | Title` where type is one of: `ingest`, `query`, `lint`, `update`. This format is grep-friendly: `grep "^## \[" wiki/log.md | tail -5`.
+
+### Staging area
+
+Bulk ingests go through `wiki/.staging/batch-w<wave>-<slug>/` as a holding area — each batch corresponds to one parallel worker pass driven by `_prompts/worker-ingest.md`. Staging files are **not** part of the canonical wiki until reviewed and promoted into `wiki/sources/` and the relevant topic pages. Do not wikilink into `.staging/` from canonical pages, and do not skip the review step.
 
 ## Workflows
 
@@ -117,6 +140,7 @@ At small scale (~100 sources), reading `wiki/index.md` first is sufficient for f
 
 ## Important rules
 
+- **简体中文** — 所有 `wiki/` 页面正文必须为简体中文；YAML frontmatter 字段、代码块、wikilink target 路径保持英文。
 - **Never modify files in `raw/`** — they are immutable source documents.
 - **Always update `wiki/index.md`** after creating or modifying wiki pages.
 - **Always append to `wiki/log.md`** after any operation (ingest, query, lint).
