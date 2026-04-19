@@ -661,3 +661,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-50 Worker ER (bartwronski + frost.kiwi + mecheye + danielpokladek + gameknife + raphlinus ×6)
 
 处理 6 篇杂锦文章：跳过 Bart Wronski 的 ChatGPT 日常使用随笔（personal workflow，无技术内容）；ingest 5 篇——Frost Kiwi 的游戏模糊算法长文（从 Box/Gaussian 一路推到 Dual Kawase）、Jasper St. Pierre 的矩阵乘法与顺序终极指南、Daniel Pokladek 的 SDF 程序化台球 shader 教程、gameknife 的《现代渲染能有多现代？》（零 bind + Slang + AmbientCube + 混合光追）、Raph Levien 的《I Want a Good Parallel Computer》宣言。新增 13 概念页、1 人物页（daniel-pokladek）、5 source 摘要。
+
+## [2026-04-19] ingest | Wave-51 Worker ES (c0de517e.blogspot.com ×5, all skipped)
+
+5 篇 c0de517e.blogspot.com 文章全部为 redirect stub：blogspot 已停更，所有正文搬迁至 c0de517e.com 新站，本批 raw/ 文件仅残留一行外链与迁移提示，无实质可 ingest 内容。建议后续抓取新站（c0de517e.com/007_impostors.htm、009_website_joy.htm、011_portals.htm、012_peak_tech.htm、013_web.htm）后再重新 ingest Angelo Pesce 2023-2024 的思辨长文。

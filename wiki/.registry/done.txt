@@ -852,3 +852,8 @@ raw/articles/blog.mecheye.net/2024-10-13_the-ultimate-guide-to-matrix-multiplica
 raw/articles/danielpokladek.me/2026-03-17_procedural-pool-balls.md
 raw/articles/gameknife.github.io/2025-10-28_xian-dai-xuan-ran-neng-you-duo-xian-dai-2.md
 raw/articles/raphlinus.github.io/2025-03-21_i-want-a-good-parallel-computer.md
+raw/articles/c0de517e.blogspot.com/2023-12-08_exploring-the-design-space-of-remote-scene-approximation.md
+raw/articles/c0de517e.blogspot.com/2024-01-17_the-art-and-joy-of-well-architected-bad-code.md
+raw/articles/c0de517e.blogspot.com/2024-01-26_portals-are-misunderstood.md
+raw/articles/c0de517e.blogspot.com/2024-02-19_peaked-technologies.md
+raw/articles/c0de517e.blogspot.com/2024-03-24_c0de517e.md
