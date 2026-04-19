@@ -145,6 +145,10 @@ CAQA + CSAPP 的底层视角。
 | [[connection-multiplexer-gateway]] | 游戏服务器 N 对 1 连接汇聚网关的协议与实现 |
 | [[snapshot-diff-persistence]] | 用快照差分把 MMO 全量存盘的 IO 压 90% |
 | [[zeromq-messaging-patterns]] | ZeroMQ 的 req/rep、pub/sub、push/pull 三种消息模式 |
+| [[parquet-vs-csv-json]] | 表格数据存储：为什么 CSV/JSON 都不够好、Parquet 凭什么成为默认 |
+| [[insert-zero-bit-in-middle]] | 在值的中间插入 0 bit：`val + (val & top_mask)` 的 bit-twiddling 小品 |
+| [[sign-extend-without-shift]] | 不用移位的符号/零扩展：`val - (val & sign_bit) * 2` |
+| [[oodle-compression-suite]] | Oodle 三条产品线拆解：Data / Network / Texture，以及 PS5 尺寸缩水的真实原因 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -434,6 +438,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[shader-instruction-cost]] | shader 指令的三类隐藏成本：无原生实现、硬件非等价、外部资源依赖（含 atan2 展开、waterfall loop、LDS bank conflict） |
 | [[meshlets-and-mesh-shaders]] | mesh shader 管线 + meshlet 遮挡剔除：数据结构、threadgroup 调参、AS hi-z cull 的 −44% 实测 |
 | [[async-compute]] | D3D12 async compute 方法论：pairing 互补性、bubble 风险、pass 重排的免费收益 |
+| [[camera-relative-sun-shadows]] | Anno 1800 把太阳锁相机：物理正确 vs 美术正确的构图反直觉 |
+| [[pom-decal-broken-edges]] | Cyberpunk 2077 的 POM decal：盒子 + overlap mesh + 视差遮挡贴图装出手凿墙 |
 
 ## 经典案例（wiki/examples/）
 
@@ -887,6 +893,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/interplay-hidden-shader-cost]] | Kostas：shader 指令 ISA 级别隐藏成本分类 |
 | [[sources/interplay-meshlets-mesh-shaders]] | Kostas：mesh shader + AS hi-z 遮挡剔除，St Miguel gbuffer −44% |
 | [[sources/interplay-async-compute]] | Kostas：async compute 的 pairing 方法论与 pass 重排收益 |
+| [[sources/anteru-data-formats-csv-json]] | Anteru：CSV/JSON 的失败模式与 Parquet 的生态位 |
+| [[sources/simonschreibt-anno-1800-shadows]] | Simon：Anno 1800 把太阳锁相机而非世界的构图学 |
+| [[sources/simonschreibt-cyberpunk-broken-edges]] | Simon：Cyberpunk 2077 用 POM decal 在盒子墙装出凿痕 |
+| [[sources/ryg-insert-zero-bit-middle]] | ryg：一条加法指令就能在值的中间插入一个 0 bit |
+| [[sources/ryg-zero-or-sign-extend]] | ryg：用补码定义重新推导不分支的有符号/零扩展 |
+| [[sources/ryg-oodle-kraken-misconceptions]] | ryg：澄清 Oodle 三条产品线与 PS5 游戏缩水的真实原因 |
 
 ## 元（wiki/meta/）
 

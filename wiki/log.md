@@ -473,3 +473,19 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-14] ingest | Wave-34 Worker CX (interplayoflight.wordpress.com 2024-2025 现代 GPU 5 篇)
 
 处理 5 篇 Kostas Anagnostou 2024-2025 年的高价值现代 GPU 技术文章，全部 ingest。workgraphs 两篇合并为单一概念页 [[d3d12-work-graphs]]；另外三篇各自建页：[[shader-instruction-cost]]、[[meshlets-and-mesh-shaders]]、[[async-compute]]。新建 5 个 source 摘要。通过 patch 扩写 kostas-anagnostou 人物页与 register-spilling-avoidance（后者补充 VGPR 动态下标的 ISA 级别佐证）。4 个新概念、0 个人物、5 个源摘要、6 条 patch、9 条 index 行。
+
+## [2026-04-14] ingest | Wave-35 Worker CY (anteru.net ×5)
+
+处理 5 篇 anteru.net 文章。新增 1 概念页（[[parquet-vs-csv-json]]）与 1 source 摘要（anteru-data-formats-csv-json），对 [[matthaeus-chajdas]] 人物页追加概念 + source 链接。跳过 4 篇：open-source 维护观点、systemd timers 运维、20 年博客回顾、10 年从业回顾。
+
+## [2026-04-14] ingest | Wave-35 Worker CZ (simonschreibt.de ×2 Feb 2025)
+
+处理 simonschreibt.de 2025 年 2 月两篇 VFX 拆解，全部 ingested。新增 2 概念页（[[camera-relative-sun-shadows]]、[[pom-decal-broken-edges]]）与 2 source 摘要。对 [[simon-trumpler]] 人物页追加贡献表与 Sources。关键 takeaway：(1) Anno 1800 把太阳位置锁相机而非世界——演示"物理正确 ≠ 美术正确"的反例；(2) Cyberpunk 墙面是盒子 + overlap mesh + 普通修补 decal + POM decal 的层叠，POM ray-marching 步数随视角衰减是 CDPR 的优化。
+
+## [2026-04-14] ingest | Wave-35 Worker DA (fgiesen.wordpress.com ×3 2024 bit-twiddling / Oodle)
+
+处理 fgiesen 2024 年 3 篇：Inserting a 0 bit in the middle of a value、Zero or sign extend、Oodle Kraken etc. misconceptions，全部 ingested。新增 3 概念页（[[insert-zero-bit-in-middle]]、[[sign-extend-without-shift]]、[[oodle-compression-suite]]）与 3 source 摘要。对 [[fabian-giesen]] 人物页追加 3 概念 + 3 sources。finalize 阶段补写了 3 个缺失的 source summary（worker 之前漏写 bundle）——关键洞察：(1) `x + (x & top_mask)` = 把 mask 命中的位左移 1 位；(2) 补码定义重写符号扩展为 `val - (val & sign_bit) * 2` 免分支；(3) PS5 游戏缩水的真正原因是 Sony 打包工具跨资源去重，非 Kraken 算法本身。
+
+## [2026-04-19] update | Wave-35 finalize
+
+补齐 wave 35 的 index.md / log.md / done.txt 缺失同步（3 worker 共 10 raws 入 done），补写 3 个 ryg source stub。为 wave 36 正式开跑做好闭环。

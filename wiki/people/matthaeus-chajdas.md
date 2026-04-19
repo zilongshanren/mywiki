@@ -21,6 +21,7 @@ sources: 1
 - [[directx11-early-pitfalls]]
 - [[homogeneous-rasterization-transpose-bug]]
 - [[avoid-unsigned-types]]
+- [[parquet-vs-csv-json]]
 
 ## Sources
 
@@ -28,3 +29,4 @@ sources: 1
 - [[sources/anteru-directx11-hints]]
 - [[sources/anteru-homogeneous-rasterization-gotcha]]
 - [[sources/anteru-avoid-unsigned-types]]
+- [[sources/anteru-data-formats-csv-json]]

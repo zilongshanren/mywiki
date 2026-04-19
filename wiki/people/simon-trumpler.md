@@ -24,6 +24,8 @@ sources: 5
 | Divine Divinity: 2D Reflection | 源摘要（技术讨论未定论） |
 | Fallout 3: Edges | [[normal-decal-edge-blending]] |
 | Teleglitch: RGB Flickering | [[chromatic-aberration-post]] |
+| Anno 1800: Shadows of Beauty | [[camera-relative-sun-shadows]] |
+| Cyberpunk 2077: Phantom Liberty — Broken Edges | [[pom-decal-broken-edges]] |
 
 ## 相关
 
@@ -36,6 +38,8 @@ sources: 5
 - [[animated-parallax-cloth-fold]]
 - [[mipmap-moire-scanline]]
 - [[lit-sphere-matcap-shading]]
+- [[camera-relative-sun-shadows]]
+- [[pom-decal-broken-edges]]
 
 ## Sources
 
@@ -49,3 +53,5 @@ sources: 5
 - [[sources/simonschreibt-deus-ex-folds]]
 - [[sources/simonschreibt-deus-ex-scanlines]]
 - [[sources/simonschreibt-wow-balloon]]
+- [[sources/simonschreibt-anno-1800-shadows]]
+- [[sources/simonschreibt-cyberpunk-broken-edges]]

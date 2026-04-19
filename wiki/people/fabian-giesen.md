@@ -46,6 +46,9 @@ sources: 9
 - [[negative-space-in-programming]]
 - [[ring-buffer-virtual-stream]]
 - [[texture-swizzle-nested-tiling]]
+- [[insert-zero-bit-in-middle]]
+- [[sign-extend-without-shift]]
+- [[oodle-compression-suite]]
 
 ## Sources
 
@@ -69,3 +72,6 @@ sources: 9
 - [[sources/ryg-negative-space-in-programming]]
 - [[sources/ryg-ring-buffers-and-queues]]
 - [[sources/ryg-texture-tiling-and-swizzling]]
+- [[sources/ryg-insert-zero-bit-middle]]
+- [[sources/ryg-zero-or-sign-extend]]
+- [[sources/ryg-oodle-kraken-misconceptions]]
