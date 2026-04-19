@@ -603,3 +603,16 @@ path-tracing-monte-carlo
 jujutsu-vcs
 magic-link-auth
 passkeys-webauthn
+dual-kawase-blur
+kawase-blur
+convolution-separability-blur
+matrix-multiplication-ordering
+row-major-column-major-packing
+procedural-pool-ball-sdf
+sdf-number-atlas-text
+zero-bind-gpu-resource-management
+slang-shader-language
+ambient-cube-probe-pathtrace-exit
+hybrid-voxel-software-raytracing
+good-parallel-computer
+gpu-queues-vs-dispatch-execution

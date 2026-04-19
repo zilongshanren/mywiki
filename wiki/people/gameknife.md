@@ -18,17 +18,20 @@ sources: 4
 - 年度总结式的博客风格，擅长从"一个从业者重新学习"的视角串联新旧技术栈。
 
 ## 相关
-
 - [[gknext-renderer]]
 - [[gkengine]]
 - [[engine-evolution]]
 - [[tbdr-vs-imr]]
+- [[zero-bind-gpu-resource-management]]
+- [[slang-shader-language]]
+- [[ambient-cube-probe-pathtrace-exit]]
+- [[hybrid-voxel-software-raytracing]]
 
 ## Sources
-
 - [[sources/gameknife-gknextrenderer-yearone]]
 - [[sources/gameknife-tbdr-performance-tuning]]
 - [[sources/gameknife-pathfinding-review]]
 - [[sources/gameknife-gkengine-features]]
 - [[sources/gameknife-gkengine-rendering-optimization]]
 - [[sources/gameknife-custom-vc100-toolchain]]
+- [[sources/gameknife-modern-rendering-how-modern]]

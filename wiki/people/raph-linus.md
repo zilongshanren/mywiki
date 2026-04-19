@@ -41,7 +41,6 @@ sources: 9
 | A Few of My Favorite Sigmoids | [[sigmoid-functions]] |
 
 ## 相关
-
 - [[rust-gui-ecosystem]]
 - [[reactive-ui-rust]]
 - [[smooth-window-resize]]
@@ -51,9 +50,10 @@ sources: 9
 - [[ecs-for-rust-ui]]
 - [[undefined-behavior-c-cpp]]
 - [[sigmoid-functions]]
+- [[good-parallel-computer]]
+- [[gpu-queues-vs-dispatch-execution]]
 
 ## Sources
-
 - [[sources/raphlinus-fearless-simd]]
 - [[sources/raphlinus-smooth-resize-test]]
 - [[sources/raphlinus-rust-2021-gui]]
@@ -63,3 +63,4 @@ sources: 9
 - [[sources/raphlinus-gpu-json-parsing]]
 - [[sources/raphlinus-undefined-behavior]]
 - [[sources/raphlinus-favorite-sigmoids]]
+- [[sources/raphlinus-good-parallel-computer]]

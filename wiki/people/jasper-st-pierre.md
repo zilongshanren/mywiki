@@ -20,7 +20,6 @@ sources: 6
 Jasper 的写作偏**"把一件事讲明白"的结构科普**：从下往上梳理栈、从 API 往设计意图回溯。他的笔法在"系统-图形"两界都站得住，既能解释 Mesa 里 DRI2/DRI3 重名是怎么回事，也能解释 Vulkan 的 render pass 为什么要存在、barrier 到底解决什么。
 
 ## 相关
-
 - [[linux-graphics-stack-dri]]
 - [[gpu-hazard-tracking]]
 - [[gpu-fence-timeline-semaphore]]
@@ -31,12 +30,14 @@ Jasper 的写作偏**"把一件事讲明白"的结构科普**：从下往上梳�
 - [[wayland-compositor-model]]
 - [[x11-pointer-barrier]]
 - [[bytecode-everywhere]]
+- [[matrix-multiplication-ordering]]
+- [[row-major-column-major-packing]]
 
 ## Sources
-
 - [[sources/jasper-how-to-write-a-renderer]]
 - [[sources/jasper-dri-linux-graphics-stack]]
 - [[sources/jasper-linux-graphics-stack]]
 - [[sources/jasper-bytecode]]
 - [[sources/jasper-barriers]]
 - [[sources/jasper-xplain]]
+- [[sources/jasper-matrix-multiplication-guide]]

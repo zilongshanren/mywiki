@@ -11,17 +11,20 @@ Wladislav Artsimovich，笔名 Jaruat Frost，博客 **FrostKiwi's Secrets**（b
 他擅长从一个极小的可玩例子（一个圆、一段缩略图）切入，慢慢把问题展开到业界生产级的解法，并穿插历史背景、硬件细节和他本人的经验式「冷知识」。本 wiki 已收录两篇文章：关于 LUT 在视频游戏中的用途（[[color-lut]]），以及**解析抗锯齿**（[[analytical-antialiasing]]）——后者是他多年来反复实现 AAA 的总结。
 
 ## 相关
-
 - [[color-lut]]
 - [[analytical-antialiasing]]
 - [[aliasing]]
 - [[msaa-ssaa]]
 - [[color-banding]]
 - [[perceptual-colormaps]]
+- [[dual-kawase-blur]]
+- [[kawase-blur]]
+- [[convolution-separability-blur]]
+- [[separable-gaussian-blur]]
 
 ## Sources
-
 - [[sources/frost-kiwi-luts-in-video-games]]
 - [[sources/frost-kiwi-analytical-anti-aliasing]]
 - [[sources/frost-kiwi-color-banding]]
 - [[sources/frost-kiwi-thermal-colormaps]]
+- [[sources/frost-kiwi-video-game-blurs]]

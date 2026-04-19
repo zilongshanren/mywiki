@@ -846,3 +846,9 @@ raw/articles/etodd.io/2026-03-22_magic-link-pitfalls.md
 raw/articles/etodd.io/2026-03-31_more-magic-link-pitfalls.md
 raw/articles/etodd.io/2026-04-06_passkeys-are-too-hard.md
 raw/articles/etodd.io/2026-04-06_posts.md
+raw/articles/bartwronski.com/2024-01-22_how-i-use-chatgpt-daily-scientist-coder-perspective.md
+raw/articles/blog.frost.kiwi/2025-09-03_video-game-blurs-and-how-the-best-one-works.md
+raw/articles/blog.mecheye.net/2024-10-13_the-ultimate-guide-to-matrix-multiplication-and-ordering.md
+raw/articles/danielpokladek.me/2026-03-17_procedural-pool-balls.md
+raw/articles/gameknife.github.io/2025-10-28_xian-dai-xuan-ran-neng-you-duo-xian-dai-2.md
+raw/articles/raphlinus.github.io/2025-03-21_i-want-a-good-parallel-computer.md

@@ -657,3 +657,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-49 Worker EP-retry (vertexfragment ×5 + gametorrahod ×5 + etodd ×5)
 
 重跑 batch-w49-ep（上批次因 stream idle timeout 全量丢失产出）。处理 15 篇：vertexfragment 4 技术文（polar coord / 云 upsample / URP 体积雾 / BTS v0.7 devlog）+ ramblings index 跳过；gametorrahod 全部 5 篇 DOTS 深度文；etodd 4 篇（Jujutsu / magic link ×2 / passkeys）+ posts index 跳过。新增 3 概念页（jujutsu-vcs, magic-link-auth, passkeys-webauthn）、1 人物页（sirawat-pitaksarit）、13 source 摘要。
+
+## [2026-04-19] ingest | Wave-50 Worker ER (bartwronski + frost.kiwi + mecheye + danielpokladek + gameknife + raphlinus ×6)
+
+处理 6 篇杂锦文章：跳过 Bart Wronski 的 ChatGPT 日常使用随笔（personal workflow，无技术内容）；ingest 5 篇——Frost Kiwi 的游戏模糊算法长文（从 Box/Gaussian 一路推到 Dual Kawase）、Jasper St. Pierre 的矩阵乘法与顺序终极指南、Daniel Pokladek 的 SDF 程序化台球 shader 教程、gameknife 的《现代渲染能有多现代？》（零 bind + Slang + AmbientCube + 混合光追）、Raph Levien 的《I Want a Good Parallel Computer》宣言。新增 13 概念页、1 人物页（daniel-pokladek）、5 source 摘要。

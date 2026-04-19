@@ -168,6 +168,8 @@ CAQA + CSAPP 的底层视角。
 | [[jujutsu-vcs]] | Jujutsu VCS：Git-兼容但把 rewrite history 变成默认工作流 |
 | [[magic-link-auth]] | Magic link 登录的陷阱清单（GET 预取、错 tab、phishing、flaky email、rate limit） |
 | [[passkeys-webauthn]] | WebAuthn / passkeys 现状：conditional UI 让服务端复杂度陡升 |
+| [[good-parallel-computer]] | Raph Levien 的一篇宣言：我们为什么还没有好的并行计算机 |
+| [[gpu-queues-vs-dispatch-execution]] | 用队列串联 stages 对比 compute shader dispatch+barrier 模型 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -205,6 +207,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[playcanvas-react-declarative]] | PlayCanvas React：把 PlayCanvas ECS 包成 JSX 的声明式 3D 绑定 |
 | [[skynet-lua-sharetable-patch]] | skynet 跨 VM 共享函数原型的 Lua patch 与 5.5 external strings 展望 |
 | [[playcanvas-esm-scripts]] | PlayCanvas 新脚本系统：`.mjs` + class + `@attribute` JSDoc，替代 Classic Scripts 的 hidden global |
+| [[zero-bind-gpu-resource-management]] | Bindless + BDA + PushConstant 实现零绑定的现代 GPU 资源管理 |
+| [[slang-shader-language]] | NVIDIA 主推的现代着色器语言：泛型、模块、自动微分 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -566,6 +570,15 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[monte-carlo-integration]] | MC 积分基础：1/√M 与维度无关 |
 | [[inversion-sampling-prng]] | PRNG、拒绝、逆变换采样 + Jacobian |
 | [[path-tracing-monte-carlo]] | MC 套渲染方程：cosine-weighted、NEE、MIS、RR |
+| [[dual-kawase-blur]] | 多级下采样+上采样的主流游戏 UI 模糊算法 |
+| [[kawase-blur]] | Masaki Kawase 的四角采样近高斯模糊 |
+| [[convolution-separability-blur]] | 把 N×N 卷积拆成两次 1D pass 的可分离性 |
+| [[matrix-multiplication-ordering]] | Across-times-down、列/行向量乘法、空间链约定 |
+| [[row-major-column-major-packing]] | HLSL/GLSL 矩阵内存打包与 pack_matrix / layout 语义 |
+| [[procedural-pool-ball-sdf]] | 用 SDF 条纹+圆环+数字 atlas 程序化生成台球贴图 |
+| [[sdf-number-atlas-text]] | 通过 SDF 纹理 atlas + smoothstep 渲染锐利数字 |
+| [[ambient-cube-probe-pathtrace-exit]] | AmbientCube 探针作为 PathTracing 提前退出缓存 |
+| [[hybrid-voxel-software-raytracing]] | 探针+体素网格替代 BVH 的软件光追近似 |
 
 ## 经典案例（wiki/examples/）
 
@@ -663,6 +676,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[jendrik-illner]] | Jendrik Illner，Graphics Programming Weekly 主理人 |
 | [[kris-bamrah]] | PlayCanvas 团队，Editor 开源与 VSCode Extension 公告的作者 |
 | [[sirawat-pitaksarit]] | Sirawat Pitaksarit，Unity DOTS / 音频插件开发者（Game Torrahod 博客） |
+| [[daniel-pokladek]] | Daniel Pokladek，Unity shader 学习博客 danielpokladek.me 作者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1228,6 +1242,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/etodd-magic-link-pitfalls]] | Evan Todd：magic link 登录的两个非显然陷阱（GET 预取、错 tab） |
 | [[sources/etodd-more-magic-link-pitfalls]] | Evan Todd：magic link 续篇（phishing、flaky email、rate limit） |
 | [[sources/etodd-passkeys-are-too-hard]] | Evan Todd：WebAuthn / passkeys conditional UI 的服务端复杂度问题 |
+| [[sources/frost-kiwi-video-game-blurs]] | Frost Kiwi：从 Box Blur 一路推到 Dual Kawase |
+| [[sources/jasper-matrix-multiplication-guide]] | Jasper：图形 API 矩阵乘法与顺序一次讲透 |
+| [[sources/pokladek-procedural-pool-balls]] | Pokladek：用 SDF 程序化生成台球贴图 |
+| [[sources/gameknife-modern-rendering-how-modern]] | gameknife：从 OpenGL ES 老兵视角看现代渲染 |
+| [[sources/raphlinus-good-parallel-computer]] | Raph Levien：想要一台好的并行计算机 |
 
 ## 元（wiki/meta/）
 
