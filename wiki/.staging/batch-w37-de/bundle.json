@@ -1,0 +1,135 @@
+{
+  "batch_id": "batch-w37-de",
+  "agent_note": "Wave-37 Daniel Ilett: 5 Unity tutorials (2025-10) — Zelda Recall + Shader Graph Basics 11/12 + Holofoil Cards + Shader Code Basics 02. All 5 ingested. 7 new concepts, 5 source summaries, patches to daniel-ilett.md/stencil-buffer/sobel-edge-detection.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2025-10-11_zelda-recall-rune-in-unity-urp.md",
+      "status": "ingested",
+      "source_slug": "danielilett-zelda-recall-rune",
+      "title": "Zelda Recall Rune in Unity URP"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2025-10-12_unity-shader-graph-basics-part-11-terrains.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-graph-terrains",
+      "title": "Unity Shader Graph Basics (Part 11 - Terrains)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2025-10-13_holofoil-cards-in-shader-graph-and-unity-urp.md",
+      "status": "ingested",
+      "source_slug": "danielilett-holofoil-cards",
+      "title": "Holofoil Cards in Shader Graph and Unity URP"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2025-10-14_unity-shader-graph-basics-part-12-post-processing.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-graph-post-processing",
+      "title": "Unity Shader Graph Basics (Part 12 - Post Processing)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2025-10-16_textures-uvs-unity-shader-code-basics-02.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-code-textures-uvs",
+      "title": "Textures & UVs | Unity Shader Code Basics 02"
+    }
+  ],
+  "concepts_created": [
+    "draw-renderer-list-mask-urp",
+    "terrain-splatmap-shader-graph",
+    "world-scan-shader-effect",
+    "stencil-parallax-card-layers",
+    "holofoil-rainbow-shader",
+    "fullscreen-shader-graph-urp",
+    "hlsl-texture-sampling-basics",
+    "srp-batcher-cbuffer"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-zelda-recall-rune",
+    "danielilett-shader-graph-terrains",
+    "danielilett-holofoil-cards",
+    "danielilett-shader-graph-post-processing",
+    "danielilett-shader-code-textures-uvs"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[draw-renderer-list-mask-urp]]\n- [[terrain-splatmap-shader-graph]]\n- [[world-scan-shader-effect]]\n- [[stencil-parallax-card-layers]]\n- [[holofoil-rainbow-shader]]\n- [[fullscreen-shader-graph-urp]]\n- [[hlsl-texture-sampling-basics]]\n- [[srp-batcher-cbuffer]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-zelda-recall-rune]]\n- [[sources/danielilett-shader-graph-terrains]]\n- [[sources/danielilett-holofoil-cards]]\n- [[sources/danielilett-shader-graph-post-processing]]\n- [[sources/danielilett-shader-code-textures-uvs]]"
+    },
+    {
+      "file": "wiki/rendering/stencil-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stencil-parallax-card-layers]] —— Pokémon 卡牌风格的「stencil mask + Render Objects feature + 分层 parallax」URP 实现"
+    },
+    {
+      "file": "wiki/rendering/sobel-edge-detection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fullscreen-shader-graph-urp]] —— 屏幕空间颜色+法线双梯度 outline 在 URP Fullscreen Graph 下的 Shader Graph 实现"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[draw-renderer-list-mask-urp]] | URP 自绘 layer mask：`DrawRendererList` + override material + `ShaderTagId` 重绘特定层到自有 RT |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[terrain-splatmap-shader-graph]] | Unity terrain 的 `_Control` + `_Splat0..3` splatmap 约定在 Shader Graph 里的手工复刻 + 基于法线的自动岩石层 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[world-scan-shader-effect]] | 世界空间扫描波：两次 `Step` 夹出圆环 + Emissive + Bloom 的发光扩散 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stencil-parallax-card-layers]] | Pokémon 卡牌分层 parallax：stencil mask + Render Objects feature 把 layer 按 stencil 掩回画面 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[holofoil-rainbow-shader]] | 宝可梦 holo 闪卡：视角相关彩虹条纹 + Hue 循环 / Color Ramp 双路径 + Holo Mask + Height→Normal |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fullscreen-shader-graph-urp]] | URP Fullscreen Shader Graph + Full Screen Pass Renderer Feature：Shader Graph 直出全屏后处理的官方路径 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hlsl-texture-sampling-basics]] | HLSL 纹理采样骨架：`TEXTURE2D` / `SAMPLER` / `_ST` / `TRANSFORM_TEX` / `SAMPLE_TEXTURE2D` 五件套 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[srp-batcher-cbuffer]] | SRP Batcher 的门票：`CBUFFER_START(UnityPerMaterial) ... CBUFFER_END` 把 material 属性封入常量缓冲 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-zelda-recall-rune]] | Ilett：URP 下复刻《王国之泪》Recall 时之逆转效果（mask RT + 噪声屏幕擦除 + 边缘检测） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-graph-terrains]] | Ilett：Shader Graph 入门 Part 11，手工复刻 Terrain splatmap + 自动岩石 + 世界扫描 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-holofoil-cards]] | Ilett：URP 宝可梦 holo 闪卡（stencil 分层 parallax + 视角相关彩虹条纹 + Height → Normal） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-graph-post-processing]] | Ilett：Shader Graph 入门 Part 12，Fullscreen Graph 做灰度滤镜与颜色+法线 outline |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-code-textures-uvs]] | Ilett：Shader Code 入门 Part 02，`TEXTURE2D`/`SAMPLER`/`_ST`/`TRANSFORM_TEX` + SRP Batcher CBUFFER + 滚动 UV |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-37 Worker DE (danielilett.com 2025-10 ×5)\n\n处理 5 篇 Daniel Ilett 2025 年 10 月 Unity 教程：Zelda Recall 符文复刻、Shader Graph Basics 11（Terrain splatmap + 自动岩石 + 世界扫描）、Holofoil Pokémon 闪卡（stencil parallax + 彩虹条纹）、Shader Graph Basics 12（Fullscreen Graph 后处理）、Shader Code Basics 02（Texture/UV 采样 + SRP Batcher）。新增 8 概念页（draw-renderer-list-mask-urp、terrain-splatmap-shader-graph、world-scan-shader-effect、stencil-parallax-card-layers、holofoil-rainbow-shader、fullscreen-shader-graph-urp、hlsl-texture-sampling-basics、srp-batcher-cbuffer）+ 5 source 摘要 + 对 daniel-ilett/stencil-buffer/sobel-edge-detection 的增量补丁。0 跳过。"
+}

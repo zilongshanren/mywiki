@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w37-dg",
+  "agent_note": "Xor mini.gmshaders 5 篇（voxels-2 / vis-dev / anti-aliasing / gamma / sdf）。5 篇全部 ingested，作者均为 Xor（已有 person 页）。新增 5 个概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2024-08-25_gm-shaders-voxels-2.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-voxels-2",
+      "title": "GM Shaders: Voxels 2"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2024-09-01_gm-shaders-vis-dev.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-vis-dev",
+      "title": "GM Shaders: Vis Dev"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-01-11_gm-shaders-anti-aliasing.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-anti-aliasing",
+      "title": "GM Shaders: Anti-Aliasing"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-01-24_gm-shaders-gamma.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-gamma",
+      "title": "GM Shaders: Gamma"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-02-19_signed-distance-fields.md",
+      "status": "ingested",
+      "source_slug": "xor-mini-sdf",
+      "title": "Signed Distance Fields"
+    }
+  ],
+  "concepts_created": [
+    "voxel-map-lut-2d",
+    "programmer-art-vis-dev",
+    "fwidth-derivative-antialiasing",
+    "gamma-correction-srgb",
+    "sdf-operations-shader"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "xor-mini-voxels-2",
+    "xor-mini-vis-dev",
+    "xor-mini-anti-aliasing",
+    "xor-mini-gamma",
+    "xor-mini-sdf"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-mini-voxels-2]]\n- [[sources/xor-mini-vis-dev]]\n- [[sources/xor-mini-anti-aliasing]]\n- [[sources/xor-mini-gamma]]\n- [[sources/xor-mini-sdf]]"
+    },
+    {
+      "file": "wiki/rendering/sdf-2d-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sdf-operations-shader]] —— SDF 的布尔并差交、smooth min、空间镜像 / 平铺 / 扭曲 modification 清单"
+    },
+    {
+      "file": "wiki/rendering/analytical-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fwidth-derivative-antialiasing]] —— Xor 的 `fwidth()` / 手动导数解析 AA 实用模板"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gamma-correction-srgb]] —— shader 里 sRGB / linear 编解码的最小实现"
+    },
+    {
+      "file": "wiki/rendering/voxel-ambient-occlusion.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[voxel-map-lut-2d]] —— 用 2D 纹理把 3D 体素地图当 LUT 存储"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[voxel-map-lut-2d]] | 以 2D 纹理拼接成 3D LUT，在没有 3D texture / SSBO 的引擎里存体素地图 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[programmer-art-vis-dev]] | 程序员美术的视觉打磨清单：色板、分辨率、细节分布、灯光 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fwidth-derivative-antialiasing]] | 用 `fwidth()` / 手动偏导数做任意连续函数的一像素淡出 AA |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gamma-correction-srgb]] | shader 视角的 sRGB ↔ linear 编解码：γ=2.2 近似与精确公式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sdf-operations-shader]] | SDF 的布尔并差交、onion / hollow、镜像平铺、smooth min 修改清单 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-voxels-2]] | Xor：GameMaker 中用 2D LUT 纹理存储可编辑体素地图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-vis-dev]] | Xor：程序员怎么把自己的美术「调教」得看得过去 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-anti-aliasing]] | Xor：shader 解析抗锯齿三级——SDF、fwidth、手动导数 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-gamma]] | Xor：shader 里 sRGB / linear 的正确编解码姿势 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/xor-mini-sdf]] | Xor：Signed Distance Field 的用途与修改操作大全 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-37 Worker DG (mini.gmshaders.com ×5)\n\n处理 5 篇 Xor 的 mini.gmshaders.com 文章（voxels-2 / vis-dev / anti-aliasing / gamma / sdf）。新增 5 概念页（voxel-map-lut-2d, programmer-art-vis-dev, fwidth-derivative-antialiasing, gamma-correction-srgb, sdf-operations-shader）、5 source 摘要。Xor 人物页已存在，追加 sources。5 处已有页面 patch（xor 人物页 + sdf-2d-primitives / analytical-antialiasing / color-space / voxel-ambient-occlusion）。"
+}

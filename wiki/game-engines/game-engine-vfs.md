@@ -81,6 +81,7 @@ Linux VFS 把新 mount 完全**覆盖**旧子树——挂上 `foo.zip` 到 `/foo
 - [[ant-engine]] —— 以这套 VFS 为核心模块
 - [[sources/cloudwu-vfs-new-ideas]] —— 云风 2024 年对 "不变快照" 假设的反思，设想退化为纯内存可增删的树
 - [[gameplay-layering-object-actor]] —— 同作者对 gameplay 上层的分层：data / visual / interaction + Object / Actor
+- [[mod-first-engine-evolution]] — 异星工厂把官方扩展做成 Mod，核心系统围绕 Mod API 进化；和 VFS 的可插拔资源层思路同源
 
 ## Sources
 

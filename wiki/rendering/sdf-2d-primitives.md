@@ -90,6 +90,7 @@ float line = smoothstep(thickness - w, thickness + w, lineDist);
 - [[sampling-theorem-sinc]]
 - [[poisson-disk-sampling]]
 - [[analytical-antialiasing]] —— 用 SDF 做完美的「一像素宽」边缘反走样
+- [[sdf-operations-shader]] —— SDF 的布尔并差交、smooth min、空间镜像 / 平铺 / 扭曲 modification 清单
 
 ## Sources
 

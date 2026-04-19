@@ -65,6 +65,7 @@ AAA 的局限非常明确：**它不解决通用场景的反走样**。它不能
 - [[sdf-2d-primitives]]
 - [[sdf-ray-marched-shadows]]
 - [[fragment-shader]]
+- [[fwidth-derivative-antialiasing]] —— Xor 的 `fwidth()` / 手动导数解析 AA 实用模板
 - [[frost-kiwi]]
 
 ## Sources

@@ -48,6 +48,7 @@ sRGB 的 TRC 是近似 γ≈2.2 的分段幂函数，**代价是编码后的值�
 - [[local-tonemapping]] — 线性 HDR → 感知域的艺术选择
 - [[exposure-fusion]] — 多曝光融合也是 tonemap 家族
 - [[spectral-rendering]] — 彻底绕开「RGB 当作颜色」的物理近似
+- [[gamma-correction-srgb]] —— shader 里 sRGB / linear 编解码的最小实现
 - [[fourier-srgb-spectral-upsampling]] — 把 sRGB 纹理升格为反射率谱
 - [[oklab-color-space]] — 感知均匀色彩空间，混合 / 渐变时用
 - [[display-edid-colorspace]] — 从 EDID 读出显示器原生 gamut

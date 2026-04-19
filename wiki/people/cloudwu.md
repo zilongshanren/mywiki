@@ -23,6 +23,7 @@ sources: 9
 - 偏爱 C + Lua 混合编程的哲学，反对用 C++ 宏来"模拟"对象模型
 - 从模块化 / 接口先行 / 生命期隔离出发设计底层
 - 2024 年开始独立做游戏，开始系统性梳理 gameplay 上层架构：三层切分 + Object/Actor + 持久化驱动的数据设计
+- 2024 下半年在自研游戏过程中反复验证一个立场：micro-management 类游戏里，确定性规则优于"智能 AI"，玩家需要可预测的物流/行为
 
 ## 相关
 
@@ -56,6 +57,11 @@ sources: 9
 - [[gameplay-layering-object-actor]]
 - [[immediate-vs-retained-mode]]
 - [[save-load-driven-data-design]]
+- [[ecs-data-oriented-revert]]
+- [[engine-thin-wrapper-per-genre]]
+- [[determinism-vs-smart-ai-gameplay]]
+- [[mod-first-engine-evolution]]
+- [[single-hub-logistics-model]]
 
 ## Sources
 
@@ -80,3 +86,6 @@ sources: 9
 - [[sources/cloudwu-worker-task-pathfinding]]
 - [[sources/cloudwu-id-lifetime-kill-flag]]
 - [[sources/cloudwu-gameplay-architecture]]
+- [[sources/cloudwu-ant-engine-improvement-plan]]
+- [[sources/cloudwu-game-reviews-determinism]]
+- [[sources/cloudwu-factorio-space-age]]

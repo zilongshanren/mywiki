@@ -49,6 +49,8 @@ Ant Engine 和它的第一款试炼游戏 *Red Frontier*（异星工厂 Like）�
 - [[unity-vs-unreal]]
 - [[engine-evolution]]
 - [[lua-design-philosophy]]
+- [[ecs-data-oriented-revert]] — 2024-09 云风提出要把 ECS 回归面向数据的原始设计，剥离辅助模块
+- [[engine-thin-wrapper-per-genre]] — 按游戏类型做薄封装框架，隔离引擎底层缺陷
 
 ## Sources
 

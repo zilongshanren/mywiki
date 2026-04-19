@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w37-df",
+  "agent_note": "5 篇 blog.codingnow.com 2024-09 ~ 2024-11 月度存档：3 篇 ingest（Ant 引擎改进计划 / 最近玩的游戏 [确定性规则 vs 智能 AI] / 异星工厂 2.0 太空时代复盘）、2 篇 skip（2024-10-25 Sid Meier 回忆录 + 卡牌游戏设计随笔 属创作笔记；2024-11-29-2 马山攀岩 Day4 属生活日记）。新增 5 个概念页（ecs-data-oriented-revert / engine-thin-wrapper-per-genre / determinism-vs-smart-ai-gameplay / mod-first-engine-evolution / single-hub-logistics-model）、3 个 source 摘要。patches 面向 cloudwu.md 追加 3 条 source 链接与相关概念，以及 ant-engine / ecs / game-engine-vfs 等相关页交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-09-03_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ant-engine-improvement-plan",
+      "title": "Ant 引擎的一些改进计划"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-09-23_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-game-reviews-determinism",
+      "title": "最近玩的几个游戏：确定性规则与极简美术"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-10-25_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "读《席德梅尔的回忆录》+ 卡牌太空生存游戏的设计脑暴。有价值的游戏设计思考（风险管理、策略 vs 成长、卡片组合 DSL），但整体是'我想做什么游戏'的个人创作随笔，没有可抽象为 wiki 概念的工程原则或机制分析。与 batch-w36-dc 跳过 2024-06-22 的理由一致。"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-11-29_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-factorio-space-age",
+      "title": "异星工厂 2.0 太空时代通关复盘"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-11-29_yun-feng-de-blog-2.md",
+      "status": "skipped_offtopic",
+      "reason": "2011 年马山攀岩日记 Day 4，纯生活叙事。"
+    }
+  ],
+  "concepts_created": [
+    "ecs-data-oriented-revert",
+    "engine-thin-wrapper-per-genre",
+    "determinism-vs-smart-ai-gameplay",
+    "mod-first-engine-evolution",
+    "single-hub-logistics-model"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-ant-engine-improvement-plan",
+    "cloudwu-game-reviews-determinism",
+    "cloudwu-factorio-space-age"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-ant-engine-improvement-plan]]\n- [[sources/cloudwu-game-reviews-determinism]]\n- [[sources/cloudwu-factorio-space-age]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 关联概念",
+      "content": "- 2024 下半年在自研游戏过程中反复验证一个立场：micro-management 类游戏里，确定性规则优于'智能 AI'，玩家需要可预测的物流/行为"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-data-oriented-revert]]\n- [[engine-thin-wrapper-per-genre]]\n- [[determinism-vs-smart-ai-gameplay]]\n- [[mod-first-engine-evolution]]\n- [[single-hub-logistics-model]]"
+    },
+    {
+      "file": "wiki/game-engines/ant-engine.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-data-oriented-revert]] — 2024-09 云风提出要把 ECS 回归面向数据的原始设计，剥离辅助模块\n- [[engine-thin-wrapper-per-genre]] — 按游戏类型做薄封装框架，隔离引擎底层缺陷"
+    },
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-data-oriented-revert]] — 云风对 Ant ECS 的反思：还原面向数据的原始 ECS，不要加太多辅助模块"
+    },
+    {
+      "file": "wiki/game-engines/game-engine-vfs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mod-first-engine-evolution]] — 异星工厂把官方扩展做成 Mod，核心系统围绕 Mod API 进化；和 VFS 的可插拔资源层思路同源"
+    },
+    {
+      "file": "wiki/game-development/worker-task-dispatch-priority.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[determinism-vs-smart-ai-gameplay]] — 云风在设计工厂无人机物流时学到：微操游戏里玩家要确定性规则，不要过分智能"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ecs-data-oriented-revert]] | 把 ECS 回归面向数据的原始设计，剥离辅助模块——云风 2024 对 Ant 的反思 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[engine-thin-wrapper-per-genre]] | 按游戏类型做薄封装框架，隔离底层引擎缺陷 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[mod-first-engine-evolution]] | 异星工厂模式：官方扩展即 Mod，核心系统围绕 Mod API 进化 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[determinism-vs-smart-ai-gameplay]] | 微操游戏里确定性规则胜过智能 AI：云风从工厂物流与异星工厂 2.0 学到的 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[single-hub-logistics-model]] | 异星工厂太空平台的唯一枢纽模型：上帝视角 + 背包式中转 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ant-engine-improvement-plan]] | 云风：独立开发三个月后的 Ant 引擎改进计划 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-game-reviews-determinism]] | 云风：最近玩的游戏与确定性规则 vs 智能 AI |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-factorio-space-age]] | 云风：异星工厂 2.0 太空时代 300 小时通关复盘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-37 Worker DF (blog.codingnow.com 2024-09 ~ 2024-11 月度存档 ×5)\n\n处理 5 篇云风 blog.codingnow.com 月度存档，ingest 3 篇跳过 2 篇：\n- Ant 引擎的一些改进计划（2024-09-03）\n- 最近玩的几个游戏（2024-09-23）\n- 异星工厂 2.0 太空时代通关复盘（2024-11-29）\n- 跳过：2024-10-25 席德梅尔回忆录 + 卡牌游戏构思（创作随笔）\n- 跳过：2024-11-29-2 马山攀岩 Day4（生活日记）\n\n新增 5 个概念页：ecs-data-oriented-revert / engine-thin-wrapper-per-genre / determinism-vs-smart-ai-gameplay / mod-first-engine-evolution / single-hub-logistics-model。3 个 source 摘要。cloudwu 人物页通过 patch 追加 3 条 source 链接与 5 个相关概念。这批笔记把云风 2024 年 9-11 月的思考脉络串起来：独立做游戏后对 Ant 引擎取舍的再评估，对同类游戏（自动化 + 基地建设 + 生存）设计经验的横向对比，以及从异星工厂 2.0 身上回读自己几年来工程选择的确认——尤其是确定性规则、Mod-first 架构、单枢纽物流这几个主题。"
+}

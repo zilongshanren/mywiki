@@ -501,3 +501,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-19] ingest | Wave-36 Worker DD (mini.gmshaders.com 2024-03 ~ 2024-07 ×5)
 
 处理 5 篇 mini.gmshaders.com：Blur Philosophy 2（Xor）、Volume Shadows（Oakleaff 客座）、Radiance Cascades Part 1（Yaazarai 客座）、Vertex Shaders（Xor）、Radiance Cascades Part 2（Yaazarai 客座），全部 ingested。新增 5 概念页（[[bilinear-sample-blur-optimization]]、[[penumbra-hypothesis]]、[[radiance-cascades]]、[[volumetric-fog-raymarch-shadows]]、[[vertex-shader-basics]]）、3 人物页（[[alex-yaazarai]]、[[alexander-sannikov]]、[[oakleaff]]）、5 source 摘要。Radiance Cascades 两部教程合并到同一概念页、各自保留独立 source 摘要。Worker 因 stream idle timeout 未写 bundle.json，P9 按文件 reverse-engineer 合并。
+
+## [2026-04-19] ingest | Wave-37 Worker DE (danielilett.com 2025-10 ×5)
+
+处理 5 篇 Daniel Ilett 2025 年 10 月 Unity 教程，全部 ingested：Zelda Recall 符文复刻、Shader Graph Basics 11（Terrain splatmap + 自动岩石 + 世界扫描）、Holofoil Pokémon 闪卡（stencil parallax + 彩虹条纹）、Shader Graph Basics 12（Fullscreen Graph 后处理）、Shader Code Basics 02（Texture/UV 采样 + SRP Batcher）。新增 8 概念页（[[draw-renderer-list-mask-urp]]、[[terrain-splatmap-shader-graph]]、[[world-scan-shader-effect]]、[[stencil-parallax-card-layers]]、[[holofoil-rainbow-shader]]、[[fullscreen-shader-graph-urp]]、[[hlsl-texture-sampling-basics]]、[[srp-batcher-cbuffer]]）+ 5 source 摘要 + 对 daniel-ilett / stencil-buffer / sobel-edge-detection 的增量补丁。Worker 因 socket 异常中断丢失部分 source 文件，P9 按 bundle 补写 5 个 source stub。
+
+## [2026-04-19] ingest | Wave-37 Worker DF (blog.codingnow.com 2024-09 ~ 2024-11 ×5)
+
+处理 5 篇云风 blog.codingnow.com 月度存档，ingest 3 篇跳过 2 篇：Ant 引擎改进计划（2024-09-03）、最近玩的游戏与确定性规则（2024-09-23）、异星工厂 2.0 太空时代通关复盘（2024-11-29）；跳过 2024-10-25 席德梅尔回忆录 + 卡牌游戏构思与 2024-11-29-2 马山攀岩日记。新增 5 概念（[[ecs-data-oriented-revert]]、[[engine-thin-wrapper-per-genre]]、[[determinism-vs-smart-ai-gameplay]]、[[mod-first-engine-evolution]]、[[single-hub-logistics-model]]）+ 3 source 摘要 + 对 cloudwu / ant-engine / ecs / game-engine-vfs / worker-task-dispatch-priority 的 patch。把云风 2024 下半年"独立做游戏后对引擎取舍的再评估"这条主线串起来。
+
+## [2026-04-19] ingest | Wave-37 Worker DG (mini.gmshaders.com 2024-08 ~ 2025-02 ×5)
+
+处理 5 篇 Xor 的 mini.gmshaders.com 文章（voxels-2 / vis-dev / anti-aliasing / gamma / sdf），全部 ingested。新增 5 概念（[[voxel-map-lut-2d]]、[[programmer-art-vis-dev]]、[[fwidth-derivative-antialiasing]]、[[gamma-correction-srgb]]、[[sdf-operations-shader]]）+ 5 source 摘要 + 对 xor-shader-artist / sdf-2d-primitives / analytical-antialiasing / color-space / voxel-ambient-occlusion 的 patch。voxels-1 (DDA) 尚未入库，voxels-2 暂以文字引用，待后续补 wikilink。

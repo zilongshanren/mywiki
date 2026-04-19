@@ -43,6 +43,7 @@ Sobel 看的是颜色变化，**会把阴影边当作物体边**来描——如�
 - [[unity-image-effect-basics]]
 - [[image-effect-colour-transform]]
 - [[surface-angle-silhouette]] —— Steven Sell 同系列的前篇：基于 `dot(V, N)` 的剪影，对平面失效，导致作者改用 Sobel
+- [[fullscreen-shader-graph-urp]] —— 屏幕空间颜色+法线双梯度 outline 在 URP Fullscreen Graph 下的 Shader Graph 实现
 
 ## Sources
 

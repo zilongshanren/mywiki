@@ -179,6 +179,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[ecs-particle-system-c]] | 云风的 C 版 ECS 粒子系统：属性聚合、cache 友好、分支消除 |
 | [[gameplay-layering-object-actor]] | gameplay 三层切分 + Object / Actor 双类，持久化优先级最高 |
 | [[immediate-vs-retained-mode]] | 立即模式 vs 保留模式：表现层对接数据模型的两种范式 |
+| [[ecs-data-oriented-revert]] | 把 ECS 回归面向数据的原始设计，剥离辅助模块——云风 2024 对 Ant 的反思 |
+| [[engine-thin-wrapper-per-genre]] | 按游戏类型做薄封装框架，隔离底层引擎缺陷 |
+| [[mod-first-engine-evolution]] | 异星工厂模式：官方扩展即 Mod，核心系统围绕 Mod API 进化 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -456,6 +459,19 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[radiance-cascades]] | Sannikov 的 2D 全局光照：结构化级联 + bilinear merge 替代随机采样 |
 | [[volumetric-fog-raymarch-shadows]] | 屏幕空间 raymarch + 级联阴影的体积雾：renormalize viewRay 的经典坑 |
 | [[vertex-shader-basics]] | Vertex Shader 何时写、能做什么：2D 游戏里被低估的流水线一半 |
+| [[draw-renderer-list-mask-urp]] | URP 自绘 layer mask：`DrawRendererList` + override material + `ShaderTagId` 重绘特定层到自有 RT |
+| [[terrain-splatmap-shader-graph]] | Unity terrain 的 `_Control` + `_Splat0..3` 约定在 Shader Graph 的手工复刻 + 法线自动岩石层 |
+| [[world-scan-shader-effect]] | 世界空间扫描波：两次 `Step` 夹出圆环 + Emissive + Bloom 的发光扩散 |
+| [[stencil-parallax-card-layers]] | Pokémon 卡牌分层 parallax：stencil mask + Render Objects feature 把 layer 按 stencil 掩回画面 |
+| [[holofoil-rainbow-shader]] | 宝可梦 holo 闪卡：视角相关彩虹条纹 + Hue 循环 / Color Ramp 双路径 + Holo Mask + Height→Normal |
+| [[fullscreen-shader-graph-urp]] | URP Fullscreen Shader Graph + Full Screen Pass Renderer Feature：Shader Graph 直出后处理 |
+| [[hlsl-texture-sampling-basics]] | HLSL 纹理采样骨架：`TEXTURE2D` / `SAMPLER` / `_ST` / `TRANSFORM_TEX` / `SAMPLE_TEXTURE2D` |
+| [[srp-batcher-cbuffer]] | SRP Batcher 的门票：`CBUFFER_START(UnityPerMaterial)` 把 material 属性封入常量缓冲 |
+| [[voxel-map-lut-2d]] | 以 2D 纹理拼接成 3D LUT，在没有 3D texture / SSBO 的引擎里存体素地图 |
+| [[programmer-art-vis-dev]] | 程序员美术的视觉打磨清单：色板、分辨率、细节分布、灯光 |
+| [[fwidth-derivative-antialiasing]] | 用 `fwidth()` / 手动偏导数做任意连续函数的一像素淡出 AA |
+| [[gamma-correction-srgb]] | shader 视角的 sRGB ↔ linear 编解码：γ=2.2 近似与精确公式 |
+| [[sdf-operations-shader]] | SDF 的布尔并差交、onion / hollow、镜像平铺、smooth min 修改清单 |
 
 ## 经典案例（wiki/examples/）
 
@@ -493,6 +509,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[worker-task-dispatch-priority]] | 矮人要塞风格的工人任务分发：权重相乘的调度模型 |
 | [[multi-target-pathfinding]] | 从任务系统需求倒推：单源多目标扩散代替 N 次 A* |
 | [[save-load-driven-data-design]] | 以持久化驱动数据模型设计：存档是设计压力测试 |
+| [[determinism-vs-smart-ai-gameplay]] | 微操游戏里确定性规则胜过智能 AI：云风从工厂物流与异星工厂 2.0 学到的 |
+| [[single-hub-logistics-model]] | 异星工厂太空平台的唯一枢纽模型：上帝视角 + 背包式中转 |
 
 ## 人物（wiki/people/）
 
@@ -935,6 +953,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/oakleaff-volume-shadows]] | Oakleaff：GM 上体积雾 + 级联阴影的屏幕空间 raymarch |
 | [[sources/yaazarai-radiance-cascades]] | Yaazarai：Radiance Cascades Part 1 几何直觉 |
 | [[sources/yaazarai-radiance-cascades-2]] | Yaazarai：Radiance Cascades Part 2 优化、代码、朴素采样对比 |
+| [[sources/danielilett-zelda-recall-rune]] | Ilett：URP 复刻《王国之泪》Recall 时之逆转（mask RT + 噪声擦除 + 边缘检测） |
+| [[sources/danielilett-shader-graph-terrains]] | Ilett：Shader Graph Part 11，手工复刻 Terrain splatmap + 自动岩石 + 世界扫描 |
+| [[sources/danielilett-holofoil-cards]] | Ilett：URP 宝可梦 holo 闪卡（stencil 分层 parallax + 视角彩虹 + Height→Normal） |
+| [[sources/danielilett-shader-graph-post-processing]] | Ilett：Shader Graph Part 12，Fullscreen Graph 做灰度与颜色+法线 outline |
+| [[sources/danielilett-shader-code-textures-uvs]] | Ilett：Shader Code 02，`TEXTURE2D`/`SAMPLER`/`_ST`/`TRANSFORM_TEX` + SRP Batcher CBUFFER |
+| [[sources/cloudwu-ant-engine-improvement-plan]] | 云风：独立开发三个月后的 Ant 引擎改进计划 |
+| [[sources/cloudwu-game-reviews-determinism]] | 云风：最近玩的游戏与确定性规则 vs 智能 AI |
+| [[sources/cloudwu-factorio-space-age]] | 云风：异星工厂 2.0 太空时代 300 小时通关复盘 |
+| [[sources/xor-mini-voxels-2]] | Xor：GameMaker 中用 2D LUT 纹理存储可编辑体素地图 |
+| [[sources/xor-mini-vis-dev]] | Xor：程序员美术的视觉打磨清单 |
+| [[sources/xor-mini-anti-aliasing]] | Xor：shader 解析抗锯齿三级——SDF、fwidth、手动导数 |
+| [[sources/xor-mini-gamma]] | Xor：shader 里 sRGB / linear 的正确编解码姿势 |
+| [[sources/xor-mini-sdf]] | Xor：Signed Distance Field 的用途与修改操作大全 |
 
 ## 元（wiki/meta/）
 

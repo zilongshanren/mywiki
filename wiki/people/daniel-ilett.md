@@ -38,6 +38,14 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[shader-graph-custom-function-hlsl]]
 - [[mystery-dungeon-sketch-shadows]]
 - [[screen-space-shadow-map-urp]]
+- [[draw-renderer-list-mask-urp]]
+- [[terrain-splatmap-shader-graph]]
+- [[world-scan-shader-effect]]
+- [[stencil-parallax-card-layers]]
+- [[holofoil-rainbow-shader]]
+- [[fullscreen-shader-graph-urp]]
+- [[hlsl-texture-sampling-basics]]
+- [[srp-batcher-cbuffer]]
 
 ## Sources
 
@@ -66,3 +74,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-shader-graph-intersections-2]]
 - [[sources/danielilett-shader-graph-custom-functions]]
 - [[sources/danielilett-mystery-dungeon-sketches]]
+- [[sources/danielilett-zelda-recall-rune]]
+- [[sources/danielilett-shader-graph-terrains]]
+- [[sources/danielilett-holofoil-cards]]
+- [[sources/danielilett-shader-graph-post-processing]]
+- [[sources/danielilett-shader-code-textures-uvs]]

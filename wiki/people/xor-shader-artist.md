@@ -103,3 +103,8 @@ sources: 10
 - [[sources/xor-mini-blur-philosophy]]
 - [[sources/xor-mini-blur-philosophy-2]]
 - [[sources/xor-mini-vertex-shaders]]
+- [[sources/xor-mini-voxels-2]]
+- [[sources/xor-mini-vis-dev]]
+- [[sources/xor-mini-anti-aliasing]]
+- [[sources/xor-mini-gamma]]
+- [[sources/xor-mini-sdf]]

@@ -46,6 +46,7 @@ sources: 1
 - [[a-star-pathfinding]]
 - [[meshes-of-navigation-recast]]
 - [[cloudwu]]
+- [[determinism-vs-smart-ai-gameplay]] — 云风在设计工厂无人机物流时学到：微操游戏里玩家要确定性规则，不要过分智能
 
 ## Sources
 
