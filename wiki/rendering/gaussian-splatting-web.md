@@ -1,7 +1,7 @@
 ---
 tags: [渲染, gaussian-splatting, 3dgs, 点云, web, playcanvas, supersplat, pwa]
 date: 2026-04-14
-sources: 2
+sources: 5
 ---
 
 # 3D 高斯溅射在 Web 上的工作流
@@ -45,8 +45,12 @@ sources: 2
 - [[will-eastcott]] —— PlayCanvas 联合创始人，三篇文章的作者
 - [[compute-vs-raster-points]] —— 点类原语用 compute vs raster 渲染的比较
 - [[alpha-compositing]]
+- [[supersplat-publish-platform]] —— 编辑完之后的发布、视频、embed、WebXR、viewer 开源整套基础设施
 
 ## Sources
 
 - [[sources/playcanvas-supersplat-pwa]]
 - [[sources/playcanvas-editor-gaussian-splat]]
+- [[sources/playcanvas-supersplat-2-0-publish]]
+- [[sources/playcanvas-supersplat-2-2-video]]
+- [[sources/playcanvas-supersplat-viewer-oss]]

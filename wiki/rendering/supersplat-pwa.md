@@ -1,7 +1,7 @@
 ---
 tags: [渲染, gaussian-splatting, supersplat, pwa, playcanvas, 工具]
 date: 2026-04-14
-sources: 1
+sources: 4
 ---
 
 # SuperSplat：开源 3DGS 编辑器与 PWA 化
@@ -33,7 +33,11 @@ SuperSplat 的这次更新是一个典型的「基建升级解锁业务跃迁」
 - [[playcanvas-webgpu-editor]] —— 引擎侧的 WebGPU 支持
 - [[webgpu-intro]]
 - [[will-eastcott]]
+- [[supersplat-publish-platform]] —— SuperSplat 从编辑器走向发布平台的 2025 年三版演进
 
 ## Sources
 
 - [[sources/playcanvas-supersplat-pwa]]
+- [[sources/playcanvas-supersplat-2-0-publish]]
+- [[sources/playcanvas-supersplat-2-2-video]]
+- [[sources/playcanvas-supersplat-viewer-oss]]

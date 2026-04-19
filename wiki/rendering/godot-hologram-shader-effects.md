@@ -56,3 +56,8 @@ Daniel Ilett 的 *Hologram Shaders* Godot 版以"同一套 PBR + glitch + fresne
 - [[sources/danielilett-hologram-godot-uber]]
 - [[sources/danielilett-hologram-pro-basic]]
 - [[sources/danielilett-hologram-pro-dot-matrix-glitch]]
+- [[sources/danielilett-hologram-pro-dot-matrix]]
+- [[sources/danielilett-hologram-pro-glitch]]
+- [[sources/danielilett-hologram-pro-gradient]]
+- [[sources/danielilett-hologram-pro-grid]]
+- [[sources/danielilett-hologram-pro-grid-glitch]]

@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w42-dt",
+  "agent_note": "jendrikillner Graphics Programming Weekly 361-370 (2024-10-13 ~ 2024-12-15). Per wave 34/38-41 precedent, all issues are link-roundup/newsletter format with no original technical content; skipped as off-topic newsletter aggregation.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2024-10-13_graphics-programming-weekly-issue-361-october-13th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-10-20_graphics-programming-weekly-issue-362-october-20th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-10-27_graphics-programming-weekly-issue-363-october-27th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-11-03_graphics-programming-weekly-issue-364-november-3rd-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-11-10_graphics-programming-weekly-issue-365-november-10th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-11-17_graphics-programming-weekly-issue-366-november-17th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-11-24_graphics-programming-weekly-issue-367-november-24th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-12-01_graphics-programming-weekly-issue-368-december-1st-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-12-08_graphics-programming-weekly-issue-369-december-8th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-12-15_graphics-programming-weekly-issue-370-december-15th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup newsletter; no original technical content"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-42 Worker DT (jendrikillner Graphics Programming Weekly 361-370)\n\n跳过 10 篇 jendrikillner.com 每周图形编程新闻汇总（issue 361-370，2024-10-13 ~ 2024-12-15）。沿用 wave 34/38-41 先例——这些 weekly 属于链接聚合 newsletter，无原创技术内容，不入 wiki。"
+}

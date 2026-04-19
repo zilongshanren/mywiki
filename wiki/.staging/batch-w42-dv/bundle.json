@@ -1,0 +1,168 @@
+{
+  "batch_id": "batch-w42-dv",
+  "agent_note": "blog.playcanvas.com 2024-2025：Engine 2.0 major bump + PlayCanvas React 声明式 3D + SuperSplat 2.0/2.2/viewer 开源三部曲合成发布平台。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2024-08-22_playcanvas-engine-hits-2-0-0-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-engine-2-release",
+      "title": "PlayCanvas Engine Hits 2.0.0"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-01-14_declarative-3d-with-react-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-react-declarative-3d",
+      "title": "Declarative 3D with React"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-02-13_publish-your-gaussian-splats-with-supersplat-2-0-playcanvas.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-2-0-publish",
+      "title": "Publish Your Gaussian Splats with SuperSplat 2.0"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-03-13_render-your-gaussian-splats-to-video-with-supersplat-2-2-pla.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-2-2-video",
+      "title": "Render Your Gaussian Splats to Video with SuperSplat 2.2"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-04-09_supersplat-3dgs-viewer-is-now-open-source-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-viewer-oss",
+      "title": "SuperSplat 3DGS Viewer is now Open Source"
+    }
+  ],
+  "concepts_created": [
+    "playcanvas-engine-2-breaking-changes",
+    "playcanvas-react-declarative",
+    "supersplat-publish-platform"
+  ],
+  "people_created": ["mark-lundin"],
+  "source_summaries_created": [
+    "playcanvas-engine-2-release",
+    "playcanvas-react-declarative-3d",
+    "playcanvas-supersplat-2-0-publish",
+    "playcanvas-supersplat-2-2-video",
+    "playcanvas-supersplat-viewer-oss"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "append_to_section",
+      "section": "## 主要贡献",
+      "content": "- 2024 年 8 月推动 PlayCanvas Engine 从 1.x 跨到 **2.0.0**（[[playcanvas-engine-2-breaking-changes]]），借 major bump 砍掉 WebGL 1 / Scripts 1.0 / AudioSourceComponent 等长期 cruft，为 [[webgpu-intro|WebGPU]] 后端腾出接口预算。\n- 2025 年主导 [[supersplat-publish-platform|SuperSplat]] 从编辑器扩张为编辑-发布-托管-社区一体化平台（2.0 发布 + 2.2 视频渲染与 embed + viewer 开源），并把整条链路全部 MIT 开源。"
+    },
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[playcanvas-engine-2-breaking-changes]]\n- [[supersplat-publish-platform]]\n- [[mark-lundin]]"
+    },
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-engine-2-release]]\n- [[sources/playcanvas-supersplat-2-0-publish]]\n- [[sources/playcanvas-supersplat-2-2-video]]\n- [[sources/playcanvas-supersplat-viewer-oss]]"
+    },
+    {
+      "file": "wiki/rendering/supersplat-pwa.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/rendering/supersplat-pwa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[supersplat-publish-platform]] —— SuperSplat 从编辑器走向发布平台的 2025 年三版演进"
+    },
+    {
+      "file": "wiki/rendering/supersplat-pwa.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-supersplat-2-0-publish]]\n- [[sources/playcanvas-supersplat-2-2-video]]\n- [[sources/playcanvas-supersplat-viewer-oss]]"
+    },
+    {
+      "file": "wiki/rendering/gaussian-splatting-web.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 5"
+    },
+    {
+      "file": "wiki/rendering/gaussian-splatting-web.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[supersplat-publish-platform]] —— 编辑完之后的发布、视频、embed、WebXR、viewer 开源整套基础设施"
+    },
+    {
+      "file": "wiki/rendering/gaussian-splatting-web.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-supersplat-2-0-publish]]\n- [[sources/playcanvas-supersplat-2-2-video]]\n- [[sources/playcanvas-supersplat-viewer-oss]]"
+    },
+    {
+      "file": "wiki/rendering/playcanvas-webgpu-editor.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/playcanvas-webgpu-editor.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[playcanvas-engine-2-breaking-changes]] —— 2.0 major bump 砍掉 WebGL 1 等历史包袱、为 WebGPU 腾出接口预算"
+    },
+    {
+      "file": "wiki/rendering/playcanvas-webgpu-editor.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-engine-2-release]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[playcanvas-engine-2-breaking-changes]] | PlayCanvas Engine 2.0：一次 major bump 的工程学（cruft 清理 + WebGPU 铺路） |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[playcanvas-react-declarative]] | PlayCanvas React：把 PlayCanvas ECS 包成 JSX 的声明式 3D 绑定 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[supersplat-publish-platform]] | SuperSplat 2025 年从编辑器扩张为编辑-发布-托管-社区平台 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[mark-lundin]] | PlayCanvas 团队，@playcanvas/react 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-engine-2-release]] | Eastcott：PlayCanvas Engine 2.0.0 发布公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-react-declarative-3d]] | Lundin：Declarative 3D with React 公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-2-0-publish]] | Eastcott：SuperSplat 2.0 发布 + Timeline + .ssproj |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-2-2-video]] | Eastcott：SuperSplat 2.2 视频渲染 + embed + 社区 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-viewer-oss]] | Eastcott：SuperSplat Viewer 转 MIT 开源 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-42 Worker DV (blog.playcanvas.com ×5)\n\n处理 5 篇 PlayCanvas 官方博客文章（2024-08 ~ 2025-04）。新增 3 概念页（playcanvas-engine-2-breaking-changes, playcanvas-react-declarative, supersplat-publish-platform）、1 人物页（mark-lundin）、5 source 摘要。为既有 [[will-eastcott]]、[[supersplat-pwa]]、[[gaussian-splatting-web]]、[[playcanvas-webgpu-editor]] 追加相关链接与 source 引用。三条主线：Engine 2.0 借 major bump 清 cruft 给 WebGPU 腾路；PlayCanvas React 用 JSX 做声明式 3D；SuperSplat 2025 年三版（2.0/2.2/viewer OSS）把 3DGS 工具从编辑器扩张成完整发布平台。"
+}

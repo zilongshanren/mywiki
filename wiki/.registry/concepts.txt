@@ -518,3 +518,7 @@ shader-art-design-principles
 lua-class-pattern
 xlsx-text-versioning
 mysql-charset-migration
+playcanvas-engine-2-breaking-changes
+playcanvas-react-declarative
+supersplat-publish-platform
+mark-lundin

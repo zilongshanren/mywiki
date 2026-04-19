@@ -1,7 +1,7 @@
 ---
 tags: [渲染, webgpu, playcanvas, 引擎, compute, 跨平台]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # PlayCanvas 的 WebGPU 适配与 Editor 集成
@@ -43,7 +43,9 @@ PlayCanvas 这次发布揭示的不是"新 API 来了"，而是**商业 web 引�
 - [[compute-vs-raster-points]]
 - [[d3d12-resource-binding]]
 - [[will-eastcott]]
+- [[playcanvas-engine-2-breaking-changes]] —— 2.0 major bump 砍掉 WebGL 1 等历史包袱、为 WebGPU 腾出接口预算
 
 ## Sources
 
 - [[sources/playcanvas-webgpu-editor]]
+- [[sources/playcanvas-engine-2-release]]

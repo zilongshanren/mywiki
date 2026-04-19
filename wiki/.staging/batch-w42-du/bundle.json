@@ -1,0 +1,95 @@
+{
+  "batch_id": "batch-w42-du",
+  "agent_note": "Unity Hologram Shaders Pro 5 变体（dot-matrix / glitch / gradient / grid / grid-glitch）。全部对齐已入 Godot 版（godot-hologram-shader-effects），无独立工程贡献，按指示仅做 source 摘要归档，不新建概念页。patch godot-hologram-shader-effects 的 Sources 追加 5 条链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-dot-matrix.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-dot-matrix",
+      "title": "Hologram Shaders Pro - Dot Matrix"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-glitch.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-glitch",
+      "title": "Hologram Shaders Pro - Glitch"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-gradient.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-gradient",
+      "title": "Hologram Shaders Pro - Gradient"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-grid-glitch.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-grid-glitch",
+      "title": "Hologram Shaders Pro - Grid + Glitch"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-grid.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-grid",
+      "title": "Hologram Shaders Pro - Grid"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-hologram-pro-dot-matrix",
+    "danielilett-hologram-pro-glitch",
+    "danielilett-hologram-pro-gradient",
+    "danielilett-hologram-pro-grid",
+    "danielilett-hologram-pro-grid-glitch"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-dot-matrix]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-glitch]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-gradient]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-grid]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-grid-glitch]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-dot-matrix]] | Ilett：Hologram Shaders Pro 点阵变体参数手册（Unity） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-glitch]] | Ilett：Hologram Shaders Pro 纯故障变体参数手册（Unity） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-gradient]] | Ilett：Hologram Shaders Pro 渐变变体参数手册（Unity） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-grid]] | Ilett：Hologram Shaders Pro 世界空间网格变体参数手册（Unity） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-grid-glitch]] | Ilett：Hologram Shaders Pro 网格 + 故障组合变体参数手册（Unity） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-42 Worker DU (danielilett Hologram Shaders Pro Unity ×5)\n\n处理 5 篇 Unity *Hologram Shaders Pro* 变体产品文档（dot-matrix / glitch / gradient / grid / grid-glitch）。全部对齐已入 Godot 版（godot-hologram-shader-effects），无独立工程贡献，仅作 source 摘要归档，未新建概念页。patch godot-hologram-shader-effects 的 Sources 追加 5 条链接。"
+}

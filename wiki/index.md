@@ -190,6 +190,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[mod-first-engine-evolution]] | 异星工厂模式：官方扩展即 Mod，核心系统围绕 Mod API 进化 |
 | [[agent-state-sync-broadcast]] | Agent 状态同步的广播机制与拷贝优化（云风 Erlang 服务器） |
 | [[soluna-2d-engine]] | 云风的 Soluna：面向策略类游戏的 2D 框架 |
+| [[playcanvas-engine-2-breaking-changes]] | PlayCanvas Engine 2.0：一次 major bump 的工程学（cruft 清理 + WebGPU 铺路） |
+| [[playcanvas-react-declarative]] | PlayCanvas React：把 PlayCanvas ECS 包成 JSX 的声明式 3D 绑定 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -491,6 +493,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[shader-combination-strategies]] | 合并 vs 多趟 pass 的 5 项 checklist |
 | [[common-shader-pitfalls]] | NaN / 纹理 / mipmap / 精度常见 shader bug |
 | [[shader-art-design-principles]] | Xor 的 shader art 五维自查（构图/光/色/纹理/动作） |
+| [[supersplat-publish-platform]] | SuperSplat 2025 年从编辑器扩张为编辑-发布-托管-社区平台 |
 
 ## 经典案例（wiki/examples/）
 
@@ -578,6 +581,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[alex-yaazarai]] | Yaazarai / Alex，GameMaker 社区 shader 开发者，Radiance Cascades 两部教程作者 |
 | [[alexander-sannikov]] | Grinding Gear Games 图形程序员，Radiance Cascades 算法提出者 |
 | [[oakleaff]] | Oakleaff，GameMaker 业余 3D/shader 开发者，volumetric + cascaded shadow 教程 |
+| [[mark-lundin]] | PlayCanvas 团队，@playcanvas/react 作者 |
 
 ## 源摘要（wiki/sources/）
 
@@ -1011,6 +1015,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cloudwu-lua-class-pattern]] | 云风：Lua 类型定义与容器元数据藏匿技巧 |
 | [[sources/cloudwu-xlsx-version-control]] | 云风：xlsx 文本化以适配 git 工作流 |
 | [[sources/cloudwu-mysql-gbk-utf8-migration]] | 云风：跨十年 MySQL 升级的 GBK → UTF-8 迁移复盘 |
+| [[sources/danielilett-hologram-pro-dot-matrix]] | Ilett：Hologram Shaders Pro 点阵变体参数手册（Unity） |
+| [[sources/danielilett-hologram-pro-glitch]] | Ilett：Hologram Shaders Pro 纯故障变体参数手册（Unity） |
+| [[sources/danielilett-hologram-pro-gradient]] | Ilett：Hologram Shaders Pro 渐变变体参数手册（Unity） |
+| [[sources/danielilett-hologram-pro-grid]] | Ilett：Hologram Shaders Pro 世界空间网格变体参数手册（Unity） |
+| [[sources/danielilett-hologram-pro-grid-glitch]] | Ilett：Hologram Shaders Pro 网格 + 故障组合变体参数手册（Unity） |
+| [[sources/playcanvas-engine-2-release]] | Eastcott：PlayCanvas Engine 2.0.0 发布公告 |
+| [[sources/playcanvas-react-declarative-3d]] | Lundin：Declarative 3D with React 公告 |
+| [[sources/playcanvas-supersplat-2-0-publish]] | Eastcott：SuperSplat 2.0 发布 + Timeline + .ssproj |
+| [[sources/playcanvas-supersplat-2-2-video]] | Eastcott：SuperSplat 2.2 视频渲染 + embed + 社区 |
+| [[sources/playcanvas-supersplat-viewer-oss]] | Eastcott：SuperSplat Viewer 转 MIT 开源 |
 
 ## 元（wiki/meta/）
 

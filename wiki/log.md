@@ -561,3 +561,15 @@ Evan Todd 5 篇：3 技术 ingest（CI ASG 优化、identity/naming、100k 测�
 ## [2026-04-19] ingest | Wave-41 Worker DS (cloudwu 2025-07 ~ 2025-09 ×5)
 
 云风 5 篇：3 ingest（[[lua-class-pattern]] Lua 类型定义套路、[[xlsx-text-versioning]] xlsx 文本化版本管理、[[mysql-charset-migration]] 跨十年 MySQL 编码迁移）+ 2 skip（Twitter 合集 + 桌游 Deep Future 笔记）。3 source 摘要。
+
+## [2026-04-19] ingest | Wave-42 Worker DT (jendrikillner 361-370)
+
+10 篇 jendrikillner weekly 2024-10 ~ 12（issues 361-370）全部 skipped，延续 waves 34/38-41 先例。
+
+## [2026-04-19] ingest | Wave-42 Worker DU (danielilett Pro variants ×5)
+
+5 篇 Unity Hologram Shaders Pro 变体（dot-matrix / glitch / gradient / grid / grid-glitch）全部作为 source 摘要，参数对齐已入的 Godot 版，未建新概念页。5 source + patch 到 [[godot-hologram-shader-effects]] Sources。
+
+## [2026-04-19] ingest | Wave-42 Worker DV (blog.playcanvas.com 2024-08 ~ 2025-04 ×5)
+
+5 篇 PlayCanvas 博客全部 ingested。新增 3 概念（[[playcanvas-engine-2-breaking-changes]]、[[playcanvas-react-declarative]]、[[supersplat-publish-platform]]）+ 1 人物（[[mark-lundin]]）+ 5 source。patch 到 [[will-eastcott]]、[[supersplat-pwa]]、[[gaussian-splatting-web]]、[[playcanvas-webgpu-editor]]。三主线：Engine 2.0 major bump 清 cruft 给 WebGPU 腾路；PlayCanvas React JSX 声明式 3D；SuperSplat 2025 三版扩张为完整发布平台。
