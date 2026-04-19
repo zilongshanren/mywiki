@@ -108,6 +108,7 @@ Marco 列了几点（和 [[information-hiding|信息隐藏]] / [[deep-modules|�
 - [[linear-allocator]] —— 池式存储的基础构件
 - [[game-engine-vfs]] —— 资源管线的上游（文件系统抽象）
 - [[engine-layering]]
+- [[id-based-lifetime-with-kill-flag]] — 云风在 skynet 2.0 里用 id + 销毁标记替代 refcount 的变体，哲学一致但面向 actor 并发
 
 ## Sources
 

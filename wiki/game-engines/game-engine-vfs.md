@@ -80,6 +80,7 @@ Linux VFS 把新 mount 完全**覆盖**旧子树——挂上 `foo.zip` 到 `/foo
 - [[game-resource-pack-format]] —— 云风对网易《大话西游》资源包 / 补丁包格式的设计回顾与下一代设想
 - [[ant-engine]] —— 以这套 VFS 为核心模块
 - [[sources/cloudwu-vfs-new-ideas]] —— 云风 2024 年对 "不变快照" 假设的反思，设想退化为纯内存可增删的树
+- [[gameplay-layering-object-actor]] —— 同作者对 gameplay 上层的分层：data / visual / interaction + Object / Actor
 
 ## Sources
 

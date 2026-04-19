@@ -1,0 +1,141 @@
+{
+  "batch_id": "batch-w36-dc",
+  "agent_note": "5 篇 blog.codingnow.com 月度存档：4 篇 ingest（ECS 粒子系统 C/C++ 对比 / 工人任务调度 + 寻路 / ID + 销毁标记替代 refcount 的生命期管理 / gameplay 三层架构 + Object/Actor）、1 篇 skip（2024-06-22 是选题反思 + 核心玩法构思的个人创作笔记，属于 game-design 主题但以个人叙事为主，没有可抽象的工程原则）。新增 8 个概念页、0 个人物页（cloudwu 已存在），4 个 source 摘要。patches 面向 cloudwu.md 追加新 source 链接，以及 ecs / ant-engine / ltask-scheduler 等相关页的交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-06-11_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ecs-particle-system-c",
+      "title": "ECS 粒子系统的 C/C++ 对比"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-06-22_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "个人游戏选题反思 + 构思拼积木飞船 rogue-like 的创作随笔。涉及 game design 话题，但内容是'我应该做什么游戏'的个人叙事和乐趣点提案，缺乏可抽象为 wiki 概念的工程原则或机制分析。如果作者后续落地具体机制，再补录不迟。"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-07-25_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-worker-task-pathfinding",
+      "title": "工人任务分配系统与寻路"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-08-24_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-id-lifetime-kill-flag",
+      "title": "对象生命期管理：ID + 销毁标记替代引用计数"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-08-24_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-gameplay-architecture",
+      "title": "Gameplay 上层架构笔记"
+    }
+  ],
+  "concepts_created": [
+    "ecs-particle-system-c",
+    "type-safety-vs-simplicity",
+    "worker-task-dispatch-priority",
+    "multi-target-pathfinding",
+    "id-based-lifetime-with-kill-flag",
+    "gameplay-layering-object-actor",
+    "immediate-vs-retained-mode",
+    "save-load-driven-data-design"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-ecs-particle-system-c",
+    "cloudwu-worker-task-pathfinding",
+    "cloudwu-id-lifetime-kill-flag",
+    "cloudwu-gameplay-architecture"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-ecs-particle-system-c]]\n- [[sources/cloudwu-worker-task-pathfinding]]\n- [[sources/cloudwu-id-lifetime-kill-flag]]\n- [[sources/cloudwu-gameplay-architecture]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 关联概念",
+      "content": "- 2024 年开始独立做游戏，开始系统性梳理 gameplay 上层架构：三层切分 + Object/Actor + 持久化驱动的数据设计"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-particle-system-c]]\n- [[type-safety-vs-simplicity]]\n- [[worker-task-dispatch-priority]]\n- [[multi-target-pathfinding]]\n- [[id-based-lifetime-with-kill-flag]]\n- [[gameplay-layering-object-actor]]\n- [[immediate-vs-retained-mode]]\n- [[save-load-driven-data-design]]"
+    },
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ecs-particle-system-c]] — 云风用纯 C 实现的 ECS 粒子系统，以及 C/C++ 版本对比的自我怀疑"
+    },
+    {
+      "file": "wiki/game-engines/handle-based-resource-manager.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[id-based-lifetime-with-kill-flag]] — 云风在 skynet 2.0 里用 id + 销毁标记替代 refcount 的变体，哲学一致但面向 actor 并发"
+    },
+    {
+      "file": "wiki/game-engines/game-engine-vfs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gameplay-layering-object-actor]] — 同作者对 gameplay 上层的分层：data / visual / interaction + Object / Actor"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ecs-particle-system-c]] | 云风的 C 版 ECS 粒子系统：属性聚合、cache 友好、分支消除 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[gameplay-layering-object-actor]] | gameplay 三层切分 + Object / Actor 双类，持久化优先级最高 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[immediate-vs-retained-mode]] | 立即模式 vs 保留模式：表现层对接数据模型的两种范式 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[type-safety-vs-simplicity]] | 类型安全 vs 代码浅显——云风写完 C++ 版粒子系统后的自我怀疑 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[id-based-lifetime-with-kill-flag]] | ID 索引 + 销毁标记：替代 refcount 的对象生命期管理模式 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[worker-task-dispatch-priority]] | 矮人要塞风格的工人任务分发：权重相乘的调度模型 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[multi-target-pathfinding]] | 从任务系统需求倒推：单源多目标扩散代替 N 次 A* |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[save-load-driven-data-design]] | 以持久化驱动数据模型设计：存档是设计压力测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ecs-particle-system-c]] | 云风：ECS 粒子系统的 C/C++ 对比与自我怀疑 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-worker-task-pathfinding]] | 云风：工人任务分配系统与寻路需求重审 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-id-lifetime-kill-flag]] | 云风：用 id + 销毁标记替代引用计数的生命期管理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-gameplay-architecture]] | 云风：gameplay 上层三层 + Object/Actor 架构笔记 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-36 Worker DC (blog.codingnow.com 2024-06 ~ 2024-08 月度存档 ×5)\n\n处理 5 篇云风 blog.codingnow.com 月度存档，ingest 4 篇跳过 1 篇：\n- ECS 粒子系统 C/C++ 对比（2024-06-11）\n- 工人任务分配系统与寻路（2024-07-25）\n- ID + 销毁标记替代引用计数（2024-08-24）\n- gameplay 三层架构 + Object/Actor（2024-08-24）\n- 跳过：2024-06-22 个人游戏选题反思（创作随笔，无可抽象的工程原则）\n\n新增 8 个概念页：ecs-particle-system-c / type-safety-vs-simplicity / worker-task-dispatch-priority / multi-target-pathfinding / id-based-lifetime-with-kill-flag / gameplay-layering-object-actor / immediate-vs-retained-mode / save-load-driven-data-design。4 个 source 摘要。cloudwu 人物页通过 patch 追加 4 条 source 链接与相关概念。这批笔记标志着云风 2024 年开始独立做游戏后，从底层工程思考转向上层 gameplay 架构的系统梳理。"
+}

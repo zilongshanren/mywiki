@@ -47,6 +47,8 @@ sources: 371
 | [[data-structure-invariants]] | ryg：每加一条访问路径就多一条不变量——tail-pointer-to-pointer 与 sentinel 节点是清理之法 |
 | [[cpp-multi-paradigm-discipline]] | 把 C++ 当语言联邦：团队必须定义子集（云风评 Effective C++ 3rd Item 1） |
 | [[strategy-vs-switch]] | Fowler 经典重构：用 Strategy 模式替代类型码驱动的 switch |
+| [[type-safety-vs-simplicity]] | 类型安全 vs 代码浅显——云风写完 C++ 版粒子系统后的自我怀疑 |
+| [[id-based-lifetime-with-kill-flag]] | ID 索引 + 销毁标记：替代 refcount 的对象生命期管理模式 |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -174,6 +176,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[ant-engine]] | 云风自研的移动端 3D 引擎，2024 年开源 |
 | [[ltask-scheduler]] | Ant Engine 的低延迟任务调度器，与 skynet 的高吞吐路线对立 |
 | [[mobile-energy-optimization]] | 手机游戏达到 60fps 之后如何继续做能耗优化 |
+| [[ecs-particle-system-c]] | 云风的 C 版 ECS 粒子系统：属性聚合、cache 友好、分支消除 |
+| [[gameplay-layering-object-actor]] | gameplay 三层切分 + Object / Actor 双类，持久化优先级最高 |
+| [[immediate-vs-retained-mode]] | 立即模式 vs 保留模式：表现层对接数据模型的两种范式 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -440,6 +445,17 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[async-compute]] | D3D12 async compute 方法论：pairing 互补性、bubble 风险、pass 重排的免费收益 |
 | [[camera-relative-sun-shadows]] | Anno 1800 把太阳锁相机：物理正确 vs 美术正确的构图反直觉 |
 | [[pom-decal-broken-edges]] | Cyberpunk 2077 的 POM decal：盒子 + overlap mesh + 视差遮挡贴图装出手凿墙 |
+| [[fresnel-edge-highlight]] | Fresnel 节点 + HDR 色 + Bloom：曲面边缘跳出的最便宜方案 |
+| [[depth-intersection-subgraph]] | 同一个 DepthIntersection 子图撑起水面泡沫、光柱软交界、护盾接触带 |
+| [[depth-aware-gaussian-blur]] | 稀疏高斯核 + depth bilateral：后处理模糊的便宜深度感知版 |
+| [[shader-graph-custom-function-hlsl]] | URP Additional Lights：Shader Graph Custom Function 挂 HLSL 的最小闭环 |
+| [[mystery-dungeon-sketch-shadows]] | URP post-process 四件套复刻 Mystery Dungeon 素描阴影美术 |
+| [[screen-space-shadow-map-urp]] | 屏幕空间阴影贴图替代光源空间采样，方便后处理拿到阴影 mask |
+| [[bilinear-sample-blur-optimization]] | 利用双线性插值降采样数：4 样本高斯压到 1 样本的 GLSL 技巧 |
+| [[penumbra-hypothesis]] | 阴影软边假设：用光源角大小近似半影替代 PCSS 多采样 |
+| [[radiance-cascades]] | Sannikov 的 2D 全局光照：结构化级联 + bilinear merge 替代随机采样 |
+| [[volumetric-fog-raymarch-shadows]] | 屏幕空间 raymarch + 级联阴影的体积雾：renormalize viewRay 的经典坑 |
+| [[vertex-shader-basics]] | Vertex Shader 何时写、能做什么：2D 游戏里被低估的流水线一半 |
 
 ## 经典案例（wiki/examples/）
 
@@ -474,6 +490,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[runtime-editor-console-connection]] | _The Witcher 2_ 的编辑器-主机实时调参工具链：命令式网络协议，美术电视前调光照/色彩 |
 | [[tools-first-iteration-loop]] | Evan Todd：内容管线和工具优先级高于一切引擎特性 |
 | [[ios-app-thinning]] | Apple 在 iOS 9 上推出的 App Slicing + Bitcode + On-Demand Resources 分发瘦身三件套 |
+| [[worker-task-dispatch-priority]] | 矮人要塞风格的工人任务分发：权重相乘的调度模型 |
+| [[multi-target-pathfinding]] | 从任务系统需求倒推：单源多目标扩散代替 N 次 A* |
+| [[save-load-driven-data-design]] | 以持久化驱动数据模型设计：存档是设计压力测试 |
 
 ## 人物（wiki/people/）
 
@@ -519,6 +538,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[elias-daler]] | Elias Daler，独立游戏开发者，Re:creation / Edbr 引擎作者 |
 | [[marco-giordano]] | Marco Giordano（giordi91），自研 DX12/Vulkan 引擎作者，博客 A programmer's cave |
 | [[will-eastcott]] | PlayCanvas 联合创始人/CEO，WebGPU 与 3DGS 工具链主推者 |
+| [[alex-yaazarai]] | Yaazarai / Alex，GameMaker 社区 shader 开发者，Radiance Cascades 两部教程作者 |
+| [[alexander-sannikov]] | Grinding Gear Games 图形程序员，Radiance Cascades 算法提出者 |
+| [[oakleaff]] | Oakleaff，GameMaker 业余 3D/shader 开发者，volumetric + cascaded shadow 教程 |
 
 ## 源摘要（wiki/sources/）
 
@@ -899,6 +921,20 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/ryg-insert-zero-bit-middle]] | ryg：一条加法指令就能在值的中间插入一个 0 bit |
 | [[sources/ryg-zero-or-sign-extend]] | ryg：用补码定义重新推导不分支的有符号/零扩展 |
 | [[sources/ryg-oodle-kraken-misconceptions]] | ryg：澄清 Oodle 三条产品线与 PS5 游戏缩水的真实原因 |
+| [[sources/danielilett-shader-graph-custom-lighting]] | Ilett：Shader Graph Basics Part 7，Fresnel + HDR + Bloom 边缘高光 |
+| [[sources/danielilett-shader-graph-intersections-1]] | Ilett：Part 8，DepthIntersection 子图的三重用法 |
+| [[sources/danielilett-shader-graph-intersections-2]] | Ilett：Part 9，水面泡沫 / 护盾 / 光柱的深度交界美术 |
+| [[sources/danielilett-shader-graph-custom-functions]] | Ilett：Part 10，用 HLSL 做 URP Additional Lights 循环 |
+| [[sources/danielilett-mystery-dungeon-sketches]] | Ilett：URP post-process 四件套复刻 Mystery Dungeon 素描风 |
+| [[sources/cloudwu-ecs-particle-system-c]] | 云风：ECS 粒子系统的 C/C++ 对比与自我怀疑 |
+| [[sources/cloudwu-worker-task-pathfinding]] | 云风：工人任务分配系统与寻路需求重审 |
+| [[sources/cloudwu-id-lifetime-kill-flag]] | 云风：用 id + 销毁标记替代引用计数的生命期管理 |
+| [[sources/cloudwu-gameplay-architecture]] | 云风：gameplay 上层三层 + Object/Actor 架构笔记 |
+| [[sources/xor-mini-blur-philosophy-2]] | Xor：Blur Philosophy 2 —— 双线性采样压缩高斯样本数 |
+| [[sources/xor-mini-vertex-shaders]] | Xor：Vertex Shader 基础与 2D 游戏的被低估用法 |
+| [[sources/oakleaff-volume-shadows]] | Oakleaff：GM 上体积雾 + 级联阴影的屏幕空间 raymarch |
+| [[sources/yaazarai-radiance-cascades]] | Yaazarai：Radiance Cascades Part 1 几何直觉 |
+| [[sources/yaazarai-radiance-cascades-2]] | Yaazarai：Radiance Cascades Part 2 优化、代码、朴素采样对比 |
 
 ## 元（wiki/meta/）
 

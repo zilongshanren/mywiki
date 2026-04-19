@@ -62,6 +62,7 @@ ECS 本身引入了新的复杂性：
 - [[data-driven-architecture]]
 - [[kinematic-character-controller]] — DOTS 下 kinematic 角色控制器的 component/system/job 拆分实例
 - [[component-entity-data-binding]] — Evan Todd 2011 年手写的组件数据绑定方案，和 DOTS 的全局 System 查询形成哲学对比
+- [[ecs-particle-system-c]] — 云风用纯 C 实现的 ECS 粒子系统，以及 C/C++ 版本对比的自我怀疑
 - [[ecs-for-rust-ui]] — Raph Levien 把 ECS 想法借到 Rust GUI 的 hybrid 架构，与游戏 ECS 的 database 模型形成对照
 
 ## Sources

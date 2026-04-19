@@ -32,6 +32,12 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[shader-graph-lighting-primer]]
 - [[mgs-stealth-camo-shader]]
 - [[pokemon-terastallize-shader]]
+- [[fresnel-edge-highlight]]
+- [[depth-intersection-subgraph]]
+- [[depth-aware-gaussian-blur]]
+- [[shader-graph-custom-function-hlsl]]
+- [[mystery-dungeon-sketch-shadows]]
+- [[screen-space-shadow-map-urp]]
 
 ## Sources
 
@@ -55,3 +61,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-shader-graph-lighting-basics]]
 - [[sources/danielilett-mgs-stealth-camo]]
 - [[sources/danielilett-pokemon-terastallize]]
+- [[sources/danielilett-shader-graph-custom-lighting]]
+- [[sources/danielilett-shader-graph-intersections-1]]
+- [[sources/danielilett-shader-graph-intersections-2]]
+- [[sources/danielilett-shader-graph-custom-functions]]
+- [[sources/danielilett-mystery-dungeon-sketches]]

@@ -489,3 +489,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-19] update | Wave-35 finalize
 
 补齐 wave 35 的 index.md / log.md / done.txt 缺失同步（3 worker 共 10 raws 入 done），补写 3 个 ryg source stub。为 wave 36 正式开跑做好闭环。
+
+## [2026-04-19] ingest | Wave-36 Worker DC (blog.codingnow.com 2024-06 ~ 2024-08 ×5)
+
+处理 5 篇云风 blog.codingnow.com 月度存档，ingest 4 篇跳过 1 篇：ECS 粒子系统 C/C++ 对比（2024-06-11）、工人任务分配 + 寻路（2024-07-25）、ID + 销毁标记替代引用计数（2024-08-24）、gameplay 三层架构 + Object/Actor（2024-08-24）；跳过 2024-06-22 个人游戏选题反思。新增 8 概念页（[[ecs-particle-system-c]]、[[type-safety-vs-simplicity]]、[[worker-task-dispatch-priority]]、[[multi-target-pathfinding]]、[[id-based-lifetime-with-kill-flag]]、[[gameplay-layering-object-actor]]、[[immediate-vs-retained-mode]]、[[save-load-driven-data-design]]）、4 source 摘要。cloudwu 人物页通过 patch 追加 4 source + 8 概念与一条关联概念注记。这批标志着云风 2024 年转向独立游戏后，从底层工程转向 gameplay 上层架构的系统梳理。
+
+## [2026-04-19] ingest | Wave-36 Worker DB (danielilett.com Shader Graph Basics Part 7-10 + Mystery Dungeon ×5)
+
+处理 5 篇 danielilett.com 2024 年 Unity Shader Graph 教程与 Mystery Dungeon 素描复刻，全部 ingested。新增 6 概念页（[[fresnel-edge-highlight]]、[[depth-intersection-subgraph]]、[[depth-aware-gaussian-blur]]、[[shader-graph-custom-function-hlsl]]、[[mystery-dungeon-sketch-shadows]]、[[screen-space-shadow-map-urp]]）与 5 source 摘要。Mystery Dungeon 源同时产出 2 概念（素描阴影 pipeline + URP 屏幕空间阴影贴图）。Worker 因 stream idle timeout 未写 bundle.json，P9 按文件 reverse-engineer 合并。
+
+## [2026-04-19] ingest | Wave-36 Worker DD (mini.gmshaders.com 2024-03 ~ 2024-07 ×5)
+
+处理 5 篇 mini.gmshaders.com：Blur Philosophy 2（Xor）、Volume Shadows（Oakleaff 客座）、Radiance Cascades Part 1（Yaazarai 客座）、Vertex Shaders（Xor）、Radiance Cascades Part 2（Yaazarai 客座），全部 ingested。新增 5 概念页（[[bilinear-sample-blur-optimization]]、[[penumbra-hypothesis]]、[[radiance-cascades]]、[[volumetric-fog-raymarch-shadows]]、[[vertex-shader-basics]]）、3 人物页（[[alex-yaazarai]]、[[alexander-sannikov]]、[[oakleaff]]）、5 source 摘要。Radiance Cascades 两部教程合并到同一概念页、各自保留独立 source 摘要。Worker 因 stream idle timeout 未写 bundle.json，P9 按文件 reverse-engineer 合并。

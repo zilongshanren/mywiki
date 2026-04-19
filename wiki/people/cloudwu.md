@@ -22,6 +22,7 @@ sources: 9
 
 - 偏爱 C + Lua 混合编程的哲学，反对用 C++ 宏来"模拟"对象模型
 - 从模块化 / 接口先行 / 生命期隔离出发设计底层
+- 2024 年开始独立做游戏，开始系统性梳理 gameplay 上层架构：三层切分 + Object/Actor + 持久化驱动的数据设计
 
 ## 相关
 
@@ -47,6 +48,14 @@ sources: 9
 - [[ltask-scheduler]]
 - [[mobile-energy-optimization]]
 - [[async-offline-culling]]
+- [[ecs-particle-system-c]]
+- [[type-safety-vs-simplicity]]
+- [[worker-task-dispatch-priority]]
+- [[multi-target-pathfinding]]
+- [[id-based-lifetime-with-kill-flag]]
+- [[gameplay-layering-object-actor]]
+- [[immediate-vs-retained-mode]]
+- [[save-load-driven-data-design]]
 
 ## Sources
 
@@ -67,3 +76,7 @@ sources: 9
 - [[sources/cloudwu-vfs-new-ideas]]
 - [[sources/cloudwu-ltask-rewrite]]
 - [[sources/cloudwu-ant-engine-mobile-optimization]]
+- [[sources/cloudwu-ecs-particle-system-c]]
+- [[sources/cloudwu-worker-task-pathfinding]]
+- [[sources/cloudwu-id-lifetime-kill-flag]]
+- [[sources/cloudwu-gameplay-architecture]]

@@ -71,6 +71,8 @@ sources: 10
 - [[mipmap-generation-sampling]]
 - [[webgpu-intro]]
 - [[separable-gaussian-blur]]
+- [[bilinear-sample-blur-optimization]]
+- [[vertex-shader-basics]]
 
 ## Sources
 
@@ -99,3 +101,5 @@ sources: 10
 - [[sources/xor-mini-mipmaps]]
 - [[sources/xor-mini-webgpu]]
 - [[sources/xor-mini-blur-philosophy]]
+- [[sources/xor-mini-blur-philosophy-2]]
+- [[sources/xor-mini-vertex-shaders]]
