@@ -11571,3 +11571,6 @@ raw/articles/adriancourreges.com/2017-12-15_metal-gear-solid-v-graphics-study-ad
 raw/articles/adriancourreges.com/2018-12-02_ue4-optimized-post-effects-adrian-courreges.md
 raw/articles/adriancourreges.com/2020-12-29_adrian-courreges.md
 raw/articles/adriancourreges.com/2020-12-29_graphics-studies-compilation-adrian-courreges.md
+raw/articles/asawicki.info/2020-04-19_secrets-of-direct3d-12-resource-alignment.md
+raw/articles/asawicki.info/2020-09-29_system-value-semantics-in-compute-shaders-cheat-sheet.md
+raw/articles/asawicki.info/2022-04-06_a-metric-for-memory-fragmentation.md

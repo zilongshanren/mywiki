@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, D3D12, Vulkan, GPU内存]
 date: 2026-04-19
-sources: 4
+sources: 7
 ---
 
 # Adam Sawicki
@@ -24,7 +24,6 @@ sources: 4
 - 同时写英语与波兰语版本，英语博客文章常先在波兰《Programista》杂志上发表
 
 ## 相关
-
 - [[graphics-api-history]]
 - [[system-load-formula]]
 - [[pix-api-and-dxdmp]]
@@ -33,9 +32,13 @@ sources: 4
 - [[hlsl-cooperative-vectors-tensor-cores]]
 - [[d3d12-work-graphs]]
 - [[d3d12-resource-binding]]
+- [[d3d12-resource-alignment]]
+- [[compute-shader-dispatch-ids]]
 
 ## Sources
-
 - [[sources/asawicki-graphics-apis-yesterday-today]]
 - [[sources/asawicki-system-load-formula]]
 - [[sources/asawicki-dx12-gdc-2026-comments]]
+- [[sources/asawicki-d3d12-resource-alignment]]
+- [[sources/asawicki-compute-shader-sv-cheat-sheet]]
+- [[sources/asawicki-memory-fragmentation-metric]]

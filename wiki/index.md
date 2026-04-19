@@ -209,6 +209,7 @@ CAQA + CSAPP 的底层视角。
 | [[wine-linux-syscall]] | Wine 下 Windows 进程直接发 Linux syscall |
 | [[lp64-vs-llp64]] | Unix 和 Windows x64 的 64 位数据模型差异 |
 | [[fiber-cpp-basics]] | Jiayin Cao：fiber 动机、与 thread/C++20 coroutine 的差异、x64 System V ABI 上的最小实现 |
+| [[a-metric-for-memory-fragmentation]] | 用 √Σf² / Σf 打分的内存碎片度量公式 |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -705,6 +706,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mgs-v-fox-engine-frame]] | Fox Engine 一帧全流程解剖（MGS V：小 G-Buffer、双 SSAO、早 tonemap、分级 scatter DoF） |
 | [[gather-bokeh-dof]] | Gather 式 bokeh DoF + McIntosh flood-fill，UE4 BokehDOF 的移动端替代（DOOM 2016 技术） |
 | [[ue4-reactive-dynamic-resolution]] | UE4.18 前的反应式 dynamic resolution 补丁，基于 GGPUFrameTime 两档跳变 |
+| [[d3d12-resource-alignment]] | D3D12 资源对齐的秘密：small alignment、heap alignment、tight alignment |
+| [[compute-shader-dispatch-ids]] | HLSL / GLSL compute shader 线程 ID system-value 速查 |
 
 ## 经典案例（wiki/examples/）
 
@@ -1571,6 +1574,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/adrian-transparent-pixels]] | Courrèges：alpha=0 像素的 RGB 值如何污染边缘，flood-fill + 预乘 alpha 双解 |
 | [[sources/adrian-mgs-v-graphics-study]] | Courrèges：MGS V / Fox Engine 一帧完整解剖（定制 ReShade 分支绕反调试） |
 | [[sources/adrian-ue4-optimized-post-effects]] | Courrèges：UE4 在 Tegra X1 上的三组 drop-in 优化补丁（GatherDOF / half-res SSAO / reactive dynres） |
+| [[sources/asawicki-d3d12-resource-alignment]] | Sawicki：D3D12 资源对齐的秘密（2020） |
+| [[sources/asawicki-compute-shader-sv-cheat-sheet]] | Sawicki：compute shader system-value 速查（2020） |
+| [[sources/asawicki-memory-fragmentation-metric]] | Sawicki：内存碎片度量公式（2022） |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
