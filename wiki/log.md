@@ -513,3 +513,15 @@ Linden Reid 2017 年 12 月的 Unity shader / 程序化几何四连发。新增 
 ## [2026-04-19] ingest | Wave-37 Worker DG (mini.gmshaders.com 2024-08 ~ 2025-02 ×5)
 
 处理 5 篇 Xor 的 mini.gmshaders.com 文章（voxels-2 / vis-dev / anti-aliasing / gamma / sdf），全部 ingested。新增 5 概念（[[voxel-map-lut-2d]]、[[programmer-art-vis-dev]]、[[fwidth-derivative-antialiasing]]、[[gamma-correction-srgb]]、[[sdf-operations-shader]]）+ 5 source 摘要 + 对 xor-shader-artist / sdf-2d-primitives / analytical-antialiasing / color-space / voxel-ambient-occlusion 的 patch。voxels-1 (DDA) 尚未入库，voxels-2 暂以文字引用，待后续补 wikilink。
+
+## [2026-04-19] ingest | Wave-38 Worker DH (danielilett.com Godot hologram + Blur Pro ×5)
+
+处理 5 篇 Daniel Ilett 2026 年 Godot 端教程：4 篇 Godot Hologram Shaders 变体（Dot Matrix / Glitch / Gradient / Grid）合并为 1 概念页 [[godot-hologram-shader-effects]] 避免 slug 爆炸，每篇单独出 source 摘要；Blur Shaders Pro 脚本指南作 source-only，patch 到 [[urp-volume-post-processing]]。新增 1 概念 + 5 source。全部 ingested。
+
+## [2026-04-19] ingest | Wave-38 Worker DI (blog.codingnow.com 2024-12 ~ 2025-03 ×5)
+
+云风博客 5 篇：3 篇 skipped（桌游卡牌构筑设计 brainstorm 连载，非工程）、2 篇 ingested——[[agent-state-sync-broadcast]]（Erlang 服务器 40v40 战场下状态同步广播优化，质疑"广播=廉价"假设）+ [[soluna-2d-engine]] + [[sprite-batch-instance-draw]]（Soluna 2D 管线用 instance draw + storage buffer 把 sprite 顶点压到 26 字节）。
+
+## [2026-04-19] ingest | Wave-38 Worker DJ (jendrikillner.com issues 326-330 — all skipped)
+
+5 篇 jendrikillner.com 每周图形编程链接合辑 2024-02-11 ~ 2024-03-10（issues 326-330）全部 skipped_offtopic（link roundup，沿用 wave 34 先例）。

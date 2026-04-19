@@ -499,3 +499,7 @@ programmer-art-vis-dev
 fwidth-derivative-antialiasing
 gamma-correction-srgb
 sdf-operations-shader
+godot-hologram-shader-effects
+agent-state-sync-broadcast
+sprite-batch-instance-draw
+soluna-2d-engine

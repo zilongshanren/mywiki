@@ -46,6 +46,7 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[fullscreen-shader-graph-urp]]
 - [[hlsl-texture-sampling-basics]]
 - [[srp-batcher-cbuffer]]
+- [[godot-hologram-shader-effects]]
 
 ## Sources
 
@@ -79,3 +80,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-holofoil-cards]]
 - [[sources/danielilett-shader-graph-post-processing]]
 - [[sources/danielilett-shader-code-textures-uvs]]
+- [[sources/danielilett-blur-shaders-pro-scripting]]
+- [[sources/danielilett-hologram-godot-dot-matrix]]
+- [[sources/danielilett-hologram-godot-glitch]]
+- [[sources/danielilett-hologram-godot-gradient]]
+- [[sources/danielilett-hologram-godot-grid]]

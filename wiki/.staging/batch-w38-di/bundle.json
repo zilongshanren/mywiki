@@ -1,0 +1,80 @@
+{
+  "batch_id": "batch-w38-di",
+  "agent_note": "cloudwu 2024-12 ~ 2025-03 月度归档：5 篇中有 3 篇是卡牌构筑桌游设计分析（按 orchestrator 指示归 skipped_offtopic），2 篇技术：一篇讨论 Erlang 服务器状态同步广播优化，一篇讲 Soluna 2D 渲染管线用 instance draw + storage buffer 压缩顶点数据。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2024-12-24_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "卡牌构筑类游戏（Slay the Spire / Dominion / Heat 等）设计机制综述，属纯游戏设计 brainstorm，无软件工程内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-01-11_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "卡牌构筑桌游核心规则之二：Dominion/Ascension/Nightfall/Unchained 规则对比，纯桌游设计"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-02-20_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-state-sync-broadcast-optimization",
+      "title": "服务器状态同步广播的设计优化"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-02-20_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-soluna-2d-pipeline",
+      "title": "Soluna 2D 渲染管线的一点优化"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-03-12_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "卡牌构筑桌游之五：Aeon's End / Clank! 规则分析，纯桌游设计"
+    }
+  ],
+  "concepts_created": [
+    "agent-state-sync-broadcast",
+    "sprite-batch-instance-draw",
+    "soluna-2d-engine"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-state-sync-broadcast-optimization",
+    "cloudwu-soluna-2d-pipeline"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[agent-state-sync-broadcast]]\n- [[sprite-batch-instance-draw]]\n- [[soluna-2d-engine]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-state-sync-broadcast-optimization]]\n- [[sources/cloudwu-soluna-2d-pipeline]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[agent-state-sync-broadcast]] | Agent 状态同步的广播机制与拷贝优化（云风 Erlang 服务器） |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[soluna-2d-engine]] | 云风的 Soluna：面向策略类游戏的 2D 框架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sprite-batch-instance-draw]] | 用 instance draw + storage buffer 去重 sprite 顶点数据 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-state-sync-broadcast-optimization]] | 云风：Agent 状态同步的广播优化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-soluna-2d-pipeline]] | 云风：Soluna 2D 渲染管线优化 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-38 Worker di (cloudwu 2024-12 ~ 2025-03 ×5)\n\n云风博客 2024-12 至 2025-03 月度归档 5 篇：3 篇桌游设计 brainstorm 归 skipped_offtopic；2 篇技术入库——服务器状态同步的广播优化（Erlang/skynet 进程模型下 40v40 战场压力），以及 Soluna 2D 渲染管线（用 instance draw + storage buffer 把 sprite 顶点压到 26 字节）。新增 3 个概念（agent-state-sync-broadcast, sprite-batch-instance-draw, soluna-2d-engine）+ 2 个 source 摘要。"
+}

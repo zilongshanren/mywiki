@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w38-dj",
+  "agent_note": "All 5 jendrikillner.com weekly link roundups (issues 326-330, Feb-Mar 2024) are pure link aggregations with no substantive original commentary from Jendrik himself — only 3-5 bullet summaries per linked-to item. Consistent with wave 34 precedent where the entire series was skipped. The content of interest (DXC static library, Slang, Godot RenderGraph, Persona 3 Reload rendering, LUTs, Snapdragon 8+ Gen 1 GPU details, etc.) belongs to other authors' blogs and should be ingested via those sources directly if desired.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2024-02-11_graphics-programming-weekly-issue-326-february-11th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no substantive original content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-02-18_graphics-programming-weekly-issue-327-february-18th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no substantive original content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-02-25_graphics-programming-weekly-issue-328-february-25th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no substantive original content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-03-03_graphics-programming-weekly-issue-329-march-3rd-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no substantive original content"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2024-03-10_graphics-programming-weekly-issue-330-march-10th-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "link roundup, no substantive original content"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-38 Worker DJ (jendrikillner.com issues 326-330 — all skipped)\n\n处理 5 篇 jendrikillner.com 每周图形编程链接合辑（2024-02-11 ~ 2024-03-10，issues 326-330）。全部 skipped_offtopic：这些周报只是对他人博文的 3-5 条 bullet 摘要，没有 Jendrik 本人的原创分析，沿用 wave 34 先例整批跳过。合辑提及的主题（DXC 静态库、Slang、Godot RenderGraph、Persona 3 Reload 前向渲染、LUT、Snapdragon 8+ Gen 1 GPU 细节等）如有价值应直接从原作者博客入库。"
+}

@@ -182,6 +182,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[ecs-data-oriented-revert]] | 把 ECS 回归面向数据的原始设计，剥离辅助模块——云风 2024 对 Ant 的反思 |
 | [[engine-thin-wrapper-per-genre]] | 按游戏类型做薄封装框架，隔离底层引擎缺陷 |
 | [[mod-first-engine-evolution]] | 异星工厂模式：官方扩展即 Mod，核心系统围绕 Mod API 进化 |
+| [[agent-state-sync-broadcast]] | Agent 状态同步的广播机制与拷贝优化（云风 Erlang 服务器） |
+| [[soluna-2d-engine]] | 云风的 Soluna：面向策略类游戏的 2D 框架 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -472,6 +474,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[fwidth-derivative-antialiasing]] | 用 `fwidth()` / 手动偏导数做任意连续函数的一像素淡出 AA |
 | [[gamma-correction-srgb]] | shader 视角的 sRGB ↔ linear 编解码：γ=2.2 近似与精确公式 |
 | [[sdf-operations-shader]] | SDF 的布尔并差交、onion / hollow、镜像平铺、smooth min 修改清单 |
+| [[godot-hologram-shader-effects]] | Daniel Ilett 的 Godot 全息着色器：PBR + 顶点/切片 glitch + dot/grid/gradient + fresnel 等变体 |
+| [[sprite-batch-instance-draw]] | 用 instance draw + storage buffer 去重 sprite 顶点数据（云风 Soluna） |
 
 ## 经典案例（wiki/examples/）
 
@@ -966,6 +970,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/xor-mini-anti-aliasing]] | Xor：shader 解析抗锯齿三级——SDF、fwidth、手动导数 |
 | [[sources/xor-mini-gamma]] | Xor：shader 里 sRGB / linear 的正确编解码姿势 |
 | [[sources/xor-mini-sdf]] | Xor：Signed Distance Field 的用途与修改操作大全 |
+| [[sources/danielilett-blur-shaders-pro-scripting]] | Ilett：URP/HDRP/Built-in 三管线通过 Volume API 脚本化访问后处理效果 |
+| [[sources/danielilett-hologram-godot-dot-matrix]] | Ilett：Godot 全息 Dot Matrix 变体——屏幕空间点阵覆盖 |
+| [[sources/danielilett-hologram-godot-glitch]] | Ilett：Godot 全息 Glitch 变体——顶点抖动 + 水平切片位移 + fresnel |
+| [[sources/danielilett-hologram-godot-gradient]] | Ilett：Godot 全息 Gradient 变体——上下双色渐变 + 可选 Unscaled Time |
+| [[sources/danielilett-hologram-godot-grid]] | Ilett：Godot 全息 Grid 变体——世界空间三轴网格线 + 可滚动 |
+| [[sources/cloudwu-state-sync-broadcast-optimization]] | 云风：Agent 状态同步的广播优化 |
+| [[sources/cloudwu-soluna-2d-pipeline]] | 云风：Soluna 2D 渲染管线优化 |
 
 ## 元（wiki/meta/）
 

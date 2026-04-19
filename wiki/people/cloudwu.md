@@ -62,6 +62,9 @@ sources: 9
 - [[determinism-vs-smart-ai-gameplay]]
 - [[mod-first-engine-evolution]]
 - [[single-hub-logistics-model]]
+- [[agent-state-sync-broadcast]]
+- [[sprite-batch-instance-draw]]
+- [[soluna-2d-engine]]
 
 ## Sources
 
@@ -89,3 +92,5 @@ sources: 9
 - [[sources/cloudwu-ant-engine-improvement-plan]]
 - [[sources/cloudwu-game-reviews-determinism]]
 - [[sources/cloudwu-factorio-space-age]]
+- [[sources/cloudwu-state-sync-broadcast-optimization]]
+- [[sources/cloudwu-soluna-2d-pipeline]]

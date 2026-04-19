@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w38-dh",
+  "agent_note": "5 danielilett.com sources: 4 Godot Hologram Shaders product-manual pages (Dot Matrix/Glitch/Gradient/Grid) merged into 1 concept + 1 Blur Shaders Pro scripting guide (source summary only, patched onto urp-volume-post-processing). Author page exists.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_blur-shaders-pro-scripting-guide.md",
+      "status": "ingested",
+      "source_slug": "danielilett-blur-shaders-pro-scripting",
+      "title": "Blur Shaders Pro — Scripting Guide"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-dot-matrix.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-dot-matrix",
+      "title": "Hologram Shaders Godot — Dot Matrix"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-glitch.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-glitch",
+      "title": "Hologram Shaders Godot — Glitch"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-gradient.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-gradient",
+      "title": "Hologram Shaders Godot — Gradient"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-grid.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-grid",
+      "title": "Hologram Shaders Godot — Grid"
+    }
+  ],
+  "concepts_created": ["godot-hologram-shader-effects"],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-blur-shaders-pro-scripting",
+    "danielilett-hologram-godot-dot-matrix",
+    "danielilett-hologram-godot-glitch",
+    "danielilett-hologram-godot-gradient",
+    "danielilett-hologram-godot-grid"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[godot-hologram-shader-effects]] —— Godot 端的 PBR + Volume 叠加 glitch/fresnel 的等价实现"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-blur-shaders-pro-scripting]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[godot-hologram-shader-effects]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-blur-shaders-pro-scripting]]\n- [[sources/danielilett-hologram-godot-dot-matrix]]\n- [[sources/danielilett-hologram-godot-glitch]]\n- [[sources/danielilett-hologram-godot-gradient]]\n- [[sources/danielilett-hologram-godot-grid]]"
+    },
+    {
+      "file": "wiki/rendering/fresnel-edge-highlight.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[godot-hologram-shader-effects]] —— Fresnel 作为全息材质边缘辉光的典型用法（Godot）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[godot-hologram-shader-effects]] | Daniel Ilett 的 Godot 全息着色器：PBR + 顶点/切片 glitch + dot/grid/gradient + fresnel 等变体 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-blur-shaders-pro-scripting]] | Ilett：URP/HDRP/Built-in 三管线通过 Volume API 脚本化访问后处理效果 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-dot-matrix]] | Ilett：Godot 全息着色器 Dot Matrix 变体——屏幕空间点阵覆盖 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-glitch]] | Ilett：Godot 全息着色器 Glitch 变体——顶点抖动 + 水平切片位移 + fresnel |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-gradient]] | Ilett：Godot 全息着色器 Gradient 变体——上下双色渐变 + 可选 Unscaled Time |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-grid]] | Ilett：Godot 全息着色器 Grid 变体——世界空间三轴网格线 + 可滚动 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-38 Worker DH (danielilett.com Godot hologram + Blur Pro ×5)\n\n处理 5 篇 danielilett.com 文章：4 篇 Godot Hologram Shaders 产品文档（Dot Matrix / Glitch / Gradient / Grid 四种变体）合并为 1 个概念页 [[godot-hologram-shader-effects]]，避免 slug 爆炸；Blur Shaders Pro 脚本指南作为 source 摘要，同时 patch 到 [[urp-volume-post-processing]] 补充三管线 Volume API 访问范式。新增 5 个 source 摘要、1 个概念页；人物页 daniel-ilett 已存在，只做 source 追加。"
+}

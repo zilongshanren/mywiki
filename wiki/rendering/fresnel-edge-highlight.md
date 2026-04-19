@@ -37,6 +37,7 @@ Fresnel 的数学基于 `dot(N, V)`——同一个平面上所有像素的法线
 - [[normalised-blinn-phong-shader]]
 - [[physically-based-shading]]
 - [[uv-manipulation-nodes]] — 立方体边缘光的替代方案
+- [[godot-hologram-shader-effects]] —— Fresnel 作为全息材质边缘辉光的典型用法（Godot）
 
 ## Sources
 
