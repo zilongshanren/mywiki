@@ -47,7 +47,6 @@ float lod = log2(md) * 0.5;
 - **不连续 UV 会破坏 LOD 选择**：fract、floor 或任何基于条件分支的 UV 技巧都可能在 mipmap 环境里产生接缝，Ben Golus 的 [Distinctive Derivative Differences](https://bgolus.medium.com/distinctive-derivative-differences-cce38d36797b) 是这类陷阱最全面的参考。
 
 ## 相关
-
 - [[mipmap-moire-scanline]] —— 故意不用 mipmap 以换取一种视觉风格
 - [[aliasing]]
 - [[sampler-filter-wrap-modes]]
@@ -59,6 +58,7 @@ float lod = log2(md) * 0.5;
 - [[scatter-bokeh-dof]]
 - [[texel-pixel-conversion]]
 - [[xor-shader-artist]]
+- [[ptex-gpu-streaming]] — 生产 Ptex 在随机路径追踪下的一条务实结论：点采样 + 两层 MIP 线性插值即可，胜过跨面各向异性滤波
 
 ## Sources
 

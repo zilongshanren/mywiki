@@ -636,6 +636,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[pca-image-compression]] | 用 2D PCA 把 RGB 颜色压成连续「二色调色板」的最简实验 |
 | [[color-quantization-som]] | 用 1D 自组织映射学调色板，得到有拓扑的 256 色（ScreenToGif 同款） |
 | [[moving-basis-decomposition]] | Silvennoinen / Sloan PRT 压缩技术在 2D 图像上的玩具实现，PCA × PVRTC |
+| [[hyperion-renderer]] | Disney Animation 自研生产路径追踪器，从 Moana 到 Zootopia 2 的十年演进 |
+| [[wavefront-path-tracing]] | 按 bounce 批处理的路径追踪架构，Hyperion / RenderMan XPU 的共同骨架 |
+| [[path-guiding-production]] | 把 path guiding 从 PPG 论文铺到影片管线的工程账：Hyperion × OpenPGL 的二代系统 |
+| [[ptex-gpu-streaming]] | Disney 的实时 GPU Ptex 纹理流送：小 cache + 激进 LRU + 原始 face 数据流送 |
+| [[nested-dielectrics]] | 水-玻璃-环境多层嵌套介质，Schmidt & Budge 2002 的栈式算法与产线扩展 |
 
 ## 经典案例（wiki/examples/）
 
@@ -768,6 +773,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[wolfgang-engel]] | Confetti 联创、The Forge 主推，ShaderX/GPU Pro/GPU Zen 编辑，Light Pre-Pass 提出者 |
 | [[panagiotis-charitos]] | AnKi 3D Engine 作者，anki3d.org 博客作者 |
 | [[pekka-vaananen]] | 30fps.net 博主，芬兰独立渲染研究者，擅长 notebook 式图形实验 |
+| [[yining-karl-li]] | Disney Animation Hyperion 渲染工程师，Code & Visuals 博主 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1426,6 +1432,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/30fps-som-palette]] | Väänänen：用自组织映射做调色板量化 |
 | [[sources/30fps-mbd-images]] | Väänänen：Moving Basis Decomposition 在 2D 图像上的复现 |
 | [[sources/30fps-split-tiles]] | Väänänen：NumPy 切瓦片的 reshape + transpose 高速写法 |
+| [[sources/yiningkarlli-moana-2]] | Yining Karl Li：Moana 2 与 Hyperion 十年演进 |
+| [[sources/yiningkarlli-texture-streaming-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 GPU Ptex 纹理流送 talk 配文 |
+| [[sources/yiningkarlli-path-guiding-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 Hyperion 二代 path guiding course 配文 |
+| [[sources/yiningkarlli-zootopia-2]] | Yining Karl Li：Zootopia 2 水管嵌套介质 + 二代 path guiding 首次大规模部署 |
 
 ## 元（wiki/meta/）
 

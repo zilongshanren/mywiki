@@ -691,3 +691,8 @@ pca-image-compression
 color-quantization-som
 moving-basis-decomposition
 numpy-tile-reshape-trick
+hyperion-renderer
+wavefront-path-tracing
+path-guiding-production
+ptex-gpu-streaming
+nested-dielectrics

@@ -765,3 +765,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-59 Worker FQ (30fps.net / Pekka Väänänen ×6)
 
 处理 6 篇 30fps.net notebook / reference：坐标系对照表、VQ 瓦片图、2D PCA 颜色压缩、SOM 调色板量化、MBD 图像版、NumPy 切瓦片加速。新增 6 概念页（coordinate-system-table、vector-quantization-tilemap、pca-image-compression、color-quantization-som、moving-basis-decomposition、numpy-tile-reshape-trick）、1 人物页（pekka-vaananen）、6 source 摘要。对 coordinate-spaces / color-quantization-kmeans / pca-intro 追加相关链接 patch。全 ingest，无跳过。
+
+## [2026-04-19] ingest | Wave-59 Worker FS (blog.yiningkarlli.com ×6)
+
+处理 Yining Karl Li（Disney Animation Hyperion 渲染工程师）博客 6 篇。Ingest 4 篇技术文：Moana 2 / Zootopia 2 / SIGGRAPH 2025 GPU Ptex 纹理流送 / SIGGRAPH 2025 Hyperion 二代 path guiding。跳过 2 篇（个人博客 CSS 重设计、公司内部摄影展）。新增 1 人物页（yining-karl-li）、5 概念页（hyperion-renderer、wavefront-path-tracing、path-guiding-production、ptex-gpu-streaming、nested-dielectrics）、4 source 摘要。给 mipmap-generation-sampling 追加一条交叉引用。
