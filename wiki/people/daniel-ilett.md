@@ -85,3 +85,8 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-hologram-godot-glitch]]
 - [[sources/danielilett-hologram-godot-gradient]]
 - [[sources/danielilett-hologram-godot-grid]]
+- [[sources/danielilett-hologram-godot-noise]]
+- [[sources/danielilett-hologram-godot-scanline]]
+- [[sources/danielilett-hologram-godot-uber]]
+- [[sources/danielilett-hologram-pro-basic]]
+- [[sources/danielilett-hologram-pro-dot-matrix-glitch]]

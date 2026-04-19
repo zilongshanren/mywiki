@@ -1,0 +1,156 @@
+{
+  "batch_id": "batch-w41-dr",
+  "agent_note": "5 Daniel Ilett Hologram product docs. 3 Godot variants (noise/scanline/uber) patch-extend existing [[godot-hologram-shader-effects]]. 2 Pro (URP/HDRP) docs are ports — no new concept pages, sources only. No new people/concepts created; orchestrator applies patches serially.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-noise.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-noise",
+      "title": "Hologram Shaders Godot - Noise"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-scanline.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-scanline",
+      "title": "Hologram Shaders Godot - Scanline"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-godot-uber.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-godot-uber",
+      "title": "Hologram Shaders Godot - Uber"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-basic.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-basic",
+      "title": "Hologram Shaders Pro - Basic"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_hologram-shaders-pro-dot-matrix-glitch.md",
+      "status": "ingested",
+      "source_slug": "danielilett-hologram-pro-dot-matrix-glitch",
+      "title": "Hologram Shaders Pro - Dot Matrix + Glitch"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-hologram-godot-noise",
+    "danielilett-hologram-godot-scanline",
+    "danielilett-hologram-godot-uber",
+    "danielilett-hologram-pro-basic",
+    "danielilett-hologram-pro-dot-matrix-glitch"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "replace_line",
+      "match": "tags: [godot, shader, hologram, glitch, fresnel, stylized]",
+      "content": "tags: [godot, unity, urp, hdrp, shader, hologram, glitch, fresnel, scanline, noise, dynamic-resolution, stylized]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "replace_line",
+      "match": "sources: 4",
+      "content": "sources: 9"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "replace_line",
+      "match": "Daniel Ilett 的 *Hologram Shaders* Godot 版以\"同一套 PBR + glitch + fresnel 框架，再叠加一项主视觉模式\"的方式组织四种材质变体——**Dot Matrix**（屏幕空间点阵）、**Glitch**（纯抖动）、**Gradient**（上下双色渐变）、**Grid**（世界空间网格线）。从工程角度看，它是把\"全息风格\"拆成几个正交特性的教科书例子：基础光照与形变（顶点）解耦，屏幕空间装饰、世界空间装饰、颜色映射装饰互不干扰，各自作为可选模块接入。",
+      "content": "Daniel Ilett 的 *Hologram Shaders* Godot 版以\"同一套 PBR + glitch + fresnel 框架，再叠加一项主视觉模式\"的方式组织七种材质变体——**Dot Matrix**（屏幕空间点阵）、**Glitch**（纯抖动）、**Gradient**（上下双色渐变）、**Grid**（世界空间网格线）、**Noise**（胶片颗粒）、**Scanline**（扫描线 alpha）、**Uber**（三合一 + unscaled time）。从工程角度看，它是把\"全息风格\"拆成几个正交特性的教科书例子：基础光照与形变（顶点）解耦，屏幕空间装饰、世界空间装饰、颜色映射装饰互不干扰，各自作为可选模块接入。同一套产品还有 Unity URP/HDRP 移植（*Hologram Shaders Pro*），参数对齐但额外暴露 PBR 的 *Metallic / Smoothness / AO* 与 **Dynamic Resolution** 补偿项。"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 四种主视觉",
+      "content": "- **Noise**——叠加时变随机噪声模拟胶片颗粒；*Noise Speed / Scale / Strength / Color* 四参数组，形成通用的\"时间 × 空间 × 强度 × 色彩\"噪声接口，直接作用在 Emission 上。\n- **Scanline**——用一张扫描线贴图**调制 alpha**（非叠色），*Scanline Mode* 可切屏幕空间（黏屏，像电视扫描线）或世界空间（黏物体，像真·全息投影）。*Scanline MinMax Alpha* 把贴图 0/1 映射到可调 alpha 区间，本质是\"贴图当 1D LUT\"的用法。\n- **Uber**——把 Scanline + 两类 Glitch + Noise 合并进同一份 shader，每个子系统独立布尔开关；作者保留独立 shader 作为\"单功能便宜版\"，是典型的 [[shader-combination-strategies|uber vs variant]] 取舍。另外引入 *Use Unscaled Time*，由脚本推送 unscaled time uniform，保证 `Time.timeScale=0` 时 UI 全息仍动。"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 设计观察",
+      "content": "\n第三点可补充：从 Godot 版到 Unity URP/HDRP *Pro* 版的移植中，Ilett 遇到一个平台相关的坑——**动态分辨率（FSR/DLSS）下屏幕空间 UV 的语义漂移**。Unity 启用动态分辨率时，shader 内部有时拿到的是升采样前分辨率而非呈现分辨率，导致 Dot Matrix 的点阵大小在不同帧率下波动。Pro 版暴露 *Upscaling Amount* 作为旁路补偿——这是任何依赖屏幕空间 UV 的材质或后处理在 [[dynamic-resolution-scaling|动态分辨率缩放]] 下都要面对的通用问题。"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-combination-strategies]] —— Uber shader vs 多变体编译的取舍\n- [[classic-shader-noise]] —— Noise 子模块的通用接口模式\n- [[crt-shader-effects]] —— Scanline 与屏幕空间扫描线的对照\n- [[dynamic-resolution-scaling]] —— Pro 版的 Upscaling Amount 补偿原因"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-noise]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-scanline]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-uber]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-basic]]"
+    },
+    {
+      "file": "wiki/rendering/godot-hologram-shader-effects.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-dot-matrix-glitch]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-noise]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-scanline]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-godot-uber]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-basic]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-hologram-pro-dot-matrix-glitch]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-noise]] | Ilett Godot 全息 Noise 变体：胶片颗粒噪点层 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-scanline]] | Ilett Godot 全息 Scanline 变体：屏幕/世界空间扫描线 alpha 调制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-godot-uber]] | Ilett Godot 全息 Uber 变体：三合一 shader + unscaled time |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-basic]] | Ilett Hologram Shaders Pro Basic（URP/HDRP 移植） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-hologram-pro-dot-matrix-glitch]] | Ilett Hologram Pro Dot Matrix + Glitch：动态分辨率补偿 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-41 Worker DR (Daniel Ilett Hologram × 5)\n\n处理 5 篇 danielilett.com Hologram 产品文档：3 篇 Godot 变体（noise/scanline/uber）+ 2 篇 Unity URP/HDRP Pro（basic/dot-matrix-glitch）。全部作为 source 摘要并 patch 扩写 [[godot-hologram-shader-effects]] 概念页（4 变体 → 7 变体 + Pro 移植章节，新增动态分辨率补偿观察）。未创建新概念页 / 人物页。"
+}

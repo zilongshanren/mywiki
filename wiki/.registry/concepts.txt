@@ -515,3 +515,6 @@ reading-math-notation-for-shaders
 shader-combination-strategies
 common-shader-pitfalls
 shader-art-design-principles
+lua-class-pattern
+xlsx-text-versioning
+mysql-charset-migration

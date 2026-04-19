@@ -65,6 +65,9 @@ sources: 9
 - [[agent-state-sync-broadcast]]
 - [[sprite-batch-instance-draw]]
 - [[soluna-2d-engine]]
+- [[lua-class-pattern]]
+- [[xlsx-text-versioning]]
+- [[mysql-charset-migration]]
 
 ## Sources
 
@@ -95,3 +98,6 @@ sources: 9
 - [[sources/cloudwu-state-sync-broadcast-optimization]]
 - [[sources/cloudwu-soluna-2d-pipeline]]
 - [[sources/cloudwu-game-engine-memory]]
+- [[sources/cloudwu-lua-class-pattern]]
+- [[sources/cloudwu-xlsx-version-control]]
+- [[sources/cloudwu-mysql-gbk-utf8-migration]]

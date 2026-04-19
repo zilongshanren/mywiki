@@ -549,3 +549,15 @@ Evan Todd 5 篇：3 技术 ingest（CI ASG 优化、identity/naming、100k 测�
 ## [2026-04-19] ingest | Wave-40 Worker DP (mini.gmshaders.com Xor 2025 ×5)
 
 5 篇 Xor 2025 年新文（turbulence / reading-math / combining-shaders / common-mistakes / design-choices）全部 ingested。新增 5 rendering 概念 + 5 source + patch xor-shader-artist / creative-coding-process / fractal-texturing / separable-gaussian-blur。
+
+## [2026-04-19] ingest | Wave-41 Worker DQ (jendrikillner 351-360 all skipped)
+
+10 篇 jendrikillner weekly 2024-08 ~ 10（issues 351-360）全部 skipped，沿用 wave 34/38/39/40 先例。
+
+## [2026-04-19] ingest | Wave-41 Worker DR (danielilett Hologram 系列后续 ×5)
+
+5 篇 Ilett Hologram Shaders 产品文档：3 篇 Godot 变体（noise/scanline/uber）+ 2 篇 Unity Pro 移植（basic/dot-matrix-glitch）。全部 ingested。未新建概念页，全部通过 patch 扩写现有 [[godot-hologram-shader-effects]]（4 变体 → 7 变体 + Pro URP/HDRP 移植章节，新增动态分辨率补偿观察）。5 source 摘要。
+
+## [2026-04-19] ingest | Wave-41 Worker DS (cloudwu 2025-07 ~ 2025-09 ×5)
+
+云风 5 篇：3 ingest（[[lua-class-pattern]] Lua 类型定义套路、[[xlsx-text-versioning]] xlsx 文本化版本管理、[[mysql-charset-migration]] 跨十年 MySQL 编码迁移）+ 2 skip（Twitter 合集 + 桌游 Deep Future 笔记）。3 source 摘要。

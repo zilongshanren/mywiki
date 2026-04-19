@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w41-ds",
+  "agent_note": "云风 blog.codingnow.com 2025-07 至 2025-09 共 5 篇。2 篇跳过：2025-07-20_yun-feng-de-blog-3 为两个月 Twitter 推文合集（亲子/生活/旅行为主，夹杂少量零碎技术闲聊但不成篇），2025-07-20_yun-feng-de-blog 为 Make-as-You-Play 桌游 Deep Future 的玩后感与规则笔记——两者均落在 skip 规则（生活/桌游 brainstorm）。其余 3 篇均为技术内容：Lua 类型定义套路、xlsx 文本化版本管理、MySQL GBK → UTF-8 跨十年升级迁移。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-07-20_yun-feng-de-blog-3.md",
+      "status": "skipped_offtopic",
+      "reason": "两个月 Twitter 推文整理合集，主体是亲子/生活/新冠/旅行等日常内容，夹杂零碎技术闲聊（996、电梯调度、盘符历史等）但不构成独立技术论述"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-07-20_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "桌游 Deep Future (Make-as-You-Play) 规则梳理与玩后感，按 P9 指示桌游 brainstorm → skip"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-08-26_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-lua-class-pattern",
+      "title": "在 Lua 中定义类型的简单方法"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-09-16_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-xlsx-version-control",
+      "title": "xlsx 与版本管理"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-09-16_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-mysql-gbk-utf8-migration",
+      "title": "有惊无险的一次网站系统升级"
+    }
+  ],
+  "concepts_created": [
+    "lua-class-pattern",
+    "xlsx-text-versioning",
+    "mysql-charset-migration"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-lua-class-pattern",
+    "cloudwu-xlsx-version-control",
+    "cloudwu-mysql-gbk-utf8-migration"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-class-pattern]]\n- [[xlsx-text-versioning]]\n- [[mysql-charset-migration]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-lua-class-pattern]]\n- [[sources/cloudwu-xlsx-version-control]]\n- [[sources/cloudwu-mysql-gbk-utf8-migration]]"
+    },
+    {
+      "file": "wiki/programming-languages/lua-design-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-class-pattern]] —— 用元表做类型定义的几种套路与取舍"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[lua-class-pattern]] | Lua 定义类型的几种极简套路；用 `[false]` 隐藏容器元数据 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[xlsx-text-versioning]] | xlsx 规范化为可 diff 文本格式；文件锁驱动的无插件编辑链路 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[mysql-charset-migration]] | MySQL 跨十年升级时 GBK → UTF-8 迁移；`--default-character-set=binary` 与混杂编码 dump 处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-lua-class-pattern]] | 云风：Lua 类型定义与容器元数据藏匿技巧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-xlsx-version-control]] | 云风：xlsx 文本化以适配 git 工作流 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-mysql-gbk-utf8-migration]] | 云风：跨十年 MySQL 升级的 GBK → UTF-8 迁移复盘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-41 Worker DS (cloudwu 2025-07 ~ 2025-09)\n\n处理 5 篇云风 blog.codingnow.com 2025-07 至 2025-09 文章。入库 3 篇技术内容：新增概念页 lua-class-pattern、xlsx-text-versioning、mysql-charset-migration 及对应 source 摘要。跳过 2 篇：两个月推文合集（生活为主）与 Deep Future 桌游笔记（桌游 brainstorm）。cloudwu 人物页增补相关与 Sources；lua-design-philosophy 追加交叉引用。"
+}

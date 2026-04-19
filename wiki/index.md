@@ -52,6 +52,7 @@ sources: 371
 | [[identity-problem-naming]] | Evan Todd：命名的本质是判断两物是否同一 |
 | [[automated-test-philosophy]] | 自动化测试的目的是防回归而非找 bug |
 | [[ci-cost-optimization-asg]] | 用 Jupyter 把 ASG 调优成最优化题 |
+| [[xlsx-text-versioning]] | xlsx 规范化为可 diff 文本格式；文件锁驱动的无插件编辑链路 |
 
 ## 编程语言基础（wiki/programming-languages/）
 
@@ -73,6 +74,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[order-of-growth]] | 算法增长阶的粗描述 |
 | [[fast-exponentiation]] | 分治思想的经典例证 |
 | [[probabilistic-algorithms]] | 用概率正确性换可行性 |
+| [[lua-class-pattern]] | Lua 定义类型的几种极简套路；用 `[false]` 隐藏容器元数据 |
 | [[functions-as-vectors]] | 函数作为无限维向量：Fourier / 球谐的统一视角 |
 | [[cpp-runtime-reflection]] | libclang 元程序生成 C++ 运行时类型表 |
 | [[swap-and-pop-removal]] | 无序数组删除的 swap-and-pop 技巧：O(n) → O(1) |
@@ -154,6 +156,7 @@ CAQA + CSAPP 的底层视角。
 | [[insert-zero-bit-in-middle]] | 在值的中间插入 0 bit：`val + (val & top_mask)` 的 bit-twiddling 小品 |
 | [[sign-extend-without-shift]] | 不用移位的符号/零扩展：`val - (val & sign_bit) * 2` |
 | [[oodle-compression-suite]] | Oodle 三条产品线拆解：Data / Network / Texture，以及 PS5 尺寸缩水的真实原因 |
+| [[mysql-charset-migration]] | MySQL 跨十年升级时 GBK → UTF-8 迁移；`--default-character-set=binary` 与混杂编码 dump 处理 |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -1000,6 +1003,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/xor-mini-combining-shaders]] | Xor：合并 shader 的 checklist 与嵌套顺序 |
 | [[sources/xor-mini-common-mistakes]] | Xor：shader 常见 bug 清单 |
 | [[sources/xor-mini-design-choices]] | Xor：shader art 5 维设计自查 |
+| [[sources/danielilett-hologram-godot-noise]] | Ilett Godot 全息 Noise 变体：胶片颗粒噪点层 |
+| [[sources/danielilett-hologram-godot-scanline]] | Ilett Godot 全息 Scanline 变体：屏幕/世界空间扫描线 alpha 调制 |
+| [[sources/danielilett-hologram-godot-uber]] | Ilett Godot 全息 Uber 变体：三合一 shader + unscaled time |
+| [[sources/danielilett-hologram-pro-basic]] | Ilett Hologram Shaders Pro Basic（URP/HDRP 移植） |
+| [[sources/danielilett-hologram-pro-dot-matrix-glitch]] | Ilett Hologram Pro Dot Matrix + Glitch：动态分辨率补偿 |
+| [[sources/cloudwu-lua-class-pattern]] | 云风：Lua 类型定义与容器元数据藏匿技巧 |
+| [[sources/cloudwu-xlsx-version-control]] | 云风：xlsx 文本化以适配 git 工作流 |
+| [[sources/cloudwu-mysql-gbk-utf8-migration]] | 云风：跨十年 MySQL 升级的 GBK → UTF-8 迁移复盘 |
 
 ## 元（wiki/meta/）
 
