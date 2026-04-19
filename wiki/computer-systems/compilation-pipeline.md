@@ -43,6 +43,9 @@ C source → [预处理] → [编译] → [汇编] → [链接] → 可执行文
 - [[virtual-memory]]
 - [[compiler-interference-analysis-bug]] — MSVC 把两个活跃临时量塞到同一栈槽的真实案例
 - [[llm-generated-c-compiler-perf]] —— LLM 生成编译器的代码质量如何反向压测微架构
+- [[mono-jit-pipeline]] — Mono JIT 的 IL→IR→lowering→x64 多阶段管线实例
+- [[pointer-alias-analysis]]
+- [[dead-store-elimination]]
 
 ## Sources
 

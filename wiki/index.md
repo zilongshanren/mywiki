@@ -104,9 +104,10 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[stackless-vs-stackful-coroutines]] | C++20 协程为何不需要整栈保存 |
 | [[coroutine-awaitable-pattern]] | awaitable 与 coroutine 的分工：名词 vs 动词 |
 | [[mulberry32-rng]] | 极简 32-bit 确定性 PRNG：Weyl + xor-shift-multiply |
+| [[zig-c-abi-boundary]] | Zig 跨 DLL 只有 C ABI：三文件结构 + comptime 分支的绕法 |
+| [[header-file-vs-pub-export]] | `pub` 内联标注把维护成本转嫁为消费者阅读成本 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
-
 CAQA + CSAPP 的底层视角。
 
 | 文章 | 一句话描述 |
@@ -179,6 +180,9 @@ CAQA + CSAPP 的底层视角。
 | [[chipset-pcie-latency]] | 主板 chipset 对 PCIe 延迟/带宽的 500–900 ns 惩罚横测（AM5/Z890/Z170/AM3+） |
 | [[split-lock-x86]] | 跨 cache line 原子操作在 7 代 x86-64 上的惩罚差异；Linux mitigation 的桌面争议 |
 | [[llm-generated-c-compiler-perf]] | LLM 写的 C 编译器当压测负载：move elimination 与零延迟 store forwarding 是救生圈 |
+| [[mono-jit-pipeline]] | Mono JIT 的五阶段管线与值类型导致的 400 行 `dot4` 之灾 |
+| [[pointer-alias-analysis]] | 指针别名分析：几乎所有 load/store/copy 优化的前置条件 |
+| [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -719,6 +723,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ben-supnik]] | Ben Supnik，Laminar Research / X-Plane 图形与引擎程序员 |
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |
 | [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |
+| [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1322,6 +1327,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boristhebrave-poisson-rect-process]] | Boris The Brave：无限平面非重叠随机矩形算法 |
 | [[sources/boristhebrave-infinite-grids]] | Boris The Brave：Sylves 无限网格程序化生成入口贴 |
 | [[sources/boristhebrave-no-double-check]] | Boris The Brave：好软件不重复自检，agent 时代的新代码气味 |
+| [[sources/schoener-i-miss-header-files]] | Schöner：从 Zig `pub` 回望 C header 的消费者价值 |
+| [[sources/schoener-better-mono-codegen]] | Schöner：给 Unity Mono 加优化 pass 的商业化公告 |
+| [[sources/schoener-mono-codegen-part-1]] | Schöner：Mono 如何把 `dot4` 变成 400 行汇编 |
+| [[sources/schoener-mono-codegen-part-2]] | Schöner：LLVM vs 自写 pass、别名分析、DSE 方法论 |
+| [[sources/schoener-zig-hot-reload-abi]] | Schöner：Zig 热重载/DLL 场景的 ABI 痛与三文件绕法 |
 
 ## 元（wiki/meta/）
 

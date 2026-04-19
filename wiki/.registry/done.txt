@@ -11397,3 +11397,8 @@ raw/articles/boristhebrave.com/2025-12-14_my-trip-to-neurips-2025.md
 raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md
 raw/articles/boristhebrave.com/2026-01-22_infinite-random-rectangles-the-poisson-rect-process.md
 raw/articles/boristhebrave.com/2026-04-17_good-software-doesnt-double-check.md
+raw/articles/blog.s-schoener.com/2026-03-27_i-miss-header-files-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2026-03-31_better-codegen-for-unity-games-on-mono-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2026-04-07_what-i-learned-from-improving-unity-s-mono-codegen-part-1-se.md
+raw/articles/blog.s-schoener.com/2026-04-13_what-i-learned-from-improving-unity-s-mono-codegen-part-2-se.md
+raw/articles/blog.s-schoener.com/2026-04-16_zig-hot-reload-and-abi-trouble-sebastian-schoner.md

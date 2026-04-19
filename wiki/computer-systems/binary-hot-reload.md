@@ -39,11 +39,12 @@ __declspec(dllexport) void shut_down(engine* state);
 完整版的 [Live++](https://molecular-matters.com/products_livepp.html) 走的是另一条路：**live patching**，直接在进程里改机器码、不重新加载整个库。它能解决 vtable 与 struct layout 问题，但实现难度远高于 DLL swap。对于「我自己的引擎要不要做？」，Slater 的答案是：DLL 方案两天能写出来，能解决 80% 的迭代速度问题，剩下 20% 学会绕开。
 
 ## 相关
-
 - [[cpp-runtime-reflection]] — Slater 在 Exile 里实现的反射框架，是热重载升级版的前置条件
 - [[linear-allocator]] — 把堆从主程序分给库的实现选择
 - [[engine-layering]] — DLL boundary 自然就是 platform layer / game layer 的分界
 - [[max-slater]]
+- [[zig-c-abi-boundary]] — Zig 想做同样的 DLL 热重载时被 ABI 问题绊住
+- [[sebastian-schoener]]
 
 ## Sources
 

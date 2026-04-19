@@ -648,3 +648,8 @@ mulberry32-rng
 poisson-rect-process
 infinite-chunked-procedural-generation
 good-software-no-double-check
+mono-jit-pipeline
+pointer-alias-analysis
+dead-store-elimination
+zig-c-abi-boundary
+header-file-vs-pub-export
