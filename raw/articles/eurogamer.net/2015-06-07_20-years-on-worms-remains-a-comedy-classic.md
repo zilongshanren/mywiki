@@ -1,0 +1,38 @@
+---
+title: 20 years on, Worms remains a comedy classic
+url: https://www.eurogamer.net/20-years-on-worms-remains-a-comedy-classic
+author: Rick Lane
+published: '2015-06-07'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Gaming has long been fertile ground for comedy. Monkey Island, Portal, and Saints Row are all prime examples of virtual mirth. Through insult swordfighting, lying cakes, and vehicular singalongs, they fuel their puzzle or projectile based shenanigans with the carefully chosen witticisms of an unseen scribe. But gaming is also capable of another kind of humour, one which doesn't involve a single stroke of the pen. I suppose it's best referred to as emergent comedy; a mixture of physical comedy and improv where the human input is one step removed from the events that ultimately transpire.
+
+In some ways emergent comedy is far more common in games than the scripted kind. Any game with a physics engine has the potential to become an accidental Keystone Cops sketch. We've all witnessed at least one instance whereupon a game NPC has got its foot trapped in the world geometry and started thrashing about like a toddler having a tantrum.
+
+*Deliberate* emergent comedy, on the other hand, is incredibly rare, and you only need to look at examples like [Goat Simulator](https://www.eurogamer.net/games/goat-simulator) to see why. Part of the pleasure of emergent humour is that it surprises us. When Michael gets laid out by a speeding lorry in [GTA 5](https://www.eurogamer.net/games/grand-theft-auto-v), it's funny because GTA 5 takes itself so *seriously*. But when a game sets up these scenarios on purpose, nodding and winking at its own glitches and pratfalls, the joke wears thin faster than a pair of Primark boxer shorts.
+
+Laughter is an entirely human quirk, so if you ask a random number generator to deliver a punchline, you need to be prepared to wait a while. Normally. There's one game that does deliberate emergent humour superbly, and it achieved this years before Havok physics landed on the scene in a big pile of limbs. Hell, it did this even before we'd nailed down "emergence" as a thing we like in games.
+
+Is there much point in reiterating what Worms is? Even if you really *have* been living under a rock for twenty years, you're probably quite familiar with worms anyway. Oh all right. It's a 2D shooter in which players assume control of teams of anthropomorphic annelids on a randomly generated landscape, taking turns to obliterate each other with a comically comprehensive arsenal ranging from shotguns to exploding sheep. The first player to kill all the other team's worms wins.
+
+Like all great premises, Worms is incredibly simple, realised through an intoxicating blend of technology and style. Although it was a 2D game released in 1995, just as 3D games were emerging from the earth, Worms was pulling some pretty impressive tricks. Random level generation with destructible terrain, and physics simulation including gravity, momentum, wind speed and direction. It even sports some neat particle effects that I'd completely forgotten about
+
+Team 17 overlaid these foundations with a daft, cartoonish aesthetic. The landscapes are all heavily themed and punctuated with bizarre objects. The worms themselves are bug-eyed, squeaky voiced and relentlessly cheerful as they're blasted about the map. Even at the moment of their demise, they turn to camera and simply utter "Oh dear", or "Bye-bye" before pushing the plunger on their ACME style TNT.
+
+What results is an escalating tit-for-tat battle where surprises, screw-ups and chain-reactions abound. It's reminiscent of a Laurel and Hardy quarrel, yet rather than taking turns to pour water over each other or punching holes in respective bowler hats, you're exchanging bazooka fire across a gaping valley, or heading grenades over a giant snowman.
+
+As with the best comedians, Worms has an impeccable sense of timing, adding in little details at the perfect moment. Half a second before a comically oversized stick of dynamite sends a cluster of worms cascading across the map, one might emit a loud squeak, registering its rapidly impending doom just as Wile-E-Coyote has to notice the gaping chasm he's hovering over before the plunge begins. The same goes for the landmines dotted around the terrain, which act as deadly banana skins for the worms to slip on, often causing them to fall into the water at the base of the screen, or tumble off the edge of the map entirely, triggering a playful "Noooooo!" Worms is a sequence of practical jokes that sit and wait for the player to stumble into them.
+
+Indeed, let's not forget the player's input in this cataclysmic sketch-show. The funniest moments in Worms are the slow, tense build-ups that lead to a complete anticlimax. Your friend might spent ages lining up the perfect bazooka shot, gazing at the screen like an army general overlooking the field of battle through his binoculars. Then they hold the fire button, trying to judge the exact amount of power they need to angle their shell over a grinning pumpkin. "Watch this", boasts their worm, setting up the punchline. They fire, and their expertly aimed shot goes careering straight off the screen like, well, a rocket. There's a brief, awkward silence before the targeted worm sneers "Mi-issed!" just to rub it in.
+
+20 years since its release, Worms remains an excellent multiplayer game. This is partly because it embodies many of the best aspects of boardgaming. Boardgames excel at delivering laughs through systems. Videogames often have you focussed only on what you're doing. Even with fantastic multiplayer games like Mario Kart, it's always *your* kart you're watching, your immediate surroundings. With boardgames, you're always thinking about what the other players are doing, watching their moves, planning, negotiating, arguing.
+
+Worms takes this model of turns, actions and responses, and adapts it to a vertical screen. You can pass one controller between four players, and delight in your friends' successes and failures as much as your own. Because of this I've probably enjoyed more shared fun with Worms over the years than with any other game. As a kid I played it with my brother at my grandmother's house almost every Friday. As a student Worms Armageddon was the go-to game for my fiancée and I when we first moved in together. I played it just the other week with a friend and his girlfriend, and it was like riding a bicycle, a clown's bicycle where the horn squirts water and the wheels fall off at the first sign of a muddy puddle.
+
+I wish there were more games that don't require a faster than light internet connection or a zillion controllers in order to have fun together. Not only because it's a damn sight cheaper, but because you lose that intimacy, that sense of shared experience, when you're separated by miles of fibre-optic cable, or staring at different corners of the screen. I shudder to think of the weeks and months I've spent ignoring the people I love because I'm reviewing another thousand-hour fantasy RPG. Don't get me wrong, I enjoy those experiences too. But as I get older and see that I spent an entire fortnight wandering alone in Skyrim, that slippage of time weighs more and more on my mind.
+
+Gaming offers abundant opportunities to be sworn at by a ten year old on the far side of the Internet, yet so few that you can hand over to a father or grandmother and see them instantly *get it*, or that you can play with a wife or boyfriend while sharing a blanket and a bottle of wine. Worms is such a game, and that makes it more than a daft bit of slapstick. That makes it special.

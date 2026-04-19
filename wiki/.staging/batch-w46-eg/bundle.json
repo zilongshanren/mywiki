@@ -1,0 +1,211 @@
+{
+  "batch_id": "batch-w46-eg",
+  "agent_note": "danielilett.com Retro Shaders Pro (skybox/vertex-lit/overview) + Shader Toolbox (7 shaders). 1 skipped (pack overview = 产品介绍/非算法). 9 ingested. 新增 5 概念页：procedural-retro-skybox、iridescent-bubble-shader、refractive-glass-shader、mesh-triangle-explosion、stochastic-texture-sampling；其余 4 篇仅 source 摘要并 patch 既有页。关键洞察：Retro Skybox = procedural cubemap sampler + 低色深 + 程序噪声云两层合成；Retro Vertex Lit v1.5 已合并入 Retro Lit 成为 Snapping Mode 的 Vertex Lit 档；Shader Toolbox 的 Base Lit 是 URP Lit 基线翻版；Bubble 与 Glass 都读 `_CameraOpaqueTexture` 或自定义 `_CameraTransparentTexture`（Toolbox 新增后者，解决半透明物体折射的一个 URP 限制）；Glitter 是 Voronoi 细胞 + Fresnel 门控的 stochastic sparkle；Mesh Explosion 支持三种 expansion mode 并通过 BakeFaceColors.cs 把三角中心塞进 vertex color；Stochastic Lit 对每张贴图做 3 次随机偏移采样抑制 tiling（近似 Heitz-Neyret histogram-preserving）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-retro-skybox.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-urp-retro-skybox",
+      "title": "Retro Shaders Pro for URP - Retro Skybox"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-retro-vertex-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-urp-retro-vertex-lit",
+      "title": "Retro Shaders Pro for URP - Retro Vertex Lit"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp.md",
+      "status": "skipped_offtopic",
+      "reason": "产品概览 / Features 营销页（PSX 风格 pack 的三段卖点宣传：Retro parameters、CRT post-processing、Extra assets/scripts），无参数手册、无算法细节、无实现内容，为 Asset Store 落地页式文案。"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-base-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-base-lit",
+      "title": "Shader Toolbox for URP - Base Lit"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-bubble.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-bubble",
+      "title": "Shader Toolbox for URP - Bubble"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-dissolve.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-dissolve",
+      "title": "Shader Toolbox for URP - Dissolve"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-glass.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-glass",
+      "title": "Shader Toolbox for URP - Glass"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-glitter.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-glitter",
+      "title": "Shader Toolbox for URP - Glitter"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-mesh-explosion.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-mesh-explosion",
+      "title": "Shader Toolbox for URP - Mesh Explosion"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-stochastic-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-stochastic-lit",
+      "title": "Shader Toolbox for URP - Stochastic Lit"
+    }
+  ],
+  "concepts_created": [
+    "procedural-retro-skybox",
+    "iridescent-bubble-shader",
+    "refractive-glass-shader",
+    "mesh-triangle-explosion",
+    "stochastic-texture-sampling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-retro-urp-retro-skybox",
+    "danielilett-retro-urp-retro-vertex-lit",
+    "danielilett-toolbox-urp-base-lit",
+    "danielilett-toolbox-urp-bubble",
+    "danielilett-toolbox-urp-dissolve",
+    "danielilett-toolbox-urp-glass",
+    "danielilett-toolbox-urp-glitter",
+    "danielilett-toolbox-urp-mesh-explosion",
+    "danielilett-toolbox-urp-stochastic-lit"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-retro-urp-retro-vertex-lit]] —— v1.5 后作为兼容页保留：Retro Vertex Lit 的独立 shader 已被合并进 Retro Lit 的 Snapping Mode/Vertex Lit 档，参数列表是 Retro Lit 的真子集（少 Surface Options、光照四档缩成 vertex-only、Dithering 简化为 bool）\n- [[procedural-retro-skybox]] —— Retro Skybox 把色深限制 + dither 搬到天空盒：cubemap 或 gradient 两档 sky base，叠一层双 Worley 噪声程序云，全部参数化"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-retro-urp-retro-vertex-lit]]\n- [[sources/danielilett-retro-urp-retro-skybox]]"
+    },
+    {
+      "file": "wiki/rendering/color-quantization-retro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-retro-skybox]] —— Retro Skybox 把 Color Depth + Color Depth Offset（防整体变暗）+ Screen/Texture/Off Dithering 这一套复古量化搬到天空盒上\n- [[sources/danielilett-retro-urp-retro-skybox]] —— 天空盒版 PSX 色深量化 + 程序噪声云"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-toolbox-urp-dissolve]] —— Ilett 在 Shader Toolbox 里的 dissolve 节点：Plane / Point 两种 origin 模式、Flip Direction、Glow Color/Thickness、Object 或 World 空间切换；随 pack 附带 DissolvePlane.cs 把 Transform plane 自动推给 material"
+    },
+    {
+      "file": "wiki/rendering/texture-dissolve.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-toolbox-urp-dissolve]] —— Ilett：Plane/Point origin + 自动 script 驱动平面 + glow edge"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-toolbox-urp-glitter]] —— Voronoi 噪声直接当 glitter 粒子排布：Spot Thresholds 用 smoothstep 把细胞切成圆斑或锯齿片，Noise Rotation Speed 让每个 cell 的随机向量随时间旋转以产生 sparkle 闪烁；glitter 可见性通过 Fresnel 门控"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-toolbox-urp-glitter]] —— Voronoi cell 作为 glitter particle 的位置排布"
+    },
+    {
+      "file": "wiki/rendering/fresnel-edge-highlight.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[iridescent-bubble-shader]] —— 把 Fresnel 值拿去查一张彩虹 color ramp 就是肥皂泡：Ilett 的 Bubble shader 在 Fresnel 基础上叠 noise offset 和 flow direction，让 ramp 查色偏移随时间漂移\n- [[refractive-glass-shader]] —— Fresnel 作为玻璃边缘的增强高光与折射混合权重"
+    },
+    {
+      "file": "wiki/rendering/unity-grabpass-blur.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[refractive-glass-shader]] —— URP 下折射通过 `_CameraOpaqueTexture` 读取背景，Shader Toolbox 额外提供 `_CameraTransparentTexture` 让透明物体之间也能互相折射\n- [[iridescent-bubble-shader]] —— 同一套 camera texture 机制，叠 Fresnel + color ramp 做彩虹肥皂泡"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-retro-urp-retro-skybox]]\n- [[sources/danielilett-retro-urp-retro-vertex-lit]]\n- [[sources/danielilett-toolbox-urp-base-lit]]\n- [[sources/danielilett-toolbox-urp-bubble]]\n- [[sources/danielilett-toolbox-urp-dissolve]]\n- [[sources/danielilett-toolbox-urp-glass]]\n- [[sources/danielilett-toolbox-urp-glitter]]\n- [[sources/danielilett-toolbox-urp-mesh-explosion]]\n- [[sources/danielilett-toolbox-urp-stochastic-lit]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-retro-skybox]]\n- [[iridescent-bubble-shader]]\n- [[refractive-glass-shader]]\n- [[mesh-triangle-explosion]]\n- [[stochastic-texture-sampling]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-retro-skybox]] | 低色深 + dither + 双 Worley 程序云的 PSX 风天空盒 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[iridescent-bubble-shader]] | Fresnel × color-ramp × noise flow 的彩虹肥皂泡 + `_CameraTransparentTexture` 折射 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[refractive-glass-shader]] | URP 下用 `_CameraOpaqueTexture` 做折射玻璃，Fresnel 作边缘 & 混合权重 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mesh-triangle-explosion]] | 三角形按法线 / offset / baked-vertex-color 三种模式向外炸开 + 重力 + 随机偏移 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stochastic-texture-sampling]] | 每张贴图 3 次随机偏移采样打散 tiling，Heitz-Neyret 思想的轻量实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-urp-retro-skybox]] | Ilett：Retro Skybox 参数手册，PSX 风天空盒 + 程序云 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-urp-retro-vertex-lit]] | Ilett：Retro Vertex Lit 兼容页（v1.5 合并入 Retro Lit） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-base-lit]] | Ilett：Shader Toolbox Base Lit，URP default Lit 的 clone 作为 pack 基线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-bubble]] | Ilett：Bubble shader，Fresnel + color ramp + iridescent noise flow + camera texture |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-dissolve]] | Ilett：Dissolve shader，Plane/Point origin + 附带 DissolvePlane.cs |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-glass]] | Ilett：Glass shader，refractive index + Fresnel + camera opaque/transparent 双源 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-glitter]] | Ilett：Glitter shader，Voronoi cell 粒子 + Fresnel 门控 + 双色随机 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-mesh-explosion]] | Ilett：Mesh Explosion shader，三种 expansion mode + BakeFaceColors.cs |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-stochastic-lit]] | Ilett：Stochastic Lit shader，三次随机偏移采样打散 tiling |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-46 Worker EG (danielilett.com Retro Pro skybox/vertex-lit + Shader Toolbox ×10)\n\n处理 10 篇 Daniel Ilett URP shader 资产文档：Retro Shaders Pro 的 Retro Skybox、Retro Vertex Lit、产品概览页，以及 Shader Toolbox 的 Base Lit / Bubble / Dissolve / Glass / Glitter / Mesh Explosion / Stochastic Lit 七个效果 shader。Ingest 9 篇为 source 摘要，Skip 1 篇（retro-shaders-pro 产品概览页为营销性 Features 汇总）。新增 5 个概念页：[[procedural-retro-skybox]]（PSX 风天空盒=低色深+dither+双 Worley 程序云）、[[iridescent-bubble-shader]]（Fresnel 查色 ramp + camera transparent texture 折射）、[[refractive-glass-shader]]（URP `_CameraOpaqueTexture` 折射 + Fresnel 边缘）、[[mesh-triangle-explosion]]（三角形按法线/offset/baked-color 三种模式炸开 + BakeFaceColors 预处理）、[[stochastic-texture-sampling]]（3 次随机偏移采样打散 tiling，Heitz-Neyret 思想的轻量实现）。Retro Vertex Lit 作为 v1.5 后的兼容页保留，归入既有 [[retro-rendering-techniques]]；Dissolve/Glitter 补 patch 到 [[texture-dissolve]] 和 [[worley-voronoi-noise]]。"
+}

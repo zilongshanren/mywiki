@@ -1,0 +1,96 @@
+---
+title: 18 nifty things to do in Sea of Thieves that the game doesn't tell you
+url: https://www.eurogamer.net/18-nifty-things-to-do-in-sea-of-thieves-that-the-game-doesnt-tell-you
+author: Matt Wales
+published: '2024-04-30'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+So you want to be a pirate, eh? Well, what with today's double whammy of a [PlayStation 5 release](https://www.eurogamer.net/sea-of-thieves-devs-discuss-surreal-ps5-launch-and-2024s-year-of-the-sandbox) and the launch of Season 12 – bringing with it, among other things, the [first new weapons](https://www.eurogamer.net/sea-of-thieves-bumper-2024-bringing-windy-horns-grapple-guns-a-roaming-warship-and-loads-more) since 2018 – now seems as good a time as any to discover (or rediscover, if you're a lapsed player) Rare's swashbuckling multiplayer pirate game.
+
+And to mark [Sea of Thieves](https://www.eurogamer.net/games/sea-of-thieves) crossing the murky waters of console exclusivity toward new egalitarian horizons, it has come down to me – someone who has spent so many hours in Sea of Thieves over the last six years that I may as well be a real pirate at this point – to take you by the hook and guide you through these stranger tides.
+
+This isn't a guide, as such, so don't go expecting all your piratical questions to be answered here; instead, it's a more of a relaxed tour of some of Sea of Thieves' niftier, lesser-remarked features – the stuff the game doesn't really tell you about – that you might find useful and/or intriguing on your first few days inside the Devil’s Shroud. Here we go!
+
+[Watch on YouTube](https://www.youtube.com/watch?v=nJc7gDfpfa8)
+
+**1. Find your sea legs away from the livelier Sea of Thieves**
+
+A quick PSA before we get into the good stuff: Sea of Thieves is foundationally a shared world game where your adventures play out in the company of other crews. This means you can – and will – run into other pirates who'll not always be pleased to meet you, which can be frustrating if you're still trying to learn the ropes. Thankfully, Sea of Thieves now offers a single-crew option known as Safer Seas that'll let you get your bearings (or perhaps play with younger family members) without the constant threat of PvP. Just be aware that Safer Seas has some strict limitations: Gold and Reputation pay-outs are capped at 30 percent of their usual value; Reputation levelling stops at Level 40, meaning you can only reach Pirate Legend status in the full-fat High Seas mode, and anything even tangentially related to multi-crew activities – from owning your own ship to becoming an Emissary – is inaccessible too. You can, however, work through Commendations to earn new titles or cosmetics, experience all PvE events, and you'll earn full seasonal Renown too, all without needing to venture into the wilder world.
+
+**2. Sword... lunge!**
+
+** **
+
+Ah the good old sword lunge - bug or feature? Well technically both seeing as it started out as one and ended up as the other. And despite still being entirely undocumented in-game, it's also one of the most consistently useful moves in your arsenal, giving you a bit more aquatic oomph whenever you need to cross a largeish expanse of water quickly. So how does it work? Easy: stand on the edge of something solid (important: this only works if you're raised above the water level), whip out your sword and hold down the right trigger to perform a lunge move, just as you would in battle. Only here, physics takes over and you’ll be immediately catapulted off your perch, sending you careening through the water below you like a sleek, grog-reeking dolphin. It’s amazing how handy this little gem is whenever you need to get somewhere fast.
+
+**3. Barrels of fun (and also death)**
+
+Sea of Thieves, you've probably heard, is entirely built around horizontal progression, meaning every player has access to every core weapon and tool from the off. That's not to say everything is immediately handed to you at the start of a session, however, and some of the game's more useful items can only be found out in the world. Poke around in barrels, for instance, and you might come across Cursed Cannonballs which can rapidly turn the tide in battle, imbuing wildly annoying effects on ships they hit – immediately making its crew helplessly drunk, for instance, or causing its sails to instantly rise. Its distant cousin, meanwhile, the Phantom Cannonball - capable of unleashing deadly screeching wraiths on unsuspecting foes – is found by defeating ghost ships and looting their cargo out on the seas.
+
+**4. Captain's hook**
+
+Alongside the five core Trading Companies represented at every Outpost (that'll be the Gold Hoarders, Order of Souls, Merchant Alliance, Reaper's Bones, and Athena's Fortune), there’s a sixth one - far less formally structured than the others – that's surprisingly easy to miss. You'll find a Hunter's Call representative at each of the game's seven ramshackle Seaposts, and these food-loving swashbucklers are all too happy to accept any meaty ingredients you've accumulated on your travels - from a leathery bit of shark to a chunky lump of kraken - in exchange for the usual Reputation and Gold. Their focus, though, is fishing, and the ocean holds a dizzying array of fish they'll happily take off your hands. And if you're looking for a soothing way to unwind after a hard day's pirating, there's nothing quite like casting your rod into the water as the sun sets on the horizon and the waves lap against the shore - just don’t let your guard down too much, otherwise you might get a visit from a passing crew.
+
+**5. A bony fellow bearing Ancient gifts**
+
+If you ever hear a jaunty little tune and the cheerful clink of coins while going about your business on land, stop what you're doing immediately and hunt out its source: a jovial skeleton with a sack of Ancient Coins strapped to its back nearby. You've got 20 seconds to defeat the scarpering nuisance before it vanishes again, but the ensuing chaos is well worth the effort: you’ll earn anywhere between 100 and 800 Ancient Coins – that's Sea of Thieves' premium currency – to spend in the Pirate Emporium. Ancient Skeletons aren’t a particularly common sight - I think I've seen four of them since they've been introduced – but be ready to shift like the wind if their little tune starts to play, otherwise you'll be kicking yourself all night.
+
+**6. Bury some treasure (or boobytrap a beach)**
+
+If you're looking to get into the true piratical spirit of things, Sea of Thieves doesn't just let you dig treasure up, it lets you bury it too. It's a bit of an overlooked feature - partly because its uses are limited and partly because the rewards don't really justify the effort you'll need to put in - but it's still handy in a pinch and does let you indulge in some delightful mischief. To bury treasure, all you need to do is plop it on the ground, whip out your spade, and follow the prompt – after which it'll no longer give off the tell-tale gleam that would normally alert passing crews. Doing so also adds a treasure map to your Quest Table, reminding you where you buried it - and this, if you're feeling generous, can be pinned to the treasure board at every Outpost and Seapost. Pinned maps can be claimed by other crews, whereupon they’ll discover exactly how benevolent you are – perhaps you'll bury an extremely valuable Ancient Chest and put a smile on someone's face, or maybe you'll bury a Stronghold Gunpowder Barrel and, as spade meets wood, put their smile on a rock several hundred feet away.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=s2hQ5I-emRo)
+
+**7. Give your (pirate) life meaning with Commendations**
+
+At its core, Sea of Thieves is a loosely structured sandbox adventure where you’re free to do as you please. But if you’re craving a bit more direction and focus amid all the freeform pirating, it's worth having a look at Commendations. There are hundreds of the things, all offering short- to long-term challenges encouraging players to explore Sea of Thieves' increasing heft of mechanics, ranging from Trading Company activities and Tall Tales to world events and tools. As well as giving you something to focus on, Commendations – listed in the various subcategories found under Pirate Log > Reputation – unlock some of Sea of Thieves' most desirable cosmetics rewards. Just don’t expect to get through them all anytime soon. Six years later, I’m still working my way toward that gorgeously crusty Silent Barnacle ship set.
+
+**8. Find a rowboat – or a really fancy rowboat!**
+
+Size isn't everything, and nowhere is this better encapsulated in Sea of Thieves than with the humble rowboat. Rowboats are a bit odd in that they're not included in the basic ship package whenever you start a new session; instead, you'll find them out and about in the world, casually beached on an island or, occasionally, floating serenely in an improbably inaccessible body of water deep inland. Either way, a few shoves is usually enough to get them out into the ocean, at which point it's time for the fun to begin. Rowboats can be attached to the rear of your ship for easy access (but they don't persist between sessions unless you're a Captain) and they're a powerful tool in the right hands. They can, for instance, be used to make a speedily stealthy escape with all your treasure if you're caught in battle, or you could fill a rowboat with enough gunpowder to sink a man-of-war, close in on an unsuspecting ship, then blow it sky-high. There's plenty of room for creativity, and the possibilities only increase if you manage to bag yourself a rowboat with a front-mounted cannon or harpoon.
+
+**9. Harpoon handbrake turn**
+
+And while we're on the subject of harpoons, don't underestimate those either. Not only are they invaluable for rapidly hoisting floating treasure out of the water (or yanking a suddenly very surprised enemy crew member straight off the deck of their ship), they can add a bit of extra flair to your seafaring too. Fire a harpoon at a passing rock while you're on the move, for instance, and you'll perform a graceful U-turn – potentially handy during a pursuit unless you misjudge your trajectory and arc straight into the rock you're aiming to go around. Alternatively, you can bring unsuspecting ships to a halt by harpooning onto them and dropping your anchor, buying you some novelty boarding time. Oh, and true thrill seekers might even consider harpooning themselves to a passing megalodon for a brief, exhilarating ride – and yes, you maniac, this works with the rowboat harpoon too.
+
+**10. Run the gauntlet and ring the bell**
+
+It probably won't take you long to spot the towering, arch-like structure loitering enigmatically at the centre of the Sea of Thieves, and you'll likely wonder what it's for. Rather anticlimactically, however, the answer is: not a lot anymore. Once upon a time, lightning used to strike its peak whenever a new player joined the server, but I've not seen it do that in years. And at one time, too, its bustling Glorious Sea Dog tavern welcomed players to Arena mode, but the mode and the tavern have long since closed. These days, the arch primarily plays host to an obstacle course for crews that fancy informally putting their jumping prowess to the test. Follow the steep incline beyond the handful of NPC traders that remain and you'll reach a rickety ledge with a nearby bell. The challenge is this: ring the bell, proceed in a clockwise motion around the archway navigating increasingly perilous platforms, and ring the bell at the end – fastest time wins. And true masochists can also try it in reverse. According to the [Sea of Thieves wiki](https://seaofthieves.fandom.com/wiki/Sea_Dogs_Tavern_Challenge_Route), the fastest recorded clockwise time is 37.46 seconds, while the fastest anti-clockwise time is 47.22 seconds, so that's what you're aiming to beat. Just don't expect a prize.
+
+**11. Scale the Emissary leaderboards for exotic rewards**
+
+Emissaries might well be one of the best features ever added to Sea of Thieves, introducing a thrillingly risky, but potentially extremely lucrative way to sail on behalf of specific Trading Companies. Essentially, you fly an Emissary flag, do some tasks, increase a multiplier, and – assuming the Reaper's Bones faction don’t sink you first – get a massive bonus chunk of Gold and Reputation when you hand in your spoils. What's not immediately obvious, though, is that your Emissary value for each Trading Company is totted up and popped onto a leader board, providing an extra bit of incentive to fly the Emissary flag each month. As your score increases, you'll rise through four distinct brackets, earning some very fancy Trading Company cosmetics depending which bracket you're in when the boards are reset. Be warned though; the boards aren’t static and you'll gradually be pushed down to lower brackets as other Emissaries beat your score, so you'll need to stay active to earn the good stuff.
+
+**12. Go on a treasure hunt celebrating some impressive feats (and get some cool tattoos)**
+
+Umbra's easy to miss, given that she quietly goes about her business on the Lagoon of Whispers with virtually no fanfare – but she's the gatekeeper to a pretty nifty map-wide treasure hunt. Umbra, in lore terms, roams the Sea of Thieves chronicling tales of daring-do, and the most impressive of those feats – that is, the most outlandish things players have managed to pull off in-game - have been immortalised by Rare across the world. Read the clues in Umbra's log – you'll find it under Pirate Log > Bilge Rats > Legends of the Sea – then start tracking down the hidden environmental vignettes commemorating each achievement. Eventually, you'll be able to return to Umbra and acquire some of the game’s finest tattoos.
+
+**13. Summon the dead - and then kill them again immediately**
+
+Sooner or later, you’ll find yourself in Sea of Thieves’ southernmost region, the Ancient Isles, pondering an area of its ocean perpetually swathed in ominous swirling fog. It’s a striking landmark, even more so when you set eyes upon the ramshackle fortress bathed in eerie ghost light within. This, pirate friends, is the Fort of the Damned, the focal point for some properly challenging skeletal action - as long as you know where to begin. Fundamentally, it plays out in the same wave-based, bone-bashing manner as any other Skeleton Fort event, but it's more lucrative and far more convoluted. The Fort of the Damned, you see, can only be activated by performing a ritual, first requiring crews to locate the elusive Ritual Skull then lighting the fort's lanterns using all six Flames of Fate – which, in turn, can only be acquired by dying in six specific ways. And things don’t get any simpler from there; once the fort is active, skeleton waves are only susceptible to specific lantern light, and *then* there’s the ghost of Greymarrow to deal with at the end. On the plus side, the treasure’s good and there’s an appropriately ghostly lantern, jacket, and full crew costume set to unlock by completing its Commendations.
+
+**14. Get cursed and go places**
+
+Sea of Thieves is positively awash in cosmetics, but you'll need to put in a bit of work to unlock some of its most desirable ones: curses. These are as cool as a pirate's butt in a water barrel, altering your physical appearance in often dramatic ways. Ever wanted to bleed mysterious black goo from the eyes? There's a curse for that! Ever wanted to be half human, half mermaid (or half human, half solid gold, for that matter)? There's a curse for that! Ever wanted to glow from the inside like your belly's full of hellfire? There's a curse for that too! Primarily, curses are unlocked by completing Tall Tales and their Commendations, but there are two special curses – one giving you a spectral sheen worthy of the Pirate Lord himself and the other an almost dizzyingly customisable skeleton curse – that are locked behind a lengthy PvP on-demand grind. To begin, you'll need to flip the Hourglass of Fate on your ship's Quest Table, pledging your allegiance to either the Guardians of Fortune or Servants of The Flame. Do well enough and you'll eventually have more than a few fancy cosmetics to brag about: you’ll also gain access to some of Sea of Thieves' most exclusive hangouts – unless you're me, because I'm terrible at PvP.
+
+**15. See the kraken’s body**
+
+Way back in 2018, there was outrage (it was a weird time) after Sea of Thieves players discovered the game's big kraken encounter - and I apologise for shattering the illusion so soon if you're new to the game - was all smoke and mirrors, just a whole bunch of tentacles with no actual body to be found. These days, though, you get a lot more kraken for your buck, and there are *two* places keen-eyed wildlife watchers can see the mighty beast in all its full, wiggly glory. One, I won't spoil, but for the other – and yes, this made me giddy enough that I wanted to include it here - you'll need to keep your wits about you during ship dives. Karen doesn't put in an appearance often (and it's doubtful you'll be underwater long enough to see her spawn unless you're in a lengthy PvP on-demand queue) but do give her a wave if she floats on by.
+
+**16. Literally never see the Shrouded Ghost ever**
+
+If you thought the kraken's body was elusive, allow me to introduce you to the Shrouded Ghost. Actually, I won't be doing that, given this mysterious white megalodon is so rare I've never seen it once in six years of play. Megalodons – one of several emergent threats in Sea of Thieves – are not, in themselves, particularly uncommon; they'll occasionally surface to bother your boat, each variant employing slightly different attack behaviours. Or at least I assume the Shrouded Ghost has its own attack behaviour, but I really couldn't say. Is it difficult to kill? I couldn't tell you that either. Is it even a real thing or just a massive ruse by Rare? Look, all I know is there's a Commendation that unlocks if you manage to kill five of the damned things – but I'm anticipating the heat death of the universe way before then.
+
+**17. Go on a beautiful journey to commemorate the Legend of Glitterbeard**
+
+A very personal addition for Rare this - as the studio [explains far better than I ever could](https://www.seaofthieves.com/news/legend-of-glitterbeard) in a post on its website - the Legend of Glitterbeard is a lovely celebration of the camaraderie at Sea of Thieves’ core. Glitterbeard’s warm-hearted adventures are charted in a series of journals scattered around the world, the first of which you’ll likely spot almost immediately, tucked on a bench in the corner of every Outpost tavern. If you choose to follow its breadcrumbs, you’ll embark on a gentle, unhurried journey culminating in one of Sea of Thieves’ loveliest moments that really reflects the spirit of the game in a beautiful way.
+
+** **
+
+**18. Set sail and see where adventure takes you!**
+
+Honestly, it's a blast. See you on the Seas!

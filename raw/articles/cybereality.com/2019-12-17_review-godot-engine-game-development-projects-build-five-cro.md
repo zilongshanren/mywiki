@@ -1,0 +1,21 @@
+---
+title: 'Review: Godot Engine Game Development Projects: Build five cross-platform
+  2D and 3D games with Godot 3.0 by Chris Bradfield'
+url: https://cybereality.com/review-godot-engine-game-development-projects-build-five-cross-platform-2d-and-3d-games-with-godot-3-0-by-chris-bradfield/
+author: Cybereality
+published: '2019-12-17'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+![](../../assets/14f42c7d4a87d63f.jpg)
+
+Godot Engine Game Development Projects is not only one of the best Godot books you can buy, it may be the best game development book out there bar none. Unlike many other books, it doesn’t start by teaching you about the API or performing simple actions. Instead, Chris Bradfield jumps straight into coding complete game projects, 5 in total, with ample source code examples and clear explanation. This is far beyond what I typically read. The author shows how to make games with title screens, pausing, user interface, and very complete in function. Like with the platformer chapter you see not only how to move and jump, but also climbing up ladders, dust particles when you land, making a parallax background, and extra features you don’t usually see. Most of the projects are in 2D, but the last chapter makes a mini-golf game in 3D, so that was a nice bonus.
+
+Inside the text we have 5 fairly complete game projects for you to follow along with. The first project is called Coin Dash, and is a simple game where you collect coins. It covers vector movement, sprite animation, collision detection, creating UIs for score and time, using buttons, and managing states. The next game is called Escape the Maze, which adds an enemy, using a TileSet and TileMap for laying out the level, using global scripts, sound effects, and saving a high score to a local file. Then Bradfield presents Space Rocks, an Asteroids-like clone. In this project we learn about rigid body physics, using state machines, screen wrap, shooting bullets, spawning objects, and creating enemies. This is a very complete project, not only can you move and shoot, but there are explosion effects, when shooting rocks they break into smaller rocks, objects bounce off each other, he shows how to pause the game, enemies shoot at you, etc. Very well done.
+
+For the 4th game we make a platformer called Jungle Jump. Here we use kinematic bodies, utilize collision layers and masks, sprite animation, scrolling backgrounds, the HUD, a title screen, collectable items, and the basics of movement and jumping. At the end there are some finishing touches like a double jump, dust particles when you land, crouching, even climbing up ladders. The fifth game is 3D Minigolf, which introduces some 3D concepts, importing meshes, working with cameras, using GridMaps, collision, and a UI. Finally, the book concludes with various topics such as learning to use the API docs, exporting to mobile, working with shaders, additional supported programming languages, and how to contribute to the community.
+
+I would have to say, this is an amazing book for Godot and, well, maybe the best game development text I have ever read (and I read a lot). Most books only scratch the surface with simple tech demos, but here we have 5 fairly complete games. I mean, they’re are definitely demos, but above and beyond what you see in many tutorials. For example, the platformer where you have dust effects when landing, climbing ladders, and all that. You also see how a larger project is structured, including pausing, title and game over screens, multiple levels, etc. This is especially useful when starting out, as there is a break between looking at the API or a basic tutorial, and then finishing a complete game. So I feel this book has an advantage over most other texts out there. I honestly could not be more happy with what I have read here. I would recommend this book to game developers at all levels. Either people experienced with coding who want to learn how things are done in Godot, or even people just starting out. This book is gold.

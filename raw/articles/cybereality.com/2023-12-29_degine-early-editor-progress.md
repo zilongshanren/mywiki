@@ -1,0 +1,16 @@
+---
+title: 'Degine: Early Editor Progress'
+url: https://cybereality.com/degine-early-editor-progress/
+author: Cybereality
+published: '2023-12-29'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Quick update on Degine, my in-house OpenGL engine. Most of the shaders were finished a few months ago, though I’ve been working on various optimizations behind the scenes. Performance is quite stable, at least on high-end desktop, right now (watch the embedded video). Still needs some work on the lower-end and mobile, though it’s getting there. The most visible addition is a UI, currently just a couple of menus, but I worked on the design and learning the API. Right now this is using [Dear ImGui](https://github.com/ocornut/imgui), as this library is extremely robust and battle-tested in serious games like [Alan Wake 2](https://www.alanwake.com/). Eventually I may want a custom UI (especially for in-game, this work is for the editor), though leveraging open source libraries seems like a smarter choice than reinventing the wheel. Some other behind the scenes work includes an ECS (entity component system) using the [flecs library](https://github.com/SanderMertens/flecs), and also initial integration of [luau](https://luau-lang.org/) for gameplay scripting (currently prints to the console, so not much to see on-screen yet).
+
+![](../../assets/7a94a037d26f63e3.jpg)
+
+Next up I will have to flesh out these systems, and add more menus and UI so you can actually do some work and save the progress. Developing an entire IDE from scratch is likely not feasible due to time, so I plan to use [Visual Studio Code](https://code.visualstudio.com/) (or similar) and simply write a plugin. Still deciding about using visual scripting or something more basic (like configurable widgets) though I would like some option for mobile screens (which don’t work well with code editors). Beyond that, I probably won’t add too many post-processing effects, as it’s already quite heavy on low-end devices. I’m exploring some options for semi-real-time global illumination, [the technique used in The Division](https://www.youtube.com/watch?v=04YUZ3bWAyg) looks quite nice, though this might only be an advanced setting for desktop machines. Lots of work left, but I feel like things are starting to get easier as the foundation is being built. Honestly, there are still tons of hacks, so most days I just refactor code. Better to get something working and clean it up later (but not *way* later, like as soon as it works and it’s stable) than pontificating about a “perfect” design that will never materialize. Current plan is to release a small demo or mini-game in the March time-frame, as a way to test the engine and ensure it’s feature complete. Actual public release of the tools will likely be later in 2024. If you want to follow the progress on the engine, be sure to check [the social accounts for Outmode](https://www.youtube.com/@OutmodeLLC), my startup.

@@ -1,0 +1,1253 @@
+---
+title: results matching " "
+url: https://20k.github.io/c++/2025/05/07/nr105.html
+published: '2025-05-07'
+source_blog: James' Space Blog
+source_site: https://20k.github.io/
+category: graphics
+fetched: '2026-04-19'
+---
+
+# Numerical Relativity 105: Smashing neutron stars together like its 2002
+
+Hi! It’s time to do something spectacular today, and crash some neutron stars into each other:
+
+This article is a direct continuation of the [previous](https://20k.github.io/c++/2025/04/15/nr104.html), which runs through how to construct and build a neutron star. It’s time to take those stars, and simulate exactly what happens when they smash into each other at high speeds, in a fully general relativistic way
+
+I’ll be going through how to connect relativistic fluid dynamics to regular hydrodynamics, and examining a specific approach in the literature. I’ve also extensively documented many of the technical issues you’ll run into in practice if you try and implement this kind of thing
+
+As always, the code for this article is available over [here](https://github.com/20k/20k.github.io/blob/master/code/NR5). If you’re looking for someone with a lot of enthusiasm for GPU programming, and who’d rather love to do a PhD in numerical relativity - please give me a shout![1](../../assets/58cbdd1f805cc1c3.img)
+
+First up: Some background (and a dog). I’ve also had to convert some of the youtube embeds into links in this article, as it turns out the embedding is very heavy
+
+![cat](../../assets/0890576e57c4ce02.jpeg)
+
+
+# What is hydrodynamics?
+
+If you’re like me, at some point you might not even really have known why hydrodynamics is a separate area of inquiry to solving differential equations in general. Or, you might think it’s an umbrella term for people who solve PDEs which just so happen to involve fluids - but that it’s pretty much the same as anything else
+
+As it turns out, there’s good reason to treat the equations we’re dealing with differently to regular differential equations. A fair chunk of this article is going to be explaining what hydrodynamics is, why we need to use different solving methods, and how that fits into general relativity. A lot of programmers’ experience of fluid dynamics is the Navier-Stokes equations, so you might be wondering how similar that it is to what we’re doing today (disclaimer: not very)
+
+## Hydrodynamic Formalisms
+
+There are three primary kinds of hydrodynamic formalisms:
+
+- Lagrangian. This involves tracking particles around your space, and figuring out what properties a fluid derived from those particles would have
+- Semi Lagrangian. This is what most programmers are familiar with - you have grid cells, and trace your velocity backward through the grid to find out where the fluid originated from (and what properties it had there)
+- Eularian. Here, you have grid cells, and only deal with quantities locally in terms of their values and derivatives
+
+Today’s scheme is purely Eularian. We’ll need a set of equations to look at before we get into the interesting hydrodynamics stuff, so it’s now time to take an overview of a specific relativistic hydrodynamics scheme
+
+# Relativistic Eularian Hydrodynamics - 2002 style
+
+We’re going to be looking at two papers today, primarily the latter:
+
+Note that there was a significant shift 2 in approach from the first paper, to the second, and we’ll be using the second’s notation and equations. In this approach, there are the following variables for the fluid dynamics:
+
+| Notation | What it represents |
+|---|---|
+| $\rho_*$ | Rest mass |
+| $e_*$ | Energy |
+| $\tilde{S}_k$ | Momentum (ish) |
+
+(If the symbols aren’t rendering, try a force refresh)
+
+These are the evolution variables. I’ve translated the paper’s old-style conformal factor $\phi$, into the newer conformal factor $W$ - and a table of conversions is provided at the end of this article
+
+In this scheme, there are the following definitions for the various quantities we’ll need:
+
+| Variable | Definition | Notes |
+|---|---|---|
+| $\rho_*$ | $\rho_0 \alpha u^0 W^{-3} $ | Rest mass |
+| $e_*$ | $(\rho_0 \epsilon)^\frac{1}{\Gamma} \alpha u^0 W^{-3}$ | Unclear how a numerical equation of state would work. Represents energy |
+| $\tilde{S}_k$ | $\rho_* h u_k$ | Some kind of momentum term |
+| $h$ | $1 + \epsilon + \frac{P}{\rho_0}$ | Enthalpy. $1 + \Gamma \epsilon$ with the perfect fluid equation of state, $P = (\Gamma - 1) \rho_0 \epsilon$ |
+| $w$ | $\rho_* \alpha u^0$ | Densitised lorentz factor. Must be calculated via an iterative procedure in general |
+| $v^i$ | $\frac{u^i}{u^0}$ | Represents a coordinate velocity |
+| $P$ | Equation of state, $P=(\Gamma - 1) \rho_0 \epsilon$ here | Pressure with the perfect fluid equation of state |
+
+The notation in this article is harmonised with the previous one. $\rho_0$ is the rest-mass density, $\epsilon$ is the specific energy density, $u^0$ is the lorentz factor, and $\alpha$ is the lapse. We’ll be using a $\Gamma = 2$ perfect fluid equation of state - because it’s unclear how a numerical one would work here
+
+## Initial conditions
+
+The code for the hydrodynamics is available over [here](https://github.com/20k/20k.github.io/blob/master/code/NR5/hydrodynamics.cpp)
+
+At the end of the previous article, we ended up with the fluid quantities $\rho_0$, $\epsilon$, $u^i$, and $u^0$. These are the same variables used in the definitions up above, there’s nothing weird going on
+
+There are two pitfall traps here:
+
+- The initial procedure we used last time appears
+to have assumed implicitly that $\alpha = 1$, and $\beta^i = 0$ - so use these when initialising regardless of what you actually pick for them[3](https://20k.github.io#fn:check) - $u_i = \beta^i u^0 + \gamma_{ik} u^k$
+
+We can now carry on immediately from the last article, which follows on as such:
+
+```
+valuef pressure = mu_to_P(mu);
+valuef p0 = pressure_to_p0(pressure);
+valuef epsilon = (mu / p0) - 1;
+//with raised index
+v3f ui = Si / ((mu + pressure) * u0);
+valuef gA = 1;
+v3f gB = {0,0,0};
+valuef p_star = p0 * gA * u0 * pow(cW, -3);
+valuef e_star = pow(p0 * epsilon, (1/Gamma)) * gA * u0 * pow(cW, -3);
+v3f u_i;
+for(int i=0; i < 3; i++)
+{
+valuef sum = 0;
+for(int k=0; k < 3; k++)
+{
+sum += Yij[i, k] * ui[k];
+}
+u_i[i] = gB[i] * u0 + sum;
+}
+valuef h = calculate_h_from_epsilon(epsilon);
+v3f Si_lo_cfl = p_star * h * u_i;
+as_ref(hydro.p_star[pos, dim]) = p_star;
+as_ref(hydro.e_star[pos, dim]) = e_star;
+as_ref(hydro.Si[0][pos, dim]) = Si_lo_cfl[0];
+as_ref(hydro.Si[1][pos, dim]) = Si_lo_cfl[1];
+as_ref(hydro.Si[2][pos, dim]) = Si_lo_cfl[2];
+```
+
+
+Where:
+
+```
+valuef calculate_h_from_epsilon(valuef epsilon)
+{
+return 1 + get_Gamma() * epsilon;
+}
+```
+
+
+That’s it, no other surprises - the initial conditions are done
+
+## Evolution equations
+
+So far, so good. This is the basic set of evolution equations [(26-28)](https://arxiv.org/pdf/gr-qc/0209102):
+
+I’ll get into what everything means in detail soon - the most important piece is that $v^i$ is the coordinate velocity
+
+### The reason why hydrodynamics is a thing
+
+With an actual set of equations in hand, it’s time to bridge the gap over to regular hydrodynamics, and look at them in that field’s notation:
+
+\[\begin{align} \partial_t \rho_* &+ \nabla (\rho_* \textbf{v}) = 0\\ \partial_t e_* &+ \nabla (e_* \textbf{v}) = 0\\ \partial_t \tilde{S}_k &+ \nabla (\tilde{S}_k \textbf{v}) = \mathrm{Source}\\ \end{align}\]Or more generally:
+
+\[\partial_t q + \nabla (q \textbf{v}) = \mathrm{Source}\]This is the standard representation in hydrodynamics of an advection equation, with the right hand side being called a source term (which you shouldn’t confuse with an ADM source term). Here the source terms are split out, and no special treatment is given to their solving 4, so we’re going to now unceremoniously ignore them
+
+In hydrodynamics there are things called *conserved quantities* - like 5 rest mass, energy, and momentum for a fluid dynamics simulation. The idea behind a conserved quantity is that a good solving technique should keep these quantities exact, with no drift - it wouldn’t be great if the total rest mass changed
+
+Naively, you might think to discretise $\partial_i(p_* v^i)$ as something like this, like any other derivative:
+
+```
+valuef sum = 0;
+for(int i=0; i < 3; i++) {
+sum += diff1(p_star * v[i], i, d);
+}
+```
+
+
+This kind of discretisation unfortunately makes no guarantees about conservation. While it will work to some degree, the physical accuracy of the simulation will drift negatively over time, and in general the hydro people will start to make very unhappy noises. What’s the alternative?
+
+![cat2](../../assets/fb2c3b7300f55004.jpg)
+
+
+# Hydrodynamics 101: A crash course
+
+This is one of the few times we’ll be chatting about something which isn’t directly general relativity, which puts this outside my expertise. If you do hydrodynamics, know cool things about fancy high resolution schemes, or spot any mistakes here: please get in touch[6](https://20k.github.io#fn:anything)
+
+Eularian hydrodynamics in general is concerned with solving a slightly more general set of equations of the form:
+
+\[\partial_t q + \nabla f(q) = 0\]This is generally 7 broken up into three 1D problems (which are summed). For us (ignoring the source terms), this is:
+
+Good techniques for solving this have the following properties:
+
+- They conserve the quantity $q$
+- They handle ‘shocks’, ie discontinuities in $q$
+- They don’t produce oscillations that build up and cause everything to break
+
+These are expressed as more technical requirements
+
+| Term | Meaning |
+|---|---|
+| Finite Volume | A specific technique for guaranteeing conservation |
+| Shock capturing | Everything doesn’t blow up when there are discontinuities in $q$ |
+| Total Variation Diminishing (TVD) | The discretisation method doesn’t produce increasing oscillations near discontinuities |
+| High resolution | Has a spatial convergence order of 2+ in smooth parts of the solution. Currently, we’re a 4th order NR sim |
+
+In numerical relativity, ‘shocks’ are partially handled via Kreiss-Oliger dissipation 8 - but the equations don’t generally produce the kinds of situations
+
+you get with hydrodynamics. Kreiss-Oliger isn’t really appropriate to hydrodynamics however, as it won’t maintain conservation
+
+[9](https://20k.github.io#fn:shocks)[Appendix A](https://arxiv.org/pdf/gr-qc/0209102) in the paper we’re looking at describes a hydro treatment: but as far as I can tell, the description is significantly incomplete. We’re going to have to come up with something different
+
+## Conservative discretisation
+
+A better discretisation of these equations compared to the naive form, is the flux conservative form. This guarantees conservation of your quantity when solved correctly ([4.4](https://www.tevza.org/home/course/modelling-II_2016/books/Leveque%20-%20Finite%20Volume%20Methods%20for%20Hyperbolic%20Equations.pdf) or [4.9](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2012/Chapter_4.pdf)):
+
+where $_i$ is a grid cell offset (and the ‘half’ index is the wall between two cells), and $\Delta x$ is the scale. This form is generic across any hydrodynamics scheme - and solving for the half grid cell flux at the boundary between grid cells is the joy of hydrodynamics
+
+I’m not going to attempt to document hydrodynamics in general here, so it’s time to look at a specific form of solving this equation. It fulfills all the requirements for a ‘good’ technique, as well as the major requirement which is having a workable set of equations that I can implement[10](https://20k.github.io#fn:implement)
+
+## A specific scheme: MUSCL
+
+The goal here is to calculate the two half fluxes defined above, via some kind of interpolation scheme at the half-cell boundary between two grid cells. A first order scheme is stable, but too low order. A directly constructed second order scheme is stable in smooth regions of fluid, but [unstable](https://en.wikipedia.org/wiki/Godunov%27s_theorem) near discontinuities
+
+The solution then is fairly straightforward: You use some kind of function to swap between first order, and second order, depending on how smooth the underlying fluid is 11. These are called limiters, and come in two forms:
+
+- Slope limiters, denoted $\sigma$
+- Flux limiters, denoted $\phi$
+
+Check out [here](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2012/Chapter_4.pdf) for an explicit reference. Flux limiters are much more common in the literature (and so we’ll be using the flux limited scheme), but I’ll give you both forms of this in case you want to go experimenting. These are used to construct estimates of the flux at the half cell boundary (eg $F_{i - 1/2}$)
+
+This actually gives two separate estimates of the flux at the half cell boundary. Eg, for $F_{i - 1/2}$, we have one in the rightwards direction for the cell $_{i-1}$, and one leftwards for the cell $_i$. While a general solver for this is complex (and is called a Riemann solver), in the simple case it’s sufficient to pick the solution based on the sign of the fluid velocity at the half cell boundary. There’s more detail and links to references on all of this in the appendix, as I’m simplifying a bit
+
+### Slope limited
+
+\[F^n_{i - \frac{1}{2}} = \begin{cases} \begin{align} &v_{i - \frac{1}{2}} q_{i - 1} + \frac{1}{2} v_{i - \frac{1}{2}} (\Delta x - v_{i - \frac{1}{2}} \Delta t) \sigma_{i-1} \;\; &\mathrm{if}\;\; v_{i - \frac{1}{2}} >= 0 \\ &v_{i - \frac{1}{2}} q_{i} - \frac{1}{2} v_{i - \frac{1}{2}} (\Delta x + v_{i - \frac{1}{2}} \Delta t) \sigma_{i} \;\; &\mathrm{if}\;\; v_{i - \frac{1}{2}} <= 0 \\ \end{align} \end{cases}\]$\sigma_i$ is a a slope limiter, see [4.4.2](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2012/Chapter_4.pdf) for examples
+
+### Flux limited
+
+\[\begin{align} F^n_{i - 1/2} &= v_{i - 1/2}^- q_i + v_{i - 1/2}^+ q_{i - 1} + \frac{1}{2} \mid v_{i - 1/2} \mid (1 - \mid \frac{v_{i - 1/2} \Delta t}{\Delta x} \mid) \delta_{i - 1/2}\\ \\ \delta_{i-1/2} &= \phi(\theta_{i - 1/2}) (q_i - q_{i - 1})\\ \bar{v}^+_{i-1/2} &= \mathrm{max}(v_{i-1/2}, 0)\\ \bar{v}^-_{i-1/2} &= \mathrm{min}(v_{i-1/2}, 0)\\ \end{align}\]Where [(4.37)](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2012/Chapter_4.pdf):
+
+$\phi$ is a flux limiter. There’s nothing fundamentally different here to the slope limiting equations, it’s just that the form of the limiter is different
+
+We’ll be using the superbee flux limiter, as it seems minimally diffusive:
+
+\[\phi(r) = \mathrm{max}(0, \mathrm{min}(1, 2r), \mathrm{min}(2, r))\]The calculation for $F^n_{i + 1/2} $ is identical, just with $i$ incremented
+
+## The half velocity
+
+There are two ways that I’ve seen to calculate this half velocity:
+
+- \(v^{n}_{i - 1/2} = \frac{v^{n}_{i} + v^{n}_{i - 1}}{2}\)
+- \(v^{n}_{i - 1/2} = \frac{\rho_{*i} v_i + \rho_{*i-1} v_{i-1}}{\rho_{*i} + \rho_{*i-1}}\)
+[(A3)](https://arxiv.org/pdf/gr-qc/0209102)
+
+$\rho_*$ is the rest mass. I’ve also tested a second order interpolation:
+
+\[v^{n}_{i - 1/2} = -0.0625 v^n_{i - 2} + 0.5625 v^n_{i - 1}+ 0.5625 v^n_i - 0.0625 v^n_{i + 1}\]In general, these options seem to be fairly identical, so you may as well use the first. I’ve been using the second purely for commonality with the referenced paper
+
+### Implementation
+
+```
+valuef advect_rhs(valuef in, v3f vi, const derivative_data& d, valuef timestep)
+{
+using namespace single_source;
+///https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2012/Chapter_4.pdf 4.38
+auto get_delta = [&](valuef q, int which)
+{
+std::array<valuef, 3> v_adj = get_differentiation_variables<3, valuef>(vi[which], which);
+std::array<valuef, 5> q_adj = get_differentiation_variables<5, valuef>(q, which);
+std::array<valuef, 3> p_adj = get_differentiation_variables<3, valuef>(p_star, which);
+for(auto& i : v_adj)
+pin(i);
+for(auto& i : p_adj)
+pin(i);
+for(auto& i : q_adj)
+pin(i);
+valuef v_phalf = safe_divide(p_adj[1] * v_adj[1] + p_adj[2] * v_adj[2], p_adj[1] + p_adj[2]);
+valuef v_mhalf = safe_divide(p_adj[0] * v_adj[0] + p_adj[1] * v_adj[1], p_adj[0] + p_adj[1]);
+//valuef v_phalf = (v_adj[1] + v_adj[2]) / 2;
+//valuef v_mhalf = (v_adj[1] + v_adj[0]) / 2;
+pin(v_phalf);
+pin(v_mhalf);
+valuef theta_mhalf = ternary(v_mhalf >= 0, valuef(1), valuef(-1));
+valuef theta_phalf = ternary(v_phalf >= 0, valuef(1), valuef(-1));
+valuef qm2 = q_adj.at(2 - 2);
+valuef qm1 = q_adj.at(2 - 1);
+valuef q0 = q_adj.at(2);
+valuef q1 = q_adj.at(2 + 1);
+valuef q2 = q_adj.at(2 + 2);
+valuef r_mhalf = ternary(v_mhalf >= 0, safe_divide(qm1 - qm2, q0 - qm1), safe_divide(q1 - q0, q0 - qm1));
+valuef r_phalf = ternary(v_phalf >= 0, safe_divide(q0 - qm1, q1 - q0), safe_divide(q2 - q1, q1 - q0));
+pin(r_mhalf);
+pin(r_phalf);
+//superbee
+auto phi_r = [](valuef r)
+{
+auto max3 = [](valuef v1, valuef v2, valuef v3)
+{
+return max(max(v1, v2), v3);
+};
+return max3(0.f, min(1.f, 2 * r), min(2.f, r));
+};
+valuef phi_mhalf = phi_r(r_mhalf);
+valuef phi_phalf = phi_r(r_phalf);
+valuef f_mhalf_1 = 0.5f * v_mhalf * ((1 + theta_mhalf) * qm1 + (1 - theta_mhalf) * q0);
+valuef f_phalf_1 = 0.5f * v_phalf * ((1 + theta_phalf) * q0 + (1 - theta_phalf) * q1);
+valuef f_mhalf_2 = (1.f/2.f) * fabs(v_mhalf) * (1 - fabs(v_mhalf * (timestep / d.scale))) * phi_mhalf * (q0 - qm1);
+valuef f_phalf_2 = (1.f/2.f) * fabs(v_phalf) * (1 - fabs(v_phalf * (timestep / d.scale))) * phi_phalf * (q1 - q0);
+valuef f_mhalf = f_mhalf_1 + f_mhalf_2;
+valuef f_phalf = f_phalf_1 + f_phalf_2;
+return f_mhalf - f_phalf;
+};
+return (get_delta(in, 0) + get_delta(in, 1) + get_delta(in, 2)) / d.scale;
+}
+```
+
+
+# Evolution Equations
+
+There’s two other nontrivial terms to talk about now: $v^i$ and $w$
+
+## \(v^i\)
+
+This quantity is as follows:
+
+\[v^i = -\beta^i + \frac{W^2 \alpha \tilde{\gamma}^{ij} \tilde{S}_j}{w h}\]```
+v3f calculate_vi(valuef gA, v3f gB, valuef W, valuef w, valuef epsilon, v3f Si, const unit_metric<valuef, 3, 3>& cY, valuef p_star, bool viscosity)
+{
+valuef h = calculate_h_from_epsilon(epsilon);
+v3f Si_upper = cY.invert().raise(Si);
+v3f real_value = -gB + (W * (gA / h)) * (W * safe_divide(Si_upper, w));
+//returning -gB seems more proper to me as that's the limit as p* -> 0, but the paper specifically says to set vi = 0
+#ifdef GB_LIMIT_CHANGE
+return ternary(p_star <= min_evolve_p_star, -gB, real_value);
+#else
+return ternary(p_star <= min_evolve_p_star, {}, real_value);
+#endif
+}
+```
+
+
+I’ve listed a derivation in the appendix, and there’s some discussion about the limit there as well. Note that the order of floating point operations has been optimised for accuracy
+
+## \(w\)
+
+This quantity is a bit less trivial. It has the following form [(29)](https://arxiv.org/pdf/gr-qc/0209102):
+
+There are two problems:
+
+- There is no analytic solution
+- It divides by zero a fair bit
+
+We can solve #1 by using fixed point iteration with the initial guess $w=\rho_*$ 12 as this is a lorentz factor multiplied by density terms. Simply plug in an initial guess into the right hand side, calculate the new value of $w$, and rinse and repeat
+
+#2 is more of a pain - the way this equation is structured out of the box is slightly cursed. A bit of rearranging gives:
+
+\[\begin{align} A &= (W^3)^{\Gamma-1}\\ D &= \frac{w^{\Gamma-1}}{w^{\Gamma-1} + A \Gamma e_*^{\Gamma} \rho_*^{\Gamma-2}}\\ w^2 &= \rho_*^2 + W^2 \tilde{\gamma}^{ij} \tilde{S}_i \tilde{S}_j D^2\\ \end{align}\]The singular part is the divisor of $D$, and this is simply clamped. See the appendix for more details
+
+```
+valuef calculate_w(valuef p_star, valuef e_star, valuef W, inverse_metric<valuef, 3, 3> icY, v3f Si)
+{
+using namespace single_source;
+valuef Gamma = get_Gamma();
+valuef w = p_star;
+valuef p_sq = p_star * p_star;
+valuef cst = W*W * icY.dot(Si, Si);
+pin(cst);
+//140 iterations ought to be enough for anybody
+for(int i=0; i < 140; i++)
+{
+valuef A = pow(max(W, 0.001f), 3.f * Gamma - 3.f);
+valuef D = safe_divide(pow(w, Gamma - 1),
+pow(w, Gamma - 1) + A * Gamma * pow(e_star, Gamma) * pow(max(p_star, min_p_star), Gamma - 2));
+valuef w_next = sqrt(max(p_sq + cst * D*D, 0.f));
+pin(w_next);
+//relaxation
+w = mix(w, w_next, valuef(0.9f));
+pin(w);
+}
+return w;
+}
+```
+
+
+Iterating $w$ is extremely cheap, and the iteration count is way more than necessary. Because you can get away with such a high number of iterations, I apply a small amount of relaxation to the solution - just to make sure that this function can never cause any problems
+
+It’s worth noting that when $\Gamma = 2$, the factor of $\rho_*$ drops out in $D$
+
+## 2002 Relativistic hydrodynamics - specifically
+
+In theory with a more modern formalism (eg the [Valencia](https://arxiv.org/pdf/1309.7808) form, [here](https://iopscience.iop.org/article/10.1086/303604/pdf), and [2.1.3](https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf)), we’d be done. Unfortunately, we come to the major problem with this paper
+
+Despite these equations looking like a conservative hydrodynamics equation, they actually are not in this formalism. While $ \rho_* $ is in conservative form, $e_*$ is not and isn’t conserved across shocks - we’ll have to artificially dissipate them despite using a shock capturing formalism. I have absolutely no idea about $\tilde{S}_k$
+
+More modern formalisms are expressed purely in terms of conserved quantities, which makes their hydro treatment more rigorous at the expense of complexity
+
+### Artificial Viscosity
+
+To combat the lack of conservation of $e_*$ across shocks, this paper uses a small amount of artificial viscosity to dissipate shocks away
+
+Papers can be quite vague as to how exactly to modify the equations here. A complete description of this scheme requires us to go all the way back to [1984](https://adsabs.harvard.edu/full/1984ApJS...55..211H), where the extra viscous pressure is called $Q$. There are two new modifications:
+
+- $Q$ is added to the pressure on the right hand side of $\partial_t \tilde{S}_k$, ie $\partial_k (P + Q)$
+- $e^*$ has a new source term (involving $Q$)
+
+There are two complementary ways to calculate this additional pressure term $Q$
+
+- Quadratic viscosity
+- Linear viscosity
+
+You can sum these. On a technical note, these are both only enabled when the fluid is being compressed - which is why there’s a branch in the definitions
+
+#### Quadratic Viscosity
+
+\[\begin{align} Q_{Qvis} = \begin{cases} C_{Qvis}A(\delta v)^2\;\;&\mathrm{for} \;\delta v < 0\\ 0 \; &\mathrm{otherwise} \end{cases} \end{align}\]Where:
+
+\[\begin{align} A &= e_*^\Gamma (W^3)^{\Gamma-1} (\frac{\rho_*}{w})^{\Gamma-1}\\ \delta v &= 2 \partial_k v^k \Delta x \end{align}\]And \(\Delta x\) is the scale. $C_{Qvis}$ is a damping constant, which I set to $0.1$, and this paper recommends the range $[0.1, 1]$
+
+```
+valuef dkvk = 0;
+for(int k=0; k < 3; k++)
+dkvk += 2 * diff1(vi[k], k, d);
+valuef littledv = dkvk * d.scale;
+valuef Gamma = get_Gamma();
+valuef A = pow(e_star, Gamma) * pow(pow(W, 3.f), Gamma - 1) * pow(safe_divide(p_star, w), Gamma - 1);
+valuef PQvis = ternary(littledv < 0, CQvis * A * pow(littledv, 2), valuef{0.f});
+```
+
+
+Quadratic viscosity is generally left on throughout a simulation, but is disabled near a singularity. In theory, you could probably derive the strength of the quadratic viscosity from a hydrodynamic smoothness estimate to enable dissipation in unsmooth parts of the solution only, but I have no information on if that’s worthwhile
+
+#### Linear viscosity
+
+\[\begin{align} Q_{Lvis} = \begin{cases} -C_{Lvis}\sqrt{(\Gamma/n) \rho_* A} \;\delta v\;\;&\mathrm{for} \;\delta v < 0\\ 0 \; &\mathrm{otherwise} \end{cases} \end{align}\]$C_{Lvis}$ is a damping constant in the range $[0, 1]$. In my case, I set this damping constant as follows:
+
+\[C_{Lvis} = K e^{-\frac{t^2}{2 T^2}}\]$t$ is the total elapsed simulation time, $K$ is a constant (which I set to $0.1$), and $T$ is a constant that represents a damping timescale for the linear viscosity, as it is generally only useful in the early parts of the simulation to iron out the star’s oscillations. $T=200$ seems to work well
+
+I don’t have a clue what $n$ is and I have never been able to find a single shred of discussion on what it represents, so I set it to $1$
+
+```
+valuef linear_damping = exp(-(total_elapsed * total_elapsed) / (2 * linear_damping_timescale * linear_damping_timescale));
+valuef CLvis = linear_strength * linear_damping;
+valuef n = 1;
+valuef PLvis = ternary(littledv < 0, -CLvis * sqrt((get_Gamma()/n) * p_star * A) * littledv, valuef(0.f));
+```
+
+
+Without linear viscosity:
+
+With linear viscosity:
+
+The radial oscillations are damped quite a bit
+
+#### Viscosity for $e_*$
+
+When using viscosity, $e_*$ gains a source term on the right hand side. The term to add is:
+
+\[\partial_t e_* \mathrel{+}= -(\rho_0 \epsilon)^{(-1 + \frac{1}{\Gamma})} \;\; \frac{Q}{\Gamma} \; \partial_k (w W^{-3} v^k \rho_*^{-1})\]$(\rho_0 \epsilon)^{-1 + \frac{1}{\Gamma}}$ is very numerically inaccurate to calculate the direct route, and a better form is this:
+
+\[\begin{align} I &= e_* W^3 \frac{\rho_*}{w}\\ (\rho_0 \epsilon)^{-1 + \frac{1}{\Gamma}} &= \frac{1}{I^{\Gamma - 1}} \end{align}\]```
+valuef e_star_rhs(valuef W, valuef Q_vis, v3f vi, const derivative_data& d)
+{
+valuef sum_interior_rhs = 0;
+for(int k=0; k < 3; k++)
+{
+value to_diff = safe_divide(vi[k], p_star) * w * pow(max(W, 0.1f), -3.f);
+sum_interior_rhs += diff1(to_diff, k, d);
+}
+valuef Gamma = get_Gamma();
+valuef iv_au0 = safe_divide(p_star, w);
+valuef p0e_interior = e_star * (W*W*W) * iv_au0;
+valuef degenerate = safe_divide(1.f, pow(p0e_interior, Gamma - 1));
+return -degenerate * (Q_vis / Gamma) * sum_interior_rhs;
+}
+```
+
+
+#### Viscosity Conclusion
+
+In general, linear viscosity is good for large scale damping and significantly improves the simulations stability. Initial conditions for neutron stars are generally quite approximate, and the stars oscillate while relaxing into their final form, so linear damping helps a lot. Quadratic viscosity seems to be less applicable here, and hasn’t produced significant changes to the simulation, but it also may be just the tests that I’ve performed
+
+The viscosity scheme documented in this paper is actually not consistent - it’s an ad-hoc modification to fix up shocks. There is, in theory, an extension of this formalism which includes a consistent treatment of viscosity and works for ultrarelativistic matter - see the discussion around [(26)](https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf) for details
+
+![cat3](../../assets/27da9f2d6b8b0f5b.jpg)
+
+
+## Final equation set
+
+\[\begin{align} \partial_t \rho_* + \partial_i(\rho_* v^i) &= 0\\ \partial_t e_* + \partial_i(e_* v^i) &= -(\rho_0 \epsilon)^{(-1 + \frac{1}{\Gamma})} \;\; \frac{Q}{\Gamma} \; \partial_k (w W^{-3} v^k p_*^{-1})\\ \partial_t \tilde{S}_k + \partial_i(\tilde{S}_k v^i) &= - \alpha \frac{1}{W^3} \partial_k (P + Q) - w h \partial_k \alpha \\ &-\tilde{S}_j \partial_k \beta^j + \frac{\alpha W^2\tilde{S}_i \tilde{S}_j}{2wh} \partial_k \tilde{\gamma}^{ij}\\ &+ \frac{\alpha h(w^2 - p_*^2)}{w} \frac{\partial_k W}{W} \end{align}\]### Implementation
+
+To keep all derivatives first order, we have to split our equations into three kernels
+
+- $w$
+- $Q$
+- Everything else
+
+#### $w$
+
+I’ve already shown how to calculate $w$ itself, so this is the general form of one of the hydro kernels:
+
+```
+void calculate_w_kern(execution_context& ectx, bssn_args_mem<buffer<valuef>> in, hydrodynamic_base_args<buffer<valuef>> hydro, buffer_mut<valuef> w_out,
+literal<v3i> idim, literal<valuef> scale,
+literal<valuei> positions_length)
+{
+using namespace single_source;
+valuei lid = value_impl::get_global_id(0);
+pin(lid);
+v3i dim = idim.get();
+if_e(lid >= positions_length.get(), []{
+return_e();
+});
+v3i pos = get_coordinate_including_boundary(lid, dim);
+pin(pos);
+valuef p_star = hydro.p_star[pos, dim];
+valuef e_star = hydro.e_star[pos, dim];
+v3f Si = {hydro.Si[0][pos, dim], hydro.Si[1][pos, dim], hydro.Si[2][pos, dim]};
+derivative_data d;
+d.pos = pos;
+d.dim = dim;
+d.scale = scale.get();
+//early out
+if_e(p_star <= min_p_star, [&]{
+valuef dp_sum = 0;
+for(int i=0; i < 3; i++)
+{
+dp_sum += fabs(diff1(p_star, i, d));
+}
+if_e(dp_sum == 0, [&]{
+as_ref(w_out[pos, dim]) = valuef(0);
+return_e();
+});
+});
+bssn_args args(pos, dim, in);ate
+as_ref(w_out[pos, dim]) = calculate_w(p_star, e_star, args.W, args.cY.invert(), Si);
+}
+```
+
+
+The other two have an identical structure
+
+#### $Q$
+
+Viscosity is only enabled on two conditions:
+
+- The lapse is high enough
+- The density of matter is high enough, generally slightly higher than $\rho_{min}$
+
+Viscosity is more numerically unstable than the rest of the evolution scheme, so toggling it off is important for stability
+
+```
+as_ref(Q_out[pos, dim]) = valuef(0.f);
+if_e(args.gA >= MIN_VISCOSITY_LAPSE && p_star >= min_p_for_visco, [&]{
+valuef epsilon = calculate_epsilon(p_star, e_star, args.W, w);
+v3f vi = calculate_vi(args.gA, args.gB, args.W, w, epsilon, Si, args.cY, p_star, true);
+as_ref(Q_out[pos, dim]) = calculate_Pvis(args.W, vi, p_star, e_star, w, d, total_elapsed.get(), damping_timescale.get(), linear_strength, quadratic_strength);
+});
+```
+
+
+#### Everything else
+
+I’ve already shown off the advection equation portion and $e_*$’s rhs, so this is just $\tilde{S}_k$ now:
+
+```
+v3f Si_rhs(valuef gA, v3f gB, valuef W, const unit_metric<valuef, 3, 3>& cY, valuef Q_vis, v3f vi, const derivative_data& d)
+{
+valuef P = max(eos(W) + Q_vis, 0.f);
+valuef h = calculate_h_with_eos(W);
+v3f dSi;
+for(int k=0; k < 3; k++)
+{
+valuef p1 = (-gA * pow(max(W, 0.1f), -3.f)) * diff1(P, k, d);
+valuef p2 = -w * h * diff1(gA, k, d);
+valuef p3;
+for(int j=0; j < 3; j++)
+{
+p3 += -Si[j] * diff1(gB[j], k, d) ;
+}
+valuef p4;
+for(int i=0; i < 3; i++)
+{
+for(int j=0; j < 3; j++)
+{
+valuef deriv = diff1(cY.invert()[i,j], k, d);
+valuef l1 = Si[i] / h;
+valuef l2 = safe_divide(Si[j], w);
+p4 += 0.5f * gA * W * W * l1 * l2 * deriv;
+}
+}
+valuef p5 = gA * h * (w - p_star * safe_divide(p_star, w)) * (diff1(W, k, d) / max(W, 0.1f));
+dSi[k] = p1 + p2 + p3 + p4 + p5;
+}
+return dSi;
+}
+```
+
+
+```
+valuef dp_star = hydro_args.advect_rhs(hydro_args.p_star, vi, d, timestep.get());
+mut<valuef> de_star = declare_mut_e(hydro_args.advect_rhs(hydro_args.e_star, vi, d, timestep.get()));
+mut_v3f dSi = declare_mut_e(hydro_args.advect_rhs(hydro_args.Si, vi, d, timestep.get()));
+//only apply advection terms for matter which is ~0
+if_e(hydro_args.p_star >= min_evolve_p_star, [&]{
+valuef Q = hydro_args.Q;
+as_ref(dSi) += hydro_args.Si_rhs(args.gA, args.gB, args.W, args.cY, Q, vi, d);
+//adds the e* viscosity term. Unstable near or in a black hole
+if_e(args.gA >= MIN_VISCOSITY_LAPSE && hydro_args.p_star >= min_p_for_visco, [&]{
+v3f vi2 = hydro_args.calculate_vi(args.gA, args.gB, args.W, args.cY, true);
+as_ref(de_star) += hydro_args.e_star_rhs(args.W, Q, vi2, d);
+});
+});
+```
+
+
+There’s nothing terribly exciting here. There’s an option to not calculate source terms when $ \rho_* $ is low. The right hand side of $ e_* $ is also not evolved under the same conditions that $Q$ is not calculated, to avoid NaNs propagating
+
+# ADM Source terms
+
+The evolution equations are now done! Next up is how this integrates into the BSSN equations. The way that matter interacts with general relativity is via the 4x4 symmetric [stress-energy tensor](https://en.wikipedia.org/wiki/Stress%E2%80%93energy_tensor). In the ADM formalism, this is broken up into a number of components - which are frequently collectively called source terms. These source terms are then plugged into the BSSN equations, and this enables matter to directly act on spacetime
+
+There are four standard ADM source terms, representing the ADM projections of the 4D stress-energy tensor. They are calculated from the matter variables as follows:
+
+\[\begin{align} \rho_H &= h w W^3 - P\\ S_i &= W^3\tilde{S}_i\\ S_{ij} &= \frac{W^3}{wh}\tilde{S}_i \tilde{S}_j + P \gamma_{ij}\\ S &= \gamma^{ij} S_{ij} = W^2 \tilde{\gamma}^{ij} S_{ij} \\ \end{align}\]In this form, they’re less useful than they could be: $S_{ij}$ is infinite at the singularity, as $\gamma_{ij}$ is undefined
+
+Luckily, we can skip to the future, and discover that the way $S_{ij}$ is used is $-W^2 8 \pi \alpha S_{ij}$ 13. Given that \(W^2 \gamma_{ij} = \tilde{\gamma}_{ij}\), this allows you to re-format the equations as follows:
+
+We’ll have to modify the BSSN source term to match the absorbed $W^2$ term (ie $-8 \pi \alpha S_{ij}$), but now the source terms become regular at the singularity. This is a free win, at the expense of some minor non standard notation[14](https://20k.github.io#fn:minor)
+
+## The BSSN equations
+
+The additions are straightforward:
+
+\[\begin{align} \partial_t K &\mathrel{+}= 4 \pi \alpha (S + \rho_H)\\ \partial_t \tilde{A}_{ij} &\mathrel{+}= -8 \pi \alpha \tilde{S}_{ij}^{TF}\\ \partial_t \tilde{\Gamma}^i &\mathrel{+}= -16 \pi \alpha \tilde{\gamma}^{ij} S_j\\ \mathcal{H} &\mathrel{+}= -16 \pi \rho_H\\ \mathcal{M}_i &\mathrel{+}= -8 \pi S_i\\ \end{align}\]The source terms conspire very conveniently to avoid having to calculate infinite quantities at the singularity, which is great. The constraint terms are added on the non zero side
+
+# Relativistic Hydrodynamics Discussion
+
+Before we get to the results, and overall discussion, it’s worth talking about this hydro formalism a bit more critically. As far as I can tell, there’s the following issues with this approach:
+
+- The non atmospheric approach’s conservation is heavily dependent on the minimum value of $\rho_*$, which has to be higher than I would like due to single precision floating point. There’s a mass loss of a few % over the course of a simulation
+- When $\rho_*$ is of the same order of magnitude as $\rho_{min}$, you have to be extremely careful with floating point accuracy. There’s a significant amount of error due to precision issues, and some quantities (like viscosity) are poorly behaved
+- The non conservative nature of the equations means that conventional hydrodynamic solutions only have limited applicability (even if it seems to work well in practice)
+- The thin-mass-shell-drift problem, though i haven’t run into it that much
+[15](https://20k.github.io#fn:real) - The viscosity is super ad-hoc
+- It’s unclear how to use a numerical equation of state here, though it looks like there might be extensions that support this
+
+This - in theory - would all be solved by a fully conservative formalism. There’s a lot of interesting discussion [here (2.1.2)](https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf) around the limitations of this approach. This formalism isn’t ‘bad’ however - it seems to work quite well - and apparently it has seen fairly widespread use in various forms. This is probably going to be a future project for me, as it shouldn’t be too much work now that there’s a solid base here (..famous last words)
+
+![catty](../../assets/09f9f50388c596f4.jpg)
+
+
+# Testing
+
+## Stationary tests
+
+In the last article, we had these test cases:
+
+| Case | $\rho_c$ | $K$ | $\Gamma$ | Expected $M$ | Expected $R$ |
+|---|---|---|---|---|---|
+|
+
+[C2](https://einsteintoolkit.org/thornguide/EinsteinInitialData/TOVSolver/documentation.html)(see after interior)[C3](https://arxiv.org/pdf/gr-qc/0110047)(see: C)Test cases 1 and 2 work fine with no tweaks. Test case 3 is slightly more interesting: I didn’t realise that it was specifically a test of unstable neutron stars migrating to a stable branch. According to the [original paper](https://arxiv.org/pdf/gr-qc/0110047), oscillations introduced by finite difference errors cause a pertubation which either causes it to grow to a regular neutron star, or collapse to a black hole
+
+In our case, it collapses to a black hole 16:
+
+See the implementation details (‘black hole collapse’) section for how to manage neutron stars turning into black holes
+
+## Stationary Spinning Test
+
+This is test case C1, with dimensionless spin $\chi = 0.5$:
+
+Now.. while it’s clear that a spinning neutron star is a lot more wobbly than a regular neutron star, it’s very hard to tell if it’s actually spinning or not
+
+### Advecting arbitrary fields
+
+This step is more for fun. Let’s define an initial colour distribution ${r, g, b}$, and map it to our star’s density as follows:
+
+\[\begin{align} r_* &= r \rho_* \\ g_* &= g \rho_* \\ b_* &= b \rho_* \\ \end{align}\]These $\mathrm{rgb}_*$ quantities can then be advected using the advection equation, ie:
+
+\[\partial_t r_* = -\partial_i (r_* v^i)\]Creating an arbitrary 17 initial colour distribution can be done either as a function, or if you’re willing to put an absolutely cat-astrophic amount of implementation work in: as a
+
+[texture](https://github.com/20k/20k.github.io/blob/master/code/common/weslr.png)
+
+I genuinely have no idea why I spent so much time implementing this 18, and you absolutely shouldn’t do this. Here’s a less memey look at the spinning:
+
+You can see that the star is tending towards a settled shape (in the first video it’s easier to see). This test uses a much longer linear viscosity timescale of $T=800$. The grid resolution for all tests is $199^3$
+
+According to the original paper, their oscillations appear to increase as time goes on, but these are ruled out because they’re late time problems. I read a fairly curt critique suggesting that a lot of people are doing these mergers incorrectly, because unsurprisingly neutron star oscillations are very unphysical - apparently you need to let them stabilise over a few orbits first. This makes late time behaviour quite important
+
+Allegedly, real neutron star mergers are expected to be of low spin bodies (because the universe isn’t old enough for high spin ones to merge yet, or something) so it’s somewhat less of a problem. Though really the formation, and merger of bodies like these seems to be extremely up in the air currently, so I wouldn’t bank on that personally - it smells a bit like we’re just hoping the computational power isn’t horrendous, like with eccentricity
+
+## Inspiral
+
+Finding good test cases is tricky, and it seems that the literature around neutron stars isn’t quite as explicit with the initial conditions and testable results as it is for black holes
+
+Here’s two ad-hoc test cases:
+
+| Name | $\rho_c$ | $K$ | $\Gamma$ | Central Separation ($\mathrm{km}$) | Linear momentum | $\chi$ (dimensionless spin) | $N$ (gauge damping) |
+|---|---|---|---|---|---|---|---|
+| I1, Similar to
+|
+
+Where $\chi = \frac{J_{adm}}{M_{adm}^2}$
+
+These look like this:
+
+This isn’t terribly scientific, though it confirms that everything doesn’t look like complete nonsense
+
+Case $\Gamma^{–}_{050}$ [has the following parameters](https://arxiv.org/pdf/1311.4443)
+
+| $\rho_c$ | $K$ | $\Gamma$ | Central Separation | Linear momentum | $\chi$ | $N$ | Notes |
+|---|---|---|---|---|---|---|---|
+| $0.000960296$ ($c=G=M_\odot = 1$) | $123.6489$ | $2$ | $59 \mathrm{km}$ | Unspecified, $\approx \pm 0.24$ | $-0.0499$ | $0.2$ | The spin direction is against the orbital direction |
+
+Which gives this:
+
+Without an exact value for linear momentum, I can’t precisely attempt to replicate 19 the original paper, but this appears to produce a reasonable inspiral. With the caveats around testing in mind, this scheme does appear to work, and there’s nothing obviously unphysical going on. The hamiltonian constraint errors (top left) appear to stay low and bounded which is great as well
+
+# Performance
+
+The performance is pretty good - at $199^3$ it takes 81 ms/tick with the hydro on, and ~69 ms/tick with it off. Some of that is because there’s a few extra copies here and there, so I’d expect to be able to shave about 5ms off. Most of these videos took about 15 minutes of compute time on a 6700xt, which is a lot faster than I’ve heard is common in the industry
+
+The main overhead is actually the amount of extra buffers required. There are $5$ variable buffers, which I store $3$ copies of for the fixed point iteration. This limits the maximum resolution size quite a bit on a $12\;\mathrm{GB}$ GPU
+
+# Discussion
+
+I’ve discussed the relativistic hydrodynamics formalism specifically in depth up above, so this is a general review of this project
+
+Overall, this has gone pretty well. I’m not *super* jazzed at the lack of rigorous testing here, but this makes a very good stepping stone on the way to more advanced techniques and new ideas like post Newtonian formalisms - so I think this is perfect as an introduction. I’m also not super convinced on the actual hydrodynamics solver I’ve implemented as it may be slightly too basic - but that just means more work to implement something snazzy
+
+This also pushing the limits of single precision here as well, it’s right on the boundary of what’s acceptable: if you’re interested in novel precision techniques, like unums, or projective reals, this would be a good playground
+
+It’s clear though seeing that we easily can get multiple orbits, collapse neutron stars into stable black holes, and produce visible gravitational waves, that this is working well enough. So I’m very happy with it overall, and it’s a solid base to build on. And importantly: it doesn’t take 6 months to get a result back
+
+# Next time
+
+The next article is going to be N-body particle dynamics, because that should be a lot easier than hydrodynamics. This article has taken a very large amount of work to put together, and there’s still a lot to come back to and iron out. It’ll be fun!
+
+![catend](../../assets/d306373a6f3e5cde.jpg)
+
+
+# Montage
+
+Basic head on collision:
+
+This next one is a video of a failed test case:
+
+This is before the scheme was conservative:
+
+This is painstakingly accurately rendered with redshift, and a 4d voxelisation. It’s tricky to get good quality with this technique due to memory pressure, so I haven’t shown it off here
+
+# Appendix
+
+## Hydrodynamics theory
+
+In this article I dodged some of the technical aspects of fluid dynamics, because I don’t have a crystal clear overview of how everything works in detail, and because - frankly - I’m not the best source for this. It took me a bit to dig up some references on what’s going on, to at least get an intuitive understanding of the process by which these methods are solving these equations. It seems like there are multiple overlapping techniques which take different underlying views of the same process, and on top of that, people seem to use Godunov in the same way my mum uses Nintendo
+
+Lets take $3$ grid cells: ${i-1}, i, {i+1}$. The general form of the conservation equation is this:
+
+\[\partial_t q = \frac{1}{\Delta x} (F^n_{i-\frac{1}{2}} - F^n_{i+\frac{1}{2}})\]Now we’ll deal with a specific point: $F^n_{i - \frac{1}{2}}$. This represents the flux at the cell edge between $i$, and $i-1$. It’s also implicitly an integral in time, and it has the following form [(4.5)](https://www.tevza.org/home/course/modelling-II_2016/books/Leveque%20-%20Finite%20Volume%20Methods%20for%20Hyperbolic%20Equations.pdf):
+
+We know that $f(x_i) = v_i q_i$ for us, and we could sub that in:
+
+\[F^n_{i - 1/2} = \frac{1}{\Delta t} \int^{t_{n+1}}_{t_n} v(x_{i -1/2}, t) q(x_{i - 1/2}, t) dt\]Here’s where things get a tad unfortunate. It’s common in these articles for the assumption that $v$ is *constant* to get made, which isn’t really a necessary approximation, I think. [8.2](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2011/Chapter_8.pdf) spells out the issue in more detail
+
+We can solve this at $x_{i - 1/2}$ for cell $i$, and at $x_{i + 1/2}$ for cell $i - 1$, to get two solutions for a single interface (ie $F^n_{i - 1/2}$)
+
+- The solution rightwards for cell $i-1$: $R_{i-1}$
+- The solution leftwards for cell $i$: $L_i$
+
+These aren’t necessarily the same. Figuring out $F^n_{i - 1/2}$ from these two disparate solutions (ie $R_{i-1}$ and $L_{i}$), defines a Riemann problem
+
+One way of solving the Riemann problem here is the upwinding scheme [(6.45)](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2009/Chapter_6.pdf) by applying Godunovs method:
+
+There’s a much more detailed explanation in the linked text, that’s more generalised. As far as I can tell, you need specific assumptions to end up with the simple Riemann solver above, so it’s approximate to some degree, and this scheme seemingly isn’t generally referred to as a Riemann solver. To use it for nonlinear fluxes instead of simple velocities like we have, you need to do eigenvectors/values, as they appear to take the role of velocity in a slightly abstract form
+
+That for the moment is my best understanding of how to build hydrodynamic schemes, and piece together some of this
+
+## Conformal decomposition
+
+The conformal decomposition is defined as follows: \(\tilde{\gamma}_{ij} = W^2 \gamma_{ij} = e^{-4\phi} \gamma_{ij}\)
+
+| Ours | Theirs |
+|---|---|
+| $W$ | $e^{-2\phi}$ |
+| $W^2$ | $e^{-4\phi}$ |
+| $W^3$ | $e^{-6\phi}$ |
+| $\frac{1}{W}$ | $e^{2\phi}$ |
+| $\frac{1}{W^2}$ | $e^{4\phi}$ |
+| $\frac{1}{W^3}$ | $e^{6\phi}$ |
+| $-\frac{\partial_i W}{2W}$ | $\partial_i \phi$ |
+
+## BSSN Equations with source terms
+
+\[\begin{align} \partial_t W &= \beta^m \partial_m W + \frac{1}{3} W (\alpha K - \partial_m \beta^m) \\ \partial_t \tilde{\gamma}_{ij} &= \beta^m \partial_m \tilde{\gamma}_{ij}+ 2 \tilde{\gamma}_{m(i} \partial_{j)} \beta^m - \frac{2}{3} \tilde{\gamma}_{ij} \partial_m \beta^m - 2 \alpha \tilde{A}_{ij} \\ \partial_t K &= \beta^m \partial_m K - W^2 \tilde{\gamma}^{mn} D_m D_n \alpha + \alpha \tilde{A}^{mn} \tilde{A}_{mn} + \frac{1}{3} \alpha K^2\\ \partial_t \tilde{A}_{ij} &= \beta^m \partial_m \tilde{A}_{ij}+ 2 \tilde{A}_{m(i} \partial_{j)} \beta^m - \frac{2}{3} \tilde{A}_{ij} \partial_m \beta^m + \alpha K \tilde{A}_{ij} \\&- 2 \alpha \tilde{A}_{im} \tilde{A}^m_{\;\;j} + W^2 (\alpha \mathcal{R}_{ij} - D_i D_j \alpha)^{TF} \\ \partial_t \tilde{\Gamma}^i &= \beta^m \partial_m \tilde{\Gamma}^i + \frac{2}{3} \tilde{\Gamma}^i \partial_m \beta^m - \tilde{\Gamma}^m \partial_m \beta^i + \tilde{\gamma}^{mn} \partial_m \partial_n \beta^i + \frac{1}{3} \tilde{\gamma}^{im} \partial_m \partial_n \beta^n \\ &-\tilde{A}^{im}(6\alpha \frac{\partial_m W}{W} + 2 \partial_m \alpha) + 2 \alpha \tilde{\Gamma}^i_{mn}\tilde{A}^{mn} - \frac{4}{3} \alpha \tilde{\gamma}^{im} \partial_m K \end{align}\]With the secondary expressions:
+
+\[\begin{align} \mathcal{R}_{ij} &= \tilde{\mathcal{R}}_{ij} + \mathcal{R}^W_{ij}\\ \mathcal{R}^W_{ij} &= \frac{1}{W^2} (W (\tilde{D}_i \tilde{D}_j W + \tilde{\gamma}_{ij} \tilde{D}^m \tilde{D}_m W) - 2 \tilde{\gamma}_{ij} \partial^m W \partial_m W)\\ \tilde{\mathcal{R}}_{ij} &= -\frac{1}{2} \tilde{\gamma}^{mn} \partial_m \partial_n \tilde{\gamma}_{ij} + \tilde{\gamma}_{m(i} \partial _{j)} \tilde{\Gamma}^m + \tilde{\Gamma}^m \tilde{\Gamma}_{(ij)m}+ \tilde{\gamma}^{mn} (2 \tilde{\Gamma}^k_{m(i} \tilde{\Gamma}_{j)kn} + \tilde{\Gamma}^k_{im} \tilde{\Gamma}_{kjn})\\ D_iD_j\alpha &= \tilde{D}_i \tilde{D}_j \alpha + \frac{2}{W} \partial_{(i} W \partial_{j)} \alpha\ - \frac{1}{W} \tilde{\gamma}_{ij} \tilde{\gamma}^{mn} \partial_m W \partial_n \alpha \end{align}\]And source terms:
+
+\[\begin{align} \partial_t K &\mathrel{+}= 4 \pi \alpha (S + \rho_H)\\ \partial_t \tilde{A}_{ij} &\mathrel{+}= -8 \pi \alpha \tilde{S}_{ij}^{TF}\\ \partial_t \tilde{\Gamma}^i &\mathrel{+}= -16 \pi \alpha \tilde{\gamma}^{ij} S_j\\ \mathcal{H} &\mathrel{+}= -16 \pi \rho_H\\ \mathcal{M}_i &\mathrel{+}= -8 \pi S_i\\ \end{align}\]Gauge conditions:
+
+\[\begin{align} \partial_t \alpha &= -2 \alpha K + \beta^i \partial_i \alpha\\ \partial_t \beta^i &= \frac{3}{4} \tilde{\Gamma}^i + \beta^j \partial_j \beta^i - N \beta^i \end{align}\]$N$ is generally between $0.05$ and $2$, and is often $\frac{2}{M}$ where $M$ is the total ADM mass of the system
+
+Constraints:
+
+\[\begin{align} \mathcal{M_i} &= \partial_j \tilde{A}_i^j - \frac{1}{2} \tilde{\gamma}^{jk} \tilde{A}_{jk,i} + 6 \partial_j \phi \tilde{A}_i^j - \frac{2}{3} \partial_i K \\ \partial_i \phi &= -\frac{\partial_i W}{2 W} \\ \mathcal{H} &= \mathcal{R} + \frac{2}{3} K^2 - \tilde{A}^{mn} \tilde{A}_{mn} = 0\\ \mathcal{G}^i &= \tilde{\Gamma}^i - \tilde{\gamma}^{mn} \tilde{\Gamma}^i_{mn} = 0 \end{align}\]Constraint damping:
+
+\[\begin{align} \partial_t \tilde{A}_{ij} \;\mathrel{+}= k_m \alpha \tilde{D}_{(i}\mathcal{M}_{j)} \\ \end{align}\]$k_m = 0.04 * \mathrm{shoulddamp}$, as described in the hamiltonian constraint damping section
+
+\[\begin{align} s &= \mathrm{step}(\partial_m \beta^m)\\ \\ \partial_t \Gamma^i\; &\mathrel{+}=\; - (\chi s + \frac{2}{3}) \mathcal{G}^i \partial_m \beta^m\\ \partial_t W \; &\mathrel{+}= \; C \; \Delta t \;\alpha W \mathcal{H}\\ \partial_t \tilde{\gamma}_{ij} \; &\mathrel{+}= \;k_{\gamma} \alpha \tilde{\gamma}_{k(i} \tilde{D}_{j)} \mathcal{G}^k \end{align}\]Where $\chi = 0.9$, $k_{\gamma} = -0.18$, $C = 0.15 * \mathrm{shoulddamp}$, and $\mathrm{step}(x) = x \geq 0 \;?\; 1 : 0$
+
+Gauge damping:
+
+\[\partial_t \alpha \; \mathrel{+}= \; - W (h e^{-\frac{t^2}{2 \sigma^2}}) (\alpha - W)\]Where $h = \frac{4}{5}$ and $\sigma = 20$
+
+Details are available in NR101 and NR102. Momentum constraint damping is also super unimportant in this article, and could likely be removed for a free $10\mathrm{ms}$ of performance
+
+## Variable gauge conditions
+
+There was no good place to stick this in the article, but having to manually tweak the gauge damping parameter isn’t ideal. You can use [this](https://arxiv.org/pdf/1009.0292) form:
+
+I use $a = 2, b = 2$, and implement it as follows:
+
+```
+//https://arxiv.org/pdf/1009.0292
+N = 0.05f;
+using namespace single_source;
+auto icY = args.cY.invert();
+pin(icY);
+{
+float R0 = 1.31f;
+valuef W = clamp(args.W, 1e-3f, 0.95f);
+float a = 2;
+float b = 2;
+valuef sum = 0;
+for(int i=0; i < 3; i++)
+{
+for(int j=0; j < 3; j++)
+{
+sum += icY.idx(i, j) * diff1(W, i, d) * diff1(W, j, d);
+}
+}
+valuef result = R0 * sqrt(sum) / pow(1 - pow(W, a), b);
+N = max(N, result);
+}
+```
+
+
+This isn’t used for any of the tests in this article, but I’ve found it works reliably for binary neutron stars - I avoided it purely for commonality with the paper we’re replicating (and to avoid an extensive set of discussions/tests on it)
+
+## Rasterisation
+
+I’ve skipped past this a little because the rasterisation isn’t especially physical in this article, so it’s not really something to ‘present’. I might do something more proper in the near future - but until then, I’ll just highlight what I did here without alleging that it’s correct
+
+```
+v3f grid_position = world_to_grid(cposition, dim.get(), scale.get());
+grid_position = clamp(grid_position, (v3f){3,3,3}, (v3f)dim.get() - (v3f){4,4,4});
+pin(grid_position);
+v3f colour = {0,0,0};
+valuef density = 0.f;
+auto get_rho = [&](v3i pos)
+{
+derivative_data d;
+d.pos = pos;
+d.dim = dim.get();
+d.scale = scale.get();
+bssn_args args = bssn_at(pos, dim.get(), in);
+valuef p = plugin_data.adm_p(args, d);
+pin(p);
+return p;
+};
+valuef rho = function_trilinear(get_rho, grid_position);
+if(use_colour)
+{
+auto get_col = [&](v3i pos)
+{
+derivative_data d;
+d.pos = pos;
+d.dim = dim.get();
+d.scale = scale.get();
+bssn_args args = bssn_at(pos, dim.get(), in);
+v3f c = plugin_data.get_colour(args, d);
+pin(c);
+return c;
+};
+colour = function_trilinear(get_col, grid_position) * 1;
+}
+else
+colour = {1, 1, 1};
+density = rho * 10000;
+valuef sample_length = diff.length();
+as_ref(accumulated_occlusion) += density * sample_length;
+valuef transparency = exp(-as_constant(accumulated_occlusion));
+///assuming that the intrinsic brightness is a function of density
+as_ref(accumulated_colour) += density * colour * sample_length * transparency;
+if_e(transparency <= 0.001f, [&]{
+as_ref(result) = valuei(3);
+break_e();
+});
+```
+
+
+This is a simple exponential accumulator. It’s been a while since I’ve done volumetric rendering, so you may want to double check this as it’s based off of code I wrote quite a few years ago
+
+If you want to go digging for a fully accurate rasterisation scheme, a good starting point is [here](https://www.ita.uni-heidelberg.de/~dullemond/lectures/radtrans_2013/index.shtml), and especially [here](https://arxiv.org/pdf/1207.4234). I might spend some time making this more rigorous and present it as a separate article, so it’s debugging quality for now
+
+## $v^i$ derivation
+
+\[v^i = -\beta^i + \frac{W^2 \alpha \tilde{\gamma}^{ij} \tilde{S}_j}{w h}\]This can either be worked out from [2.12](https://arxiv.org/pdf/gr-qc/9908027) and converting their variables, or by calculating:
+
+I’ll run through this. We’ll need the form of $g^{\mu\nu}$
+
+| . | 0 | j |
+|---|---|---|
+| 0 | $-\alpha^{-2}$ | $\alpha^{-2} \beta^j$ |
+| i | $\alpha^{-2} \beta^i$ | $\gamma^{ij} - \alpha^{-2} \beta^i \beta^j$ |
+
+First, we need to calculate $u_0$:
+
+\[\begin{align} u^0 &= g^{0\mu} u_\mu\\ u^0 &= g^{00} u_0 + g^{0i} u_i\\ u^0 &= -\alpha^{-2} u_0 + \alpha^{-2} \beta^i u_i \\ u_0 &= \frac{u^0 - \alpha^{-2} \beta^i u_i}{-\alpha^{-2}} \end{align}\]And we need this definition:
+
+\[u^0 = \frac{w}{\rho_* \alpha}\]Now lets derive $v^i$:
+
+\[\begin{align} u^i &= g^{i0} u_0 + g^{ij} u_j\\ u^i &= \alpha^{-2} \beta^i u_0 + (\gamma^{ij} - \alpha^{-2} \beta^i \beta^j) u_j\\ u^i &= \alpha^{-2} \beta^i \frac{u^0 - \alpha^{-2} \beta^j u_j}{-\alpha^{-2}} + (\gamma^{ij} - \alpha^{-2} \beta^i \beta^j) u_j\\ u^i &= -\beta^i (u^0 - \alpha^{-2} \beta^j u_j) + (\gamma^{ij} - \alpha^{-2} \beta^i \beta^j) u_j\\ u^i &= -\beta^i u^0 + \alpha^{-2} \beta^i \beta^j u_j + \gamma^{ij} u_j - \alpha^{-2} \beta^i \beta^j u_j\\ u^i &= -\beta^i u^0 + \gamma^{ij} u_j \\ u^i &= -\beta^i u^0 + \gamma^{ij} \frac{\tilde{S}_j}{\rho_* h}\\ v^i &= -\beta^i + \frac{\gamma^{ij} \frac{\tilde{S}_j}{\rho_* h}}{u^0}\\ v^i &= -\beta^i + \frac{\gamma^{ij} \frac{\tilde{S}_j}{\rho_* h}}{\frac{w}{\rho_* \alpha}}\\ v^i &= -\beta^i + \frac{\gamma^{ij} \tilde{S}_j \alpha}{h w}\\ v^i &= -\beta^i + \frac{W^2 \tilde{\gamma}^{ij} \tilde{S}_j \alpha}{h w}\\ \end{align}\]Bob’s your uncle
+
+## $v^i$’s vacuum boundary condition is potentially inconsistent
+
+This paper says that when the atmosphere is classed as a vacuum, $v^i = 0$. This is a very strange limit: Here’s the equation for $v^i$:
+
+\[v^i = -\beta^i + \frac{W^2 \alpha \tilde{\gamma}^{ij} \tilde{S}_j}{w h}\]This probably tends to $-\beta^i$ when $\rho_* = 0$, not $0$. I’ve included this as a configurable tweak in the code, and it does affect inspiral
+
+Interestingly, the paper we’re looking at uses a rotating coordinate frame, which is essentially a velocity applied to the gauge conditions initially (ie $\beta^i$). This possible limit error in combination with the rotating coordinate frame (which results in a strongly nonzero $\beta^i$), could lead to a significant discontinuity in the coordinate velocity at the edge of the star. This may be an exacerbating factor behind this paper’s thin shell of material drifting away from the surface
+
+# Implementation Details
+
+There are a variety of implementation details and other things that tend not to be discussed, that I will now dig into
+
+## Divisions by zero
+
+As you may have noticed, these equations involve quite a bit of dividing by zero. In general, there are many instances of divisions by $w$, or $W$, which we’ll have to deal with
+
+In general, this is pretty straightforward. For division by $W$, I clamp $W$ to $0.1$. This might seem quite large, but in general we don’t really care about the hydrodynamics near the singularity of a black hole, and it’s more important for the equations to remain regular
+
+For divisions by all other quantities, I use a division tolerance of $5e-8$, of the following form:
+
+```
+template<typename T>
+auto safe_divide(const auto& top, const T& bottom, float tol = 5e-8f)
+{
+valuef bsign = ternary(bottom >= 0, valuef(1.f), valuef(-1.f));
+return ternary(fabs(bottom) <= tol, top / (bsign * tol), top / bottom);
+}
+```
+
+
+This is basically a signed form of $\frac{a}{\mathrm{max}(b, tol)}$. The viscosity is turned off at a density of $1e-7$
+
+## Non atmospheric hydrodynamics
+
+One of the key aspects of this paper is the non-atmospheric aspect of it. The idea here is that when $\rho_* < \rho_{min}$, you flush all your evolution variables to $0$ for a true vacuum. This leaves a few questions about exactly how and when to flush your evolution variables to zero
+
+Flushing the variables after every substep seems like it could lead to non convergent behaviour, as values near the threshold will oscillate between being 0 and $\rho_{min} + \mathrm{small}$. Instead, I only flush the variables to vacuum after a full step
+
+## Operator Splitting
+
+As mentioned, these equations are of the form:
+
+\[\partial_t q + \partial_i (q v^i) = \mathrm{Source}\]Operator splitting means that you update all the advection terms first, and then evaluate all source terms post advection with the new values. In theory, this improves stability
+
+I did some fairly extensive testing of various operator splitting methods vs treating these as regular evolution equations for this article, and was not able to find any stability difference. Operator splitting requires a few extra buffers of storage for intermediate variables, so in this case it was strictly worse
+
+That said, it’s possible that more extreme test cases would benefit from this, so I’ll be giving it more testing eventually
+
+## Black Hole Collapse
+
+Matter within a black hole in the set of equations I’m presenting here is only moderately badly behaved at the singularity, which is frankly incredible. You do need to do two things to make this work well:
+
+- Disable all viscosity in the vicinity of an event horizon
+- Dissipate all the matter fields to zero when within an event horizon
+
+In general, the lapse $\alpha$ is a good surrogate variable for being near an event horizon. I use a conservative $0.4$ for disabling viscosity (which may be too high), and $0.15$ for dissipating matter fields. The latter constraint imposes a minimum simulation resolution to successfully simulate a black hole collapse, as the simulation will eventually fail if matter is not damped within an event horizon. Luckily, that’s about the same minimum resolution that you need to simulate a black hole *anyway*
+
+```
+//we're in a black hole, damp away the material
+if_e(args.gA < MIN_LAPSE, [&]{
+valuef damp = 0.1f;
+valuef dt_p_star = damp * (0 - h_in.p_star[pos, dim]);
+valuef dt_e_star = damp * (0 - h_in.e_star[pos, dim]);
+valuef dt_s0 = damp * (0 - h_in.Si[0][pos, dim]);
+valuef dt_s1 = damp * (0 - h_in.Si[1][pos, dim]);
+valuef dt_s2 = damp * (0 - h_in.Si[2][pos, dim]);
+valuef dt_col0 = damp * (0 - h_in.colour[0][pos, dim]);
+valuef dt_col1 = damp * (0 - h_in.colour[1][pos, dim]);
+valuef dt_col2 = damp * (0 - h_in.colour[2][pos, dim]);
+write_result(dt_p_star, dt_e_star, {dt_s0, dt_s1, dt_s2}, {dt_col0, dt_col1, dt_col2});
+return_e();
+});
+```
+
+
+## Boundaries
+
+The Sommerfeld boundary conditions I find tend to be a bit unstable with matter. Simply damping the fields away to zero as they approach the boundary works very well. This means you can turn the usual radiative boundary condition off. This is technically a sponge boundary condition:
+
+```
+valuef boundary_damp = 0.25f;
+dp_star += ternary(boundary_dist <= 15, -hydro_args.p_star * boundary_damp, {});
+de_star += ternary(boundary_dist <= 15, -hydro_args.e_star * boundary_damp, {});
+as_ref(dSi) += ternary(boundary_dist <= 15, -hydro_args.Si * boundary_damp, {});
+```
+
+
+## Kreiss-Oliger
+
+Kreiss-Oliger is not applied to any hydrodynamic fields as it would upset the conservation. The hydro scheme being TVD means that it is unnecessary. If you do not use a TVD hydro scheme, you’ll want to switch Kreiss-Oliger on, with the obvious ramifications of non conservation of your quantities
+
+## $e_*$ blows up
+
+One documented consequence of the atmosphere-free formulation is that a thin (resolution dependent) shell of material drifts away from the star, and remains suspended around it. This thin shell in theory can end up superheating, causing unfun code times
+
+This paper fixes it by clamping \(e_* = min(e_*, 10 \rho_*)\). I do this when $\rho_* < 10\rho_{min}$
+
+I haven’t found this modification to be at all important in practice, so it’s disabled by default
+
+## Hamiltonian constraint damping
+
+There are two new major features that I implemented since we last simulated black holes together:
+
+- Hamiltonian constraint damping
+- No constraint damping near the boundary
+
+Both of these are quite important to reducing simulation errors. I use the following modification to $\partial_t W$:
+
+\[\partial_t W \; \mathrel{+}= \; C \; \Delta t \;\alpha W \mathcal{H}\]$C$ is a damping strength, set to $0.15$. It is $0$ 20 when the distance to the simulation’s boundary is $<10$ in grid cells. I’ve specified this behaviour as $\mathrm{shoulddamp}$ in the full set of equations above
+
+```
+valuef should_damp = ternary(distance_to_boundary(pos, dim) >= valuei(10), valuef(1.f), valuef(0.f));
+```
+
+
+- The prefix term of $C \Delta t$ is derived from
+[this](https://arxiv.org/pdf/2404.01137)paper - We’re using $\mathcal{H}_-$
+- The lapse ($\alpha$) term improves the behaviour of this modification for BBH collisions
+- The extra factor of $- W$ comes from transforming this modification from the $\phi$ conformal factor, to the $W$ conformal factor
+
+The near-boundary modification has the effect of significantly reducing boundary constraint contamination of the simulation, compare below. Keep an eye on the top left box, which is the Hamiltonian constraint error
+
+No damping:
+
+Damping everywhere:
+
+Damping excludes boundary:
+
+This makes a significant difference to black hole, and neutron star inspiral, as Hamiltonian constraint errors basically pollute everything in longer running sims. This modification is enabled in all tests in this article
+
+## Source terms
+
+Generating the full stress energy tensor with it’s 10 components is a mistake - it’s much better to directly express the source terms from the underlying formalism for performance. Implementing this correctly is quite difficult in a standard programming language, because the BSSN equation implementation itself needs generic, direct access to whatever buffers can derive our source terms (including $w$)
+
+If you want good performance, I would highly recommend using code generation to specialise your evolution kernel to different features that are enabled - generating the accesses directly, instead of literally constructing the stress-energy tensor
+
+In the next article (and into the future 21), we’ll be adding even more matter sources as well, so if you’re implementing this - now’s the time to get this to work correctly. It’s far too long to go into here, but check out the
+
+[linked source code](https://github.com/20k/20k.github.io/blob/master/code/NR5/plugin.hpp)if you want to see the details of how this works implementation-wise
+
+## Integration
+
+I use Crank-Nicolson for the hydrodynamics part of this. Backwards-Euler has bad theoretical properties when it comes to fluid dynamics, and it shows - it’s very dissipative. For people who want to experiment with this, I’ve included both a relaxation parameter, and a configurable implicitness parameter. The paper that we’re looking at weights the integration a little towards the implicit side (and uses a value of $0.6$) - in general this serves to accelerate inspiral
+
+A very interesting and related result I came across when researching this is that you should [never use more than two iterations](https://scispace.com/pdf/stability-of-the-iterated-crank-nicholson-method-in-1jb7vdqz8u.pdf) for Crank-Nicolson. It’s not actually strictly true - while higher iteration values don’t improve the accuracy, they *do* increase the CFL limit - but the part about the method being unstable for various iteration values is interesting
+
+The implementation of this is a bit complex. To avoid an extra set of buffers for Crank-Nicolson, I unconditionally recalculate the F(base) term every iteration in a preparation kernel before the main kernel execution, as it is very cheap to do so (and we’re more limited by memory usage)
+
+```
+//crank nicolson
+auto write_result = [&](valuef dt_p_star, valuef dt_e_star, v3f dt_Si, v3f dt_col)
+{
+if(is_prep_kernel)
+{
+//write deltas out
+valuef fin_p_star = h_base.p_star[pos, dim] + dt_p_star * timestep.get();
+valuef fin_e_star = h_base.e_star[pos, dim] + dt_e_star * timestep.get();
+fin_p_star = max(fin_p_star, 0.f);
+fin_e_star = max(fin_e_star, 0.f);
+as_ref(h_out.p_star[pos, dim]) = (fin_p_star - h_base.p_star[pos, dim]) / timestep.get();
+as_ref(h_out.e_star[pos, dim]) = (fin_e_star - h_base.e_star[pos, dim]) / timestep.get();
+for(int i=0; i < 3; i++)
+as_ref(h_out.Si[i][pos, dim]) = dt_Si[i];
+if(use_colour)
+{
+for(int i=0; i < 3; i++)
+{
+valuef fin_colour = h_base.colour[i][pos, dim] + dt_col[i] * timestep.get();
+fin_colour = max(fin_colour, 0.f);
+as_ref(h_out.colour[i][pos, dim]) = (fin_colour - h_base.colour[i][pos, dim]) / timestep.get();
+}
+}
+}
+else
+{
+//predictor, ie euler
+if_e(iteration.get() == 0, [&]{
+as_ref(h_out.p_star[pos, dim]) = max(h_base.p_star[pos, dim] + dt_p_star * timestep.get(), 0.f);
+as_ref(h_out.e_star[pos, dim]) = max(h_base.e_star[pos, dim] + dt_e_star * timestep.get(), 0.f);
+for(int i=0; i < 3; i++)
+as_ref(h_out.Si[i][pos, dim]) = h_base.Si[i][pos, dim] + dt_Si[i] * timestep.get();
+if(use_colour)
+{
+for(int i=0; i < 3; i++)
+{
+as_ref(h_out.colour[i][pos, dim]) = max(h_base.colour[i][pos, dim] + dt_col[i] * timestep.get(), 0.f);
+}
+}
+});
+//corrector, ie the next fixed point step for crank nicolson
+if_e(iteration.get() != 0, [&]{
+float relax = 0.f;
+valuef root_dp_star = declare_e(h_out.p_star[pos, dim]);
+valuef root_de_star = declare_e(h_out.e_star[pos, dim]);
+v3f root_dSi = declare_e(h_out.index_Si(pos, dim));
+v3f root_dcol;
+if(use_colour)
+root_dcol = declare_e(h_out.index_colour(pos, dim));
+//impl = 1 == backwards euler, impl = 0 == fowards euler. impl = 0.5 == crank nicolson/implicit midpoint
+float impl = 0.5;
+float expl = 1 - impl;
+auto apply = [&](auto x0, auto xi, auto f_x0, auto f_xi)
+{
+return relax * xi + (1 - relax) * (x0 + timestep.get() * (expl * f_x0 + impl * f_xi));
+};
+valuef fin_p_star = apply(h_base.p_star[pos, dim], h_in.p_star[pos, dim], root_dp_star, dt_p_star);
+valuef fin_e_star = apply(h_base.e_star[pos, dim], h_in.e_star[pos, dim], root_de_star, dt_e_star);
+v3f fin_Si = apply(h_base.index_Si(pos, dim), h_in.index_Si(pos, dim), root_dSi, dt_Si);
+as_ref(h_out.p_star[pos, dim]) = max(fin_p_star, 0.f);
+as_ref(h_out.e_star[pos, dim]) = max(fin_e_star, 0.f);
+for(int i=0; i < 3; i++)
+as_ref(h_out.Si[i][pos, dim]) = fin_Si[i];
+if(use_colour)
+{
+v3f fin_col = apply(h_base.index_colour(pos, dim), h_in.index_colour(pos, dim), root_dcol, dt_col);
+for(int i=0; i < 3; i++)
+as_ref(h_out.colour[i][pos, dim]) = max(fin_col[i], 0.f);
+}
+});
+}
+};
+```
+
+
+## Performance
+
+The vast majority of the simulation grid has no fluid in it, so simulating the evolution equations there is completely pointless. A great performance improvement is to early-out via a cheap to check condition
+
+A good condition to use is as follows:
+
+```
+if_e(p_star <= min_p_star, [&]{
+valuef dp_sum = 0;
+for(int i=0; i < 3; i++)
+{
+dp_sum += fabs(diff1(p_star, i, d));
+}
+if_e(dp_sum == 0, [&]{
+//or whatever fields are applicable
+as_ref(Q_out[pos, dim]) = valuef(0);
+return_e();
+});
+});
+```
+
+
+This relies on the stencil widths for the derivatives being the same or greater than the maximum stencil width for the hydro implementation
+
+I do this for all kernels, ie $w$, $Q$, and the evolution equations themselves. This results in the entire hydrodynamics formalism becoming very cheap to simulate, as the majority of the grid is empty and can be early-outed with effectively a single memory read + corresponding writes. There’s still a reasonable amount of overhead in the BSSN kernel itself however, as you still must read the hydro quantities. There’s probably a branchy way of avoiding some of those reads by testing a single stress energy tensor component, which would be interesting to explore
+
+Overall, the performance of this method has a ~20% overhead compared to a vacuum simulation - roughly 80ms/tick, from 67ms/tick for an equivalent vacuum simulation. The hydrodynamic equations *themselves* take only a few ms out of an ~80ms/tick runtime, so there’s some optimisation potential
+
+# Papers
+
+Equations of state [https://arxiv.org/pdf/1108.1189](https://arxiv.org/pdf/1108.1189)
+
+Fluid dynamics [https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2011/Chapter_8.pdf](https://www.ita.uni-heidelberg.de/~dullemond/lectures/num_fluid_2011/Chapter_8.pdf)
+
+Ye olde fluid dynamics paper [https://articles.adsabs.harvard.edu/full/seri/ApJS./0055//0000246.000.html](https://articles.adsabs.harvard.edu/full/seri/ApJS./0055//0000246.000.html)
+
+Relativistic hydrodynamics [https://academic.oup.com/ptp/article/82/3/535/1851751](https://academic.oup.com/ptp/article/82/3/535/1851751)
+
+Stability paper [https://arxiv.org/pdf/2404.01137](https://arxiv.org/pdf/2404.01137)
+
+Initial conditions [https://arxiv.org/pdf/1606.04881](https://arxiv.org/pdf/1606.04881)
+
+Primary paper of this article [https://arxiv.org/pdf/gr-qc/0209102](https://arxiv.org/pdf/gr-qc/0209102)
+
+Setup paper [https://arxiv.org/pdf/gr-qc/9908027](https://arxiv.org/pdf/gr-qc/9908027)
+
+Followup paper by the same authors, which partially discusses the limitations of this method [https://arxiv.org/pdf/astro-ph/0503420](https://arxiv.org/pdf/astro-ph/0503420)
+
+Contains some interesting models [https://arxiv.org/pdf/0804.0594](https://arxiv.org/pdf/0804.0594)
+
+Modern reference for artificial viscosity [https://arxiv.org/pdf/2202.11084](https://arxiv.org/pdf/2202.11084)
+
+Interesting paper about tov/spinning models [https://arxiv.org/pdf/gr-qc/0403029](https://arxiv.org/pdf/gr-qc/0403029)
+
+Neutron star merger paper, which includes a WENO scheme [https://arxiv.org/pdf/1509.08804](https://arxiv.org/pdf/1509.08804)
+
+A truly baffling paper that uses this hydrodynamics formalism [https://arxiv.org/pdf/2203.05149](https://arxiv.org/pdf/2203.05149)
+
+A Lagrangian approach [https://arxiv.org/pdf/2205.08130](https://arxiv.org/pdf/2205.08130)
+
+Equations of state for neutron stars [https://arxiv.org/pdf/0812.2163](https://arxiv.org/pdf/0812.2163)
+
+Radiative transfer: [https://arxiv.org/pdf/1207.4234](https://arxiv.org/pdf/1207.4234)
+
+Interesting notes on Godunov’s scheme [https://www.astro.uzh.ch/~stadel/lib/exe/fetch.php?media=spin:compastro_godunov.pdf](https://www.astro.uzh.ch/~stadel/lib/exe/fetch.php?media=spin:compastro_godunov.pdf)
+
+2008 hydro review paper with some good comparative information [https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf](https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf)
+
+-
+My email is icedshot@gmail.com, or if you’d like - follow my bluesky at
+
+[@spacejames.bsky.social](https://bsky.app/profile/spacejames.bsky.social). Please feel free to contact me for any reason at all, even if you want to just chit chat or nerd out about space[↩](https://20k.github.io#fnref:contact) -
+There’s actually a number of different forms of these equations, I think at some point I’m going to test some of the more recent ones and see how they compare. This is often called ‘Wilson’s’ formulation, see
+
+[here](https://link.springer.com/content/pdf/10.12942/lrr-2008-7.pdf)[↩](https://20k.github.io#fnref:schwifty) -
+You can check this from the hamiltonian constraint definition, and doing a roundtrip from the source terms. It only works out if $\alpha = 1$
+
+[↩](https://20k.github.io#fnref:check) -
+We’ll just be literally adding them afterwards
+
+[↩](https://20k.github.io#fnref:solving) -
+When simulating magnetic fields, a conserved quantity is also the magnetic field strength
+
+[↩](https://20k.github.io#fnref:exotic) -
+In general, I’ll implement anything I can get my hands on which has a complete set of equations for it. This article is explicitly intended to give people who know hydrodynamics, but not GR, enough room to work with to say “aha, I know how to solve that kind of equation!”
+
+[↩](https://20k.github.io#fnref:anything) -
+We’re using an ‘unsplit’ scheme where you just sum the individual problems. There are other ways of doing this, eg one dimension at a time
+
+[↩](https://20k.github.io#fnref:generally) -
+Kreiss-Oliger dissipation is only intended to handle problems that build up as a result of finite difference truncation errors. These can cause increasing oscillations. It is however implicitly - perhaps unintentionally - used to smooth the grid in general. Particularly, singularities (being a discontinuity, ie a shock) are smoothed out by Kreiss-Oliger, which damps it. I don’t know that this multipurpose function of Kreiss-Oliger is strictly intended, but it appears to be common
+
+[↩](https://20k.github.io#fnref:ramble) -
+You expect fluids to be discontinuous in general, eg at the edge of a star. In GR, the only true ‘shock’/discontinuity is the singularity, which is managed via gauge techniques. The presence of any other kind of shock is likely extremely physically suspect
+
+[↩](https://20k.github.io#fnref:shocks) -
+Going for a dig through the hydrodynamics literature is surprising. Every field develops its own notation and language, and hydrodynamics appears to have developed its own convention for which steps are omitted when describing a particular scheme. Finding documentation on those omitted steps is surprisingly challenging
+
+[↩](https://20k.github.io#fnref:implement) -
+This is one of the reasons why higher order fluid simulations are less useful than they might appear. High order in smooth areas only is all well and good, but that’s also precisely where we need the least resolution. There’s some interesting
+
+[theoretical reasons](https://en.wikipedia.org/wiki/Godunov%27s_theorem)as to why this kind of order decay is necessary[↩](https://20k.github.io#fnref:notes) -
+Really, anything reasonable will work here, and you can use $w=1$ if you want
+
+[↩](https://20k.github.io#fnref:anyguess) -
+Calculating the pressure involves calculating the quantity $\rho_0 \epsilon$: we could scavenge one of the $W^2$ terms from that calculation to instead remove the $\gamma_{ij}$ term. However, the construction presented is a slightly more general approach that we can use in other methods, rather than relying on the
+
+*specific*form of the source terms, so we’ll stick with it[↩](https://20k.github.io#fnref:alttechnique) -
+I’ve seen some other schemes do similar things, so it’s not that weird
+
+[↩](https://20k.github.io#fnref:minor) -
+I only encountered this when using a non conservative discretisation of the equations. It may be a product of the specific hydrodynamic scheme, and/or related to the $-\beta^i$ limit issue mentioned in the appendix
+
+[↩](https://20k.github.io#fnref:real) -
+While the TOV code produces the exact correct rest mass of $M_0 = 1.535$, after the procedure to insert it into the simulation and correct for the hamiltonian constraint, our rest mass is higher at $M_0 = ~1.54$. It isn’t a case of the laplacian solving step being incorrect, and may be a feature of our relatively small simulation area + close in boundary condition leading to a slight error for the rest mass. I had to shrink the simulation area to get enough resolution to successfully resolve the black hole while not dying of old age. I need a better GPU for a lot of this really
+
+[↩](https://20k.github.io#fnref:discussion) -
+I don’t
+
+*think*an arbitrary colour distribution actually reproduces $\rho_*$ and the correct motion of an advected quantity, so it’s good to treat this as illustrative of the velocity flow[↩](https://20k.github.io#fnref:arbitrary) -
+[This is an accurate depicion of my brain’s internal task prioritisation process](https://www.youtube.com/watch?v=RR-g4vuCtog)[↩](https://20k.github.io#fnref:fishies) -
+It’s a little unsatisfying - I’ve been searching around for test cases which give exact values, but many if not most are missing key parameters. It seems like a particular initial conditions solver is used in the literature, and so papers frequently omit key details. Within a few articles I’ll probably get around to gravitational waves, which is when I’ll be investing in a post Newtonian expansion or energy minimisation scheme, and then we can find out precisely how physically accurate this is
+
+[↩](https://20k.github.io#fnref:testability) -
+A smoother cutoff doesn’t seem to improve the boundary behaviour
+
+[↩](https://20k.github.io#fnref:smooth) -
+The next article is N body. After that, it might be more modern hydrodynamics, or even preon stars or something
+
+[↩](https://20k.github.io#fnref:preon)

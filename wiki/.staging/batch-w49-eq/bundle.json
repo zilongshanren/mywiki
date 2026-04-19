@@ -1,0 +1,462 @@
+{
+  "batch_id": "batch-w49-eq",
+  "agent_note": "Wave-49 mixed batch: ciechanowski (airfoil + moon), alanzucconi (minecraft plugin / PCA / orbital mechanics), apoorvaj ×4 (shader graph contract, coordinate spaces, static site antiframework, vibe-coding), elopezr (life-death of gfx programmer, art of packing data), halisavakis (HAZE manual; skipped 2 bsky digest issues), simonschreibt (high-heel problem, sims-4 mirrors), thenumb.at monte-carlo chapters 2/3/4. Moon dup + 2 Technically Art digests skipped.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ciechanow.ski/2024-02-27_airfoil-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-airfoil",
+      "title": "Airfoil"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2024-12-17_moon-bartosz-ciechanowski.md",
+      "status": "ingested",
+      "source_slug": "ciechanow-moon",
+      "title": "Moon"
+    },
+    {
+      "path": "raw/articles/ciechanow.ski/2024-12-17_moon.md",
+      "status": "skipped_duplicate",
+      "reason": "Identical body to 2024-12-17_moon-bartosz-ciechanowski.md; only frontmatter title/url differ (site index vs article URL)."
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2024-04-17_minecraft-plugin-development-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-minecraft-plugin",
+      "title": "Minecraft Plugin Development"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2025-01-12_pca-for-programmers-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-pca-intro",
+      "title": "PCA for Programmers"
+    },
+    {
+      "path": "raw/articles/alanzucconi.com/2025-09-04_orbital-mechanics-alan-zucconi.md",
+      "status": "ingested",
+      "source_slug": "alanzucconi-orbital-mechanics",
+      "title": "Orbital Mechanics"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2024-05-05_quick-terminology-refresher.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-shader-graph-contract",
+      "title": "The Shader Graph Contract"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2025-01-09_different-coordinate-spaces-and-how-they-relate-to-the-shade.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-coordinate-spaces",
+      "title": "Different Coordinate Spaces"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2025-10-04_stop-over-engineering-static-websites.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-static-site-antiframework",
+      "title": "Stop Over-engineering Static Websites"
+    },
+    {
+      "path": "raw/articles/apoorvaj.io/2026-02-13_vibe-coding-a-tax-calculator.md",
+      "status": "ingested",
+      "source_slug": "apoorvaj-vibe-coding",
+      "title": "Vibe-coding a Tax Calculator"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2024-05-16_life-and-death-of-a-graphics-programmer.md",
+      "status": "ingested",
+      "source_slug": "elopezr-graphics-programmer-life",
+      "title": "Life and Death of a Graphics Programmer"
+    },
+    {
+      "path": "raw/articles/elopezr.com/2025-06-16_the-art-of-packing-data.md",
+      "status": "ingested",
+      "source_slug": "elopezr-art-of-packing-data",
+      "title": "The Art of Packing Data"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2024-11-22_technically-art-issue-140-22-11-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 140 is a pure bluesky-quote aggregation without editor commentary; matches the jendrikillner-digest skip precedent."
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2025-01-17_technically-art-issue-141-17-1-2025.md",
+      "status": "skipped_offtopic",
+      "reason": "Technically Art 141 same format as 140: aggregated bluesky posts with no added commentary."
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2025-10-01_haze-how-to-use.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-haze-manual",
+      "title": "HAZE — How to Use"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2025-03-17_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-high-heel-problem",
+      "title": "The High Heel Problem"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2025-03-28_simonschreibt.md",
+      "status": "ingested",
+      "source_slug": "simonschreibt-sims-4-mirrors",
+      "title": "Sims 4 Mirrors"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2025-04-05_monte-carlo-crash-course.md",
+      "status": "ingested",
+      "source_slug": "slater-mc-integration",
+      "title": "Monte Carlo Crash Course — Exponentially Better Integration"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2025-04-12_monte-carlo-crash-course.md",
+      "status": "ingested",
+      "source_slug": "slater-mc-sampling",
+      "title": "Monte Carlo Crash Course — Sampling"
+    },
+    {
+      "path": "raw/articles/thenumb.at/2025-04-19_monte-carlo-crash-course.md",
+      "status": "ingested",
+      "source_slug": "slater-mc-rendering",
+      "title": "Monte Carlo Crash Course — Case Study: Rendering"
+    }
+  ],
+  "concepts_created": [
+    "airfoil-lift-physics",
+    "fluid-flow-visualization",
+    "keplerian-orbits",
+    "n-body-gravity-simulation",
+    "moon-phases-tides",
+    "minecraft-plugin-development",
+    "pca-intro",
+    "shader-graph-contract",
+    "static-site-antiframework",
+    "vibe-coding-workflow",
+    "graphics-programmer-constraints",
+    "shader-permutation-explosion",
+    "clean-code-critique",
+    "gpu-data-packing",
+    "haze-urp-volumetric-fog",
+    "character-height-variation-problem",
+    "planar-mirror-rendering",
+    "monte-carlo-integration",
+    "inversion-sampling-prng",
+    "path-tracing-monte-carlo"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "ciechanow-airfoil",
+    "ciechanow-moon",
+    "alanzucconi-minecraft-plugin",
+    "alanzucconi-pca-intro",
+    "alanzucconi-orbital-mechanics",
+    "apoorvaj-shader-graph-contract",
+    "apoorvaj-coordinate-spaces",
+    "apoorvaj-static-site-antiframework",
+    "apoorvaj-vibe-coding",
+    "elopezr-graphics-programmer-life",
+    "elopezr-art-of-packing-data",
+    "halisavakis-haze-manual",
+    "simonschreibt-high-heel-problem",
+    "simonschreibt-sims-4-mirrors",
+    "slater-mc-integration",
+    "slater-mc-sampling",
+    "slater-mc-rendering"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Airfoil | [[airfoil-lift-physics]]、[[fluid-flow-visualization]] |\n| Moon | [[keplerian-orbits]]、[[moon-phases-tides]]、[[n-body-gravity-simulation]] |"
+    },
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[airfoil-lift-physics]]\n- [[fluid-flow-visualization]]\n- [[keplerian-orbits]]\n- [[moon-phases-tides]]\n- [[n-body-gravity-simulation]]"
+    },
+    {
+      "file": "wiki/people/bartosz-ciechanowski.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/ciechanow-airfoil]]\n- [[sources/ciechanow-moon]]"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[minecraft-plugin-development]] — 2024 年插件教程\n- [[pca-intro]] — 2025 年 PCA 入门\n- [[keplerian-orbits]] / [[n-body-gravity-simulation]] — 2025 年轨道力学长文"
+    },
+    {
+      "file": "wiki/people/alan-zucconi.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alanzucconi-minecraft-plugin]]\n- [[sources/alanzucconi-pca-intro]]\n- [[sources/alanzucconi-orbital-mechanics]]"
+    },
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| The Shader Graph Contract | [[shader-graph-contract]] |\n| Different Coordinate Spaces | [[coordinate-spaces]] 补充 |\n| Stop Over-engineering Static Websites | [[static-site-antiframework]] |\n| Vibe-coding a Tax Calculator | [[vibe-coding-workflow]] |"
+    },
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shader-graph-contract]]\n- [[static-site-antiframework]]\n- [[vibe-coding-workflow]]"
+    },
+    {
+      "file": "wiki/people/apoorva-joshi.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/apoorvaj-shader-graph-contract]]\n- [[sources/apoorvaj-coordinate-spaces]]\n- [[sources/apoorvaj-static-site-antiframework]]\n- [[sources/apoorvaj-vibe-coding]]"
+    },
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Life and Death of a Graphics Programmer | [[graphics-programmer-constraints]]、[[shader-permutation-explosion]]、[[clean-code-critique]] |\n| The Art of Packing Data | [[gpu-data-packing]] |"
+    },
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[graphics-programmer-constraints]]\n- [[clean-code-critique]]\n- [[shader-permutation-explosion]]\n- [[gpu-data-packing]]"
+    },
+    {
+      "file": "wiki/people/emilio-lopez-ros.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/elopezr-graphics-programmer-life]]\n- [[sources/elopezr-art-of-packing-data]]"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[haze-urp-volumetric-fog]] —— 作者商品化的 URP froxel 体积雾 renderer feature"
+    },
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-haze-manual]]"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| The High Heel Problem | [[character-height-variation-problem]] |\n| Sims 4 Mirrors | [[planar-mirror-rendering]] |"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[character-height-variation-problem]]\n- [[planar-mirror-rendering]]"
+    },
+    {
+      "file": "wiki/people/simon-trumpler.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/simonschreibt-high-heel-problem]]\n- [[sources/simonschreibt-sims-4-mirrors]]"
+    },
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Monte Carlo Crash Course – Exponentially Better Integration | [[monte-carlo-integration]] |\n| Monte Carlo Crash Course – Sampling | [[inversion-sampling-prng]] |\n| Monte Carlo Crash Course – Case Study: Rendering | [[path-tracing-monte-carlo]] |"
+    },
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[monte-carlo-integration]]\n- [[inversion-sampling-prng]]\n- [[path-tracing-monte-carlo]]"
+    },
+    {
+      "file": "wiki/people/max-slater.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/slater-mc-integration]]\n- [[sources/slater-mc-sampling]]\n- [[sources/slater-mc-rendering]]"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/apoorvaj-coordinate-spaces]]"
+    },
+    {
+      "file": "wiki/rendering/volumetric-fog-froxels.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[haze-urp-volumetric-fog]] — URP 上 froxel 体积雾的可购买工程实现（Harry Alisavakis 的 HAZE）"
+    },
+    {
+      "file": "wiki/rendering/quasi-monte-carlo.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[monte-carlo-integration]] — 基础 MC 积分的收敛率（Slater 系列第二章）\n- [[inversion-sampling-prng]] — PRNG + 拒绝 / 逆变换采样（Slater 系列第三章）\n- [[path-tracing-monte-carlo]] — 渲染应用（Slater 系列第四章）"
+    },
+    {
+      "file": "wiki/rendering/stencil-portal-shader-antichamber.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planar-mirror-rendering]] — 用 stencil 区分多面镜子的同源工艺"
+    },
+    {
+      "file": "wiki/software-design/tactical-programming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[clean-code-critique]] — 游戏/图形视角下对 clean code 的系统批判\n- [[vibe-coding-workflow]] — AI 辅助下的 tactical 循环"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[airfoil-lift-physics]] | 升力物理与流体力学入门（Ciechanowski） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fluid-flow-visualization]] | Eulerian 箭头 × Lagrangian 粒子 × 标量色图的三重表示 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[keplerian-orbits]] | Kepler 轨道与两体问题（Ciechanowski Moon × Zucconi Orbital） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[n-body-gravity-simulation]] | N 体引力的数值积分：Euler / Verlet / symplectic |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[moon-phases-tides]] | 月相、潮汐、食——引力梯度与节点几何 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[pca-intro]] | PCA 直觉入门：椭球半轴与特征分解 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-graph-contract]] | Shader graph 的 sink 节点契约（unlit/lit/layered） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-permutation-explosion]] | shader 排列爆炸与 #stutterstruggle |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-data-packing]] | UNORM/SNORM/bitfield/BFE/BFI 的 HLSL + RDNA 实战 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[haze-urp-volumetric-fog]] | Alisavakis HAZE：URP froxel 体积雾商品化实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[planar-mirror-rendering]] | 平面镜 stencil + oblique 投影 + 独立 cull |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[monte-carlo-integration]] | MC 积分基础：1/√M 与维度无关 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[inversion-sampling-prng]] | PRNG、拒绝、逆变换采样 + Jacobian |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[path-tracing-monte-carlo]] | MC 套渲染方程：cosine-weighted、NEE、MIS、RR |"
+    },
+    {
+      "category_header": "## 软件工程（wiki/software-design/）",
+      "row": "| [[static-site-antiframework]] | 反框架：本机 Pandoc + wrangler 替代 JAMstack VM |"
+    },
+    {
+      "category_header": "## 软件工程（wiki/software-design/）",
+      "row": "| [[vibe-coding-workflow]] | AI 代理编程工作流：plan mode + per-PR review + 对账测试 |"
+    },
+    {
+      "category_header": "## 软件工程（wiki/software-design/）",
+      "row": "| [[graphics-programmer-constraints]] | 图形程序员行业的硬约束与世界观 |"
+    },
+    {
+      "category_header": "## 软件工程（wiki/software-design/）",
+      "row": "| [[clean-code-critique]] | 游戏/图形视角对 clean code 的系统批判 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[minecraft-plugin-development]] | Minecraft plugin vs mod vs data pack 的生态与 Paper/Bukkit 工程 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[character-height-variation-problem]] | 角色高度变化的 6 种解法（高跟鞋问题） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-airfoil]] | Ciechanowski：翼型升力与流体可视化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/ciechanow-moon]] | Ciechanowski：月球、Kepler、潮汐与食 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-minecraft-plugin]] | Zucconi：Minecraft Paper 插件开发完整教程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-pca-intro]] | Zucconi：PCA 程序员视角直觉入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alanzucconi-orbital-mechanics]] | Zucconi：轨道力学长文（Kepler + n-body） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-shader-graph-contract]] | Joshi：shader graph 的 sink contract 与 Substrate slab |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-coordinate-spaces]] | Joshi：渲染管线坐标空间链速写 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-static-site-antiframework]] | Joshi：停止过度工程化静态网站 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/apoorvaj-vibe-coding]] | Joshi：Claude Code 两晚做丹麦税计算器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-graphics-programmer-life]] | López-Ros：图形程序员的生与死——行业痛点 opinion piece |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/elopezr-art-of-packing-data]] | López-Ros：HLSL/RDNA 视角的 GPU 数据打包手册 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-haze-manual]] | Alisavakis：HAZE URP 体积雾 renderer feature 用户手册 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-high-heel-problem]] | Trümpler：角色高跟鞋引发的高度问题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/simonschreibt-sims-4-mirrors]] | Trümpler：Sims 4 镜子的 stencil + culling 工艺 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-mc-integration]] | Slater：Monte Carlo 积分与维度诅咒 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-mc-sampling]] | Slater：PRNG、拒绝、逆变换采样 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/slater-mc-rendering]] | Slater：Monte Carlo 应用到渲染方程（path tracing） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-49 Worker EQ (multi-author, 17 ingested / 3 skipped)\n\n处理 20 个原始文件：\n- **Ingested 17**：Ciechanowski airfoil + moon（物理交互长文）；Zucconi Minecraft plugin / PCA / Orbital Mechanics；Apoorva Joshi shader-graph-contract / coordinate-spaces / static-site-antiframework / vibe-coding；Elopez-Ros life-and-death / art-of-packing-data；Alisavakis HAZE manual；Simon Trümpler high-heel / Sims 4 mirrors；Slater MC crash-course 第 2/3/4 章。\n- **Skipped 3**：`2024-12-17_moon.md`（与 `moon-bartosz-ciechanowski.md` 正文一致，仅 frontmatter URL 差异，标记为 duplicate）；Technically Art issue 140、141（纯 bluesky 聚合、无编辑点评，套用 jendrikillner 的聚合 skip 先例）。\n- **新增概念页 20**：airfoil-lift-physics / fluid-flow-visualization / keplerian-orbits / n-body-gravity-simulation / moon-phases-tides / minecraft-plugin-development / pca-intro / shader-graph-contract / static-site-antiframework / vibe-coding-workflow / graphics-programmer-constraints / shader-permutation-explosion / clean-code-critique / gpu-data-packing / haze-urp-volumetric-fog / character-height-variation-problem / planar-mirror-rendering / monte-carlo-integration / inversion-sampling-prng / path-tracing-monte-carlo。\n- **新增 source 摘要 17**；**无新作者页**（所有作者已存在）。"
+}

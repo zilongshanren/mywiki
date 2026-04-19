@@ -1,0 +1,18 @@
+---
+title: 'Dolphin Progress Report: Release 2603'
+url: https://dolphin-emu.org/blog/
+author: MayImilae
+published: '2026-03-12'
+source_blog: Dolphin Emulator - GameCube/Wii games on PC
+source_site: https://dolphin-emu.org/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Dolphin started out as a GameCube emulator in 2003. In 2008, experimental Wii support was added. And now in 2026, Dolphin enters the realm of arcade emulation with support for the Triforce, a joint Sega, Namco, and Nintendo arcade effort. Want to learn more about the Triforce? Check out our deep dive into the Triforce and how support for it ended up back in Dolphin!
+
+Emulating a new system and library of games for the first time in 18 years is big news, and we'll dive into some details and updates on that later in the report. However, there are two other major additions that would have been flagship changes on their own in any other report. Optimizations to Dolphin's MMU emulation have brought major performance uplifts to games that rely on custom page table mappings. In fact, on powerful hardware, all Full MMU games can run full speed, *including the legendary Rogue Squadron III: Rebel Strike*.
+
+On the other side of things is a targeted fix that was an epic tale spanning years of frustration. In the end, the incredible efforts of the [Mario Strikers Charged](https://wiki.dolphin-emu.org/index.php?title=Mario_Strikers_Charged) community combined with several CPU emulation experts finally cracked the case of a minor physics bug that would normally be impossible to see or test.
+
+All that and more awaits in this release's jam-packed notable changes!

@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w51-es",
+  "agent_note": "All 5 c0de517e.blogspot.com posts in this batch are redirect stubs — each contains only 'Read the article here: <link>' plus 'This blogspot site is dead! Update your links to c0de517e.com'. The actual content lives on the new site (c0de517e.com/###_*.htm) which is NOT in raw/. No substantive text to ingest; fabricating summaries from URLs alone would violate the 'don't invent information' rule. All 5 skipped as offtopic-stubs. No wiki/people/angelo-pesce.md patch needed.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-12-08_exploring-the-design-space-of-remote-scene-approximation.md",
+      "status": "skipped_offtopic",
+      "reason": "redirect stub — body is only 'Read the article here: https://c0de517e.com/007_impostors.htm' + blog-moved notice; no ingestable content. The real article lives on c0de517e.com but is not in raw/."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-01-17_the-art-and-joy-of-well-architected-bad-code.md",
+      "status": "skipped_offtopic",
+      "reason": "redirect stub pointing to https://c0de517e.com/009_website_joy.htm; no body content captured."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-01-26_portals-are-misunderstood.md",
+      "status": "skipped_offtopic",
+      "reason": "redirect stub pointing to https://c0de517e.com/011_portals.htm; no body content captured."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-02-19_peaked-technologies.md",
+      "status": "skipped_offtopic",
+      "reason": "redirect stub pointing to https://c0de517e.com/012_peak_tech.htm; no body content captured."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-03-24_c0de517e.md",
+      "status": "skipped_offtopic",
+      "reason": "redirect stub pointing to https://c0de517e.com/013_web.htm; title 'C0DE517E' + blog-moved notice only; no body content captured."
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-51 Worker ES (c0de517e.blogspot.com ×5, all skipped)\n\n5 篇 c0de517e.blogspot.com 文章全部为 redirect stub：blogspot 已停更，所有正文搬迁至 c0de517e.com 新站，本批 raw/ 文件仅残留一行外链与迁移提示，无实质可 ingest 内容。建议后续抓取新站（c0de517e.com/007_impostors.htm、009_website_joy.htm、011_portals.htm、012_peak_tech.htm、013_web.htm）后再重新 ingest Angelo Pesce 2023-2024 的思辨长文。本批未新增概念 / 人物 / 摘要，也未对 angelo-pesce.md 下补丁。"
+}

@@ -1,0 +1,105 @@
+{
+  "batch_id": "batch-w44-eb",
+  "agent_note": "cloudwu blog 2025-11~12 共 5 篇：3 篇跳过（2 篇与已入库内容重复、1 篇育儿非技术），2 篇入库（卡牌构筑游戏设计笔记、skynet 升级 Lua 5.5）",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-11-28_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "内容与已入库的 cloudwu-eu5-gameplay-notes（源文件 2025-11-28_yun-feng-de-blog-2.md）完全相同，是 EU5 经济启动的游玩笔记续作。已有 paradox-grand-strategy-economy 概念页覆盖"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-15_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-deckbuilder-games",
+      "title": "最近玩的几款卡牌构筑类电子游戏"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-16_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "带可可学数学：女儿三年级数学辅导随笔，完全是亲子教育内容，无技术观点"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-23_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-skynet-lua-55",
+      "title": "Skynet 升级到 Lua 5.5.0"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-23_yun-feng-de-blog-3.md",
+      "status": "skipped_duplicate",
+      "reason": "内容与已入库的 cloudwu-id-lifetime-kill-flag 相同（id + 销毁标记替代引用计数），是同一内容的再次发布，已有 id-based-lifetime-with-kill-flag 概念页"
+    }
+  ],
+  "concepts_created": [
+    "deckbuilder-game-design-patterns",
+    "skynet-lua-sharetable-patch"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-deckbuilder-games",
+    "cloudwu-skynet-lua-55"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deckbuilder-game-design-patterns]]\n- [[skynet-lua-sharetable-patch]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-deckbuilder-games]]\n- [[sources/cloudwu-skynet-lua-55]]"
+    },
+    {
+      "file": "wiki/programming-languages/lua-incremental-gc.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skynet-lua-sharetable-patch]] —— skynet 跨 VM 共享函数原型 patch 与 Lua 5.5 external strings"
+    },
+    {
+      "file": "wiki/programming-languages/lua-design-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skynet-lua-sharetable-patch]] —— skynet 对 Lua 的私有 patch 与 5.5 external strings 展望"
+    },
+    {
+      "file": "wiki/game-engines/ltask-scheduler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skynet-lua-sharetable-patch]] —— skynet 跨 VM 共享函数原型 / 常量表 patch，Lua 5.5 升级说明"
+    },
+    {
+      "file": "wiki/game-development/paradox-grand-strategy-economy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deckbuilder-game-design-patterns]] —— 云风对卡牌构筑游戏的设计观察"
+    },
+    {
+      "file": "wiki/game-development/indie-game-dev-rhythm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deckbuilder-game-design-patterns]] —— 三款卡牌构筑游戏的设计启发"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[deckbuilder-game-design-patterns]] | 卡牌构筑游戏设计套路：双卡堆、主动刷牌、需求上升代替战斗 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[skynet-lua-sharetable-patch]] | skynet 跨 VM 共享函数原型的 Lua patch 与 5.5 external strings 展望 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-deckbuilder-games]] | 云风：最近玩的几款卡牌构筑类电子游戏 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-skynet-lua-55]] | 云风：Skynet 升级到 Lua 5.5.0 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-44 Worker B (cloudwu blog 2025-11~12 ×5)\n\n处理 5 篇 blog.codingnow.com 文章：2 篇入库（卡牌构筑游戏设计、skynet 升级 Lua 5.5），1 篇跳过（育儿非技术），2 篇跳过（与已入库内容重复：EU5 游玩笔记已有 cloudwu-eu5-gameplay-notes；id + kill flag 已有 cloudwu-id-lifetime-kill-flag）。新增 2 概念页（deckbuilder-game-design-patterns, skynet-lua-sharetable-patch）与 2 source 摘要。"
+}

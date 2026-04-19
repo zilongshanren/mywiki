@@ -1,0 +1,36 @@
+---
+title: The best games of 2014 are actually from 2013 - and that's okay
+url: https://www.eurogamer.net/2014s-best-games-are-actually-2013s-and-thats-okay
+author: Martin Robinson
+published: '2014-07-12'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+If there was one key message to take from last month's E3, it was that 2015 is going to be a proper treat. The roll call of games coming out next year is just dizzying - [Halo 5: Guardians](https://www.eurogamer.net/games/halo-5-guardians)! Bloodborne! [Xenoblade Chronicles X](https://www.eurogamer.net/games/xenoblade-chronicles-10)! - and it's all so exciting that even some of what were set to be this year's biggest games didn't want to be left out, with the likes of [The Witcher 3: Wild Hunt](https://www.eurogamer.net/games/the-witcher-3-wild-hunt) and [Batman: Arkham Knight](https://www.eurogamer.net/games/batman-arkham-knight) slipping back to get involved in the throng.
+
+2014, though? Well, that's a slightly different story. It's not exactly going to be short on spectacle - I've found myself pining for Destiny's space-scapes so much they've begun to enter my dreams; [Far Cry 4](https://www.eurogamer.net/games/far-cry-4) is everything I'd wish for from the increasingly absurd series and Alien: Isolation looks set to be a nightmarish delight - but it's lacking a little in sparkle, and in drama.
+
+Where are the big, tub-thumping platform exclusives? As much as it pains my petrol-pumped heart to admit it, racing games like DriveClub and Forza Horizon 2 aren't the big ticket draw they once were. Sunset Overdrive, meanwhile, feels like it's trying a little too hard to atone for developer Insomniac's recent wayward past. When it comes to the current generation of consoles this Christmas, it's Nintendo that once again is quietly offering the best proposition, though beyond the brawling of Smash Bros. the likes of Bayonetta 2, Hyrule Warriors and Captain Toad make for an excessively esoteric selection.
+
+As I was mentally totting up the cost of the rest of the year's gaming and idly pondering what to pre-order next, it struck me that the two games at the top of my list aren't exactly exclusive to 2014. This month's The Last of Us Remastered is a chance to revisit what's very much a modern masterpiece, complete with a visual makeover that will add a little dazzle to undercut all of that searing melancholy (at least I assume it will, given Sony's strange reluctance to show us too much of it in action to date).
+
+And then there's the return of Grand Theft Auto 5, complete with a makeover of its own. There's something about the opulent detail of Rockstar's Los Santos crashing up against the technical capabilities of the current gen that's thrilling enough to make you forget you've gone through it all before - and factor in [the pot-headed creativity](https://www.youtube.com/watch?v=BeSdSrCKp-8) that will likely accompany it on PC and you've got what's arguably 2014's most exciting release.
+
+The number of remakes and remasters flooding in as the PlayStation 4 and Xbox One settle in shouldn't really come as a surprise - there's still a certain amount of residual lethargy from last year's big Christmas push, and the relative simplicity of these ports makes for the perfect holdover while the industry regains it breath. There are other motivations, too: [as Sony's Shuhei Yoshida explained](https://www.eurogamer.net/how-strong-exactly-is-playstations-2014-line-up), the new audiences the new generation has managed to find are waiting to be introduced to the treasures of the last generation, and what better way to present them than with a little extra technical garnish?
+
+[Watch on YouTube](https://www.youtube.com/watch?v=UWzV0AFXukI)
+
+For more seasoned players, it can perhaps be a little disheartening when the promise of the new that a fresh round of hardware ushers in is so quickly replaced by familiar, well-trodden beats. But I don't think it should be. The wave of remasters and remakes suggests to me that the sometimes strained relationship that games have had with their history is finally maturing, and the obsession with what's new is mellowing into an ability to enjoy what's past.
+
+It's always been an eccentricity unique to games, or at the least more pronounced: on the one side there's a fixation on the future, while on the other there's the extreme fetishisation of the past. As [Steven Poole once pointed out within the pages of Edge](http://stevenpoole.net/trigger-happy/edge-retrogaming/), no other medium feels the need to wrap up its history with the cute qualifier that is 'retrogaming'. "I can read a novel by Joseph Conrad published 100 years ago, or a Len Deighton thriller from the 1980s, and I won't be accused of 'retroreading'," he wrote. "I'm not 'retrolistening' if I stick on some Bach or Frank Sinatra or Van Halen. Watching classic Cary Grant films from the 1940s, or The Seventh Seal, or The Empire Strikes Back, is not termed 'retroviewing'."
+
+Having an abundance of high quality remasters this year should hopefully be another step towards replacing that peculiar mindset, even if it's come through necessity rather than design. It's a way to help us accept we don't always have to be playing the game of the moment, and also to remind us it's worth revisiting and savouring past favourites, whenever they may be from. At a time when series annualisation has bloated the mega-franchises near to bursting point, it's also a pleasant reminder that sometimes it's preferable to return to an old classic than get lost in the corpulent excess of the latest incremental update.
+
+There's also the not insignificant issue of preservation, a more pressing concern at a time when backwards compatibility has been stripped from two of the three current gen consoles. Remasters aren't without their own problems, of course - the sticky issue of rewriting history, George Lucas style, is as applicable in games as it is in cinema - but sometimes they're vital.
+
+Take two of this year's leading examples, Grim Fandango and Halo: Master Chief Collection, both revivals of classics that have been severed by technology. In the former's case it's the revival of a genre masterpiece that's become impossible to play in recent years. In the multitude of maps in the Master Chief Collection, it's a resurrection of a multiplayer classic thought lost when Microsoft switched off the Halo 2 servers four years ago; it's a second coming more spectacular than any of John 117's own, made possible by the medium of the remake.
+
+I used to be a bit stuffy about remakes and remasters, thinking them unnecessarily revisionist and somehow impure, but that's now changed. As the march of technology quickens so too does the lifespan of already transient games - and these revivals, while not ideal, are a way to celebrate the classics, and to let their light shine a little longer. So maybe 2014 will be a memorable annum for games after all - and perhaps it's the one in which we remember how good all those preceding years have been.

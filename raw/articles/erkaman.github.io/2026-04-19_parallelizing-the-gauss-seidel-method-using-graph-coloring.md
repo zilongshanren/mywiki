@@ -1,0 +1,152 @@
+---
+title: Parallelizing the Gauss-Seidel Method using Graph Coloring
+url: https://erkaman.github.io/posts/gauss_seidel_graph_coloring.html
+source_blog: Eric Arnebäck
+source_site: https://erkaman.github.io/
+category: graphics
+fetched: '2026-04-19'
+---
+
+$\newcommand{\mvec}[1]{\mathbf{#1}}\newcommand{\gvec}[1]{\boldsymbol{#1}}\definecolor{eqcol2}{RGB}{114,0,172}\definecolor{eqcol1}{RGB}{172,0,114}\definecolor{eqcol3}{RGB}{0,172,114}\definecolor{eqcol4}{RGB}{230,190,120}$In
+a [previous article](https://erkaman.github.io/jacobi_and_gauss_seidel.html), we
+introduced the Jacobi and Gauss-Seidel methods, which are iterative
+methods for solving linear systems of equation. Specifically, we
+noted that the Gauss-Seidel method will in general converge towards
+a solution much quicker than the Jacobi method. The main issue with
+the Gauss-Seidel method is that it is non-trivial to make into a
+parallel algorithm. However, it turns out that for a certain class of matrices,
+it is pretty simple to implement a parallel Gauss-Seidel
+method. Consider the below system
+\begin{align*}
+2x_1 - 1x_2 + 0x_3 + 0x_4 &= 3 \\
+-1x_1 + 2x_2 - 1x_3 + 0x_4 &= -4 \\
+0x_1 - 1x_2 + 2x_3 - 1x_4 &= 4 \\
+0x_1 + 0x_2 - 1x_3 + 2x_4 &= -3 \\
+\end{align*}
+Assume our initial guess for a solution is $x_1 = 0, x_2=0, x_3 = 0,
+x_4=0$. If we perform a Gauss-Seidel iteration on this system, first
+we will solve for $x_1$ in the first equation. We obtain
+\begin{align*}
+x_1 = \frac{1}{2}(3 - 0x_4 - 0x_3 + x_2 - 2x_1) = \frac{3}{2} = 1.5\\
+\end{align*}
+We thus obtain our improved guess $x_1 = 1.5, x_2=0, x_3 = 0,
+x_4=0$. Traditionally, we would now solve for $x_2$ in the second
+equation, but we will not do that. Consider instead the third
+equation in the above system. In order to obtain our improved guess
+for $x_3$, we solve for $x_3$ in the third equation:
+\begin{align*}
+x_3 = \frac{1}{2}(4 + x_4 + x_2 - 0x_1) = \frac{4}{2} = 2\\
+\end{align*}
+So that $x_3=2$ is our improved guess for $x_3$. However, note that
+the value of $x_1$ had no impact on the improved guess of $x_3$,
+because of the zero in front of $x_1$. Similarly, the value of $x_3$
+had no impact on the improved guess for $x_1$. The order of these
+two calculations does not matter, and thus these two calculations
+can be executed entirely in parallel. It is also not hard to see
+that we can compute the improved guesses of $x_2$ and $x_4$ in
+parallel. Thus, a parallelized single iteration for the above system
+is easy to implement: first compute the improved guesses for $x_1$
+and $x_3$ in parallel, and then do likewise for $x_2$ and $x_4$ in
+parallel.
+
+What we have discovered is that if we can find partitions of
+variables that can be solved for independently, then Gauss-Seidel
+can indeed be parallelized. Our next task is to invent an algorithm
+that finds such partitions. First, rewrite the linear system in
+matrix form:
+\begin{equation*}
+\begin{bmatrix}
+2 & -1 & 0 & 0 \\
+-1 & 2 & -1 & 0 \\
+0 & -1 & 2 & -1 \\
+0 & 0 & -1 & 2 \\
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \\
+-4 \\
+4 \\
+-3 \\
+\end{bmatrix}
+\end{equation*}
+where we denote the matrix as $M$. The reason that $x_1$ and $x_3$
+can be solved for independently, is because $m_{1,3} = 0$ and
+$m_{3,1} = 0$. But clearly, $x_1$ and $x_2$ cannot be solved for
+independently, since $m_{1,2} \neq 0$ and $m_{2,1} \neq 0$. Imagine
+that we let two different threads solve for $x_1$ and $x_2$ in
+parallel. Then a race condition will occur, since the improved guess
+of $x_2$ is dependent on the value of $x_1$, and vice versa.
+To conclude, if $m_{i,j}$ is non-zero, then the variables $x_i$ and
+$x_j$ must not be solved for in parallel. This situation can be
+visualized with
+a [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)). Let
+the variables $x_1, x_2, x_3, x_4$ be the nodes of this graph. There
+will be an edge between $x_i$ and $x_j$ only if $m_{i,j} \neq 0$. A
+graph fitting these requirements is depicted below.
+
+In this graph, it can clearly be seen that $x_1$ and $x_3$ are not
+connected by an edge, and therefore form a *partition* of
+variables that can be independently solved for. An algorithm that
+finds these partitions is an algorithm that finds groups of nodes that
+are *not* connected. It is certainly possible to create a new
+algorithm that performs this task, but there is no need: an algorithm
+that does the job already exists. The following is a famous problem of
+computer science:
+
+As can be observed, nodes with the same colors form partitions. Two nodes that are adjacent cannot share the same color, and this ensures that variables that are not independent are not put in the same partition. To conclude, finding a valid graph coloring is equivalent to partitioning the variables.
+
+There are many algorithms for solving the graph coloring problem,
+but in the source code of this article, we have chosen to implement
+the randomized graph coloring algorithm described by Fratarcangeli
+et al.[[1]](https://erkaman.github.io#refone). This algorithm is extremely simple,
+and the authors claim it is easy to parallelize. The authors use
+Gauss-Seidel and this randomized graph coloring algorithm to
+implement stable soft body dynamics in real-time framerates.
+
+The randomized graph coloring algorithm is very simple: Put all
+nodes in a set $U$. **(1)** Now assign random colors to all nodes
+in $U$. The colors are chosen from a palette of colors, and if the
+palette runs out of colors, then new colors are added to it. By
+keeping the initial palette size low, the number of colors used in
+the graph coloring will be kept low. Every node whose color is
+distinct from all its neighbours is now removed from $U$, since such
+a node has a valid coloring. Now return to **(1)**, and keep
+looping until $U$ is the empty set.
+
+Consider now a linear system with the more complex matrix \begin{equation*} \begin{bmatrix} 3.0& 0.0& 0.0& 0.0& 0.0& 0.0& 0.0& 3.0& 0.0& 0.0\\ 0.0& 15.0& 7.0& 0.0& 0.0& 0.0& 8.0& 0.0& 0.0& 0.0\\ 0.0& 7.0& 28.0& 9.0& 9.0& 0.0& 0.0& 0.0& 3.0& 0.0\\ 0.0& 0.0& 9.0& 18.0& 0.0& 0.0& 0.0& 0.0& 9.0& 0.0\\ 0.0& 0.0& 9.0& 0.0& 20.0& 0.0& 0.0& 8.0& 0.0& 3.0\\ 0.0& 0.0& 0.0& 0.0& 0.0& 8.0& 0.0& 0.0& 0.0& 8.0\\ 0.0& 8.0& 0.0& 0.0& 0.0& 0.0& 14.0& 0.0& 6.0& 0.0\\ 3.0& 0.0& 0.0& 0.0& 8.0& 0.0& 0.0& 11.0& 0.0& 0.0\\ 0.0& 0.0& 3.0& 9.0& 0.0& 0.0& 6.0& 0.0& 18.0& 0.0\\ 0.0& 0.0& 0.0& 0.0& 3.0& 8.0& 0.0& 0.0& 0.0& 11.0\\ \end{bmatrix} \end{equation*} Our randomized algorithm found the following graph coloring:
+
+Since the matrix has many zeroes, there are few edges between
+the nodes, and this results in a low number of partitions. A matrix
+with many zeroes is denoted *sparse*, and such matrices are very
+common in practical applications. We will discuss one very practical, and sparse
+matrix in the next article of this series. Finally, the graph coloring
+the algorithm found uses few colors, which is desirable, since fewer
+colors mean fewer partitions.
+
+The above graph has three partitions, and each partition can be solved for in parallel. This is much better than the very serial Gauss-Seidel algorithm we described in the previous article. However, note that if we instead used the Jacobi method to solve for the ten unknowns $x_1,\dots,x_{10}$, then all ten unknowns could be found in a single parallel step. With the parallel Gauss-Seidel method, first we dispatch a parallel computation that solves for the unknowns in the first partition, then we have to wait for this computation to finish, before we can dispatch another computation for the second partition. It can be seen from this that our parallelized Gauss-Seidel method exhibits a lower degree of parallelism compared to the Jacobi method. However, the faster rate of convergence will make up for this. Further, sparse matrices are very common in applications, and such matrices results in a low number of partitions.
+
+This concludes this part of the series. In the next part, the parallelized Jacobi and Gauss-Seidel methods will be implemented on the GPU, and these two methods will then be used to solve a practical problem: fluid simulation.
+
+Source code that implements the described parallelized Gauss-Seidel
+method and the randomized graph coloring algorithm is provided in
+a [gist](https://gist.github.com/Erkaman/b34b3531e209a1db38e259ea53ff0be9). In
+the code, a random, sparse, linear system with a matrix of size $100
+\times 100$ is generated, and solved with the Gauss-Seidel
+method. For the purpose of readability, the Gauss-Seidel method is
+still implemented using a serial algorithm on the CPU. The
+final parallelization step will be discussed in the next article.
+
+Below, literature that was consulted when writing this article is listed.
+
+[1] Marco Fratarcangeli, Valentina Tibaldo, Fabio Pellacini,
+"Vivace: a Practical Gauss-Seidel Method for Stable Soft Body
+Dynamics". [Link](http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-paper.pdf).
+
+[2] Yousef Saad, "Iterative Methods for Sparse Linear Systems",
+Section 12.4. [Link](http://www-users.cs.umn.edu/~saad/IterMethBook_2ndEd.pdf).

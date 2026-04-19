@@ -1,0 +1,212 @@
+{
+  "batch_id": "batch-w48-em",
+  "agent_note": "8 Daniel Ilett pieces: 4 Toon Shaders Pro reference pages + Retro Shaders Pro technical breakdown + Shader Code Basics 03/04/05. All ingested (no skips). 6 new concept pages (blend-modes-shaderlab, urp-depth-prepass-passes, urp-render-objects-feature, hull-domain-tessellation-urp, noperspective-affine-texture, toon-outline-post-process-modes). 8 source summaries. Patches to cel-shading-pipeline, cel-shader-outline, retro-rendering-techniques, depth-texture-silhouette, tessellation-fur-rendering, shaderlab-hlsl-basics, daniel-ilett.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-toon.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toon-shaders-pro-toon",
+      "title": "Toon Shaders Pro for URP — Toon"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-toon-shader-graph.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toon-shaders-pro-toon-graph",
+      "title": "Toon Shaders Pro for URP — Toon (Shader Graph)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-toon-terrain.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toon-shaders-pro-terrain",
+      "title": "Toon Shaders Pro for URP — Toon Terrain"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-outline-post-process.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toon-shaders-pro-outline-post",
+      "title": "Toon Shaders Pro for URP — Outline (Post Process)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-27_retro-shaders-pro-a-technical-breakdown.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-shaders-pro-breakdown",
+      "title": "Retro Shaders Pro — A Technical Breakdown"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_transparency-unity-shader-code-basics-03.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-code-transparency",
+      "title": "Transparency | Unity Shader Code Basics 03"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-02_the-depth-buffer-unity-shader-code-basics-04.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-code-depth-buffer",
+      "title": "The Depth Buffer | Unity Shader Code Basics 04"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-03_vertex-shaders-tessellation-unity-shader-code-basics-05.md",
+      "status": "ingested",
+      "source_slug": "danielilett-shader-code-vertex-tessellation",
+      "title": "Vertex Shaders & Tessellation | Unity Shader Code Basics 05"
+    }
+  ],
+  "concepts_created": [
+    "blend-modes-shaderlab",
+    "urp-depth-prepass-passes",
+    "urp-render-objects-feature",
+    "hull-domain-tessellation-urp",
+    "noperspective-affine-texture",
+    "toon-outline-post-process-modes"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-toon-shaders-pro-toon",
+    "danielilett-toon-shaders-pro-toon-graph",
+    "danielilett-toon-shaders-pro-terrain",
+    "danielilett-toon-shaders-pro-outline-post",
+    "danielilett-retro-shaders-pro-breakdown",
+    "danielilett-shader-code-transparency",
+    "danielilett-shader-code-depth-buffer",
+    "danielilett-shader-code-vertex-tessellation"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/cel-shading-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[toon-outline-post-process-modes]] —— Toon Shaders Pro 的六种描边算法目录（屏幕空间 / 物体 mask / inverted hull）"
+    },
+    {
+      "file": "wiki/rendering/cel-shading-pipeline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-toon-shaders-pro-toon]] —— Toon Shaders Pro 核心 HLSL shader 的参数手册，把 diffuse / specular / rim / shadow 四层各自独立 smoothstep 阈值化的完整开关清单"
+    },
+    {
+      "file": "wiki/rendering/cel-shading-pipeline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-toon-shaders-pro-toon-graph]] —— 上同 Shader Graph 变体，暴露 CalculateToonLighting subgraph 给 SG 用户再利用"
+    },
+    {
+      "file": "wiki/rendering/cel-shading-pipeline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-toon-shaders-pro-terrain]] —— Terrain 专版：去掉 base color 接入 splatmap、新增 stochastic texturing 消 tiling、独立 Ambient Light Strength floor"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[toon-outline-post-process-modes]] —— 六种 toon 描边算法（深度法线 Sobel / object mask / inverted hull）在一个 URP post-process feature 里的并排陈列"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-toon-shaders-pro-outline-post]] —— Toon Shaders Pro 的 Outline Feature：Depth Normal / High Quality Masked / Pixel Width Masked / Hull / Debug 五种算法并列"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[noperspective-affine-texture]] —— HLSL 的 `noperspective` 关键字：一行代码开启 affine warping；Ilett 的手动实现支持 0–1 平滑过渡"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-retro-shaders-pro-breakdown]] —— 作者自述完整实现细节：vertex snap 空间选择、affine warping 手动路径、LOD-cap 分辨率、dither 双模式、texel-aligned lighting (ddx/ddy)、N64 3-point filtering、VHS tracking、14 种复古色板 filter；还谈 Asset Store 命名权和差评踩坑"
+    },
+    {
+      "file": "wiki/rendering/depth-texture-silhouette.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[urp-depth-prepass-passes]] —— 为什么自定义 shader 要补 DepthOnly / DepthNormals 两个 Pass，以及它们在 URP 里的填充时机\n- [[urp-render-objects-feature]] —— URP 的 Renderer Feature 无代码做 X-ray、物体 mask、透视显隐"
+    },
+    {
+      "file": "wiki/rendering/depth-texture-silhouette.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-shader-code-depth-buffer]] —— URP + HLSL 手写版的 silhouette shader：ZWrite/ZTest 命令、`ComputeScreenPos` + `xy/w`、`Linear01Depth` + `_ZBufferParams`、自定义 shader 补 prepass、Render Objects 做 X-ray"
+    },
+    {
+      "file": "wiki/rendering/tessellation-fur-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hull-domain-tessellation-urp]] —— URP 下 hull/domain tessellation 的基础骨架：5 个 hull attribute、patch constant function、domain 里的 barycentric 插值、距离淡出公式"
+    },
+    {
+      "file": "wiki/rendering/shaderlab-hlsl-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-shader-code-transparency]] —— Part 3：加上 Blend / alpha clip / `[Enum(BlendMode)]` 属性和 `Blend [_Prop] [_Prop]` 这种 ShaderLab-only 的 Property 用法\n- [[sources/danielilett-shader-code-depth-buffer]] —— Part 4：ZWrite/ZTest、`_CameraDepthTexture` 与 `Linear01Depth`、DepthOnly / DepthNormals prepass 的 LightMode tag 机制、URP Render Objects Feature\n- [[sources/danielilett-shader-code-vertex-tessellation]] —— Part 5：vertex displacement (world-space sin wave) 和 hull/domain tessellation 完整骨架"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[blend-modes-shaderlab]]\n- [[urp-depth-prepass-passes]]\n- [[urp-render-objects-feature]]\n- [[hull-domain-tessellation-urp]]\n- [[noperspective-affine-texture]]\n- [[toon-outline-post-process-modes]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-toon-shaders-pro-toon]]\n- [[sources/danielilett-toon-shaders-pro-toon-graph]]\n- [[sources/danielilett-toon-shaders-pro-terrain]]\n- [[sources/danielilett-toon-shaders-pro-outline-post]]\n- [[sources/danielilett-retro-shaders-pro-breakdown]]\n- [[sources/danielilett-shader-code-transparency]]\n- [[sources/danielilett-shader-code-depth-buffer]]\n- [[sources/danielilett-shader-code-vertex-tessellation]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[blend-modes-shaderlab]] | ShaderLab Blend 命令、11 个 BlendMode 因子、三种常见混合模式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-depth-prepass-passes]] | URP 自定义 shader 必补的 DepthOnly / DepthNormals 两个 Pass 及其触发时机 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-render-objects-feature]] | URP Renderer Feature 无代码做 X-ray、物体 mask、透视显隐 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hull-domain-tessellation-urp]] | URP 下 hull/domain tessellation 基础骨架：5 个 attribute + patch constant + domain barycentric |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[noperspective-affine-texture]] | HLSL `noperspective` 关键字与 PSX affine texture warping 的一行切换 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[toon-outline-post-process-modes]] | Toon 描边的六种算法并列：屏幕空间 Sobel / 物体 mask / inverted hull |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toon-shaders-pro-toon]] | Ilett：Toon Shaders Pro 核心 HLSL shader 参数手册 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toon-shaders-pro-toon-graph]] | Ilett：Toon Shader Graph 变体，`CalculateToonLighting` subgraph |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toon-shaders-pro-terrain]] | Ilett：Toon Terrain，splatmap + stochastic texturing |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toon-shaders-pro-outline-post]] | Ilett：Toon Outline Post Process，六种描边算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-shaders-pro-breakdown]] | Ilett：Retro Shaders Pro 作者自述，PSX/N64/VHS/CRT 全套实现细节 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-code-transparency]] | Ilett：Shader Code Basics 03 — alpha blend / alpha clip / Blend 命令 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-code-depth-buffer]] | Ilett：Shader Code Basics 04 — depth buffer / silhouette / prepass / Render Objects |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-shader-code-vertex-tessellation]] | Ilett：Shader Code Basics 05 — vertex displacement + hull/domain tessellation |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-48 Worker EM (Daniel Ilett ×8)\n\n处理 8 篇 Daniel Ilett 文章：Toon Shaders Pro for URP 四件套参数手册 (Toon HLSL / Toon SG / Terrain / Outline Post) + Retro Shaders Pro 作者技术自述 + Shader Code Basics 03-05 (transparency / depth buffer / vertex + tessellation)。新增 6 概念页 (blend-modes-shaderlab, urp-depth-prepass-passes, urp-render-objects-feature, hull-domain-tessellation-urp, noperspective-affine-texture, toon-outline-post-process-modes)、8 源摘要；补 patch 到 cel-shading-pipeline、cel-shader-outline、retro-rendering-techniques、depth-texture-silhouette、tessellation-fur-rendering、shaderlab-hlsl-basics、daniel-ilett。"
+}

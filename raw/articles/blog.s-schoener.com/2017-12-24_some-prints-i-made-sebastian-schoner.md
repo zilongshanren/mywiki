@@ -1,0 +1,25 @@
+---
+title: Some Prints I Made | Sebastian Schöner
+url: https://blog.s-schoener.com/2017-12-24-prints/
+author: Sebastian Schöner
+published: '2017-12-24'
+source_blog: Hi there! | Sebastian Schöner
+source_site: https://blog.s-schoener.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+I finally got around to making prints of some procedurally generated images that I created in 2016 (!). Take a look:
+
+![Print 1](../../assets/2ffaca57ed10f5bd.jpg)
+
+
+![Print 2](../../assets/a80accd2aa353f57.jpg)
+
+
+![Print 3](../../assets/fcf926fde81eb912.jpg)
+
+
+The program that brought these pictures into being is written in Java using Processing, a faboulus library for everything related to procedural art. Each picture is only 500px squared in size – the reason for this is that the images are generated pixel-by-pixel and all the gradients you can see are actually produced via dithering. There are plenty of fine-grained details to be found; you can get an idea of that by taking a close look at the second picture, there is a very fine grid spanning over the whole image. These three pictures are actually all small crops from a much bigger image, and I’d like to believe that it is clearly visible that they belong together.
+
+Originally, I printed 4 series, but it turns out that even with a high DPI printer it can be pretty hard to get the colors to come out nicely *for each single pixel*. But I am very happy with how this one turned out :)

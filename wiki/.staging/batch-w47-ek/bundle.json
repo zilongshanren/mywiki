@@ -1,0 +1,195 @@
+{
+  "batch_id": "batch-w47-ek",
+  "agent_note": "19 篇跨 3 博客域（ryg / Xor / Peters）：17 ingested、2 skipped（ryg content-creator = 观点非技术；Peters blog.md = 博客首页 index 列表，正文在 spectral-3）。作者页均已存在，只做 patches。新增 15 个概念页（computer-systems 2、rendering 13），17 个 source 摘要。ryg 线关注 HDR 纹理压缩（MRSSE、BC7 solid color）+ 硬件/指令史（x86 SIMD 乘法、UNORM/SNORM 硬件、Intel 13/14 代时钟树退化）。Xor 线关注 tweet shader 文化（280 字符、FragCoord 编辑器）+ shader 工具函数（tanh、mix、dot-noise、volumetric raymarch）。Peters 线关注 path tracing 教学系列 + radiometry 整理 + spectral vs RGB 实证。",
+  "sources_processed": [
+    {"path": "raw/articles/fgiesen.wordpress.com/2024-10-26_why-those-particular-integer-multiplies.md", "status": "ingested", "source_slug": "ryg-why-those-particular-integer-multiplies", "title": "Why those particular integer multiplies?"},
+    {"path": "raw/articles/fgiesen.wordpress.com/2024-11-03_bc7-optimal-solid-color-blocks.md", "status": "ingested", "source_slug": "ryg-bc7-optimal-solid-color-blocks", "title": "BC7 optimal solid-color blocks"},
+    {"path": "raw/articles/fgiesen.wordpress.com/2024-11-14_mrsse.md", "status": "ingested", "source_slug": "ryg-mrsse", "title": "MRSSE"},
+    {"path": "raw/articles/fgiesen.wordpress.com/2024-12-24_unorm-and-snorm-to-float-hardware-edition.md", "status": "ingested", "source_slug": "ryg-unorm-snorm-hardware-edition", "title": "UNORM and SNORM to float, hardware edition"},
+    {"path": "raw/articles/fgiesen.wordpress.com/2025-05-21_oodle-2-9-14-and-intel-13th-14th-gen-cpus.md", "status": "ingested", "source_slug": "ryg-oodle-2-9-14-intel-13th-14th-gen", "title": "Oodle 2.9.14 and Intel 13th/14th gen CPUs"},
+    {"path": "raw/articles/fgiesen.wordpress.com/2025-07-06_content-creator.md", "status": "skipped_offtopic", "reason": "纯观点文，讨论'内容创作者'这个词的语言学/职业身份问题，与图形/系统技术无关"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-05-31_functions-tanh.md", "status": "ingested", "source_slug": "xor-functions-tanh", "title": "Functions: Tanh"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-06-23_modeling-the-world-in-280-characters.md", "status": "ingested", "source_slug": "xor-modeling-the-world-in-280-chars", "title": "Modeling the World in 280 Characters"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-07-26_decoding-phosphor.md", "status": "ingested", "source_slug": "xor-decoding-phosphor", "title": "Decoding: Phosphor"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-08-23_volumetric-raymarching.md", "status": "ingested", "source_slug": "xor-volumetric-raymarching", "title": "Volumetric Raymarching"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-08-30_functions-mix.md", "status": "ingested", "source_slug": "xor-functions-mix", "title": "Functions: Mix"},
+    {"path": "raw/articles/mini.gmshaders.com/2025-09-05_dot-noise.md", "status": "ingested", "source_slug": "xor-dot-noise", "title": "Dot Noise"},
+    {"path": "raw/articles/mini.gmshaders.com/2026-03-07_fragcoord-the-ultimate-tool.md", "status": "ingested", "source_slug": "xor-fragcoord-editor", "title": "FragCoord: The Ultimate Tool"},
+    {"path": "raw/articles/momentsingraphics.de/2024-11-05_path-tracing-workshop.md", "status": "ingested", "source_slug": "peters-path-tracing-workshop", "title": "Path tracing workshop"},
+    {"path": "raw/articles/momentsingraphics.de/2024-12-19_path-tracing-lectures.md", "status": "ingested", "source_slug": "peters-path-tracing-lectures", "title": "Path tracing lectures"},
+    {"path": "raw/articles/momentsingraphics.de/2025-01-12_radiometry-part-1-i-got-it-backwards.md", "status": "ingested", "source_slug": "peters-radiometry-1-backwards", "title": "Radiometry, part 1: I got it backwards"},
+    {"path": "raw/articles/momentsingraphics.de/2025-01-19_radiometry-part-2-spectra-and-photometry.md", "status": "ingested", "source_slug": "peters-radiometry-2-photometry", "title": "Radiometry, part 2: Spectra and photometry"},
+    {"path": "raw/articles/momentsingraphics.de/2025-11-20_blog.md", "status": "skipped_duplicate", "reason": "博客首页的帖子列表索引页，正文就是 spectral-rendering-part-3；独立 ingest 会重复"},
+    {"path": "raw/articles/momentsingraphics.de/2025-11-20_spectral-rendering-part-3-spectral-vs-rgb.md", "status": "ingested", "source_slug": "peters-spectral-rendering-3-vs-rgb", "title": "Spectral rendering, part 3: Spectral vs. RGB"}
+  ],
+  "concepts_created": [
+    "x86-simd-integer-multiplies",
+    "intel-13th-14th-gen-clock-degradation",
+    "bc7-solid-color-blocks",
+    "mrsse-hdr-error-metric",
+    "unorm-snorm-hardware-conversion",
+    "density-field-volumetric",
+    "dot-gyroid-noise",
+    "radiometry-integral-view",
+    "photometry-luminance",
+    "hyperbolic-tangent-shader",
+    "glsl-mix-function",
+    "tweet-shader-280-char",
+    "fragcoord-shader-editor",
+    "spectral-vs-rgb-comparison",
+    "path-tracing-basics"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "ryg-why-those-particular-integer-multiplies",
+    "ryg-bc7-optimal-solid-color-blocks",
+    "ryg-mrsse",
+    "ryg-unorm-snorm-hardware-edition",
+    "ryg-oodle-2-9-14-intel-13th-14th-gen",
+    "xor-functions-tanh",
+    "xor-modeling-the-world-in-280-chars",
+    "xor-decoding-phosphor",
+    "xor-volumetric-raymarching",
+    "xor-functions-mix",
+    "xor-dot-noise",
+    "xor-fragcoord-editor",
+    "peters-path-tracing-workshop",
+    "peters-path-tracing-lectures",
+    "peters-radiometry-1-backwards",
+    "peters-radiometry-2-photometry",
+    "peters-spectral-rendering-3-vs-rgb"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Why those particular integer multiplies? | [[x86-simd-integer-multiplies]] |\n| BC7 optimal solid-color blocks | [[bc7-solid-color-blocks]] |\n| MRSSE | [[mrsse-hdr-error-metric]] |\n| UNORM and SNORM to float, hardware edition | [[unorm-snorm-hardware-conversion]] |\n| Oodle 2.9.14 and Intel 13th/14th gen CPUs | [[intel-13th-14th-gen-clock-degradation]] |"
+    },
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[x86-simd-integer-multiplies]]\n- [[bc7-solid-color-blocks]]\n- [[mrsse-hdr-error-metric]]\n- [[unorm-snorm-hardware-conversion]]\n- [[intel-13th-14th-gen-clock-degradation]]"
+    },
+    {
+      "file": "wiki/people/fabian-giesen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ryg-why-those-particular-integer-multiplies]]\n- [[sources/ryg-bc7-optimal-solid-color-blocks]]\n- [[sources/ryg-mrsse]]\n- [[sources/ryg-unorm-snorm-hardware-edition]]\n- [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Functions: Tanh | [[hyperbolic-tangent-shader]] — tanh 作为 sigmoid / tonemap / 调试工具 |\n| Modeling the World in 280 Characters | [[tweet-shader-280-char]] — 280 字符 tweet shader 思路 |\n| Decoding: Phosphor | 详解 [[tweet-shader-280-char]] 的一个 258 字符样本 |\n| Volumetric Raymarching | [[density-field-volumetric]] — 密度场 + 样本累积 |\n| Functions: Mix | [[glsl-mix-function]] — mix 的进阶用法（saturation、extrapolation、remap）|\n| Dot Noise | [[dot-gyroid-noise]] — gyroid + 黄金角旋转的廉价 aperiodic 噪声 |\n| FragCoord: The Ultimate Tool | [[fragcoord-shader-editor]] — Xor 自建的 shader 编辑 / 调试 / 分析平台 |"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hyperbolic-tangent-shader]]\n- [[tweet-shader-280-char]]\n- [[density-field-volumetric]]\n- [[glsl-mix-function]]\n- [[dot-gyroid-noise]]\n- [[fragcoord-shader-editor]]"
+    },
+    {
+      "file": "wiki/people/xor-shader-artist.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/xor-functions-tanh]]\n- [[sources/xor-modeling-the-world-in-280-chars]]\n- [[sources/xor-decoding-phosphor]]\n- [[sources/xor-volumetric-raymarching]]\n- [[sources/xor-functions-mix]]\n- [[sources/xor-dot-noise]]\n- [[sources/xor-fragcoord-editor]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Path tracing workshop | [[path-tracing-basics]] — 76 分钟 GLSL/ShaderToy 入门 |\n| Path tracing lectures | [[path-tracing-basics]]（进阶：重要性采样、MIS） |\n| Radiometry, part 1: I got it backwards | [[radiometry-integral-view]] — 从 radiance 起步的积分式重构 |\n| Radiometry, part 2: Spectra and photometry | [[photometry-luminance]] — 光度量与 CIE XYZ 衔接 |\n| Spectral rendering, part 3: Spectral vs. RGB | [[spectral-vs-rgb-comparison]] — 实证对比 RGB 与光谱渲染 |"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[path-tracing-basics]]\n- [[radiometry-integral-view]]\n- [[photometry-luminance]]\n- [[spectral-vs-rgb-comparison]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/peters-path-tracing-workshop]]\n- [[sources/peters-path-tracing-lectures]]\n- [[sources/peters-radiometry-1-backwards]]\n- [[sources/peters-radiometry-2-photometry]]\n- [[sources/peters-spectral-rendering-3-vs-rgb]]"
+    },
+    {
+      "file": "wiki/rendering/unorm-float-conversion.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unorm-snorm-hardware-conversion]] — 同一问题的硬件实现版本"
+    },
+    {
+      "file": "wiki/rendering/unorm-float-conversion.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ryg-unorm-snorm-hardware-edition]]"
+    },
+    {
+      "file": "wiki/rendering/spectral-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[spectral-vs-rgb-comparison]] — 各类光源下 RGB vs 光谱的实证对比\n- [[photometry-luminance]] — photometric 量与 CIE XYZ\n- [[radiometry-integral-view]] — radiometric 量的积分式介绍"
+    },
+    {
+      "file": "wiki/rendering/spectral-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/peters-spectral-rendering-3-vs-rgb]]\n- [[sources/peters-radiometry-1-backwards]]\n- [[sources/peters-radiometry-2-photometry]]"
+    },
+    {
+      "file": "wiki/rendering/volumetric-raymarching-intro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[density-field-volumetric]] — 密度场 + 样本累积的体积渲染"
+    },
+    {
+      "file": "wiki/rendering/classic-shader-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dot-gyroid-noise]] — gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声"
+    },
+    {
+      "file": "wiki/computer-systems/oodle-compression-suite.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/ryg-mrsse]] — BC6H 编码的 HDR 误差度量\n- [[sources/ryg-bc7-optimal-solid-color-blocks]] — BC7 纯色块的最优编码\n- [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]] — Oodle 2.9.14 的 Intel 13/14 代 work-around"
+    }
+  ],
+  "index_additions": [
+    {"category_header": "## 计算机体系结构与系统（wiki/computer-systems/）", "row": "| [[x86-simd-integer-multiplies]] | x86 SIMD 整数乘法指令的硬件演化史 |"},
+    {"category_header": "## 计算机体系结构与系统（wiki/computer-systems/）", "row": "| [[intel-13th-14th-gen-clock-degradation]] | Intel 13 / 14 代 CPU 时钟树退化的软件 work-around |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[bc7-solid-color-blocks]] | BC7 mode 5 精确编码 8-bit 纯色块的闭式端点 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[mrsse-hdr-error-metric]] | Oodle Texture BC6H 所用的相对均方误差度量 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[unorm-snorm-hardware-conversion]] | UNORM / SNORM → float 的硬件级实现（LZ + 16-bit adder 足矣） |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[density-field-volumetric]] | 体积 raymarch 的密度场与样本累积（additive vs alpha-blend） |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[dot-gyroid-noise]] | Gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[radiometry-integral-view]] | 以积分视角（而非 differential）组织辐射度量 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[photometry-luminance]] | Photometric 量、CIE XYZ 与 luminance |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[hyperbolic-tangent-shader]] | tanh 在 shader 里的 4 类用法（sigmoid / tonemap / blend / 调试） |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[glsl-mix-function]] | mix 的进阶用法：saturation、extrapolation、remap、感知均匀 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[tweet-shader-280-char]] | 280 字符 tweet shader 的思维与技巧 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[fragcoord-shader-editor]] | Xor 的 FragCoord.xyz：浏览器内 shader 调试器 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[spectral-vs-rgb-comparison]] | 各类光源下 RGB vs 光谱渲染的实证对比 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[path-tracing-basics]] | 最小可行 path tracer 的学习路径（Peters workshop + lectures） |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/ryg-why-those-particular-integer-multiplies]] | ryg：x86 SIMD 整数乘法的硬件演化推测 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/ryg-bc7-optimal-solid-color-blocks]] | ryg：BC7 纯色块两行公式的最优端点 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/ryg-mrsse]] | ryg：Oodle BC6H 的相对均方误差度量 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/ryg-unorm-snorm-hardware-edition]] | ryg：UNORM / SNORM → float 的硬件级实现 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]] | ryg：Oodle 2.9.14 对 Intel 13/14 代 CPU 时钟 bug 的 work-around |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-functions-tanh]] | Xor：tanh 在 shader 里的数学和用法 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-modeling-the-world-in-280-chars]] | Xor：280 字符 tweet shader 的动机与入门 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-decoding-phosphor]] | Xor：258 字符 Phosphor tweet shader 的逐行拆解 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-volumetric-raymarching]] | Xor：体积 raymarch 的密度场与样本累积 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-functions-mix]] | Xor：mix 函数的进阶用法（saturation / extrapolation / remap） |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-dot-noise]] | Xor：gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/xor-fragcoord-editor]] | Xor：FragCoord.xyz shader 编辑器发布 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/peters-path-tracing-workshop]] | Peters：Intel path tracing workshop（GLSL / ShaderToy） |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/peters-path-tracing-lectures]] | Peters：TU Delft 硕士 path tracing 讲座 + Vulkan 实现 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/peters-radiometry-1-backwards]] | Peters：从 radiance 起步的辐射度量积分式重构 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/peters-radiometry-2-photometry]] | Peters：光谱量、CIE XYZ 与 photometric 单位 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/peters-spectral-rendering-3-vs-rgb]] | Peters：RGB vs 光谱渲染在多种光源下的实证对比 |"}
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-47 Batch EK (ryg×5 + Xor×7 + Peters×5)\n\n处理 19 篇跨 3 博客域文章。17 ingested（5 ryg HDR/硬件文 + 7 Xor shader art + 5 Peters path tracing / radiometry / spectral）、2 skipped（ryg `content-creator` 纯观点、Peters `blog.md` 首页索引）。新增 15 个概念页：`x86-simd-integer-multiplies`、`intel-13th-14th-gen-clock-degradation`（computer-systems）；`bc7-solid-color-blocks`、`mrsse-hdr-error-metric`、`unorm-snorm-hardware-conversion`、`density-field-volumetric`、`dot-gyroid-noise`、`radiometry-integral-view`、`photometry-luminance`、`hyperbolic-tangent-shader`、`glsl-mix-function`、`tweet-shader-280-char`、`fragcoord-shader-editor`、`spectral-vs-rgb-comparison`、`path-tracing-basics`（rendering）。17 个 source 摘要。作者页三者皆已存在，通过 patches 扩展贡献表 / 相关 / Sources 三段。"
+}

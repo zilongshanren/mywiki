@@ -1,0 +1,26 @@
+---
+title: 12 years ago Rockstar served up the antithesis of GTA, and it was amazing
+url: https://www.eurogamer.net/12-years-ago-rockstar-served-up-the-antithesis-of-gta-and-it-was-amazing
+author: Martin Robinson
+published: '2018-07-01'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Rockstar's greatest ever character? There's no contest, really. He's everything I love in a video game hero; cool, composed and with a sharply- defined cocky edge. And the best thing is, he never utters a single word.
+
+Good god I love Liu Ping, and going back to Rockstar's Table Tennis after some 12 years (12 years!) his appeal hasn't dimmed in the slightest. It's in his swagger, the strength and style he communicates in even the smallest of movements as he prowls around the table, deftly conjuring impossible shots. It's in his attitude, the way he holds the paddle angled towards himself, dangling purposefully between thumb and forefinger in a posture of pure purpose. It's the way he fans himself nonchalantly with that paddle at the end of a point, the raised eyebrow when a game doesn't go his way or the pursed lips and look of pure determination as he's about to fire off a serve. He's a hard-edged angel with a mean backhand.
+
+So much done with so very little, which is pretty much Rockstar's Table Tennis' maxim - and which pretty much flies against the maximalist approach that Rockstar typically takes with Grand Theft Auto. Funny, isn't it, how last generation was bookended by two Rockstar San Diego joints, both of which played fast and loose with the company's formula. Red Dead Redemption is brilliant in its own way, of course, rightly praised for its relative reserve and emotional maturity when placed in contrast to Grand Theft Auto 4 which preceded it (the contrast is even starker when you put it alongside [Grand Theft Auto 5](https://www.eurogamer.net/games/grand-theft-auto-v)), but Rockstar Table Tennis is something else; a wordless wonder where rivalries are told through nothing more than the tics that find their way into the animation.
+
+It's economy rather than excess, and it really works. There's a psychology to sport that can be underplayed in video games or, even worse, entirely absent, but in Table Tennis it's front and centre, sold in the pieces of business that inject a beautiful frisson to encounters. Like Jesper, for example - and if I love Liu Ping (and yes, I very much do) then I truly detest Jesper, a Swede with Liu Ping's same cool-headed approach but all delivered with a villainous arrogance. It all stems from his dismissive expression, the nasty little fist pumps when he scores a point, and the absolute temerity of trying to pull off that side-parting. Jesper is a complete and utter dick.
+
+Maybe I'm just filling in the blanks, but such is the magic of the minimal approach. For me, Table Tennis came out in that brilliant personal twilight between leaving university and having a nine-to-five, landing bang in the middle of long and smoky summer afternoons playing with friends on a beat-up Chesterfield sofa; the perfect arena, really, for the rivalries that Table Tennis is so good at stoking. There were grander tournaments, too - working as a projectionist at the local cinema, I'd take my Xbox 360 and plumb it into the biggest screen available, seeing a 15-foot Liu Ping being beamed onto the canvas in true HD glory.
+
+It really was glorious, too, as Table Tennis came out near the dawn of the HD era. Indeed, its purpose always seemed to be to act as a testbed for Rockstar's own Rage engine, which debuted in Table Tennis before going on to power Grand Theft Auto 4 and 5 as well as Red Dead Redemption. What a curious experiment, though it certainly proved how effective the Rage engine could be, and Table Tennis is full of flourishes that were astounding at the time - and, playing via backwards compatibility on the Xbox One, is still pretty impressive today. You can make out the ridges on the back of Liu Ping's closely shaved head, and can feel your blood chill when you're on the receiving end of Jesper's scowl, while the billowing shirts still look utterly convincing.
+
+And while its arenas might be sparse, they're convincingly told; there's the squeak of plimsolls, of course, but also the gentle calls from the crowd who'll call out Liu Ping's name, causing him to momentarily glance in their direction, before breaking out into a soft chant towards a match's climax. Let's not forget that this plays a mean game of Table Tennis too - as punchy, fast and dynamic as the real thing, told with a muscular edge that is unmistakably Rockstar, even if the genre's so far removed from the company's more typical territory.
+
+In the intensity of a match-up between the likes of Liu Ping and Jesper, you get a little idea of what's possible when Rockstar is bold enough to keep quiet, too. It's a reminder that, even away from all the noise and fury of a GTA, these are master craftspeople, with Table Tennis as potent an example of that craft as anything to come from the company's studios. Given how dramatically pared back Table Tennis is, it's arguably one of the most potent examples, leaving you to wonder about the effect that same economy may have in future Rockstar games.

@@ -1,0 +1,20 @@
+---
+title: 'Review: GD Script: Godot 3.1 game engine by Marijo Trkulja'
+url: https://cybereality.com/review-gd-script-godot-3-1-game-engine-by-marijo-trkulja/
+author: Cybereality
+published: '2019-12-10'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+![](../../assets/4060eb9e48cd7f2d.jpg)
+
+Author Marijo Trkulja makes a good effort here with GD Script: Godot 3.1 game engine. It’s noticeable that English is not a first language for the author, and there were some odd sentences here and there, but overall I found value in the book. Held within are numerous code samples, you can think of the text like a cookbook, and the code did appear to function (though I did not verify myself). I had some doubts at first about the quality, but, once I started reading more (and tried to look past the language barrier), these doubts faded and I actually liked it. Also, considering there are only three Godot books on Amazon (as of this writing), I felt I should give this one a chance.
+
+Inside there are quite a series of recipes for specific things you can do while coding in GDScript. We see things like: creating a 2D scene, hello world, creating comments, using onready and the ready function, for and while loops, process, random numbers, arrays, labels, buttons, and adding children. Then it moves onto the 3D scene, kinematic bodies, collision shapes, cameras, input, control nodes, alignment, sprites, rigid bodies, timers, drawing lines, and a few other odds and ends. For a book that clocks in at 115 pages, this is some roster. Some recipes would only take a few lines of codes, and some of the more complex chapters might be 1 or 2 pages long. I read this on my new Kindle Fire 7 and, thankfully, the code rendered nicely without the odd line breaks you find in many programming e-books. That said, some of the indentation was incorrect (for example an if statement and the next block being on the same level) but I assume this was done so it would render better on e-readers. Not the end of the world, and it was mostly clear from the context what was needed.
+
+My main gripe is that there was not a lot of explanation or comments. There would be a short header description and then a page or two of source code. I think for a total beginner this might be confusing, especially since Trkulja does almost everything with code (for example spawning Labels and setting the text in GDScript rather than using the Godot interface). This is simultaneously great and not so great. For advanced programmers, they may prefer the control of an all programmatic solution, but the Godot editor is a great part of using the engine, and it can save a lot of time laying out UI or level designs rather than coding by hand (plus it may confuse beginners). Also, the second half of the book is just basically a copy/paste of the Godot docs, which show the structure of the classes used in the book. While I did enjoy reading this part, I felt like it was wasted effort as you can easily read the same thing online or within Godot by pressing F4.
+
+That said, I did still enjoy the book. I’m just starting my journey with Godot and I wanted to read all the resources I could get my hands on. While this is certainly not the highest quality text, I found value and feel like I may have learned a thing or two in the process. In addition, it is a quick read and the price is reasonable. Actually, I got it on Amazon Unlimited (meaning for free with my subscription) and it only took about 1 or 2 hours to finish. So even knowing it’s not the best book, I feel the investment is small (both in time and money), so it has that in it’s favor. All in all, this is not on the level of Godot Engine Game Development in 24 Hours (which I reviewed [here](https://cybereality.com/review-godot-engine-game-development-in-24-hours-sams-teach-yourself-the-official-guide-to-godot-3-0-by-ariel-manzur-and-george-marques/)), but if you prefer to read books to get your learning (and maybe already read the other two books on Amazon) this is not the worst place to spend your time.

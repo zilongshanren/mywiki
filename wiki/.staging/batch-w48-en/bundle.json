@@ -1,0 +1,312 @@
+{
+  "batch_id": "batch-w48-en",
+  "agent_note": "Wave 48 English batch: cloudwu (2026-02 ~ 2026-04) + Kostas Anagnostou (2025-08 ~ 2026-02) + Warren Moore Metal by Example (2024-06 ~ 2026-03). cloudwu 7 文里 3 篇是月索引重复、1 篇是已入库的 2025-09-16 xlsx 重复、2 篇育儿数学课 off-topic，实 ingest 2 篇（Star Trek + soluna extlua 代理）。Kostas 5 篇全 ingest（GPU 利用率整体调优 / VS export 瓶颈实测 / Spatial hash RTAO / Neural rendering MLP / Cooperative Vectors 硬件加速）。Warren Moore 5 篇全 ingest（Metal 十年上 + 下 + HDR 视频 + Metal 4 基础 + Slug 字体渲染）。新增 10 个 concept 页、10 个 source 摘要、0 个人物页（三人均已存在）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-02-16_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "与同日 2026-02-16_yun-feng-de-blog-2.md 同内容（AI 辅助读书），后者已入库为 sources/cloudwu-ai-reading-workflow"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-03-01_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-star-trek-captains-chair",
+      "title": "Star Trek: Captain's Chair 初体验与 LLM 规则幻觉"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-03-11_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-soluna-extlua-proxy",
+      "title": "soluna 外挂 C 模块"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-03-11_yun-feng-de-blog-3.md",
+      "status": "skipped_duplicate",
+      "reason": "内容是 xlsx 文本化版本管理（cat2/lua 目录页），与 2025-09-16 那篇同文，已入库为 sources/cloudwu-xlsx-version-control"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-03-11_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "月索引 /2026/03/ 首条即 soluna 文，与 -2.md 同内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-04-12_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "育儿数学课（除法意义、给 8 岁女儿讲数学符号抽象）——不是软件 / 渲染 / 引擎内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-04-12_yun-feng-de-blog-2.md",
+      "status": "skipped_offtopic",
+      "reason": "与上条同内容（月索引 vs division.html 单文），同 off-topic"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-08-29_gpu-utilisation-and-performance-improvements.md",
+      "status": "ingested",
+      "source_slug": "interplay-gpu-utilisation-holistic",
+      "title": "GPU Utilisation and Performance Improvements"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-09-21_the-performance-impact-of-vertex-shader-exports.md",
+      "status": "ingested",
+      "source_slug": "interplay-vertex-shader-exports",
+      "title": "The Performance Impact of Vertex Shader Exports"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2025-11-23_spatial-hashing-for-raytraced-ambient-occlusion.md",
+      "status": "ingested",
+      "source_slug": "interplay-spatial-hash-rtao",
+      "title": "Spatial Hashing for Raytraced Ambient Occlusion"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2026-02-10_adventures-in-neural-rendering.md",
+      "status": "ingested",
+      "source_slug": "interplay-neural-rendering-1-mlp",
+      "title": "Adventures in Neural Rendering Part 1"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2026-02-21_adventures-in-neural-rendering-part-2-cooperative-vectors.md",
+      "status": "ingested",
+      "source_slug": "interplay-neural-rendering-2-coopvec",
+      "title": "Adventures in Neural Rendering Part 2: Cooperative Vectors"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2024-06-10_a-decade-of-metal-the-early-years-2014-2019.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-decade-early-years",
+      "title": "A Decade of Metal: The Early Years (2014–2019)"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2024-09-13_a-decade-of-metal-the-modern-era-2020-today.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-decade-modern-era",
+      "title": "A Decade of Metal: The Modern Era (2020–Today)"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2025-03-10_rendering-hdr-video-with-avfoundation-and-metal.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-hdr-video",
+      "title": "Rendering HDR Video with AVFoundation and Metal"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2025-07-08_getting-started-with-metal-4.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-metal-4-basics",
+      "title": "Getting Started with Metal 4"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2026-03-30_slug.md",
+      "status": "ingested",
+      "source_slug": "metalbyexample-slug",
+      "title": "Slug: GPU 字体渲染算法在 Metal 的实现"
+    }
+  ],
+  "concepts_created": [
+    "llm-rule-hallucination",
+    "lua-c-api-dylib-proxy",
+    "gpu-utilisation-holistic-tuning",
+    "vertex-shader-export-bottleneck",
+    "spatial-hash-rtao-cache",
+    "mlp-signal-encoding-rendering",
+    "hlsl-cooperative-vectors-tensor-cores",
+    "metal-decade-history",
+    "hdr-video-edr-metal",
+    "metal-4-api-redesign",
+    "slug-gpu-glyph-rendering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-star-trek-captains-chair",
+    "cloudwu-soluna-extlua-proxy",
+    "interplay-gpu-utilisation-holistic",
+    "interplay-vertex-shader-exports",
+    "interplay-spatial-hash-rtao",
+    "interplay-neural-rendering-1-mlp",
+    "interplay-neural-rendering-2-coopvec",
+    "metalbyexample-decade-early-years",
+    "metalbyexample-decade-modern-era",
+    "metalbyexample-hdr-video",
+    "metalbyexample-metal-4-basics",
+    "metalbyexample-slug"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[llm-rule-hallucination]]\n- [[lua-c-api-dylib-proxy]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-star-trek-captains-chair]]\n- [[sources/cloudwu-soluna-extlua-proxy]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-utilisation-holistic-tuning]] —— 2025 年的整帧调优方法论（瓶颈分析 + shader 类型选择 + async compute 配对）\n- [[vertex-shader-export-bottleneck]] —— 2025 年受控实验：N 卡 ISBE/PE/TRAM，1→10 float4 export 让 drawcall 成本近 3 倍，AMD GCN 几乎无影响\n- [[spatial-hash-rtao-cache]] —— 2025 年 11 月的 RTAO 加速 + 去噪方案（pcg + xxhash32 双哈希、age eviction、自适应 cell size）\n- [[mlp-signal-encoding-rendering]] —— 2026 年 2 月的小 MLP 在渲染里实测：辐亮度 MLP 赢 SH、辐照度 SH 赢 MLP、BRDF 要 Rusinkiewicz 参数化\n- [[hlsl-cooperative-vectors-tensor-cores]] —— 2026 年 2 月 Agility SDK preview 把大 MLP 加速 173× 的实测"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-gpu-utilisation-holistic]]\n- [[sources/interplay-vertex-shader-exports]]\n- [[sources/interplay-spatial-hash-rtao]]\n- [[sources/interplay-neural-rendering-1-mlp]]\n- [[sources/interplay-neural-rendering-2-coopvec]]"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-decade-history]] —— 2024 年十周年双篇回顾（早期 + 现代）\n- [[hdr-video-edr-metal]] —— 2025 年 AVFoundation + Metal 完整 HDR 视频管线 + PQ/HLG tonemapping shader\n- [[metal-4-api-redesign]] —— 2025 年 WWDC25 Metal 4 大版本的 API 重塑指南\n- [[slug-gpu-glyph-rendering]] —— 2026 年专利释放后第一篇 Slug 算法在 Metal 上的最小实现"
+    },
+    {
+      "file": "wiki/people/warren-moore.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/metalbyexample-decade-early-years]]\n- [[sources/metalbyexample-decade-modern-era]]\n- [[sources/metalbyexample-hdr-video]]\n- [[sources/metalbyexample-metal-4-basics]]\n- [[sources/metalbyexample-slug]]"
+    },
+    {
+      "file": "wiki/rendering/async-compute.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/interplay-gpu-utilisation-holistic]]"
+    },
+    {
+      "file": "wiki/rendering/shader-instruction-cost.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-utilisation-holistic-tuning]] —— 跨 pass 层面的瓶颈配对方法论（本文是单 pass 层面隐藏成本）\n- [[vertex-shader-export-bottleneck]] —— N 卡 ISBE/PE/TRAM 是另一类 fixed-function 隐藏成本"
+    },
+    {
+      "file": "wiki/rendering/neural-graphics-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mlp-signal-encoding-rendering]] —— 小 MLP 在渲染信号上的实测（辐亮度 / 辐照度 / 深度 / BRDF）\n- [[hlsl-cooperative-vectors-tensor-cores]] —— HLSL 通用 shader 访问 Tensor core 的 API"
+    },
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[metal-decade-history]] —— 十年版本演进回顾\n- [[metal-4-api-redesign]] —— Metal 4 的 API 重塑（显式 residency + command allocator + argument table）\n- [[hdr-video-edr-metal]] —— AVFoundation + Metal HDR 视频管线\n- [[slug-gpu-glyph-rendering]] —— 2026 年 Slug 算法在 Metal 上的实现"
+    },
+    {
+      "file": "wiki/programming-languages/lua-design-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-c-api-dylib-proxy]] —— 静态链接 Lua 宿主如何挂外部 C 扩展的代理方案（Ant Engine 运行期代理 / soluna 构建期代理）"
+    },
+    {
+      "file": "wiki/meta/ai-assisted-reading-workflow.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[llm-rule-hallucination]] —— 同一个 Gemini 在不同场景的反面样本：冷门规则学习里幻觉率极高且难辨别"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[spatial-hash-rtao-cache]] —— 静态场景 RTAO 的稀疏哈希缓存方案"
+    },
+    {
+      "file": "wiki/rendering/meshlets-and-mesh-shaders.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vertex-shader-export-bottleneck]] —— 传统 VS export 路径的 ISBE/PE/TRAM 成本，是改 mesh shader 的动机之一"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-utilisation-holistic-tuning]] | GPU 利用率整体调优：跨 pass 瓶颈配对 + async compute 搭配方法论 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vertex-shader-export-bottleneck]] | N 卡 VS export 的 ISBE/PE/TRAM 瓶颈，1→10 float4 export 近 3× 成本 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spatial-hash-rtao-cache]] | 稀疏空间哈希做 RTAO 缓存 + 天然去噪，11.4MB 支持 1M cell 自适应大小 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mlp-signal-encoding-rendering]] | 小 MLP 作为渲染信号编码器 vs SH：辐亮度赢、辐照度输、BRDF 靠参数化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hlsl-cooperative-vectors-tensor-cores]] | HLSL 通用 shader 访问 Tensor core，大 MLP 推理 173× 加速 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-decade-history]] | Apple Metal API 十年演进（2014–2024）双篇回顾 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hdr-video-edr-metal]] | AVFoundation + Metal HDR 视频管线 + PQ/HLG tonemapping shader |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[metal-4-api-redesign]] | Metal 4 的 API 重塑（显式 residency + command allocator + argument table） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[slug-gpu-glyph-rendering]] | Lengyel Slug 算法专利释放后 Metal 上的最小实现（winding + bands + fractional coverage） |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[lua-c-api-dylib-proxy]] | 静态链接 Lua 宿主如何挂第三方 C 扩展：运行期代理 DLL 和构建期 extlua 两代方案 |"
+    },
+    {
+      "category_header": "## 杂项（wiki/meta/）",
+      "row": "| [[llm-rule-hallucination]] | LLM 在冷门规则 / 新知识上的幻觉模式：自信度与知识边界完全解耦 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-star-trek-captains-chair]] | 云风：ST:CC 桌游卡牌构筑机制拆解 + 两次 Gemini 规则幻觉实录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-soluna-extlua-proxy]] | 云风：soluna 用 `lua_getextraspace` + 临时 VM 做 Lua C API 代理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-gpu-utilisation-holistic]] | Kostas：跨 pass 瓶颈配对和 async compute 搭配方法论 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-vertex-shader-exports]] | Kostas：N 卡 VS export 瓶颈的 3080 mobile 受控实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-spatial-hash-rtao]] | Kostas：spatial hashing 做 RTAO 缓存的完整实现 + 自适应 cell + age eviction |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-neural-rendering-1-mlp]] | Kostas：小 MLP 在渲染信号上的 compute shader 实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/interplay-neural-rendering-2-coopvec]] | Kostas：Cooperative Vectors preview 把 MLP 推到 Tensor core 的 173× 加速 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-decade-early-years]] | Warren Moore：Metal 2014–2019 演进回顾 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-decade-modern-era]] | Warren Moore：Metal 2020–2024 演进回顾（核心 raytracing / MetalFX / Vision Pro / residency set） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-hdr-video]] | Warren Moore：AVFoundation + Metal HDR 视频完整管线教程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-metal-4-basics]] | Warren Moore：Metal 4 API 迁移入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/metalbyexample-slug]] | Warren Moore：Slug 算法在 Metal 上的最小实现 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-48 Worker EN (cloudwu 2026-02~04 + Kostas 2025-08~2026-02 + Warren Moore 2024~2026)\n\n处理 17 篇英文博客。云风 7 文里实 ingest 2（Star Trek LLM 幻觉、soluna extlua 代理），3 篇月索引 / 目录页重复，1 篇内容与已入库 2025-09-16 xlsx 同文，2 篇育儿数学课 off-topic。Kostas Anagnostou 5 文全 ingest（硬核渲染：GPU 利用率整体调优、VS export 瓶颈实测、spatial hash RTAO、neural rendering MLP、Cooperative Vectors 硬件加速）。Warren Moore Metal by Example 5 文全 ingest（Metal 十年上下篇、HDR 视频管线、Metal 4 入门、Slug 字体渲染 —— 注意 slug.md 不是 WIP 占位而是真文章）。新增 11 个概念页（10 渲染 + 1 编程语言 + 1 meta），12 个 source 摘要，0 个人物页。"
+}

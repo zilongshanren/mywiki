@@ -1,0 +1,12 @@
+---
+title: A Three-Operator Splitting Scheme and its Optimization Applications
+url: https://damek.github.io/ThreeOperators.html
+published: '2015-03-01'
+source_blog: Damek Davis | Damek Davis’ Website
+source_site: https://damek.github.io/
+category: graphics
+fetched: '2026-04-19'
+---
+
+## A Three-Operator Splitting Scheme and its Optimization ApplicationsDamek Davis and Wotao Yin Operator splitting schemes have been successfully used in computational sciences to reduce complex problems into a series of simpler subproblems. Since 1950s, these schemes have been widely used to solve problems in PDE and control. Recently, large-scale optimization problems in machine learning, signal processing, and imaging have created a resurgence of interest in operator-splitting based algorithms because they often have simple descriptions, are easy to code, and have (nearly) state-of-the-art performance for large-scale optimization problems. Although operator splitting techniques were introduced over 60 years ago, their importance has significantly increased in the past decade. This paper introduces a new operator-splitting scheme for solving a variety of problems that are reduced to a monotone inclusion of three operators, one of which is cocoercive. Our scheme is very simple, and it does not reduce to any existing splitting schemes. Our scheme recovers the existing forward-backward, Douglas-Rachford, and forward-Douglas-Rachford splitting schemes as special cases. Our new splitting scheme leads to a set of new and simple algorithms for a variety of other problems, including the 3-set split feasibility problems, 3-objective minimization problems, and doubly and multiple regularization problems, as well as the simplest extension of the classic ADMM from 2 to 3 blocks of variables. In addition to the basic scheme, we introduce several modifications and enhancements that can improve the convergence rate in practice, including an acceleration that achieves the optimal rate of convergence for strongly monotone inclusions. Finally, we evaluate the algorithm on several applications. Code last updated April 2015 Bibtex
+@techreport{DavisYinThreeOPs2015, author= {Davis, Damek and Yin, Wotao}, title= {{A Three-Operator Splitting Scheme and its Optimization Applications}}, number={CAM 15-13}, year={2015}, institution={University of California, Los Angeles} } |

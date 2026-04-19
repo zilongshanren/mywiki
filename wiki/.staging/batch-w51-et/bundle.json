@@ -1,0 +1,142 @@
+{
+  "batch_id": "batch-w51-et",
+  "agent_note": "5/5 chipsandcheese.com hardware/microarch analyses ingested. 6 concept pages (5 computer-systems + 1 rendering), 2 people pages (chester-lam + chips-and-cheese collective), 5 source summaries.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-12-31_inside-nvidia-gb10s-memory-subsystem-from-the-cpu-side.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gb10-cpu-memory",
+      "title": "Inside Nvidia GB10's Memory Subsystem, from the CPU Side"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-03-14_analyzing-nvidia-gb10-s-gpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gb10-gpu",
+      "title": "Analyzing Nvidia GB10's GPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-03-22_microbenchmarking-chipsets-for-giggles.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-chipset-microbench",
+      "title": "Microbenchmarking Chipsets for Giggles"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-04-01_embracing-ai-with-claude-s-c-compiler.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ccc-april-fools",
+      "title": "Embracing AI with Claude's C Compiler"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-04-08_investigating-split-locks-on-x86-64.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-split-locks",
+      "title": "Investigating Split Locks on x86-64"
+    }
+  ],
+  "concepts_created": [
+    "gb10-memory-subsystem",
+    "cache-coherence-cross-cluster",
+    "gb10-gpu-blackwell-igpu",
+    "chipset-pcie-latency",
+    "split-lock-x86",
+    "llm-generated-c-compiler-perf"
+  ],
+  "people_created": [
+    "chips-and-cheese",
+    "chester-lam"
+  ],
+  "source_summaries_created": [
+    "chipsandcheese-gb10-cpu-memory",
+    "chipsandcheese-gb10-gpu",
+    "chipsandcheese-chipset-microbench",
+    "chipsandcheese-ccc-april-fools",
+    "chipsandcheese-split-locks"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gb10-memory-subsystem]] —— GB10（Nvidia/Mediatek）五层缓存（含 SLC）与 LPDDR5X 延迟实测\n- [[cache-coherence-cross-cluster]] —— 跨核复合体一致性的两级延迟档位\n- [[chipset-pcie-latency]] —— 主板 chipset 给 PCIe 加的几百 ns 延迟\n- [[split-lock-x86]] —— 跨 cache line atomic 如何破坏整个 memory hierarchy"
+    },
+    {
+      "file": "wiki/computer-systems/latency-vs-throughput.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gb10-memory-subsystem]] —— GPU 高带宽需求把 CPU 侧 latency 推到 400 ns 的实测案例\n- [[chipset-pcie-latency]] —— chipset 对 PCIe 的延迟与带宽双向影响"
+    },
+    {
+      "file": "wiki/computer-systems/cuda-memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gb10-gpu-blackwell-igpu]] —— consumer Blackwell L1/Shared Memory 128 KB vs datacenter 256 KB 的取舍"
+    },
+    {
+      "file": "wiki/computer-systems/cpu-performance-formula.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[llm-generated-c-compiler-perf]] —— IPC 当诊断指标 vs 优化目标的极端反例"
+    },
+    {
+      "file": "wiki/computer-systems/compilation-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[llm-generated-c-compiler-perf]] —— LLM 生成编译器的代码质量如何反向压测微架构"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gb10-memory-subsystem]] | Nvidia/Mediatek GB10（DGX Spark）CPU 侧五层缓存、双簇非对称、LPDDR5X 113 ns 实测 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cache-coherence-cross-cluster]] | 同簇 vs 跨簇一致性的两级延迟档位（DSU-120 Snoop Unit vs Coherent Fabric） |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[chipset-pcie-latency]] | 主板 chipset 对 PCIe 延迟/带宽的 500–900 ns 惩罚横测（AM5/Z890/Z170/AM3+） |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[split-lock-x86]] | 跨 cache line 原子操作在 7 代 x86-64 上的惩罚差异；Linux mitigation 的桌面争议 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[llm-generated-c-compiler-perf]] | LLM 写的 C 编译器当压测负载：move elimination 与零延迟 store forwarding 是救生圈 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gb10-gpu-blackwell-igpu]] | GB10 iGPU 是 consumer Blackwell 而非 datacenter（cc 12.1 vs 10.0）；24 MB L2 策略 vs RDNA 四层渐进缓存 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[chips-and-cheese]] | Chips and Cheese 集体作者页（CPU/GPU 微架构实测博客） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[chester-lam]] | Chips and Cheese 主笔，缓存/内存/互连延迟带宽实测的主要贡献者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gb10-cpu-memory]] | Chester Lam：GB10 CPU 侧内存子系统实测（2025-12） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gb10-gpu]] | Chester Lam：GB10 iGPU（consumer Blackwell）分析（2026-03） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-chipset-microbench]] | Chester Lam：主板 chipset 对 PCIe 延迟的影响（2026-03） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ccc-april-fools]] | Chester Lam：LLM C 编译器与微架构救生圈（2026-04 愚人节） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-split-locks]] | Chester Lam：x86-64 split lock 跨 7 平台横测（2026-04） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-51 Worker ET (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com（Chester Lam）CPU/GPU 微架构实测分析：GB10 CPU 侧内存子系统、GB10 iGPU（consumer Blackwell）、主板 chipset PCIe 延迟横测、LLM 生成 C 编译器压测微架构（April Fools）、x86-64 split lock 跨 7 平台横测。新增 6 概念页（gb10-memory-subsystem / cache-coherence-cross-cluster / gb10-gpu-blackwell-igpu / chipset-pcie-latency / split-lock-x86 / llm-generated-c-compiler-perf）、2 人物页（chips-and-cheese collective + chester-lam）、5 source 摘要。对 memory-hierarchy / latency-vs-throughput / cuda-memory-hierarchy / cpu-performance-formula / compilation-pipeline 发出相关链接 patch。"
+}

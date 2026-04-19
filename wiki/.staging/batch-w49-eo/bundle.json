@@ -1,0 +1,161 @@
+{
+  "batch_id": "batch-w49-eo",
+  "agent_note": "Wave-49 Worker EO: 8 篇 jendrikillner weekly 全 skip（link-digest，无独立技术论述）; Karis Nanite Tessellation 系列 5 篇全 ingest——新 4 个概念页（overview / implementation / reyes-comparison / variable-sized-work）+ 5 source 摘要。Note: 任务 prompt 提到的 [[nanite-virtualized-geometry]] 概念页实际不存在（brian-karis.md 里用 [[nanite|Nanite]] 形式，目标页未建），因此未对该概念页做 patch；新概念页里的 wikilink 按既有风格保留为 red link，与 brian-karis 页面一致。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2026-02-15_graphics-programming-428.md",
+      "status": "skipped_offtopic",
+      "reason": "link-digest weekly（Khronos 25 周年 + halftone + 其它链接），无独立技术论述，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-02-22_graphics-programming-429.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-03-01_graphics-programming-weekly-430.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-03-08_graphics-programming-weekly-431.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-03-15_graphics-programming-weekly-432.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-03-22_graphics-programming-weekly-433.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-03-29_graphics-programming-weekly-434.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2026-04-05_graphics-programming-weekly-435.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link-digest，按先例跳过"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2026-02-01_nanite-tessellation.md",
+      "status": "ingested",
+      "source_slug": "karis-nanite-tessellation-intro",
+      "title": "Nanite Tessellation（Intro）"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2026-02-01_possible-approaches-for-tessellation.md",
+      "status": "ingested",
+      "source_slug": "karis-possible-approaches-tessellation",
+      "title": "Possible approaches for tessellation"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2026-02-01_how-to-tessellate.md",
+      "status": "ingested",
+      "source_slug": "karis-how-to-tessellate",
+      "title": "How to tessellate"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2026-02-06_nanite-reyes.md",
+      "status": "ingested",
+      "source_slug": "karis-nanite-reyes",
+      "title": "Nanite + Reyes"
+    },
+    {
+      "path": "raw/articles/graphicrants.blogspot.com/2026-03-15_variable-sized-work.md",
+      "status": "ingested",
+      "source_slug": "karis-variable-sized-work",
+      "title": "Variable sized work"
+    }
+  ],
+  "concepts_created": [
+    "tessellation-approaches-overview",
+    "nanite-tessellation-approach",
+    "nanite-reyes-comparison",
+    "variable-sized-work-pattern"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "karis-nanite-tessellation-intro",
+    "karis-possible-approaches-tessellation",
+    "karis-how-to-tessellate",
+    "karis-nanite-reyes",
+    "karis-variable-sized-work"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/brian-karis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tessellation-approaches-overview]] — 2026 Nanite Tessellation 系列（overview）\n- [[nanite-tessellation-approach]] — UE5.4 dynamic tessellation + displacement 的流水线\n- [[nanite-reyes-comparison]] — 和经典 Reyes 的对照\n- [[variable-sized-work-pattern]] — wave 内变长工作分发原语"
+    },
+    {
+      "file": "wiki/people/brian-karis.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/karis-nanite-tessellation-intro]]\n- [[sources/karis-possible-approaches-tessellation]]\n- [[sources/karis-how-to-tessellate]]\n- [[sources/karis-nanite-reyes]]\n- [[sources/karis-variable-sized-work]]"
+    },
+    {
+      "file": "wiki/rendering/hull-domain-tessellation-urp.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tessellation-approaches-overview]] —— Karis 对 D3D hardware tessellator 拓扑均匀方案的批评：密度均匀比拓扑均匀省 31% 三角形\n- [[nanite-tessellation-approach]] —— UE5.4 脱离 D3D tessellator 的软实现"
+    },
+    {
+      "file": "wiki/rendering/meshlets-and-mesh-shaders.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[variable-sized-work-pattern]] —— AS 剔除里 `WavePrefixCountBits + WaveActiveCountBits` 是同类"
+    },
+    {
+      "file": "wiki/rendering/d3d12-work-graphs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[variable-sized-work-pattern]] —— 同类问题的 wave 内尺度解法，和 work graphs 互补（work graphs 跨 threadgroup / 跨 dispatch）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tessellation-approaches-overview]] | Karis 2026：动态 tessellation + 位移的选型路径，为什么 tracing 和 Nanite 簇内放大都不行、最终走 Reyes |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nanite-tessellation-approach]] | UE5.4 Nanite Tessellation 的流水线：ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nanite-reyes-comparison]] | Nanite Tessellation 与 Pixar Reyes 的逐点对照：split 同构、dice 从方格换成不规则等边、shading 频率从 object-space 改为像素 deferred material |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[variable-sized-work-pattern]] | Karis 从 Nanite Tessellation 抽出的通用并行原语：wave 内 pull-based 变长工作分发，顺便解释 Nanite 软光栅为何快于 HW |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-nanite-tessellation-intro]] | Karis：Nanite Tessellation 系列开篇，为什么位移值得做 amplification |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-possible-approaches-tessellation]] | Karis：逐一否决 tracing 与 Nanite 簇内放大，滑向 Reyes |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-how-to-tessellate]] | Karis：Tessellation Table 离线预计算 + 16bit barycentric 量化，密度均匀 remesh |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-nanite-reyes]] | Karis：UE5.4 完整流水线——ClusterRasterize 扩展 / PatchSplit global shader / PatchRasterize 软光栅 + DS 导数链式法则 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/karis-variable-sized-work]] | Karis：wave 内 pull-based 变长工作分发原语，顺便解释 Nanite 软光栅快于 HW 的数据移动论 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-49 Worker EO (jendrikillner ×8 skip + graphicrants Karis Nanite Tessellation ×5)\n\nJendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 2026 Nanite Tessellation 系列 5 篇全 ingest：新增 4 个概念页（tessellation-approaches-overview / nanite-tessellation-approach / nanite-reyes-comparison / variable-sized-work-pattern）+ 5 source 摘要。Patch brian-karis（增 2026 条目）、hull-domain-tessellation-urp（对照 D3D tessellator）、meshlets-and-mesh-shaders 与 d3d12-work-graphs（交叉 variable-sized-work）。"
+}

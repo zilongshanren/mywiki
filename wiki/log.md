@@ -673,3 +673,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-51 Worker ET (chipsandcheese.com ×5)
 
 处理 5 篇 chipsandcheese.com（Chester Lam）CPU/GPU 微架构实测分析：GB10 CPU 侧内存子系统、GB10 iGPU（consumer Blackwell）、主板 chipset PCIe 延迟横测、LLM 生成 C 编译器压测微架构（April Fools）、x86-64 split lock 跨 7 平台横测。新增 6 概念页 + 2 人物页（chips-and-cheese collective + chester-lam）+ 5 source 摘要。
+
+## [2026-04-19] update | Manifest prune — 13 off-topic hosts removed
+
+应用户指示剪枝 manifest：直接去掉 game-wisdom.com (3894) + learn-cocos2d.com (1712) + hacks.mozilla.org (1516) + gamasutra.com (1336) 四大巨量非 gfx 站；另清除清晰 off-topic 的 tonybai.com (Chinese Go) + masteringemacs.org (Emacs) + divisbyzero.com (数学) + sea-of-memes.com (Minecraft SEO 垃圾) + blog.eyas.sh (政治) + frgmnts.blog (政治) + claire-blackshaw.com (混杂非技术) + blog.justbilt.com (占位) + circle-group.github.io (学术 ML diffusion)。共 10487 篇移出 manifest，补进 done.txt 标 skipped_offtopic；原 raw/ 文件保留（CLAUDE.md: raw/ 不可修改）。blogs.yaml 同步移除 13 个 entry（312 → 299），防止 feedly-ingest 未来重抓。剩余可处理 5676 篇。

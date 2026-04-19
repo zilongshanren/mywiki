@@ -1,0 +1,18 @@
+---
+title: Custom 2D Physics in Unity Using Verlet Integration
+url: https://cybereality.com/custom-2d-physics-in-unity-using-verlet-integration/
+author: Cybereality
+published: '2017-01-19'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+So 2017 will be my year of “doing the work,” a line I learned from Steven Pressfield in his excellent book named, unsurprisingly, “Do the Work.” I’ve spent literally years reading about 3D math and physics and, outside of a few small demos I’ve experimented with and never released, I haven’t actually produced anything. I’ve also been inspired and motivated by a variety of books, most recently “Little Bets” which talks about innovators from Steve Jobs to Pixar and how they developed their craft. So, hopefully this year I can work on various smaller projects to hone my skills and really apply the knowledge I’ve gained.
+
+To begin with, I’ve implemented a Verlet Integration based 2D physics engine in Unity, shown in the video above. I created this in basically 1 day over a weekend, and am pretty impressed with the initial results. To be fair, all the logic was taken from a C++ tutorial I found online, [A Verlet based approach for 2D game physics](https://www.gamedev.net/resources/_/technical/math-and-physics/a-verlet-based-approach-for-2d-game-physics-r2714) by Benedikt Bitterli, and basically what I did was re-implement it in C# and Unity. I’m no stranger to Verlet Integration, and did similar work many years ago in Flash after reading Thomas Jakobsen’s breakthrough 2003 article, [Advanced Character Physics](http://www.gamasutra.com/view/feature/131313/advanced_character_physics.php). So I very much understood the concepts already and could hit the ground running.
+
+The idea was to begin with something small and achievable, and then build upon it. I started with 2D first, but it shouldn’t be that hard to expand the demo to support 3D as well. Eventually I’d like to explore GPU accelerated physics using Compute Shaders, but I do understand that’s a very complex proposition. Some of my earlier experiments with GPGPU programming were initially positive, but I quickly hit walls with the fundamentals of data structure and the huge can of worms of massively parallel computation. Still, I believe the potential is there, but I have a lot more to learn to harness that kind of power.
+
+After my failed excursion in 3D engine programming, I’m a bit hesitant to make another series out of this. I do hope to continue exploring physics more, and will try to share what I can of the process as I move forward. Honestly, looking back at a lot of the games I’ve programmed in the past, I realized it was mostly the physics that made the games fun. Back then it was when Flash and 2D web games were big, so it was feasible to write the physics code by hand for each game. Today, with 3D being the norm, that kind of customized physics per-game is not tenable but, at the same time, I feel that many developers just use their engine of choice’s built-in physics and things haven’t really evolved. I have some ideas I’d like to explore that just aren’t possible with what is on the market. Maybe the state of the art is just not there yet, or current hardware is not capable, but I feel compelled to at least try. If everything goes well maybe you will see more of these physics posts from me, and maybe something will come of it. Or, maybe not. I guess we will see.

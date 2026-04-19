@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w45-ee",
+  "agent_note": "anteru.net 6 篇论文/项目索引页。Skip 1 篇（consulting.md 是服务介绍）。Ingest 5 篇论文（SpMV work graph ISCA 2025、Hybrid Sample Surface VMV 2012、Giga-Particle Fluid HPG 2014、SRAA I3D 2011、Tiled Light Trees I3D 2017）。新增 2 个概念页：subpixel-reconstruction-antialiasing（SRAA 是独特的 subpixel visibility + 1x shading 方案，deferred 抗锯齿家族里无 MLAA/SRAA 专页）、tiled-light-trees（tile 内 BVH + 混合 clustered shading，现有 tiled-light-culling 不覆盖这个算法）。其余 3 篇（workgraph SpMV、hybrid surface、giga-particle fluid）不建新概念页——workgraph SpMV 归入 d3d12-work-graphs，其余两篇是一次性论文，source 摘要足够。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_consulting.md",
+      "status": "skipped_offtopic",
+      "reason": "Anteru 个人 consulting 服务介绍页（graphics / architecture / web dev 三块服务招揽），非技术内容。"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_gpus-all-grown-up-fully-device-driven-spmv-using-gpu-work-gr.md",
+      "status": "ingested",
+      "source_slug": "anteru-workgraph-spmv",
+      "title": "GPUs All Grown-Up: Fully Device-Driven SpMV Using GPU Work Graphs (ISCA 2025)"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_hybrid-sample-based-surface-rendering.md",
+      "status": "ingested",
+      "source_slug": "anteru-hybrid-sample-surface",
+      "title": "Hybrid Sample-based Surface Rendering (VMV 2012)"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_interactive-rendering-of-giga-particle-fluid-simulations.md",
+      "status": "ingested",
+      "source_slug": "anteru-giga-particle-fluid",
+      "title": "Interactive Rendering of Giga-Particle Fluid Simulations (HPG 2014)"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_subpixel-reconstruction-antialiasing.md",
+      "status": "ingested",
+      "source_slug": "anteru-sraa",
+      "title": "Subpixel Reconstruction Antialiasing (I3D 2011)"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_tiled-light-trees.md",
+      "status": "ingested",
+      "source_slug": "anteru-tiled-light-trees",
+      "title": "Tiled Light Trees (I3D 2017)"
+    }
+  ],
+  "concepts_created": [
+    "subpixel-reconstruction-antialiasing",
+    "tiled-light-trees"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "anteru-workgraph-spmv",
+    "anteru-hybrid-sample-surface",
+    "anteru-giga-particle-fluid",
+    "anteru-sraa",
+    "anteru-tiled-light-trees"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[subpixel-reconstruction-antialiasing]] —— I3D 2011，deferred 管线的子像素可见性 + 1x 着色重建\n- [[tiled-light-trees]] —— I3D 2017（与 O'Donnell/Frostbite），tile 内 light BVH + clustered shading 混合\n- [[d3d12-work-graphs]] —— ISCA 2025 把 work graph 从图形移植到 SpMV"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-sraa]]\n- [[sources/anteru-tiled-light-trees]]\n- [[sources/anteru-workgraph-spmv]]\n- [[sources/anteru-hybrid-sample-surface]]\n- [[sources/anteru-giga-particle-fluid]]"
+    },
+    {
+      "file": "wiki/rendering/d3d12-work-graphs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/anteru-workgraph-spmv]] —— Chajdas 等 ISCA 2025，把 work graph 从图形管线移植到 SpMV，证明"动态输出 + host 往返敏感"的 HPC 场景 work graph 有实质收益（比 rocSPARSE LRB 快 3.35×，内存固定 25 MiB）"
+    },
+    {
+      "file": "wiki/rendering/d3d12-work-graphs.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-workgraph-spmv]]"
+    },
+    {
+      "file": "wiki/rendering/tiled-light-culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiled-light-trees]] —— O'Donnell & Chajdas I3D 2017：tile 内再建 BVH 解决 clustered shading 的"坏 tile"问题（高深度方差下光源列表膨胀），并用 tree + clustered 混合方案在几乎所有场景下都不慢于任一单路"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[subpixel-reconstruction-antialiasing]] | Chajdas/McGuire/Luebke 2011：子像素 visibility + 1x shading 的 deferred 抗锯齿 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tiled-light-trees]] | O'Donnell/Chajdas 2017：tile 内 light BVH + clustered 混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-sraa]] | Chajdas：SRAA I3D 2011 论文页 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-tiled-light-trees]] | O'Donnell/Chajdas：tiled light trees I3D 2017 论文页 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-workgraph-spmv]] | Chajdas 等：work graph SpMV ISCA 2025 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-hybrid-sample-surface]] | Reichl/Chajdas：hybrid 光栅+ray-cast 大 mesh 渲染 VMV 2012 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-giga-particle-fluid]] | Reichl/Chajdas：亿级粒子流体交互渲染 HPG 2014 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-45 Worker EE (anteru.net papers ×6)\n\n处理 6 篇 anteru.net 论文/项目索引页。Skip 1 篇（consulting.md 是服务介绍）。Ingest 5 篇：SpMV Work Graphs (ISCA 2025)、Hybrid Sample-based Surface Rendering (VMV 2012)、Giga-Particle Fluid (HPG 2014)、SRAA (I3D 2011)、Tiled Light Trees (I3D 2017)。新增 2 概念页：[[subpixel-reconstruction-antialiasing]]（deferred 抗锯齿家族此前缺 MLAA/SRAA 专页）、[[tiled-light-trees]]（tile 内 BVH + clustered 混合，现有 tiled-light-culling 不覆盖此算法）。SpMV work graph 作为 [[d3d12-work-graphs]] 的 HPC 应用案例，不新建概念页——Chajdas 等证明了动态输出密集、host 往返敏感的工作负载才是 work graph 的收益场景。"
+}

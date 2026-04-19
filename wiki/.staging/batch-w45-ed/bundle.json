@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w45-ed",
+  "agent_note": "cloudwu blog 2025-12~2026-02 共 7 篇：3 篇入库（AI 聊游戏设计 / 单人桌游介绍 / AI 辅助读书），4 篇跳过（1 篇是已入库 cloudwu-deckbuilder-games 的月份列表页重复抓取、1 篇是 01-24 日同篇文章的另一份抓取、1 篇是 02-16 日同篇文章的 cat27 分类页截断、1 篇跑步攀岩日记非技术）。新增 2 概念页（planning-over-rng-game-design, ai-assisted-reading-workflow）+ 3 source 摘要。规划式游戏设计与卡牌构筑设计并列成为 cloudwu 游戏设计思考的两条支线。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-23_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "内容与已入库的 cloudwu-deckbuilder-games（raw 源文件 2025-12-15_yun-feng-de-blog.md）完全相同。此 URL 是月份列表页 blog.codingnow.com/2025/12/ 的抓取，正文就是 2025-12-15 单篇文章《最近玩的几款卡牌构筑类电子游戏》。"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-01-15_yun-feng-de-blog.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ai-game-design-chat",
+      "title": "和 AI 聊游戏设计"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-01-24_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-solo-boardgames",
+      "title": "介绍几款单人桌游"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-01-24_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "正文与 2026-01-24_yun-feng-de-blog-2.md 完全一致。该 URL 是 blog.codingnow.com/2026/01/ 月份列表页的抓取，展示的正是 2026-01-24 单篇文章《介绍几款单人桌游》。以带 -2 后缀的单篇 URL 版本作为入库源。"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-02-11_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "日常锻炼的一些记录：跑步减重、女儿迷上抱石、指关节护理、带儿子跑 4km 等纯生活 / 亲子内容，无技术观点"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-02-16_yun-feng-de-blog-2.md",
+      "status": "ingested",
+      "source_slug": "cloudwu-ai-reading-workflow",
+      "title": "用 AI 辅助读书"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-02-16_yun-feng-de-blog-3.md",
+      "status": "skipped_duplicate",
+      "reason": "URL 是 blog.codingnow.com/cat27/ 分类页抓取，正文是 2026-02-16 单篇文章《用 AI 辅助读书》的前半部分截断版（缺末尾关于翻译对照和 Gemini 解释 We/Our→朕 的关键内容）。以 -2 版本作为入库源。"
+    }
+  ],
+  "concepts_created": [
+    "planning-over-rng-game-design",
+    "ai-assisted-reading-workflow"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "cloudwu-ai-game-design-chat",
+    "cloudwu-solo-boardgames",
+    "cloudwu-ai-reading-workflow"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planning-over-rng-game-design]]\n- [[ai-assisted-reading-workflow]]"
+    },
+    {
+      "file": "wiki/people/cloudwu.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/cloudwu-ai-game-design-chat]]\n- [[sources/cloudwu-solo-boardgames]]\n- [[sources/cloudwu-ai-reading-workflow]]"
+    },
+    {
+      "file": "wiki/game-development/deckbuilder-game-design-patterns.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planning-over-rng-game-design]] —— 并列的规划式游戏设计路线（dotAGE / Spirit Island / Voidfall）"
+    },
+    {
+      "file": "wiki/game-development/determinism-vs-smart-ai-gameplay.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planning-over-rng-game-design]] —— 规划式游戏的确定性战斗与精算乐趣"
+    },
+    {
+      "file": "wiki/game-development/indie-game-dev-rhythm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planning-over-rng-game-design]] —— dotAGE 作者独自做 9 年的案例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[planning-over-rng-game-design]] | 规划式游戏设计：dotAGE / Spirit Island / Voidfall 的确定性 + 精算乐趣 |"
+    },
+    {
+      "category_header": "## 元 / 跨领域（wiki/meta/）",
+      "row": "| [[ai-assisted-reading-workflow]] | AI 辅助阅读：机器直译 + LLM 上下文解释的小说阅读工作流 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ai-game-design-chat]] | 云风：和 AI 聊游戏设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-solo-boardgames]] | 云风：介绍几款单人桌游（Spirit Island / Voidfall / Friday） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cloudwu-ai-reading-workflow]] | 云风：用 AI 辅助读英文小说 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-45 Worker D (cloudwu blog 2025-12~2026-02 ×7)\n\n处理 7 篇 blog.codingnow.com 文章：3 篇入库（AI 聊游戏设计、单人桌游介绍、AI 辅助读书），4 篇跳过：1 篇与已入库 cloudwu-deckbuilder-games 重复（月份列表页抓取），2 篇是同日单篇文章的另一份抓取（月份列表页 / cat27 分类页），1 篇跑步攀岩日记非技术内容。新增 2 概念页（planning-over-rng-game-design, ai-assisted-reading-workflow）与 3 source 摘要。规划式游戏设计（确定性 + 精算 + 小卡池 + 跨回合资源）作为 cloudwu 游戏设计思考的又一条支线，与卡牌构筑并列。"
+}

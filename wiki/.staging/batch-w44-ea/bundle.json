@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w44-ea",
+  "agent_note": "danielilett.com Retro Shaders Pro — URP/Godot variants + installation guide. 1 skipped (install guide is non-technical setup copy), 4 ingested as source summaries. No new concepts: all content feeds existing crt-shader-effects + retro-rendering-techniques + color-quantization-retro. Key new parameters worth cross-linking: URP CRT Post Process 独有 Interlaced Rendering, Custom RGB Sliders, Render Pass Event; URP Retro Lit 相比 Terrain 版多 Surface Options + Vertex Lit + Specular + Reflection Cubemap; Godot Retro Lit 是三者中最小集合。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-godot-retro-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-godot-retro-lit",
+      "title": "Retro Shaders Pro for Godot - Retro Lit"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-crt-mesh.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-urp-crt-mesh",
+      "title": "Retro Shaders Pro for URP - CRT (Mesh)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-crt-post-process.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-urp-crt-post-process",
+      "title": "Retro Shaders Pro for URP - CRT (Post Process)"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-installation-guide.md",
+      "status": "skipped_offtopic",
+      "reason": "产品安装说明（Asset Store / itch.io / Gumroad 导入路径、installer window 打开步骤、Shader Graph variant limit 调整提示、材质创建步骤），非技术性设计或算法内容。"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_retro-shaders-pro-for-urp-retro-lit.md",
+      "status": "ingested",
+      "source_slug": "danielilett-retro-urp-retro-lit",
+      "title": "Retro Shaders Pro for URP - Retro Lit"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-retro-godot-retro-lit",
+    "danielilett-retro-urp-retro-lit",
+    "danielilett-retro-urp-crt-mesh",
+    "danielilett-retro-urp-crt-post-process"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-retro-urp-crt-mesh]] —— URP 版 CRT Mesh，和 Godot 版近似；Tracking Texture 用 x-by-1 的 RG 双通道编码 UV 偏移 + 扫描线概率\n- [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏版独有 *Interlaced Rendering*（每帧只渲半数行，真实 CRT 交错扫描）、*Custom RGB Sliders*（整数滑块直控 R/G/B 每通道级数）、*Render Pass Event*（插在 URP 内置 post 之前或之后）、以及 Custom Luminance / RGB / RGB+Intensity 三种 ramp 采样模式"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-retro-urp-crt-mesh]]\n- [[sources/danielilett-retro-urp-crt-post-process]]"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-retro-godot-retro-lit]] —— Godot 版 Retro Lit，是同一套 PSX 技术的最小可用集：view-space vertex snap、color depth + dither、Bilinear/Point/N64 filtering、Standard/Texel/Unlit 三光照模式\n- [[sources/danielilett-retro-urp-retro-lit]] —— URP 通用版 Retro Lit，在 Terrain 版基础上加 Surface Options（Opaque/Transparent/Alpha Clip/双面）、*Use Flat Shading*（无 Gouraud 插值的面着色）、Specular + Reflection Cubemap（可选复古之上的现代点缀）"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-retro-godot-retro-lit]]\n- [[sources/danielilett-retro-urp-retro-lit]]"
+    },
+    {
+      "file": "wiki/rendering/color-quantization-retro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏 CRT 的 Custom RGB Sliders 模式用整数滑块直接指定 R/G/B 每通道级数，是色阶量化的 UI 极简表达；并暴露 Custom Luminance / RGB / RGB+Intensity 三种自定义 ramp 采样模式"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-retro-godot-retro-lit]]\n- [[sources/danielilett-retro-urp-retro-lit]]\n- [[sources/danielilett-retro-urp-crt-mesh]]\n- [[sources/danielilett-retro-urp-crt-post-process]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-godot-retro-lit]] | Ilett：Godot 版 Retro Lit 参数手册，PSX look 最小可用集 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-urp-retro-lit]] | Ilett：URP 通用 Retro Lit，含 Surface Options + flat shading + specular/cubemap |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-urp-crt-mesh]] | Ilett：URP CRT 贴 mesh 变体（CCTV 屏），Tracking Texture RG 双通道编码 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-retro-urp-crt-post-process]] | Ilett：URP 全屏 CRT，独有 Interlaced Rendering + Custom RGB Sliders + Render Pass Event |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-44 Worker EA (danielilett.com Retro Shaders Pro variants ×5)\n\n处理 5 篇 Daniel Ilett *Retro Shaders Pro* 变体文档（URP Retro Lit、URP CRT Mesh、URP CRT Post Process、Godot Retro Lit、URP Installation Guide）。Ingest 4 篇为 source 摘要，Skip 1 篇（installation guide 为安装说明，非技术内容）。无新增概念页——内容归入既有 [[crt-shader-effects]]、[[retro-rendering-techniques]]、[[color-quantization-retro]]。URP CRT Post Process 贡献了 Interlaced Rendering、Custom RGB Sliders、Render Pass Event、Custom Luminance/RGB/RGB+Intensity ramp 采样等全屏版独有参数；URP Retro Lit 相比 Terrain 版增加 Surface Options + flat shading + specular + reflection cubemap。"
+}

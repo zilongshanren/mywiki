@@ -1,0 +1,22 @@
+---
+title: 'Review: Essential Mathematics for Games and Interactive Applications by James
+  M. Van Verth and Lars M. Bishop'
+url: https://cybereality.com/review-essential-mathematics-for-games-and-interactive-applications-by-james-m-van-verth-and-lars-m-bishop/
+author: Cybereality
+published: '2017-02-13'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+![](../../assets/8588f905842af27c.jpg)
+
+
+The book starts with an overview of computer number representations, and goes into detail with the IEEE 754 floating-point standard. At first I assumed this was unnecessary detail, but actually it’s pretty useful to understand and a good base to build on. They continue with vectors and points, linear transformations and matrices, affine transformations, orientation (including matrices, Euler angles, axis-angle, and quaternions), and interpolation (linear and curved). In the next section they transition to more graphic oriented topics such as: viewing and projection, geometry and programmable shading, lighting, rasterization, then a random chapter on… random numbers, and finish off with intersection testing and rigid-body dynamics.
+
+Just looking at the table of contents is sometimes not enough to get a feel for the quality of the text, so I will reveal more. The beginning parts are really exactly what you’d expect for a game math book. The basics of vectors, matrices, quaternions, etc. are the bread and butter for a 3D programmer. The coverage here is solid and great for a beginner. Advanced readers may not find any surprises, but it’s still a good refresher. The interpolation chapter I found interesting, especially the detail into different types of curves and splines . This could be immediately useful for coding a skinned character or animating a camera in a game. Viewing and projection were given adequate coverage and are essential to anyone wishing to code a graphics engine themselves. The next chapter was particularly long and explained the programmable shader pipeline to great effect. The authors explained everything from color representation, vertex attributes, drawing geometry, fixed-function versus programmable, vertex and fragment shaders (aka pixel shaders), and texture mapping. Really a great introduction for anyone wanting to learn to code shaders themselves. Then they move onto lighting and go into the basic types (point, spot, directional, and ambient), surface materials, per-vertex and per-fragment lighting, combining with textures, and a few small sections of more advanced topics like normal mapping, physically based lighting, HDR, and deferred shading.
+
+Next up is rasterization, which was an awesome chapter that explained (in epic detail) how rasterizers work which I feel does help when you know what’s going on behind the scenes. I don’t know of many other books that explain this part of the pipeline so well, so this was much appreciated. The random number chapter was also quite informative. It’s easy to just call a function that spits out a number and not actually understand what’s happening. I found this portion of the book to be a nice surprise. Intersection testing was covered near the end, and it was one of the longer chapters. Almost anything you could think of was here: finding distances from lines and points, sphere/ray/plane intersections, axis-aligned bounding boxes (AABBs), swept spheres, object-oriented boxes, triangle intersection, and a simple collision system. Finally the book closes with a chapter on rigid-body dynamics. I actually purchased my copy mostly for the rigid-body material and I felt I learned a few useful things. Of course, it was only one chapter but some of the explanation was better than whole books I’ve read on physics. Certainly it gave me a few things to research further, and I appreciate that.
+
+Overall I would say that Essential Mathematics for Games and Interactive Applications is an almost flawless textbook. I may be a great place to start for a beginner, and even intermediate to advanced readers may learn a thing or two. Some of the other game math books I recommend I read so long ago it’s hard to make a direct comparison. But this title is certainly up there with the best. I would wholeheartedly recommend.

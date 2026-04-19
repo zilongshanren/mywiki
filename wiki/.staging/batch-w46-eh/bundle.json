@@ -1,0 +1,207 @@
+{
+  "batch_id": "batch-w46-eh",
+  "agent_note": "blog.playcanvas.com 2025-05 到 2026-03 的 10 篇：10 ingested / 0 skipped。3 新概念页：sog-compression-format（SOGS+SOG 合并），playcanvas-esm-scripts，splat-transform-cli。1 新人物页：kris-bamrah（编辑器开源 + VSCode extension 两篇的作者）。主要 patch 目标：supersplat-publish-platform（追加 Studio / Walk Mode / Streamed LOD / Easy Upload / SOG 压缩默认 5 条新功能）、will-eastcott / mark-lundin 人物页加 sources。2 篇 Developer Spotlight（Reflct / Voxelo）都有足够的技术含量（three.js → PlayCanvas 迁移数据、SOG 性能 +95%、AI-driven 视频转 3DGS、小 flag 关 AA 对 splat 帧率的影响等）保留为 source；没有起新概念页——它们的核心技术点都能映到 sog-compression-format / gaussian-splatting-web / playcanvas-react-declarative。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-05-15_playcanvas-adopts-sogs-for-20x-3dgs-compression-playcanvas-b.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-sogs-20x-compression",
+      "title": "PlayCanvas Adopts SOGS for 20x 3DGS Compression"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-06-10_introducing-esm-scripts-in-playcanvas-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-esm-scripts",
+      "title": "Introducing ESM Scripts in PlayCanvas"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-07-15_introducing-splattransform-the-ultimate-cli-tool-for-3d-gaus.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-splat-transform-cli",
+      "title": "Introducing SplatTransform: The Ultimate CLI Tool for 3D Gaussian Splats"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-07-30_playcanvas-editor-frontend-is-now-open-source-playcanvas-blo.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-editor-frontend-oss",
+      "title": "PlayCanvas Editor Frontend is now Open Source"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-08-21_gaussian-splatting-for-e-commerce-developer-spotlight-on-ref.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-reflct-spotlight",
+      "title": "Gaussian Splatting for E-Commerce - Developer Spotlight on Reflct"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-09-17_playcanvas-open-sources-sog-the-webp-of-gaussian-splatting-p.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-sog-opensource",
+      "title": "PlayCanvas Open Sources SOG: The WebP of Gaussian Splatting"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2025-11-25_new-playcanvas-visual-studio-extension-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-vscode-extension",
+      "title": "New PlayCanvas Visual Studio Extension"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2026-01-22_ai-powered-3dgs-product-visualization-developer-spotlight-on.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-voxelo-spotlight",
+      "title": "AI-Powered 3DGS Product Visualization - Developer Spotlight on Voxelo"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2026-02-11_build-gaussian-splat-experiences-with-supersplat-studio-play.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-studio",
+      "title": "Build Gaussian Splat Experiences with SuperSplat Studio"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2026-03-11_new-in-supersplat-walk-mode-streamed-lod-and-easy-upload-pla.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-supersplat-walk-lod",
+      "title": "New in SuperSplat: Walk Mode, Streamed LOD and Easy Upload"
+    }
+  ],
+  "concepts_created": [
+    "sog-compression-format",
+    "playcanvas-esm-scripts",
+    "splat-transform-cli"
+  ],
+  "people_created": [
+    "kris-bamrah"
+  ],
+  "source_summaries_created": [
+    "playcanvas-sogs-20x-compression",
+    "playcanvas-esm-scripts",
+    "playcanvas-splat-transform-cli",
+    "playcanvas-editor-frontend-oss",
+    "playcanvas-reflct-spotlight",
+    "playcanvas-sog-opensource",
+    "playcanvas-vscode-extension",
+    "playcanvas-voxelo-spotlight",
+    "playcanvas-supersplat-studio",
+    "playcanvas-supersplat-walk-lod"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/supersplat-publish-platform.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sog-compression-format]] —— 2025 年 9 月起 SuperSplat 默认用 SOG 压缩发布；比 Compressed PLY 再缩 2-3×\n- [[splat-transform-cli]] —— SuperSplat 的 CLI 对位：生成 SOG、walk mode 的体素 collision、streamed LOD\n- [[sources/playcanvas-supersplat-studio]] —— Studio（2026-02）：annotations（25/场景）+ post effects（Bloom / Sharpen / Vignette / Color Grading / Chromatic Fringing）+ 多 tonemapping operator（ACES / ACES 2.0 / Hejl / Neutral 等）\n- [[sources/playcanvas-supersplat-walk-lod]] —— Walk Mode（voxel collision + click-to-walk / WASD / pinch-to-move）+ Streamed LOD（基于 SOG 切片按需加载，桌面 4M → 10M+ Gaussian 实用化）+ Easy Upload（主页拖文件直发布）+ PlayCanvas Engine 2.17.0 splat 渲染性能优化"
+    },
+    {
+      "file": "wiki/rendering/supersplat-publish-platform.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-supersplat-studio]]\n- [[sources/playcanvas-supersplat-walk-lod]]\n- [[sources/playcanvas-reflct-spotlight]]\n- [[sources/playcanvas-voxelo-spotlight]]"
+    },
+    {
+      "file": "wiki/rendering/gaussian-splatting-web.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sog-compression-format]] —— 在压缩 PLY 之后的第二代压缩格式（SOGS → SOG），基于属性图 + PLAS 排序 + WebP 编码，~95% 缩减、Morton order、WebGPU 压缩\n- [[splat-transform-cli]] —— CLI 侧工具：格式互转、空间变换、多文件合并、CSV 导出\n- [[sources/playcanvas-reflct-spotlight]] —— Reflct 的 three.js → PlayCanvas 迁移实测：帧率 2×、内存 -80%、SOG 3SH 比之前 2SH 包体还小一半\n- [[sources/playcanvas-voxelo-spotlight]] —— Voxelo 的 AI 短视频 → 3DGS pipeline + SOG 相对 AI 重建 PLY 减 95%+ 实测"
+    },
+    {
+      "file": "wiki/rendering/gaussian-splatting-web.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-sogs-20x-compression]]\n- [[sources/playcanvas-sog-opensource]]\n- [[sources/playcanvas-splat-transform-cli]]\n- [[sources/playcanvas-reflct-spotlight]]\n- [[sources/playcanvas-voxelo-spotlight]]"
+    },
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "append_to_section",
+      "section": "## 主要贡献",
+      "content": "- 2025 年发布 [[sog-compression-format|SOGS → SOG]] 压缩格式，把 3DGS 数据压到 1GB → 42MB（~95%），格式规范和参考实现全部 MIT 开源。\n- 2025-07 开源 [[splat-transform-cli|SplatTransform]] CLI，把 SuperSplat 的批处理能力变成命令行工具：格式互转、空间变换、多文件合并、过滤、CSV 导出。\n- 2026-02 发布 SuperSplat Studio（annotations + post effects + tonemapping），2026-03 发布 Walk Mode（voxel collision 驱动的第一人称探索）+ Streamed LOD（基于 SOG 切片）+ Easy Upload。"
+    },
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-sogs-20x-compression]]\n- [[sources/playcanvas-splat-transform-cli]]\n- [[sources/playcanvas-sog-opensource]]\n- [[sources/playcanvas-reflct-spotlight]]\n- [[sources/playcanvas-voxelo-spotlight]]\n- [[sources/playcanvas-supersplat-studio]]\n- [[sources/playcanvas-supersplat-walk-lod]]"
+    },
+    {
+      "file": "wiki/people/mark-lundin.md",
+      "operation": "append_to_section",
+      "section": "## 主要贡献",
+      "content": "- 2025-06 主导 PlayCanvas 的 [[playcanvas-esm-scripts|ESM Scripts]] 系统发布：`.mjs` + class 继承 `Script` + `@attribute` JSDoc 属性声明，把 Classic Scripts 时代的 hidden global / 脆弱的脚本加载顺序 / 跨项目复用难解掉，作为新项目的推荐写法。"
+    },
+    {
+      "file": "wiki/people/mark-lundin.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/playcanvas-esm-scripts]]"
+    },
+    {
+      "file": "wiki/people/mark-lundin.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[playcanvas-esm-scripts]]"
+    },
+    {
+      "file": "wiki/game-engines/playcanvas-react-declarative.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[playcanvas-esm-scripts]] —— 同期（2025-06）推出的 Editor 路径现代化：`.mjs` + class 继承 `Script` + `@attribute` 的属性声明；和 React 包装构成 PlayCanvas 的多入口矩阵（Editor / Engine / React）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sog-compression-format]] | SOGS → SOG：3DGS 的 WebP 级压缩，属性图 + PLAS 排序 + WebP 编码，~95% 缩减 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[splat-transform-cli]] | SplatTransform CLI：PLY/SPLAT/KSPLAT/SOG/CSV 互转 + 空间变换 + 多文件合并 + SH 瘦身 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[playcanvas-esm-scripts]] | PlayCanvas 新脚本系统：`.mjs` + class + `@attribute` JSDoc，替代 Classic Scripts 的 hidden global |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[kris-bamrah]] | PlayCanvas 团队，Editor 开源与 VSCode Extension 公告的作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-sogs-20x-compression]] | Eastcott：PlayCanvas Engine 2.7.5 引入 SOGS，~20× 压缩（属性图 + PLAS + WebP） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-esm-scripts]] | Lundin：PlayCanvas ESM Scripts 发布，`.mjs` + class + import maps |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-splat-transform-cli]] | Eastcott：SplatTransform 开源——3DGS 格式转换/变换/过滤/合并/CSV 导出的 CLI |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-editor-frontend-oss]] | Bamrah：PlayCanvas Editor Frontend 开源，含 Observer/PCUI/PCUI-Graph/Editor API |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-reflct-spotlight]] | Eastcott：Reflct 电商 3DGS viewer 的 three.js → PlayCanvas 迁移（帧率 2×、内存 -80%） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-sog-opensource]] | Eastcott：SOG 正式开源——Morton order + 单文件 `.sog` + WebGPU 压缩端 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-vscode-extension]] | Bamrah：新版 VSCode Extension，Disk-mapped FS + TS 类型 + AI-agent 友好 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-voxelo-spotlight]] | Eastcott：Voxelo UG3D——短视频 → AI 重建 → 3DGS 数字孪生的电商 pipeline |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-studio]] | Eastcott：SuperSplat Studio 发布——annotations + post effects + tonemapping |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-supersplat-walk-lod]] | Eastcott：SuperSplat Walk Mode（voxel collision）+ Streamed LOD（SOG 切片）+ Easy Upload |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-46 Worker EH (blog.playcanvas.com ×10)\n\n处理 10 篇 blog.playcanvas.com 2025-05 到 2026-03 的文章，全部 ingested。新增 3 概念页：[[sog-compression-format]]（SOGS+SOG 合并页，把 3DGS 压缩的两代格式放一起讲）、[[playcanvas-esm-scripts]]（PlayCanvas 新脚本系统：`.mjs` + class + JSDoc 属性）、[[splat-transform-cli]]（CLI 工具的 schema 和典型 recipe）。新增 1 人物页：[[kris-bamrah]]（Editor 开源 + VSCode extension 两篇的作者）。Patch 重点：[[supersplat-publish-platform]] 追加 Studio / Walk Mode / Streamed LOD / Easy Upload 四条新功能；[[gaussian-splatting-web]] 加 SOG / SplatTransform / Reflct / Voxelo 四个新 source；[[will-eastcott]] 补全 2025 下半年到 2026 年初的工程贡献时间线。两篇 Developer Spotlight（Reflct / Voxelo）都保留为 source——Reflct 提供了 three.js → PlayCanvas 迁移的实测数据（帧率 2×、内存 -80%），Voxelo 示范了 AI 短视频 → 3DGS 数字孪生 → 电商内容的 pipeline。"
+}

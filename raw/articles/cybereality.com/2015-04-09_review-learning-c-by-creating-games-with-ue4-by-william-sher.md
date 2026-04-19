@@ -1,0 +1,23 @@
+---
+title: 'Review: Learning C++ by Creating Games with UE4 by William Sherif'
+url: https://cybereality.com/review-learning-c-by-creating-games-with-ue4-by-william-sherif/
+author: Cybereality
+published: '2015-04-09'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+![LearningUnreal](../../assets/41b6d44da2bb4e92.jpg)
+
+
+Right here is a book with a clearly defined goal and an excellent execution. Learning C++ by Creating Games with UE4 by William Sherif takes you on a journey from being a total blank in C++ to coding some basic features of a 3D game. Even though I have been coding in C++ for years, I still enjoy reading novice level texts as sometimes they can teach you a new way of thinking about familiar problems. For me, it’s also important to have good book recommendations (especially for people starting out), and I actually discovered this book from a member of the Unreal Engine community looking for a review. So here it is.
+
+William Sherif starts the book proper, with how to setup a project using either Visual Studio or XCode. This is actually a great design, and it’s thoughtful to include both operating systems (Linux is not officially supported by Epic yet, so I can’t knock the author on that one). When first starting with C++ programming, probably the hardest thing is not the syntax but understanding how to configure the project and settings in the IDE, so I like that this was covered first. Next Sherif moves onto the basics of programming: variables and memory (numbers and pointers), control flow (if, else, equality and comparison), looping (while and for loops), functions and macros, variable scoping, objects and classes, inheritance, and finishing up with dynamic memory allocation and arrays. Really quite a good foundation for learning C++. I found the explanation to be clear and concise, and the author did a good job of easing the reader into the information. C++ is a huge topic to cover, and there are volumes of text many times this size going deeper into the intricacies of the language. I wouldn’t actually fault the book for this, I think it’s a strength. Some novices may be overwhelmed by C++ if they start with something like Stroustrup’s 1,300 page tome. So I would say this is a great introduction to the language, and a great refresher if you’re coming back after a while.
+
+The second half of the book is focused on Unreal development in particular. The author opens by discussing templates and containers in UE4, including some basic ones like TArray, TSet, TMap and then discussing the STL versions of these and how they differ in Unreal. He follows up with the first real example in the engine: an inventory system (with a UI) and the ability to pickup items in the world. I like this approach as it’s a real tangible task that many games would include. The author then shows how to code NPCs that are able to display a text message to the player. Next, Sherif talks about how to create monsters – basically enemy characters that can chase and attack the player. He closes with adding spell casting (including the code and setup of the particle system).
+
+So this is not a book that will show you “How to Make a Complete AAA Game in 24 Hours” but I don’t think that was the intention. What the author does is introduce C++ at the right pace, and also show how to get started with applying that knowledge to developing games in Unreal 4. In some ways, it almost feels like two separate books: one on basic C++ programming, and another on coding in C++ for Unreal Engine 4. This is not necessarily a bad thing, and I think both parts are worthwhile. Really, this book would be most valuable to someone that has little experience with C++ and is also new to using C++ in UE4. If you are already a C++ pro, the first half of the book may seem too basic. However, I think the Unreal coverage can be useful to developers of varying skill levels.
+
+Overall I enjoyed Learning C++ by Creating Games with UE4 and would entirely recommend it to anyone interested in gaining knowledge in C++ for Unreal. To be honest, this is one of the only books out there on the topic right now, so it sort of stands alone. I believe it’s taken me a little over a week to read the 342 page text. Certainly, it doesn’t cover everything you need to know (not even close) but it’s a great place to start. I’d also add that I read the book on the Kindle Fire HDX, and the formatting looked pretty good. The price on the e-book was also much more affordable, so now may be a good chance to upgrade if you’ve still been reading on ink and paper.

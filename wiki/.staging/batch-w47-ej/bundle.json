@@ -1,0 +1,194 @@
+{
+  "batch_id": "batch-w47-ej",
+  "agent_note": "Daniel Ilett — Shader Toolbox URP (subgraph library + voronoi-lava) + Snapshot Shaders 2 (glitch / masking-layers / outline / underwater) + Snapshot Shaders Pro scripting-guide. 10 sources：3 skip（产品概览 × 2 + install guide），7 source 摘要，新增 4 概念页（voronoi-lava-shader、volume-mask-layers、underwater-post-effect、volume-component-scripting）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp.md",
+      "status": "skipped_offtopic",
+      "reason": "asset pack 顶层营销页，无技术内容——特性列表与'使用侧边栏导航'字样"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-subgraph-library.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-subgraph-library",
+      "title": "Shader Toolbox for URP - Subgraph Library"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_shader-toolbox-for-urp-voronoi-lava.md",
+      "status": "ingested",
+      "source_slug": "danielilett-toolbox-urp-voronoi-lava",
+      "title": "Shader Toolbox for URP - Voronoi Lava"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-glitch.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot2-glitch",
+      "title": "Snapshot Shaders 2 - Glitch"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-installation-guide.md",
+      "status": "skipped_offtopic",
+      "reason": "安装步骤文档，无技术内容——package manager 操作 + renderer feature 配置提示"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-masking-layers.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot2-masking-layers",
+      "title": "Snapshot Shaders 2 - Masking Layers"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-outline.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot2-outline",
+      "title": "Snapshot Shaders 2 - Outline"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-2-underwater.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot2-underwater",
+      "title": "Snapshot Shaders 2 - Underwater"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-scripting-guide.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-scripting",
+      "title": "Snapshot Shaders Pro - Scripting Guide"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro.md",
+      "status": "skipped_offtopic",
+      "reason": "asset pack 顶层营销页——features 列表 + 推荐用法，无可供 wiki 化的算法或 API 细节"
+    }
+  ],
+  "concepts_created": [
+    "voronoi-lava-shader",
+    "volume-mask-layers",
+    "underwater-post-effect",
+    "volume-component-scripting"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-toolbox-urp-subgraph-library",
+    "danielilett-toolbox-urp-voronoi-lava",
+    "danielilett-snapshot2-glitch",
+    "danielilett-snapshot2-masking-layers",
+    "danielilett-snapshot2-outline",
+    "danielilett-snapshot2-underwater",
+    "danielilett-snapshot-pro-scripting"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[voronoi-lava-shader]]\n- [[volume-mask-layers]]\n- [[underwater-post-effect]]\n- [[volume-component-scripting]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-toolbox-urp-subgraph-library]]\n- [[sources/danielilett-toolbox-urp-voronoi-lava]]\n- [[sources/danielilett-snapshot2-glitch]]\n- [[sources/danielilett-snapshot2-masking-layers]]\n- [[sources/danielilett-snapshot2-outline]]\n- [[sources/danielilett-snapshot2-underwater]]\n- [[sources/danielilett-snapshot-pro-scripting]]"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[volume-mask-layers]] —— Snapshot 2 的 layer/tag/queue 多维 mask 机制\n- [[volume-component-scripting]] —— 三管线 Volume 参数的 C# 运行时修改 API\n- [[underwater-post-effect]] —— Volume override 的水下扭曲 + caustics 组合"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot2-glitch]]\n- [[sources/danielilett-snapshot2-masking-layers]]\n- [[sources/danielilett-snapshot2-outline]]\n- [[sources/danielilett-snapshot2-underwater]]\n- [[sources/danielilett-snapshot-pro-scripting]]"
+    },
+    {
+      "file": "wiki/rendering/glitch-image-effect.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[volume-mask-layers]] —— Snapshot 2 glitch effect 可按 layer 限制作用范围"
+    },
+    {
+      "file": "wiki/rendering/glitch-image-effect.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot2-glitch]] —— 同类 glitch 效果的三段独立子效果产品化版本（offset texture / slice band / block artifact）"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot2-outline]] —— 屏幕空间 edge detection 版描边（DepthNormalsColor 三通道），与 inverted-hull stencil 方案的另一极"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[voronoi-lava-shader]] —— 把 Voronoi 当作两层 PBR 贴图的 mask 分配器"
+    },
+    {
+      "file": "wiki/rendering/worley-voronoi-noise.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-toolbox-urp-voronoi-lava]] —— 基于 Voronoi 到 cell 边距离的双层混合 shader"
+    },
+    {
+      "file": "wiki/rendering/sobel-edge-detection.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot2-outline]] —— 三通道（color/depth/normal）屏幕空间 edge detection 的产品化实现"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[underwater-post-effect]] —— caustics 的 Color Separation 是色差思路的 caustics 变体"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[voronoi-lava-shader]] | Voronoi 到边距离驱动的双层 PBR 混合 shader |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volume-mask-layers]] | URP Volume 后处理的多维 layer/tag/queue mask 机制 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[underwater-post-effect]] | 屏幕空间水下后处理：flow map UV 扭曲 + triplanar/light-aligned caustics |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volume-component-scripting]] | Unity 三管线 Volume 参数 C# 运行时修改 API 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-subgraph-library]] | Ilett：Shader Toolbox URP subgraph 节点库（Better Voronoi / Apply Normal Map 等） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-toolbox-urp-voronoi-lava]] | Ilett：Voronoi Lava 双层 PBR shader 参数手册 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot2-glitch]] | Ilett：Snapshot 2 Glitch——Offset Texture / Slice Band / Block Artifact 三段 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot2-masking-layers]] | Ilett：Snapshot 2 Masking Layers——Local vs Global mask 机制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot2-outline]] | Ilett：Snapshot 2 Outline——屏幕空间 DepthNormalsColor 三通道描边 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot2-underwater]] | Ilett：Snapshot 2 Underwater——flow map + triplanar/light-aligned caustics |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-scripting]] | Ilett：Snapshot Pro Scripting Guide——URP / HDRP / Built-in Volume 三管线 API |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-47 Worker EJ (danielilett.com Shader Toolbox + Snapshot Shaders 2/Pro ×10)\n\n处理 10 篇 Daniel Ilett 产品文档：Shader Toolbox for URP 的 subgraph library 和 voronoi-lava、Snapshot Shaders 2 的 glitch/masking-layers/outline/underwater 四款 volume effect，以及 Snapshot Shaders Pro 的 scripting guide。跳过 3 篇（Shader Toolbox / Snapshot Shaders Pro 两个顶层营销页 + Snapshot 2 install guide）。新增 4 概念页（voronoi-lava-shader、volume-mask-layers、underwater-post-effect、volume-component-scripting）、7 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、glitch-image-effect、cel-shader-outline、worley-voronoi-noise、sobel-edge-detection、chromatic-aberration-post 六个既有概念页。"
+}

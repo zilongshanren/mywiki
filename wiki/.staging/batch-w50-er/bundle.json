@@ -1,0 +1,191 @@
+{
+  "batch_id": "batch-w50-er",
+  "agent_note": "Wave-50 batch ER: 6 posts. bartwronski ChatGPT workflow skipped (personal productivity essay, no engineering content). 5 ingested: frost.kiwi dual-kawase deep-dive, mecheye matrix-mul guide, danielpokladek SDF pool ball shader (new person), gameknife 现代渲染能有多现代 (zero-bind + AmbientCube + slang + hybrid RT), raphlinus 'good parallel computer'. Ingest 最后一批（本次 /loop 收尾）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2024-01-22_how-i-use-chatgpt-daily-scientist-coder-perspective.md",
+      "status": "skipped_offtopic",
+      "reason": "Personal workflow essay on using ChatGPT for everyday tasks (ffmpeg scripts, email drafting, language learning, mood boards). No engineering, graphics, or rendering content — consistent with prior 'personal workflow' skip precedent."
+    },
+    {
+      "path": "raw/articles/blog.frost.kiwi/2025-09-03_video-game-blurs-and-how-the-best-one-works.md",
+      "status": "ingested",
+      "source_slug": "frost-kiwi-video-game-blurs",
+      "title": "Video Game Blurs (and how the best one works)"
+    },
+    {
+      "path": "raw/articles/blog.mecheye.net/2024-10-13_the-ultimate-guide-to-matrix-multiplication-and-ordering.md",
+      "status": "ingested",
+      "source_slug": "jasper-matrix-multiplication-guide",
+      "title": "The Ultimate Guide to Matrix Multiplication and Ordering"
+    },
+    {
+      "path": "raw/articles/danielpokladek.me/2026-03-17_procedural-pool-balls.md",
+      "status": "ingested",
+      "source_slug": "pokladek-procedural-pool-balls",
+      "title": "Procedural Pool Balls"
+    },
+    {
+      "path": "raw/articles/gameknife.github.io/2025-10-28_xian-dai-xuan-ran-neng-you-duo-xian-dai-2.md",
+      "status": "ingested",
+      "source_slug": "gameknife-modern-rendering-how-modern",
+      "title": "现代渲染能有多现代？"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2025-03-21_i-want-a-good-parallel-computer.md",
+      "status": "ingested",
+      "source_slug": "raphlinus-good-parallel-computer",
+      "title": "I Want a Good Parallel Computer"
+    }
+  ],
+  "concepts_created": [
+    "dual-kawase-blur",
+    "kawase-blur",
+    "convolution-separability-blur",
+    "matrix-multiplication-ordering",
+    "row-major-column-major-packing",
+    "procedural-pool-ball-sdf",
+    "sdf-number-atlas-text",
+    "zero-bind-gpu-resource-management",
+    "slang-shader-language",
+    "ambient-cube-probe-pathtrace-exit",
+    "hybrid-voxel-software-raytracing",
+    "good-parallel-computer",
+    "gpu-queues-vs-dispatch-execution"
+  ],
+  "people_created": [
+    "daniel-pokladek"
+  ],
+  "source_summaries_created": [
+    "frost-kiwi-video-game-blurs",
+    "jasper-matrix-multiplication-guide",
+    "pokladek-procedural-pool-balls",
+    "gameknife-modern-rendering-how-modern",
+    "raphlinus-good-parallel-computer"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/frost-kiwi.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dual-kawase-blur]]\n- [[kawase-blur]]\n- [[convolution-separability-blur]]\n- [[separable-gaussian-blur]]"
+    },
+    {
+      "file": "wiki/people/frost-kiwi.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/frost-kiwi-video-game-blurs]]"
+    },
+    {
+      "file": "wiki/people/jasper-st-pierre.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[matrix-multiplication-ordering]]\n- [[row-major-column-major-packing]]"
+    },
+    {
+      "file": "wiki/people/jasper-st-pierre.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/jasper-matrix-multiplication-guide]]"
+    },
+    {
+      "file": "wiki/people/gameknife.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[zero-bind-gpu-resource-management]]\n- [[slang-shader-language]]\n- [[ambient-cube-probe-pathtrace-exit]]\n- [[hybrid-voxel-software-raytracing]]"
+    },
+    {
+      "file": "wiki/people/gameknife.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/gameknife-modern-rendering-how-modern]]"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[good-parallel-computer]]\n- [[gpu-queues-vs-dispatch-execution]]"
+    },
+    {
+      "file": "wiki/people/raph-linus.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/raphlinus-good-parallel-computer]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dual-kawase-blur]] | 多级下采样+上采样的主流游戏 UI 模糊算法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[kawase-blur]] | Masaki Kawase 的四角采样近高斯模糊 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[convolution-separability-blur]] | 把 N×N 卷积拆成两次 1D pass 的可分离性 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[matrix-multiplication-ordering]] | Across-times-down、列/行向量乘法、空间链约定 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[row-major-column-major-packing]] | HLSL/GLSL 矩阵内存打包与 pack_matrix / layout 语义 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-pool-ball-sdf]] | 用 SDF 条纹+圆环+数字 atlas 程序化生成台球贴图 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sdf-number-atlas-text]] | 通过 SDF 纹理 atlas + smoothstep 渲染锐利数字 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ambient-cube-probe-pathtrace-exit]] | AmbientCube 探针作为 PathTracing 提前退出缓存 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hybrid-voxel-software-raytracing]] | 探针+体素网格替代 BVH 的软件光追近似 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[zero-bind-gpu-resource-management]] | Bindless + BDA + PushConstant 实现零绑定的现代 GPU 资源管理 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[slang-shader-language]] | NVIDIA 主推的现代着色器语言：泛型、模块、自动微分 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[good-parallel-computer]] | Raph Levien 的一篇宣言：我们为什么还没有好的并行计算机 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[gpu-queues-vs-dispatch-execution]] | 用队列串联 stages 对比 compute shader dispatch+barrier 模型 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[daniel-pokladek]] | Daniel Pokladek，Unity shader 学习博客 danielpokladek.me 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/frost-kiwi-video-game-blurs]] | Frost Kiwi：从 Box Blur 一路推到 Dual Kawase |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jasper-matrix-multiplication-guide]] | Jasper：图形 API 矩阵乘法与顺序一次讲透 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/pokladek-procedural-pool-balls]] | Pokladek：用 SDF 程序化生成台球贴图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gameknife-modern-rendering-how-modern]] | gameknife：从 OpenGL ES 老兵视角看现代渲染 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raphlinus-good-parallel-computer]] | Raph Levien：想要一台好的并行计算机 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-50 Worker ER (bartwronski + frost.kiwi + mecheye + danielpokladek + gameknife + raphlinus ×6)\n\n处理 6 篇杂锦文章：跳过 Bart Wronski 的 ChatGPT 日常使用随笔（personal workflow，无技术内容）；ingest 5 篇——Frost Kiwi 的游戏模糊算法长文（从 Box/Gaussian 一路推到 Dual Kawase）、Jasper St. Pierre 的矩阵乘法与顺序终极指南、Daniel Pokladek 的 SDF 程序化台球 shader 教程、gameknife 的《现代渲染能有多现代？》（零 bind + Slang + AmbientCube + 混合光追）、Raph Levien 的《I Want a Good Parallel Computer》宣言。新增 13 概念页、1 人物页（daniel-pokladek）、5 source 摘要。"
+}

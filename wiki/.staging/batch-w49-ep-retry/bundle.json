@@ -1,0 +1,185 @@
+{
+  "batch_id": "batch-w49-ep-retry",
+  "agent_note": "Retry of batch-w49-ep after stream idle timeout. 15 files processed: vertexfragment ×5 (4 ingested, 1 skipped), gametorrahod ×5 (all ingested), etodd ×5 (4 ingested, 1 skipped). VF concept pages (polar-coordinate-texture-effects, volumetric-cloud-quarter-res-upsample, urp-volumetric-fog-raymarch) already existed with matching sources/vertexfragment-* wikilinks — treated as already_exists for concept, created only the source summaries. Gametorrahod's 5 concept pages also already exist with sirawat-pitaksarit links in place — only sources + people page created. Etodd introduced 3 brand-new concept pages under computer-systems/.",
+  "sources_processed": [
+    {"path": "raw/articles/vertexfragment.com/2024-02-28_texture-effects-with-polar-coordinates.md", "status": "ingested", "source_slug": "vertexfragment-polar-coordinates", "title": "Texture Effects with Polar Coordinates", "concept_already_exists": "polar-coordinate-texture-effects"},
+    {"path": "raw/articles/vertexfragment.com/2024-03-20_upsampling-to-improve-volumetric-cloud-render-performance.md", "status": "ingested", "source_slug": "vertexfragment-cloud-upsample", "title": "Upsampling to Improve Volumetric Cloud Render Performance", "concept_already_exists": "volumetric-cloud-quarter-res-upsample"},
+    {"path": "raw/articles/vertexfragment.com/2024-04-17_rendering-volumetric-fog-using-custom-urp-render-pass.md", "status": "ingested", "source_slug": "vertexfragment-urp-volumetric-fog", "title": "Rendering Volumetric Fog Using Custom URP Render Pass", "concept_already_exists": "urp-volumetric-fog-raymarch"},
+    {"path": "raw/articles/vertexfragment.com/2025-07-10_beyond-the-storm-v0-7.md", "status": "ingested", "source_slug": "vertexfragment-bts-v07", "title": "Beyond the Storm - v0.7", "note": "devlog release notes, references 3 other VF articles; no new concept needed"},
+    {"path": "raw/articles/vertexfragment.com/2026-03-12_ramblings.md", "status": "skipped_duplicate", "reason": "Blog index page listing all VF ramblings; not an article"},
+    {"path": "raw/articles/gametorrahod.com/2024-05-03_enableable-components-generated-code.md", "status": "ingested", "source_slug": "gametorrahod-enableable-generated-code", "title": "Enableable Components Generated Code", "concept_already_exists": "dots-enableable-components"},
+    {"path": "raw/articles/gametorrahod.com/2024-05-13_chunk-s-change-version.md", "status": "ingested", "source_slug": "gametorrahod-chunk-change-version", "title": "Chunk's Change Version", "concept_already_exists": "dots-chunk-change-version"},
+    {"path": "raw/articles/gametorrahod.com/2024-05-14_thinking-in-cache.md", "status": "ingested", "source_slug": "gametorrahod-thinking-in-cache", "title": "Thinking in Cache", "concept_already_exists": "dots-ecs-cache-iteration"},
+    {"path": "raw/articles/gametorrahod.com/2024-05-20_ecs-programming-patterns-from-official-packages.md", "status": "ingested", "source_slug": "gametorrahod-ecs-patterns", "title": "ECS Programming Patterns from Official Packages", "concept_already_exists": "dots-ecs-programming-patterns"},
+    {"path": "raw/articles/gametorrahod.com/2025-10-09_audioresource-audioclip-audiorandomcontainer-interactions.md", "status": "ingested", "source_slug": "gametorrahod-audio-random-container", "title": "AudioResource/AudioClip/AudioRandomContainer Interactions", "concept_already_exists": "unity-audio-random-container"},
+    {"path": "raw/articles/etodd.io/2025-10-02_should-i-switch-from-git-to-jujutsu.md", "status": "ingested", "source_slug": "etodd-jujutsu", "title": "Should I Switch From Git to Jujutsu", "concept_created": "jujutsu-vcs"},
+    {"path": "raw/articles/etodd.io/2026-03-22_magic-link-pitfalls.md", "status": "ingested", "source_slug": "etodd-magic-link-pitfalls", "title": "Magic Link Pitfalls", "concept_created": "magic-link-auth"},
+    {"path": "raw/articles/etodd.io/2026-03-31_more-magic-link-pitfalls.md", "status": "ingested", "source_slug": "etodd-more-magic-link-pitfalls", "title": "More Magic Link Pitfalls", "concept_contributes_to": "magic-link-auth"},
+    {"path": "raw/articles/etodd.io/2026-04-06_passkeys-are-too-hard.md", "status": "ingested", "source_slug": "etodd-passkeys-are-too-hard", "title": "Passkeys Are Too Hard", "concept_created": "passkeys-webauthn"},
+    {"path": "raw/articles/etodd.io/2026-04-06_posts.md", "status": "skipped_duplicate", "reason": "etodd blog index page replicating multiple articles; content is subset of the four already-ingested posts"}
+  ],
+  "concepts_created": [
+    "jujutsu-vcs",
+    "magic-link-auth",
+    "passkeys-webauthn"
+  ],
+  "people_created": [
+    "sirawat-pitaksarit"
+  ],
+  "source_summaries_created": [
+    "vertexfragment-polar-coordinates",
+    "vertexfragment-cloud-upsample",
+    "vertexfragment-urp-volumetric-fog",
+    "vertexfragment-bts-v07",
+    "gametorrahod-enableable-generated-code",
+    "gametorrahod-chunk-change-version",
+    "gametorrahod-thinking-in-cache",
+    "gametorrahod-ecs-patterns",
+    "gametorrahod-audio-random-container",
+    "etodd-jujutsu",
+    "etodd-magic-link-pitfalls",
+    "etodd-more-magic-link-pitfalls",
+    "etodd-passkeys-are-too-hard"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "replace_line",
+      "match": "sources: 12",
+      "content": "sources: 16"
+    },
+    {
+      "file": "wiki/people/steven-sell.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/vertexfragment-polar-coordinates]]\n- [[sources/vertexfragment-cloud-upsample]]\n- [[sources/vertexfragment-urp-volumetric-fog]]\n- [[sources/vertexfragment-bts-v07]]"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 12"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[jujutsu-vcs]]\n- [[magic-link-auth]]\n- [[passkeys-webauthn]]"
+    },
+    {
+      "file": "wiki/people/evan-todd.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/etodd-jujutsu]]\n- [[sources/etodd-magic-link-pitfalls]]\n- [[sources/etodd-more-magic-link-pitfalls]]\n- [[sources/etodd-passkeys-are-too-hard]]"
+    },
+    {
+      "file": "wiki/rendering/polar-coordinate-texture-effects.md",
+      "operation": "noop",
+      "note": "Page already contains [[sources/vertexfragment-polar-coordinates]]; source file now created to match."
+    },
+    {
+      "file": "wiki/rendering/volumetric-cloud-quarter-res-upsample.md",
+      "operation": "noop",
+      "note": "Page already contains [[sources/vertexfragment-cloud-upsample]]; source file now created to match."
+    },
+    {
+      "file": "wiki/rendering/urp-volumetric-fog-raymarch.md",
+      "operation": "noop",
+      "note": "Page already contains [[sources/vertexfragment-urp-volumetric-fog]]; source file now created to match."
+    },
+    {
+      "file": "wiki/game-engines/dots-enableable-components.md",
+      "operation": "noop",
+      "note": "Page already links [[sources/gametorrahod-enableable-generated-code]]; source file now created."
+    },
+    {
+      "file": "wiki/game-engines/dots-chunk-change-version.md",
+      "operation": "noop",
+      "note": "Page already links [[sources/gametorrahod-chunk-change-version]]; source file now created."
+    },
+    {
+      "file": "wiki/game-engines/dots-ecs-cache-iteration.md",
+      "operation": "noop",
+      "note": "Page already links [[sources/gametorrahod-thinking-in-cache]]; source file now created."
+    },
+    {
+      "file": "wiki/game-engines/dots-ecs-programming-patterns.md",
+      "operation": "noop",
+      "note": "Page already links [[sources/gametorrahod-ecs-patterns]]; source file now created."
+    },
+    {
+      "file": "wiki/game-development/unity-audio-random-container.md",
+      "operation": "noop",
+      "note": "Page already links [[sources/gametorrahod-audio-random-container]]; source file now created."
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[jujutsu-vcs]] | Jujutsu VCS：Git-兼容但把 rewrite history 变成默认工作流 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[magic-link-auth]] | Magic link 登录的陷阱清单（GET 预取、错 tab、phishing、flaky email、rate limit） |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[passkeys-webauthn]] | WebAuthn / passkeys 现状：conditional UI 让服务端复杂度陡升 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[sirawat-pitaksarit]] | Sirawat Pitaksarit，Unity DOTS / 音频插件开发者（Game Torrahod 博客） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-polar-coordinates]] | Steven Sell：用极坐标做 BotW 式水圈纹理效果 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-cloud-upsample]] | Steven Sell：quarter-res + jitter + 时间重投影 的体积云升采样 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-urp-volumetric-fog]] | Steven Sell：URP 自定义 Pass 里的体积雾 raymarch 实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/vertexfragment-bts-v07]] | Steven Sell：Beyond the Storm v0.7 devlog（草地/雾/云改造 + scope 坍缩） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-enableable-generated-code]] | Sirawat：DOTS Enableable 组件的 Roslyn 生成代码三条路径 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-chunk-change-version]] | Sirawat：DOTS chunk change version 的六个反直觉陷阱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-thinking-in-cache]] | Sirawat：DOTS 的 cache 视角 + Burst 自动向量化拆解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-ecs-patterns]] | Sirawat：从 Unity 官方包里扒出的 9 个 ECS 编程模式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gametorrahod-audio-random-container]] | Sirawat：Unity 6 AudioResource / AudioRandomContainer 评估笔记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-jujutsu]] | Evan Todd：该不该从 Git 迁到 Jujutsu 的决策框架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-magic-link-pitfalls]] | Evan Todd：magic link 登录的两个非显然陷阱（GET 预取、错 tab） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-more-magic-link-pitfalls]] | Evan Todd：magic link 续篇（phishing、flaky email、rate limit） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/etodd-passkeys-are-too-hard]] | Evan Todd：WebAuthn / passkeys conditional UI 的服务端复杂度问题 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-49 Worker EP-retry (vertexfragment ×5 + gametorrahod ×5 + etodd ×5)\n\n重跑 batch-w49-ep（上批次因 stream idle timeout 全量丢失产出）。处理 15 篇：vertexfragment 4 技术文（polar coord / 云 upsample / URP 体积雾 / BTS v0.7 devlog）+ ramblings index 跳过；gametorrahod 全部 5 篇 DOTS 深度文；etodd 4 篇（Jujutsu / magic link ×2 / passkeys）+ posts index 跳过。新增 3 概念页（jujutsu-vcs, magic-link-auth, passkeys-webauthn）、1 人物页（sirawat-pitaksarit）、13 source 摘要。VF 和 Gametorrahod 的 concept 页此前已存在且指向缺失的 source wikilink——本轮只补上 source 文件，noop patch 保留说明。"
+}

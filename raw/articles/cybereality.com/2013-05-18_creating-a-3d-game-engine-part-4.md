@@ -1,0 +1,44 @@
+---
+title: Creating a 3D Game Engine (Part 4)
+url: https://cybereality.com/creating-a-3d-game-engine-part-4/
+author: Cybereality
+published: '2013-05-18'
+source_blog: cybereality » the matrix was a documentary
+source_site: https://cybereality.com/
+category: graphics
+fetched: '2026-04-19'
+---
+
+So now we should have a good idea of why you’d want to create a 3D engine, and what kind of components make up the engine. Up next we will look at some of the tools and APIs necessary to actually compose the software. Keep in mind that the choices I am making are not necessarily the optimal choices for all situations. In fact, it may not be a good idea to follow this advice depending on what you are planning on doing. For me personally, this is mostly a learning exercise, so I want to mainly build up my skills. This means I may be taking the “scenic route” to (hopefully) completing this 3D game engine. If you want to follow me for the ride, maybe you will learn something too.
+
+**Programming Language and IDE**
+
+This is a no-brainer right here. I will be using C++ as the language of choice. By and large, C++ is the defacto standard for game development. While there may be some other languages that are becoming more popular on certain platforms (for example, on mobile), in the PC space it’s almost exclusively C++. Since one of the reasons for my building the game engine in the first place is to increase my skill-set, it makes absolute sense to use this language. It will also allow easier integration with different libraries and APIs, especially unique hardware devices which are almost always built for C++. And the performance will be better than some other options. There is no question here.
+
+Specifically, I’d like to use C++11, since that is the latest standard. I learned a bit about the new features in C++ Primer, and I’d like to stay ahead of the curve and build the engine for the future. This also means I should probably be using Microsoft Visual Studio 2012. I think the Express edition should be fine for my needs, which is great because it’s free. Visual Studio is also probably the most popular IDE out there for professional software development, and I see no compelling reason to use any alternative.
+
+**Graphics API**
+
+For the graphics API, really the core of a 3D engine, there are only really two choices: OpenGL and DirectX. I am not going to try to argue whether one is better than the other, as I’m sure you can accomplish your vision with either. However, I will have to go with DirectX, again mostly because it’s the defacto standard. Nearly every AAA PC game is created with DirectX, and since I am trying to progress in this field I have no choice but to go with DirectX. I already have some experience with DirectX, at least version 9, so it makes more sense than learning OpenGL from scratch. While there is an argument for cross-platform support, this is not a priority for me at this point. Windows accounts for nearly 90% of the desktop market, there’s no good reason to not make this the main target platform. I develop on Windows, most PC gamers use Windows, it just makes sense. I can acknowledge that OS X and Linux are becoming more relevant, but I don’t personally use them so I am not going to go out of my way to code support.
+
+The version I plan on using is DirectX 11. I have no desire to support Windows XP, since by the time I finish this project it will be largely irrelevant. I’d like to support the latest and greatest features, and that is just not happening on DirectX9. There is also a lot of good material on DirectX11, books, tutorials, etc. so I think it will be easier to pick up. Some of the features I am interested in are geometry shaders, compute shaders, and tessellation. So DirectX11 it is.
+
+**Audio Library**
+
+For sound I am still investigating options, but I am probably going to go with DirectSound. I am already engulfing myself in the Microsoft eco-system, it kind of makes sense. The main reason I chose this was because I am not a big fan of the licenses for other popular options. Some of the APIs I looked at were OpenAL and FMOD. FMOD costs a lot of money so that is off my list. OpenAL looks interesting (and I am still considering it), but I am uneasy about licensing. Basically, I want my 3D game engine to be 100% my ownership and my original code, with no strings attached. For example, if I decide to sell this one day as a commercial engine, I would like to have that option. I don’t want to have to pay anyone, or give them a cut of my profits, or have to release the source code, or any of those things. I’m not attempting to do anything fancy with audio, so I think DirectSound will suffice.
+
+**Input Library**
+
+Honestly haven’t given this one too much thought, but I could probably make do with the default Windows messaging for mouse and keyboard, and use XInput for game controllers. I also plan to support some more unique controllers like the Razer Hydra, but I would need to integrate their SDK directly anyway. I have used OIS a little, since it comes with OGRE, but I am not sure if this is really needed. Will see how far I can get just with the basic Windows messages for the time being.
+
+**Physics Library**
+
+Here is another area I am still debating. Previously I was set on using Nvidia PhysX, since I thought that would allow for the best performance. The applications I am aiming to write with this engine are seriously physics intensive. Probably more intensive than has ever been attempted in real-time. So I need a high-performance physics engine. I’d even be willing to dedicate a top of the line Nvidia card (like a GTX 680) just for PhysX alone. Most people would call this overkill, but I ask: is it enough? However, after looking carefully at the PhysX license I started to wonder if this would be the best option. I don’t like how Nvidia has to approve your application, I don’t like having to have logos and splash-screens all over the place, I don’t like the cost for platforms other than Windows. While none of these things are total deal-breakers, they do give me pause for thought. Plus the fact that it won’t run at full speed on AMD hardware is a major turn-off.
+
+Another option is Bullet, which seems to be pretty mature and is free/open-source. They claim that their GPU-accelerated solver is “coming soon” but what does that even mean? It also doesn’t really instill confidence when their website homepage has only been updated twice in the past year. I mean, I’m just one guy and I can manage to post a new blog post at least once a week. You’d expect a whole team to be able to do better. Granted, the software itself appears pretty robust and I like the way it looks. Everything has a solid feel to it and animates well, not “floaty” like you see sometimes. I guess this could come down to the specific parameters, but the Bullet demos did impress me.
+
+I am most interested in fluid dynamics and cloth simulation. I’ve seen demos of both, but I am not sure anything out-of-box does what I need. I am entertaining the idea of rolling my own physics engine, which I think would be a lot of fun. I have written physics engines before, but only in 2D. I know the step to 3D adds complexity, but I think the task is within reason. At least if I wrote it myself I could concentrate on the aspects I need the most, which seem lacking in most current video games. Since I am looking for the best performance, I’d like to code this on the GPU. I also want something that runs equally on Nvidia or AMD hardware, so I am looking squarely at DirectCompute. I know I am probably looking like the biggest Microsoft fanboy right now, but I don’t think that’s a bad thing. Microsoft has done a great service by creating all these awesome APIs and releasing them for free to developers. I do realize I am opening a can of worms with a custom physics engine, but I am really liking the idea of not using any 3rd party libraries (aside from what Microsoft provides).
+
+**Everything Else**
+
+A 3D game engine does include a lot more stuff than you get just cobbling together a few libraries, so I don’t want to gloss over this too much. Of course, I still need to architect the structure of the engine, but that’s a given. Understandably there may be other small libraries I’d like to integrate, like for decompressing a zip file or whatever. So I am open to using external code provided I can still retain 100% ownership of the product. Though since this is mainly a learning exercise anyway, I’d like to do as much as I can myself. I can already tell that most people (maybe you) would think this is an impossible task for one person. You may be right. Maybe after doing some tests I will find that I’ll need to license an audio engine, or that I’m in over my head coding a custom physics engine. Sure, that’s fine. But even in trying and failing I think I would have learned more than never having tried at all.

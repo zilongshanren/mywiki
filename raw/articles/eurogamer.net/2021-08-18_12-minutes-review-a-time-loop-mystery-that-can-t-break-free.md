@@ -1,0 +1,34 @@
+---
+title: 12 Minutes review - a time loop mystery that can't break free of tedium
+url: https://www.eurogamer.net/12-minutes-review-tedious-time-loop-mystery-with-brilliant-acting
+author: Malindy Hetfeld
+published: '2021-08-18'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Time loop mysteries are enduringly popular - 12 Minutes isn't even the only game featuring a time loop this year, but it sure is the closest to Groundhog Day, that most famous of time loop tales. It wears developer Luis Antonio's love for other forms of storytelling on its sleeve in more ways than that - in the opening sequence, you walk across the hall on the carpet from The Shining, while the set-up feels like a one-room play or, to acknowledge Antonio's love for Hitchcock, like the 1948 "limited-setting" thriller Rope, which takes place entirely in one apartment, just like the game.
+
+It all starts when your character, a nameless man (James McAvoy), comes home from work to the miniscule apartment he shares with his wife (Daisy Ridley). The two have just settled down for a quiet evening together, when a policeman (Wilem Dafoe) burst into their home, and accuses the wife of murder. If you try to interrupt, he knocks you out.
+
+That's how you discover you're in a time loop - from the moment of your mysterious resurrection, you're unable to leave the apartment, and guaranteed to become the perpetual punching bag for someone who's having a very bad day. If you try to fight back, he kills you. If he doesn't get what he wants in the time frame he wants it in, he also kills you. So you begin hunting down what he's looking for - a valuable piece of evidence.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=uob80LBVgzA)
+
+I think the enjoyment of time loop movies as a passive film viewer comes from thinking that really, if it were you, you'd be much better at all this. 12 Minutes is your chance to put that to the test, and boy oh boy, I am just as bad as any poor schmuck who ever got stuck in a time loop. This is essentially a point and click adventure from a top down perspective. You move your character by clicking the spot you want him to go to, you make a full cup of water disappear into his trouser pockets, you have an inventory to take things out of.
+
+But while the first few revelations at the beginning are easy enough to attain, 12 Minutes soon becomes frustrating . Frustration is of course an essential aspect of any time loop narrative, as it's that frustration that will tilt the character into one of two directions - killing themselves or others or bettering their lot, the latter of which usually leads to the loop breaking. Extend that idea to me as a player however, and all frustration makes me do is turn the computer off and walk away.
+
+12 Minutes has been heavily promoted using its cast - both to further sell the idea that this is somehow more than just a game, and also because holy hell, three bona fide celebrities are featured in a game not made by Quantic Dream. Of course they're doing a great job - call me biased but I think James McAvoy in particular is usually pretty underappreciated, and he does a great American accent here, as does Daisy Ridley. The three actors have to do the heavy lifting of providing atmosphere in a game that can otherwise come across as a bit bland, seeing as its set in the kind of apartment any unscrupulous London landlord would sell you as a premium loft. Unfortunately, hearing the same handful of lines from James McAvoy's mouth does nothing to hide that this interactive movie experience is actually a deeply conventional videogame.
+
+12 Minutes has essentially the same problem as many other point and click adventures - if you can't find the right pixel to click on you're stuck, and no one likes to get stuck, especially not when being stuck means an endless loop of setting out dessert plates and picking the knife up off the counter. Time actually passes roughly similar to real time, but sometimes I feel 12 Minutes gets its hands in there and pulls the reins away from me - no matter how quickly I try to get my wife out of the apartment for example, she will always meet the cop in the hallway. Eventually, I start to use items at random, in any way possible, simply to move on.
+
+And moving on still turns out to be rather tedious - I uncover so little information each time and spend what feels like so much time doing the same thing in return that the loop weighed heavier on me than it did its protagonist, who actually doesn't show any weariness at his repeating lot at all. I can't help but begin to see the wires that hold the whole thing together - I'm a player just trying to deviate the computer-generated course of a few puppets, puppets that sometimes react awkwardly if I do things out of order, though to their credit they do react - the wife will wonder why I'm prying open all the vents in the apartment, and then settle down again. She will get angry if I start pressing her, but calm right down if I ask an earlier question on the list. But 12 Minutes wears on me mainly because I know what I have to do - I just have to find the prescribed way to do it. Time-loop adventures are about breaking away from the prescribed course, but a game can only be so flexible.
+
+12 Minutes wants to be accessible - the top-down perspective makes the game easy to navigate, and the fact you can't see character's faces means you won't have any preconceptions about them. Unfortunately, these measures also make 12 Minutes feel impersonal. I would've been a lot less frustrated with a game and a lot more willing to keep going if I had a more compelling reason to. Any two-hour movie contains a montage of a character dealing with their time looping lot, revealing a lot of their personality in the process. If I want them to break the loop, that's because I've become invested in them as people.
+
+By contrast, the only reason 12 Minutes gives me to care about what happens is that my faceless character will repeatedly die if I don't. I mean, that's too bad, but again, I can get up and walk away. The stakes, oddly enough, felt pretty low to me as a player. I can't even say 12 Minutes doesn't achieve what it sets out to do, only that for me the tedium set in way before then.
+
+This is a game that stylised itself as cinematic adventure, and the acting of the three A-list celebs is second to none, without a doubt. But more than a fan of narrative, you need to have the mindset of a puzzler, someone motivated by an at times very obstinate riddle. You have to be happy with moving the story ahead inch by inch, and take pride in that progress, because the narrative payoff isn't quite there. After all, what do I care? I'm just a faceless man with a faceless wife.

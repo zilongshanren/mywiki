@@ -1,0 +1,38 @@
+---
+title: 25 years on, Space Station Silicon Valley remains an innovative gem
+url: https://www.eurogamer.net/25-years-on-space-station-silicon-valley-remains-an-innovative-gem
+author: Geoffrey Bunting
+published: '2023-11-19'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+It may come as a surprise, given how accustomed we are to games weighing in at hundreds of gigabytes, that the entire Nintendo 64 library comes to less than 25GB. Including Japanese exclusives, that's 388 games - 7530 fewer than released on the PlayStation. It's odd, then, in such a relatively small selection, how much room there is for games to fall through the cracks and slip out of our collective consciousness.
+
+One can justifiably blame this on the titanic status of many Nintendo 64 titles. [Super Mario 64](https://www.eurogamer.net/games/super-mario-64) revolutionised platforming as the genre moved to three dimensions, [The Legend of Zelda: Ocarina of Time](https://www.eurogamer.net/games/the-legend-of-zelda-ocarina-of-time) remains one of the most beloved games in our history, and one can make the case that few first-person shooters have lived up to Goldeneye's legacy. The list goes on, longer than one would think from the miniscule catalogue from which it's sourced.
+
+But those games mask a wider catalogue that didn't become cultural touchstones. Games like Hybrid Heaven and the criminally underrated (and unfinished) Holy Magic Century (Quest 64, if you're nasty), that fell into the relative obscurity that awaited so many third-party titles on Nintendo's flagship console of the late-90s. Yet among those games that continue to languish in anonymity, one sticks out as perhaps the least deserving. Released in 1998, Space Station Silicon Valley was an innovative and ambitious 3D platformer and, as it celebrates its 25th anniversary, it still holds up in an industry bereft of the platforming genre.
+
+Why, however, despite the novelty of its approach, did Space Station Silicon Valley fail to gain a lasting fanbase? Releasing on the heels of Banjo-Kazooie didn't help. Nor did a lengthy development cycle, which saw it move from the PlayStation and Sega Saturn, where it might have been regarded as worthy competition for Nintendo's monopoly on platformers, to the crowd of platformers already on the Nintendo 64.
+
+Though they released in quick succession, Banjo-Kazooie and Space Station Silicon Valley couldn't be more different. Where Banjo-Kazooie iterated directly on the formula laid down by Super Mario 64, Space Station Silicon Valley had more in common with Grand Theft Auto than contemporary platformers - owing to both being in development at DMA Design (now [Rockstar North](https://www.eurogamer.net/companies/rockstar-north)) at the same time.
+
+The story of Space Station Silicon Valley is, as you'd expect for the time, simple. In the far-flung future of 2001, Earth launches its biggest and most expensive space station, the titular Silicon Valley, only for it to disappear minutes later. When it reappears after 1000 years, it falls to the bumbling Dan Danger and his robot sidekick, EVO, to jet off and try to arrest its decaying orbit. Distracted by the radio, Danger crashes into Silicon Valley and EVO is ejected and destroyed. His control chip lands on a robot dog, Roger, and EVO assumes control - viciously murdering Roger's sheep girlfriend, Flossy, in the process.
+
+So begins Space Station Silicon Valley's unique gameplay loop of murdering robot animals, hijacking their corpses, and using their specific abilities to solve puzzles. Dogs with rockets, polar bears on tank treads, foxes that spin like Taz (just to age myself even more), the list of Silicon Valley's robotic denizens is impressively long for the time. All of these can be interacted with as possible solutions to the game's mysteries. That said, the puzzles that hid those secrets, at times, required too much lateral thinking for children in 1998.
+
+For instance, killing every animal in a level to unlock a secret is fairly straightforward. I challenge anyone, however, to organically understand the need to listen to some penguins for a set of notes to then translate onto a piano. This is mitigated by the fact that Space Station Silicon Valley welcomed a range of playstyles and offered multiple ways to address problems. One could, in most cases, brute force an answer, employ trial-and-error, or engage with the elegant solutions housed in adorable robotic animal shells.
+
+Compared to contemporary games, those puzzles may feel somewhat abstruse. But given how constrained puzzle solutions were at the time - take the Kong-specific solutions to [Donkey Kong 64](https://www.eurogamer.net/games/donkey-kong-64)'s puzzles, for instance - Space Station Silicon Valley offered a remarkably broad and forgiving approach to puzzle design that still holds up as novel and interesting (plus, we can look stuff up now).
+
+Not that that's what I remember of Space Station Silicon Valley. Rather, my memory of the game is of zooming around as a dog with wheels for paws, after renting it (the game, not the dog) from the local branch of Choices, and never actually completing it. This is something I only rectified this year, in a replay for this feature, in which I finally - finally! - got to play as a hyena motorbike with missile launchers. It's the simple things in life, right?
+
+Looking back, Space Station Silicon Valley was simply too broad and complex for eight-year-old me to complete in a three-day rental. Not least as I likely played it in 1999 rather than at release, and only because I was trolling around looking for something to play after Banjo-Kazooie and Ocarina of Time (also celebrating their 25th anniversaries this year). Perhaps that's how most of us played it.
+
+After all, despite a strong reception from critics, Space Station Silicon Valley didn't sell. Its innovative and unique approach was lost in poor numbers, a genre already oversaturated with more popular titles, and a later lacklustre PlayStation port that did it no favours. More than anything, its novelty embodied an otherness at a time when we just wanted an obvious successor to Super Mario 64 and Banjo-Kazooie.
+
+But time grants us a licence to recognise what we couldn't then, that Space Station Silicon Valley represents a unique, sophisticated, and fresh take on the platforming genre that hasn't really been equalled - except maybe in some of the mechanics of [Tears of the Kingdom](https://www.eurogamer.net/zelda-tears-of-the-kingdom-walkthrough-tips-9343). Perhaps were it released today - or even remastered - and launched into a market replete with bloated RPGs and lacking in fun 3D platformers, Space Station Silicon Valley might have played better. It certainly holds up well enough.
+
+Indeed, that DMA Design tried something new is still worthy of celebration 25 years later. Whether it worked is an exercise for the reader. But with the benefit of time, it's easier to understand that Space Station Silicon Valley didn't deserve to be relegated to a random pick by some kid unable to afford Blockbuster. Though it doesn't have the sales to match, Space Station Silicon Valley deserves to be celebrated as pioneering as Super Mario 64 and Banjo-Kazooie, rather than living in their shadows. But sandwiched between two of the Nintendo 64's most beloved titles, possessed of little to no brand recognition, and moved from consoles on which it might have performed so much better, Space Station Silicon Valley, as with so many things ahead of their time, is a perfect case of being in the wrong place at the wrong time.

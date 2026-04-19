@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w46-ef",
+  "agent_note": "10 jendrikillner 周报（issue 399-408，2025-07-13 ~ 2025-09-14），按 waves 34/38-45 既定先例全部跳过：周报内容为第三方文章链接聚合，Jendrik 本人无实质原创分析，原文已各自独立存档。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jendrikillner.com/2025-07-13_graphics-programming-weekly-issue-399.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-07-20_graphics-programming-weekly-issue-400.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-07-27_graphics-programming-weekly-issue-401.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-08-03_graphics-programming-weekly-issue-402.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-08-10_graphics-programming-weekly-issue-403.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-08-17_graphics-programming-weekly-issue-404.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-08-24_graphics-programming-weekly-issue-405.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-08-31_graphics-programming-weekly-issue-406.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-09-07_graphics-programming-weekly-issue-407.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    },
+    {
+      "path": "raw/articles/jendrikillner.com/2025-09-14_graphics-programming-weekly-issue-408.md",
+      "status": "skipped_offtopic",
+      "reason": "weekly link roundup, no original Jendrik analysis (precedent waves 34/38-45)"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-46 Worker EF (jendrikillner weekly 399-408 all skipped)\n\nbatch-w46-ef：10 篇 jendrikillner 周报（issue 399-408，2025-07-13 ~ 2025-09-14）全部按既定先例 skipped_offtopic，均为第三方链接聚合、Jendrik 本人无实质原创分析。"
+}
