@@ -665,3 +665,7 @@ Jendrikillner weekly 428–435 按先例一律 skip（link-digest）。Karis 202
 ## [2026-04-19] ingest | Wave-51 Worker ES (c0de517e.blogspot.com ×5, all skipped)
 
 5 篇 c0de517e.blogspot.com 文章全部为 redirect stub：blogspot 已停更，所有正文搬迁至 c0de517e.com 新站，本批 raw/ 文件仅残留一行外链与迁移提示，无实质可 ingest 内容。建议后续抓取新站（c0de517e.com/007_impostors.htm、009_website_joy.htm、011_portals.htm、012_peak_tech.htm、013_web.htm）后再重新 ingest Angelo Pesce 2023-2024 的思辨长文。
+
+## [2026-04-19] ingest | Wave-51 Worker EU (runevision / Rune Skovbo Johansen ×3)
+
+处理 blog.runevision.com 最近 8 个抓取，实质 3 篇技术文：2025-10 hair shader + atmospheric perspective 合并贴文、2026-01 Phacelle Noise、2026-03 Fast and Gorgeous Erosion Filter。新增 5 概念页（phacelle-noise / directional-noise / erosion-filter-procedural / atmospheric-perspective / hair-shader-anisotropic）、1 人物页（rune-skovbo-johansen）、3 source 摘要。5 篇是首页/月页/归档页对同一文章的重复抓取，skip_duplicate。

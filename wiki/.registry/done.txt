@@ -857,3 +857,11 @@ raw/articles/c0de517e.blogspot.com/2024-01-17_the-art-and-joy-of-well-architecte
 raw/articles/c0de517e.blogspot.com/2024-01-26_portals-are-misunderstood.md
 raw/articles/c0de517e.blogspot.com/2024-02-19_peaked-technologies.md
 raw/articles/c0de517e.blogspot.com/2024-03-24_c0de517e.md
+raw/articles/blog.runevision.com/2025-10-23_runevision-blog.md
+raw/articles/blog.runevision.com/2025-10-23_runevision-blog-2.md
+raw/articles/blog.runevision.com/2025-10-23_runevision-blog-3.md
+raw/articles/blog.runevision.com/2026-01-22_phacelle-cheap-directional-noise.md
+raw/articles/blog.runevision.com/2026-01-22_runevision-blog.md
+raw/articles/blog.runevision.com/2026-01-22_runevision-blog-2.md
+raw/articles/blog.runevision.com/2026-03-30_fast-and-gorgeous-erosion-filter.md
+raw/articles/blog.runevision.com/2026-03-30_runevision-blog.md

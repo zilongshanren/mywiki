@@ -579,6 +579,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sdf-number-atlas-text]] | 通过 SDF 纹理 atlas + smoothstep 渲染锐利数字 |
 | [[ambient-cube-probe-pathtrace-exit]] | AmbientCube 探针作为 PathTracing 提前退出缓存 |
 | [[hybrid-voxel-software-raytracing]] | 探针+体素网格替代 BVH 的软件光追近似 |
+| [[phacelle-noise]] | Johansen 发明的廉价方向性噪声（cos+sin→单位圆→归一化取相位） |
+| [[directional-noise]] | 方向性噪声家族谱系：Voronoi→Gabor→Gavoronoise→clayjohn/Fewes erosion→Phasor/Phacelle |
+| [[erosion-filter-procedural]] | 单 pass GPU 侵蚀滤波器：沿梯度叠条纹、多 octave 分叉、fade/frequency 保留峰谷 |
+| [[atmospheric-perspective]] | 远山先趋深蓝再变淡，fog trick 的边界与大气散射的替代方案 |
+| [[hair-shader-anisotropic]] | Unity Standard BRDF 之上做各向异性发丝（3 档实现与余弦权重函数） |
 
 ## 经典案例（wiki/examples/）
 
@@ -677,6 +682,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[kris-bamrah]] | PlayCanvas 团队，Editor 开源与 VSCode Extension 公告的作者 |
 | [[sirawat-pitaksarit]] | Sirawat Pitaksarit，Unity DOTS / 音频插件开发者（Game Torrahod 博客） |
 | [[daniel-pokladek]] | Daniel Pokladek，Unity shader 学习博客 danielpokladek.me 作者 |
+| [[rune-skovbo-johansen]] | 丹麦独立开发者/前 Unity 工程师（Eye of the Temple, The Big Forest, Phacelle Noise, Erosion Filter） |
 
 ## 源摘要（wiki/sources/）
 
@@ -1247,6 +1253,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/pokladek-procedural-pool-balls]] | Pokladek：用 SDF 程序化生成台球贴图 |
 | [[sources/gameknife-modern-rendering-how-modern]] | gameknife：从 OpenGL ES 老兵视角看现代渲染 |
 | [[sources/raphlinus-good-parallel-computer]] | Raph Levien：想要一台好的并行计算机 |
+| [[sources/runevision-hair-and-atmosphere]] | Johansen: Unity 发丝着色器三档实现 + 日本远山空气透视观察 |
+| [[sources/runevision-phacelle-noise]] | Johansen: Phacelle Noise—比 Phasor Noise 便宜一个数量级的方向性噪声 |
+| [[sources/runevision-erosion-filter]] | Johansen: Advanced Terrain Erosion Filter—单 pass GPU 过程化山地侵蚀 |
 
 ## 元（wiki/meta/）
 

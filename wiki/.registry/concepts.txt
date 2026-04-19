@@ -616,3 +616,8 @@ ambient-cube-probe-pathtrace-exit
 hybrid-voxel-software-raytracing
 good-parallel-computer
 gpu-queues-vs-dispatch-execution
+phacelle-noise
+directional-noise
+erosion-filter-procedural
+atmospheric-perspective
+hair-shader-anisotropic
