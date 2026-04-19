@@ -22,7 +22,6 @@ sources: 9
 - **A Whirlwind Tour of Dataflow Graphs**、**SIMD transposes**、**Reading bits in far too many ways**：经典系列。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Exact UNORM8 to float | [[unorm-float-conversion]] |
@@ -30,9 +29,13 @@ sources: 9
 | SSE: mind the gap! | [[sse-tricks]] |
 | A Trip Through the Graphics Pipeline 2011 Part 6 | [[pineda-edge-rasterization]]、[[hierarchical-rasterization]]、[[triangle-setup]] |
 | Models for adaptive arithmetic coding | [[adaptive-arithmetic-coding]] |
+| Why those particular integer multiplies? | [[x86-simd-integer-multiplies]] |
+| BC7 optimal solid-color blocks | [[bc7-solid-color-blocks]] |
+| MRSSE | [[mrsse-hdr-error-metric]] |
+| UNORM and SNORM to float, hardware edition | [[unorm-snorm-hardware-conversion]] |
+| Oodle 2.9.14 and Intel 13th/14th gen CPUs | [[intel-13th-14th-gen-clock-degradation]] |
 
 ## 相关
-
 - [[rasterization]]
 - [[rendering-pipeline]]
 - [[unorm-float-conversion]]
@@ -49,9 +52,13 @@ sources: 9
 - [[insert-zero-bit-in-middle]]
 - [[sign-extend-without-shift]]
 - [[oodle-compression-suite]]
+- [[x86-simd-integer-multiplies]]
+- [[bc7-solid-color-blocks]]
+- [[mrsse-hdr-error-metric]]
+- [[unorm-snorm-hardware-conversion]]
+- [[intel-13th-14th-gen-clock-degradation]]
 
 ## Sources
-
 - [[sources/ryg-exact-unorm8-to-float]]
 - [[sources/ryg-sinc-and-polynomial-interpolation]]
 - [[sources/ryg-sse-mind-the-gap]]
@@ -75,3 +82,8 @@ sources: 9
 - [[sources/ryg-insert-zero-bit-middle]]
 - [[sources/ryg-zero-or-sign-extend]]
 - [[sources/ryg-oodle-kraken-misconceptions]]
+- [[sources/ryg-why-those-particular-integer-multiplies]]
+- [[sources/ryg-bc7-optimal-solid-color-blocks]]
+- [[sources/ryg-mrsse]]
+- [[sources/ryg-unorm-snorm-hardware-edition]]
+- [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]]

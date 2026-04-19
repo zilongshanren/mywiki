@@ -68,7 +68,6 @@ raymarching 需要先进入体积，而进入体积的唯一方式是**让相机
 两者不是竞品而是定位不同：froxel 是"所有像素共享一份 3D 光照数据"的摊薄方案，per-fragment raymarching 是"每个像素独立沿射线积分"的原教旨方案。
 
 ## 相关
-
 - [[sdf-ray-marched-shadows]] — 把 raymarching 用在 2D / 3D 阴影
 - [[sdf-2d-primitives]] — SDF 基元工具箱
 - [[volumetric-fog-froxels]] — 另一条体积渲染路线
@@ -76,6 +75,7 @@ raymarching 需要先进入体积，而进入体积的唯一方式是**让相机
 - [[coordinate-spaces]]
 - [[alan-zucconi]]
 - [[raymarching-intro]] —— sphere-traced 表面 raymarching 的入门路线
+- [[density-field-volumetric]] — 密度场 + 样本累积的体积渲染
 
 ## Sources
 

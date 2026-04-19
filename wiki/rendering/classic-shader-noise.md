@@ -93,7 +93,6 @@ return noise_sum / weight_sum;
 这张表也解释了为什么「Perlin + fBm」成了最广泛的默认组合：梯度法带来高阶连续性，fBm 又补足了多尺度细节，成本还可控。
 
 ## 相关
-
 - [[shader-color-interpolation]] — cubic / quintic smoothstep 是插值类噪声的心脏
 - [[worley-voronoi-noise]] — 细胞噪声的单独展开，包含 shader graph 节点代价
 - [[layered-grid-noise]] — 不用哈希，靠黄金角旋转打破周期的 Xor 自家做法
@@ -103,6 +102,7 @@ return noise_sum / weight_sum;
 - [[xor-shader-artist]]
 - [[fragment-shader]]
 - [[mipmap-generation-sampling]] —— 纹理路线的噪声离不开 LOD 和 bias 的配合
+- [[dot-gyroid-noise]] — gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声
 
 ## Sources
 

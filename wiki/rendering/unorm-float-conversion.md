@@ -43,11 +43,11 @@ return ((float)x * 3.f) * (1.f / (3.f * 255.f));
 这是一个典型的 **微内核数值优化**：硬件没有真除法，但在 [[ieee-754|IEEE 754]] 的舍入规则下可以用乘法 + 加法把 `1/255` 这种「看似要除法」的常数严格还原。同类技巧在 SNORM8、SNORM16 上也能找到对应的常数（`1/(31·127)`、`1/(73·32767)`），但 UNORM16 至今没有同样干净的两乘法构造。
 
 ## 相关
-
 - [[rendering-pipeline]]
 - [[color-space]]
 - [[fabian-giesen]]
+- [[unorm-snorm-hardware-conversion]] — 同一问题的硬件实现版本
 
 ## Sources
-
 - [[sources/ryg-exact-unorm8-to-float]]
+- [[sources/ryg-unorm-snorm-hardware-edition]]

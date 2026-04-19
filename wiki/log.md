@@ -629,3 +629,7 @@ batch-w47-ei：10 篇 jendrikillner 周报（issue 409-418）按既定先例全�
 ## [2026-04-19] ingest | Wave-47 Worker EJ (danielilett Shader Toolbox + Snapshot Shaders 2/Pro ×10)
 
 处理 10 篇 Daniel Ilett 产品文档：Shader Toolbox for URP 的 subgraph library 和 voronoi-lava、Snapshot Shaders 2 的 glitch/masking-layers/outline/underwater 四款 volume effect，以及 Snapshot Shaders Pro 的 scripting guide。跳过 3 篇（两个顶层营销页 + Snapshot 2 install guide）。新增 4 概念页（voronoi-lava-shader、volume-mask-layers、underwater-post-effect、volume-component-scripting）+ 7 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、glitch-image-effect、cel-shader-outline、worley-voronoi-noise、sobel-edge-detection、chromatic-aberration-post 六个既有概念页。
+
+## [2026-04-19] ingest | Wave-47 Batch EK (ryg×5 + Xor×7 + Peters×5)
+
+处理 19 篇跨 3 博客域文章。17 ingested（5 ryg HDR/硬件文 + 7 Xor shader art + 5 Peters path tracing / radiometry / spectral）、2 skipped（ryg `content-creator` 纯观点、Peters `blog.md` 首页索引）。新增 15 个概念页：`x86-simd-integer-multiplies`、`intel-13th-14th-gen-clock-degradation`（computer-systems）；`bc7-solid-color-blocks`、`mrsse-hdr-error-metric`、`unorm-snorm-hardware-conversion`、`density-field-volumetric`、`dot-gyroid-noise`、`radiometry-integral-view`、`photometry-luminance`、`hyperbolic-tangent-shader`、`glsl-mix-function`、`tweet-shader-280-char`、`fragcoord-shader-editor`、`spectral-vs-rgb-comparison`、`path-tracing-basics`（rendering）。17 个 source 摘要。作者页三者皆已存在，通过 patches 扩展贡献表 / 相关 / Sources 三段。

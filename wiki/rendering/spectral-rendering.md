@@ -48,15 +48,19 @@ RGB 渲染相当于**假设 $i(\lambda)$ 只在三个特定波长处有能量**�
 > RGB 渲染把「人眼感知模型」和「光传输物理」搅在一起了；光谱渲染把它们解耦。
 
 ## 相关
-
 - [[color-space]] — RGB 值只有在给定色彩空间下才有意义
 - [[fourier-srgb-spectral-upsampling]] — 把 sRGB 纹理升格为反射率谱的方法
 - [[hero-wavelength-spectral-sampling]] — 用少量波长做 MC 积分的采样策略
 - [[spectral-brdf]] — BRDF 怎么配合反射率谱
 - [[christoph-peters]]
 - [[spectral-zucconi-rainbow]] — shader art 场景下 branchless 的波长→RGB 廉价拟合
+- [[spectral-vs-rgb-comparison]] — 各类光源下 RGB vs 光谱的实证对比
+- [[photometry-luminance]] — photometric 量与 CIE XYZ
+- [[radiometry-integral-view]] — radiometric 量的积分式介绍
 
 ## Sources
-
 - [[sources/peters-spectral-rendering-1-spectra]]
 - [[sources/peters-spectral-rendering-2-real-time]]
+- [[sources/peters-spectral-rendering-3-vs-rgb]]
+- [[sources/peters-radiometry-1-backwards]]
+- [[sources/peters-radiometry-2-photometry]]

@@ -17,7 +17,6 @@ sources: 10
 - **短篇为主**。「Mini」系列每篇都是几分钟读完的便笺，适合当参考手册或睡前小读物。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Mini: JFA | [[jump-flooding-algorithm]] — GPU 距离场的洪填算法 |
@@ -44,6 +43,13 @@ sources: 10
 | Combining Shaders | [[shader-combination-strategies]] — 单 pass 合并的 5 项 checklist |
 | Common Shader Mistakes | [[common-shader-pitfalls]] — NaN / 纹理 / mipmap / 精度 bug 清单 |
 | Mini: Design Choices | [[shader-art-design-principles]] — 构图/光/色/纹理/动作五维自查 |
+| Functions: Tanh | [[hyperbolic-tangent-shader]] — tanh 作为 sigmoid / tonemap / 调试工具 |
+| Modeling the World in 280 Characters | [[tweet-shader-280-char]] — 280 字符 tweet shader 思路 |
+| Decoding: Phosphor | 详解 [[tweet-shader-280-char]] 的一个 258 字符样本 |
+| Volumetric Raymarching | [[density-field-volumetric]] — 密度场 + 样本累积 |
+| Functions: Mix | [[glsl-mix-function]] — mix 的进阶用法（saturation、extrapolation、remap）|
+| Dot Noise | [[dot-gyroid-noise]] — gyroid + 黄金角旋转的廉价 aperiodic 噪声 |
+| FragCoord: The Ultimate Tool | [[fragcoord-shader-editor]] — Xor 自建的 shader 编辑 / 调试 / 分析平台 |
 
 ## 和其它作者的对比
 
@@ -52,7 +58,6 @@ sources: 10
 - 和 [Inigo Quilez](https://iquilezles.org/) 算是同一个谱系——Xor 的 OkLab 页还直接引用了 iq 的优化 mix 版本。
 
 ## 相关
-
 - [[jump-flooding-algorithm]]
 - [[oklab-color-space]]
 - [[3d-rotation-math]]
@@ -83,9 +88,14 @@ sources: 10
 - [[shader-combination-strategies]]
 - [[common-shader-pitfalls]]
 - [[shader-art-design-principles]]
+- [[hyperbolic-tangent-shader]]
+- [[tweet-shader-280-char]]
+- [[density-field-volumetric]]
+- [[glsl-mix-function]]
+- [[dot-gyroid-noise]]
+- [[fragcoord-shader-editor]]
 
 ## Sources
-
 - [[sources/xor-mini-jfa]]
 - [[sources/xor-mini-oklab]]
 - [[sources/xor-mini-3d-rotation]]
@@ -123,3 +133,10 @@ sources: 10
 - [[sources/xor-mini-combining-shaders]]
 - [[sources/xor-mini-common-mistakes]]
 - [[sources/xor-mini-design-choices]]
+- [[sources/xor-functions-tanh]]
+- [[sources/xor-modeling-the-world-in-280-chars]]
+- [[sources/xor-decoding-phosphor]]
+- [[sources/xor-volumetric-raymarching]]
+- [[sources/xor-functions-mix]]
+- [[sources/xor-dot-noise]]
+- [[sources/xor-fragcoord-editor]]

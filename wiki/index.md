@@ -158,6 +158,8 @@ CAQA + CSAPP 的底层视角。
 | [[oodle-compression-suite]] | Oodle 三条产品线拆解：Data / Network / Texture，以及 PS5 尺寸缩水的真实原因 |
 | [[mysql-charset-migration]] | MySQL 跨十年升级时 GBK → UTF-8 迁移；`--default-character-set=binary` 与混杂编码 dump 处理 |
 | [[main-thread-task-injection]] | 给任务调度器开洞让主线程事件回调运行指定 coroutine |
+| [[x86-simd-integer-multiplies]] | x86 SIMD 整数乘法指令的硬件演化史 |
+| [[intel-13th-14th-gen-clock-degradation]] | Intel 13 / 14 代 CPU 时钟树退化的软件 work-around |
 
 ## 游戏引擎（wiki/game-engines/）
 
@@ -510,6 +512,19 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[volume-mask-layers]] | URP Volume 后处理的多维 layer/tag/queue mask 机制 |
 | [[underwater-post-effect]] | 屏幕空间水下后处理：flow map UV 扭曲 + triplanar/light-aligned caustics |
 | [[volume-component-scripting]] | Unity 三管线 Volume 参数 C# 运行时修改 API 对比 |
+| [[bc7-solid-color-blocks]] | BC7 mode 5 精确编码 8-bit 纯色块的闭式端点 |
+| [[mrsse-hdr-error-metric]] | Oodle Texture BC6H 所用的相对均方误差度量 |
+| [[unorm-snorm-hardware-conversion]] | UNORM / SNORM → float 的硬件级实现（LZ + 16-bit adder 足矣） |
+| [[density-field-volumetric]] | 体积 raymarch 的密度场与样本累积（additive vs alpha-blend） |
+| [[dot-gyroid-noise]] | Gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声 |
+| [[radiometry-integral-view]] | 以积分视角（而非 differential）组织辐射度量 |
+| [[photometry-luminance]] | Photometric 量、CIE XYZ 与 luminance |
+| [[hyperbolic-tangent-shader]] | tanh 在 shader 里的 4 类用法（sigmoid / tonemap / blend / 调试） |
+| [[glsl-mix-function]] | mix 的进阶用法：saturation、extrapolation、remap、感知均匀 |
+| [[tweet-shader-280-char]] | 280 字符 tweet shader 的思维与技巧 |
+| [[fragcoord-shader-editor]] | Xor 的 FragCoord.xyz：浏览器内 shader 调试器 |
+| [[spectral-vs-rgb-comparison]] | 各类光源下 RGB vs 光谱渲染的实证对比 |
+| [[path-tracing-basics]] | 最小可行 path tracer 的学习路径（Peters workshop + lectures） |
 
 ## 经典案例（wiki/examples/）
 
@@ -1097,6 +1112,23 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/danielilett-snapshot2-outline]] | Ilett：Snapshot 2 Outline——屏幕空间 DepthNormalsColor 三通道描边 |
 | [[sources/danielilett-snapshot2-underwater]] | Ilett：Snapshot 2 Underwater——flow map + triplanar/light-aligned caustics |
 | [[sources/danielilett-snapshot-pro-scripting]] | Ilett：Snapshot Pro Scripting Guide——URP / HDRP / Built-in Volume 三管线 API |
+| [[sources/ryg-why-those-particular-integer-multiplies]] | ryg：x86 SIMD 整数乘法的硬件演化推测 |
+| [[sources/ryg-bc7-optimal-solid-color-blocks]] | ryg：BC7 纯色块两行公式的最优端点 |
+| [[sources/ryg-mrsse]] | ryg：Oodle BC6H 的相对均方误差度量 |
+| [[sources/ryg-unorm-snorm-hardware-edition]] | ryg：UNORM / SNORM → float 的硬件级实现 |
+| [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]] | ryg：Oodle 2.9.14 对 Intel 13/14 代 CPU 时钟 bug 的 work-around |
+| [[sources/xor-functions-tanh]] | Xor：tanh 在 shader 里的数学和用法 |
+| [[sources/xor-modeling-the-world-in-280-chars]] | Xor：280 字符 tweet shader 的动机与入门 |
+| [[sources/xor-decoding-phosphor]] | Xor：258 字符 Phosphor tweet shader 的逐行拆解 |
+| [[sources/xor-volumetric-raymarching]] | Xor：体积 raymarch 的密度场与样本累积 |
+| [[sources/xor-functions-mix]] | Xor：mix 函数的进阶用法（saturation / extrapolation / remap） |
+| [[sources/xor-dot-noise]] | Xor：gyroid + 黄金角旋转的廉价 aperiodic 3D 噪声 |
+| [[sources/xor-fragcoord-editor]] | Xor：FragCoord.xyz shader 编辑器发布 |
+| [[sources/peters-path-tracing-workshop]] | Peters：Intel path tracing workshop（GLSL / ShaderToy） |
+| [[sources/peters-path-tracing-lectures]] | Peters：TU Delft 硕士 path tracing 讲座 + Vulkan 实现 |
+| [[sources/peters-radiometry-1-backwards]] | Peters：从 radiance 起步的辐射度量积分式重构 |
+| [[sources/peters-radiometry-2-photometry]] | Peters：光谱量、CIE XYZ 与 photometric 单位 |
+| [[sources/peters-spectral-rendering-3-vs-rgb]] | Peters：RGB vs 光谱渲染在多种光源下的实证对比 |
 
 ## 元（wiki/meta/）
 
