@@ -705,3 +705,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-54 Worker FD (4rknova.com ×5)
 
 处理 5 篇 Nikos Papadopoulos / 4rknova.com 文章。新增 1 概念页（mulberry32-rng）、1 人物页（nikos-papadopoulos）、1 source 摘要。跳过 4 篇：Gaia 天文数据库（领域不匹配）+ 2 篇虚构小说 + 1 个仅含键位表的 demo 页。
+
+## [2026-04-19] ingest | Wave-54 Worker FB (boristhebrave.com ×5)
+
+处理 Boris The Brave（Sylves / WFC 作者）5 篇。Ingest 3 篇：Poisson Rect Process（无限平面非重叠随机矩形的两相过滤算法）、Dealing With Infinite Grids（Sylves 无限网格文档入口指针贴）、Good Software Doesn't Double Check（批评 agent 过度防御式编程，提倡用不变量与静态类型替代重复检查）。跳过 2 篇：Silksong 游戏攻略、NeurIPS 2025 会议游记。新增 3 概念页（poisson-rect-process, infinite-chunked-procedural-generation, good-software-no-double-check）+ 1 人物页（boris-the-brave）+ 3 source 摘要，并给 poisson-disk-sampling / data-structure-invariants / type-safety-vs-simplicity 三页打回链 patch。

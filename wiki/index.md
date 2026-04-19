@@ -58,6 +58,7 @@ sources: 371
 | [[clean-code-critique]] | 游戏/图形视角对 clean code 的系统批判 |
 | [[future-proofing-tests]] | Ben Supnik 的三问测试：什么时候可以给未来设计 |
 | [[cheat-by-solving-less]] | 打败专家靠作弊——只解一个更小的问题 |
+| [[good-software-no-double-check]] | Agent 过度防御的新气味，用不变量和静态类型代替重复检查 |
 
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
@@ -600,6 +601,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 
 | [[banjo-kazooie-vertex-color-terrain]] | N64 时代把颜色编码进顶点色做 splat 混合的地形风格，Godot/Blender 复刻路径 |
 | [[srgb-premultiplied-alpha-compression]] | sRGB × 预乘 alpha × 块压缩的正确顺序 |
+| [[poisson-rect-process]] | 无限平面上的无重叠随机矩形：两相过滤 + 分块无关 |
+| [[infinite-chunked-procedural-generation]] | 无限世界的分块程序化生成方法论：相位化 + 局部有界依赖 |
 
 ## 经典案例（wiki/examples/）
 
@@ -715,6 +718,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[gemserk]] | Gemserk / Ariel Coppes，独立工作室，Unity 工程实战博客 |
 | [[ben-supnik]] | Ben Supnik，Laminar Research / X-Plane 图形与引擎程序员 |
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |
+| [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1315,6 +1319,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-beat-the-experts]] | Supnik：靠作弊写出比 malloc 更快的分配器 |
 | [[sources/supnik-srgb-premultiplied-alpha]] | Supnik：sRGB、预乘 alpha 与块压缩的三角关系 |
 | [[sources/4rknova-mulberry32]] | 4rknova：Mulberry32 确定性 PRNG 逐 bit 拆解 |
+| [[sources/boristhebrave-poisson-rect-process]] | Boris The Brave：无限平面非重叠随机矩形算法 |
+| [[sources/boristhebrave-infinite-grids]] | Boris The Brave：Sylves 无限网格程序化生成入口贴 |
+| [[sources/boristhebrave-no-double-check]] | Boris The Brave：好软件不重复自检，agent 时代的新代码气味 |
 
 ## 元（wiki/meta/）
 

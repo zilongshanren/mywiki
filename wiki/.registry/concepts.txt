@@ -645,3 +645,6 @@ future-proofing-tests
 cheat-by-solving-less
 srgb-premultiplied-alpha-compression
 mulberry32-rng
+poisson-rect-process
+infinite-chunked-procedural-generation
+good-software-no-double-check

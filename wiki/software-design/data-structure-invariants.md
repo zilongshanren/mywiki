@@ -53,13 +53,13 @@ ryg 提出的设计直觉简单但深刻：
 这篇文章用的语言不是 [[john-ousterhout|Ousterhout]] 的，但讲的是同一件事。[[information-hiding|信息隐藏]] 的反面就是多个模块共享同一份数据但分别维护；[[information-leakage]] 与 [[change-amplification]] 在 ryg 这里有了数据结构层面的精确对应：**一条不变量就是一个可能泄漏的真相**。「不变量越简单代码越短」在 [[deep-modules|深模块]] 的语言里叫「接口的组合爆炸越少」。
 
 ## 相关
-
 - [[fabian-giesen]]
 - [[change-amplification]]
 - [[information-hiding]]
 - [[obscurity]]
 - [[ring-buffer-virtual-stream]] —— 用单调计数器把「满 / 空」二义性压进无符号减法的不变量里
 - [[negative-space-in-programming]] —— 好的不变量让一类 bug 根本写不出来，这是负空间的典型形态
+- [[good-software-no-double-check]] — Boris The Brave：不要重复检查假设，一次建立即可
 
 ## Sources
 

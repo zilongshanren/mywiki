@@ -40,7 +40,6 @@ sources: 1
 直接生成 HLSL / C++ 数组，复制粘贴即用。这种「离线生成 + 烘进代码」的工作流是图形里很常见的模式，避免运行时再算 / 再加载小型常量数据。
 
 ## 相关
-
 - [[aliasing]]
 - [[bartosz-wronski]]
 - [[hero-wavelength-spectral-sampling]] — 类似的分层抖动思路在波长维度的应用
@@ -51,6 +50,8 @@ sources: 1
 - [[shadow-mapping-basics]] — 软阴影的 Fibonacci 圆盘采样是同一思路
 - [[max-slater]]
 - [[swap-and-pop-removal]] — active list 随机消费场景下的 O(1) 删除技巧
+- [[poisson-rect-process]] — 把点过程扩展成无限平面上的无重叠随机矩形
+- [[infinite-chunked-procedural-generation]] — 点过程/矩形过程共用的分块无关方法论
 
 ## Sources
 

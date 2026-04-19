@@ -29,7 +29,6 @@ sources: 1
 [[john-ousterhout|Ousterhout]] 的 [[complexity|软件复杂性]] 框架里把"读一段代码需要多少脑容量"（[[cognitive-load|cognitive load]]）列为复杂性的核心指标之一。类型机制膨胀到喧宾夺主时，它就是在贡献 cognitive load，哪怕它同时减少了 bug。[[deep-modules|深模块]] 的理想是**复杂实现 + 简单接口**；[[shallow-modules|浅模块]] 的典型症状是**简单功能 + 花哨接口**——过度的类型包装有时正是把一个本该深的模块压薄成浅的。
 
 ## 相关
-
 - [[ecs-particle-system-c]] — 触发这次反思的具体工程
 - [[cpp-multi-paradigm-discipline]] — 同作者对 C++ 多范式边界的一贯立场
 - [[complexity]]
@@ -37,6 +36,7 @@ sources: 1
 - [[deep-modules]]
 - [[shallow-modules]]
 - [[cloudwu]]
+- [[good-software-no-double-check]] — 用严格静态类型替代 agent 生成代码里的冗余防御检查
 
 ## Sources
 

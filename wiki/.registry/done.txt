@@ -11392,3 +11392,8 @@ raw/articles/4rknova.com/2026-03-05_the-gaia-database.md
 raw/articles/4rknova.com/2026-03-08_one-last-collection.md
 raw/articles/4rknova.com/2026-03-22_the-synod-of-the-veil.md
 raw/articles/4rknova.com/2026-04-19_gameboy-snake-rom.md
+raw/articles/boristhebrave.com/2025-11-26_silksong-quick-hints.md
+raw/articles/boristhebrave.com/2025-12-14_my-trip-to-neurips-2025.md
+raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md
+raw/articles/boristhebrave.com/2026-01-22_infinite-random-rectangles-the-poisson-rect-process.md
+raw/articles/boristhebrave.com/2026-04-17_good-software-doesnt-double-check.md
