@@ -733,3 +733,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-56 Worker FI (outerra.blogspot.com ×5)
 
 处理 5 篇 Outerra 行星引擎技术博文（2015-2018）：SRTM 30m 数据评估、NasaDEM preliminary 对比、OpenGL 三角形吞吐测试 grass + blocks、GLSL fp64 sin/cos minimax 近似。新增 3 概念页（planet-terrain-dem-pipeline, opengl-draw-call-batching-sweet-spot, fp64-sincos-minimax），1 人物页（outerra-team），5 源摘要。Patch draw-call.md / faster-math-functions.md / fractal-texturing.md 交叉链接。
+
+## [2026-04-19] ingest | Wave-56 Worker FJ (sebaslab.com ×5)
+
+处理 Sebastiano Mandalà 5 篇 Svelto.ECS 文章：ECS 抽象层与模块封装、Svelto 3.3 Filters API、Survival mini example 重写、Svelto-on-DOTS 3.4 更新、ComputeSharp 实现 ECS-on-GPU。新增 1 人物页（sebastiano-mandala）、5 概念页（svelto-ecs / ecs-abstraction-layers / svelto-filters-api / svelto-on-dots / ecs-on-gpu-computesharp）、5 source 摘要。无跳过。Patch 到 dots-ecs-programming-patterns 与 dots-enableable-components 加入 Svelto 对照链接。

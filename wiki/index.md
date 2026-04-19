@@ -223,6 +223,11 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[slang-shader-language]] | NVIDIA 主推的现代着色器语言：泛型、模块、自动微分 |
 | [[ue4-editor-battery-throttle]] | UE4 编辑器电池模式 60 FPS 硬限制与 r.DontLimitOnBattery |
 | [[ue4-common-perf-pitfalls]] | Allar 救火现场反复出现的 UE4 工程陷阱清单 |
+| [[svelto-ecs]] | 平台无关 C# ECS 框架：group 模型、显式 composition root、ECS-centric 多范式 |
+| [[ecs-abstraction-layers]] | Svelto 的 ECS 分层封装方法论：asmdef 单向依赖 + 依赖倒置 + Hollywood Principle |
+| [[svelto-filters-api]] | 跨 group 的 entity 子集索引：transient / persistent filter，取代 event / publisher-consumer |
+| [[svelto-on-dots]] | Svelto 接管 DOTS 调度、把 DOTS ECS 当作引擎库而非游戏框架 |
+| [[ecs-on-gpu-computesharp]] | 用 ComputeSharp 把 Svelto component 存到 GPU buffer、engine 以 compute shader 形式跑 |
 
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
@@ -736,6 +741,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |
 | [[ted-sie]] | Ted Sie，Unity 中文技术博客作者（分形 / DOTS / 群体仿真） |
 | [[outerra-team]] | Brano Kemen / Angrypig Kralik —— Outerra 行星引擎双人组 |
+| [[sebastiano-mandala]] | Sebastiano Mandalà — Svelto.ECS 作者、Freejam 工程师 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1359,6 +1365,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/outerra-opengl-perf-blocks]] | Outerra：building block 的 OpenGL 三角形吞吐测试 |
 | [[sources/outerra-fp64-sincos]] | Outerra：GLSL fp64 sin/cos 的 minimax 近似实现 |
 | [[sources/outerra-nasadem-comparison]] | Outerra：NasaDEM preliminary 对比 SRTM/Viewfinder |
+| [[sources/sebaslab-ecs-abstraction-layers]] | Mandalà：ECS 抽象层与 assembly 级模块封装 |
+| [[sources/sebaslab-svelto-filters-api]] | Mandalà：Svelto.ECS 3.3 Filters API 重写，persistent + transient 两档 |
+| [[sources/sebaslab-survival-mini-example]] | Mandalà：Svelto.ECS Survival 示例重写，六层 asmdef + filter 取代 event |
+| [[sources/sebaslab-svelto-on-dots-update]] | Mandalà：Svelto.ECS 3.4 的 DOTS 1.0 集成，废弃 ECB 改用 batched ops |
+| [[sources/sebaslab-ecs-on-gpu-computesharp]] | Mandalà：用 ComputeSharp 把 Svelto ECS 的 component 存到 GPU compute buffer |
 
 ## 元（wiki/meta/）
 

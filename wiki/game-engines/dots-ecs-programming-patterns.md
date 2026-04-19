@@ -105,13 +105,15 @@ using (var guids = query.ToComponentDataArray<TState>(Allocator.TempJob)) {
 这是 `Unity.Scenes` 的写法，防漏 dispose，配合早退 path 也安全。
 
 ## 相关
-
 - [[ecs]]
 - [[dots-enableable-components]]
 - [[dots-chunk-change-version]]
 - [[dots-ecs-cache-iteration]]
 - [[data-driven-architecture]]
 - [[sirawat-pitaksarit]]
+- [[svelto-ecs]] — Sebastiano Mandalà 的对照路线：group 模型 + 显式 composition root + ECS-centric 而非 ECS-only
+- [[svelto-on-dots]] — 把 DOTS ECS 当作引擎库接入 Svelto 的集成模式
+- [[svelto-filters-api]] — filter 语义比 [[dots-enableable-components]] 更通用
 
 ## Sources
 

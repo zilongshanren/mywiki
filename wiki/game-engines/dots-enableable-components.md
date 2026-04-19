@@ -44,13 +44,13 @@ enable mask 是 **`v128`**（128 bit），所以 `MaximumChunkCapacity = 128`。
 `IJobEntity` 能被 source generator "贴心地"包一层 `if`；`IJobChunk` 的 `Execute(chunk, ...)` 颗粒度本来就是 chunk，source generator 已经介入不了。Unity 只好把 mask / 辅助函数原样塞给用户，由用户自己在 `Execute` 里遍历 mask 决定哪些 entity 要处理——官方文档里专门有一节讲 `useEnabledMask` 和 `chunkEnabledMask` 的用法。
 
 ## 相关
-
 - [[ecs]]
 - [[dots-chunk-change-version]]
 - [[dots-ecs-cache-iteration]]
 - [[aos-vs-soa]]
 - [[cache-friendliness]]
 - [[sirawat-pitaksarit]]
+- [[svelto-filters-api]] — Sebastiano Mandalà 认为 IEnableableComponents 只是 filter 的弱化版，filter 还能表达 ownership relationship 而非仅状态
 
 ## Sources
 

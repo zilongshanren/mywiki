@@ -664,3 +664,8 @@ unity-dots-tween-system
 planet-terrain-dem-pipeline
 opengl-draw-call-batching-sweet-spot
 fp64-sincos-minimax
+svelto-ecs
+ecs-abstraction-layers
+svelto-filters-api
+svelto-on-dots
+ecs-on-gpu-computesharp
