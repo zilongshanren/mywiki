@@ -41,10 +41,10 @@ Ousterhout 的经验建议：把 **10-20% 的开发时间**花在设计投资上
 Ousterhout 举了 Facebook 的例子：口号从「Move fast and break things」迭代到「Move fast with solid infrastructure」，因为多年的战术累积产出了一个不稳定、难维护的代码库，影响了招聘。反观 Google 和 VMware，战略文化成了竞争护城河：强代码库吸引强工程师，强工程师维护强代码库，正向飞轮一旦转起来就反过来运作。
 
 ## 相关
-
 - 对立面：[[tactical-programming]]
 - 极端战术的人格化：[[tactical-tornado]]
 - 基础：[[complexity]]、[[zero-tolerance]]
+- [[future-proofing-tests]] —— Ben Supnik 把「是否该为未来设计」落成可操作的三问测试
 
 ## Sources
 

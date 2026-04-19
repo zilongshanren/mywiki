@@ -9,7 +9,6 @@ sources: 371
 本知识库涵盖**软件设计哲学 · 实时渲染 · 游戏引擎 · 计算机体系结构 · 编程语言基础**五大主题。入口页：[[overview]]。品味训练指南：[[taste-development]]。
 
 ## 软件设计（wiki/software-design/）
-
 核心概念与框架，源自 John Ousterhout 的 APoSD。
 
 | 文章 | 一句话描述 |
@@ -57,9 +56,10 @@ sources: 371
 | [[vibe-coding-workflow]] | AI 代理编程工作流：plan mode + per-PR review + 对账测试 |
 | [[graphics-programmer-constraints]] | 图形程序员行业的硬约束与世界观 |
 | [[clean-code-critique]] | 游戏/图形视角对 clean code 的系统批判 |
+| [[future-proofing-tests]] | Ben Supnik 的三问测试：什么时候可以给未来设计 |
+| [[cheat-by-solving-less]] | 打败专家靠作弊——只解一个更小的问题 |
 
 ## 编程语言基础（wiki/programming-languages/）
-
 SICP 及 Lambda 演算传统的核心概念。
 
 | 文章 | 一句话描述 |
@@ -100,6 +100,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[go-goroutine-channels]] | Go 的 goroutine / chan / select 与 CSP 风格并发 |
 | [[lua-incremental-gc]] | Lua 5.1 增量式 GC 的五阶段状态机与双白色乒乓 |
 | [[lua-c-api-dylib-proxy]] | 静态链接 Lua 宿主如何挂第三方 C 扩展：运行期代理 DLL 和构建期 extlua 两代方案 |
+| [[stackless-vs-stackful-coroutines]] | C++20 协程为何不需要整栈保存 |
+| [[coroutine-awaitable-pattern]] | awaitable 与 coroutine 的分工：名词 vs 动词 |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 
@@ -216,7 +218,6 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[slang-shader-language]] | NVIDIA 主推的现代着色器语言：泛型、模块、自动微分 |
 
 ## 实时渲染（wiki/rendering/）
-
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
 | 文章                                    | 一句话描述                                                              |
@@ -597,6 +598,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 
 
 | [[banjo-kazooie-vertex-color-terrain]] | N64 时代把颜色编码进顶点色做 splat 混合的地形风格，Godot/Blender 复刻路径 |
+| [[srgb-premultiplied-alpha-compression]] | sRGB × 预乘 alpha × 块压缩的正确顺序 |
 
 ## 经典案例（wiki/examples/）
 
@@ -710,7 +712,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 | [[alfred-baudisch]] | Alfred Reinold Baudisch，巴西 Elixir/Godot indie dev，《Brazilian Street Food Simulator》作者 |
 | [[gemserk]] | Gemserk / Ariel Coppes，独立工作室，Unity 工程实战博客 |
-
+| [[ben-supnik]] | Ben Supnik，Laminar Research / X-Plane 图形与引擎程序员 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1305,7 +1307,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/gemserk-prefabs-as-data]] | Gemserk：Unity Prefab/GameObject 当纯数据容器用 |
 | [[sources/gemserk-custom-editor-ecs]] | Gemserk：给 Unity ECS 世界写 CustomEditor 调试工具 |
 | [[sources/gemserk-refactoring-prefab-data]] | Gemserk：Unity Prefab/Scene/Asset 的数据结构批量重构工具 |
-
+| [[sources/supnik-stackless-vs-stackful-coroutines]] | Supnik：C++20 stackless 协程为何够用 |
+| [[sources/supnik-coroutine-as-awaitable]] | Supnik：coroutine 本身就是 awaitable |
+| [[sources/supnik-future-proof]] | Supnik：YAGNI 不是禁令，三问通过才可 future-proof |
+| [[sources/supnik-beat-the-experts]] | Supnik：靠作弊写出比 malloc 更快的分配器 |
+| [[sources/supnik-srgb-premultiplied-alpha]] | Supnik：sRGB、预乘 alpha 与块压缩的三角关系 |
 
 ## 元（wiki/meta/）
 

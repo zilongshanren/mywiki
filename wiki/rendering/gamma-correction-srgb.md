@@ -57,7 +57,6 @@ vec3 SRGB_encode(vec3 lrgb) {
 [[color-space]] 讲的是**一个完整色彩空间的三要素**：TRC + primaries + white point。这里只关心其中 TRC 那一部分——sRGB 的 gamma 曲线如何在 shader 里编解码。primaries 和白点变换属于 HDR、宽色域和 [[oklab-color-space|感知均匀空间]] 的话题。
 
 ## 相关
-
 - [[color-space]]
 - [[alpha-blending]]
 - [[oklab-color-space]]
@@ -67,6 +66,7 @@ vec3 SRGB_encode(vec3 lrgb) {
 - [[display-edid-colorspace]]
 - [[shader-instruction-cost]]
 - [[xor-shader-artist]]
+- [[srgb-premultiplied-alpha-compression]] —— 预乘与块压缩必须发生在 linear 域，sRGB encode 是最后一步
 
 ## Sources
 

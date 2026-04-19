@@ -15,12 +15,12 @@ Go 把 CSP 风格的并发模型作为语言的一等公民：goroutine 是极�
 云风用这一套把自己 2006 年写的 [[connection-multiplexer-gateway|多连接汇聚服务器]]用大约 240 行 Go 重写。对外 N 条 socket、对内 1 条管道，`len + id` 的三字节头把 N 路 TCP 合并为单流；控制指令走 0 号特殊连接，用 in-memory pipe 转成 `bufio.Reader` 按行解析；性能上唯一需要手工优化的点是给对外包加头时批量向 16K 数组借 slice——他特意强调 Go 的 slice 只是对 array 的部分引用，创建极廉价，这种"区分引用与值"的清晰度让 Go 比 Java 更像 C，却提供了 C++ 给不出的安全性。
 
 ## 相关
-
 - [[cloudwu]]
 - [[connection-multiplexer-gateway]]
 - [[c-interface-oop]]
 - [[garbage-collector]]
 - [[modular-design]]
+- [[stackless-vs-stackful-coroutines]] —— goroutine 走可增长栈的 stackful 路线，C++20 走 stackless 状态机路线，对比参见 Ben Supnik 的分析
 
 ## Sources
 

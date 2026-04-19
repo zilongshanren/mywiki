@@ -43,7 +43,6 @@ C_final = C_src × α_src + C_dst × (1 - α_src)
 blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直接混合，红绿过渡会在中间出现不自然的变暗——参见 [[color-space]]。
 
 ## 相关
-
 - [[alpha-compositing]] — 合成数学的完整推导
 - [[color-space]] — 混合必须在线性域
 - [[compute-vs-raster-points]] — 固定功能 blending 的 in-order 队列瓶颈
@@ -58,6 +57,7 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[scatter-bokeh-dof]] — premultiplied additive blend + 最终除法归一的近似 OIT，用于 scatter bokeh 精灵累加
 - [[sprite-shaders-unity]] —— Unity sprite shader 的透明三件套起点
 - [[ronja-bohm]] —— 2018 年第 006 篇教程：Unity `Queue=Transparent` + `Blend SrcAlpha OneMinusSrcAlpha` + `ZWrite Off`
+- [[srgb-premultiplied-alpha-compression]] —— Ben Supnik：linear blending vs sRGB blending 的取舍，以及美术为何有时想要 sRGB blending（partial coverage）
 
 ## Sources
 

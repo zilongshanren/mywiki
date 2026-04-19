@@ -59,11 +59,11 @@ R_A  = S_A + D_A × (1 - S_A)
 > 非预乘 α 是给人用的（美术软件友好），预乘 α 是给管线用的（数学上正确）。**引擎内部一律预乘，导出 PNG 时再 unpremultiply。**
 
 ## 相关
-
 - [[alpha-blending]] — 硬件 blending state
 - [[rasterization]] — 覆盖率计算
 - [[aliasing]] — 部分覆盖的反走样用途
 - [[bartosz-ciechanowski]]
+- [[srgb-premultiplied-alpha-compression]] —— sRGB × 预乘 × 块压缩的三方正确顺序
 
 ## Sources
 

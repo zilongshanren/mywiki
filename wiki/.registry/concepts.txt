@@ -639,3 +639,8 @@ unity-input-system-multi-gamepad
 unity-prefabs-as-data
 unity-ecs-custom-editor-debug
 unity-asset-refactoring
+stackless-vs-stackful-coroutines
+coroutine-awaitable-pattern
+future-proofing-tests
+cheat-by-solving-less
+srgb-premultiplied-alpha-compression

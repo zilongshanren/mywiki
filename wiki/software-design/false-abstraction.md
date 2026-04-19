@@ -42,11 +42,11 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 要么让隐藏的信息真正不相关（重新设计让它不再重要），要么把它纳入接口（让它变得显式）。不要假装它不存在。
 
 ## 相关
-
 - 反面：[[abstraction]] 的正确形态
 - 效果：[[obscurity]] 的载体
 - 对比：一个成功的隐藏案例是 [[garbage-collector]]——GC 把内存管理变得真正不相关
 - [[identity-problem-naming]] — identity mismatch 是 false abstraction 的常见来源
+- [[cheat-by-solving-less]] —— 过度通用接口是虚假抽象的常见来源；Supnik 主张按特化需求砍范围
 
 ## Sources
 

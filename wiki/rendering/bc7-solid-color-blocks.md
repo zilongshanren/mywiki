@@ -41,9 +41,9 @@ e1 = ((target < 128) ? (target + 1) : (target - 1)) >> 1;
 Oodle Texture 所有 BC7 encoder 版本（普通 / RDO）都用这段逻辑作为 solid-block 快速路径。
 
 ## 相关
-
 - [[fabian-giesen]]
 - [[unorm-float-conversion]] — 也是「看似要查表的精度问题，其实有闭式算法」的兄弟案例
+- [[srgb-premultiplied-alpha-compression]] —— 块压缩的内插假设线性数据，与 sRGB + 预乘的交互
 
 ## Sources
 

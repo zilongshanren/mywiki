@@ -697,3 +697,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-53 Worker EZ (blog.gemserk.com ×5)
 
 处理 5 篇 Gemserk / Ariel 博客。Ingest 4 篇 Unity 工程实战（新旧 Input System 对比与多手柄配对、Prefab/GameObject 作为纯数据容器、ECS CustomEditor shadow GameObject 调试方案、Prefab/Scene/Asset 的数据结构批量重构）；skip 1 篇 zombie-rockers 游戏展示短文。新增 4 概念页、1 人物页（gemserk）、4 source 摘要。3 个已有页面补充 patch（ecs、save-load-driven-data-design、unity-complexity-patterns）。
+
+## [2026-04-19] ingest | Wave-53 Worker FA (hacksoflife.blogspot.com ×5)
+
+处理 Ben Supnik (X-Plane) 5 篇技术博文：C++20 stackless/stackful 协程辨析、coroutine-as-awaitable、future-proofing 三问、beat-the-experts 作弊法、sRGB×premult×compression 三角。新增 1 人物页（ben-supnik）、5 概念页（stackless-vs-stackful-coroutines、coroutine-awaitable-pattern、future-proofing-tests、cheat-by-solving-less、srgb-premultiplied-alpha-compression）、5 source 摘要。Patches 9 条：补 go-goroutine-channels / linear-allocator / strategic-programming / tactical-programming / false-abstraction / alpha-compositing / alpha-blending / gamma-correction-srgb / bc7-solid-color-blocks 的相关链接。

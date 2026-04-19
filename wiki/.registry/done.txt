@@ -11382,3 +11382,8 @@ raw/articles/blog.gemserk.com/2019-05-11_using-the-new-unity-s-input-system-duri
 raw/articles/blog.gemserk.com/2020-05-26_using-unity-prefabs-and-gameobjects-only-for-data.md
 raw/articles/blog.gemserk.com/2020-08-13_using-custom-editors-to-interact-with-unity-ecs-world.md
 raw/articles/blog.gemserk.com/2022-04-24_refactoring-data-stored-in-unity-prefabs-scenes-and-other-as.md
+raw/articles/hacksoflife.blogspot.com/2021-06-20_we-never-needed-stackfull-coroutines.md
+raw/articles/hacksoflife.blogspot.com/2021-06-21_a-coroutine-can-be-awaitable.md
+raw/articles/hacksoflife.blogspot.com/2021-10-16_is-it-ever-okay-to-future-proof.md
+raw/articles/hacksoflife.blogspot.com/2021-10-29_this-one-weird-trick-let-s-you-beat-the-experts.md
+raw/articles/hacksoflife.blogspot.com/2022-06-11_srgb-pre-multiplied-alpha-and-compression.md

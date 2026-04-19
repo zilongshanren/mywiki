@@ -45,6 +45,7 @@ sources: 1
 - 造成的陷阱：[[complexity]] 累积
 - [[clean-code-critique]] — 游戏/图形视角下对 clean code 的系统批判
 - [[vibe-coding-workflow]] — AI 辅助下的 tactical 循环
+- [[future-proofing-tests]] —— 没通过三问的 future-proofing 本质是把战术债藏进貌似战略的外衣
 
 ## Sources
 
