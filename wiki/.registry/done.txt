@@ -11541,3 +11541,8 @@ raw/articles/agraphicsguynotes.com/2022-12-05_understanding-the-math-behind-rest
 raw/articles/agraphicsguynotes.com/2023-08-26_fiber-in-c-understanding-the-basics.md
 raw/articles/agraphicsguynotes.com/2025-05-09_posts.md
 raw/articles/agraphicsguynotes.com/2025-05-09_understanding-the-math-behind-restir-gi.md
+raw/articles/alexharri.com/2024-07-13_2024-icelandic-developer-survey-compensation-technologies-an.md
+raw/articles/alexharri.com/2024-09-01_the-webs-clipboard-and-how-it-stores-data-of-different-types.md
+raw/articles/alexharri.com/2025-08-02_compressing-icelandic-name-declension-patterns-into-a-3-27-k.md
+raw/articles/alexharri.com/2026-01-01_personal-website-alex-harri-jonsson.md
+raw/articles/alexharri.com/2026-01-17_ascii-characters-are-not-pixels-a-deep-dive-into-ascii-rende.md

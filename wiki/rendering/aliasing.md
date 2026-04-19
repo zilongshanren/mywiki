@@ -45,9 +45,9 @@ TBDR 架构把 multisample 数据留在**片上内存**，写回时 resolve，�
 - [[analytical-antialiasing]] —— 已知 SDF 时直接在 shader 里淡出一像素的「另一条路」
 
 ## Sources
-
 - [[sources/rtr-day04]]
 - [[sources/ryg-sinc-and-polynomial-interpolation]]
 - [[sources/bartwronski-poisson-sampling]]
 - [[sources/aras-blender-vse-image-filtering]]
 - [[sources/frost-kiwi-analytical-anti-aliasing]]
+- [[sources/alexharri-ascii-rendering]] — ASCII 渲染里最近邻下采样产生的 jaggies，用形状向量绕过

@@ -751,3 +751,6 @@ tiny-shading-language
 restir-di-math
 restir-gi-math
 fiber-cpp-basics
+web-clipboard-api
+compressed-trie-pattern-matching
+ascii-shape-vector-rendering

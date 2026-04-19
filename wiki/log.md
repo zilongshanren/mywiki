@@ -821,3 +821,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-63 Worker gd (agraphicsguynotes.com ×5)
 
 处理 Jiayin Cao 博客 5 篇，4 篇 ingest（TSL shading language / ReSTIR DI 数学 / C++ Fiber 基础 / ReSTIR GI 数学）、1 篇 skip（posts 列表页）。新增 4 概念页（tiny-shading-language、restir-di-math、restir-gi-math、fiber-cpp-basics）、1 人物页（graphics-guy-notes）、4 源摘要。覆盖离线渲染语言设计、ReSTIR 家族数学基础、fiber-based job system 三个主题。
+
+## [2026-04-19] ingest | Wave-64 Worker gf (alexharri.com ×5)
+
+处理 5 篇 Alex Harri Jónsson 博客文章。新增 3 概念页（web-clipboard-api、compressed-trie-pattern-matching、ascii-shape-vector-rendering）、1 人物页（alex-harri-jonsson）、3 source 摘要。跳过 2 篇（about-me 首页 + 冰岛开发者薪资/技术调研，后者地区性数据非技术主题）。

@@ -113,6 +113,8 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[pade-approximants]] | 有理函数逼近 Taylor 级数，介于 Taylor 与 Minimax 之间的中间台阶 |
 | [[hash-trie-intrusive]] | 链表节点兼任哈希 trie 的侵入式结构 |
 | [[unity-build-macro-renaming]] | C 里用 `#define` + unity build 合并同名符号的平台层 |
+| [[web-clipboard-api]] | Web 剪贴板两套 API 的历史分裂：异步严类型白名单 vs Clipboard Events 任意类型，Google Docs / Figma / Web Custom Formats 的三种绕行方案（Alex Harri） |
+| [[compressed-trie-pattern-matching]] | 倒序插入 + 子树压缩让 trie 自发泛化出后缀模式匹配，3,600 冰岛名压进 3.27 kB trie（beygla / Alex Harri） |
 
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
@@ -689,6 +691,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[tiny-shading-language]] | Jiayin Cao：四个月写一门 CPU 路径追踪器的着色语言（Flex+Bison+LLVM + closure tree） |
 | [[restir-di-math]] | ReSTIR DI 背后的数学：SIR/RIS/WRS、邻居 target function 不同为何无偏、uniform MIS weight 的代价 |
 | [[restir-gi-math]] | ReSTIR GI 数学：Primary Sample Space、per-initial-candidate target function、路径 initial candidate 的 GRIS 处理 |
+| [[ascii-shape-vector-rendering]] | 字符不是像素：6D 形状向量 + 最近邻 + 双层对比度增强的 ASCII 渲染器（Alex Harri） |
 
 ## 经典案例（wiki/examples/）
 
@@ -834,6 +837,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ben-ui]] | benui.ca，UE5 UI/UX 专家，前 Brace Yourself Games Lead Programmer |
 | [[chris-wellons]] | Chris Wellons (skeeto)，nullprogram.com，C/Wasm/Windows 底层 |
 | [[graphics-guy-notes]] | Jiayin Cao，NVIDIA（前 Naughty Dog），SORT/TSL 作者，Zorah ReSTIR PT 实装参与者 |
+| [[alex-harri-jonsson]] | 冰岛软件工程师，博客 alexharri.com 深挖 Web 剪贴板、trie 压缩、ASCII 渲染等细节主题 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1538,6 +1542,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/graphics-guy-restir-di-math]] | Cao 2022：ReSTIR DI 数学补完（SIR/RIS/WRS/邻居复用/visibility reuse） |
 | [[sources/graphics-guy-fiber-cpp-basics]] | Cao 2023：Fiber 基础、与 C++20 coroutine 的对比、x64 最小实现 |
 | [[sources/graphics-guy-restir-gi-math]] | Cao 2025：ReSTIR GI 数学（PSS、per-candidate target function、路径 initial candidate），Zorah/RTX 50 背景 |
+| [[sources/alexharri-web-clipboard]] | Alex Harri：Web 剪贴板如何存储不同类型数据 |
+| [[sources/alexharri-icelandic-name-trie]] | Alex Harri：把冰岛人名格变规则压进 3.27 kB trie |
+| [[sources/alexharri-ascii-rendering]] | Alex Harri：ASCII 字符不是像素——形状向量渲染深入 |
 
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
