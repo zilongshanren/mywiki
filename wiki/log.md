@@ -833,3 +833,7 @@ agraphicsguynotes.com 早期硬核技术文 5 篇全 ingest：2016 离线体积�
 ## [2026-04-19] ingest | Wave-64 Worker gh (acko.net / Steven Wittens ×5)
 
 处理 5 篇 Steven Wittens（acko.net）文章。3 篇硬技术 ingest：I is for Intent（Intent vs State 架构）、Occlusion with Bells On（Use.GPU 0.14 GTAO）、HTML is Dead（DOM/CSS 批判）。2 篇跳过：Bouquet Residence（CrowdStrike 公关/管理文化评论）、L in LLM Stands for Lying（AI 批评观点文）。新增 1 人物（steven-wittens）、5 概念（intent-vs-state、ground-truth-ambient-occlusion、use-gpu-reactive-runtime、render-pass-orchestration、dom-replacement-rethink）、3 source 摘要。
+
+## [2026-04-19] defer | Wave-65 GI+GJ (bleuje + dolphin-emu ×10, workers stream-idle timeout)
+
+GI (bleuje 5) 和 GJ (dolphin-emu 5) 两个 worker 都在 730s 附近 stream-idle 超时，零 bundle 落盘。暂标 skip 进 done.txt 以避免下轮 /loop 重新选中；内容需后续会话恢复时用更激进 bundle-first 协议单独处理。
