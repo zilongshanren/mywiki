@@ -56,7 +56,7 @@ rapidhash 的核心循环依赖 64×64→128 的整数乘法（`umul128`/`__uint
 - [[cantor-szudzik-pairing]] — 双射式的配对函数，在输入有界时可替代哈希作为无碰撞 id
 
 ## Sources
-
 - [[sources/aras-rapidhash-unity-port]]
 - [[sources/aras-more-hash-function-tests]]
 - [[sources/aras-voronoi-hashing-osl]]
+- [[sources/4rknova-mulberry32]]

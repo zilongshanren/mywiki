@@ -701,3 +701,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-53 Worker FA (hacksoflife.blogspot.com ×5)
 
 处理 Ben Supnik (X-Plane) 5 篇技术博文：C++20 stackless/stackful 协程辨析、coroutine-as-awaitable、future-proofing 三问、beat-the-experts 作弊法、sRGB×premult×compression 三角。新增 1 人物页（ben-supnik）、5 概念页（stackless-vs-stackful-coroutines、coroutine-awaitable-pattern、future-proofing-tests、cheat-by-solving-less、srgb-premultiplied-alpha-compression）、5 source 摘要。Patches 9 条：补 go-goroutine-channels / linear-allocator / strategic-programming / tactical-programming / false-abstraction / alpha-compositing / alpha-blending / gamma-correction-srgb / bc7-solid-color-blocks 的相关链接。
+
+## [2026-04-19] ingest | Wave-54 Worker FD (4rknova.com ×5)
+
+处理 5 篇 Nikos Papadopoulos / 4rknova.com 文章。新增 1 概念页（mulberry32-rng）、1 人物页（nikos-papadopoulos）、1 source 摘要。跳过 4 篇：Gaia 天文数据库（领域不匹配）+ 2 篇虚构小说 + 1 个仅含键位表的 demo 页。

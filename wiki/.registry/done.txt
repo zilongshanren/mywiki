@@ -11387,3 +11387,8 @@ raw/articles/hacksoflife.blogspot.com/2021-06-21_a-coroutine-can-be-awaitable.md
 raw/articles/hacksoflife.blogspot.com/2021-10-16_is-it-ever-okay-to-future-proof.md
 raw/articles/hacksoflife.blogspot.com/2021-10-29_this-one-weird-trick-let-s-you-beat-the-experts.md
 raw/articles/hacksoflife.blogspot.com/2022-06-11_srgb-pre-multiplied-alpha-and-compression.md
+raw/articles/4rknova.com/2026-03-01_mulberry32-a-tiny-fast-deterministic-rng.md
+raw/articles/4rknova.com/2026-03-05_the-gaia-database.md
+raw/articles/4rknova.com/2026-03-08_one-last-collection.md
+raw/articles/4rknova.com/2026-03-22_the-synod-of-the-veil.md
+raw/articles/4rknova.com/2026-04-19_gameboy-snake-rom.md

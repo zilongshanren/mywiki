@@ -644,3 +644,4 @@ coroutine-awaitable-pattern
 future-proofing-tests
 cheat-by-solving-less
 srgb-premultiplied-alpha-compression
+mulberry32-rng

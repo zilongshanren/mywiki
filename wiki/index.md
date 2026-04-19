@@ -713,6 +713,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[alfred-baudisch]] | Alfred Reinold Baudisch，巴西 Elixir/Godot indie dev，《Brazilian Street Food Simulator》作者 |
 | [[gemserk]] | Gemserk / Ariel Coppes，独立工作室，Unity 工程实战博客 |
 | [[ben-supnik]] | Ben Supnik，Laminar Research / X-Plane 图形与引擎程序员 |
+| [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1312,6 +1313,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-future-proof]] | Supnik：YAGNI 不是禁令，三问通过才可 future-proof |
 | [[sources/supnik-beat-the-experts]] | Supnik：靠作弊写出比 malloc 更快的分配器 |
 | [[sources/supnik-srgb-premultiplied-alpha]] | Supnik：sRGB、预乘 alpha 与块压缩的三角关系 |
+| [[sources/4rknova-mulberry32]] | 4rknova：Mulberry32 确定性 PRNG 逐 bit 拆解 |
 
 ## 元（wiki/meta/）
 

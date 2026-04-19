@@ -69,12 +69,12 @@ p_y(y) = p_x(x) · |det(dx/dy)|
 忘带 Jacobian 是渲染器里最常见的「暗 bug」——结果看起来合理但能量不守恒，长时间曝光会偏亮或偏暗。Slater 专门给出球面 cosine-weighted 采样的 Jacobian 推导。
 
 ## 与其他采样页的关系
-
 - [[stratified-sampling]]——把 Ω 切成 M 块，每块 1 个样本，保留 MC 的无偏性但降方差；
 - [[low-discrepancy-sequence]]——Halton、Sobol 等确定性序列，QMC 的输入；
 - [[poisson-disk-sampling]]——blue-noise 分布的采样，视觉更均匀但方差分析复杂；
 - [[quasi-monte-carlo]]——用低差异取代 PRNG 的整体框架；
 - [[pcg3d-hash]]——每像素独立 PRNG 的常见哈希种。
+- [[mulberry32-rng]]——另一端的选择：32-bit Weyl + xor-shift，为「便利优先 + 确定性」场景设计，不追 PCG 的统计严谨度。
 
 ## Sources
 
