@@ -11462,3 +11462,9 @@ raw/articles/anki3d.org/2024-08-19_workarounds-for-issues-with-mesh-shaders-vulk
 raw/articles/anki3d.org/2024-11-21_gpu-driven-rendering-in-anki.md
 raw/articles/anki3d.org/2025-02-04_simplified-pipeline-barriers.md
 raw/articles/anki3d.org/2025-12-04_minimalist-ray-tracing-leveraging-only-acceleration-structur.md
+raw/articles/30fps.net/2023-03-17_3d-software-coordinate-system-table.md
+raw/articles/30fps.net/2023-04-30_image-vector-quantization-is-just-like-creating-a-tilemapp.md
+raw/articles/30fps.net/2024-03-05_pca-image-color-compression-experimentp.md
+raw/articles/30fps.net/2024-03-08_color-quantization-with-a-self-organizing-mapp.md
+raw/articles/30fps.net/2024-03-16_moving-basis-decomposition-for-imagesp.md
+raw/articles/30fps.net/2024-11-07_efficiently-split-a-numpy-array-into-tilesp.md

@@ -184,6 +184,7 @@ CAQA + CSAPP 的底层视角。
 | [[pointer-alias-analysis]] | 指针别名分析：几乎所有 load/store/copy 优化的前置条件 |
 | [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |
 | [[gpu-gol-optimization-ladder]] | GPU Game of Life 优化阶梯：PyTorch 223 ms → bitpacked 64-bit CUDA + 多步融合 0.68 ms |
+| [[numpy-tile-reshape-trick]] | reshape + transpose 切瓦片：比 for 循环快 1000×，比 scikit-image 快 15× |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -630,6 +631,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mesh-shader-vulkan-hlsl-per-primitive]] | HLSL + Vulkan mesh shader 的 PerPrimitiveEXT 手动 decoration 坑 |
 | [[simplified-pipeline-barriers]] | 把 Vulkan 的 stage/access/layout 压成两个引擎侧 enum |
 | [[minimalist-rt-acceleration-structures]] | 只用 ray query + TLAS instanceCustomIndex 的 potato RT |
+| [[coordinate-system-table]] | 主流引擎 / API / DCC 的 view/world space 轴向与手性对照表 |
+| [[vector-quantization-tilemap]] | 向量量化 = 自动生成瓦片表：K-Means 压图到 codebook + tilemap |
+| [[pca-image-compression]] | 用 2D PCA 把 RGB 颜色压成连续「二色调色板」的最简实验 |
+| [[color-quantization-som]] | 用 1D 自组织映射学调色板，得到有拓扑的 256 色（ScreenToGif 同款） |
+| [[moving-basis-decomposition]] | Silvennoinen / Sloan PRT 压缩技术在 2D 图像上的玩具实现，PCA × PVRTC |
 
 ## 经典案例（wiki/examples/）
 
@@ -761,6 +767,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[tom-looman]] | Tom Looman，前 Epic Games，UE C++ 教程与性能优化长期撰稿者 |
 | [[wolfgang-engel]] | Confetti 联创、The Forge 主推，ShaderX/GPU Pro/GPU Zen 编辑，Light Pre-Pass 提出者 |
 | [[panagiotis-charitos]] | AnKi 3D Engine 作者，anki3d.org 博客作者 |
+| [[pekka-vaananen]] | 30fps.net 博主，芬兰独立渲染研究者，擅长 notebook 式图形实验 |
 
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
@@ -1413,6 +1420,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/anki-gpu-driven-rendering-video]] | Charitos：AnKi GPU-driven 管线视频（占位，待观后回填） |
 | [[sources/anki-simplified-pipeline-barriers]] | Charitos：pipeline barrier 的激进裁剪 |
 | [[sources/anki-minimalist-ray-tracing]] | Charitos：仅用加速结构的 potato RT |
+| [[sources/30fps-coordinate-system-table]] | Väänänen：3D 软件坐标系对照表 |
+| [[sources/30fps-image-vq]] | Väänänen：图像向量量化 = 生成瓦片图 |
+| [[sources/30fps-pca-colors]] | Väänänen：2D PCA 做 RGB 颜色压缩 |
+| [[sources/30fps-som-palette]] | Väänänen：用自组织映射做调色板量化 |
+| [[sources/30fps-mbd-images]] | Väänänen：Moving Basis Decomposition 在 2D 图像上的复现 |
+| [[sources/30fps-split-tiles]] | Väänänen：NumPy 切瓦片的 reshape + transpose 高速写法 |
 
 ## 元（wiki/meta/）
 

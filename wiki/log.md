@@ -761,3 +761,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-58 Worker FN (anki3d.org ×5)
 
 处理 5 篇 Panagiotis Christopoulos Charitos 在 anki3d.org 的博客（AnKi 3D Engine 作者）：SPIR-V 手动解析改写、Vulkan mesh shader + HLSL PerPrimitiveEXT 坑、GPU-driven 视频、pipeline barrier 简化、土豆级 RT。新增 4 概念页（spirv-parsing-rewriting, mesh-shader-vulkan-hlsl-per-primitive, simplified-pipeline-barriers, minimalist-rt-acceleration-structures）、1 人物页（panagiotis-charitos）、5 source 摘要。Patch 既有 gpu-hazard-tracking / meshlets-and-mesh-shaders / hybrid-raytracing-pipeline 的相关链接。GPU-driven 视频本体只有 Google Slides 链接，博客无可抽取内容，source 页标注为 data gap。
+
+## [2026-04-19] ingest | Wave-59 Worker FQ (30fps.net / Pekka Väänänen ×6)
+
+处理 6 篇 30fps.net notebook / reference：坐标系对照表、VQ 瓦片图、2D PCA 颜色压缩、SOM 调色板量化、MBD 图像版、NumPy 切瓦片加速。新增 6 概念页（coordinate-system-table、vector-quantization-tilemap、pca-image-compression、color-quantization-som、moving-basis-decomposition、numpy-tile-reshape-trick）、1 人物页（pekka-vaananen）、6 source 摘要。对 coordinate-spaces / color-quantization-kmeans / pca-intro 追加相关链接 patch。全 ingest，无跳过。

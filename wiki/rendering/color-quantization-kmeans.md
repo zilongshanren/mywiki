@@ -44,13 +44,14 @@ K-Means 的距离默认就是欧氏。但人眼对 RGB 分量的感知不均匀�
 Eddie Bell 在 Lyst 的 [color detection](http://developers.lyst.com/data/images/2014/02/22/color-detection/) 一文里对比过 RGB vs LAB 的主色提取差异，大面积背景图里 LAB 明显更合理。
 
 ## 相关
-
 - [[color-quantization-retro]] —— 另一种"颜色量化"：每通道砍级数模仿老主机，互补而非替代
 - [[color-space]]
 - [[oklab-color-space]]
 - [[color-banding]]
 - [[color-lut]]
 - [[perceptual-colormaps]]
+- [[vector-quantization-tilemap]] —— 把 K-Means 推到「块级」，得到瓦片图 + 码本
+- [[color-quantization-som]] —— 用 1D SOM 得到有序调色板（ScreenToGif NeuralQuantizer 的原理）
 
 ## Sources
 

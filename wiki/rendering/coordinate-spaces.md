@@ -33,7 +33,6 @@ sources: 1
 - **插值**：光栅化阶段，屏幕空间线性但对应 3D 空间非线性，需要 [[perspective-correct-interpolation|透视校正]]。
 
 ## 相关
-
 - [[mvp-transform]]
 - [[rendering-pipeline]]
 - [[z-buffer]]
@@ -44,6 +43,7 @@ sources: 1
 - [[gpu-skinning-matrix-palette]] —— inverse bind pose 把顶点在多个空间间来回搬
 - [[tangent-space-normal-mapping]] —— 切线空间作为「让光照向量计算更简单」的局部坐标架
 - [[world-screen-space-position-shader]] —— Unity shader 里拿 worldPos / screenPos 的四种写法备忘
+- [[coordinate-system-table]] —— 主流引擎 / API / DCC 的 Right/Up/Forward + 手性对照表
 
 ## Sources
 - [[sources/rtr-day03]]

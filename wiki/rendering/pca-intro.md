@@ -38,10 +38,11 @@ Zucconi 的 2D demo 直接让读者拖旋转角，眼看着投影方差（椭圆
 4. **特征值截断的比例**由累积解释方差决定，常选 80-95%。
 
 ## 与本 wiki 其他主题的对接
-
 - [[color-quantization-kmeans]]——另一种「压缩数据集」的方法，对比视角有趣：PCA 是连续降维、k-means 是离散聚类。
 - [[functions-as-vectors]]——PCA 的抽象升级版：连续函数空间里也有主成分分解（Karhunen-Loève 展开）。
 - [[spherical-harmonics]]——PCA 的「旋转不变」特殊形式。
+- [[pca-image-compression]] —— PCA 直接压缩 RGB 颜色的最简实验
+- [[moving-basis-decomposition]] —— PCA 的「空间变化」扩展，用于预计算光照压缩
 
 ## Sources
 

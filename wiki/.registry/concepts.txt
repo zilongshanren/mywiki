@@ -685,3 +685,9 @@ spirv-parsing-rewriting
 mesh-shader-vulkan-hlsl-per-primitive
 simplified-pipeline-barriers
 minimalist-rt-acceleration-structures
+coordinate-system-table
+vector-quantization-tilemap
+pca-image-compression
+color-quantization-som
+moving-basis-decomposition
+numpy-tile-reshape-trick
