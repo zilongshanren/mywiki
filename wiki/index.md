@@ -722,6 +722,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[dxt-entropy-reduction]] | DXT selection bits 熵压缩：1.51 bpp 的 Firefall 方案 |
 | [[dxt-codebooks-sliding-window]] | Zeng 码表与滑窗码表在 DXT 二次压缩中的定位 |
 
+| [[gpu-instanced-grass-urp]] | Cyan 的 URP + Shader Graph GPU 实例化草地：RenderMeshIndirect + compute frustum cull + `_VisibleIDs` 两级索引 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1611,6 +1612,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/jonolick-dxt-part3-transposes]] | Olick：DXT Part 3 transpose（正文不完整） |
 | [[sources/jonolick-dxt-part4-entropy]] | Olick：DXT Part 4 熵降维到 1.51 bpp |
 
+| [[sources/cyanilux-gpu-instanced-grass]] | Cyan：Unity URP + Shader Graph 的 GPU 实例化草地全流程（含 Unity 6 Instance ID 变化 + `UnityIndirect.cginc` `_Base` 版本踩坑） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

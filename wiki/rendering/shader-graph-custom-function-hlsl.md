@@ -63,13 +63,13 @@ Custom Function 节点的 inspector 里手动列出 inputs / outputs 和类型�
 Lit Shader Graph 完全封装了光照——你给 Unity albedo/metallic/smoothness，Unity 自己跑完 PBR。Custom Function + Unlit Graph 则是反过来："我全部自己算，Unity 只负责绘制像素"。这是做 [[cel-shading-pipeline|NPR cel shading]]、rim light、toon water 这类需要精确控制光照公式的效果的唯一路径（在 Shader Graph 里）。代价是你自己要写 HLSL，而且图里会多出十几个节点做 `dot` / `smoothstep` / `saturate` 这些 HLSL 里一行就够的操作——又一次印证"超过某个复杂度阈值直接写 HLSL 更好"。
 
 ## 相关
-
 - [[daniel-ilett]]
 - [[shader-graph-lighting-primer]] — Lit 图的黑盒对立面
 - [[cel-shading-pipeline]] — 自定义光照的代表性用例
 - [[shaderlab-hlsl-basics]]
 - [[diffuse-lighting-lambertian]]
 - [[scriptable-render-pipeline]]
+- [[gpu-instanced-grass-urp]] — Custom Function 接入 `StructuredBuffer` 做 GPU instancing 的代表性用例
 
 ## Sources
 

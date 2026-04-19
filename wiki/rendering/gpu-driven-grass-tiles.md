@@ -54,11 +54,11 @@ profile 对比三档（无剔除 / 只剔除 / 剔除 + LOD）：
 MSAA 当时没做，作者自嘲"谁不喜欢一片闪烁的锯齿呢"。
 
 ## 和其它方案的对比
-
 - [[deferred-grass-shader]]：同题但走 tessellation + geometry shader + 延迟 alpha cutout，单个 shader 自洽，易接 Unity 既有管线；Marco 的方案要自建 compute/indirect 基建，但可扩展性与性能上限更高。
 - [[draw-procedural-gpu]] / [[compute-vs-raster-points]]：把"生成大量小几何体"变成 compute + indirect 是同一哲学家族。
 - [[culling]] / [[occlusion-culling]]：瓦片级 frustum vote 是 GPU driven culling 的最简形态。
 - [[fizzle-lod-fading]]：LOD 切换时的视觉连续性问题，这里靠蓝噪声前缀稳定性天然解决。
+- [[gpu-instanced-grass-urp]]：同题的 Unity URP + Shader Graph + `RenderMeshIndirect` 实用版；技术栈完全不同，但 compute frustum cull + AppendBuffer + CopyCount 的 GPU 端数据流同构。
 
 ## Sources
 

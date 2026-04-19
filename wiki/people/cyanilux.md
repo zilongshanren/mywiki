@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 技术美术, shader, unity]
 date: 2026-04-14
-sources: 10
+sources: 11
 ---
 
 # Cyan（Cyanilux）
@@ -11,7 +11,6 @@ Cyan（Twitter `@Cyanilux`）是活跃在 Unity 社区的独立技术美术和 s
 他的写作风格比较朴素——手把手讲清楚 Shader Graph 里每个节点的语义、边界条件、以及和底层 HLSL 的对应关系，是 Unity shader 新手圈里被转发最多的入门材料之一。他也经常参与 [[harry-alisavakis|Harry Alisavakis]] 主办的 `#TechnicallyAChallenge` 技术美术挑战赛——[[crt-shader-effects|复古 CRT shader]] 就是为其中"Retro"主题做的作品。
 
 ## 相关
-
 - [[urp-volume-post-processing]]
 - [[blit-render-feature]]
 - [[uv-manipulation-nodes]]
@@ -25,9 +24,9 @@ Cyan（Twitter `@Cyanilux`）是活跃在 Unity 社区的独立技术美术和 s
 - [[orthographic-depth]]
 - [[watercolour-shader-experiments]]
 - [[worley-voronoi-noise]]
+- [[gpu-instanced-grass-urp]]
 
 ## Sources
-
 - [[sources/cyan-urp-post-processing]]
 - [[sources/cyan-uv-based-nodes]]
 - [[sources/cyan-retro-crt-shader]]
@@ -38,3 +37,4 @@ Cyan（Twitter `@Cyanilux`）是活跃在 Unity 社区的独立技术美术和 s
 - [[sources/cyan-triplanar-mapping]]
 - [[sources/cyan-orthographic-depth]]
 - [[sources/cyan-watercolour-shader-experiments]]
+- [[sources/cyanilux-gpu-instanced-grass]]

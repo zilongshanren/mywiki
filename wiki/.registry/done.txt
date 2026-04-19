@@ -11601,3 +11601,8 @@ raw/articles/jonolick.com/2012-03-12_wav-file-writer-in-one-function.md
 raw/articles/jonolick.com/2013-02-07_dxt-compression-codebooks-and-sliding-windows.md
 raw/articles/jonolick.com/2013-07-16_dxt-compression-part-3-transposes.md
 raw/articles/jonolick.com/2013-08-16_dxt-compression-part-4-entropy.md
+raw/articles/cyanilux.com/2025-09-29_posts.md
+raw/articles/cyanilux.com/2025-10-03_gpu-instanced-grass-breakdown.md
+raw/articles/cyanilux.com/2026-01-01_cookies-privacy.md
+raw/articles/cyanilux.com/2026-02-18_breakdowns.md
+raw/articles/cyanilux.com/2026-02-18_tutorials.md

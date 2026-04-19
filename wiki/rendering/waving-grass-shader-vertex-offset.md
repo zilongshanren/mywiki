@@ -73,7 +73,6 @@ heightFactor *= pow(input.vertex.y, _HeightFactor);     // 高度越高幅度越
 它对比的是"在 CPU 侧生成每个物体的参数再下发"——后者灵活但带宽低，前者几乎零 CPU 工作量但需要场景整体尺度已知。这是 [[texture-encoded-state|用纹理编码状态]] 的另一种形态：把**空间上连续**的状态烘进纹理，采样替代计算。
 
 ## 相关
-
 - [[cel-shader-outline]] —— ramp 光照的直接复用
 - [[texture-encoded-state]] —— 把全局状态烘到纹理的通用范式
 - [[shaping-functions]] —— `frac / sin / pow` 的塑形
@@ -82,6 +81,7 @@ heightFactor *= pow(input.vertex.y, _HeightFactor);     // 高度越高幅度越
 - [[painted-foliage-bent-planes]]
 - [[unity-procedural-mesh]]
 - [[linden-reid]]
+- [[gpu-instanced-grass-urp]] — 同作者栈的百万 instance 渲染管线，和本文的单株风摆拼在一起覆盖"一只草的动画 × 百万实例的管线"两个维度
 
 ## Sources
 

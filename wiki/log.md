@@ -881,3 +881,7 @@ Bruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum c
 ## [2026-04-14] ingest | Wave-68 Worker gr (jonolick.com DXT 系列 + WAV ×4)
 
 处理 Jon Olick 4 篇：WAV 单函数写入器（2012）、DXT 压缩 Part 1 codebooks/sliding-windows（2013-02）、Part 3 transposes（2013-07，正文抓取不全）、Part 4 entropy（2013-08）。新增 2 概念页（dxt-entropy-reduction, dxt-codebooks-sliding-window）、4 source 摘要。补 jon-olick 人物页 sources 计数 3→7 及相关链接。Part 4 是系列干货：selection bits 占 LZMA 后 75% 体积，用 rate-distortion 降熵把 2.28 bpp 压到 1.51 bpp / MSE 0.64，比 crunch 质量高 4.3×、速度快 16×。
+
+## [2026-04-19] ingest | Wave-69 Worker gu (cyanilux.com ×5)
+
+处理 5 篇 cyanilux.com 文件：1 篇实质技术文（gpu-instanced-grass-breakdown）ingest；4 篇是栏目 index / 法律页（posts / cookies-privacy / breakdowns / tutorials），跳过。新增 1 概念页（gpu-instanced-grass-urp）、1 source 摘要。给 cyanilux 人物页、gpu-driven-grass-tiles、waving-grass-shader-vertex-offset、shader-graph-custom-function-hlsl 打补丁互连。
