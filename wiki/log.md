@@ -713,3 +713,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-54 Worker FC (blog.s-schoener.com ×5)
 
 处理 Sebastian Schöner 5 篇技术文章：`i miss header files`（Zig 视角）、`better codegen for Unity games on Mono`（公告）、Mono codegen 学习笔记 part 1 / part 2、`Zig, hot reload, and ABI trouble`。新增 5 概念页（mono-jit-pipeline, pointer-alias-analysis, dead-store-elimination, zig-c-abi-boundary, header-file-vs-pub-export）、1 人物页（sebastian-schoener）、5 源摘要。无跳过。
+
+## [2026-04-19] ingest | Wave-55 Worker FF (cybereality.com x5)
+
+处理 5 篇 cybereality.com 博文，全部 skip：两篇 off-topic（GenAI 音乐视频、3D psy-op 观点），三篇 Degine 引擎进度通告（GDC demo / Q1 progress / Valentine's mocap remaster）标题指向 graphics/OpenGL 但正文为 1-3 段无技术细节的宣传帖。未创建任何 wiki 页面。

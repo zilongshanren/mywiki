@@ -11402,3 +11402,8 @@ raw/articles/blog.s-schoener.com/2026-03-31_better-codegen-for-unity-games-on-mo
 raw/articles/blog.s-schoener.com/2026-04-07_what-i-learned-from-improving-unity-s-mono-codegen-part-1-se.md
 raw/articles/blog.s-schoener.com/2026-04-13_what-i-learned-from-improving-unity-s-mono-codegen-part-2-se.md
 raw/articles/blog.s-schoener.com/2026-04-16_zig-hot-reload-and-abi-trouble-sebastian-schoner.md
+raw/articles/cybereality.com/2026-01-25_gdc-2026-graphics-demo-prototype.md
+raw/articles/cybereality.com/2026-03-20_finding-flow-with-genai-music-videos.md
+raw/articles/cybereality.com/2026-03-20_is-3d-a-psychological-operation.md
+raw/articles/cybereality.com/2026-03-20_q1-2026-degine-progress.md
+raw/articles/cybereality.com/2026-03-20_remastered-valentine-s-day-motion-capture-animation-in-openg.md
