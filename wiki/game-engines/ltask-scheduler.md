@@ -51,6 +51,7 @@ ltask 是 [[ant-engine|Ant Engine]] 的并发基础设施，负责把 m 个任�
 - [[latency-vs-throughput]]
 - [[lua-design-philosophy]]
 - [[main-thread-task-injection]]
+- [[skynet-lua-sharetable-patch]] —— skynet 跨 VM 共享函数原型 / 常量表 patch，Lua 5.5 升级说明
 
 ## Sources
 

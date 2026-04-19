@@ -46,7 +46,11 @@ Retro Terrain Lit 把这四种模式 (`Lit` / `Texel Lit` / `Vertex Lit` / `Unli
 - [[coordinate-spaces]] —— vertex snapping 选哪个空间
 - [[sampler-filter-wrap-modes]] —— point / 双线性 / 各向异性的完整对比
 - [[color-quantization-retro]] —— NES/SNES/GB 整数截断量化与 Game Boy 色阶级联 lerp
+- [[sources/danielilett-retro-godot-retro-lit]] —— Godot 版 Retro Lit，是同一套 PSX 技术的最小可用集：view-space vertex snap、color depth + dither、Bilinear/Point/N64 filtering、Standard/Texel/Unlit 三光照模式
+- [[sources/danielilett-retro-urp-retro-lit]] —— URP 通用版 Retro Lit，在 Terrain 版基础上加 Surface Options（Opaque/Transparent/Alpha Clip/双面）、*Use Flat Shading*（无 Gouraud 插值的面着色）、Specular + Reflection Cubemap（可选复古之上的现代点缀）
 
 ## Sources
 
 - [[sources/danielilett-retro-terrain-lit]]
+- [[sources/danielilett-retro-godot-retro-lit]]
+- [[sources/danielilett-retro-urp-retro-lit]]

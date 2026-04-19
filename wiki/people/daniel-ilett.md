@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, shader, unity, 技术美术]
 date: 2026-04-14
-sources: 15
+sources: 19
 ---
 
 # Daniel Ilett
@@ -90,3 +90,7 @@ Daniel Ilett 是一位以 **Unity shader 教程**为主要输出的独立技术�
 - [[sources/danielilett-hologram-godot-uber]]
 - [[sources/danielilett-hologram-pro-basic]]
 - [[sources/danielilett-hologram-pro-dot-matrix-glitch]]
+- [[sources/danielilett-retro-godot-retro-lit]]
+- [[sources/danielilett-retro-urp-retro-lit]]
+- [[sources/danielilett-retro-urp-crt-mesh]]
+- [[sources/danielilett-retro-urp-crt-post-process]]

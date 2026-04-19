@@ -526,3 +526,5 @@ jendrik-illner
 indie-game-dev-rhythm
 paradox-grand-strategy-economy
 main-thread-task-injection
+deckbuilder-game-design-patterns
+skynet-lua-sharetable-patch

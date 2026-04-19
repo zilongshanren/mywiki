@@ -585,3 +585,15 @@ Evan Todd 5 篇：3 技术 ingest（CI ASG 优化、identity/naming、100k 测�
 ## [2026-04-19] ingest | Wave-43 Worker DY (cloudwu 2025-10~11 ×5)
 
 5 篇云风 2025-10~11：4 ingest（[[indie-game-dev-rhythm]] Deep Future 独立开发复盘、[[paradox-grand-strategy-economy]] EU5 经济系统双源、[[main-thread-task-injection]] 主线程事件循环与 ltask 融合）+ 1 skip（资源包老文重发）。3 新概念 + 4 source + patch cloudwu / soluna-2d-engine / ltask-scheduler。
+
+## [2026-04-19] ingest | Wave-44 Worker DZ (jendrikillner weekly 379-388 all skipped)
+
+batch-w44-dz：10 篇 jendrikillner 周报（issue 379-388，2025-02-16 ~ 2025-04-20）全部按既定先例 skipped_offtopic，均为第三方链接聚合、Jendrik 本人无实质原创分析。
+
+## [2026-04-19] ingest | Wave-44 Worker EA (danielilett.com Retro Shaders Pro variants ×5)
+
+处理 5 篇 Daniel Ilett *Retro Shaders Pro* 变体文档（URP Retro Lit、URP CRT Mesh、URP CRT Post Process、Godot Retro Lit、URP Installation Guide）。Ingest 4 篇为 source 摘要，Skip 1 篇（installation guide 为安装说明，非技术内容）。无新增概念页——内容归入既有 [[crt-shader-effects]]、[[retro-rendering-techniques]]、[[color-quantization-retro]]。URP CRT Post Process 贡献了 Interlaced Rendering、Custom RGB Sliders、Render Pass Event、Custom Luminance/RGB/RGB+Intensity ramp 采样等全屏版独有参数；URP Retro Lit 相比 Terrain 版增加 Surface Options + flat shading + specular + reflection cubemap。
+
+## [2026-04-19] ingest | Wave-44 Worker EB (cloudwu blog 2025-11~12 ×5)
+
+处理 5 篇 blog.codingnow.com 文章：2 篇入库（卡牌构筑游戏设计、skynet 升级 Lua 5.5），1 篇跳过（育儿非技术），2 篇跳过（与已入库内容重复：EU5 游玩笔记已有 cloudwu-eu5-gameplay-notes；id + kill flag 已有 cloudwu-id-lifetime-kill-flag）。新增 2 概念页（deckbuilder-game-design-patterns, skynet-lua-sharetable-patch）与 2 source 摘要。

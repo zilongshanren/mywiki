@@ -58,6 +58,7 @@ Lua 5.0 起改用了基于寄存器的 VM——选择寄存器架构是为了"�
 - [[c-opaque-struct-modules]]
 - [[lua-incremental-gc]] —— Lua 5.1 增量式 GC 与 FIXEDBIT 钉住保留字、让元方法比较退化为指针比较
 - [[lua-class-pattern]] —— 用元表做类型定义的几种套路与取舍
+- [[skynet-lua-sharetable-patch]] —— skynet 对 Lua 的私有 patch 与 5.5 external strings 展望
 
 ## Sources
 

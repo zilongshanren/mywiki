@@ -57,8 +57,12 @@ CRT 的水平同步偶尔会抖一下，复刻方法是用 `Simple Noise` 节点
 - [[color-quantization-retro]] —— NES/SNES/GB 色阶量化与像素化下采样
 - [[sources/danielilett-retro-godot-crt-mesh]] —— Daniel Ilett *Retro Shaders Pro for Godot* CRT Mesh 版，把同款 CRT/VHS 滤镜贴到普通网格做游戏内 CCTV 屏
 - [[sources/danielilett-retro-godot-crt-post-process]] —— 全屏版 CRT + VHS，独有 *Scale In Screen Space / Reference Resolution* 做跨分辨率视觉一致性，*Tracking Color Damage* 走 YIQ 色空间建模 NTSC 磁带色损
+- [[sources/danielilett-retro-urp-crt-mesh]] —— URP 版 CRT Mesh，和 Godot 版近似；Tracking Texture 用 x-by-1 的 RG 双通道编码 UV 偏移 + 扫描线概率
+- [[sources/danielilett-retro-urp-crt-post-process]] —— URP 全屏版独有 *Interlaced Rendering*（每帧只渲半数行，真实 CRT 交错扫描）、*Custom RGB Sliders*（整数滑块直控 R/G/B 每通道级数）、*Render Pass Event*（插在 URP 内置 post 之前或之后）、以及 Custom Luminance / RGB / RGB+Intensity 三种 ramp 采样模式
 
 ## Sources
 
 - [[sources/cyan-retro-crt-shader]]
 - [[sources/alanzucconi-flixel-retro-crt]]
+- [[sources/danielilett-retro-urp-crt-mesh]]
+- [[sources/danielilett-retro-urp-crt-post-process]]

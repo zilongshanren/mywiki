@@ -79,6 +79,7 @@ EU5 的殖民开荒和"在已有经济版图上扩张"完全不同。云风总�
 - [[cloudwu]]
 - [[indie-game-dev-rhythm]]
 - [[gameplay-architecture]]
+- [[deckbuilder-game-design-patterns]] —— 云风对卡牌构筑游戏的设计观察
 
 ## Sources
 

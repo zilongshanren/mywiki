@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 中文博客, 游戏引擎]
 date: 2026-04-14
-sources: 9
+sources: 11
 ---
 
 # 云风（Cloud Wu）
@@ -71,6 +71,8 @@ sources: 9
 - [[indie-game-dev-rhythm]]
 - [[paradox-grand-strategy-economy]]
 - [[main-thread-task-injection]]
+- [[deckbuilder-game-design-patterns]]
+- [[skynet-lua-sharetable-patch]]
 
 ## Sources
 
@@ -108,3 +110,5 @@ sources: 9
 - [[sources/cloudwu-eu5-economy]]
 - [[sources/cloudwu-eu5-gameplay-notes]]
 - [[sources/cloudwu-main-thread-task-injection]]
+- [[sources/cloudwu-deckbuilder-games]]
+- [[sources/cloudwu-skynet-lua-55]]

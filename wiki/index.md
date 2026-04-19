@@ -193,6 +193,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[soluna-2d-engine]] | 云风的 Soluna：面向策略类游戏的 2D 框架 |
 | [[playcanvas-engine-2-breaking-changes]] | PlayCanvas Engine 2.0：一次 major bump 的工程学（cruft 清理 + WebGPU 铺路） |
 | [[playcanvas-react-declarative]] | PlayCanvas React：把 PlayCanvas ECS 包成 JSX 的声明式 3D 绑定 |
+| [[skynet-lua-sharetable-patch]] | skynet 跨 VM 共享函数原型的 Lua patch 与 5.5 external strings 展望 |
 
 ## 实时渲染（wiki/rendering/）
 
@@ -536,6 +537,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[single-hub-logistics-model]] | 异星工厂太空平台的唯一枢纽模型：上帝视角 + 背包式中转 |
 | [[indie-game-dev-rhythm]] | 云风的独立开发方法论：情绪、拆分、重构、代码量 |
 | [[paradox-grand-strategy-economy]] | EU5 经济系统：人口/货币/商品三要素与市场中介 |
+| [[deckbuilder-game-design-patterns]] | 卡牌构筑游戏设计套路：双卡堆、主动刷牌、需求上升代替战斗 |
 
 ## 人物（wiki/people/）
 
@@ -1039,6 +1041,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/cloudwu-eu5-economy]] | 云风：EU5 经济系统（人口/货币/商品/市场/贸易） |
 | [[sources/cloudwu-eu5-gameplay-notes]] | 云风：EU5 游玩笔记（开荒/食物/税基） |
 | [[sources/cloudwu-main-thread-task-injection]] | 云风：主线程事件循环与 ltask 调度器的融合 |
+| [[sources/cloudwu-deckbuilder-games]] | 云风：最近玩的几款卡牌构筑类电子游戏 |
+| [[sources/cloudwu-skynet-lua-55]] | 云风：Skynet 升级到 Lua 5.5.0 |
+| [[sources/danielilett-retro-godot-retro-lit]] | Ilett：Godot 版 Retro Lit 参数手册，PSX look 最小可用集 |
+| [[sources/danielilett-retro-urp-retro-lit]] | Ilett：URP 通用 Retro Lit，含 Surface Options + flat shading + specular/cubemap |
+| [[sources/danielilett-retro-urp-crt-mesh]] | Ilett：URP CRT 贴 mesh 变体（CCTV 屏），Tracking Texture RG 双通道编码 |
+| [[sources/danielilett-retro-urp-crt-post-process]] | Ilett：URP 全屏 CRT，独有 Interlaced Rendering + Custom RGB Sliders + Render Pass Event |
 
 ## 元（wiki/meta/）
 

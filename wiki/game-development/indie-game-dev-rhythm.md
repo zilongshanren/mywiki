@@ -63,6 +63,7 @@ sources: 1
 - [[soluna-2d-engine]]
 - [[ltask-scheduler]]
 - [[gameplay-architecture]]
+- [[deckbuilder-game-design-patterns]] —— 三款卡牌构筑游戏的设计启发
 
 ## Sources
 

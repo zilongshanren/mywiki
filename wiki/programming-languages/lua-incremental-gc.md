@@ -41,6 +41,7 @@ GC 在 `global_State.gcstate` 上跑一个五态机：
 - [[garbage-collector]]
 - [[simple-cpp-mark-sweep-gc]]
 - [[lua-design-philosophy]]
+- [[skynet-lua-sharetable-patch]] —— skynet 跨 VM 共享函数原型 patch 与 Lua 5.5 external strings
 
 ## Sources
 
