@@ -54,6 +54,6 @@ sources: 1
 - [[infinite-chunked-procedural-generation]] — 点过程/矩形过程共用的分块无关方法论
 
 ## Sources
-
 - [[sources/bartwronski-poisson-sampling]]
 - [[sources/vertexfragment-list-removal]]
+- [[sources/bartwronski-poisson-gui]]

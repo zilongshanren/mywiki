@@ -190,6 +190,7 @@ CAQA + CSAPP 的底层视角。
 | [[benchmark-methodology-end-to-end]] | 小 benchmark 不能代替端到端：矩阵测试、优化打开再测、2% 噪声阈值 |
 | [[estrin-scheme]] | 代数重排 Horner 以缩短依赖链，给乱序 CPU 做并行多项式求值 |
 | [[system-load-formula]] | 多子系统合成整体负载的公式（inverse product + average 混合） |
+| [[vfx-multithreading-patterns]] | VFX 工具链把遗留代码改造成多线程 / 任务化的几类模式（Houdini / Presto / LibEE） |
 
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
@@ -1467,6 +1468,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-graphics-apis-yesterday-today]] | Sawicki：DirectX/OpenGL/Vulkan 演进史科普 |
 | [[sources/asawicki-system-load-formula]] | Sawicki：整体系统负载公式 + 交互 demo |
 | [[sources/asawicki-dx12-gdc-2026-comments]] | Sawicki：GDC 2026 DirectX 12 新特性的应用端点评 |
+| [[sources/bartwronski-poisson-gui]] | Wronski：Poisson 采样生成器加 PyQt GUI + 旋转 disk 模式 |
+| [[sources/bartwronski-multithreading-vfx-review]] | Wronski：《Multithreading for Visual Effects》书评，VFX 工具链多线程改造 |
 
 ## 元（wiki/meta/）
 

@@ -713,3 +713,4 @@ system-load-formula
 pix-api-and-dxdmp
 dxr-tier-2-clas-ptlas
 advanced-shader-delivery
+vfx-multithreading-patterns

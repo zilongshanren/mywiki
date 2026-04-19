@@ -16,7 +16,6 @@ sources: 9
 - **配 demo / 代码**：很多文章带 Colab、Jax notebook 或 WebGL 在线 demo，可以直接玩。
 
 ## 对本 wiki 的贡献
-
 | 文章 | 贡献的概念 |
 |---|---|
 | Exposure Fusion – local tonemapping for real-time rendering | [[local-tonemapping]]、[[exposure-fusion]]、[[laplacian-pyramid]] |
@@ -26,6 +25,8 @@ sources: 9
 | Bokeh depth of field – going insane! part 1 | [[scatter-bokeh-dof]] |
 | Temporal supersampling pt. 2 – SSAO demonstration | [[temporal-supersampling]] 的 AC4 实测补充 |
 | Runtime editor-console connection in The Witcher 2 | [[runtime-editor-console-connection]] |
+| Updated Poisson-like generator with GUI and more | [[poisson-disk-sampling]] 工具侧的 GUI / 旋转 disk 补充 |
+| Review: Multithreading for Visual Effects (CRC Press 2014) | [[vfx-multithreading-patterns]] |
 
 ## 相关
 
@@ -48,7 +49,6 @@ sources: 9
 - [[volumetric-fog-froxels]]
 
 ## Sources
-
 - [[sources/bartwronski-exposure-fusion]]
 - [[sources/bartwronski-iir-deconvolution]]
 - [[sources/bartwronski-poisson-sampling]]
@@ -61,3 +61,5 @@ sources: 9
 - [[sources/bartwronski-editor-console-connection]]
 - [[sources/bartwronski-hair-rendering-tricks]]
 - [[sources/bartwronski-csharprenderer-volumetric-fog]]
+- [[sources/bartwronski-poisson-gui]]
+- [[sources/bartwronski-multithreading-vfx-review]]

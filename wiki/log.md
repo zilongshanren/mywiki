@@ -789,3 +789,7 @@ Retry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Sting
 ## [2026-04-19] ingest | Wave-61 Worker FX (allenchou.net ×5 all-skipped)
 
 处理 Allen Chou 5 篇博客：3 篇 DigiPen/DigiJam 作品展示页（Photon Bunny / Cooncoaster / Sky Spire）正文仅游戏链接与玩法说明；My Life at Naughty Dog 是办公室生活 brain dump（滑板车、咖喱日、项目代号梗）；GDC Social Tips 是求职社交建议。全部 5 篇 skipped_offtopic，均与 graphics/engine/systems 技术主题无关。allen-chou 人物页保持不变。
+
+## [2026-04-19] ingest | Wave-61 Worker FY (bartwronski.com ×5)
+
+处理 5 篇 Bart Wronski 2014–2020 文章。2 篇入库：Poisson 生成器 GUI 更新（patch 回 [[poisson-disk-sampling]] 和 [[bartosz-wronski]]）、《Multithreading for Visual Effects》书评（新建概念 [[vfx-multithreading-patterns]]）。跳过 3 篇：small-coding-projects（项目名片页，CSharpRenderer / Poisson 均已覆盖）、Lightroom 胶片底片教程（摄影）、articles-index（目录页 skip_duplicate）。

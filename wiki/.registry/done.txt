@@ -11501,3 +11501,8 @@ raw/articles/allenchou.net/2012-06-25_cooncoaster-my-second-digijam-game-ming-lu
 raw/articles/allenchou.net/2012-07-02_sky-spire-my-third-digijam-game-ming-lun-allen-chou-zhou-min.md
 raw/articles/allenchou.net/2014-10-06_my-life-at-naughty-dog-so-far-ming-lun-allen-chou-zhou-ming.md
 raw/articles/allenchou.net/2015-01-25_gdc-social-tips-ming-lun-allen-chou-zhou-ming-lun.md
+raw/articles/bartwronski.com/2014-09-05_updated-poisson-like-generator-with-gui-and-more.md
+raw/articles/bartwronski.com/2014-09-06_small-coding-projects.md
+raw/articles/bartwronski.com/2014-09-21_review-multithreading-for-visual-effects-crc-press-2014.md
+raw/articles/bartwronski.com/2015-02-19_processing-scanned-dslr-photos-of-film-negatives-in-lightroo.md
+raw/articles/bartwronski.com/2020-03-23_articles-index.md
