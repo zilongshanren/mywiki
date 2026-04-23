@@ -44,11 +44,11 @@ Amdahl 定律直接推出经典优化原则：**优化用得最多的那部分**
 Unity 的 DOTS 是通过**重新设计数据布局和任务系统**，让更多代码变得**数据并行**——相当于提高 `p` 值，而非增加核数。
 
 ## 相关
-
 - [[cpu-performance-formula]]
 - [[aos-vs-soa]]
 - [[power-wall]]——导致多核时代与 Amdahl 的硬约束
 - [[flynn-taxonomy]]
+- [[optimization-leverage-ratio]] —— Supnik 的工程化版本：profile 读出来的杠杆率
 
 ## Sources
 

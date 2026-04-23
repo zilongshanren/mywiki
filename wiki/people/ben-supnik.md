@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 游戏引擎]
 date: 2026-04-19
-sources: 22
+sources: 27
 ---
 
 # Ben Supnik
@@ -46,6 +46,9 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[cross-platform-openal-runtime-loader]]
 - [[c-bitwise-operator-precedence-history]]
 - [[linear-lighting-pipeline]] —— Gamma and Lighting 三部曲里关于光照累积三种路径的总结
+- [[matrix-as-basis-vectors]] —— 2010 双篇 change-of-basis / basis-projection 合编
+- [[optimization-leverage-ratio]] —— 「1% 算多吗」的 profile 判断框架
+- [[semaphore-vs-condvar-latency]] —— X-Plane 10 worker 唤醒延迟优化
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -87,3 +90,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-finding-mom-and-dad]]
 - [[sources/supnik-c-seventies-technology]]
 - [[sources/supnik-gamma-lighting-trilogy]]
+- [[sources/supnik-more-stl-abstraction]]
+- [[sources/supnik-change-of-basis-revisited]]
+- [[sources/supnik-basis-projection]]
+- [[sources/supnik-is-1-a-lot]]
+- [[sources/supnik-semaphore-vs-condvar]]

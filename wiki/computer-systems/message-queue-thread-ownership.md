@@ -45,10 +45,10 @@ X-Plane 需要吃满多核，所以不能不用线程；Supnik 的策略是**用
 Supnik 的这篇短文价值不在讲模式本身（业界共识），而在给出**工程判断**：**不要自问「这段能不能加线程」，要问「加了线程我省到的 ms 是否值得多付的工程成本」**。对于绝大多数代码，这个问题的答案是否定的。
 
 ## 相关
-
 - [[main-thread-task-injection]]
 - [[vfx-multithreading-patterns]]
 - [[ben-supnik]]
+- [[semaphore-vs-condvar-latency]] —— 同一条 X-Plane 消息队列的同步原语选择
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 tags: [软件设计, 抽象, C++, STL]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # STL 不是抽象，而是规定
@@ -35,5 +35,5 @@ Supnik 的观点是：这些不是「抽象泄漏」，而是**合同的一部�
 - 参考 [[abstraction]] 的定义：**省略不重要的细节**。对算法库而言，复杂度从来不是不重要的细节。
 
 ## Sources
-
 - [[sources/supnik-stl-not-abstraction]]
+- [[sources/supnik-more-stl-abstraction]]

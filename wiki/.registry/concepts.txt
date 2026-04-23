@@ -907,3 +907,6 @@ ragdoll-velocity-inheritance
 no-frame-delays-principle
 lua-runtime-dynamism-tricks
 pesce-2010-engine-layer-sketch
+matrix-as-basis-vectors
+optimization-leverage-ratio
+semaphore-vs-condvar-latency

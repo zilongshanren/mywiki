@@ -11846,3 +11846,8 @@ raw/articles/c0de517e.blogspot.com/2010-03-12_retweeting.md
 raw/articles/c0de517e.blogspot.com/2010-03-14_collaborative-design-experiment-2.md
 raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed-2.md
 raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed.md
+raw/articles/hacksoflife.blogspot.com/2010-11-26_more-stl-abstraction.md
+raw/articles/hacksoflife.blogspot.com/2010-11-28_change-of-basis-revisited.md
+raw/articles/hacksoflife.blogspot.com/2010-11-29_basis-projection.md
+raw/articles/hacksoflife.blogspot.com/2010-11-30_is-1-a-lot.md
+raw/articles/hacksoflife.blogspot.com/2010-12-03_performance-of-semaphore-vs-condition-variable.md

@@ -1082,3 +1082,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-85 Worker IV (c0de517e.blogspot.com 2010-03 ×5)
 
 处理 5 篇 Pesce 2010-03 博文：2 篇 monthly-archive 重复（retweeting-2 / the-world-changed-2）skipped_duplicate；retweeting（webtoy 推荐）与 the-world-changed（Web 开发感叹）skipped_offtopic；保留 collaborative-design-experiment——2010 年社区协作产出的六层引擎架构清单。新增 1 概念页 [[pesce-2010-engine-layer-sketch]]、1 source 摘要，给 [[angelo-pesce]] / [[engine-layering]] 挂 cross-link。
+
+## [2026-04-19] ingest | Wave-85 Worker IU (hacksoflife Supnik 2010-11/12 ×5)
+
+处理 Ben Supnik 2010 年末 5 篇：more-stl-abstraction / change-of-basis-revisited / basis-projection / is-1-a-lot / semaphore-vs-condvar。change-of-basis 双篇合并成 matrix-as-basis-vectors 一个概念页（encoder/decoder 双视角）；另新增 optimization-leverage-ratio（Amdahl 的工程化）与 semaphore-vs-condvar-latency（pthread cond var 重锁坑）。stl 续篇 patch 回已有 stl-not-abstraction-prescription。人物页 ben-supnik source count 22→27。

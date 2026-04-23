@@ -45,6 +45,7 @@ sources: 1
 - [[tangent-space-normal-mapping]] —— 切线空间作为「让光照向量计算更简单」的局部坐标架
 - [[world-screen-space-position-shader]] —— Unity shader 里拿 worldPos / screenPos 的四种写法备忘
 - [[coordinate-system-table]] —— 主流引擎 / API / DCC 的 Right/Up/Forward + 手性对照表
+- [[matrix-as-basis-vectors]] —— 把矩阵读成 encoder / decoder 的双重视角
 
 ## Sources
 - [[sources/rtr-day03]]

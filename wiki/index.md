@@ -274,6 +274,8 @@ CAQA + CSAPP 的底层视角。
 | [[link-exe-lnk4099-patch]] | 二进制 patch MSVC link.exe 让 LNK4099 可被 /ignore |
 | [[shared-library-soname-versioning]] | Linux SONAME 的 ABI 契约与 OpenAL/X-Plane 翻车案例 |
 | [[cross-platform-openal-runtime-loader]] | X-Plane 的 OpenAL 三平台装载：封装层 + dlopen fallback + 自带 LGPL 副本 |
+| [[optimization-leverage-ratio]] | 优化杠杆率：局部改善 × 时间占比才是真正收益 |
+| [[semaphore-vs-condvar-latency]] | pthread cond var vs semaphore+spinlock：X-Plane worker 唤醒 200→80 µsec |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -834,6 +836,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[premultiplied-alpha-bilinear-ring]] | 预乘 alpha 为何能修复 bilinear filtering 的 tree-ring 杂色晕 |
 | [[gpu-sliced-volumetric-shadows-limits]] | GPU sliced shadow 在 flight-sim 云场景下的失败模式：不透明粒子 + 分桶 + popping |
 | [[linear-lighting-pipeline]] | 线性光照累积的三种管线路径：shader 内累加 / sRGB framebuffer blend / HDR float RT |
+| [[matrix-as-basis-vectors]] | 3x3 矩阵作为基向量：列是 decoder、行是 encoder |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1876,6 +1879,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-inheriting-velocity-ragdolls]] | Niklas：ragdoll 切换时速度继承的四种候选与 last_world 选择 |
 | [[sources/bitsquid-embracing-dynamism]] | Niklas：Bitsquid 把 Lua 动态性榨到底的七条常见技巧 |
 | [[sources/c0de517e-collaborative-engine-design]] | Pesce：2010 年 etherpad 协作引擎架构清单 |
+| [[sources/supnik-more-stl-abstraction]] | Supnik：STL 规格内的实现弹性与容器选型 |
+| [[sources/supnik-change-of-basis-revisited]] | Supnik：矩阵列即基向量、affine-orthogonal 子集 |
+| [[sources/supnik-basis-projection]] | Supnik：矩阵行是 encoder、转置即逆的几何意义 |
+| [[sources/supnik-is-1-a-lot]] | Supnik：杠杆率与 Shark profile 上的 X-Plane 9.62 |
+| [[sources/supnik-semaphore-vs-condvar]] | Supnik：cond var 重锁开销与 mach semaphore 方案 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
