@@ -1166,3 +1166,7 @@ Pesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2�
 ## [2026-04-19] ingest | Wave-92 Worker JP (hacksoflife 2011-05 ×5)
 
 Supnik 2011-05 小集 5 篇：跳过 1 篇（i-hate-c comment-thread 片段），新增 1 概念页 arrangement-mesh-simplification（Mesh Simplification I/II/III 合并），2 份 source 摘要（trilogy 合并 + instancing-limits 单独）。Patch xplane-instancing-2011-numbers 补齐上下限边界、cgal-arrangement-import-antennas 反向交叉引用、ben-supnik 人物页挂两条新 source 与新概念。
+
+## [2026-04-19] ingest | Wave-92 Worker JQ (joostdevblog 2011-06 Proun release ×5)
+
+Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-game-design`（极简双键 gameplay 设计）、`proun-out-now`（六年副项目史 + CableRacer codebase 复用链）。3 篇 hosting/服务器 drama 跳过（网站被流量冲垮、找 host 求助、服务器回归）。新增 2 概念页（easy-to-learn-hard-to-master、long-gestation-side-project）、2 source 摘要；在 joost-van-dongen 人物页追加 2 条 概念 + 2 条 Sources 引用。

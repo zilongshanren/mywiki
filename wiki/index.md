@@ -968,6 +968,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[rts-balance-taxonomy]] | RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气） |
 | [[solo-programmer-discipline]] | 独行程序员的十条生存纪律（Swords & Soldiers Wii 版经验） |
 | [[live-editing-taxonomy-2010]] | Pesce 2010 poll：live-editing 方案八档阶梯（None 到 code hot-swap） |
+| [[easy-to-learn-hard-to-master]] | Proun：两键极简核心如何叠出深度 |
+| [[long-gestation-side-project]] | Proun 的六年断续开发与 codebase 反哺链 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2006,6 +2008,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-performance-tuning-cars]] | Supnik 2011-05：X-Plane 10 车灯/车 AI 全流程性能调优 |
 | [[sources/supnik-mesh-simplification-trilogy]] | Supnik：Mesh Simplification I/II/III 合并——squatter 搜索三档索引选择 |
 | [[sources/supnik-instancing-limits]] | Supnik：X-Plane OpenGL instancing 上下限（≈100k batch 上限、2–3 instance 下限、client array 非加速） |
+| [[sources/joostdevblog-proun-game-design]] | Joost：Proun 两键玩法的深度设计 |
+| [[sources/joostdevblog-proun-history]] | Joost：Proun 六年开发史与代码复用链 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -966,3 +966,5 @@ sse-shuffle-endianness
 simd-memory-bandwidth-bound
 xplane-headlight-perf-teardown
 arrangement-mesh-simplification
+easy-to-learn-hard-to-master
+long-gestation-side-project

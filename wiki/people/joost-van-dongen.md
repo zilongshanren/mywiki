@@ -29,6 +29,8 @@ sources: 16
 - [[destroy-recreate-vs-reset]] —— 销毁重建胜过隐藏重置的对象生命周期纪律
 - [[solo-programmer-discipline]] —— 独行程序员的十条生存纪律
 - [[perspective-meta-shapes]] —— 透视投影下视角相关的 meta-shape 构图
+- [[easy-to-learn-hard-to-master]] —— Proun 极简双键 gameplay 与叠加挑战层的设计原则
+- [[long-gestation-side-project]] —— Proun 六年业余开发史与 CableRacer codebase 在 De Blob / Snowball Earth / Swords & Soldiers 的复用链
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -52,3 +54,5 @@ sources: 16
 - [[sources/joostdevblog-resetting-vs-re-creating]]
 - [[sources/joostdevblog-lonely-programmer-tips]]
 - [[sources/joostdevblog-meta-shapes-perspective]]
+- [[sources/joostdevblog-proun-game-design]]
+- [[sources/joostdevblog-proun-history]]
