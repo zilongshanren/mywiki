@@ -68,6 +68,7 @@ AGP 映射的 system memory 多半是 **write-combined, uncached**。正确写�
 - [[virtual-memory]]
 - [[ben-supnik]]
 - [[deferred-light-volume-stencil-depth-clamp-hack]] —— 2011-12 Supnik 指出 X-Plane 光源绘制的真瓶颈常是 vertex bus 而非 shading，stencil trick 得因此关
+- [[opengl-pinned-memory-vbo-streaming]] —— AGP 精神在 GL_AMD_pinned_memory 里的回归
 
 ## Sources
 - [[sources/supnik-agp-vs-vram]]

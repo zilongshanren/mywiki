@@ -12001,3 +12001,8 @@ raw/articles/hacksoflife.blogspot.com/2012-10-31_non-square-ogssaa-fxaa.md
 raw/articles/randomtower.blogspot.com/2010-02-02_flashpunk-hello-world-shooter-part-2.md
 raw/articles/randomtower.blogspot.com/2010-02-01_escape-from-colors.md
 raw/articles/randomtower.blogspot.com/2010-02-05_escape-from-colors-progress.md
+raw/articles/bitsquid.blogspot.com/2017-03-09_stingray-renderer-walkthrough-7-data-driven-rendering.md
+raw/articles/bitsquid.blogspot.com/2017-03-14_stingray-renderer-walkthrough-8-stingray-renderer-mini-rende.md
+raw/articles/hacksoflife.blogspot.com/2012-02-17_xcode-lion-gcc-oh-my.md
+raw/articles/hacksoflife.blogspot.com/2012-02-27_confessions-of-a-lisp-hater.md
+raw/articles/hacksoflife.blogspot.com/2012-04-04_beyond-glmapbuffer.md

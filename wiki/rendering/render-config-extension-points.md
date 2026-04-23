@@ -100,5 +100,6 @@ render_config_extensions = ["clouds-resources/clouds", "prism/prism"]
 - [[niklas-frykholm]]
 
 ## Sources
-
 - [[sources/bitsquid-render-config-extensions]]
+- [[sources/bitsquid-renderer-walkthrough-7-data-driven]]
+- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]]

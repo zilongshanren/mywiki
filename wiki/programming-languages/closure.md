@@ -49,5 +49,5 @@ sources: 1
 - [[higher-order-functions]]
 
 ## Sources
-
 - [[sources/sicp-day02]]
+- [[sources/supnik-confessions-lisp-hater]] —— 2012 X-Plane 工程师关于 C++03 没闭包的诚实一刻，顺便被 C++11 lambda 历史解决

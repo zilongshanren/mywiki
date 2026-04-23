@@ -46,7 +46,10 @@ Ben Mowery 在 2015 年底的一篇短文里拆出了三层配置：
 - [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 Cull/Render/Dispatch 三阶段数据并行架构
 - [[stingray-render-resource-context]] —— RenderResource 抽象与 RRC 的跨 API 资源分配
 - [[stingray-resource-override-suffix]] —— 同样的 data-driven 思路在资源系统里的应用
+- [[stingray-default-frame-flow]] —— 默认 renderer.render_config 的一帧八段走向 + mini renderer 减法哲学
 
 ## Sources
 - [[sources/bitsquid-stingray-data-driven-rendering]]
 - [[sources/bitsquid-render-config-extensions]]
+- [[sources/bitsquid-renderer-walkthrough-7-data-driven]] —— Walkthrough #7 机制层正典：render_settings/render_caps/global_resources/layer_config 的 C++ 对应结构
+- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]] —— Walkthrough #8 默认 stingray + mini renderer 两套 shipping 模板的一帧走向

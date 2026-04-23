@@ -1206,3 +1206,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-95 Worker JY (hacksoflife 2012 Supnik ×2 + randomtower 2010 Marte ×1)
 
 处理 5 条输入：3 ingested（Supnik deferred-depth-3-ways + non-square-ogssaa-fxaa + Marte FlashPunk shooter part 2），2 skipped（escape-from-colors 两篇在 raw/ 下不存在，无源可读）。新增 2 概念页（deferred-depth-reuse-tradeoffs、ogssaa-fxaa-non-square）、3 source 摘要；xplane-gbuffer-format / deferred-rendering / aa-techniques-survey-2011 / flashpunk-framework / ben-supnik / marte-randomtower 反向补链。
+
+## [2026-04-19] ingest | Wave-95 Worker JX (bitsquid Walkthrough 7-8 + hacksoflife 2012 ×3)
+
+处理 5 篇：Stingray Renderer Walkthrough #7 (data-driven) + #8 (default + mini renderer)；Ben Supnik 2012 Lisp Hater + Beyond glMapBuffer；跳过 Xcode Lion GCC 2012 dev-env 小笔记。新增 2 概念页（stingray-default-frame-flow、opengl-pinned-memory-vbo-streaming）+ 4 source 摘要。未新增人物页（Tobias Persson / Ben Supnik 已存在）。

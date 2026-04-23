@@ -33,3 +33,5 @@ Bitsquid 共同创始人之一，与 [[niklas-frykholm]] 一起主导 Bitsquid �
 - [[sources/bitsquid-renderer-walkthrough-1-overview]]
 - [[sources/bitsquid-renderer-walkthrough-2-resources]]
 - [[sources/bitsquid-renderer-walkthrough-3-6-canonical]]
+- [[sources/bitsquid-renderer-walkthrough-7-data-driven]]
+- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]]

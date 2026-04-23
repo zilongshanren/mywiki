@@ -989,3 +989,5 @@ pn-triangle-polyline-bezier-fit
 deferred-light-volume-stencil-depth-clamp-hack
 deferred-depth-reuse-tradeoffs
 ogssaa-fxaa-non-square
+stingray-default-frame-flow
+opengl-pinned-memory-vbo-streaming

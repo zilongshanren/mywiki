@@ -907,6 +907,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[deferred-light-volume-stencil-depth-clamp-hack]] | 延迟光源体积 stencil 剔除在远剪裁面切背面时的三档处理（depth-clamp / VS Z-clamp / 纯 stencil） |
 | [[deferred-depth-reuse-tradeoffs]] | Supnik 2012：延迟光照读深度的三条路线（拷贝 / NV_texture_barrier / G-Buffer 写 Z），X-Plane 双 depth domain 选 C |
 | [[ogssaa-fxaa-non-square]] | Supnik 2012：非方形 OGSSAA（2×4 竖向偏置）× FXAA 跑在 SSAA 空间的组合 |
+| [[stingray-default-frame-flow]] | Stingray 默认 render_config 一帧八段走向 + mini renderer 减法哲学 |
+| [[opengl-pinned-memory-vbo-streaming]] | GL_AMD_pinned_memory：用应用内存直接当 VBO 跳过 glMapBuffer |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2055,6 +2057,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-deferred-depth-3-ways]] | Supnik 2012：延迟管线深度复用的三条路线与 X-Plane 的选择 |
 | [[sources/supnik-non-square-ogssaa-fxaa]] | Supnik 2012：非方形 OGSSAA + FXAA 跑在 SSAA 空间 |
 | [[sources/randomtower-flashpunk-shooter-part-2]] | Marte 2010：FlashPunk Hello World Shooter 迭代更新（血量 / 多武器 / 调试键）|
+| [[sources/bitsquid-renderer-walkthrough-7-data-driven]] | Walkthrough #7：render_config 四件套的机制层正典 |
+| [[sources/bitsquid-renderer-walkthrough-8-default-pipes]] | Walkthrough #8：stingray + mini 两套默认 render_config 走完一帧 |
+| [[sources/supnik-confessions-lisp-hater]] | Supnik 2012 对 C++03 没闭包的诚实一刻（C++11 lambda 回来救场） |
+| [[sources/supnik-beyond-glmapbuffer]] | X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 的 6ms 开销 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

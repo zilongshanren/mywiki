@@ -53,6 +53,7 @@ Supnik 文中提到 MacOS 10.4.7 已经通过 `APPLE_flush_buffer_range` 提供�
 - [[frames-in-flight]]
 - [[streaming-staging-texture-upload]]
 - [[ben-supnik]]
+- [[opengl-pinned-memory-vbo-streaming]] —— orphan-and-map 在 ATI 驱动上慢到 6 ms 时的替代方案
 
 ## Sources
 - [[sources/supnik-double-buffering-vbos]]
