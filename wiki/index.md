@@ -167,6 +167,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[c-bitwise-operator-precedence-history]] | 为何 C 的 `&` 优先级低于 `==`：B/BCPL 的历史包袱 |
 | [[lua-runtime-dynamism-tricks]] | Bitsquid 的 Lua 七招：REPL、热重载、API 劫持、动态 profiler、对象枚举 |
 | [[javascript-hot-reload-dom-script]] | Niklas：动态 script 节点 + polling 做出的 30 行 JS 热重载 |
+| [[cpp-ranges-vs-iterators]] | Supnik 2011 独立发明 range：自包含终止的 sequence 抽象 vs STL iterator 配对 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -900,6 +901,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[stingray-sort-key-bit-layout]] | Tobias：64-bit sort_key 分段位布局 + 单次 stable radix sort |
 | [[stingray-render-device-dispatch]] | Tobias：RenderDevice 并行 dispatch + instance merging + 多 API 后端 |
 | [[stingray-render-interface]] | Tobias：RenderInterface 粘合层 + 阻塞/非阻塞 ring buffer 二分 |
+| [[bezier-analytic-limitations]] | Bezier 缺失闭式解（弧长/交点/最近点）的清单与工程后果 |
+| [[cgal-halfedge-direction-cache-pitfall]] | CGAL 3.4+ merge_edge 方向缓存陷阱与 h2.twin 绕法 |
+| [[pn-triangle-polyline-bezier-fit]] | X-Plane OSM 道路的 PN-Triangle 切线估计 + 自底向上 Bezier 合并 |
+| [[deferred-light-volume-stencil-depth-clamp-hack]] | 延迟光源体积 stencil 剔除在远剪裁面切背面时的三档处理（depth-clamp / VS Z-clamp / 纯 stencil） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2040,6 +2045,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-games-as-expression]] | Joost：游戏作为自我表达，Proun 为例 |
 | [[sources/joostdevblog-solid-motion]] | Joost：Solid Motion 扫掠体的 MAXScript 实现 |
 | [[sources/bitsquid-renderer-walkthrough-3-6-canonical]] | Tobias 2017：Stingray RenderContext / sort_key / RenderDevice / RenderInterface 四连 |
+| [[sources/supnik-joys-of-bezier-curves]] | Supnik 2011-08：Bezier 无解析解清单（弧长/交点/最近点/等长切分） |
+| [[sources/supnik-merge-edge-fixed]] | Supnik 2011-08：CGAL 3.4+ merge_edge 可在反向时绕过方向缓存陷阱 |
+| [[sources/supnik-sequences-vs-iterators]] | Supnik 2011-09：sequence = range，提前 10 年的 C++20 ranges 预言 |
+| [[sources/supnik-bezier-curve-optimization]] | Supnik 2011-09：OSM 折线 → Bezier 的 PN-Triangle + 贪婪合并流水线 |
+| [[sources/supnik-stencil-deferred-lights-depth-clamp]] | Supnik 2011-12：延迟光源体积 stencil 剔除的 depth-clamp 三档策略 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

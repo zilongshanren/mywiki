@@ -69,6 +69,11 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[xplane-headlight-perf-teardown]] —— 2011-05 X-Plane 10 车灯/AI 性能手术全流程案例
 - [[arrangement-mesh-simplification]] —— 2011-05 三部曲：squatter 搜索从 zone 计算 → Delaunay 索引 → constrained triangulation 邻接
 - [[opengl-ext-vs-arb-fast-path-leak]] —— 2011-06 双篇 fine-print 合编：EXT/ARB FBO completeness 差异 + 驱动 fast path 的隐式 if 瀑布
+- [[bezier-analytic-limitations]] —— 2011-08 + 2011-09：Bezier 无闭式弧长/交点/最近点的工程后果
+- [[cgal-halfedge-direction-cache-pitfall]] —— 2011-08 CGAL 3.4+ merge_edge 方向缓存 workaround
+- [[cpp-ranges-vs-iterators]] —— 2011-09 自发明 sequence（= range，C++20 前十年）
+- [[pn-triangle-polyline-bezier-fit]] —— 2011-09 X-Plane 10 OSM 道路 Bezier 化的 PN-triangle + 贪婪合并流水线
+- [[deferred-light-volume-stencil-depth-clamp-hack]] —— 2011-12 延迟光源体积 stencil + VS 剪裁空间 Z-clamp 降级三档策略
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -140,3 +145,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-instancing-limits]]
 - [[sources/supnik-ext-vs-arb-fine-print]]
 - [[sources/supnik-guessing-fine-print]]
+- [[sources/supnik-joys-of-bezier-curves]]
+- [[sources/supnik-merge-edge-fixed]]
+- [[sources/supnik-sequences-vs-iterators]]
+- [[sources/supnik-bezier-curve-optimization]]
+- [[sources/supnik-stencil-deferred-lights-depth-clamp]]

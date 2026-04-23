@@ -982,3 +982,8 @@ stingray-render-context
 stingray-sort-key-bit-layout
 stingray-render-device-dispatch
 stingray-render-interface
+bezier-analytic-limitations
+cgal-halfedge-direction-cache-pitfall
+cpp-ranges-vs-iterators
+pn-triangle-polyline-bezier-fit
+deferred-light-volume-stencil-depth-clamp-hack

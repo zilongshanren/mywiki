@@ -70,12 +70,12 @@ co_await vk.async(pool, [](Vk::Commands& cmds) { /* 填 command buffer */ });
 这篇文章的更高一层意义在于——它示范了「写自己的 STL」的可行性与边界：对个人或小团队项目，**放弃通用性以换显式 / 快编译 / 控制流清晰** 是一桩合算的生意。
 
 ## 相关
-
 - [[cpp-multi-paradigm-discipline]] — C++ 的多范式诅咒：团队要先选子集
 - [[cpp-runtime-reflection]] — 另一种 C++ 反射路线（libclang 生成）
 - [[open-addressing-hashtable]] — rpp `Map` 的理论基础
 - [[linear-allocator]] — region 的最小内核
 - [[max-slater]]
+- [[cpp-ranges-vs-iterators]] —— 游戏引擎圈独立发明 range 抽象的 2011 先例
 
 ## Sources
 - [[sources/slater-oxidizing-cpp]]

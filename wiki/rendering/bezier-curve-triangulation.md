@@ -33,5 +33,6 @@ sources: 1
 类似"几何上近似复杂曲线"的思路也见 [[sdf-2d-primitives]]——只不过 SDF 是把形状放到 fragment shader 里算距离场，而这里是显式把形状变成三角形。
 
 ## Sources
-
 - [[sources/ciechanow-drawing-bezier-curves]]
+- [[sources/supnik-joys-of-bezier-curves]]
+- [[sources/supnik-bezier-curve-optimization]]

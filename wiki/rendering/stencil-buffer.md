@@ -39,13 +39,13 @@ sources: 1
 模板硬件路径专用，和深度测试合并在一起。设计良好时几乎零额外成本。
 
 ## 相关
-
 - [[fragment-shader]]
 - [[z-buffer]]
 - [[early-z-late-z]]
 - [[depth-aware-upsampling]] —— stencil 标记深度不连续像素、分派 simple/complex shader 的 ROTR trick
 - [[stencil-portal-shader-antichamber]] —— Antichamber 风格「mask + object 配对」的最小 Unity 实现
 - [[stencil-parallax-card-layers]] —— Pokémon 卡牌风格的「stencil mask + Render Objects feature + 分层 parallax」URP 实现
+- [[deferred-light-volume-stencil-depth-clamp-hack]] —— X-Plane 光源体积 stencil 被远剪裁面切穿时的 depth-clamp 依赖与 vertex-shader Z-clamp 降级
 
 ## Sources
 

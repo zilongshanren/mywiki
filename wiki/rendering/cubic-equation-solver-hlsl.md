@@ -53,5 +53,5 @@ Blinn 的目标是数值稳定性。他的策略是分别求最大模根和最�
 - [[christoph-peters]]
 
 ## Sources
-
 - [[sources/peters-cubic-equation-revisited]]
+- [[sources/supnik-joys-of-bezier-curves]]

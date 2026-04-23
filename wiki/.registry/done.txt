@@ -11986,3 +11986,8 @@ raw/articles/bitsquid.blogspot.com/2017-02-10_stingray-renderer-walkthrough-3-re
 raw/articles/bitsquid.blogspot.com/2017-02-14_stingray-renderer-walkthrough-4-sorting.md
 raw/articles/bitsquid.blogspot.com/2017-02-17_stingray-renderer-walkthrough-5-renderdevice.md
 raw/articles/bitsquid.blogspot.com/2017-02-22_stingray-renderer-walkthrough-6-renderinterface.md
+raw/articles/hacksoflife.blogspot.com/2011-08-22_the-joys-of-bezier-curves-not.md
+raw/articles/hacksoflife.blogspot.com/2011-08-29_merge-edge-fixed-sort-of.md
+raw/articles/hacksoflife.blogspot.com/2011-09-01_sequences-vs-iterators.md
+raw/articles/hacksoflife.blogspot.com/2011-09-03_bezier-curve-optimization.md
+raw/articles/hacksoflife.blogspot.com/2011-12-13_stencil-optimization-for-deferred-lights-without-depth-clamp.md

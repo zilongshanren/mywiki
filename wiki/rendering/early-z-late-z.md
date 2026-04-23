@@ -33,7 +33,6 @@ TBDR 在 tile 粒度上做的 **HSR（Hidden Surface Removal）**比 Early-Z 更
 - **避免无谓 discard**：用不透明材质替代 alpha test（或用 Alpha-to-Coverage + MSAA）。
 
 ## 相关
-
 - [[z-buffer]]
 - [[hsr-tbdr]]
 - [[overdraw]]
@@ -41,6 +40,7 @@ TBDR 在 tile 粒度上做的 **HSR（Hidden Surface Removal）**比 Early-Z 更
 - [[fizzle-lod-fading]] —— 用 discard 保留 early-z 能力、避免 alpha blending 的工程选择
 - [[depth-aware-upsampling]] —— 用 stencil 提前分类像素、再用 early stencil discard 分派 simple/complex shader
 - [[conservative-depth]] —— `SV_DepthGreaterEqual` / `[earlydepthstencil]` 两条 Early-Z 救援通道
+- [[deferred-light-volume-stencil-depth-clamp-hack]] —— VS 改 Z 可保 early-Z，PS 写 DEPTH 则 kill early-Z
 
 ## Sources
 

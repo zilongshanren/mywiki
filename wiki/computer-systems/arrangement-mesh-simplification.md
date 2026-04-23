@@ -65,11 +65,11 @@ Supnik 三篇串起来的教训不是「algorithm for mesh simplification」—�
 这是一条「把问题向数据结构投影」的典型路径——和 [[cgal-arrangement-import-antennas|CGAL arrangement 导入的 antenna 陷阱]] 是同一家 X-Plane 地图管线里的兄弟。
 
 ## 相关
-
 - [[cgal-arrangement-import-antennas]]
 - [[cgal-exact-arithmetic-mantissa-growth]]
 - [[floating-point-geometric-predicates]]
 - [[ben-supnik]]
+- [[pn-triangle-polyline-bezier-fit]] —— 同样的「误差度量 + 优先队列贪婪合并」骨架，用在折线 → Bezier 化
 
 ## Sources
 
