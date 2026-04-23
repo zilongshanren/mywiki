@@ -950,3 +950,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-74 Worker hm (alfredbaudisch.com ×5)
 
 处理 alfredbaudisch.com 早期 dailies 批次（2021-03-11 至 03-15）5 篇。全部不过题材关：sitemap 为纯导航；hello-world 和 dailies-rules 为个人项目自律元帖；#0003 hard-surface + photobash 仅三句“建模难、光光难、photobash 有趣但难”并附截图，无具体技术；#0004 PS1 腊肠狗绑定仅为进度流水帐。同博客后期篇目（Substance Designer 首次、Banjo-Kazooie N64 地形、顶点色 Wash Car 等）如被抓取值得今后单独评估。零新增页面，无 patch。
+
+## [2026-04-19] ingest | Wave-74 Worker HN (blog.gemserk.com ×5)
+
+处理 5 篇 Gemserk 2010 年早期博客。ingest 1（Applet/Webstart JAR 签名与 Maven profile 自动化）、skip 4（博客存档页 / 工作室欢迎帖 / Tower Defense 三行通告 / Jylonwars 两行通告）。新增 1 概念页（java-webstart-jar-signing）、1 source 摘要；gemserk 人物页已存在，仅追加 source 链接。

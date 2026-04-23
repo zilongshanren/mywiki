@@ -11681,3 +11681,8 @@ raw/articles/alfredbaudisch.com/2021-03-11_website-and-dailies-again-inspired-by
 raw/articles/alfredbaudisch.com/2021-03-12_0002-personal-website-and-dailies-rules.md
 raw/articles/alfredbaudisch.com/2021-03-13_0003-hard-surface-modeling-first-photobash.md
 raw/articles/alfredbaudisch.com/2021-03-15_0004-retro-dachshund-rigged.md
+raw/articles/blog.gemserk.com/2010-01-28_gemserk.md
+raw/articles/blog.gemserk.com/2010-01-28_welcome.md
+raw/articles/blog.gemserk.com/2010-02-07_signing-jars-for-applet-and-webstart.md
+raw/articles/blog.gemserk.com/2010-02-26_tower-of-defense.md
+raw/articles/blog.gemserk.com/2010-04-16_jylonwars.md

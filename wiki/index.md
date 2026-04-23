@@ -820,6 +820,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ux-opinions-checklist]] | Ben UI：按钮/快捷键/输入/文字/桌面软件的 RFC 2119 级 UX 清单 |
 
 | [[additive-animation-layering]] | 叠加式动画层：1 帧 idle + 长周期 wiggle 的变化手法 |
+| [[java-webstart-jar-signing]] | Java Applet/Web Start 分发时的 JAR 签名与 Maven 自动化流程（Gemserk 2010） |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1684,6 +1685,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-fast-paths]] | Supnik：API 设计的快/慢路径显式分层 |
 | [[sources/supnik-tile-too-far]] | Supnik：number puzzle 瓦片随机化 shader 与 fixed function 壁垒 |
 | [[sources/supnik-debugging-glsl]] | Supnik：GLSL printf = 写 gl_FragColor + shader 热重载 |
+| [[sources/gemserk-signing-jars-applet-webstart]] | Gemserk：用 maven-webstart-plugin 为 Applet / Webstart 自动签 JAR（2010） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

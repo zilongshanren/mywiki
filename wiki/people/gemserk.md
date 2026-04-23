@@ -18,8 +18,8 @@ Gemserk 是一家独立游戏工作室，核心成员 Ariel Coppes（[@arielsan]
 - [[unity-asset-refactoring]]
 
 ## Sources
-
 - [[sources/gemserk-new-input-system-ld44]]
 - [[sources/gemserk-prefabs-as-data]]
 - [[sources/gemserk-custom-editor-ecs]]
 - [[sources/gemserk-refactoring-prefab-data]]
+- [[sources/gemserk-signing-jars-applet-webstart]]
