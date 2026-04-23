@@ -87,6 +87,7 @@ sources: 371
 | [[no-frame-delays-principle]] | Bitsquid 戒律：动作立即生效，禁止延迟一帧引入灰色过渡态 |
 | [[async-api-id-tokens]] | 异步 API 的极简设计：ID token + round-robin + implicit API |
 | [[cleaning-bad-code]] | Frykholm 9 条：遗留代码清理操作手册（改良优于革命）|
+| [[encapsulation-over-polymorphism]] | Supnik 2010：OOP 三要素 90/10/0 启发式，封装才是核心 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -842,6 +843,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[video-codec-licensing-tradeoffs]] | 引擎视频播放的 codec 选型：H.264 / VP8 / Bink / 平台原生 / 不做 |
 | [[particle-collision-plane-cache]] | 每粒子自带平面 + 空间哈希缓存 raycast 结果 |
 | [[matrix-scale-drift]] | Matrix4x4 里 rotation/scale 共享存储引发的 28 分钟 0.1% 漂移 |
+| [[xplane-gbuffer-format]] | Supnik 2010：X-Plane 10 第一版 16 字节 G-Buffer 布局（shadow/shine 浮点打包） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1897,6 +1899,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-cleaning-bad-code]] | Frykholm 2012：清理烂代码 9 条操作手册 |
 | [[sources/tedsie-ngui-tutorials]] | Ted Sie 2016-07 NGUI 入门四讲合并（UIPanel/UISprite + UIAtlas + Scroll View + Button） |
 | [[sources/tedsie-draw-call-basics]] | Ted Sie：Draw Call 初步理解（材质实例即批边界） |
+| [[sources/supnik-semaphore-nptl]] | Supnik 2010-12：Linux NPTL 把上一篇的 OS X 原语选择问题大多消除 |
+| [[sources/supnik-gbuffer-format]] | Supnik 2010-12：X-Plane 10 G-Buffer 格式自述（4 RT / 16 B / 浮点字段打包） |
+| [[sources/supnik-fmtt-glsl-edition]] | Supnik 2010-12：X-Plane G-Buffer 的 GLSL `gl_FragData[0..3]` 实现样本 |
+| [[sources/supnik-what-oop-isnt]] | Supnik 2010-12：90/10/0 OOP 三要素启发式 + 评论区对实现继承的细化 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -29,7 +29,6 @@ Xor 在自家 idle game [*Constructor*] 里演示了另一种非典型用途：*
 MRT 是一种**控制反转**：原本「每个 draw call 一张图片」的假设被彻底拆开，画面变成「一次采样几何，多次投影出不同用途的数据」。一旦接受这种 mental model，你会发现它不仅解锁了延迟渲染，也让很多奇怪需求（对象 ID、motion vector、velocity buffer、画面外的 height field）都变成「再加一个输出通道」的廉价改动。
 
 ## 相关
-
 - [[deferred-rendering]] —— MRT 最主要的消费者，G-Buffer 是 MRT 的典型结构
 - [[rendering-pipeline]]
 - [[fragment-shader]]
@@ -38,6 +37,7 @@ MRT 是一种**控制反转**：原本「每个 draw call 一张图片」的假�
 - [[tiled-light-prepass]] —— thin G-Buffer + 二次几何的对立路线
 - [[visibility-buffer]] —— 现代把 G-Buffer 压到 1 张 + 后续 compute shading 的演进
 - [[xor-shader-artist]]
+- [[xplane-gbuffer-format]] —— 4 张 MRT / 16 字节的实战布局，配套 GLSL 片段展示了 `gl_FragData[0..3]` 的用法
 
 ## Sources
 

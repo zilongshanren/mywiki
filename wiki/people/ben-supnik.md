@@ -49,6 +49,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[matrix-as-basis-vectors]] —— 2010 双篇 change-of-basis / basis-projection 合编
 - [[optimization-leverage-ratio]] —— 「1% 算多吗」的 profile 判断框架
 - [[semaphore-vs-condvar-latency]] —— X-Plane 10 worker 唤醒延迟优化
+- [[xplane-gbuffer-format]] —— X-Plane 10 第一版延迟管线的 G-Buffer 布局（shadow/shine 浮点打包）
+- [[encapsulation-over-polymorphism]] —— 90/10/0 OOP 三要素权重启发式
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -95,3 +97,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-basis-projection]]
 - [[sources/supnik-is-1-a-lot]]
 - [[sources/supnik-semaphore-vs-condvar]]
+- [[sources/supnik-semaphore-nptl]]
+- [[sources/supnik-gbuffer-format]]
+- [[sources/supnik-fmtt-glsl-edition]]
+- [[sources/supnik-what-oop-isnt]]

@@ -11861,3 +11861,8 @@ raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uipanel-and-uisprite
 raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uiatlas-ngui-tu-ji-xin-zeng-geng-xin-dao-chu-yi-c.md
 raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-scroll-view-ke-hua-dong-qu-kuai-scroll-view.md
 raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-button-button-xi-lie-gong-neng-jiang-jie.md
+raw/articles/hacksoflife.blogspot.com/2010-12-04_semaphore-follow-up-ntpl.md
+raw/articles/hacksoflife.blogspot.com/2010-12-05_yet-another-this-is-our-gbuffer-format-post.md
+raw/articles/hacksoflife.blogspot.com/2010-12-09_fmtt-glsl-edition.md
+raw/articles/hacksoflife.blogspot.com/2010-12-09_what-oop-isn-t.md
+raw/articles/hacksoflife.blogspot.com/2010-12-20_lisp-isn-t-a-language.md

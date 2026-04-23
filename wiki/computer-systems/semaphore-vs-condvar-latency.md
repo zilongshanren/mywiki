@@ -39,8 +39,11 @@ Supnik 特别指出两点：
 另一个实际加成：当队列在唤醒之前就已经非空（比如 Supnik 的两级队列设计，外层只是一个「去看内层队列」的通知），semaphore 的 wait 会走**原子快速路径**，连系统调用都不进，更快。
 
 ## 对未来 lock-free ring buffer 的注记
-
 Supnik 在文末讨论把队列改成 ring buffer FIFO：用两把 semaphore（filled/free count）+ 原子读写指针。关键不变量是 **「两把 semaphore 之和可以小于 buffer 容量」**——因为总是先 decrement 再 increment，这天然阻止读写指针追尾覆盖对方正在处理的 slot。代价是放弃严格的消息顺序（两个 reader 可能乱序交出）和一些现有 API 方便的 inspect/edit 操作。结论是：**API 的约束（能否容忍写阻塞、能否放弃锁定修改）才是决定同步设计的真正门槛，不是性能数字**。
+
+## 跨平台追记：Linux NPTL
+
+Supnik 几天后的 [[sources/supnik-semaphore-nptl|follow-up]] 承认上面那些让 OS X pthread 昂贵的实现细节，在 Linux 的 **NPTL**（Native POSIX Thread Library）里多数不存在：pthread mutex 是 spin-sleep 混合、`sem_t` 有原子计数器、底层一切同步都建立在 **futex** 之上——未争用路径全部只用原子操作。OS X pthread 在未争用情形也走 user-space spin lock 簿记，但 Supnik 判断 futex 路径更快。这把结论拉回到一个朴素的观察：**同步原语的「正确选择」是平台依赖的**，没有放之四海皆优的方案——为 OS X 自研 semaphore+critical section 的动机在 Linux 原生 pthread 上其实并不那么紧迫。
 
 ## 相关
 
@@ -50,5 +53,5 @@ Supnik 在文末讨论把队列改成 ring buffer FIFO：用两把 semaphore（f
 - [[ben-supnik]]
 
 ## Sources
-
 - [[sources/supnik-semaphore-vs-condvar]]
+- [[sources/supnik-semaphore-nptl]]

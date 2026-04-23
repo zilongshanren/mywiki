@@ -1094,3 +1094,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-86 Worker IY (tedsieblog.wordpress.com ×5)
 
 处理 Ted Sie 2016-07 的 5 篇 NGUI / Draw Call 入门文章。新增 1 概念页（ngui-legacy-ui-system）、2 source 摘要（tedsie-ngui-tutorials 合并 4 篇 NGUI 教学、tedsie-draw-call-basics 单独成文）。Draw Call 入门篇通过 patch 链进既有 [[draw-call]]。无跳过。
+
+## [2026-04-19] ingest | Wave-86 Worker IX (hacksoflife 2010-12 Supnik ×5)
+
+处理 5 篇 hacksoflife.blogspot.com 2010-12 Supnik 博文：4 篇 ingested，1 篇 skipped_offtopic。`semaphore-follow-up-ntpl` 作为前作 [[semaphore-vs-condvar-latency]] 的 Linux NPTL 跨平台补记，patch 上去并出 1 篇 source 摘要。`gbuffer-format` + `fmtt-glsl-edition` 是 X-Plane 10 第一版延迟管线的 G-Buffer 格式自述与 GLSL 实现样本，新增概念页 [[xplane-gbuffer-format]]（4 RT / 16 字节 / `256×shadow+shine` 浮点字段打包 / 16F 深度行星尺度不足），patch 到 [[deferred-rendering]]、[[multiple-render-targets]]。`what-oop-isnt` 新增概念页 [[encapsulation-over-polymorphism]]（90/10/0 启发式 + 继承三细分 + 评论区 LogicalError/David/Homer 立场），patch 到 [[classitis]]、[[cpp-multi-paradigm-discipline]]。`lisp-isnt-a-language` 只有 5 行 Alan Kay 引用 + 一句粪便吐槽，skipped_offtopic。共 2 概念、4 source 摘要，patch 3 个既有页 + Ben Supnik 人物页。
