@@ -94,3 +94,6 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-matrices-rotation-scale-drifting]]
 - [[sources/bitsquid-simpler-async-api]]
 - [[sources/bitsquid-cleaning-bad-code]]
+- [[sources/bitsquid-organizing-header-files]]
+- [[sources/bitsquid-vector-fields]]
+- [[sources/bitsquid-foundation-library]]

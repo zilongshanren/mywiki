@@ -42,13 +42,13 @@ C++ 编译时间只会越来越糟——这是 [[niklas-frykholm]] 说的 C++ �
 简化的 `#include` 解析器（字符串匹配而非真 preprocessor）是性能关键：缓存 + 纯字符串让增量扫描在半秒内完成，从而把「改 header → 看效果」变成一个内循环。代价是 fancy preprocessor trick 会被漏掉，注释里的 `#include` 不会被识别成已注释掉——评论区确认了「注释掉不会生效，要真删」。评论还指出一个小 bug：同一 header 被自己的 `.cpp` include 会被多计一次，但 include guard 假设下不应该发生。
 
 ## 相关
-
 - [[unity-build-macro-renaming]]
 - [[header-file-vs-pub-export]]
 - [[header-as-user-manual]]
 - [[information-hiding]]
 - [[orthodox-cpp]]
 - [[dependencies]]
+- [[types-h-data-code-separation]] —— Frykholm 对 include 传染的结构性解法
 
 ## Sources
 

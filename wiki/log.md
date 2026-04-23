@@ -1098,3 +1098,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-86 Worker IX (hacksoflife 2010-12 Supnik ×5)
 
 处理 5 篇 hacksoflife.blogspot.com 2010-12 Supnik 博文：4 篇 ingested，1 篇 skipped_offtopic。`semaphore-follow-up-ntpl` 作为前作 [[semaphore-vs-condvar-latency]] 的 Linux NPTL 跨平台补记，patch 上去并出 1 篇 source 摘要。`gbuffer-format` + `fmtt-glsl-edition` 是 X-Plane 10 第一版延迟管线的 G-Buffer 格式自述与 GLSL 实现样本，新增概念页 [[xplane-gbuffer-format]]（4 RT / 16 字节 / `256×shadow+shine` 浮点字段打包 / 16F 深度行星尺度不足），patch 到 [[deferred-rendering]]、[[multiple-render-targets]]。`what-oop-isnt` 新增概念页 [[encapsulation-over-polymorphism]]（90/10/0 启发式 + 继承三细分 + 评论区 LogicalError/David/Homer 立场），patch 到 [[classitis]]、[[cpp-multi-paradigm-discipline]]。`lisp-isnt-a-language` 只有 5 行 Alan Kay 引用 + 一句粪便吐槽，skipped_offtopic。共 2 概念、4 source 摘要，patch 3 个既有页 + Ben Supnik 人物页。
+
+## [2026-04-19] ingest | Wave-86 Worker IW (bitsquid.blogspot.com 2012 Q3/Q4 ×5)
+
+处理 Bitsquid 2012 年下半年 5 篇：header 组织 1 篇、vector field 三部曲（合并为 1 个 source + 1 个概念）、foundation library 发布 1 篇。新增 3 概念页（types-h-data-code-separation / vector-field-bytecode-vm / bitsquid-foundation-library-concept），3 个 source 摘要。niklas-frykholm 人物页已存在，仅追加 sources。补丁 4 个已有概念（custom-allocator-interface / header-hero-compile-analysis / bytecode-everywhere / header-as-user-manual）。无跳过。

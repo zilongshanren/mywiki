@@ -11866,3 +11866,8 @@ raw/articles/hacksoflife.blogspot.com/2010-12-05_yet-another-this-is-our-gbuffer
 raw/articles/hacksoflife.blogspot.com/2010-12-09_fmtt-glsl-edition.md
 raw/articles/hacksoflife.blogspot.com/2010-12-09_what-oop-isn-t.md
 raw/articles/hacksoflife.blogspot.com/2010-12-20_lisp-isn-t-a-language.md
+raw/articles/bitsquid.blogspot.com/2012-09-03_a-new-way-of-organizing-header-files.md
+raw/articles/bitsquid.blogspot.com/2012-09-17_a-data-oriented-data-driven-system-for-vector-fields-part-1.md
+raw/articles/bitsquid.blogspot.com/2012-10-02_a-data-oriented-data-driven-system-for-vector-fields-part-2.md
+raw/articles/bitsquid.blogspot.com/2012-10-17_a-data-oriented-data-driven-system-for-vector-fields-part-3.md
+raw/articles/bitsquid.blogspot.com/2012-11-01_bitsquid-foundation-library.md

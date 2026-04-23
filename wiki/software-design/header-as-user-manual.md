@@ -44,12 +44,12 @@ void deallocate_model(model_3d_ref kill_this);
 Supnik 自己后来在 2019-2021 年一系列 C++ 文章里（见 [[cpp-multi-paradigm-discipline]]）依然贯彻这条：C++ 模板/继承/friend 都容易把实现泄露到头文件里，他因此偏好 `pimpl` + C ABI 接口，即使损失零售性能也要换取头文件纯净。本文是他这条长期偏好的最早源头之一。
 
 ## 相关
-
 - [[information-hiding]]
 - [[c-opaque-struct-modules]]
 - [[deep-modules]]
 - [[cpp-multi-paradigm-discipline]]
 - [[header-file-vs-pub-export]]
+- [[types-h-data-code-separation]] —— 另一种 header 组织哲学：数据集中 / 函数按功能分散
 
 ## Sources
 

@@ -88,6 +88,7 @@ sources: 371
 | [[async-api-id-tokens]] | 异步 API 的极简设计：ID token + round-robin + implicit API |
 | [[cleaning-bad-code]] | Frykholm 9 条：遗留代码清理操作手册（改良优于革命）|
 | [[encapsulation-over-polymorphism]] | Supnik 2010：OOP 三要素 90/10/0 启发式，封装才是核心 |
+| [[types-h-data-code-separation]] | Bitsquid：types.h 集中数据、函数按功能分组的 header 组织 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -342,6 +343,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[platform-specific-resources-property-system]] | Bitsquid property 机制：文件名段统一处理平台/本地化/业务变体 |
 | [[ragdoll-velocity-inheritance]] | 角色切 ragdoll 瞬间把动画速度传进物理：last_world 方案与四种候选对比 |
 | [[pesce-2010-engine-layer-sketch]] | Pesce 2010 年社区协作引擎分层草图：六层结构 + DevOps 摆首层 |
+| [[vector-field-bytecode-vm]] | Bitsquid 向量场：外循环指令 / 内循环数据的向量化字节码 VM |
+| [[bitsquid-foundation-library-concept]] | Bitsquid 2012 开源的最小引擎基座：allocator + 反 STL 集合 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1903,6 +1906,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-gbuffer-format]] | Supnik 2010-12：X-Plane 10 G-Buffer 格式自述（4 RT / 16 B / 浮点字段打包） |
 | [[sources/supnik-fmtt-glsl-edition]] | Supnik 2010-12：X-Plane G-Buffer 的 GLSL `gl_FragData[0..3]` 实现样本 |
 | [[sources/supnik-what-oop-isnt]] | Supnik 2010-12：90/10/0 OOP 三要素启发式 + 评论区对实现继承的细化 |
+| [[sources/bitsquid-organizing-header-files]] | Frykholm 2012：types.h 集中数据、函数按功能分组的 header 组织方式 |
+| [[sources/bitsquid-vector-fields]] | Frykholm 2012 三部曲合并：向量场的外循环指令/内循环数据字节码 VM |
+| [[sources/bitsquid-foundation-library]] | Frykholm 2012：Bitsquid Foundation Library 开源发布（MIT / allocator + POD 集合）|
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
