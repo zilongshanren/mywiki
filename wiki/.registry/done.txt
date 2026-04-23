@@ -11726,3 +11726,8 @@ raw/articles/hacksoflife.blogspot.com/2010-01-28_templating-functions.md
 raw/articles/hacksoflife.blogspot.com/2010-01-29_the-devil-is-in-the-details.md
 raw/articles/hacksoflife.blogspot.com/2010-01-31_to-strip-or-not-to-strip.md
 raw/articles/hacksoflife.blogspot.com/2010-02-01_moore-s-law-and-openness.md
+raw/articles/joostdevblog.blogspot.com/2010-10-03_camera-mapping-the-evil-pope.md
+raw/articles/joostdevblog.blogspot.com/2010-10-10_captain-august-got-camera-mapped.md
+raw/articles/joostdevblog.blogspot.com/2010-10-16_camera-mapping-tips-and-tricks.md
+raw/articles/joostdevblog.blogspot.com/2010-10-20_dirty-collision-detection-trickery-in-proun.md
+raw/articles/joostdevblog.blogspot.com/2010-10-30_designing-against-motion-sickness-in-proun.md

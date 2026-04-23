@@ -840,3 +840,6 @@ dual-mode-gui-bitsquid
 opengl-builtin-attribute-aliasing
 cpp-template-value-vs-type-parameter
 triangle-strips-vs-indexed-triangles
+camera-mapping-2d-to-3d
+fixed-3000fps-gameplay-simplicity
+motion-sickness-camera-design

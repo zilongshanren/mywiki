@@ -772,6 +772,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[sdf-font-atlas-rendering]] | 基于 AngelCode BMFont + distance field 的字体渲染 |
 | [[opengl-builtin-attribute-aliasing]] | NVidia 对 GLSL 内置顶点属性与 generic attribute 的别名处理偏离 GL 2.1 规范 |
 | [[triangle-strips-vs-indexed-triangles]] | 在索引化时代三角带的 vertex 复用优势大幅缩水，draw call 成本才是瓶颈 |
+| [[camera-mapping-2d-to-3d]] | 把 2D 插画投影到粗 3D 几何上做可动画的「活画」（Joost van Dongen / Proun） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -842,6 +843,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[unreal-pawn-playercontroller-pattern]] | Unreal 里 GameMode / Pawn / PlayerController 三件套分离，从 UDK 到 UE5 一脉相承 |
 | [[json-3-way-merge]] | Bitsquid：理解 JSON 结构的三路合并，解决内容 merge 冲突 |
 | [[guid-object-database-schema]] | Bitsquid：GUID + key-value + 5 种操作，把内容数据库做成无冲突可 diff 的小型 NoSQL |
+| [[fixed-3000fps-gameplay-simplicity]] | Proun 用 3000fps 固定步长换碰撞代码简单性 |
+| [[motion-sickness-camera-design]] | 无地平线游戏的抗晕眩摄像机：不做 smoothing、载具钉中心 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1730,6 +1733,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-templating-functions]] | Supnik：C++ 模板按值参数化函数指针才能内联 |
 | [[sources/supnik-devil-in-details]] | Supnik：Stack Overflow 不是免费调试服务——OpenGL bug 的三类 taxonomy |
 | [[sources/supnik-to-strip-or-not-to-strip]] | Supnik：为什么 X-Plane 在桌面 GL 上全部用 indexed triangles，放弃三角带 |
+| [[sources/joostdevblog-camera-mapping]] | Joost van Dongen：把 2D 插画投影成 3D 动画的三连载（Evil Pope / Captain August / tips）|
+| [[sources/joostdevblog-proun-3000fps-collision]] | Joost van Dongen：Proun 把 gameplay 锁在 3000fps 解决碰撞 tunneling |
+| [[sources/joostdevblog-proun-motion-sickness]] | Joost van Dongen：Proun 抗晕眩的摄像机设计决策 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

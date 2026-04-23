@@ -986,3 +986,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-77 Worker HW (hacksoflife.blogspot.com ×5)
 
 处理 Ben Supnik 2010 年 1-2 月 5 篇早期博文。新增 3 概念页（opengl-builtin-attribute-aliasing / cpp-template-value-vs-type-parameter / triangle-strips-vs-indexed-triangles）、4 source 摘要，跳过 1 篇 iPhone 沙盒+Moore's Law 编辑性评论。Patch 更新 ben-supnik 人物页与 draw-call / opengl-draw-call-batching-sweet-spot 两条相关链接。
+
+## [2026-04-19] ingest | Wave-77 Worker HX (joostdevblog.blogspot.com ×5 — Proun 2010-10)
+
+处理 5 篇 Joost van Dongen 2010-10 博客：三篇 camera mapping 合并为 1 source 摘要 + 1 概念页（camera-mapping-2d-to-3d）；碰撞 3000fps trick 与抗晕眩摄像机各自独立成 source+concept。新增 3 概念页、3 source 摘要，给已有 joost-van-dongen 人物页追加 sources 与相关链接。

@@ -11,10 +11,12 @@ sources: 3
 技术关注面很杂：从 Blender 硬表面建模、着色器、程序化音乐工具（Robo Maestro），到 indie 商业与出版商 pitch。博客 *Joost's Dev Blog* 长期输出，后期越写越短、越偏工作室运营和行业观察。
 
 ## 相关
-
 - [[blender-hard-surface-modeling]] —— 为 Robo Maestro 机器人所用的 Blender crease / bevel weight / harden normals 组合
 - [[indie-pitching-publishers]] —— 17 年 pitch 经验总结
 - [[game-idea-generation]] —— 从非游戏领域（现代艺术、建筑、博弈论）借创意
+- [[camera-mapping-2d-to-3d]] —— 把 2D 插画投影到粗 3D 几何做可动画的「活画」
+- [[fixed-3000fps-gameplay-simplicity]] —— Proun 的 3000fps 固定步长碰撞 trick
+- [[motion-sickness-camera-design]] —— Proun 抗晕眩摄像机设计
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -22,3 +24,6 @@ sources: 3
 - [[sources/joostdevblog-pitching-to-publishers]]
 - [[sources/joostdevblog-dof-blur-proun]]
 - [[sources/joostdevblog-overbright-fake-hdr]]
+- [[sources/joostdevblog-camera-mapping]]
+- [[sources/joostdevblog-proun-3000fps-collision]]
+- [[sources/joostdevblog-proun-motion-sickness]]
