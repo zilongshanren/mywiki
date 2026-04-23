@@ -40,7 +40,7 @@ Supnik 用 range 重写了航路（victor airway）和导航数据库查询。�
 - 2014+ Eric Niebler 的 range-v3 实现
 - C++20 正式并入 `std::ranges`
 
-也因此 Supnik 这篇文章是一个有趣的时代切片——独立工程师凭第一性原理**重新发明了语言标准委员会要走十年才落地的东西**。对照 [[stl-not-abstraction-prescription]]、[[more-stl-abstraction-in-x-plane]] 看，可以理解他为何对 STL 的迭代器抽象始终保持怀疑。
+也因此 Supnik 这篇文章是一个有趣的时代切片——独立工程师凭第一性原理**重新发明了语言标准委员会要走十年才落地的东西**。对照 [[stl-not-abstraction-prescription]] 的系列反思，可以理解他为何对 STL 的迭代器抽象始终保持怀疑。
 
 ## Sources
 

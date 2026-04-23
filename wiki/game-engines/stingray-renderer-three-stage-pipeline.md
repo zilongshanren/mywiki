@@ -49,5 +49,5 @@ Stingray 渲染代码明显偏 DOD：设计新系统时先琢磨数据怎么存�
 这篇算是一个总纲——作者在文末声明接下来要讲 GPU 资源、RenderDevice、shader 系统等 Render 阶段的构件，而 culling 与 state reflection 两条他让给了 Andreas Asplund 的专题文。
 
 ## Sources
-
 - [[sources/bitsquid-renderer-walkthrough-1-overview]]
+- [[sources/bitsquid-renderer-walkthrough-3-6-canonical]]

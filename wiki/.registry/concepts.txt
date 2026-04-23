@@ -978,3 +978,7 @@ stingray-simd-sphere-oobb-culling
 stingray-renderer-three-stage-pipeline
 stingray-render-resource-context
 solid-motion-sweep
+stingray-render-context
+stingray-sort-key-bit-layout
+stingray-render-device-dispatch
+stingray-render-interface

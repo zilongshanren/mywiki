@@ -896,6 +896,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[stingray-simd-sphere-oobb-culling]] | Asplund：SoA + SIMD + 多线程的 sphere→OOBB 两级视锥剔除 |
 | [[stingray-render-resource-context]] | Tobias：RenderResource 24+8 位 handle + RRC command-buffer 化的跨 API 资源抽象 |
 | [[solid-motion-sweep]] | 沿动画时间轴扫掠 mesh 生成实体雕塑的 MAXScript |
+| [[stingray-render-context]] | Tobias：RenderContext 录 draw call + RenderJobPackage 自包含 + sort_key 驱动 |
+| [[stingray-sort-key-bit-layout]] | Tobias：64-bit sort_key 分段位布局 + 单次 stable radix sort |
+| [[stingray-render-device-dispatch]] | Tobias：RenderDevice 并行 dispatch + instance merging + 多 API 后端 |
+| [[stingray-render-interface]] | Tobias：RenderInterface 粘合层 + 阻塞/非阻塞 ring buffer 二分 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2035,6 +2039,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-renderer-walkthrough-2-resources]] | Tobias 2017：Stingray GPU 资源与 RenderResourceContext |
 | [[sources/joostdevblog-games-as-expression]] | Joost：游戏作为自我表达，Proun 为例 |
 | [[sources/joostdevblog-solid-motion]] | Joost：Solid Motion 扫掠体的 MAXScript 实现 |
+| [[sources/bitsquid-renderer-walkthrough-3-6-canonical]] | Tobias 2017：Stingray RenderContext / sort_key / RenderDevice / RenderInterface 四连 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

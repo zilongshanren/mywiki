@@ -1190,3 +1190,7 @@ Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-ga
 ## [2026-04-19] ingest | Wave-94 Worker JW (joostdevblog 2011-07 to 2011-08 ×5)
 
 Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expression`（游戏作为第三种开发动机——自我表达，Proun 为案例，反 playtest 决策）、`solid-motion`（2006 年自创 MAXScript 技术：沿动画时间轴扫掠 mesh 生成高面数静态雕塑，400 万三角形，Futurism 艺术史驱动）。3 篇跳过：Sheriff Lonestar 角色 reveal 预告、Proun highscore SQL 服务器补丁通告、Awesomenauts 开场 CG 发布公告——均为纯营销/运营短文。新增 1 概念页（solid-motion-sweep）、2 source 摘要；在 joost-van-dongen 人物页追加 1 概念 + 2 条 Sources 引用。
+
+## [2026-04-19] ingest | Wave-94 Worker ju (bitsquid Stingray Renderer Walkthrough 3-6)
+
+处理 5 篇 bitsquid.blogspot.com 上 Tobias Persson 的 Stingray Renderer Walkthrough 系列文章。第 1 篇 (2017-02-01 同题博客) 为系列目录 hub，跳过（Walkthrough #1 Overview 与 #2 Resources 已由其他 raw 文件覆盖）。Parts 3-6 合并为一条 canonical source 摘要，新增 4 概念页：stingray-render-context（RenderContext 录 draw call + RenderJobPackage）、stingray-sort-key-bit-layout（64-bit sort_key 分段）、stingray-render-device-dispatch（并行 dispatch + instance merging）、stingray-render-interface（跨线程粘合层 + 阻塞/非阻塞二分）。补丁回 tobias-persson、stingray-renderer-three-stage-pipeline、stingray-render-resource-context 三页。

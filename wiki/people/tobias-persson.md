@@ -23,8 +23,13 @@ Bitsquid 共同创始人之一，与 [[niklas-frykholm]] 一起主导 Bitsquid �
 - [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 CPU 侧三阶段数据并行架构
 - [[stingray-render-resource-context]] —— RenderResource + RRC 的跨 API 资源抽象
 - [[main-render-thread-state-reflection]] —— 主/渲染线程状态镜像（Tobias 在 Walkthrough #1 里引用 Asplund 专文）
+- [[stingray-render-context]] —— RenderContext：draw call 录制 + sort_key 驱动的命令流
+- [[stingray-sort-key-bit-layout]] —— 64-bit sort_key 位布局：layer / pass / depth / instance
+- [[stingray-render-device-dispatch]] —— RenderDevice 并行 dispatch + instance merging
+- [[stingray-render-interface]] —— 跨线程粘合层：阻塞/非阻塞二分
 
 ## Sources
 - [[sources/bitsquid-render-config-extensions]]
 - [[sources/bitsquid-renderer-walkthrough-1-overview]]
 - [[sources/bitsquid-renderer-walkthrough-2-resources]]
+- [[sources/bitsquid-renderer-walkthrough-3-6-canonical]]

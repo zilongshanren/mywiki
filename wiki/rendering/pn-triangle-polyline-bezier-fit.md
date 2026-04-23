@@ -26,7 +26,7 @@ sources: 1
 
 ## 第二步：自底向上 Bézier 合并（不用 Douglas-Peucker）
 
-第一步结束后，每个原始顶点附近都多出了 1-2 个控制点，点数比原始折线还多。需要**简化**，但 [[ramer-douglas-peucker|Douglas-Peucker]] 行不通——它丢弃的是「离直线近的点」，不考虑 Bézier 曲率信息。
+第一步结束后，每个原始顶点附近都多出了 1-2 个控制点，点数比原始折线还多。需要**简化**，但 Ramer–Douglas–Peucker 行不通——它丢弃的是「离直线近的点」，不考虑 Bézier 曲率信息。
 
 Supnik 的解法是**两曲线合一**的暴力搜索：
 

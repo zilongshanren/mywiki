@@ -80,10 +80,10 @@ RRC 还能持有**平台专用 allocator**，允许直接从 GPU-mapped memory �
 Stingray 到底是哪种路径作者没在这篇里揭晓，但这个提问本身很好地暴露了 command-buffer 化资源系统的一个本质问题：**handle 要么延迟绑定、要么本地命名空间 + 提交期映射**。
 
 ## 与其他 Stingray 子系统的关系
-
 - [[stingray-renderer-three-stage-pipeline]] —— RRC 的 command buffer 化是三阶段架构的一致思路；
 - [[main-render-thread-state-reflection]] —— 同一 pattern 的 simulation-state 版本；
 - [[d3d12-resource-binding]] —— 对比现代 API 的 bindless 思路，Stingray 的 `render_resource_handle` 可以看作 CPU 侧 bindless 表的早期形态。
+- [[stingray-render-context]] —— RC 是 RRC 的 draw-call 侧姊妹结构，复用 command-buffer 化 + sort_key 调度的同一 pattern
 
 ## Sources
 

@@ -11981,3 +11981,8 @@ raw/articles/joostdevblog.blogspot.com/2011-07-26_meet-the-awesomenauts-sheriff-
 raw/articles/joostdevblog.blogspot.com/2011-07-26_proun-highscore-system-patched.md
 raw/articles/joostdevblog.blogspot.com/2011-07-30_solid-motion.md
 raw/articles/joostdevblog.blogspot.com/2011-08-23_awesomenauts-intro-cinematic-released.md
+raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough.md
+raw/articles/bitsquid.blogspot.com/2017-02-10_stingray-renderer-walkthrough-3-render-contexts.md
+raw/articles/bitsquid.blogspot.com/2017-02-14_stingray-renderer-walkthrough-4-sorting.md
+raw/articles/bitsquid.blogspot.com/2017-02-17_stingray-renderer-walkthrough-5-renderdevice.md
+raw/articles/bitsquid.blogspot.com/2017-02-22_stingray-renderer-walkthrough-6-renderinterface.md
