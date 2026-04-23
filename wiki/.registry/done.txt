@@ -11826,3 +11826,8 @@ raw/articles/bitsquid.blogspot.com/2012-01-22_sensible-error-handling-part-1.md
 raw/articles/bitsquid.blogspot.com/2012-02-05_sensible-error-handling-part-2.md
 raw/articles/bitsquid.blogspot.com/2012-02-20_sensible-error-handling-part-3.md
 raw/articles/bitsquid.blogspot.com/2012-03-04_caring-by-sharing-the-bitsquid-documentation-system.md
+raw/articles/blog.playcanvas.com/2013-04-22_london-html5-game-developers-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2013-04-24_welcome-ludum-darers-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2013-06-21_importing-in-the-cloud-new-asset-pipeline-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2013-08-06_moving-to-playcanvas-com-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2013-08-07_a-wild-programmer-appears-playcanvas-blog.md

@@ -20,7 +20,6 @@ sources: 14
 - 2026-02 发布 SuperSplat Studio（annotations + post effects + tonemapping），2026-03 发布 Walk Mode（voxel collision 驱动的第一人称探索）+ Streamed LOD（基于 SOG 切片）+ Easy Upload。
 
 ## 相关
-
 - [[webgpu-intro]]
 - [[playcanvas-webgpu-editor]]
 - [[gaussian-splatting-web]]
@@ -28,6 +27,7 @@ sources: 14
 - [[playcanvas-engine-2-breaking-changes]]
 - [[supersplat-publish-platform]]
 - [[mark-lundin]]
+- [[dave-evans]]
 
 ## Sources
 

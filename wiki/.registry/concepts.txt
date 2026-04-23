@@ -900,3 +900,4 @@ error-context-stack
 minimize-points-and-types-of-failure
 warnings-as-errors-strategy
 now-principle-productivity
+playcanvas-cloud-asset-pipeline

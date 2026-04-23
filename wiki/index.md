@@ -902,6 +902,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[motion-sickness-camera-design]] | 无地平线游戏的抗晕眩摄像机：不做 smoothing、载具钉中心 |
 | [[variable-timestep-smoothing]] | Bitsquid 变步长时间平滑：11 帧历史去两高两低取 7 均再 lerp |
 | [[local-navigation-over-pathfinding]] | A* is Overrated：局部避障比最短路径算法更决定 AI 靠谱感 |
+| [[playcanvas-cloud-asset-pipeline]] | PlayCanvas 2013 云端资产管线：浏览器拖入 FBX/COLLADA 即转码 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -996,6 +997,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[people/marte-randomtower]] | Marte，Random Tower 博客作者，Flash/AS3 独立游戏开发者 |
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（Arkanova），希腊 demoscene / Linux 图形程序员，4rknova.com 站长 |
 | [[patrick-stein]] | Patrick Stein（nklein software），Common Lisp / CL-OpenGL 爱好者，TC Lispers 活跃贡献者 |
+| [[dave-evans]] | Dave Evans，PlayCanvas 联合创始人，早期博客主力作者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1861,6 +1863,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-sensible-error-handling-part-2]] | Niklas：expected error 的 API 收敛与错误码回归 |
 | [[sources/bitsquid-sensible-error-handling-part-3]] | Niklas：warning 分类与升格为 error 的战术 |
 | [[sources/bitsquid-documentation-system-code]] | Niklas：Bitsquid 文档系统代码公开，line-by-line + HTML context 栈 |
+| [[sources/playcanvas-cloud-asset-pipeline]] | Evans：PlayCanvas 把资产转码搬进浏览器（2013） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

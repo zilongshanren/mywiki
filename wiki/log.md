@@ -1066,3 +1066,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-83 Worker IN (bitsquid 2012 early x5)
 
 处理 5 篇 2012 年初 Bitsquid Blog：5 Tips + Sensible Error Handling 三部曲 + 文档系统代码公开。新增 5 个 software-design 概念页：crash-on-unexpected-errors、error-context-stack、minimize-points-and-types-of-failure、warnings-as-errors-strategy、now-principle-productivity。新增 5 个 source 摘要。文档系统一文不单建概念页，而是补丁到已有 minimal-markup-pipeline。niklas-frykholm 人物页已存在，追加相关概念与 5 条 source 链接。
+
+## [2026-04-19] ingest | Wave-84 Worker IS (blog.playcanvas.com 2013 ×5)
+
+处理 5 篇 2013 年 PlayCanvas 早期博客。仅保留 1 篇云端资产管线发布公告（Dave Evans, 2013-06），其余 4 篇（meetup / Ludum Dare / 域名搬家 / 招人）SKIP 为社区公告。新增 1 概念页 [[playcanvas-cloud-asset-pipeline]]、1 人物页 [[dave-evans]]、1 source 摘要。
