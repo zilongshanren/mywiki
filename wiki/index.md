@@ -85,6 +85,8 @@ sources: 371
 | [[now-principle-productivity]] | Bitsquid 五条日常纪律：5 分钟规则、修病根、心流、VCS、build server |
 | [[pimpl-vs-pure-virtual]] | Bitsquid：C 不透明指针 / C++ PIMPL / 纯虚抽象类三种隔离方式的工程取舍 |
 | [[no-frame-delays-principle]] | Bitsquid 戒律：动作立即生效，禁止延迟一帧引入灰色过渡态 |
+| [[async-api-id-tokens]] | 异步 API 的极简设计：ID token + round-robin + implicit API |
+| [[cleaning-bad-code]] | Frykholm 9 条：遗留代码清理操作手册（改良优于革命）|
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -837,6 +839,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpu-sliced-volumetric-shadows-limits]] | GPU sliced shadow 在 flight-sim 云场景下的失败模式：不透明粒子 + 分桶 + popping |
 | [[linear-lighting-pipeline]] | 线性光照累积的三种管线路径：shader 内累加 / sRGB framebuffer blend / HDR float RT |
 | [[matrix-as-basis-vectors]] | 3x3 矩阵作为基向量：列是 decoder、行是 encoder |
+| [[video-codec-licensing-tradeoffs]] | 引擎视频播放的 codec 选型：H.264 / VP8 / Bink / 平台原生 / 不做 |
+| [[particle-collision-plane-cache]] | 每粒子自带平面 + 空间哈希缓存 raycast 结果 |
+| [[matrix-scale-drift]] | Matrix4x4 里 rotation/scale 共享存储引发的 28 分钟 0.1% 漂移 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1884,6 +1889,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-basis-projection]] | Supnik：矩阵行是 encoder、转置即逆的几何意义 |
 | [[sources/supnik-is-1-a-lot]] | Supnik：杠杆率与 Shark profile 上的 X-Plane 9.62 |
 | [[sources/supnik-semaphore-vs-condvar]] | Supnik：cond var 重锁开销与 mach semaphore 方案 |
+| [[sources/bitsquid-playing-with-video]] | Frykholm 2012：视频 codec 选型——VP8 赢在最 free |
+| [[sources/bitsquid-hack-day-report]] | Frykholm 2012：hack day 粒子碰撞重写（每粒子 plane + 空间 hash）|
+| [[sources/bitsquid-matrices-rotation-scale-drifting]] | Frykholm 2012：Matrix4x4 scale 漂移与四种修法 |
+| [[sources/bitsquid-simpler-async-api]] | Frykholm 2012：异步 API 的 ID token / implicit 激进简化 |
+| [[sources/bitsquid-cleaning-bad-code]] | Frykholm 2012：清理烂代码 9 条操作手册 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

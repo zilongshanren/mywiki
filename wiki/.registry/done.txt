@@ -11851,3 +11851,8 @@ raw/articles/hacksoflife.blogspot.com/2010-11-28_change-of-basis-revisited.md
 raw/articles/hacksoflife.blogspot.com/2010-11-29_basis-projection.md
 raw/articles/hacksoflife.blogspot.com/2010-11-30_is-1-a-lot.md
 raw/articles/hacksoflife.blogspot.com/2010-12-03_performance-of-semaphore-vs-condition-variable.md
+raw/articles/bitsquid.blogspot.com/2012-05-20_playing-with-video.md
+raw/articles/bitsquid.blogspot.com/2012-06-19_hack-day-report.md
+raw/articles/bitsquid.blogspot.com/2012-07-03_matrices-rotation-scale-and-drifting.md
+raw/articles/bitsquid.blogspot.com/2012-08-04_a-simpler-design-for-asynchronous-apis.md
+raw/articles/bitsquid.blogspot.com/2012-08-18_cleaning-bad-code.md

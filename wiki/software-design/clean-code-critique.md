@@ -66,12 +66,12 @@ release 差不多，debug 差 57%。多数业内观察者（Elopez、Muratori、
 - **默认怀疑新抽象**，而不是默认推崇。
 
 ## 相关
-
 - [[graphics-programmer-constraints]]
 - [[tactical-programming]]
 - [[strategic-programming]]
 - [[aos-vs-soa]]
 - [[cognitive-load]]
+- [[cleaning-bad-code]] — Frykholm 的遗留代码清理操作手册（9 条）
 
 ## Sources
 

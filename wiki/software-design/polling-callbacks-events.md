@@ -113,13 +113,13 @@ Niklas 在最后一段强调一条原则——**event 系统不应该是一个�
 评论区问：event 谁来清？——**消费者每帧处理完一次就清空**。生产过快导致溢出？**要么扩 buffer，要么丢最旧的，要么暂时冻结生产者**——这是每个子系统要自己根据语义决定的权衡。
 
 ## 相关
-
 - [[system-decoupling-patterns]] — 本系列第一篇：四条耦合管理原则
 - [[id-based-lifetime-with-kill-flag]] — 延迟回调中引用对象是否还活着的查询机制
 - [[handle-based-resource-manager]]
 - [[intent-vs-state]] — poll 对应"看状态"，callback/event 对应"看意图"
 - [[flow-graph-data-oriented-runtime]]
 - [[niklas-frykholm]]
+- [[async-api-id-tokens]] — 同一位作者把 async API 简化到 ID token / implicit API
 
 ## Sources
 

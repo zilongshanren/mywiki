@@ -71,13 +71,13 @@ Xor 在原文里声明「留到下一篇」，本 wiki 暂作占位。四元数�
 Xor 的总结一句话：**旋转总是发生在某一个平面上**。2D 里只有一个平面，所以是最简单的情形；3D 里有无数个平面，所以才出现了这么多形式。高维（4D+）就需要更抽象的工具（如旋量/geometric algebra）。
 
 ## 相关
-
 - [[mvp-transform]] — 旋转是 view/model 矩阵的一部分
 - [[coordinate-spaces]]
 - [[fragment-shader]]
 - [[xor-shader-artist]]
 - [[shader-vector-math-primer]] —— shader 向量运算的几何直觉（dot/cross/normalize）
 - [[exponential-map-rotations]] — 用矩阵指数 / 对数把四种表示串起来，并支持 Karcher mean 平均一组旋转
+- [[matrix-scale-drift]] — Matrix4x4 存 rotation+scale 的数值稳定性陷阱
 
 ## Sources
 

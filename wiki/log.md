@@ -1086,3 +1086,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-85 Worker IU (hacksoflife Supnik 2010-11/12 ×5)
 
 处理 Ben Supnik 2010 年末 5 篇：more-stl-abstraction / change-of-basis-revisited / basis-projection / is-1-a-lot / semaphore-vs-condvar。change-of-basis 双篇合并成 matrix-as-basis-vectors 一个概念页（encoder/decoder 双视角）；另新增 optimization-leverage-ratio（Amdahl 的工程化）与 semaphore-vs-condvar-latency（pthread cond var 重锁坑）。stl 续篇 patch 回已有 stl-not-abstraction-prescription。人物页 ben-supnik source count 22→27。
+
+## [2026-04-19] ingest | Wave-85 Worker IT (bitsquid 2012 mid ×5)
+
+处理 bitsquid.blogspot.com 2012-05 到 2012-08 共 5 篇 Niklas Frykholm 文章。新增 5 概念页（video-codec-licensing-tradeoffs, particle-collision-plane-cache, matrix-scale-drift, async-api-id-tokens, cleaning-bad-code）和 5 source 摘要。niklas-frykholm 人物页追加 5 条 source 链接；polling-callbacks-events / clean-code-critique / 3d-rotation-math 各追加一条 cross-link。无跳过。

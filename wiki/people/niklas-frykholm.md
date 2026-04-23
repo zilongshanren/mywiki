@@ -89,3 +89,8 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-pimpl-vs-pure-virtual]]
 - [[sources/bitsquid-inheriting-velocity-ragdolls]]
 - [[sources/bitsquid-embracing-dynamism]]
+- [[sources/bitsquid-playing-with-video]]
+- [[sources/bitsquid-hack-day-report]]
+- [[sources/bitsquid-matrices-rotation-scale-drifting]]
+- [[sources/bitsquid-simpler-async-api]]
+- [[sources/bitsquid-cleaning-bad-code]]
