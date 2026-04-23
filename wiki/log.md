@@ -1002,3 +1002,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-78 Worker HZ (hacksoflife.blogspot.com 2010-02 ×5)
 
 处理 Ben Supnik 2010 年 2 月的 5 篇 X-Plane 技术短文，全部 ingest。新增 5 概念页：stl-not-abstraction-prescription（软件设计反面案例）、huge-world-coordinate-precision（大世界 float 精度）、function-vs-data-pointer-portability（GLX 函数指针签名）、texture2dgrad-explicit-derivatives（UV 不连续与 LOD）、uv-precision-derivative-loss（vertex projected UV 精度耗尽）。新增 5 source 摘要。对 ben-supnik、false-abstraction、abstraction、coordinate-spaces、fwidth-derivative-antialiasing 打 patch。
+
+## [2026-04-19] ingest | Wave-78 Worker HY (bitsquid.blogspot.com 2010 末/2011 初 ×5)
+
+处理 5 篇 Niklas Frykholm Bitsquid 早期文章：time step smoothing、A* is overrated、C++ coding style（skip：raw 正文为空，全是评论）、managing coupling part 1 & 2。新增 4 概念页：[[variable-timestep-smoothing]]、[[local-navigation-over-pathfinding]]、[[system-decoupling-patterns]]、[[polling-callbacks-events]]；4 source 摘要；对 [[a-star-pathfinding]] 与 [[niklas-frykholm]] 各打一条 append patch。Niklas 的解耦系列与 cloudwu 的 [[id-based-lifetime-with-kill-flag]]、既有 [[handle-based-resource-manager]] 形成交叉引用。

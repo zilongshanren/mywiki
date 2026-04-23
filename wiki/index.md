@@ -73,6 +73,8 @@ sources: 371
 | [[api-fast-path-design]] | Supnik：快/慢路径在 API 上显式拆分（X-Plane dataref 模式）|
 | [[no-magic-principle]] | 计算机里没有魔法：debug、学习与教学的基础姿态（Schöner） |
 | [[stl-not-abstraction-prescription]] | Supnik：STL 不是抽象（不隐藏细节），而是对实现与性能的精确规定 |
+| [[system-decoupling-patterns]] | Bitsquid 解耦四条：防 framework / 高层调度低层 / 允许复制 / ID 引用 |
+| [[polling-callbacks-events]] | 低层→高层通知三种方式：优先 poll / callback 必须延迟 / event 别做 global switchboard |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -855,6 +857,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[guid-object-database-schema]] | Bitsquid：GUID + key-value + 5 种操作，把内容数据库做成无冲突可 diff 的小型 NoSQL |
 | [[fixed-3000fps-gameplay-simplicity]] | Proun 用 3000fps 固定步长换碰撞代码简单性 |
 | [[motion-sickness-camera-design]] | 无地平线游戏的抗晕眩摄像机：不做 smoothing、载具钉中心 |
+| [[variable-timestep-smoothing]] | Bitsquid 变步长时间平滑：11 帧历史去两高两低取 7 均再 lerp |
+| [[local-navigation-over-pathfinding]] | A* is Overrated：局部避障比最短路径算法更决定 AI 靠谱感 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1758,6 +1762,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-glxgetprocaddressarb-syntax]] | Supnik：glXGetProcAddressARB 为什么返回函数指针而非 void* |
 | [[sources/supnik-change-uv-map-on-fly]] | Supnik：texture2DGradARB 解决 fract-UV 的 LOD 失配 |
 | [[sources/supnik-running-out-of-derivative-res]] | Supnik：顶点投影 UV 在 8800 GT 上耗尽导数精度 |
+| [[sources/bitsquid-time-step-smoothing]] | Niklas Frykholm：变步长下的 time step smoothing 策略 |
+| [[sources/bitsquid-a-is-overrated]] | Niklas Frykholm：A* is Overrated，导航不是寻路 |
+| [[sources/bitsquid-managing-coupling]] | Niklas Frykholm：引擎解耦四条原则 |
+| [[sources/bitsquid-managing-coupling-part-2]] | Niklas Frykholm：polling / callback / event 三选一的工程取舍 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -11746,3 +11746,8 @@ raw/articles/hacksoflife.blogspot.com/2010-02-04_how-to-scroll-the-opengl-world.
 raw/articles/hacksoflife.blogspot.com/2010-02-08_glxgetprocaddressarb-syntax.md
 raw/articles/hacksoflife.blogspot.com/2010-02-10_how-to-change-your-uv-map-on-the-fly.md
 raw/articles/hacksoflife.blogspot.com/2010-02-10_running-out-of-derivative-res.md
+raw/articles/bitsquid.blogspot.com/2010-10-18_time-step-smoothing.md
+raw/articles/bitsquid.blogspot.com/2010-10-20_a-is-overrated.md
+raw/articles/bitsquid.blogspot.com/2010-12-16_bitsquid-c-coding-style.md
+raw/articles/bitsquid.blogspot.com/2011-01-30_managing-coupling.md
+raw/articles/bitsquid.blogspot.com/2011-02-11_managing-coupling-part-2-polling-callbacks-and-events.md

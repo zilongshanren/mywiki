@@ -48,11 +48,12 @@ A\* 只是搜索策略，真正麻烦的是"在什么图上搜"。NavMesh（体�
 道路生成场景里，作者把搜索限定在 **以起点终点中点为圆心、以起终点距离为半径** 的圆形子空间内。这是个很实用的小技巧：牺牲"理论最优"换来一个有界搜索空间。
 
 ## 相关
-
 - [[game-engine]]
 - [[kinematic-character-controller]]
 - [[meshes-of-navigation-recast]] — Recast 的体素化 navmesh 生成管线
+- [[local-navigation-over-pathfinding]] — Niklas Frykholm 的"A* is Overrated"：算法只是导航里一小块，局部避障才是 AI 显得靠谱的关键
 
 ## Sources
 - [[sources/gameknife-pathfinding-review]]
 - [[sources/tedsie-a-star-tutorial]] — Ted Sie 2016-07 Unity + C# grid-based A* 四步实作教学
+- [[sources/bitsquid-a-is-overrated]] — Niklas Frykholm 2010：A* is Overrated，反对 cargo-cult 套 A*

@@ -853,3 +853,7 @@ huge-world-coordinate-precision
 function-vs-data-pointer-portability
 texture2dgrad-explicit-derivatives
 uv-precision-derivative-loss
+variable-timestep-smoothing
+local-navigation-over-pathfinding
+system-decoupling-patterns
+polling-callbacks-events
