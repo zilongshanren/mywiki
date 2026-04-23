@@ -11676,3 +11676,8 @@ raw/articles/hacksoflife.blogspot.com/2010-01-05_coding-for-two-audiences.md
 raw/articles/hacksoflife.blogspot.com/2010-01-14_fast-paths.md
 raw/articles/hacksoflife.blogspot.com/2010-01-27_a-tile-too-far.md
 raw/articles/hacksoflife.blogspot.com/2010-01-27_debugging-glsl.md
+raw/articles/alfredbaudisch.com/2021-03-11_sitemap.md
+raw/articles/alfredbaudisch.com/2021-03-11_website-and-dailies-again-inspired-by-beeple-everydays.md
+raw/articles/alfredbaudisch.com/2021-03-12_0002-personal-website-and-dailies-rules.md
+raw/articles/alfredbaudisch.com/2021-03-13_0003-hard-surface-modeling-first-photobash.md
+raw/articles/alfredbaudisch.com/2021-03-15_0004-retro-dachshund-rigged.md

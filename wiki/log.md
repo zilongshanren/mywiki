@@ -946,3 +946,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-73 Worker HK (hacksoflife.blogspot.com ×5, 2010-01)
 
 处理 Ben Supnik 2010 年 1 月 5 篇文章，全部 topical。新增 4 概念页（incremental-rearchitecting、header-as-user-manual、api-fast-path-design、number-puzzle-tile-shader）、5 source 摘要。ben-supnik 人物页和 gpu-printf-debugging 概念页为 registry 已有页——发 patch。主题覆盖：大重写的组织动力学 + 增量重构、头文件即用户手册、API 快/慢路径显式拆分（X-Plane dataref 模式）、shader 级瓦片随机化、GLSL printf 调试。
+
+## [2026-04-19] ingest | Wave-74 Worker hm (alfredbaudisch.com ×5)
+
+处理 alfredbaudisch.com 早期 dailies 批次（2021-03-11 至 03-15）5 篇。全部不过题材关：sitemap 为纯导航；hello-world 和 dailies-rules 为个人项目自律元帖；#0003 hard-surface + photobash 仅三句“建模难、光光难、photobash 有趣但难”并附截图，无具体技术；#0004 PS1 腊肠狗绑定仅为进度流水帐。同博客后期篇目（Substance Designer 首次、Banjo-Kazooie N64 地形、顶点色 Wash Car 等）如被抓取值得今后单独评估。零新增页面，无 patch。
