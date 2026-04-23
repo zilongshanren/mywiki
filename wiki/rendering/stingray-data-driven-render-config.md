@@ -37,13 +37,13 @@ Ben Mowery 在 2015 年底的一篇短文里拆出了三层配置：
 - **Bitsquid Flow** 做过 gameplay 层的可视化数据驱动（[[flow-graph-data-oriented-runtime]]），render_config 把同一哲学推到更硬的 GPU 层。
 
 ## 相关
-
 - [[data-driven-architecture]]
 - [[flow-graph-data-oriented-runtime]]
 - [[render-pass-orchestration]]
 - [[niklas-frykholm]]
 - [[bitsquid-foundation-library-concept]]
+- [[render-config-extension-points]] —— Stingray 1.5 的 plugin 扩展接口：append + insert_at 命名 hook
 
 ## Sources
-
 - [[sources/bitsquid-stingray-data-driven-rendering]]
+- [[sources/bitsquid-render-config-extensions]]

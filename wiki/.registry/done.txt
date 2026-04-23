@@ -11956,3 +11956,8 @@ raw/articles/joostdevblog.blogspot.com/2011-06-24_proun-out-now-for-pc-and-the-l
 raw/articles/joostdevblog.blogspot.com/2011-06-26_proun-website-temporary-move.md
 raw/articles/joostdevblog.blogspot.com/2011-06-27_can-anyone-help-me-find-new-hosting.md
 raw/articles/joostdevblog.blogspot.com/2011-06-27_proun-server-back-online.md
+raw/articles/bitsquid.blogspot.com/2016-01-29_stingray-support-hello-i-am-someone-who-can-help.md
+raw/articles/bitsquid.blogspot.com/2016-01-31_hot-reloadable-javascript-batman.md
+raw/articles/bitsquid.blogspot.com/2016-04-01_the-poolroom.md
+raw/articles/bitsquid.blogspot.com/2016-07-31_volumetric-clouds.md
+raw/articles/bitsquid.blogspot.com/2016-08-16_render-config-extensions.md

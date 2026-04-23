@@ -968,3 +968,6 @@ xplane-headlight-perf-teardown
 arrangement-mesh-simplification
 easy-to-learn-hard-to-master
 long-gestation-side-project
+javascript-hot-reload-dom-script
+stingray-volumetric-clouds-plugin
+render-config-extension-points

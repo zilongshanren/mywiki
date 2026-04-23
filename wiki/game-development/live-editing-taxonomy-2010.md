@@ -44,7 +44,6 @@ sources: 1
 八档阶梯的价值不在于分类本身，而在于**每一档都标注了它遗留的痛**。这让今天的工程师评估自己项目的工具链时，能定位自己在哪一档、下一步要补哪个缺口——而不是在「我们有热重载」这个笼统答案里自满。_The Witcher 2_ 的 [[runtime-editor-console-connection]] 对应第 5–6 档之间，[[tools-first-iteration-loop|Evan Todd 的 tools-first]] 论证则贯穿整张表。
 
 ## 相关
-
 - [[runtime-editor-console-connection]]
 - [[tools-first-iteration-loop]]
 - [[binary-hot-reload]]
@@ -52,6 +51,7 @@ sources: 1
 - [[decoupled-tool-engine-json-rpc]]
 - [[dependencies]]
 - [[angelo-pesce]]
+- [[javascript-hot-reload-dom-script]] —— Niklas 用 30 行 JS 做出的 code hot-swap 最小实现
 
 ## Sources
 

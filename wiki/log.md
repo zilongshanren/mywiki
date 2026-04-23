@@ -1170,3 +1170,7 @@ Supnik 2011-05 小集 5 篇：跳过 1 篇（i-hate-c comment-thread 片段）�
 ## [2026-04-19] ingest | Wave-92 Worker JQ (joostdevblog 2011-06 Proun release ×5)
 
 Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-game-design`（极简双键 gameplay 设计）、`proun-out-now`（六年副项目史 + CableRacer codebase 复用链）。3 篇 hosting/服务器 drama 跳过（网站被流量冲垮、找 host 求助、服务器回归）。新增 2 概念页（easy-to-learn-hard-to-master、long-gestation-side-project）、2 source 摘要；在 joost-van-dongen 人物页追加 2 条 概念 + 2 条 Sources 引用。
+
+## [2026-04-19] ingest | Wave-92 Worker JO (bitsquid 2016 ×5)
+
+处理 bitsquid.blogspot.com 2016 年五篇。Ingest 3：Niklas 的 JS 热重载小 trick（[[javascript-hot-reload-dom-script]]）、Jp Guertin 的 Stingray 体积云 plugin（[[stingray-volumetric-clouds-plugin]]）、Tobias Persson 的 render_config_extensions（[[render-config-extension-points]]）。新增 2 人物页（jp-guertin, tobias-persson）+ 3 source 摘要。Skip 2：Autodesk support specialist Dan Matlack 的 Stingray 用户指路公告（纯客服文档）、艺术家 Paul Kind 的 ArchViz 场景 Poolroom 制作手记（美术感想，无工程决策）。Niklas 人物页、stingray-data-driven-render-config、live-editing-taxonomy-2010 通过 patch 追加 Related 与 Sources。

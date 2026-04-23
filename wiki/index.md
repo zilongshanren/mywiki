@@ -166,6 +166,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[floating-point-geometric-predicates]] | 点积符号抖动、线线求交条件数爆炸、几何谓词的鲁棒化策略 |
 | [[c-bitwise-operator-precedence-history]] | 为何 C 的 `&` 优先级低于 `==`：B/BCPL 的历史包袱 |
 | [[lua-runtime-dynamism-tricks]] | Bitsquid 的 Lua 七招：REPL、热重载、API 劫持、动态 profiler、对象枚举 |
+| [[javascript-hot-reload-dom-script]] | Niklas：动态 script 节点 + polling 做出的 30 行 JS 热重载 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -886,6 +887,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[temporal-sao-reprojection]] | Stingray SAO 的 temporal reprojection + depth-mip moving bit |
 | [[8-bit-normal-map-precision-limits]] | Supnik 2011：RG8 切线法线贴图在高 specular exponent 下的量化极限 |
 | [[xplane-headlight-perf-teardown]] | Supnik 2011：X-Plane 10 车灯/AI 全流程性能手术案例 |
+| [[stingray-volumetric-clouds-plugin]] | Jp Guertin：HZD 体积云方案在 Stingray 里的开源实现 |
+| [[render-config-extension-points]] | Stingray 1.5：render_config 的 append + insert_at 命名扩展点 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1066,6 +1069,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[patrick-stein]] | Patrick Stein（nklein software），Common Lisp / CL-OpenGL 爱好者，TC Lispers 活跃贡献者 |
 | [[dave-evans]] | Dave Evans，PlayCanvas 联合创始人，早期博客主力作者 |
 | [[amandine-coget]] | Bitsquid / Stingray 渲染工程师，记录 DirectX SDK 迁移实录 |
+| [[jp-guertin]] | Jean-Philippe Guertin，Bitsquid/Stingray 渲染工程师（体积云/SAO/SSR/lens flare） |
+| [[tobias-persson]] | Tobias Persson，Bitsquid 共同创始人、data-driven renderer 主架构 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2010,6 +2015,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-instancing-limits]] | Supnik：X-Plane OpenGL instancing 上下限（≈100k batch 上限、2–3 instance 下限、client array 非加速） |
 | [[sources/joostdevblog-proun-game-design]] | Joost：Proun 两键玩法的深度设计 |
 | [[sources/joostdevblog-proun-history]] | Joost：Proun 六年开发史与代码复用链 |
+| [[sources/bitsquid-hot-reload-javascript]] | Niklas 2016：浏览器 JS 最小化热重载的实作笔记 |
+| [[sources/bitsquid-volumetric-clouds]] | Jp Guertin 2016：Stingray 体积云 plugin 的方法权衡实录 |
+| [[sources/bitsquid-render-config-extensions]] | Tobias Persson 2016：Stingray 1.5 的 render_config 扩展机制 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -60,6 +60,9 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[stingray-data-driven-render-config]] —— Stingray 把 data-driven 从 gameplay 推到整条渲染管线
 - [[stingray-package-manager]] —— Bitsquid 的 one-button build 工具链
 - [[temporal-sao-reprojection]] —— Jp Guertin 的 SAO temporal reprojection 工程记录
+- [[javascript-hot-reload-dom-script]] —— 30 行浏览器 JS 做出的最小化 code hot-swap
+- [[stingray-volumetric-clouds-plugin]] —— Jp Guertin 在 Stingray 里落地 HZD 体积云方案
+- [[render-config-extension-points]] —— Stingray 1.5 给 plugin 准备的命名扩展点
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -131,3 +134,6 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-temporal-sao]]
 - [[sources/bitsquid-stingray-data-driven-rendering]]
 - [[sources/bitsquid-stingray-package-manager]]
+- [[sources/bitsquid-hot-reload-javascript]]
+- [[sources/bitsquid-volumetric-clouds]]
+- [[sources/bitsquid-render-config-extensions]]
