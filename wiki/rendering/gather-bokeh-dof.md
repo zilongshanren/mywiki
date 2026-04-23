@@ -44,6 +44,7 @@ near-field 额外再把 CoC map 自己做 1/8 下采 + blur（取 tile 内的 ma
 - [[separable-gaussian-blur]] — creamy bokeh 的低成本近似
 - [[adrian-courreges]]
 - [[circular-separable-dof]] —— Frostbite/EA 的复数可分离圆盘 gather 路线
+- [[variable-size-gather-dof]] —— Scheuermann 2004 的早期 gather DoF，按 CoC 调整采样半径
 
 ## Sources
 

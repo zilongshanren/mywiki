@@ -750,6 +750,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[jpeg-codec-pipeline]] | JPEG 编码三段论：YCbCr+chroma 降采样、8×8 DCT 量化、Huffman 熵编码 |
 | [[jpeg-xl-format]] | JPEG-XL 编解码格式：可变 DCT、渐进解码与 AVIF/WebP 对比 |
 | [[efficient-sparse-voxel-octrees]] | Laine 2010 年 SVO 论文：contour + 紧凑编码 + CUDA 开源 |
+| [[variable-size-gather-dof]] | ATI Scheuermann 风格的按 CoC 变采样半径 gather DoF |
+| [[fake-hdr-half-brightness]] | 8-bit 渲染目标下以半亮度渲染 + 后期乘 2 伪装 HDR bloom |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1671,6 +1673,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-gpu-memory-latency]] | Chester Lam：GPU 多级缓存延迟实测（OpenCL pointer chasing）|
 | [[sources/raytracey-svo-path-tracing-update]] | Lapere：Voxelstein 3D + Laine SVO 论文 |
 | [[sources/raytracey-fermi-optix-benchmark]] | Lapere：Fermi / OptiX Design Garage 相对 GTX 285 提升 870% |
+| [[sources/joostdevblog-dof-blur-proun]] | van Dongen：Proun 的变采样半径景深（2010） |
+| [[sources/joostdevblog-overbright-fake-hdr]] | van Dongen：用半亮度渲染在 8-bit 后端伪装 HDR（2010） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

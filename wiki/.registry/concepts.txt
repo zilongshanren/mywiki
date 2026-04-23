@@ -812,3 +812,5 @@ cpu-scheduler-design
 jpeg-xl-format
 gpu-memory-hierarchy-latency
 efficient-sparse-voxel-octrees
+variable-size-gather-dof
+fake-hdr-half-brightness

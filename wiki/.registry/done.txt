@@ -11666,3 +11666,8 @@ raw/articles/raytracey.blogspot.com/2010-03-11_svo-and-path-tracing-update.md
 raw/articles/raytracey.blogspot.com/2010-03-27_fermi-a-raytracing-beast-and-fyc-fuck-you-charlie.md
 raw/articles/raytracey.blogspot.com/2010-04-02_gaiking-the-first-realtime-raytraced-game-using-otoy.md
 raw/articles/raytracey.blogspot.com/2010-04-03_octane-render-is-de-max.md
+raw/articles/joostdevblog.blogspot.com/2010-08-29_opening-speech.md
+raw/articles/joostdevblog.blogspot.com/2010-09-05_failed-fixed-leashing-in-proun.md
+raw/articles/joostdevblog.blogspot.com/2010-09-12_depth-of-field-blur-in-proun.md
+raw/articles/joostdevblog.blogspot.com/2010-09-18_overbright-colours-blur-and-faking-it.md
+raw/articles/joostdevblog.blogspot.com/2010-09-25_abstract-art.md

@@ -938,3 +938,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-73 Worker HL (raytracey.blogspot.com 2010-03/04 ×5)
 
 处理 5 篇 Sam Lapere 2010 年 3-4 月短博。2 篇入库（SVO+Laine 论文、Fermi+OptiX 基准），3 篇跳过（OTOY 新闻稿、Gaiking trailer、Octane 荷兰招聘）。新增 1 概念页 efficient-sparse-voxel-octrees，2 source 摘要；sam-lapere 已有页仅追加 source/相关链接。
+
+## [2026-04-19] ingest | Wave-73 Worker HJ (joostdevblog.blogspot.com ×5)
+
+处理 5 篇 Joost van Dongen 2010 年 Proun 早期博客。ingest 2（景深 + 伪 HDR）、skip 3（开场白/关卡 UX leashing/抽象艺术史随笔）。新增 2 概念页（variable-size-gather-dof, fake-hdr-half-brightness）、2 source 摘要；joost-van-dongen 人物页已存在，仅追加 source 链接。

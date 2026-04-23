@@ -17,7 +17,8 @@ sources: 3
 - [[game-idea-generation]] —— 从非游戏领域（现代艺术、建筑、博弈论）借创意
 
 ## Sources
-
 - [[sources/joostdevblog-where-to-get-original-ideas]]
 - [[sources/joostdevblog-robo-maestro-modelling-tricks]]
 - [[sources/joostdevblog-pitching-to-publishers]]
+- [[sources/joostdevblog-dof-blur-proun]]
+- [[sources/joostdevblog-overbright-fake-hdr]]
