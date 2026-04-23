@@ -60,6 +60,7 @@ float lod = log2(md) * 0.5;
 - [[xor-shader-artist]]
 - [[ptex-gpu-streaming]] — 生产 Ptex 在随机路径追踪下的一条务实结论：点采样 + 两层 MIP 线性插值即可，胜过跨面各向异性滤波
 - [[ray-differentials]] — 路径追踪里替代「屏幕空间导数」的工程化机制，双向技术下是硬骨头
+- [[morton-order-parallel-mipmap]] —— Supnik 2016 CPU 侧非递归生成：Morton 序一次遍历建完所有 mip，只在 sRGB 解码成本下值得
 
 ## Sources
 - [[sources/xor-mini-mipmaps]]

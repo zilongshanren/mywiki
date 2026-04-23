@@ -51,11 +51,11 @@ C89 时代标准 C 语言完全没有线程概念，pthreads 是作为库、按�
 即便换了 Rust 或 Java，系统底层几乎仍然建立在 C 运行时之上，FFI 是必经之路。数据竞争曾被分成「良性」与「危险」两类，但 Hans Boehm 的研究表明「良性数据竞争」这个类别根本不存在——任何数据竞争都可能触发 UB。因此「C 的 UB 问题」某种意义上是**整个软件栈的 UB 问题**，只是被挪到了一个更小、可以被严格审计的界面上。
 
 ## 相关
-
 - [[avoid-unsigned-types]]
 - [[fearless-simd]] — Raph 对 Rust 下安全/不安全边界的另一种实践
 - [[raph-linus]]
+- [[clang-null-reference-ub-optimization]] —— Supnik 2015：Clang 利用空引用 UB 删除整块 if 分支的 CGAL iterator 案例
 
 ## Sources
-
 - [[sources/raphlinus-undefined-behavior]]
+- [[sources/supnik-dangers-super-smart-compilers]] —— `&*ptr` idiom 在 Clang post-classical 优化下的生产事故

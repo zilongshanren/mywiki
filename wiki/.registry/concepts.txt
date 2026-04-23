@@ -1056,3 +1056,7 @@ importance-sampling-pdf-cancellation
 blender-euler-extrinsic-xyz-export
 art-asset-version-control-gap
 stable-csm-implementation-tips
+clang-null-reference-ub-optimization
+app-space-lock-free-simplification
+morton-order-parallel-mipmap
+refcount-decrement-before-table-lock-race

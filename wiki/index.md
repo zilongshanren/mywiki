@@ -100,6 +100,7 @@ sources: 371
 | [[component-degradable-build]] | Pesce 2011：`broken build` 是糟糕术语，应当支持部件级可降级构建 |
 | [[sasl-context-changer-raii-bug]] | RAII 匿名临时对象陷阱 + 静默 alGetError 六年无 bug report |
 | [[art-asset-version-control-gap]] | 艺术资产版本控制的需求清单与工具缺口（Supnik 2015） |
+| [[app-space-lock-free-simplification]] | 不做通用 lock-free，在应用层分层让 fast path 无锁 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -318,6 +319,8 @@ CAQA + CSAPP 的底层视角。
 | [[neoverse-n1-microarchitecture]] | ARM Neoverse N1 实测：与 Zen 2 的同代对比 |
 | [[via-x86-isaiah-lujiazui]] | VIA Isaiah（大装低功耗）与 Zhaoxin Lujiazui（砍窄凑 8 核）的两代 x86 拆解 |
 | [[cache-size-vs-latency-tradeoff]] | ChampSim 仿真：IBM 256 MB L3 vs AMD V-Cache 96 MB 的延迟/容量取舍 |
+| [[clang-null-reference-ub-optimization]] | Clang 借空引用 UB 删除 CGAL handle 比较整块的生产事故 |
+| [[refcount-decrement-before-table-lock-race]] | 必须先锁表再 decrement：atomic_dec 到 0 不等于安全 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -967,6 +970,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[glbuffersubdata-in-band-streaming]] | glBufferSubData 的 in-band 更新与 UBO 流式 fast path |
 | [[importance-sampling-pdf-cancellation]] | PDF 与 BRDF 分布项互相抵消——为什么 GGX IS 代码里没有 weight |
 | [[stable-csm-implementation-tips]] | Stable CSM 实施要点：整像素滑动、最优级联、pancake、贴图打包、Crysis 2 远级联隔帧更新观察 |
+| [[morton-order-parallel-mipmap]] | Morton 序一次遍历 CPU 生成整座 mipmap 金字塔 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2201,6 +2205,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-stable-csm-ideas]] | Pesce 2011：Stable CSM 实施清单 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch |
 | [[sources/c0de517e-debugging-dx9-stressful]] | Pesce 2011：PC DX9 调试工具链的一手吐槽（PIX-Windows / PerfHUD / GPA / apitrace / NSight） |
 | [[sources/c0de517e-vcs-next-gen]] | Pesce 2011：下一代游戏工作室 VCS 的三分法草图（DVCS 源码 + CoW 资产 FS + CI 分发） |
+| [[sources/supnik-dangers-super-smart-compilers]] | Supnik 2015-12：Clang 把空引用 UB 优化成删除整块 if |
+| [[sources/supnik-work-stealing-lock-free-chaos]] | Supnik 2016-01：work-stealing 笔记 + X-Plane 不做通用 lock-free |
+| [[sources/supnik-simultaneous-mipmap-generation]] | Supnik 2016-05：Morton 序一次性生成所有 mip 层 |
+| [[sources/supnik-asan-big-bucks]] | Supnik 2016-07：ASan 在 X-Plane 规模下的实战表现与 VBO 累加器越界案例 |
+| [[sources/supnik-worst-lock-ever]] | Supnik 2016-07：atomic_dec + table lock 顺序错误的双 race 拆解 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -61,6 +61,8 @@ Supnik 的价值在于把「这种算法在生产代码里落不下来」的具�
 - [[message-queue-thread-ownership]] — X-Plane 的线程通讯替代路线
 - [[ben-supnik]]
 - [[core-to-core-latency-lock-test]] — contested atomic CAS 的 cache-line 迁移延迟在真实 workload 中极少被触发
+- [[refcount-decrement-before-table-lock-race]] —— Supnik 2016 worst-lock-ever：同一个 refcount + table lookup 问题的另一种翻车方式与正解
+- [[app-space-lock-free-simplification]] —— 背后统一的设计哲学：在应用层分层，不追通用 lock-free
 
 ## Sources
 

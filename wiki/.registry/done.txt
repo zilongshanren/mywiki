@@ -12102,3 +12102,8 @@ raw/articles/c0de517e.blogspot.com/2011-03-26_debugging-directx9-is-so-stressful
 raw/articles/c0de517e.blogspot.com/2011-03-27_stable-cascaded-shadow-maps-ideas.md
 raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen.md
 raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen-2.md
+raw/articles/hacksoflife.blogspot.com/2015-12-19_the-dangers-of-super-smart-compilers.md
+raw/articles/hacksoflife.blogspot.com/2016-01-08_work-stealing-and-lock-free-chaos.md
+raw/articles/hacksoflife.blogspot.com/2016-05-07_simultaneous-mipmap-level-generation.md
+raw/articles/hacksoflife.blogspot.com/2016-07-06_this-is-why-asan-makes-the-big-bucks.md
+raw/articles/hacksoflife.blogspot.com/2016-07-08_worst-lock-ever.md

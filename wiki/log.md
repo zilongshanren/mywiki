@@ -1286,3 +1286,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-102 Worker KS (c0de517e.blogspot.com ×5)
 
 处理 Angelo Pesce 2011-03 ~ 2011-04 五篇博文。新增 1 概念页（stable-csm-implementation-tips）与 3 源摘要（stable-csm-ideas / debugging-dx9-stressful / vcs-next-gen）。跳过 2 篇：DoF Test（短预告帖，无技术信息）与 VCS -2.md（同 URL 归档重复副本）。核心发现：stable-csm-ideas 是 cached-shadowmaps 那条实现链的 2011 最上游 sketch，Crysis 2 远级联隔帧更新的观察与 shadowmap 原点 wrap + 边界重绘的思路直接引出了 2012 Mike Day 的完整实现。DX9 吐槽帖与 2026 Sawicki 的 pix-api-and-dxdmp 形成 15 年痛点时间线对照。
+
+## [2026-04-19] ingest | Wave-102 Worker KT (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 2015-12 ~ 2016-07 文章，全部 prime。新增 4 概念页（clang-null-reference-ub-optimization / app-space-lock-free-simplification / morton-order-parallel-mipmap / refcount-decrement-before-table-lock-race）+ 5 源摘要。patch ben-supnik 人物页、undefined-behavior-c-cpp、cas-refcount-lowbit-lock、mipmap-generation-sampling 的相关/Sources 区。worst-lock-ever 与 cas-refcount-lowbit-lock 互相呼应：前者讲「atomic_dec 与 table lookup 顺序错误」的双 race，后者讲「指针低位当 spin lock」的 RCU 变体——同一问题两条路线。

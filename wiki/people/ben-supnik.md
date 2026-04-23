@@ -106,6 +106,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[blender-euler-extrinsic-xyz-export]] —— 2015-11 Blender XYZ Euler 约定 + X-Plane OBJ 顺序反转
 - [[importance-sampling-pdf-cancellation]] —— 2015-12 为什么 GGX importance sampling 代码里没有 weight 也没有 D 项
 - [[art-asset-version-control-gap]] —— 2015-12 艺术资产 VCS 的理想形态与市场缺口
+- [[clang-null-reference-ub-optimization]] —— 2015-12 Clang 把 CGAL handle 的 `&*rhs == NULL` 整块优化为 `return false` 的生产事故
+- [[app-space-lock-free-simplification]] —— 2016-01 X-Plane 的分层锁哲学：loading API 有锁、using API 无锁
+- [[morton-order-parallel-mipmap]] —— 2016-05 Morton 序一次遍历生成整座金字塔，在 sRGB 解码成本下接近 recursive
+- [[refcount-decrement-before-table-lock-race]] —— 2016-07 worst lock ever：必须先锁表再 decrement，atomic_dec 到 0 不等于安全
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -212,3 +216,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-blender-eulers-notepad]]
 - [[sources/supnik-importance-sampling-no-weights]]
 - [[sources/supnik-source-control-art-assets]]
+- [[sources/supnik-dangers-super-smart-compilers]]
+- [[sources/supnik-work-stealing-lock-free-chaos]]
+- [[sources/supnik-simultaneous-mipmap-generation]]
+- [[sources/supnik-asan-big-bucks]]
+- [[sources/supnik-worst-lock-ever]]
