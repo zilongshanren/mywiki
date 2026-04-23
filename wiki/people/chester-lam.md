@@ -20,6 +20,9 @@ sources: 5
 - [[mcm-gpu-design]]
 - [[zen2-microarchitecture]] — Zen 2 分支预测器与调度器的性能优势分析
 - [[gpu-memory-hierarchy-latency]] — GPU 多级缓存延迟实测
+- [[ampere-warp-stall-utilization]] — Ampere warp stall 与 shader 利用率实测
+- [[gpu-latency-microbench-methodology]] — GPU 延迟微基准的方法学修正（Sattolo 随机置换）
+- [[gpu-constant-memory-cache]] — GPU constant memory 专用缓存层次
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -30,3 +33,4 @@ sources: 5
 - [[sources/chipsandcheese-nvidia-mcm-gpu]]
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
 - [[sources/chipsandcheese-gpu-memory-latency]]
+- [[sources/chipsandcheese-gpu-memory-latency-impact]]

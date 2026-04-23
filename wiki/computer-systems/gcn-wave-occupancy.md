@@ -68,7 +68,6 @@ Wronski 总结的经验：
 - **工具 → CodeXL、AMD Shader Analyzer、PS4/Xbox One 厂商的私有 profiler**。
 
 ## 相关
-
 - [[gpu-latency-hiding]]
 - [[latency-vs-throughput]]
 - [[cache-friendliness]]
@@ -76,6 +75,8 @@ Wronski 总结的经验：
 - [[register-spilling-avoidance]]
 - [[screenspace-reflections]]
 - [[bartosz-wronski]]
+- [[ampere-warp-stall-utilization]] — Ampere/Pascal 的 warp stall 与 occupancy 差异
+- [[gpu-driver-support-lifecycle]] — GCN 2/3 硬件 EOL 话题
 
 ## Sources
 

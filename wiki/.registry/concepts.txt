@@ -1022,3 +1022,10 @@ iphone-4-opengl-es-perf-gap
 performance-by-design
 four-horsemen-performance
 vulkan-explicit-performance
+rdna1-overclocking-navi10
+ampere-warp-stall-utilization
+gpu-driver-support-lifecycle
+gpu-latency-microbench-methodology
+gpu-constant-memory-cache
+core-to-core-latency-lock-test
+samsung-8n-vs-tsmc-n7

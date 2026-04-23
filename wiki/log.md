@@ -1254,3 +1254,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-99 Worker KK (hacksoflife / Supnik ×5)
 
 处理 5 篇 Ben Supnik 2013-10 ~ 2015-03 的博客。新增 4 概念页（iphone-4-opengl-es-perf-gap, performance-by-design, four-horsemen-performance, vulkan-explicit-performance）、4 source 摘要。跳过 1 篇（good-advice-from-git，三行 git union-merge 引用，非技术原创）。
+
+## [2026-04-19] ingest | Wave-99 Worker KL (chipsandcheese.com ×5, 2021-04 ~ 06)
+
+处理 Chips and Cheese 2021 年 4–6 月 5 篇：Navi 10 超频实操、GPU memory latency 影响与测试修订、核到核延迟与锁、Ampere 过程节点之争、GCN 2/3 驱动 EOL。新增 7 概念页（rdna1-overclocking-navi10、ampere-warp-stall-utilization、gpu-driver-support-lifecycle、gpu-latency-microbench-methodology、gpu-constant-memory-cache、core-to-core-latency-lock-test、samsung-8n-vs-tsmc-n7）、3 人物页（George Cozma、Jeremy Tingle、Apex）、5 source 摘要。对 chester-lam、chips-and-cheese、gpu-memory-hierarchy-latency、gpu-latency-hiding、gcn-wave-occupancy、split-lock-x86、cas-refcount-lowbit-lock 发出 patch。

@@ -57,10 +57,10 @@ Supnik 的原话：「每隔几个月我回来看一眼 RCU 类算法」——�
 Supnik 的价值在于把「这种算法在生产代码里落不下来」的具体原因讲清楚，而不是停在「这里有个 race」。
 
 ## 相关
-
 - [[semaphore-vs-condvar-latency]] — 另一篇 Supnik 对并发原语的实测
 - [[message-queue-thread-ownership]] — X-Plane 的线程通讯替代路线
 - [[ben-supnik]]
+- [[core-to-core-latency-lock-test]] — contested atomic CAS 的 cache-line 迁移延迟在真实 workload 中极少被触发
 
 ## Sources
 

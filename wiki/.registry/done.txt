@@ -12061,3 +12061,8 @@ raw/articles/hacksoflife.blogspot.com/2014-12-26_opengl-es-performance-the-iphon
 raw/articles/hacksoflife.blogspot.com/2015-01-04_high-performance-code-is-designed-not-optimized.md
 raw/articles/hacksoflife.blogspot.com/2015-01-31_the-four-horsemen-of-the-performance-apocalypse.md
 raw/articles/hacksoflife.blogspot.com/2015-03-14_glnext-is-neither-opengl-nor-next-discuss.md
+raw/articles/chipsandcheese.com/2021-04-23_rdna-1-redux-maximizing-performance-with-rx-5000-series-gpus.md
+raw/articles/chipsandcheese.com/2021-05-13_gpu-memory-latencys-impact-and-updated-test.md
+raw/articles/chipsandcheese.com/2021-06-09_exploring-cpu-core-to-core-latency-and-the-role-that-locks-p.md
+raw/articles/chipsandcheese.com/2021-06-22_nvidias-ampere-process-technology-sunk-by-samsung.md
+raw/articles/chipsandcheese.com/2021-06-23_the-end-of-an-era-amd-discontinues-pre-2016-gcn-gpu-support.md

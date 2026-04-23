@@ -61,13 +61,13 @@ GPU 的整个设计哲学就是**用并行度换延迟**：每一次内存访问
 这类场景需要更高层的重构——把多层 fetch 合并、预计算、或者改用 LDS 做 tile 内共享。
 
 ## 相关
-
 - [[gcn-wave-occupancy]]
 - [[latency-vs-throughput]]
 - [[cache-friendliness]]
 - [[cuda-memory-hierarchy]]
 - [[memory-hierarchy]]
 - [[bartosz-wronski]]
+- [[ampere-warp-stall-utilization]] — Nsight warp stall 实证 Ampere/Pascal 被 memory latency bound
 
 ## Sources
 

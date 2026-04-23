@@ -38,13 +38,15 @@ Maxwell 与 Pascal 延迟特性相近（Nvidia 未对 OpenCL 开放 L1 texture c
 测试以 OpenCL pointer chasing 实现：在大数组中随机游走，每次加载取下一个地址，强制串行访问，排除预取和并行度的干扰。不同数组大小对应不同缓存层次的命中。这一方法与 CPU 端的 pointer chasing 缓存延迟测量完全类比，便于跨平台对比。
 
 ## 参见
-
 - [[memory-hierarchy]]
 - [[gpu-latency-hiding]]
 - [[cache-friendliness]]
 - [[cuda-memory-hierarchy]]
 - [[zen2-microarchitecture]]
+- [[gpu-latency-microbench-methodology]] — Sattolo 随机置换与 loop unroll 修订
+- [[gpu-constant-memory-cache]] — Nvidia constant memory 专用缓存
+- [[ampere-warp-stall-utilization]] — latency-bound 的量化证据
 
 ## Sources
-
 - [[sources/chipsandcheese-gpu-memory-latency]]
+- [[sources/chipsandcheese-gpu-memory-latency-impact]]

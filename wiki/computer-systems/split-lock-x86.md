@@ -39,11 +39,11 @@ Piledriver 是最亮眼的反直觉结果——用老架构的粗粒度一致性
 程序员应该尽量避免 split lock（对齐 atomic 变量到其 natural alignment 足够）。硬件侧空间也很大：Piledriver 证明了 split lock 不必把整个缓存层次拖下水。
 
 ## 相关
-
 - [[cache-coherence-cross-cluster]]
 - [[memory-hierarchy]]
 - [[undefined-behavior-c-cpp]]
 - [[calling-conventions-x86]]
+- [[core-to-core-latency-lock-test]] — 核到核延迟测试本质是 contested lock；真实 workload 中锁频率 ≤ 0.01% 指令
 
 ## Sources
 

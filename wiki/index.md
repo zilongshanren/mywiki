@@ -303,6 +303,10 @@ CAQA + CSAPP 的底层视角。
 | [[luajit-2gb-address-constraint]] | LuaJIT 2.0 的低 2 GB 地址约束：signed 32-bit 偏移 × OS X 零页 × 插件 late-load × 预占 VM + dlmalloc hack |
 | [[unix-symbol-visibility-leakage]] | Unix 扁平符号命名空间 + 静态库泄漏 + GCC 默认可见性 |
 | [[cgal-arrangement-to-polygon-set-conversion]] | Sub-class GPS 强塞 arrangement：无 antenna + CCB curve 方向一致 |
+| [[gpu-latency-microbench-methodology]] | GPU 延迟微基准方法学：Sattolo 随机置换 + loop unroll 修订 |
+| [[gpu-constant-memory-cache]] | Nvidia constant memory 的 L1/L1.5/L2 独立缓存层次 |
+| [[core-to-core-latency-lock-test]] | 核到核延迟测试测的是 contested lock，真实 workload 里锁 ≤ 0.01% 指令 |
+| [[samsung-8n-vs-tsmc-n7]] | Ampere 能效不全是 node 的锅：架构、GDDR6X、Zen 团队反哺 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -933,6 +937,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mouse-picking-coordinate-spaces]] | 3D 鼠标拾取三种坐标空间 + walk-through 相机下近裁剪面陷阱 |
 | [[iphone-4-opengl-es-perf-gap]] | Supnik: iPhone 4 的 OpenGL ES 性能断崖（顶点/varying 打包/VBO orphan 三条独有症状） |
 | [[vulkan-explicit-performance]] | Supnik: glNext/Vulkan 三大卖点（线程/显式性能/shim 迁移）+ 资源管理 open question |
+| [[rdna1-overclocking-navi10]] | Navi 10 三阶段超频：Wattman / BIOS 刷写 / MPT + SOC Clock 之谜 |
+| [[ampere-warp-stall-utilization]] | Ampere shader 利用率被 memory latency 与 occupancy 双重限制 |
+| [[gpu-driver-support-lifecycle]] | AMD 2021 年砍 GCN 2/3 驱动支持的真实原因：市场份额，不是技术 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1121,6 +1128,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[tobias-persson]] | Tobias Persson，Bitsquid 共同创始人、data-driven renderer 主架构 |
 | [[andreas-asplund]] | Andreas Asplund，Bitsquid/Stingray 渲染工程师（state reflection / frustum culling 专题文作者） |
 | [[jacco-bikker]] | Jacco Bikker，Arauna / Brigade / Lighthouse 2 作者 |
+| [[george-cozma]] | Chips and Cheese 编辑，擅长用 PMU 事件证伪常识性测试数字 |
+| [[jeremy-tingle]] | Chips and Cheese 撰稿人，process node 与架构因果的宏观分析 |
+| [[apex-chipsandcheese]] | Chips and Cheese 匿名作者，社区视角批评厂商 PR 策略 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2127,6 +2137,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-performance-by-design]] | Supnik 2015-01：高性能是设计出来的立场帖 |
 | [[sources/supnik-four-horsemen]] | Supnik 2015-01：性能末日的四骑士 |
 | [[sources/supnik-glnext-vulkan-discuss]] | Supnik 2015-03：glNext/Vulkan 立场帖 |
+| [[sources/chipsandcheese-rdna1-redux]] | Chips and Cheese：Navi 10 三阶段超频实操（2021-04） |
+| [[sources/chipsandcheese-gpu-memory-latency-impact]] | Chester Lam：Ampere/Pascal warp stall 实测 + 延迟微基准方法学修订（2021-05） |
+| [[sources/chipsandcheese-core-to-core-latency]] | George Cozma：核到核延迟测的是 contested lock，真实 workload 里锁极稀有（2021-06） |
+| [[sources/chipsandcheese-ampere-samsung-process]] | Jeremy Tingle：Ampere 能效问题是架构 + GDDR6X + Zen 团队反哺，不只是 Samsung 8N（2021-06） |
+| [[sources/chipsandcheese-gcn-eol]] | Apex：AMD 砍 GCN 2/3 驱动支持的真实原因是市场份额（2021-06） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
