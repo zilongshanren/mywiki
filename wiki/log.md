@@ -1242,3 +1242,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-98 Worker KI (raytracey.blogspot.com ×5, 2010-04~05)
 
 处理 5 篇 Sam Lapere / Ray Tracey's blog 2010 年春天的帖子。4 篇 ingest、1 篇 skip（Natal/Kinect rant，非技术）。新增 2 概念页（brigade-engine、octane-render）、1 人物页（jacco-bikker）、4 source 摘要。补强 2010 年 GPU 无偏路径追踪元年的叙事线——Design Garage (OptiX) / Brigade (Bikker) / Octane 收敛曲线三条脉络。
+
+## [2026-04-19] ingest | Wave-98 Worker KH (hacksoflife/Supnik 2013 ×5)
+
+处理 5 篇 Ben Supnik 2013 年 hacksoflife.blogspot.com 文章（7970 PerfStudio 审计、OpenGL hint-bit 规范自嘲、PowerVR SGX 异步崩溃、BrickSmith GPU 遮挡剔除推演、3D 鼠标拾取三空间对照）。新增 5 概念页（engine-integrated-gpu-counter-probes, opengl-hint-bit-irrelevance, gpu-hang-deferred-fault-debugging, bricksmith-speculative-gpu-occlusion, mouse-picking-coordinate-spaces）+ 5 source 摘要。ben-supnik 人物页追加 5 条相关 + 5 条 Sources；bricksmith-instancing-pipeline / occlusion-culling / gpu-based-occlusion-culling / bottleneck-analysis 各追加交叉引用。

@@ -12046,3 +12046,8 @@ raw/articles/raytracey.blogspot.com/2010-04-15_real-time-pathtracing-demo-shows-
 raw/articles/raytracey.blogspot.com/2010-04-23_comparing-path-tracing-image-quality.md
 raw/articles/raytracey.blogspot.com/2010-04-29_natal-some-sick-joke.md
 raw/articles/raytracey.blogspot.com/2010-05-01_1-more-screen-of-design-garage.md
+raw/articles/hacksoflife.blogspot.com/2013-05-10_moving-the-needle-a-quick-audit-of-the-7970.md
+raw/articles/hacksoflife.blogspot.com/2013-07-22_the-smell-of-victory.md
+raw/articles/hacksoflife.blogspot.com/2013-08-25_what-does-gpus-returnguiltyforhardwarerestart-mean.md
+raw/articles/hacksoflife.blogspot.com/2013-08-31_theoretical-engineering-occlusion-culling-for-bricksmith.md
+raw/articles/hacksoflife.blogspot.com/2013-10-03_3-d-mouse-testing.md

@@ -924,6 +924,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[streaming-quads-drawing-strategies]] | 2D 动态 quad：uniform vs CPU transform vs HW instancing 菜谱 |
 | [[brigade-engine]] | Jacco Bikker 的实时路径追踪引擎系列，2010 动态 GI 演示 |
 | [[octane-render]] | OTOY 的 GPU 无偏路径追踪器，2010 年面世 |
+| [[engine-integrated-gpu-counter-probes]] | 把 NV/AMD GPU performance counter 织进引擎自己的子系统 profiler |
+| [[opengl-hint-bit-irrelevance]] | ARB_buffer_storage 规范原文承认 hint bit 终将被驱动忽略 |
+| [[gpu-hang-deferred-fault-debugging]] | PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 异步越界崩溃的调试范式 |
+| [[bricksmith-speculative-gpu-occlusion]] | 2013 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由（vertex-bound 反面案例） |
+| [[mouse-picking-coordinate-spaces]] | 3D 鼠标拾取三种坐标空间 + walk-through 相机下近裁剪面陷阱 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2107,6 +2112,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/raytracey-bikker-pathtracing-demo]] | Lapere 评 Jacco Bikker 的 Brigade 早期动态 GI 演示 |
 | [[sources/raytracey-path-tracing-quality-comparison]] | Octane 路径追踪 1–96 spp 逐级图像质量对比 |
 | [[sources/raytracey-design-garage-screenshot]] | Design Garage 室内渲染截图与 OTOY Ruby 对比感想 |
+| [[sources/supnik-moving-the-needle-7970]] | Supnik 2013-05：X-Plane 在 7970 上 PerfStudio 审计，仍是 CPU bound |
+| [[sources/supnik-smell-of-victory]] | Supnik 2013-07：ARB 自嘲 CLIENT_STORAGE_BIT 是 silly hint |
+| [[sources/supnik-gpus-returnguilty-restart]] | Supnik 2013-08：iOS PowerVR 异步越界崩溃 speculative engineering |
+| [[sources/supnik-bricksmith-speculative-occlusion]] | Supnik 2013-08：BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由 |
+| [[sources/supnik-3d-mouse-testing]] | Supnik 2013-10：3D 鼠标拾取三种坐标空间对照 + 近裁剪面 clip fix |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

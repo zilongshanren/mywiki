@@ -64,13 +64,13 @@ DICE 在 Frostbite 引擎里选了另一条路：把 occluder 低模送到 SPU �
 - **查询粒度 > 每次查询精度**：逐物体 HZB 虽然单点精度不如真实光栅，但因为粒度更细，整体剔除率反而高于手工聚合的 OQ。
 
 ## 相关
-
 - [[culling]] — 剔除分层全景
 - [[hierarchical-z-buffer]] — HZB 数据结构与查询
 - [[cached-shadowmaps]] — 时间维度的 caster 剔除
 - [[z-buffer]]
 - [[stephen-hill]]
 - [[gpu-based-occlusion-culling]] —— Kostas 的 DX11 GPU-driven HZB + stream compaction retrofit
+- [[bricksmith-speculative-gpu-occlusion]] —— 2013 Supnik 在 vertex-bound LDraw 上的完整 GPU culling 推演（+ 四条不发车理由）
 
 ## Sources
 

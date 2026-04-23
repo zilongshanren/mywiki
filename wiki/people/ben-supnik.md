@@ -84,6 +84,11 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[cgal-arrangement-to-polygon-set-conversion]] —— 2013-03 sub-class GPS 导入 arrangement：无 antenna + CCB curve 方向一致
 - [[lego-realistic-lighting-brain-dump]] —— 2013-03 BrickSmith 真实感光照 wish list：BRDF / 法线 / LEAN / 折角 specular / AO
 - [[streaming-quads-drawing-strategies]] —— 2013-04 2D 动态 quad 的 uniform vs CPU transform vs HW instancing 菜谱
+- [[engine-integrated-gpu-counter-probes]] —— 2013-05 把 GPU performance counter 织进引擎自己的 profiler
+- [[opengl-hint-bit-irrelevance]] —— 2013-07 ARB_buffer_storage 规范自嘲 hint bit 终将被驱动忽略
+- [[gpu-hang-deferred-fault-debugging]] —— 2013-08 PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 的异步越界崩溃复盘
+- [[bricksmith-speculative-gpu-occlusion]] —— 2013-08 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由
+- [[mouse-picking-coordinate-spaces]] —— 2013-10 3D 鼠标拾取三种坐标空间与近裁剪面陷阱
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -171,3 +176,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-arrangement-to-polygon-set]]
 - [[sources/supnik-lego-lighting]]
 - [[sources/supnik-streaming-quads]]
+- [[sources/supnik-moving-the-needle-7970]]
+- [[sources/supnik-smell-of-victory]]
+- [[sources/supnik-gpus-returnguilty-restart]]
+- [[sources/supnik-bricksmith-speculative-occlusion]]
+- [[sources/supnik-3d-mouse-testing]]

@@ -58,7 +58,6 @@ BrickSmith 的 instance 是 **24 floats**：4x4 矩阵（4 个 vec4 属性）+ R
 有读者提议**把 mesh 复制 100-1000 份放进同一个 VBO**，用 `gl_InstanceID` + `gl_VertexID` 自己查表、`texelFetch` 从 TBO 解包 8-float 压缩 instance。Supnik 的回应是这套在别的情境有用，但 BrickSmith 的瓶颈是三角形建立（triangle setup），不在 instance 带宽或 draw call 上——548 种唯一砖已经足够大的 batch；试过 TBO vs UBO vs divisor，顶点吞吐基本打平。这呼应了他在 [[xplane-instancing-2011-numbers]] 里给出的**时代基线**：2011-2013 年 instance 数量早已不是瓶颈。
 
 ## 相关
-
 - [[ben-supnik]]
 - [[xplane-instancing-2011-numbers]]
 - [[sprite-batch-instance-draw]]
@@ -67,6 +66,7 @@ BrickSmith 的 instance 是 **24 floats**：4x4 矩阵（4 个 vec4 属性）+ R
 - [[alpha-blending-front-to-back]]
 - [[draw-call]]
 - [[opengl-draw-call-batching-sweet-spot]]
+- [[bricksmith-speculative-gpu-occlusion]] —— 2013-08 Supnik 基于本 pipeline 推演的 GPU 遮挡剔除全方案与四条不发车理由
 
 ## Sources
 

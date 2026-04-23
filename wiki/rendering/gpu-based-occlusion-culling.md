@@ -53,7 +53,6 @@ sources: 4
 本文是 Anagnostou 整条 GPU-driven 系列的**第一篇**——后续 Part 2 引入 `MultiDrawIndexedInstancedIndirect`（DX11 外部扩展）解决「一次 draw 多 mesh」的问题，再之后移植到 bgfx、再到 Digital Dragons 大会分享，构成一条连续线索。[[gpu-driven-grass-tiles|Marco Giordano 的 GPU-driven grass]] 明确把本文列为直接参考。更广义的 GPU-driven rendering 请看 Ulrich Haar / Sebastian Aaltonen 的 *GPU-Driven Rendering Pipelines*（Siggraph 2015）和 Graham Wihlidal 的 *Optimizing the Graphics Pipeline with Compute*。
 
 ## 相关
-
 - [[occlusion-culling]]
 - [[hierarchical-z-buffer]]
 - [[stream-compaction]] —— parallel prefix scan
@@ -63,6 +62,7 @@ sources: 4
 - [[kostas-anagnostou]]
 - [[multidraw-indirect-occlusion-culling]] —— Part 2：NVAPI `MultiDrawIndexedInstancedIndirect` + mesh LOD + programmable vertex fetch，把整条 pipeline 压到「批量化一切」
 - [[hybrid-raytraced-shadows-reflections]] —— 复用同一套 global buffer + args buffer 数据布局做 compute shader 光追
+- [[bricksmith-speculative-gpu-occlusion]] —— 2013 Supnik 早期 GS + transform feedback 推演版，本文 compute + prefix scan 路线正好解决其第三条 show-stopper
 
 ## Sources
 

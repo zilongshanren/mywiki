@@ -32,6 +32,8 @@ sources: 1
 - [[dynamic-resolution-scaling]] —— 瓶颈识别结论是 Pixel-bound 后的下一步：按比例砍像素计算量
 - [[xplane-headlight-perf-teardown]] —— 2011 X-Plane 10 车灯全流程瓶颈手术案例
 - [[simd-memory-bandwidth-bound]] —— 「更聪明的 SIMD 反而更慢」的判别路径
+- [[bricksmith-speculative-gpu-occlusion]] —— 罕见的纯顶点瓶颈案例
+- [[engine-integrated-gpu-counter-probes]] —— 外部 profiler 不够用时的补位
 
 ## Sources
 
