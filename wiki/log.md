@@ -978,3 +978,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-76 Worker hu (tedsieblog A* 系列 + Everyplay)
 
 处理 tedsieblog.wordpress.com 5 篇。A* 四篇（intro/node definition/node generate/node sort）合并为单一源摘要 [[sources/tedsie-a-star-tutorial]]，链接到既有 [[a-star-pathfinding]] 概念页；跳过 Everyplay SDK 6 步安装教学（无技术内容、服务 2018 已下线）。无新概念/人物页。
+
+## [2026-04-19] ingest | Wave-76 Worker HS (bitsquid.blogspot.com 2010 Q2-Q3 x5)
+
+处理 5 篇 Bitsquid 2010 年博客。新增 4 概念页（per-entity-scene-graph, json-3-way-merge, guid-object-database-schema, dual-mode-gui-bitsquid）、4 source 摘要；跳过 MotionBuilder exporter（纯 code-drop 无内容）。补强 vcs-vs-database-for-content 与 immediate-vs-retained-mode 两篇的 Sources 与交叉链接。niklas-frykholm 人物页追加 4 条来源。

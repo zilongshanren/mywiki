@@ -51,5 +51,6 @@ sources: 1
 这套 schema 在 2010 年提出来的时候已经很像后来 Unity ScriptableObject / Unreal Asset 的引用模型了。
 
 ## Sources
-
 - [[sources/bitsquid-content-repositories-vs-databases]]
+- [[sources/bitsquid-3-way-json-merge]]
+- [[sources/bitsquid-new-data-storage-model]]

@@ -38,12 +38,12 @@ sources: 1
 不管哪条路径，**数据模型自身不感知到渲染的存在**，这是 cloudwu 对"gameplay 与引擎解耦"的核心要求。反过来，渲染层可以读 Object，但不能改 Object——若有物理反馈、UI 反馈要修改游戏状态，必须包装成消息发给对应的 Actor。
 
 ## 相关
-
 - [[gameplay-layering-object-actor]] — 本模式的主要使用场景
 - [[scriptable-render-pipeline]]
 - [[render-graph]]
 - [[cloudwu]]
+- [[dual-mode-gui-bitsquid]] — Bitsquid 用同一 API / 同一实现同时支持两种模式的做法
 
 ## Sources
-
 - [[sources/cloudwu-gameplay-architecture]]
+- [[sources/bitsquid-dual-mode-guis]]

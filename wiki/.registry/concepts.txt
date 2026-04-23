@@ -833,3 +833,7 @@ no-magic-principle
 tensorflow-1-graph-model
 multi-gpu-training-replication-patterns
 deep-learning-uncertainty
+per-entity-scene-graph
+json-3-way-merge
+guid-object-database-schema
+dual-mode-gui-bitsquid

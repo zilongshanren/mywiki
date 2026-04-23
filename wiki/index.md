@@ -291,6 +291,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[bitsquid-task-scheduler]] | Bitsquid 2010 年的任务调度器：开放表、单依赖 + 子任务、global queue |
 | [[offset-based-resource-blobs]] | 用 offset 而非 pointer patch 做二进制资源 blob |
 | [[decoupled-tool-engine-json-rpc]] | 工具与引擎解耦：用 JSON 消息走网络协议 |
+| [[per-entity-scene-graph]] | Bitsquid：场景图不覆盖整场景，只挂一个 entity 内部 |
+| [[dual-mode-gui-bitsquid]] | Bitsquid 用同一 API 同时支持 retained / immediate GUI |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -835,6 +837,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[autotile-tileset-layouts]] | 2D autotile 切片布局：Marching Squares / Blob / Sub-blob / Micro-blob 的取舍 |
 | [[vcs-vs-database-for-content]] | 游戏内容存 VCS 还是数据库 |
 | [[unreal-pawn-playercontroller-pattern]] | Unreal 里 GameMode / Pawn / PlayerController 三件套分离，从 UDK 到 UE5 一脉相承 |
+| [[json-3-way-merge]] | Bitsquid：理解 JSON 结构的三路合并，解决内容 merge 冲突 |
+| [[guid-object-database-schema]] | Bitsquid：GUID + key-value + 5 种操作，把内容数据库做成无冲突可 diff 的小型 NoSQL |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1715,6 +1719,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/schoener-dl-uncertainty]] | Schöner：深度学习里「uncertainty」的五义拆解与 MC dropout 质疑 |
 | [[sources/c0de517e-skin]] | Pesce 2010：皮肤渲染 benchmark + Jim Hejl 关于 FN4 屏幕空间 SSS 的评论 |
 | [[sources/tedsie-a-star-tutorial]] | Ted Sie：Unity A* 寻路四步实作（Node/Manager/Sort） |
+| [[sources/bitsquid-practical-dod-scene-graphs]] | Frykholm：per-entity 场景图为什么不需要优化增删 |
+| [[sources/bitsquid-3-way-json-merge]] | Frykholm：写一个能理解 JSON 的三路合并器 |
+| [[sources/bitsquid-new-data-storage-model]] | Frykholm：GUID + 属性 + 5 种操作的无冲突数据库草案 |
+| [[sources/bitsquid-dual-mode-guis]] | Frykholm：同一 GUI API 两种模式的实现技巧 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

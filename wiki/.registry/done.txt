@@ -11716,3 +11716,8 @@ raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-introduction-yan-su
 raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-definition-ding-yi-node.md
 raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-generate-sheng-cheng-node-node-ke-shi-hua.md
 raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-sort-node-pai-xu-shi-zuo.md
+raw/articles/bitsquid.blogspot.com/2010-05-28_practical-examples-in-data-oriented-design.md
+raw/articles/bitsquid.blogspot.com/2010-06-03_avoiding-content-locks-and-conflicts-3-way-json-merge.md
+raw/articles/bitsquid.blogspot.com/2010-08-18_a-new-data-storage-model.md
+raw/articles/bitsquid.blogspot.com/2010-08-25_bitsquid-s-dual-mode-guis.md
+raw/articles/bitsquid.blogspot.com/2010-09-08_code-share-motion-builder-exporter.md
