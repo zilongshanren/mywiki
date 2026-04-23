@@ -38,6 +38,7 @@ Supnik 的观察值得记：**framebuffer 的「颜色空间」很大程度是�
 - [[color-banding]] — 8-bit 目标下 encode 顺序影响暗部台阶
 - [[ben-supnik]]
 - [[xplane-deferred-pipeline-hacks]] —— X-Plane 10.10 让 linear 光累加与 sRGB 几何 blend 在同一帧不同 RT 上共存的实例
+- [[sources/c0de517e-gamma-diffuse-shortcut]] —— Pesce 的 software-gamma 速记，明确划清「shader 内数学 trick」与「framebuffer blend 阶段 gamma」的责任边界
 
 ## Sources
 

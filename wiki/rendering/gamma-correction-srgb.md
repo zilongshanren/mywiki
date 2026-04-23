@@ -68,6 +68,7 @@ vec3 SRGB_encode(vec3 lrgb) {
 - [[xor-shader-artist]]
 - [[srgb-premultiplied-alpha-compression]] —— 预乘与块压缩必须发生在 linear 域，sRGB encode 是最后一步
 - [[linear-lighting-pipeline]] —— Supnik 归纳的多 pass 光照累积三条路径（shader 内累加 / sRGB framebuffer blend / HDR float RT）
+- [[sources/c0de517e-gamma-diffuse-shortcut]] —— Pesce 恒等式 `(tex^a·shading)^b ≡ tex·shading^b` 当 `a=1/b`，diffuse-only 场景可省 decode/encode 两次 pow（仅 shader 内，blend 阶段不变）
 
 ## Sources
 - [[sources/xor-mini-gamma]]

@@ -12066,3 +12066,9 @@ raw/articles/chipsandcheese.com/2021-05-13_gpu-memory-latencys-impact-and-update
 raw/articles/chipsandcheese.com/2021-06-09_exploring-cpu-core-to-core-latency-and-the-role-that-locks-p.md
 raw/articles/chipsandcheese.com/2021-06-22_nvidias-ampere-process-technology-sunk-by-samsung.md
 raw/articles/chipsandcheese.com/2021-06-23_the-end-of-an-era-amd-discontinues-pre-2016-gcn-gpu-support.md
+raw/articles/c0de517e.blogspot.com/2011-01-12_recipe-for-antialiasing-as-post.md
+raw/articles/c0de517e.blogspot.com/2011-01-14_poll-results-2010-most-envied-rendering.md
+raw/articles/c0de517e.blogspot.com/2011-01-22_linux-is-not-for-nerds-anymore.md
+raw/articles/c0de517e.blogspot.com/2011-01-22_mythbusting-deferred-rendering.md
+raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading-2.md
+raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading.md

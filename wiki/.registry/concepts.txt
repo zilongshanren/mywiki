@@ -1029,3 +1029,5 @@ gpu-latency-microbench-methodology
 gpu-constant-memory-cache
 core-to-core-latency-lock-test
 samsung-8n-vs-tsmc-n7
+gradient-based-post-aa
+deferred-rendering-mythbusting

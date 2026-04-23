@@ -940,6 +940,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rdna1-overclocking-navi10]] | Navi 10 三阶段超频：Wattman / BIOS 刷写 / MPT + SOC Clock 之谜 |
 | [[ampere-warp-stall-utilization]] | Ampere shader 利用率被 memory latency 与 occupancy 双重限制 |
 | [[gpu-driver-support-lifecycle]] | AMD 2021 年砍 GCN 2/3 驱动支持的真实原因：市场份额，不是技术 |
+| [[gradient-based-post-aa]] | Pesce 2011：梯度驱动的后处理反走样配方，MLAA 的廉价局部替代 |
+| [[deferred-rendering-mythbusting]] | Pesce 2011：延迟渲染六条误解拆解，把 deferred 看作通用 pattern |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2142,6 +2144,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-core-to-core-latency]] | George Cozma：核到核延迟测的是 contested lock，真实 workload 里锁极稀有（2021-06） |
 | [[sources/chipsandcheese-ampere-samsung-process]] | Jeremy Tingle：Ampere 能效问题是架构 + GDDR6X + Zen 团队反哺，不只是 Samsung 8N（2021-06） |
 | [[sources/chipsandcheese-gcn-eol]] | Apex：AMD 砍 GCN 2/3 驱动支持的真实原因是市场份额（2021-06） |
+| [[sources/c0de517e-recipe-for-aa]] | Pesce 2011-01：三步式 post-AA 模板 + Pixel Bender 梯度滤镜配方 |
+| [[sources/c0de517e-most-envied-rendering-poll-2010]] | Pesce 2011-01：2010 最想参与开发的游戏读者投票（GoW3 28% 夺冠） |
+| [[sources/c0de517e-mythbusting-deferred]] | Pesce 2011-01：延迟渲染六条神话拆解（LPP vs DS / light-indexed / MSAA） |
+| [[sources/c0de517e-gamma-diffuse-shortcut]] | Pesce 2011-02：diffuse-only 的 software-gamma 恒等式速记 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

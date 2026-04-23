@@ -65,6 +65,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[deferred-light-volume-stencil-depth-clamp-hack]] —— 光源包围体 stencil 剔除 + 远剪裁面切穿问题的三档处理
 - [[deferred-depth-reuse-tradeoffs]] —— 光照 pass 复用深度 buffer 的三条路线：拷贝 / NV_texture_barrier / 往 G-Buffer 写眼空间 Z
 - [[xplane-deferred-pipeline-hacks]] —— Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 优化关掉 / 双 depth domain 合并为一 pass / sRGB + linear blend 共存 / 工程复杂度来自硬边角叠加）
+- [[deferred-rendering-mythbusting]] —— Pesce 2011 拆解六条常见误解，提出「deferred 是通用 pattern 不是单一结构」的判断框架
 
 ## Sources
 

@@ -1258,3 +1258,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-99 Worker KL (chipsandcheese.com ×5, 2021-04 ~ 06)
 
 处理 Chips and Cheese 2021 年 4–6 月 5 篇：Navi 10 超频实操、GPU memory latency 影响与测试修订、核到核延迟与锁、Ampere 过程节点之争、GCN 2/3 驱动 EOL。新增 7 概念页（rdna1-overclocking-navi10、ampere-warp-stall-utilization、gpu-driver-support-lifecycle、gpu-latency-microbench-methodology、gpu-constant-memory-cache、core-to-core-latency-lock-test、samsung-8n-vs-tsmc-n7）、3 人物页（George Cozma、Jeremy Tingle、Apex）、5 source 摘要。对 chester-lam、chips-and-cheese、gpu-memory-hierarchy-latency、gpu-latency-hiding、gcn-wave-occupancy、split-lock-x86、cas-refcount-lowbit-lock 发出 patch。
+
+## [2026-04-19] ingest | Wave-100 Worker KM (c0de517e Pesce 2011-01/02 ×5)
+
+处理 Angelo Pesce 2011 年 1-2 月 5 个原始文件：成功入库 4（Recipe for AA / Most envied rendering poll 2010 / Mythbusting deferred rendering / Gamma and diffuse shading），跳过 2（linux-is-not-for-nerds 非技术、gamma-and-diffuse-shading-2 归档副本）。新增 2 概念页（gradient-based-post-aa、deferred-rendering-mythbusting），4 源摘要；给 angelo-pesce、aa-techniques-survey-2011、deferred-rendering、light-prepass-pipeline、gamma-correction-srgb、linear-lighting-pipeline 共 6 个已有页打 patch。核心结论：Pesce 的「拒绝把技术神圣化、把 deferred 看作通用 pattern」的判断框架与梯度驱动 post-AA 的三段式模板（识别边 / 拟合基元 / 沿基元混合）进入知识库。

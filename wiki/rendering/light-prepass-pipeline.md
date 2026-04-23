@@ -23,5 +23,5 @@ Light Pre-Pass 是 Wolfgang Engel 在 2009 年提出的一种「折中型」光�
 Ni No Kuni 2 的选择贴合它的视觉需求：只有环境光 + 少数动态光，没有 GI，没有阴影投射的局部光源，光的总数少，material 要和 **line-art / stylized shading** 紧紧耦合——所以不愿意让光照 pass 把 BRDF 选择固化下来。
 
 ## Sources
-
 - [[sources/thomas-poulet-ninokuni-2-frame]]
+- [[sources/c0de517e-mythbusting-deferred]] —— Pesce 对 LPP vs DS 的 memory / bandwidth / ALU 瓶颈对比与 specular 精度缺陷讨论

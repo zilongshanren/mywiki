@@ -60,6 +60,7 @@ Ben Supnik 2011 年 4 月写的一篇「AA 菜单」，把当时（延迟渲染�
 - [[deferred-rendering]]
 - [[ben-supnik]]
 - [[ogssaa-fxaa-non-square]] —— 2012-10 Supnik 把 SSAA（Universal 档）与 FXAA（Post 档）在 X-Plane 拼起来：非方形竖向偏置 + FXAA 跑在 SSAA 空间
+- [[gradient-based-post-aa]] —— Pesce 2011 给出的梯度驱动 post-AA 配方，属 Post-process 档中「纯本地滤镜」子类
 
 ## Sources
 
