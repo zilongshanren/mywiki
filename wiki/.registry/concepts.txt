@@ -1048,3 +1048,10 @@ component-degradable-build
 via-x86-isaiah-lujiazui
 gpu-efficiency-fps-per-joule
 cache-size-vs-latency-tradeoff
+glmapbuffer-threaded-driver-stall
+glbuffersubdata-in-band-streaming
+throwing-destructor-noexcept-terminate
+sasl-context-changer-raii-bug
+importance-sampling-pdf-cancellation
+blender-euler-extrinsic-xyz-export
+art-asset-version-control-gap

@@ -1278,3 +1278,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-101 Worker KR (chipsandcheese 2021-09/10 ×5)
 
 处理 5 篇 chipsandcheese.com 2021 年 9–10 月文章，0 篇跳过。新增 3 个概念页（via-x86-isaiah-lujiazui、gpu-efficiency-fps-per-joule、cache-size-vs-latency-tradeoff）、1 个人物页（serebit），5 个 source 摘要。VIA 两部曲共享同一个概念页但保留两个 source 摘要（原文发表时间相差 3 周、内容互补）。Neoverse N1 deep dive 通过 patch 扩充既有 neoverse-n1-microarchitecture 页而非另建。
+
+## [2026-04-19] ingest | Wave-101 Worker KQ (hacksoflife.blogspot.com ×5, Supnik 2015-06~12)
+
+处理 Ben Supnik 2015-06 至 2015-12 的 5 篇：glMapBuffer 反转帖（2015-06）、SASL/El Capitan 崩溃复盘（2015-11）、Blender Euler 备忘录（2015-11）、importance sampling 化简（2015-12）、艺术资产 VCS（2015-12）。全部 ingest，无 skip。新增 7 概念页：rendering 层 glmapbuffer-threaded-driver-stall / glbuffersubdata-in-band-streaming / importance-sampling-pdf-cancellation，programming-languages 层 throwing-destructor-noexcept-terminate，software-design 层 sasl-context-changer-raii-bug / art-asset-version-control-gap，game-engines 层 blender-euler-extrinsic-xyz-export。5 source 摘要、ben-supnik 人物页 append、对 glbuffersubdata-serialization / vbo-double-buffering-orphaning / monte-carlo-integration / inversion-sampling-prng / microfacet-brdf / asset-exchange-format-strategy / gimbal-lock-euler-interpolation / good-software-no-double-check / cross-platform-openal-runtime-loader 9 条 cross-link 补丁。

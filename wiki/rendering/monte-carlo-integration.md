@@ -46,7 +46,6 @@ F_M = |Ω|/M · Σᵢ f(Uᵢ),   Uᵢ ~ Uniform(Ω)
 5. **Next event estimation + MIS**——见 [[path-tracing-monte-carlo]]。
 
 ## 本 wiki 的 MC 链
-
 - 本页：基础积分 + 为什么 1/√M；
 - [[inversion-sampling-prng]]：如何在目标分布里采样；
 - [[path-tracing-monte-carlo]]：把 MC 套到渲染方程；
@@ -54,6 +53,7 @@ F_M = |Ω|/M · Σᵢ f(Uᵢ),   Uᵢ ~ Uniform(Ω)
 - [[stratified-sampling]] / [[low-discrepancy-sequence]]：前置采样技巧；
 - [[spherical-integration]]：球面/立体角的专门实践；
 - [[continuous-probability]]：前置概率基础（Slater 系列第一章）。
+- [[importance-sampling-pdf-cancellation]]：PDF 与 BRDF 分布项互相抵消——GGX prefilter 没有 weight 也没有 D 项的代数根因
 
 ## Sources
 

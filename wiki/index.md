@@ -98,6 +98,8 @@ sources: 371
 | [[four-horsemen-performance]] | Supnik: 冗余工作 / 常数时间低效 / 不必要泛化 / 复利——四骑士解释为何后期救不回 |
 | [[cpp-decoupling-over-details]] | Pesce 2011 Surviving C++：软件质量的唯一要义是可修改性 / 解耦 |
 | [[component-degradable-build]] | Pesce 2011：`broken build` 是糟糕术语，应当支持部件级可降级构建 |
+| [[sasl-context-changer-raii-bug]] | RAII 匿名临时对象陷阱 + 静默 alGetError 六年无 bug report |
+| [[art-asset-version-control-gap]] | 艺术资产版本控制的需求清单与工具缺口（Supnik 2015） |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -172,6 +174,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[lua-runtime-dynamism-tricks]] | Bitsquid 的 Lua 七招：REPL、热重载、API 劫持、动态 profiler、对象枚举 |
 | [[javascript-hot-reload-dom-script]] | Niklas：动态 script 节点 + polling 做出的 30 行 JS 热重载 |
 | [[cpp-ranges-vs-iterators]] | Supnik 2011 独立发明 range：自包含终止的 sequence 抽象 vs STL iterator 配对 |
+| [[throwing-destructor-noexcept-terminate]] | C++11 析构隐式 noexcept 引出的 std::terminate |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -392,6 +395,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[main-render-thread-state-reflection]] | Asplund：StateStream + render_handle 把主线程状态单向镜像到渲染线程 |
 | [[stingray-renderer-three-stage-pipeline]] | Tobias：Cull/Render/Dispatch 三阶段数据并行 + simulation/render overlay |
 | [[hot-swap-pointer-patching]] | Pesce 2011：热重载的四种替代方案与它们为什么没赢过句柄 |
+| [[blender-euler-extrinsic-xyz-export]] | Blender XYZ Euler 约定与 X-Plane OBJ 导出顺序反转 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -959,6 +963,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[osx-metal-memory-model]] | OS X Metal 的 Shared/Managed/Private/Auto 四档存储与 Mantle 对比 |
 | [[frequency-is-not-latency]] | Pesce 2011 Fight Night Champion：FPS != 延迟，各子系统频率应按需设 |
 | [[gpu-efficiency-fps-per-joule]] | Serebit：Turing/Ampere/RDNA1/RDNA2 的 f/J 横测，分辨率换档会重排架构能效 |
+| [[glmapbuffer-threaded-driver-stall]] | Threaded driver 下 glMapBuffer 的隐式同步代价 |
+| [[glbuffersubdata-in-band-streaming]] | glBufferSubData 的 in-band 更新与 UBO 流式 fast path |
+| [[importance-sampling-pdf-cancellation]] | PDF 与 BRDF 分布项互相抵消——为什么 GGX IS 代码里没有 weight |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2185,6 +2192,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-video-card-efficiency-power]] | Serebit：GPU 每瓦帧数三分辨率横测（2021 Q3） |
 | [[sources/chipsandcheese-ibm-l3-v-cache-future]] | Lam：ChampSim 仿真 IBM 256 MB L3 与 AMD V-Cache 的取舍 |
 | [[sources/chipsandcheese-neoverse-n1-deep-dive]] | Lam：Neoverse N1 结构尺寸 + 宏观 benchmark 重测（修正 WSL1 偏差） |
+| [[sources/supnik-glmapbuffer-no-longer-cool]] | Supnik：threaded driver 下 map 变慢、SubData 成 fast path |
+| [[sources/supnik-sasl-crash-el-capitan]] | Supnik：SASL / OpenAL / El Capitan 崩溃的两条叠加 bug |
+| [[sources/supnik-blender-eulers-notepad]] | Supnik：Blender XYZ Euler 约定 + OBJ 顺序反转备忘录 |
+| [[sources/supnik-importance-sampling-no-weights]] | Supnik：IS 里 BRDF 分布项与 PDF 为什么会抵消 |
+| [[sources/supnik-source-control-art-assets]] | Supnik：艺术资产 VCS 理想形态与市场缺口 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

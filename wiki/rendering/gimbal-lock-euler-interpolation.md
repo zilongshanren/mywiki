@@ -17,5 +17,5 @@ sources: 1
 和这个主题相关的更深的基础见 [[3d-rotation-math]] 与 [[exponential-map-rotations]]（后者是一种能画曲线又没有奇异的替代方案，但同样不是动画师熟悉的 UI）。
 
 ## Sources
-
 - [[sources/bitsquid-gimbal-lock]]
+- 另见 [[blender-euler-extrinsic-xyz-export]] 的跨坐标系 Euler 分解讨论

@@ -99,6 +99,13 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[mtl-render-pipeline-state]] —— 2015-05 PowerVR via Metal：PSO 把隐式 combination cache 锁成 immutable 对象
 - [[mtl-render-pass-descriptor]] —— 2015-05 TBDR 的 load/store action 被强制搬到 API 面
 - [[osx-metal-memory-model]] —— 2015-06 OS X Metal 四档 ResourceOptions 与 Mantle 对比
+- [[glmapbuffer-threaded-driver-stall]] —— 2015-06 threaded driver 下 map buffer 为什么变慢，反转 2010 年的结论
+- [[glbuffersubdata-in-band-streaming]] —— 2015-06 SubData 作为 single-direction API 在命令 FIFO 里的 fast path
+- [[throwing-destructor-noexcept-terminate]] —— 2015-11 Apple OpenAL 崩在 C++11 隐式 noexcept 析构上
+- [[sasl-context-changer-raii-bug]] —— 2015-11 ContextChanger(arg) 匿名临时对象陷阱 + 六年没爆的静默 alGetError
+- [[blender-euler-extrinsic-xyz-export]] —— 2015-11 Blender XYZ Euler 约定 + X-Plane OBJ 顺序反转
+- [[importance-sampling-pdf-cancellation]] —— 2015-12 为什么 GGX importance sampling 代码里没有 weight 也没有 D 项
+- [[art-asset-version-control-gap]] —— 2015-12 艺术资产 VCS 的理想形态与市场缺口
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -200,3 +207,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-gl-impedance-mismatch]]
 - [[sources/supnik-powervr-via-metal]]
 - [[sources/supnik-osx-metal-notes]]
+- [[sources/supnik-glmapbuffer-no-longer-cool]]
+- [[sources/supnik-sasl-crash-el-capitan]]
+- [[sources/supnik-blender-eulers-notepad]]
+- [[sources/supnik-importance-sampling-no-weights]]
+- [[sources/supnik-source-control-art-assets]]

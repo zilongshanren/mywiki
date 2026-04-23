@@ -51,11 +51,12 @@ Supnik 在文末给出了他当时倾向的判断（也是评论区一位同行�
 - **现代现实**：2020 年后 [glTF 2.0](https://www.khronos.org/gltf/) 事实上替代了 COLLADA 成为游戏资产通用交换格式——原因正是它**更窄、更具 opinion**，把 COLLADA 的通用性换成了「所有 DCC 都导一样的子集」的确定性。Supnik 框架里的「方言离散度」这个变量被显著压下了。
 
 ## 相关
-
 - [[game-resource-pack-format]] —— 运行时侧的打包格式决策
 - [[playcanvas-cloud-asset-pipeline]] —— 在线服务的资源管线对照
 - [[decoupled-tool-engine-json-rpc]] —— 工具链与引擎的解耦通讯
 - [[ben-supnik]]
+- [[blender-euler-extrinsic-xyz-export]] —— 另一条跨坐标系 exporter 陷阱（同作者同 X-Plane 视角）
+- [[art-asset-version-control-gap]] —— 资产管线的另一层：版本控制
 
 ## Sources
 

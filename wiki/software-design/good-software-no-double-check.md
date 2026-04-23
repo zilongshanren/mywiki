@@ -43,5 +43,5 @@ Boris 自己的工作方式是把**静态类型**用得更严，让读者（以�
 这和 [[type-safety-vs-simplicity]] 是一体两面：把复杂度推给类型系统与接口契约，函数体里才能简单起来。对 agent 时代的工程实践而言，识别这种新型气味、并在 prompt 或 lint 规则里压制它，可能比「让 agent 写更多代码」更关键——Boris 自己把这个称作「新的一组鼻子受体」。
 
 ## Sources
-
 - [[sources/boristhebrave-no-double-check]]
+- 同主题的 Supnik 案例：[[sasl-context-changer-raii-bug]]（静默丢弃 alGetError 六年没爆）

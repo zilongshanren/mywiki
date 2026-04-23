@@ -56,6 +56,8 @@ Windows 上进一步复杂：**OpenAL runtime（谁提供 dll）** 和 **rendere
 - [[function-vs-data-pointer-portability]]
 - [[lua-c-api-dylib-proxy]]
 - [[unix-symbol-visibility-leakage]] —— 把 dlopen + dlsym 那条「唯一能绕过扁平命名空间」的定律放回扁平命名空间的底层语义里解释
+- [[sasl-context-changer-raii-bug]] —— 同作者对 OpenAL 跨平台问题的 2015 调试帖：El Capitan 的 C++11 noexcept 析构 + SASL RAII 陷阱
+- [[throwing-destructor-noexcept-terminate]] —— SASL/OpenAL 崩溃的 C++ 语言机制根因
 
 ## Sources
 

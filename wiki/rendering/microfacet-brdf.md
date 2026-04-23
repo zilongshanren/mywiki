@@ -43,6 +43,7 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 - [[normalised-blinn-phong-shader]] —— 归一化 Blinn-Phong 作为 microfacet BRDF 教学起点，演示能量守恒 / Fresnel / gloss 线性化
 - [[anisotropic-microfacet-sampling]] — GGX/Beckmann/Blinn 各向异性 importance sampling 推导
 - [[bxdf-unit-test]] — PBRT 的 bsdftest 用 2π 收敛作为 BXDF 正确性检验
+- [[importance-sampling-pdf-cancellation]] — GGX IS 代码里没有 D 项没有 weight 的代数根因
 
 ## Sources
 - [[sources/selfshadow-multi-faceted-part-2]]

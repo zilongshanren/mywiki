@@ -77,6 +77,7 @@ p_y(y) = p_x(x) · |det(dx/dy)|
 - [[mulberry32-rng]]——另一端的选择：32-bit Weyl + xor-shift，为「便利优先 + 确定性」场景设计，不追 PCG 的统计严谨度。
 - [[rejection-vs-analytical-sampling]] — 实测结果完全反直觉：打开 `-O1` 后拒绝采样普遍快于解析解
 - [[anisotropic-microfacet-sampling]] — marginal + conditional inversion 的经典工程案例（GGX/Beckmann/Blinn）
+- [[importance-sampling-pdf-cancellation]] —— 配对的 PDF 与 BRDF 分布项在最终估计里抵消的代数化简
 
 ## Sources
 

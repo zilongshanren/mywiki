@@ -56,6 +56,8 @@ Rob 补充了一个不常被提到的动机：**SubData 假设源数据已经是
 - [[streaming-staging-texture-upload]]
 - [[frames-in-flight]]
 - [[ben-supnik]]
+- [[glmapbuffer-threaded-driver-stall]] —— 2015 Supnik 反转：threaded driver 下 map 才是串行化来源，SubData 反而快
+- [[glbuffersubdata-in-band-streaming]] —— SubData 的现代 fast path（DMA in command stream / resource renaming）
 
 ## Sources
 - [[sources/supnik-glbuffersubdata]]

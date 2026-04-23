@@ -12092,3 +12092,8 @@ raw/articles/chipsandcheese.com/2021-09-09_analyzing-video-card-efficiency-part-
 raw/articles/chipsandcheese.com/2021-09-22_the-weird-and-wacky-world-of-via-part-2-zhaoxins-not-quite-e.md
 raw/articles/chipsandcheese.com/2021-09-29_do-ibms-giant-l3-and-v-cache-represent-the-future.md
 raw/articles/chipsandcheese.com/2021-10-22_deep-diving-neoverse-n1.md
+raw/articles/hacksoflife.blogspot.com/2015-06-18_glmapbuffer-no-longer-cool.md
+raw/articles/hacksoflife.blogspot.com/2015-11-20_sasl-crash-on-el-capitan-the-gory-details.md
+raw/articles/hacksoflife.blogspot.com/2015-11-21_blender-notepad-eulers.md
+raw/articles/hacksoflife.blogspot.com/2015-12-10_importance-sampling-look-mom-no-weights.md
+raw/articles/hacksoflife.blogspot.com/2015-12-10_source-control-for-art-assets-this-must-exist.md
