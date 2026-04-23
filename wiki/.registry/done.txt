@@ -12036,3 +12036,8 @@ raw/articles/hacksoflife.blogspot.com/2013-01-30_instancing-for-bricksmith.md
 raw/articles/hacksoflife.blogspot.com/2013-03-14_how-to-jam-an-arrangement-2-into-a-general-polygon-set-2.md
 raw/articles/hacksoflife.blogspot.com/2013-03-16_lego-lighting-effects.md
 raw/articles/hacksoflife.blogspot.com/2013-04-20_there-must-be-50-ways-to-draw-your-streaming-quads.md
+raw/articles/c0de517e.blogspot.com/2010-12-15_stupid-sample-generator.md
+raw/articles/c0de517e.blogspot.com/2010-12-16_shameless-plug-2.md
+raw/articles/c0de517e.blogspot.com/2010-12-16_shameless-plug.md
+raw/articles/c0de517e.blogspot.com/2011-01-02_poll-results-what-will-be-the-next-next-gen.md
+raw/articles/c0de517e.blogspot.com/2011-01-02_poll-results-what-will-be-the-next-next-gen-2.md

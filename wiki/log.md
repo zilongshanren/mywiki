@@ -1234,3 +1234,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-97 Worker E (hacksoflife/Supnik ×5, 2012-12 到 2013-04)
 
 处理 5 篇 hacksoflife.blogspot.com 文章，全部入库。新增 5 概念页（unix-symbol-visibility-leakage、bricksmith-instancing-pipeline、cgal-arrangement-to-polygon-set-conversion、lego-realistic-lighting-brain-dump、streaming-quads-drawing-strategies）、5 source 摘要。Ben Supnik 人物页仅 patch。
+
+## [2026-04-19] ingest | Wave-98 Worker KG (c0de517e Pesce 2010-12 ~ 2011-01 ×5)
+
+处理 5 篇 c0de517e.blogspot.com。1 篇 ingest：2011 年初「next next-gen」投票结果（115 人产业情绪快照：71% 押主机延续、3% 社交 F2P——两端都被低估了的不是方向而是速度）。4 篇 skip：stupid-sample-generator 2D 是同日 3D 版本的前身，已有的 c0de517e-sample-generator-3d 已覆盖；两篇 shameless-plug 是 Fight Night Champion 自宣，无技术内容；poll-results 的 http 版本是 https 版本的 archive 重复。新增 1 个 source 摘要，挂到 [[angelo-pesce]]。

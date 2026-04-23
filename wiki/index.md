@@ -2099,6 +2099,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-arrangement-to-polygon-set]] | Supnik：CGAL arrangement 强塞 GPS 的两条契约 |
 | [[sources/supnik-lego-lighting]] | Supnik：Lego 真实感光照五条线索 |
 | [[sources/supnik-streaming-quads]] | Supnik：2D 动态 quad 的五十种画法 |
+| [[sources/c0de517e-next-next-gen-poll-2011]] | Pesce 2011：115 人投票下一代「次世代」——71% 押主机延续、3% 社交 F2P |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

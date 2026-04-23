@@ -48,3 +48,4 @@ sources: 5
 - [[sources/c0de517e-eastl]]
 - [[sources/c0de517e-stereoscopic-test]]
 - [[sources/c0de517e-sample-generator-3d]]
+- [[sources/c0de517e-next-next-gen-poll-2011]]
