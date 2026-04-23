@@ -11711,3 +11711,8 @@ raw/articles/c0de517e.blogspot.com/2010-03-07_skin-2.md
 raw/articles/c0de517e.blogspot.com/2010-03-07_skin.md
 raw/articles/c0de517e.blogspot.com/2010-03-09_68000-2.md
 raw/articles/c0de517e.blogspot.com/2010-03-09_68000.md
+raw/articles/tedsieblog.wordpress.com/2016-07-07_everyplay-shi-yong-jiao-xue.md
+raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-introduction-yan-suan-fa-jian-jie.md
+raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-definition-ding-yi-node.md
+raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-generate-sheng-cheng-node-node-ke-shi-hua.md
+raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-sort-node-pai-xu-shi-zuo.md

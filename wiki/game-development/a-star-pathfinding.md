@@ -54,5 +54,5 @@ A\* 只是搜索策略，真正麻烦的是"在什么图上搜"。NavMesh（体�
 - [[meshes-of-navigation-recast]] — Recast 的体素化 navmesh 生成管线
 
 ## Sources
-
 - [[sources/gameknife-pathfinding-review]]
+- [[sources/tedsie-a-star-tutorial]] — Ted Sie 2016-07 Unity + C# grid-based A* 四步实作教学

@@ -974,3 +974,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-76 Worker HT (c0de517e.blogspot.com 2010-03 ×5)
 
 处理 Angelo Pesce 2010-03 的 5 个文件：1 篇独立 ingest（skin）、1 篇 skipped_offtopic（68000 访问量里程碑 + Amiga 调侃）、1 篇 skipped_offtopic（homework 工作方法论短文，非技术）、2 篇 skipped_duplicate（-2.md archive 副本）。新增 1 份 source 摘要（c0de517e-skin），触及 [[angelo-pesce]] 与 [[sss-practical-implementation]]。
+
+## [2026-04-19] ingest | Wave-76 Worker hu (tedsieblog A* 系列 + Everyplay)
+
+处理 tedsieblog.wordpress.com 5 篇。A* 四篇（intro/node definition/node generate/node sort）合并为单一源摘要 [[sources/tedsie-a-star-tutorial]]，链接到既有 [[a-star-pathfinding]] 概念页；跳过 Everyplay SDK 6 步安装教学（无技术内容、服务 2018 已下线）。无新概念/人物页。
