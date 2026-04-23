@@ -74,5 +74,8 @@ Warren 的 Metal 实现：text layout / shaping 交给 **Core Text**（等价于
 - [[warren-moore]]
 
 ## Sources
-
 - [[sources/metalbyexample-slug]]
+
+## 相关
+
+- [[screen-space-curve-tessellation-cutoff]] — 在 CPU-side tessellation 路线里用屏幕空间阈值控制 Bézier 细分密度，是 GPU 直接光栅化之前的代表性做法

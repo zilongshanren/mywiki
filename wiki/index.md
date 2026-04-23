@@ -796,6 +796,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[lightmap-baking-workflow]] | 离线烘 lightmap：V-Ray / 3ds Max 自动 unwrap、area light、skylight、GI（Proun 单赛道 30h） |
 | [[colored-sky-sun-lighting]] | 对比色 sun / skylight 的艺术搭配：蓝-黄、橙-青、粉-绿（Proun 三赛道） |
 | [[pc-gpu-driver-compat-qa]] | PC 发行的驱动兼容地狱：NPOT 检测、max-vertex-index、shader-cap 说谎、glTexSubImage2D 坑 |
+| [[screen-space-curve-tessellation-cutoff]] | 把 Bézier 曲线细分阈值反投影到屏幕像素半径，避免像素内堆叠几十条冗余顶点 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -963,6 +964,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[blueswordm]] | Chips and Cheese 编解码方向撰稿人 |
 | [[people/marte-randomtower]] | Marte，Random Tower 博客作者，Flash/AS3 独立游戏开发者 |
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（Arkanova），希腊 demoscene / Linux 图形程序员，4rknova.com 站长 |
+| [[patrick-stein]] | Patrick Stein（nklein software），Common Lisp / CL-OpenGL 爱好者，TC Lispers 活跃贡献者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1790,6 +1792,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-lighting-in-proun]] | van Dongen：Proun 的 lightmap 烘焙流程（2010） |
 | [[sources/joostdevblog-coloured-light-proun]] | van Dongen：Proun 的对比色 sun/skylight 艺术选择（2010） |
 | [[sources/joostdevblog-pc-dev-horror]] | van Dongen：PC 发行的显卡驱动兼容血泪（2010） |
+| [[sources/nklein-cl-opengl-text-cutoff]] | Stein：CL-OpenGL + ZPB-TTF 文本反走样的屏幕空间 cutoff 计算 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

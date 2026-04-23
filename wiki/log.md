@@ -1018,3 +1018,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-79 Worker ID (joostdevblog.blogspot.com ×5 — Proun graphics, 2010-11..12)
 
 处理 5 篇 Joost van Dongen 的 Proun 技术博客（立体 3D、god-rays、lightmap 烘焙、对比色灯光、PC 驱动兼容）。全部 ingest。新增 5 概念页（stereoscopic-3d-design / screen-space-light-shafts / lightmap-baking-workflow / colored-sky-sun-lighting / pc-gpu-driver-compat-qa）、5 source 摘要，patch 已存在的 [[joost-van-dongen]] 人物页（相关 / Sources / sources count 3→8）。
+
+## [2026-04-19] ingest | Wave-80 Worker IG (nklein.com ×5)
+
+处理 5 篇 nklein.com（Patrick Stein，2010-01/02 iPhone dev 时期）。保留 1 篇技术文（CL-OpenGL + ZPB-TTF 矢量字形反走样的屏幕空间 cutoff 自适应细分），跳过 4 篇 iPhone Spelling Toy 里程碑 / 发布公告。新增 1 概念页（screen-space-curve-tessellation-cutoff）、1 人物页（patrick-stein）、1 源摘要。

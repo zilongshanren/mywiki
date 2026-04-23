@@ -11766,3 +11766,8 @@ raw/articles/joostdevblog.blogspot.com/2010-11-13_sun-rays.md
 raw/articles/joostdevblog.blogspot.com/2010-11-20_lighting-in-proun.md
 raw/articles/joostdevblog.blogspot.com/2010-11-27_coloured-light-in-proun.md
 raw/articles/joostdevblog.blogspot.com/2010-12-04_the-horror-that-is-pc-development.md
+raw/articles/nklein.com/2010-01-19_better-text-rendering-with-cl-opengl-and-zpb-ttf-nklein-soft.md
+raw/articles/nklein.com/2010-01-29_spelling-iphone-app-sent-to-beta-testers-nklein-software.md
+raw/articles/nklein.com/2010-02-04_speedy-iphone-app-programming-nklein-software.md
+raw/articles/nklein.com/2010-02-05_iphone-app-submitted-to-the-app-store-nklein-software.md
+raw/articles/nklein.com/2010-02-10_spelling-toy-iphone-app-released-nklein-software.md

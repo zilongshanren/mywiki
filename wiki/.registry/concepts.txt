@@ -868,3 +868,4 @@ screen-space-light-shafts
 lightmap-baking-workflow
 colored-sky-sun-lighting
 pc-gpu-driver-compat-qa
+screen-space-curve-tessellation-cutoff
