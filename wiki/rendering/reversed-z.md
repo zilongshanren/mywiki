@@ -27,10 +27,10 @@ Reversed-Z 反过来：远 → 0.0（float 密），近 → 1.0（float 稀）�
 Unity 的 URP/HDRP 默认启用 Reversed-Z（对应 `UNITY_REVERSED_Z` 宏）。写 shader 时要意识到深度纹理的含义是反的。
 
 ## 相关
-
 - [[z-buffer]]
 - [[z-fighting]]
 - [[scene-color-depth-nodes]] —— Shader Graph 里 Scene Depth 的三档模式（Raw / Linear01 / Eye）与 reversed Z 的交互
+- [[linear-z-trick]] —— 2010 年 Pesce 的 VS 软件 W-buffer 小把戏，现代被 reversed-z 替代
 
 ## Sources
 

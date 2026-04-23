@@ -909,6 +909,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[ogssaa-fxaa-non-square]] | Supnik 2012：非方形 OGSSAA（2×4 竖向偏置）× FXAA 跑在 SSAA 空间的组合 |
 | [[stingray-default-frame-flow]] | Stingray 默认 render_config 一帧八段走向 + mini renderer 减法哲学 |
 | [[opengl-pinned-memory-vbo-streaming]] | GL_AMD_pinned_memory：用应用内存直接当 VBO 跳过 glMapBuffer |
+| [[linear-z-trick]] | Pesce 2010：VS 里 `hPos.z *= hPos.w / far` 软件模拟线性视深度 / W-buffer |
+| [[frame-pipeline-latency]] | 帧管线多级缓冲的总延迟——30fps 下不拆 stage 反而手感更好 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2064,6 +2066,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-beyond-glmapbuffer]] | X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 的 6ms 开销 |
 | [[sources/joostdevblog-proun-patch-v108]] | Joost：Proun v108 补丁的显卡驱动说谎三连与 6 年 cross-product 退化 bug |
 | [[sources/joostdevblog-proun-gameplay-stats]] | Joost：一百万场 Proun highscore 的游玩分布与设计教训 |
+| [[sources/c0de517e-threads-buffers-and-latency]] | Pesce 2010：下一作 NFS 单线程，多级 buffer 的延迟代价 |
+| [[sources/c0de517e-know-your-z]] | Pesce 2010：VS 里操作 hPos 的两个 Z trick 测题及代价 |
+| [[sources/c0de517e-code-rights]] | Pesce 2010：代码与数据应享有同等基础设施——manifesto |
+| [[sources/c0de517e-platform-specific-features-poll-2010]] | Pesce 2010：70 人平台特性使用率调研结果 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2074,6 +2080,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ai-driven-conformance-clone]] | 用 AI 克隆既有 CLI 工具的 conformance 测试法 |
 | [[c-memory-safety-even-for-ai]] | 为何 AI 协作时代应选 C++ 而非 C |
 
+| [[code-as-art-manifesto]] | Pesce 2010「代码平权」manifesto：五项诉求 + Fuck OOP + 轻框架厚应用 |
+| [[platform-specific-features-poll-2010]] | Pesce 2010 70 人调研：360/PS3/DX10/DX11 平台特性使用率快照 |
 ## 特殊页面
 
 - [[overview]] —— 综合叙事：把主题串起来

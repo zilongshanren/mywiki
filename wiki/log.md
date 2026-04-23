@@ -1214,3 +1214,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-96 Worker KC (joostdevblog.blogspot.com ×5, 2011-08~10)
 
 处理 Joost van Dongen 2011 年秋的 5 篇文章：2 篇 INGEST，3 篇 SKIP。新增概念页 indie-gameplay-telemetry（独立游戏游玩埋点分析方法论，Proun 一百万场数据样本），新增 2 篇 source 摘要（patch v108 显卡驱动说谎复盘、一百万场 highscore 游玩分布）。Joost 人物页追加新概念交叉引用与 2 条 source。pc-gpu-driver-compat-qa 概念页追加 patch v108 作为第二个一手样本。SKIP：user-tracks 画廊、PWYW 销售商业分析、Stedelijk 博物馆展览合影。
+
+## [2026-04-19] ingest | Wave-96 Worker KA (c0de517e.blogspot.com ×5, 2010-08/09)
+
+处理 5 篇 Angelo Pesce 2010 年 8-9 月博文，4 ingest + 1 SKIP（threads-buffers-and-latency-2.md 是 2026-04-19 重抓的存档副本，内容与 -.md 完全一致）。新增 4 概念页：linear-z-trick（VS 里 z*=w/far 软件 W-buffer + 其屏幕空间非线性代价）、frame-pipeline-latency（多级 buffer 的总延迟 & NFS 单线程选择）、code-as-art-manifesto（Pesce 2010 代码平权宣言：五项诉求 + Fuck OOP + 轻框架厚应用）、platform-specific-features-poll-2010（70 人调研快照：360 压管线、PS3 挤 SPU、DX10 没爆点、DX11 multithread 仅 7%）。新增 4 源摘要。angelo-pesce 人物页追加 4 个 source 链接与 4 个相关概念。z-buffer 追加 linear-z 小把戏条目，reversed-z 与 live-editing-taxonomy-2010 追加相关链接。

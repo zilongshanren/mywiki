@@ -22,10 +22,10 @@ sources: 2
 近=0.1, 远=1000 时，500m 处的深度分辨率约 1cm——近处过剩，远处不足。
 
 ## 改进方案
-
 - **Reversed-Z**：见 [[reversed-z]]，把近远翻转到 1→0，结合 float 精度分布改善远平面。
 - **Logarithmic Depth**：手动对数映射，均匀化精度。
 - **Clustered depth**：近远分段，各自独立 Z buffer。
+- **[[linear-z-trick|Linear-Z VS trick]]**：`hPos.z *= hPos.w / far` 软件模拟 W-buffer，不破坏纹理透视插值；代价是屏幕空间非线性导致 Hi-Z 退化。
 
 ## 与 Alpha 混合的不兼容
 

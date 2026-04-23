@@ -52,6 +52,7 @@ sources: 1
 - [[dependencies]]
 - [[angelo-pesce]]
 - [[javascript-hot-reload-dom-script]] —— Niklas 用 30 行 JS 做出的 code hot-swap 最小实现
+- [[code-as-art-manifesto]] —— 2010-09 Pesce 把 live-editing 上升为「代码平权」的纲领性宣言
 
 ## Sources
 

@@ -25,6 +25,10 @@ sources: 2
 - [[scene-graph-unnecessary-in-engine]]
 - [[pesce-2010-engine-layer-sketch]]
 - [[live-editing-taxonomy-2010]]
+- [[linear-z-trick]]
+- [[frame-pipeline-latency]]
+- [[code-as-art-manifesto]]
+- [[platform-specific-features-poll-2010]]
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -35,3 +39,7 @@ sources: 2
 - [[sources/c0de517e-homework-2-dependencies]]
 - [[sources/c0de517e-pix-is-great-but]]
 - [[sources/c0de517e-live-editing-poll-results]]
+- [[sources/c0de517e-threads-buffers-and-latency]]
+- [[sources/c0de517e-know-your-z]]
+- [[sources/c0de517e-code-rights]]
+- [[sources/c0de517e-platform-specific-features-poll-2010]]

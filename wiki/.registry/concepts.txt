@@ -992,3 +992,7 @@ ogssaa-fxaa-non-square
 stingray-default-frame-flow
 opengl-pinned-memory-vbo-streaming
 indie-gameplay-telemetry
+linear-z-trick
+frame-pipeline-latency
+code-as-art-manifesto
+platform-specific-features-poll-2010
