@@ -11911,3 +11911,8 @@ raw/articles/hacksoflife.blogspot.com/2011-02-19_mmm-c0ffee.md
 raw/articles/hacksoflife.blogspot.com/2011-02-28_order-correct-translucency.md
 raw/articles/hacksoflife.blogspot.com/2011-03-06_csm-for-dummies.md
 raw/articles/hacksoflife.blogspot.com/2011-03-07_don-t-go-anywhere.md
+raw/articles/bitsquid.blogspot.com/2014-04-25_building-an-engine-plugin-system.md
+raw/articles/bitsquid.blogspot.com/2014-06-18_what-is-in-a-name.md
+raw/articles/bitsquid.blogspot.com/2014-08-27_building-a-data-oriented-entity-system-part-1.md
+raw/articles/bitsquid.blogspot.com/2014-09-08_building-a-data-oriented-entity-system-part-2-components.md
+raw/articles/bitsquid.blogspot.com/2014-10-03_building-a-data-oriented-entity-system-part-3-the-transform.md

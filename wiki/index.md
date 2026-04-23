@@ -93,6 +93,7 @@ sources: 371
 | [[strings-as-identifiers-antipattern]] | 字符串作标识符的反模式——Id/DisplayName 必须分离 |
 | [[four-meditations-on-rewrites]] | Bitsquid Flow 重写后的四条设计教训 |
 | [[destroy-recreate-vs-reset]] | 销毁重建胜过隐藏重置——用对象生命周期消除状态同步 bug |
+| [[resource-reference-path-vs-guid-vs-name]] | 资源引用的三难：path 改名破、GUID 不可读、name 双重标识——选哪条都要配套工具链 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -357,6 +358,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[repo-clone-with-filter]] | hg-clone.rb：按提交遍历 + 过滤程序，给 NDA 客户提供带历史的过滤后源码仓库 |
 | [[scripted-network-debugging]] | 用 Ruby 脚本 + 引擎内置 TCP Lua 控制台把多机联机 bug 跑 500 次复现 |
 | [[asset-exchange-format-strategy]] | DCC → 引擎资源交换的三条路线（Supnik 2011 COLLADA 决策） |
+| [[bitsquid-data-oriented-entity-system]] | Bitsquid 2014 ECS：entity=id、manager 持 SoA 布局、两档 GC、transform 的 immediate 更新 |
+| [[engine-plugin-c-abi-versioned-api]] | 引擎 plugin 的 C-ABI 版本化 API 查询：两套 API、新 version 永不删老 version |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1963,6 +1966,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-order-correct-translucency]] | Supnik：从硬件 OIT 到三角形平面预排序 |
 | [[sources/supnik-csm-for-dummies]] | Supnik：CSM 作为 X-Plane 10 阴影基线的自嘲注脚 |
 | [[sources/supnik-dont-go-anywhere]] | Supnik：gdb scheduler-locking 搞定多线程断点求值 |
+| [[sources/bitsquid-engine-plugin-system]] | Bitsquid：引擎 plugin 的两套 API 和 interface querying 设计 |
+| [[sources/bitsquid-what-is-in-a-name]] | Bitsquid：资源引用 path/GUID/name 的三难，以及为什么 Bitsquid 选 path |
+| [[sources/bitsquid-data-oriented-entity-system]] | Bitsquid 2014 ECS Part 1-3 合并：EntityManager + ComponentManager + TransformComponent |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

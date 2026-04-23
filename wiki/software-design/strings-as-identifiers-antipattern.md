@@ -34,13 +34,13 @@ Niklas 在另一个系统里也吃过亏：他以为 "script 里按 name 访问�
 2. **用户不可改的稳定 id**：如果字符串 id 保证一旦分配就不能改，也确实能工作。但 GUID 更"自明"（一眼看出它是内部 id），更难被错用。
 
 ## 关联
-
 这条反模式和 wiki 里若干概念互为旁证：
 
 - [[no-magic-principle]]：字符串操作里有大量"约定大于显式"的隐含语义，是典型的魔法。
 - [[intent-vs-state]]：display name 是 state（随时可变的展现层），id 是 intent（系统认同的身份）——混用就是混淆了 intent/state。
 - [[static-hash-value-debug-assert]]：Bitsquid 落盘还是用字符串（如事件名 `"jump_start"`），但在 runtime 一律转成 32-bit hash；id 和 display 的分离在这里演化成 hash 和 source string 的分离。
 - [[guid-object-database-schema]]：另一种彻底方案——内容管线全用 GUID，display name 仅挂在 asset 元数据里。
+- [[resource-reference-path-vs-guid-vs-name]] — Niklas 另一篇：资源引用的 path/GUID/name 三难选择，和本文同属 identifier 设计家族
 
 ## Sources
 

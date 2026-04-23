@@ -1134,3 +1134,7 @@ Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editi
 ## [2026-04-19] ingest | Wave-89 Worker JG (hacksoflife 2011-02/03 Supnik ×5)
 
 处理 5 篇 Ben Supnik 早期 X-Plane 博文。新增 4 概念页（triangle-plane-sort-translucency、order-independent-transparency、cascaded-shadow-maps、gdb-scheduler-locking）、3 source 摘要。跳过 2 篇（WordPress shortcode、hex magic cookie 趣闻）。人物页 [[ben-supnik]] 打补丁加 4 条 related + 3 条 Sources。
+
+## [2026-04-19] ingest | Wave-89 Worker JF (bitsquid 2014 ECS trilogy + plugin + naming, x5)
+
+处理 5 篇 Niklas Frykholm 2014 年 Bitsquid 博客。Part 1-3 ECS 三部曲合并为单一 source（bitsquid-data-oriented-entity-system），因三篇构成连续的设计叙事：EntityManager (index/generation) → ComponentManager (SoA + 单 buffer + 惰性 GC) → TransformComponent (两张 scene graph 解耦 + immediate 更新)。新增 3 概念页：[[bitsquid-data-oriented-entity-system]]（业界早期完整 ECS 设计蓝本）、[[engine-plugin-c-abi-versioned-api]]（C-ABI 版本化 API 查询 + 老 version 永存）、[[resource-reference-path-vs-guid-vs-name]]（资源引用三难及配套工具链）。3 source 摘要。Niklas Frykholm 人物页已存在，append 3 条 source 链 + 3 条概念相关。

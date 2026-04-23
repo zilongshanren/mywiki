@@ -946,3 +946,6 @@ triangle-plane-sort-translucency
 order-independent-transparency
 cascaded-shadow-maps
 gdb-scheduler-locking
+bitsquid-data-oriented-entity-system
+engine-plugin-c-abi-versioned-api
+resource-reference-path-vs-guid-vs-name

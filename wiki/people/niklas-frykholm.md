@@ -50,6 +50,9 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[repo-clone-with-filter]] — hg-clone.rb 给 NDA 客户提供带历史的过滤后源码仓库
 - [[spatial-hash-grid-linked-list]] — grid coord → HashMap → 扁平数组内嵌链表的标配空间查询
 - [[scripted-network-debugging]] — Ruby 脚本 + 引擎内置 TCP Lua 控制台把联机 bug 跑 500 次复现
+- [[bitsquid-data-oriented-entity-system]] — 2014 年 Part 1-3 的 ECS 三部曲设计笔记
+- [[engine-plugin-c-abi-versioned-api]] — C-ABI 版本化 API 查询的 plugin 系统
+- [[resource-reference-path-vs-guid-vs-name]] — 资源引用 path/GUID/name 的三难选择
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -110,3 +113,6 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-source-censoring-part-2]]
 - [[sources/bitsquid-finding-nearby-stuff]]
 - [[sources/bitsquid-scripted-network-debugging]]
+- [[sources/bitsquid-engine-plugin-system]]
+- [[sources/bitsquid-what-is-in-a-name]]
+- [[sources/bitsquid-data-oriented-entity-system]]

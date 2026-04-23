@@ -65,6 +65,7 @@ ECS 本身引入了新的复杂性：
 - [[ecs-data-oriented-revert]] — 云风对 Ant ECS 的反思：还原面向数据的原始 ECS，不要加太多辅助模块
 - [[ecs-for-rust-ui]] — Raph Levien 把 ECS 想法借到 Rust GUI 的 hybrid 架构，与游戏 ECS 的 database 模型形成对照
 - [[unity-ecs-custom-editor-debug]] — Gemserk 的 shadow GameObject + CustomEditor 方案，给 ECS Entity 做可写调试 UI
+- [[bitsquid-data-oriented-entity-system]] — Niklas Frykholm 2014 Bitsquid ECS 三部曲，业界最早的公开完整数据导向 ECS 设计
 
 ## Sources
 - [[sources/aposd-day02]]
