@@ -917,3 +917,12 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-71 Worker HF (chipsandcheese.com ×5)
 
 处理 5 篇 chipsandcheese.com 2021-01 ~ 2021-02 文章。3 篇入库：BlueSwordM 的现代数据压缩系列 part 1（JPEG 编码管线）、Chips and Cheese 集体作者的三家平台安全栈横评、以及 CTR Safety Revisited（聚焦 Black's Equation 电迁移与静态 OC vs 动态 Boost 的电压退化机理）。2 篇跳过：AMD 未来 CPU 文被作者自己 formally retracted 为传闻站立场，无技术内容；CTR 初评被同月跟进的 Safety Revisited 覆盖得更系统，不重复收录。新增概念页 [[jpeg-codec-pipeline]]、[[cpu-gpu-platform-security-features]]、[[electromigration-voltage-degradation]]，新增 [[blueswordm]] 人物页，patch 了 [[chips-and-cheese]]、[[mttf-reliability]]、[[intel-13th-14th-gen-clock-degradation]] 三处交叉链接。
+
+## [2026-04-21] query | Unity Built-in 移动端麻将阴影方案
+
+问题：Built-in 管线、固定斜视、3 avatar、中端手机，如何高性能实现阴影。
+答复：output/reports/mahjong-mobile-shadows-builtin.md。核心方案是关掉 built-in real-time shadow，改用分层混合：桌面共享 shadow RT（静态烘焙 + 河牌 Blit 增量），avatar 用平面投影阴影（共享 atlas RT）投到桌面与虚拟牌顶平面，牌根接触阴影烘焙进贴图。参考 [[blob-shadow-decal-vs-plane]] / [[cached-shadowmaps]] / [[prebaked-corner-occlusion]]。
+
+## [2026-04-19] ingest | Wave-72 Worker HG (c0de517e ×5 all-duplicate)
+
+批次 batch-w72-hg：全部跳过。5 篇均为 -2 后缀月度归档副本，内容与无后缀原文完全相同（仅 URL scheme 及 fetched 日期有差异）。原文已在 batch-w14-ao（ergonomy-rant、iphone-ipad-ipod）和 batch-w25-bu（new-layout、small-brdf-visualizer、3d-engines-out-there）中处理并跳过。无新增页面。

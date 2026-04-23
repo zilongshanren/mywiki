@@ -11646,3 +11646,8 @@ raw/articles/chipsandcheese.com/2021-02-05_amds-past-and-future-cpus-formal-retr
 raw/articles/chipsandcheese.com/2021-02-05_ctr-a-review-and-a-warning-updated.md
 raw/articles/chipsandcheese.com/2021-02-07_security-and-you-an-overview.md
 raw/articles/chipsandcheese.com/2021-02-15_ctr-safety-revisited.md
+raw/articles/c0de517e.blogspot.com/2010-02-24_ergonomy-rant-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-27_iphone-ipad-ipod-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-27_new-layout-2.md
+raw/articles/c0de517e.blogspot.com/2010-02-28_small-brdf-visualizer-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-03_3d-engines-out-there-2.md
