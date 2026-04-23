@@ -11991,3 +11991,8 @@ raw/articles/hacksoflife.blogspot.com/2011-08-29_merge-edge-fixed-sort-of.md
 raw/articles/hacksoflife.blogspot.com/2011-09-01_sequences-vs-iterators.md
 raw/articles/hacksoflife.blogspot.com/2011-09-03_bezier-curve-optimization.md
 raw/articles/hacksoflife.blogspot.com/2011-12-13_stencil-optimization-for-deferred-lights-without-depth-clamp.md
+raw/articles/nklein.com/2010-04-12_cl-growl-client-library-released-nklein-software.md
+raw/articles/nklein.com/2010-04-13_c-clifford-algebra-library-getting-some-use-nklein-software.md
+raw/articles/nklein.com/2010-04-24_cl-growl-slides-nklein-software.md
+raw/articles/nklein.com/2010-04-26_weblocks-slides-nklein-software.md
+raw/articles/nklein.com/2010-04-29_cl-growl-patched-for-ccl-nklein-software.md

@@ -1198,3 +1198,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-94 Worker JV (hacksoflife 2011-08 ~ 2011-12 x5)
 
 处理 5 篇 Ben Supnik 2011-08/09/12 博文：joys-of-bezier-curves [NOT]（Bezier 无闭式解清单）、merge_edge fixed（CGAL 方向缓存 workaround）、sequences-vs-iterators（自发明 range，10 年前的 C++20 预言）、bezier-curve-optimization（X-Plane 10 OSM 道路 PN-Triangle + 贪婪合并流水线）、stencil-optimization-for-deferred-lights（光源体积 stencil 在远剪裁面切穿时的 VS Z-clamp 降级）。5 篇全部 ingest，无 skipped。新增 5 概念页：bezier-analytic-limitations / cgal-halfedge-direction-cache-pitfall / pn-triangle-polyline-bezier-fit / deferred-light-volume-stencil-depth-clamp-hack (rendering) + cpp-ranges-vs-iterators (programming-languages)，5 source 摘要。Ben Supnik 人物页追加 5 条相关 + 5 条 Sources；stencil-buffer / deferred-rendering / agp-vs-vram-streaming / early-z-late-z / bezier-curve-triangulation / cubic-equation-solver-hlsl / arrangement-mesh-simplification / stl-not-abstraction-prescription / rpp-stl-replacement 通过 patch 追加相关链接。
+
+## [2026-04-19] ingest | Wave-95 Worker JZ (nklein.com ×5, 2010-04)
+
+处理 5 篇 Patrick Stein 2010 年 4 月的博文，全部判定 SKIP：CL-Growl 发布公告/CCL patch 致谢/TC Lispers 幻灯片链接（×2）、Clifford 库被引用的反馈帖——均为 1-2 段薄公告，无几何代数原理、无 Growl 协议剖析、无 Weblocks 架构讲解，不达技术实质门槛。Patrick Stein 人物页已存在，本批次无改动。
