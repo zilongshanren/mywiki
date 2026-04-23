@@ -1150,3 +1150,7 @@ Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editi
 ## [2026-04-19] ingest | Wave-90 Worker JI (bitsquid 2014-10 ~ 2015-06 ×5)
 
 处理 5 篇 Bitsquid 2014-10 到 2015-06 博文：ECS Part 4 (entity resources) 补进既有 [[bitsquid-data-oriented-entity-system]]；Multithreaded Gameplay 新概念 [[actor-model-for-gameplay]]；DirectX SDK 迁移新概念 [[directx-sdk-to-windows-sdk-migration]] + 新人物 [[amandine-coget]]；Allocation Adventures 1/2 新概念 [[datacomponent-single-buffer-allocation]]、[[arrays-of-arrays-allocation]]、[[buddy-memory-allocation]]。共 5 ingested、5 概念页（含 buddy allocator 对 2-幂扩容的 allocator 选型）、1 人物页、5 source 摘要。Niklas 人物页补 4 related + 4 Sources；既有 offset-based-resource-blobs / custom-allocator-interface / aos-vs-soa / lua-runtime-dynamism-tricks / message-queue-thread-ownership / bitsquid-task-scheduler / main-thread-task-injection / linear-allocator / directx11-early-pitfalls 各打小补丁。
+
+## [2026-04-19] ingest | Wave-91 Worker JN (c0de517e 2010-05~07 ×5)
+
+Pesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2、java4ever-2），2 篇为纯链接聚合（some-links、more-links-generative-art），1 篇为一句话转视频（java4ever）。无可沉淀的技术内容。

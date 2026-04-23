@@ -11931,3 +11931,8 @@ raw/articles/bitsquid.blogspot.com/2015-03-10_multithreaded-gameplay.md
 raw/articles/bitsquid.blogspot.com/2015-06-11_upgrading-the-directx-sdk.md
 raw/articles/bitsquid.blogspot.com/2015-06-12_allocation-adventures-1-the-datacomponent.md
 raw/articles/bitsquid.blogspot.com/2015-06-22_allocation-adventures-2-arrays-of-arrays.md
+raw/articles/c0de517e.blogspot.com/2010-05-31_some-links-2.md
+raw/articles/c0de517e.blogspot.com/2010-05-31_some-links.md
+raw/articles/c0de517e.blogspot.com/2010-06-12_more-links-generative-art.md
+raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever-2.md
+raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever.md
