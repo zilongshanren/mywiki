@@ -45,9 +45,9 @@ Supnik 总结 CGAL 里把多边形塞进 arrangement 的三种方法：
 这篇短文把一个看上去纯理论的几何问题拍回了工程层面：**拓扑数据结构的「干净抽象」在脏输入面前会漏**。antenna 问题的本质是「edge 粒度的数据标签对 halfedge 粒度的查询不够」——和 [[cgal-exact-arithmetic-mantissa-growth|CGAL 精确算术里 mantissa 增长]] 一样，都是 CGAL 为了给你「一致拓扑」承诺而必须付出的代价。在工业管线里，Supnik 的折中是：**预处理阶段检测并剔除 antenna**，再进 CGAL，比事后在 arrangement 上修拓扑便宜得多。
 
 ## 相关
-
 - [[cgal-exact-arithmetic-mantissa-growth]]
 - [[ben-supnik]]
+- [[arrangement-mesh-simplification]] —— 同一条 X-Plane 地图管线里「导入后再简化」阶段的 squatter 搜索
 
 ## Sources
 

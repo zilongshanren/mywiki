@@ -1162,3 +1162,7 @@ Pesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2�
 ## [2026-04-19] ingest | Wave-91 Worker jm (hacksoflife.blogspot.com ×5, Supnik 2011-05)
 
 处理 Supnik 2011 年 5 月五篇：`limits-of-8-bit-normal-maps`（RG8 法线贴图在 specular exponent 下的精度极限）、`seriosly-strange-execution`（SSE `_MM_SHUFFLE` 端序约定）、`sse-its-the-memory`（SSE 被内存带宽吃掉的 15%→0 短札）、`performance-tuning-cars`（X-Plane 10 车灯/AI 性能手术全流程案例）。新增 4 概念页（`8-bit-normal-map-precision-limits`、`sse-shuffle-endianness`、`simd-memory-bandwidth-bound`、`xplane-headlight-perf-teardown`）、4 source 摘要；patch `ben-supnik` / `compact-normal-encoding` / `sse-tricks` / `bottleneck-analysis` / `memory-hierarchy`。跳过 1 篇：`svnx-on-os-x-10-6-you-need-a-key-pair`（ssh 密钥对配置的非技术小贴士）。
+
+## [2026-04-19] ingest | Wave-92 Worker JP (hacksoflife 2011-05 ×5)
+
+Supnik 2011-05 小集 5 篇：跳过 1 篇（i-hate-c comment-thread 片段），新增 1 概念页 arrangement-mesh-simplification（Mesh Simplification I/II/III 合并），2 份 source 摘要（trilogy 合并 + instancing-limits 单独）。Patch xplane-instancing-2011-numbers 补齐上下限边界、cgal-arrangement-import-antennas 反向交叉引用、ben-supnik 人物页挂两条新 source 与新概念。

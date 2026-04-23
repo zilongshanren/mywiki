@@ -295,6 +295,7 @@ CAQA + CSAPP 的底层视角。
 | [[stingray-package-manager]] | Stingray spm：one-button build 的 artifact 包管理器 |
 | [[sse-shuffle-endianness]] | Supnik：`_MM_SHUFFLE` 宏的 little-endian 参数顺序 |
 | [[simd-memory-bandwidth-bound]] | Supnik：SIMD 优化被内存带宽吃掉的判别与对策 |
+| [[arrangement-mesh-simplification]] | Arrangement 网格简化：squatter 搜索从 zone 计算 → Delaunay → constrained triangulation |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -2003,6 +2004,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-sse-shuffle-endianness]] | Supnik 2011-05：SSE `_MM_SHUFFLE` 参数端序 debug 小记 |
 | [[sources/supnik-sse-its-the-memory]] | Supnik 2011-05：SSE 加速被内存带宽吃掉的短札 |
 | [[sources/supnik-performance-tuning-cars]] | Supnik 2011-05：X-Plane 10 车灯/车 AI 全流程性能调优 |
+| [[sources/supnik-mesh-simplification-trilogy]] | Supnik：Mesh Simplification I/II/III 合并——squatter 搜索三档索引选择 |
+| [[sources/supnik-instancing-limits]] | Supnik：X-Plane OpenGL instancing 上下限（≈100k batch 上限、2–3 instance 下限、client array 非加速） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

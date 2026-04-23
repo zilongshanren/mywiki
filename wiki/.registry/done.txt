@@ -11946,3 +11946,8 @@ raw/articles/hacksoflife.blogspot.com/2011-05-11_svnx-on-os-x-10-6-you-need-a-ke
 raw/articles/hacksoflife.blogspot.com/2011-05-17_seriosly-strange-execution.md
 raw/articles/hacksoflife.blogspot.com/2011-05-17_sse-it-s-the-memory-stupid.md
 raw/articles/hacksoflife.blogspot.com/2011-05-18_performance-tuning-cars.md
+raw/articles/hacksoflife.blogspot.com/2011-05-24_i-hate-c-part-857-but-i-already-had-coffee.md
+raw/articles/hacksoflife.blogspot.com/2011-05-24_instancing-limits.md
+raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-i-it-s-all-about-squatters.md
+raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-ii-arrangement-simplification.md
+raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-iii-simplifying-a-triangulation.md

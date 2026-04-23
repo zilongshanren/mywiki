@@ -67,6 +67,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sse-shuffle-endianness]] —— 2011-05 `_MM_SHUFFLE` 宏的 little-endian 参数约定
 - [[simd-memory-bandwidth-bound]] —— 2011-05 SSE 被内存带宽吃掉的 15% → 0 教训
 - [[xplane-headlight-perf-teardown]] —— 2011-05 X-Plane 10 车灯/AI 性能手术全流程案例
+- [[arrangement-mesh-simplification]] —— 2011-05 三部曲：squatter 搜索从 zone 计算 → Delaunay 索引 → constrained triangulation 邻接
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -134,3 +135,5 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-sse-shuffle-endianness]]
 - [[sources/supnik-sse-its-the-memory]]
 - [[sources/supnik-performance-tuning-cars]]
+- [[sources/supnik-mesh-simplification-trilogy]]
+- [[sources/supnik-instancing-limits]]

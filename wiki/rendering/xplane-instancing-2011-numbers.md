@@ -25,8 +25,11 @@ sources: 1
 3. **mesh 粒度 vs draw call**。Supnik 报的是「mesh 数」不是「三角形数」——X-Plane 的 mesh 多半是建筑、树、小物件，单 mesh 三角形不高。落在 Outerra 后来警告的「小 mesh + 小 instance」象限里，但 2011 年的 NVIDIA/ATI 还没有 AMD GCN 新架构那个 5k 阈值的奇怪拐点。
 
 ## 一个 Supnik 式的细节
-
 他的数字**没有给 frustum cull 之前的原始 object 数**——所以这 87K 是已经粗选过的，还是全量？对标别家数据时要注意。他本人也只是「给数字 / 不解释」，就像当时所有 OpenGL 论坛里你问一个人要 instancing 数字，人家扔个短帖就算答。
+
+## 两个月后的续篇：上下限
+
+2011-05-24 的 [[sources/supnik-instancing-limits|Instancing Limits]] 给同一组数字加了边界。上限：在 ATI Mac 上 instanced batch 数往上压到 **≈100k** 就卡住。下限：单个 batch 里 instance 数少于 **2–3** 时，immediate mode 多次 draw 反而更快。另有 OS X 10.6.x 的陷阱——instance 数据走 client array（系统内存）不走 VBO 会掉到非加速路径，性能直接塌。更深一层的待调甜点是 clump 粒度：大 clump 省 driver 调用但 cull 不彻底，小 clump cull 干净但 driver 调用多。
 
 ## 相关
 
@@ -37,5 +40,5 @@ sources: 1
 - [[ben-supnik]]
 
 ## Sources
-
 - [[sources/supnik-instancing-numbers]]
+- [[sources/supnik-instancing-limits]]

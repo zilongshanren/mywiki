@@ -965,3 +965,4 @@ temporal-sao-reprojection
 sse-shuffle-endianness
 simd-memory-bandwidth-bound
 xplane-headlight-perf-teardown
+arrangement-mesh-simplification
