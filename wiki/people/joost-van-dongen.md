@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie, ronimo, galaxy-grove]
 date: 2026-04-19
-sources: 18
+sources: 32
 ---
 
 # Joost van Dongen
@@ -33,6 +33,11 @@ sources: 18
 - [[long-gestation-side-project]] —— Proun 六年业余开发史与 CableRacer codebase 在 De Blob / Snowball Earth / Swords & Soldiers 的复用链
 - [[solid-motion-sweep]] —— 2006 年 MAXScript：沿动画时间轴把 mesh 扫成静态 4D→3D 雕塑，Futurism 驱动
 - [[indie-gameplay-telemetry]] —— Proun 一百万场 highscore 的游玩分布复盘（模式使用、解锁奖励触达率、UGC 冷启动红利）
+- [[cpu-gpu-pipelining-input-lag]] —— Awesomenauts 优化中发现的 GPU 1 帧落后机制与输入滞后代价
+- [[gamepad-stick-bounce-filter]] —— 手柄弹簧越过 0 点的单帧 |Δ|>1.05 阈值过滤
+- [[prototyping-method-bias]] —— 无动画/无音效/离线音乐如何系统性误导原型结论
+- [[hd-to-sd-supersample-downscale]] —— 2D HD 美术在 SD CRT 上的 1.5× 超采样下采样
+- [[pitch-video-concept-art]] —— Pitch 视频三件套与同视角 concept art 纪律
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -62,3 +67,8 @@ sources: 18
 - [[sources/joostdevblog-solid-motion]]
 - [[sources/joostdevblog-proun-patch-v108]]
 - [[sources/joostdevblog-proun-gameplay-stats]]
+- [[sources/joostdevblog-gpu-one-frame-behind]]
+- [[sources/joostdevblog-bouncy-stick]]
+- [[sources/joostdevblog-prototyping-no-art]]
+- [[sources/joostdevblog-hd-2d-on-sd]]
+- [[sources/joostdevblog-monster-truck-cancelled]]

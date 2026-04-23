@@ -53,10 +53,10 @@ sources: 1
 这篇不是"怎样 pitch 能签"——它没有魔法。核心是把 pitch 当成一个**长达半年、命中率 <5% 的销售流程**认真做：海量请求、及时跟进、材料专业、台账完整、心态稳定。和 [[indie-game-dev-rhythm|独立开发的节奏]]那种"怎样让一个人把项目做完"放在一起看，构成 indie 工作室两条互补的生存方法论——一条管做完，一条管找钱。
 
 ## 相关
-
 - [[joost-van-dongen]]
 - [[indie-game-dev-rhythm]] —— 开发侧的节奏方法论
 - [[planning-over-rng-game-design]] —— 独立开发者多年单兵案例
+- [[pitch-video-concept-art]] —— Ronimo 的 pitch 视频三件套结构（mood art + 火柴人玩法 mockup + 同视角 concept art）
 
 ## Sources
 

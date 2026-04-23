@@ -12026,3 +12026,8 @@ raw/articles/c0de517e.blogspot.com/2010-10-20_eastl.md
 raw/articles/c0de517e.blogspot.com/2010-11-02_stereoscopic-test.md
 raw/articles/c0de517e.blogspot.com/2010-12-05_leaving-ea.md
 raw/articles/c0de517e.blogspot.com/2010-12-15_stupid-sample-generator-3d-version.md
+raw/articles/joostdevblog.blogspot.com/2011-10-23_what-no-one-told-you-about-the-videocard-lagging-1-frame-beh.md
+raw/articles/joostdevblog.blogspot.com/2011-10-29_the-bouncy-stick-problem.md
+raw/articles/joostdevblog.blogspot.com/2011-11-06_how-a-lack-of-art-influences-prototyping-results.md
+raw/articles/joostdevblog.blogspot.com/2011-11-19_making-an-hd-2d-game-look-good-on-an-sd-television.md
+raw/articles/joostdevblog.blogspot.com/2011-11-27_monster-truck-vs-zombies-a-cancelled-ronimo-project.md

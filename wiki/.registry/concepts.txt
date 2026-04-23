@@ -1000,3 +1000,8 @@ xplane-deferred-pipeline-hacks
 luajit-2gb-address-constraint
 stereo-reprojection-hole-fill
 iterative-sample-point-relaxation
+cpu-gpu-pipelining-input-lag
+gamepad-stick-bounce-filter
+prototyping-method-bias
+hd-to-sd-supersample-downscale
+pitch-video-concept-art

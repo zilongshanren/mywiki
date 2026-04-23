@@ -1226,3 +1226,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-97 Worker KD (c0de517e.blogspot.com ×5, 2010-10~12)
 
 处理 Angelo Pesce 2010 年末 5 篇：3 INGEST + 1 SKIP-dup + 1 SKIP-offtopic。新增概念页 stereo-reprojection-hole-fill（立体单眼 reproject + 洞补，2010 proof-of-concept）、iterative-sample-point-relaxation（带 importance 权重的 stochastic Lloyd 半球采样生成器）；新增 3 条 source 摘要（eastl 书签、stereoscopic-test、sample-generator-3d）。交叉补强 rpp-stl-replacement（游戏业写自己的 STL 谱系）、poisson-disk-sampling（Pesce 2010 先例）、temporal-sao-reprojection / reprojected-planar-reflection（disocclusion 洞补是 reprojection 家族共享难题）。Angelo Pesce 人物页追加 2 概念 + 3 sources。SKIP：eastl-2（归档重复），leaving-ea（离职感想 + EAC 校园照片贴，无技术）。
+
+## [2026-04-19] ingest | Wave-97 Worker batch-w97-kf (joostdevblog.blogspot.com ×5)
+
+处理 Joost 2011-10~11 五篇全部 INGEST：GPU 1 帧落后 / Bouncy Stick / 无美术原型 / HD→SD 超采样 / Monster Truck 取消。新建 5 概念页（cpu-gpu-pipelining-input-lag, gamepad-stick-bounce-filter, prototyping-method-bias, hd-to-sd-supersample-downscale, pitch-video-concept-art）、5 source 摘要；Joost 人物页 sources 27→32、追加 5 条概念交叉引用；向 frame-pipeline-latency / frames-in-flight / msaa-ssaa / indie-pitching-publishers 四页各追加 1 条相关链接。

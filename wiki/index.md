@@ -915,6 +915,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[xplane-deferred-pipeline-hacks]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear blend 共存 / 复杂度来自硬边角叠加） |
 | [[stereo-reprojection-hole-fill]] | 立体渲染的单眼屏幕空间 reprojection 与 disocclusion 洞补 |
 | [[iterative-sample-point-relaxation]] | 带 importance 权重的半球采样点 stochastic Lloyd 松弛 |
+| [[cpu-gpu-pipelining-input-lag]] | Joost 2011：GPU 永远落后 1 帧的真相与 Max Prerendered Frames 输入滞后 |
+| [[hd-to-sd-supersample-downscale]] | 2D HD 美术在 SD CRT 上的 1.5× 超采样下采样 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1000,6 +1002,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[easy-to-learn-hard-to-master]] | Proun：两键极简核心如何叠出深度 |
 | [[long-gestation-side-project]] | Proun 的六年断续开发与 codebase 反哺链 |
 | [[indie-gameplay-telemetry]] | 独立游戏游玩埋点：模式分布、解锁触达、UGC 冷启动、首关退出率 |
+| [[gamepad-stick-bounce-filter]] | 手柄弹簧越过 0 点的单帧 \|Δ\|>1.05 阈值过滤（Awesomenauts） |
+| [[prototyping-method-bias]] | 原型方法决定结论：无动画/无音效/离线音乐的系统性偏差 |
+| [[pitch-video-concept-art]] | Pitch 视频三件套与同视角 concept art 纪律（Ronimo） |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2079,6 +2084,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-eastl]] | Pesce：EA 开源 EASTL 的书签贴（游戏业自写 STL 谱系节点） |
 | [[sources/c0de517e-stereoscopic-test]] | Pesce：FX Composer + HLSL 的立体 reprojection proof-of-concept |
 | [[sources/c0de517e-sample-generator-3d]] | Pesce：Processing 小工具，带 importance 权重的半球 Poisson-like 点生成 |
+| [[sources/joostdevblog-gpu-one-frame-behind]] | Joost：GPU 永远落后 1 帧 + Max Prerendered Frames 输入滞后（2011） |
+| [[sources/joostdevblog-bouncy-stick]] | Joost：手柄摇杆回弹越过 0 的单帧阈值解（Awesomenauts 2011） |
+| [[sources/joostdevblog-prototyping-no-art]] | Joost：无美术原型系统性误导结论（Awesomenauts 跳跃 2011） |
+| [[sources/joostdevblog-hd-2d-on-sd]] | Joost：HD 2D 在 SD CRT 上的 1.5× 超采样下采样（Swords & Soldiers / Awesomenauts 2011） |
+| [[sources/joostdevblog-monster-truck-cancelled]] | Joost：Ronimo 取消项目 Monster Truck VS Zombies 的 pitch 与概念美术纪律（2011） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

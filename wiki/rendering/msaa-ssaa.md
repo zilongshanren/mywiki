@@ -43,6 +43,7 @@ sources: 1
 - [[temporal-antialiasing]] —— 现代 AAA 的事实标准 AA，MSAA 在延迟渲染下被它取代
 - [[analytical-antialiasing]] —— 对已知 SDF 形状的「反向做法」：shader 内按距离淡出一像素
 - [[aa-techniques-survey-2011]] —— Supnik 2011 把 SSAA/MSAA/CSAA 放进五档 AA 分类的上下文
+- [[hd-to-sd-supersample-downscale]] —— 2D 项目反向使用 SSAA：HD 内部渲染下采样到 SD CRT
 
 ## Sources
 

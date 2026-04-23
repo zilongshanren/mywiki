@@ -35,12 +35,12 @@ sources: 1
 没有通用正确答案。Pesce 的提问本身是有价值的——大多数工程师**不知道自己引擎实际上有几层延迟**，因为每个子系统的作者只对自己那段负责。先数清楚，再决定要不要砍。
 
 ## 相关
-
 - [[frames-in-flight]]
 - [[stingray-default-frame-flow]]
 - [[mgs-v-fox-engine-frame]]
 - [[unreal-frame-breakdown]]
 - [[angelo-pesce]]
+- [[cpu-gpu-pipelining-input-lag]] —— Joost 2011 从独立开发视角讲 Max Prerendered Frames / fence / VSync
 
 ## Sources
 

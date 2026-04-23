@@ -67,13 +67,13 @@ const uint32_t framesInFlight = min(MaxFramesInFlight, swapchain->getMaxAcquires
 如果 CPU 极快地 poll 输入 → record → submit，CPU 可能已经跑到 5 帧之后，屏幕上显示的帧其实对应 5 帧之前的输入，**手感变糊**。故意 CPU sleep 一下、让 CPU 紧跟 GPU，可以降低感知延迟——这就是很多游戏引擎做的 "frame pacing"。
 
 ## 相关
-
 - [[gpu-fence-timeline-semaphore]]
 - [[streaming-staging-texture-upload]] —— Nabla 的 staging 用同一套节奏
 - [[linear-allocator]] —— 每帧一段的 ring 内存
 - [[async-compute]] —— 跨队列 submit 也走这套同步
 - [[simplified-pipeline-barriers]]
 - [[people/erfan-ahmadi]]
+- [[cpu-gpu-pipelining-input-lag]] —— 同一机制的 2011 独立开发视角版本
 
 ## Sources
 
