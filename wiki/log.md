@@ -1114,3 +1114,11 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-87 Worker iz (bitsquid.blogspot.com 2012-11~2013-03 ×5)
 
 处理 5 篇 Niklas Frykholm 早期 Bitsquid 博客：formal data-def language、four meditations on bad design、GC vs allocation sizes、Why Lua、object replication migration race。新增 5 概念页（binary-data-definition-language / strings-as-identifiers-antipattern / four-meditations-on-rewrites / page-granular-system-allocator / object-replication-migration-race）+ 5 source summaries。作者页补 5 条相关链接。
+
+## [2026-04-19] ingest | Wave-88 Worker JC (bitsquid.blogspot.com 2013 ×5)
+
+处理 5 篇 bitsquid 2013 博文：4 篇 ingested（gimbal lock / source censoring part 2 / finding nearby stuff / scripted network debugging），1 篇 skipped（gdc-2013-slides 正文已被 SEO 评论垃圾完全吞噬，无任何技术内容）。新增 4 概念页（gimbal-lock-euler-interpolation, repo-clone-with-filter, spatial-hash-grid-linked-list, scripted-network-debugging）、4 source 摘要，niklas-frykholm 人物页追加概念与 source 链接并把 sources 计数 10 → 14。
+
+## [2026-04-19] ingest | Wave-88 Worker JD (hacksoflife 2011-01 to 2011-02 ×5)
+
+处理 5 篇 hacksoflife（Supnik 2011 年 1-2 月）。3 ingested：derivatives-iii（内建导数浮点耗尽 → 算法式导数替换，接 derivatives-two-parts 与 uv-precision-derivative-loss）、is-collada-a-win（DCC 资源交换三路线决策）、g-buffer-normals-revisited（Lambert azimuthal 2 通道法线编码，直接迭代 xplane-gbuffer-format 的 XY + 重建 Z 方案）。2 skipped：losing-javadocs-in-eclipse（作者 Chris 的 IDE 菜单操作步骤，off-topic）、random-wordpress-notes（WP + mod_rewrite 博客托管技巧）。新增 2 概念页：compact-normal-encoding、asset-exchange-format-strategy；新增 3 source 摘要；patch xplane-gbuffer-format（补充 Lambert 后续）、uv-precision-derivative-loss（补充算法式导数）、ben-supnik 人物页。

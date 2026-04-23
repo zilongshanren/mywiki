@@ -285,6 +285,7 @@ CAQA + CSAPP 的底层视角。
 | [[semaphore-vs-condvar-latency]] | pthread cond var vs semaphore+spinlock：X-Plane worker 唤醒 200→80 µsec |
 | [[cas-refcount-lowbit-lock]] | CAS + refcount 的竞态缺口、指针低位当锁的自旋变体、Vyukov differential refcount |
 | [[page-granular-system-allocator]] | Bitsquid 的内存纪律：全局只发整页、子系统在页内自治 |
+| [[spatial-hash-grid-linked-list]] | 空间查询默认方案：grid coord → HashMap → 扁平数组内嵌链表 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -351,6 +352,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[vector-field-bytecode-vm]] | Bitsquid 向量场：外循环指令 / 内循环数据的向量化字节码 VM |
 | [[bitsquid-foundation-library-concept]] | Bitsquid 2012 开源的最小引擎基座：allocator + 反 STL 集合 |
 | [[object-replication-migration-race]] | P2P 对象迁移的乱序竞态与 migration counter 解法 |
+| [[repo-clone-with-filter]] | hg-clone.rb：按提交遍历 + 过滤程序，给 NDA 客户提供带历史的过滤后源码仓库 |
+| [[scripted-network-debugging]] | 用 Ruby 脚本 + 引擎内置 TCP Lua 控制台把多机联机 bug 跑 500 次复现 |
+| [[asset-exchange-format-strategy]] | DCC → 引擎资源交换的三条路线（Supnik 2011 COLLADA 决策） |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -854,6 +858,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[matrix-scale-drift]] | Matrix4x4 里 rotation/scale 共享存储引发的 28 分钟 0.1% 漂移 |
 | [[xplane-gbuffer-format]] | Supnik 2010：X-Plane 10 第一版 16 字节 G-Buffer 布局（shadow/shine 浮点打包） |
 | [[glsl-compiler-optimization-reliance]] | 用 ShaderAnalyzer 观察驱动编译器，反推 X-Plane 10 shader 组织策略 |
+| [[gimbal-lock-euler-interpolation]] | 万向锁的真正问题是欧拉角插值奇异，曲线编辑器让它永久留在引擎里 |
+| [[compact-normal-encoding]] | G-Buffer 法线 2 通道编码：Lambert azimuthal vs CryTek best-fit |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1930,6 +1936,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-gc-and-allocation-sizes]] | Bitsquid：GC 痛点的真名是分配颗粒度 |
 | [[sources/bitsquid-why-lua]] | Bitsquid：为什么选 Lua——四条引擎原则逐条对齐 |
 | [[sources/bitsquid-object-replication-migration-race]] | Bitsquid：P2P 对象迁移的消息乱序 bug 与修复 |
+| [[sources/bitsquid-gimbal-lock]] | Frykholm 2013：gimbal lock 的本质与动画师视角下的持久规避 |
+| [[sources/bitsquid-source-censoring-part-2]] | Frykholm 2013：hg-clone.rb 给 NDA 客户镜像过滤后的 Mercurial 仓库 |
+| [[sources/bitsquid-finding-nearby-stuff]] | Frykholm 2013：空间邻近查询的 grid+HashMap+扁平链表默认解 |
+| [[sources/bitsquid-scripted-network-debugging]] | Frykholm 2013：Ruby + TCP Lua 控制台把联机 bug 复现跑 500 次 |
+| [[sources/supnik-derivatives-iii-ran-out-of-rez]] | Supnik：Derivatives III，内建导数耗尽浮点后用算法式导数替换 |
+| [[sources/supnik-is-collada-a-win]] | Supnik：COLLADA 值不值——跨 DCC 资源交换的三条路线 |
+| [[sources/supnik-gbuffer-normals-revisited]] | Supnik：G-Buffer 法线条带用 Lambert azimuthal 2 通道编码解 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

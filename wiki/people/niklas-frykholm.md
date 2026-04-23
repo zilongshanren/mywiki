@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 游戏引擎, bitsquid, stingray, autodesk]
 date: 2026-04-19
-sources: 10
+sources: 14
 ---
 
 # Niklas Frykholm
@@ -46,6 +46,10 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[four-meditations-on-rewrites]] — 重写 Flow 时总结的四条设计教训
 - [[page-granular-system-allocator]] — 全局只发整页、子系统自治的内存纪律
 - [[object-replication-migration-race]] — P2P 对象迁移的乱序竞态与 migration counter 修复
+- [[gimbal-lock-euler-interpolation]] — 万向锁本质是欧拉角插值奇异，曲线编辑器让它赶不走
+- [[repo-clone-with-filter]] — hg-clone.rb 给 NDA 客户提供带历史的过滤后源码仓库
+- [[spatial-hash-grid-linked-list]] — grid coord → HashMap → 扁平数组内嵌链表的标配空间查询
+- [[scripted-network-debugging]] — Ruby 脚本 + 引擎内置 TCP Lua 控制台把联机 bug 跑 500 次复现
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -102,3 +106,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-organizing-header-files]]
 - [[sources/bitsquid-vector-fields]]
 - [[sources/bitsquid-foundation-library]]
+- [[sources/bitsquid-gimbal-lock]]
+- [[sources/bitsquid-source-censoring-part-2]]
+- [[sources/bitsquid-finding-nearby-stuff]]
+- [[sources/bitsquid-scripted-network-debugging]]

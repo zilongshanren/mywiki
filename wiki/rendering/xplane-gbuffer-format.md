@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 延迟渲染, g-buffer, x-plane, 2010]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # X-Plane 10 的 G-Buffer 布局（Supnik 2010）
@@ -16,7 +16,6 @@ sources: 1
 合计 4 张 MRT、16 字节——见 [[multiple-render-targets]] 与 [[deferred-rendering]] 的通用讨论。
 
 ## 关键权衡
-
 ### Shadow 与 shine 打包进一个 16-bit 通道
 
 两个都需要 ~8 bit 精度，直觉上 16 位整数正好塞两个 8 位字段——但**硬件不配合**：NV 的某些平台不允许 render 到 16-bit 整数；ATI 没暴露 float↔int 的 bitcast。换 RGBA8 也不行，因为 alpha 通道会被 GL 的混合语义吃掉，而 extended blend 在 OS X / MRT 场景都不可用。
@@ -39,6 +38,10 @@ emissive 理论上可预乘 RGB 后丢掉 alpha——但 X-Plane 需要「非发
 
 老 OS X 不支持 RG 纹理，只能退化到 4 张 `RGBA_16F`——VRAM 翻倍，8800 卡上 fill rate 至少降 20%。跨代 OpenGL 环境的老生常谈。
 
+### 后续：法线条带逼出 Lambert azimuthal 编码
+
+这套 RG16F + 重建 Z 的布局几周后在机翼前缘灯 case 上翻车——法线 ⊥ 光方向时条带可见。Supnik 在 *G-Buffer Normals, Revisited*（2011-02）里换成 **Lambert azimuthal equal-area projection**，2 通道不变但解码误差在球面上均匀分布，顺带消除了朴素 XY + 重建 Z 在负 eye-space Z 上的 hand-wave。详见 [[compact-normal-encoding]]。
+
 ## 配套 GLSL 片段
 
 Supnik 几天后在 *FMTT, GLSL Edition* 贴了对应的片元着色器输出代码：`gl_FragData[0..3]` 分别按上面布局写入，其中 `cut_pos` 做 discard 代理、`shiny_ao * cut_pos` 打包、`position_eye.z/-1024.0` 归一深度。这是前述格式表的直接实现样本。
@@ -53,6 +56,6 @@ Supnik 几天后在 *FMTT, GLSL Edition* 贴了对应的片元着色器输出代
 - [[cheat-by-solving-less]]
 
 ## Sources
-
 - [[sources/supnik-gbuffer-format]]
 - [[sources/supnik-fmtt-glsl-edition]]
+- [[sources/supnik-gbuffer-normals-revisited]]

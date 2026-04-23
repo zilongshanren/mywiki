@@ -931,3 +931,9 @@ strings-as-identifiers-antipattern
 four-meditations-on-rewrites
 page-granular-system-allocator
 object-replication-migration-race
+gimbal-lock-euler-interpolation
+repo-clone-with-filter
+spatial-hash-grid-linked-list
+scripted-network-debugging
+compact-normal-encoding
+asset-exchange-format-strategy

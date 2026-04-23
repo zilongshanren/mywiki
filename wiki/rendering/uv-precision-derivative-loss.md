@@ -1,7 +1,7 @@
 ---
 tags: [渲染, shader, 导数, 浮点精度, normal-mapping]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # Vertex-projected UV 的导数精度耗尽
@@ -23,11 +23,14 @@ UV 又是 vertex shader 里从**世界空间顶点位置**投影出来的——�
 8800 与 4870 的差异大概源自两家在内部 interpolator 精度和差分器精度上的实现差异——**ATI 当时内部精度更高，暂时把 bug 藏住了**。但从原理上两家都是对的，不能指望硬件替你补救。
 
 ## 两条出路
-
 Supnik 给出两条互补的 work-around：
 
 1. **提高 UV 坐标本身的精度**：不要让 vertex shader 投影出的 UV 已经吞掉低位。例如把投影的 origin 拉近相机、或者拆成「低频 + 高频」两部分。
 2. **不要用 `dFdx(UV)` 反推 tangent 基底**：在「vertex 投影生成 UV」这条 case 下，投影参数本身是**已知**的——直接把投影轴作为 tangent 基底传下去，绕开差分。
+
+### 补充：算法式导数完全替换内建差分
+
+Supnik 在 *Derivatives III*（2011-01）把这条路走到极致：既然出问题的 UV 总是在 vertex shader 里**按公式生成**的（世界坐标直接投影），那对应的公式本身就可微——**直接在 fragment shader 里算出解析的 `du/dx`、`du/dy`，彻底不调内建 `dFdx/dFdy`**。精度由你自己选的浮点路径决定，不再被两像素差分的量化阈值卡住。代价是 shader 里多算几行代数，但对「UV = f(position)」这类构造，公式本就在手边。
 
 ## 和「不连续 UV」的对比
 
@@ -49,5 +52,5 @@ Supnik 给出两条互补的 work-around：
 - [[ben-supnik]]
 
 ## Sources
-
 - [[sources/supnik-running-out-of-derivative-res]]
+- [[sources/supnik-derivatives-iii-ran-out-of-rez]]
