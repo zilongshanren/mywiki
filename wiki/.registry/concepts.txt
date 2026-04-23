@@ -998,3 +998,5 @@ code-as-art-manifesto
 platform-specific-features-poll-2010
 xplane-deferred-pipeline-hacks
 luajit-2gb-address-constraint
+stereo-reprojection-hole-fill
+iterative-sample-point-relaxation

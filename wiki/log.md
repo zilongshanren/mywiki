@@ -1222,3 +1222,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-96 Worker KB (hacksoflife 2012-11 deferred + 2012-12 LuaJIT ×5)
 
 处理 Supnik 5 篇：2012-11-16 stenciling-is-not-a-win + 11-17 collapsing-two-passes + 11-18 when-not-to-be-linear + 11-19 what-have-we-learned 合编为 1 概念 (xplane-deferred-pipeline-hacks) + 1 合并源摘要 (supnik-deferred-weirdness-series)；2012-12-09 LuaJIT 64-bit 独立为 1 概念 (luajit-2gb-address-constraint) + 1 源摘要 (supnik-luajit-x-plane-64bit)。5 篇全部 ingest，无 skipped。Ben Supnik 人物页已存在，patch 追加 2 条 Related + 2 条 Sources；deferred-rendering / xplane-gbuffer-format / deferred-depth-reuse-tradeoffs / deferred-light-volume-stencil-depth-clamp-hack / deferred-alpha-lighting / linear-lighting-pipeline / srgb-premultiplied-alpha-compression / agp-vs-vram-streaming / virtual-memory / custom-allocator-interface / lua-memory-profiling 通过 patch 追加反向链接。
+
+## [2026-04-19] ingest | Wave-97 Worker KD (c0de517e.blogspot.com ×5, 2010-10~12)
+
+处理 Angelo Pesce 2010 年末 5 篇：3 INGEST + 1 SKIP-dup + 1 SKIP-offtopic。新增概念页 stereo-reprojection-hole-fill（立体单眼 reproject + 洞补，2010 proof-of-concept）、iterative-sample-point-relaxation（带 importance 权重的 stochastic Lloyd 半球采样生成器）；新增 3 条 source 摘要（eastl 书签、stereoscopic-test、sample-generator-3d）。交叉补强 rpp-stl-replacement（游戏业写自己的 STL 谱系）、poisson-disk-sampling（Pesce 2010 先例）、temporal-sao-reprojection / reprojected-planar-reflection（disocclusion 洞补是 reprojection 家族共享难题）。Angelo Pesce 人物页追加 2 概念 + 3 sources。SKIP：eastl-2（归档重复），leaving-ea（离职感想 + EAC 校园照片贴，无技术）。

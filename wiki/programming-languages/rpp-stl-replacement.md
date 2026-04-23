@@ -80,3 +80,4 @@ co_await vk.async(pool, [](Vk::Commands& cmds) { /* 填 command buffer */ });
 ## Sources
 - [[sources/slater-oxidizing-cpp]]
 - [[sources/bkaradzic-orthodox-cpp]]
+- [[sources/c0de517e-eastl]] —— 2010 年 Pesce 对 EA 开源 EASTL 的书签式推荐，游戏业「写自己的 STL」谱系的一个节点

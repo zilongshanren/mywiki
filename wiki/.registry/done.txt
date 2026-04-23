@@ -12021,3 +12021,8 @@ raw/articles/hacksoflife.blogspot.com/2012-11-17_deferred-weirdness-collapsing-t
 raw/articles/hacksoflife.blogspot.com/2012-11-18_deferred-weirdness-when-not-to-be-linear.md
 raw/articles/hacksoflife.blogspot.com/2012-11-19_deferred-weirdness-what-have-we-learned.md
 raw/articles/hacksoflife.blogspot.com/2012-12-09_integrating-luajit-with-x-plane-64-bit-fun.md
+raw/articles/c0de517e.blogspot.com/2010-10-20_eastl-2.md
+raw/articles/c0de517e.blogspot.com/2010-10-20_eastl.md
+raw/articles/c0de517e.blogspot.com/2010-11-02_stereoscopic-test.md
+raw/articles/c0de517e.blogspot.com/2010-12-05_leaving-ea.md
+raw/articles/c0de517e.blogspot.com/2010-12-15_stupid-sample-generator-3d-version.md

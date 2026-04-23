@@ -57,7 +57,6 @@ SSR 里时域累积几乎是必须的，不然 ray march 本身的噪声会漫�
 这两种做法在 2017 年之后被 Frostbite、id Tech、CryEngine 各家独立实现，是实时反射 "TAA 化" 的公共基线。它也是 2020 年代 **ReSTIR 反射**、**ray-traced reflection denoising** 之前，纯屏幕空间能做到的极限。
 
 ## 相关
-
 - [[screenspace-reflections]] — SSR 的三类先天缺陷 + 稳定化工具链
 - [[temporal-antialiasing]] — neighborhood clamping / 历史复用
 - [[temporal-supersampling]]
@@ -65,6 +64,7 @@ SSR 里时域累积几乎是必须的，不然 ray march 本身的噪声会漫�
 - [[parallax-corrected-cubemap]] — 视差修正在 cubemap 一侧的同名思想
 - [[hybrid-raytracing-pipeline]] — 硬件 RT 后的反射路线
 - [[niklas-frykholm]]
+- [[stereo-reprojection-hole-fill]] —— Pesce 2010 把同一 screen-space reprojection 思路用在立体渲染上
 
 ## Sources
 - [[sources/bitsquid-reprojecting-reflections]]

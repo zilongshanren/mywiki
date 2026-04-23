@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形程序员]
 date: 2026-04-14
-sources: 2
+sources: 5
 ---
 
 # Angelo Pesce
@@ -29,6 +29,8 @@ sources: 2
 - [[frame-pipeline-latency]]
 - [[code-as-art-manifesto]]
 - [[platform-specific-features-poll-2010]]
+- [[stereo-reprojection-hole-fill]] —— 2010 立体渲染的单眼 reproject + 洞补实验
+- [[iterative-sample-point-relaxation]] —— 带 importance 权重的半球 Poisson-like 采样点生成器
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -43,3 +45,6 @@ sources: 2
 - [[sources/c0de517e-know-your-z]]
 - [[sources/c0de517e-code-rights]]
 - [[sources/c0de517e-platform-specific-features-poll-2010]]
+- [[sources/c0de517e-eastl]]
+- [[sources/c0de517e-stereoscopic-test]]
+- [[sources/c0de517e-sample-generator-3d]]

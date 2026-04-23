@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 采样, 信号处理]
 date: 2026-04-14
-sources: 1
+sources: 2
 ---
 
 # 泊松盘采样（Poisson Disk Sampling）
@@ -52,8 +52,10 @@ sources: 1
 - [[swap-and-pop-removal]] — active list 随机消费场景下的 O(1) 删除技巧
 - [[poisson-rect-process]] — 把点过程扩展成无限平面上的无重叠随机矩形
 - [[infinite-chunked-procedural-generation]] — 点过程/矩形过程共用的分块无关方法论
+- [[iterative-sample-point-relaxation]] —— Pesce 2010 的 stochastic Lloyd 变体，用 importance 本地化权重到排斥半径
 
 ## Sources
 - [[sources/bartwronski-poisson-sampling]]
 - [[sources/vertexfragment-list-removal]]
 - [[sources/bartwronski-poisson-gui]]
+- [[sources/c0de517e-sample-generator-3d]]

@@ -52,7 +52,6 @@ similarity = saturate(similarity - samples_similarity);
 两种思路**共同证明了 temporal supersampling 是屏幕空间 AO 的标配路径**，只是激进程度不同。
 
 ## 相关
-
 - [[temporal-supersampling]]
 - [[hbao-interleaved-sampling]]
 - [[ground-truth-ambient-occlusion]]
@@ -60,6 +59,7 @@ similarity = saturate(similarity - samples_similarity);
 - [[motion-vectors]]
 - [[low-discrepancy-sequence]]
 - [[niklas-frykholm]]
+- [[stereo-reprojection-hole-fill]] —— 同一 disocclusion 补洞问题在立体 reprojection 里的早期版本
 
 ## Sources
 

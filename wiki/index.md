@@ -913,6 +913,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[linear-z-trick]] | Pesce 2010：VS 里 `hPos.z *= hPos.w / far` 软件模拟线性视深度 / W-buffer |
 | [[frame-pipeline-latency]] | 帧管线多级缓冲的总延迟——30fps 下不拆 stage 反而手感更好 |
 | [[xplane-deferred-pipeline-hacks]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear blend 共存 / 复杂度来自硬边角叠加） |
+| [[stereo-reprojection-hole-fill]] | 立体渲染的单眼屏幕空间 reprojection 与 disocclusion 洞补 |
+| [[iterative-sample-point-relaxation]] | 带 importance 权重的半球采样点 stochastic Lloyd 松弛 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2074,6 +2076,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-platform-specific-features-poll-2010]] | Pesce 2010：70 人平台特性使用率调研结果 |
 | [[sources/supnik-deferred-weirdness-series]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写 |
 | [[sources/supnik-luajit-x-plane-64bit]] | Supnik 2012-12：LuaJIT 64-bit 集成 X-Plane 的低 2 GB 地址空间 workaround |
+| [[sources/c0de517e-eastl]] | Pesce：EA 开源 EASTL 的书签贴（游戏业自写 STL 谱系节点） |
+| [[sources/c0de517e-stereoscopic-test]] | Pesce：FX Composer + HLSL 的立体 reprojection proof-of-concept |
+| [[sources/c0de517e-sample-generator-3d]] | Pesce：Processing 小工具，带 importance 权重的半球 Poisson-like 点生成 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
