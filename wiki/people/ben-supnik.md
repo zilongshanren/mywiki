@@ -45,6 +45,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[gpu-sliced-volumetric-shadows-limits]]
 - [[cross-platform-openal-runtime-loader]]
 - [[c-bitwise-operator-precedence-history]]
+- [[linear-lighting-pipeline]] —— Gamma and Lighting 三部曲里关于光照累积三种路径的总结
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -85,3 +86,4 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-openal-three-platforms]]
 - [[sources/supnik-finding-mom-and-dad]]
 - [[sources/supnik-c-seventies-technology]]
+- [[sources/supnik-gamma-lighting-trilogy]]

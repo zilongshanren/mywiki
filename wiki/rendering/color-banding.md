@@ -47,11 +47,11 @@ Frost 在文章后半部分横向对比了一圈「大厂做法」：
 > 同一台屏在 Firefox 和 Edge 下条带的位置会偏——因为 Edge 的颜色管理把 sRGB 当成 γ=2.2 纯幂函数解码，而真正的 sRGB 曲线是分段的，两者在暗部会差一个 code point 量级。
 
 ## 和 wiki 其他条目的关系
-
 - 和 [[dither-alpha-clipping]]：都用 dither，但目标相反——alpha clipping 是把连续 alpha 量化成二值 `discard`，去色带是把量化阶梯恢复为连续感知。
 - 和 [[retro-rendering-techniques]]：复古渲染是**刻意**保留色带（甚至主动量化到 5-bit）制造怀旧感，去色带是**消除**色带。
 - 和 [[color-space]] / [[display-edid-colorspace]]：EDID 告诉你面板位深声明是多少，但 FRC 6-bit 面板会对你撒谎；sRGB 分段曲线比 γ=2.2 更贴暗部，因此同一色带在正确和错误的 TRC 下位置会偏移。
+- 和 [[linear-lighting-pipeline]]：Supnik 2010 年用灰阶量化对比图证明，8 bit 存储下 linear 编码会在暗部出现明显色带，而 sRGB 曲线把 code points 集中在暗部——这是「资产必须 sRGB 编码、数学必须在 linear」两条约束共存的根本原因。
 
 ## Sources
-
 - [[sources/frost-kiwi-color-banding]]
+- [[sources/supnik-gamma-lighting-trilogy]]

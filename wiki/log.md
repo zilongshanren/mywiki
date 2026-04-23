@@ -1070,3 +1070,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-84 Worker IS (blog.playcanvas.com 2013 ×5)
 
 处理 5 篇 2013 年 PlayCanvas 早期博客。仅保留 1 篇云端资产管线发布公告（Dave Evans, 2013-06），其余 4 篇（meetup / Ludum Dare / 域名搬家 / 招人）SKIP 为社区公告。新增 1 概念页 [[playcanvas-cloud-asset-pipeline]]、1 人物页 [[dave-evans]]、1 source 摘要。
+
+## [2026-04-19] ingest | Wave-84 Worker IR (hacksoflife Supnik gamma trilogy ×5)
+
+处理 Supnik 2010-11 gamma 系列 5 篇：三部曲 + value-of-gamma-compression 合并为单一 source 摘要 supnik-gamma-lighting-trilogy；新增 concept linear-lighting-pipeline（光照累积的三条路径）。跳过 i-hate-c-part-492（纯 CFBundleGetFunctionPointerForName 代码片段，无论述）。补强 ben-supnik / gamma-correction-srgb / color-space / color-banding 之间的交叉链接。

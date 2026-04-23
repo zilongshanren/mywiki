@@ -828,6 +828,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpu-embarrassingly-parallel-serial-dispatch]] | GPU 天生并行：为何无需应用层并行命令派发 |
 | [[premultiplied-alpha-bilinear-ring]] | 预乘 alpha 为何能修复 bilinear filtering 的 tree-ring 杂色晕 |
 | [[gpu-sliced-volumetric-shadows-limits]] | GPU sliced shadow 在 flight-sim 云场景下的失败模式：不透明粒子 + 分桶 + popping |
+| [[linear-lighting-pipeline]] | 线性光照累积的三种管线路径：shader 内累加 / sRGB framebuffer blend / HDR float RT |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1864,6 +1865,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-sensible-error-handling-part-3]] | Niklas：warning 分类与升格为 error 的战术 |
 | [[sources/bitsquid-documentation-system-code]] | Niklas：Bitsquid 文档系统代码公开，line-by-line + HTML context 栈 |
 | [[sources/playcanvas-cloud-asset-pipeline]] | Evans：PlayCanvas 把资产转码搬进浏览器（2013） |
+| [[sources/supnik-gamma-lighting-trilogy]] | Supnik 2010-11 gamma 四连发：color sync + linear lighting + errata + 量化对比实证 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

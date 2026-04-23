@@ -67,7 +67,8 @@ vec3 SRGB_encode(vec3 lrgb) {
 - [[shader-instruction-cost]]
 - [[xor-shader-artist]]
 - [[srgb-premultiplied-alpha-compression]] —— 预乘与块压缩必须发生在 linear 域，sRGB encode 是最后一步
+- [[linear-lighting-pipeline]] —— Supnik 归纳的多 pass 光照累积三条路径（shader 内累加 / sRGB framebuffer blend / HDR float RT）
 
 ## Sources
-
 - [[sources/xor-mini-gamma]]
+- [[sources/supnik-gamma-lighting-trilogy]]

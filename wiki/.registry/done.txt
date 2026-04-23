@@ -11831,3 +11831,8 @@ raw/articles/blog.playcanvas.com/2013-04-24_welcome-ludum-darers-playcanvas-blog
 raw/articles/blog.playcanvas.com/2013-06-21_importing-in-the-cloud-new-asset-pipeline-playcanvas-blog.md
 raw/articles/blog.playcanvas.com/2013-08-06_moving-to-playcanvas-com-playcanvas-blog.md
 raw/articles/blog.playcanvas.com/2013-08-07_a-wild-programmer-appears-playcanvas-blog.md
+raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-1-color-sync.md
+raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-2-working-in-linear-space.md
+raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-3-errata.md
+raw/articles/hacksoflife.blogspot.com/2010-11-23_the-value-of-gamma-compression.md
+raw/articles/hacksoflife.blogspot.com/2010-11-22_i-hate-c-part-492.md
