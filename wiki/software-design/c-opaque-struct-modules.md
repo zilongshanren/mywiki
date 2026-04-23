@@ -68,13 +68,13 @@ static inline struct A* A(struct i_A *a) { return (struct A *)a; }
 - 不要用"聪明的"语法糖绕开循环依赖——这是原则性的分层问题，不是技巧问题。
 
 ## 相关
-
 - [[modular-design]]
 - [[information-hiding]]
 - [[interface-vs-implementation]]
 - [[dependencies]]
 - [[c-interface-oop]]
 - [[cloudwu]]
+- [[pimpl-vs-pure-virtual]] — Niklas 把 C 不透明指针摆在 C++ PIMPL 旁边横向对比，结论是三种方式里他更欣赏 C
 
 ## Sources
 

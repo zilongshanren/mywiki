@@ -35,12 +35,12 @@ Frykholm 对此直接回答："我们的场景图不常做这些事。"
 这和 [[scene-graph-unnecessary-in-engine|cloudwu 认为引擎内不需要场景图]] 的观点方向一致：都是在问"你真的需要一个通用、全局的层级结构吗"。区别是 cloudwu 直接砍掉场景图、让变换在 gameplay 层算；Frykholm 保留了场景图但**把它限定在一个 entity 里**，作为 mesh 关节层级的工具。两条路都能工作，共同点是拒绝让场景图承载过多职责。
 
 ## 相关
-
 - [[scene-graph-unnecessary-in-engine]]
 - [[scene-graph-matrix-stack-visitor]]
 - [[data-driven-architecture]]
 - [[ecs-data-oriented-revert]]
 - [[niklas-frykholm]]
+- [[ragdoll-velocity-inheritance]] — 场景图常驻 last_world 是 Bitsquid 给 ragdoll 速度继承的选择
 
 ## Sources
 

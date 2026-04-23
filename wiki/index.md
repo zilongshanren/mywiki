@@ -83,6 +83,8 @@ sources: 371
 | [[minimize-points-and-types-of-failure]] | expected error 的 API 设计：少失败点 + 函数级 enum + struct 返回 |
 | [[warnings-as-errors-strategy]] | warning 治理：升格为 error + deprecation 四档降级 + tool-first 显示 |
 | [[now-principle-productivity]] | Bitsquid 五条日常纪律：5 分钟规则、修病根、心流、VCS、build server |
+| [[pimpl-vs-pure-virtual]] | Bitsquid：C 不透明指针 / C++ PIMPL / 纯虚抽象类三种隔离方式的工程取舍 |
+| [[no-frame-delays-principle]] | Bitsquid 戒律：动作立即生效，禁止延迟一帧引入灰色过渡态 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -154,6 +156,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[schema-driven-xml-parser-generator]] | Patrick Stein 基于 XML schema 的 CLOS 解析器代码生成（tagstack + 自举 + 多后端） |
 | [[floating-point-geometric-predicates]] | 点积符号抖动、线线求交条件数爆炸、几何谓词的鲁棒化策略 |
 | [[c-bitwise-operator-precedence-history]] | 为何 C 的 `&` 优先级低于 `==`：B/BCPL 的历史包袱 |
+| [[lua-runtime-dynamism-tricks]] | Bitsquid 的 Lua 七招：REPL、热重载、API 劫持、动态 profiler、对象枚举 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -332,6 +335,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[id-lookup-table-packed]] | Bitsquid 2011 ID→Object 查找的三级演化：STL / array-with-holes / packed array |
 | [[animation-stream-cache-layout]] | Bitsquid 动画数据的流式 cache 布局：active 数组 + 时间排序流 |
 | [[platform-specific-resources-property-system]] | Bitsquid property 机制：文件名段统一处理平台/本地化/业务变体 |
+| [[ragdoll-velocity-inheritance]] | 角色切 ragdoll 瞬间把动画速度传进物理：last_world 方案与四种候选对比 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1866,6 +1870,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-documentation-system-code]] | Niklas：Bitsquid 文档系统代码公开，line-by-line + HTML context 栈 |
 | [[sources/playcanvas-cloud-asset-pipeline]] | Evans：PlayCanvas 把资产转码搬进浏览器（2013） |
 | [[sources/supnik-gamma-lighting-trilogy]] | Supnik 2010-11 gamma 四连发：color sync + linear lighting + errata + 量化对比实证 |
+| [[sources/bitsquid-cutting-the-pipe-qa]] | Niklas 讲座评论区 Q&A：工具 C# / 引擎 C++ / JSON 通信 / 零代码共享 |
+| [[sources/bitsquid-pimpl-vs-pure-virtual]] | Niklas 对 C / PIMPL / 纯虚三种接口-实现分离方式的横向评测 |
+| [[sources/bitsquid-inheriting-velocity-ragdolls]] | Niklas：ragdoll 切换时速度继承的四种候选与 last_world 选择 |
+| [[sources/bitsquid-embracing-dynamism]] | Niklas：Bitsquid 把 Lua 动态性榨到底的七条常见技巧 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

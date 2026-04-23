@@ -33,10 +33,11 @@ sources: 3
 作者明确把这类绑定推荐给"非性能关键"的代码：存档/读档、配置、关卡描述、UI 行为脚本、AI 决策。性能敏感路径（碰撞、渲染主循环）依然要留在 C++ 里，否则 Lua/C 边界跨越的开销会迅速吃掉迭代效率的好处。这个分工后来在很多商业引擎里都能找到回声——脚本语言负责"快速改动"，原生代码负责"快速运行"，而手写的轻量绑定恰恰是这种分工的最小可行实现。
 
 ## Sources
-
 - [[sources/eliasdaler-lua-cpp-binding-series]]
+- [[sources/bitsquid-embracing-dynamism]] — 文末评论里 Niklas 重申：Lua 绑定手写优于自动生成器
 
 ## 相关
 - [[lua-design-philosophy]] —— Lua 作者本人对脚本语言定位、机制 vs 法策、有栈协程的论述
 - [[lua-light-userdata-bindings]] —— Bitsquid 版的极端性能取向：改用 light userdata、手写类型 marker、放弃 `:` 方法语法
 - [[lua-memory-profiling]] —— Lua 侧遍历 `_G` 盘点对象 + C 侧 `lua_Alloc` 捕获分配 stack trace
+- [[lua-runtime-dynamism-tricks]] — 手写绑定之上，Niklas 列出的七条 Lua 动态性用法

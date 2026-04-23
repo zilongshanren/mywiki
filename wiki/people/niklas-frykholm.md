@@ -37,6 +37,10 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[minimize-points-and-types-of-failure]] — expected error API 设计的两条原则
 - [[warnings-as-errors-strategy]] — warning 分类、升格与 deprecation 四档降级路径
 - [[now-principle-productivity]] — Bitsquid 五条日常纪律（5-min 规则、修病根、心流、VCS、build server）
+- [[pimpl-vs-pure-virtual]] — 三种接口-实现分离写法的横向评测，偏好纯虚抽象类
+- [[ragdoll-velocity-inheritance]] — ragdoll 切换瞬间继承动画速度的工程解法
+- [[no-frame-delays-principle]] — Bitsquid 戒律：动作立即生效，灰色过渡态会扩散补丁逻辑
+- [[lua-runtime-dynamism-tricks]] — Bitsquid 把 Lua 动态性用到底的七招
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -81,3 +85,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-sensible-error-handling-part-2]]
 - [[sources/bitsquid-sensible-error-handling-part-3]]
 - [[sources/bitsquid-documentation-system-code]]
+- [[sources/bitsquid-cutting-the-pipe-qa]]
+- [[sources/bitsquid-pimpl-vs-pure-virtual]]
+- [[sources/bitsquid-inheriting-velocity-ragdolls]]
+- [[sources/bitsquid-embracing-dynamism]]

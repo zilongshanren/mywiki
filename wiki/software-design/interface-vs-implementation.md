@@ -40,11 +40,11 @@ Ousterhout 对模块价值的核心比喻：
 **好的模块让你「不需要打开实现代码就能自信地使用它」。** 如果你经常需要看源码才知道怎么用一个 API，这个 API 的设计者欠你一个道歉。
 
 ## 相关
-
 - 深度的源头：[[deep-modules]]
 - 成本端：[[shallow-modules]]
 - 核心工具：[[abstraction]]、[[information-hiding]]
 - C 语言的接口成本案例：[[c-opaque-struct-modules]]、[[game-engine-vfs]]、[[malloc-wrapper-debug]]
+- [[pimpl-vs-pure-virtual]] — 工程落地时 C++ 三种隔离写法的对比（纯虚 vs PIMPL vs C opaque）
 
 ## Sources
 

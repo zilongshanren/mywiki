@@ -11836,3 +11836,8 @@ raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-2-worki
 raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-3-errata.md
 raw/articles/hacksoflife.blogspot.com/2010-11-23_the-value-of-gamma-compression.md
 raw/articles/hacksoflife.blogspot.com/2010-11-22_i-hate-c-part-492.md
+raw/articles/bitsquid.blogspot.com/2012-03-12_cutting-the-pipe-achieving-sub-second-iteration-times.md
+raw/articles/bitsquid.blogspot.com/2012-03-12_rendering-related-talks-gdc2012.md
+raw/articles/bitsquid.blogspot.com/2012-03-21_pimpl-vs-pure-virtual-interfaces.md
+raw/articles/bitsquid.blogspot.com/2012-04-20_inheriting-velocity-in-ragdolls.md
+raw/articles/bitsquid.blogspot.com/2012-05-05_embracing-dynamism.md

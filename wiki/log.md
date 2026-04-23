@@ -1074,3 +1074,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-84 Worker IR (hacksoflife Supnik gamma trilogy ×5)
 
 处理 Supnik 2010-11 gamma 系列 5 篇：三部曲 + value-of-gamma-compression 合并为单一 source 摘要 supnik-gamma-lighting-trilogy；新增 concept linear-lighting-pipeline（光照累积的三条路径）。跳过 i-hate-c-part-492（纯 CFBundleGetFunctionPointerForName 代码片段，无论述）。补强 ben-supnik / gamma-correction-srgb / color-space / color-banding 之间的交叉链接。
+
+## [2026-04-19] ingest | Wave-84 Worker IQ (bitsquid 2012 Q1/Q2 x5)
+
+处理 5 篇 Bitsquid 2012 年 3–5 月博客：4 篇 ingested、1 篇 skipped（GDC2012 rendering-talks 抓到的全是垃圾评论）。cutting-the-pipe 虽只抓到评论区，但 Q&A 直接点明 Bitsquid 工具/引擎零共享 + JSON 通信取舍，作为 source 页补充到 decoupled-tool-engine-json-rpc。新增 4 概念：pimpl-vs-pure-virtual（对比 C opaque / PIMPL / 纯虚）、ragdoll-velocity-inheritance（last_world 方案）、no-frame-delays-principle（本文顺手立下的 Bitsquid 戒律）、lua-runtime-dynamism-tricks（七条 Lua 动态性用法）。niklas-frykholm 页已存在，补挂 4 条 source 链接与 4 条 相关。

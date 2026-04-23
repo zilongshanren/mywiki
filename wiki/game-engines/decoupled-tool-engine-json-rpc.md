@@ -86,5 +86,5 @@ run(runtime_data_folder);
 - [[offset-based-resource-blobs]] — Bitsquid 的 runtime 数据格式本身
 
 ## Sources
-
 - [[sources/bitsquid-our-tool-architecture]]
+- [[sources/bitsquid-cutting-the-pipe-qa]] — 2012 年 Q&A 里 Niklas 直白地声明 工具 C# / 引擎 C++ 零代码共享、仅通过 JSON 通信

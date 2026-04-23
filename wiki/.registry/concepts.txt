@@ -902,3 +902,7 @@ warnings-as-errors-strategy
 now-principle-productivity
 playcanvas-cloud-asset-pipeline
 linear-lighting-pipeline
+pimpl-vs-pure-virtual
+ragdoll-velocity-inheritance
+no-frame-delays-principle
+lua-runtime-dynamism-tricks
