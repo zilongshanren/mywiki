@@ -926,3 +926,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-72 Worker HG (c0de517e ×5 all-duplicate)
 
 批次 batch-w72-hg：全部跳过。5 篇均为 -2 后缀月度归档副本，内容与无后缀原文完全相同（仅 URL scheme 及 fetched 日期有差异）。原文已在 batch-w14-ao（ergonomy-rant、iphone-ipad-ipod）和 batch-w25-bu（new-layout、small-brdf-visualizer、3d-engines-out-there）中处理并跳过。无新增页面。
+
+## [2026-04-19] ingest | Wave-72 Worker HI (randomtower.blogspot.com ×5)
+
+处理 5 篇 randomtower.blogspot.com 2010 年文章。摄入 2 篇 FlashPunk 技术文章，新增 1 概念页（flashpunk-framework）、1 人物页（marte-randomtower）、2 source 摘要。跳过 3 篇非技术内容（VVVVVV 短评、游戏截图展示、MW2 观感）。

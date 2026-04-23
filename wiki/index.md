@@ -273,6 +273,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 
 | [[mach-engine]] | Mach：Zig 写的模块化游戏引擎，核心是标准库式组件 |
 | [[scene-graph-unnecessary-in-engine]] | Pesce：3D 引擎不该把场景图当核心，应按 renderable 类型特化 |
+| [[game-engines/flashpunk-framework]] | FlashPunk：ActionScript 3 轻量 2D 游戏框架，Entity/World/Grid 架构分析 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -898,6 +899,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[daniel-chase-hooper]] | 独立开发者，前 Apple，Principle 作者；C / Swift / 工具链 |
 | [[stephen-gutekanst]] | Emi / emidoots，Mach 引擎与 Hexops 作者 |
 | [[blueswordm]] | Chips and Cheese 编解码方向撰稿人 |
+| [[people/marte-randomtower]] | Marte，Random Tower 博客作者，Flash/AS3 独立游戏开发者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1656,6 +1658,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-jpeg-image-compression-overview]] | BlueSwordM：JPEG 编码管线与前 JPEG 时代回顾 |
 | [[sources/chipsandcheese-security-overview]] | Chips and Cheese：AMD/Intel/Nvidia 三家平台安全栈横向对比 |
 | [[sources/chipsandcheese-ctr-safety-revisited]] | Chips and Cheese：CTR 安全追踪与电迁移物理复盘 |
+| [[sources/randomtower-flashpunk-review]] | Marte：FlashPunk 框架架构分析 |
+| [[sources/randomtower-flashpunk-hello-world]] | Marte：FlashPunk Hello World Shooter 实践教程 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
