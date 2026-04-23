@@ -11841,3 +11841,8 @@ raw/articles/bitsquid.blogspot.com/2012-03-12_rendering-related-talks-gdc2012.md
 raw/articles/bitsquid.blogspot.com/2012-03-21_pimpl-vs-pure-virtual-interfaces.md
 raw/articles/bitsquid.blogspot.com/2012-04-20_inheriting-velocity-in-ragdolls.md
 raw/articles/bitsquid.blogspot.com/2012-05-05_embracing-dynamism.md
+raw/articles/c0de517e.blogspot.com/2010-03-12_retweeting-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-12_retweeting.md
+raw/articles/c0de517e.blogspot.com/2010-03-14_collaborative-design-experiment-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed.md

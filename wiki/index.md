@@ -336,6 +336,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[animation-stream-cache-layout]] | Bitsquid 动画数据的流式 cache 布局：active 数组 + 时间排序流 |
 | [[platform-specific-resources-property-system]] | Bitsquid property 机制：文件名段统一处理平台/本地化/业务变体 |
 | [[ragdoll-velocity-inheritance]] | 角色切 ragdoll 瞬间把动画速度传进物理：last_world 方案与四种候选对比 |
+| [[pesce-2010-engine-layer-sketch]] | Pesce 2010 年社区协作引擎分层草图：六层结构 + DevOps 摆首层 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1874,6 +1875,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-pimpl-vs-pure-virtual]] | Niklas 对 C / PIMPL / 纯虚三种接口-实现分离方式的横向评测 |
 | [[sources/bitsquid-inheriting-velocity-ragdolls]] | Niklas：ragdoll 切换时速度继承的四种候选与 last_world 选择 |
 | [[sources/bitsquid-embracing-dynamism]] | Niklas：Bitsquid 把 Lua 动态性榨到底的七条常见技巧 |
+| [[sources/c0de517e-collaborative-engine-design]] | Pesce：2010 年 etherpad 协作引擎架构清单 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

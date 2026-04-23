@@ -23,9 +23,11 @@ sources: 2
 - [[hsr-tbdr]]
 - [[experience-as-noise-filter]]
 - [[scene-graph-unnecessary-in-engine]]
+- [[pesce-2010-engine-layer-sketch]]
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
 - [[sources/c0de517e-tiled-hardware-speculations]]
 - [[sources/c0de517e-pitfalls-of-experience]]
 - [[sources/c0de517e-skin]]
+- [[sources/c0de517e-collaborative-engine-design]]

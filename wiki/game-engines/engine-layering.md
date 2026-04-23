@@ -46,11 +46,11 @@ Gregory 说得直白：**循环依赖是引擎设计的死刑**。一旦出现�
 - **依赖倒置**：高层定义接口，低层实现。
 
 ## 相关
-
 - [[game-engine]]
 - [[dependencies]]
 - [[classitis-in-games]]
 - [[game-physics-engine]] —— 典型 middleware 层的物理子系统：broadphase / collision detection / resolution 三段流水线
+- [[pesce-2010-engine-layer-sketch]] —— 2010 年社区协作产出的六层草图，把 CI/Code Review 抬到 Layer -1
 
 ## Sources
 
