@@ -75,7 +75,6 @@ vec2  dxy    = vec2(grad10, grad01) - grad00;
 - `divergent gradient` 问题（分支中调用 `dFdx` 导致结果不定）和这里手算 dxy 的出发点是一致的：当硬件导数不可信，就自己采样。
 
 ## 相关
-
 - [[analytical-antialiasing]]
 - [[sdf-2d-primitives]]
 - [[hlsl-derivation-correctness]]
@@ -84,6 +83,8 @@ vec2  dxy    = vec2(grad10, grad01) - grad00;
 - [[msaa-ssaa]]
 - [[temporal-antialiasing]]
 - [[xor-shader-artist]]
+- [[texture2dgrad-explicit-derivatives]] — UV 不连续（fract）会让硬件推导出错误的 LOD，需显式喂正确的导数
+- [[uv-precision-derivative-loss]] — vertex-projected 巨型 UV 坐标超出 fp 精度，会导致 dFdx/dFdy 出现像素级噪声
 
 ## Sources
 

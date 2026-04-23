@@ -848,3 +848,8 @@ custom-allocator-interface
 static-hash-value-debug-assert
 dependency-checker-tool
 c-cpp-embed-binary-blobs
+stl-not-abstraction-prescription
+huge-world-coordinate-precision
+function-vs-data-pointer-portability
+texture2dgrad-explicit-derivatives
+uv-precision-derivative-loss

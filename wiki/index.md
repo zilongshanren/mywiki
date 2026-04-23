@@ -72,6 +72,7 @@ sources: 371
 | [[header-as-user-manual]] | Supnik：头文件即用户手册，物理隔离 > 逻辑封装 |
 | [[api-fast-path-design]] | Supnik：快/慢路径在 API 上显式拆分（X-Plane dataref 模式）|
 | [[no-magic-principle]] | 计算机里没有魔法：debug、学习与教学的基础姿态（Schöner） |
+| [[stl-not-abstraction-prescription]] | Supnik：STL 不是抽象（不隐藏细节），而是对实现与性能的精确规定 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -243,6 +244,7 @@ CAQA + CSAPP 的底层视角。
 | [[deep-learning-uncertainty]] | DL「uncertainty」的分类学：calibration、parameter vs predictive、risk、MC dropout 质疑 |
 | [[custom-allocator-interface]] | Bitsquid Allocator：抽象接口 + subsystem proxy + assert-on-leak |
 | [[c-cpp-embed-binary-blobs]] | C/C++ 把资源文件嵌入可执行文件的三种做法（xxd、预处理器、`.incbin`） |
+| [[function-vs-data-pointer-portability]] | glXGetProcAddressARB 返回函数指针而非 void*：C 标准不保证代码指针与数据指针等宽 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -778,6 +780,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[opengl-builtin-attribute-aliasing]] | NVidia 对 GLSL 内置顶点属性与 generic attribute 的别名处理偏离 GL 2.1 规范 |
 | [[triangle-strips-vs-indexed-triangles]] | 在索引化时代三角带的 vertex 复用优势大幅缩水，draw call 成本才是瓶颈 |
 | [[camera-mapping-2d-to-3d]] | 把 2D 插画投影到粗 3D 几何上做可动画的「活画」（Joost van Dongen / Proun） |
+| [[huge-world-coordinate-precision]] | 3D 世界远离原点时 32-bit float 丢位的 3 种应对：整体 transform、双缓冲、局部坐标系 |
+| [[texture2dgrad-explicit-derivatives]] | 当 UV 在 shader 里被 fract/swizzle 破坏连续性时，用 texture2DGradARB 手喂原始导数保住 LOD |
+| [[uv-precision-derivative-loss]] | 300 km 地形由 vertex shader 投影生成 UV，其导数精度低于一像素，per-pixel tangent space 会错乱 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1748,6 +1753,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-dependency-checker]] | Frykholm：500 行依赖图工具，missing/dangling/replace/move/copy |
 | [[sources/4rknova-cpp-embed-files]] | 4rknova：C/C++ 嵌入二进制资源的三种做法 |
 | [[sources/4rknova-glsl-game-of-life]] | 4rknova：Conway 生命游戏的 GLSL/ShaderToy 实现 |
+| [[sources/supnik-stl-not-abstraction]] | Supnik：STL 不是抽象，它是 shortcut |
+| [[sources/supnik-scroll-opengl-world]] | Supnik：X-Plane 如何在 32-bit float 下滚动一个真实大小的地球 |
+| [[sources/supnik-glxgetprocaddressarb-syntax]] | Supnik：glXGetProcAddressARB 为什么返回函数指针而非 void* |
+| [[sources/supnik-change-uv-map-on-fly]] | Supnik：texture2DGradARB 解决 fract-UV 的 LOD 失配 |
+| [[sources/supnik-running-out-of-derivative-res]] | Supnik：顶点投影 UV 在 8800 GT 上耗尽导数精度 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

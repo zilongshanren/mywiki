@@ -27,10 +27,11 @@ sources: 1
 - **Screen Space**：从 NDC 映射到视口像素。
 
 ## 关键操作发生的位置
-
 - **MVP 变换**：见 [[mvp-transform]]。
 - **剪裁**：Clip Space 进行，**透视除法前**（避免 w≈0 数值问题）。
 - **插值**：光栅化阶段，屏幕空间线性但对应 3D 空间非线性，需要 [[perspective-correct-interpolation|透视校正]]。
+
+参见 [[huge-world-coordinate-precision]]：当 world space 覆盖 300×300 km 级别时，单精度 float 会开始丢位，X-Plane 为此必须定期重置坐标系。
 
 ## 相关
 - [[mvp-transform]]

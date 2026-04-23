@@ -47,6 +47,7 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 - 对比：一个成功的隐藏案例是 [[garbage-collector]]——GC 把内存管理变得真正不相关
 - [[identity-problem-naming]] — identity mismatch 是 false abstraction 的常见来源
 - [[cheat-by-solving-less]] —— 过度通用接口是虚假抽象的常见来源；Supnik 主张按特化需求砍范围
+- [[stl-not-abstraction-prescription]] — Supnik：STL 不是抽象，它是规定；你必须知道每个容器的实现特征才能安全使用
 
 ## Sources
 

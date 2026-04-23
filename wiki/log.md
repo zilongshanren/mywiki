@@ -998,3 +998,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-78 Worker IA (4rknova.com ×5)
 
 处理 4rknova.com（Nikos Papadopoulos / Arkanova）2012-2013 早期博客 5 篇。2 篇保留：C/C++ 资源嵌入三段论（xxd / `#include`+STRINGIFY / asm `.incbin`）、GLSL Conway 生命游戏（与 [[gpu-gol-optimization-ladder]] 形成 naive vs optimized 对照）。新增 1 概念页（c-cpp-embed-binary-blobs）、1 人物页（nikos-papadopoulos）、2 source 摘要。跳过 3 篇：GNU make -j alias（过薄）、Debian primus NVIDIA Optimus 配置（偏 distro 运维）、demos 页目录（无正文）。
+
+## [2026-04-19] ingest | Wave-78 Worker HZ (hacksoflife.blogspot.com 2010-02 ×5)
+
+处理 Ben Supnik 2010 年 2 月的 5 篇 X-Plane 技术短文，全部 ingest。新增 5 概念页：stl-not-abstraction-prescription（软件设计反面案例）、huge-world-coordinate-precision（大世界 float 精度）、function-vs-data-pointer-portability（GLX 函数指针签名）、texture2dgrad-explicit-derivatives（UV 不连续与 LOD）、uv-precision-derivative-loss（vertex projected UV 精度耗尽）。新增 5 source 摘要。对 ben-supnik、false-abstraction、abstraction、coordinate-spaces、fwidth-derivative-antialiasing 打 patch。

@@ -39,11 +39,11 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 一个 [[deep-modules|深模块]] 正是通过好的抽象来隐藏不重要细节、保留重要接口。抽象是深度的实现机制。
 
 ## 相关
-
 - 载体：[[deep-modules]]
 - 反面：[[false-abstraction]]
 - 目标：隐藏 [[obscurity]] 意义下的「不重要细节」
 - [[identity-problem-naming]] — 抽象的本质是划分 1,000 维空间
+- [[stl-not-abstraction-prescription]] — 反面案例：STL 明确地不隐藏实现复杂度
 
 ## Sources
 

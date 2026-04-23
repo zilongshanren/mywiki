@@ -25,6 +25,11 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[opengl-builtin-attribute-aliasing]]
 - [[cpp-template-value-vs-type-parameter]]
 - [[triangle-strips-vs-indexed-triangles]]
+- [[stl-not-abstraction-prescription]]
+- [[huge-world-coordinate-precision]]
+- [[function-vs-data-pointer-portability]]
+- [[texture2dgrad-explicit-derivatives]]
+- [[uv-precision-derivative-loss]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -41,3 +46,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-templating-functions]]
 - [[sources/supnik-devil-in-details]]
 - [[sources/supnik-to-strip-or-not-to-strip]]
+- [[sources/supnik-stl-not-abstraction]]
+- [[sources/supnik-scroll-opengl-world]]
+- [[sources/supnik-glxgetprocaddressarb-syntax]]
+- [[sources/supnik-change-uv-map-on-fly]]
+- [[sources/supnik-running-out-of-derivative-res]]
