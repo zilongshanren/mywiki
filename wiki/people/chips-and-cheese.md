@@ -35,6 +35,10 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[samsung-8n-vs-tsmc-n7]]
 - [[gpu-driver-support-lifecycle]]
 - [[core-to-core-latency-lock-test]]
+- [[op-cache-decoded-uop-cache]]
+- [[isa-implementation-not-architecture]]
+- [[dispatch-stall-breakdown]]
+- [[neoverse-n1-microarchitecture]]
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -46,3 +50,8 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[sources/chipsandcheese-jpeg-image-compression-overview]]
 - [[sources/chipsandcheese-security-overview]]
 - [[sources/chipsandcheese-ctr-safety-revisited]]
+- [[sources/chipsandcheese-zen2-op-cache-performance]]
+- [[sources/chipsandcheese-isa-doesnt-matter]]
+- [[sources/chipsandcheese-zen3-bottlenecks]]
+- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
+- [[sources/chipsandcheese-gigabyte-zen4-leak]]

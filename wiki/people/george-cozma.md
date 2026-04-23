@@ -11,10 +11,10 @@ sources: 1
 测试工具链多由 Clamchowder（Chips and Cheese 另一合作者）开发，George 在叙述与实践意义解读上着力。
 
 ## 相关
-
 - [[chips-and-cheese]]
 - [[core-to-core-latency-lock-test]]
+- [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（前端 vs 后端）
 
 ## Sources
-
 - [[sources/chipsandcheese-core-to-core-latency]]
+- [[sources/chipsandcheese-zen3-bottlenecks]]

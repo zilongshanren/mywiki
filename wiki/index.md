@@ -307,6 +307,10 @@ CAQA + CSAPP 的底层视角。
 | [[gpu-constant-memory-cache]] | Nvidia constant memory 的 L1/L1.5/L2 独立缓存层次 |
 | [[core-to-core-latency-lock-test]] | 核到核延迟测试测的是 contested lock，真实 workload 里锁 ≤ 0.01% 指令 |
 | [[samsung-8n-vs-tsmc-n7]] | Ampere 能效不全是 node 的锅：架构、GDDR6X、Zen 团队反哺 |
+| [[op-cache-decoded-uop-cache]] | 已解码微操作缓存：性能与功耗实测，ARM/x86 都在用 |
+| [[isa-implementation-not-architecture]] | ISA 无关论：x86 vs ARM 性能差异来自实现而非指令集 |
+| [[dispatch-stall-breakdown]] | Zen 3 派发停顿分解：前端 op queue empty vs 后端资源满 |
+| [[neoverse-n1-microarchitecture]] | ARM Neoverse N1 实测：与 Zen 2 的同代对比 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -2159,6 +2163,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-gl-impedance-mismatch]] | Supnik：GL 与现代 GPU 的阻抗不匹配（VAO / vertex format / MRT） |
 | [[sources/supnik-powervr-via-metal]] | Supnik：通过 Metal API 反推 PowerVR 硬件结构 |
 | [[sources/supnik-osx-metal-notes]] | Supnik：OS X Metal 桌面版 WWDC 2015 笔记，内存模型与 Mantle 对比 |
+| [[sources/chipsandcheese-zen2-op-cache-performance]] | Chester Lam：关闭 Zen 2 op cache 定量其性能/功耗贡献 |
+| [[sources/chipsandcheese-isa-doesnt-matter]] | Chester Lam：ARM/x86 ISA 差异不决定性能与能效 |
+| [[sources/chipsandcheese-zen3-bottlenecks]] | George Cozma：Zen 3 六 workload 派发停顿逐项分解 |
+| [[sources/chipsandcheese-neoverse-n1-vs-zen2]] | Chester Lam：Ampere Altra vs 3950X 实战对比 |
+| [[sources/chipsandcheese-gigabyte-zen4-leak]] | Chester Lam：Gigabyte 泄露里的 Zen 4 PPR 摘要 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

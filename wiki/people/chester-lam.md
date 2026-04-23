@@ -23,6 +23,9 @@ sources: 5
 - [[ampere-warp-stall-utilization]] — Ampere warp stall 与 shader 利用率实测
 - [[gpu-latency-microbench-methodology]] — GPU 延迟微基准的方法学修正（Sattolo 随机置换）
 - [[gpu-constant-memory-cache]] — GPU constant memory 专用缓存层次
+- [[op-cache-decoded-uop-cache]] — Zen 2 op cache 对性能与功耗的影响
+- [[isa-implementation-not-architecture]] — ISA 无关论的实测支撑
+- [[neoverse-n1-microarchitecture]] — Neoverse N1 vs Zen 2 实测对比
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -34,3 +37,7 @@ sources: 5
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
 - [[sources/chipsandcheese-gpu-memory-latency]]
 - [[sources/chipsandcheese-gpu-memory-latency-impact]]
+- [[sources/chipsandcheese-zen2-op-cache-performance]]
+- [[sources/chipsandcheese-isa-doesnt-matter]]
+- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
+- [[sources/chipsandcheese-gigabyte-zen4-leak]]

@@ -12077,3 +12077,8 @@ raw/articles/hacksoflife.blogspot.com/2015-04-14_opengl-state-change-is-deferred
 raw/articles/hacksoflife.blogspot.com/2015-04-14_the-opengl-impedance-mismatch.md
 raw/articles/hacksoflife.blogspot.com/2015-05-22_underestanding-powervr-gpus-via-metal.md
 raw/articles/hacksoflife.blogspot.com/2015-06-10_os-x-metal-raw-notes.md
+raw/articles/chipsandcheese.com/2021-07-03_how-zen-2s-op-cache-affects-performance.md
+raw/articles/chipsandcheese.com/2021-07-13_arm-or-x86-isa-doesnt-matter.md
+raw/articles/chipsandcheese.com/2021-07-23_measuring-zen-3s-bottlenecks.md
+raw/articles/chipsandcheese.com/2021-08-05_neoverse-n1-vs-zen-2-arm-in-practice.md
+raw/articles/chipsandcheese.com/2021-08-22_details-on-the-gigabyte-leak.md

@@ -1037,3 +1037,7 @@ opengl-hardware-impedance-mismatch
 mtl-render-pipeline-state
 mtl-render-pass-descriptor
 osx-metal-memory-model
+op-cache-decoded-uop-cache
+isa-implementation-not-architecture
+dispatch-stall-breakdown
+neoverse-n1-microarchitecture

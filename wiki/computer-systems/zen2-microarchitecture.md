@@ -31,13 +31,17 @@ Zen 2 的 L3 容量（最大 32 MB per CCD）也远超 Skylake，使 CBR15 场�
 Skylake 的 store buffer 更大，在 store 密集型负载下具有优势。Skylake 的 op cache（DSB）命中率在 CBR15 中反而高于 Zen 2（69.1% vs 62.7%），可能源于更灵活的替换策略；但在 CBR15 这种 IPC 不高的场景下，op cache 命中率与 IPC 的相关性很弱。
 
 ## 参见
-
 - [[branch-predictor-design]]
 - [[cpu-scheduler-design]]
 - [[cache-friendliness]]
 - [[cpu-performance-formula]]
 - [[benchmark-methodology-end-to-end]]
+- [[op-cache-decoded-uop-cache]] — Zen 2 op cache 的性能与功耗实测
+- [[isa-implementation-not-architecture]] — ARM/x86 ISA 无关论
+- [[neoverse-n1-microarchitecture]] — 同代 ARM 服务器核横向对比
+- [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（沿用分析方法）
 
 ## Sources
-
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
+- [[sources/chipsandcheese-zen2-op-cache-performance]]
+- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]

@@ -1266,3 +1266,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-100 Worker KN (hacksoflife / Supnik 2015-03..06 ×5)
 
 处理 Ben Supnik 2015-03 至 2015-06 的 5 篇 Hacks of Life 博客，串起 GL 性能→GL 阻抗不匹配→Metal 的一条连贯论证线。新增 6 概念页：gl-draw-accumulator-batching（累加器合批+重排+state 合并）、opengl-state-change-deferral（GL 状态延迟同步）、opengl-hardware-impedance-mismatch（pipeline-and-state 与硬件错位）、mtl-render-pipeline-state（PSO 锁死 shader/blend/vertex format 组合）、mtl-render-pass-descriptor（TBDR 的 load/store 强制显式）、osx-metal-memory-model（Shared/Managed/Private/Auto 四档）。新增 5 source 摘要，补丁挂到 ben-supnik / batching / draw-call / metal-api-overview / tbdr-vs-imr / hsr-tbdr / vulkan-explicit-performance。
+
+## [2026-04-19] ingest | Wave-100 Worker KO (chipsandcheese.com ×5 / 2021-07–08)
+
+处理 Chips and Cheese 2021 年 7–8 月五篇：Zen 2 op cache 性能与功耗、ARM/x86 ISA 无关论、Zen 3 派发停顿分解、Neoverse N1 vs Zen 2 实战、Gigabyte 泄露中的 Zen 4 细节。新增 4 概念页（op-cache-decoded-uop-cache、isa-implementation-not-architecture、dispatch-stall-breakdown、neoverse-n1-microarchitecture）、5 source 摘要；既有 chester-lam / george-cozma / chips-and-cheese / zen2-microarchitecture / branch-predictor-design 通过 patch 补交叉链接。无跳过项。

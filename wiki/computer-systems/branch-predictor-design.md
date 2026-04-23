@@ -30,11 +30,14 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 这一反差提示：op cache 大小与 op cache 命中率并不简单正相关，替换策略对实际命中率的影响不可忽视。
 
 ## 参见
-
 - [[zen2-microarchitecture]]
 - [[cpu-scheduler-design]]
 - [[cpu-performance-formula]]
+- [[op-cache-decoded-uop-cache]]
+- [[neoverse-n1-microarchitecture]] — N1 走速度优先、精度次之的反向权衡
+- [[dispatch-stall-breakdown]] — Zen 3 上误预测在后端的真实代价
 
 ## Sources
-
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
+- [[sources/chipsandcheese-zen3-bottlenecks]]
+- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
