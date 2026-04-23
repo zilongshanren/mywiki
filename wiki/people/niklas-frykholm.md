@@ -30,6 +30,8 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[custom-allocator-interface]] — Bitsquid 的 Allocator 抽象接口与子系统计数
 - [[static-hash-value-debug-assert]] — MurmurHash 常量化 + debug assert 工程技巧
 - [[dependency-checker-tool]] — 资源依赖图治理工具
+- [[tiny-expression-language]] — 给美术用的 stack-VM 表达式求值器
+- [[memory-corruption-bug-hunting]] — 只在 release/PS3 崩的那种 bug 的系统化狩猎方法
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -55,3 +57,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-a-is-overrated]]
 - [[sources/bitsquid-managing-coupling]]
 - [[sources/bitsquid-managing-coupling-part-2]]
+- [[sources/bitsquid-tiny-expression-language]]
+- [[sources/bitsquid-collaboration-and-merging]]
+- [[sources/bitsquid-extreme-bug-hunting]]
+- [[sources/bitsquid-universal-undo-copy-paste]]

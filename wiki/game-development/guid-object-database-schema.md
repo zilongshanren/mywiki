@@ -67,5 +67,6 @@ remove_from_set(guid, key, object_guid)
 - [[niklas-frykholm]]
 
 ## Sources
-
 - [[sources/bitsquid-new-data-storage-model]]
+- [[sources/bitsquid-collaboration-and-merging]]
+- [[sources/bitsquid-universal-undo-copy-paste]]

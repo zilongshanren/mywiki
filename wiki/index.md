@@ -138,6 +138,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[earley-parser]] | Earley parser：接受任意 CFG 的通用解析算法，最坏 O(n^3) |
 | [[cpp-template-value-vs-type-parameter]] | C++ 模板按类型 vs 按值参数化：只有后者能真正内联函数指针 |
 | [[static-hash-value-debug-assert]] | 字符串 hash 常量化：硬编码值 + debug 复算断言 |
+| [[tiny-expression-language]] | Bitsquid：给美术用的 stack-VM + RPN 表达式求值器，含 shunting-yard 编译与常量折叠 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -303,6 +304,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[dual-mode-gui-bitsquid]] | Bitsquid 用同一 API 同时支持 retained / immediate GUI |
 | [[flow-graph-data-oriented-runtime]] | Bitsquid Flow：可视化脚本的数据导向 runtime |
 | [[dependency-checker-tool]] | Bitsquid 500 行工具：资源依赖图与 replace/move/copy |
+| [[memory-corruption-bug-hunting]] | Bitsquid：release-only / 平台相关 / 低复现率的内存破坏 bug 系统化狩猎流程 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1766,6 +1768,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-a-is-overrated]] | Niklas Frykholm：A* is Overrated，导航不是寻路 |
 | [[sources/bitsquid-managing-coupling]] | Niklas Frykholm：引擎解耦四条原则 |
 | [[sources/bitsquid-managing-coupling-part-2]] | Niklas Frykholm：polling / callback / event 三选一的工程取舍 |
+| [[sources/bitsquid-tiny-expression-language]] | Frykholm 2011：一个小巧的表达式语言 |
+| [[sources/bitsquid-collaboration-and-merging]] | Frykholm 2011：协作的核心是合并，不是数据库 |
+| [[sources/bitsquid-extreme-bug-hunting]] | Frykholm 2011：极限 bug 狩猎——只在 release / 只在 PS3 / 不同调用栈 |
+| [[sources/bitsquid-universal-undo-copy-paste]] | Frykholm 2011：基于 GUID 对象库 schema 的通用 Undo / Copy / Paste |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

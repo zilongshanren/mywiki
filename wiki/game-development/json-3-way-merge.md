@@ -43,11 +43,11 @@ Frykholm 的解法是**给数组元素加 `id` 字段**，通常是 GUID：
 Frykholm 把代码放到了公共域（后来迁到 bitbucket），给后来者一个直接可用的起点。
 
 ## 相关
-
 - [[vcs-vs-database-for-content]] — 此合并器是这条路线的 enabler
 - [[guid-object-database-schema]] — 把同样思路推到彻底的 schema 设计
 - [[snapshot-diff-persistence]]
 - [[niklas-frykholm]]
+- [[sources/bitsquid-collaboration-and-merging]] — 把同一思路再往前推一步：merging 就是协作本身
 
 ## Sources
 

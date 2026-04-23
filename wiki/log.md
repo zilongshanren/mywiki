@@ -1006,3 +1006,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-78 Worker HY (bitsquid.blogspot.com 2010 末/2011 初 ×5)
 
 处理 5 篇 Niklas Frykholm Bitsquid 早期文章：time step smoothing、A* is overrated、C++ coding style（skip：raw 正文为空，全是评论）、managing coupling part 1 & 2。新增 4 概念页：[[variable-timestep-smoothing]]、[[local-navigation-over-pathfinding]]、[[system-decoupling-patterns]]、[[polling-callbacks-events]]；4 source 摘要；对 [[a-star-pathfinding]] 与 [[niklas-frykholm]] 各打一条 append patch。Niklas 的解耦系列与 cloudwu 的 [[id-based-lifetime-with-kill-flag]]、既有 [[handle-based-resource-manager]] 形成交叉引用。
+
+## [2026-04-19] ingest | Wave-79 Worker IB (bitsquid.blogspot.com 2011 Q1-Q2 x5)
+
+处理 5 篇 Niklas Frykholm / bitsquid 2011 年博客。1 篇跳过（仅 GDC 视频外链加 spam）；4 篇入库：表达式语言（新概念 tiny-expression-language）、协作与合并（patch guid-object-database-schema）、极限 bug 狩猎（新概念 memory-corruption-bug-hunting）、通用 Undo/Copy/Paste（patch guid-object-database-schema）。新增 2 概念 + 4 source 摘要。
