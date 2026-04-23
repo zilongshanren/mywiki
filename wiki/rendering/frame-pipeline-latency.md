@@ -41,6 +41,7 @@ sources: 1
 - [[unreal-frame-breakdown]]
 - [[angelo-pesce]]
 - [[cpu-gpu-pipelining-input-lag]] —— Joost 2011 从独立开发视角讲 Max Prerendered Frames / fence / VSync
+- [[frequency-is-not-latency]] —— Pesce 2011 Fight Night Champion：FPS != 延迟的大众沟通面
 
 ## Sources
 

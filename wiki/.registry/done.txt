@@ -12082,3 +12082,8 @@ raw/articles/chipsandcheese.com/2021-07-13_arm-or-x86-isa-doesnt-matter.md
 raw/articles/chipsandcheese.com/2021-07-23_measuring-zen-3s-bottlenecks.md
 raw/articles/chipsandcheese.com/2021-08-05_neoverse-n1-vs-zen-2-arm-in-practice.md
 raw/articles/chipsandcheese.com/2021-08-22_details-on-the-gigabyte-leak.md
+raw/articles/c0de517e.blogspot.com/2011-01-12_recipe-for-antialiasing-as-a-post.md
+raw/articles/c0de517e.blogspot.com/2011-02-26_surviving-c.md
+raw/articles/c0de517e.blogspot.com/2011-03-02_alternatives-to-object-handles.md
+raw/articles/c0de517e.blogspot.com/2011-03-07_tell-the-internet-that-you-re-not-a-moron.md
+raw/articles/c0de517e.blogspot.com/2011-03-09_do-you-have-failed-builds-2.md

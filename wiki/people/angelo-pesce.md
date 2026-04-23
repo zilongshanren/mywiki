@@ -34,6 +34,10 @@ sources: 5
 - [[code-tourism-practice]] —— 2011 把读代码类比为画家逛画廊
 - [[gradient-based-post-aa]] —— 2011 DIY 梯度驱动 post-AA 配方，MLAA 的廉价替代
 - [[deferred-rendering-mythbusting]] —— 2011 延迟渲染六条神话拆解
+- [[cpp-decoupling-over-details]] —— 2011 Surviving C++ 的核心论断：软件质量 = 可修改性 = 解耦
+- [[hot-swap-pointer-patching]] —— 2011 资源热重载的四种备选（指针 patch / GC / 置换表 / 列表扫描）
+- [[frequency-is-not-latency]] —— 2011 Fight Night Champion 的 30fps + 正确运动模糊
+- [[component-degradable-build]] —— 2011 「broken build」是个糟糕术语
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -58,3 +62,7 @@ sources: 5
 - [[sources/c0de517e-most-envied-rendering-poll-2010]]
 - [[sources/c0de517e-mythbusting-deferred]]
 - [[sources/c0de517e-gamma-diffuse-shortcut]]
+- [[sources/c0de517e-surviving-cpp]]
+- [[sources/c0de517e-alternatives-to-object-handles]]
+- [[sources/c0de517e-tell-internet-not-moron]]
+- [[sources/c0de517e-failed-builds]]

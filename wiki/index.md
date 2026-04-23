@@ -96,6 +96,8 @@ sources: 371
 | [[resource-reference-path-vs-guid-vs-name]] | 资源引用的三难：path 改名破、GUID 不可读、name 双重标识——选哪条都要配套工具链 |
 | [[performance-by-design]] | Supnik: 高性能是设计出来的，不是后期 profile 出来的 |
 | [[four-horsemen-performance]] | Supnik: 冗余工作 / 常数时间低效 / 不必要泛化 / 复利——四骑士解释为何后期救不回 |
+| [[cpp-decoupling-over-details]] | Pesce 2011 Surviving C++：软件质量的唯一要义是可修改性 / 解耦 |
+| [[component-degradable-build]] | Pesce 2011：`broken build` 是糟糕术语，应当支持部件级可降级构建 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -387,6 +389,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[arrays-of-arrays-allocation]] | Bitsquid 2015：N 个动态变长 component 共用大 buffer 的三条路线 |
 | [[main-render-thread-state-reflection]] | Asplund：StateStream + render_handle 把主线程状态单向镜像到渲染线程 |
 | [[stingray-renderer-three-stage-pipeline]] | Tobias：Cull/Render/Dispatch 三阶段数据并行 + simulation/render overlay |
+| [[hot-swap-pointer-patching]] | Pesce 2011：热重载的四种替代方案与它们为什么没赢过句柄 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -952,6 +955,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mtl-render-pipeline-state]] | Metal 的 immutable PSO 把隐式 combination cache 显式化 |
 | [[mtl-render-pass-descriptor]] | Metal 强制回答 TBDR tile 的 load/store action |
 | [[osx-metal-memory-model]] | OS X Metal 的 Shared/Managed/Private/Auto 四档存储与 Mantle 对比 |
+| [[frequency-is-not-latency]] | Pesce 2011 Fight Night Champion：FPS != 延迟，各子系统频率应按需设 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2168,6 +2172,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen3-bottlenecks]] | George Cozma：Zen 3 六 workload 派发停顿逐项分解 |
 | [[sources/chipsandcheese-neoverse-n1-vs-zen2]] | Chester Lam：Ampere Altra vs 3950X 实战对比 |
 | [[sources/chipsandcheese-gigabyte-zen4-leak]] | Chester Lam：Gigabyte 泄露里的 Zen 4 PPR 摘要 |
+| [[sources/c0de517e-surviving-cpp]] | Pesce：在 C++ 里活下来——解耦比任何规则都重要 |
+| [[sources/c0de517e-alternatives-to-object-handles]] | Pesce：资源热重载的四种非句柄方案 |
+| [[sources/c0de517e-tell-internet-not-moron]] | Pesce：Fight Night Champion 为什么 30fps + motion blur，FPS != 延迟 |
+| [[sources/c0de517e-failed-builds]] | Pesce：禁用 `broken build` 概念，让子系统降级而不是全员停工 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

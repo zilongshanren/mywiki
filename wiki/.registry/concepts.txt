@@ -1041,3 +1041,7 @@ op-cache-decoded-uop-cache
 isa-implementation-not-architecture
 dispatch-stall-breakdown
 neoverse-n1-microarchitecture
+cpp-decoupling-over-details
+hot-swap-pointer-patching
+frequency-is-not-latency
+component-degradable-build

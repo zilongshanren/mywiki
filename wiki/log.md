@@ -1270,3 +1270,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-100 Worker KO (chipsandcheese.com ×5 / 2021-07–08)
 
 处理 Chips and Cheese 2021 年 7–8 月五篇：Zen 2 op cache 性能与功耗、ARM/x86 ISA 无关论、Zen 3 派发停顿分解、Neoverse N1 vs Zen 2 实战、Gigabyte 泄露中的 Zen 4 细节。新增 4 概念页（op-cache-decoded-uop-cache、isa-implementation-not-architecture、dispatch-stall-breakdown、neoverse-n1-microarchitecture）、5 source 摘要；既有 chester-lam / george-cozma / chips-and-cheese / zen2-microarchitecture / branch-predictor-design 通过 patch 补交叉链接。无跳过项。
+
+## [2026-04-19] ingest | Wave-101 Worker KP (c0de517e.blogspot.com Pesce 2011-02~03 ×4)
+
+处理 Angelo Pesce 2011 年 2-3 月四篇博文。新增 4 概念页：cpp-decoupling-over-details（Surviving C++ 核心论断：解耦是软件质量的唯一要义）、hot-swap-pointer-patching（热重载四种替代方案分析）、frequency-is-not-latency（Fight Night Champion 30fps + motion blur 的实战沟通）、component-degradable-build（禁用 broken build 概念的子系统降级主张）。新增 4 source 摘要。Patch Pesce 人物页、cpp-multi-paradigm-discipline、system-decoupling-patterns、handle-based-resource-manager、frame-pipeline-latency 五页的 Sources / 相关 区。无跳过。

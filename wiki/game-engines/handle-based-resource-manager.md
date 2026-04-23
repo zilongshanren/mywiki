@@ -109,6 +109,7 @@ Marco 列了几点（和 [[information-hiding|信息隐藏]] / [[deep-modules|�
 - [[engine-layering]]
 - [[id-based-lifetime-with-kill-flag]] — 云风在 skynet 2.0 里用 id + 销毁标记替代 refcount 的变体，哲学一致但面向 actor 并发
 - [[id-lookup-table-packed]] — Bitsquid 同思想的三种实现细节与权衡
+- [[hot-swap-pointer-patching]] —— Pesce 2011 列出的四种备选方案（指针 patch / GC / 置换表 / 列表扫描），解释为什么工业界没选它们
 
 ## Sources
 

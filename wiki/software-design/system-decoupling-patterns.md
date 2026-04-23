@@ -105,5 +105,6 @@ Object *lookup[MAX_OBJECTS];
 - [[id-lookup-table-packed]] — 用 ID 解耦后，ID→Object 查找表的三种实现
 
 ## Sources
-
 - [[sources/bitsquid-managing-coupling]]
+- [[sources/c0de517e-surviving-cpp]] —— Pesce 2011：C++ 侧对「解耦才是唯一重要的事」的同构论证
+- [[sources/c0de517e-failed-builds]] —— Pesce 2011：把解耦原则推到构建与部署层

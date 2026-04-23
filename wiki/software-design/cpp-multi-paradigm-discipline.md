@@ -53,3 +53,4 @@ C++ 允许你把不同范式揉在一起、每种都享受高性能支持——�
 ## Sources
 - [[sources/cloudwu-effective-cpp-comments]]
 - [[sources/c0de517e-survive-cpp-guidelines-experiment]]
+- [[sources/c0de517e-surviving-cpp]] —— Pesce 2011 Surviving C++：语言联邦论在游戏工作室语境里的再表达
