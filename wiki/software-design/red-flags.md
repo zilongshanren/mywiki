@@ -37,10 +37,10 @@ Ousterhout 在 APoSD 第一章提出的设计直觉训练工具：
 当你能精确地说「这里有变更放大问题」而不是「这里看起来有点乱」，你就有了更清晰的改进方向。红旗词汇表把「感觉」升华成可以分析、交流、系统化解决的框架。
 
 ## 相关
-
 - [[complexity]]——红旗们共同指向的敌人
 - [[strategic-programming]]——识别红旗后应有的反应
 - [[zero-tolerance]]——对红旗的处理纪律
+- [[parameter-nodes-intrusive-linked-list]] — std::map / vectors-of-vectors / std::string 三面红旗的重构案例
 
 ## Sources
 

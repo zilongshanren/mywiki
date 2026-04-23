@@ -76,6 +76,8 @@ sources: 371
 | [[system-decoupling-patterns]] | Bitsquid 解耦四条：防 framework / 高层调度低层 / 允许复制 / ID 引用 |
 | [[polling-callbacks-events]] | 低层→高层通知三种方式：优先 poll / callback 必须延迟 / event 别做 global switchboard |
 | [[minimal-markup-pipeline]] | Bitsquid 100 行 Ruby：line-list parser + tag-stack generator |
+| [[parameter-nodes-intrusive-linked-list]] | 池化数组 + intrusive 链表：变长小集合的 DOD 容器 |
+| [[pragmatic-performance-philosophy]] | Frykholm 的务实性能观七条 + 数量级驱动设计 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -259,6 +261,7 @@ CAQA + CSAPP 的底层视角。
 | [[message-queue-thread-ownership]] | 消息队列作为线程所有权原语：数据访问权随消息流动，缩小 interleaving 状态空间 |
 | [[external-data-inspector]] | Bitsquid 2011：跨平台外部 watch window 设想与 blob 描述 DSL |
 | [[header-hero-compile-analysis]] | Bitsquid 2011：C++ include 图剖析工具与 Blowup Factor 指标 |
+| [[link-exe-lnk4099-patch]] | 二进制 patch MSVC link.exe 让 LNK4099 可被 /ignore |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -318,6 +321,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[memory-corruption-bug-hunting]] | Bitsquid：release-only / 平台相关 / 低复现率的内存破坏 bug 系统化狩猎流程 |
 | [[game-monitoring-event-buffer]] | 游戏监控：TLS event buffer + 在线/离线 visualizer |
 | [[id-lookup-table-packed]] | Bitsquid 2011 ID→Object 查找的三级演化：STL / array-with-holes / packed array |
+| [[animation-stream-cache-layout]] | Bitsquid 动画数据的流式 cache 布局：active 数组 + 时间排序流 |
+| [[platform-specific-resources-property-system]] | Bitsquid property 机制：文件名段统一处理平台/本地化/业务变体 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1825,6 +1830,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-id-lookup-table]] | Frykholm 2011：Managing Decoupling Part 4 — ID Lookup Table |
 | [[sources/bitsquid-header-hero]] | Frykholm 2011：Header Hero 工具与 C++ include 瘦身实操 |
 | [[sources/nklein-xml-parser-generator]] | Stein：用 Common Lisp 重写 XML Parser Generator，两文合并 |
+| [[sources/bitsquid-low-level-animation-part-2]] | Bitsquid：动画流式 cache 布局 + active 数组 |
+| [[sources/bitsquid-dod-sound-parameters]] | Bitsquid：声音参数集合的五步 DOD 重构 |
+| [[sources/bitsquid-pragmatic-performance]] | Bitsquid：务实性能观七条 + 数量级设计指南 |
+| [[sources/bitsquid-platform-specific-resources]] | Bitsquid：property 资源变体系统（平台编译期 + 语言运行期） |
+| [[sources/bitsquid-link-exe-lnk4099-patch]] | Bitsquid：patch link.exe 忽略 LNK4099 的 Ruby 脚本 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

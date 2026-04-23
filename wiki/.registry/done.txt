@@ -11801,3 +11801,8 @@ raw/articles/nklein.com/2010-02-16_burnt-paper-plugin-for-gimp-nklein-software.m
 raw/articles/nklein.com/2010-03-16_xml-parser-generator-nklein-software.md
 raw/articles/nklein.com/2010-03-29_animal-artwork-and-more-languages-in-iphone-spelling-app-nkl.md
 raw/articles/nklein.com/2010-04-09_parser-generator-released-nklein-software.md
+raw/articles/bitsquid.blogspot.com/2011-10-23_low-level-animation-part-2.md
+raw/articles/bitsquid.blogspot.com/2011-11-07_an-example-in-data-oriented-design-sound-parameters.md
+raw/articles/bitsquid.blogspot.com/2011-12-08_a-pragmatic-approach-to-performance.md
+raw/articles/bitsquid.blogspot.com/2011-12-22_platform-specific-resources.md
+raw/articles/bitsquid.blogspot.com/2011-12-28_code-share-patch-link-exe-to-ignore-lnk4099.md

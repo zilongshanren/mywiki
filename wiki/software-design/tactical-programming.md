@@ -46,6 +46,7 @@ sources: 1
 - [[clean-code-critique]] — 游戏/图形视角下对 clean code 的系统批判
 - [[vibe-coding-workflow]] — AI 辅助下的 tactical 循环
 - [[future-proofing-tests]] —— 没通过三问的 future-proofing 本质是把战术债藏进貌似战略的外衣
+- [[pragmatic-performance-philosophy]] — 对「先烂写再优化」的精细反驳：数据结构决策只有设计时最便宜
 
 ## Sources
 

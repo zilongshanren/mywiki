@@ -884,3 +884,8 @@ minimal-markup-pipeline
 id-lookup-table-packed
 header-hero-compile-analysis
 schema-driven-xml-parser-generator
+animation-stream-cache-layout
+parameter-nodes-intrusive-linked-list
+pragmatic-performance-philosophy
+platform-specific-resources-property-system
+link-exe-lnk4099-patch

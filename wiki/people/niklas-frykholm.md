@@ -66,3 +66,8 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-roll-your-own-docs]]
 - [[sources/bitsquid-id-lookup-table]]
 - [[sources/bitsquid-header-hero]]
+- [[sources/bitsquid-low-level-animation-part-2]]
+- [[sources/bitsquid-dod-sound-parameters]]
+- [[sources/bitsquid-pragmatic-performance]]
+- [[sources/bitsquid-platform-specific-resources]]
+- [[sources/bitsquid-link-exe-lnk4099-patch]]

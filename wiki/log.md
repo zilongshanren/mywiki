@@ -1046,3 +1046,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-82 Worker IM (nklein.com Patrick Stein 2010-02~04 ×5)
 
 处理 5 篇 nklein 博文。3 篇跳过：iPhone 拼写 app 两则产品更新（bugfix / 动物美术+翻译）、GIMP 烧焦纸张 Script-Fu 插件。2 篇（2010-03 XML Parser Generator 长文 + 2010-04 两行发布公告）合并为一份 source 摘要 nklein-xml-parser-generator，新增 1 概念页 schema-driven-xml-parser-generator（Common Lisp schema-driven codegen、tagstack SAX、自举、多语言后端），并在 patrick-stein 人物页补链。
+
+## [2026-04-19] ingest | Wave-82 Worker IK (bitsquid 2011 late ×5)
+
+处理 5 篇 2011-Q4 bitsquid.blogspot.com 文章：low-level animation part 2、DOD sound parameters、pragmatic performance、platform-specific resources、patch link.exe LNK4099。新增 5 概念页（animation-stream-cache-layout、parameter-nodes-intrusive-linked-list、pragmatic-performance-philosophy、platform-specific-resources-property-system、link-exe-lnk4099-patch）、5 source 摘要。人物页已存在（niklas-frykholm），仅追加 source 链接。

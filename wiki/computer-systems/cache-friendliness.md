@@ -33,12 +33,13 @@ sources: 2
 增长阶（[[order-of-growth]]）分析完全忽略 cache。在小 n 区间或 cache 友好的情况下，O(n) 可能胜过 O(log n)。**profiler 是真理**。
 
 ## 相关
-
 - [[memory-hierarchy]]
 - [[locality-principle]]
 - [[aos-vs-soa]]
 - [[order-of-growth]]
 - [[texture-swizzle-nested-tiling]] —— GPU 纹理通过嵌套分块把空间相邻映射到地址相邻
+- [[animation-stream-cache-layout]] — Bitsquid 动画流的 hot/cold 分离 + active 数组
+- [[parameter-nodes-intrusive-linked-list]] — 池化数组 + intrusive 链表的 cache 友好变长结构
 
 ## Sources
 
