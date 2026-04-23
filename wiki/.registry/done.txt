@@ -11976,3 +11976,8 @@ raw/articles/bitsquid.blogspot.com/2016-09-07_state-reflection.md
 raw/articles/bitsquid.blogspot.com/2016-10-04_the-implementation-of-frustum-culling-in-stingray.md
 raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-1-overview.md
 raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-2-resources-resource-contexts.md
+raw/articles/joostdevblog.blogspot.com/2011-07-02_games-as-expression-proun-as-me.md
+raw/articles/joostdevblog.blogspot.com/2011-07-26_meet-the-awesomenauts-sheriff-lonestar.md
+raw/articles/joostdevblog.blogspot.com/2011-07-26_proun-highscore-system-patched.md
+raw/articles/joostdevblog.blogspot.com/2011-07-30_solid-motion.md
+raw/articles/joostdevblog.blogspot.com/2011-08-23_awesomenauts-intro-cinematic-released.md

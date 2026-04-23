@@ -1186,3 +1186,7 @@ Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-ga
 ## [2026-04-19] ingest | Wave-93 Worker JR (bitsquid Stingray 2016-09 ~ 2017-02 ×5)
 
 处理 bitsquid.blogspot.com 2016-09 至 2017-02 五篇 Stingray 深度技术文章，全部 ingest。新增 5 概念页：stingray-resource-override-suffix（Niklas 2016 本地化系统重写）、main-render-thread-state-reflection（Asplund state reflection 机制）、stingray-simd-sphere-oobb-culling（Asplund SIMD + 多线程视锥剔除）、stingray-renderer-three-stage-pipeline（Tobias Cull/Render/Dispatch 三阶段架构）、stingray-render-resource-context（Tobias RenderResource + RRC 跨 API 资源抽象）。新增 1 人物页：andreas-asplund。5 个 source 摘要全部新建。niklas-frykholm / tobias-persson / culling / view-frustum-culling-ryg / stingray-data-driven-render-config 通过 patch 追加 Related 与 Sources。
+
+## [2026-04-19] ingest | Wave-94 Worker JW (joostdevblog 2011-07 to 2011-08 ×5)
+
+Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expression`（游戏作为第三种开发动机——自我表达，Proun 为案例，反 playtest 决策）、`solid-motion`（2006 年自创 MAXScript 技术：沿动画时间轴扫掠 mesh 生成高面数静态雕塑，400 万三角形，Futurism 艺术史驱动）。3 篇跳过：Sheriff Lonestar 角色 reveal 预告、Proun highscore SQL 服务器补丁通告、Awesomenauts 开场 CG 发布公告——均为纯营销/运营短文。新增 1 概念页（solid-motion-sweep）、2 source 摘要；在 joost-van-dongen 人物页追加 1 概念 + 2 条 Sources 引用。

@@ -31,6 +31,7 @@ sources: 16
 - [[perspective-meta-shapes]] —— 透视投影下视角相关的 meta-shape 构图
 - [[easy-to-learn-hard-to-master]] —— Proun 极简双键 gameplay 与叠加挑战层的设计原则
 - [[long-gestation-side-project]] —— Proun 六年业余开发史与 CableRacer codebase 在 De Blob / Snowball Earth / Swords & Soldiers 的复用链
+- [[solid-motion-sweep]] —— 2006 年 MAXScript：沿动画时间轴把 mesh 扫成静态 4D→3D 雕塑，Futurism 驱动
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -56,3 +57,5 @@ sources: 16
 - [[sources/joostdevblog-meta-shapes-perspective]]
 - [[sources/joostdevblog-proun-game-design]]
 - [[sources/joostdevblog-proun-history]]
+- [[sources/joostdevblog-games-as-expression]]
+- [[sources/joostdevblog-solid-motion]]

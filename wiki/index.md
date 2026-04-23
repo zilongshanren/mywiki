@@ -895,6 +895,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[stingray-resource-override-suffix]] | Niklas 2016：resource override + suffix 规则替代文件名 property 魔法 |
 | [[stingray-simd-sphere-oobb-culling]] | Asplund：SoA + SIMD + 多线程的 sphere→OOBB 两级视锥剔除 |
 | [[stingray-render-resource-context]] | Tobias：RenderResource 24+8 位 handle + RRC command-buffer 化的跨 API 资源抽象 |
+| [[solid-motion-sweep]] | 沿动画时间轴扫掠 mesh 生成实体雕塑的 MAXScript |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2032,6 +2033,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-frustum-culling-stingray]] | Asplund 2016：Stingray SIMD + 多线程 sphere→OOBB 视锥剔除实现 |
 | [[sources/bitsquid-renderer-walkthrough-1-overview]] | Tobias 2017：Stingray 渲染架构三阶段总纲 |
 | [[sources/bitsquid-renderer-walkthrough-2-resources]] | Tobias 2017：Stingray GPU 资源与 RenderResourceContext |
+| [[sources/joostdevblog-games-as-expression]] | Joost：游戏作为自我表达，Proun 为例 |
+| [[sources/joostdevblog-solid-motion]] | Joost：Solid Motion 扫掠体的 MAXScript 实现 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
