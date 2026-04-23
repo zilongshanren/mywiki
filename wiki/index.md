@@ -287,6 +287,7 @@ CAQA + CSAPP 的底层视角。
 | [[cas-refcount-lowbit-lock]] | CAS + refcount 的竞态缺口、指针低位当锁的自旋变体、Vyukov differential refcount |
 | [[page-granular-system-allocator]] | Bitsquid 的内存纪律：全局只发整页、子系统在页内自治 |
 | [[spatial-hash-grid-linked-list]] | 空间查询默认方案：grid coord → HashMap → 扁平数组内嵌链表 |
+| [[gdb-scheduler-locking]] | gdb 多线程调试：锁定调度器避免断点间隙抢线程 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -862,6 +863,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gimbal-lock-euler-interpolation]] | 万向锁的真正问题是欧拉角插值奇异，曲线编辑器让它永久留在引擎里 |
 | [[compact-normal-encoding]] | G-Buffer 法线 2 通道编码：Lambert azimuthal vs CryTek best-fit |
 | [[perspective-meta-shapes]] | 透视投影下视角相关的 meta-shape 构图（Proun 相机设计） |
+| [[triangle-plane-sort-translucency]] | Supnik：单面三角形平面划分导出的视角无关半透明预排序 |
+| [[order-independent-transparency]] | AMD per-pixel linked-list OIT 的原理、代价与替代方案 |
+| [[cascaded-shadow-maps]] | NVIDIA 默认推荐的阴影技术，X-Plane 10 基线 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1956,6 +1960,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-homework-2-dependencies]] | Pesce 2010：用 DSM 工具审视依赖的动手作业 |
 | [[sources/c0de517e-pix-is-great-but]] | Pesce 2010：PIX 精确但迭代慢，屏幕涂色 + shader live-reload 往往更快 |
 | [[sources/c0de517e-live-editing-poll-results]] | Pesce 2010：live-editing poll 75 人结果与八档分类吐槽 |
+| [[sources/supnik-order-correct-translucency]] | Supnik：从硬件 OIT 到三角形平面预排序 |
+| [[sources/supnik-csm-for-dummies]] | Supnik：CSM 作为 X-Plane 10 阴影基线的自嘲注脚 |
+| [[sources/supnik-dont-go-anywhere]] | Supnik：gdb scheduler-locking 搞定多线程断点求值 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

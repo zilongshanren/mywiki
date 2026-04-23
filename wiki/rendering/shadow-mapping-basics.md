@@ -126,7 +126,6 @@ v_normal = mat3(u_sha_view) * mat3(world_mat) * in_Normal;
 - **Volumetric shadows**：Xor 这篇的本意就是为 volumetric 打底。
 
 ## 相关
-
 - [[cached-shadowmaps]] — 把远级联结果跨帧缓存
 - [[z-buffer]]
 - [[reversed-z]]
@@ -140,6 +139,7 @@ v_normal = mat3(u_sha_view) * mat3(world_mat) * in_Normal;
 - [[shadow-caster-culling-front-back]] — front-face vs back-face shadow casting 的 peter-panning/light-leak 权衡
 - [[selective-shadow-fade-pass-switch]] — 让单个 actor 的阴影独立淡入淡出（UE Shadow Pass Switch）
 - [[blob-shadow-decal-vs-plane]] — 传统 blob 阴影 vs 投影 decal 的水面/地形处理差异
+- [[cascaded-shadow-maps]] —— 视锥分段的经典阴影技术，NVIDIA 的默认推荐
 
 ## Sources
 

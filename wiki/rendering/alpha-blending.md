@@ -62,6 +62,8 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[alpha-blending-front-to-back]] —— Ben Supnik：用 `GL_ONE_MINUS_DST_ALPHA, GL_ONE` 做前向合成与「反转 alpha」累积不透明度的 blend state 技巧
 - [[premultiplied-alpha-bilinear-ring]] —— Supnik：预乘为何能自动消除 bilinear filtering 产生的 tree ring 色晕
 - [[sources/supnik-alpha-blending-lets-try-again]] —— 预乘约定下 back-to-front `(1, 1-SA)` 与 front-to-back `(1-DA, 1)` 的对称推导
+- [[triangle-plane-sort-translucency]] —— 拓扑层面的半透明预排序，互补于运行时深度排序
+- [[order-independent-transparency]] —— 硬件 per-pixel linked-list 方案与其替代
 
 ## Sources
 

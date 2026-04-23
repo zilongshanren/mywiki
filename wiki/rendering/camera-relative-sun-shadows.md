@@ -39,10 +39,10 @@ sources: 1
 共同点都是：**把光照当作演出工具而不是仿真**，为画面服务，而不是让玩家去心算光源位置是否符合白天几点。
 
 ## 相关
-
 - [[shadow-mapping-basics]]
 - [[parallax-corrected-cubemap]]
 - [[cel-shading-pipeline]]
+- [[cascaded-shadow-maps]] —— 大世界相机相对处理通常作用在 CSM 每一级
 
 ## Sources
 

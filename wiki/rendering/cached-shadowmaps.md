@@ -49,7 +49,6 @@ Pesce 在博客里提到他当时还在想另一些更激进的省带宽办法�
 - 现代引擎里类似思想演化成了 virtual shadow maps（UE5 Nanite shadows）——同样是「只重绘变化部分」，但粒度更细、做在 page 级别上。
 
 ## 相关
-
 - [[angelo-pesce]]
 - [[rendering-pipeline]]
 - [[bottleneck-analysis]]
@@ -58,6 +57,7 @@ Pesce 在博客里提到他当时还在想另一些更激进的省带宽办法�
 - [[stencil-buffer]]
 - [[shadow-mapping-basics]] — shadow mapping 的基础流程（hard / soft / Phong）
 - [[occlusion-culling]] —— Conviction 的 HZB shadow caster culling 是另一种阴影优化思路
+- [[cascaded-shadow-maps]] —— 可与级联缓存策略组合的基线
 
 ## Sources
 

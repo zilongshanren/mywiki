@@ -48,12 +48,12 @@ Supnik 总结的三条同时成立就会失败：
 flight-sim 云刚好三条全部占。这个案例也说明一件很一般的事：**白皮书里的算法**都是在**作者选定的输入分布**下最优的——真正的工程判断是 **读算法时同时读它的"隐含前提假设"**：这里 sliced shadow 的隐含前提是"大量高度半透明粒子 + 无分桶"，脱离这个前提就会把每条弱点都暴露。
 
 ## 相关
-
 - [[ben-supnik]]
 - [[cloudscape-sdf-volumetric]] —— 现代 flight-sim 体积云的另一条路径（SDF + ray march）
 - [[volumetric-cloud-quarter-res-upsample]] —— Horizon Zero Dawn 那套 1/16 采样 + 时间重投影的正交方案
 - [[alpha-blending-front-to-back]] —— 切片 + order 的相关背景
 - [[otoy-cloud-rendering]]
+- [[cascaded-shadow-maps]] —— X-Plane 10 阴影基线，Supnik 认为 3 级在超远场景下不够
 
 ## Sources
 

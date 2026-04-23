@@ -55,6 +55,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[cas-refcount-lowbit-lock]] —— CAS+refcount 的低位自旋锁变体与 differential refcount 讨论
 - [[compact-normal-encoding]] —— 2011 G-Buffer 法线用 Lambert azimuthal 2 通道编码解条带
 - [[asset-exchange-format-strategy]] —— COLLADA 抉择：三条资源交换路线的权衡
+- [[triangle-plane-sort-translucency]] —— 2011 单面三角形平面划分给出任意视角正确的半透明预排序
+- [[order-independent-transparency]] —— 2011 对 AMD per-pixel linked-list OIT 的评估与退让
+- [[cascaded-shadow-maps]] —— 2011 X-Plane 10 阴影基线的自嘲式注脚
+- [[gdb-scheduler-locking]] —— 2011 多线程断点里 debug-mode vector::operator[] 踩坑的 gdb 武器
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -111,3 +115,6 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-derivatives-iii-ran-out-of-rez]]
 - [[sources/supnik-is-collada-a-win]]
 - [[sources/supnik-gbuffer-normals-revisited]]
+- [[sources/supnik-order-correct-translucency]]
+- [[sources/supnik-csm-for-dummies]]
+- [[sources/supnik-dont-go-anywhere]]

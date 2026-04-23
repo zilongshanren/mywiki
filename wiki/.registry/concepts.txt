@@ -942,3 +942,7 @@ destroy-recreate-vs-reset
 solo-programmer-discipline
 perspective-meta-shapes
 live-editing-taxonomy-2010
+triangle-plane-sort-translucency
+order-independent-transparency
+cascaded-shadow-maps
+gdb-scheduler-locking

@@ -1130,3 +1130,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-89 Worker jh (c0de517e Pesce 2010-03/04 ×5)
 
 Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editing poll（公告 + 结果）。新增 1 概念页 [[live-editing-taxonomy-2010]]、3 source 摘要。跳过 2 篇：homework-2-2 是 http/https 归档重复（skipped_duplicate）、live-editing-poll 是公告无实质内容，实质在结果篇。Patch 了 dependencies / tools-first-iteration-loop / runtime-editor-console-connection / pix-api-and-dxdmp / debug-visualization / angelo-pesce 六页。
+
+## [2026-04-19] ingest | Wave-89 Worker JG (hacksoflife 2011-02/03 Supnik ×5)
+
+处理 5 篇 Ben Supnik 早期 X-Plane 博文。新增 4 概念页（triangle-plane-sort-translucency、order-independent-transparency、cascaded-shadow-maps、gdb-scheduler-locking）、3 source 摘要。跳过 2 篇（WordPress shortcode、hex magic cookie 趣闻）。人物页 [[ben-supnik]] 打补丁加 4 条 related + 3 条 Sources。
