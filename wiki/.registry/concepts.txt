@@ -872,3 +872,7 @@ screen-space-curve-tessellation-cutoff
 opengl-extension-bucket-strategy
 gpu-embarrassingly-parallel-serial-dispatch
 cgal-exact-arithmetic-mantissa-growth
+game-monitoring-event-buffer
+string-handling-game-runtime
+lua-light-userdata-bindings
+lua-memory-profiling

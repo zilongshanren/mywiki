@@ -11776,3 +11776,8 @@ raw/articles/hacksoflife.blogspot.com/2010-03-16_santa-to-ben-you-re-an-idiot.md
 raw/articles/hacksoflife.blogspot.com/2010-04-21_constitutional-opposition.md
 raw/articles/hacksoflife.blogspot.com/2010-04-21_thank-you-jeeves-that-will-be-all.md
 raw/articles/hacksoflife.blogspot.com/2010-04-23_cgal-it-s-all-about-the-mantissa.md
+raw/articles/bitsquid.blogspot.com/2011-05-06_flow-data-oriented-implementation-of-a-visual-scripting-lang.md
+raw/articles/bitsquid.blogspot.com/2011-05-26_monitoring-your-game.md
+raw/articles/bitsquid.blogspot.com/2011-06-10_strings-redux.md
+raw/articles/bitsquid.blogspot.com/2011-06-26_lightweight-lua-bindings.md
+raw/articles/bitsquid.blogspot.com/2011-08-09_fixing-memory-issues-in-lua.md

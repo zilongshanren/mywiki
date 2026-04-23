@@ -37,5 +37,6 @@ sources: 3
 - [[sources/eliasdaler-lua-cpp-binding-series]]
 
 ## 相关
-
 - [[lua-design-philosophy]] —— Lua 作者本人对脚本语言定位、机制 vs 法策、有栈协程的论述
+- [[lua-light-userdata-bindings]] —— Bitsquid 版的极端性能取向：改用 light userdata、手写类型 marker、放弃 `:` 方法语法
+- [[lua-memory-profiling]] —— Lua 侧遍历 `_G` 盘点对象 + C 侧 `lua_Alloc` 捕获分配 stack trace

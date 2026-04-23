@@ -139,6 +139,9 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[cpp-template-value-vs-type-parameter]] | C++ 模板按类型 vs 按值参数化：只有后者能真正内联函数指针 |
 | [[static-hash-value-debug-assert]] | 字符串 hash 常量化：硬编码值 + debug 复算断言 |
 | [[tiny-expression-language]] | Bitsquid：给美术用的 stack-VM + RPN 表达式求值器，含 shunting-yard 编译与常量折叠 |
+| [[string-handling-game-runtime]] | Bitsquid 经验：UTF-8 + 不要 string class + 运行时 hash ID |
+| [[lua-light-userdata-bindings]] | Light userdata 绑定：零分配、零 GC、手写类型 marker |
+| [[lua-memory-profiling]] | Lua 内存调优：`_G` 遍历盘点 + `lua_Alloc` stack trace + feedback GC |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -306,6 +309,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[flow-graph-data-oriented-runtime]] | Bitsquid Flow：可视化脚本的数据导向 runtime |
 | [[dependency-checker-tool]] | Bitsquid 500 行工具：资源依赖图与 replace/move/copy |
 | [[memory-corruption-bug-hunting]] | Bitsquid：release-only / 平台相关 / 低复现率的内存破坏 bug 系统化狩猎流程 |
+| [[game-monitoring-event-buffer]] | 游戏监控：TLS event buffer + 在线/离线 visualizer |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1799,6 +1803,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-value-of-granularity]] | Supnik：OpenGL 扩展分桶与细粒度开关 |
 | [[sources/supnik-santa-youre-an-idiot]] | Supnik：GPU 已经足够并行，不需要并行命令派发 |
 | [[sources/supnik-cgal-mantissa]] | Supnik：CGAL 尾数膨胀与 float round-trip 精度重置 |
+| [[sources/bitsquid-flow-followup-qa]] | Frykholm：Flow 文章后续 Q&A（hierarchical grouping / query 节点） |
+| [[sources/bitsquid-monitoring-your-game]] | Frykholm：游戏监控系统 TLS event buffer 设计 |
+| [[sources/bitsquid-strings-redux]] | Frykholm：UTF-8 everywhere、不要 string class、runtime 用 hash |
+| [[sources/bitsquid-lightweight-lua-bindings]] | Frykholm：light userdata 绑定、手写类型 marker、句柄生命周期 |
+| [[sources/bitsquid-fixing-memory-issues-lua]] | Frykholm：Lua 内存泄漏定位、GC 预算反馈控制 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

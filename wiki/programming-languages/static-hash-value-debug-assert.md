@@ -45,10 +45,10 @@ if (object.name() == static_hash("root_point", 0x5e43bd96)) ...
 - 在没有 `constexpr` 的年代，工程解法往往比语言解法更省事。
 
 ## 相关
-
 - [[non-cryptographic-hash]] — MurmurHash、FNV 等家族
 - [[flow-graph-data-oriented-runtime]] — Bitsquid 里大量用 32-bit string hash 做事件名
 - [[offset-based-resource-blobs]] — 跨资源引用用 hash(name) 解析
+- [[string-handling-game-runtime]] —— 为什么运行时用 hash ID 取代字符串名、以及反查表/嵌入 debug_name 的补救做法
 
 ## Sources
 

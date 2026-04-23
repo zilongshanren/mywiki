@@ -1026,3 +1026,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-80 Worker batch-w80-if (hacksoflife.blogspot.com ×5)
 
 处理 Ben Supnik 2010-03 ~ 2010-04 共 5 篇。入库 3 篇（OpenGL 扩展分桶策略、GPU 并行性与串行派发、CGAL 尾数膨胀）。跳过 2 篇：constitutional-opposition（Apple SDK 许可证评论）、thank-you-jeeves（C++ 语法小笑话）。新增 3 个概念页、3 个 source 摘要；Supnik 人物页追加相关与 Sources。
+
+## [2026-04-19] ingest | Wave-80 Worker IE (bitsquid.blogspot.com 2011-Q2/Q3 ×5)
+
+处理 Niklas Frykholm 2011 年 5-8 月的 5 篇 Bitsquid 博文。新增 4 概念页（game-monitoring-event-buffer、string-handling-game-runtime、lua-light-userdata-bindings、lua-memory-profiling）+ 5 source 摘要；patch flow-graph-data-oriented-runtime（hierarchical grouping / query 节点 follow-up）、lua-cpp-binding、lua-incremental-gc、static-hash-value-debug-assert 的交叉引用。

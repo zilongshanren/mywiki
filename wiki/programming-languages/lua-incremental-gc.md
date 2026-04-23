@@ -36,12 +36,13 @@ GC 在 `global_State.gcstate` 上跑一个五态机：
 云风特别欣赏的一点是 Lua 把"字符串作为不可变的共享对象、比较退化为指针比较"这件事贯彻到 GC 设计里：`FIXEDBIT` 不仅是防回收，还反过来变成运行时的性能武器。这和 Lua 的整体[[lua-design-philosophy|小而能组合]]风格一致——一块 `marked` 字节、两种白色、几个宏，就把"增量标记 + 清理 + finalize + 永久字符串"四件事串起来了。
 
 ## 相关
-
 - [[cloudwu]]
 - [[garbage-collector]]
 - [[simple-cpp-mark-sweep-gc]]
 - [[lua-design-philosophy]]
 - [[skynet-lua-sharetable-patch]] —— skynet 跨 VM 共享函数原型 patch 与 Lua 5.5 external strings
+- [[lua-memory-profiling]] —— 真机上怎么定位 Lua 内存泄漏与 GC 热点；feedback-loop 调节 GC 预算
+- [[lua-light-userdata-bindings]] —— 不产生 GC 垃圾的 C 绑定是控制 GC 成本的前提
 
 ## Sources
 
