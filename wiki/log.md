@@ -1042,3 +1042,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-81 Worker IH (bitsquid 2011-Q3/Q4 ×5)
 
 处理 5 篇 Niklas Frykholm 博文（watch-window 设想 / MurmurHash2 inverse / 自制 Ruby 文档系统 / ID lookup table 三级演化 / Header Hero 编译时间分析）。新增 5 概念页（external-data-inspector, murmur-hash-inverse, minimal-markup-pipeline, id-lookup-table-packed, header-hero-compile-analysis）、5 source 摘要。人物页 niklas-frykholm 已存在，补充 5 条 source 链接。跨引至 id-based-lifetime-with-kill-flag、handle-based-resource-manager、system-decoupling-patterns、static-hash-value-debug-assert 等既有概念。
+
+## [2026-04-19] ingest | Wave-82 Worker IM (nklein.com Patrick Stein 2010-02~04 ×5)
+
+处理 5 篇 nklein 博文。3 篇跳过：iPhone 拼写 app 两则产品更新（bugfix / 动物美术+翻译）、GIMP 烧焦纸张 Script-Fu 插件。2 篇（2010-03 XML Parser Generator 长文 + 2010-04 两行发布公告）合并为一份 source 摘要 nklein-xml-parser-generator，新增 1 概念页 schema-driven-xml-parser-generator（Common Lisp schema-driven codegen、tagstack SAX、自举、多语言后端），并在 patrick-stein 人物页补链。

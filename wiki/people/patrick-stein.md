@@ -11,10 +11,11 @@ nklein software 博主，笔名 Pat / nklein。资深 Common Lisp 爱好者，�
 2010 年前后短暂跨界 Objective-C / iPhone SDK，发布 Spelling Toy 儿童拼写 app，但写作重心仍在 Lisp 生态。
 
 ## 相关
-
 - [[sources/nklein-cl-opengl-text-cutoff]]
 - [[screen-space-curve-tessellation-cutoff]]
+- [[sources/nklein-xml-parser-generator]] — 2010 年用 Common Lisp 重写的 schema-driven XML 解析器生成器
+- [[schema-driven-xml-parser-generator]]
 
 ## Sources
-
 - [[sources/nklein-cl-opengl-text-cutoff]]
+- [[sources/nklein-xml-parser-generator]]

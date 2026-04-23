@@ -883,3 +883,4 @@ murmur-hash-inverse
 minimal-markup-pipeline
 id-lookup-table-packed
 header-hero-compile-analysis
+schema-driven-xml-parser-generator

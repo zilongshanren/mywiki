@@ -144,6 +144,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[lua-light-userdata-bindings]] | Light userdata 绑定：零分配、零 GC、手写类型 marker |
 | [[lua-memory-profiling]] | Lua 内存调优：`_G` 遍历盘点 + `lua_Alloc` stack trace + feedback GC |
 | [[murmur-hash-inverse]] | MurmurHash2 32/64 位的数学逆运算（乘法逆元 + 逆异或移位）|
+| [[schema-driven-xml-parser-generator]] | Patrick Stein 基于 XML schema 的 CLOS 解析器代码生成（tagstack + 自举 + 多后端） |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -1823,6 +1824,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-roll-your-own-docs]] | Frykholm 2011：100 行 Ruby 自制文档管线（parser + generator）|
 | [[sources/bitsquid-id-lookup-table]] | Frykholm 2011：Managing Decoupling Part 4 — ID Lookup Table |
 | [[sources/bitsquid-header-hero]] | Frykholm 2011：Header Hero 工具与 C++ include 瘦身实操 |
+| [[sources/nklein-xml-parser-generator]] | Stein：用 Common Lisp 重写 XML Parser Generator，两文合并 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
