@@ -958,3 +958,6 @@ directx-sdk-to-windows-sdk-migration
 datacomponent-single-buffer-allocation
 arrays-of-arrays-allocation
 buddy-memory-allocation
+stingray-data-driven-render-config
+stingray-package-manager
+temporal-sao-reprojection

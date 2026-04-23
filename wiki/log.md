@@ -1154,3 +1154,7 @@ Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editi
 ## [2026-04-19] ingest | Wave-91 Worker JN (c0de517e 2010-05~07 ×5)
 
 Pesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2、java4ever-2），2 篇为纯链接聚合（some-links、more-links-generative-art），1 篇为一句话转视频（java4ever）。无可沉淀的技术内容。
+
+## [2026-04-19] ingest | Wave-91 Worker JL (bitsquid 2015-08 ~ 2016-01 ×5)
+
+处理 5 篇 bitsquid 后期博客。Ingested 4 篇：buddy allocator Part 3、SAO temporal reprojection、Stingray data-driven rendering、Stingray package manager (spm)。Skipped 1 篇 JavaScript animation interlude（无独立技术内容）。新增 3 concept：stingray-data-driven-render-config、stingray-package-manager、temporal-sao-reprojection。Buddy Part 3 作为 buddy-memory-allocation 的实现细节段补丁。Niklas Frykholm 人物页追加 4 条 source + 3 条相关。temporal-supersampling 与 hbao-interleaved-sampling 增加对 temporal-sao-reprojection 的交叉引用。data-driven-architecture 增加对 stingray 两篇的引用。

@@ -11936,3 +11936,8 @@ raw/articles/c0de517e.blogspot.com/2010-05-31_some-links.md
 raw/articles/c0de517e.blogspot.com/2010-06-12_more-links-generative-art.md
 raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever-2.md
 raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever.md
+raw/articles/bitsquid.blogspot.com/2015-08-04_allocation-adventures-3-the-buddy-allocator.md
+raw/articles/bitsquid.blogspot.com/2015-08-20_allocation-interlude-javascript-animation.md
+raw/articles/bitsquid.blogspot.com/2015-09-10_temporal-reprojection-and-sao.md
+raw/articles/bitsquid.blogspot.com/2015-12-18_data-driven-rendering-in-stingray.md
+raw/articles/bitsquid.blogspot.com/2016-01-20_introducing-the-stingray-package-manager-spm.md

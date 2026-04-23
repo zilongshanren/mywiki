@@ -57,6 +57,9 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[datacomponent-single-buffer-allocation]] —— 2015 DataComponent 压到单 buffer 的八步改造
 - [[arrays-of-arrays-allocation]] —— 2015 N 个动态 vector 共享大 buffer 的三条路线
 - [[buddy-memory-allocation]] —— Arrays of Arrays 推出的 2-幂 allocator 选型
+- [[stingray-data-driven-render-config]] —— Stingray 把 data-driven 从 gameplay 推到整条渲染管线
+- [[stingray-package-manager]] —— Bitsquid 的 one-button build 工具链
+- [[temporal-sao-reprojection]] —— Jp Guertin 的 SAO temporal reprojection 工程记录
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -124,3 +127,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-multithreaded-gameplay]]
 - [[sources/bitsquid-allocation-adventures-1-datacomponent]]
 - [[sources/bitsquid-allocation-adventures-2-arrays]]
+- [[sources/bitsquid-buddy-allocator]]
+- [[sources/bitsquid-temporal-sao]]
+- [[sources/bitsquid-stingray-data-driven-rendering]]
+- [[sources/bitsquid-stingray-package-manager]]

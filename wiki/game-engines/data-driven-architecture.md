@@ -56,6 +56,8 @@ Unity DOTS 的目标之一是**在保持数据驱动灵活性的同时恢复性�
 - [[aos-vs-soa]]
 - [[flow-graph-data-oriented-runtime]] — Bitsquid Flow：可视化脚本的数据导向 runtime
 - [[dependency-checker-tool]] — 统一资源格式之上的依赖治理
+- [[stingray-data-driven-render-config]] —— Stingray 把数据驱动推到渲染管线层的工业案例
+- [[stingray-package-manager]] —— 数据驱动构建：artifact 版本以 hash 精确锁定
 
 ## Sources
 

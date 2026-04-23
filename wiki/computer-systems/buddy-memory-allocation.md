@@ -36,8 +36,19 @@ sources: 1
 Linux kernel 的 page allocator 就是 buddy——页大小都是 2 的幂的倍数。许多嵌入式和游戏 runtime 也用 buddy 做中等粒度的 subsystem allocator，配合上层 slab（固定尺寸小对象）和 linear（short-lived 大块）形成**三层 allocator**。
 
 ## 在 Bitsquid 语境里
-
 Bitsquid 的 [[custom-allocator-interface|Allocator 抽象接口]] 允许每个子系统选自己的 allocator。按 Niklas 的行文，[[datacomponent-single-buffer-allocation|DataComponent]] 的内部 value buffer 用 bump + defrag 够用；更大范围的 **"多个 component 共享 buffer"** 才把 buddy 推上台面——续篇《Allocation Adventures 3》会展开（本 wave 未收录）。
+
+## 实现细节（Part 3 补全）
+
+Niklas 2015 年 8 月的 Part 3 把 buddy 从教科书推到了可动手的实现。几条关键工程压榨：
+
+- **自由块 in-place linked list**：每层一个链表头指针，`prev`/`next` 直接存在空闲块里——零额外 bookkeeping 内存。`MAX_LEVELS = 32` 足够覆盖 `leaf_size * 4 GB` 总容量。
+- **Block 扁平索引**：`(1<<level) + index_in_level - 1` 把整棵树展平到一维，便于挂元数据。
+- **合并位压到半 bit / pair**：每对 buddy 只存 `is_A_free XOR is_B_free`。free 时已知本块为 free，XOR 位足以推出 buddy 状态——总开销 `1 / 16 / leaf_size`。
+- **Split bitmap 替代 preamble 存 size**：对已分配块从顶向下找第一个 split 过的祖先即可倒推 level，`free(void*)` 不需要 caller 传 size；同样是半 bit/block。两张 bitmap 合起来 **1 bit / block**。
+- **Metadata 放 buffer 内**：前几个 leaf block 标为 allocated，元数据本身的分配要特判避免 chicken-and-egg。
+- **非 2-幂 buffer**（比如 400K 当 512K 用）：把不足的那部分预标为 allocated，usable region 从 buffer 内对齐，边界小心不要 access-violate。
+- **与增长容器配合**：`vector` 2 倍扩容天然对齐 buddy 的层级尺寸——升级即“还旧 2 幂块、要更大 2 幂块”，几乎消除 internal fragmentation。这也是 Niklas 把 buddy 选进 Bitsquid 的主要理由。
 
 ## 相关
 
@@ -49,5 +60,5 @@ Bitsquid 的 [[custom-allocator-interface|Allocator 抽象接口]] 允许每个�
 - [[a-metric-for-memory-fragmentation]]
 
 ## Sources
-
 - [[sources/bitsquid-allocation-adventures-2-arrays]]
+- [[sources/bitsquid-buddy-allocator]]

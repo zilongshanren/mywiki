@@ -292,6 +292,7 @@ CAQA + CSAPP 的底层视角。
 | [[memory-latency-human-metaphor]] | 1 cycle = 1 秒：L1 在桌上、磁盘在加州——延迟翻译成人类时间尺度 |
 | [[alloc-order-matches-draw-order]] | Supnik 的 cache 优化惨败：分配顺序 ≈ 遍历顺序的老启发赢过精心规划 |
 | [[buddy-memory-allocation]] | 2-幂尺寸的 allocator：分裂/合并、O(log n)、天然抗碎片，适配 vector 2 倍扩容 |
+| [[stingray-package-manager]] | Stingray spm：one-button build 的 artifact 包管理器 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -878,6 +879,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[aa-techniques-survey-2011]] | Supnik 2011 把当时 AA 方案按决定权分五档（Universal/HW FSAA/2D/Post/Deferred） |
 | [[xplane-instancing-2011-numbers]] | X-Plane 2011 GPU instancing 吞吐基线：87K mesh / 60 fps / 32 instance per call（ATI 4870） |
 | [[directx-sdk-to-windows-sdk-migration]] | Bitsquid 2015：June 2010 DX SDK → Windows 8.x SDK 迁移的 GUID / d3dcompiler / XInput 三坑 |
+| [[stingray-data-driven-render-config]] | Stingray 的 render_config：把整条渲染管线声明为配置文件 |
+| [[temporal-sao-reprojection]] | Stingray SAO 的 temporal reprojection + depth-mip moving bit |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1988,6 +1991,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-directx-sdk-upgrade]] | Coget：June 2010 DirectX SDK → Windows 8.x SDK 的六步迁移账本 |
 | [[sources/bitsquid-allocation-adventures-1-datacomponent]] | Niklas：DataComponent 八步压到单 buffer |
 | [[sources/bitsquid-allocation-adventures-2-arrays]] | Niklas：数组的数组 —— fixed / linked / custom allocator 三条路线及 buddy 预告 |
+| [[sources/bitsquid-buddy-allocator]] | Niklas：Buddy allocator 第三篇，实现细节 |
+| [[sources/bitsquid-temporal-sao]] | Jp Guertin：SAO 的 temporal reprojection 与 dangerous samples |
+| [[sources/bitsquid-stingray-data-driven-rendering]] | Ben Mowery：Stingray 渲染管线的数据驱动宣言 |
+| [[sources/bitsquid-stingray-package-manager]] | Niklas：Stingray 自家的 Ruby artifact 包管理器 spm |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
