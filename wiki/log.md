@@ -1030,3 +1030,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-80 Worker IE (bitsquid.blogspot.com 2011-Q2/Q3 ×5)
 
 处理 Niklas Frykholm 2011 年 5-8 月的 5 篇 Bitsquid 博文。新增 4 概念页（game-monitoring-event-buffer、string-handling-game-runtime、lua-light-userdata-bindings、lua-memory-profiling）+ 5 source 摘要；patch flow-graph-data-oriented-runtime（hierarchical grouping / query 节点 follow-up）、lua-cpp-binding、lua-incremental-gc、static-hash-value-debug-assert 的交叉引用。
+
+## [2026-04-19] ingest | Wave-81 Worker IJ (blog.playcanvas.com 2012 ×5)
+
+处理 PlayCanvas 博客 2012 年 5 篇早期文章，全部低信息量营销/动态贴（博客开张、Google I/O 展台、GitHub 集成、HTML5 观点转载、年度榜单入选），无技术深度，全部 skip。

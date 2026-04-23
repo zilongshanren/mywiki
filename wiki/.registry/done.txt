@@ -11781,3 +11781,8 @@ raw/articles/bitsquid.blogspot.com/2011-05-26_monitoring-your-game.md
 raw/articles/bitsquid.blogspot.com/2011-06-10_strings-redux.md
 raw/articles/bitsquid.blogspot.com/2011-06-26_lightweight-lua-bindings.md
 raw/articles/bitsquid.blogspot.com/2011-08-09_fixing-memory-issues-in-lua.md
+raw/articles/blog.playcanvas.com/2012-02-12_hello-world-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2012-07-03_playcanvas-google-i-o-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2012-07-25_new-feature-github-and-private-repository-support-playcanvas.md
+raw/articles/blog.playcanvas.com/2012-09-10_will-html5-change-the-way-games-are-made-playcanvas-blog.md
+raw/articles/blog.playcanvas.com/2012-12-21_playcanvas-features-in-the-top-10-html5-games-of-2012-playca.md
