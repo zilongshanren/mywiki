@@ -942,6 +942,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpu-driver-support-lifecycle]] | AMD 2021 年砍 GCN 2/3 驱动支持的真实原因：市场份额，不是技术 |
 | [[gradient-based-post-aa]] | Pesce 2011：梯度驱动的后处理反走样配方，MLAA 的廉价局部替代 |
 | [[deferred-rendering-mythbusting]] | Pesce 2011：延迟渲染六条误解拆解，把 deferred 看作通用 pattern |
+| [[gl-draw-accumulator-batching]] | GL 单三角形 API 的 CPU 侧累加器：合批 + 层重排 + 状态合并 |
+| [[opengl-state-change-deferral]] | GL 状态调用只记脏位，draw call 才真正同步硬件 |
+| [[opengl-hardware-impedance-mismatch]] | GL pipeline-and-state 与现代 GPU 的错位：vertex fetch / MRT 都在 shader 里 |
+| [[mtl-render-pipeline-state]] | Metal 的 immutable PSO 把隐式 combination cache 显式化 |
+| [[mtl-render-pass-descriptor]] | Metal 强制回答 TBDR tile 的 load/store action |
+| [[osx-metal-memory-model]] | OS X Metal 的 Shared/Managed/Private/Auto 四档存储与 Mantle 对比 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2148,6 +2154,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-most-envied-rendering-poll-2010]] | Pesce 2011-01：2010 最想参与开发的游戏读者投票（GoW3 28% 夺冠） |
 | [[sources/c0de517e-mythbusting-deferred]] | Pesce 2011-01：延迟渲染六条神话拆解（LPP vs DS / light-indexed / MSAA） |
 | [[sources/c0de517e-gamma-diffuse-shortcut]] | Pesce 2011-02：diffuse-only 的 software-gamma 恒等式速记 |
+| [[sources/supnik-accumulation-small-batch]] | Supnik：X-Plane 10 Mobile 累加器，小批量 GL 的救生艇 |
+| [[sources/supnik-gl-state-deferred]] | Supnik：GL 状态切换延后到 draw call 才同步硬件 |
+| [[sources/supnik-gl-impedance-mismatch]] | Supnik：GL 与现代 GPU 的阻抗不匹配（VAO / vertex format / MRT） |
+| [[sources/supnik-powervr-via-metal]] | Supnik：通过 Metal API 反推 PowerVR 硬件结构 |
+| [[sources/supnik-osx-metal-notes]] | Supnik：OS X Metal 桌面版 WWDC 2015 笔记，内存模型与 Mantle 对比 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

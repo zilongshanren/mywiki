@@ -1262,3 +1262,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-100 Worker KM (c0de517e Pesce 2011-01/02 ×5)
 
 处理 Angelo Pesce 2011 年 1-2 月 5 个原始文件：成功入库 4（Recipe for AA / Most envied rendering poll 2010 / Mythbusting deferred rendering / Gamma and diffuse shading），跳过 2（linux-is-not-for-nerds 非技术、gamma-and-diffuse-shading-2 归档副本）。新增 2 概念页（gradient-based-post-aa、deferred-rendering-mythbusting），4 源摘要；给 angelo-pesce、aa-techniques-survey-2011、deferred-rendering、light-prepass-pipeline、gamma-correction-srgb、linear-lighting-pipeline 共 6 个已有页打 patch。核心结论：Pesce 的「拒绝把技术神圣化、把 deferred 看作通用 pattern」的判断框架与梯度驱动 post-AA 的三段式模板（识别边 / 拟合基元 / 沿基元混合）进入知识库。
+
+## [2026-04-19] ingest | Wave-100 Worker KN (hacksoflife / Supnik 2015-03..06 ×5)
+
+处理 Ben Supnik 2015-03 至 2015-06 的 5 篇 Hacks of Life 博客，串起 GL 性能→GL 阻抗不匹配→Metal 的一条连贯论证线。新增 6 概念页：gl-draw-accumulator-batching（累加器合批+重排+state 合并）、opengl-state-change-deferral（GL 状态延迟同步）、opengl-hardware-impedance-mismatch（pipeline-and-state 与硬件错位）、mtl-render-pipeline-state（PSO 锁死 shader/blend/vertex format 组合）、mtl-render-pass-descriptor（TBDR 的 load/store 强制显式）、osx-metal-memory-model（Shared/Managed/Private/Auto 四档）。新增 5 source 摘要，补丁挂到 ben-supnik / batching / draw-call / metal-api-overview / tbdr-vs-imr / hsr-tbdr / vulkan-explicit-performance。

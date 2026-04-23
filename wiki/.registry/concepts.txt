@@ -1031,3 +1031,9 @@ core-to-core-latency-lock-test
 samsung-8n-vs-tsmc-n7
 gradient-based-post-aa
 deferred-rendering-mythbusting
+gl-draw-accumulator-batching
+opengl-state-change-deferral
+opengl-hardware-impedance-mismatch
+mtl-render-pipeline-state
+mtl-render-pass-descriptor
+osx-metal-memory-model

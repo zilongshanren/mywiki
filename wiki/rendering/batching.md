@@ -43,10 +43,10 @@ sources: 1
 - **Skinned Mesh** 通常需要专门路径。
 
 ## 相关
-
 - [[draw-call]]
 - [[rendering-pipeline]]
 - [[culling]]
+- [[gl-draw-accumulator-batching]] —— Supnik 的 GL 累加器：同状态合批 + 层重排 + 状态合并
 
 ## Sources
 

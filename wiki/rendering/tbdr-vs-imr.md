@@ -48,12 +48,12 @@ TBDR 下 MSAA 数据留在片上内存，写回时只写 resolve 结果——成
 - 过多 subpass / framebuffer：放大移动端瓶颈。
 
 ## 相关
-
 - [[rendering-pipeline]]
 - [[early-z-late-z]]
 - [[overdraw]]
 - [[msaa-ssaa]]
 - [[cached-shadowmaps]] —— 远级联阴影跨帧缓存的相干性优化
+- [[mtl-render-pass-descriptor]] —— Metal 把 TBDR 的 tile load/store 暴露到 API
 
 ## Sources
 

@@ -93,6 +93,12 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[performance-by-design]] —— 2015-01 反 Knuth 误引的立场帖：高性能是设计出来的
 - [[four-horsemen-performance]] —— 2015-01 续篇：冗余工作 / 常数时间低效 / 不必要泛化 / 复利
 - [[vulkan-explicit-performance]] —— 2015-03 glNext 立场帖：线程友好 + 显式性能 + shim 迁移路径
+- [[gl-draw-accumulator-batching]] —— 2015-03 X-Plane 10 Mobile 的小批量累加器：合批 + draw reordering + state merging
+- [[opengl-state-change-deferral]] —— 2015-04 为什么 glDrawArrays 占 80% CPU：状态调用只记脏位，draw call 才同步硬件
+- [[opengl-hardware-impedance-mismatch]] —— 2015-04 GL 与现代 GPU 的错位：vertex fetch / MRT 映射都在 shader 里
+- [[mtl-render-pipeline-state]] —— 2015-05 PowerVR via Metal：PSO 把隐式 combination cache 锁成 immutable 对象
+- [[mtl-render-pass-descriptor]] —— 2015-05 TBDR 的 load/store action 被强制搬到 API 面
+- [[osx-metal-memory-model]] —— 2015-06 OS X Metal 四档 ResourceOptions 与 Mantle 对比
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -189,3 +195,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-performance-by-design]]
 - [[sources/supnik-four-horsemen]]
 - [[sources/supnik-glnext-vulkan-discuss]]
+- [[sources/supnik-accumulation-small-batch]]
+- [[sources/supnik-gl-state-deferred]]
+- [[sources/supnik-gl-impedance-mismatch]]
+- [[sources/supnik-powervr-via-metal]]
+- [[sources/supnik-osx-metal-notes]]

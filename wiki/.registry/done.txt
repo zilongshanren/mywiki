@@ -12072,3 +12072,8 @@ raw/articles/c0de517e.blogspot.com/2011-01-22_linux-is-not-for-nerds-anymore.md
 raw/articles/c0de517e.blogspot.com/2011-01-22_mythbusting-deferred-rendering.md
 raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading-2.md
 raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading.md
+raw/articles/hacksoflife.blogspot.com/2015-03-17_accumulation-to-improve-small-batch-drawing.md
+raw/articles/hacksoflife.blogspot.com/2015-04-14_opengl-state-change-is-deferred.md
+raw/articles/hacksoflife.blogspot.com/2015-04-14_the-opengl-impedance-mismatch.md
+raw/articles/hacksoflife.blogspot.com/2015-05-22_underestanding-powervr-gpus-via-metal.md
+raw/articles/hacksoflife.blogspot.com/2015-06-10_os-x-metal-raw-notes.md

@@ -52,7 +52,6 @@ Vulkan 直接把这件事公开：**这些函数快、这些函数慢。要快�
 Metal 示范了"非可变对象 + 命令队列 + 命令 buffer"的世界，但 Metal 的资源管理简单到作弊——因为 **iOS 是 unified memory**，buffer object = 一个指针。PC 上 GPU 没那么简单。**写一个 AMD/NVIDIA 级别的 Vulkan 资源管理器对小团队是真正的挑战**——这是 Supnik 写作当时（2015 Q1）最大的 open question。
 
 ## 相关
-
 - [[iphone-4-opengl-es-perf-gap]]
 - [[graphics-api-history]]
 - [[metal-api-overview]]
@@ -60,6 +59,8 @@ Metal 示范了"非可变对象 + 命令队列 + 命令 buffer"的世界，但 M
 - [[api-fast-path-design]]
 - [[vbo-double-buffering-orphaning]]
 - [[opengl-ext-vs-arb-fast-path-leak]]
+- [[opengl-hardware-impedance-mismatch]] —— 为什么需要显式 API：隐式 combination cache 已经不合身
+- [[mtl-render-pipeline-state]] —— Metal 的等价 PSO 设计
 
 ## Sources
 

@@ -52,6 +52,8 @@ sources: 2
 - [[triangle-strips-vs-indexed-triangles]] — 为减小 VRAM 中的 index buffer 而增加 CPU 调用是反向优化
 - [[ngui-legacy-ui-system]] —— NGUI 下 UIPanel + UIAtlas 的合批机制：相同 Material 实例才能合批，Shader 相同 Material 不同仍会拆批
 - [[xplane-instancing-2011-numbers]] —— 2011 基线：87K mesh / 60 fps / 32 instance per call
+- [[opengl-state-change-deferral]] —— 为什么 draw call 看起来很慢：驱动在 draw 前补齐延迟的状态同步
+- [[opengl-hardware-impedance-mismatch]] —— GL 状态机与现代 GPU 真实状态的错位
 
 ## Sources
 - [[sources/rtr-day02]]

@@ -39,11 +39,12 @@ TBDR 处理 tile 时，把该 tile 的所有三角形收集到片上内存后，
 4. 减少 fragment shader 的动态分支。
 
 ## 相关
-
 - [[tbdr-vs-imr]]
 - [[early-z-late-z]]
 - [[overdraw]]
 - [[fragment-shader]]
+- [[mtl-render-pass-descriptor]] —— Metal 显式 load/store action
+- [[mtl-render-pipeline-state]] —— PowerVR 上 blend 在 shader 里，所以 blend 变更 = 新 PSO
 
 ## Sources
 

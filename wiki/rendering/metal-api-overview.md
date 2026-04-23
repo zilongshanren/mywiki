@@ -79,6 +79,9 @@ Warren 反复强调：Metal 是**你能选的最低一层**，而非没有抽象
 - [[hdr-video-edr-metal]] —— AVFoundation + Metal HDR 视频管线
 - [[slug-gpu-glyph-rendering]] —— 2026 年 Slug 算法在 Metal 上的实现
 - [[vulkan-explicit-performance]] —— Metal 是 Vulkan 思路的早期实例（但受益于 iOS 共享内存）
+- [[mtl-render-pipeline-state]] —— PSO 为何 immutable：封住 vertex format / blending / MRT 这些「隐式 shader 代码」
+- [[mtl-render-pass-descriptor]] —— TBDR 的 load/store action 被强制搬到 API 面
+- [[osx-metal-memory-model]] —— Shared / Managed / Private / Auto 四档存储
 
 ## Sources
 
