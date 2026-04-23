@@ -92,6 +92,7 @@ sources: 371
 | [[binary-data-definition-language]] | Bitsquid：二进制数据布局的形式化描述语言构想 |
 | [[strings-as-identifiers-antipattern]] | 字符串作标识符的反模式——Id/DisplayName 必须分离 |
 | [[four-meditations-on-rewrites]] | Bitsquid Flow 重写后的四条设计教训 |
+| [[destroy-recreate-vs-reset]] | 销毁重建胜过隐藏重置——用对象生命周期消除状态同步 bug |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -860,6 +861,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[glsl-compiler-optimization-reliance]] | 用 ShaderAnalyzer 观察驱动编译器，反推 X-Plane 10 shader 组织策略 |
 | [[gimbal-lock-euler-interpolation]] | 万向锁的真正问题是欧拉角插值奇异，曲线编辑器让它永久留在引擎里 |
 | [[compact-normal-encoding]] | G-Buffer 法线 2 通道编码：Lambert azimuthal vs CryTek best-fit |
+| [[perspective-meta-shapes]] | 透视投影下视角相关的 meta-shape 构图（Proun 相机设计） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -939,6 +941,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-settings-hot-reload]] | F5 热重载 gameplay 数值（struct + pointer，禁止拷贝） |
 | [[level-design-without-editor]] | 没有关卡编辑器时的三层做法（Notepad + 模糊地形 + 程序化背景） |
 | [[behaviour-tree-game-ai]] | 行为树游戏 AI，Ronimo 三代迭代到去优先级的 if-else 树 |
+| [[rts-balance-taxonomy]] | RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气） |
+| [[solo-programmer-discipline]] | 独行程序员的十条生存纪律（Swords & Soldiers Wii 版经验） |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1943,6 +1947,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-derivatives-iii-ran-out-of-rez]] | Supnik：Derivatives III，内建导数耗尽浮点后用算法式导数替换 |
 | [[sources/supnik-is-collada-a-win]] | Supnik：COLLADA 值不值——跨 DCC 资源交换的三条路线 |
 | [[sources/supnik-gbuffer-normals-revisited]] | Supnik：G-Buffer 法线条带用 Lambert azimuthal 2 通道编码解 |
+| [[sources/joostdevblog-rts-balance-faces]] | Joost：RTS 平衡的七种面孔 |
+| [[sources/joostdevblog-role-of-game-designer]] | Joost：游戏设计师的真正职责（不是想点子，是做内容） |
+| [[sources/joostdevblog-resetting-vs-re-creating]] | Joost：销毁重建 vs 隐藏重置的 C++ 对象生命周期纪律 |
+| [[sources/joostdevblog-lonely-programmer-tips]] | Joost：独行程序员的 10 条瓷砖格言 |
+| [[sources/joostdevblog-meta-shapes-perspective]] | Joost：透视下的 meta-shape 构图与 Proun 相机设计 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -937,3 +937,7 @@ spatial-hash-grid-linked-list
 scripted-network-debugging
 compact-normal-encoding
 asset-exchange-format-strategy
+rts-balance-taxonomy
+destroy-recreate-vs-reset
+solo-programmer-discipline
+perspective-meta-shapes

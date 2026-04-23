@@ -1122,3 +1122,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-88 Worker JD (hacksoflife 2011-01 to 2011-02 ×5)
 
 处理 5 篇 hacksoflife（Supnik 2011 年 1-2 月）。3 ingested：derivatives-iii（内建导数浮点耗尽 → 算法式导数替换，接 derivatives-two-parts 与 uv-precision-derivative-loss）、is-collada-a-win（DCC 资源交换三路线决策）、g-buffer-normals-revisited（Lambert azimuthal 2 通道法线编码，直接迭代 xplane-gbuffer-format 的 XY + 重建 Z 方案）。2 skipped：losing-javadocs-in-eclipse（作者 Chris 的 IDE 菜单操作步骤，off-topic）、random-wordpress-notes（WP + mod_rewrite 博客托管技巧）。新增 2 概念页：compact-normal-encoding、asset-exchange-format-strategy；新增 3 source 摘要；patch xplane-gbuffer-format（补充 Lambert 后续）、uv-precision-derivative-loss（补充算法式导数）、ben-supnik 人物页。
+
+## [2026-04-19] ingest | Wave-88 Worker JE (joostdevblog 2011-01 to 2011-02 x5)
+
+处理 5 篇 joostdevblog（2011-01-13 至 2011-02-10），全部 ingested。新增 4 概念页：rts-balance-taxonomy（Joost 七种 RTS 平衡面孔）、destroy-recreate-vs-reset（Maarten 的销毁重建替代隐藏重置）、solo-programmer-discipline（独行程序员十条瓷砖格言）、perspective-meta-shapes（Proun 的视角相关 meta-shape 构图）。新增 5 source 摘要；role-of-game-designer 未建独立概念页（与既有 tools-first-iteration-loop 重叠），以 source 摘要形式保留并挂到 tools-first 的 Sources。更新 joost-van-dongen 人物页（sources 11→16）。

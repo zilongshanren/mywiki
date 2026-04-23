@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie, ronimo, galaxy-grove]
 date: 2026-04-19
-sources: 11
+sources: 16
 ---
 
 # Joost van Dongen
@@ -25,6 +25,10 @@ sources: 11
 - [[game-settings-hot-reload]] —— F5 + struct 指针的极简 gameplay 数值热重载
 - [[level-design-without-editor]] —— Swords & Soldiers 没有编辑器时的三层关卡做法
 - [[behaviour-tree-game-ai]] —— Ronimo 的行为树 AI 迭代（C++ → Lua → 图形化 BT → 去优先级 if-else 树）
+- [[rts-balance-taxonomy]] —— RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气）
+- [[destroy-recreate-vs-reset]] —— 销毁重建胜过隐藏重置的对象生命周期纪律
+- [[solo-programmer-discipline]] —— 独行程序员的十条生存纪律
+- [[perspective-meta-shapes]] —— 透视投影下视角相关的 meta-shape 构图
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -43,3 +47,8 @@ sources: 11
 - [[sources/joostdevblog-all-the-settings]]
 - [[sources/joostdevblog-designing-levels-without-tools]]
 - [[sources/joostdevblog-ai-swords-soldiers]]
+- [[sources/joostdevblog-rts-balance-faces]]
+- [[sources/joostdevblog-role-of-game-designer]]
+- [[sources/joostdevblog-resetting-vs-re-creating]]
+- [[sources/joostdevblog-lonely-programmer-tips]]
+- [[sources/joostdevblog-meta-shapes-perspective]]

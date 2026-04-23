@@ -11896,3 +11896,8 @@ raw/articles/hacksoflife.blogspot.com/2011-01-28_is-collada-a-win.md
 raw/articles/hacksoflife.blogspot.com/2011-02-02_losing-javadocs-in-eclipse-solution.md
 raw/articles/hacksoflife.blogspot.com/2011-02-04_g-buffer-normals-revisited.md
 raw/articles/hacksoflife.blogspot.com/2011-02-10_random-wordpress-notes.md
+raw/articles/joostdevblog.blogspot.com/2011-01-13_the-many-faces-of-balance-in-an-rts.md
+raw/articles/joostdevblog.blogspot.com/2011-01-22_the-role-of-the-game-designer.md
+raw/articles/joostdevblog.blogspot.com/2011-01-30_resetting-versus-re-creating.md
+raw/articles/joostdevblog.blogspot.com/2011-02-10_10-tips-for-the-lonely-programmer.md
+raw/articles/joostdevblog.blogspot.com/2011-02-10_meta-shapes-emerging-from-perspective.md

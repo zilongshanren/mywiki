@@ -37,5 +37,5 @@ Todd 还把同一个思路推到了代码 API 层面。他做 iPhone 游戏时�
 - [[decoupled-tool-engine-json-rpc]] — Bitsquid 把「工具」和「引擎」拆成网络里两个进程的具体做法
 
 ## Sources
-
 - [[sources/etodd-tools-are-everything]]
+- [[sources/joostdevblog-role-of-game-designer]]
