@@ -829,3 +829,7 @@ bitsquid-task-scheduler
 sdf-font-atlas-rendering
 decoupled-tool-engine-json-rpc
 unreal-pawn-playercontroller-pattern
+no-magic-principle
+tensorflow-1-graph-model
+multi-gpu-training-replication-patterns
+deep-learning-uncertainty

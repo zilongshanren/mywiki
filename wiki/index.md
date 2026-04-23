@@ -71,6 +71,7 @@ sources: 371
 | [[incremental-rearchitecting]] | Supnik：增量重构替代大重写，以及大重写失败的组织动力学 |
 | [[header-as-user-manual]] | Supnik：头文件即用户手册，物理隔离 > 逻辑封装 |
 | [[api-fast-path-design]] | Supnik：快/慢路径在 API 上显式拆分（X-Plane dataref 模式）|
+| [[no-magic-principle]] | 计算机里没有魔法：debug、学习与教学的基础姿态（Schöner） |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -235,6 +236,9 @@ CAQA + CSAPP 的底层视角。
 | [[branch-predictor-design]] | CPU 分支预测器设计：预测惩罚、精度与前端带宽的权衡 |
 | [[cpu-scheduler-design]] | CPU 后端调度器：统一 vs 分布式调度队列、非调度溢出缓冲 |
 | [[gpu-memory-hierarchy-latency]] | GPU 多级缓存延迟实测：RDNA 2 vs Ampere vs 历代 Nvidia |
+| [[tensorflow-1-graph-model]] | TF 1.x 两段式建图/执行模型——现代 ML 框架与 graph IR 的思想原型（历史页） |
+| [[multi-gpu-training-replication-patterns]] | 多 GPU 训练的 tower + average-gradients 模板，对应今天的 DDP / all-reduce |
+| [[deep-learning-uncertainty]] | DL「uncertainty」的分类学：calibration、parameter vs predictive、risk、MC dropout 质疑 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1705,6 +1709,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-distance-field-angelcode-fonts]] | Frykholm：用 AngelCode BMFont 生成 SDF 字体 |
 | [[sources/bitsquid-our-tool-architecture]] | Frykholm：Bitsquid 的工具架构 —— JSON 消息 + 子窗口嵌入 |
 | [[sources/allar-udk-beginning-your-game]] | Allar 2010 UDK 入门：搭空白 GameInfo 与 Pawn/PlayerController 子类 |
+| [[sources/schoener-no-magic]] | Schöner：No Magic Principle 信条文 |
+| [[sources/schoener-tensorflow-intro]] | Schöner：TF 1.3 Jupyter 入门（MNIST CNN + Dataset API） |
+| [[sources/schoener-tensorflow-multi-gpu]] | Schöner：TF1 单机多卡 in-graph replication + 跨机 distributed |
+| [[sources/schoener-dl-uncertainty]] | Schöner：深度学习里「uncertainty」的五义拆解与 MC dropout 质疑 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

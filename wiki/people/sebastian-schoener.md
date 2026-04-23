@@ -1,7 +1,7 @@
 ---
-tags: [人物, 作者, 编译器, unity, mono, zig, c++, 复杂度理论]
+tags: [人物, 作者, 编译器, unity, mono, zig, c++, 复杂度理论, 深度学习, tensorflow]
 date: 2026-04-19
-sources: 7
+sources: 11
 ---
 
 # Sebastian Schöner
@@ -15,6 +15,9 @@ sources: 7
 - 二进制热重载（DLL swap）、函数指针、全局状态迁移
 - Windows x64 细节、链接器、构建系统
 - 早期（2016）计算复杂度理论短文：$\P/\NP/\coNP$ 入门 + Patterna/HexCells/Minesweeper 的 $\coNP$-complete 辨析
+- 2017 年底的 TensorFlow 1.x 教程系列：computation graph 两段式建图/执行模型、多 GPU in-graph replication（tower + average gradients）
+- 深度学习里「uncertainty」一词的分类学：calibration、parameter vs predictive uncertainty、risk、model mismatch、MC dropout 的质疑
+- No Magic Principle：debug 与教学的基础信条——计算机里没有魔法，bug 几乎一定是自己写的
 
 ## 相关
 - [[mono-jit-pipeline]]
@@ -26,6 +29,10 @@ sources: 7
 - [[cpp-multi-paradigm-discipline]]
 - [[computational-complexity-theory-intro]]
 - [[patterna-hexcells-np-vs-conp]]
+- [[no-magic-principle]]
+- [[tensorflow-1-graph-model]]
+- [[multi-gpu-training-replication-patterns]]
+- [[deep-learning-uncertainty]]
 
 ## Sources
 - [[sources/schoener-i-miss-header-files]]
@@ -35,3 +42,7 @@ sources: 7
 - [[sources/schoener-zig-hot-reload-abi]]
 - [[sources/schoener-intro-computational-complexity]]
 - [[sources/schoener-complexity-of-patterna]]
+- [[sources/schoener-no-magic]]
+- [[sources/schoener-tensorflow-intro]]
+- [[sources/schoener-tensorflow-multi-gpu]]
+- [[sources/schoener-dl-uncertainty]]

@@ -11701,3 +11701,8 @@ raw/articles/allarsblog.com/2010-01-15_beginning-your-game-part-2.md
 raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-1-modeling.md
 raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-5-dummy-rigging.md
 raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-geometry-rigging.md
+raw/articles/blog.s-schoener.com/2017-11-29_the-no-magic-principle-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2017-12-12_tensorflow-an-introduction-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2017-12-15_hi-there-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2017-12-15_tensorflow-multi-gpu-computation-sebastian-schoner.md
+raw/articles/blog.s-schoener.com/2017-12-20_a-few-thoughts-on-uncertainty-in-deep-learning-sebastian-sch.md

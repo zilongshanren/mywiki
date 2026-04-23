@@ -966,3 +966,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-75 Worker HR (allarsblog.com ×5)
 
 处理 Michael Allar 2010 年 UDK 时代 5 篇。ingest 1 合并 source（Beginning Your Game Part 1+2：GameInfo / Pawn / PlayerController 搭空白工程）、skip 3（M16 建模 / 几何绑定 / dummy 绑定三篇——视频入口页或 3DS Max+ActorX 纯工作流，无泛化价值）。新增 1 概念页（unreal-pawn-playercontroller-pattern）、1 source 摘要；michael-allar 人物页已存在，patch 追加相关链接与 source。
+
+## [2026-04-19] ingest | Wave-75 Worker HQ (blog.s-schoener.com late-2017 ×5)
+
+处理 Schöner 2017 年末 5 篇：ingest 4 篇（no-magic-principle 信条、TF 1.3 入门、TF 多 GPU、DL uncertainty 思辨），skip 1 篇（hi-there blog intro）。新增概念页 4：[[no-magic-principle]]（software-design）、[[tensorflow-1-graph-model]]、[[multi-gpu-training-replication-patterns]]、[[deep-learning-uncertainty]]（全部 computer-systems），TF 两页明确标注 TF 1.x API 已过时、保留的是思想层映射到 DDP/XLA/MLIR 的桥。新增 source 摘要 4 张，对 [[sebastian-schoener]] 更新 sources 7→11、补 ML 主题段与 4 条相关链接。
