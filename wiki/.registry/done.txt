@@ -12097,3 +12097,8 @@ raw/articles/hacksoflife.blogspot.com/2015-11-20_sasl-crash-on-el-capitan-the-go
 raw/articles/hacksoflife.blogspot.com/2015-11-21_blender-notepad-eulers.md
 raw/articles/hacksoflife.blogspot.com/2015-12-10_importance-sampling-look-mom-no-weights.md
 raw/articles/hacksoflife.blogspot.com/2015-12-10_source-control-for-art-assets-this-must-exist.md
+raw/articles/c0de517e.blogspot.com/2011-03-15_dof-test.md
+raw/articles/c0de517e.blogspot.com/2011-03-26_debugging-directx9-is-so-stressful.md
+raw/articles/c0de517e.blogspot.com/2011-03-27_stable-cascaded-shadow-maps-ideas.md
+raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen.md
+raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen-2.md

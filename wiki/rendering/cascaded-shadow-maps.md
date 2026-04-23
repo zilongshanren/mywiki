@@ -15,5 +15,5 @@ NVIDIA 指南顺口给出的经验值是「3 级对任何场景都够用」。Su
 与 CSM 配套需要关注的工程点：视锥分段方式（线性/对数/实用折中）、级联间边界过渡、samples 与 PCF 滤波、级联复用与缓存（见 [[cached-shadowmaps]]）、以及在大规模世界里的相机相对处理（见 [[camera-relative-sun-shadows]]）。
 
 ## Sources
-
 - [[sources/supnik-csm-for-dummies]]
+- [[sources/c0de517e-stable-csm-ideas]] —— Pesce 2011：stable CSM 实施要点（pancake / 最优级联 / 贴图打包）+ Crysis 2 阴影考古

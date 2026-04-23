@@ -966,6 +966,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[glmapbuffer-threaded-driver-stall]] | Threaded driver 下 glMapBuffer 的隐式同步代价 |
 | [[glbuffersubdata-in-band-streaming]] | glBufferSubData 的 in-band 更新与 UBO 流式 fast path |
 | [[importance-sampling-pdf-cancellation]] | PDF 与 BRDF 分布项互相抵消——为什么 GGX IS 代码里没有 weight |
+| [[stable-csm-implementation-tips]] | Stable CSM 实施要点：整像素滑动、最优级联、pancake、贴图打包、Crysis 2 远级联隔帧更新观察 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2197,6 +2198,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-blender-eulers-notepad]] | Supnik：Blender XYZ Euler 约定 + OBJ 顺序反转备忘录 |
 | [[sources/supnik-importance-sampling-no-weights]] | Supnik：IS 里 BRDF 分布项与 PDF 为什么会抵消 |
 | [[sources/supnik-source-control-art-assets]] | Supnik：艺术资产 VCS 理想形态与市场缺口 |
+| [[sources/c0de517e-stable-csm-ideas]] | Pesce 2011：Stable CSM 实施清单 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch |
+| [[sources/c0de517e-debugging-dx9-stressful]] | Pesce 2011：PC DX9 调试工具链的一手吐槽（PIX-Windows / PerfHUD / GPA / apitrace / NSight） |
+| [[sources/c0de517e-vcs-next-gen]] | Pesce 2011：下一代游戏工作室 VCS 的三分法草图（DVCS 源码 + CoW 资产 FS + CI 分发） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -1282,3 +1282,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-101 Worker KQ (hacksoflife.blogspot.com ×5, Supnik 2015-06~12)
 
 处理 Ben Supnik 2015-06 至 2015-12 的 5 篇：glMapBuffer 反转帖（2015-06）、SASL/El Capitan 崩溃复盘（2015-11）、Blender Euler 备忘录（2015-11）、importance sampling 化简（2015-12）、艺术资产 VCS（2015-12）。全部 ingest，无 skip。新增 7 概念页：rendering 层 glmapbuffer-threaded-driver-stall / glbuffersubdata-in-band-streaming / importance-sampling-pdf-cancellation，programming-languages 层 throwing-destructor-noexcept-terminate，software-design 层 sasl-context-changer-raii-bug / art-asset-version-control-gap，game-engines 层 blender-euler-extrinsic-xyz-export。5 source 摘要、ben-supnik 人物页 append、对 glbuffersubdata-serialization / vbo-double-buffering-orphaning / monte-carlo-integration / inversion-sampling-prng / microfacet-brdf / asset-exchange-format-strategy / gimbal-lock-euler-interpolation / good-software-no-double-check / cross-platform-openal-runtime-loader 9 条 cross-link 补丁。
+
+## [2026-04-19] ingest | Wave-102 Worker KS (c0de517e.blogspot.com ×5)
+
+处理 Angelo Pesce 2011-03 ~ 2011-04 五篇博文。新增 1 概念页（stable-csm-implementation-tips）与 3 源摘要（stable-csm-ideas / debugging-dx9-stressful / vcs-next-gen）。跳过 2 篇：DoF Test（短预告帖，无技术信息）与 VCS -2.md（同 URL 归档重复副本）。核心发现：stable-csm-ideas 是 cached-shadowmaps 那条实现链的 2011 最上游 sketch，Crysis 2 远级联隔帧更新的观察与 shadowmap 原点 wrap + 边界重绘的思路直接引出了 2012 Mike Day 的完整实现。DX9 吐槽帖与 2026 Sawicki 的 pix-api-and-dxdmp 形成 15 年痛点时间线对照。

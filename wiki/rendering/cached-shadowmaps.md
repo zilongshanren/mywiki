@@ -58,7 +58,8 @@ Pesce 在博客里提到他当时还在想另一些更激进的省带宽办法�
 - [[shadow-mapping-basics]] — shadow mapping 的基础流程（hard / soft / Phong）
 - [[occlusion-culling]] —— Conviction 的 HZB shadow caster culling 是另一种阴影优化思路
 - [[cascaded-shadow-maps]] —— 可与级联缓存策略组合的基线
+- [[stable-csm-implementation-tips]] —— Pesce 2011 的原始 sketch：Crysis 2 远级联隔帧更新的观察 + shadowmap 原点 wrap + 边界重绘的增量更新思路；就是这条实现链的上游
 
 ## Sources
-
 - [[sources/c0de517e-cached-shadowmaps]]
+- [[sources/c0de517e-stable-csm-ideas]] —— Pesce 2011 的原始 sketch（本页的上游文本）

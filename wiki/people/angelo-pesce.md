@@ -38,6 +38,7 @@ sources: 5
 - [[hot-swap-pointer-patching]] —— 2011 资源热重载的四种备选（指针 patch / GC / 置换表 / 列表扫描）
 - [[frequency-is-not-latency]] —— 2011 Fight Night Champion 的 30fps + 正确运动模糊
 - [[component-degradable-build]] —— 2011 「broken build」是个糟糕术语
+- [[stable-csm-implementation-tips]] —— 2011 Stable CSM 实施要点 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -66,3 +67,6 @@ sources: 5
 - [[sources/c0de517e-alternatives-to-object-handles]]
 - [[sources/c0de517e-tell-internet-not-moron]]
 - [[sources/c0de517e-failed-builds]]
+- [[sources/c0de517e-debugging-dx9-stressful]]
+- [[sources/c0de517e-stable-csm-ideas]]
+- [[sources/c0de517e-vcs-next-gen]]

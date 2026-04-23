@@ -54,3 +54,4 @@ sources: 1
 - [[sources/bitsquid-content-repositories-vs-databases]]
 - [[sources/bitsquid-3-way-json-merge]]
 - [[sources/bitsquid-new-data-storage-model]]
+- [[sources/c0de517e-vcs-next-gen]] —— Pesce 2011：按「源码 / 资产 / 构建产物」三分法来选工具的早期表述

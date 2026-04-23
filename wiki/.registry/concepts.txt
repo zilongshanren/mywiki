@@ -1055,3 +1055,4 @@ sasl-context-changer-raii-bug
 importance-sampling-pdf-cancellation
 blender-euler-extrinsic-xyz-export
 art-asset-version-control-gap
+stable-csm-implementation-tips

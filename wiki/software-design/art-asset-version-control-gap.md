@@ -86,3 +86,4 @@ Supnik 对自己理想解的描述非常具体：
 
 ## Sources
 - [[sources/supnik-source-control-art-assets]]
+- [[sources/c0de517e-vcs-next-gen]] —— Pesce 2011 给「下一代」艺术资产 VCS 开的 wishlist（CoW 文件系统 + 依赖驱动 sync），是 Supnik 2015 gap 分析的早期前身

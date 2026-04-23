@@ -63,6 +63,7 @@ Sawicki 多次抱怨 Microsoft 没有 Vulkan 那样正式的 **API layer 注入�
 - [[hlsl-cooperative-vectors-tensor-cores]]
 - [[d3d12-resource-binding]]
 - [[sources/c0de517e-pix-is-great-but]] —— Pesce 2010 年的老观察：PIX 精确但切工具成本高，屏幕涂色 + shader live-reload 的迭代速度往往更快
+- [[sources/c0de517e-debugging-dx9-stressful]] —— Pesce 2011 对 PC DX9 调试工具链的一手吐槽：PIX-Windows 差、PerfHUD 无用、GPA 慢、NSight 只支持 DX10/11。15 年后 Sawicki 这篇的痛点在源头上就是同一个
 
 ## Sources
 
