@@ -56,6 +56,7 @@ Supnik 文中提到 MacOS 10.4.7 已经通过 `APPLE_flush_buffer_range` 提供�
 - [[opengl-pinned-memory-vbo-streaming]] —— orphan-and-map 在 ATI 驱动上慢到 6 ms 时的替代方案
 - [[bricksmith-instancing-pipeline]] —— instance 数据合并成一条 giant STREAM_DRAW buffer 的实际设计
 - [[streaming-quads-drawing-strategies]] —— 2D quad 每帧流式 VBO 的路线讨论
+- [[iphone-4-opengl-es-perf-gap]] —— VBO orphan 回收在 iPhone 4 上的可观测代价，新设备上 < 1%
 
 ## Sources
 - [[sources/supnik-double-buffering-vbos]]

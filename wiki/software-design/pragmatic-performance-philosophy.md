@@ -45,7 +45,6 @@ Niklas Frykholm 2011 年的一篇总结——Bitsquid 引擎写了若干年之�
 它也与 [[bottleneck-analysis]]、[[cache-friendliness]]、[[data-driven-architecture]] 构成 Bitsquid 设计哲学的主干。具体落地案例遍布 Bitsquid Blog：[[animation-stream-cache-layout]]、[[parameter-nodes-intrusive-linked-list]]、[[custom-memory-allocation]] 等。
 
 ## 相关
-
 - [[strategic-programming]]
 - [[tactical-programming]]
 - [[bottleneck-analysis]]
@@ -53,6 +52,8 @@ Niklas Frykholm 2011 年的一篇总结——Bitsquid 引擎写了若干年之�
 - [[data-driven-architecture]]
 - [[frame-profiler-overlay]]
 - [[red-flags]]
+- [[performance-by-design]] —— Supnik 同期（2015）的「高性能是设计出来的」立场帖
+- [[four-horsemen-performance]] —— Supnik 续篇：把「为什么后期救不回」拆成四条具体机制
 
 ## Sources
 

@@ -94,6 +94,8 @@ sources: 371
 | [[four-meditations-on-rewrites]] | Bitsquid Flow 重写后的四条设计教训 |
 | [[destroy-recreate-vs-reset]] | 销毁重建胜过隐藏重置——用对象生命周期消除状态同步 bug |
 | [[resource-reference-path-vs-guid-vs-name]] | 资源引用的三难：path 改名破、GUID 不可读、name 双重标识——选哪条都要配套工具链 |
+| [[performance-by-design]] | Supnik: 高性能是设计出来的，不是后期 profile 出来的 |
+| [[four-horsemen-performance]] | Supnik: 冗余工作 / 常数时间低效 / 不必要泛化 / 复利——四骑士解释为何后期救不回 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -929,6 +931,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpu-hang-deferred-fault-debugging]] | PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 异步越界崩溃的调试范式 |
 | [[bricksmith-speculative-gpu-occlusion]] | 2013 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由（vertex-bound 反面案例） |
 | [[mouse-picking-coordinate-spaces]] | 3D 鼠标拾取三种坐标空间 + walk-through 相机下近裁剪面陷阱 |
+| [[iphone-4-opengl-es-perf-gap]] | Supnik: iPhone 4 的 OpenGL ES 性能断崖（顶点/varying 打包/VBO orphan 三条独有症状） |
+| [[vulkan-explicit-performance]] | Supnik: glNext/Vulkan 三大卖点（线程/显式性能/shim 迁移）+ 资源管理 open question |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2119,6 +2123,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-3d-mouse-testing]] | Supnik 2013-10：3D 鼠标拾取三种坐标空间对照 + 近裁剪面 clip fix |
 | [[sources/c0de517e-code-tourism]] | Pesce：读别人的代码作为学习方式 |
 | [[sources/c0de517e-survive-cpp-guidelines-experiment]] | Pesce：游戏圈 C++ 视觉指南众包实验（公告） |
+| [[sources/supnik-iphone-4-perf-gap]] | Supnik 2014-12：X-Plane 10 Mobile 的 iPhone 4 复盘 |
+| [[sources/supnik-performance-by-design]] | Supnik 2015-01：高性能是设计出来的立场帖 |
+| [[sources/supnik-four-horsemen]] | Supnik 2015-01：性能末日的四骑士 |
+| [[sources/supnik-glnext-vulkan-discuss]] | Supnik 2015-03：glNext/Vulkan 立场帖 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

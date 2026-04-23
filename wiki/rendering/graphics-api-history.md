@@ -23,13 +23,13 @@ sources: 1
 同一作者还在 [[pix-api-and-dxdmp]]、[[dxr-tier-2-clas-ptlas]]、[[advanced-shader-delivery]] 等文里持续追踪 D3D12 的"今天与明天"。
 
 ## 相关
-
 - [[hlsl-cooperative-vectors-tensor-cores]]
 - [[d3d12-work-graphs]]
 - [[d3d12-resource-binding]]
 - [[dxr-tier-2-clas-ptlas]]
 - [[advanced-shader-delivery]]
 - [[adam-sawicki]]
+- [[vulkan-explicit-performance]] —— Supnik 2015 年 Vulkan 公布当日的立场帖：三大卖点与未解的资源管理问题
 
 ## Sources
 

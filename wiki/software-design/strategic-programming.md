@@ -46,6 +46,7 @@ Ousterhout 举了 Facebook 的例子：口号从「Move fast and break things」
 - 基础：[[complexity]]、[[zero-tolerance]]
 - [[future-proofing-tests]] —— Ben Supnik 把「是否该为未来设计」落成可操作的三问测试
 - [[pragmatic-performance-philosophy]] — Frykholm 的务实性能观：数据结构前期决策 + profiler 驱动后期优化
+- [[performance-by-design]] —— 把 strategic 立场直接应用到性能的 Supnik 版本
 
 ## Sources
 

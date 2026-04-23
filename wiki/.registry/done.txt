@@ -12056,3 +12056,8 @@ raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines
 raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines-experiment.md
 raw/articles/c0de517e.blogspot.com/2011-01-11_code-tourism.md
 raw/articles/c0de517e.blogspot.com/2011-01-12_ot-dxolabs-luminous-landscape-is-wrong.md
+raw/articles/hacksoflife.blogspot.com/2013-10-29_good-advice-from-git.md
+raw/articles/hacksoflife.blogspot.com/2014-12-26_opengl-es-performance-the-iphone-4-performance-gap.md
+raw/articles/hacksoflife.blogspot.com/2015-01-04_high-performance-code-is-designed-not-optimized.md
+raw/articles/hacksoflife.blogspot.com/2015-01-31_the-four-horsemen-of-the-performance-apocalypse.md
+raw/articles/hacksoflife.blogspot.com/2015-03-14_glnext-is-neither-opengl-nor-next-discuss.md

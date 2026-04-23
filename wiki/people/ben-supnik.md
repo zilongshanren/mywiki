@@ -89,6 +89,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[gpu-hang-deferred-fault-debugging]] —— 2013-08 PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 的异步越界崩溃复盘
 - [[bricksmith-speculative-gpu-occlusion]] —— 2013-08 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由
 - [[mouse-picking-coordinate-spaces]] —— 2013-10 3D 鼠标拾取三种坐标空间与近裁剪面陷阱
+- [[iphone-4-opengl-es-perf-gap]] —— 2014-12 X-Plane 10 Mobile 复盘：iPhone 4 的顶点/varying/VBO orphan 三条老机独有症状
+- [[performance-by-design]] —— 2015-01 反 Knuth 误引的立场帖：高性能是设计出来的
+- [[four-horsemen-performance]] —— 2015-01 续篇：冗余工作 / 常数时间低效 / 不必要泛化 / 复利
+- [[vulkan-explicit-performance]] —— 2015-03 glNext 立场帖：线程友好 + 显式性能 + shim 迁移路径
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -181,3 +185,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-gpus-returnguilty-restart]]
 - [[sources/supnik-bricksmith-speculative-occlusion]]
 - [[sources/supnik-3d-mouse-testing]]
+- [[sources/supnik-iphone-4-perf-gap]]
+- [[sources/supnik-performance-by-design]]
+- [[sources/supnik-four-horsemen]]
+- [[sources/supnik-glnext-vulkan-discuss]]

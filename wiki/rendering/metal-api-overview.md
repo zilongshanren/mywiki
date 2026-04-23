@@ -78,6 +78,7 @@ Warren 反复强调：Metal 是**你能选的最低一层**，而非没有抽象
 - [[metal-4-api-redesign]] —— Metal 4 的 API 重塑（显式 residency + command allocator + argument table）
 - [[hdr-video-edr-metal]] —— AVFoundation + Metal HDR 视频管线
 - [[slug-gpu-glyph-rendering]] —— 2026 年 Slug 算法在 Metal 上的实现
+- [[vulkan-explicit-performance]] —— Metal 是 Vulkan 思路的早期实例（但受益于 iOS 共享内存）
 
 ## Sources
 

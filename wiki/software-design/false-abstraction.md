@@ -48,6 +48,7 @@ GameObject obj = ResourceManager.Load("prefabs/bullet");
 - [[identity-problem-naming]] — identity mismatch 是 false abstraction 的常见来源
 - [[cheat-by-solving-less]] —— 过度通用接口是虚假抽象的常见来源；Supnik 主张按特化需求砍范围
 - [[stl-not-abstraction-prescription]] — Supnik：STL 不是抽象，它是规定；你必须知道每个容器的实现特征才能安全使用
+- [[four-horsemen-performance]] —— 「不必要的泛化」是四骑士的第三骑，Supnik 给出具体识别准则
 
 ## Sources
 
