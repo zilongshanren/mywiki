@@ -25,7 +25,6 @@ Jacco Bikker 在 2019 年开源的 Apache 2.0 实时路径追踪框架，是 Bri
 Brigade（2010）→ Brigade 2（全 GPU）→ Lighthouse 2（OptiX 7 / RTX）这条线是**独立研究者驱动**的实时 path tracing 脉络；与之平行的商业脉络是 OTOY Octane 和之后 NVIDIA 的 [[nvidia-omniverse|Omniverse]] 等平台。Lapere 的观察是：Lighthouse 2 因其简洁和宽松 license，有机会被塞进 Blender 等 DCC 工具做实时预览。
 
 ## 相关
-
 - [[path-tracing-basics]]
 - [[path-tracing-monte-carlo]]
 - [[monte-carlo-integration]]
@@ -33,6 +32,7 @@ Brigade（2010）→ Brigade 2（全 GPU）→ Lighthouse 2（OptiX 7 / RTX）�
 - [[quasi-monte-carlo]]
 - [[nvidia-omniverse]]
 - [[sam-lapere]]
+- [[brigade-engine]] — Lighthouse 2 的直接前身
 
 ## Sources
 

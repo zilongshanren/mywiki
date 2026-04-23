@@ -18,6 +18,9 @@ Ray Tracey 博客（`raytracey.blogspot.com`）作者，GPU 路径追踪长期�
 - [[gpu-unbiased-path-tracing]]
 - [[otoy-cloud-rendering]]
 - [[efficient-sparse-voxel-octrees]]
+- [[brigade-engine]]
+- [[octane-render]]
+- [[jacco-bikker]]
 
 ## Sources
 - [[sources/raytracey-lighthouse-2]]
@@ -26,3 +29,7 @@ Ray Tracey 博客（`raytracey.blogspot.com`）作者，GPU 路径追踪长期�
 - [[sources/raytracey-otoy-solidworks-cloud]]
 - [[sources/raytracey-svo-path-tracing-update]]
 - [[sources/raytracey-fermi-optix-benchmark]]
+- [[sources/raytracey-design-garage-optix]]
+- [[sources/raytracey-bikker-pathtracing-demo]]
+- [[sources/raytracey-path-tracing-quality-comparison]]
+- [[sources/raytracey-design-garage-screenshot]]

@@ -922,6 +922,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[bricksmith-instancing-pipeline]] | BrickSmith 新渲染管线：attribute→HW instancing 三桶分流 |
 | [[lego-realistic-lighting-brain-dump]] | Lego 真实感光照 wish list：BRDF lookup / 法线 / LEAN / 折角 specular / AO+envmap |
 | [[streaming-quads-drawing-strategies]] | 2D 动态 quad：uniform vs CPU transform vs HW instancing 菜谱 |
+| [[brigade-engine]] | Jacco Bikker 的实时路径追踪引擎系列，2010 动态 GI 演示 |
+| [[octane-render]] | OTOY 的 GPU 无偏路径追踪器，2010 年面世 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1109,6 +1111,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[jp-guertin]] | Jean-Philippe Guertin，Bitsquid/Stingray 渲染工程师（体积云/SAO/SSR/lens flare） |
 | [[tobias-persson]] | Tobias Persson，Bitsquid 共同创始人、data-driven renderer 主架构 |
 | [[andreas-asplund]] | Andreas Asplund，Bitsquid/Stingray 渲染工程师（state reflection / frustum culling 专题文作者） |
+| [[jacco-bikker]] | Jacco Bikker，Arauna / Brigade / Lighthouse 2 作者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2100,6 +2103,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-lego-lighting]] | Supnik：Lego 真实感光照五条线索 |
 | [[sources/supnik-streaming-quads]] | Supnik：2D 动态 quad 的五十种画法 |
 | [[sources/c0de517e-next-next-gen-poll-2011]] | Pesce 2011：115 人投票下一代「次世代」——71% 押主机延续、3% 社交 F2P |
+| [[sources/raytracey-design-garage-optix]] | Lapere 对 NVIDIA Design Garage OptiX demo 的感想与算法愿望清单 |
+| [[sources/raytracey-bikker-pathtracing-demo]] | Lapere 评 Jacco Bikker 的 Brigade 早期动态 GI 演示 |
+| [[sources/raytracey-path-tracing-quality-comparison]] | Octane 路径追踪 1–96 spp 逐级图像质量对比 |
+| [[sources/raytracey-design-garage-screenshot]] | Design Garage 室内渲染截图与 OTOY Ruby 对比感想 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

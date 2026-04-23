@@ -1010,3 +1010,5 @@ bricksmith-instancing-pipeline
 cgal-arrangement-to-polygon-set-conversion
 lego-realistic-lighting-brain-dump
 streaming-quads-drawing-strategies
+brigade-engine
+octane-render

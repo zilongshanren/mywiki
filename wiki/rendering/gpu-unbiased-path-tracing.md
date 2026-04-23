@@ -40,14 +40,19 @@ Lapere 还按压力传导预测，Bunkspeed、Indigo Renderer、Maxwell Render�
 2010 的一众 GPU 渲染器与 [[path-tracing-basics|路径追踪基础]]和 [[path-tracing-monte-carlo|蒙特卡洛采样]]一起，是 RTX 时代"实时全局光照"工业化的起点。
 
 ## 相关
-
 - [[sam-lapere]]
 - [[lighthouse-2-optix]]
 - [[path-tracing-basics]]
 - [[path-tracing-monte-carlo]]
 - [[otoy-cloud-rendering]]
 - [[nvidia-omniverse]]
+- [[brigade-engine]]
+- [[octane-render]]
+- [[jacco-bikker]]
 
 ## Sources
 - [[sources/raytracey-2010-gpu-renderer-landscape]]
 - [[sources/raytracey-fermi-optix-benchmark]]
+- [[sources/raytracey-bikker-pathtracing-demo]]
+- [[sources/raytracey-path-tracing-quality-comparison]]
+- [[sources/raytracey-design-garage-optix]]
