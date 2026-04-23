@@ -43,6 +43,8 @@ N1 的真实性能天花板往往是软件生态。libaom-av1 在 aarch64 上没
 - [[isa-implementation-not-architecture]]
 - [[op-cache-decoded-uop-cache]]
 - [[cache-size-vs-latency-tradeoff]] — Altra L3 延迟是 Zen 2 两倍，是作者否定 IOD L4 的依据
+- [[gracemont-microarchitecture]] — Intel 押 hyperscale server 的答卷，直接对标 N1
+- [[tremont-microarchitecture]] — 类似保守的 store forwarding 取舍
 
 ## Sources
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]

@@ -38,6 +38,8 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 - [[dispatch-stall-breakdown]] — Zen 3 上误预测在后端的真实代价
 - [[via-x86-isaiah-lujiazui]] — Isaiah 2008 年就用 tournament + 4096 BTB，代价是 3-cycle/taken 气泡
 - [[cache-size-vs-latency-tradeoff]] — 缓存大小对前端再好也抵不过 miss 率基线差异
+- [[golden-cove-microarchitecture]] — 12K 条目 BTB 三级结构，但 zero-bubble 能力回退
+- [[gracemont-microarchitecture]] — 5K BTB、1024 zero-bubble，Core class 接近 Golden Cove
 
 ## Sources
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
@@ -46,3 +48,6 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 - [[sources/chipsandcheese-via-isaiah]]
 - [[sources/chipsandcheese-zhaoxin-lujiazui]]
 - [[sources/chipsandcheese-neoverse-n1-deep-dive]]
+- [[sources/chipsandcheese-golden-cove]]
+- [[sources/chipsandcheese-gracemont]]
+- [[sources/chipsandcheese-tremont]]

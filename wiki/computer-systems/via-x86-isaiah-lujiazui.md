@@ -31,15 +31,16 @@ Isaiah 说明一件事：[[branch-predictor-design|分支预测]]做太精、L1D
 Lujiazui 的目的很明确：**为了塞 8 核**，牺牲单核宽度换面积和功耗（类似 ARM A72 → A73 的缩窄策略）。25% 十年 IPC 涨幅追不上 Intel 或 AMD；时钟 50% 涨幅靠工艺。总结：**Nano 是伪装成低功耗核的大核，Lujiazui 是伪装成大核的低功耗核**——比较对象应该是 Jaguar 或 Goldmont，不是 Zen 2。
 
 ## 参见
-
 - [[branch-predictor-design]]
 - [[isa-implementation-not-architecture]]
 - [[zen2-microarchitecture]]
 - [[neoverse-n1-microarchitecture]]
 - [[op-cache-decoded-uop-cache]]
 - [[x86-simd-integer-multiplies]]
+- [[golden-cove-microarchitecture]] — 同期 Intel 大核的另一极：把结构堆到极限
+- [[gracemont-microarchitecture]] — 现代 Atom 走向：宽乱序 + 共享 L2
 
 ## Sources
-
 - [[sources/chipsandcheese-via-isaiah]]
 - [[sources/chipsandcheese-zhaoxin-lujiazui]]
+- [[sources/chipsandcheese-zhaoxin-part3]]

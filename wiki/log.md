@@ -1290,3 +1290,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-102 Worker KT (hacksoflife.blogspot.com ×5)
 
 处理 5 篇 Ben Supnik 2015-12 ~ 2016-07 文章，全部 prime。新增 4 概念页（clang-null-reference-ub-optimization / app-space-lock-free-simplification / morton-order-parallel-mipmap / refcount-decrement-before-table-lock-race）+ 5 源摘要。patch ben-supnik 人物页、undefined-behavior-c-cpp、cas-refcount-lowbit-lock、mipmap-generation-sampling 的相关/Sources 区。worst-lock-ever 与 cas-refcount-lowbit-lock 互相呼应：前者讲「atomic_dec 与 table lookup 顺序错误」的双 race，后者讲「指针低位当 spin lock」的 RCU 变体——同一问题两条路线。
+
+## [2026-04-19] ingest | Wave-102 Worker KU (chipsandcheese.com ×5, 2021-11 ~ 2022-01)
+
+处理 Chips and Cheese 2021-11 ~ 2022-01 五篇：Zhaoxin Part 3 收官 benchmark、Alder Lake Golden Cove P-Core 拆解、Alder Lake ring clock 首代毛病、Gracemont E-Core 拆解、Tremont Atom 转型期拆解。新增 8 computer-systems 概念（golden-cove-microarchitecture、gracemont-microarchitecture、tremont-microarchitecture、intel-hybrid-alder-lake、clustered-decode-atom、non-scheduling-queue、move-elimination-zeroing-idioms、littles-law-reorder-buffer）、5 source 摘要。对 via-x86-isaiah-lujiazui、chester-lam、george-cozma、branch-predictor-design、op-cache-decoded-uop-cache、zen2-microarchitecture、neoverse-n1-microarchitecture、dispatch-stall-breakdown、chips-and-cheese、cpu-scheduler-design 发出 patch。

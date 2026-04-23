@@ -43,6 +43,14 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[gpu-efficiency-fps-per-joule]] — GPU 能效横测（Serebit）
 - [[cache-size-vs-latency-tradeoff]] — IBM 256 MB L3 vs V-Cache 仿真
 - [[serebit]]
+- [[golden-cove-microarchitecture]]
+- [[gracemont-microarchitecture]]
+- [[tremont-microarchitecture]]
+- [[intel-hybrid-alder-lake]]
+- [[clustered-decode-atom]]
+- [[non-scheduling-queue]]
+- [[move-elimination-zeroing-idioms]]
+- [[littles-law-reorder-buffer]]
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]

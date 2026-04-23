@@ -1060,3 +1060,11 @@ clang-null-reference-ub-optimization
 app-space-lock-free-simplification
 morton-order-parallel-mipmap
 refcount-decrement-before-table-lock-race
+golden-cove-microarchitecture
+gracemont-microarchitecture
+tremont-microarchitecture
+intel-hybrid-alder-lake
+clustered-decode-atom
+non-scheduling-queue
+move-elimination-zeroing-idioms
+littles-law-reorder-buffer

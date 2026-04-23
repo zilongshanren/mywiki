@@ -12107,3 +12107,8 @@ raw/articles/hacksoflife.blogspot.com/2016-01-08_work-stealing-and-lock-free-cha
 raw/articles/hacksoflife.blogspot.com/2016-05-07_simultaneous-mipmap-level-generation.md
 raw/articles/hacksoflife.blogspot.com/2016-07-06_this-is-why-asan-makes-the-big-bucks.md
 raw/articles/hacksoflife.blogspot.com/2016-07-08_worst-lock-ever.md
+raw/articles/chipsandcheese.com/2021-11-16_zhaoxin-part-3-a-sort-of-anti-climax.md
+raw/articles/chipsandcheese.com/2021-12-02_popping-the-hood-on-golden-cove.md
+raw/articles/chipsandcheese.com/2021-12-16_alder-lake-e-cores-ring-clock-and-hybrid-teething-troubles.md
+raw/articles/chipsandcheese.com/2021-12-21_gracemont-revenge-of-the-atom-cores.md
+raw/articles/chipsandcheese.com/2022-01-02_intels-tremont-atom-changes-course.md

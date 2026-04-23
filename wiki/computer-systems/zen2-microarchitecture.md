@@ -40,6 +40,9 @@ Skylake 的 store buffer 更大，在 store 密集型负载下具有优势。Sky
 - [[isa-implementation-not-architecture]] — ARM/x86 ISA 无关论
 - [[neoverse-n1-microarchitecture]] — 同代 ARM 服务器核横向对比
 - [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（沿用分析方法）
+- [[golden-cove-microarchitecture]] — 同期 Intel 大核对标
+- [[non-scheduling-queue]] — Zen 2 FP 侧 64 项 NSQ 是此模式的代表实现
+- [[move-elimination-zeroing-idioms]] — rename 阶段消除 MOV 与 zeroing idiom 的技巧
 
 ## Sources
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]

@@ -33,14 +33,16 @@ AMD、Intel、ARM 的高性能核几乎都已采用 op cache：Intel 在 Sandy B
 曾有一种说法：x86 变长指令解码是 "decode tax"，ARM 定长指令因此更省电。[[isa-implementation-not-architecture|这种说法并不成立]]。ARM 高端核为省解码功耗主动引入 op cache，说明 ARM 解码同样昂贵；A64FX 手册显示不少 ARM 指令也被拆成多个微操作，极端案例 SVE FADDA 可解码成 63 个微操作。ARM 的 "RISC 优势" 在现代乱序核前已稀释殆尽。
 
 ## 参见
-
 - [[zen2-microarchitecture]]
 - [[branch-predictor-design]]
 - [[isa-implementation-not-architecture]]
 - [[dispatch-stall-breakdown]]
+- [[clustered-decode-atom]] — Atom 线的替代路线：双解码簇而非 uop cache
+- [[golden-cove-microarchitecture]] — uop cache 扩到 4K 条目，仍被实测命中行为类 Skylake
 
 ## Sources
-
 - [[sources/chipsandcheese-zen2-op-cache-performance]]
 - [[sources/chipsandcheese-isa-doesnt-matter]]
 - [[sources/chipsandcheese-zen3-bottlenecks]]
+- [[sources/chipsandcheese-golden-cove]]
+- [[sources/chipsandcheese-gracemont]]

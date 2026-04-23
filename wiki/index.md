@@ -321,6 +321,14 @@ CAQA + CSAPP 的底层视角。
 | [[cache-size-vs-latency-tradeoff]] | ChampSim 仿真：IBM 256 MB L3 vs AMD V-Cache 96 MB 的延迟/容量取舍 |
 | [[clang-null-reference-ub-optimization]] | Clang 借空引用 UB 删除 CGAL handle 比较整块的生产事故 |
 | [[refcount-decrement-before-table-lock-race]] | 必须先锁表再 decrement：atomic_dec 到 0 不等于安全 |
+| [[golden-cove-microarchitecture]] | Alder Lake P-Core：ROB +45%、12K BTB、5 ALU，但整数 RF 没跟上 |
+| [[gracemont-microarchitecture]] | Alder Lake E-Core：5-wide 乱序、双解码簇、128-bit 向量，Atom 的复仇 |
+| [[tremont-microarchitecture]] | Intel Atom 转型期架构：双解码簇与 NSQ 的首发，Gracemont 的前辈 |
+| [[intel-hybrid-alder-lake]] | Alder Lake hybrid 首代毛病：启动 E-Core 令 ring clock 降频 |
+| [[clustered-decode-atom]] | Atom 线用双 3-wide 解码簇扩宽前端，避开 uop cache 的面积代价 |
+| [[non-scheduling-queue]] | 调度器前的候补席：省 wake-up 功耗，Zen 2/Tremont/Gracemont 共用的套路 |
+| [[move-elimination-zeroing-idioms]] | rename 阶段消除 MOV 与 zeroing idiom 的硬件约定 |
+| [[littles-law-reorder-buffer]] | 用 Little's Law 判断 ROB 是否匹配 cache 延迟的方法学 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -2210,6 +2218,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-simultaneous-mipmap-generation]] | Supnik 2016-05：Morton 序一次性生成所有 mip 层 |
 | [[sources/supnik-asan-big-bucks]] | Supnik 2016-07：ASan 在 X-Plane 规模下的实战表现与 VBO 累加器越界案例 |
 | [[sources/supnik-worst-lock-ever]] | Supnik 2016-07：atomic_dec + table lock 顺序错误的双 race 拆解 |
+| [[sources/chipsandcheese-zhaoxin-part3]] | George Cozma：Zhaoxin Lujiazui 三部曲收官 benchmark 篇（2021-11） |
+| [[sources/chipsandcheese-golden-cove]] | Chester Lam：Alder Lake P-Core Golden Cove 深度拆解（2021-12） |
+| [[sources/chipsandcheese-alder-lake-ring-clock]] | Chester Lam：Alder Lake E-Core 启用即降 ring clock 的首代毛病（2021-12） |
+| [[sources/chipsandcheese-gracemont]] | Chester Lam：Gracemont E-Core 深度拆解，Atom 的复仇（2021-12） |
+| [[sources/chipsandcheese-tremont]] | Chester Lam：Tremont 转型期 Atom，Gracemont 的前辈（2022-01） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

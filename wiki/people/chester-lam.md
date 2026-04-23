@@ -27,6 +27,11 @@ sources: 5
 - [[isa-implementation-not-architecture]] — ISA 无关论的实测支撑
 - [[neoverse-n1-microarchitecture]] — Neoverse N1 vs Zen 2 实测对比
 - [[cache-size-vs-latency-tradeoff]] — 用 ChampSim 仿真比较 IBM 256 MB L3 与 AMD V-Cache 的延迟/容量取舍
+- [[golden-cove-microarchitecture]] — Alder Lake P-Core 深度拆解
+- [[gracemont-microarchitecture]] — Alder Lake E-Core 深度拆解
+- [[tremont-microarchitecture]] — Atom 转型期架构
+- [[intel-hybrid-alder-lake]] — Ring clock 降频与 hybrid 首代毛病
+- [[littles-law-reorder-buffer]] — 用 Little's Law 分析 ROB sizing 的方法学
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -45,3 +50,7 @@ sources: 5
 - [[sources/chipsandcheese-ibm-l3-v-cache-future]]
 - [[sources/chipsandcheese-neoverse-n1-deep-dive]]
 - [[sources/chipsandcheese-zhaoxin-lujiazui]]
+- [[sources/chipsandcheese-golden-cove]]
+- [[sources/chipsandcheese-alder-lake-ring-clock]]
+- [[sources/chipsandcheese-gracemont]]
+- [[sources/chipsandcheese-tremont]]
