@@ -148,6 +148,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[murmur-hash-inverse]] | MurmurHash2 32/64 位的数学逆运算（乘法逆元 + 逆异或移位）|
 | [[schema-driven-xml-parser-generator]] | Patrick Stein 基于 XML schema 的 CLOS 解析器代码生成（tagstack + 自举 + 多后端） |
 | [[floating-point-geometric-predicates]] | 点积符号抖动、线线求交条件数爆炸、几何谓词的鲁棒化策略 |
+| [[c-bitwise-operator-precedence-history]] | 为何 C 的 `&` 优先级低于 `==`：B/BCPL 的历史包袱 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -264,6 +265,7 @@ CAQA + CSAPP 的底层视角。
 | [[header-hero-compile-analysis]] | Bitsquid 2011：C++ include 图剖析工具与 Blowup Factor 指标 |
 | [[link-exe-lnk4099-patch]] | 二进制 patch MSVC link.exe 让 LNK4099 可被 /ignore |
 | [[shared-library-soname-versioning]] | Linux SONAME 的 ABI 契约与 OpenAL/X-Plane 翻车案例 |
+| [[cross-platform-openal-runtime-loader]] | X-Plane 的 OpenAL 三平台装载：封装层 + dlopen fallback + 自带 LGPL 副本 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -820,6 +822,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[opengl-extension-bucket-strategy]] | OpenGL 扩展分桶策略与现场调试用的细粒度开关 |
 | [[gpu-embarrassingly-parallel-serial-dispatch]] | GPU 天生并行：为何无需应用层并行命令派发 |
 | [[premultiplied-alpha-bilinear-ring]] | 预乘 alpha 为何能修复 bilinear filtering 的 tree-ring 杂色晕 |
+| [[gpu-sliced-volumetric-shadows-limits]] | GPU sliced shadow 在 flight-sim 云场景下的失败模式：不透明粒子 + 分桶 + popping |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1844,6 +1847,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-premultiplication-pros-cons]] | Supnik：预乘 alpha 修 tree ring，但 BCn 压缩精度让 X-Plane 转走 alpha test |
 | [[sources/supnik-alpha-blending-lets-try-again]] | Supnik：预乘约定下 back-to-front / front-to-back blend state 的对称重推 |
 | [[sources/tedsie-a-star-applied]] | Ted Sie 2016-07 A* 应用篇（四文合并）：FindPath 伪代码实作 + 斜向优化 + Line-of-sight 平滑 + Obstacle raycast 判定 |
+| [[sources/supnik-gpu-sliced-shadows-fail-clouds]] | Supnik：flight-sim 云为什么不能用 GPU sliced shadow |
+| [[sources/supnik-openal-three-platforms]] | Supnik：OpenAL 在 OS X / Linux / Windows 的统一装载策略 |
+| [[sources/supnik-finding-mom-and-dad]] | Supnik：C++ 侵入式结构里孩子找父亲的类型系统限制 |
+| [[sources/supnik-c-seventies-technology]] | Supnik：C 位运算符优先级的 B/BCPL 历史根源 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

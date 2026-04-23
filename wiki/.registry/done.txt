@@ -11816,3 +11816,8 @@ raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-eight-ways-xie-xian
 raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-implement-xu-ni-cheng-shi-ma-shi-li-hua.md
 raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-line-of-sight-ke-shi-dian-you-hua.md
 raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-obstacle-detection-zhang-ai-wu-pan-ding.md
+raw/articles/hacksoflife.blogspot.com/2010-10-08_why-gpu-sliced-shadows-fail-for-clouds.md
+raw/articles/hacksoflife.blogspot.com/2010-11-08_openal-on-three-platforms.md
+raw/articles/hacksoflife.blogspot.com/2010-11-10_finding-mom-and-dad.md
+raw/articles/hacksoflife.blogspot.com/2010-11-10_mediawiki-and-modsecurity.md
+raw/articles/hacksoflife.blogspot.com/2010-11-11_the-very-best-seventies-technology.md

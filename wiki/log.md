@@ -1058,3 +1058,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-83 Worker IP (tedsieblog.wordpress.com A* 续作 ×5)
 
 处理 Ted Sie 2016-07-10 A* 五篇续作。4 篇技术文（implement / eight-ways / line-of-sight / obstacle-detection）合并为单一 source 摘要 tedsie-a-star-applied，achievement 篇（纯 Unity wiring 展示）作为 runner 段并入同一摘要。无新概念页，复用既有 [[a-star-pathfinding]]。在 ted-sie 人物页与 a-star-pathfinding 概念页 Sources 段加链。
+
+## [2026-04-19] ingest | Wave-83 Worker IO (hacksoflife.blogspot.com Supnik 2010-10/11 × 5)
+
+处理 5 篇 Ben Supnik 短文，4 篇 ingest、1 篇 skip（mediawiki-modsecurity 纯 WAF 误伤的 sysadmin 记录）。新增 3 概念页（gpu-sliced-volumetric-shadows-limits, cross-platform-openal-runtime-loader, c-bitwise-operator-precedence-history）、4 source 摘要。主题：GPU sliced shadow 算法对 flight-sim 云（偏不透明粒子 + 空间分桶 + 切片方向翻转）的失败模式；OpenAL 三平台装载策略统一成封装层 + dlopen/LoadLibrary fallback + Windows 自带 LGPL 副本；C++ 侵入式结构中 child 找 parent 的类型系统限制（byte offset 不可作为模板参数）；C 位运算符优先级低于比较的 B/BCPL 历史根源——Ritchie 选择不破坏旧代码语义。Patch 到 ben-supnik / shared-library-soname-versioning / cloudscape-sdf-volumetric / parameter-nodes-intrusive-linked-list。

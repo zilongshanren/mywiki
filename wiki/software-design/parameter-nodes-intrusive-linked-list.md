@@ -38,13 +38,13 @@ if nodes[last_allocated].key == 0: break
 这是 [[cache-friendliness]] 在变长结构上的一般答案：**凡是变长小集合，先考虑能否池化**。思路与 [[animation-stream-cache-layout]] 的 active 数组一致——都是"按访问局部性选布局"。也是 Frykholm 在多篇文里反复出现的主题：**避免 vectors-of-vectors**、**避免 std::map**，这些都是 [[red-flags]]。
 
 ## 相关
-
 - [[animation-stream-cache-layout]]
 - [[cache-friendliness]]
 - [[aos-vs-soa]]
 - [[pragmatic-performance-philosophy]]
 - [[non-cryptographic-hash]]
 - [[red-flags]]
+- [[sources/supnik-finding-mom-and-dad]] —— Supnik：侵入式结构中「孩子找父亲」的 C++ 类型系统限制与 back-pointer 取舍
 
 ## Sources
 

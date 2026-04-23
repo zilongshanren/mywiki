@@ -892,3 +892,6 @@ link-exe-lnk4099-patch
 shared-library-soname-versioning
 floating-point-geometric-predicates
 premultiplied-alpha-bilinear-ring
+gpu-sliced-volumetric-shadows-limits
+cross-platform-openal-runtime-loader
+c-bitwise-operator-precedence-history
