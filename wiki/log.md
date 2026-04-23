@@ -1174,3 +1174,7 @@ Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-ga
 ## [2026-04-19] ingest | Wave-92 Worker JO (bitsquid 2016 ×5)
 
 处理 bitsquid.blogspot.com 2016 年五篇。Ingest 3：Niklas 的 JS 热重载小 trick（[[javascript-hot-reload-dom-script]]）、Jp Guertin 的 Stingray 体积云 plugin（[[stingray-volumetric-clouds-plugin]]）、Tobias Persson 的 render_config_extensions（[[render-config-extension-points]]）。新增 2 人物页（jp-guertin, tobias-persson）+ 3 source 摘要。Skip 2：Autodesk support specialist Dan Matlack 的 Stingray 用户指路公告（纯客服文档）、艺术家 Paul Kind 的 ArchViz 场景 Poolroom 制作手记（美术感想，无工程决策）。Niklas 人物页、stingray-data-driven-render-config、live-editing-taxonomy-2010 通过 patch 追加 Related 与 Sources。
+
+## [2026-04-19] ingest | Wave-93 Worker JT (c0de517e.blogspot.com 2010-07/08 x5 all-skipped)
+
+处理 5 篇 c0de517e (Angelo Pesce) 2010 年 7-8 月小帖：alan-wake-credits（Alan Wake 通关杂感 + MLAA 链接）、google-reader-sharing x2（订阅分享通告，https/http 双抓重复）、spam x2（推广同事美食博客，重复）。全部为 off-topic 或博客公告，无技术干货，按协议 5 篇全部 skipped_offtopic。无概念/人物/源摘要新增，无 index 变更。Angelo Pesce 人物页已存在，无改动。

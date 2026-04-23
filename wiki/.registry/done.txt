@@ -11961,3 +11961,8 @@ raw/articles/bitsquid.blogspot.com/2016-01-31_hot-reloadable-javascript-batman.m
 raw/articles/bitsquid.blogspot.com/2016-04-01_the-poolroom.md
 raw/articles/bitsquid.blogspot.com/2016-07-31_volumetric-clouds.md
 raw/articles/bitsquid.blogspot.com/2016-08-16_render-config-extensions.md
+raw/articles/c0de517e.blogspot.com/2010-07-19_alan-wake-credits.md
+raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing-2.md
+raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing.md
+raw/articles/c0de517e.blogspot.com/2010-08-08_spam-2.md
+raw/articles/c0de517e.blogspot.com/2010-08-08_spam.md
