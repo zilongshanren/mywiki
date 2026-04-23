@@ -50,6 +50,7 @@ Supnik 的这篇短文价值不在讲模式本身（业界共识），而在给�
 - [[ben-supnik]]
 - [[semaphore-vs-condvar-latency]] —— 同一条 X-Plane 消息队列的同步原语选择
 - [[gdb-scheduler-locking]] —— 多线程断点求值的精确调试武器
+- [[actor-model-for-gameplay]] —— Bitsquid 2015 脚本层 actor-ish 并发的另一折中
 
 ## Sources
 

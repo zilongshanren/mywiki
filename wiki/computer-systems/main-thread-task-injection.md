@@ -58,11 +58,11 @@ pthread 路线 + 主线程任务注入已经够用。
 两者的共同点是：**Lua coroutine 状态与 C 栈解耦，给跨线程流程编排开了后门**。这条路也可以反过来说——纯 C / C++ 做这类事必须引入 fiber、stackful coroutine 等额外基础设施，而 Lua 免费送了你这个能力。
 
 ## 相关
-
 - [[cloudwu]]
 - [[ltask-scheduler]]
 - [[soluna-2d-engine]]
 - [[lua-design-philosophy]]
+- [[actor-model-for-gameplay]] —— 脚本层 per-API lock 模式的替代对照
 
 ## Sources
 

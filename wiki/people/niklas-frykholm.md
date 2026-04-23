@@ -53,6 +53,10 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[bitsquid-data-oriented-entity-system]] — 2014 年 Part 1-3 的 ECS 三部曲设计笔记
 - [[engine-plugin-c-abi-versioned-api]] — C-ABI 版本化 API 查询的 plugin 系统
 - [[resource-reference-path-vs-guid-vs-name]] — 资源引用 path/GUID/name 的三难选择
+- [[actor-model-for-gameplay]] —— 2015 Lua 多 VM + per-API lock 的 gameplay 并发折中
+- [[datacomponent-single-buffer-allocation]] —— 2015 DataComponent 压到单 buffer 的八步改造
+- [[arrays-of-arrays-allocation]] —— 2015 N 个动态 vector 共享大 buffer 的三条路线
+- [[buddy-memory-allocation]] —— Arrays of Arrays 推出的 2-幂 allocator 选型
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -116,3 +120,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-engine-plugin-system]]
 - [[sources/bitsquid-what-is-in-a-name]]
 - [[sources/bitsquid-data-oriented-entity-system]]
+- [[sources/bitsquid-entity-system-part4-resources]]
+- [[sources/bitsquid-multithreaded-gameplay]]
+- [[sources/bitsquid-allocation-adventures-1-datacomponent]]
+- [[sources/bitsquid-allocation-adventures-2-arrays]]

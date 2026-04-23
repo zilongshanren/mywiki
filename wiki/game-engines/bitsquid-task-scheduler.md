@@ -130,12 +130,12 @@ OS 有时会把某个关键路径上的 task 挂起，整个图被拖慢。Frykh
 更直接的一句话是：**这类需要深理解 + 极致控制 + 问题本身不大的系统，自己写更清楚**。他点名 Lua 是少数的例外——"implementation 漂亮、API 也好"。
 
 ## 相关
-
 - [[worker-task-dispatch-priority]] — 同一时期别的引擎在调度 priority 上的做法
 - [[main-thread-task-injection]] — main thread `wait()` 时帮忙处理任务的模式
 - [[cpu-scheduler-design]] — 调度器设计的一般讨论
 - [[good-parallel-computer]] — 任务粒度与硬件假设
 - [[fiber-cpp-basics]] — 后来的协程 / fiber 方案可以看作对这篇设计的扩展
+- [[actor-model-for-gameplay]] —— engine 层 task 并行之外，Lua gameplay 层的另一并发问题与折中
 
 ## Sources
 

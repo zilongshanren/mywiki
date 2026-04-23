@@ -72,3 +72,5 @@ allocator.make_delete(m);
 ## Sources
 - [[sources/bitsquid-custom-memory-allocation]]
 - [[sources/bitsquid-gc-and-allocation-sizes]] — 把全局分配压到页粒度的推理过程
+- [[sources/bitsquid-allocation-adventures-1-datacomponent]] —— DataComponent 单 buffer 改造的八步
+- [[sources/bitsquid-allocation-adventures-2-arrays]] —— 多 component 共用 buffer 的三条路线与 buddy 预告

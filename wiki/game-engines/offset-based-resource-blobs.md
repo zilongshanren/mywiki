@@ -78,3 +78,4 @@ Bitsquid 把 runtime blob 做成**平台相关**，所有 blob 都在 Win32 上*
 ## Sources
 - [[sources/bitsquid-the-blob-and-i]]
 - [[sources/bitsquid-visual-scripting-data-oriented]] — Flow graph blob 是同一思路在脚本 runtime 的应用
+- [[sources/bitsquid-entity-system-part4-resources]] —— ECS Part 4：blob 思路在 entity resource 上的具体应用（按 component 类型分组 + offset 查找）

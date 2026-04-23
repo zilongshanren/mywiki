@@ -49,6 +49,8 @@ sources: 1
 - [[msi-hash-table]] — 同样配合 arena 使用的扁平索引表
 - [[segment-array]] — 与 arena 配合最好的增长容器，追加不搬迁、不留洞
 - [[custom-allocator-interface]] — FrameAllocator 在 Bitsquid 抽象 allocator 接口下的定位
+- [[buddy-memory-allocation]] —— 2-幂尺寸动态分配的另一方向
+- [[datacomponent-single-buffer-allocation]] —— 单 buffer bump-style value 池的实战
 
 ## Sources
 

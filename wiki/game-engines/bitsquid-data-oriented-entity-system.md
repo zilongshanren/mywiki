@@ -67,7 +67,6 @@ Transform component 数据里不光 `local/world`，还有 `parent/first_child/n
 和 [[component-entity-data-binding|Todd 的端口绑定]] 比，Bitsquid 的 manager 方案更接近数据库视角（System 查询一堆 entity 一次性批处理）；和 [[ecs|DOTS 的 Archetype/Chunk]] 比，Bitsquid 保留了"每类 component 管自己"的分散权力，没有把所有 component 塞进统一 chunk。[[ecs-data-oriented-revert|云风]] 近年对 Ant ECS 的"回归原始"反思——少加封装、保留数据视角——精神上和 Bitsquid 这份 2014 年的设计接近。
 
 ## 相关
-
 - [[ecs]] — Unity DOTS 代表的后继 ECS，把 SoA/Archetype 做到了编译器+运行时层
 - [[component-entity-data-binding]] — Todd 的"端口"方案，组件间不互相引用
 - [[ecs-data-oriented-revert]] — 云风反思：不要给 ECS 加太多辅助模块
@@ -82,7 +81,10 @@ Transform component 数据里不光 `local/world`，还有 `parent/first_child/n
 - [[engine-plugin-c-abi-versioned-api]] — 逼出 Bitsquid ECS 的 plugin 系统
 - [[custom-allocator-interface]] — manager 分配"一大块 buffer 自己切"的前提
 - [[entity-index-reconstruction]] — Stingray 后来对 entity index 的原型链式重构
+- [[datacomponent-single-buffer-allocation]] —— 2015 Part 1：把 STL 递归容器压成单 buffer 的八步
+- [[arrays-of-arrays-allocation]] —— 2015 Part 2：N 个动态容器共享大 buffer 的三条路线
+- [[actor-model-for-gameplay]] —— 2015 Lua per-API lock + coroutine 切换的 gameplay 并发折中
 
 ## Sources
-
 - [[sources/bitsquid-data-oriented-entity-system]]
+- [[sources/bitsquid-entity-system-part4-resources]] —— 2014 Part 4：把 level/prefab 按 component 类型分组 spawn，遵守 "Do similar things together"

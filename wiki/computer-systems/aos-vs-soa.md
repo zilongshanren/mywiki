@@ -59,13 +59,13 @@ healths:    [h|h|h|...]
 - 游戏逻辑层若无法重构为数据并行，DOTS 学习曲线陡峭。
 
 ## 相关
-
 - [[locality-principle]]
 - [[memory-hierarchy]]
 - [[amdahls-law]]
 - [[ecs]]
 - [[cache-friendliness]]
 - [[sse-tricks]] —— SSE 性能为何依赖 SoA 而非水平指令
+- [[datacomponent-single-buffer-allocation]] —— DataComponent 改造第 3 步就是 AoS → SoA，让 key 搜索只灌 key 数组
 
 ## Sources
 

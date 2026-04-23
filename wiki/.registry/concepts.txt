@@ -953,3 +953,8 @@ aa-techniques-survey-2011
 memory-latency-human-metaphor
 alloc-order-matches-draw-order
 xplane-instancing-2011-numbers
+actor-model-for-gameplay
+directx-sdk-to-windows-sdk-migration
+datacomponent-single-buffer-allocation
+arrays-of-arrays-allocation
+buddy-memory-allocation

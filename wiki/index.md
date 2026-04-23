@@ -291,6 +291,7 @@ CAQA + CSAPP 的底层视角。
 | [[gdb-scheduler-locking]] | gdb 多线程调试：锁定调度器避免断点间隙抢线程 |
 | [[memory-latency-human-metaphor]] | 1 cycle = 1 秒：L1 在桌上、磁盘在加州——延迟翻译成人类时间尺度 |
 | [[alloc-order-matches-draw-order]] | Supnik 的 cache 优化惨败：分配顺序 ≈ 遍历顺序的老启发赢过精心规划 |
+| [[buddy-memory-allocation]] | 2-幂尺寸的 allocator：分裂/合并、O(log n)、天然抗碎片，适配 vector 2 倍扩容 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -362,6 +363,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[asset-exchange-format-strategy]] | DCC → 引擎资源交换的三条路线（Supnik 2011 COLLADA 决策） |
 | [[bitsquid-data-oriented-entity-system]] | Bitsquid 2014 ECS：entity=id、manager 持 SoA 布局、两档 GC、transform 的 immediate 更新 |
 | [[engine-plugin-c-abi-versioned-api]] | 引擎 plugin 的 C-ABI 版本化 API 查询：两套 API、新 version 永不删老 version |
+| [[actor-model-for-gameplay]] | Bitsquid 2015：多 Lua VM + per-API lock + coroutine 切换的 gameplay 并发折中 |
+| [[datacomponent-single-buffer-allocation]] | Bitsquid 2015：DataComponent 从 STL 怪兽压到单 buffer 的八步改造 |
+| [[arrays-of-arrays-allocation]] | Bitsquid 2015：N 个动态变长 component 共用大 buffer 的三条路线 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -873,6 +877,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[cascaded-shadow-maps]] | NVIDIA 默认推荐的阴影技术，X-Plane 10 基线 |
 | [[aa-techniques-survey-2011]] | Supnik 2011 把当时 AA 方案按决定权分五档（Universal/HW FSAA/2D/Post/Deferred） |
 | [[xplane-instancing-2011-numbers]] | X-Plane 2011 GPU instancing 吞吐基线：87K mesh / 60 fps / 32 instance per call（ATI 4870） |
+| [[directx-sdk-to-windows-sdk-migration]] | Bitsquid 2015：June 2010 DX SDK → Windows 8.x SDK 迁移的 GUID / d3dcompiler / XInput 三坑 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1050,6 +1055,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（Arkanova），希腊 demoscene / Linux 图形程序员，4rknova.com 站长 |
 | [[patrick-stein]] | Patrick Stein（nklein software），Common Lisp / CL-OpenGL 爱好者，TC Lispers 活跃贡献者 |
 | [[dave-evans]] | Dave Evans，PlayCanvas 联合创始人，早期博客主力作者 |
+| [[amandine-coget]] | Bitsquid / Stingray 渲染工程师，记录 DirectX SDK 迁移实录 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1977,6 +1983,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-aa-techniques-survey]] | Supnik 2011：抗锯齿方案五档分类综述 |
 | [[sources/supnik-going-to-california]] | Supnik 2011：把 L1/L2/DRAM/Disk 翻译成人类时间尺度，推到 X-Plane 场景包合并 |
 | [[sources/supnik-damn-you-l2-cache]] | Supnik 2011：精心改写的 cache 友好 allocator 输给老启发的惨败小记 |
+| [[sources/bitsquid-entity-system-part4-resources]] | Niklas：Data-Oriented Entity System Part 4 —— entity resource 按 component 类型分组 |
+| [[sources/bitsquid-multithreaded-gameplay]] | Niklas：Lua VM actor + per-API lock，gameplay 并发的迟到折中 |
+| [[sources/bitsquid-directx-sdk-upgrade]] | Coget：June 2010 DirectX SDK → Windows 8.x SDK 的六步迁移账本 |
+| [[sources/bitsquid-allocation-adventures-1-datacomponent]] | Niklas：DataComponent 八步压到单 buffer |
+| [[sources/bitsquid-allocation-adventures-2-arrays]] | Niklas：数组的数组 —— fixed / linked / custom allocator 三条路线及 buddy 预告 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

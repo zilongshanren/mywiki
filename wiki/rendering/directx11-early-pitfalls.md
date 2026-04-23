@@ -37,12 +37,12 @@ compute shader 把 SRV 与 UAV 引入了 [[d3d12-resource-binding|资源绑定]]
 笔记本身的具体坑随着 DX11 文档与 debug layer 完善已经过时，但它示范的几条**新 API 上线期的工程态度**是通用的：debug 信息含混时把每条警告记录下来当成 contract；驱动会因用户错误冻机时，把状态清理写成 invariant 而不是「记得就清」；API 默认值与隐含约束散落各处时，宁可在自己代码里包一层 wrapper。这些做法在后来 [[d3d12-resource-binding|D3D12 显式资源绑定]]、Vulkan 验证层、Metal 等更新的 API 演化里反复出现。
 
 ## 相关
-
 - [[rendering-pipeline]]
 - [[d3d12-resource-binding]]
 - [[gpu-hazard-tracking]]
 - [[shaderlab-hlsl-basics]]
 - [[matthaeus-chajdas]]
+- [[directx-sdk-to-windows-sdk-migration]] —— June 2010 SDK 迁到 Windows 8.x SDK 的三类隐形依赖
 
 ## Sources
 
