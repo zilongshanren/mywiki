@@ -371,6 +371,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[actor-model-for-gameplay]] | Bitsquid 2015：多 Lua VM + per-API lock + coroutine 切换的 gameplay 并发折中 |
 | [[datacomponent-single-buffer-allocation]] | Bitsquid 2015：DataComponent 从 STL 怪兽压到单 buffer 的八步改造 |
 | [[arrays-of-arrays-allocation]] | Bitsquid 2015：N 个动态变长 component 共用大 buffer 的三条路线 |
+| [[main-render-thread-state-reflection]] | Asplund：StateStream + render_handle 把主线程状态单向镜像到渲染线程 |
+| [[stingray-renderer-three-stage-pipeline]] | Tobias：Cull/Render/Dispatch 三阶段数据并行 + simulation/render overlay |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -890,6 +892,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[stingray-volumetric-clouds-plugin]] | Jp Guertin：HZD 体积云方案在 Stingray 里的开源实现 |
 | [[render-config-extension-points]] | Stingray 1.5：render_config 的 append + insert_at 命名扩展点 |
 | [[opengl-ext-vs-arb-fast-path-leak]] | EXT/ARB FBO 规则差异与驱动 fast path 的隐式契约（Supnik 2011-06 双篇合编） |
+| [[stingray-resource-override-suffix]] | Niklas 2016：resource override + suffix 规则替代文件名 property 魔法 |
+| [[stingray-simd-sphere-oobb-culling]] | Asplund：SoA + SIMD + 多线程的 sphere→OOBB 两级视锥剔除 |
+| [[stingray-render-resource-context]] | Tobias：RenderResource 24+8 位 handle + RRC command-buffer 化的跨 API 资源抽象 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1072,6 +1077,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[amandine-coget]] | Bitsquid / Stingray 渲染工程师，记录 DirectX SDK 迁移实录 |
 | [[jp-guertin]] | Jean-Philippe Guertin，Bitsquid/Stingray 渲染工程师（体积云/SAO/SSR/lens flare） |
 | [[tobias-persson]] | Tobias Persson，Bitsquid 共同创始人、data-driven renderer 主架构 |
+| [[andreas-asplund]] | Andreas Asplund，Bitsquid/Stingray 渲染工程师（state reflection / frustum culling 专题文作者） |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2021,6 +2027,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-render-config-extensions]] | Tobias Persson 2016：Stingray 1.5 的 render_config 扩展机制 |
 | [[sources/supnik-ext-vs-arb-fine-print]] | Supnik：EXT 版 FBO 要求同格式，ARB 版放宽，驱动按入口点分叉 |
 | [[sources/supnik-guessing-fine-print]] | Supnik：驱动 fast path 是一堆 if 串起来的隐式契约，profile 反推 |
+| [[sources/bitsquid-stingray-localization-system]] | Niklas 2016：Stingray 本地化系统重写（override + suffix） |
+| [[sources/bitsquid-state-reflection]] | Asplund 2016：Stingray 主/渲染线程 StateStream 镜像机制 |
+| [[sources/bitsquid-frustum-culling-stingray]] | Asplund 2016：Stingray SIMD + 多线程 sphere→OOBB 视锥剔除实现 |
+| [[sources/bitsquid-renderer-walkthrough-1-overview]] | Tobias 2017：Stingray 渲染架构三阶段总纲 |
+| [[sources/bitsquid-renderer-walkthrough-2-resources]] | Tobias 2017：Stingray GPU 资源与 RenderResourceContext |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

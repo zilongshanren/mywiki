@@ -16,12 +16,15 @@ Bitsquid 共同创始人之一，与 [[niklas-frykholm]] 一起主导 Bitsquid �
 - **The Machinery / Our Machinery 引擎** — Niklas 与 Tobias 在 Autodesk 宣布停产 Stingray 之后创立，延续 data-driven / C-API plugin 的设计哲学。
 
 ## 相关
-
 - [[niklas-frykholm]]
 - [[render-config-extension-points]]
 - [[stingray-data-driven-render-config]]
 - [[data-driven-architecture]]
+- [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 CPU 侧三阶段数据并行架构
+- [[stingray-render-resource-context]] —— RenderResource + RRC 的跨 API 资源抽象
+- [[main-render-thread-state-reflection]] —— 主/渲染线程状态镜像（Tobias 在 Walkthrough #1 里引用 Asplund 专文）
 
 ## Sources
-
 - [[sources/bitsquid-render-config-extensions]]
+- [[sources/bitsquid-renderer-walkthrough-1-overview]]
+- [[sources/bitsquid-renderer-walkthrough-2-resources]]

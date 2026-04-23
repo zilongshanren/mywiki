@@ -111,7 +111,6 @@ Charles 建议：便宜对象应该用廉价的 sphere vs. cone 粗测，甚至�
 Charles 说「球体一般不比 AABB 大很多，只是看 T 形角色被放大了」：用 object-space bound + 对象自带位置时，球体**只占 1 个 float**（半径），并且**完全不需要 model-to-world 变换**就能剔除，顶层这是巨大的性能收益。ryg 同意球体在顶层和内节点层很有用，但也反驳「球体不差」的说法：角色、柱子、旗杆、树、长武器——**任何有主轴的物体**球体都很松；世界空间 AABB 一旦旋转也很快退化，所以真要精确就得 OBB。Object-space bound 可以回避这个问题，因为美术一般会把主轴和局部坐标系对齐。
 
 ## 相关
-
 - [[culling]]
 - [[occlusion-culling]]
 - [[collision-detection-gjk-epa]] —— 同一族「中心沿轴 / 半径沿轴」原语构成分离轴定理和 GJK
@@ -119,6 +118,7 @@ Charles 说「球体一般不比 AABB 大很多，只是看 T 形角色被放大
 - [[tiled-light-culling]]
 - [[sse-tricks]]
 - [[fabian-giesen]]
+- [[stingray-simd-sphere-oobb-culling]] —— Stingray 采用与 ryg/Zeux 同路线的 clip-space 8 顶点 SIMD 实现，外加 sphere 预筛与多线程 help-if-idle 分工
 
 ## Sources
 

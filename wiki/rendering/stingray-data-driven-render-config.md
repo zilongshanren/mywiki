@@ -43,6 +43,9 @@ Ben Mowery 在 2015 年底的一篇短文里拆出了三层配置：
 - [[niklas-frykholm]]
 - [[bitsquid-foundation-library-concept]]
 - [[render-config-extension-points]] —— Stingray 1.5 的 plugin 扩展接口：append + insert_at 命名 hook
+- [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 Cull/Render/Dispatch 三阶段数据并行架构
+- [[stingray-render-resource-context]] —— RenderResource 抽象与 RRC 的跨 API 资源分配
+- [[stingray-resource-override-suffix]] —— 同样的 data-driven 思路在资源系统里的应用
 
 ## Sources
 - [[sources/bitsquid-stingray-data-driven-rendering]]

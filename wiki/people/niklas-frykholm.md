@@ -63,6 +63,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[javascript-hot-reload-dom-script]] —— 30 行浏览器 JS 做出的最小化 code hot-swap
 - [[stingray-volumetric-clouds-plugin]] —— Jp Guertin 在 Stingray 里落地 HZD 体积云方案
 - [[render-config-extension-points]] —— Stingray 1.5 给 plugin 准备的命名扩展点
+- [[stingray-resource-override-suffix]] —— 2016 用 resource override + suffix 规则替换旧 property 系统
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -137,3 +138,4 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-hot-reload-javascript]]
 - [[sources/bitsquid-volumetric-clouds]]
 - [[sources/bitsquid-render-config-extensions]]
+- [[sources/bitsquid-stingray-localization-system]]

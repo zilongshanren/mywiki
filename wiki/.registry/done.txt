@@ -11971,3 +11971,8 @@ raw/articles/hacksoflife.blogspot.com/2011-06-01_guessing-the-fine-print.md
 raw/articles/hacksoflife.blogspot.com/2011-08-18_fixing-wordpress-auto-update-issues.md
 raw/articles/hacksoflife.blogspot.com/2011-08-18_why-is-wordpress-slow.md
 raw/articles/hacksoflife.blogspot.com/2011-08-19_installer.md
+raw/articles/bitsquid.blogspot.com/2016-09-06_a-new-localization-system-for-stingray.md
+raw/articles/bitsquid.blogspot.com/2016-09-07_state-reflection.md
+raw/articles/bitsquid.blogspot.com/2016-10-04_the-implementation-of-frustum-culling-in-stingray.md
+raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-1-overview.md
+raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-2-resources-resource-contexts.md

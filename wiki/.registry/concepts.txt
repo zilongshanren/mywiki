@@ -972,3 +972,8 @@ javascript-hot-reload-dom-script
 stingray-volumetric-clouds-plugin
 render-config-extension-points
 opengl-ext-vs-arb-fast-path-leak
+stingray-resource-override-suffix
+main-render-thread-state-reflection
+stingray-simd-sphere-oobb-culling
+stingray-renderer-three-stage-pipeline
+stingray-render-resource-context
