@@ -749,6 +749,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[otoy-cloud-rendering]] | OTOY 在 AMD RV770 上的早期云渲染/云游戏架构 |
 | [[jpeg-codec-pipeline]] | JPEG 编码三段论：YCbCr+chroma 降采样、8×8 DCT 量化、Huffman 熵编码 |
 | [[jpeg-xl-format]] | JPEG-XL 编解码格式：可变 DCT、渐进解码与 AVIF/WebP 对比 |
+| [[efficient-sparse-voxel-octrees]] | Laine 2010 年 SVO 论文：contour + 紧凑编码 + CUDA 开源 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1668,6 +1669,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen2-cinebench-analysis]] | Chester Lam：Zen 2 在 CBR15 的微架构优势分析 |
 | [[sources/chipsandcheese-image-compression-part2]] | BlueSwordM：JPEG-XL/AVIF/WebP 图像压缩对比（2021 Part 2）|
 | [[sources/chipsandcheese-gpu-memory-latency]] | Chester Lam：GPU 多级缓存延迟实测（OpenCL pointer chasing）|
+| [[sources/raytracey-svo-path-tracing-update]] | Lapere：Voxelstein 3D + Laine SVO 论文 |
+| [[sources/raytracey-fermi-optix-benchmark]] | Lapere：Fermi / OptiX Design Garage 相对 GTX 285 提升 870% |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

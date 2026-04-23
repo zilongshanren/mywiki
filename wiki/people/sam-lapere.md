@@ -17,9 +17,12 @@ Ray Tracey 博客（`raytracey.blogspot.com`）作者，GPU 路径追踪长期�
 - [[path-tracing-monte-carlo]]
 - [[gpu-unbiased-path-tracing]]
 - [[otoy-cloud-rendering]]
+- [[efficient-sparse-voxel-octrees]]
 
 ## Sources
 - [[sources/raytracey-lighthouse-2]]
 - [[sources/raytracey-marbles-rtx-omniverse]]
 - [[sources/raytracey-2010-gpu-renderer-landscape]]
 - [[sources/raytracey-otoy-solidworks-cloud]]
+- [[sources/raytracey-svo-path-tracing-update]]
+- [[sources/raytracey-fermi-optix-benchmark]]

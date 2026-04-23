@@ -11661,3 +11661,8 @@ raw/articles/chipsandcheese.com/2021-02-28_modern-data-compression-in-2021-part-
 raw/articles/chipsandcheese.com/2021-03-10_lowering-the-bar-amds-6700-xt-launch-and-the-importance-of-d.md
 raw/articles/chipsandcheese.com/2021-03-15_rocket-lake-when-reviews-are-really-previews.md
 raw/articles/chipsandcheese.com/2021-04-16_measuring-gpu-memory-latency.md
+raw/articles/raytracey.blogspot.com/2010-03-11_otoy-this-summer.md
+raw/articles/raytracey.blogspot.com/2010-03-11_svo-and-path-tracing-update.md
+raw/articles/raytracey.blogspot.com/2010-03-27_fermi-a-raytracing-beast-and-fyc-fuck-you-charlie.md
+raw/articles/raytracey.blogspot.com/2010-04-02_gaiking-the-first-realtime-raytraced-game-using-otoy.md
+raw/articles/raytracey.blogspot.com/2010-04-03_octane-render-is-de-max.md
