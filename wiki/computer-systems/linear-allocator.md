@@ -48,6 +48,7 @@ sources: 1
 - [[hash-trie-intrusive]] — 配合 arena 使用的无 resize 哈希结构
 - [[msi-hash-table]] — 同样配合 arena 使用的扁平索引表
 - [[segment-array]] — 与 arena 配合最好的增长容器，追加不搬迁、不留洞
+- [[custom-allocator-interface]] — FrameAllocator 在 Bitsquid 抽象 allocator 接口下的定位
 
 ## Sources
 

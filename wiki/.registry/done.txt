@@ -11731,3 +11731,8 @@ raw/articles/joostdevblog.blogspot.com/2010-10-10_captain-august-got-camera-mapp
 raw/articles/joostdevblog.blogspot.com/2010-10-16_camera-mapping-tips-and-tricks.md
 raw/articles/joostdevblog.blogspot.com/2010-10-20_dirty-collision-detection-trickery-in-proun.md
 raw/articles/joostdevblog.blogspot.com/2010-10-30_designing-against-motion-sickness-in-proun.md
+raw/articles/bitsquid.blogspot.com/2010-09-17_visual-scripting-the-data-oriented-way.md
+raw/articles/bitsquid.blogspot.com/2010-09-21_custom-memory-allocation-in-c.md
+raw/articles/bitsquid.blogspot.com/2010-09-30_bitbucket-for-bitsquid.md
+raw/articles/bitsquid.blogspot.com/2010-10-01_static-hash-values.md
+raw/articles/bitsquid.blogspot.com/2010-10-05_the-dependency-checker.md

@@ -46,7 +46,6 @@ Aras 把 rapidhash 用 [Unity Burst](https://docs.unity3d.com/Packages/com.unity
 rapidhash 的核心循环依赖 64×64→128 的整数乘法（`umul128`/`__uint128_t`）。这条指令在硬件上只需要一两个周期，但 C# 等高级语言历史上都拿不到——必须借助像 Burst 这样的 native 编译器或 intrinsic。这就是「短 100 行核心」之所以能跑出 38-67 GB/s 的关键：所有数据都汇聚到一条 SIMD-级的硬件指令上。
 
 ## 相关
-
 - [[rapidhash]]
 - [[bottleneck-analysis]]
 - [[cpu-performance-formula]]
@@ -54,6 +53,7 @@ rapidhash 的核心循环依赖 64×64→128 的整数乘法（`umul128`/`__uint
 - [[pcg3d-hash]]
 - [[worley-voronoi-noise]]
 - [[cantor-szudzik-pairing]] — 双射式的配对函数，在输入有界时可替代哈希作为无碰撞 id
+- [[static-hash-value-debug-assert]] — MurmurHash 常量化 + 运行期复算断言的工程技巧
 
 ## Sources
 - [[sources/aras-rapidhash-unity-port]]

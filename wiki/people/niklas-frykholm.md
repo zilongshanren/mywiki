@@ -17,7 +17,6 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - **物理相机 / 物理 lens flare / PBR 验证**：Jp 和 Olivier Dionne 在 Stingray 末期把 camera / light / material 三环打通，用 Arnold 做地面真值对照，是业界少数公开的 PBR 全链路验证流程。
 
 ## 相关
-
 - [[entity-index-reconstruction]] — Stingray Entity Index 的原型链式重构
 - [[reprojected-planar-reflection]] — SSR 在 TAA 下的正确重投影
 - [[physically-based-lens-flare]] — Hullin et al. 论文在 Stingray 中的实现
@@ -27,6 +26,10 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[screenspace-reflections]]
 - [[physically-based-shading]]
 - [[thin-lens-model]]
+- [[flow-graph-data-oriented-runtime]] — Flow 可视化脚本的数据导向 runtime
+- [[custom-allocator-interface]] — Bitsquid 的 Allocator 抽象接口与子系统计数
+- [[static-hash-value-debug-assert]] — MurmurHash 常量化 + debug assert 工程技巧
+- [[dependency-checker-tool]] — 资源依赖图治理工具
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -44,3 +47,7 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-3-way-json-merge]]
 - [[sources/bitsquid-new-data-storage-model]]
 - [[sources/bitsquid-dual-mode-guis]]
+- [[sources/bitsquid-visual-scripting-data-oriented]]
+- [[sources/bitsquid-custom-memory-allocation]]
+- [[sources/bitsquid-static-hash-values]]
+- [[sources/bitsquid-dependency-checker]]

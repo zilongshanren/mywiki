@@ -990,3 +990,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-77 Worker HX (joostdevblog.blogspot.com ×5 — Proun 2010-10)
 
 处理 5 篇 Joost van Dongen 2010-10 博客：三篇 camera mapping 合并为 1 source 摘要 + 1 概念页（camera-mapping-2d-to-3d）；碰撞 3000fps trick 与抗晕眩摄像机各自独立成 source+concept。新增 3 概念页、3 source 摘要，给已有 joost-van-dongen 人物页追加 sources 与相关链接。
+
+## [2026-04-19] ingest | Wave-77 Worker HV (bitsquid.blogspot.com ×5)
+
+处理 5 篇 Niklas Frykholm 2010 Q3-Q4 博客。新增 4 概念页（flow-graph-data-oriented-runtime、custom-allocator-interface、static-hash-value-debug-assert、dependency-checker-tool）与 4 source 摘要，对 niklas-frykholm、offset-based-resource-blobs、data-driven-architecture、linear-allocator、malloc-wrapper-debug、non-cryptographic-hash 六个已有页追加补丁。跳过 1 篇（bitbucket-for-bitsquid，纯博客基础设施公告、原文被 SEO 垃圾评论淹没）。

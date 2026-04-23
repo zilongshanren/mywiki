@@ -76,5 +76,5 @@ Bitsquid 把 runtime blob 做成**平台相关**，所有 blob 都在 Win32 上*
 这篇是 Bitsquid 把 [[data-driven-architecture|data-driven]] / 数据导向设计贯彻到资源层的具体体现：**设计数据的排布**而不是设计类的继承，结果是更简单、更快、更模块化、跨系统更解耦。Bitsquid 后来的 entity system、粒子系统、动画系统都沿用这条路。
 
 ## Sources
-
 - [[sources/bitsquid-the-blob-and-i]]
+- [[sources/bitsquid-visual-scripting-data-oriented]] — Flow graph blob 是同一思路在脚本 runtime 的应用

@@ -134,6 +134,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[method-binding-semantics]] | 方法隐式 vs 显式绑定 `this`，以及对事件系统对称性的影响 |
 | [[earley-parser]] | Earley parser：接受任意 CFG 的通用解析算法，最坏 O(n^3) |
 | [[cpp-template-value-vs-type-parameter]] | C++ 模板按类型 vs 按值参数化：只有后者能真正内联函数指针 |
+| [[static-hash-value-debug-assert]] | 字符串 hash 常量化：硬编码值 + debug 复算断言 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -240,6 +241,7 @@ CAQA + CSAPP 的底层视角。
 | [[tensorflow-1-graph-model]] | TF 1.x 两段式建图/执行模型——现代 ML 框架与 graph IR 的思想原型（历史页） |
 | [[multi-gpu-training-replication-patterns]] | 多 GPU 训练的 tower + average-gradients 模板，对应今天的 DDP / all-reduce |
 | [[deep-learning-uncertainty]] | DL「uncertainty」的分类学：calibration、parameter vs predictive、risk、MC dropout 质疑 |
+| [[custom-allocator-interface]] | Bitsquid Allocator：抽象接口 + subsystem proxy + assert-on-leak |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -294,6 +296,8 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[decoupled-tool-engine-json-rpc]] | 工具与引擎解耦：用 JSON 消息走网络协议 |
 | [[per-entity-scene-graph]] | Bitsquid：场景图不覆盖整场景，只挂一个 entity 内部 |
 | [[dual-mode-gui-bitsquid]] | Bitsquid 用同一 API 同时支持 retained / immediate GUI |
+| [[flow-graph-data-oriented-runtime]] | Bitsquid Flow：可视化脚本的数据导向 runtime |
+| [[dependency-checker-tool]] | Bitsquid 500 行工具：资源依赖图与 replace/move/copy |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1736,6 +1740,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-camera-mapping]] | Joost van Dongen：把 2D 插画投影成 3D 动画的三连载（Evil Pope / Captain August / tips）|
 | [[sources/joostdevblog-proun-3000fps-collision]] | Joost van Dongen：Proun 把 gameplay 锁在 3000fps 解决碰撞 tunneling |
 | [[sources/joostdevblog-proun-motion-sickness]] | Joost van Dongen：Proun 抗晕眩的摄像机设计决策 |
+| [[sources/bitsquid-visual-scripting-data-oriented]] | Frykholm：Flow 可视化脚本 runtime 的 blob + switch dispatch 设计 |
+| [[sources/bitsquid-custom-memory-allocation]] | Frykholm：Allocator 抽象接口、subsystem proxy、bootstrap 与 assert-on-leak |
+| [[sources/bitsquid-static-hash-values]] | Frykholm：字符串 hash 编译期化的三条路线比较 |
+| [[sources/bitsquid-dependency-checker]] | Frykholm：500 行依赖图工具，missing/dangling/replace/move/copy |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

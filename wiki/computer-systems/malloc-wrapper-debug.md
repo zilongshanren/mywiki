@@ -103,12 +103,12 @@ malloc_f malloc_proxy(const char *file, int line) {
 这篇文末回到了他的中心主题：**接口设计时就应该预判使用者会怎样用错**。文档和口述都是脆弱的补救。给 API 加壳的成本低、收益高，是务实的 [[information-hiding]]：把"内存安全"这一决策藏在 `my_malloc` 里，上层代码不需要改变用法就自动得到保护。
 
 ## 相关
-
 - [[virtual-memory]]
 - [[linear-allocator]]
 - [[information-hiding]]
 - [[interface-vs-implementation]]
 - [[cloudwu]]
+- [[custom-allocator-interface]] — Bitsquid 的 proxy/trace allocator 是另一套同目标的加壳思路
 
 ## Sources
 

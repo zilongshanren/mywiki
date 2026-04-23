@@ -50,11 +50,12 @@ void Render(Entity entity) {
 Unity DOTS 的目标之一是**在保持数据驱动灵活性的同时恢复性能**——通过 SoA 布局。
 
 ## 相关
-
 - [[game-engine]]
 - [[engine-layering]]
 - [[ecs]]
 - [[aos-vs-soa]]
+- [[flow-graph-data-oriented-runtime]] — Bitsquid Flow：可视化脚本的数据导向 runtime
+- [[dependency-checker-tool]] — 统一资源格式之上的依赖治理
 
 ## Sources
 
