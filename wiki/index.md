@@ -889,6 +889,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[xplane-headlight-perf-teardown]] | Supnik 2011：X-Plane 10 车灯/AI 全流程性能手术案例 |
 | [[stingray-volumetric-clouds-plugin]] | Jp Guertin：HZD 体积云方案在 Stingray 里的开源实现 |
 | [[render-config-extension-points]] | Stingray 1.5：render_config 的 append + insert_at 命名扩展点 |
+| [[opengl-ext-vs-arb-fast-path-leak]] | EXT/ARB FBO 规则差异与驱动 fast path 的隐式契约（Supnik 2011-06 双篇合编） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2018,6 +2019,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-hot-reload-javascript]] | Niklas 2016：浏览器 JS 最小化热重载的实作笔记 |
 | [[sources/bitsquid-volumetric-clouds]] | Jp Guertin 2016：Stingray 体积云 plugin 的方法权衡实录 |
 | [[sources/bitsquid-render-config-extensions]] | Tobias Persson 2016：Stingray 1.5 的 render_config 扩展机制 |
+| [[sources/supnik-ext-vs-arb-fine-print]] | Supnik：EXT 版 FBO 要求同格式，ARB 版放宽，驱动按入口点分叉 |
+| [[sources/supnik-guessing-fine-print]] | Supnik：驱动 fast path 是一堆 if 串起来的隐式契约，profile 反推 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -68,6 +68,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[simd-memory-bandwidth-bound]] —— 2011-05 SSE 被内存带宽吃掉的 15% → 0 教训
 - [[xplane-headlight-perf-teardown]] —— 2011-05 X-Plane 10 车灯/AI 性能手术全流程案例
 - [[arrangement-mesh-simplification]] —— 2011-05 三部曲：squatter 搜索从 zone 计算 → Delaunay 索引 → constrained triangulation 邻接
+- [[opengl-ext-vs-arb-fast-path-leak]] —— 2011-06 双篇 fine-print 合编：EXT/ARB FBO completeness 差异 + 驱动 fast path 的隐式 if 瀑布
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -137,3 +138,5 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-performance-tuning-cars]]
 - [[sources/supnik-mesh-simplification-trilogy]]
 - [[sources/supnik-instancing-limits]]
+- [[sources/supnik-ext-vs-arb-fine-print]]
+- [[sources/supnik-guessing-fine-print]]

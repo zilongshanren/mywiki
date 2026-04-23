@@ -51,11 +51,11 @@ Supnik 把 C 的 `switch` fall-through 也归入「为了快路径保留了不�
 API 是合约。一旦公开声明「这条路径快」，升级实现时就不能悄悄加校验或缓存层。Supnik 做 `dataref` 时当年 find 实际是线性的，但因为声明了「慢」，客户端都缓存了 handle；后来升级成对数时间，客户端代码不需要动、也没有人突然发现「怎么比以前快了」。**文档契约比实现契约更长久**。
 
 ## 相关
-
 - [[information-hiding]]
 - [[rendering-api-depth]]
 - [[strategic-programming]]
 - [[cheat-by-solving-less]]
+- [[opengl-ext-vs-arb-fast-path-leak]] —— 驱动内部 fast path 条件的 if 瀑布反面案例
 
 ## Sources
 

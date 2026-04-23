@@ -1178,3 +1178,7 @@ Joost van Dongen 2011-06 Proun 发行簇。5 篇处理 2 篇纳入：`proun-s-ga
 ## [2026-04-19] ingest | Wave-93 Worker JT (c0de517e.blogspot.com 2010-07/08 x5 all-skipped)
 
 处理 5 篇 c0de517e (Angelo Pesce) 2010 年 7-8 月小帖：alan-wake-credits（Alan Wake 通关杂感 + MLAA 链接）、google-reader-sharing x2（订阅分享通告，https/http 双抓重复）、spam x2（推广同事美食博客，重复）。全部为 off-topic 或博客公告，无技术干货，按协议 5 篇全部 skipped_offtopic。无概念/人物/源摘要新增，无 index 变更。Angelo Pesce 人物页已存在，无改动。
+
+## [2026-04-19] ingest | Wave-93 Worker JS (hacksoflife Supnik 2011-06~08 ×5)
+
+处理 5 篇 hacksoflife.blogspot.com 博文。新增 1 渲染概念页 opengl-ext-vs-arb-fast-path-leak（合编 2 篇 2011-06-01 fine-print）、2 源摘要。跳过 3 篇非技术内容（2 篇 WordPress 运维、1 篇 OS X installer 命令行技巧）。补 patch 到 ben-supnik、opengl-extension-bucket-strategy、api-fast-path-design 的「相关」段与 ben-supnik Sources 段。

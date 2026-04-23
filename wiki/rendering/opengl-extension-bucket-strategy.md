@@ -13,11 +13,11 @@ sources: 1
 随着驱动质量稳定，某些扩展就被「卷起来」变成硬性依赖——比如 X-Plane 9.45 开始强制线程化 OpenGL，9.0 时还是可选。Supnik 给出的维护启示是：判断一个扩展是否可以卷入必需集合，不靠规范文本而靠技术支持电话的频率。参见 [[pc-gpu-driver-compat-qa]] 中对驱动兼容性矩阵的讨论。
 
 ## 相关
-
 - [[opengl-loader]]
 - [[pc-gpu-driver-compat-qa]]
 - [[shader-combination-strategies]]
 - [[shader-variant-stripping]]
+- [[opengl-ext-vs-arb-fast-path-leak]] —— EXT 与 ARB 版 FBO 完整性规则不同，驱动按入口点跟踪变体
 
 ## Sources
 

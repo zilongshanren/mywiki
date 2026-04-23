@@ -11966,3 +11966,8 @@ raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing-2.md
 raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing.md
 raw/articles/c0de517e.blogspot.com/2010-08-08_spam-2.md
 raw/articles/c0de517e.blogspot.com/2010-08-08_spam.md
+raw/articles/hacksoflife.blogspot.com/2011-06-01_ext-vs-arb-the-fine-print.md
+raw/articles/hacksoflife.blogspot.com/2011-06-01_guessing-the-fine-print.md
+raw/articles/hacksoflife.blogspot.com/2011-08-18_fixing-wordpress-auto-update-issues.md
+raw/articles/hacksoflife.blogspot.com/2011-08-18_why-is-wordpress-slow.md
+raw/articles/hacksoflife.blogspot.com/2011-08-19_installer.md
