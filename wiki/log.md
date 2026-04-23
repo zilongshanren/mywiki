@@ -954,3 +954,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-74 Worker HN (blog.gemserk.com ×5)
 
 处理 5 篇 Gemserk 2010 年早期博客。ingest 1（Applet/Webstart JAR 签名与 Maven profile 自动化）、skip 4（博客存档页 / 工作室欢迎帖 / Tower Defense 三行通告 / Jylonwars 两行通告）。新增 1 概念页（java-webstart-jar-signing）、1 source 摘要；gemserk 人物页已存在，仅追加 source 链接。
+
+## [2026-04-19] ingest | Wave-74 Worker HO (boristhebrave.com ×5)
+
+处理 5 篇 Boris The Brave 早期文章。Ingest 3 篇：tileset roundup（autotile 布局综述）、AS3 gems（语言设计）、Axaxaxas（Earley parser 库）。Skip 2 篇：Box2DFlash 2.1a 发布公告、Celtic Knots Blender 插件发布短文，均为无实质内容的 release note。新增概念页 4 张：[[autotile-tileset-layouts]]、[[optional-static-typing]]、[[method-binding-semantics]]、[[earley-parser]]；新增 source 摘要 3 张；对 [[boris-the-brave]] 补 sources: 6 与 4 条相关概念链接。

@@ -129,6 +129,9 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[zig-package-mirror]] | pkgmirror：自托管 Zig toolchain 与包镜像服务 |
 | [[computational-complexity-theory-intro]] | 计算复杂度理论入门：$\P/\NP/\coNP$ 与多项式时间归约 |
 | [[patterna-hexcells-np-vs-conp]] | 逻辑消除游戏的玩法复杂度：推理是 $\coNP$-complete 而非 $\NP$-complete |
+| [[optional-static-typing]] | 可选静态类型：AS3/haXe 起手，TypeScript/Python hints 承接 |
+| [[method-binding-semantics]] | 方法隐式 vs 显式绑定 `this`，以及对事件系统对称性的影响 |
+| [[earley-parser]] | Earley parser：接受任意 CFG 的通用解析算法，最坏 O(n^3) |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -821,6 +824,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 | [[additive-animation-layering]] | 叠加式动画层：1 帧 idle + 长周期 wiggle 的变化手法 |
 | [[java-webstart-jar-signing]] | Java Applet/Web Start 分发时的 JAR 签名与 Maven 自动化流程（Gemserk 2010） |
+| [[autotile-tileset-layouts]] | 2D autotile 切片布局：Marching Squares / Blob / Sub-blob / Micro-blob 的取舍 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1686,6 +1690,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-tile-too-far]] | Supnik：number puzzle 瓦片随机化 shader 与 fixed function 壁垒 |
 | [[sources/supnik-debugging-glsl]] | Supnik：GLSL printf = 写 gl_FragColor + shader 热重载 |
 | [[sources/gemserk-signing-jars-applet-webstart]] | Gemserk：用 maven-webstart-plugin 为 Applet / Webstart 自动签 JAR（2010） |
+| [[sources/boristhebrave-tileset-roundup]] | Boris：2D autotile 切片布局综述（Marching Squares/Blob/Sub-blob/Micro-blob） |
+| [[sources/boristhebrave-as3-gems]] | Boris：AS3 语言设计中值得借鉴的几个「钻石」 |
+| [[sources/boristhebrave-axaxaxas]] | Boris：Python Earley parser 库发布说明 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

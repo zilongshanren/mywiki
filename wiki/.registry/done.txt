@@ -11686,3 +11686,8 @@ raw/articles/blog.gemserk.com/2010-01-28_welcome.md
 raw/articles/blog.gemserk.com/2010-02-07_signing-jars-for-applet-and-webstart.md
 raw/articles/blog.gemserk.com/2010-02-26_tower-of-defense.md
 raw/articles/blog.gemserk.com/2010-04-16_jylonwars.md
+raw/articles/boristhebrave.com/2010-01-15_release-of-box2dflash-2-1a.md
+raw/articles/boristhebrave.com/2010-05-04_x-gems-of-as3-language-design.md
+raw/articles/boristhebrave.com/2013-07-14_tileset-roundup.md
+raw/articles/boristhebrave.com/2014-05-07_celtic-knots.md
+raw/articles/boristhebrave.com/2015-09-13_axaxaxas.md

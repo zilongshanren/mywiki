@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 3
+sources: 6
 ---
 
 # Boris The Brave
@@ -16,6 +16,10 @@ sources: 3
 - [[good-software-no-double-check]]
 - [[gpu-gol-optimization-ladder]]
 - [[infinite-random-rhombus-tilings]]
+- [[autotile-tileset-layouts]]
+- [[earley-parser]]
+- [[optional-static-typing]]
+- [[method-binding-semantics]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -24,3 +28,6 @@ sources: 3
 - [[sources/boristhebrave-gol-cuda-triton]]
 - [[sources/boristhebrave-gol-multistep]]
 - [[sources/boristhebrave-rhombus-tilings]]
+- [[sources/boristhebrave-tileset-roundup]]
+- [[sources/boristhebrave-as3-gems]]
+- [[sources/boristhebrave-axaxaxas]]
