@@ -24,10 +24,10 @@ Bitsquid 内部大量使用 MurmurHash 把字符串键"压成" 32-bit id（事�
 - **运行期校验 vs. release 命中**：作者认为 hash mismatch 会在 release 里也炸（行为不一致），所以 debug assert 只是防沾衣；Phil 反对——debug 不保证覆盖，他更信 pre-parser。
 
 ## 链接到的概念
-
 - [[static-hash-value-debug-assert]]
 - [[non-cryptographic-hash]]
 - [[flow-graph-data-oriented-runtime]]
+- [[murmur-hash-inverse]]
 
 ## 原文
 

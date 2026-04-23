@@ -30,13 +30,13 @@ sources: 1
 - **对象删除时机**：Niklas 的做法是把 delete 延后到明确同步点（与 background 处理不冲突的时机），而不是加锁保护当前执行。
 
 ## 链接到的概念
-
 - [[system-decoupling-patterns]]
 - [[polling-callbacks-events]] — 本系列第二篇
 - [[id-based-lifetime-with-kill-flag]]
 - [[handle-based-resource-manager]]
 - [[c-opaque-struct-modules]]
 - [[decoupled-tool-engine-json-rpc]]
+- [[id-lookup-table-packed]]
 
 ## 原文
 

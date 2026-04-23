@@ -75,6 +75,7 @@ sources: 371
 | [[stl-not-abstraction-prescription]] | Supnik：STL 不是抽象（不隐藏细节），而是对实现与性能的精确规定 |
 | [[system-decoupling-patterns]] | Bitsquid 解耦四条：防 framework / 高层调度低层 / 允许复制 / ID 引用 |
 | [[polling-callbacks-events]] | 低层→高层通知三种方式：优先 poll / callback 必须延迟 / event 别做 global switchboard |
+| [[minimal-markup-pipeline]] | Bitsquid 100 行 Ruby：line-list parser + tag-stack generator |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -142,6 +143,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[string-handling-game-runtime]] | Bitsquid 经验：UTF-8 + 不要 string class + 运行时 hash ID |
 | [[lua-light-userdata-bindings]] | Light userdata 绑定：零分配、零 GC、手写类型 marker |
 | [[lua-memory-profiling]] | Lua 内存调优：`_G` 遍历盘点 + `lua_Alloc` stack trace + feedback GC |
+| [[murmur-hash-inverse]] | MurmurHash2 32/64 位的数学逆运算（乘法逆元 + 逆异或移位）|
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -254,6 +256,8 @@ CAQA + CSAPP 的底层视角。
 | [[cgal-exact-arithmetic-mantissa-growth]] | CGAL 无限精度代数在深层构造下的尾数膨胀陷阱与精度重置 |
 | [[cgal-arrangement-import-antennas]] | CGAL arrangement 导入脏多边形的三条路径与 antenna 对 toggle / winding 策略的破坏 |
 | [[message-queue-thread-ownership]] | 消息队列作为线程所有权原语：数据访问权随消息流动，缩小 interleaving 状态空间 |
+| [[external-data-inspector]] | Bitsquid 2011：跨平台外部 watch window 设想与 blob 描述 DSL |
+| [[header-hero-compile-analysis]] | Bitsquid 2011：C++ include 图剖析工具与 Blowup Factor 指标 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -312,6 +316,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[dependency-checker-tool]] | Bitsquid 500 行工具：资源依赖图与 replace/move/copy |
 | [[memory-corruption-bug-hunting]] | Bitsquid：release-only / 平台相关 / 低复现率的内存破坏 bug 系统化狩猎流程 |
 | [[game-monitoring-event-buffer]] | 游戏监控：TLS event buffer + 在线/离线 visualizer |
+| [[id-lookup-table-packed]] | Bitsquid 2011 ID→Object 查找的三级演化：STL / array-with-holes / packed array |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1813,6 +1818,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-cgal-arrangements-import]] | Supnik：把脏多边形导入 CGAL arrangement 的策略与 antenna 问题 |
 | [[sources/supnik-fear-of-threading]] | Supnik：线程的开发成本与消息队列所有权模式 |
 | [[sources/supnik-vbo-really-double-buffered]] | Supnik：driver 视角重新解释 VBO 为什么没法自动双缓冲 |
+| [[sources/bitsquid-better-watch-windows]] | Frykholm 2011：跨平台外部 watch window 设想 |
+| [[sources/bitsquid-murmur-hash-inverse]] | Frykholm 2011：MurmurHash2 32/64 位 inverse 代码 |
+| [[sources/bitsquid-roll-your-own-docs]] | Frykholm 2011：100 行 Ruby 自制文档管线（parser + generator）|
+| [[sources/bitsquid-id-lookup-table]] | Frykholm 2011：Managing Decoupling Part 4 — ID Lookup Table |
+| [[sources/bitsquid-header-hero]] | Frykholm 2011：Header Hero 工具与 C++ include 瘦身实操 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

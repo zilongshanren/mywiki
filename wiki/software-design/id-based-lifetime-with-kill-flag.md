@@ -51,13 +51,13 @@ C++ 智能指针和所有非 GC 语言框架都用引用计数：创建时 1，�
 这也契合他对并发的基本看法：**长期状态归 id，短期状态归本地操作**。两套机制分离，各自责任单一。
 
 ## 相关
-
 - [[handle-based-resource-manager]] — 另一种 id + manager 的资源管理范式
 - [[ltask-scheduler]] — 同作者的 actor 调度框架
 - [[ant-engine]]
 - [[simple-cpp-mark-sweep-gc]]
 - [[snapshot-diff-persistence]]
 - [[cloudwu]]
+- [[id-lookup-table-packed]] — Bitsquid 2011 ID→Object 查找的三级演化（STL → array-with-holes → packed array）
 
 ## Sources
 

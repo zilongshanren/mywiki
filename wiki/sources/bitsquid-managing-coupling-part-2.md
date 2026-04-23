@@ -32,12 +32,12 @@ sources: 1
 - 小金句："每次你想设计一个干净灵活的 C++ API，它最后都趋同到纯 C。"
 
 ## 链接到的概念
-
 - [[polling-callbacks-events]]
 - [[system-decoupling-patterns]] — 本系列第一篇，提供 ID 引用机制
 - [[id-based-lifetime-with-kill-flag]]
 - [[handle-based-resource-manager]]
 - [[intent-vs-state]]
+- [[id-lookup-table-packed]]
 
 ## 原文
 

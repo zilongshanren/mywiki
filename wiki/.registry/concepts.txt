@@ -878,3 +878,8 @@ lua-light-userdata-bindings
 lua-memory-profiling
 cgal-arrangement-import-antennas
 message-queue-thread-ownership
+external-data-inspector
+murmur-hash-inverse
+minimal-markup-pipeline
+id-lookup-table-packed
+header-hero-compile-analysis

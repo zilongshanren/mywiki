@@ -11791,3 +11791,8 @@ raw/articles/hacksoflife.blogspot.com/2010-07-18_how-does-opengl-work.md
 raw/articles/hacksoflife.blogspot.com/2010-08-06_a-healthy-fear-of-threading.md
 raw/articles/hacksoflife.blogspot.com/2010-08-06_restarting-the-os-x-window-server-for-fun-and-profit.md
 raw/articles/hacksoflife.blogspot.com/2010-08-11_when-is-your-vbo-double-buffered.md
+raw/articles/bitsquid.blogspot.com/2011-08-24_an-idea-for-better-watch-windows.md
+raw/articles/bitsquid.blogspot.com/2011-08-25_code-snippet-murmur-hash-inverse-pre-image.md
+raw/articles/bitsquid.blogspot.com/2011-09-08_a-simple-roll-your-own-documentation-system.md
+raw/articles/bitsquid.blogspot.com/2011-09-23_managing-decoupling-part-4-the-id-lookup-table.md
+raw/articles/bitsquid.blogspot.com/2011-10-08_caring-by-sharing-header-hero.md

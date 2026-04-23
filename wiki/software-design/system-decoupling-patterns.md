@@ -95,7 +95,6 @@ Object *lookup[MAX_OBJECTS];
 这四条在 Bitsquid 后续的 [[data-driven-architecture]] / [[c-opaque-struct-modules]] / [[handle-based-resource-manager]] / [[custom-allocator-interface]] 里都能看到具体落地。
 
 ## 相关
-
 - [[polling-callbacks-events]] — 本系列第二篇：低层系统如何把事件上报给高层
 - [[id-based-lifetime-with-kill-flag]] — cloudwu 把类似思路做成了并发友好的生命期模型
 - [[handle-based-resource-manager]] — 句柄式资源系统
@@ -103,6 +102,7 @@ Object *lookup[MAX_OBJECTS];
 - [[decoupled-tool-engine-json-rpc]] — Bitsquid 工具 vs 引擎的解耦
 - [[dependencies]] / [[modular-design]] / [[information-hiding]]
 - [[niklas-frykholm]]
+- [[id-lookup-table-packed]] — 用 ID 解耦后，ID→Object 查找表的三种实现
 
 ## Sources
 

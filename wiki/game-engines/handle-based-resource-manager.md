@@ -102,13 +102,13 @@ Marco 列了几点（和 [[information-hiding|信息隐藏]] / [[deep-modules|�
 相较之下，[[resource-system-design]] 讨论的 Unity `Addressables` / `AssetReference` 也是同样的问题、同样的思路——**把资源的生命周期与表示全部藏到系统后面，上层只拿一个轻量句柄**。两者在抽象层级上是对应的，区别只在实现语言与运行时。
 
 ## 相关
-
 - [[resource-system-design]] —— Unity / C# 侧对同一问题的 RAII / Addressables 回答
 - [[information-hiding]] / [[deep-modules]] —— 句柄 + manager 是这两个原则在引擎里最干净的体现
 - [[linear-allocator]] —— 池式存储的基础构件
 - [[game-engine-vfs]] —— 资源管线的上游（文件系统抽象）
 - [[engine-layering]]
 - [[id-based-lifetime-with-kill-flag]] — 云风在 skynet 2.0 里用 id + 销毁标记替代 refcount 的变体，哲学一致但面向 actor 并发
+- [[id-lookup-table-packed]] — Bitsquid 同思想的三种实现细节与权衡
 
 ## Sources
 

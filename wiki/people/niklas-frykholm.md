@@ -61,3 +61,8 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-collaboration-and-merging]]
 - [[sources/bitsquid-extreme-bug-hunting]]
 - [[sources/bitsquid-universal-undo-copy-paste]]
+- [[sources/bitsquid-better-watch-windows]]
+- [[sources/bitsquid-murmur-hash-inverse]]
+- [[sources/bitsquid-roll-your-own-docs]]
+- [[sources/bitsquid-id-lookup-table]]
+- [[sources/bitsquid-header-hero]]

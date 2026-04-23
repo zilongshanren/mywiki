@@ -1038,3 +1038,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-81 Worker II (hacksoflife.blogspot.com Supnik 2010-05~08 ×5)
 
 处理 5 篇 Ben Supnik 博文，3 ingested（cgal-arrangements-import / fear-of-threading / vbo-really-double-buffered），2 skipped（how-does-opengl-work 仅推荐 WWDC 视频；restarting-os-x-window-server macOS 小技巧）。新增 2 概念页（cgal-arrangement-import-antennas, message-queue-thread-ownership）、3 source 摘要。Supnik 人物页 / vbo-double-buffering-orphaning / cgal-exact-arithmetic-mantissa-growth patch 已入栈。
+
+## [2026-04-19] ingest | Wave-81 Worker IH (bitsquid 2011-Q3/Q4 ×5)
+
+处理 5 篇 Niklas Frykholm 博文（watch-window 设想 / MurmurHash2 inverse / 自制 Ruby 文档系统 / ID lookup table 三级演化 / Header Hero 编译时间分析）。新增 5 概念页（external-data-inspector, murmur-hash-inverse, minimal-markup-pipeline, id-lookup-table-packed, header-hero-compile-analysis）、5 source 摘要。人物页 niklas-frykholm 已存在，补充 5 条 source 链接。跨引至 id-based-lifetime-with-kill-flag、handle-based-resource-manager、system-decoupling-patterns、static-hash-value-debug-assert 等既有概念。
