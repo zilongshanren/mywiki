@@ -996,3 +996,5 @@ linear-z-trick
 frame-pipeline-latency
 code-as-art-manifesto
 platform-specific-features-poll-2010
+xplane-deferred-pipeline-hacks
+luajit-2gb-address-constraint

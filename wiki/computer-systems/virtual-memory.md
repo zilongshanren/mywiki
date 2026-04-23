@@ -33,9 +33,9 @@ sources: 1
 - **崩溃诊断**：`0x00000000` 访问是 null pointer；`0xCCCCCCCC` 是未初始化栈；`0xDEADBEEF` 是 debug sentinel——地址值暗含状态。
 
 ## 相关
-
 - [[memory-hierarchy]]
 - [[compilation-pipeline]]
+- [[luajit-2gb-address-constraint]] —— X-Plane 用 OS X 懒提交 VM 预占 1.6 GB 低 2 GB 地址空间给 LuaJIT 的实战案例
 
 ## Sources
 

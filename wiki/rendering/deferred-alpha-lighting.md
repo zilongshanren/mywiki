@@ -38,13 +38,13 @@ Creative Assembly 在 Develop 2012 提出的方案，也是 Kostas 这篇文章�
 这套方案视觉上和「真正的 per-object forward lighting」效果一致，但省掉了在每帧对每个物体做一遍 light culling 的 CPU 开销——灯光遍历可以和场景其它 deferred 灯光一并处理。
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[alpha-blending]] — 透明物的排序/混合数学
 - [[tiled-light-prepass]] — 本文原型所用的引擎
 - [[dither-alpha-clipping]] — 屏幕门类方案的近亲
 - [[kostas-anagnostou]]
 - [[hybrid-hair-rendering]] —— 另一种 deferred + alpha 的 hack：头发按「实心 + 边缘」两段分别走 deferred / forward
+- [[xplane-deferred-pipeline-hacks]] —— X-Plane 10.10 的 alpha-in-deferred 选择：G-Buffer 内按 src-alpha 加权平均全部通道（除 eye-space Z），albedo/emissive 层间必须 sRGB blend
 
 ## Sources
 

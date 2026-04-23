@@ -31,13 +31,13 @@ sources: 1
 Supnik 的观察值得记：**framebuffer 的「颜色空间」很大程度是命名约定**。十年前的 OpenGL pipeline 里，你往 framebuffer 写的 RGB 在 CRT 上看起来像 sRGB，但 GL 的光照数学是 linear——等于在把 sRGB 数据塞进 linear 管线里，所有光照混合 artifact 的根源就在这儿。`framebuffer_sRGB` 扩展的意义不在于「换了颜色空间」，而是**让 blend 阶段的数学和存储格式的语义对齐**。
 
 ## 相关
-
 - [[gamma-correction-srgb]] — shader 里 sRGB 编解码的最小实现
 - [[color-space]] — TRC / primaries / white point 三要素
 - [[alpha-blending]] — blend 同样必须在 linear 域
 - [[deferred-rendering]] — 天然用路径三的 HDR RT
 - [[color-banding]] — 8-bit 目标下 encode 顺序影响暗部台阶
 - [[ben-supnik]]
+- [[xplane-deferred-pipeline-hacks]] —— X-Plane 10.10 让 linear 光累加与 sRGB 几何 blend 在同一帧不同 RT 上共存的实例
 
 ## Sources
 

@@ -141,12 +141,12 @@ if (_tracing_allocs) {
 以上都假设是**标准 Lua 5.1/5.2 的增量 GC**。LuaJIT 走自己的分代/增量方案并已有替换计划，本文策略需要对应移植，但"稳态时抓 alloc 热点"这个方法仍然是通用且廉价的第一招。
 
 ## 相关
-
 - [[lua-incremental-gc]] —— 三色标记 + 双白乒乓；本文是在这个机制之上做**预算调度与热点定位**
 - [[lua-light-userdata-bindings]] —— 减少垃圾的第一步是绑定层面就不造垃圾
 - [[lua-cpp-binding]] —— 对照：教学级绑定默认就在制造垃圾
 - [[non-cryptographic-hash]] —— murmur64 做 stack trace 聚合键
 - [[game-monitoring-event-buffer]] —— 把 `memory(t)` / `gc_time(t)` 送到 monitoring 系统实时画曲线
+- [[luajit-2gb-address-constraint]] —— LuaJIT 2.0 的进程级地址约束；和 Lua 5.1 标准 GC 的诊断是不同问题，同一层
 
 ## Sources
 

@@ -54,6 +54,7 @@ Supnik 几天后在 *FMTT, GLSL Edition* 贴了对应的片元着色器输出代
 - [[ben-supnik]]
 - [[cheat-by-solving-less]]
 - [[deferred-depth-reuse-tradeoffs]] —— 2012-07 Supnik 把 X-Plane 为何必须写眼空间 Z（而非复用深度 buffer）写成三路线分类：双 depth domain 迫使 C 路线
+- [[xplane-deferred-pipeline-hacks]] —— 2012-11 系列讲 10.10 版本如何把本条 G-Buffer 格式放进一个带 HDR/LDR/多 stencil 位的缝合管线里
 
 ## Sources
 - [[sources/supnik-gbuffer-format]]

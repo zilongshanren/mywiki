@@ -77,6 +77,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[deferred-depth-reuse-tradeoffs]] —— 2012-07 延迟管线三条深度复用路线（拷贝 / NV_texture_barrier / 写眼空间 Z），X-Plane 的双 depth domain 选 C
 - [[ogssaa-fxaa-non-square]] —— 2012-10 非方形 OGSSAA（2×4 竖向偏置）× FXAA 在 SSAA 空间运行的组合
 - [[opengl-pinned-memory-vbo-streaming]] —— 2012 X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 开销
+- [[xplane-deferred-pipeline-hacks]] —— 2012-11 四连篇：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear 双 blend 共存 / 复杂度来自硬边角叠加）
+- [[luajit-2gb-address-constraint]] —— 2012-12 LuaJIT 64-bit 低 2 GB 地址约束与 X-Plane 预占 VM + dlmalloc hack 的集成方案
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -157,3 +159,5 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-non-square-ogssaa-fxaa]]
 - [[sources/supnik-confessions-lisp-hater]]
 - [[sources/supnik-beyond-glmapbuffer]]
+- [[sources/supnik-deferred-weirdness-series]]
+- [[sources/supnik-luajit-x-plane-64bit]]

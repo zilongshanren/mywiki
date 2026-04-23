@@ -41,12 +41,12 @@ Outerra 当时用 log-depth 想在单缓冲里塞巨大的深度范围，读者�
 | C 写 Z 到 G-Buffer | 占一通道（16/32F） | 无 | 通用 | **是** |
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[xplane-gbuffer-format]]
 - [[multiple-render-targets]]
 - [[cheat-by-solving-less]]
 - [[ben-supnik]]
+- [[xplane-deferred-pipeline-hacks]] —— 2012-11 四连篇：路线 C（G-Buffer 写 16F 眼空间 Z）在 10.10 完整管线里的落地全景
 
 ## Sources
 

@@ -1218,3 +1218,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-96 Worker KA (c0de517e.blogspot.com ×5, 2010-08/09)
 
 处理 5 篇 Angelo Pesce 2010 年 8-9 月博文，4 ingest + 1 SKIP（threads-buffers-and-latency-2.md 是 2026-04-19 重抓的存档副本，内容与 -.md 完全一致）。新增 4 概念页：linear-z-trick（VS 里 z*=w/far 软件 W-buffer + 其屏幕空间非线性代价）、frame-pipeline-latency（多级 buffer 的总延迟 & NFS 单线程选择）、code-as-art-manifesto（Pesce 2010 代码平权宣言：五项诉求 + Fuck OOP + 轻框架厚应用）、platform-specific-features-poll-2010（70 人调研快照：360 压管线、PS3 挤 SPU、DX10 没爆点、DX11 multithread 仅 7%）。新增 4 源摘要。angelo-pesce 人物页追加 4 个 source 链接与 4 个相关概念。z-buffer 追加 linear-z 小把戏条目，reversed-z 与 live-editing-taxonomy-2010 追加相关链接。
+
+## [2026-04-19] ingest | Wave-96 Worker KB (hacksoflife 2012-11 deferred + 2012-12 LuaJIT ×5)
+
+处理 Supnik 5 篇：2012-11-16 stenciling-is-not-a-win + 11-17 collapsing-two-passes + 11-18 when-not-to-be-linear + 11-19 what-have-we-learned 合编为 1 概念 (xplane-deferred-pipeline-hacks) + 1 合并源摘要 (supnik-deferred-weirdness-series)；2012-12-09 LuaJIT 64-bit 独立为 1 概念 (luajit-2gb-address-constraint) + 1 源摘要 (supnik-luajit-x-plane-64bit)。5 篇全部 ingest，无 skipped。Ben Supnik 人物页已存在，patch 追加 2 条 Related + 2 条 Sources；deferred-rendering / xplane-gbuffer-format / deferred-depth-reuse-tradeoffs / deferred-light-volume-stencil-depth-clamp-hack / deferred-alpha-lighting / linear-lighting-pipeline / srgb-premultiplied-alpha-compression / agp-vs-vram-streaming / virtual-memory / custom-allocator-interface / lua-memory-profiling 通过 patch 追加反向链接。

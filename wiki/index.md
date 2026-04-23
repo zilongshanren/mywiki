@@ -298,6 +298,7 @@ CAQA + CSAPP 的底层视角。
 | [[sse-shuffle-endianness]] | Supnik：`_MM_SHUFFLE` 宏的 little-endian 参数顺序 |
 | [[simd-memory-bandwidth-bound]] | Supnik：SIMD 优化被内存带宽吃掉的判别与对策 |
 | [[arrangement-mesh-simplification]] | Arrangement 网格简化：squatter 搜索从 zone 计算 → Delaunay → constrained triangulation |
+| [[luajit-2gb-address-constraint]] | LuaJIT 2.0 的低 2 GB 地址约束：signed 32-bit 偏移 × OS X 零页 × 插件 late-load × 预占 VM + dlmalloc hack |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -911,6 +912,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[opengl-pinned-memory-vbo-streaming]] | GL_AMD_pinned_memory：用应用内存直接当 VBO 跳过 glMapBuffer |
 | [[linear-z-trick]] | Pesce 2010：VS 里 `hPos.z *= hPos.w / far` 软件模拟线性视深度 / W-buffer |
 | [[frame-pipeline-latency]] | 帧管线多级缓冲的总延迟——30fps 下不拆 stage 反而手感更好 |
+| [[xplane-deferred-pipeline-hacks]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear blend 共存 / 复杂度来自硬边角叠加） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2070,6 +2072,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-know-your-z]] | Pesce 2010：VS 里操作 hPos 的两个 Z trick 测题及代价 |
 | [[sources/c0de517e-code-rights]] | Pesce 2010：代码与数据应享有同等基础设施——manifesto |
 | [[sources/c0de517e-platform-specific-features-poll-2010]] | Pesce 2010：70 人平台特性使用率调研结果 |
+| [[sources/supnik-deferred-weirdness-series]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写 |
+| [[sources/supnik-luajit-x-plane-64bit]] | Supnik 2012-12：LuaJIT 64-bit 集成 X-Plane 的低 2 GB 地址空间 workaround |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

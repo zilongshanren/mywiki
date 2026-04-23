@@ -68,6 +68,7 @@ allocator.make_delete(m);
 - 和 [[virtual-memory|VirtualAlloc]] 的直接结合：page allocator 是 dlmalloc 的 backing，引擎可以切整段 VM 给 RSX、给 debug 数据、给 lua 堆，各自独立计数。
 - **不提供 `realloc`**：作者认为它是"非确定性优化"；要 grow 就用"定长块链"自己 merge，可控、可预测。
 - [[alloc-order-matches-draw-order]] —— 在 X-Plane 的 custom allocator 上做「精心聚拢」反而更慢的案例
+- [[luajit-2gb-address-constraint]] —— 把自定义 allocator 从「性能/预算工具」升级为「地址空间预留工具」的实战：LuaJIT 低 2 GB 约束 + dlmalloc 接自预抓 chunk 池
 
 ## Sources
 - [[sources/bitsquid-custom-memory-allocation]]
