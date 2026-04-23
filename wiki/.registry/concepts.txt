@@ -921,3 +921,6 @@ encapsulation-over-polymorphism
 types-h-data-code-separation
 vector-field-bytecode-vm
 bitsquid-foundation-library-concept
+game-settings-hot-reload
+level-design-without-editor
+behaviour-tree-game-ai

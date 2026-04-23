@@ -11871,3 +11871,8 @@ raw/articles/bitsquid.blogspot.com/2012-09-17_a-data-oriented-data-driven-system
 raw/articles/bitsquid.blogspot.com/2012-10-02_a-data-oriented-data-driven-system-for-vector-fields-part-2.md
 raw/articles/bitsquid.blogspot.com/2012-10-17_a-data-oriented-data-driven-system-for-vector-fields-part-3.md
 raw/articles/bitsquid.blogspot.com/2012-11-01_bitsquid-foundation-library.md
+raw/articles/joostdevblog.blogspot.com/2010-12-11_all-the-settings.md
+raw/articles/joostdevblog.blogspot.com/2010-12-18_designing-levels-without-tools.md
+raw/articles/joostdevblog.blogspot.com/2010-12-23_the-endless-possibilities-of-art-styles.md
+raw/articles/joostdevblog.blogspot.com/2010-12-31_ai-in-swords-soldiers-part-1.md
+raw/articles/joostdevblog.blogspot.com/2011-01-08_ai-in-swords-soldiers-part-2.md

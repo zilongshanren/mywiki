@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie, ronimo, galaxy-grove]
 date: 2026-04-19
-sources: 8
+sources: 11
 ---
 
 # Joost van Dongen
@@ -22,6 +22,9 @@ sources: 8
 - [[lightmap-baking-workflow]] —— Proun 用 3ds Max + V-Ray 烘 lightmap（单赛道 30h）
 - [[colored-sky-sun-lighting]] —— Proun 三条赛道的「对比色 sun / skylight」艺术选择
 - [[pc-gpu-driver-compat-qa]] —— Swords & Soldiers / De Blob / Proun 的 GPU 驱动兼容血泪史
+- [[game-settings-hot-reload]] —— F5 + struct 指针的极简 gameplay 数值热重载
+- [[level-design-without-editor]] —— Swords & Soldiers 没有编辑器时的三层关卡做法
+- [[behaviour-tree-game-ai]] —— Ronimo 的行为树 AI 迭代（C++ → Lua → 图形化 BT → 去优先级 if-else 树）
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -37,3 +40,6 @@ sources: 8
 - [[sources/joostdevblog-lighting-in-proun]]
 - [[sources/joostdevblog-coloured-light-proun]]
 - [[sources/joostdevblog-pc-dev-horror]]
+- [[sources/joostdevblog-all-the-settings]]
+- [[sources/joostdevblog-designing-levels-without-tools]]
+- [[sources/joostdevblog-ai-swords-soldiers]]

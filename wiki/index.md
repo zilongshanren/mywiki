@@ -923,6 +923,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[local-navigation-over-pathfinding]] | A* is Overrated：局部避障比最短路径算法更决定 AI 靠谱感 |
 | [[playcanvas-cloud-asset-pipeline]] | PlayCanvas 2013 云端资产管线：浏览器拖入 FBX/COLLADA 即转码 |
 | [[ngui-legacy-ui-system]] | NGUI 遗留 UI 系统：UI Root / UIPanel / UIAtlas / Button 家族 |
+| [[game-settings-hot-reload]] | F5 热重载 gameplay 数值（struct + pointer，禁止拷贝） |
+| [[level-design-without-editor]] | 没有关卡编辑器时的三层做法（Notepad + 模糊地形 + 程序化背景） |
+| [[behaviour-tree-game-ai]] | 行为树游戏 AI，Ronimo 三代迭代到去优先级的 if-else 树 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1909,6 +1912,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-organizing-header-files]] | Frykholm 2012：types.h 集中数据、函数按功能分组的 header 组织方式 |
 | [[sources/bitsquid-vector-fields]] | Frykholm 2012 三部曲合并：向量场的外循环指令/内循环数据字节码 VM |
 | [[sources/bitsquid-foundation-library]] | Frykholm 2012：Bitsquid Foundation Library 开源发布（MIT / allocator + POD 集合）|
+| [[sources/joostdevblog-all-the-settings]] | Joost：600 个 gameplay 数值的 F5 热重载工具 |
+| [[sources/joostdevblog-designing-levels-without-tools]] | Joost：Swords & Soldiers 用 Notepad 做关卡 |
+| [[sources/joostdevblog-ai-swords-soldiers]] | Joost：Swords & Soldiers AI（行为树两篇合并） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

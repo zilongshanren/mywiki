@@ -1102,3 +1102,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-86 Worker IW (bitsquid.blogspot.com 2012 Q3/Q4 ×5)
 
 处理 Bitsquid 2012 年下半年 5 篇：header 组织 1 篇、vector field 三部曲（合并为 1 个 source + 1 个概念）、foundation library 发布 1 篇。新增 3 概念页（types-h-data-code-separation / vector-field-bytecode-vm / bitsquid-foundation-library-concept），3 个 source 摘要。niklas-frykholm 人物页已存在，仅追加 sources。补丁 4 个已有概念（custom-allocator-interface / header-hero-compile-analysis / bytecode-everywhere / header-as-user-manual）。无跳过。
+
+## [2026-04-19] ingest | Wave-87 Worker JB (joostdevblog 2010-12 to 2011-01 ×5)
+
+处理 5 篇 joostdevblog（2010-12 至 2011-01）。4 ingested（AI part1+part2 合并成单 source），1 skipped（endless art styles —— 纯风格taste论，无方法论）。新增 3 概念页：game-settings-hot-reload（F5 struct 指针热重载）、level-design-without-editor（Notepad 关卡 + 程序化背景）、behaviour-tree-game-ai（Ronimo 三代 AI 演进，含 Halo 2 启发、优先级树 vs if-else 树的迭代）；新增 3 source 摘要；更新 joost-van-dongen 人物页。
