@@ -59,6 +59,7 @@ BC1/BC3/BC7、ASTC 这些[[bc7-solid-color-blocks|块压缩格式]]把一个 4×
 - 块压缩细节：[[bc7-solid-color-blocks]]
 - [[ben-supnik]]
 - [[sources/adrian-transparent-pixels]] —— Courrèges 用 PS3 XMB 上 Limbo logo 在白背景 fade-in 的灰斑做入门案例，给出美术端 flood-fill + 程序端预乘 alpha 的双策略
+- [[premultiplied-alpha-bilinear-ring]] —— 同一位作者在 X-Plane 里为什么最终没采用预乘（BCn 压缩精度 + alpha test 绕路）
 
 ## Sources
 

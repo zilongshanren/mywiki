@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 游戏引擎]
 date: 2026-04-19
-sources: 13
+sources: 18
 ---
 
 # Ben Supnik
@@ -39,6 +39,9 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[cgal-exact-arithmetic-mantissa-growth]]
 - [[cgal-arrangement-import-antennas]]
 - [[message-queue-thread-ownership]]
+- [[shared-library-soname-versioning]]
+- [[floating-point-geometric-predicates]]
+- [[premultiplied-alpha-bilinear-ring]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -70,3 +73,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-cgal-arrangements-import]]
 - [[sources/supnik-fear-of-threading]]
 - [[sources/supnik-vbo-really-double-buffered]]
+- [[sources/supnik-race-condition-debug]]
+- [[sources/supnik-openal-linux-part-27]]
+- [[sources/supnik-when-good-floating-point-goes-bad]]
+- [[sources/supnik-premultiplication-pros-cons]]
+- [[sources/supnik-alpha-blending-lets-try-again]]

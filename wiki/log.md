@@ -1050,3 +1050,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-82 Worker IK (bitsquid 2011 late ×5)
 
 处理 5 篇 2011-Q4 bitsquid.blogspot.com 文章：low-level animation part 2、DOD sound parameters、pragmatic performance、platform-specific resources、patch link.exe LNK4099。新增 5 概念页（animation-stream-cache-layout、parameter-nodes-intrusive-linked-list、pragmatic-performance-philosophy、platform-specific-resources-property-system、link-exe-lnk4099-patch）、5 source 摘要。人物页已存在（niklas-frykholm），仅追加 source 链接。
+
+## [2026-04-19] ingest | Wave-82 Worker IL (hacksoflife.blogspot.com Supnik 2010-09/10 × 5)
+
+处理 5 篇 Ben Supnik 短文。新增 3 概念页（shared-library-soname-versioning, floating-point-geometric-predicates, premultiplied-alpha-bilinear-ring）、5 source 摘要。主题：debugger 打印 STL 触发线程释放看到 race condition；OpenAL Linux SONAME major 升级 + 删除旧 .so 的 ABI 管理错位；X-Plane 里点积几何谓词的浮点脆弱性；预乘 alpha 修复 bilinear tree-ring 但 BCn 压缩精度让 X-Plane 最终选 alpha test；预乘约定下 back-to-front/front-to-back 的对称 blend state 配方。Patch 到 alpha-blending / alpha-blending-front-to-back / alpha-compositing / srgb-premultiplied-alpha-compression / ben-supnik。

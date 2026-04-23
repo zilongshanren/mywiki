@@ -11806,3 +11806,8 @@ raw/articles/bitsquid.blogspot.com/2011-11-07_an-example-in-data-oriented-design
 raw/articles/bitsquid.blogspot.com/2011-12-08_a-pragmatic-approach-to-performance.md
 raw/articles/bitsquid.blogspot.com/2011-12-22_platform-specific-resources.md
 raw/articles/bitsquid.blogspot.com/2011-12-28_code-share-patch-link-exe-to-ignore-lnk4099.md
+raw/articles/hacksoflife.blogspot.com/2010-09-01_i-just-saw-a-race-condition.md
+raw/articles/hacksoflife.blogspot.com/2010-09-03_openal-on-linux-part-27.md
+raw/articles/hacksoflife.blogspot.com/2010-09-27_when-good-floating-point-goes-bad.md
+raw/articles/hacksoflife.blogspot.com/2010-10-06_premultiplication-pros-and-cons.md
+raw/articles/hacksoflife.blogspot.com/2010-10-07_alpha-blending-lets-try-again.md

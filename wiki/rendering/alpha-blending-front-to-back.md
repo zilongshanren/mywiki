@@ -46,6 +46,8 @@ Supnik 给出的 voodoo 是**让 alpha 通道反转存储**（0 = 不透明，1 
 - [[ben-supnik]]
 - [[scatter-bokeh-dof]] —— 同样用预乘 additive + 归一化做累积的实例
 - [[deferred-alpha-lighting]]
+- [[premultiplied-alpha-bilinear-ring]] —— 同一时期 Supnik 讨论预乘为何能自动修 bilinear ring artifact
+- [[sources/supnik-alpha-blending-lets-try-again]] —— 作者本人对先前那篇配方的重写，给出更对称的 `(1, 1-SA)` vs `(1-DA, 1)` 形式
 
 ## Sources
 - [[sources/supnik-alpha-front-to-back]]

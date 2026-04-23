@@ -65,6 +65,7 @@ R_A  = S_A + D_A × (1 - S_A)
 - [[bartosz-ciechanowski]]
 - [[srgb-premultiplied-alpha-compression]] —— sRGB × 预乘 × 块压缩的三方正确顺序
 - [[alpha-blending-front-to-back]] —— 前向合成为什么仍然要求预乘 alpha，以及「反转 alpha 通道」的 back-to-front 变体
+- [[premultiplied-alpha-bilinear-ring]] —— 预乘 × bilinear filtering 的交换律为什么是 over 合成的数学保证
 
 ## Sources
 

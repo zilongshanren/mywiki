@@ -147,6 +147,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[lua-memory-profiling]] | Lua 内存调优：`_G` 遍历盘点 + `lua_Alloc` stack trace + feedback GC |
 | [[murmur-hash-inverse]] | MurmurHash2 32/64 位的数学逆运算（乘法逆元 + 逆异或移位）|
 | [[schema-driven-xml-parser-generator]] | Patrick Stein 基于 XML schema 的 CLOS 解析器代码生成（tagstack + 自举 + 多后端） |
+| [[floating-point-geometric-predicates]] | 点积符号抖动、线线求交条件数爆炸、几何谓词的鲁棒化策略 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -262,6 +263,7 @@ CAQA + CSAPP 的底层视角。
 | [[external-data-inspector]] | Bitsquid 2011：跨平台外部 watch window 设想与 blob 描述 DSL |
 | [[header-hero-compile-analysis]] | Bitsquid 2011：C++ include 图剖析工具与 Blowup Factor 指标 |
 | [[link-exe-lnk4099-patch]] | 二进制 patch MSVC link.exe 让 LNK4099 可被 /ignore |
+| [[shared-library-soname-versioning]] | Linux SONAME 的 ABI 契约与 OpenAL/X-Plane 翻车案例 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -817,6 +819,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[screen-space-curve-tessellation-cutoff]] | 把 Bézier 曲线细分阈值反投影到屏幕像素半径，避免像素内堆叠几十条冗余顶点 |
 | [[opengl-extension-bucket-strategy]] | OpenGL 扩展分桶策略与现场调试用的细粒度开关 |
 | [[gpu-embarrassingly-parallel-serial-dispatch]] | GPU 天生并行：为何无需应用层并行命令派发 |
+| [[premultiplied-alpha-bilinear-ring]] | 预乘 alpha 为何能修复 bilinear filtering 的 tree-ring 杂色晕 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1835,6 +1838,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-pragmatic-performance]] | Bitsquid：务实性能观七条 + 数量级设计指南 |
 | [[sources/bitsquid-platform-specific-resources]] | Bitsquid：property 资源变体系统（平台编译期 + 语言运行期） |
 | [[sources/bitsquid-link-exe-lnk4099-patch]] | Bitsquid：patch link.exe 忽略 LNK4099 的 Ruby 脚本 |
+| [[sources/supnik-race-condition-debug]] | Supnik：debugger 打印 STL 容器释放线程导致观察到 race |
+| [[sources/supnik-openal-linux-part-27]] | Supnik：OpenAL/Linux SONAME 升 major + 删旧 .so 的 ABI 管理翻车 |
+| [[sources/supnik-when-good-floating-point-goes-bad]] | Supnik：X-Plane 里点积谓词与线线求交的浮点失效模式 |
+| [[sources/supnik-premultiplication-pros-cons]] | Supnik：预乘 alpha 修 tree ring，但 BCn 压缩精度让 X-Plane 转走 alpha test |
+| [[sources/supnik-alpha-blending-lets-try-again]] | Supnik：预乘约定下 back-to-front / front-to-back blend state 的对称重推 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

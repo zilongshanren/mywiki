@@ -60,6 +60,8 @@ blend 必须在 **线性色彩空间** 里做。如果在 sRGB 编码值上直�
 - [[srgb-premultiplied-alpha-compression]] —— Ben Supnik：linear blending vs sRGB blending 的取舍，以及美术为何有时想要 sRGB blending（partial coverage）
 - [[sources/adrian-transparent-pixels]] —— alpha=0 像素的 RGB 值如何通过 bilinear filtering 污染可见边缘
 - [[alpha-blending-front-to-back]] —— Ben Supnik：用 `GL_ONE_MINUS_DST_ALPHA, GL_ONE` 做前向合成与「反转 alpha」累积不透明度的 blend state 技巧
+- [[premultiplied-alpha-bilinear-ring]] —— Supnik：预乘为何能自动消除 bilinear filtering 产生的 tree ring 色晕
+- [[sources/supnik-alpha-blending-lets-try-again]] —— 预乘约定下 back-to-front `(1, 1-SA)` 与 front-to-back `(1-DA, 1)` 的对称推导
 
 ## Sources
 

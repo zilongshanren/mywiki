@@ -889,3 +889,6 @@ parameter-nodes-intrusive-linked-list
 pragmatic-performance-philosophy
 platform-specific-resources-property-system
 link-exe-lnk4099-patch
+shared-library-soname-versioning
+floating-point-geometric-predicates
+premultiplied-alpha-bilinear-ring
