@@ -15,9 +15,9 @@ sources: 1
 这种精度截断不是零风险：如果原始数据里因为 OSM 编辑冲突产生了尺寸小于 1mm 的「真街区」，CGAL 会诚实地按无穷精度保留它，而四舍五入会把它翻面或退化。因此生产化这个降精度步骤必须配一道 sanity check——所幸对路面应用，亚毫米以下的数据天然是噪声，直接丢弃即可。这条经验的一般化结论是：符号精确算术的成本随「构造深度」累积，必须在语义允许的边界处主动重置精度，而不是让 CGAL 替你记住每一位有效数字。参见 [[floating-point-basics]] 附近的精度概念与 [[planet-terrain-dem-pipeline]] 里的坐标精度处理。
 
 ## 相关
-
 - [[huge-world-coordinate-precision]]
 - [[planet-terrain-dem-pipeline]]
+- [[cgal-arrangement-import-antennas]] —— CGAL arrangement 导入脏多边形时的拓扑策略与 antenna 陷阱
 
 ## Sources
 

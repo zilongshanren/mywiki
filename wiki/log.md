@@ -1034,3 +1034,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-81 Worker IJ (blog.playcanvas.com 2012 ×5)
 
 处理 PlayCanvas 博客 2012 年 5 篇早期文章，全部低信息量营销/动态贴（博客开张、Google I/O 展台、GitHub 集成、HTML5 观点转载、年度榜单入选），无技术深度，全部 skip。
+
+## [2026-04-19] ingest | Wave-81 Worker II (hacksoflife.blogspot.com Supnik 2010-05~08 ×5)
+
+处理 5 篇 Ben Supnik 博文，3 ingested（cgal-arrangements-import / fear-of-threading / vbo-really-double-buffered），2 skipped（how-does-opengl-work 仅推荐 WWDC 视频；restarting-os-x-window-server macOS 小技巧）。新增 2 概念页（cgal-arrangement-import-antennas, message-queue-thread-ownership）、3 source 摘要。Supnik 人物页 / vbo-double-buffering-orphaning / cgal-exact-arithmetic-mantissa-growth patch 已入栈。

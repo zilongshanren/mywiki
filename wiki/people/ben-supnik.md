@@ -37,6 +37,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[opengl-extension-bucket-strategy]]
 - [[gpu-embarrassingly-parallel-serial-dispatch]]
 - [[cgal-exact-arithmetic-mantissa-growth]]
+- [[cgal-arrangement-import-antennas]]
+- [[message-queue-thread-ownership]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -65,3 +67,6 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-value-of-granularity]]
 - [[sources/supnik-santa-youre-an-idiot]]
 - [[sources/supnik-cgal-mantissa]]
+- [[sources/supnik-cgal-arrangements-import]]
+- [[sources/supnik-fear-of-threading]]
+- [[sources/supnik-vbo-really-double-buffered]]

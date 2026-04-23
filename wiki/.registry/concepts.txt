@@ -876,3 +876,5 @@ game-monitoring-event-buffer
 string-handling-game-runtime
 lua-light-userdata-bindings
 lua-memory-profiling
+cgal-arrangement-import-antennas
+message-queue-thread-ownership

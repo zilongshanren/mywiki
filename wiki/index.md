@@ -252,6 +252,8 @@ CAQA + CSAPP 的底层视角。
 | [[c-cpp-embed-binary-blobs]] | C/C++ 把资源文件嵌入可执行文件的三种做法（xxd、预处理器、`.incbin`） |
 | [[function-vs-data-pointer-portability]] | glXGetProcAddressARB 返回函数指针而非 void*：C 标准不保证代码指针与数据指针等宽 |
 | [[cgal-exact-arithmetic-mantissa-growth]] | CGAL 无限精度代数在深层构造下的尾数膨胀陷阱与精度重置 |
+| [[cgal-arrangement-import-antennas]] | CGAL arrangement 导入脏多边形的三条路径与 antenna 对 toggle / winding 策略的破坏 |
+| [[message-queue-thread-ownership]] | 消息队列作为线程所有权原语：数据访问权随消息流动，缩小 interleaving 状态空间 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1808,6 +1810,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-strings-redux]] | Frykholm：UTF-8 everywhere、不要 string class、runtime 用 hash |
 | [[sources/bitsquid-lightweight-lua-bindings]] | Frykholm：light userdata 绑定、手写类型 marker、句柄生命周期 |
 | [[sources/bitsquid-fixing-memory-issues-lua]] | Frykholm：Lua 内存泄漏定位、GC 预算反馈控制 |
+| [[sources/supnik-cgal-arrangements-import]] | Supnik：把脏多边形导入 CGAL arrangement 的策略与 antenna 问题 |
+| [[sources/supnik-fear-of-threading]] | Supnik：线程的开发成本与消息队列所有权模式 |
+| [[sources/supnik-vbo-really-double-buffered]] | Supnik：driver 视角重新解释 VBO 为什么没法自动双缓冲 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

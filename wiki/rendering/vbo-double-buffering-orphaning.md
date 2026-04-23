@@ -56,3 +56,4 @@ Supnik 文中提到 MacOS 10.4.7 已经通过 `APPLE_flush_buffer_range` 提供�
 
 ## Sources
 - [[sources/supnik-double-buffering-vbos]]
+- [[sources/supnik-vbo-really-double-buffered]] —— Supnik 用「如果是我写 driver」的视角重新整理了前三篇的结论
