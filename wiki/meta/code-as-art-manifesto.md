@@ -45,7 +45,6 @@ sources: 1
 Pesce 自己后来在 [[pesce-2010-engine-layer-sketch]] 里用「六层引擎架构草图」回应了这份诉求——**把 code iteration 基础设施当作引擎的一层，而不是附属工具**。
 
 ## 相关
-
 - [[live-editing-taxonomy-2010]]
 - [[pesce-2010-engine-layer-sketch]]
 - [[scene-graph-unnecessary-in-engine]]
@@ -53,6 +52,7 @@ Pesce 自己后来在 [[pesce-2010-engine-layer-sketch]] 里用「六层引擎�
 - [[tools-first-iteration-loop]]
 - [[experience-as-noise-filter]]
 - [[angelo-pesce]]
+- [[code-tourism-practice]] —— 宣言的教育学侧补充：读代码作为艺术研习
 
 ## Sources
 

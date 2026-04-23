@@ -1246,3 +1246,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-98 Worker KH (hacksoflife/Supnik 2013 ×5)
 
 处理 5 篇 Ben Supnik 2013 年 hacksoflife.blogspot.com 文章（7970 PerfStudio 审计、OpenGL hint-bit 规范自嘲、PowerVR SGX 异步崩溃、BrickSmith GPU 遮挡剔除推演、3D 鼠标拾取三空间对照）。新增 5 概念页（engine-integrated-gpu-counter-probes, opengl-hint-bit-irrelevance, gpu-hang-deferred-fault-debugging, bricksmith-speculative-gpu-occlusion, mouse-picking-coordinate-spaces）+ 5 source 摘要。ben-supnik 人物页追加 5 条相关 + 5 条 Sources；bricksmith-instancing-pipeline / occlusion-culling / gpu-based-occlusion-culling / bottleneck-analysis 各追加交叉引用。
+
+## [2026-04-19] ingest | Wave-99 Worker kj (c0de517e Pesce 2011-01 x5)
+
+处理 5 篇 c0de517e.blogspot.com 文章。跳过 2 篇 OT（手机刷机、相机评测）和 1 篇归档重复。新增 1 概念页（code-tourism-practice）和 2 source 摘要。补丁：angelo-pesce 人物页、code-as-art-manifesto、cpp-multi-paradigm-discipline 增加相关 / 源链接。作者 angelo-pesce 页已存在。

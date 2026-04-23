@@ -1017,3 +1017,4 @@ opengl-hint-bit-irrelevance
 gpu-hang-deferred-fault-debugging
 bricksmith-speculative-gpu-occlusion
 mouse-picking-coordinate-spaces
+code-tourism-practice

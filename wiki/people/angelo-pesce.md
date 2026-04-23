@@ -31,6 +31,7 @@ sources: 5
 - [[platform-specific-features-poll-2010]]
 - [[stereo-reprojection-hole-fill]] —— 2010 立体渲染的单眼 reproject + 洞补实验
 - [[iterative-sample-point-relaxation]] —— 带 importance 权重的半球 Poisson-like 采样点生成器
+- [[code-tourism-practice]] —— 2011 把读代码类比为画家逛画廊
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -49,3 +50,5 @@ sources: 5
 - [[sources/c0de517e-stereoscopic-test]]
 - [[sources/c0de517e-sample-generator-3d]]
 - [[sources/c0de517e-next-next-gen-poll-2011]]
+- [[sources/c0de517e-code-tourism]]
+- [[sources/c0de517e-survive-cpp-guidelines-experiment]]

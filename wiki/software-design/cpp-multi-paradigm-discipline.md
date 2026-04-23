@@ -51,5 +51,5 @@ C++ 允许你把不同范式揉在一起、每种都享受高性能支持——�
 - [[encapsulation-over-polymorphism]] —— Supnik 给初学者的 90/10/0 启发式：封装才是 OOP 的核心
 
 ## Sources
-
 - [[sources/cloudwu-effective-cpp-comments]]
+- [[sources/c0de517e-survive-cpp-guidelines-experiment]]

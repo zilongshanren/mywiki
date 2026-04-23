@@ -2117,6 +2117,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-gpus-returnguilty-restart]] | Supnik 2013-08：iOS PowerVR 异步越界崩溃 speculative engineering |
 | [[sources/supnik-bricksmith-speculative-occlusion]] | Supnik 2013-08：BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由 |
 | [[sources/supnik-3d-mouse-testing]] | Supnik 2013-10：3D 鼠标拾取三种坐标空间对照 + 近裁剪面 clip fix |
+| [[sources/c0de517e-code-tourism]] | Pesce：读别人的代码作为学习方式 |
+| [[sources/c0de517e-survive-cpp-guidelines-experiment]] | Pesce：游戏圈 C++ 视觉指南众包实验（公告） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2129,6 +2131,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 
 | [[code-as-art-manifesto]] | Pesce 2010「代码平权」manifesto：五项诉求 + Fuck OOP + 轻框架厚应用 |
 | [[platform-specific-features-poll-2010]] | Pesce 2010 70 人调研：360/PS3/DX10/DX11 平台特性使用率快照 |
+| [[code-tourism-practice]] | Pesce 2011：把读代码类比画家逛画廊，呼吁 code galleries 与内部导览 |
 ## 特殊页面
 
 - [[overview]] —— 综合叙事：把主题串起来

@@ -12051,3 +12051,8 @@ raw/articles/hacksoflife.blogspot.com/2013-07-22_the-smell-of-victory.md
 raw/articles/hacksoflife.blogspot.com/2013-08-25_what-does-gpus-returnguiltyforhardwarerestart-mean.md
 raw/articles/hacksoflife.blogspot.com/2013-08-31_theoretical-engineering-occlusion-culling-for-bricksmith.md
 raw/articles/hacksoflife.blogspot.com/2013-10-03_3-d-mouse-testing.md
+raw/articles/c0de517e.blogspot.com/2011-01-06_ot-owner-of-a-samsung-galaxy-t959-in-canada.md
+raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines-experiment-2.md
+raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines-experiment.md
+raw/articles/c0de517e.blogspot.com/2011-01-11_code-tourism.md
+raw/articles/c0de517e.blogspot.com/2011-01-12_ot-dxolabs-luminous-landscape-is-wrong.md
