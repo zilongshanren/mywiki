@@ -1,7 +1,7 @@
 ---
 tags: [game-engines, actionscript, flash, 2d-framework, 框架设计]
 date: 2026-04-19
-sources: 2
+sources: 3
 ---
 
 # FlashPunk 框架
@@ -33,6 +33,6 @@ FlashPunk 的类层次从上到下可以分为四个层次：
 FlashPunk 代表了 2009–2012 年 Flash 独立游戏开发的繁荣期，与 Flixel 一起塑造了 2D 横版游戏的"一键碰撞"开发文化。ActionScript 3 作为静态类型的 ECMAScript 变体，其面向对象范式是后来很多开发者接触正式 [[game-engines/ecs|组件化架构]] 之前的起点。框架本身的设计讨论——Entity 与碰撞耦合、World 职责混乱、变换与渲染分离——至今仍是[[game-engines/engine-evolution|引擎演化]]路径上反复出现的设计命题。
 
 ## Sources
-
 - [[sources/randomtower-flashpunk-review]]
 - [[sources/randomtower-flashpunk-hello-world]]
+- [[sources/randomtower-flashpunk-shooter-part-2]]

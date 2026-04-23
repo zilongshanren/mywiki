@@ -11996,3 +11996,8 @@ raw/articles/nklein.com/2010-04-13_c-clifford-algebra-library-getting-some-use-n
 raw/articles/nklein.com/2010-04-24_cl-growl-slides-nklein-software.md
 raw/articles/nklein.com/2010-04-26_weblocks-slides-nklein-software.md
 raw/articles/nklein.com/2010-04-29_cl-growl-patched-for-ccl-nklein-software.md
+raw/articles/hacksoflife.blogspot.com/2012-07-24_deferred-depth-3-ways.md
+raw/articles/hacksoflife.blogspot.com/2012-10-31_non-square-ogssaa-fxaa.md
+raw/articles/randomtower.blogspot.com/2010-02-02_flashpunk-hello-world-shooter-part-2.md
+raw/articles/randomtower.blogspot.com/2010-02-01_escape-from-colors.md
+raw/articles/randomtower.blogspot.com/2010-02-05_escape-from-colors-progress.md

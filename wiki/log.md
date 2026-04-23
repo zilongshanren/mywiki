@@ -1202,3 +1202,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-95 Worker JZ (nklein.com ×5, 2010-04)
 
 处理 5 篇 Patrick Stein 2010 年 4 月的博文，全部判定 SKIP：CL-Growl 发布公告/CCL patch 致谢/TC Lispers 幻灯片链接（×2）、Clifford 库被引用的反馈帖——均为 1-2 段薄公告，无几何代数原理、无 Growl 协议剖析、无 Weblocks 架构讲解，不达技术实质门槛。Patrick Stein 人物页已存在，本批次无改动。
+
+## [2026-04-19] ingest | Wave-95 Worker JY (hacksoflife 2012 Supnik ×2 + randomtower 2010 Marte ×1)
+
+处理 5 条输入：3 ingested（Supnik deferred-depth-3-ways + non-square-ogssaa-fxaa + Marte FlashPunk shooter part 2），2 skipped（escape-from-colors 两篇在 raw/ 下不存在，无源可读）。新增 2 概念页（deferred-depth-reuse-tradeoffs、ogssaa-fxaa-non-square）、3 source 摘要；xplane-gbuffer-format / deferred-rendering / aa-techniques-survey-2011 / flashpunk-framework / ben-supnik / marte-randomtower 反向补链。

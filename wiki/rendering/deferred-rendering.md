@@ -63,6 +63,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[multiple-render-targets]] —— G-Buffer 的硬件前提：一次 draw 写多附件
 - [[xplane-gbuffer-format]] —— Supnik 2010 年 X-Plane 10 延迟管线的 16 字节 G-Buffer 布局：`256×shadow + shine` 浮点打包、16F 眼空间深度 + 行星几何求交后备
 - [[deferred-light-volume-stencil-depth-clamp-hack]] —— 光源包围体 stencil 剔除 + 远剪裁面切穿问题的三档处理
+- [[deferred-depth-reuse-tradeoffs]] —— 光照 pass 复用深度 buffer 的三条路线：拷贝 / NV_texture_barrier / 往 G-Buffer 写眼空间 Z
 
 ## Sources
 

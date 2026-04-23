@@ -987,3 +987,5 @@ cgal-halfedge-direction-cache-pitfall
 cpp-ranges-vs-iterators
 pn-triangle-polyline-bezier-fit
 deferred-light-volume-stencil-depth-clamp-hack
+deferred-depth-reuse-tradeoffs
+ogssaa-fxaa-non-square

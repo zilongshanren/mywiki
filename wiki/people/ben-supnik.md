@@ -74,6 +74,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[cpp-ranges-vs-iterators]] —— 2011-09 自发明 sequence（= range，C++20 前十年）
 - [[pn-triangle-polyline-bezier-fit]] —— 2011-09 X-Plane 10 OSM 道路 Bezier 化的 PN-triangle + 贪婪合并流水线
 - [[deferred-light-volume-stencil-depth-clamp-hack]] —— 2011-12 延迟光源体积 stencil + VS 剪裁空间 Z-clamp 降级三档策略
+- [[deferred-depth-reuse-tradeoffs]] —— 2012-07 延迟管线三条深度复用路线（拷贝 / NV_texture_barrier / 写眼空间 Z），X-Plane 的双 depth domain 选 C
+- [[ogssaa-fxaa-non-square]] —— 2012-10 非方形 OGSSAA（2×4 竖向偏置）× FXAA 在 SSAA 空间运行的组合
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -150,3 +152,5 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-sequences-vs-iterators]]
 - [[sources/supnik-bezier-curve-optimization]]
 - [[sources/supnik-stencil-deferred-lights-depth-clamp]]
+- [[sources/supnik-deferred-depth-3-ways]]
+- [[sources/supnik-non-square-ogssaa-fxaa]]

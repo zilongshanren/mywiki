@@ -905,6 +905,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[cgal-halfedge-direction-cache-pitfall]] | CGAL 3.4+ merge_edge 方向缓存陷阱与 h2.twin 绕法 |
 | [[pn-triangle-polyline-bezier-fit]] | X-Plane OSM 道路的 PN-Triangle 切线估计 + 自底向上 Bezier 合并 |
 | [[deferred-light-volume-stencil-depth-clamp-hack]] | 延迟光源体积 stencil 剔除在远剪裁面切背面时的三档处理（depth-clamp / VS Z-clamp / 纯 stencil） |
+| [[deferred-depth-reuse-tradeoffs]] | Supnik 2012：延迟光照读深度的三条路线（拷贝 / NV_texture_barrier / G-Buffer 写 Z），X-Plane 双 depth domain 选 C |
+| [[ogssaa-fxaa-non-square]] | Supnik 2012：非方形 OGSSAA（2×4 竖向偏置）× FXAA 跑在 SSAA 空间的组合 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2050,6 +2052,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-sequences-vs-iterators]] | Supnik 2011-09：sequence = range，提前 10 年的 C++20 ranges 预言 |
 | [[sources/supnik-bezier-curve-optimization]] | Supnik 2011-09：OSM 折线 → Bezier 的 PN-Triangle + 贪婪合并流水线 |
 | [[sources/supnik-stencil-deferred-lights-depth-clamp]] | Supnik 2011-12：延迟光源体积 stencil 剔除的 depth-clamp 三档策略 |
+| [[sources/supnik-deferred-depth-3-ways]] | Supnik 2012：延迟管线深度复用的三条路线与 X-Plane 的选择 |
+| [[sources/supnik-non-square-ogssaa-fxaa]] | Supnik 2012：非方形 OGSSAA + FXAA 跑在 SSAA 空间 |
+| [[sources/randomtower-flashpunk-shooter-part-2]] | Marte 2010：FlashPunk Hello World Shooter 迭代更新（血量 / 多武器 / 调试键）|
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -47,13 +47,13 @@ emissive 理论上可预乘 RGB 后丢掉 alpha——但 X-Plane 需要「非发
 Supnik 几天后在 *FMTT, GLSL Edition* 贴了对应的片元着色器输出代码：`gl_FragData[0..3]` 分别按上面布局写入，其中 `cut_pos` 做 discard 代理、`shiny_ao * cut_pos` 打包、`position_eye.z/-1024.0` 归一深度。这是前述格式表的直接实现样本。
 
 ## 相关
-
 - [[deferred-rendering]]
 - [[multiple-render-targets]]
 - [[yuv-gbuffer-layered]] —— DCS 的 5×R8G8 层化 G-Buffer，与本文的 16B 宽格式形成对照
 - [[tangent-space-normal-mapping]]
 - [[ben-supnik]]
 - [[cheat-by-solving-less]]
+- [[deferred-depth-reuse-tradeoffs]] —— 2012-07 Supnik 把 X-Plane 为何必须写眼空间 Z（而非复用深度 buffer）写成三路线分类：双 depth domain 迫使 C 路线
 
 ## Sources
 - [[sources/supnik-gbuffer-format]]

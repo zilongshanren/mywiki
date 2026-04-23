@@ -51,7 +51,6 @@ Ben Supnik 2011 年 4 月写的一篇「AA 菜单」，把当时（延迟渲染�
 这篇写在 MLAA/FXAA 刚刚铺开、SRAA 论文刚发、TAA 还没成主流之前的窗口。Supnik 列完之后承认自己没深究 MLAA vs FXAA 差异——后来的答案是：**形态学/SDF 风格的后处理 AA 是一个松散的家族**（MLAA / FXAA / SMAA / DLAA / CMAA），差异在边缘检测和重建 kernel 细节，但共享同一个基本假设「颜色图本身就是信息足够」。真正从这一代胜出的是 [[temporal-antialiasing|TAA]]，因为它引入了一个外源信息通道（历史帧），而这份通道的信息带宽远超纯色图像。
 
 ## 相关
-
 - [[aliasing]]
 - [[msaa-ssaa]]
 - [[subpixel-reconstruction-antialiasing]]
@@ -60,6 +59,7 @@ Ben Supnik 2011 年 4 月写的一篇「AA 菜单」，把当时（延迟渲染�
 - [[fwidth-derivative-antialiasing]]
 - [[deferred-rendering]]
 - [[ben-supnik]]
+- [[ogssaa-fxaa-non-square]] —— 2012-10 Supnik 把 SSAA（Universal 档）与 FXAA（Post 档）在 X-Plane 拼起来：非方形竖向偏置 + FXAA 跑在 SSAA 空间
 
 ## Sources
 

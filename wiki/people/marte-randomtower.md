@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, flash, 独立游戏开发]
 date: 2026-04-19
-sources: 2
+sources: 3
 ---
 
 # Marte（Random Tower）
@@ -15,6 +15,6 @@ sources: 2
 - [[game-engines/flashpunk-framework]]
 
 ## Sources
-
 - [[sources/randomtower-flashpunk-review]]
 - [[sources/randomtower-flashpunk-hello-world]]
+- [[sources/randomtower-flashpunk-shooter-part-2]]
