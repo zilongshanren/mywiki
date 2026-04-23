@@ -869,3 +869,6 @@ lightmap-baking-workflow
 colored-sky-sun-lighting
 pc-gpu-driver-compat-qa
 screen-space-curve-tessellation-cutoff
+opengl-extension-bucket-strategy
+gpu-embarrassingly-parallel-serial-dispatch
+cgal-exact-arithmetic-mantissa-growth

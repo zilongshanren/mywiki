@@ -248,6 +248,7 @@ CAQA + CSAPP 的底层视角。
 | [[custom-allocator-interface]] | Bitsquid Allocator：抽象接口 + subsystem proxy + assert-on-leak |
 | [[c-cpp-embed-binary-blobs]] | C/C++ 把资源文件嵌入可执行文件的三种做法（xxd、预处理器、`.incbin`） |
 | [[function-vs-data-pointer-portability]] | glXGetProcAddressARB 返回函数指针而非 void*：C 标准不保证代码指针与数据指针等宽 |
+| [[cgal-exact-arithmetic-mantissa-growth]] | CGAL 无限精度代数在深层构造下的尾数膨胀陷阱与精度重置 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -797,6 +798,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[colored-sky-sun-lighting]] | 对比色 sun / skylight 的艺术搭配：蓝-黄、橙-青、粉-绿（Proun 三赛道） |
 | [[pc-gpu-driver-compat-qa]] | PC 发行的驱动兼容地狱：NPOT 检测、max-vertex-index、shader-cap 说谎、glTexSubImage2D 坑 |
 | [[screen-space-curve-tessellation-cutoff]] | 把 Bézier 曲线细分阈值反投影到屏幕像素半径，避免像素内堆叠几十条冗余顶点 |
+| [[opengl-extension-bucket-strategy]] | OpenGL 扩展分桶策略与现场调试用的细粒度开关 |
+| [[gpu-embarrassingly-parallel-serial-dispatch]] | GPU 天生并行：为何无需应用层并行命令派发 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1793,6 +1796,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-coloured-light-proun]] | van Dongen：Proun 的对比色 sun/skylight 艺术选择（2010） |
 | [[sources/joostdevblog-pc-dev-horror]] | van Dongen：PC 发行的显卡驱动兼容血泪（2010） |
 | [[sources/nklein-cl-opengl-text-cutoff]] | Stein：CL-OpenGL + ZPB-TTF 文本反走样的屏幕空间 cutoff 计算 |
+| [[sources/supnik-value-of-granularity]] | Supnik：OpenGL 扩展分桶与细粒度开关 |
+| [[sources/supnik-santa-youre-an-idiot]] | Supnik：GPU 已经足够并行，不需要并行命令派发 |
+| [[sources/supnik-cgal-mantissa]] | Supnik：CGAL 尾数膨胀与 float round-trip 精度重置 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

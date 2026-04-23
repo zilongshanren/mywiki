@@ -11771,3 +11771,8 @@ raw/articles/nklein.com/2010-01-29_spelling-iphone-app-sent-to-beta-testers-nkle
 raw/articles/nklein.com/2010-02-04_speedy-iphone-app-programming-nklein-software.md
 raw/articles/nklein.com/2010-02-05_iphone-app-submitted-to-the-app-store-nklein-software.md
 raw/articles/nklein.com/2010-02-10_spelling-toy-iphone-app-released-nklein-software.md
+raw/articles/hacksoflife.blogspot.com/2010-03-10_the-value-of-granularity.md
+raw/articles/hacksoflife.blogspot.com/2010-03-16_santa-to-ben-you-re-an-idiot.md
+raw/articles/hacksoflife.blogspot.com/2010-04-21_constitutional-opposition.md
+raw/articles/hacksoflife.blogspot.com/2010-04-21_thank-you-jeeves-that-will-be-all.md
+raw/articles/hacksoflife.blogspot.com/2010-04-23_cgal-it-s-all-about-the-mantissa.md

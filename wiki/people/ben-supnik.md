@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 游戏引擎]
 date: 2026-04-19
-sources: 10
+sources: 13
 ---
 
 # Ben Supnik
@@ -34,6 +34,9 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[vbo-double-buffering-orphaning]]
 - [[agp-vs-vram-streaming]]
 - [[glbuffersubdata-serialization]]
+- [[opengl-extension-bucket-strategy]]
+- [[gpu-embarrassingly-parallel-serial-dispatch]]
+- [[cgal-exact-arithmetic-mantissa-growth]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -59,3 +62,6 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-double-buffering-vbos]]
 - [[sources/supnik-agp-vs-vram]]
 - [[sources/supnik-glbuffersubdata]]
+- [[sources/supnik-value-of-granularity]]
+- [[sources/supnik-santa-youre-an-idiot]]
+- [[sources/supnik-cgal-mantissa]]

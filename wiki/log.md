@@ -1022,3 +1022,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-80 Worker IG (nklein.com ×5)
 
 处理 5 篇 nklein.com（Patrick Stein，2010-01/02 iPhone dev 时期）。保留 1 篇技术文（CL-OpenGL + ZPB-TTF 矢量字形反走样的屏幕空间 cutoff 自适应细分），跳过 4 篇 iPhone Spelling Toy 里程碑 / 发布公告。新增 1 概念页（screen-space-curve-tessellation-cutoff）、1 人物页（patrick-stein）、1 源摘要。
+
+## [2026-04-19] ingest | Wave-80 Worker batch-w80-if (hacksoflife.blogspot.com ×5)
+
+处理 Ben Supnik 2010-03 ~ 2010-04 共 5 篇。入库 3 篇（OpenGL 扩展分桶策略、GPU 并行性与串行派发、CGAL 尾数膨胀）。跳过 2 篇：constitutional-opposition（Apple SDK 许可证评论）、thank-you-jeeves（C++ 语法小笑话）。新增 3 个概念页、3 个 source 摘要；Supnik 人物页追加相关与 Sources。
