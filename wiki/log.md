@@ -970,3 +970,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-75 Worker HQ (blog.s-schoener.com late-2017 ×5)
 
 处理 Schöner 2017 年末 5 篇：ingest 4 篇（no-magic-principle 信条、TF 1.3 入门、TF 多 GPU、DL uncertainty 思辨），skip 1 篇（hi-there blog intro）。新增概念页 4：[[no-magic-principle]]（software-design）、[[tensorflow-1-graph-model]]、[[multi-gpu-training-replication-patterns]]、[[deep-learning-uncertainty]]（全部 computer-systems），TF 两页明确标注 TF 1.x API 已过时、保留的是思想层映射到 DDP/XLA/MLIR 的桥。新增 source 摘要 4 张，对 [[sebastian-schoener]] 更新 sources 7→11、补 ML 主题段与 4 条相关链接。
+
+## [2026-04-19] ingest | Wave-76 Worker HT (c0de517e.blogspot.com 2010-03 ×5)
+
+处理 Angelo Pesce 2010-03 的 5 个文件：1 篇独立 ingest（skin）、1 篇 skipped_offtopic（68000 访问量里程碑 + Amiga 调侃）、1 篇 skipped_offtopic（homework 工作方法论短文，非技术）、2 篇 skipped_duplicate（-2.md archive 副本）。新增 1 份 source 摘要（c0de517e-skin），触及 [[angelo-pesce]] 与 [[sss-practical-implementation]]。

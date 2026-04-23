@@ -1713,6 +1713,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/schoener-tensorflow-intro]] | Schöner：TF 1.3 Jupyter 入门（MNIST CNN + Dataset API） |
 | [[sources/schoener-tensorflow-multi-gpu]] | Schöner：TF1 单机多卡 in-graph replication + 跨机 distributed |
 | [[sources/schoener-dl-uncertainty]] | Schöner：深度学习里「uncertainty」的五义拆解与 MC dropout 质疑 |
+| [[sources/c0de517e-skin]] | Pesce 2010：皮肤渲染 benchmark + Jim Hejl 关于 FN4 屏幕空间 SSS 的评论 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

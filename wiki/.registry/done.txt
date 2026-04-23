@@ -11706,3 +11706,8 @@ raw/articles/blog.s-schoener.com/2017-12-12_tensorflow-an-introduction-sebastian
 raw/articles/blog.s-schoener.com/2017-12-15_hi-there-sebastian-schoner.md
 raw/articles/blog.s-schoener.com/2017-12-15_tensorflow-multi-gpu-computation-sebastian-schoner.md
 raw/articles/blog.s-schoener.com/2017-12-20_a-few-thoughts-on-uncertainty-in-deep-learning-sebastian-sch.md
+raw/articles/c0de517e.blogspot.com/2010-03-06_homework-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-07_skin-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-07_skin.md
+raw/articles/c0de517e.blogspot.com/2010-03-09_68000-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-09_68000.md

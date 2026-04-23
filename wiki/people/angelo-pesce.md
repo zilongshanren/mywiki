@@ -28,3 +28,4 @@ sources: 2
 - [[sources/c0de517e-cached-shadowmaps]]
 - [[sources/c0de517e-tiled-hardware-speculations]]
 - [[sources/c0de517e-pitfalls-of-experience]]
+- [[sources/c0de517e-skin]]
