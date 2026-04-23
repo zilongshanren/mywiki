@@ -77,6 +77,6 @@ Boris The Brave 用 Conway 的 [Game of Life](https://en.wikipedia.org/wiki/Conw
 - [[latency-vs-throughput]]
 
 ## Sources
-
 - [[sources/boristhebrave-gol-cuda-triton]]
 - [[sources/boristhebrave-gol-multistep]]
+- [[sources/4rknova-glsl-game-of-life]] — 同题材的 naive GLSL/ShaderToy 实现，作为优化阶梯的起点对照

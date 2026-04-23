@@ -97,5 +97,5 @@ Xor 在文末反复强调：**每段 ShaderToy 代码都有作者**。默认是 
 - [[xor-shader-artist]]
 
 ## Sources
-
 - [[sources/xor-mini-shadertoy]]
+- [[sources/4rknova-glsl-game-of-life]]

@@ -242,6 +242,7 @@ CAQA + CSAPP 的底层视角。
 | [[multi-gpu-training-replication-patterns]] | 多 GPU 训练的 tower + average-gradients 模板，对应今天的 DDP / all-reduce |
 | [[deep-learning-uncertainty]] | DL「uncertainty」的分类学：calibration、parameter vs predictive、risk、MC dropout 质疑 |
 | [[custom-allocator-interface]] | Bitsquid Allocator：抽象接口 + subsystem proxy + assert-on-leak |
+| [[c-cpp-embed-binary-blobs]] | C/C++ 把资源文件嵌入可执行文件的三种做法（xxd、预处理器、`.incbin`） |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -941,6 +942,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[stephen-gutekanst]] | Emi / emidoots，Mach 引擎与 Hexops 作者 |
 | [[blueswordm]] | Chips and Cheese 编解码方向撰稿人 |
 | [[people/marte-randomtower]] | Marte，Random Tower 博客作者，Flash/AS3 独立游戏开发者 |
+| [[nikos-papadopoulos]] | Nikos Papadopoulos（Arkanova），希腊 demoscene / Linux 图形程序员，4rknova.com 站长 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -1744,6 +1746,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-custom-memory-allocation]] | Frykholm：Allocator 抽象接口、subsystem proxy、bootstrap 与 assert-on-leak |
 | [[sources/bitsquid-static-hash-values]] | Frykholm：字符串 hash 编译期化的三条路线比较 |
 | [[sources/bitsquid-dependency-checker]] | Frykholm：500 行依赖图工具，missing/dangling/replace/move/copy |
+| [[sources/4rknova-cpp-embed-files]] | 4rknova：C/C++ 嵌入二进制资源的三种做法 |
+| [[sources/4rknova-glsl-game-of-life]] | 4rknova：Conway 生命游戏的 GLSL/ShaderToy 实现 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

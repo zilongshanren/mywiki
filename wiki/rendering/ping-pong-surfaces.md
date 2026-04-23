@@ -38,5 +38,5 @@ var _surf2 = surface_swap ? B : A;  // 这一帧读取
 - [[xor-shader-artist]]
 
 ## Sources
-
 - [[sources/xor-mini-recursive-shaders]]
+- [[sources/4rknova-glsl-game-of-life]]

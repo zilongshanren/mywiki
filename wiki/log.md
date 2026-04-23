@@ -994,3 +994,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-77 Worker HV (bitsquid.blogspot.com ×5)
 
 处理 5 篇 Niklas Frykholm 2010 Q3-Q4 博客。新增 4 概念页（flow-graph-data-oriented-runtime、custom-allocator-interface、static-hash-value-debug-assert、dependency-checker-tool）与 4 source 摘要，对 niklas-frykholm、offset-based-resource-blobs、data-driven-architecture、linear-allocator、malloc-wrapper-debug、non-cryptographic-hash 六个已有页追加补丁。跳过 1 篇（bitbucket-for-bitsquid，纯博客基础设施公告、原文被 SEO 垃圾评论淹没）。
+
+## [2026-04-19] ingest | Wave-78 Worker IA (4rknova.com ×5)
+
+处理 4rknova.com（Nikos Papadopoulos / Arkanova）2012-2013 早期博客 5 篇。2 篇保留：C/C++ 资源嵌入三段论（xxd / `#include`+STRINGIFY / asm `.incbin`）、GLSL Conway 生命游戏（与 [[gpu-gol-optimization-ladder]] 形成 naive vs optimized 对照）。新增 1 概念页（c-cpp-embed-binary-blobs）、1 人物页（nikos-papadopoulos）、2 source 摘要。跳过 3 篇：GNU make -j alias（过薄）、Debian primus NVIDIA Optimus 配置（偏 distro 运维）、demos 页目录（无正文）。
