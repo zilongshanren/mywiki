@@ -24,6 +24,7 @@ sources: 2
 - [[experience-as-noise-filter]]
 - [[scene-graph-unnecessary-in-engine]]
 - [[pesce-2010-engine-layer-sketch]]
+- [[live-editing-taxonomy-2010]]
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -31,3 +32,6 @@ sources: 2
 - [[sources/c0de517e-pitfalls-of-experience]]
 - [[sources/c0de517e-skin]]
 - [[sources/c0de517e-collaborative-engine-design]]
+- [[sources/c0de517e-homework-2-dependencies]]
+- [[sources/c0de517e-pix-is-great-but]]
+- [[sources/c0de517e-live-editing-poll-results]]

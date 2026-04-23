@@ -35,6 +35,7 @@ Todd 还把同一个思路推到了代码 API 层面。他做 iPhone 游戏时�
 - [[component-entity-data-binding]]
 - [[people/evan-todd]]
 - [[decoupled-tool-engine-json-rpc]] — Bitsquid 把「工具」和「引擎」拆成网络里两个进程的具体做法
+- [[live-editing-taxonomy-2010]] —— Pesce 2010 poll 把「改 → 看」延迟的不同解法分成 8 档
 
 ## Sources
 - [[sources/etodd-tools-are-everything]]

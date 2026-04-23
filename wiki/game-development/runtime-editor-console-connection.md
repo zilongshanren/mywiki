@@ -67,6 +67,7 @@ Wronski 的复盘同样有价值，它明确列出了"若当时有时间就做"�
 - [[game-engine]]
 - [[bartosz-wronski]]
 - [[decoupled-tool-engine-json-rpc]] — Bitsquid 2010 年已经在走同样的「JSON over socket」思路
+- [[live-editing-taxonomy-2010]] —— Pesce 把这套做法定位在「tool + RPC live-update」与 reflection/RPC 之间
 
 ## Sources
 

@@ -42,10 +42,10 @@ sources: 1
 事件总线常被当作「解耦」，但实际上常常**隐藏**依赖而非消除。事件发送方和订阅方在语义上依然相互依赖（顺序、载荷结构、副作用假设），只是代码级搜索找不到连接了。这是把显式依赖换成了隐式依赖——游戏开发中 [[classitis]] 的主要形式之一。
 
 ## 相关
-
 - 姊妹根源：[[obscurity]]
 - 后果：[[change-amplification]]、[[cognitive-load]]、[[unknown-unknowns]]
 - 对策：[[information-hiding]]、[[deep-modules]]
+- 工具清单与实操：[[sources/c0de517e-homework-2-dependencies]] —— Pesce 2010 年给读者的 DSM 作业
 
 ## Sources
 

@@ -56,13 +56,13 @@ GDC 2026 上 Microsoft 的 "DirectX: Bringing Console-Level Developer Tools to W
 Sawicki 多次抱怨 Microsoft 没有 Vulkan 那样正式的 **API layer 注入机制**——PIX、RenderDoc、GfxReconstruct、GPU Reshape 各造一套 hook，都和 DX12 runtime 打架。Nvidia Streamline 是个尝试，但被视为厂商方案，别家不买账。Slang 着色语言倒有希望推动这件事。
 
 ## 相关
-
 - [[adam-sawicki]]
 - [[dxr-tier-2-clas-ptlas]]
 - [[advanced-shader-delivery]]
 - [[d3d12-work-graphs]]
 - [[hlsl-cooperative-vectors-tensor-cores]]
 - [[d3d12-resource-binding]]
+- [[sources/c0de517e-pix-is-great-but]] —— Pesce 2010 年的老观察：PIX 精确但切工具成本高，屏幕涂色 + shader live-reload 的迭代速度往往更快
 
 ## Sources
 

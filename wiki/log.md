@@ -1126,3 +1126,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-88 Worker JE (joostdevblog 2011-01 to 2011-02 x5)
 
 处理 5 篇 joostdevblog（2011-01-13 至 2011-02-10），全部 ingested。新增 4 概念页：rts-balance-taxonomy（Joost 七种 RTS 平衡面孔）、destroy-recreate-vs-reset（Maarten 的销毁重建替代隐藏重置）、solo-programmer-discipline（独行程序员十条瓷砖格言）、perspective-meta-shapes（Proun 的视角相关 meta-shape 构图）。新增 5 source 摘要；role-of-game-designer 未建独立概念页（与既有 tools-first-iteration-loop 重叠），以 source 摘要形式保留并挂到 tools-first 的 Sources。更新 joost-van-dongen 人物页（sources 11→16）。
+
+## [2026-04-19] ingest | Wave-89 Worker jh (c0de517e Pesce 2010-03/04 ×5)
+
+Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editing poll（公告 + 结果）。新增 1 概念页 [[live-editing-taxonomy-2010]]、3 source 摘要。跳过 2 篇：homework-2-2 是 http/https 归档重复（skipped_duplicate）、live-editing-poll 是公告无实质内容，实质在结果篇。Patch 了 dependencies / tools-first-iteration-loop / runtime-editor-console-connection / pix-api-and-dxdmp / debug-visualization / angelo-pesce 六页。

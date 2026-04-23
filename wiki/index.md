@@ -943,6 +943,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[behaviour-tree-game-ai]] | 行为树游戏 AI，Ronimo 三代迭代到去优先级的 if-else 树 |
 | [[rts-balance-taxonomy]] | RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气） |
 | [[solo-programmer-discipline]] | 独行程序员的十条生存纪律（Swords & Soldiers Wii 版经验） |
+| [[live-editing-taxonomy-2010]] | Pesce 2010 poll：live-editing 方案八档阶梯（None 到 code hot-swap） |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1952,6 +1953,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-resetting-vs-re-creating]] | Joost：销毁重建 vs 隐藏重置的 C++ 对象生命周期纪律 |
 | [[sources/joostdevblog-lonely-programmer-tips]] | Joost：独行程序员的 10 条瓷砖格言 |
 | [[sources/joostdevblog-meta-shapes-perspective]] | Joost：透视下的 meta-shape 构图与 Proun 相机设计 |
+| [[sources/c0de517e-homework-2-dependencies]] | Pesce 2010：用 DSM 工具审视依赖的动手作业 |
+| [[sources/c0de517e-pix-is-great-but]] | Pesce 2010：PIX 精确但迭代慢，屏幕涂色 + shader live-reload 往往更快 |
+| [[sources/c0de517e-live-editing-poll-results]] | Pesce 2010：live-editing poll 75 人结果与八档分类吐槽 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

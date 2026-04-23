@@ -65,12 +65,12 @@ else { ... }                            // 右上
 调试可视化本身是一个小规模的深模块：调用者只需 `showColorLUT = true`，底层处理状态检查、参数绑定、draw 调用、shader pass 选择——实现细节被隐藏。
 
 ## 相关
-
 - [[color-lut]]
 - [[custom-srp]]
 - [[scriptable-render-pipeline]]
 - [[gpu-printf-debugging]] —— shader 端打印到 UAV append buffer
 - [[bartosz-wronski]]
+- [[sources/c0de517e-pix-is-great-but]] —— 把中间数据画到画面角落 + 让 main shader 输出 ground truth 的 2010 年工作流
 
 ## Sources
 

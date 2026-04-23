@@ -11901,3 +11901,8 @@ raw/articles/joostdevblog.blogspot.com/2011-01-22_the-role-of-the-game-designer.
 raw/articles/joostdevblog.blogspot.com/2011-01-30_resetting-versus-re-creating.md
 raw/articles/joostdevblog.blogspot.com/2011-02-10_10-tips-for-the-lonely-programmer.md
 raw/articles/joostdevblog.blogspot.com/2011-02-10_meta-shapes-emerging-from-perspective.md
+raw/articles/c0de517e.blogspot.com/2010-03-18_homework-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-18_homework-2-2.md
+raw/articles/c0de517e.blogspot.com/2010-03-19_pix-is-great-but.md
+raw/articles/c0de517e.blogspot.com/2010-04-09_live-editing-poll.md
+raw/articles/c0de517e.blogspot.com/2010-05-10_poll-results.md
