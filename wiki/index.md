@@ -78,6 +78,11 @@ sources: 371
 | [[minimal-markup-pipeline]] | Bitsquid 100 行 Ruby：line-list parser + tag-stack generator |
 | [[parameter-nodes-intrusive-linked-list]] | 池化数组 + intrusive 链表：变长小集合的 DOD 容器 |
 | [[pragmatic-performance-philosophy]] | Frykholm 的务实性能观七条 + 数量级驱动设计 |
+| [[crash-on-unexpected-errors]] | Bitsquid：unexpected error 立刻崩，API 对调用方负全责 |
+| [[error-context-stack]] | thread-local 作用域变量栈：深层 assert 的现场信息 |
+| [[minimize-points-and-types-of-failure]] | expected error 的 API 设计：少失败点 + 函数级 enum + struct 返回 |
+| [[warnings-as-errors-strategy]] | warning 治理：升格为 error + deprecation 四档降级 + tool-first 显示 |
+| [[now-principle-productivity]] | Bitsquid 五条日常纪律：5 分钟规则、修病根、心流、VCS、build server |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -1851,6 +1856,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-openal-three-platforms]] | Supnik：OpenAL 在 OS X / Linux / Windows 的统一装载策略 |
 | [[sources/supnik-finding-mom-and-dad]] | Supnik：C++ 侵入式结构里孩子找父亲的类型系统限制 |
 | [[sources/supnik-c-seventies-technology]] | Supnik：C 位运算符优先级的 B/BCPL 历史根源 |
+| [[sources/bitsquid-5-tips-programmer-productivity]] | Niklas：五条程序员日常纪律 |
+| [[sources/bitsquid-sensible-error-handling-part-1]] | Niklas：unexpected error 立即 crash 的哲学 |
+| [[sources/bitsquid-sensible-error-handling-part-2]] | Niklas：expected error 的 API 收敛与错误码回归 |
+| [[sources/bitsquid-sensible-error-handling-part-3]] | Niklas：warning 分类与升格为 error 的战术 |
+| [[sources/bitsquid-documentation-system-code]] | Niklas：Bitsquid 文档系统代码公开，line-by-line + HTML context 栈 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

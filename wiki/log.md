@@ -1062,3 +1062,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-83 Worker IO (hacksoflife.blogspot.com Supnik 2010-10/11 × 5)
 
 处理 5 篇 Ben Supnik 短文，4 篇 ingest、1 篇 skip（mediawiki-modsecurity 纯 WAF 误伤的 sysadmin 记录）。新增 3 概念页（gpu-sliced-volumetric-shadows-limits, cross-platform-openal-runtime-loader, c-bitwise-operator-precedence-history）、4 source 摘要。主题：GPU sliced shadow 算法对 flight-sim 云（偏不透明粒子 + 空间分桶 + 切片方向翻转）的失败模式；OpenAL 三平台装载策略统一成封装层 + dlopen/LoadLibrary fallback + Windows 自带 LGPL 副本；C++ 侵入式结构中 child 找 parent 的类型系统限制（byte offset 不可作为模板参数）；C 位运算符优先级低于比较的 B/BCPL 历史根源——Ritchie 选择不破坏旧代码语义。Patch 到 ben-supnik / shared-library-soname-versioning / cloudscape-sdf-volumetric / parameter-nodes-intrusive-linked-list。
+
+## [2026-04-19] ingest | Wave-83 Worker IN (bitsquid 2012 early x5)
+
+处理 5 篇 2012 年初 Bitsquid Blog：5 Tips + Sensible Error Handling 三部曲 + 文档系统代码公开。新增 5 个 software-design 概念页：crash-on-unexpected-errors、error-context-stack、minimize-points-and-types-of-failure、warnings-as-errors-strategy、now-principle-productivity。新增 5 个 source 摘要。文档系统一文不单建概念页，而是补丁到已有 minimal-markup-pipeline。niklas-frykholm 人物页已存在，追加相关概念与 5 条 source 链接。

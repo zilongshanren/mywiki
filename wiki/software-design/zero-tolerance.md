@@ -31,10 +31,10 @@ sources: 1
 - 当 code review 暴露了一处异味时，把异味当成要交付的东西，而不是可选项。
 
 ## 相关
-
 - [[strategic-programming]]——零容忍是它的操作化形式
 - [[tactical-programming]]——零容忍要防范的对象
 - [[complexity]]——被控制的目标
+- [[warnings-as-errors-strategy]] — Bitsquid 对 warning 的治理：升格为 error 是主战术
 
 ## Sources
 

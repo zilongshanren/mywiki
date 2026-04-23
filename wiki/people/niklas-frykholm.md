@@ -32,6 +32,11 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[dependency-checker-tool]] — 资源依赖图治理工具
 - [[tiny-expression-language]] — 给美术用的 stack-VM 表达式求值器
 - [[memory-corruption-bug-hunting]] — 只在 release/PS3 崩的那种 bug 的系统化狩猎方法
+- [[crash-on-unexpected-errors]] — Bitsquid 对 unexpected error 的 crash-fast 哲学
+- [[error-context-stack]] — thread-local 作用域变量栈给深层 assert 补上现场
+- [[minimize-points-and-types-of-failure]] — expected error API 设计的两条原则
+- [[warnings-as-errors-strategy]] — warning 分类、升格与 deprecation 四档降级路径
+- [[now-principle-productivity]] — Bitsquid 五条日常纪律（5-min 规则、修病根、心流、VCS、build server）
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
@@ -71,3 +76,8 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[sources/bitsquid-pragmatic-performance]]
 - [[sources/bitsquid-platform-specific-resources]]
 - [[sources/bitsquid-link-exe-lnk4099-patch]]
+- [[sources/bitsquid-5-tips-programmer-productivity]]
+- [[sources/bitsquid-sensible-error-handling-part-1]]
+- [[sources/bitsquid-sensible-error-handling-part-2]]
+- [[sources/bitsquid-sensible-error-handling-part-3]]
+- [[sources/bitsquid-documentation-system-code]]

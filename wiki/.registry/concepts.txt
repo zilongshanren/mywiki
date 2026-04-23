@@ -895,3 +895,8 @@ premultiplied-alpha-bilinear-ring
 gpu-sliced-volumetric-shadows-limits
 cross-platform-openal-runtime-loader
 c-bitwise-operator-precedence-history
+crash-on-unexpected-errors
+error-context-stack
+minimize-points-and-types-of-failure
+warnings-as-errors-strategy
+now-principle-productivity

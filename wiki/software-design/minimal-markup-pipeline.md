@@ -51,5 +51,5 @@ end
 - [[tiny-expression-language]]
 
 ## Sources
-
 - [[sources/bitsquid-roll-your-own-docs]]
+- [[sources/bitsquid-documentation-system-code]] — 2012 年的代码公开版本，补充 @api Lua 模式、bsdoc 文件扩展、HTML context stack 的具体写法
