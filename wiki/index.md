@@ -993,6 +993,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[live-editing-taxonomy-2010]] | Pesce 2010 poll：live-editing 方案八档阶梯（None 到 code hot-swap） |
 | [[easy-to-learn-hard-to-master]] | Proun：两键极简核心如何叠出深度 |
 | [[long-gestation-side-project]] | Proun 的六年断续开发与 codebase 反哺链 |
+| [[indie-gameplay-telemetry]] | 独立游戏游玩埋点：模式分布、解锁触达、UGC 冷启动、首关退出率 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2061,6 +2062,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-renderer-walkthrough-8-default-pipes]] | Walkthrough #8：stingray + mini 两套默认 render_config 走完一帧 |
 | [[sources/supnik-confessions-lisp-hater]] | Supnik 2012 对 C++03 没闭包的诚实一刻（C++11 lambda 回来救场） |
 | [[sources/supnik-beyond-glmapbuffer]] | X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 的 6ms 开销 |
+| [[sources/joostdevblog-proun-patch-v108]] | Joost：Proun v108 补丁的显卡驱动说谎三连与 6 年 cross-product 退化 bug |
+| [[sources/joostdevblog-proun-gameplay-stats]] | Joost：一百万场 Proun highscore 的游玩分布与设计教训 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

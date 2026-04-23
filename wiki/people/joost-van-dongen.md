@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie, ronimo, galaxy-grove]
 date: 2026-04-19
-sources: 16
+sources: 18
 ---
 
 # Joost van Dongen
@@ -32,6 +32,7 @@ sources: 16
 - [[easy-to-learn-hard-to-master]] —— Proun 极简双键 gameplay 与叠加挑战层的设计原则
 - [[long-gestation-side-project]] —— Proun 六年业余开发史与 CableRacer codebase 在 De Blob / Snowball Earth / Swords & Soldiers 的复用链
 - [[solid-motion-sweep]] —— 2006 年 MAXScript：沿动画时间轴把 mesh 扫成静态 4D→3D 雕塑，Futurism 驱动
+- [[indie-gameplay-telemetry]] —— Proun 一百万场 highscore 的游玩分布复盘（模式使用、解锁奖励触达率、UGC 冷启动红利）
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -59,3 +60,5 @@ sources: 16
 - [[sources/joostdevblog-proun-history]]
 - [[sources/joostdevblog-games-as-expression]]
 - [[sources/joostdevblog-solid-motion]]
+- [[sources/joostdevblog-proun-patch-v108]]
+- [[sources/joostdevblog-proun-gameplay-stats]]

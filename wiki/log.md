@@ -1210,3 +1210,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-95 Worker JX (bitsquid Walkthrough 7-8 + hacksoflife 2012 ×3)
 
 处理 5 篇：Stingray Renderer Walkthrough #7 (data-driven) + #8 (default + mini renderer)；Ben Supnik 2012 Lisp Hater + Beyond glMapBuffer；跳过 Xcode Lion GCC 2012 dev-env 小笔记。新增 2 概念页（stingray-default-frame-flow、opengl-pinned-memory-vbo-streaming）+ 4 source 摘要。未新增人物页（Tobias Persson / Ben Supnik 已存在）。
+
+## [2026-04-19] ingest | Wave-96 Worker KC (joostdevblog.blogspot.com ×5, 2011-08~10)
+
+处理 Joost van Dongen 2011 年秋的 5 篇文章：2 篇 INGEST，3 篇 SKIP。新增概念页 indie-gameplay-telemetry（独立游戏游玩埋点分析方法论，Proun 一百万场数据样本），新增 2 篇 source 摘要（patch v108 显卡驱动说谎复盘、一百万场 highscore 游玩分布）。Joost 人物页追加新概念交叉引用与 2 条 source。pc-gpu-driver-compat-qa 概念页追加 patch v108 作为第二个一手样本。SKIP：user-tracks 画廊、PWYW 销售商业分析、Stedelijk 博物馆展览合影。

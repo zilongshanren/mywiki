@@ -1,7 +1,7 @@
 ---
 tags: [pc-porting, gpu-drivers, qa, compatibility, testing]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # PC 发行的显卡驱动兼容地狱
@@ -30,5 +30,5 @@ sources: 1
 - [[joost-van-dongen]]
 
 ## Sources
-
 - [[sources/joostdevblog-pc-dev-horror]]
+- [[sources/joostdevblog-proun-patch-v108]] —— Proun v108 补丁：ATI X1xxx SM3.0 说谎触发 DOF 崩溃；Intel GMA 3xxx 上 `IDirect3D9` 与 `IDirect3DDevice9` 对 vertex shader 能力答案互斥；另带一个 6 年埋下的 `cross(dir,[0,1,0])` 退化 bug，被 Cubed 用户赛道当模糊测试触发
