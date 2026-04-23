@@ -67,7 +67,7 @@ Small benchmark 和 end-to-end 常常不一致：
 - [[psraytracing]]
 
 ## Sources
-
 - [[sources/16bpp-greedy-vs-analytical]]
 - [[sources/16bpp-free-functions-hypothesis]]
 - [[sources/16bpp-quicker-trig-asin-cg]]
+- [[sources/chipsandcheese-zen2-cinebench-analysis]] — Zen 2 vs Skylake 的性能计数器实测方法

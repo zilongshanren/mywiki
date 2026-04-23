@@ -806,3 +806,8 @@ jpeg-codec-pipeline
 cpu-gpu-platform-security-features
 electromigration-voltage-degradation
 flashpunk-framework
+zen2-microarchitecture
+branch-predictor-design
+cpu-scheduler-design
+jpeg-xl-format
+gpu-memory-hierarchy-latency

@@ -930,3 +930,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-72 Worker HI (randomtower.blogspot.com ×5)
 
 处理 5 篇 randomtower.blogspot.com 2010 年文章。摄入 2 篇 FlashPunk 技术文章，新增 1 概念页（flashpunk-framework）、1 人物页（marte-randomtower）、2 source 摘要。跳过 3 篇非技术内容（VVVVVV 短评、游戏截图展示、MW2 观感）。
+
+## [2026-04-19] ingest | Wave-72 Worker HH (chipsandcheese.com ×5，2021)
+
+处理 5 篇 chipsandcheese.com 2021 年文章。新增 5 概念页（zen2-microarchitecture、branch-predictor-design、cpu-scheduler-design、jpeg-xl-format、gpu-memory-hierarchy-latency）、3 source 摘要页。跳过 2 篇（6700 XT 发布披露批评 + Rocket Lake 评测方法论批评，无微架构深度内容）。更新 chester-lam 人物页，追加引用 2 篇。

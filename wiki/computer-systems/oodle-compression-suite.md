@@ -58,3 +58,4 @@ Oodle Texture 团队定下的目标是：在典型设置下，RDO 输出的误�
 - [[sources/ryg-mrsse]] — BC6H 编码的 HDR 误差度量
 - [[sources/ryg-bc7-optimal-solid-color-blocks]] — BC7 纯色块的最优编码
 - [[sources/ryg-oodle-2-9-14-intel-13th-14th-gen]] — Oodle 2.9.14 的 Intel 13/14 代 work-around
+- [[sources/chipsandcheese-image-compression-part2]] — 现代图像编解码器对比（JPEG-XL/AVIF/WebP）

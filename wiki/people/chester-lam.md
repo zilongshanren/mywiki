@@ -18,6 +18,8 @@ sources: 5
 - [[split-lock-x86]]
 - [[llm-generated-c-compiler-perf]]
 - [[mcm-gpu-design]]
+- [[zen2-microarchitecture]] — Zen 2 分支预测器与调度器的性能优势分析
+- [[gpu-memory-hierarchy-latency]] — GPU 多级缓存延迟实测
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -26,3 +28,5 @@ sources: 5
 - [[sources/chipsandcheese-ccc-april-fools]]
 - [[sources/chipsandcheese-split-locks]]
 - [[sources/chipsandcheese-nvidia-mcm-gpu]]
+- [[sources/chipsandcheese-zen2-cinebench-analysis]]
+- [[sources/chipsandcheese-gpu-memory-latency]]

@@ -225,6 +225,10 @@ CAQA + CSAPP 的底层视角。
 | [[mcm-gpu-design]] | MCM GPU：跨 die 互连代价、L1.5 缓存、CTA 调度与 first-touch 页映射 |
 | [[cpu-gpu-platform-security-features]] | AMD/Intel/Nvidia 平台安全栈对比：SEV/SME/MxGPU vs TXT/CSME vs Falcon |
 | [[electromigration-voltage-degradation]] | Black's Equation 与静态 OC vs 动态 Boost 的电压退化风险 |
+| [[zen2-microarchitecture]] | AMD Zen 2 分支预测器、非调度 FP 队列与 L2 缓存的设计分析 |
+| [[branch-predictor-design]] | CPU 分支预测器设计：预测惩罚、精度与前端带宽的权衡 |
+| [[cpu-scheduler-design]] | CPU 后端调度器：统一 vs 分布式调度队列、非调度溢出缓冲 |
+| [[gpu-memory-hierarchy-latency]] | GPU 多级缓存延迟实测：RDNA 2 vs Ampere vs 历代 Nvidia |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -744,6 +748,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[gpu-unbiased-path-tracing]] | 2010 年 GPU 非偏置渲染器大爆发：Octane / Arion / V-Ray RT / iray 的平行史 |
 | [[otoy-cloud-rendering]] | OTOY 在 AMD RV770 上的早期云渲染/云游戏架构 |
 | [[jpeg-codec-pipeline]] | JPEG 编码三段论：YCbCr+chroma 降采样、8×8 DCT 量化、Huffman 熵编码 |
+| [[jpeg-xl-format]] | JPEG-XL 编解码格式：可变 DCT、渐进解码与 AVIF/WebP 对比 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1660,6 +1665,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-ctr-safety-revisited]] | Chips and Cheese：CTR 安全追踪与电迁移物理复盘 |
 | [[sources/randomtower-flashpunk-review]] | Marte：FlashPunk 框架架构分析 |
 | [[sources/randomtower-flashpunk-hello-world]] | Marte：FlashPunk Hello World Shooter 实践教程 |
+| [[sources/chipsandcheese-zen2-cinebench-analysis]] | Chester Lam：Zen 2 在 CBR15 的微架构优势分析 |
+| [[sources/chipsandcheese-image-compression-part2]] | BlueSwordM：JPEG-XL/AVIF/WebP 图像压缩对比（2021 Part 2）|
+| [[sources/chipsandcheese-gpu-memory-latency]] | Chester Lam：GPU 多级缓存延迟实测（OpenCL pointer chasing）|
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
