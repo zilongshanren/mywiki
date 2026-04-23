@@ -25,3 +25,4 @@ sources: 5
 - [[sources/tedsie-crowd-simulation]]
 - [[sources/tedsie-dots-tween-system]]
 - [[sources/tedsie-a-star-tutorial]]
+- [[sources/tedsie-a-star-applied]]

@@ -1843,6 +1843,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-when-good-floating-point-goes-bad]] | Supnik：X-Plane 里点积谓词与线线求交的浮点失效模式 |
 | [[sources/supnik-premultiplication-pros-cons]] | Supnik：预乘 alpha 修 tree ring，但 BCn 压缩精度让 X-Plane 转走 alpha test |
 | [[sources/supnik-alpha-blending-lets-try-again]] | Supnik：预乘约定下 back-to-front / front-to-back blend state 的对称重推 |
+| [[sources/tedsie-a-star-applied]] | Ted Sie 2016-07 A* 应用篇（四文合并）：FindPath 伪代码实作 + 斜向优化 + Line-of-sight 平滑 + Obstacle raycast 判定 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

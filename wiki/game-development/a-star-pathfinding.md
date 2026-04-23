@@ -57,3 +57,4 @@ A\* 只是搜索策略，真正麻烦的是"在什么图上搜"。NavMesh（体�
 - [[sources/gameknife-pathfinding-review]]
 - [[sources/tedsie-a-star-tutorial]] — Ted Sie 2016-07 Unity + C# grid-based A* 四步实作教学
 - [[sources/bitsquid-a-is-overrated]] — Niklas Frykholm 2010：A* is Overrated，反对 cargo-cult 套 A*
+- [[sources/tedsie-a-star-applied]] — Ted Sie 2016-07 A* 应用篇：FindPath 实作、8 邻域、LOS 平滑、Obstacle raycast

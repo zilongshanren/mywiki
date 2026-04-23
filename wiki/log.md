@@ -1054,3 +1054,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-82 Worker IL (hacksoflife.blogspot.com Supnik 2010-09/10 × 5)
 
 处理 5 篇 Ben Supnik 短文。新增 3 概念页（shared-library-soname-versioning, floating-point-geometric-predicates, premultiplied-alpha-bilinear-ring）、5 source 摘要。主题：debugger 打印 STL 触发线程释放看到 race condition；OpenAL Linux SONAME major 升级 + 删除旧 .so 的 ABI 管理错位；X-Plane 里点积几何谓词的浮点脆弱性；预乘 alpha 修复 bilinear tree-ring 但 BCn 压缩精度让 X-Plane 最终选 alpha test；预乘约定下 back-to-front/front-to-back 的对称 blend state 配方。Patch 到 alpha-blending / alpha-blending-front-to-back / alpha-compositing / srgb-premultiplied-alpha-compression / ben-supnik。
+
+## [2026-04-19] ingest | Wave-83 Worker IP (tedsieblog.wordpress.com A* 续作 ×5)
+
+处理 Ted Sie 2016-07-10 A* 五篇续作。4 篇技术文（implement / eight-ways / line-of-sight / obstacle-detection）合并为单一 source 摘要 tedsie-a-star-applied，achievement 篇（纯 Unity wiring 展示）作为 runner 段并入同一摘要。无新概念页，复用既有 [[a-star-pathfinding]]。在 ted-sie 人物页与 a-star-pathfinding 概念页 Sources 段加链。

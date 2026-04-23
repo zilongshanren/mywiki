@@ -11811,3 +11811,8 @@ raw/articles/hacksoflife.blogspot.com/2010-09-03_openal-on-linux-part-27.md
 raw/articles/hacksoflife.blogspot.com/2010-09-27_when-good-floating-point-goes-bad.md
 raw/articles/hacksoflife.blogspot.com/2010-10-06_premultiplication-pros-and-cons.md
 raw/articles/hacksoflife.blogspot.com/2010-10-07_alpha-blending-lets-try-again.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-achievement-yan-suan-fa-shi-zuo-cheng-guo.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-eight-ways-xie-xiang-fang-xiang-you-hua.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-implement-xu-ni-cheng-shi-ma-shi-li-hua.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-line-of-sight-ke-shi-dian-you-hua.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-obstacle-detection-zhang-ai-wu-pan-ding.md
