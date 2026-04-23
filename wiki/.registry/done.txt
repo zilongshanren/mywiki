@@ -11916,3 +11916,8 @@ raw/articles/bitsquid.blogspot.com/2014-06-18_what-is-in-a-name.md
 raw/articles/bitsquid.blogspot.com/2014-08-27_building-a-data-oriented-entity-system-part-1.md
 raw/articles/bitsquid.blogspot.com/2014-09-08_building-a-data-oriented-entity-system-part-2-components.md
 raw/articles/bitsquid.blogspot.com/2014-10-03_building-a-data-oriented-entity-system-part-3-the-transform.md
+raw/articles/joostdevblog.blogspot.com/2011-02-20_pause.md
+raw/articles/joostdevblog.blogspot.com/2011-04-18_why-i-made-a-graphics-only-trailer-of-proun.md
+raw/articles/joostdevblog.blogspot.com/2011-05-30_awesomenauts-announced.md
+raw/articles/joostdevblog.blogspot.com/2011-06-07_awesomenauts-trailer-released.md
+raw/articles/joostdevblog.blogspot.com/2011-06-13_proun-will-be-pay-what-you-want-here-s-why.md
