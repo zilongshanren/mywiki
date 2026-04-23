@@ -942,3 +942,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-73 Worker HJ (joostdevblog.blogspot.com ×5)
 
 处理 5 篇 Joost van Dongen 2010 年 Proun 早期博客。ingest 2（景深 + 伪 HDR）、skip 3（开场白/关卡 UX leashing/抽象艺术史随笔）。新增 2 概念页（variable-size-gather-dof, fake-hdr-half-brightness）、2 source 摘要；joost-van-dongen 人物页已存在，仅追加 source 链接。
+
+## [2026-04-19] ingest | Wave-73 Worker HK (hacksoflife.blogspot.com ×5, 2010-01)
+
+处理 Ben Supnik 2010 年 1 月 5 篇文章，全部 topical。新增 4 概念页（incremental-rearchitecting、header-as-user-manual、api-fast-path-design、number-puzzle-tile-shader）、5 source 摘要。ben-supnik 人物页和 gpu-printf-debugging 概念页为 registry 已有页——发 patch。主题覆盖：大重写的组织动力学 + 增量重构、头文件即用户手册、API 快/慢路径显式拆分（X-Plane dataref 模式）、shader 级瓦片随机化、GLSL printf 调试。

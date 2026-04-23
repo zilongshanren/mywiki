@@ -814,3 +814,7 @@ gpu-memory-hierarchy-latency
 efficient-sparse-voxel-octrees
 variable-size-gather-dof
 fake-hdr-half-brightness
+incremental-rearchitecting
+header-as-user-manual
+api-fast-path-design
+number-puzzle-tile-shader

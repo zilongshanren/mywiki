@@ -68,6 +68,9 @@ sources: 371
 
 | [[ai-code-agent-workflow]] | Hooper 的精确 prompt 路线：AI 当键盘替代而非大脑替代 |
 | [[experience-as-noise-filter]] | Pesce：经验是噪声过滤器，既筛掉平庸也筛掉天才级的「不可能想法」 |
+| [[incremental-rearchitecting]] | Supnik：增量重构替代大重写，以及大重写失败的组织动力学 |
+| [[header-as-user-manual]] | Supnik：头文件即用户手册，物理隔离 > 逻辑封装 |
+| [[api-fast-path-design]] | Supnik：快/慢路径在 API 上显式拆分（X-Plane dataref 模式）|
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -752,6 +755,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[efficient-sparse-voxel-octrees]] | Laine 2010 年 SVO 论文：contour + 紧凑编码 + CUDA 开源 |
 | [[variable-size-gather-dof]] | ATI Scheuermann 风格的按 CoC 变采样半径 gather DoF |
 | [[fake-hdr-half-brightness]] | 8-bit 渲染目标下以半亮度渲染 + 后期乘 2 伪装 HDR bloom |
+| [[number-puzzle-tile-shader]] | Supnik：shader 级瓦片随机化去除纹理重复感 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1675,6 +1679,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/raytracey-fermi-optix-benchmark]] | Lapere：Fermi / OptiX Design Garage 相对 GTX 285 提升 870% |
 | [[sources/joostdevblog-dof-blur-proun]] | van Dongen：Proun 的变采样半径景深（2010） |
 | [[sources/joostdevblog-overbright-fake-hdr]] | van Dongen：用半亮度渲染在 8-bit 后端伪装 HDR（2010） |
+| [[sources/supnik-when-to-rewrite]] | Supnik：何时重写——大重写的失败剧本与增量重构 |
+| [[sources/supnik-coding-for-two-audiences]] | Supnik：代码写给编译器和人类两类读者 |
+| [[sources/supnik-fast-paths]] | Supnik：API 设计的快/慢路径显式分层 |
+| [[sources/supnik-tile-too-far]] | Supnik：number puzzle 瓦片随机化 shader 与 fixed function 壁垒 |
+| [[sources/supnik-debugging-glsl]] | Supnik：GLSL printf = 写 gl_FragColor + shader 热重载 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

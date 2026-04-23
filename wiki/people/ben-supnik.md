@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 游戏引擎]
 date: 2026-04-19
-sources: 5
+sources: 10
 ---
 
 # Ben Supnik
@@ -13,17 +13,24 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 他在工程观上是坚定的「解决更小的问题」派：反对虚假泛化、反对未经验证的 future-proofing，主张用领域特殊性换性能和清晰度。参见 [[cheat-by-solving-less]] 与 [[future-proofing-tests]]。
 
 ## 相关
-
 - [[stackless-vs-stackful-coroutines]]
 - [[coroutine-awaitable-pattern]]
 - [[future-proofing-tests]]
 - [[cheat-by-solving-less]]
 - [[srgb-premultiplied-alpha-compression]]
+- [[incremental-rearchitecting]]
+- [[header-as-user-manual]]
+- [[api-fast-path-design]]
+- [[number-puzzle-tile-shader]]
 
 ## Sources
-
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
 - [[sources/supnik-coroutine-as-awaitable]]
 - [[sources/supnik-future-proof]]
 - [[sources/supnik-beat-the-experts]]
 - [[sources/supnik-srgb-premultiplied-alpha]]
+- [[sources/supnik-when-to-rewrite]]
+- [[sources/supnik-coding-for-two-audiences]]
+- [[sources/supnik-fast-paths]]
+- [[sources/supnik-tile-too-far]]
+- [[sources/supnik-debugging-glsl]]

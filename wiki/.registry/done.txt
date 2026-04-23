@@ -11671,3 +11671,8 @@ raw/articles/joostdevblog.blogspot.com/2010-09-05_failed-fixed-leashing-in-proun
 raw/articles/joostdevblog.blogspot.com/2010-09-12_depth-of-field-blur-in-proun.md
 raw/articles/joostdevblog.blogspot.com/2010-09-18_overbright-colours-blur-and-faking-it.md
 raw/articles/joostdevblog.blogspot.com/2010-09-25_abstract-art.md
+raw/articles/hacksoflife.blogspot.com/2010-01-02_when-to-rewrite.md
+raw/articles/hacksoflife.blogspot.com/2010-01-05_coding-for-two-audiences.md
+raw/articles/hacksoflife.blogspot.com/2010-01-14_fast-paths.md
+raw/articles/hacksoflife.blogspot.com/2010-01-27_a-tile-too-far.md
+raw/articles/hacksoflife.blogspot.com/2010-01-27_debugging-glsl.md

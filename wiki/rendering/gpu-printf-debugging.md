@@ -51,11 +51,11 @@ SurfaceDebugManager.RegisterDebug(context, "SSAOBlurH", tempBlurBuffer);
 UAV printf 是个典型的「小接口、大功能」的 [[deep-modules|深模块]]：调用者只需写一个 if + Append，下层处理 buffer 管理、回读、UI 集成。它把「我要看这个值」这个心智极轻的需求和它实际涉及的 GPU/CPU 数据流隔离开来。
 
 ## 相关
-
 - [[debug-visualization]]
 - [[bartosz-wronski]]
 - [[register-spilling-avoidance]] — shader 性能悬崖的另一常见来源
 - [[polynomial-root-finding-gpu]] — 典型的「溢出杀死性能」案例
+- [[sources/supnik-debugging-glsl]] — 2010 年 Ben Supnik 的前 UAV 时代 GLSL printf（写 `gl_FragColor` + shader 热重载）
 
 ## Sources
 
