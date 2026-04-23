@@ -18,6 +18,7 @@ sources: 1
 - [[huge-world-coordinate-precision]]
 - [[planet-terrain-dem-pipeline]]
 - [[cgal-arrangement-import-antennas]] —— CGAL arrangement 导入脏多边形时的拓扑策略与 antenna 陷阱
+- [[cgal-arrangement-to-polygon-set-conversion]] —— 2013 年又一次 CGAL 抽象 vs 实现契约不匹配的案例
 
 ## Sources
 

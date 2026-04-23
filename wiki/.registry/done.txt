@@ -12031,3 +12031,8 @@ raw/articles/joostdevblog.blogspot.com/2011-10-29_the-bouncy-stick-problem.md
 raw/articles/joostdevblog.blogspot.com/2011-11-06_how-a-lack-of-art-influences-prototyping-results.md
 raw/articles/joostdevblog.blogspot.com/2011-11-19_making-an-hd-2d-game-look-good-on-an-sd-television.md
 raw/articles/joostdevblog.blogspot.com/2011-11-27_monster-truck-vs-zombies-a-cancelled-ronimo-project.md
+raw/articles/hacksoflife.blogspot.com/2012-12-13_static-libraries-and-plugins-global-pain.md
+raw/articles/hacksoflife.blogspot.com/2013-01-30_instancing-for-bricksmith.md
+raw/articles/hacksoflife.blogspot.com/2013-03-14_how-to-jam-an-arrangement-2-into-a-general-polygon-set-2.md
+raw/articles/hacksoflife.blogspot.com/2013-03-16_lego-lighting-effects.md
+raw/articles/hacksoflife.blogspot.com/2013-04-20_there-must-be-50-ways-to-draw-your-streaming-quads.md

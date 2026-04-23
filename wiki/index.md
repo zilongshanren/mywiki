@@ -299,6 +299,8 @@ CAQA + CSAPP 的底层视角。
 | [[simd-memory-bandwidth-bound]] | Supnik：SIMD 优化被内存带宽吃掉的判别与对策 |
 | [[arrangement-mesh-simplification]] | Arrangement 网格简化：squatter 搜索从 zone 计算 → Delaunay → constrained triangulation |
 | [[luajit-2gb-address-constraint]] | LuaJIT 2.0 的低 2 GB 地址约束：signed 32-bit 偏移 × OS X 零页 × 插件 late-load × 预占 VM + dlmalloc hack |
+| [[unix-symbol-visibility-leakage]] | Unix 扁平符号命名空间 + 静态库泄漏 + GCC 默认可见性 |
+| [[cgal-arrangement-to-polygon-set-conversion]] | Sub-class GPS 强塞 arrangement：无 antenna + CCB curve 方向一致 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -917,6 +919,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[iterative-sample-point-relaxation]] | 带 importance 权重的半球采样点 stochastic Lloyd 松弛 |
 | [[cpu-gpu-pipelining-input-lag]] | Joost 2011：GPU 永远落后 1 帧的真相与 Max Prerendered Frames 输入滞后 |
 | [[hd-to-sd-supersample-downscale]] | 2D HD 美术在 SD CRT 上的 1.5× 超采样下采样 |
+| [[bricksmith-instancing-pipeline]] | BrickSmith 新渲染管线：attribute→HW instancing 三桶分流 |
+| [[lego-realistic-lighting-brain-dump]] | Lego 真实感光照 wish list：BRDF lookup / 法线 / LEAN / 折角 specular / AO+envmap |
+| [[streaming-quads-drawing-strategies]] | 2D 动态 quad：uniform vs CPU transform vs HW instancing 菜谱 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2089,6 +2094,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-prototyping-no-art]] | Joost：无美术原型系统性误导结论（Awesomenauts 跳跃 2011） |
 | [[sources/joostdevblog-hd-2d-on-sd]] | Joost：HD 2D 在 SD CRT 上的 1.5× 超采样下采样（Swords & Soldiers / Awesomenauts 2011） |
 | [[sources/joostdevblog-monster-truck-cancelled]] | Joost：Ronimo 取消项目 Monster Truck VS Zombies 的 pitch 与概念美术纪律（2011） |
+| [[sources/supnik-static-libs-plugins]] | Supnik：Unix 静态库 + plugin 全局符号泄漏 |
+| [[sources/supnik-instancing-bricksmith]] | Supnik：BrickSmith 新渲染管线 attribute→HW instancing |
+| [[sources/supnik-arrangement-to-polygon-set]] | Supnik：CGAL arrangement 强塞 GPS 的两条契约 |
+| [[sources/supnik-lego-lighting]] | Supnik：Lego 真实感光照五条线索 |
+| [[sources/supnik-streaming-quads]] | Supnik：2D 动态 quad 的五十种画法 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

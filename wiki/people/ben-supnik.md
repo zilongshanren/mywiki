@@ -79,6 +79,11 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[opengl-pinned-memory-vbo-streaming]] —— 2012 X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 开销
 - [[xplane-deferred-pipeline-hacks]] —— 2012-11 四连篇：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear 双 blend 共存 / 复杂度来自硬边角叠加）
 - [[luajit-2gb-address-constraint]] —— 2012-12 LuaJIT 64-bit 低 2 GB 地址约束与 X-Plane 预占 VM + dlmalloc hack 的集成方案
+- [[unix-symbol-visibility-leakage]] —— 2012-12 Unix 扁平符号命名空间 + 静态库泄漏 + `-fvisibility=hidden` 全套机制
+- [[bricksmith-instancing-pipeline]] —— 2013-01 BrickSmith 新渲染管线：attribute→HW instancing 三桶分流
+- [[cgal-arrangement-to-polygon-set-conversion]] —— 2013-03 sub-class GPS 导入 arrangement：无 antenna + CCB curve 方向一致
+- [[lego-realistic-lighting-brain-dump]] —— 2013-03 BrickSmith 真实感光照 wish list：BRDF / 法线 / LEAN / 折角 specular / AO
+- [[streaming-quads-drawing-strategies]] —— 2013-04 2D 动态 quad 的 uniform vs CPU transform vs HW instancing 菜谱
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -161,3 +166,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-beyond-glmapbuffer]]
 - [[sources/supnik-deferred-weirdness-series]]
 - [[sources/supnik-luajit-x-plane-64bit]]
+- [[sources/supnik-static-libs-plugins]]
+- [[sources/supnik-instancing-bricksmith]]
+- [[sources/supnik-arrangement-to-polygon-set]]
+- [[sources/supnik-lego-lighting]]
+- [[sources/supnik-streaming-quads]]

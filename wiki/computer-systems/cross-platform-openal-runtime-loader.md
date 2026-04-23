@@ -50,12 +50,12 @@ Windows 上进一步复杂：**OpenAL runtime（谁提供 dll）** 和 **rendere
 更一般的模式：**当平台的"怎么找到某个 API runtime"策略不一致时，把 API 调用全部绕过 link-time 直接走封装层的函数指针**——把差异收在"装载阶段"，上层业务逻辑零改动。同一套思路在 [[opengl-extension-bucket-strategy|OpenGL 扩展加载]]、[[lua-c-api-dylib-proxy|Lua C API dylib 代理]] 上都能看到。代价是放弃 link-time 符号检查，得自己维护函数签名与真实 runtime 匹配。
 
 ## 相关
-
 - [[ben-supnik]]
 - [[shared-library-soname-versioning]] —— 同一作者同一时期对这次 `.so.0 → .so.1` 升级的 ABI 观点
 - [[opengl-extension-bucket-strategy]]
 - [[function-vs-data-pointer-portability]]
 - [[lua-c-api-dylib-proxy]]
+- [[unix-symbol-visibility-leakage]] —— 把 dlopen + dlsym 那条「唯一能绕过扁平命名空间」的定律放回扁平命名空间的底层语义里解释
 
 ## Sources
 

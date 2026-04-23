@@ -43,6 +43,7 @@ X-Plane 的应对是运行时 `dlopen` 试开 `libopenal.so.0` 或 `libopenal.so
 - [[function-vs-data-pointer-portability]] —— dlsym/GetProcAddress 返回的函数指针在 POSIX 里的跨类型转换问题
 - [[linux-graphics-stack-dri]]
 - [[cross-platform-openal-runtime-loader]] —— 同一作者后续写到三平台装 OpenAL 的统一策略，Linux 侧正是 dlopen 双 SONAME fallback
+- [[unix-symbol-visibility-leakage]] —— 同作者 2012-12 姊妹篇，把 SONAME 问题下沉到符号级的扁平命名空间 + 静态库泄漏
 
 ## Sources
 - [[sources/supnik-openal-linux-part-27]]

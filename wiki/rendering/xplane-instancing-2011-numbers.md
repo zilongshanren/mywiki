@@ -32,12 +32,12 @@ sources: 1
 2011-05-24 的 [[sources/supnik-instancing-limits|Instancing Limits]] 给同一组数字加了边界。上限：在 ATI Mac 上 instanced batch 数往上压到 **≈100k** 就卡住。下限：单个 batch 里 instance 数少于 **2–3** 时，immediate mode 多次 draw 反而更快。另有 OS X 10.6.x 的陷阱——instance 数据走 client array（系统内存）不走 VBO 会掉到非加速路径，性能直接塌。更深一层的待调甜点是 clump 粒度：大 clump 省 driver 调用但 cull 不彻底，小 clump cull 干净但 driver 调用多。
 
 ## 相关
-
 - [[draw-call]]
 - [[sprite-batch-instance-draw]]
 - [[opengl-draw-call-batching-sweet-spot]] —— Outerra 2016 更系统的后续测试
 - [[gpu-instanced-grass-urp]]
 - [[ben-supnik]]
+- [[bricksmith-instancing-pipeline]] —— 2013 年 Supnik 把 X-Plane 的 instancing 经验翻译到 BrickSmith：同一套 attribute→HW instancing 阶梯
 
 ## Sources
 - [[sources/supnik-instancing-numbers]]

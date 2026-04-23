@@ -1230,3 +1230,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-97 Worker batch-w97-kf (joostdevblog.blogspot.com ×5)
 
 处理 Joost 2011-10~11 五篇全部 INGEST：GPU 1 帧落后 / Bouncy Stick / 无美术原型 / HD→SD 超采样 / Monster Truck 取消。新建 5 概念页（cpu-gpu-pipelining-input-lag, gamepad-stick-bounce-filter, prototyping-method-bias, hd-to-sd-supersample-downscale, pitch-video-concept-art）、5 source 摘要；Joost 人物页 sources 27→32、追加 5 条概念交叉引用；向 frame-pipeline-latency / frames-in-flight / msaa-ssaa / indie-pitching-publishers 四页各追加 1 条相关链接。
+
+## [2026-04-19] ingest | Wave-97 Worker E (hacksoflife/Supnik ×5, 2012-12 到 2013-04)
+
+处理 5 篇 hacksoflife.blogspot.com 文章，全部入库。新增 5 概念页（unix-symbol-visibility-leakage、bricksmith-instancing-pipeline、cgal-arrangement-to-polygon-set-conversion、lego-realistic-lighting-brain-dump、streaming-quads-drawing-strategies）、5 source 摘要。Ben Supnik 人物页仅 patch。

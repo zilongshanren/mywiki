@@ -24,5 +24,5 @@ CGAL 的 half-edge 数据结构**缓存**了每条 half-edge 的方向（directi
 这类 bug 是典型的**隐藏状态 vs 客户契约不匹配**：CGAL 的抽象承诺「拿 half-edge 操作曲线」，但性能优化要求缓存派生状态；用户只能通过阅读源码或撞 bug 才知道这层契约。Supnik 在 [[cgal-arrangement-import-antennas]] 与 [[cgal-exact-arithmetic-mantissa-growth]] 里一再回到同一主题：**CGAL 的正确性强大但边角案例极多，工程上只能通过大量 in-tree 断言和 adapter 来把它驯化成可生产使用的工具**。
 
 ## Sources
-
 - [[sources/supnik-merge-edge-fixed]]
+- [[sources/supnik-arrangement-to-polygon-set]]
