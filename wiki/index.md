@@ -284,6 +284,9 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[mach-engine]] | Mach：Zig 写的模块化游戏引擎，核心是标准库式组件 |
 | [[scene-graph-unnecessary-in-engine]] | Pesce：3D 引擎不该把场景图当核心，应按 renderable 类型特化 |
 | [[game-engines/flashpunk-framework]] | FlashPunk：ActionScript 3 轻量 2D 游戏框架，Entity/World/Grid 架构分析 |
+| [[bitsquid-task-scheduler]] | Bitsquid 2010 年的任务调度器：开放表、单依赖 + 子任务、global queue |
+| [[offset-based-resource-blobs]] | 用 offset 而非 pointer patch 做二进制资源 blob |
+| [[decoupled-tool-engine-json-rpc]] | 工具与引擎解耦：用 JSON 消息走网络协议 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -759,6 +762,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[variable-size-gather-dof]] | ATI Scheuermann 风格的按 CoC 变采样半径 gather DoF |
 | [[fake-hdr-half-brightness]] | 8-bit 渲染目标下以半亮度渲染 + 后期乘 2 伪装 HDR bloom |
 | [[number-puzzle-tile-shader]] | Supnik：shader 级瓦片随机化去除纹理重复感 |
+| [[sdf-font-atlas-rendering]] | 基于 AngelCode BMFont + distance field 的字体渲染 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -825,6 +829,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[additive-animation-layering]] | 叠加式动画层：1 帧 idle + 长周期 wiggle 的变化手法 |
 | [[java-webstart-jar-signing]] | Java Applet/Web Start 分发时的 JAR 签名与 Maven 自动化流程（Gemserk 2010） |
 | [[autotile-tileset-layouts]] | 2D autotile 切片布局：Marching Squares / Blob / Sub-blob / Micro-blob 的取舍 |
+| [[vcs-vs-database-for-content]] | 游戏内容存 VCS 还是数据库 |
+| [[unreal-pawn-playercontroller-pattern]] | Unreal 里 GameMode / Pawn / PlayerController 三件套分离，从 UDK 到 UE5 一脉相承 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1693,6 +1699,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boristhebrave-tileset-roundup]] | Boris：2D autotile 切片布局综述（Marching Squares/Blob/Sub-blob/Micro-blob） |
 | [[sources/boristhebrave-as3-gems]] | Boris：AS3 语言设计中值得借鉴的几个「钻石」 |
 | [[sources/boristhebrave-axaxaxas]] | Boris：Python Earley parser 库发布说明 |
+| [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
+| [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
+| [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
+| [[sources/bitsquid-distance-field-angelcode-fonts]] | Frykholm：用 AngelCode BMFont 生成 SDF 字体 |
+| [[sources/bitsquid-our-tool-architecture]] | Frykholm：Bitsquid 的工具架构 —— JSON 消息 + 子窗口嵌入 |
+| [[sources/allar-udk-beginning-your-game]] | Allar 2010 UDK 入门：搭空白 GameInfo 与 Pawn/PlayerController 子类 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

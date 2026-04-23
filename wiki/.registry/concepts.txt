@@ -823,3 +823,9 @@ autotile-tileset-layouts
 optional-static-typing
 method-binding-semantics
 earley-parser
+vcs-vs-database-for-content
+offset-based-resource-blobs
+bitsquid-task-scheduler
+sdf-font-atlas-rendering
+decoupled-tool-engine-json-rpc
+unreal-pawn-playercontroller-pattern

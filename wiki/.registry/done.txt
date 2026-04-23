@@ -11691,3 +11691,13 @@ raw/articles/boristhebrave.com/2010-05-04_x-gems-of-as3-language-design.md
 raw/articles/boristhebrave.com/2013-07-14_tileset-roundup.md
 raw/articles/boristhebrave.com/2014-05-07_celtic-knots.md
 raw/articles/boristhebrave.com/2015-09-13_axaxaxas.md
+raw/articles/bitsquid.blogspot.com/2010-01-19_content-repositories-and-databases.md
+raw/articles/bitsquid.blogspot.com/2010-02-12_the-blob-and-i.md
+raw/articles/bitsquid.blogspot.com/2010-03-25_task-management-a-practical-example.md
+raw/articles/bitsquid.blogspot.com/2010-04-09_distance-field-based-rendering-of-angelcode-fonts.md
+raw/articles/bitsquid.blogspot.com/2010-04-23_our-tool-architecture.md
+raw/articles/allarsblog.com/2010-01-15_beginning-your-game-part-1.md
+raw/articles/allarsblog.com/2010-01-15_beginning-your-game-part-2.md
+raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-1-modeling.md
+raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-5-dummy-rigging.md
+raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-geometry-rigging.md

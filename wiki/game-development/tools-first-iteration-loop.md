@@ -29,12 +29,12 @@ Todd 还把同一个思路推到了代码 API 层面。他做 iPhone 游戏时�
 - 任何能去掉一次「重启游戏」的小改动都值得优先做——比如把脚本 / 关卡 / 音频 / shader 改成可以在运行时重新加载。
 
 ## 相关
-
 - [[binary-hot-reload]]
 - [[csharp-runtime-script-compilation]]
 - [[runtime-editor-console-connection]]
 - [[component-entity-data-binding]]
 - [[people/evan-todd]]
+- [[decoupled-tool-engine-json-rpc]] — Bitsquid 把「工具」和「引擎」拆成网络里两个进程的具体做法
 
 ## Sources
 

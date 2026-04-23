@@ -61,12 +61,12 @@ Wronski 的复盘同样有价值，它明确列出了"若当时有时间就做"�
 - **工具做在正确的地方**：美术和设计师的迭代速度 = 最终游戏质量。"几天写成的网络协议"换来几个月的美术效率，这是最划算的投资之一。
 
 ## 相关
-
 - [[binary-hot-reload]] — 对代码侧热重载的另一种解法
 - [[frame-profiler-overlay]] — 同一类"把调试信息接到编辑器上"的工具
 - [[engine-evolution]]
 - [[game-engine]]
 - [[bartosz-wronski]]
+- [[decoupled-tool-engine-json-rpc]] — Bitsquid 2010 年已经在走同样的「JSON over socket」思路
 
 ## Sources
 

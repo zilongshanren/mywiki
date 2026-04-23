@@ -958,3 +958,11 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-74 Worker HO (boristhebrave.com ×5)
 
 处理 5 篇 Boris The Brave 早期文章。Ingest 3 篇：tileset roundup（autotile 布局综述）、AS3 gems（语言设计）、Axaxaxas（Earley parser 库）。Skip 2 篇：Box2DFlash 2.1a 发布公告、Celtic Knots Blender 插件发布短文，均为无实质内容的 release note。新增概念页 4 张：[[autotile-tileset-layouts]]、[[optional-static-typing]]、[[method-binding-semantics]]、[[earley-parser]]；新增 source 摘要 3 张；对 [[boris-the-brave]] 补 sources: 6 与 4 条相关概念链接。
+
+## [2026-04-19] ingest | Wave-75 Worker HP (bitsquid.blogspot.com ×5 early 2010)
+
+处理 Bitsquid 2010 年 1-4 月 5 篇早期博客。新增 5 概念页（vcs-vs-database-for-content, offset-based-resource-blobs, bitsquid-task-scheduler, sdf-font-atlas-rendering, decoupled-tool-engine-json-rpc）、5 source 摘要。Niklas Frykholm 人物页追加 sources。
+
+## [2026-04-19] ingest | Wave-75 Worker HR (allarsblog.com ×5)
+
+处理 Michael Allar 2010 年 UDK 时代 5 篇。ingest 1 合并 source（Beginning Your Game Part 1+2：GameInfo / Pawn / PlayerController 搭空白工程）、skip 3（M16 建模 / 几何绑定 / dummy 绑定三篇——视频入口页或 3DS Max+ActorX 纯工作流，无泛化价值）。新增 1 概念页（unreal-pawn-playercontroller-pattern）、1 source 摘要；michael-allar 人物页已存在，patch 追加相关链接与 source。

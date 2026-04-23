@@ -15,15 +15,15 @@ UE4 资深工程师（洛杉矶），自称"UE4 工程救火员"——被叫去�
 - 反复强调："高级工程师"的主要价值是在项目早期识别风险并给管理层说清楚，而不是写更快的代码。
 
 ## 相关
-
 - [[ue4-common-perf-pitfalls]] — UE4 项目反复出现的性能与工程陷阱清单
 - [[umg-user-widget-lifecycle]] — `NativePreConstruct` 与蓝图 `PreConstruct` 触发顺序
 - [[ue4-editor-battery-throttle]] — 编辑器电池模式 60 FPS 硬限制
+- [[unreal-pawn-playercontroller-pattern]] — UE 架构中 Pawn/PlayerController 分离模式（2010 UDK 时代写的入门教程里已经在讲）
 
 ## Sources
-
 - [[sources/allar-ue4-firefighter]]
 - [[sources/allar-marketplace-unknown-usernames]]
 - [[sources/allar-ue4-editor-battery-60fps]]
 - [[sources/allar-umg-native-preconstruct-order]]
 - [[sources/allar-ue4-notification-offset]]
+- [[sources/allar-udk-beginning-your-game]]
