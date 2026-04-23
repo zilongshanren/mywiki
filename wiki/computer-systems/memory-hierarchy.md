@@ -52,6 +52,7 @@ sources: 2
 - [[cache-coherence-cross-cluster]] —— 跨核复合体一致性的两级延迟档位
 - [[chipset-pcie-latency]] —— 主板 chipset 给 PCIe 加的几百 ns 延迟
 - [[split-lock-x86]] —— 跨 cache line atomic 如何破坏整个 memory hierarchy
+- [[memory-latency-human-metaphor]] —— L1/L2/DRAM/Disk 翻译成人类时间尺度
 
 ## Sources
 

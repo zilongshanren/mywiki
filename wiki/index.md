@@ -289,6 +289,8 @@ CAQA + CSAPP 的底层视角。
 | [[page-granular-system-allocator]] | Bitsquid 的内存纪律：全局只发整页、子系统在页内自治 |
 | [[spatial-hash-grid-linked-list]] | 空间查询默认方案：grid coord → HashMap → 扁平数组内嵌链表 |
 | [[gdb-scheduler-locking]] | gdb 多线程调试：锁定调度器避免断点间隙抢线程 |
+| [[memory-latency-human-metaphor]] | 1 cycle = 1 秒：L1 在桌上、磁盘在加州——延迟翻译成人类时间尺度 |
+| [[alloc-order-matches-draw-order]] | Supnik 的 cache 优化惨败：分配顺序 ≈ 遍历顺序的老启发赢过精心规划 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -869,6 +871,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[triangle-plane-sort-translucency]] | Supnik：单面三角形平面划分导出的视角无关半透明预排序 |
 | [[order-independent-transparency]] | AMD per-pixel linked-list OIT 的原理、代价与替代方案 |
 | [[cascaded-shadow-maps]] | NVIDIA 默认推荐的阴影技术，X-Plane 10 基线 |
+| [[aa-techniques-survey-2011]] | Supnik 2011 把当时 AA 方案按决定权分五档（Universal/HW FSAA/2D/Post/Deferred） |
+| [[xplane-instancing-2011-numbers]] | X-Plane 2011 GPU instancing 吞吐基线：87K mesh / 60 fps / 32 instance per call（ATI 4870） |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1969,6 +1973,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-engine-plugin-system]] | Bitsquid：引擎 plugin 的两套 API 和 interface querying 设计 |
 | [[sources/bitsquid-what-is-in-a-name]] | Bitsquid：资源引用 path/GUID/name 的三难，以及为什么 Bitsquid 选 path |
 | [[sources/bitsquid-data-oriented-entity-system]] | Bitsquid 2014 ECS Part 1-3 合并：EntityManager + ComponentManager + TransformComponent |
+| [[sources/supnik-instancing-numbers]] | Supnik 2011：X-Plane GPU instancing 吞吐的一个现场数据点 |
+| [[sources/supnik-aa-techniques-survey]] | Supnik 2011：抗锯齿方案五档分类综述 |
+| [[sources/supnik-going-to-california]] | Supnik 2011：把 L1/L2/DRAM/Disk 翻译成人类时间尺度，推到 X-Plane 场景包合并 |
+| [[sources/supnik-damn-you-l2-cache]] | Supnik 2011：精心改写的 cache 友好 allocator 输给老启发的惨败小记 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

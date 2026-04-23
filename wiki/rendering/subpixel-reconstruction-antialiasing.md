@@ -41,7 +41,6 @@ MLAA 家族只看 color buffer 做边缘检测——对高频彩色纹理、反�
 SRAA 本身没被大量产品化——它要求一份超分辨率 depth/normal buffer，在 2011 年的显存预算下仍偏贵，而一年后 TAA 的雏形（时间抖动 + 复用历史帧）上场后，工业界逐渐转向 [[temporal-antialiasing|TAA]]：TAA 用帧间重投影免去了子像素 buffer，代价是历史帧管理和 ghosting。但 SRAA 留下了一个关键思路——**几何 buffer 比 color buffer 更可靠的边缘信号**，这在今天 [[depth-aware-upsampling|depth-aware upsampling]]、法线引导的 denoising、DLSS 早期版本里都能看到影子。
 
 ## 相关
-
 - [[deferred-rendering]] —— SRAA 就是为延迟着色量身设计
 - [[analytical-antialiasing]] —— AAA 对"已知形状"有 SDF；SRAA 对所有几何都能跑
 - [[temporal-antialiasing]] —— 后来真正取代 SRAA 的路线
@@ -49,6 +48,7 @@ SRAA 本身没被大量产品化——它要求一份超分辨率 depth/normal b
 - [[aliasing]]
 - [[depth-aware-upsampling]] —— 同类的"用几何引导彩色重建"思想
 - [[matthaeus-chajdas]]
+- [[aa-techniques-survey-2011]] —— Supnik 2011 综述里把 SRAA 归入 deferred-only 档
 
 ## Sources
 

@@ -51,6 +51,7 @@ sources: 2
 - [[opengl-draw-call-batching-sweet-spot]] —— Outerra 实测：per-instance 5k-20k 三角形是跨厂吞吐甜点
 - [[triangle-strips-vs-indexed-triangles]] — 为减小 VRAM 中的 index buffer 而增加 CPU 调用是反向优化
 - [[ngui-legacy-ui-system]] —— NGUI 下 UIPanel + UIAtlas 的合批机制：相同 Material 实例才能合批，Shader 相同 Material 不同仍会拆批
+- [[xplane-instancing-2011-numbers]] —— 2011 基线：87K mesh / 60 fps / 32 instance per call
 
 ## Sources
 - [[sources/rtr-day02]]
@@ -60,3 +61,4 @@ sources: 2
 - [[sources/outerra-opengl-perf-grass]]
 - [[sources/outerra-opengl-perf-blocks]]
 - [[sources/tedsie-draw-call-basics]]
+- [[sources/supnik-instancing-numbers]]

@@ -1142,3 +1142,7 @@ Pesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editi
 ## [2026-04-19] ingest | Wave-90 Worker JK (joostdevblog.blogspot.com 2011-02~06 ×5)
 
 处理 5 篇 Joost van Dongen 博客（2011-02 到 2011-06）。全部为营销/业务模式随笔（blog pause、Proun graphics-only trailer 设计、Awesomenauts 公告与首支 trailer、Proun Pay-What-You-Want 定价理由），按 topicality gate 全部跳过（skipped_offtopic ×5）。未新增概念 / 人物 / 源摘要页。
+
+## [2026-04-19] ingest | Wave-90 Worker JJ (hacksoflife / Supnik 2011-03~05 x5)
+
+处理 5 篇 Supnik 2011 博文。新增 4 概念页（aa-techniques-survey-2011, memory-latency-human-metaphor, alloc-order-matches-draw-order, xplane-instancing-2011-numbers）、4 source 摘要。跳过 1 篇（i-love-surprises：三行 JMM 引用+政治段子，非技术实质内容）。

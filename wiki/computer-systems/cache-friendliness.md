@@ -40,6 +40,8 @@ sources: 2
 - [[texture-swizzle-nested-tiling]] —— GPU 纹理通过嵌套分块把空间相邻映射到地址相邻
 - [[animation-stream-cache-layout]] — Bitsquid 动画流的 hot/cold 分离 + active 数组
 - [[parameter-nodes-intrusive-linked-list]] — 池化数组 + intrusive 链表的 cache 友好变长结构
+- [[memory-latency-human-metaphor]] —— 让 cache miss 的代价变直觉
+- [[alloc-order-matches-draw-order]] —— Supnik 实测：精心规划的 cache 友好布局不一定赢
 
 ## Sources
 

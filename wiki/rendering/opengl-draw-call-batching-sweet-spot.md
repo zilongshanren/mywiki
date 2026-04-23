@@ -55,6 +55,7 @@ blocks 测试的额外观察：
 - [[gpu-latency-hiding]]
 - [[draw-procedural-gpu]]
 - [[triangle-strips-vs-indexed-triangles]] — Supnik 用 CPU draw-call 成本证明 indexed triangles 比 strips 更优
+- [[xplane-instancing-2011-numbers]] —— Supnik 2011 给的前向数据锚点：同代硬件 instancing 的吞吐基线
 
 ## Sources
 

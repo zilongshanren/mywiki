@@ -949,3 +949,7 @@ gdb-scheduler-locking
 bitsquid-data-oriented-entity-system
 engine-plugin-c-abi-versioned-api
 resource-reference-path-vs-guid-vs-name
+aa-techniques-survey-2011
+memory-latency-human-metaphor
+alloc-order-matches-draw-order
+xplane-instancing-2011-numbers

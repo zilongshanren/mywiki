@@ -33,10 +33,11 @@ sources: 1
 - **Spatial Data Structure**：Octree/BVH 让查询按空间接近性组织。
 
 ## 相关
-
 - [[memory-hierarchy]]
 - [[aos-vs-soa]]
 - [[cache-friendliness]]
+- [[memory-latency-human-metaphor]] —— 把层次延迟翻译成人类时间尺度的教学比喻
+- [[alloc-order-matches-draw-order]] —— X-Plane 的隐式对齐：构建顺序→分配顺序→遍历顺序
 
 ## Sources
 

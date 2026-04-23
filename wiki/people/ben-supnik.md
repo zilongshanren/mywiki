@@ -59,6 +59,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[order-independent-transparency]] —— 2011 对 AMD per-pixel linked-list OIT 的评估与退让
 - [[cascaded-shadow-maps]] —— 2011 X-Plane 10 阴影基线的自嘲式注脚
 - [[gdb-scheduler-locking]] —— 2011 多线程断点里 debug-mode vector::operator[] 踩坑的 gdb 武器
+- [[aa-techniques-survey-2011]] —— 2011 年抗锯齿方案五档分类（Universal / HW FSAA / 2D / Post / Deferred）
+- [[xplane-instancing-2011-numbers]] —— 2011 X-Plane GPU instancing 吞吐基线数据
+- [[memory-latency-human-metaphor]] —— L1=桌上、磁盘=加州的日常时间尺度翻译
+- [[alloc-order-matches-draw-order]] —— 精心改写的 cache 友好 allocator 反而输给老启发的一次惨败
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -118,3 +122,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-order-correct-translucency]]
 - [[sources/supnik-csm-for-dummies]]
 - [[sources/supnik-dont-go-anywhere]]
+- [[sources/supnik-instancing-numbers]]
+- [[sources/supnik-aa-techniques-survey]]
+- [[sources/supnik-going-to-california]]
+- [[sources/supnik-damn-you-l2-cache]]

@@ -37,12 +37,12 @@ sources: 1
 | Alpha Test 密集（草、树叶） | Alpha-to-Coverage + MSAA |
 
 ## 相关
-
 - [[aliasing]]
 - [[rasterization]]
 - [[tbdr-vs-imr]]
 - [[temporal-antialiasing]] —— 现代 AAA 的事实标准 AA，MSAA 在延迟渲染下被它取代
 - [[analytical-antialiasing]] —— 对已知 SDF 形状的「反向做法」：shader 内按距离淡出一像素
+- [[aa-techniques-survey-2011]] —— Supnik 2011 把 SSAA/MSAA/CSAA 放进五档 AA 分类的上下文
 
 ## Sources
 

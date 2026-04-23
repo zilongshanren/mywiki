@@ -64,6 +64,7 @@ TAA 被诟病「整个画面都在糊」——这是事实。它是一个**妥�
 - [[emilio-lopez-ros]]
 - [[temporal-supersampling]] — Wronski 对 AC4 TAA 的祖师级复盘，覆盖 motion vector pipeline 的全部踩坑
 - [[ground-truth-ambient-occlusion]] — Use.GPU 的 GTAO 靠 3D motion vector + depth/normal bilateral 做 reprojection，与 TAA 同构
+- [[aa-techniques-survey-2011]] —— Supnik 2011 把 TAA 归到 post-process 档，显示当时它还没独立成类
 
 ## Sources
 

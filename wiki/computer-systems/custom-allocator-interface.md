@@ -64,10 +64,10 @@ allocator.make_delete(m);
 ```
 
 ## 和其他设计的关系
-
 - 和 [[malloc-wrapper-debug|malloc 加壳（云风）]]对照：两者都是"给 C/C++ 分配机制套一层壳以便断言和监控"，云风偏 cookie + filename tracking，Bitsquid 偏 subsystem proxy + assert-on-leak。
 - 和 [[virtual-memory|VirtualAlloc]] 的直接结合：page allocator 是 dlmalloc 的 backing，引擎可以切整段 VM 给 RSX、给 debug 数据、给 lua 堆，各自独立计数。
 - **不提供 `realloc`**：作者认为它是"非确定性优化"；要 grow 就用"定长块链"自己 merge，可控、可预测。
+- [[alloc-order-matches-draw-order]] —— 在 X-Plane 的 custom allocator 上做「精心聚拢」反而更慢的案例
 
 ## Sources
 - [[sources/bitsquid-custom-memory-allocation]]
