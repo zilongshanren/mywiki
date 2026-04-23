@@ -924,3 +924,5 @@ bitsquid-foundation-library-concept
 game-settings-hot-reload
 level-design-without-editor
 behaviour-tree-game-ai
+glsl-compiler-optimization-reliance
+cas-refcount-lowbit-lock

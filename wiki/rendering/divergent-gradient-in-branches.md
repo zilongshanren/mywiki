@@ -58,5 +58,5 @@ Anagnostou 给的教训不止 gradient 这一件事：**关键 shader 路径永�
 - [[kostas-anagnostou]]
 
 ## Sources
-
 - [[sources/interplay-branches-texture-sampling]]
+- [[sources/supnik-derivatives-two-parts]] —— Supnik 2011 从 GLSL spec §8.8 角度讲「non-uniform control flow 内 derivative 未定义」，HLSL 侧的 [[divergent-gradient-in-branches]] 是同一根因在不同语言的投影

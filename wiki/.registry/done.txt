@@ -11876,3 +11876,8 @@ raw/articles/joostdevblog.blogspot.com/2010-12-18_designing-levels-without-tools
 raw/articles/joostdevblog.blogspot.com/2010-12-23_the-endless-possibilities-of-art-styles.md
 raw/articles/joostdevblog.blogspot.com/2010-12-31_ai-in-swords-soldiers-part-1.md
 raw/articles/joostdevblog.blogspot.com/2011-01-08_ai-in-swords-soldiers-part-2.md
+raw/articles/hacksoflife.blogspot.com/2010-12-22_fun-with-glsl-compilers.md
+raw/articles/hacksoflife.blogspot.com/2011-01-04_cas-and-reference-counting-revisited.md
+raw/articles/hacksoflife.blogspot.com/2011-01-08_stupid-cvs-tricks.md
+raw/articles/hacksoflife.blogspot.com/2011-01-20_derivatives-i-discontinuities-and-gradients.md
+raw/articles/hacksoflife.blogspot.com/2011-01-20_derivatives-ii-conditional-texture-fetches.md

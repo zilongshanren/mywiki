@@ -280,6 +280,7 @@ CAQA + CSAPP 的底层视角。
 | [[cross-platform-openal-runtime-loader]] | X-Plane 的 OpenAL 三平台装载：封装层 + dlopen fallback + 自带 LGPL 副本 |
 | [[optimization-leverage-ratio]] | 优化杠杆率：局部改善 × 时间占比才是真正收益 |
 | [[semaphore-vs-condvar-latency]] | pthread cond var vs semaphore+spinlock：X-Plane worker 唤醒 200→80 µsec |
+| [[cas-refcount-lowbit-lock]] | CAS + refcount 的竞态缺口、指针低位当锁的自旋变体、Vyukov differential refcount |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -847,6 +848,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[particle-collision-plane-cache]] | 每粒子自带平面 + 空间哈希缓存 raycast 结果 |
 | [[matrix-scale-drift]] | Matrix4x4 里 rotation/scale 共享存储引发的 28 分钟 0.1% 漂移 |
 | [[xplane-gbuffer-format]] | Supnik 2010：X-Plane 10 第一版 16 字节 G-Buffer 布局（shadow/shine 浮点打包） |
+| [[glsl-compiler-optimization-reliance]] | 用 ShaderAnalyzer 观察驱动编译器，反推 X-Plane 10 shader 组织策略 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1915,6 +1917,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/joostdevblog-all-the-settings]] | Joost：600 个 gameplay 数值的 F5 热重载工具 |
 | [[sources/joostdevblog-designing-levels-without-tools]] | Joost：Swords & Soldiers 用 Notepad 做关卡 |
 | [[sources/joostdevblog-ai-swords-soldiers]] | Joost：Swords & Soldiers AI（行为树两篇合并） |
+| [[sources/supnik-glsl-compiler-observations]] | Supnik：AMD ShaderAnalyzer 看到的 GLSL 编译器做了什么没做什么 |
+| [[sources/supnik-cas-reference-counting]] | Supnik：CAS+refcount 的低位锁变体与 Vyukov 评论区给的 differential refcount |
+| [[sources/supnik-derivatives-two-parts]] | Supnik：GLSL derivative 两连载，UV 不连续 + if 分支内的未定义导数 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

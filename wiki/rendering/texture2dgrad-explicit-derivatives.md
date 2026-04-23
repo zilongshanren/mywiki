@@ -51,5 +51,5 @@ spec 指出：mipmap / 各向异性 texture fetch 的隐式导数**在 non-unifo
 - [[ben-supnik]]
 
 ## Sources
-
 - [[sources/supnik-change-uv-map-on-fly]]
+- [[sources/supnik-derivatives-two-parts]] —— Part I 是 texture2DGrad 手喂连续导数的原始讨论

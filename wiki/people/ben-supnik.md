@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形, 游戏引擎]
 date: 2026-04-19
-sources: 27
+sources: 30
 ---
 
 # Ben Supnik
@@ -51,6 +51,8 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[semaphore-vs-condvar-latency]] —— X-Plane 10 worker 唤醒延迟优化
 - [[xplane-gbuffer-format]] —— X-Plane 10 第一版延迟管线的 G-Buffer 布局（shadow/shine 浮点打包）
 - [[encapsulation-over-polymorphism]] —— 90/10/0 OOP 三要素权重启发式
+- [[glsl-compiler-optimization-reliance]] —— 2010 ShaderAnalyzer 观察驱动对 X-Plane 10 shader 组织的反向影响
+- [[cas-refcount-lowbit-lock]] —— CAS+refcount 的低位自旋锁变体与 differential refcount 讨论
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -101,3 +103,6 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-gbuffer-format]]
 - [[sources/supnik-fmtt-glsl-edition]]
 - [[sources/supnik-what-oop-isnt]]
+- [[sources/supnik-glsl-compiler-observations]]
+- [[sources/supnik-cas-reference-counting]]
+- [[sources/supnik-derivatives-two-parts]]

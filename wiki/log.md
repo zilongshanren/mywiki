@@ -1106,3 +1106,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-87 Worker JB (joostdevblog 2010-12 to 2011-01 ×5)
 
 处理 5 篇 joostdevblog（2010-12 至 2011-01）。4 ingested（AI part1+part2 合并成单 source），1 skipped（endless art styles —— 纯风格taste论，无方法论）。新增 3 概念页：game-settings-hot-reload（F5 struct 指针热重载）、level-design-without-editor（Notepad 关卡 + 程序化背景）、behaviour-tree-game-ai（Ronimo 三代 AI 演进，含 Halo 2 启发、优先级树 vs if-else 树的迭代）；新增 3 source 摘要；更新 joost-van-dongen 人物页。
+
+## [2026-04-19] ingest | Wave-87 Worker JA (hacksoflife / Supnik ×5, 2010-12 ~ 2011-01)
+
+处理 5 篇 Supnik 博客：4 ingested、1 skipped（stupid-cvs-tricks 属 legacy VCS 琐事）。Derivatives I + II 合并到一篇 source summary（同一硬件模型、同一修法族）。新增 2 概念页：[[glsl-compiler-optimization-reliance]]（RV790 编译器观察驱动 X-Plane 10 shader 组织改写）、[[cas-refcount-lowbit-lock]]（CAS+refcount 的经典缺口 + 指针低位自旋锁 + Vyukov differential refcount）。3 source 摘要，Supnik 人物页 source count 27 → 30。Derivatives 内容已由 [[texture2dgrad-explicit-derivatives]] / [[divergent-gradient-in-branches]] 充分覆盖，只补 source link。
