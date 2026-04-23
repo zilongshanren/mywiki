@@ -50,6 +50,7 @@ sources: 2
 - [[metal-api-overview]] —— iOS 上降 CPU 驱动开销的显式 API
 - [[opengl-draw-call-batching-sweet-spot]] —— Outerra 实测：per-instance 5k-20k 三角形是跨厂吞吐甜点
 - [[triangle-strips-vs-indexed-triangles]] — 为减小 VRAM 中的 index buffer 而增加 CPU 调用是反向优化
+- [[ngui-legacy-ui-system]] —— NGUI 下 UIPanel + UIAtlas 的合批机制：相同 Material 实例才能合批，Shader 相同 Material 不同仍会拆批
 
 ## Sources
 - [[sources/rtr-day02]]
@@ -58,3 +59,4 @@ sources: 2
 - [[sources/jasper-how-to-write-a-renderer]]
 - [[sources/outerra-opengl-perf-grass]]
 - [[sources/outerra-opengl-perf-blocks]]
+- [[sources/tedsie-draw-call-basics]]

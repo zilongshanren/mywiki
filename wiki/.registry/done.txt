@@ -11856,3 +11856,8 @@ raw/articles/bitsquid.blogspot.com/2012-06-19_hack-day-report.md
 raw/articles/bitsquid.blogspot.com/2012-07-03_matrices-rotation-scale-and-drifting.md
 raw/articles/bitsquid.blogspot.com/2012-08-04_a-simpler-design-for-asynchronous-apis.md
 raw/articles/bitsquid.blogspot.com/2012-08-18_cleaning-bad-code.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_basic-knowledge-of-draw-call-draw-call-chu-bu-li-jie.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uipanel-and-uisprite-jian-li-ngui-mian-ban-jian-l.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uiatlas-ngui-tu-ji-xin-zeng-geng-xin-dao-chu-yi-c.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-scroll-view-ke-hua-dong-qu-kuai-scroll-view.md
+raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-button-button-xi-lie-gong-neng-jiang-jie.md

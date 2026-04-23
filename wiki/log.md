@@ -1090,3 +1090,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-85 Worker IT (bitsquid 2012 mid ×5)
 
 处理 bitsquid.blogspot.com 2012-05 到 2012-08 共 5 篇 Niklas Frykholm 文章。新增 5 概念页（video-codec-licensing-tradeoffs, particle-collision-plane-cache, matrix-scale-drift, async-api-id-tokens, cleaning-bad-code）和 5 source 摘要。niklas-frykholm 人物页追加 5 条 source 链接；polling-callbacks-events / clean-code-critique / 3d-rotation-math 各追加一条 cross-link。无跳过。
+
+## [2026-04-19] ingest | Wave-86 Worker IY (tedsieblog.wordpress.com ×5)
+
+处理 Ted Sie 2016-07 的 5 篇 NGUI / Draw Call 入门文章。新增 1 概念页（ngui-legacy-ui-system）、2 source 摘要（tedsie-ngui-tutorials 合并 4 篇 NGUI 教学、tedsie-draw-call-basics 单独成文）。Draw Call 入门篇通过 patch 链进既有 [[draw-call]]。无跳过。

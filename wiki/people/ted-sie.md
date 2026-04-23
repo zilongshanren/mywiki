@@ -17,6 +17,7 @@ sources: 5
 - [[l-system-lightning-bolts]]
 - [[unity-crowd-waypoint-system]]
 - [[a-star-pathfinding]]
+- [[ngui-legacy-ui-system]]
 
 ## Sources
 - [[sources/tedsie-dynamic-split-screen]]
@@ -26,3 +27,5 @@ sources: 5
 - [[sources/tedsie-dots-tween-system]]
 - [[sources/tedsie-a-star-tutorial]]
 - [[sources/tedsie-a-star-applied]]
+- [[sources/tedsie-ngui-tutorials]]
+- [[sources/tedsie-draw-call-basics]]
