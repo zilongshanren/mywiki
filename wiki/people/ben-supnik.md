@@ -22,6 +22,9 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[header-as-user-manual]]
 - [[api-fast-path-design]]
 - [[number-puzzle-tile-shader]]
+- [[opengl-builtin-attribute-aliasing]]
+- [[cpp-template-value-vs-type-parameter]]
+- [[triangle-strips-vs-indexed-triangles]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -34,3 +37,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-fast-paths]]
 - [[sources/supnik-tile-too-far]]
 - [[sources/supnik-debugging-glsl]]
+- [[sources/supnik-ive-got-the-blues]]
+- [[sources/supnik-templating-functions]]
+- [[sources/supnik-devil-in-details]]
+- [[sources/supnik-to-strip-or-not-to-strip]]

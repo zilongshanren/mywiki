@@ -982,3 +982,7 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-76 Worker HS (bitsquid.blogspot.com 2010 Q2-Q3 x5)
 
 处理 5 篇 Bitsquid 2010 年博客。新增 4 概念页（per-entity-scene-graph, json-3-way-merge, guid-object-database-schema, dual-mode-gui-bitsquid）、4 source 摘要；跳过 MotionBuilder exporter（纯 code-drop 无内容）。补强 vcs-vs-database-for-content 与 immediate-vs-retained-mode 两篇的 Sources 与交叉链接。niklas-frykholm 人物页追加 4 条来源。
+
+## [2026-04-19] ingest | Wave-77 Worker HW (hacksoflife.blogspot.com ×5)
+
+处理 Ben Supnik 2010 年 1-2 月 5 篇早期博文。新增 3 概念页（opengl-builtin-attribute-aliasing / cpp-template-value-vs-type-parameter / triangle-strips-vs-indexed-triangles）、4 source 摘要，跳过 1 篇 iPhone 沙盒+Moore's Law 编辑性评论。Patch 更新 ben-supnik 人物页与 draw-call / opengl-draw-call-batching-sweet-spot 两条相关链接。

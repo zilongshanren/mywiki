@@ -133,6 +133,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[optional-static-typing]] | 可选静态类型：AS3/haXe 起手，TypeScript/Python hints 承接 |
 | [[method-binding-semantics]] | 方法隐式 vs 显式绑定 `this`，以及对事件系统对称性的影响 |
 | [[earley-parser]] | Earley parser：接受任意 CFG 的通用解析算法，最坏 O(n^3) |
+| [[cpp-template-value-vs-type-parameter]] | C++ 模板按类型 vs 按值参数化：只有后者能真正内联函数指针 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -769,6 +770,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[fake-hdr-half-brightness]] | 8-bit 渲染目标下以半亮度渲染 + 后期乘 2 伪装 HDR bloom |
 | [[number-puzzle-tile-shader]] | Supnik：shader 级瓦片随机化去除纹理重复感 |
 | [[sdf-font-atlas-rendering]] | 基于 AngelCode BMFont + distance field 的字体渲染 |
+| [[opengl-builtin-attribute-aliasing]] | NVidia 对 GLSL 内置顶点属性与 generic attribute 的别名处理偏离 GL 2.1 规范 |
+| [[triangle-strips-vs-indexed-triangles]] | 在索引化时代三角带的 vertex 复用优势大幅缩水，draw call 成本才是瓶颈 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1723,6 +1726,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-3-way-json-merge]] | Frykholm：写一个能理解 JSON 的三路合并器 |
 | [[sources/bitsquid-new-data-storage-model]] | Frykholm：GUID + 属性 + 5 种操作的无冲突数据库草案 |
 | [[sources/bitsquid-dual-mode-guis]] | Frykholm：同一 GUI API 两种模式的实现技巧 |
+| [[sources/supnik-ive-got-the-blues]] | Supnik：NVidia/Linux 下 gl_Normal 与 attribute 2 的别名 bug |
+| [[sources/supnik-templating-functions]] | Supnik：C++ 模板按值参数化函数指针才能内联 |
+| [[sources/supnik-devil-in-details]] | Supnik：Stack Overflow 不是免费调试服务——OpenGL bug 的三类 taxonomy |
+| [[sources/supnik-to-strip-or-not-to-strip]] | Supnik：为什么 X-Plane 在桌面 GL 上全部用 indexed triangles，放弃三角带 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

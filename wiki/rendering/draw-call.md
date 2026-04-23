@@ -49,6 +49,7 @@ sources: 2
 - [[draw-procedural-gpu]] —— 把一次 draw call 打到极致：CPU 只发命令，vertex 数据全部由 GPU buffer 提供
 - [[metal-api-overview]] —— iOS 上降 CPU 驱动开销的显式 API
 - [[opengl-draw-call-batching-sweet-spot]] —— Outerra 实测：per-instance 5k-20k 三角形是跨厂吞吐甜点
+- [[triangle-strips-vs-indexed-triangles]] — 为减小 VRAM 中的 index buffer 而增加 CPU 调用是反向优化
 
 ## Sources
 - [[sources/rtr-day02]]

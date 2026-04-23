@@ -48,13 +48,13 @@ blocks 测试的额外观察：
 - **benchmark 源码是开放的**（`github.com/hrabcak/draw_call_perf`）——任何说「小 draw call 贵」或「geometry shader 很慢」的论断都可以回到这个 bench 里自测。
 
 ## 相关
-
 - [[outerra-team]]
 - [[draw-call]]
 - [[batching]]
 - [[gpu-driven-grass-tiles]]
 - [[gpu-latency-hiding]]
 - [[draw-procedural-gpu]]
+- [[triangle-strips-vs-indexed-triangles]] — Supnik 用 CPU draw-call 成本证明 indexed triangles 比 strips 更优
 
 ## Sources
 
