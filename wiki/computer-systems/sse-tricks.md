@@ -53,13 +53,14 @@ a >  b (unsigned, 32-bit)  ≡  (a - 0x80000000) > (b - 0x80000000) (signed)
 SSE 的「非正交」是历史尘埃 + intrinsics 命名灾难叠加的产物。写跨代 SSE 代码时，**记住这些桥洞远比记住每条指令的延迟有价值**——它们决定了你能不能写出可以编译到 SSE2 / SSSE3 / SSE4.1 三个目标都能跑的同一份 SIMD 代码。即便在 AVX2 时代，这些洞里仍然有少数没填上。
 
 ## 相关
-
 - [[aos-vs-soa]]
 - [[cache-friendliness]]
 - [[latency-vs-throughput]]
 - [[fabian-giesen]]
 - [[fearless-simd]] —— Raph Levien 提出的 Rust 可移植 SIMD 愿景，同样踩到 runtime feature 选档与 inlining 组合的坑
 - [[carry-save-adder-pixel-avg]] —— 用 CSA 恒等式在没有硬件 pavgb 的情况下做打包像素的无溢出平均
+- [[sse-shuffle-endianness]] —— `_MM_SHUFFLE` 宏的端序约定
+- [[simd-memory-bandwidth-bound]] —— 再聪明的 SSE 也喂不过内存带宽
 
 ## Sources
 

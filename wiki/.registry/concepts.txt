@@ -961,3 +961,7 @@ buddy-memory-allocation
 stingray-data-driven-render-config
 stingray-package-manager
 temporal-sao-reprojection
+8-bit-normal-map-precision-limits
+sse-shuffle-endianness
+simd-memory-bandwidth-bound
+xplane-headlight-perf-teardown

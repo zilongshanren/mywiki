@@ -293,6 +293,8 @@ CAQA + CSAPP 的底层视角。
 | [[alloc-order-matches-draw-order]] | Supnik 的 cache 优化惨败：分配顺序 ≈ 遍历顺序的老启发赢过精心规划 |
 | [[buddy-memory-allocation]] | 2-幂尺寸的 allocator：分裂/合并、O(log n)、天然抗碎片，适配 vector 2 倍扩容 |
 | [[stingray-package-manager]] | Stingray spm：one-button build 的 artifact 包管理器 |
+| [[sse-shuffle-endianness]] | Supnik：`_MM_SHUFFLE` 宏的 little-endian 参数顺序 |
+| [[simd-memory-bandwidth-bound]] | Supnik：SIMD 优化被内存带宽吃掉的判别与对策 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -881,6 +883,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[directx-sdk-to-windows-sdk-migration]] | Bitsquid 2015：June 2010 DX SDK → Windows 8.x SDK 迁移的 GUID / d3dcompiler / XInput 三坑 |
 | [[stingray-data-driven-render-config]] | Stingray 的 render_config：把整条渲染管线声明为配置文件 |
 | [[temporal-sao-reprojection]] | Stingray SAO 的 temporal reprojection + depth-mip moving bit |
+| [[8-bit-normal-map-precision-limits]] | Supnik 2011：RG8 切线法线贴图在高 specular exponent 下的量化极限 |
+| [[xplane-headlight-perf-teardown]] | Supnik 2011：X-Plane 10 车灯/AI 全流程性能手术案例 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1995,6 +1999,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-temporal-sao]] | Jp Guertin：SAO 的 temporal reprojection 与 dangerous samples |
 | [[sources/bitsquid-stingray-data-driven-rendering]] | Ben Mowery：Stingray 渲染管线的数据驱动宣言 |
 | [[sources/bitsquid-stingray-package-manager]] | Niklas：Stingray 自家的 Ruby artifact 包管理器 spm |
+| [[sources/supnik-limits-of-8-bit-normal-maps]] | Supnik 2011-05：8-bit 法线贴图在高 specular 下的量化极限 |
+| [[sources/supnik-sse-shuffle-endianness]] | Supnik 2011-05：SSE `_MM_SHUFFLE` 参数端序 debug 小记 |
+| [[sources/supnik-sse-its-the-memory]] | Supnik 2011-05：SSE 加速被内存带宽吃掉的短札 |
+| [[sources/supnik-performance-tuning-cars]] | Supnik 2011-05：X-Plane 10 车灯/车 AI 全流程性能调优 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

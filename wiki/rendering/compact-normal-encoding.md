@@ -50,13 +50,13 @@ SebH 在评论里早就提过 [CryTek 的 best-fit normals](https://aras-p.info/
 2011 年之后，**octahedral encoding**（Meyer et al.）以更简单的算术和接近 BFN 的精度成为主流。Lambert azimuthal 与 octahedral 在**2 通道法线编码**这件事上属于同一类解，区别在分布函数与解码开销。本文保留 Supnik 的历史选择，是因为它演示了「G-Buffer 的法线条带为什么是问题、以及 2 通道编码应选 area-preserving 而非朴素投影」的思维链。
 
 ## 相关
-
 - [[xplane-gbuffer-format]] —— Supnik 的原始 G-Buffer 布局（已 XY+重建）
 - [[deferred-rendering]]
 - [[tangent-space-normal-mapping]]
 - [[color-banding]] —— 条带的一般成因
 - [[linear-lighting-pipeline]] —— 为什么 linear space 下 normal 精度更敏感
 - [[ben-supnik]]
+- [[8-bit-normal-map-precision-limits]] —— 贴图侧 RG8 精度问题（与 G-Buffer 编码互为独立战线）
 
 ## Sources
 

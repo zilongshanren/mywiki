@@ -11941,3 +11941,8 @@ raw/articles/bitsquid.blogspot.com/2015-08-20_allocation-interlude-javascript-an
 raw/articles/bitsquid.blogspot.com/2015-09-10_temporal-reprojection-and-sao.md
 raw/articles/bitsquid.blogspot.com/2015-12-18_data-driven-rendering-in-stingray.md
 raw/articles/bitsquid.blogspot.com/2016-01-20_introducing-the-stingray-package-manager-spm.md
+raw/articles/hacksoflife.blogspot.com/2011-05-07_the-limits-of-8-bit-normal-maps.md
+raw/articles/hacksoflife.blogspot.com/2011-05-11_svnx-on-os-x-10-6-you-need-a-key-pair.md
+raw/articles/hacksoflife.blogspot.com/2011-05-17_seriosly-strange-execution.md
+raw/articles/hacksoflife.blogspot.com/2011-05-17_sse-it-s-the-memory-stupid.md
+raw/articles/hacksoflife.blogspot.com/2011-05-18_performance-tuning-cars.md

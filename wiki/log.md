@@ -1158,3 +1158,7 @@ Pesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2�
 ## [2026-04-19] ingest | Wave-91 Worker JL (bitsquid 2015-08 ~ 2016-01 ×5)
 
 处理 5 篇 bitsquid 后期博客。Ingested 4 篇：buddy allocator Part 3、SAO temporal reprojection、Stingray data-driven rendering、Stingray package manager (spm)。Skipped 1 篇 JavaScript animation interlude（无独立技术内容）。新增 3 concept：stingray-data-driven-render-config、stingray-package-manager、temporal-sao-reprojection。Buddy Part 3 作为 buddy-memory-allocation 的实现细节段补丁。Niklas Frykholm 人物页追加 4 条 source + 3 条相关。temporal-supersampling 与 hbao-interleaved-sampling 增加对 temporal-sao-reprojection 的交叉引用。data-driven-architecture 增加对 stingray 两篇的引用。
+
+## [2026-04-19] ingest | Wave-91 Worker jm (hacksoflife.blogspot.com ×5, Supnik 2011-05)
+
+处理 Supnik 2011 年 5 月五篇：`limits-of-8-bit-normal-maps`（RG8 法线贴图在 specular exponent 下的精度极限）、`seriosly-strange-execution`（SSE `_MM_SHUFFLE` 端序约定）、`sse-its-the-memory`（SSE 被内存带宽吃掉的 15%→0 短札）、`performance-tuning-cars`（X-Plane 10 车灯/AI 性能手术全流程案例）。新增 4 概念页（`8-bit-normal-map-precision-limits`、`sse-shuffle-endianness`、`simd-memory-bandwidth-bound`、`xplane-headlight-perf-teardown`）、4 source 摘要；patch `ben-supnik` / `compact-normal-encoding` / `sse-tricks` / `bottleneck-analysis` / `memory-hierarchy`。跳过 1 篇：`svnx-on-os-x-10-6-you-need-a-key-pair`（ssh 密钥对配置的非技术小贴士）。

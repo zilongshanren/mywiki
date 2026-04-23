@@ -63,6 +63,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[xplane-instancing-2011-numbers]] —— 2011 X-Plane GPU instancing 吞吐基线数据
 - [[memory-latency-human-metaphor]] —— L1=桌上、磁盘=加州的日常时间尺度翻译
 - [[alloc-order-matches-draw-order]] —— 精心改写的 cache 友好 allocator 反而输给老启发的一次惨败
+- [[8-bit-normal-map-precision-limits]] —— 2011-05 specular exponent 放大 RG8 法线量化误差的权衡
+- [[sse-shuffle-endianness]] —— 2011-05 `_MM_SHUFFLE` 宏的 little-endian 参数约定
+- [[simd-memory-bandwidth-bound]] —— 2011-05 SSE 被内存带宽吃掉的 15% → 0 教训
+- [[xplane-headlight-perf-teardown]] —— 2011-05 X-Plane 10 车灯/AI 性能手术全流程案例
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -126,3 +130,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-aa-techniques-survey]]
 - [[sources/supnik-going-to-california]]
 - [[sources/supnik-damn-you-l2-cache]]
+- [[sources/supnik-limits-of-8-bit-normal-maps]]
+- [[sources/supnik-sse-shuffle-endianness]]
+- [[sources/supnik-sse-its-the-memory]]
+- [[sources/supnik-performance-tuning-cars]]

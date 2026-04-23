@@ -25,12 +25,13 @@ sources: 1
 - **VR 游戏**：pixel processing（双眼 + 高分辨率）。
 
 ## 相关
-
 - [[rendering-pipeline]]
 - [[draw-call]]
 - [[overdraw]]
 - [[non-cryptographic-hash]] —— Burst 与原生 C 的 codegen 差异是不显眼的瓶颈子类
 - [[dynamic-resolution-scaling]] —— 瓶颈识别结论是 Pixel-bound 后的下一步：按比例砍像素计算量
+- [[xplane-headlight-perf-teardown]] —— 2011 X-Plane 10 车灯全流程瓶颈手术案例
+- [[simd-memory-bandwidth-bound]] —— 「更聪明的 SIMD 反而更慢」的判别路径
 
 ## Sources
 
