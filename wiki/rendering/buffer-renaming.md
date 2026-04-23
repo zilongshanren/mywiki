@@ -46,6 +46,9 @@ Buffer renaming 是一个典型的"驱动替你扛复杂性，代价是性能不
 - [[rendering-api-depth]]
 - [[streaming-staging-texture-upload]] —— 显式 API 下自己做的 staging ring
 - [[frames-in-flight]]
+- [[vbo-double-buffering-orphaning]] —— Ben Supnik 2010 年从 OpenGL 应用端视角对 orphaning 的推导
+- [[glbuffersubdata-serialization]] —— SubData 为什么必然与 in-flight draw 串行化
+- [[agp-vs-vram-streaming]] —— 流式几何为什么驱动经常把你放进 AGP/system memory 而不是 VRAM
 
 ## Sources
 

@@ -787,6 +787,15 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[huge-world-coordinate-precision]] | 3D 世界远离原点时 32-bit float 丢位的 3 种应对：整体 transform、双缓冲、局部坐标系 |
 | [[texture2dgrad-explicit-derivatives]] | 当 UV 在 shader 里被 fract/swizzle 破坏连续性时，用 texture2DGradARB 手喂原始导数保住 LOD |
 | [[uv-precision-derivative-loss]] | 300 km 地形由 vertex shader 投影生成 UV，其导数精度低于一像素，per-pixel tangent space 会错乱 |
+| [[alpha-blending-front-to-back]] | 前向 alpha 合成 + 反转 alpha 的 back-to-front 变体（Supnik） |
+| [[vbo-double-buffering-orphaning]] | VBO 双缓冲 / orphaning / MapBufferRange 的应用端推导 |
+| [[agp-vs-vram-streaming]] | 流式顶点为何驱动常给 AGP system memory 而非 VRAM |
+| [[glbuffersubdata-serialization]] | 为什么 glBufferSubData 必然与 in-flight draw 串行化 |
+| [[stereoscopic-3d-design]] | 立体 3D 的设计含义：窗口违例、眼距调节、屏幕空间 trick 失效（van Dongen / Proun） |
+| [[screen-space-light-shafts]] | God rays / 体积光屏幕空间近似：从像素向太阳走、采样亮度累加（GPU Gems 3 / Proun） |
+| [[lightmap-baking-workflow]] | 离线烘 lightmap：V-Ray / 3ds Max 自动 unwrap、area light、skylight、GI（Proun 单赛道 30h） |
+| [[colored-sky-sun-lighting]] | 对比色 sun / skylight 的艺术搭配：蓝-黄、橙-青、粉-绿（Proun 三赛道） |
+| [[pc-gpu-driver-compat-qa]] | PC 发行的驱动兼容地狱：NPOT 检测、max-vertex-index、shader-cap 说谎、glTexSubImage2D 坑 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1772,6 +1781,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bitsquid-collaboration-and-merging]] | Frykholm 2011：协作的核心是合并，不是数据库 |
 | [[sources/bitsquid-extreme-bug-hunting]] | Frykholm 2011：极限 bug 狩猎——只在 release / 只在 PS3 / 不同调用栈 |
 | [[sources/bitsquid-universal-undo-copy-paste]] | Frykholm 2011：基于 GUID 对象库 schema 的通用 Undo / Copy / Paste |
+| [[sources/supnik-alpha-front-to-back]] | Supnik：前向/后向 alpha blending 的 blend state 推导 |
+| [[sources/supnik-double-buffering-vbos]] | Supnik：VBO 双缓冲与 D3D DISCARD / GL orphaning 的对照 |
+| [[sources/supnik-agp-vs-vram]] | Supnik：为什么流式 VBO 放 AGP 比 VRAM 更安全 |
+| [[sources/supnik-glbuffersubdata]] | Supnik：glBufferSubData 为何会串行化阻塞 |
+| [[sources/joostdevblog-stereoscopic-3d]] | van Dongen：立体 3D 的设计含义（2010） |
+| [[sources/joostdevblog-sun-rays]] | van Dongen：Proun 的屏幕空间 god-rays（2010） |
+| [[sources/joostdevblog-lighting-in-proun]] | van Dongen：Proun 的 lightmap 烘焙流程（2010） |
+| [[sources/joostdevblog-coloured-light-proun]] | van Dongen：Proun 的对比色 sun/skylight 艺术选择（2010） |
+| [[sources/joostdevblog-pc-dev-horror]] | van Dongen：PC 发行的显卡驱动兼容血泪（2010） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

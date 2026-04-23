@@ -1010,3 +1010,11 @@ Pesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、�
 ## [2026-04-19] ingest | Wave-79 Worker IB (bitsquid.blogspot.com 2011 Q1-Q2 x5)
 
 处理 5 篇 Niklas Frykholm / bitsquid 2011 年博客。1 篇跳过（仅 GDC 视频外链加 spam）；4 篇入库：表达式语言（新概念 tiny-expression-language）、协作与合并（patch guid-object-database-schema）、极限 bug 狩猎（新概念 memory-corruption-bug-hunting）、通用 Undo/Copy/Paste（patch guid-object-database-schema）。新增 2 概念 + 4 source 摘要。
+
+## [2026-04-19] ingest | Wave-79 Worker IC (hacksoflife 2010-02 ×5)
+
+Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 ingest，另跳过 1 篇 Apple Mail multipart MIME 吐槽。新增 4 概念页（alpha-blending-front-to-back, vbo-double-buffering-orphaning, agp-vs-vram-streaming, glbuffersubdata-serialization）+ 4 source 摘要。四篇互相引用，并与已有 [[alpha-blending]] / [[alpha-compositing]] / [[buffer-renaming]] / [[ben-supnik]] 交叉链。
+
+## [2026-04-19] ingest | Wave-79 Worker ID (joostdevblog.blogspot.com ×5 — Proun graphics, 2010-11..12)
+
+处理 5 篇 Joost van Dongen 的 Proun 技术博客（立体 3D、god-rays、lightmap 烘焙、对比色灯光、PC 驱动兼容）。全部 ingest。新增 5 概念页（stereoscopic-3d-design / screen-space-light-shafts / lightmap-baking-workflow / colored-sky-sun-lighting / pc-gpu-driver-compat-qa）、5 source 摘要，patch 已存在的 [[joost-van-dongen]] 人物页（相关 / Sources / sources count 3→8）。

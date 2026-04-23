@@ -64,6 +64,7 @@ R_A  = S_A + D_A × (1 - S_A)
 - [[aliasing]] — 部分覆盖的反走样用途
 - [[bartosz-ciechanowski]]
 - [[srgb-premultiplied-alpha-compression]] —— sRGB × 预乘 × 块压缩的三方正确顺序
+- [[alpha-blending-front-to-back]] —— 前向合成为什么仍然要求预乘 alpha，以及「反转 alpha 通道」的 back-to-front 变体
 
 ## Sources
 

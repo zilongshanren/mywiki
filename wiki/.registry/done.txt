@@ -11756,3 +11756,13 @@ raw/articles/bitsquid.blogspot.com/2011-03-13_a-tiny-expression-language.md
 raw/articles/bitsquid.blogspot.com/2011-03-27_collaboration-and-merging.md
 raw/articles/bitsquid.blogspot.com/2011-04-12_extreme-bug-hunting.md
 raw/articles/bitsquid.blogspot.com/2011-04-26_universal-undo-copy-and-paste.md
+raw/articles/hacksoflife.blogspot.com/2010-02-12_multipart-mime-and-apple-mail.md
+raw/articles/hacksoflife.blogspot.com/2010-02-18_alpha-blending-back-to-front-front-to-back.md
+raw/articles/hacksoflife.blogspot.com/2010-02-24_double-buffering-vbos.md
+raw/articles/hacksoflife.blogspot.com/2010-02-28_double-buffering-part-2-why-agp-might-be-your-friend.md
+raw/articles/hacksoflife.blogspot.com/2010-02-28_one-more-on-vbos-glbuffersubdata.md
+raw/articles/joostdevblog.blogspot.com/2010-11-06_stereoscopic-3d.md
+raw/articles/joostdevblog.blogspot.com/2010-11-13_sun-rays.md
+raw/articles/joostdevblog.blogspot.com/2010-11-20_lighting-in-proun.md
+raw/articles/joostdevblog.blogspot.com/2010-11-27_coloured-light-in-proun.md
+raw/articles/joostdevblog.blogspot.com/2010-12-04_the-horror-that-is-pc-development.md

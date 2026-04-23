@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, indie, ronimo, galaxy-grove]
 date: 2026-04-19
-sources: 3
+sources: 8
 ---
 
 # Joost van Dongen
@@ -17,6 +17,11 @@ sources: 3
 - [[camera-mapping-2d-to-3d]] —— 把 2D 插画投影到粗 3D 几何做可动画的「活画」
 - [[fixed-3000fps-gameplay-simplicity]] —— Proun 的 3000fps 固定步长碰撞 trick
 - [[motion-sickness-camera-design]] —— Proun 抗晕眩摄像机设计
+- [[stereoscopic-3d-design]] —— Proun / Swords & Soldiers 立体 3D 的设计含义（窗口违例、GUI 深度）
+- [[screen-space-light-shafts]] —— Proun 第三赛道的 god-rays 屏幕空间 trick
+- [[lightmap-baking-workflow]] —— Proun 用 3ds Max + V-Ray 烘 lightmap（单赛道 30h）
+- [[colored-sky-sun-lighting]] —— Proun 三条赛道的「对比色 sun / skylight」艺术选择
+- [[pc-gpu-driver-compat-qa]] —— Swords & Soldiers / De Blob / Proun 的 GPU 驱动兼容血泪史
 
 ## Sources
 - [[sources/joostdevblog-where-to-get-original-ideas]]
@@ -27,3 +32,8 @@ sources: 3
 - [[sources/joostdevblog-camera-mapping]]
 - [[sources/joostdevblog-proun-3000fps-collision]]
 - [[sources/joostdevblog-proun-motion-sickness]]
+- [[sources/joostdevblog-stereoscopic-3d]]
+- [[sources/joostdevblog-sun-rays]]
+- [[sources/joostdevblog-lighting-in-proun]]
+- [[sources/joostdevblog-coloured-light-proun]]
+- [[sources/joostdevblog-pc-dev-horror]]

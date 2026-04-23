@@ -30,6 +30,10 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[function-vs-data-pointer-portability]]
 - [[texture2dgrad-explicit-derivatives]]
 - [[uv-precision-derivative-loss]]
+- [[alpha-blending-front-to-back]]
+- [[vbo-double-buffering-orphaning]]
+- [[agp-vs-vram-streaming]]
+- [[glbuffersubdata-serialization]]
 
 ## Sources
 - [[sources/supnik-stackless-vs-stackful-coroutines]]
@@ -51,3 +55,7 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-glxgetprocaddressarb-syntax]]
 - [[sources/supnik-change-uv-map-on-fly]]
 - [[sources/supnik-running-out-of-derivative-res]]
+- [[sources/supnik-alpha-front-to-back]]
+- [[sources/supnik-double-buffering-vbos]]
+- [[sources/supnik-agp-vs-vram]]
+- [[sources/supnik-glbuffersubdata]]

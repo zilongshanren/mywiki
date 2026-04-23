@@ -859,3 +859,12 @@ system-decoupling-patterns
 polling-callbacks-events
 tiny-expression-language
 memory-corruption-bug-hunting
+alpha-blending-front-to-back
+vbo-double-buffering-orphaning
+agp-vs-vram-streaming
+glbuffersubdata-serialization
+stereoscopic-3d-design
+screen-space-light-shafts
+lightmap-baking-workflow
+colored-sky-sun-lighting
+pc-gpu-driver-compat-qa
