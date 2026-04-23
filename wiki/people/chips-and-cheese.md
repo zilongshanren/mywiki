@@ -39,6 +39,10 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[isa-implementation-not-architecture]]
 - [[dispatch-stall-breakdown]]
 - [[neoverse-n1-microarchitecture]]
+- [[via-x86-isaiah-lujiazui]] — VIA/兆芯 x86 血脉拆解
+- [[gpu-efficiency-fps-per-joule]] — GPU 能效横测（Serebit）
+- [[cache-size-vs-latency-tradeoff]] — IBM 256 MB L3 vs V-Cache 仿真
+- [[serebit]]
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -55,3 +59,8 @@ Chips and Cheese 是一个聚焦于 CPU/GPU 微架构实测分析的独立技术
 - [[sources/chipsandcheese-zen3-bottlenecks]]
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
 - [[sources/chipsandcheese-gigabyte-zen4-leak]]
+- [[sources/chipsandcheese-via-isaiah]]
+- [[sources/chipsandcheese-zhaoxin-lujiazui]]
+- [[sources/chipsandcheese-video-card-efficiency-power]]
+- [[sources/chipsandcheese-ibm-l3-v-cache-future]]
+- [[sources/chipsandcheese-neoverse-n1-deep-dive]]

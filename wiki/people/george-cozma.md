@@ -14,7 +14,10 @@ sources: 1
 - [[chips-and-cheese]]
 - [[core-to-core-latency-lock-test]]
 - [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（前端 vs 后端）
+- [[via-x86-isaiah-lujiazui]] — VIA Isaiah / Zhaoxin Lujiazui 两代 x86 核的结构拆解
 
 ## Sources
 - [[sources/chipsandcheese-core-to-core-latency]]
 - [[sources/chipsandcheese-zen3-bottlenecks]]
+- [[sources/chipsandcheese-via-isaiah]]
+- [[sources/chipsandcheese-zhaoxin-lujiazui]]

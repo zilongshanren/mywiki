@@ -36,8 +36,13 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 - [[op-cache-decoded-uop-cache]]
 - [[neoverse-n1-microarchitecture]] — N1 走速度优先、精度次之的反向权衡
 - [[dispatch-stall-breakdown]] — Zen 3 上误预测在后端的真实代价
+- [[via-x86-isaiah-lujiazui]] — Isaiah 2008 年就用 tournament + 4096 BTB，代价是 3-cycle/taken 气泡
+- [[cache-size-vs-latency-tradeoff]] — 缓存大小对前端再好也抵不过 miss 率基线差异
 
 ## Sources
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
 - [[sources/chipsandcheese-zen3-bottlenecks]]
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
+- [[sources/chipsandcheese-via-isaiah]]
+- [[sources/chipsandcheese-zhaoxin-lujiazui]]
+- [[sources/chipsandcheese-neoverse-n1-deep-dive]]

@@ -38,12 +38,12 @@ ARM 官方给 N1 在 2.6–3.1 GHz 下每核 1–1.8 W。Ampere Altra 实例跑�
 N1 的真实性能天花板往往是软件生态。libaom-av1 在 aarch64 上没手写汇编，Altra 几天都跑不完 Zen 2 一小时可做的事。libx265 的 NEON 加速到 2020 初才补齐。对只想跑特定负载的云厂商 N1 可用，但要进 PC 市场生态补齐是硬工。
 
 ## 参见
-
 - [[zen2-microarchitecture]]
 - [[branch-predictor-design]]
 - [[isa-implementation-not-architecture]]
 - [[op-cache-decoded-uop-cache]]
+- [[cache-size-vs-latency-tradeoff]] — Altra L3 延迟是 Zen 2 两倍，是作者否定 IOD L4 的依据
 
 ## Sources
-
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
+- [[sources/chipsandcheese-neoverse-n1-deep-dive]]

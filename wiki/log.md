@@ -1274,3 +1274,7 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-101 Worker KP (c0de517e.blogspot.com Pesce 2011-02~03 ×4)
 
 处理 Angelo Pesce 2011 年 2-3 月四篇博文。新增 4 概念页：cpp-decoupling-over-details（Surviving C++ 核心论断：解耦是软件质量的唯一要义）、hot-swap-pointer-patching（热重载四种替代方案分析）、frequency-is-not-latency（Fight Night Champion 30fps + motion blur 的实战沟通）、component-degradable-build（禁用 broken build 概念的子系统降级主张）。新增 4 source 摘要。Patch Pesce 人物页、cpp-multi-paradigm-discipline、system-decoupling-patterns、handle-based-resource-manager、frame-pipeline-latency 五页的 Sources / 相关 区。无跳过。
+
+## [2026-04-19] ingest | Wave-101 Worker KR (chipsandcheese 2021-09/10 ×5)
+
+处理 5 篇 chipsandcheese.com 2021 年 9–10 月文章，0 篇跳过。新增 3 个概念页（via-x86-isaiah-lujiazui、gpu-efficiency-fps-per-joule、cache-size-vs-latency-tradeoff）、1 个人物页（serebit），5 个 source 摘要。VIA 两部曲共享同一个概念页但保留两个 source 摘要（原文发表时间相差 3 周、内容互补）。Neoverse N1 deep dive 通过 patch 扩充既有 neoverse-n1-microarchitecture 页而非另建。

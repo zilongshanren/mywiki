@@ -27,11 +27,12 @@ Intel Atom（Bonnell，x86 内核 in-order）在低功耗实测里反而胜过 C
 反过来，ARM 也付一样的代价：A77/A78/X1/X2、Samsung M5 都主动引入 op cache 省解码功耗。ThunderX3 相对 ThunderX2 的 6% 性能提升里，单项最大贡献就是"降低 micro-op 扩展"。FADDA、LDADD 等 ARM 指令同样解码为多个微操作。
 
 ## 真正体现 ISA 差异的地方
-
 在共识"ISA 不重要"之外，作者承认两类例外：
 
 - **指令扩展**决定的上限：SSE/AVX/AVX-512、NEON/SVE、AES-NI 能否用上取决于实现，也取决于代码是否有 hand-tuned assembly。实测 Zen 2 转码 4K 视频比 Ampere Altra 快一个数量级，主因是 libx265 在 aarch64 上起步晚、优化不足，而非核心弱。见 [[neoverse-n1-microarchitecture|Neoverse N1 实测]]。
 - **生态软件优化**：这不是 ISA 设计问题，是工程投入问题。Zen 2 执行的指令数远少于 N1 是因为 x86 侧吃到了 AVX2 与更成熟的汇编。
+
+补充佐证：[[via-x86-isaiah-lujiazui]] 一文显示，VIA 同一脉 x86 核 Isaiah（2008 低功耗定位却跑得比 Core 2 还热）与 Lujiazui（砍窄 2-wide、AVX 聋哑化）微架构行为差异极大，但都是 x86——再度验证「实现 >> ISA」。
 
 ## RISC-V 与 "遗产"
 

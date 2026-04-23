@@ -12087,3 +12087,8 @@ raw/articles/c0de517e.blogspot.com/2011-02-26_surviving-c.md
 raw/articles/c0de517e.blogspot.com/2011-03-02_alternatives-to-object-handles.md
 raw/articles/c0de517e.blogspot.com/2011-03-07_tell-the-internet-that-you-re-not-a-moron.md
 raw/articles/c0de517e.blogspot.com/2011-03-09_do-you-have-failed-builds-2.md
+raw/articles/chipsandcheese.com/2021-09-01_the-weird-and-wacky-world-of-via-the-3rd-player-in-the-moder.md
+raw/articles/chipsandcheese.com/2021-09-09_analyzing-video-card-efficiency-part-i-power.md
+raw/articles/chipsandcheese.com/2021-09-22_the-weird-and-wacky-world-of-via-part-2-zhaoxins-not-quite-e.md
+raw/articles/chipsandcheese.com/2021-09-29_do-ibms-giant-l3-and-v-cache-represent-the-future.md
+raw/articles/chipsandcheese.com/2021-10-22_deep-diving-neoverse-n1.md

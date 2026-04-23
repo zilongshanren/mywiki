@@ -26,6 +26,7 @@ sources: 5
 - [[op-cache-decoded-uop-cache]] — Zen 2 op cache 对性能与功耗的影响
 - [[isa-implementation-not-architecture]] — ISA 无关论的实测支撑
 - [[neoverse-n1-microarchitecture]] — Neoverse N1 vs Zen 2 实测对比
+- [[cache-size-vs-latency-tradeoff]] — 用 ChampSim 仿真比较 IBM 256 MB L3 与 AMD V-Cache 的延迟/容量取舍
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -41,3 +42,6 @@ sources: 5
 - [[sources/chipsandcheese-isa-doesnt-matter]]
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
 - [[sources/chipsandcheese-gigabyte-zen4-leak]]
+- [[sources/chipsandcheese-ibm-l3-v-cache-future]]
+- [[sources/chipsandcheese-neoverse-n1-deep-dive]]
+- [[sources/chipsandcheese-zhaoxin-lujiazui]]

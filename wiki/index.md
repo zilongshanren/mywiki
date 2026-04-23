@@ -313,6 +313,8 @@ CAQA + CSAPP 的底层视角。
 | [[isa-implementation-not-architecture]] | ISA 无关论：x86 vs ARM 性能差异来自实现而非指令集 |
 | [[dispatch-stall-breakdown]] | Zen 3 派发停顿分解：前端 op queue empty vs 后端资源满 |
 | [[neoverse-n1-microarchitecture]] | ARM Neoverse N1 实测：与 Zen 2 的同代对比 |
+| [[via-x86-isaiah-lujiazui]] | VIA Isaiah（大装低功耗）与 Zhaoxin Lujiazui（砍窄凑 8 核）的两代 x86 拆解 |
+| [[cache-size-vs-latency-tradeoff]] | ChampSim 仿真：IBM 256 MB L3 vs AMD V-Cache 96 MB 的延迟/容量取舍 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -956,6 +958,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[mtl-render-pass-descriptor]] | Metal 强制回答 TBDR tile 的 load/store action |
 | [[osx-metal-memory-model]] | OS X Metal 的 Shared/Managed/Private/Auto 四档存储与 Mantle 对比 |
 | [[frequency-is-not-latency]] | Pesce 2011 Fight Night Champion：FPS != 延迟，各子系统频率应按需设 |
+| [[gpu-efficiency-fps-per-joule]] | Serebit：Turing/Ampere/RDNA1/RDNA2 的 f/J 横测，分辨率换档会重排架构能效 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1147,6 +1150,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[george-cozma]] | Chips and Cheese 编辑，擅长用 PMU 事件证伪常识性测试数字 |
 | [[jeremy-tingle]] | Chips and Cheese 撰稿人，process node 与架构因果的宏观分析 |
 | [[apex-chipsandcheese]] | Chips and Cheese 匿名作者，社区视角批评厂商 PR 策略 |
+| [[serebit]] | Chips and Cheese GPU 横测作者，Video Card Efficiency 系列 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2176,6 +2180,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-alternatives-to-object-handles]] | Pesce：资源热重载的四种非句柄方案 |
 | [[sources/c0de517e-tell-internet-not-moron]] | Pesce：Fight Night Champion 为什么 30fps + motion blur，FPS != 延迟 |
 | [[sources/c0de517e-failed-builds]] | Pesce：禁用 `broken build` 概念，让子系统降级而不是全员停工 |
+| [[sources/chipsandcheese-via-isaiah]] | Cozma：VIA Nano / Isaiah 微架构拆解——伪装成低功耗的大核 |
+| [[sources/chipsandcheese-zhaoxin-lujiazui]] | Cozma + Lam：兆芯 Lujiazui 把 Isaiah 砍窄塞 8 核、AVX 聋哑化 |
+| [[sources/chipsandcheese-video-card-efficiency-power]] | Serebit：GPU 每瓦帧数三分辨率横测（2021 Q3） |
+| [[sources/chipsandcheese-ibm-l3-v-cache-future]] | Lam：ChampSim 仿真 IBM 256 MB L3 与 AMD V-Cache 的取舍 |
+| [[sources/chipsandcheese-neoverse-n1-deep-dive]] | Lam：Neoverse N1 结构尺寸 + 宏观 benchmark 重测（修正 WSL1 偏差） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
