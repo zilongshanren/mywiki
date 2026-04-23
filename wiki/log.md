@@ -1110,3 +1110,7 @@ Ben Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 inge
 ## [2026-04-19] ingest | Wave-87 Worker JA (hacksoflife / Supnik ×5, 2010-12 ~ 2011-01)
 
 处理 5 篇 Supnik 博客：4 ingested、1 skipped（stupid-cvs-tricks 属 legacy VCS 琐事）。Derivatives I + II 合并到一篇 source summary（同一硬件模型、同一修法族）。新增 2 概念页：[[glsl-compiler-optimization-reliance]]（RV790 编译器观察驱动 X-Plane 10 shader 组织改写）、[[cas-refcount-lowbit-lock]]（CAS+refcount 的经典缺口 + 指针低位自旋锁 + Vyukov differential refcount）。3 source 摘要，Supnik 人物页 source count 27 → 30。Derivatives 内容已由 [[texture2dgrad-explicit-derivatives]] / [[divergent-gradient-in-branches]] 充分覆盖，只补 source link。
+
+## [2026-04-19] ingest | Wave-87 Worker iz (bitsquid.blogspot.com 2012-11~2013-03 ×5)
+
+处理 5 篇 Niklas Frykholm 早期 Bitsquid 博客：formal data-def language、four meditations on bad design、GC vs allocation sizes、Why Lua、object replication migration race。新增 5 概念页（binary-data-definition-language / strings-as-identifiers-antipattern / four-meditations-on-rewrites / page-granular-system-allocator / object-replication-migration-race）+ 5 source summaries。作者页补 5 条相关链接。

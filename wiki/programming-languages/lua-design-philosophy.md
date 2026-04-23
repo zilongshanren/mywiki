@@ -61,5 +61,5 @@ Lua 5.0 起改用了基于寄存器的 VM——选择寄存器架构是为了"�
 - [[lua-c-api-dylib-proxy]] —— 静态链接 Lua 宿主如何挂外部 C 扩展的代理方案（Ant Engine 运行期代理 / soluna 构建期代理）
 
 ## Sources
-
 - [[sources/cloudwu-masterminds-lua-chapter]]
+- [[sources/bitsquid-why-lua]]

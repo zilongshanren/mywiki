@@ -89,6 +89,9 @@ sources: 371
 | [[cleaning-bad-code]] | Frykholm 9 条：遗留代码清理操作手册（改良优于革命）|
 | [[encapsulation-over-polymorphism]] | Supnik 2010：OOP 三要素 90/10/0 启发式，封装才是核心 |
 | [[types-h-data-code-separation]] | Bitsquid：types.h 集中数据、函数按功能分组的 header 组织 |
+| [[binary-data-definition-language]] | Bitsquid：二进制数据布局的形式化描述语言构想 |
+| [[strings-as-identifiers-antipattern]] | 字符串作标识符的反模式——Id/DisplayName 必须分离 |
+| [[four-meditations-on-rewrites]] | Bitsquid Flow 重写后的四条设计教训 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -281,6 +284,7 @@ CAQA + CSAPP 的底层视角。
 | [[optimization-leverage-ratio]] | 优化杠杆率：局部改善 × 时间占比才是真正收益 |
 | [[semaphore-vs-condvar-latency]] | pthread cond var vs semaphore+spinlock：X-Plane worker 唤醒 200→80 µsec |
 | [[cas-refcount-lowbit-lock]] | CAS + refcount 的竞态缺口、指针低位当锁的自旋变体、Vyukov differential refcount |
+| [[page-granular-system-allocator]] | Bitsquid 的内存纪律：全局只发整页、子系统在页内自治 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -346,6 +350,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[pesce-2010-engine-layer-sketch]] | Pesce 2010 年社区协作引擎分层草图：六层结构 + DevOps 摆首层 |
 | [[vector-field-bytecode-vm]] | Bitsquid 向量场：外循环指令 / 内循环数据的向量化字节码 VM |
 | [[bitsquid-foundation-library-concept]] | Bitsquid 2012 开源的最小引擎基座：allocator + 反 STL 集合 |
+| [[object-replication-migration-race]] | P2P 对象迁移的乱序竞态与 migration counter 解法 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1920,6 +1925,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/supnik-glsl-compiler-observations]] | Supnik：AMD ShaderAnalyzer 看到的 GLSL 编译器做了什么没做什么 |
 | [[sources/supnik-cas-reference-counting]] | Supnik：CAS+refcount 的低位锁变体与 Vyukov 评论区给的 differential refcount |
 | [[sources/supnik-derivatives-two-parts]] | Supnik：GLSL derivative 两连载，UV 不连续 + if 分支内的未定义导数 |
+| [[sources/bitsquid-formal-language-data-definitions]] | Bitsquid：为什么至今没有形式化二进制布局语言 |
+| [[sources/bitsquid-four-meditations-bad-design]] | Bitsquid：Flow 重写后的四条设计教训 |
+| [[sources/bitsquid-gc-and-allocation-sizes]] | Bitsquid：GC 痛点的真名是分配颗粒度 |
+| [[sources/bitsquid-why-lua]] | Bitsquid：为什么选 Lua——四条引擎原则逐条对齐 |
+| [[sources/bitsquid-object-replication-migration-race]] | Bitsquid：P2P 对象迁移的消息乱序 bug 与修复 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

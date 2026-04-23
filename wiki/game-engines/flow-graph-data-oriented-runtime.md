@@ -29,3 +29,4 @@ sources: 1
 ## Sources
 - [[sources/bitsquid-visual-scripting-data-oriented]]
 - [[sources/bitsquid-flow-followup-qa]]
+- [[sources/bitsquid-four-meditations-bad-design]] — Flow 第一版留下的四条坏决策与重写教训

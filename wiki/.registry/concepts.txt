@@ -926,3 +926,8 @@ level-design-without-editor
 behaviour-tree-game-ai
 glsl-compiler-optimization-reliance
 cas-refcount-lowbit-lock
+binary-data-definition-language
+strings-as-identifiers-antipattern
+four-meditations-on-rewrites
+page-granular-system-allocator
+object-replication-migration-race

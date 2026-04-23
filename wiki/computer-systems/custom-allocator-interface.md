@@ -70,5 +70,5 @@ allocator.make_delete(m);
 - **不提供 `realloc`**：作者认为它是"非确定性优化"；要 grow 就用"定长块链"自己 merge，可控、可预测。
 
 ## Sources
-
 - [[sources/bitsquid-custom-memory-allocation]]
+- [[sources/bitsquid-gc-and-allocation-sizes]] — 把全局分配压到页粒度的推理过程

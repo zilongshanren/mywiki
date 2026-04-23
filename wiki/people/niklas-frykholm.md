@@ -41,6 +41,11 @@ Stingray 的 [[ecs|entity / component]] 设计把"组件由 manager 按 SoA 管�
 - [[ragdoll-velocity-inheritance]] — ragdoll 切换瞬间继承动画速度的工程解法
 - [[no-frame-delays-principle]] — Bitsquid 戒律：动作立即生效，灰色过渡态会扩散补丁逻辑
 - [[lua-runtime-dynamism-tricks]] — Bitsquid 把 Lua 动态性用到底的七招
+- [[binary-data-definition-language]] — 二进制数据布局的形式化描述语言设想
+- [[strings-as-identifiers-antipattern]] — 字符串作标识符的反模式
+- [[four-meditations-on-rewrites]] — 重写 Flow 时总结的四条设计教训
+- [[page-granular-system-allocator]] — 全局只发整页、子系统自治的内存纪律
+- [[object-replication-migration-race]] — P2P 对象迁移的乱序竞态与 migration counter 修复
 
 ## Sources
 - [[sources/bitsquid-rebuilding-entity-index]]
