@@ -31,3 +31,4 @@ sources: 1
 ## Sources
 
 - [[sources/halisavakis-shaderquest-shaping-functions]]
+- [[sources/c0de517e-smoothen-functions]] —— smooth min/max、smoothstep 变体、sigmoid 族、Bias/Gain 的着色器工具集

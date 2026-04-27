@@ -52,3 +52,4 @@ Bitsquid 选了 VP8：以 libvpx 作跨平台默认解码器，容器走极简�
 ## Sources
 
 - [[sources/bitsquid-playing-with-video]]
+- [[sources/chipsandcheese-4k-codecs]]

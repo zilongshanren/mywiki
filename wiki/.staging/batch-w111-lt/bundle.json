@@ -1,0 +1,111 @@
+{
+  "batch_id": "batch-w111-lt",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章（2014 年），涵盖 C++ 替代语言分析、元编程权衡、代码极简主义、实时渲染管线对比、平滑函数数学工具。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-06-14_where-is-my-c-replacement.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-c-replacement-search",
+      "title": "Where is my C++ replacement?"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-06-16_bonus-round-languages-metaprogramming-and-terseness.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-languages-metaprogramming",
+      "title": "Bonus round: languages, metaprogramming and terseness"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-08-23_notes-on-minimalism-in-code.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-minimalism-code",
+      "title": "Notes on Minimalism in code"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-09-03_notes-on-real-time-renderers.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-realtime-renderer-notes",
+      "title": "Notes on real-time renderers"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-04-26_smoothen-your-functions.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-smoothen-functions",
+      "title": "Smoothen your functions"
+    }
+  ],
+  "concepts_created": [
+    "programming-languages/gamedev-language-adoption",
+    "rendering/forward-plus-rendering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-c-replacement-search",
+    "c0de517e-languages-metaprogramming",
+    "c0de517e-minimalism-code",
+    "c0de517e-realtime-renderer-notes",
+    "c0de517e-smoothen-functions"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gamedev-language-adoption]] —— 2014 年对游戏领域 C++ 替代困境的系统分析\n- [[forward-plus-rendering]] —— 2014 年对 Forward/Forward+/Deferred 四管线的对比笔记"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-c-replacement-search]]\n- [[sources/c0de517e-languages-metaprogramming]]\n- [[sources/c0de517e-minimalism-code]]\n- [[sources/c0de517e-realtime-renderer-notes]]\n- [[sources/c0de517e-smoothen-functions]]"
+    },
+    {
+      "file": "wiki/software-design/negative-space-in-programming.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-minimalism-code]] —— Pesce 2014 年极简主义笔记，与负空间哲学高度呼应"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-realtime-renderer-notes]] —— 2014 年 Forward/Forward+/Deferred 四管线横向对比"
+    },
+    {
+      "file": "wiki/rendering/shaping-functions.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-smoothen-functions]] —— smooth min/max、smoothstep 变体、sigmoid 族、Bias/Gain 的着色器工具集"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[gamedev-language-adoption]] | 游戏开发领域 C++ 替代失败的经济学分析 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[forward-plus-rendering]] | Forward+ 渲染：Tile/Cluster 光源剔除代替几何切割 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-c-replacement-search]] | Pesce：游戏领域找不到 C++ 替代语言的原因分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-languages-metaprogramming]] | Pesce：元编程与简洁性的权衡——可读性与表达力的张力 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-minimalism-code]] | Pesce：代码极简主义——有意识地选择复杂度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-realtime-renderer-notes]] | Pesce：实时渲染器管线笔记（Forward/Forward+/Deferred 对比）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-smoothen-functions]] | Pesce：平滑函数工具箱——smoothstep 变体、sigmoid、Bias/Gain |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-111 Worker LT (c0de517e.blogspot.com ×5)\n\n处理 5 篇 Angelo Pesce 2014 年文章。新增 2 概念页（gamedev-language-adoption、forward-plus-rendering）、5 source 摘要。跳过 0 篇。关键概念：游戏领域 C++ 替代困境、元编程可读性权衡、代码极简主义、Forward+/Deferred 管线对比、着色器平滑函数数学。"
+}

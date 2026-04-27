@@ -51,3 +51,4 @@ ryg 给出两条具体、不浮夸的建议：
 ## Sources
 
 - [[sources/ryg-negative-space-in-programming]]
+- [[sources/c0de517e-minimalism-code]] —— Pesce 2014 年极简主义笔记，与负空间哲学高度呼应

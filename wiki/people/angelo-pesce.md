@@ -98,3 +98,8 @@ sources: 5
 - [[sources/c0de517e-how-make-rendering-engine]]
 - [[sources/c0de517e-rate-my-api]]
 - [[sources/c0de517e-envmap-wrong]]
+- [[sources/c0de517e-c-replacement-search]]
+- [[sources/c0de517e-languages-metaprogramming]]
+- [[sources/c0de517e-minimalism-code]]
+- [[sources/c0de517e-realtime-renderer-notes]]
+- [[sources/c0de517e-smoothen-functions]]

@@ -57,3 +57,4 @@ Wronski 在 2014 年就预见到 SSR 的演进必然走向「屏幕空间之外�
 
 - [[sources/bartwronski-future-of-ssr]]
 - [[sources/supnik-hiz-ssr-tracing]] — Hi-Z trace 用参数 t 而非 Z 坐标，解决 reverse-Z 精度与方向泛化问题
+- [[sources/bartwronski-ssr-gdc-followup]] — Wronski：SSR 滤波与上采样的 GDC 补充详解（反射率权重上采样 + push-pull 填洞）

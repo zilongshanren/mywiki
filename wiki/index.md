@@ -182,6 +182,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[throwing-destructor-noexcept-terminate]] | C++11 析构隐式 noexcept 引出的 std::terminate |
 | [[cpp-coroutine-promise-type]] | C++20 promise_type 控制块、协程工厂语义与 co_await 即 .then |
 | [[cpp11-diet-features]] | C++11 精选特性（游戏引擎视角）：值得用与应避开的分类 |
+| [[gamedev-language-adoption]] | 游戏开发领域 C++ 替代失败的经济学分析 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -362,6 +363,7 @@ CAQA + CSAPP 的底层视角。
 | [[dunnington-penryn-server]] | Intel Dunnington 六核服务器处理器，Penryn 微架构分析及早期 uncore 设计得失 |
 | [[windows-startup-dll-scan]] | Windows Smart App Control 导致的 DLL 加载延迟及排查方法 |
 | [[van-gogh-steam-deck-apu]] | Steam Deck APU：Zen 2 + RDNA 2 极端 CPU/GPU 权衡 |
+| [[vcache-3d-die-stacking]] | AMD 3D V-Cache：通过 TSV 堆叠 SRAM die 扩充 L3 缓存的原理与取舍 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1042,6 +1044,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[envmap-ibl-approximation-errors]] | 环境贴图 IBL 近似误差清单：反射向量、遮挡、视差、法线方差等七类误差与修正 |
 | [[rdna2-architecture]] | AMD RDNA 2 架构：四级缓存、Infinity Cache、硬件光追设计 |
 | [[bvh-traversal-hardware]] | AMD 窄树 vs Nvidia 宽树 BVH 遍历策略对比 |
+| [[forward-plus-rendering]] | Forward+ 渲染：Tile/Cluster 光源剔除代替几何切割 |
+| [[video-codec-hevc-av1-vvc]] | 4K 时代的 HEVC/AV1/VVC 压缩效率与专利格局对比 |
+| [[shader-execution-reordering]] | Nvidia SER：主动重组线程以消减光追 SIMD 发散 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2383,6 +2388,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-van-gogh-steam-deck]] | Chester Lam：Van Gogh Steam Deck APU 测评 |
 | [[sources/chipsandcheese-sapphire-rapids]] | Chester Lam：Sapphire Rapids 服务器微基准测试 |
 | [[sources/chipsandcheese-rt-rdna-turing]] | Chester Lam：RDNA 2/3 vs Turing/Pascal 光追 BVH 策略对比 |
+| [[sources/c0de517e-c-replacement-search]] | Pesce：游戏领域找不到 C++ 替代语言的原因分析 |
+| [[sources/c0de517e-languages-metaprogramming]] | Pesce：元编程与简洁性的权衡——可读性与表达力的张力 |
+| [[sources/c0de517e-minimalism-code]] | Pesce：代码极简主义——有意识地选择复杂度 |
+| [[sources/c0de517e-realtime-renderer-notes]] | Pesce：实时渲染器管线笔记（Forward/Forward+/Deferred 对比）|
+| [[sources/c0de517e-smoothen-functions]] | Pesce：平滑函数工具箱——smoothstep 变体、sigmoid、Bias/Gain |
+| [[sources/chipsandcheese-loongson-best-shot]] | Chester Lam：龙芯3A5000全面微架构评测 |
+| [[sources/chipsandcheese-4k-codecs]] | Dingo Networks：4K时代HEVC/AV1/VVC压缩效率横向对比 |
+| [[sources/chipsandcheese-7950x3d-vcache]] | Chester Lam：Zen 4 VCache实测分析 |
+| [[sources/chipsandcheese-cyberpunk-path-tracing]] | Chester Lam：Cyberpunk 2077 Overdrive路径追踪GPU性能剖析 |
+| [[sources/chipsandcheese-nvidia-ser]] | Chester Lam：Nvidia SER机制深度解析 |
+| [[sources/bartwronski-ssr-gdc-followup]] | Wronski：SSR 滤波与上采样 GDC 补充（反射率权重 + push-pull 填洞） |
+| [[sources/selfshadow-pbs-siggraph-2016]] | Hill：SIGGRAPH 2016 PBS 课程（Frostbite 大气、UE4 毛发、Unity HDRI、实时 AO） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

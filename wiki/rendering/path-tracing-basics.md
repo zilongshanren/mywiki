@@ -65,3 +65,4 @@ workshop Part 3（importance sampling）从未写完——取而代之的是**TU
 
 - [[sources/peters-path-tracing-workshop]]
 - [[sources/peters-path-tracing-lectures]]
+- [[sources/chipsandcheese-cyberpunk-path-tracing]]

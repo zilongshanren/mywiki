@@ -51,3 +51,4 @@ Foundation 引擎用了一个更省的方案：
 ## Sources
 
 - [[sources/elopezr-rotr-rendering]]
+- [[sources/bartwronski-ssr-gdc-followup]] — 反射率（gloss × Fresnel）权重上采样作为深度权重的替代

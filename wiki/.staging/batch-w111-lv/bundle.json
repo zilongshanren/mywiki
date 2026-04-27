@@ -1,0 +1,64 @@
+{
+  "batch_id": "batch-w111-lv",
+  "agent_note": "Bart Wronski SSR GDC followup + selfshadow PBS 2014 duplicate check + selfshadow PBS 2016. Articles 4-5 (2017/2018 links) missing from disk.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-03-23_gdc-follow-up-screenspace-reflections-filtering-and-up-sampl.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-ssr-gdc-followup",
+      "title": "GDC follow-up: Screenspace Reflections Filtering and Up-sampling"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2014-08-12_physically-based-shading-at-siggraph-2014.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/selfshadow-pbs-siggraph-2014.md 已存在且内容完整，本文与其原文相同"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2016-01-01_siggraph-2016-course-physically-based-shading-in-theory-and.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-pbs-siggraph-2016",
+      "title": "SIGGRAPH 2016 Course: Physically Based Shading in Theory and Practice"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2017-08-30_siggraph-2017-links.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于磁盘（fetch 未完成或未收录）"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2018-08-14_siggraph-2018-links.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于磁盘（fetch 未完成或未收录）"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-ssr-gdc-followup",
+    "selfshadow-pbs-siggraph-2016"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/screenspace-reflections.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-ssr-gdc-followup]] — Wronski：SSR 滤波与上采样的 GDC 补充详解（反射率权重上采样 + push-pull 填洞）"
+    },
+    {
+      "file": "wiki/rendering/depth-aware-upsampling.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-ssr-gdc-followup]] — 反射率（gloss × Fresnel）权重上采样作为深度权重的替代"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-ssr-gdc-followup]] | Wronski：SSR 滤波与上采样 GDC 补充（反射率权重 + push-pull 填洞） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-pbs-siggraph-2016]] | Hill：SIGGRAPH 2016 PBS 课程（Frostbite 大气、UE4 毛发、Unity HDRI、实时 AO） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-111 Worker LV (bartwronski SSR GDC followup + selfshadow PBS 2016)\n\n处理 5 篇原文。Ingest 2 篇：bartwronski-ssr-gdc-followup（SSR 滤波/上采样细节）、selfshadow-pbs-siggraph-2016（PBS 课程 2016 届）。跳过 1 篇重复（selfshadow-pbs-siggraph-2014 已存在）、2 篇磁盘缺失（2017/2018 links）。新增 2 source 摘要页。patch screenspace-reflections.md + depth-aware-upsampling.md。"
+}

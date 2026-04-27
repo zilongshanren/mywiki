@@ -70,3 +70,4 @@ AMD 和 Nvidia 在同一性能档位（7900 XTX vs RTX 4080）采用了截然不
 
 - [[sources/chipsandcheese-rdna3-architecture]]
 - [[sources/chipsandcheese-rt-rdna-turing]]
+- [[sources/chipsandcheese-cyberpunk-path-tracing]]

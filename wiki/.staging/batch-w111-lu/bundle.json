@@ -1,0 +1,128 @@
+{
+  "batch_id": "batch-w111-lu",
+  "agent_note": "5 chipsandcheese.com 文章：龙芯3A5000综合评测、4K编解码器对比、7950X3D VCache、Cyberpunk路径追踪、SER。新建3概念页+5源摘要；loongson/ada/path-tracing已有页添加patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-04-09_loongsons-3a5000-chinas-best-shot.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-loongson-best-shot",
+      "title": "Loongson's 3A5000: China's Best Shot?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-04-16_codecs-for-the-4k-era-hevc-av1-vvc-and-beyond.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-4k-codecs",
+      "title": "Codecs for the 4K Era: HEVC, AV1, VVC and Beyond"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-04-23_amds-7950x3d-zen-4-gets-vcache.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-7950x3d-vcache",
+      "title": "AMD's 7950X3D: Zen 4 Gets VCache"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-05-07_cyberpunk-2077s-path-tracing-update.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cyberpunk-path-tracing",
+      "title": "Cyberpunk 2077's Path Tracing Update"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-05-17_shader-execution-reordering-nvidia-tackles-divergence.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-nvidia-ser",
+      "title": "Shader Execution Reordering: Nvidia Tackles Divergence"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/vcache-3d-die-stacking",
+    "rendering/video-codec-hevc-av1-vvc",
+    "rendering/shader-execution-reordering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-loongson-best-shot",
+    "chipsandcheese-4k-codecs",
+    "chipsandcheese-7950x3d-vcache",
+    "chipsandcheese-cyberpunk-path-tracing",
+    "chipsandcheese-nvidia-ser"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-loongson-best-shot]]"
+    },
+    {
+      "file": "wiki/rendering/ada-lovelace-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cyberpunk-path-tracing]]\n- [[sources/chipsandcheese-nvidia-ser]]"
+    },
+    {
+      "file": "wiki/rendering/path-tracing-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cyberpunk-path-tracing]]"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cyberpunk-path-tracing]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-7950x3d-vcache]]"
+    },
+    {
+      "file": "wiki/computer-systems/cache-size-vs-latency-tradeoff.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-7950x3d-vcache]]"
+    },
+    {
+      "file": "wiki/rendering/video-codec-licensing-tradeoffs.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-4k-codecs]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/vcache-3d-die-stacking]] | AMD 3D V-Cache：通过 TSV 堆叠 SRAM die 扩充 L3 缓存的原理与取舍 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/video-codec-hevc-av1-vvc]] | 4K 时代的 HEVC/AV1/VVC 压缩效率与专利格局对比 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/shader-execution-reordering]] | Nvidia SER：主动重组线程以消减光追 SIMD 发散 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-loongson-best-shot]] | Chester Lam：龙芯3A5000全面微架构评测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-4k-codecs]] | Dingo Networks：4K时代HEVC/AV1/VVC压缩效率横向对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-7950x3d-vcache]] | Chester Lam：Zen 4 VCache实测分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cyberpunk-path-tracing]] | Chester Lam：Cyberpunk 2077 Overdrive路径追踪GPU性能剖析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-nvidia-ser]] | Chester Lam：Nvidia SER机制深度解析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-111 Worker LU (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章。新增 3 概念页（vcache-3d-die-stacking、video-codec-hevc-av1-vvc、shader-execution-reordering）、5 source 摘要。跳过 0 篇。loongson-3a5000-microarchitecture、ada-lovelace-architecture、path-tracing-basics、rdna3-architecture、zen4-microarchitecture、cache-size-vs-latency-tradeoff、video-codec-licensing-tradeoffs 等已有页均补充 patch。"
+}

@@ -80,3 +80,4 @@ Zen 4 通过前端优化（更强分支预测、更大微操作缓存）和频�
 - [[sources/chipsandcheese-zen4-part1]]
 - [[sources/chipsandcheese-zen4-part2]]
 - [[sources/chipsandcheese-zen4-part3]]
+- [[sources/chipsandcheese-7950x3d-vcache]]

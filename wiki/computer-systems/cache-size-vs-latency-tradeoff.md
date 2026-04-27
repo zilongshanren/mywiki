@@ -47,3 +47,4 @@ AMD 也明确表示 V-Cache **延迟影响很小**——Chester 估算大概只�
 ## Sources
 
 - [[sources/chipsandcheese-ibm-l3-v-cache-future]]
+- [[sources/chipsandcheese-7950x3d-vcache]]

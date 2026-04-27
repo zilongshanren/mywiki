@@ -1390,3 +1390,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-110 Worker LS (blog.selfshadow.com ×5)
 
 本批 5 篇 selfshadow.com 文章全部 skip：2 篇重复，3 篇为公告/迁移/链接集合。blog.selfshadow.com 这批无新内容。
+
+## [2026-04-27] ingest | Wave-111 Worker LT (c0de517e 2014 batch 2 ×5)
+
+处理 5 篇 Angelo Pesce 2014 年文章，全部收录。新增 2 概念页（gamedev-language-adoption、forward-plus-rendering）、5 source 摘要。关键概念：游戏领域 C++ 替代困境、元编程可读性权衡、代码极简主义、Forward+/Deferred 管线对比、着色器平滑函数数学。
+
+## [2026-04-27] ingest | Wave-111 Worker LU (chipsandcheese 2023-04/05 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 3 概念页（vcache-3d-die-stacking、video-codec-hevc-av1-vvc、shader-execution-reordering）、5 source 摘要。无跳过。7 个已有概念页均补充 patch。
+
+## [2026-04-27] ingest | Wave-111 Worker LV (bartwronski SSR + selfshadow PBS 2016)
+
+Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘要（bartwronski-ssr-gdc-followup、selfshadow-pbs-siggraph-2016）。
