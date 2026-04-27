@@ -72,3 +72,8 @@ sources: 5
 - [[sources/c0de517e-vcs-next-gen]]
 - [[sources/c0de517e-game-languages-poll-2011]]
 - [[sources/c0de517e-skinning-normals-notes]]
+- [[sources/c0de517e-in-game-image-calibration]]
+- [[sources/c0de517e-mathematica-skin-rendering]]
+- [[sources/c0de517e-deferred-renderer-lessons]]
+- [[sources/c0de517e-raytracing-myths]]
+- [[sources/c0de517e-mathematica-spherical-harmonics]]

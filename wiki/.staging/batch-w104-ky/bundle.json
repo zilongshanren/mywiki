@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w104-ky",
+  "agent_note": "5 篇 Ben Supnik 文章；前 2 篇（SteamVR/Oculus 操作教程）skip；后 3 篇全部 ingest。新增概念页 3 个、source 摘要 3 个。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2017-06-02_quick-recalibrate-fixes-the-steamvr-floor-for-the-oculus-rif.md",
+      "status": "skipped_offtopic",
+      "reason": "纯用户操作教程：SteamVR 校准地板高度的步骤说明，无软件工程/图形/渲染技术内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2017-06-07_how-to-reset-steam-vr-when-it-can-t-talk-to-the-rift.md",
+      "status": "skipped_offtopic",
+      "reason": "纯用户操作教程：杀进程重启 SteamVR 的操作步骤，无技术深度"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-01-13_fixing-camera-shake-on-single-precision-gpus.md",
+      "status": "ingested",
+      "source_slug": "supnik-camera-shake-float-precision",
+      "title": "Fixing Camera Shake on Single Precision GPUs"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-01-29_flush-less-often.md",
+      "status": "ingested",
+      "source_slug": "supnik-flush-less-often",
+      "title": "Flush Less Often"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-03-27_there-must-be-fifty-ways-to-fail-your-stencil.md",
+      "status": "ingested",
+      "source_slug": "supnik-stencil-failure-modes",
+      "title": "There Must Be Fifty Ways to Fail Your Stencil"
+    }
+  ],
+  "concepts_created": [
+    "single-precision-float-world-offset",
+    "opengl-command-buffer-flush",
+    "stencil-failure-modes-deferred-lighting"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-camera-shake-float-precision",
+    "supnik-flush-less-often",
+    "supnik-stencil-failure-modes"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/huge-world-coordinate-precision.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[single-precision-float-world-offset]] — 2018 年 Supnik 的 pre-offset 方案：无需 fp64 GPU 也无需拆 mesh，通过世界坐标网格对齐消除大量抵消误差"
+    },
+    {
+      "file": "wiki/rendering/stencil-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stencil-failure-modes-deferred-lighting]] — 延迟光照 stencil 体积的两类失效：bit 溢出 wrap-around 与单 pass 视锥剔除死角"
+    },
+    {
+      "file": "wiki/rendering/glbuffersubdata-serialization.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-command-buffer-flush]] — OpenGL 隐式命令缓冲区的冲刷机制及其对小 batch 性能的影响"
+    },
+    {
+      "file": "wiki/rendering/deferred-light-volume-stencil-depth-clamp-hack.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stencil-failure-modes-deferred-lighting]] — 同一系统中 bit 溢出与单 pass 视锥死角两类独立失效的分析"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[single-precision-float-world-offset]]\n- [[opengl-command-buffer-flush]]\n- [[stencil-failure-modes-deferred-lighting]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[single-precision-float-world-offset]] | 大世界单精度浮点 pre-offset：不依赖 fp64 GPU 消除顶点抖动 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-command-buffer-flush]] | OpenGL 隐式命令缓冲区冲刷机制及其对小 batch 性能的影响 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stencil-failure-modes-deferred-lighting]] | 延迟光照 stencil 体积的两类失效：bit 溢出与单 pass 视锥死角 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-camera-shake-float-precision]] | Supnik：大世界单精度相机抖动的 pre-offset 修复 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-flush-less-often]] | Supnik：OpenGL 隐式命令缓冲区冲刷的性能问题与修复 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-stencil-failure-modes]] | Supnik：延迟光照 stencil 体积 bit 溢出与单 pass 视锥死角 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-104 Worker KY (hacksoflife.blogspot.com ×5)\n\n处理 5 篇 Ben Supnik 文章。跳过 2 篇 SteamVR/Oculus 操作教程（offtopic）。ingest 3 篇：大世界单精度 pre-offset 修复（2018-01）、OpenGL 命令缓冲区 flush 问题（2018-01）、延迟光照 stencil 失效模式（2018-03）。新增概念页 3 个（single-precision-float-world-offset、opengl-command-buffer-flush、stencil-failure-modes-deferred-lighting）、source 摘要 3 个。为 huge-world-coordinate-precision、stencil-buffer、glbuffersubdata-serialization、deferred-light-volume-stencil-depth-clamp-hack、ben-supnik 发出 patch。"
+}

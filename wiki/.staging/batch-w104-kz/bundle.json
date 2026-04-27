@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w104-kz",
+  "agent_note": "5 篇 c0de517e.blogspot.com（Angelo Pesce）2011 年文章：显示校准、皮肤 SSS、deferred renderer 教训、光线追踪 vs 光栅化、球谐函数 Mathematica 代码。全部 ingested。新增 3 个概念页、5 个 source summary。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-07-09_in-game-image-calibration.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-in-game-image-calibration",
+      "title": "In-Game Image Calibration"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-08_mathematica-and-skin-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-mathematica-skin-rendering",
+      "title": "Mathematica and Skin Rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-08_what-i-ve-learned-from-shipping-a-deferred-lighting-renderer.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-deferred-renderer-lessons",
+      "title": "What I've Learned from Shipping a Deferred Lighting Renderer"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-19_raytracing-myths.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-raytracing-myths",
+      "title": "Raytracing Myths"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-20_mathematica-and-spherical-harmonics.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-mathematica-spherical-harmonics",
+      "title": "Mathematica and Spherical Harmonics"
+    }
+  ],
+  "concepts_created": [
+    "rendering/in-game-display-calibration",
+    "rendering/preintegrated-skin-shading",
+    "rendering/raytracing-vs-rasterization"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-in-game-image-calibration",
+    "c0de517e-mathematica-skin-rendering",
+    "c0de517e-deferred-renderer-lessons",
+    "c0de517e-raytracing-myths",
+    "c0de517e-mathematica-spherical-harmonics"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/deferred-rendering-mythbusting.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-deferred-renderer-lessons]]"
+    },
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-mathematica-spherical-harmonics]]"
+    },
+    {
+      "file": "wiki/rendering/gamma-correction-srgb.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-in-game-image-calibration]]"
+    },
+    {
+      "file": "wiki/rendering/rasterization.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-raytracing-myths]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[in-game-display-calibration]] —— 2011 游戏内显示校准：动态范围优先于 gamma\n- [[preintegrated-skin-shading]] —— 2011 用 Mathematica 为 Penner 皮肤 SSS 求解析近似\n- [[deferred-renderer-lessons]] —— 2011 发货一个 deferred lighting renderer 的工程教训（bullet list）\n- [[raytracing-vs-rasterization]] —— 2011 拆解光线追踪的「并行性」和「对数复杂度」神话"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-in-game-image-calibration]]\n- [[sources/c0de517e-mathematica-skin-rendering]]\n- [[sources/c0de517e-deferred-renderer-lessons]]\n- [[sources/c0de517e-raytracing-myths]]\n- [[sources/c0de517e-mathematica-spherical-harmonics]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[in-game-display-calibration]] | 游戏内显示校准：动态范围优先于 gamma，Pesce 2011 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[preintegrated-skin-shading]] | Eric Penner 皮肤 SSS 预积分 LUT + Pesce Mathematica 解析近似 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[raytracing-vs-rasterization]] | 光线追踪 vs 光栅化：双循环对偶性，算法复杂度与并行性神话拆解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-in-game-image-calibration]] | Pesce：游戏内显示校准设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-mathematica-skin-rendering]] | Pesce：Mathematica + 皮肤 SSS 积分拟合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-deferred-renderer-lessons]] | Pesce：发货 deferred renderer 的工程教训 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-raytracing-myths]] | Pesce：光线追踪神话拆解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-mathematica-spherical-harmonics]] | Pesce：Mathematica 球谐函数代码 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-104 Worker KZ (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 技术文章（2011 年）。新增 3 概念页（in-game-display-calibration、preintegrated-skin-shading、raytracing-vs-rasterization）、5 source 摘要。无跳过。Patches：deferred-rendering-mythbusting / spherical-harmonics / gamma-correction-srgb / rasterization / angelo-pesce 各追加 source link 或相关条目。"
+}

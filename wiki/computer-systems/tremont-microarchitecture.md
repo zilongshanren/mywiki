@@ -55,3 +55,4 @@ Tremont 跨越手机→桌面/边缘的转向。Intel 往 Atom 里加总内存�
 ## Sources
 
 - [[sources/chipsandcheese-tremont]]
+- [[sources/chipsandcheese-alder-lake-caching-power]]

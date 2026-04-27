@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w104-la",
+  "agent_note": "5 篇 chipsandcheese.com CPU 微架构文章（2022-05 ~ 2022-07）。新建 5 概念页：aws-graviton3、sunny-cove、netburst、tachyum-prodigy、cache-power-efficiency；5 source 摘要页。全部 ingest。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-05-29_graviton-3-first-impressions.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-graviton3-first-impressions",
+      "title": "Graviton 3: First Impressions"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-06-07_sunny-cove-intels-lost-generation.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sunny-cove-intel-lost-gen",
+      "title": "Sunny Cove: Intel's Lost Generation"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-06-17_intels-netburst-failure-is-a-foundation-for-success.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-intel-netburst-failure",
+      "title": "Intel's Netburst: Failure is a Foundation for Success"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-06-28_tachyum-too-good-to-be-true.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-tachyum-claims",
+      "title": "Tachyum: Too Good to be True?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-07-07_alder-lakes-caching-and-power-efficiency.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-alder-lake-caching-power",
+      "title": "Alder Lake's Caching and Power Efficiency"
+    }
+  ],
+  "concepts_created": [
+    "aws-graviton3-microarchitecture",
+    "sunny-cove-microarchitecture",
+    "netburst-microarchitecture",
+    "tachyum-prodigy-architecture",
+    "cache-power-efficiency"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-graviton3-first-impressions",
+    "chipsandcheese-sunny-cove-intel-lost-gen",
+    "chipsandcheese-intel-netburst-failure",
+    "chipsandcheese-tachyum-claims",
+    "chipsandcheese-alder-lake-caching-power"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-graviton3-first-impressions]]\n- [[sources/chipsandcheese-alder-lake-caching-power]]"
+    },
+    {
+      "file": "wiki/computer-systems/intel-hybrid-alder-lake.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-alder-lake-caching-power]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-graviton3-first-impressions]]\n- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]\n- [[sources/chipsandcheese-intel-netburst-failure]]\n- [[sources/chipsandcheese-tachyum-claims]]"
+    },
+    {
+      "file": "wiki/computer-systems/gracemont-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-alder-lake-caching-power]]"
+    },
+    {
+      "file": "wiki/computer-systems/tremont-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-alder-lake-caching-power]]"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-graviton3-first-impressions]]"
+    },
+    {
+      "file": "wiki/computer-systems/op-cache-decoded-uop-cache.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-intel-netburst-failure]]\n- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]"
+    },
+    {
+      "file": "wiki/computer-systems/move-elimination-zeroing-idioms.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]\n- [[sources/chipsandcheese-graviton3-first-impressions]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/aws-graviton3-microarchitecture]] | AWS Graviton 3 微架构：基于 Neoverse V1，ARM 首款通用云 SVE CPU |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/sunny-cove-microarchitecture]] | Intel Sunny Cove / Ice Lake 微架构：十年来最大 IPC 跃升，被 10nm 工艺耽误的一代 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/netburst-microarchitecture]] | Intel NetBurst / Pentium 4 微架构：高频赌注的失败与 Sandy Bridge 的技术遗产 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/tachyum-prodigy-architecture]] | Tachyum Prodigy 架构批判性分析：算存比失衡、VLIW 生态缺失、时间线屡次跳票 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cache-power-efficiency]] | 缓存层次与功耗效率：RAPL 实测各级缓存数据传输能耗，L2 约 2×L1，DRAM 约 5×L3 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-graviton3-first-impressions]] | Chips and Cheese：Graviton 3 微架构首测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sunny-cove-intel-lost-gen]] | Chips and Cheese：Sunny Cove——Intel 失落的一代 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-intel-netburst-failure]] | Chips and Cheese：NetBurst 的失败与遗产 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-tachyum-claims]] | Chips and Cheese：Tachyum Prodigy 技术主张批判 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-alder-lake-caching-power]] | Chips and Cheese：Alder Lake 缓存层次与功耗效率测量 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-104 Worker LA (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 微架构文章（2022-05 ~ 2022-07）。新建 5 概念页（aws-graviton3-microarchitecture、sunny-cove-microarchitecture、netburst-microarchitecture、tachyum-prodigy-architecture、cache-power-efficiency）、5 source 摘要页。无 skip。为 8 个已有概念页生成 source link patch。"
+}

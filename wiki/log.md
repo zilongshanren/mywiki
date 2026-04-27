@@ -1306,3 +1306,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-103 Worker KX (chipsandcheese.com ×5)
 
 处理 5 篇 Chips and Cheese 文章。新增 3 概念页（centaur-cns-microarchitecture、numa-multi-socket-design、gpu-hardware-video-encoder）、5 source 摘要。跳过 0 篇。Golden Cove 缓存仿真分析 patch 至 golden-cove-microarchitecture；CHA die 与双路文章内容合并入 centaur-cns-microarchitecture 概念页（3 sources 计数）。george-cozma、chester-lam 人物页均已存在，emit patch 追加新 source 链接。
+
+## [2026-04-27] ingest | Wave-104 Worker KY (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 文章。跳过 2 篇 SteamVR/Oculus 操作教程（offtopic）。ingest 3 篇：大世界单精度 pre-offset 修复（2018-01）、OpenGL 命令缓冲区 flush 问题（2018-01）、延迟光照 stencil 失效模式（2018-03）。新增概念页 3 个（single-precision-float-world-offset、opengl-command-buffer-flush、stencil-failure-modes-deferred-lighting）、source 摘要 3 个。为 huge-world-coordinate-precision、stencil-buffer、glbuffersubdata-serialization、deferred-light-volume-stencil-depth-clamp-hack、ben-supnik 发出 patch。
+
+## [2026-04-27] ingest | Wave-104 Worker KZ (c0de517e.blogspot.com ×5)
+
+处理 5 篇 c0de517e.blogspot.com 技术文章（2011 年）。新增 3 概念页（in-game-display-calibration、preintegrated-skin-shading、raytracing-vs-rasterization）、5 source 摘要。无跳过。Patches：deferred-rendering-mythbusting / spherical-harmonics / gamma-correction-srgb / rasterization / angelo-pesce 各追加 source link 或相关条目。
+
+## [2026-04-27] ingest | Wave-104 Worker LA (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 微架构文章（2022-05 ~ 2022-07）。新建 5 概念页（aws-graviton3-microarchitecture、sunny-cove-microarchitecture、netburst-microarchitecture、tachyum-prodigy-architecture、cache-power-efficiency）、5 source 摘要页。无 skip。为 8 个已有概念页生成 source link patch。

@@ -46,6 +46,7 @@ sources: 1
 - [[stencil-portal-shader-antichamber]] —— Antichamber 风格「mask + object 配对」的最小 Unity 实现
 - [[stencil-parallax-card-layers]] —— Pokémon 卡牌风格的「stencil mask + Render Objects feature + 分层 parallax」URP 实现
 - [[deferred-light-volume-stencil-depth-clamp-hack]] —— X-Plane 光源体积 stencil 被远剪裁面切穿时的 depth-clamp 依赖与 vertex-shader Z-clamp 降级
+- [[stencil-failure-modes-deferred-lighting]] — 延迟光照 stencil 体积的两类失效：bit 溢出 wrap-around 与单 pass 视锥剔除死角
 
 ## Sources
 

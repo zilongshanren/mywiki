@@ -333,6 +333,11 @@ CAQA + CSAPP 的底层视角。
 | [[tsan-race-condition-detection]] | ThreadSanitizer 原理与游戏引擎竞态检测实战（X-Plane 案例集） |
 | [[centaur-cns-microarchitecture]] | Centaur CNS：Haswell 级 IPC 的极紧凑 x86 核，首个非 Intel AVX-512 实现，面积密度优先 |
 | [[numa-multi-socket-design]] | NUMA 多路设计：跨路延迟/带宽/一致性，含 CHA 双路带宽缺陷案例 |
+| [[aws-graviton3-microarchitecture]] | AWS Graviton 3 微架构：基于 Neoverse V1，ARM 首款通用云 SVE CPU |
+| [[sunny-cove-microarchitecture]] | Intel Sunny Cove / Ice Lake 微架构：十年来最大 IPC 跃升，被 10nm 工艺耽误的一代 |
+| [[netburst-microarchitecture]] | Intel NetBurst / Pentium 4 微架构：高频赌注的失败与 Sandy Bridge 的技术遗产 |
+| [[tachyum-prodigy-architecture]] | Tachyum Prodigy 架构批判性分析：算存比失衡、VLIW 生态缺失、时间线屡次跳票 |
+| [[cache-power-efficiency]] | 缓存层次与功耗效率：RAPL 实测各级缓存数据传输能耗，L2 约 2×L1，DRAM 约 5×L3 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -986,6 +991,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[z-buffer-custom-encoding-early-z-tradeoff]] | 自定义深度编码（log-Z、eye-space）与 Early-Z 硬件优化的根本矛盾及 reversed-z 出路 |
 | [[skinning-normals-weighted-average]] | 蒙皮法线加权平均推导：旋转骨骼下的正确权重计算与平移骨骼的边界问题 |
 | [[gpu-hardware-video-encoder]] | GPU 硬件视频编码器（NVENC/VCN）vs 软件编码：VMAF 质量对比与场景适用性 |
+| [[single-precision-float-world-offset]] | 大世界单精度浮点 pre-offset：不依赖 fp64 GPU 消除顶点抖动 |
+| [[opengl-command-buffer-flush]] | OpenGL 隐式命令缓冲区冲刷机制及其对小 batch 性能的影响 |
+| [[stencil-failure-modes-deferred-lighting]] | 延迟光照 stencil 体积的两类失效：bit 溢出与单 pass 视锥死角 |
+| [[in-game-display-calibration]] | 游戏内显示校准：动态范围优先于 gamma，Pesce 2011 |
+| [[preintegrated-skin-shading]] | Eric Penner 皮肤 SSS 预积分 LUT + Pesce Mathematica 解析近似 |
+| [[raytracing-vs-rasterization]] | 光线追踪 vs 光栅化：双循环对偶性，算法复杂度与并行性神话拆解 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2241,6 +2252,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-gpu-video-encoders]] | Chester Lam：GPU 硬件视频编码器质量对比（NVENC vs VCN vs libx264）|
 | [[sources/chipsandcheese-centaur-cha-dual-socket]] | Chester Lam：CHA 双路 NUMA 延迟与带宽缺陷分析 |
 | [[sources/chipsandcheese-centaur-cha-die]] | Chester Lam：CHA die 面积分布与 CNS 密度设计哲学 |
+| [[sources/supnik-camera-shake-float-precision]] | Supnik：大世界单精度相机抖动的 pre-offset 修复 |
+| [[sources/supnik-flush-less-often]] | Supnik：OpenGL 隐式命令缓冲区冲刷的性能问题与修复 |
+| [[sources/supnik-stencil-failure-modes]] | Supnik：延迟光照 stencil 体积 bit 溢出与单 pass 视锥死角 |
+| [[sources/c0de517e-in-game-image-calibration]] | Pesce：游戏内显示校准设计 |
+| [[sources/c0de517e-mathematica-skin-rendering]] | Pesce：Mathematica + 皮肤 SSS 积分拟合 |
+| [[sources/c0de517e-deferred-renderer-lessons]] | Pesce：发货 deferred renderer 的工程教训 |
+| [[sources/c0de517e-raytracing-myths]] | Pesce：光线追踪神话拆解 |
+| [[sources/c0de517e-mathematica-spherical-harmonics]] | Pesce：Mathematica 球谐函数代码 |
+| [[sources/chipsandcheese-graviton3-first-impressions]] | Chips and Cheese：Graviton 3 微架构首测 |
+| [[sources/chipsandcheese-sunny-cove-intel-lost-gen]] | Chips and Cheese：Sunny Cove——Intel 失落的一代 |
+| [[sources/chipsandcheese-intel-netburst-failure]] | Chips and Cheese：NetBurst 的失败与遗产 |
+| [[sources/chipsandcheese-tachyum-claims]] | Chips and Cheese：Tachyum Prodigy 技术主张批判 |
+| [[sources/chipsandcheese-alder-lake-caching-power]] | Chips and Cheese：Alder Lake 缓存层次与功耗效率测量 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

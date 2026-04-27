@@ -73,3 +73,4 @@ vec3 SRGB_encode(vec3 lrgb) {
 ## Sources
 - [[sources/xor-mini-gamma]]
 - [[sources/supnik-gamma-lighting-trilogy]]
+- [[sources/c0de517e-in-game-image-calibration]]

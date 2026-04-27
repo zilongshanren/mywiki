@@ -55,3 +55,4 @@ sources: 3
 - [[sources/rtr-day04]]
 - [[sources/ryg-trip-through-graphics-pipeline-2011-part-6]]
 - [[sources/aras-gpu-point-rasterization]]
+- [[sources/c0de517e-raytracing-myths]]

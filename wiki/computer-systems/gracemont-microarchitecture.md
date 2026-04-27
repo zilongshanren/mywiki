@@ -52,3 +52,4 @@ Chester 的比喻精准：Intel 像 300 AD 的罗马帝国——仍然强，但�
 ## Sources
 
 - [[sources/chipsandcheese-gracemont]]
+- [[sources/chipsandcheese-alder-lake-caching-power]]

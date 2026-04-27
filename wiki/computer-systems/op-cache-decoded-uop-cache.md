@@ -46,3 +46,5 @@ AMD、Intel、ARM 的高性能核几乎都已采用 op cache：Intel 在 Sandy B
 - [[sources/chipsandcheese-zen3-bottlenecks]]
 - [[sources/chipsandcheese-golden-cove]]
 - [[sources/chipsandcheese-gracemont]]
+- [[sources/chipsandcheese-intel-netburst-failure]]
+- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]

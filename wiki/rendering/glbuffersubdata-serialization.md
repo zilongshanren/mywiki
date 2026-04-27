@@ -58,6 +58,7 @@ Rob 补充了一个不常被提到的动机：**SubData 假设源数据已经是
 - [[ben-supnik]]
 - [[glmapbuffer-threaded-driver-stall]] —— 2015 Supnik 反转：threaded driver 下 map 才是串行化来源，SubData 反而快
 - [[glbuffersubdata-in-band-streaming]] —— SubData 的现代 fast path（DMA in command stream / resource renaming）
+- [[opengl-command-buffer-flush]] — OpenGL 隐式命令缓冲区的冲刷机制及其对小 batch 性能的影响
 
 ## Sources
 - [[sources/supnik-glbuffersubdata]]

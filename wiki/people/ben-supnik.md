@@ -221,3 +221,6 @@ Benjamin Supnik，Laminar Research 的核心图形/引擎程序员，在模拟�
 - [[sources/supnik-simultaneous-mipmap-generation]]
 - [[sources/supnik-asan-big-bucks]]
 - [[sources/supnik-worst-lock-ever]]
+- [[sources/supnik-camera-shake-float-precision]]
+- [[sources/supnik-flush-less-often]]
+- [[sources/supnik-stencil-failure-modes]]

@@ -49,3 +49,5 @@ sources: 3
 - [[sources/chipsandcheese-golden-cove]]
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-tremont]]
+- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]
+- [[sources/chipsandcheese-graviton3-first-impressions]]

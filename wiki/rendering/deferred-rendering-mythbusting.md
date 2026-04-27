@@ -82,3 +82,4 @@ Pesce 的六条写法共享一个判断轴：**技术选择要回到「我的工
 ## Sources
 
 - [[sources/c0de517e-mythbusting-deferred]]
+- [[sources/c0de517e-deferred-renderer-lessons]]

@@ -51,3 +51,7 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 - [[sources/chipsandcheese-golden-cove]]
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-tremont]]
+- [[sources/chipsandcheese-graviton3-first-impressions]]
+- [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]
+- [[sources/chipsandcheese-intel-netburst-failure]]
+- [[sources/chipsandcheese-tachyum-claims]]

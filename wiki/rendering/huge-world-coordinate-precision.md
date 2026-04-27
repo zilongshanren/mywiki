@@ -43,6 +43,7 @@ sources: 1
 
 - [[coordinate-spaces]] — world space 的存在本身就是图形管线标准分层
 - [[ben-supnik]]
+- [[single-precision-float-world-offset]] — 2018 年 Supnik 的 pre-offset 方案：无需 fp64 GPU 也无需拆 mesh，通过世界坐标网格对齐消除大量抵消误差
 
 ## Sources
 

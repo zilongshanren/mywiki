@@ -68,6 +68,7 @@ Supnik 给出的三档生产路径：
 - [[early-z-late-z]]
 - [[agp-vs-vram-streaming]] —— 当 bus 才是真瓶颈时所有 stencil trick 都可能得关掉
 - [[xplane-deferred-pipeline-hacks]] —— 2012-11-16 Supnik 把本文描述的 stencil 优化**关掉**的工程决定：顶点带宽比 fill rate 更紧时 stencil 净亏损
+- [[stencil-failure-modes-deferred-lighting]] — 同一系统中 bit 溢出与单 pass 视锥死角两类独立失效的分析
 
 ## Sources
 

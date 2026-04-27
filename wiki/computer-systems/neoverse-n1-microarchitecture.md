@@ -49,3 +49,4 @@ N1 的真实性能天花板往往是软件生态。libaom-av1 在 aarch64 上没
 ## Sources
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
 - [[sources/chipsandcheese-neoverse-n1-deep-dive]]
+- [[sources/chipsandcheese-graviton3-first-impressions]]
