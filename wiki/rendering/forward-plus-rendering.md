@@ -46,3 +46,4 @@ Forward+ 和 Deferred 的带宽/复杂度权衡方向相反：Deferred 在复杂
 ## Sources
 
 - [[sources/c0de517e-realtime-renderer-notes]]
+- [[sources/c0de517e-rendering-continuum]] — Pesce 2016：Forward+ 在管线连续体中的定位与选型建议

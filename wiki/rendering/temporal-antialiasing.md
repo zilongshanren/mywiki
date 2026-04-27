@@ -70,3 +70,4 @@ TAA 被诟病「整个画面都在糊」——这是事实。它是一个**妥�
 
 - [[sources/elopezr-taa-holy-trail]]
 - [[sources/bartwronski-temporal-supersampling]]
+- [[sources/c0de517e-activision-siggraph-2016]] — Pesce 2016：Filmic SMAA（Jorge Jimenez）宣告时域重投影在抗锯齿领域获胜

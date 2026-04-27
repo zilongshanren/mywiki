@@ -47,8 +47,10 @@ Foundation 引擎用了一个更省的方案：
 - [[z-buffer]]
 - [[hbao-interleaved-sampling]]
 - [[image-resampling-filters]]
+- [[rendering-pipeline-taxonomy]] — upsampling 是所有低分辨率效果管线的基础设施
 
 ## Sources
 
 - [[sources/elopezr-rotr-rendering]]
 - [[sources/bartwronski-ssr-gdc-followup]] — 反射率（gloss × Fresnel）权重上采样作为深度权重的替代
+- [[sources/c0de517e-low-res-upsampling]] — Pesce 2016：COD:BO3 的 bilateral→nearest-depth 切换方案 + 棋盘格 min/max 降采样

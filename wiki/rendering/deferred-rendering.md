@@ -68,6 +68,7 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[deferred-rendering-mythbusting]] —— Pesce 2011 拆解六条常见误解，提出「deferred 是通用 pattern 不是单一结构」的判断框架
 - [[rendering-perception-psychology]] —— Pesce 2011 质疑 deferred 是否损失了预计算光照对材质微妙性的表现
 - [[realtime-quality-vs-quantity]] —— Pesce 2012：数量 vs 质量的结构性取舍，延迟渲染的功能堆砌是典型案例
+- [[rendering-pipeline-taxonomy]] — Pesce 2016 的统一管线分类框架，把 deferred 放入更大的连续体中定位
 
 ## Sources
 
@@ -80,3 +81,4 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[sources/gameknife-gkengine-rendering-optimization]] —— gkEngine 从 deferred lighting 演进到可切换 deferred shading 的一次实战：DP 减半但 G-Buffer 带宽涨 50 %，Hybrid Deferred Shading 的国产实验
 - [[sources/c0de517e-deferred-optimizer-notes]] —— Pesce 2012：Space Marine 延迟渲染器优化 post-mortem，出货前六个月性能翻倍
 - [[sources/c0de517e-realtime-renderer-notes]] —— 2014 年 Forward/Forward+/Deferred 四管线横向对比
+- [[sources/c0de517e-rendering-continuum]] — Pesce 2016：渲染管线连续体分类学，Forward/Deferred/VB/Texture-Space 统一框架

@@ -57,7 +57,9 @@ SebH 在评论里早就提过 [CryTek 的 best-fit normals](https://aras-p.info/
 - [[linear-lighting-pipeline]] —— 为什么 linear space 下 normal 精度更敏感
 - [[ben-supnik]]
 - [[8-bit-normal-map-precision-limits]] —— 贴图侧 RG8 精度问题（与 G-Buffer 编码互为独立战线）
+- [[gbuffer-multi-basis-normal-encoding]] — Alex Fry / Frostbite 的多基底方案：用 2–3 bit 突破可混合性与精度的矛盾
 
 ## Sources
 
 - [[sources/supnik-gbuffer-normals-revisited]]
+- [[sources/c0de517e-gbuffer-normal-encodings]]

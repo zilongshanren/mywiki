@@ -43,3 +43,4 @@ Use.GPU 的 render target "buffer history" 是一等语义——以 `history[i]`
 ## Sources
 
 - [[sources/acko-occlusion-with-bells-on]]
+- [[sources/c0de517e-activision-siggraph-2016]] — Pesce 等 2016：GTAO 在 COD:BO3 的生产落地，0.5ms 内超越 HBAO+ 质量

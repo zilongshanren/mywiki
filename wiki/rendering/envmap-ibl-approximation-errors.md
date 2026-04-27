@@ -71,3 +71,4 @@ DX9 时代部分硬件不支持跨 cubemap face 的双线性过滤，需要手�
 ## Sources
 
 - [[sources/c0de517e-envmap-wrong]]
+- [[sources/c0de517e-parallax-corrected-followup]]

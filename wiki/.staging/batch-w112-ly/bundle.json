@@ -1,0 +1,134 @@
+{
+  "batch_id": "batch-w112-ly",
+  "agent_note": "c0de517e 2016 年文章批次：低分辨率 upsampling 实战、感知现实主义论、渲染管线分类学、Activision SIGGRAPH 2016 成果汇总。SIGGRAPH 2015 PBR 笔记帖内容为空（仅说明课程笔记未能发布），跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-02-06_low-resolution-effects-with-depth-aware-upsampling.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-low-res-upsampling",
+      "title": "Low-Resolution Effects with Depth-Aware Upsampling"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-03-12_beyond-photographic-realism.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-beyond-photorealism",
+      "title": "Beyond Photographic Realism"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-07-10_siggraph-2015-notes-for-approximate-models-for-physically-ba.md",
+      "status": "skipped_offtopic",
+      "reason": "内容极简：仅说明课程笔记链接失效，无实质技术内容可提取"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-08-06_the-real-time-rendering-continuum-a-taxonomy.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-rendering-continuum",
+      "title": "The Real-Time Rendering Continuum: A Taxonomy"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-08-13_activision-siggraph-2016.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-activision-siggraph-2016",
+      "title": "Activision @ SIGGRAPH 2016"
+    }
+  ],
+  "concepts_created": ["rendering-pipeline-taxonomy"],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-low-res-upsampling",
+    "c0de517e-beyond-photorealism",
+    "c0de517e-rendering-continuum",
+    "c0de517e-activision-siggraph-2016"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/depth-aware-upsampling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-low-res-upsampling]] — Pesce 2016：COD:BO3 的 bilateral→nearest-depth 切换方案 + 棋盘格 min/max 降采样"
+    },
+    {
+      "file": "wiki/rendering/depth-aware-upsampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering-pipeline-taxonomy]] — upsampling 是所有低分辨率效果管线的基础设施"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-rendering-continuum]] — Pesce 2016：渲染管线连续体分类学，Forward/Deferred/VB/Texture-Space 统一框架"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering-pipeline-taxonomy]] — Pesce 2016 的统一管线分类框架，把 deferred 放入更大的连续体中定位"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-beyond-photorealism]] — Pesce 2016：PBR 之后需要主动构建视觉语言，感知现实 ≠ 物理正确"
+    },
+    {
+      "file": "wiki/rendering/rendering-perception-psychology.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-beyond-photorealism]] — Pesce 2016：经典画家的感知技巧可被编码为工具；打破物理规律需有明确意图"
+    },
+    {
+      "file": "wiki/rendering/ground-truth-ambient-occlusion.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-activision-siggraph-2016]] — Pesce 等 2016：GTAO 在 COD:BO3 的生产落地，0.5ms 内超越 HBAO+ 质量"
+    },
+    {
+      "file": "wiki/rendering/temporal-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-activision-siggraph-2016]] — Pesce 2016：Filmic SMAA（Jorge Jimenez）宣告时域重投影在抗锯齿领域获胜"
+    },
+    {
+      "file": "wiki/rendering/forward-plus-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-rendering-continuum]] — Pesce 2016：Forward+ 在管线连续体中的定位与选型建议"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-low-res-upsampling]]\n- [[sources/c0de517e-beyond-photorealism]]\n- [[sources/c0de517e-rendering-continuum]]\n- [[sources/c0de517e-activision-siggraph-2016]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[depth-aware-upsampling]] — 2016 COD:BO3 bilateral→nearest 切换方案\n- [[rendering-pipeline-taxonomy]] — 2016 实时渲染管线连续体分类学"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering-pipeline-taxonomy]] | Pesce 2016 渲染管线连续体分类学：Forward/Deferred/VB/Texture-Space 统一框架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-low-res-upsampling]] | Pesce 2016：COD:BO3 低分辨率效果 bilateral→nearest-depth 切换 + 棋盘格降采样 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-beyond-photorealism]] | Pesce 2016：PBR 之后的感知现实主义，主动构建视觉语言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-rendering-continuum]] | Pesce 2016：实时渲染管线分类学，所有变体统一为切断点 + 通信结构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-activision-siggraph-2016]] | Pesce 2016：Activision SIGGRAPH 成果汇总（Volumetric Irradiance、SST、Filmic SMAA、GTAO） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-112 Worker LY (c0de517e.blogspot.com 2016 ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章（2016 年批次）。4 篇 ingest，1 篇跳过（SIGGRAPH 2015 PBR 笔记帖内容为空）。新增 1 概念页（rendering-pipeline-taxonomy）、4 source 摘要。Patch：depth-aware-upsampling、deferred-rendering、physically-based-shading、rendering-perception-psychology、ground-truth-ambient-occlusion、temporal-antialiasing、forward-plus-rendering、angelo-pesce。"
+}

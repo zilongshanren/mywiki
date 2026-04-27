@@ -49,3 +49,4 @@ Pesce 列出的几条有据可查但缺乏量化的经验：
 ## Sources
 
 - [[sources/c0de517e-open-questions]]
+- [[sources/c0de517e-beyond-photorealism]] — Pesce 2016：经典画家的感知技巧可被编码为工具；打破物理规律需有明确意图

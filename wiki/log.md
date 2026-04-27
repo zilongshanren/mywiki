@@ -1402,3 +1402,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-111 Worker LV (bartwronski SSR + selfshadow PBS 2016)
 
 Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘要（bartwronski-ssr-gdc-followup、selfshadow-pbs-siggraph-2016）。
+
+## [2026-04-27] ingest | Wave-112 Worker LW (c0de517e 2015-2016 ×4 + 1 skip)
+
+处理 5 篇 Angelo Pesce 文章。ingested 4 篇，跳过 1 篇（design-optimization-landscape 仅有演讲提纲）。新增 3 概念页（image-quality-philosophy、filmic-post-processing-critique、gbuffer-multi-basis-normal-encoding）、4 source 摘要。
+
+## [2026-04-27] ingest | Wave-112 Worker LX (chipsandcheese 2023-06/08 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（h100-hopper-architecture、qualcomm-kryo-microarchitecture、sandy-bridge-microarchitecture、cortex-a710-microarchitecture）、5 source 摘要。RX 7600 patch 到 rdna3-architecture。
+
+## [2026-04-27] ingest | Wave-112 Worker LY (c0de517e 2016 ×4 + 1 skip)
+
+处理 5 篇 c0de517e 文章。ingested 4 篇，跳过 1 篇（SIGGRAPH 2015 PBR 笔记帖内容为空）。新增 1 概念页（rendering-pipeline-taxonomy）、4 source 摘要。8 个已有页均补充 patch。

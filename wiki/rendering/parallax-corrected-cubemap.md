@@ -51,8 +51,10 @@ ReflDirWS      *= BoxScale;
 - [[physically-based-shading]] — IBL 与 PBR 的关系
 - [[deferred-rendering]] — 反射探针在 deferred 管线下的应用
 - [[kostas-anagnostou]]
+- [[envmap-ibl-approximation-errors]] — 包含视差修正引入的预过滤 footprint 扭曲、可见性误差等系统性分析
 
 ## Sources
 
 - [[sources/interplay-parallax-corrected-cubemap]]
 - [[sources/c0de517e-envmap-wrong]] — parallax correction 与预卷积假设矛盾的分析
+- [[sources/c0de517e-parallax-corrected-followup]]

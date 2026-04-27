@@ -57,6 +57,8 @@ RDNA 3 的 Local Data Share（LDS）延迟大幅改善，超越 Nvidia：
 
 chiplet 代价是 Infinity Cache 访问延迟上升，以及更复杂的封装成本（需 interposer 级别的高带宽互联）。收益是主 die 面积更小，可使用更先进工艺。
 
+Navi 33（RX 7600）采用完全单片设计（TSMC 6nm），省去了独立内存控制器 die 和 interposer 级互联，以更低成本实现 RDNA 3 架构。代价是不含大号寄存器文件（128 KB/SIMD 而非 192 KB）、使用 128-bit VRAM 总线，以及牺牲了前端与 shader 时钟解耦能力。收益是 Infinity Cache 延迟比 Navi 31 低约 58%，弥补了较低占用率带来的延迟隐藏能力损失。
+
 ## 与 Ada Lovelace 对比
 
 AMD 和 Nvidia 在同一性能档位（7900 XTX vs RTX 4080）采用了截然不同的设计哲学：
@@ -71,3 +73,4 @@ AMD 和 Nvidia 在同一性能档位（7900 XTX vs RTX 4080）采用了截然不
 - [[sources/chipsandcheese-rdna3-architecture]]
 - [[sources/chipsandcheese-rt-rdna-turing]]
 - [[sources/chipsandcheese-cyberpunk-path-tracing]]
+- [[sources/chipsandcheese-rx7600-rdna3-small]]

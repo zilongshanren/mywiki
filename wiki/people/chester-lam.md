@@ -67,3 +67,8 @@ sources: 5
 - [[sources/chipsandcheese-zen4-part1]]
 - [[sources/chipsandcheese-zen4-part2]]
 - [[sources/chipsandcheese-cannon-lake]]
+- [[sources/chipsandcheese-rx7600-rdna3-small]]
+- [[sources/chipsandcheese-h100-l2-bandwidth]]
+- [[sources/chipsandcheese-qualcomm-kryo]]
+- [[sources/chipsandcheese-sandy-bridge]]
+- [[sources/chipsandcheese-cortex-a710]]

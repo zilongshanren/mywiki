@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w112-lx",
+  "agent_note": "5 篇 chipsandcheese.com 文章：RX 7600 (RDNA 3 小芯片)、H100 (Hopper L2)、Kryo (高通末代自研核)、Sandy Bridge (Intel 现代基础)、Cortex-A710 (ARM 默胜策略)。新建 4 个概念页，patch rdna3-architecture。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-06-04_amds-rx-7600-small-rdna-3-appears.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rx7600-rdna3-small",
+      "title": "AMD's RX 7600: Small RDNA 3 Appears"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-07-03_nvidias-h100-funny-l2-and-tons-of-bandwidth.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-h100-l2-bandwidth",
+      "title": "Nvidia's H100: Funny L2, and Tons of Bandwidth"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-07-13_kryo-qualcomms-last-in-house-mobile-core.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-qualcomm-kryo",
+      "title": "Kryo: Qualcomm's Last In-House Mobile Core"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-08-05_sandy-bridge-setting-intels-modern-foundation.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sandy-bridge",
+      "title": "Sandy Bridge: Setting Intel's Modern Foundation"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-08-11_arms-cortex-a710-winning-by-default.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-a710",
+      "title": "ARM's Cortex A710: Winning by Default"
+    }
+  ],
+  "concepts_created": [
+    "h100-hopper-architecture",
+    "qualcomm-kryo-microarchitecture",
+    "sandy-bridge-microarchitecture",
+    "cortex-a710-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-rx7600-rdna3-small",
+    "chipsandcheese-h100-l2-bandwidth",
+    "chipsandcheese-qualcomm-kryo",
+    "chipsandcheese-sandy-bridge",
+    "chipsandcheese-cortex-a710"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-rx7600-rdna3-small]]"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Chiplet 实现",
+      "content": "\nNavi 33（RX 7600）采用完全单片设计（TSMC 6nm），省去了独立内存控制器 die 和 interposer 级互联，以更低成本实现 RDNA 3 架构。代价是不含大号寄存器文件（128 KB/SIMD 而非 192 KB）、使用 128-bit VRAM 总线，以及牺牲了前端与 shader 时钟解耦能力。收益是 Infinity Cache 延迟比 Navi 31 低约 58%，弥补了较低占用率带来的延迟隐藏能力损失。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/h100-hopper-architecture]] | Nvidia Hopper H100：分裂 L2、HBM2e 2 TB/s、FP32/FP64 相比 A100 翻倍 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/qualcomm-kryo-microarchitecture]] | 高通 Kryo：首末款自研 64-bit 移动核，4-wide 乱序，store forwarding 极慢 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/sandy-bridge-microarchitecture]] | Intel Sandy Bridge：µop cache + 环形总线 L3 + PRF 乱序，现代 CPU 设计奠基 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cortex-a710-microarchitecture]] | ARM Cortex-A710：5-wide 效率优先迭代，10K BTB，DSU-110 环形总线互联 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rx7600-rdna3-small]] | Chester Lam：RX 7600 / Navi 33 RDNA 3 小芯片分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-h100-l2-bandwidth]] | Chester Lam：H100 Hopper 分裂 L2 与 HBM 带宽 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-qualcomm-kryo]] | Chester Lam：高通 Kryo 微架构深度分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sandy-bridge]] | Chester Lam：Sandy Bridge 微架构与 Intel 现代架构基础 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-a710]] | Chester Lam：Cortex-A710 微架构分析，默胜策略 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-112 Worker LX (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（h100-hopper-architecture、qualcomm-kryo-microarchitecture、sandy-bridge-microarchitecture、cortex-a710-microarchitecture）、5 source 摘要页。跳过 0 篇。RX 7600 patch 到现有 rdna3-architecture 页面。chester-lam 人物页已存在，未重建。"
+}

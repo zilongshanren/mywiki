@@ -364,6 +364,10 @@ CAQA + CSAPP 的底层视角。
 | [[windows-startup-dll-scan]] | Windows Smart App Control 导致的 DLL 加载延迟及排查方法 |
 | [[van-gogh-steam-deck-apu]] | Steam Deck APU：Zen 2 + RDNA 2 极端 CPU/GPU 权衡 |
 | [[vcache-3d-die-stacking]] | AMD 3D V-Cache：通过 TSV 堆叠 SRAM die 扩充 L3 缓存的原理与取舍 |
+| [[h100-hopper-architecture]] | Nvidia Hopper H100：分裂 L2、HBM2e 2 TB/s、FP32/FP64 相比 A100 翻倍 |
+| [[qualcomm-kryo-microarchitecture]] | 高通 Kryo：首末款自研 64-bit 移动核，4-wide 乱序，store forwarding 极慢 |
+| [[sandy-bridge-microarchitecture]] | Intel Sandy Bridge：µop cache + 环形总线 L3 + PRF 乱序，现代 CPU 设计奠基 |
+| [[cortex-a710-microarchitecture]] | ARM Cortex-A710：5-wide 效率优先迭代，10K BTB，DSU-110 环形总线互联 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1047,6 +1051,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[forward-plus-rendering]] | Forward+ 渲染：Tile/Cluster 光源剔除代替几何切割 |
 | [[video-codec-hevc-av1-vvc]] | 4K 时代的 HEVC/AV1/VVC 压缩效率与专利格局对比 |
 | [[shader-execution-reordering]] | Nvidia SER：主动重组线程以消减光追 SIMD 发散 |
+| [[image-quality-philosophy]] | 少而精 vs 多而全：感知驱动的图像质量哲学，以 The Order 1886 为例 |
+| [[filmic-post-processing-critique]] | 游戏后处理管线对电影惯性借鉴的批判：源数据控制优于全局滤波 |
+| [[gbuffer-multi-basis-normal-encoding]] | G-Buffer 多基底法线编码：用 2–3 bit basis index 同时满足可混合与高精度 |
+| [[rendering-pipeline-taxonomy]] | Pesce 2016 渲染管线连续体分类学：Forward/Deferred/VB/Texture-Space 统一框架 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2400,6 +2408,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-nvidia-ser]] | Chester Lam：Nvidia SER机制深度解析 |
 | [[sources/bartwronski-ssr-gdc-followup]] | Wronski：SSR 滤波与上采样 GDC 补充（反射率权重 + push-pull 填洞） |
 | [[sources/selfshadow-pbs-siggraph-2016]] | Hill：SIGGRAPH 2016 PBS 课程（Frostbite 大气、UE4 毛发、Unity HDRI、实时 AO） |
+| [[sources/c0de517e-gbuffer-normal-encodings]] | Pesce：G-Buffer 法线编码四目标矛盾与多基底方案 |
+| [[sources/c0de517e-order-1886-rendering]] | Pesce：The Order 1886 渲染质量分析——稳定性、遮挡、大气、材质 |
+| [[sources/c0de517e-parallax-corrected-followup]] | Pesce：视差修正 cubemap 的三类误差：预过滤形状、可见性、其他 |
+| [[sources/c0de517e-color-grading-excuses]] | Pesce：游戏 color grading 的惯性与替代路径 |
+| [[sources/c0de517e-low-res-upsampling]] | Pesce 2016：COD:BO3 低分辨率效果 bilateral→nearest-depth 切换 + 棋盘格降采样 |
+| [[sources/c0de517e-beyond-photorealism]] | Pesce 2016：PBR 之后的感知现实主义，主动构建视觉语言 |
+| [[sources/c0de517e-rendering-continuum]] | Pesce 2016：实时渲染管线分类学，所有变体统一为切断点 + 通信结构 |
+| [[sources/c0de517e-activision-siggraph-2016]] | Pesce 2016：Activision SIGGRAPH 成果汇总（Volumetric Irradiance、SST、Filmic SMAA、GTAO） |
+| [[sources/chipsandcheese-rx7600-rdna3-small]] | Chester Lam：RX 7600 / Navi 33 RDNA 3 小芯片分析 |
+| [[sources/chipsandcheese-h100-l2-bandwidth]] | Chester Lam：H100 Hopper 分裂 L2 与 HBM 带宽 |
+| [[sources/chipsandcheese-qualcomm-kryo]] | Chester Lam：高通 Kryo 微架构深度分析 |
+| [[sources/chipsandcheese-sandy-bridge]] | Chester Lam：Sandy Bridge 微架构与 Intel 现代架构基础 |
+| [[sources/chipsandcheese-cortex-a710]] | Chester Lam：Cortex-A710 微架构分析，默胜策略 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

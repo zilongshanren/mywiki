@@ -1,0 +1,134 @@
+{
+  "batch_id": "batch-w112-lw",
+  "agent_note": "5篇 Angelo Pesce (c0de517e) 文章：4篇 ingest，1篇跳过（design-optimization-landscape 内容只是演讲提纲 bullet list + 无法读取的图，缺乏实质技术内容）。新建 3 个概念页（image-quality-philosophy、filmic-post-processing-critique、gbuffer-multi-basis-normal-encoding），4 个 source 摘要页。对 compact-normal-encoding、parallax-corrected-cubemap、envmap-ibl-approximation-errors、color-lut、angelo-pesce 发出 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2015-01-24_notes-on-g-buffer-normal-encodings.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-gbuffer-normal-encodings",
+      "title": "Notes on G-Buffer Normal Encodings"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2015-02-27_why-the-rendering-in-the-order-1886-rocks.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-order-1886-rendering",
+      "title": "Why the Rendering in The Order: 1886 Rocks"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2015-03-14_design-optimization-landscape.md",
+      "status": "skipped_offtopic",
+      "reason": "内容只有一个 bullet list 演讲提纲 + 一张无法读取的图，无实质技术论述，不满足质量门槛"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2015-03-28_being-more-wrong-parallax-corrected-environment-maps.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-parallax-corrected-followup",
+      "title": "Being More Wrong: Parallax Corrected Environment Maps"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-01-24_color-grading-and-excuses.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-color-grading-excuses",
+      "title": "Color Grading and Excuses"
+    }
+  ],
+  "concepts_created": [
+    "rendering/image-quality-philosophy",
+    "rendering/filmic-post-processing-critique",
+    "rendering/gbuffer-multi-basis-normal-encoding"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-gbuffer-normal-encodings",
+    "c0de517e-order-1886-rendering",
+    "c0de517e-parallax-corrected-followup",
+    "c0de517e-color-grading-excuses"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/compact-normal-encoding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gbuffer-multi-basis-normal-encoding]] — Alex Fry / Frostbite 的多基底方案：用 2–3 bit 突破可混合性与精度的矛盾\n- [[sources/c0de517e-gbuffer-normal-encodings]] — Pesce 2015 对 view-space 编码缺陷与两种改良路线的系统梳理"
+    },
+    {
+      "file": "wiki/rendering/compact-normal-encoding.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-gbuffer-normal-encodings]]"
+    },
+    {
+      "file": "wiki/rendering/parallax-corrected-cubemap.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[envmap-ibl-approximation-errors]] — 包含视差修正引入的预过滤 footprint 扭曲、可见性误差等系统性分析\n- [[gbuffer-multi-basis-normal-encoding]] — 同一作者（Pesce）对 G-Buffer 编码类似「多视角权衡」的讨论"
+    },
+    {
+      "file": "wiki/rendering/parallax-corrected-cubemap.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-parallax-corrected-followup]]"
+    },
+    {
+      "file": "wiki/rendering/envmap-ibl-approximation-errors.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-parallax-corrected-followup]]"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[filmic-post-processing-critique]] — Pesce 2016 对游戏行业盲目复制电影后处理惯性的批判，以及用源数据（光源/材质）替代全局 LUT 的论证"
+    },
+    {
+      "file": "wiki/rendering/color-lut.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-color-grading-excuses]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[image-quality-philosophy]] —— 2015 年对 The Order 1886 的渲染分析：少而精的质量哲学\n- [[gbuffer-multi-basis-normal-encoding]] —— 2015 G-Buffer 多基底法线编码：突破可混合 vs 精度矛盾\n- [[filmic-post-processing-critique]] —— 2016 color grading 惯性批判：游戏应寻找自己的视觉语言\n- [[envmap-ibl-approximation-errors]] —— 视差修正 cubemap 的误差分析（parallax followup）"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-gbuffer-normal-encodings]]\n- [[sources/c0de517e-order-1886-rendering]]\n- [[sources/c0de517e-parallax-corrected-followup]]\n- [[sources/c0de517e-color-grading-excuses]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[image-quality-philosophy]] | 少而精 vs 多而全：感知驱动的图像质量哲学，以 The Order 1886 为例 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[filmic-post-processing-critique]] | 游戏后处理管线对电影惯性借鉴的批判：源数据控制优于全局滤波 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gbuffer-multi-basis-normal-encoding]] | G-Buffer 多基底法线编码：用 2–3 bit basis index 同时满足可混合与高精度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-gbuffer-normal-encodings]] | Pesce：G-Buffer 法线编码四目标矛盾与多基底方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-order-1886-rendering]] | Pesce：The Order 1886 渲染质量分析——稳定性、遮挡、大气、材质 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-parallax-corrected-followup]] | Pesce：视差修正 cubemap 的三类误差：预过滤形状、可见性、其他 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-color-grading-excuses]] | Pesce：游戏 color grading 的惯性与替代路径 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-112 Worker LW (c0de517e.blogspot.com ×5)\n\n处理 5 篇 Angelo Pesce 文章（2015–2016）。ingest 4 篇，跳过 1 篇（design-optimization-landscape，内容为空洞演讲提纲）。新建概念页 3 个（image-quality-philosophy、filmic-post-processing-critique、gbuffer-multi-basis-normal-encoding），source 摘要 4 个。patch：compact-normal-encoding、parallax-corrected-cubemap、envmap-ibl-approximation-errors、color-lut、angelo-pesce。"
+}
