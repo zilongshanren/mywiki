@@ -1,0 +1,76 @@
+{
+  "batch_id": "batch-w137-os",
+  "agent_note": "5 sources: 2 ingested (graphics-demo-programming 2011 original, AMD OpenGL driver hack), 2 skipped as exact duplicates of existing source pages (DXR article already exists as wolfgang-engel-dxr-api-debate, SRTM 30m as outerra-srtm-30m-evaluation), 1 skipped as thin announcement post (DirectX 12 blog).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-04-05_ray-tracing-with-the-directx-ray-tracing-api-dxr.md",
+      "status": "skipped_duplicate",
+      "reason": "同一篇文章已作为 wiki/sources/wolfgang-engel-dxr-api-debate.md 收录（URL 相同：http://diaryofagraphicsprogrammer.blogspot.com/2018/04/ray-tracing-with-directx-ray-tracing.html）"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-09-18_graphics-demo-programming.md",
+      "status": "ingested",
+      "source_slug": "humus-graphics-demo-programming",
+      "title": "Graphics Demo Programming（2011）"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2013-07-19_hacking-amd-opengl-drivers.md",
+      "status": "ingested",
+      "source_slug": "outerra-hacking-amd-opengl",
+      "title": "Hacking AMD OpenGL Drivers"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2015-05-27_evaluation-of-30m-elevation-data-in-outerra.md",
+      "status": "skipped_duplicate",
+      "reason": "同一篇文章已作为 wiki/sources/outerra-srtm-30m-evaluation.md 收录（URL 相同：https://outerra.blogspot.com/2015/05/evaluation-of-30m-elevation-data-in.html）"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2014-03-24_directx-12-blog.md",
+      "status": "skipped_thin",
+      "reason": "极短的兴奋发言（约两句话），仅表达对 DX12 公告和 Mantle 的期待，不含任何可提取的技术内容，不值得建立源摘要页"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "humus-graphics-demo-programming",
+    "outerra-hacking-amd-opengl"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/humus-graphics-demo-programming]]"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-hacking-amd-opengl]]"
+    },
+    {
+      "file": "wiki/rendering/reversed-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[logarithmic-depth-buffer]] — 另一路线，顶点着色器 log2 映射，全厂商可用；Outerra 2013 年实测证明 reversed-Z 在 AMD OpenGL 上只需 patch 一条钳制指令即可工作（见 [[sources/outerra-hacking-amd-opengl]]）"
+    },
+    {
+      "file": "wiki/rendering/logarithmic-depth-buffer.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-hacking-amd-opengl]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-graphics-demo-programming]] | Engel 2011：demoscene 骨架 838 字节 exe，Pelles C + HLSL 压缩实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-hacking-amd-opengl]] | Outerra：patch AMD 驱动验证 reversed-Z / glDepthRange 负值可行 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-137 Worker OS (diaryofagraphicsprogrammer + outerra ×5)\n\n处理 5 篇文章：2 篇已有重复源页面（DXR API 争论文章 = wolfgang-engel-dxr-api-debate，SRTM 30m 评估 = outerra-srtm-30m-evaluation），1 篇过于简短跳过（DX12 公告帖）。新增 2 个 source 摘要页：humus-graphics-demo-programming（2011 年骨架 demo 压缩实验，838 字节 exe）和 outerra-hacking-amd-opengl（AMD 驱动 patch 验证 reversed-Z 可行性）。无新概念页；补充了 wolfgang-engel 和 outerra-team 人物页的 Sources 引用，以及 reversed-z 和 logarithmic-depth-buffer 概念页的交叉链接。"
+}

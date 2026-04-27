@@ -57,3 +57,4 @@ Confetti 用 The Forge 为 Supergiant 重写了 *Hades* 的引擎（PC / macOS /
 - [[sources/humus-multi-gpu-engine]]
 - [[sources/humus-compute-reloaded]]
 - [[sources/humus-points-vertices-vectors]]
+- [[sources/humus-graphics-demo-programming]]

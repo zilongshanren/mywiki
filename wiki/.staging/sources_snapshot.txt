@@ -569,3 +569,11 @@ outerra-depth-buffer-precision
 outerra-log-depth-buffer
 outerra-texture-bind-perf
 outerra-async-job-scheduler
+humus-multi-gpu-engine
+humus-compute-reloaded
+humus-points-vertices-vectors
+outerra-dp-map-projections
+outerra-crater-rendering
+outerra-lighting-fix
+outerra-ocean-rendering
+green-even-faster-math-2021

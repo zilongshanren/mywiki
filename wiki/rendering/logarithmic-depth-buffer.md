@@ -58,3 +58,4 @@ gl_FragDepth = log2(flogz) * Fcoef_half;  // Fcoef_half = 0.5 * Fcoef
 
 - [[sources/outerra-depth-buffer-precision]]
 - [[sources/outerra-log-depth-buffer]]
+- [[sources/outerra-hacking-amd-opengl]]

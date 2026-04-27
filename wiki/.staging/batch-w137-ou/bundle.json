@@ -1,0 +1,54 @@
+{
+  "batch_id": "batch-w137-ou",
+  "agent_note": "Sources 1, 2, 4, 5 均已在先前批次中完整入库（source 页 + concept 页均存在）。Source 3（Xe3 GPU 架构前瞻）为本批唯一新增内容。Source 5 替换冲突：原定 zen5-op-cache 替换为 chipsandcheese-zen5-avx512-freq-2025，但该源对应的 chipsandcheese-zen5-avx512-freq 源摘要及 zen5-avx512-frequency 概念页已存在，跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-02-11_intels-battlemage-architecture.md",
+      "status": "skipped_already_ingested",
+      "reason": "wiki/sources/chipsandcheese-battlemage.md 与 wiki/computer-systems/battlemage-architecture.md 已存在，内容完整"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-14_raytracing-on-intels-arc-b580.md",
+      "status": "skipped_already_ingested",
+      "reason": "wiki/sources/chipsandcheese-b580-raytracing.md 已存在，battlemage-architecture 概念页已引用"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-19_looking-ahead-at-intels-xe3-gpu-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-xe3-gpu",
+      "title": "Looking Ahead at Intel's Xe3 GPU Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-23_rdna-4-s-out-of-order-memory-accesses.md",
+      "status": "skipped_already_ingested",
+      "reason": "wiki/sources/chipsandcheese-rdna4-ooo-memory.md 与 wiki/computer-systems/rdna4-ooo-memory.md 已存在，内容完整"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-01_zen-5-s-avx-512-frequency-behavior.md",
+      "status": "skipped_already_ingested",
+      "reason": "替换源（zen5-avx512-freq-2025）对应 chipsandcheese-zen5-avx512-freq 源摘要及 zen5-avx512-frequency 概念页均已存在"
+    }
+  ],
+  "concepts_created": ["xe3-gpu-architecture"],
+  "people_created": [],
+  "source_summaries_created": ["chipsandcheese-xe3-gpu"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/battlemage-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-xe3-gpu]] — Xe3 前瞻，从代码角度延伸 Xe2 演进轨迹"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[xe3-gpu-architecture]] | Intel Xe3 GPU 架构：更高 XVE 占用率、STOC 子三角形不透明度裁剪、稀疏矩阵指令 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-xe3-gpu]] | Chester Lam：Intel Xe3 GPU 架构前瞻（XVE/STOC/稀疏矩阵） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-137 Worker OU (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章（batch-w137-ou）。其中 4 篇已在先前批次完整入库（battlemage 架构、B580 光追、RDNA 4 乱序内存、Zen5 AVX-512 频率），均跳过。新增 1 概念页（xe3-gpu-architecture）、1 source 摘要（chipsandcheese-xe3-gpu）。另对 battlemage-architecture 发出 patch 补充 xe3 源链接。"
+}

@@ -1694,3 +1694,15 @@ Outerra 文章 5 篇全部入库。新建 4 概念页（logarithmic-depth-buffer
 ## [2026-04-27] ingest | Wave-136 Worker OR (graphicsrunner/basesandframes ×5)
 
 1 篇入库（green-even-faster-math-2021），4 篇重复（Karis 全已处理完毕）。
+
+## [2026-04-27] ingest | Wave-137 Worker OS (diaryofagraphicsprogrammer ×5)
+
+2 篇入库（humus-graphics-demo-programming、outerra-hacking-amd-opengl），3 篇跳过（重复或无内容）。
+
+## [2026-04-27] ingest | Wave-137 Worker OT (chipsandcheese 2025 ×5)
+
+4 篇入库，1 篇重复。新建 mi300a-apu-memory-subsystem、xuantie-c910-microarchitecture 概念页、4 source 摘要。
+
+## [2026-04-27] ingest | Wave-137 Worker OU (chipsandcheese 2025 GPU ×5)
+
+1 篇入库（xe3-gpu-architecture），4 篇重复。新建 xe3-gpu-architecture 概念页。

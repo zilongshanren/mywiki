@@ -54,7 +54,11 @@ CDNA 2 提供原生 FP64，FP32 通过 packed 执行（编译器将两个 FP32 �
 
 MI300A 将 6 枚 XCD + 24 个 Zen 4 核心集成在同一封装中，CPU 与 GPU 共享同一内存地址空间，彻底消除 PCIe 数据搬运开销。
 
+详细内存子系统分析、延迟数据与 CPU-GPU 协调机制见 [[computer-systems/mi300a-apu-memory-subsystem]]。GPU 算力横评（对比 MI300X）见该页面附录。
+
 ## Sources
 
 - [[sources/chipsandcheese-cdna3]]
 - [[sources/chipsandcheese-mi300x-testing]]
+- [[sources/chipsandcheese-mi300a-memory]]
+- [[sources/chipsandcheese-mi300a-gpu]]

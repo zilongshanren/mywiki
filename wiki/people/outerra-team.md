@@ -43,3 +43,4 @@ Outerra（Anteworld）是斯洛伐克出品的**全球尺度行星引擎**，由
 - [[sources/outerra-crater-rendering]]
 - [[sources/outerra-lighting-fix]]
 - [[sources/outerra-ocean-rendering]]
+- [[sources/outerra-hacking-amd-opengl]]

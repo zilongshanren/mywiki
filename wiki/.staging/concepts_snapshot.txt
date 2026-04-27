@@ -610,3 +610,7 @@ logarithmic-depth-buffer
 sphere-mapped-terrain-culling
 opengl-texture-bind-batching
 fiber-based-job-scheduler
+multi-gpu-rendering
+fp64-map-projections
+gerstner-wave-ocean-rendering
+terrain-vector-overlay-crater

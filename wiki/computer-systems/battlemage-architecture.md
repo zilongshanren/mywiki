@@ -1,7 +1,7 @@
 ---
 tags: [intel, gpu, battlemage, arc-b580, xe-core, xve, graphics-architecture]
 date: 2026-04-27
-sources: 1
+sources: 2
 ---
 
 # Intel Battlemage GPU 架构
@@ -44,3 +44,4 @@ Battlemage 证明 Intel 可以在大幅缩减硅面积的同时通过架构效�
 
 - [[sources/chipsandcheese-battlemage]]
 - [[sources/chipsandcheese-b580-raytracing]]
+- [[sources/chipsandcheese-xe3-gpu]] — Xe3 前瞻，从代码角度延伸 Xe2 演进轨迹

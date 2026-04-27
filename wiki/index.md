@@ -421,6 +421,9 @@ CAQA + CSAPP 的底层视角。
 | [[telum-ii-microarchitecture]] | IBM Telum II：8 核 360 MB 片上缓存，虚拟 L3/L4 饱和度驱动 |
 | [[ibm-virtual-cache-hierarchy]] | IBM 大型机虚拟缓存层级：饱和度指标动态分配 L3/L4 |
 | [[d3d12-hardware-feature-adoption]] | D3D12 特性覆盖率 2025：各 GPU 世代在活跃驱动下的实测支持率 |
+| [[mi300a-apu-memory-subsystem]] | MI300A APU 内存子系统：Infinity Fabric 延迟层次、CPU-GPU 一致性、零拷贝原子 |
+| [[xuantie-c910-microarchitecture]] | 阿里玄铁 C910：3-wide OoO、192 entry ROB，L2 60 周期延迟为主要短板 |
+| [[rendering/xe3-gpu-architecture]] | Intel Xe3 GPU 架构前瞻：拓扑扩展、XVE 寄存器优化、STOC 子三角形裁剪 |
 | [[projective-cross-product-geometry]] | 射影叉积对偶：点↔线↔面交点的统一 2D/3D 线性算子 |
 | [[index-buffer-compression]] | 索引缓冲无损压缩：repeat/sequential table + delta encode |
 | [[software-design/graphics-subsystem-no-lut]] | Engel 图形子系统设计规则：避免查找表 |
@@ -2288,6 +2291,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/outerra-crater-rendering]] | Outerra：地形向量覆盖层动态弹坑方案 |
 | [[sources/outerra-lighting-fix]] | Outerra：Jacobian 光照修正 + FP render target 精度 bug |
 | [[sources/outerra-ocean-rendering]] | Outerra：Gerstner 波 + 海岸破碎浪渲染 |
+| [[sources/outerra-hacking-amd-opengl]] | Outerra：patch AMD OpenGL 驱动绕过 glDepthRange 钳制，验证 reversed-Z 可行 |
 | [[sources/humus-hardware-tessellation]] | Engel：硬件曲面细分三大优势及 DX11 非递归限制 |
 | [[sources/humus-edge-detection-trick]] | Engel：延迟管线 MSAA 边缘检测 trick |
 | [[sources/humus-screen-space-rules]] | Engel：屏幕空间滤波核设计规则（第一条） |
@@ -2309,6 +2313,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/humus-multi-gpu-engine]] | Engel：4K G-Buffer 带宽瓶颈与 multi-GPU 引擎方案 |
 | [[sources/humus-compute-reloaded]] | Engel：GCN 并行归约 2015 再版，HD 6770/290X 实测 |
 | [[sources/humus-points-vertices-vectors]] | Engel：3D 数学基础（点/顶点/向量/射线） |
+| [[sources/humus-graphics-demo-programming]] | Engel：demoscene 骨架 HLSL demo 压缩至 838 字节 |
 | [[sources/jonolick-cross-product-tricks]] | Jon Olick：射影叉积对偶运算技巧 |
 | [[sources/jonolick-index-buffer-compression]] | Jon Olick：索引缓冲无损压缩算法 |
 | [[sources/boris-lucky-fluke-postmortem]] | Boris：Lucky Fluke 游戏 jam 开发后记 |
@@ -2804,6 +2809,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-battlemage]] | Chester Lam：Intel Battlemage（Arc B580）GPU 架构深度分析 |
 | [[sources/chipsandcheese-zen5-avx512-freq]] | Chester Lam：Zen 5 AVX-512 频率与 IPC 节流行为 |
 | [[sources/chipsandcheese-b580-raytracing]] | Chester Lam：Battlemage B580 光追架构分析 |
+| [[sources/chipsandcheese-mi300a-memory]] | AMD MI300A 内存子系统：Infinity Fabric 延迟层次与 CPU-GPU 一致性 |
+| [[sources/chipsandcheese-mi300a-gpu]] | AMD MI300A GPU 算力横评（对比 MI300X） |
+| [[sources/chipsandcheese-xuantie-c910]] | 阿里玄铁 C910 微架构：3-wide OoO，L2 高延迟短板分析 |
+| [[sources/chipsandcheese-riscv-2025]] | RISC-V 2025 进展横评：P550 vs C910 SPEC/7-Zip/x264 |
+| [[sources/chipsandcheese-xe3-gpu]] | Intel Xe3 GPU 架构前瞻分析 |
 | [[sources/chipsandcheese-rdna4-ooo-memory]] | Chester Lam：RDNA 4 乱序内存访问实验验证 |
 | [[sources/chipsandcheese-rdna4-register-alloc]] | Chester Lam：RDNA 4 动态 VGPR 分配机制详解 |
 | [[sources/chipsandcheese-rdna4-raytracing]] | Chester Lam：RDNA 4 光追硬件改进全景 |

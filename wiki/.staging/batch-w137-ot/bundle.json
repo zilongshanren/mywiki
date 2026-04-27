@@ -1,0 +1,99 @@
+{
+  "batch_id": "batch-w137-ot",
+  "agent_note": "5 sources: 2× MI300A深度测评、玄铁C910微架构、RISC-V进度横评、Zen5 op cache（已有同文源页，跳过）。新建2概念页、4源摘要页；禁止重复创建Zen5 clustered decode源页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-18_inside-the-amd-instinct-mi300a-s-giant-memory-subsystem.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mi300a-memory",
+      "title": "Inside the AMD Instinct MI300A's Giant Memory Subsystem"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-20_sizing-up-mi300as-gpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mi300a-gpu",
+      "title": "Sizing up MI300A's GPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-02-04_alibaba-t-head-s-xuantie-c910.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-xuantie-c910",
+      "title": "Alibaba/T-HEAD's Xuantie C910"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-30_a-risc-v-progress-check-benchmarking-p550-and-c910.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-riscv-2025",
+      "title": "A RISC-V Progress Check: Benchmarking P550 and C910"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-23_disabling-zen-5s-op-cache-and-exploring-its-clustered-decode.md",
+      "status": "skipped_duplicate",
+      "reason": "源摘要页 wiki/sources/chipsandcheese-zen5-clustered-decode.md 已存在，引用同一原文文件，跳过重复创建"
+    }
+  ],
+  "concepts_created": [
+    "mi300a-apu-memory-subsystem",
+    "xuantie-c910-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-mi300a-memory",
+    "chipsandcheese-mi300a-gpu",
+    "chipsandcheese-xuantie-c910",
+    "chipsandcheese-riscv-2025"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/cdna3-mi300x-architecture.md",
+      "operation": "append_to_section",
+      "section": "## MI300A：CPU-GPU 统一内存 APU",
+      "content": "\n详细内存子系统分析、延迟数据与 CPU-GPU 协调机制见 [[computer-systems/mi300a-apu-memory-subsystem]]。GPU 算力横评（对比 MI300X 与 H100）见 [[sources/chipsandcheese-mi300a-gpu]]。"
+    },
+    {
+      "file": "wiki/computer-systems/cdna3-mi300x-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-mi300a-memory]]\n- [[sources/chipsandcheese-mi300a-gpu]]"
+    },
+    {
+      "file": "wiki/computer-systems/sifive-p550-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-riscv-2025]]"
+    },
+    {
+      "file": "wiki/computer-systems/sifive-p550-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 定位与意义",
+      "content": "\n横向对比测试（SPEC CPU2017、7-Zip、x264）显示 P550 的乱序引擎平衡性优于同期 C910：在部分高 IPC 子测中 P550 能接近 3 IPC 核宽上限，而 C910 受内存子系统拖累，更高频率未能转化为实际领先。详见 [[computer-systems/xuantie-c910-microarchitecture]] 与 [[sources/chipsandcheese-riscv-2025]]。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/mi300a-apu-memory-subsystem]] | AMD MI300A APU 的 Infinity Fabric 内存子系统：延迟、带宽、CPU-GPU 一致性与 NUMA |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/xuantie-c910-microarchitecture]] | 阿里巴巴 T-HEAD 玄铁 C910：3-wide OoO RISC-V 核心，ROB 大调度器小，内存子系统严重薄弱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mi300a-memory]] | Chester Lam：MI300A 巨型内存子系统深度剖析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mi300a-gpu]] | Chester Lam et al.：MI300A GPU 算力横评（vs MI300X、H100） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-xuantie-c910]] | Chester Lam：玄铁 C910 微架构完整剖析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-riscv-2025]] | Chester Lam：RISC-V 进度横评（P550 vs C910 vs A73 vs Goldmont Plus） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-137 Worker OT (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章。新增 2 概念页（mi300a-apu-memory-subsystem、xuantie-c910-microarchitecture）、4 source 摘要页（mi300a-memory、mi300a-gpu、xuantie-c910、riscv-2025）。跳过 1 篇：zen5-op-cache 对应源页 chipsandcheese-zen5-clustered-decode 已存在。对 cdna3-mi300x-architecture 和 sifive-p550-microarchitecture 提交增量 patch。"
+}
