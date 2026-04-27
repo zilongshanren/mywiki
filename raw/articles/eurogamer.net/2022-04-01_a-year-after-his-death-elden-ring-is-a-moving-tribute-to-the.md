@@ -1,0 +1,36 @@
+---
+title: A year after his death, Elden Ring is a moving tribute to the work of Kentaro
+  Miura
+url: https://www.eurogamer.net/a-year-after-his-death-elden-ring-is-a-moving-tribute-to-the-work-of-kentaro-miura
+author: Grace Curtis
+published: '2022-04-01'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Why start something that you know you'll never finish? An hour into [Elden Ring](https://www.eurogamer.net/elden-ring-walkthrough-8042), I already knew I'd be chipping away at this game for years. The temptation to move on from anything too tricky, the endless number of things to move on *to*, an ocean of a map, my own limited free time... I could tell this would be another Bloodborne, another Skyrim, another Minecraft, another thing I love where I'd never see the credits roll. In this way Elden Ring is a lot like Berserk, the legendary fantasy manga so closely threaded into the DNA of the FromSoft games that it can sometimes feel impossible to pull the two apart. I'll never finish Berserk either, though not for lack of trying. The author Kentaro Miura died last May at the age of 54. His manga, which ran for over thirty years, was never completed.
+
+I'll be frank: Miura's death hit me like a truck. Unfair doesn't even begin to cover it. I will never know Miura and I envy those who did, but through his work I felt I understood him, at least a little bit. There's something very teenager-ish about early Berserk. It's a whole lot of angst and blood and frustration splattered willy-nilly on the page. As the series went on, though, it grew into something that cautiously examined or even regretted the tone of the early chapters. Protagonist Guts - and Miura, through him - seemed to lose interest in avenging what he'd lost and instead chose to focus on protecting what he had left. Unfathomable horrors both man-made and Lovecraftian, institutional religion, war, political intrigue, sexual assault, grief, trauma, love, betrayal; Berserk took everything on, all while looking the best that any comic has ever looked, ever. And you can quote me on that.
+
+It's also a hard manga at times. Berserk has some of the most upsetting moments I've seen in any story, and repeat readings don't make it any easier to bear. Instead those pre-Bad Thing chapters are infused with anticipatory dread, as you glimpse the trauma to come like a vine-throttled tower on a distant mountain. Some pages are a total ordeal. Many people bail out early, and I can't blame them. The world of Berserk is barren, violent and meaningless. Bad things happen to good people all the time, and the Gods, who are very much real and very much powerful, simply do not care. The hard part to explain to non-fans is that all this grimness is what makes the comic so damn *joyful* to read. Every little victory, every joke, every moment of redemption and kindness in Berserk (especially in the more introspective second half), feels like a great big middle finger shoved up in the face of an indifferent universe.
+
+Plenty of video games have given their heroes a massive sword and a monster to kill, but scant few have captured the feeling of Miura's story. This is a universal problem. Across all mediums you can find creators trying to pay tribute to a work that moved them without bothering to think about why that piece of art hit so hard in the first place. At worst these 'tributes' feel like regurgitation, the kind that a mother bird does into a baby bird's mouth, a thing of beauty pounded down to mush and vomited thoughtlessly out. Yes, I am thinking about the Iron Giant cameo in Ready Player One. No, I don't want to talk about it. The very *best* thing a thoughtless tribute can hope to be is an easter egg. And look, I don't want to poo-poo easter eggs. Elden Ring is full of little easter eggs and they're very fun to find. But I just don't think that 'Huh, neat!' or 'I remember that!' is the best emotional response an artist can hope to inspire when conveying their own inspiration.
+
+Here's a quick rundown of my first twenty hours in the Elden Ring. I have stumbled into a terrifying hellscape and guessed that it is the work of gods called down by vile magic; I have arrived at the scene of a tragedy too late to do anything except butcher my way to some kind of catharsis; I have sworn to defeat a deified lord who's glossy veneer must surely hide a corruptive rot; I've thrown myself into pit after pit of writhing monstrosities in the hopes that maybe I'll get strong enough to alter the course of history. I've got a big sword and no real plan. I've also ignored almost all of my real life responsibilities. Elden Ring's world is rich with the kind of beauty that makes me homesick for the Scottish borders, a great green yonder just begging you to cancel your wedding, deadlock your doors, chuck your phone in the toilet, and dive in feet-first, never to be seen again.
+
+I've always read Berserk as a story about found family - found, lost, and found again - and there are moments when the galloping, absorbing loneliness of Elden Ring can lose this thread. Worse, it recalls the very early days of Berserk, the blood-and-slaughter chapters about a person who chooses, recklessly, selfishly, to wage war against the whole world all by himself. It feels that way sometimes. Then I'll touch a bloodstain and see some poor bastard roll over the side of a cliff just how I did in a previous run, or snort laughing at a message that just says *'fort, night'*, or share a peaceful moment by the sea after a difficult battle. *Ah, tranquility...*
+
+I feel so much kinship with these players. I also feel a kinship with the Elden Ring developers, who clearly love Miura's work as much as I do, and who no doubt grieved just as hard when he passed away. Elden Ring does not just *reference* Berserk. It honors it.
+
+We will never see the ending of Gut's story. Miura's loved ones will never see him grow old, properly old, like he should have. I'll probably never roll credits on this endless bloody game. But we can still savor the journey - and keep sticking it to the gods, one middle finger at a time.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=ETlb9YFXjcA)
+
+## Read this next
+
+-
+[Astonishing never-before-seen Elden Ring deleted cutscene discovered](https://www.eurogamer.net/astonishing-never-before-seen-elden-ring-deleted-cutscene-discovered) -
+[It's been a while since we've had an update, but From's parent company promises Duskbloods is still coming out this year](https://www.eurogamer.net/its-been-a-while-since-weve-had-an-update-but-froms-parent-company-promises-duskbloods-is-still-coming-out-this-year) -
+[Despite helping create it, FromSoft's Hidetaka Miyazaki reckons Game of Thrones author George R. R. Martin would probably be quite surprised by how the world of Elden Ring turned out](https://www.eurogamer.net/despite-helping-create-it-fromsofts-hidetaka-miyazaki-reckons-game-of-thrones-author-george-r-r-martin-would-probably-be-quite-surprised-by-how-the-world-of-elden-ring-turned-out)

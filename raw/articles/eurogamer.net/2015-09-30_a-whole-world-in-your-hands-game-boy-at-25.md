@@ -1,0 +1,26 @@
+---
+title: 'A whole world in your hands: Game Boy at 25'
+url: https://www.eurogamer.net/a-whole-world-in-your-hands
+author: Christian Donlan
+published: '2015-09-30'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+The Game Boy is 25 years old in Europe this week, and by this point, they're pretty much everywhere. Or rather, they were pretty much everywhere. Now they're often in attics, I imagine, or in sheds, or in crates slid under beds. Nintendo made over 100 million Game Boys, which isn't bad, but today I don't want to think about that. I want to think back to a period - a period that probably didn't exist the way I see it - where there is just one of them. Just one Game Boy. The first. And somebody is road-testing it.
+
+I read a book a while back - typically, I can't remember what it was called - that had a chapter, or at least a few pages, on the invention of the personal stereo. The way I recall it going, there was a time when there were only a few of these personal stereos knocking around, and this one guy was out in the countryside having his mind blown by the fact that his music was suddenly right there with him. He was lying under trees, wading through grass, picking flowers - he was clearly a hippy - and there was suddenly a soundtrack, boomingly loud but intimate, that accompanied all of this. Private symphonies. Almost a form of madness, really - music that only one person can hear, in a landscape in which you would never expect to find it.
+
+This is how I imagine the first Game Boy owner, except it's a city, at night, and he or she's on public transport. They're holding this strange grey box, and they're jabbing at the buttons. Except nobody sees that, because nobody really pays attention to what anyone else is doing in a public space. From the outside it looks like almost nothing is going on anyway, but to that special person, to the first Game Boy owner, games have suddenly evolved. They've broken free. They're available wherever you go now, and - crucially - they're also more private, more internalised at the same time. They have earned themselves a screen that is made for just one person. Games have become intimate.
+
+This is a big part of why handhelds matter, I think, and certainly why I feel so much more affection for the Game Boy than I do for any other console. The Game Boy argued that games could be more like books than movies or television, in that movies or television belong to specific places, specific rooms and buildings, and they offer, by their nature, communal art. Books, though. You take a book on the bus. You take it into the bath. When I think back to certain books - even books I read almost 20 years ago, say, when I was getting ready to go to university - I don't just remember the plot and the characters. I remember where I was when I was reading.
+
+Catch-22. I was on a National Express, coming back from Manchester, I think, and I had to stop reading because I was laughing so much and everyone was staring at me. That Paul Auster book about building a wall - my memory is really not all it could be these days - I read that on a train going along the south coast. I remember looking up and seeing the cranes at Southampton as the sun set, and wondered what the deal was with this wall these guys were building - and now the cranes are part of the book too.
+
+Likewise, I remember the holiday that Tetris destroyed, and my wife remembers the house her parents briefly owned when she had Duck Tales on Game Boy, and would play it lying on her new bed in her new bedroom. There's something about holding a game world in your hand, looking down into it, and even making sure the overhead light is just right to catch the screen, that makes it all that much more special - like games are appearing through a portal, or in an enchanted pool, and they are appearing just for you.
+
+Handhelds won, I guess. The Game Boy definitely won. It outlived so much else, and why shouldn't it? Now touchscreen devices, phones and tablets, they've won in a way - certainly in terms of money and numbers, although I'll always hold that, while there's a delight in seeing games contort and evolve to fit spaces they were not initially meant to be in, there is a strong magic to be found only in specialised hardware, a philosophical purity to the thing that was simply meant to play games and do nothing else.
+
+The glory days of that particular business seem to be behind us. Sadly, in the same week we're all thinking back on the great years of the Game Boy, the words of Shuhei Yoshida are rattling around in our heads, too, saying that in 2015, the climate is not healthy for a Vita successor. Too bad, I reckon, although he's probably right. At least we got the Vita, and we got the DS and the Game Boy. And we got the first Game Boy owner, navigating the networks of the city as night falls and the screen slowly becomes useless. People pass by unknowing, but this person has seen the future, of games spreading outwards, of games reaching inwards.

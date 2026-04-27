@@ -1,0 +1,24 @@
+---
+title: DriveClub's latest update is its most radical yet
+url: https://www.eurogamer.net/about-that-project-gotham-racing-sequel-you-were-after
+author: Martin Robinson
+published: '2016-02-17'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Sincere apologies to whoever decided it was a good idea to put the rubbish and recycling out on a Sunday night in whatever strange fictional Scottish town it is that's been introduced to DriveClub as part of its latest update. Those two handsomely rendered bins have been sacrificed to the stubby nose of a McLaren 650S that was oh-so-delicately balanced on its throttle, lost in a perpendicular arc propelled by noisy horsepower as scraps of paper scattered over lamp-lit streets.
+
+It's taken 18 months and plenty of updates, but it's fair to say that DriveClub has finally got me - I went from bored and frustrated with Evolution's PlayStation 4 exclusive racer at launch to mildly impressed last summer, but it's only now I'm fully in love. This isn't the DriveClub that released with stuttering servers, and it's not even the DriveClub you might have played when it finally hit PlayStation Plus. The latest update is the most radical yet, and it's fair to say it completely changes the way DriveClub is played. It's like coming back to your humble family Golf and finding out someone's shoehorned a caterwauling V12 under the bonnet.
+
+What's new? First, there's that all-new location, Scotland's Old Town which is available in three variants, which does all it can to cement DriveClub as an heir of sorts to [Project Gotham Racing](https://www.eurogamer.net/games/project-gotham-racing)'s throne. There's always been a charmingly 90s flavour to the no-frills arcade racing that Evolution's plied with this, and that's only enhanced when you're swinging the back end of a supercar out while the front wheels ride up against the pavement of a street corner, shop-fronts blurring by in a rush of implausible speed. Still yearning for a Project Gotham Racing 5? Take a look at DriveClub in its new more urban setting and you may well be satisfied - it's certainly close enough.
+
+There's another, more significant upgrade in February's update that makes a slight break from that arcade tradition. The hardcore handling that's now been enabled is an optional extra that lets DriveClub really bare its teeth. It's often said that behind every arcade racer there's a deep simulation waiting to get out, and while DriveClub isn't quite going to threaten the likes of Forza or [Assetto Corsa](https://www.eurogamer.net/games/assetto-corsa), it's certainly a much deeper, more challenging and more satisfying game when played without the safety net of all those invisible assists.
+
+The difference is profound - brakes lock, tires loudly protest and if you approach a corner with the same eagerness as you might have in vanilla DriveClub you'll find the scenery still rushing towards you at an alarming rate. DriveClub's old weightiness is still very much there, but it's been given more meaning and more subtlety - slam the anchors on in a Bentley and you'll feel your finger squeeze down that little bit harder as you try to calm all that luxurious heft, while a Caterham now dances with more purpose as you push and pull its light frame around. At the flick of a switch, DriveClub becomes something else entirely - like seeing a McLaren P1 being flicked into track mode, its suspension lowering and that big scoop spoiler rearing up as it becomes a much meaner beast.
+
+All of which means DriveClub feels like two games right now, and while the new update is grand it doesn't quite manage to bring those two halves together. Playing with hardcore mode enabled is - unsurprisingly - *hard*, and while a new variable difficulty for events means you can numb the AI to the point where you can still compete with them, the leaderboards and friendly competition that's at the backbone of DriveClub is currently meaningless. It's next to impossible to get within half a dozen seconds of your old times - the old assists, it seems, played fast and loose with the laws of physics - and there's no split leaderboards for those who still want to compete with the new handling model enabled.
+
+Perhaps that's coming in another update, and to Evolution's credit it keeps plugging away at DriveClub, slowly retooling and re-engineering it until it's now, on PlayStation 4 at least, without compare. Where next? There's the potential of the VR version, but I'm hoping that Evolution is given a chance to pour all it's learnt into a proper sequel that can come out firing on all cylinders. Now that could be something special.

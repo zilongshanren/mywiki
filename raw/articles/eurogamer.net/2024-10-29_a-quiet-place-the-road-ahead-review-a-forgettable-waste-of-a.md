@@ -1,0 +1,42 @@
+---
+title: 'A Quiet Place: The Road Ahead review - a forgettable waste of a license'
+url: https://www.eurogamer.net/a-quiet-place-the-road-ahead-review-a-forgettable-waste-of-a-license
+author: Vikki Blake
+published: '2024-10-29'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+We're enjoying something of a golden age when it comes to quality video game adaptations. You'd think the acclaim of shows like The Last of Us and Fallout would be ushering in a new dawn of franchises that successfully straddle TV, cinema, and gaming, and yet here I am, slogging my way through yet another sterile, slow, and offensively forgettable licensed offering that fails not only seasoned players but also any newbies unfortunate enough to have chosen *this* franchise jump into gaming for the first time, too. It's astonishing, really, given the A Quiet Place movies are, on paper, perfect fodder for a terrifying video game adaptation.
+
+For starters, much of the heavy lifting is already done. Lore, creature design, stealth mechanics - it's all there, and focusing on stealth rather than combat was the right call, too, given this is likely to attract many inexperienced players. Yet with so many impressive raw ingredients, it's kind of staggering how a game of such promise has managed to squander almost every good thing going for it, and then some.
+
+The conceit of A Quiet Place: The Road Ahead should feel familiar if you've watched either movie. You play as Alex, a young woman trying to survive in a world where an invasion of deadly creatures with acute hearing could wipe you out for something as simple as an ill-timed cough or a poorly concealed sneeze.
+
+The opening couple of hours are great, too. You'll learn how to stealthily open doors, hunt for resources, using the organic sounds of the world around you as a shield. You'll understand the importance of sticking to the sandy paths and avoiding broken glass and stepping carefully through puddles, all the while getting accustomed to managing her asthma. There are plentiful notes and letters to read, too - interestingly, the same survivors will pop up in many of the notes you find throughout your adventure - and the environments, whilst not super memorable, are at least atmospheric.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=cZa-PdZ0gwE)
+
+So far, so good, especially as Alex's story is further complicated by interpersonal drama, an unplanned pregnancy, a love of music and singing - a pastime that's essentially a death sentence here, of course - and her chronic health condition that's exacerbated by dust, exertion, and stress.
+
+Scratch only a little deeper, though, and it all falls oddly flat. I could've grown to care about that aforementioned drama if the game just allowed us to spend time, let alone bond, with characters it wants us to care about, but, well, it doesn't. Consequently, their behaviours feel weird at best and grossly out of character at worst because we don't know them well enough to understand their motivations. Consequently, A Quiet Place: The Road Ahead's carefully choreographed emotional sequences - of which there are a *lot* - fall short, mainly because these emotional punches aren't earned or justified but shoehorned in nonetheless.
+
+Alex's asthma, too, is an interesting addition here, and the environmental triggers like dust felt authentic right up until she began using her reliever pump every few minutes and throwing scavenged pills down her throat despite that early reveal of her pregnancy. At first, it's easy to hand-wave away these inconsistencies, but the more you see, the harder it is to *unsee* them... and then you meet the monsters.
+
+You move around a world inhabited by deadly aliens with astonishingly good hearing exactly as you'd expect: *carefully*. Every step you take, door you unlatch, drawer you pull open - any one could be the death of you. A Quiet Place: The Road Ahead approaches its opening hour with admirable constraint, and whilst the endless tutorials and dollops of red and yellow paint may irk, you can turn off the more unsubtle aspects of its hand-holding in the settings.
+
+But whilst you'll spend the first hour itching for some action, you'll spend the rest of the 9-10 hour playthrough just wanting the hyper-vigilant creature AI to chill the feck out. What starts as a tense, stressful game of hide-and-seek essentially becomes the *only* thing you ever do, and as the rules around their hearing and abilities are staggeringly inconsistent, these endless stealth sequences become ever more jaw-clenchingly frustrating, not least because I don't understand what the bloody things want.
+
+Do they want to *eat* us? It doesn't seem like it. Do they hate us because the noises we make hurt their sensitive ears? Maybe. But that doesn't explain why they'd continue to hang out in places with hissing steam pipes and the like, does it? We eventually discover that places with high natural environmental noise like waterfalls are best because they drown out everyday sounds, but if that's the case, why doesn't Alex just set up camp there for good? Why the hell don't people carry WD-40 around with them to counter the endless army of deathly squeaky doors? More seriously, and more related to the game at hand: how come a creature can hear me step on a leaf from three towns over, but I can use an inhaler ten feet away with impunity? And why the hell are people running around with *guns*, for Christ's sake! Do they have a death wish?!
+
+I wouldn't mind if these sequences were used sparingly, but they're endless, and at some points it feels as though the monsters intentionally rubberband the player in a way that's not challenging but simply annoying, especially with level design so linear, you *have* to wade through water, or step on glass, to progress. You will get to play with a couple more props a little later on, but again, the inconsistencies around throwables - I can throw *this* brick, but not *that* one, for some reason? Really? - and Alex's wonky aim means they often do more harm than good.
+
+But the most egregious part of these tedious cat-and-mouse chases is the sound design. Whilst the music itself is suitably tense, the music stings programmed to go off every time you make even the slightest bit of noise - regardless of whether or not a creature is close - are incredibly annoying, repeatedly going off regardless of whether or not a creature is actually near. Worst still, make too much noise in quick succession and it's an insta-death anyway, again, regardless of whether there's a monster behind you.
+
+Playing with the microphone noise detection activated is cool, sure, but gimmicky given that it was the noise Alex was making that killed me every time, not my own. Her Phonometer - a piece of kit that shows the noise she makes in relation to the environmental sounds around her - is similarly interesting, but using that, too, is wildly inconsistent and utterly unreliable in areas where the creatures stalk you. Almost every single great idea here fails in execution.
+
+As a lifelong horror fan, I have been eating *well *of late. [Crow Country](https://www.eurogamer.net/games/crow-country), [Indika](https://www.eurogamer.net/indika-review), [Still Wakes the Deep](https://www.eurogamer.net/games/still-wakes-the-deep), [Silent Hill 2 Remake](https://www.eurogamer.net/games/silent-hill-2-remake) - there's been a glut of deliciously dark games. And despite this bumper crop of horror this year, A Quiet Place: The Road Ahead's conceit and stealthy mechanics were intriguing enough to have rocketed itself into my wishlist. How disappointing it is, then, to have to report such a dismal experience from a game that promised so much. I could forgive a dull story if the gameplay was exciting, just as I could overlook forgettable environmental designs if I cared about the characters. As it is, A Quiet Place: The Road's Ahead doesn't really deliver on *anything*, making for a hopelessly dull, repetitive adventure that fails to excite or challenge in any meaningful way. What a pity.
+
+*A copy of A Quiet Place: The Road Ahead was provided for review by Sabre Interactive.*

@@ -1,0 +1,21 @@
+---
+title: A year after that PSN fiasco, Helldivers 2's long-anticipated review bomb cape
+  is finally here
+url: https://www.eurogamer.net/a-year-after-that-psn-fiasco-helldivers-2s-long-anticipated-review-bomb-cape-is-finally-here
+author: Matt Wales
+published: '2025-06-27'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+Cast your mind back a year or so ago, and you might remember [Helldivers 2](https://www.eurogamer.net/games/helldivers-2) being in a bit of a funny old place. On the one hand, it was a huge critical and commercial success; on the other, it was being review bombed into oblivion thanks to [Sony's mandatory PSN nonsense](https://www.eurogamer.net/helldivers-2s-official-review-bomb-cape-seemingly-gets-an-airing-as-psn-drama-subsides). Eventually, all that hoo-ha died down, but not before developer Arrowhead suggested it might commemorate the whole affair with a review-bomb-inspired cape. Well, praise Democracy, because that day - and that cape - is finally here.
+
+Talk of a review-bomb-inspired Helldivers 2 cape first surfaced as fans were celebrating Sony's U-turn on the mandatory PSN requirements it had attempted to foist on PC players post-launch - a reversal that came after [200,000 negative Steam reviews](https://www.eurogamer.net/helldivers-2s-positive-steam-score-tumbles-as-pc-players-hit-back-at-sonys-psn-requirements), [mass refunds](https://www.eurogamer.net/helldivers-2-pc-players-secure-refunds-as-steam-waives-playtime-limit), and an [absolute mess](https://www.eurogamer.net/helldivers-2-has-been-pulled-from-sale-in-177-countries-as-its-psn-linking-requirement-rolls-out) of a situation in territories where PSN was unavailable. Amid the cheers and back pats, former Arrowhead CEO Johan Pilestedt (now the studio's chief creative officer) [shared a community created cape design](https://twitter.com/Pilestedt/status/1787370710597312605) on social media, featuring four red vertical lines mirroring those of [Helldivers 2's Steam review sentiment graph](https://store.steampowered.com/app/553850/HELLDIVERS_2/) during its review bombing.
+
+Almost immediately, delighted fans called for its official inclusion in the game, and Pilestedt responded by saying, "The team is talking about a good name for it right now." At the time, it wasn't entirely clear if he was being serious, but last May he [teased an official cape design](https://x.com/Pilestedt/status/1789406952243577164) - or at least a tiny cropped portion of one - that suggested the review bomb cape was legit. And now, a little over a year later, it's officially arrived as a commemorative keepsake.
+
+Dubbed the Pillars of Freedom cape, it's being released "in honour of [players'] unquestioning commitment to the defense of Managed Democracy," according to an [official post on social media](https://x.com/helldivers2/status/1938573095230390728). "The new uniform piece will be available in all Super Destroyer Armouries as soon as the rollout is complete," Arrowhead adds. "This cape will be awarded to all existing players. As with our previous item rollouts, please allow some time for the item to arrive in your inbox."
+
+It's been a year of ups and downs for Helldivers 2, with last August bringing a particularly difficult bump in the road for Arrowhead following significant community criticism regarding the live-service shooter's direction. The studio quickly moved to address the situation, though, embarking on a [60-day plan of action](https://www.eurogamer.net/helldivers-2-studio-reveals-60-day-plan-of-action-following-recent-patch-outcry), which helped get things back on track. And that unity has proven vital in the ongoing fight for Democracy, considering the [Helldivers](https://www.eurogamer.net/games/helldivers) have recently faced perhaps their biggest threat yet as the [Illuminate invaded Super Earth itself](https://www.eurogamer.net/helldivers-2-heart-of-democracy-update-sees-super-earth-itself-invaded).

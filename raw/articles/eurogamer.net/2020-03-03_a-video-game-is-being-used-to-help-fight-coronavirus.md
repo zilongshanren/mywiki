@@ -1,0 +1,26 @@
+---
+title: A video game is being used to help fight coronavirus
+url: https://www.eurogamer.net/a-video-game-is-being-used-to-crowdsource-coronavirus-treatment
+author: Emma Kent
+published: '2020-03-03'
+source_blog: Eurogamer.net
+source_site: https://www.eurogamer.net/
+category: graphics
+fetched: '2026-04-19'
+---
+
+The coronavirus outbreak is currently dominating the headlines - but among the doom and gloom is something a little more hopeful, as researchers are hoping a video game could help find a solution to the spread of COVID-19.
+
+Developed by the University of Washington and first released in 2008, Foldit is a free puzzle game where players try to [fold the structures of proteins](https://fold.it/portal/info/about#whatpf) as perfectly as possible. It's similar in aim to other protein folding programmes you may have heard of, such as [Folding@home by Stanford University that was available on PS3](https://www.eurogamer.net/ps3-doubles-folding-home-power) - although that one asked for raw computing power. Overall, a pretty smart way to share the research workload with [over 200,000 people](https://www.engr.washington.edu/news/trend/aut10_foldit.html), and a [paper by Foldit's creators](https://www.nature.com/articles/nature09304) found the player base is equal to (or often better than) a computer in finding solutions.
+
+In a recent update, Foldit added a new puzzle for players to solve: coronavirus, and researchers want players to design an antiviral protein to block the coronavirus spike protein from interacting with human cells. "Coronaviruses display a 'spike' protein on their surface, which binds tightly to a receptor protein found on the surface of human cells," [explains the puzzle brief](https://fold.it/portal/node/2008926). "Once the coronavirus spike binds to the human receptor, the virus can infect the human cell and replicate. In recent weeks, researchers have determined the structure of the 2019 coronavirus spike protein and how it binds to human receptors. If we can design a protein that binds to this coronavirus spike protein, it could be used to block the interaction with human cells and halt infection!"
+
+[The University of Washington has confirmed](https://twitter.com/UW/status/1234553490568925185) that the most promising ideas will be tested, and possibly even manufactured by the university's Institute for Protein Design in Seattle. "We want to give Foldit players the opportunity to design proteins that can bind to the spike protein and prevent infection", explained Foldit scientist Brian Koepnick in an update video, while noting it could be awhile before we see a working solution. "We do want to emphasise that, like all the research we do, laboratory testing takes time to see if these molecules are safe and effective against coronavirus."
+
+[Watch on YouTube](https://www.youtube.com/watch?v=hS5g-2KhoSk)
+
+Players appear to have got stuck in, and there's already a high score to beat. At the time of writing, the current record is held by a player called toshiue and a group called Go Science, who both have a score of 16,780. Unfortunately it seems the servers are a little shaky right now due to demand, but [Foldit says it will be up again as soon as possible](https://twitter.com/Foldit/status/1234870376208965634). If you want to have a go at beating the high score, you can try [visiting the Foldit portal](https://fold.it/portal/) once the technical issues are sorted.
+
+COVID-19 continues to spread across the globe, with the [government saying](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/869827/Coronavirus_action_plan_-_a_guide_to_what_you_can_expect_across_the_UK.pdf) it expects the UK to be significantly affected. Early data suggests, however, that most who catch COVID-19 will experience mild-to-moderate illness "similar to seasonal flu", with the risk of severe disease and death increasing among the elderly and those with underlying health conditions. There are currently 51 reported cases in the UK, and over 90,000 cases worldwide, with global deaths totalling 3115 (via [BBC](https://www.bbc.co.uk/news/live/world-51716375) and [CNN](https://edition.cnn.com/2020/03/03/asia/novel-coronavirus-covid-19-intl-hnk/index.html)). The [World Health Organisation has issued advice](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public) for those worried about coronavirus - such as tips on handwashing and practising good respiratory hygiene.
+
+In the gaming world, the [Game Developers Conference has been postponed](https://www.eurogamer.net/game-developers-conference-postponed-amid-coronavirus-fears) after a number of high-profile companies pulled out due to fears over coronavirus. In China, meanwhile, [Plague Inc. was recently removed from sale on the iOS Store](https://www.eurogamer.net/plague-inc-removed-from-chinese-app-store-over-illegal-content) (and [now Steam](https://www.vg247.com/plague-inc-removed-china-steam-app-store)) after authorities said it contained illegal content, although no solid explanation was given for the removal. At least now there's another coronavirus-related game for everyone to play - and perhaps this one could end up providing the solution.
