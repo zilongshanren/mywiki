@@ -53,3 +53,4 @@ Intel 的应对策略是：用**大 L2**（Golden Cove 1280 KB，Raptor Lake 传
 ## Sources
 
 - [[sources/chipsandcheese-alder-lake-caching-power]]
+- [[sources/chipsandcheese-cache-efficiency-mobile-avx512]]

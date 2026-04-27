@@ -101,6 +101,8 @@ sources: 371
 | [[sasl-context-changer-raii-bug]] | RAII 匿名临时对象陷阱 + 静默 alGetError 六年无 bug report |
 | [[art-asset-version-control-gap]] | 艺术资产版本控制的需求清单与工具缺口（Supnik 2015） |
 | [[app-space-lock-free-simplification]] | 不做通用 lock-free，在应用层分层让 fast path 无锁 |
+| [[file-format-vs-data-model]] | 文件格式与内存数据模型的分离：两者目标不同，不该捆绑在一起 |
+| [[always-shippable-game]] | 游戏生产阶段任意时刻必须处于可发布状态；Pesce 五项「完成」标准 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -338,6 +340,10 @@ CAQA + CSAPP 的底层视角。
 | [[netburst-microarchitecture]] | Intel NetBurst / Pentium 4 微架构：高频赌注的失败与 Sandy Bridge 的技术遗产 |
 | [[tachyum-prodigy-architecture]] | Tachyum Prodigy 架构批判性分析：算存比失衡、VLIW 生态缺失、时间线屡次跳票 |
 | [[cache-power-efficiency]] | 缓存层次与功耗效率：RAPL 实测各级缓存数据传输能耗，L2 约 2×L1，DRAM 约 5×L3 |
+| [[avx512-cache-efficiency]] | AVX-512 与移动端缓存能效：向量宽度对各级缓存能耗的影响 |
+| [[amd-k8-microarchitecture]] | AMD K8（Athlon 64）：保守迭代 + 片上 IMC，与 Netburst 的对比 |
+| [[raptor-lake-l2-cache]] | Raptor Lake L2 改进：P-Core 2 MB、E-Core 4 MB，功耗与频率余量收益 |
+| [[tesla-dojo-microarchitecture]] | Tesla Dojo：放弃精确异常与虚拟内存以最大化 ML 训练计算密度 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -997,6 +1003,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[in-game-display-calibration]] | 游戏内显示校准：动态范围优先于 gamma，Pesce 2011 |
 | [[preintegrated-skin-shading]] | Eric Penner 皮肤 SSS 预积分 LUT + Pesce Mathematica 解析近似 |
 | [[raytracing-vs-rasterization]] | 光线追踪 vs 光栅化：双循环对偶性，算法复杂度与并行性神话拆解 |
+| [[framebuffer-coordinate-conventions]] | OpenGL / Metal / Vulkan 帧缓冲坐标 Y 轴约定对照及跨 API 适配策略 |
+| [[rendering-perception-psychology]] | 渲染行业知道物理但不知感知；Pesce 2011 提出的未解问题集 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2265,6 +2273,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-intel-netburst-failure]] | Chips and Cheese：NetBurst 的失败与遗产 |
 | [[sources/chipsandcheese-tachyum-claims]] | Chips and Cheese：Tachyum Prodigy 技术主张批判 |
 | [[sources/chipsandcheese-alder-lake-caching-power]] | Chips and Cheese：Alder Lake 缓存层次与功耗效率测量 |
+| [[sources/supnik-persistent-mapped-buffers]] | Supnik：persistent map 与 client arrays 是流式几何的两个最优路径 |
+| [[sources/supnik-when-not-serialize]] | Supnik：不要把内存数据结构直接序列化为文件格式 |
+| [[sources/supnik-solve-less-general]] | Supnik：「解更小的问题」——HAL 教训与特化的工程价值 |
+| [[sources/supnik-opengl-coordinate-conventions]] | Supnik：GL / Metal / Vulkan 帧缓冲坐标约定差异及 X-Plane 跨 API 策略 |
+| [[sources/c0de517e-fight-night-champion-gdc]] | Pesce：Fight Night Champion GDC 幻灯片导演剪辑版公告 |
+| [[sources/c0de517e-dont-lie]] | Pesce：「完成」的五项标准与 always-shippable 哲学 |
+| [[sources/c0de517e-open-questions]] | Pesce：渲染感知心理学的未解问题 |
+| [[sources/chipsandcheese-cache-efficiency-mobile-avx512]] | Chester Lam：移动端缓存能效与 AVX-512 影响（2022-07） |
+| [[sources/chipsandcheese-athlon64-k8]] | Chester Lam：AMD K8（Athlon 64）微架构深度解析（2022-07） |
+| [[sources/chipsandcheese-raptor-lake-l2]] | Chester Lam：Raptor Lake L2 缓存改进预览（2022-08） |
+| [[sources/chipsandcheese-tachyum-revised]] | Chester Lam & Cutress：Tachyum 2022 修订版 Prodigy 架构（2022-08） |
+| [[sources/chipsandcheese-tesla-dojo]] | Chester Lam：Hot Chips 34 — Tesla Dojo 微架构（2022-09） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

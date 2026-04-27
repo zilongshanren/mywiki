@@ -63,3 +63,4 @@ Supnik 写下三条给自己：
 ## Sources
 
 - [[sources/supnik-beyond-glmapbuffer]]
+- [[sources/supnik-persistent-mapped-buffers]] — 2018 年续篇：persistent map 与 client arrays 的最终结论

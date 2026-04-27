@@ -77,3 +77,6 @@ sources: 5
 - [[sources/c0de517e-deferred-renderer-lessons]]
 - [[sources/c0de517e-raytracing-myths]]
 - [[sources/c0de517e-mathematica-spherical-harmonics]]
+- [[sources/c0de517e-fight-night-champion-gdc]]
+- [[sources/c0de517e-dont-lie]]
+- [[sources/c0de517e-open-questions]]

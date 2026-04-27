@@ -38,3 +38,4 @@ Prodigy 在纸面上将理想化指标最大化，但多个子系统相互掣肘
 ## Sources
 
 - [[sources/chipsandcheese-tachyum-claims]]
+- [[sources/chipsandcheese-tachyum-revised]]

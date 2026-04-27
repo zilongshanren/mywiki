@@ -1,0 +1,99 @@
+{
+  "batch_id": "batch-w105-lb",
+  "agent_note": "5 篇 Ben Supnik 文章；4 篇 ingest，1 篇 skip（code-like-you 仅 3 行 stub）。新增 2 个概念页、4 个 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-05-21_never-map-again-persistent-memory-system-memory-and-nothing.md",
+      "status": "ingested",
+      "source_slug": "supnik-persistent-mapped-buffers",
+      "title": "Never Map Again: Persistent Memory, System Memory, and Nothing In Between"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-08-08_when-not-to-serialize.md",
+      "status": "ingested",
+      "source_slug": "supnik-when-not-serialize",
+      "title": "When Not To Serialize"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-08-11_solve-less-general-problems.md",
+      "status": "ingested",
+      "source_slug": "supnik-solve-less-general",
+      "title": "Solve Less General Problems"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2018-11-21_code-like-you.md",
+      "status": "skipped_offtopic",
+      "reason": "文章仅 3 行正文，属纯碎片感想（「别把认知预算烧在 Boost 上」），无独立可整理的技术内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2019-04-06_keeping-the-blue-side-up-coordinate-conventions-for-opengl-m.md",
+      "status": "ingested",
+      "source_slug": "supnik-opengl-coordinate-conventions",
+      "title": "Keeping the Blue Side Up: Coordinate Conventions for OpenGL, Metal and Vulkan"
+    }
+  ],
+  "concepts_created": [
+    "file-format-vs-data-model",
+    "framebuffer-coordinate-conventions"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-persistent-mapped-buffers",
+    "supnik-when-not-serialize",
+    "supnik-solve-less-general",
+    "supnik-opengl-coordinate-conventions"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/opengl-pinned-memory-vbo-streaming.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-persistent-mapped-buffers]] — 2018 年续篇：persistent map 与 client arrays 的最终结论"
+    },
+    {
+      "file": "wiki/software-design/cheat-by-solving-less.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-solve-less-general]] — Supnik 2018：HAL 教训与「解更小问题」的系统阐述"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-opengl-coordinate-conventions]] — Supnik 2019：GL / Metal / Vulkan 帧缓冲 Y 轴约定对照"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[framebuffer-coordinate-conventions]] —— GL / Metal / Vulkan 帧缓冲 Y 轴约定的详细对照"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[framebuffer-coordinate-conventions]] | OpenGL / Metal / Vulkan 帧缓冲坐标 Y 轴约定对照及跨 API 适配策略 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[file-format-vs-data-model]] | 文件格式与内存数据模型的分离：两者目标不同，不该捆绑在一起 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-persistent-mapped-buffers]] | Supnik：persistent map 与 client arrays 是流式几何的两个最优路径 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-when-not-serialize]] | Supnik：不要把内存数据结构直接序列化为文件格式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-solve-less-general]] | Supnik：「解更小的问题」——HAL 教训与特化的工程价值 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-opengl-coordinate-conventions]] | Supnik：GL / Metal / Vulkan 帧缓冲坐标约定差异及 X-Plane 跨 API 策略 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-105 Worker LB (hacksoflife.blogspot.com ×5)\n\n处理 5 篇 Ben Supnik 文章。ingest 4 篇，skip 1 篇（code-like-you 仅 3 行 stub）。新增概念页 2 个（file-format-vs-data-model、framebuffer-coordinate-conventions）、source 摘要 4 个。现有概念页 patch 3 处（opengl-pinned-memory-vbo-streaming、cheat-by-solving-less、coordinate-spaces）。"
+}

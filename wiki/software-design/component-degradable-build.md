@@ -69,3 +69,4 @@ Pesce 在同月写的 [[cpp-decoupling-over-details]] 里把**可修改性**当�
 ## Sources
 
 - [[sources/c0de517e-failed-builds]]
+- [[sources/c0de517e-dont-lie]] —— always-shippable 同源：迭代应从可发布走向更优可发布

@@ -1,0 +1,93 @@
+{
+  "batch_id": "batch-w105-lc",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章。fight-night-champion-gdc 为 GDC 幻灯片公告（技术正文在外链 Scribd，未嵌入），可提取摘要但无法产出概念页；rendering-101 和 rendering-102 均为纯外链 stub，跳过；don-t-lie 提出五项「完成」标准与 always-shippable 哲学，新建概念页；open-questions 提出渲染感知心理学缺口，新建概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-28_fight-night-champion-rendering-gdc.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-fight-night-champion-gdc",
+      "title": "Fight Night Champion Rendering @ GDC"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-09-30_rendering-101.md",
+      "status": "skipped_offtopic",
+      "reason": "纯外链 stub：正文只有指向 Scribd 幻灯片的链接和评论，无可提取技术内容"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-10-03_don-t-lie.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-dont-lie",
+      "title": "Don't lie."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-10-18_rendering-102.md",
+      "status": "skipped_offtopic",
+      "reason": "纯外链 stub：正文只有指向外部幻灯片的链接和「No comments」，无可提取技术内容"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-10-26_open-questions.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-open-questions",
+      "title": "Open Questions"
+    }
+  ],
+  "concepts_created": [
+    "always-shippable-game",
+    "rendering-perception-psychology"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-fight-night-champion-gdc",
+    "c0de517e-dont-lie",
+    "c0de517e-open-questions"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[always-shippable-game]] —— 2011「Don't lie.」：五项完成标准与 always-shippable 哲学\n- [[rendering-perception-psychology]] —— 2011「Open Questions」：渲染感知心理学的未解问题"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-fight-night-champion-gdc]]\n- [[sources/c0de517e-dont-lie]]\n- [[sources/c0de517e-open-questions]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering-perception-psychology]] —— Pesce 2011 质疑 deferred 是否损失了预计算光照对材质微妙性的表现"
+    },
+    {
+      "file": "wiki/software-design/component-degradable-build.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dont-lie]] —— always-shippable 同源：迭代应从可发布走向更优可发布"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件工程与设计（wiki/software-design/）",
+      "row": "| [[always-shippable-game]] | 游戏生产阶段任意时刻必须处于可发布状态；Pesce 五项「完成」标准 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering-perception-psychology]] | 渲染行业知道物理但不知感知；Pesce 2011 提出的未解问题集 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-fight-night-champion-gdc]] | Pesce：Fight Night Champion GDC 幻灯片导演剪辑版公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-dont-lie]] | Pesce：「完成」的五项标准与 always-shippable 哲学 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-open-questions]] | Pesce：渲染感知心理学的未解问题 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-105 Worker LC (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。跳过 2 篇（rendering-101、rendering-102，纯外链 stub）。新增 2 概念页（always-shippable-game、rendering-perception-psychology）、0 人物页（angelo-pesce 已存在）、3 source 摘要（c0de517e-fight-night-champion-gdc、c0de517e-dont-lie、c0de517e-open-questions）。Patch：angelo-pesce 人物页补充相关链接与 sources；deferred-rendering 补充感知维度交叉链接。"
+}

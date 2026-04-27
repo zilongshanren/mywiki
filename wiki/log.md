@@ -1318,3 +1318,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-104 Worker LA (chipsandcheese.com ×5)
 
 处理 5 篇 chipsandcheese.com 微架构文章（2022-05 ~ 2022-07）。新建 5 概念页（aws-graviton3-microarchitecture、sunny-cove-microarchitecture、netburst-microarchitecture、tachyum-prodigy-architecture、cache-power-efficiency）、5 source 摘要页。无 skip。为 8 个已有概念页生成 source link patch。
+
+## [2026-04-27] ingest | Wave-105 Worker LB (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 文章。ingest 4 篇，skip 1 篇（code-like-you 仅 3 行 stub）。新增概念页 2 个（file-format-vs-data-model、framebuffer-coordinate-conventions）、source 摘要 4 个。现有概念页 patch 3 处（opengl-pinned-memory-vbo-streaming、cheat-by-solving-less、coordinate-spaces）。
+
+## [2026-04-27] ingest | Wave-105 Worker LC (c0de517e.blogspot.com ×5)
+
+处理 5 篇 c0de517e.blogspot.com 文章。跳过 2 篇（rendering-101、rendering-102，纯外链 stub）。新增 2 概念页（always-shippable-game、rendering-perception-psychology）、3 source 摘要。Patch：angelo-pesce 人物页补充相关链接与 sources；deferred-rendering 补充感知维度交叉链接。
+
+## [2026-04-27] ingest | Wave-105 Worker LD (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 技术文章（2022-07 ~ 2022-09）。新增 4 概念页（avx512-cache-efficiency、amd-k8-microarchitecture、raptor-lake-l2-cache、tesla-dojo-microarchitecture）、5 source 摘要。Tachyum 修订版文章为已有 tachyum-prodigy-architecture 页面提供补充，emit patch。全部 5 篇 ingested。

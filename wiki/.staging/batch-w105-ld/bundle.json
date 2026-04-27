@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w105-ld",
+  "agent_note": "5篇 chipsandcheese.com 文章：缓存移动+AVX512能效、K8微架构、Raptor Lake L2、Tachyum 2022修订、Tesla Dojo。全部 ingested。Tachyum为patch，其余4篇新建概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-07-15_caching-energy-efficiency-data-mobile-and-avx-512.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cache-efficiency-mobile-avx512",
+      "title": "Caching Energy Efficiency Data – Mobile and AVX-512"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-07-28_amds-athlon-64-getting-the-basics-right.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-athlon64-k8",
+      "title": "AMD's Athlon 64: Getting the Basics Right"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-08-23_a-preview-of-raptor-lakes-improved-l2-caches.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-raptor-lake-l2",
+      "title": "A Preview of Raptor Lake's Improved L2 Caches"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-08-26_tachyums-revised-prodigy-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-tachyum-revised",
+      "title": "Tachyum's Revised Prodigy Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-01_hot-chips-34-teslas-dojo-microarchitecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-tesla-dojo",
+      "title": "Hot Chips 34 – Tesla's Dojo Microarchitecture"
+    }
+  ],
+  "concepts_created": [
+    "avx512-cache-efficiency",
+    "amd-k8-microarchitecture",
+    "raptor-lake-l2-cache",
+    "tesla-dojo-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-cache-efficiency-mobile-avx512",
+    "chipsandcheese-athlon64-k8",
+    "chipsandcheese-raptor-lake-l2",
+    "chipsandcheese-tachyum-revised",
+    "chipsandcheese-tesla-dojo"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/cache-power-efficiency.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cache-efficiency-mobile-avx512]]"
+    },
+    {
+      "file": "wiki/computer-systems/tachyum-prodigy-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-tachyum-revised]]"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-raptor-lake-l2]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[avx512-cache-efficiency]] | AVX-512 与移动端缓存能效：向量宽度对各级缓存能耗的影响 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[amd-k8-microarchitecture]] | AMD K8（Athlon 64）：保守迭代 + 片上 IMC，与 Netburst 的对比 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[raptor-lake-l2-cache]] | Raptor Lake L2 改进：P-Core 2 MB、E-Core 4 MB，功耗与频率余量收益 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[tesla-dojo-microarchitecture]] | Tesla Dojo：放弃精确异常与虚拟内存以最大化 ML 训练计算密度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cache-efficiency-mobile-avx512]] | Chester Lam：移动端缓存能效与 AVX-512 影响（2022-07） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-athlon64-k8]] | Chester Lam：AMD K8（Athlon 64）微架构深度解析（2022-07） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-raptor-lake-l2]] | Chester Lam：Raptor Lake L2 缓存改进预览（2022-08） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-tachyum-revised]] | Chester Lam & Cutress：Tachyum 2022 修订版 Prodigy 架构（2022-08） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-tesla-dojo]] | Chester Lam：Hot Chips 34 — Tesla Dojo 微架构（2022-09） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-105 Worker LD (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章。新增 4 概念页（avx512-cache-efficiency、amd-k8-microarchitecture、raptor-lake-l2-cache、tesla-dojo-microarchitecture）、0 人物页（chester-lam 已存在）、5 source 摘要。Tachyum 修订版文章为已有 tachyum-prodigy-architecture 页面提供补充，emit patch 而非新建。全部 5 篇 ingested，0 篇 skipped。"
+}

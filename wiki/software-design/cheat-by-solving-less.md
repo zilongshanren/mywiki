@@ -81,3 +81,4 @@ Supnik 自己也加了一句："你可能需要一个更快版本的完全通用
 ## Sources
 
 - [[sources/supnik-beat-the-experts]]
+- [[sources/supnik-solve-less-general]] — Supnik 2018：HAL 教训与「解更小问题」的系统阐述
