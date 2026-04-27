@@ -1,0 +1,134 @@
+{
+  "batch_id": "batch-w119-mt",
+  "agent_note": "5篇 chipsandcheese.com 技术文章：Blackwell GB202 深挖、Lion Cove 游戏负载分析、Zen 5 游戏负载分析、RDNA4 Hot Chips 2025、Strix Halo Infinity Cache 实测。新建3个概念页（blackwell-gb202-architecture、rdna4-architecture、infinity-cache-efficacy），patch 3个已有概念页（lion-cove-microarchitecture、zen5-microarchitecture、strix-halo-soc）。选文标准：从2025-08到2026-04范围内选技术深度最高的3篇（排除新闻/会议概览性文章）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-06-29_blackwell-nvidias-massive-gpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-blackwell-gb202",
+      "title": "Blackwell: Nvidia's Massive GPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-07-06_intels-lion-cove-p-core-and-gaming-workloads.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-lion-cove-gaming",
+      "title": "Intel's Lion Cove P-Core and Gaming Workloads"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-08-02_running-gaming-workloads-through-amds-zen-5.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-gaming",
+      "title": "Running Gaming Workloads through AMD's Zen 5"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-09-13_amds-rdna4-gpu-architecture-at-hot-chips-2025.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna4-hot-chips-2025",
+      "title": "AMD's RDNA4 GPU Architecture at Hot Chips 2025"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-10-22_evaluating-the-infinity-cache-in-amd-strix-halo.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-strix-halo-infinity-cache",
+      "title": "Evaluating the Infinity Cache in AMD Strix Halo"
+    }
+  ],
+  "concepts_created": [
+    "rendering/blackwell-gb202-architecture",
+    "rendering/rdna4-architecture",
+    "rendering/infinity-cache-efficacy"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-blackwell-gb202",
+    "chipsandcheese-lion-cove-gaming",
+    "chipsandcheese-zen5-gaming",
+    "chipsandcheese-rdna4-hot-chips-2025",
+    "chipsandcheese-strix-halo-infinity-cache"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/lion-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-lion-cove-gaming]]"
+    },
+    {
+      "file": "wiki/computer-systems/lion-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "# Lion Cove 微架构",
+      "content": "\n## 游戏负载表现\n\nArrow Lake 平台上，Lion Cove 在游戏中主要受**后端内存延迟**拖累，前端延迟次之，与 Zen 5 的情况正好相反。使用 top-down 分析，三款游戏（Palworld、COD Cold War、Cyberpunk 2077）的 IPC 均远低于 4，大量 pipeline slot 空转。\n\nL1.5（192 KB）能将部分 L1 miss 升级为更快的 L1.5 命中，在 Palworld 中效果明显；L2（3 MB）继续承接大多数 L1.5 miss，L2 累计命中率 75–86%。L3 和 DRAM 访问较少但代价极高，是实际性能天花板。Arrow Lake 的 chiplet 化互连引入了额外 L3/DRAM 延迟，是已知软肋。\n\n前端方面，12K entry BTB 和 64 KB L1i 保证分支追踪和指令缓存命中率良好，BAClears 和 mispredicts 影响有限。Lion Cove 退役阶段呈间歇性"爆发"模式：多数时间退役停滞，一旦解锁则平均连续退役 28 条 micro-op。\n\n与同期 [[zen5-microarchitecture]] 对比：Lion Cove 前端更强（L1i 64 KB vs 32 KB），但 L3/DRAM 延迟更高；Zen 5 前端延迟反而更突出，后端内存表现略好。详见 [[sources/chipsandcheese-lion-cove-gaming]]。"
+    },
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-gaming]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "# Zen 5 微架构",
+      "content": "\n## 游戏负载表现\n\n游戏工作负载下，Zen 5 的主要瓶颈是**前端延迟**，后端内存延迟次之，与 [[lion-cove-microarchitecture]] 相反。Op cache 命中率高，但单线程 op cache 实际吞吐约 6 µop/cycle，低于额定 12 µop/cycle 和 8-wide renamer 速率；前端停顿平均约 11–12 周期，接近 L2 延迟。\n\n分支预测准确率略低于 Lion Cove（跨三款游戏一致），mispredicts per instruction 更多，原因尚不明确。后端侧，整数 RF 容量是最常见资源停顿来源；ROB 利用率较高，能保持大量指令在途以隐藏内存延迟。L3/DRAM 延迟在多数游戏中优于 Arrow Lake 平台，但被前端问题掩盖。\n\n跨 CCX 实验：强制将 Cyberpunk 2077 的线程平均分布到 9900X 两个 CCX 上，性能下降约 7%。正常游戏几乎不产生跨 CCX 流量，AMD 的高频核优先调度有效规避了跨 CCX 延迟问题。详见 [[sources/chipsandcheese-zen5-gaming]]。"
+    },
+    {
+      "file": "wiki/computer-systems/strix-halo-soc.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-strix-halo-infinity-cache]]"
+    },
+    {
+      "file": "wiki/computer-systems/strix-halo-soc.md",
+      "operation": "append_to_section",
+      "section": "# Strix Halo SoC（AMD Ryzen AI Max）",
+      "content": "\n## Infinity Cache 实测效果\n\nChester Lam 通过对比 CS（Coherent Station）和 UMC（Unified Memory Controller）的 Infinity Fabric 性能计数器，首次对 Strix Halo 的 Infinity Cache 命中率和带宽放大效果做了量化测量（详见 [[rendering/infinity-cache-efficacy]]）。\n\n32 MB Infinity Cache 在测试的全部负载中有效防止了 256 GB/s LPDDR5X-8000 成为瓶颈：3DMark Time Spy Extreme 若无缓存约需 335 GB/s，实测 DRAM 带宽约为该值的一半；PS5 的 448 GB/s GDDR6 方案在同一场景下勉强够用，印证了两种设计哲学殊途同归。分辨率升高会降低命中率，但 32 MB 组合在 4K 以下分辨率工作良好；1080P 反而是 IF 侧流量最高的场景，因为 GPU 帧率最高。"
+    },
+    {
+      "file": "wiki/rendering/gb10-gpu-blackwell-igpu.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[blackwell-gb202-architecture]] — 完整 GB202 die 微架构分析"
+    },
+    {
+      "file": "wiki/rendering/gb10-gpu-blackwell-igpu.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-blackwell-gb202]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染与图形（wiki/rendering/）",
+      "row": "| [[rendering/blackwell-gb202-architecture]] | Nvidia Blackwell GB202 微架构全解（SM、L1i、执行单元、L2、GDDR7） |"
+    },
+    {
+      "category_header": "## 渲染与图形（wiki/rendering/）",
+      "row": "| [[rendering/rdna4-architecture]] | AMD RDNA4 架构（L2 扩容、去 L1、Split Barriers、标量 FP、媒体引擎） |"
+    },
+    {
+      "category_header": "## 渲染与图形（wiki/rendering/）",
+      "row": "| [[rendering/infinity-cache-efficacy]] | Strix Halo Infinity Cache 实测：命中率测量方法及带宽放大效果 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-blackwell-gb202]] | Chester Lam：Blackwell GB202 深度微架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-lion-cove-gaming]] | Chester Lam：Lion Cove P-Core 游戏负载 top-down 分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-gaming]] | Chester Lam：Zen 5 游戏负载 top-down 分析（与 Lion Cove 对比） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna4-hot-chips-2025]] | Chester Lam：RDNA4 Hot Chips 2025 架构演讲报道与实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-strix-halo-infinity-cache]] | Chester Lam：Strix Halo Infinity Cache 量化实测 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-119 Worker MT (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章（2025-06 至 2025-10）。新增 3 概念页（blackwell-gb202-architecture、rdna4-architecture、infinity-cache-efficacy）、5 source 摘要页。Patch 4 个已有页面（lion-cove-microarchitecture、zen5-microarchitecture、strix-halo-soc、gb10-gpu-blackwell-igpu）。无 skip。人物页 chester-lam 已存在，跳过创建。"
+}

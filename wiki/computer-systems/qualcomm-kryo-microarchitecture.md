@@ -46,6 +46,7 @@ Snapdragon 821 的继任者 835 采用定制 A73，Kryo 品牌名被沿用但实
 ## 相关
 
 - [[rendering/adreno-640-architecture]] — Adreno 640 是 Snapdragon 855 的配套 iGPU，继任 Snapdragon 821（Kryo 时代）的 Adreno 530
+- [[qualcomm-falkor-centriq-microarchitecture]] — Falkor 服务器核，Kryo 的服务器衍生版
 
 ## Sources
 

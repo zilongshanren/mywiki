@@ -64,3 +64,4 @@ Bulldozer 为 AMD 带来了 PRF 方案、先进分支预测器、FMA 等一批�
 
 - [[sources/chipsandcheese-bulldozer-part1]]
 - [[sources/chipsandcheese-bulldozer-part2]]
+- [[sources/chipsandcheese-trinity-northbridge]]

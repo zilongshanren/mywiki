@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w119-mr",
+  "agent_note": "5 篇 chipsandcheese.com 文章：Zen 5 AVX-512 频率行为、B580 光追分析、RDNA 4 乱序内存、RDNA 4 动态 VGPR、RDNA 4 光追改进。新增 4 概念页、5 source 摘要；chester-lam / rdna4-architecture 已存在故不重建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-01_zen-5-s-avx-512-frequency-behavior.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-avx512-freq",
+      "title": "Zen 5's AVX-512 Frequency Behavior"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-14_raytracing-on-intels-arc-b580.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-b580-raytracing",
+      "title": "Raytracing on Intel's Arc B580"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-03-23_rdna-4-s-out-of-order-memory-accesses.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna4-ooo-memory",
+      "title": "RDNA 4's Out-of-Order Memory Accesses"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-05_dynamic-register-allocation-on-amd-s-rdna-4-gpu-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna4-register-alloc",
+      "title": "Dynamic Register Allocation on AMD's RDNA 4 GPU Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-14_rdna-4s-raytracing-improvements.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna4-raytracing",
+      "title": "RDNA 4's Raytracing Improvements"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/zen5-avx512-frequency",
+    "computer-systems/rdna4-ooo-memory",
+    "computer-systems/rdna4-dynamic-vgpr",
+    "rendering/rdna4-rt-improvements"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-zen5-avx512-freq",
+    "chipsandcheese-b580-raytracing",
+    "chipsandcheese-rdna4-ooo-memory",
+    "chipsandcheese-rdna4-register-alloc",
+    "chipsandcheese-rdna4-raytracing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-avx512-freq]]"
+    },
+    {
+      "file": "wiki/computer-systems/rdna4-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-rdna4-ooo-memory]]\n- [[sources/chipsandcheese-rdna4-register-alloc]]\n- [[sources/chipsandcheese-rdna4-raytracing]]"
+    },
+    {
+      "file": "wiki/rendering/bvh-traversal-hardware.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-rdna4-raytracing]]\n- [[sources/chipsandcheese-b580-raytracing]]"
+    },
+    {
+      "file": "wiki/computer-systems/battlemage-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-b580-raytracing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/zen5-avx512-frequency]] | Zen 5 遭遇重载 AVX-512 时的 IPC 节流与频率恢复机制 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/rdna4-ooo-memory]] | RDNA 4 消除跨 wave 内存伪依赖及 vmcnt 拆分 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/rdna4-dynamic-vgpr]] | RDNA 4 动态 VGPR 分配：按需调整寄存器提升光追占用率 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/rdna4-rt-improvements]] | RDNA 4 RT IP 3.1：双相交引擎、OBB、图元压缩 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-avx512-freq]] | Chester Lam：Zen 5 AVX-512 频率与 IPC 节流行为 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-b580-raytracing]] | Chester Lam：Battlemage B580 光追架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna4-ooo-memory]] | Chester Lam：RDNA 4 乱序内存访问实验验证 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna4-register-alloc]] | Chester Lam：RDNA 4 动态 VGPR 分配机制详解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna4-raytracing]] | Chester Lam：RDNA 4 光追硬件改进全景 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-119 Worker MR (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章（Chester Lam，2025-03 至 2025-04）。新增 4 概念页（zen5-avx512-frequency、rdna4-ooo-memory、rdna4-dynamic-vgpr、rdna4-rt-improvements）、5 source 摘要。chester-lam 人物页已存在，rdna4-architecture 概念页已存在。对 zen5-microarchitecture、rdna4-architecture、bvh-traversal-hardware、battlemage-architecture 各追加 Sources 引用。"
+}

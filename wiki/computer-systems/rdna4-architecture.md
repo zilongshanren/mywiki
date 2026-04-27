@@ -51,3 +51,7 @@ GPU ISA 与 CPU ISA 不同：GPU 驱动在用户机器上运行时编译 shader�
 ## Sources
 
 - [[sources/chipsandcheese-rdna4-llvm]]
+- [[sources/chipsandcheese-rdna4-ooo-memory]]
+- [[sources/chipsandcheese-rdna4-register-alloc]]
+- [[sources/chipsandcheese-rdna4-raytracing]]
+- [[sources/chipsandcheese-rdna4-hot-chips-2025]]

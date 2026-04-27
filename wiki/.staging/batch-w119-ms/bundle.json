@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w119-ms",
+  "agent_note": "5篇 chipsandcheese.com 历史架构分析：NV40 April Fools、兆芯KX-7000、ARM Bifrost Mali-G52、Qualcomm Centriq Falkor、AMD Trinity Northbridge。全部 ingested，新增 5 概念页 + 5 源摘要页，no new person page（chester-lam 已存在）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-01_inside-nvidia-s-geforce-6000-series.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-geforce-6000",
+      "title": "Inside Nvidia's GeForce 6000 Series"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-30_zhaoxins-kx-7000.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zhaoxin-kx7000",
+      "title": "Zhaoxin's KX-7000"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-05-10_arms-bifrost-architecture-and-the-mali-g52.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mali-g52-bifrost",
+      "title": "Arm's Bifrost Architecture and the Mali-G52"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-05-29_qualcomm-s-centriq-2400-and-the-falkor-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-centriq-falkor",
+      "title": "Qualcomm's Centriq 2400 and the Falkor Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-06-14_amds-pre-zen-interconnect-testing-trinitys-northbridge.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-trinity-northbridge",
+      "title": "AMD's Pre-Zen Interconnect: Testing Trinity's Northbridge"
+    }
+  ],
+  "concepts_created": [
+    "rendering/nv40-geforce6-architecture",
+    "computer-systems/zhaoxin-century-avenue-microarchitecture",
+    "rendering/arm-bifrost-mali-architecture",
+    "computer-systems/qualcomm-falkor-centriq-microarchitecture",
+    "computer-systems/amd-trinity-northbridge-interconnect"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-geforce-6000",
+    "chipsandcheese-zhaoxin-kx7000",
+    "chipsandcheese-mali-g52-bifrost",
+    "chipsandcheese-centriq-falkor",
+    "chipsandcheese-trinity-northbridge"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/via-x86-isaiah-lujiazui.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zhaoxin-kx7000]]"
+    },
+    {
+      "file": "wiki/computer-systems/qualcomm-kryo-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[qualcomm-falkor-centriq-microarchitecture]] — Falkor 服务器核，Kryo 的服务器衍生版"
+    },
+    {
+      "file": "wiki/computer-systems/bulldozer-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-trinity-northbridge]]"
+    },
+    {
+      "file": "wiki/computer-systems/infinity-fabric-loaded-latency.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[amd-trinity-northbridge-interconnect]] — Infinity Fabric 前身：Trinity Northbridge Garlic/Onion 双链路设计"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nv40-geforce6-architecture]] | NV40 GeForce 6000：MIMD 顶点 + SIMT 像素双架构，可编程 GPU 历史节点 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[arm-bifrost-mali-architecture]] | ARM Bifrost Mali-G52：标量 SIMT + clause ISA + tile 渲染，低功耗授权 GPU 架构 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[zhaoxin-century-avenue-microarchitecture]] | 兆芯世纪大道：4-wide x86 AVX2，Bulldozer 级性能，国产 CPU 进阶尝试 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[qualcomm-falkor-centriq-microarchitecture]] | Qualcomm Falkor Centriq：2017 年 Arm 服务器核，88KB 指令缓存，60MB L3，商业失败 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[amd-trinity-northbridge-interconnect]] | AMD Trinity Northbridge：Garlic/Onion 双链路 CPU-iGPU 互联，Infinity Fabric 前身 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-geforce-6000]] | Chester Lam：NV40 GeForce 6000 April Fools 深度考古（顶点/像素 shader 双架构）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zhaoxin-kx7000]] | Chester Lam：兆芯 KX-7000 世纪大道架构全面微基准分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mali-g52-bifrost]] | Chester Lam：ARM Bifrost / Mali-G52 深度分析，对比 Adreno 615 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-centriq-falkor]] | Chester Lam：Qualcomm Centriq 2452 / Falkor 微架构深度分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-trinity-northbridge]] | Chester Lam：AMD Trinity Northbridge 互联测试，Garlic/Onion 双链路与 Infinity Fabric 对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-119 Worker MS (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 历史架构分析文章：NV40 GeForce 6000（2004 GPU April Fools 考古）、兆芯 KX-7000（世纪大道 x86 微架构）、ARM Bifrost Mali-G52（低功耗移动 GPU）、Qualcomm Centriq Falkor（2017 年 Arm 服务器核）、AMD Trinity Northbridge（pre-Infinity Fabric CPU-iGPU 互联）。新增 5 概念页、5 源摘要页，无新人物页（chester-lam 已存在）。存在页补丁 4 项（via-x86-isaiah-lujiazui、qualcomm-kryo、bulldozer、infinity-fabric）。全部 ingested，无跳过。"
+}

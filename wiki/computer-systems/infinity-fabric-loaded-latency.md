@@ -50,6 +50,10 @@ Intel 桌面平台（如 Comet Lake）采用环形或 mesh 总线直连所有核
 
 Chester Lam 在 Cyberpunk 2077、BG3、RawTherapee 等实际负载上的测试显示，典型游戏产生的 L3 miss 带宽（10~15 GB/s）远未达到触发 Infinity Fabric 排队的阈值，VCache 通过减少 L3 miss 进一步降低了 IFOP 负载。RawTherapee 等多线程高带宽任务可把内存子系统推至极限，此时与游戏并行运行会造成明显的延迟干扰。
 
+## 相关
+
+- [[amd-trinity-northbridge-interconnect]] — Infinity Fabric 前身：Trinity Northbridge Garlic/Onion 双链路设计
+
 ## Sources
 
 - [[sources/chipsandcheese-infinity-fabric-limits]]

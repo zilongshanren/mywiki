@@ -46,3 +46,4 @@ Lujiazui 的目的很明确：**为了塞 8 核**，牺牲单核宽度换面积�
 - [[sources/chipsandcheese-zhaoxin-part3]]
 - [[sources/chipsandcheese-via-centaur-cns]]
 - [[sources/chipsandcheese-spec-chinese-cpus]] — 兆芯 KX-6640MA SPEC CPU2017：略低于 Goldmont Plus
+- [[sources/chipsandcheese-zhaoxin-kx7000]]

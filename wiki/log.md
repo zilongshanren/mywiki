@@ -1486,3 +1486,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-118 Worker MQ (chipsandcheese 2025-01~02 ×5)
 
 处理 5 篇 chipsandcheese.com 文章（2025-01 ~ 2025-02）。新增 3 概念页（strix-halo-soc、sifive-p550-microarchitecture、battlemage-architecture）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-119 Worker MR (chipsandcheese 2025-03/04 RDNA4 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（zen5-avx512-frequency、rdna4-ooo-memory、rdna4-dynamic-vgpr、rdna4-rt-improvements）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-119 Worker MS (chipsandcheese 2025-04~06 历史架构 ×5)
+
+处理 5 篇 chipsandcheese.com 历史架构分析文章。新增 5 概念页（nv40-geforce6、zhaoxin-century-avenue、arm-bifrost-mali、qualcomm-falkor-centriq、amd-trinity-northbridge）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-119 Worker MT (chipsandcheese 2025-06~10 ×5)
+
+处理 5 篇 chipsandcheese.com 文章（2025-06 ~ 2025-10）。新增 3 概念页（blackwell-gb202、rdna4-architecture(rendering/)、infinity-cache-efficacy）、5 source 摘要。Lion Cove 和 Zen 5 游戏负载分析 patch 到已有页面。

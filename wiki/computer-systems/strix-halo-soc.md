@@ -37,3 +37,4 @@ Strix Halo 标志着 AMD 真正实现了 ATi 收购以来的"大 APU"愿景，�
 ## Sources
 
 - [[sources/chipsandcheese-strix-halo-interview]]
+- [[sources/chipsandcheese-strix-halo-infinity-cache]]

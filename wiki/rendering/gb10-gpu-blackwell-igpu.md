@@ -67,3 +67,4 @@ GB10 支持 OpenCL 的 coarse-grained SVM（不能同时在 CPU/GPU 双侧映射
 ## Sources
 
 - [[sources/chipsandcheese-gb10-gpu]]
+- [[sources/chipsandcheese-blackwell-gb202]]

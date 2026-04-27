@@ -62,3 +62,5 @@ Pascal 无专用 RT 硬件，但 Nvidia 仍让其使用宽树策略，以纯 com
 - [[sources/chipsandcheese-rt-rdna-turing]]
 - [[sources/chipsandcheese-rdna2-architecture]]
 - [[sources/chipsandcheese-meteor-lake-igpu-rt]]
+- [[sources/chipsandcheese-rdna4-raytracing]]
+- [[sources/chipsandcheese-b580-raytracing]]

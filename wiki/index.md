@@ -405,6 +405,12 @@ CAQA + CSAPP 的底层视角。
 | [[spec-cpu2017-methodology]] | SPEC CPU2017 基准测试方法学：跨 ISA 对比、编译标志、局限性 |
 | [[strix-halo-soc]] | AMD Ryzen AI Max SoC：扇出互连 + 32MB MALL + 全幅 Zen 5 |
 | [[sifive-p550-microarchitecture]] | SiFive P550：RISC-V 3-wide OoO，无对齐访问硬件支持 |
+| [[zen5-avx512-frequency]] | Zen 5 遭遇重载 AVX-512 时的 IPC 节流与频率恢复机制 |
+| [[rdna4-ooo-memory]] | RDNA 4 消除跨 wave 内存伪依赖及 vmcnt 拆分 |
+| [[rdna4-dynamic-vgpr]] | RDNA 4 动态 VGPR 分配：按需调整寄存器提升光追占用率 |
+| [[zhaoxin-century-avenue-microarchitecture]] | 兆芯世纪大道：4-wide x86 AVX2，Bulldozer 级性能 |
+| [[qualcomm-falkor-centriq-microarchitecture]] | Qualcomm Falkor Centriq：2017 年 Arm 服务器核，商业失败 |
+| [[amd-trinity-northbridge-interconnect]] | AMD Trinity Northbridge：Garlic/Onion 双链路，Infinity Fabric 前身 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1111,6 +1117,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rdna35-architecture]] | AMD RDNA 3.5：Strix Point Radeon 890M，8 WGP，LDS 延迟改善，~5 TFLOPS |
 | [[xe2-igpu-architecture]] | Intel Xe2 iGPU 架构，Vector Engine 合并 + XMX 矩阵单元，Lunar Lake / Battlemage |
 | [[battlemage-architecture]] | Intel Arc B580 Battlemage GPU 架构：标量优化 + atomic 重构 |
+| [[rdna4-rt-improvements]] | RDNA 4 RT IP 3.1：双相交引擎、OBB、图元压缩 |
+| [[blackwell-gb202-architecture]] | Nvidia Blackwell GB202 微架构全解（SM、L1i、执行单元、L2、GDDR7） |
+| [[infinity-cache-efficacy]] | Strix Halo Infinity Cache 实测：命中率测量方法及带宽放大效果 |
+| [[nv40-geforce6-architecture]] | NV40 GeForce 6000：MIMD 顶点 + SIMT 像素双架构，可编程 GPU 历史节点 |
+| [[arm-bifrost-mali-architecture]] | ARM Bifrost Mali-G52：标量 SIMT + clause ISA + tile 渲染 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2552,6 +2563,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen5-clustered-decode]] | Chester Lam：禁用 Zen 5 op cache 实验，验证集群式解码器能力 |
 | [[sources/chipsandcheese-sifive-p550]] | Chester Lam：SiFive P550 微架构完整剖析，RISC-V 乱序设计里程碑 |
 | [[sources/chipsandcheese-battlemage]] | Chester Lam：Intel Battlemage（Arc B580）GPU 架构深度分析 |
+| [[sources/chipsandcheese-zen5-avx512-freq]] | Chester Lam：Zen 5 AVX-512 频率与 IPC 节流行为 |
+| [[sources/chipsandcheese-b580-raytracing]] | Chester Lam：Battlemage B580 光追架构分析 |
+| [[sources/chipsandcheese-rdna4-ooo-memory]] | Chester Lam：RDNA 4 乱序内存访问实验验证 |
+| [[sources/chipsandcheese-rdna4-register-alloc]] | Chester Lam：RDNA 4 动态 VGPR 分配机制详解 |
+| [[sources/chipsandcheese-rdna4-raytracing]] | Chester Lam：RDNA 4 光追硬件改进全景 |
+| [[sources/chipsandcheese-geforce-6000]] | Chester Lam：NV40 GeForce 6000 April Fools 深度考古 |
+| [[sources/chipsandcheese-zhaoxin-kx7000]] | Chester Lam：兆芯 KX-7000 世纪大道架构全面微基准分析 |
+| [[sources/chipsandcheese-mali-g52-bifrost]] | Chester Lam：ARM Bifrost / Mali-G52 深度分析 |
+| [[sources/chipsandcheese-centriq-falkor]] | Chester Lam：Qualcomm Centriq 2452 / Falkor 微架构深度分析 |
+| [[sources/chipsandcheese-trinity-northbridge]] | Chester Lam：AMD Trinity Northbridge 互联测试 |
+| [[sources/chipsandcheese-blackwell-gb202]] | Chester Lam：Blackwell GB202 深度微架构分析 |
+| [[sources/chipsandcheese-lion-cove-gaming]] | Chester Lam：Lion Cove P-Core 游戏负载 top-down 分析 |
+| [[sources/chipsandcheese-zen5-gaming]] | Chester Lam：Zen 5 游戏负载 top-down 分析 |
+| [[sources/chipsandcheese-rdna4-hot-chips-2025]] | Chester Lam：RDNA4 Hot Chips 2025 架构演讲报道与实测 |
+| [[sources/chipsandcheese-strix-halo-infinity-cache]] | Chester Lam：Strix Halo Infinity Cache 量化实测 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

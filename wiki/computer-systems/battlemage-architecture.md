@@ -43,3 +43,4 @@ Battlemage 证明 Intel 可以在大幅缩减硅面积的同时通过架构效�
 ## Sources
 
 - [[sources/chipsandcheese-battlemage]]
+- [[sources/chipsandcheese-b580-raytracing]]
