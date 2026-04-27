@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w108-lm",
+  "agent_note": "5 篇 chipsandcheese.com 文章：KNL HPC 架构深度测评、Rocket Lake 效率分析、Golden Cove 向量 RF 不对称设计、Zen 4 Part3 系统级+iGPU、RDNA 3 微基准。新建 4 概念页（knights-landing、rocket-lake-cypress-cove、rdna3-architecture，golden-cove 向量 RF 内容以 patch 形式补充到已有页）。全部 5 篇 ingested。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-12-08_knights-landing-atom-with-avx-512.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-knights-landing",
+      "title": "Knight's Landing: Atom with AVX-512"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-12-17_was-rocket-lake-power-efficient.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rocket-lake-efficiency",
+      "title": "Was Rocket Lake Power Efficient?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-12-25_golden-coves-lopsided-vector-register-file.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-golden-cove-vector-rf",
+      "title": "Golden Cove's Lopsided Vector Register File"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-05_amds-zen-4-part-3-system-level-stuff-and-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen4-part3",
+      "title": "AMD's Zen 4, Part 3: System Level Stuff, and iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-07_microbenchmarking-amds-rdna-3-graphics-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna3-architecture",
+      "title": "Microbenchmarking AMD's RDNA 3 Graphics Architecture"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/knights-landing-microarchitecture",
+    "computer-systems/rocket-lake-cypress-cove",
+    "rendering/rdna3-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-knights-landing",
+    "chipsandcheese-rocket-lake-efficiency",
+    "chipsandcheese-golden-cove-vector-rf",
+    "chipsandcheese-zen4-part3",
+    "chipsandcheese-rdna3-architecture"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-golden-cove-vector-rf]]"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 前端：更大的 uop cache 与更强的 BTB",
+      "content": "\n## 向量寄存器文件：不对称设计\n\nGolden Cove 的向量寄存器文件在 512-bit 支持上刻意做了削减：约 295 个重命名槽支持 256-bit 操作，但仅约 210 个支持 512-bit 操作。重命名器维护两个独立池，并用启发式判断一条 256-bit 结果是否需要占用 512-bit 容量槽。交替写入 256-bit 和 512-bit 指令时两个池均充分利用，总容量最大化。\n\nSMT 场景下，Golden Cove 采用 **watermark 机制**（而非固定对半分）：单线程最多可用 221 个 FP 寄存器（512-bit 模式为 141），保证兄弟线程至少 130 个（512-bit 模式为 106）。Ice Lake SP 已引入 watermark，Golden Cove 是第二代。Skylake 是固定对半分。相比之下，Zen 4 SMT 完全竞争共享，无 watermark，也无 512-bit 容量限制。"
+    },
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen4-part3]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 重命名与乱序资源",
+      "content": "\n## 系统级：Infinity Fabric 与内存带宽\n\nZen 4 的每个 CCD 有一条 32B/cycle 读链路和 16B/cycle 写链路连接到 Infinity Fabric。在配合 DDR5-6000 的 Ryzen 7950X 上，单 CCD 的读链路成为内存读带宽上限。写链路（16B/cycle）限制更明显，与较低 FCLK 测试结果高度吻合。\n\n一个反直觉现象：使用 4 线程（每 CCD 2 核）时写带宽高于 32 线程全满时，原因是更多线程令内存控制器访问调度难度上升，page hit 率下降。FCLK 降低 20% 时，写带宽对应下降，但读带宽仅降约 5.8%。\n\nRaphael 平台是首个高性能 AMD 桌面平台集成 iGPU 的方案：RDNA2 架构，1 WGP，L1 64 KB（标准 128 KB 的一半），L2 256 KB，无 Infinity Cache。DRAM 延迟约 191 ns，优于桌面独立显卡 RDNA2 的 >250 ns，因为 iGPU 与内存控制器同在 IO die 上。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/knights-landing-microarchitecture]] | Intel Xeon Phi KNL：Silvermont 改造 + AVX-512 + SMT4 + MCDRAM，HPC 多核方案 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/rocket-lake-cypress-cove]] | Rocket Lake / Cypress Cove：Sunny Cove backport 至 14nm，效率分析 |"
+    },
+    {
+      "category_header": "## 渲染与 GPU（wiki/rendering/）",
+      "row": "| [[rendering/rdna3-architecture]] | AMD RDNA 3 架构：chiplet、VOPD 双发射、缓存层次微基准 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-knights-landing]] | Chester Lam：Knight's Landing Xeon Phi 深度测评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rocket-lake-efficiency]] | Chester Lam：Rocket Lake 功耗效率分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-golden-cove-vector-rf]] | Chester Lam：Golden Cove 向量寄存器文件不对称设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen4-part3]] | Chester Lam：Zen 4 Part 3——系统级与 iGPU |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna3-architecture]] | Chester Lam：RDNA 3 微基准测试 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-108 Worker LM (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章。新建 3 概念页（knights-landing-microarchitecture、rocket-lake-cypress-cove、rdna3-architecture）、5 source 摘要页。向 golden-cove-microarchitecture 和 zen4-microarchitecture 发出内容扩充 patch（向量 RF 不对称设计 + Infinity Fabric 系统级分析）。全部 5 篇 ingested，无跳过。"
+}

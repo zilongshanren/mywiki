@@ -180,6 +180,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[cpp-ranges-vs-iterators]] | Supnik 2011 独立发明 range：自包含终止的 sequence 抽象 vs STL iterator 配对 |
 | [[throwing-destructor-noexcept-terminate]] | C++11 析构隐式 noexcept 引出的 std::terminate |
 | [[cpp-coroutine-promise-type]] | C++20 promise_type 控制块、协程工厂语义与 co_await 即 .then |
+| [[cpp11-diet-features]] | C++11 精选特性（游戏引擎视角）：值得用与应避开的分类 |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -353,6 +354,8 @@ CAQA + CSAPP 的底层视角。
 | [[skylake-microarchitecture]] | Intel Skylake 微架构：六年最长服役，分析设计权衡与 Zen 竞争历史 |
 | [[zen4-microarchitecture]] | AMD Zen 4 微架构：Ryzen 7000，前端/AVX-512/内存子系统全解析 |
 | [[cannon-lake-microarchitecture]] | Intel Cannon Lake（Palm Cove）：10nm 首代失败，iGPU 禁用的遗憾产品 |
+| [[knights-landing-microarchitecture]] | Intel Xeon Phi KNL：Silvermont 改造 + AVX-512 + SMT4 + MCDRAM，HPC 多核方案 |
+| [[rocket-lake-cypress-cove]] | Rocket Lake / Cypress Cove：Sunny Cove backport 至 14nm，效率分析 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1022,6 +1025,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[ada-lovelace-architecture]] | Nvidia Ada Lovelace（RTX 4000），BVH 胖结构、SER、DLSS 3 帧生成 |
 | [[xe-hpg-architecture]] | Intel Xe-HPG 架构（Arc A770）：高占用度依赖、大 L2 策略、EU 遗产 |
 | [[realtime-quality-vs-quantity]] | Pesce 2012：数量 vs 质量的结构性取舍——为何「加功能」总赢过「做精功能」 |
+| [[color-blindness-accessibility]] | 色盲辅助渲染：daltonization 算法与游戏后处理集成 |
+| [[skin-rendering-practice]] | 皮肤渲染实践方法论：注意细节、参考资料、tonemapping、尺度、完整光照 |
+| [[rdna3-architecture]] | AMD RDNA 3 架构：chiplet、VOPD 双发射、缓存层次微基准 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2332,6 +2338,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen4-part1]] | Chester Lam：Zen 4 Part1——前端与执行引擎（含 AVX-512） |
 | [[sources/chipsandcheese-zen4-part2]] | Chester Lam：Zen 4 Part2——内存子系统与总结 |
 | [[sources/chipsandcheese-cannon-lake]] | Chester Lam：Cannon Lake——Intel 被遗忘的 10nm 首代产品 |
+| [[sources/c0de517e-mathematica-skin-addendum]] | Pesce：预积分皮肤着色的 shader 代码补遗 |
+| [[sources/c0de517e-color-blindness-games]] | Pesce：色盲辅助渲染调研与 daltonization 算法 |
+| [[sources/c0de517e-skin-rules-2]] | Pesce：皮肤渲染 5 条方法论原则 |
+| [[sources/c0de517e-cpp11-diet]] | Pesce：C++11 游戏引擎实用特性精选 |
+| [[sources/chipsandcheese-knights-landing]] | Chester Lam：Knight's Landing Xeon Phi 深度测评 |
+| [[sources/chipsandcheese-rocket-lake-efficiency]] | Chester Lam：Rocket Lake 功耗效率分析 |
+| [[sources/chipsandcheese-golden-cove-vector-rf]] | Chester Lam：Golden Cove 向量寄存器文件不对称设计 |
+| [[sources/chipsandcheese-zen4-part3]] | Chester Lam：Zen 4 Part 3——系统级与 iGPU |
+| [[sources/chipsandcheese-rdna3-architecture]] | Chester Lam：RDNA 3 微基准测试 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

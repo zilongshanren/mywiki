@@ -56,8 +56,11 @@ Pesce 选用了一个有 6 个自由参数的参数化函数，通过 Mathematic
 - [[microfacet-brdf]] — 镜面反射侧，与 SSS 共同构成完整皮肤着色模型
 - [[angelo-pesce]]
 - [[c0de517e-skin-rendering-horrors]] — Pesce 2011 皮肤渲染三大错误的实践总结，涵盖 SSS ramp、AO 混合、高光形状等 hack
+- [[skin-rendering-practice]] — 皮肤渲染实践方法论（注意细节、参考资料、tonemapping、尺度、完整光照）
 
 ## Sources
 
 - [[sources/c0de517e-mathematica-skin-rendering]]
 - [[sources/c0de517e-skin-rendering-horrors]]
+- [[sources/c0de517e-mathematica-skin-addendum]]
+- [[sources/c0de517e-skin-rules-2]]

@@ -12,6 +12,12 @@ Golden Cove 是 Intel 2021 年随 Alder Lake 发布的「性能核」，是自 S
 
 L1 指令缓存向 decoder 的带宽翻倍到 32 B/cycle，解码器从 4-wide 扩到 6-wide。uop cache 从 2.25K 扩到 **4K 条目**，uop 端带宽 8/cycle 追平 Zen。最引人注目的是 **12K 条目的 BTB**——分三级，miss 一级进下一级仅 1 周期惩罚（AMD L2 BTB miss 要 3 周期）。uop queue 还能像微缩 trace cache 一样对小循环 unroll，小循环里 taken 分支可做到 2/cycle。但代价是"zero bubble"可追踪分支数退回 128 条（Haswell 水准，Sunny Cove 的回退），为的是在 5 GHz+ 把大 BTB 实现出来。[[branch-predictor-design|方向预测]]抓长 pattern 能力明显强于 Skylake，但仍略逊 Zen 3。
 
+## 向量寄存器文件：不对称设计
+
+Golden Cove 的向量寄存器文件在 512-bit 支持上刻意做了削减：约 295 个重命名槽支持 256-bit 操作，但仅约 210 个支持 512-bit 操作。重命名器维护两个独立池，并用启发式判断一条 256-bit 结果是否需要占用 512-bit 容量槽。交替写入 256-bit 和 512-bit 指令时两个池均充分利用，总容量最大化。
+
+SMT 场景下，Golden Cove 采用 **watermark 机制**（而非固定对半分）：单线程最多可用 221 个 FP 寄存器（512-bit 模式为 141），保证兄弟线程至少 130 个（512-bit 模式为 106）。Ice Lake SP 已引入 watermark，Golden Cove 是第二代。Skylake 是固定对半分。相比之下，Zen 4 SMT 完全竞争共享，无 watermark，也无 512-bit 容量限制。
+
 ## 后端：ROB +45%，但整数寄存器堆没跟上
 
 重排序缓冲扩到 **512 项**（Sunny Cove 352），FP 寄存器堆、load/store queue、superqueue 都同比例放大。Golden Cove 配 **五个 ALU 端口**（x86 史上最多）、**3 个 load AGU + 2 个 store AGU**、FP 三端口。FP add 延迟压到 **2 周期**@5 GHz+（仅 VIA Nano 做过但时钟低），vector register file 推测有 8 read + 3 write 口。
@@ -49,3 +55,4 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[sources/chipsandcheese-skylake-architecture]]
 - [[sources/chipsandcheese-zen4-part1]]
 - [[sources/chipsandcheese-zen4-part2]]
+- [[sources/chipsandcheese-golden-cove-vector-rf]]

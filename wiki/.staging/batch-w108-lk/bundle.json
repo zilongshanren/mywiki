@@ -1,0 +1,36 @@
+{
+  "batch_id": "batch-w108-lk",
+  "agent_note": "本批全部4篇 hacksoflife 文章均已在先前 wave 中完成 ingest，跳过重复处理。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-06-20_we-never-needed-stackfull-coroutines.md",
+      "status": "skipped_duplicate",
+      "reason": "已作为 wiki/sources/supnik-stackless-vs-stackful-coroutines.md 入库，概念页 [[stackless-vs-stackful-coroutines]] 已存在且引用此源",
+      "source_slug": "supnik-coroutines-4-stackless"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-06-21_a-coroutine-can-be-an-awaitable.md",
+      "status": "skipped_duplicate",
+      "reason": "已作为 wiki/sources/supnik-coroutine-as-awaitable.md 入库，概念页 [[coroutine-awaitable-pattern]] 已存在且引用此源",
+      "source_slug": "supnik-coroutines-5-awaitable"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-10-16_is-it-ever-okay-to-future-proof.md",
+      "status": "skipped_duplicate",
+      "reason": "已作为 wiki/sources/supnik-future-proof.md 入库，概念页 [[future-proofing-tests]] 已存在且引用此源",
+      "source_slug": "supnik-future-proof-ok"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-10-29_this-one-weird-trick-let-s-you-beat-the-experts.md",
+      "status": "skipped_duplicate",
+      "reason": "已作为 wiki/sources/supnik-beat-the-experts.md 入库，概念页 [[cheat-by-solving-less]] 已存在且引用此源",
+      "source_slug": "supnik-beat-the-experts"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-108 Worker LK (hacksoflife.blogspot.com ×4)\n\n本批 4 篇 hacksoflife（Ben Supnik）文章均为重复入库，已在先前 wave 处理完毕：stackless-vs-stackful-coroutines（第4篇）、coroutine-as-awaitable（第5篇）、future-proof（三问测试）、beat-the-experts（作弊作战法）。全部跳过，无新页创建。"
+}

@@ -22,6 +22,14 @@ Zen 4 是 AMD 2022 年推出的第四代 Zen 架构，面向 Ryzen 7000 系列�
 
 调度器布局与 Zen 3 完全一致（没有增大），AMD 选择用更高频率换取性能，而非扩大调度队列。
 
+## 系统级：Infinity Fabric 与内存带宽
+
+Zen 4 的每个 CCD 有一条 32B/cycle 读链路和 16B/cycle 写链路连接到 Infinity Fabric。在配合 DDR5-6000 的 Ryzen 7950X 上，单 CCD 的读链路成为内存读带宽上限。写链路（16B/cycle）限制更明显，与较低 FCLK 测试结果高度吻合。
+
+一个反直觉现象：使用 4 线程（每 CCD 2 核）时写带宽高于 32 线程全满时，原因是更多线程令内存控制器访问调度难度上升，page hit 率下降。FCLK 降低 20% 时，写带宽对应下降，但读带宽仅降约 5.8%。
+
+Raphael 平台是首个高性能 AMD 桌面平台集成 iGPU 的方案：RDNA2 架构，1 WGP，L1 64 KB（标准 128 KB 的一半），L2 256 KB，无 Infinity Cache。DRAM 延迟约 191 ns，优于桌面独立显卡 RDNA2 的 >250 ns，因为 iGPU 与内存控制器同在 IO die 上。
+
 ## AVX-512 实现
 
 Zen 4 是 AMD 首款支持 AVX-512 的桌面架构。实现策略上走"平衡路线"：512-bit 指令在流水线中大部分阶段保持为单条微操作，进入 256-bit 执行管道前才分为两个 256-bit 半，即"double pumping"。主要特点：
@@ -71,3 +79,4 @@ Zen 4 通过前端优化（更强分支预测、更大微操作缓存）和频�
 
 - [[sources/chipsandcheese-zen4-part1]]
 - [[sources/chipsandcheese-zen4-part2]]
+- [[sources/chipsandcheese-zen4-part3]]

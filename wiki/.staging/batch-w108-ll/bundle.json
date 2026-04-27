@@ -1,0 +1,110 @@
+{
+  "batch_id": "batch-w108-ll",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章。HDR Workflows 原文为 Scribd 演示文稿，正文已被 paywall 锁死，几乎无实质内容，跳过。其余 4 篇均已处理。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-11-03_addendum-to-mathematica-and-skin-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-mathematica-skin-addendum",
+      "title": "Addendum to Mathematica and Skin Rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-02-10_color-blindness-and-videogames.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-color-blindness-games",
+      "title": "Color Blindness and Videogames"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-02-12_hdr-workflows.md",
+      "status": "skipped_offtopic",
+      "reason": "原文为 Scribd 演示文稿，正文已被 paywall 锁死，留存内容不足以提炼任何实质知识点（仅有几行过渡语和评论区链接）"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-02-17_more-rules-on-skin-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-skin-rules-2",
+      "title": "More Rules. On Skin Rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-05-13_integrating-c-11-in-your-diet.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-cpp11-diet",
+      "title": "Integrating C++11 in Your Diet"
+    }
+  ],
+  "concepts_created": [
+    "color-blindness-accessibility",
+    "skin-rendering-practice",
+    "cpp11-diet-features"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-mathematica-skin-addendum",
+    "c0de517e-color-blindness-games",
+    "c0de517e-skin-rules-2",
+    "c0de517e-cpp11-diet"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/preintegrated-skin-shading.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-mathematica-skin-addendum]]\n- [[sources/c0de517e-skin-rules-2]]"
+    },
+    {
+      "file": "wiki/rendering/preintegrated-skin-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[skin-rendering-practice]] — 皮肤渲染实践方法论（注意细节、参考资料、tonemapping、尺度、完整光照）"
+    },
+    {
+      "file": "wiki/programming-languages/orthodox-cpp.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-cpp11-diet]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-blindness-accessibility]] — 2013 年 daltonization 色盲辅助后处理调研\n- [[skin-rendering-practice]] — 2013 年皮肤渲染 5 条方法论原则\n- [[cpp11-diet-features]] — 2013 年 C++11 游戏引擎实用特性精选"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-mathematica-skin-addendum]]\n- [[sources/c0de517e-color-blindness-games]]\n- [[sources/c0de517e-skin-rules-2]]\n- [[sources/c0de517e-cpp11-diet]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-blindness-accessibility]] | 色盲辅助渲染：daltonization 算法与游戏后处理集成 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[skin-rendering-practice]] | 皮肤渲染实践方法论：注意细节、参考资料、tonemapping、尺度、完整光照 |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[cpp11-diet-features]] | C++11 精选特性（游戏引擎视角）：值得用与应避开的分类 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-mathematica-skin-addendum]] | Pesce：预积分皮肤着色的 shader 代码补遗 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-color-blindness-games]] | Pesce：色盲辅助渲染调研与 daltonization 算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-skin-rules-2]] | Pesce：皮肤渲染 5 条方法论原则 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-cpp11-diet]] | Pesce：C++11 游戏引擎实用特性精选 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-108 Worker LL (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。ingested 4 篇：mathematica-skin-addendum（shader 代码补遗）、color-blindness-games（色盲辅助）、skin-rules-2（皮肤渲染方法论）、cpp11-diet（C++11 精选）。跳过 1 篇：hdr-workflows（Scribd 演示文稿被 paywall 锁死，正文无实质内容）。新建概念页 3 个：color-blindness-accessibility、skin-rendering-practice、cpp11-diet-features。source 摘要 4 个。人物页无新增（angelo-pesce 已存在）。"
+}

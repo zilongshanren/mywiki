@@ -85,3 +85,7 @@ sources: 5
 - [[sources/c0de517e-sdf-antialiasing]]
 - [[sources/c0de517e-deferred-optimizer-notes]]
 - [[sources/c0de517e-gpu-compute-how]]
+- [[sources/c0de517e-mathematica-skin-addendum]]
+- [[sources/c0de517e-color-blindness-games]]
+- [[sources/c0de517e-skin-rules-2]]
+- [[sources/c0de517e-cpp11-diet]]

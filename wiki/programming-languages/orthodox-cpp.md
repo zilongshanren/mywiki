@@ -63,3 +63,4 @@ Karadžić 列出的、符合或接近 Orthodox C++ 精神的代码库包括：
 
 - [[sources/bkaradzic-orthodox-cpp]]
 - [[sources/supnik-why-c-should-be-simple]]
+- [[sources/c0de517e-cpp11-diet]]
