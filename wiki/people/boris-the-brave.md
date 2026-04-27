@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 6
+sources: 19
 ---
 
 # Boris The Brave
@@ -20,6 +20,12 @@ sources: 6
 - [[earley-parser]]
 - [[optional-static-typing]]
 - [[method-binding-semantics]]
+- [[wave-function-collapse]]
+- [[dungeon-generation-algorithm]]
+- [[rendering/marching-cubes]]
+- [[rendering/dual-contouring]]
+- [[game-development/procedural-dungeon-generation]]
+- [[game-development/mission-graph]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -31,3 +37,13 @@ sources: 6
 - [[sources/boristhebrave-tileset-roundup]]
 - [[sources/boristhebrave-as3-gems]]
 - [[sources/boristhebrave-axaxaxas]]
+- [[sources/boris-wfc-explained]]
+- [[sources/boris-wfc-tips]]
+- [[sources/boris-editable-wfc]]
+- [[sources/boris-diablo1-dungeon]]
+- [[sources/boris-gungeon-dungeon]]
+- [[sources/boris-marching-cubes]]
+- [[sources/boris-dual-contouring]]
+- [[sources/boris-isaac-dungeon]]
+- [[sources/boris-lock-key-dungeons]]
+- [[sources/boris-unexplored-dungeon]]

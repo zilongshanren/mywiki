@@ -1150,6 +1150,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[directx11-api-overview]] | DirectX 11 API 初始化到渲染的完整流程概览 |
 | [[directx12-api-overview]] | DirectX 12 命令队列、描述符堆、资源屏障的现代 API 概览 |
 | [[gpgpu-compute-simt-model]] | GPGPU SIMT 执行模型：wave、线程组、LDS、原子操作 |
+| [[rendering/marching-cubes]] | 从标量场提取等值面的经典算法，查找表驱动，逐格处理 |
+| [[rendering/dual-contouring]] | 每格一顶点的等值面算法，用 QEF 最小化还原尖锐边角 |
+| [[procedural-work-graph-generation]] | GPU Work Graphs + Mesh Shaders 实现实时递归程序化内容生成 |
+| [[voxel-lod-large-mesh]] | 体素 LOD 统一流式加载、遮挡剔除、LOD 的数亿三角形光栅化渲染 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1238,6 +1242,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[gamepad-stick-bounce-filter]] | 手柄弹簧越过 0 点的单帧 \|Δ\|>1.05 阈值过滤（Awesomenauts） |
 | [[prototyping-method-bias]] | 原型方法决定结论：无动画/无音效/离线音乐的系统性偏差 |
 | [[pitch-video-concept-art]] | Pitch 视频三件套与同视角 concept art 纪律（Ronimo） |
+| [[wave-function-collapse]] | WFC 算法：约束传播 + 最小熵随机采样，邻接/重叠两种变体，路径约束补全局结构 |
+| [[dungeon-generation-algorithm]] | 地牢生成两阶段范式：预地牢/图结构先行，Diablo 1 递归萌芽/细分/有机扩展，Gungeon Flow 图 + Composite 布局 |
+| [[game-development/procedural-dungeon-generation]] | 程序化地牢生成：BFS 扩展、循环地牢生成、布局与内容解耦 |
+| [[game-development/mission-graph]] | 任务图：锁钥依赖关系的有向图抽象，用于分析与生成关卡 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2120,6 +2128,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boristhebrave-tileset-roundup]] | Boris：2D autotile 切片布局综述（Marching Squares/Blob/Sub-blob/Micro-blob） |
 | [[sources/boristhebrave-as3-gems]] | Boris：AS3 语言设计中值得借鉴的几个「钻石」 |
 | [[sources/boristhebrave-axaxaxas]] | Boris：Python Earley parser 库发布说明 |
+| [[sources/boris-wfc-explained]] | Boris：WFC 作为约束编程的系统讲解，约束传播 + 最小熵 + Overlapped 变体 |
+| [[sources/boris-wfc-tips]] | Boris：WFC 实践指南，路径约束 / Marching Cubes 瓦片 / 分区 Biome 解决单调感 |
+| [[sources/boris-editable-wfc]] | Boris：Editable WFC，脏格启发 + 相似度权重 + 提前终止，对标 Townscaper |
+| [[sources/boris-diablo1-dungeon]] | Boris：Diablo 1 地牢生成逆向，预地牢两阶段 + 递归萌芽/细分/有机扩展 + Miniset |
+| [[sources/boris-gungeon-dungeon]] | Boris：Enter The Gungeon 地牢生成逆向，Flow 图 + Composite 拆分 + 循环布局 |
+| [[sources/boris-marching-cubes]] | Boris：Marching Cubes 算法教程（2D/3D 等值面提取） |
+| [[sources/boris-dual-contouring]] | Boris：Dual Contouring 教程（QEF、尖角还原、Surface Nets 对比） |
+| [[sources/boris-isaac-dungeon]] | Boris：以撒结合地牢生成逆向分析（BFS 扩展 + 特殊房间规则） |
+| [[sources/boris-lock-key-dungeons]] | Boris：锁钥地牢设计模式与任务图分析工具 |
+| [[sources/boris-unexplored-dungeon]] | Boris：Unexplored 循环地牢生成深度解析（图重写 + biome + 5000 规则） |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2645,6 +2663,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/anteru-realtime-hybrid-hair]] | Jansson/Chajdas 等：实时混合头发渲染（EGSR 2019）|
 | [[sources/anteru-meshlet-compression]] | Chajdas：实用 Meshlet 压缩 |
 | [[sources/anteru-svgf-motion-blur]] | Chajdas：时空方差引导运动模糊滤波 |
+| [[sources/anteru-image-error-metrics]] | Chajdas：误差度量驱动的混合光栅+光追自适应细化 |
+| [[sources/anteru-procedural-work-graphs]] | Chajdas：GPU Work Graphs 用于实时程序化生成，79,710 实例 3.74 ms |
+| [[sources/anteru-scalable-large-mesh]] | Chajdas：体素 LOD 统一管线，数亿三角形纯光栅化渲染 |
 | [[sources/alain-raw-dx11]] | Galvan：DirectX 11 Hello Triangle 完整流程 |
 | [[sources/alain-raw-dx12]] | Galvan：DirectX 12 现代 API 完整流程 |
 | [[sources/alain-gpgpu-compute]] | Galvan：GPGPU 计算概念综述（WebGPU + DX12） |

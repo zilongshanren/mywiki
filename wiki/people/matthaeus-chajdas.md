@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 渲染, gpu, 编译器]
 date: 2026-04-14
-sources: 6
+sources: 18
 ---
 
 # Matthäus G. "Anteru" Chajdas
@@ -25,6 +25,8 @@ sources: 6
 - [[subpixel-reconstruction-antialiasing]] —— I3D 2011，deferred 管线的子像素可见性 + 1x 着色重建
 - [[tiled-light-trees]] —— I3D 2017（与 O'Donnell/Frostbite），tile 内 light BVH + clustered shading 混合
 - [[d3d12-work-graphs]] —— ISCA 2025 把 work graph 从图形移植到 SpMV
+- [[procedural-work-graph-generation]] — Work Graphs 驱动程序化生成，79,710 实例 / 3.74 ms
+- [[voxel-lod-large-mesh]] — 体素 LOD 统一流式 + 剔除 + LOD 的超大网格光栅化方案
 
 ## Sources
 
@@ -43,3 +45,6 @@ sources: 6
 - [[sources/anteru-realtime-hybrid-hair]]
 - [[sources/anteru-meshlet-compression]]
 - [[sources/anteru-svgf-motion-blur]]
+- [[sources/anteru-image-error-metrics]]
+- [[sources/anteru-procedural-work-graphs]]
+- [[sources/anteru-scalable-large-mesh]]

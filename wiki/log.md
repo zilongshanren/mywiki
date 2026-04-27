@@ -1538,3 +1538,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-123 Worker ND (alain.xyz ×3 + 16bpp.net ×2 + 2 skip)
 
 处理 5 篇文章（跳过 2 篇）。新增 3 渲染概念页 + 2 编程语言概念页 + 1 人物页（alain-galvan）。alain.xyz 全部处理完毕！
+
+## [2026-04-27] ingest | Wave-124 Worker NE (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章：WFC 三部曲（算法讲解、实践技巧、可编辑变体）+ Diablo 1 / Enter The Gungeon 地牢生成逆向分析。新增概念页 2 个（wave-function-collapse、dungeon-generation-algorithm）、source 摘要 5 个。更新人物页 boris-the-brave（patch）。
+
+## [2026-04-27] ingest | Wave-124 Worker NF (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 技术文章。新增 4 概念页（rendering/marching-cubes、rendering/dual-contouring、game-development/procedural-dungeon-generation、game-development/mission-graph）、source 摘要 5 个。更新人物页 boris-the-brave（patch）。
+
+## [2026-04-27] ingest | Wave-124 Worker NG (anteru.net ×5)
+
+处理 5 篇 anteru.net 研究摘要页。跳过 2 篇重复（assisted-probe-placement、SRAA 已在前序波次处理）。新增 2 概念页（procedural-work-graph-generation、voxel-lod-large-mesh）、3 source 摘要（anteru-image-error-metrics、anteru-procedural-work-graphs、anteru-scalable-large-mesh）。Patch：hybrid-raytracing-pipeline、d3d12-work-graphs、matthaeus-chajdas。
