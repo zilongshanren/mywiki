@@ -58,6 +58,9 @@ Kepler 的竞争力在于：小 kernel 场景（延迟少、利用率高），�
 
 Kepler 的静态调度方案被 Maxwell、Pascal、Volta 等后续所有 Nvidia 架构延续（控制码格式演进，但核心策略不变）。SMX 内 4 个调度分区的划分也延续至后续架构。Tesla K20x 系列凭借强大的软件生态在超算（Oak Ridge Titan）上取得成功。
 
+Maxwell 是 Kepler 的直接继任，以 [[rendering/maxwell-architecture]] 形式做了全面的 SM 精简与调度控制码升级，详见该页面。
+
 ## Sources
 
 - [[sources/chipsandcheese-kepler-architecture]]
+- [[sources/chipsandcheese-maxwell-nvidia]]

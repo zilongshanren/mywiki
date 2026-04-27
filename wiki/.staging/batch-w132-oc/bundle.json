@@ -1,0 +1,65 @@
+{
+  "batch_id": "batch-w132-oc",
+  "agent_note": "5 个 Boris The Brave 来源。2 篇 ingested（受约束 LLM 生成 + VoronatorSharp），3 篇跳过（nice-hooks 仅工具公告无技术内容、0.999=1 纯数学科普、Unity TextGenerator 极薄 API 片段）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2023-02-11_constrained-text-generation-with-ai.md",
+      "status": "ingested",
+      "source_slug": "boris-constrained-text-gen-ai",
+      "title": "Constrained Text Generation with AI"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-05-04_nice-hooks.md",
+      "status": "skipped_offtopic",
+      "reason": "仅一段公告：发布了 nice-hooks（PyTorch hooks 辅助库用于 AI 可解释性研究），无技术内容，不属于游戏/图形/系统方向"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-07-08_0-999-1-with-rigour.md",
+      "status": "skipped_offtopic",
+      "reason": "纯数学科普文（实数定义、极限、0.999…=1 证明），不涉及图形/游戏/系统工程，无可链接概念"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-06-20_using-unitys-textgenerator-verts.md",
+      "status": "skipped_offtopic",
+      "reason": "内容极薄：仅一个针对 Unity TextGenerator.verts API 字符与顶点映射关系的逆向工程代码片段，无足以支撑一个 wiki 页面的分析或论点"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-09-10_voronatorsharp.md",
+      "status": "ingested",
+      "source_slug": "boris-voronatorsharp",
+      "title": "VoronatorSharp"
+    }
+  ],
+  "concepts_created": ["game-development/constrained-beam-search-llm"],
+  "people_created": [],
+  "source_summaries_created": ["boris-constrained-text-gen-ai", "boris-voronatorsharp"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/constrained-beam-search-llm]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-constrained-text-gen-ai]]\n- [[sources/boris-voronatorsharp]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/constrained-beam-search-llm]] | 用受约束束搜索让 LLM 只从预审核短语集输出，适用于游戏 NPC 对话 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-constrained-text-gen-ai]] | Boris：约束 LLM 生成用于游戏对话 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-voronatorsharp]] | Boris：VoronatorSharp C# Voronoi/Delaunay 库 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-132 Worker OC (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 文章。ingested 2 篇：约束 LLM 文本生成（新概念页 constrained-beam-search-llm）、VoronatorSharp 工具库。跳过 3 篇：nice-hooks 公告无实质内容、0.999=1 纯数学科普、Unity TextGenerator 极薄 API 片段。补充 boris-the-brave 人物页相关链接和 Sources。"
+}

@@ -1634,3 +1634,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-131 Worker OB (mini.gmshaders.com ×5)
 
 5 篇全部重复，0 篇入库。mini.gmshaders.com 已全部处理完毕。
+
+## [2026-04-27] ingest | Wave-132 Worker OC (boristhebrave.com ×5)
+
+处理 5 篇文章，2 篇入库（constrained-beam-search-llm、voronatorsharp），3 篇跳过（非主题）。
+
+## [2026-04-27] ingest | Wave-132 Worker OD (blog.codingnow.com ×5)
+
+处理 5 篇云风月度存档，0 篇入库（3 重复 + 2 育儿笔记非主题）。
+
+## [2026-04-27] ingest | Wave-132 Worker OE (chipsandcheese.com ×5)
+
+处理 5 篇，1 篇入库（maxwell-architecture），4 篇重复。

@@ -581,3 +581,7 @@ game-engine-web-engineering-lessons
 chess-move-regex
 planet-tile-assembly
 puzzlescript-rule-system
+advanced-table-constraints
+celtic-knots
+slige-doom-level-gen
+rectangle-subdivisions

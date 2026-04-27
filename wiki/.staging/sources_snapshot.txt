@@ -525,3 +525,8 @@ c0de517e-vegetation-cod-bo4
 boris-chess-piece-regex
 boris-planet-generation
 boris-puzzlescript-rules
+boris-advanced-table-constraints
+boris-celtic-knots
+boris-celtic-knots-twills
+boris-slige-doom-level-gen
+boris-rectangle-subdivisions

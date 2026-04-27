@@ -1,0 +1,68 @@
+{
+  "batch_id": "batch-w132-oe",
+  "agent_note": "5 chipsandcheese.com CPU/GPU architecture articles. Sources 1/2/4/5 (loongson-3a6000, ps5-zen2-fpu, rdna4-llvm, x86-doesnt-need-to-die) were fully ingested by a prior batch — their source pages and concept pages already exist. Source 3 (Maxwell) had no source or concept page and was created fresh. 1 new concept page + 1 new source summary created; 4 sources confirmed already ingested.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-14_loongson-3a6000-a-star-among-chinese-cpus.md",
+      "status": "skipped_duplicate",
+      "source_slug": "chipsandcheese-loongson-3a6000",
+      "reason": "Source page wiki/sources/chipsandcheese-loongson-3a6000.md and concept page computer-systems/loongson-3a6000-microarchitecture.md already exist and are complete"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-20_the-nerfed-fpu-in-ps5s-zen-2-cores.md",
+      "status": "skipped_duplicate",
+      "source_slug": "chipsandcheese-ps5-zen2-fpu",
+      "reason": "Source page wiki/sources/chipsandcheese-ps5-zen2-fpu.md already exists and is complete"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-01-08_maxwell-nvidias-silver-28nm-hammer.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-maxwell-nvidia",
+      "title": "Maxwell: Nvidia's Silver 28nm Hammer"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-01-29_examining-amds-rdna-4-changes-in-llvm.md",
+      "status": "skipped_duplicate",
+      "source_slug": "chipsandcheese-rdna4-llvm",
+      "reason": "Source page wiki/sources/chipsandcheese-rdna4-llvm.md already exists and is complete"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-27_why-x86-doesnt-need-to-die.md",
+      "status": "skipped_duplicate",
+      "source_slug": "chipsandcheese-x86-future",
+      "reason": "Source page wiki/sources/chipsandcheese-x86-doesnt-need-to-die.md already exists and is complete"
+    }
+  ],
+  "concepts_created": [
+    "rendering/maxwell-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-maxwell-nvidia"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/kepler-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 遗产",
+      "content": "Maxwell 是 Kepler 的直接继任，以 [[rendering/maxwell-architecture]] 形式做了全面的 SM 精简与调度控制码升级，详见该页面。"
+    },
+    {
+      "file": "wiki/rendering/kepler-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-maxwell-nvidia]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染与 GPU（wiki/rendering/）",
+      "row": "| [[rendering/maxwell-architecture]] | Nvidia Maxwell：削减 Kepler 低利用率资源换取更多 SM，28 nm 下的代际大跨步 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-maxwell-nvidia]] | Chips and Cheese：Maxwell 微架构深度分析，GTX 980 Ti vs Kepler vs GCN |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-132 Worker OE (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com CPU/GPU 微架构分析文章。其中 4 篇（loongson-3a6000、ps5-zen2-fpu、rdna4-llvm、x86-doesnt-need-to-die）已由先前批次完整摄取，跳过重复处理。新增 1 概念页（rendering/maxwell-architecture）和 1 source 摘要（chipsandcheese-maxwell-nvidia）。Maxwell 文章覆盖：SM 精简策略、静态调度控制码升级（8→21 bit/指令）、Shared Memory 原生原子、L2 扩容与瓦片光栅化降带宽依赖，以及对 Kepler 的继承关系与 Pascal 遗产。"
+}

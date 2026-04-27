@@ -1171,6 +1171,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering/meshblend-ssao-material-blend]] | 将 SSAO 深度采样语义重用于相交网格材质混合 |
 | [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |
 | [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |
+| [[rendering/maxwell-architecture]] | NVIDIA Maxwell：SM 精简 + 21 位控制码 + L2 加倍，28nm 最优解 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1297,6 +1298,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/celtic-knots]] | 框架网格 → 3D 贝塞尔曲线的 over-under 拓扑约束生成 |
 | [[game-development/slige-doom-level-gen]] | SLIGE 栈式 Quest 锁钥系统与难度预算的早期实践 |
 | [[game-development/rectangle-subdivisions]] | 不可约矩形细分的形式化定义与枚举，程序化城市生成应用 |
+| [[game-development/constrained-beam-search-llm]] | 用受约束束搜索让 LLM 只从预审核短语集输出，适用于游戏 NPC 对话 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2244,6 +2246,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-celtic-knots-twills]] | Boris：Celtic Knots 1.0 斜纹扩展 |
 | [[sources/boris-slige-doom-level-gen]] | Boris：SLIGE Doom 关卡生成器逆向分析 |
 | [[sources/boris-rectangle-subdivisions]] | Boris：不可约矩形细分的形式化枚举与应用 |
+| [[sources/boris-constrained-text-gen-ai]] | Boris：约束 LLM 生成用于游戏对话 |
+| [[sources/boris-voronatorsharp]] | Boris：VoronatorSharp C# Voronoi/Delaunay 库 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2661,6 +2665,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-m2pro-igpu]] | Chester Lam：M2 Pro iGPU 缓存与带宽深度测评 |
 | [[sources/chipsandcheese-cortex-a72]] | Chester Lam：Cortex-A72 微架构，Graviton 一代集群分析 |
 | [[sources/chipsandcheese-kepler-architecture]] | Chester Lam：Kepler 架构深度解析，静态调度与 GCN 对比 |
+| [[sources/chipsandcheese-maxwell-nvidia]] | Chips and Cheese：Maxwell 架构分析，SM 精简与调度升级 |
 | [[sources/chipsandcheese-sw26010-pro]] | Chester Lam：SW26010-Pro 超算处理器深度解析 |
 | [[sources/chipsandcheese-gcn-modernization]] | Chester Lam：GCN 架构历史与设计哲学 |
 | [[sources/chipsandcheese-cdna3]] | Chester Lam：AMD CDNA 3 计算架构全析 |

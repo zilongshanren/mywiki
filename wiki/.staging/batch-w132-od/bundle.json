@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w132-od",
+  "agent_note": "云风博客 2025-12 至 2026-04 月度存档。5 篇文章中，3 篇技术内容已在前序 wave 中完整处理（soluna extlua 代理、AI 辅助阅读、单人桌游），2 篇为育儿/教育内容跳过。本 batch 无新增内容。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-04-12_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "育儿笔记：讲解三年级除法概念给女儿，无软件工程或游戏开发内容"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-03-11_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "已在前序 wave 处理为 wiki/sources/cloudwu-soluna-extlua-proxy.md，对应概念页 wiki/programming-languages/lua-c-api-dylib-proxy.md 已存在"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-02-16_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "已在前序 wave 处理为 wiki/sources/cloudwu-ai-reading-workflow.md，对应概念页 wiki/meta/ai-assisted-reading-workflow.md 已存在（或等同条目）"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2026-01-24_yun-feng-de-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "已在前序 wave 处理为 wiki/sources/cloudwu-solo-boardgames.md"
+    },
+    {
+      "path": "raw/articles/blog.codingnow.com/2025-12-16_yun-feng-de-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "育儿笔记：教女儿线段数量计算和等差数列，无软件工程或游戏开发内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-132 Worker OD (blog.codingnow.com ×5)\n\n处理云风博客 2025-12 至 2026-04 月度存档共 5 篇。2 篇育儿笔记（教女儿数学）不符合主题，跳过；3 篇技术内容（soluna extlua 代理、AI 辅助阅读工作流、单人桌游评测）均已在前序 wave 中完整处理，本 batch 无新增 wiki 页面。"
+}
