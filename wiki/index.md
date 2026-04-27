@@ -1280,6 +1280,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/wraparound-hex-grids]] | 六边形绕回网格的数学推导：六边形分块 + 坐标折叠映射 |
 | [[game-development/debroglie-wfc-library]] | Boris The Brave 的 C# WFC 库，扩展非局部约束（路径/计数/边界） |
 | [[game-development/poisson-point-process-infinite-plane]] | 无限均匀点分布的正确模型：泊松点过程 vs jittered grid |
+| [[game-development/traversability-checking]] | 持久化不相交集预计算可通行性，批量检测障碍物放置安全性 |
+| [[game-development/barycentric-perlin-noise]] | 重心柏林噪声，n 维多纹理混合与生物群系划分 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2214,6 +2216,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-wraparound-hex-grids]] | Boris：六边形绕回网格数学推导 |
 | [[sources/boris-debroglie-v01]] | Boris The Brave：DeBroglie WFC C# 库 v0.1 发布公告 |
 | [[sources/boris-infinite-uniform-points]] | Boris The Brave：无限平面均匀点分布与泊松点过程 |
+| [[sources/boris-fast-traversal-proc-rooms]] | Boris：过程生成房间的快速可通行性查询（不相交集预计算） |
+| [[sources/boris-barycentric-perlin-noise]] | Boris：重心柏林噪声——三角网格上的 n 维混合与 Biome 划分 |
+| [[sources/boris-tessera-3d-tiles]] | Boris：Tessera 3D 瓦片关卡生成公告 |
+| [[sources/boris-triangle-grid-extensions]] | Boris：三角网格扩展——Trihex、替代距离函数、等距视图关系 |
+| [[sources/boris-chiseled-paths-revisited]] | Boris：见证路径优化凿刻法，彻底解决关节点检测性能问题 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2655,6 +2662,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-env-lighting-occlusion]] | Pesce：diffuse probe 驱动的 specular 光泄漏 clamping |
 | [[sources/c0de517e-remote-scene-approximation]] | Pesce：远端场景近似 R&D 日志，impostor 到 Poisson 重建 |
 | [[sources/c0de517e-well-architected-bad-code]] | Pesce：好架构 = 隔离，让坏代码能够存活 |
+| [[sources/c0de517e-cod-rendering-retrospective]] | Pesce：COD 系列渲染技术跨代回顾（Ghosts / AW / BO3） |
 | [[sources/chipsandcheese-crestmont]] | Chester Lam：Meteor Lake Crestmont E-Core 微架构测评 |
 | [[sources/chipsandcheese-lion-cove]] | George Cozma：Intel Lion Cove P-Core 架构预览 |
 | [[sources/chipsandcheese-goldmont-plus]] | Chester Lam：Intel Atom Goldmont Plus 历史评测 |

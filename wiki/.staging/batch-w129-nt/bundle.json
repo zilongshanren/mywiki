@@ -1,0 +1,135 @@
+{
+  "batch_id": "batch-w129-nt",
+  "agent_note": "5篇 boristhebrave.com 文章：2篇新概念（traversability-checking, barycentric-perlin-noise），2篇补丁已有概念（triangle-grid, chiseling-random-paths），1篇公告帖仅补丁 tessera 相关页面。所有文章均技术相关，无跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2017-07-08_fast-traversal-queries-of-procedurally-generated-rooms.md",
+      "status": "ingested",
+      "source_slug": "boris-fast-traversal-proc-rooms",
+      "title": "Fast Traversal Queries of Procedurally Generated Rooms"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2018-05-12_barycentric-perlin-noise.md",
+      "status": "ingested",
+      "source_slug": "boris-barycentric-perlin-noise",
+      "title": "Barycentric Perlin Noise"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2019-11-28_tessera-3d-tile-level-generation.md",
+      "status": "ingested",
+      "source_slug": "boris-tessera-3d-tiles",
+      "title": "Tessera 3D Tile Level Generation"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-05-27_some-triangle-grid-extensions.md",
+      "status": "ingested",
+      "source_slug": "boris-triangle-grid-extensions",
+      "title": "Some Triangle Grid Extensions"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-03-20_chiseled-paths-revisited.md",
+      "status": "ingested",
+      "source_slug": "boris-chiseled-paths-revisited",
+      "title": "Chiseled Paths Revisited"
+    }
+  ],
+  "concepts_created": [
+    "game-development/traversability-checking",
+    "game-development/barycentric-perlin-noise"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-fast-traversal-proc-rooms",
+    "boris-barycentric-perlin-noise",
+    "boris-tessera-3d-tiles",
+    "boris-triangle-grid-extensions",
+    "boris-chiseled-paths-revisited"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/triangle-grid.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-triangle-grid-extensions]]"
+    },
+    {
+      "file": "wiki/game-development/triangle-grid.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/game-development/triangle-grid.md",
+      "operation": "append_to_section",
+      "section": "## 与 Sylves / Tessera 的关联",
+      "content": "\n关于三角网格的延伸研究还包括：**Trihex（三联六边形）格**（间距加倍即得六边形+三角形交替铺砌）、允许经顶点中转的**替代距离函数**（`(|da-db|+|db-dc|+|dc-da|)/2`，行为接近六边形距离），以及三角列式排列天然对应**等距（Isometric）视图**的几何关系——见 [[sources/boris-triangle-grid-extensions]]。"
+    },
+    {
+      "file": "wiki/game-development/chiseling-random-paths.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/game-development/chiseling-random-paths.md",
+      "operation": "replace_line",
+      "match": "## 2022 年改进版\n\nBoris 注明 2022 年发布了 \"Chiseled Paths Revisited\"，提出了进一步优化，减少了每步的关节点重新计算开销。",
+      "content": "## 2022 年改进版：见证路径优化\n\n[[sources/boris-chiseled-paths-revisited]] 引入**见证路径（witness）**机制，彻底解决了性能问题：\n\n- 维护一条已知从起点到终点的可通路径作为 witness\n- 每轮随机选取一个 Open 格子：若该格子**不在** witness 上，直接移除，无需任何连通性检测\n- 若格子**在** witness 上，才调用 find_path 寻找新 witness；如果找不到则标记为 Forced\n- 由于大多数格子不在 witness 上，关节点检测调用频率极低，实现也比关节点算法简单\n- witness 的选取不影响输出路径的分布，可用任意寻路算法\n- 通过给 witness 上的格子设置权重参数 w，可控制路径弯曲程度：w=0 得最短路，w>1 得更弯曲路径"
+    },
+    {
+      "file": "wiki/game-development/chiseling-random-paths.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-chiseled-paths-revisited]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 51",
+      "content": "sources: 56"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/traversability-checking]]\n- [[game-development/barycentric-perlin-noise]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-fast-traversal-proc-rooms]]\n- [[sources/boris-barycentric-perlin-noise]]\n- [[sources/boris-tessera-3d-tiles]]\n- [[sources/boris-triangle-grid-extensions]]\n- [[sources/boris-chiseled-paths-revisited]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/traversability-checking]] | 持久化不相交集预计算可通行性，批量检测障碍物放置安全性 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/barycentric-perlin-noise]] | 重心柏林噪声：n 维多纹理混合与生物群系划分 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-fast-traversal-proc-rooms]] | Boris：持久化不相交集加速程序化房间可通行性查询 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-barycentric-perlin-noise]] | Boris：重心坐标扩展 Perlin 噪声用于多路混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-tessera-3d-tiles]] | Boris：Tessera Unity 插件发布公告（WFC 3D 关卡生成） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-triangle-grid-extensions]] | Boris：三角网格延伸——Trihex 格、替代距离函数、等距视图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-chiseled-paths-revisited]] | Boris：凿刻法随机路径 2022 改进版，见证路径优化 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-129 Worker NT (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章。新增 2 概念页（traversability-checking、barycentric-perlin-noise）、0 人物页（Boris 已存在）、5 source 摘要页。对已有页面发出补丁：triangle-grid（+延伸内容+新 source）、chiseling-random-paths（+见证路径优化完整描述+新 source）、boris-the-brave（+2 相关链接+5 sources）。无跳过。"
+}

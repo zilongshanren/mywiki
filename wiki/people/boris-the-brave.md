@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 51
+sources: 56
 ---
 
 # Boris The Brave
@@ -51,6 +51,8 @@ sources: 51
 - [[game-development/wraparound-hex-grids]]
 - [[game-development/debroglie-wfc-library]]
 - [[game-development/poisson-point-process-infinite-plane]]
+- [[game-development/traversability-checking]]
+- [[game-development/barycentric-perlin-noise]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -104,3 +106,8 @@ sources: 51
 - [[sources/boris-wraparound-hex-grids]]
 - [[sources/boris-debroglie-v01]]
 - [[sources/boris-infinite-uniform-points]]
+- [[sources/boris-fast-traversal-proc-rooms]]
+- [[sources/boris-barycentric-perlin-noise]]
+- [[sources/boris-tessera-3d-tiles]]
+- [[sources/boris-triangle-grid-extensions]]
+- [[sources/boris-chiseled-paths-revisited]]

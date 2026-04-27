@@ -1,0 +1,42 @@
+{
+  "batch_id": "batch-w129-nv",
+  "agent_note": "所有 5 篇文章均已存在或无实质内容，全部跳过。Sources 2/3/4 已在前批次以不同 slug 入库；Sources 1/5 均为无内容存根页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2022-06-11_real-time-rendering-past-present-and-a-probable-future.md",
+      "status": "skipped_offtopic",
+      "source_slug": "c0de517e-rt-rendering-past-future",
+      "reason": "博文正文仅为私有公司 keynote 幻灯片的入口说明，无可提取的技术内容；幻灯片链接为私密 Dropbox，附带一个 2015 WIP 未完成 PDF 链接，均无法访问。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-02-20_how-to-render-it-ten-ideas-to-solve-computer-graphics-proble.md",
+      "status": "skipped_duplicate",
+      "source_slug": "c0de517e-how-to-render-it",
+      "reason": "同一篇文章已在前批次以 slug c0de517e-how-to-render 入库，对应 wiki/sources/c0de517e-how-to-render.md 与概念页 wiki/rendering/rendering-innovation-metatechniques.md，内容完整，无需重复处理。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-10-03_from-the-archive-notes-on-environment-lighting-occlusion.md",
+      "status": "skipped_duplicate",
+      "source_slug": "c0de517e-env-lighting-occlusion",
+      "reason": "该 blogspot 页面为纯存根，正文仅含跳转链接指向 c0de517e.com 全文（已另外存档）。对应的 source 页 wiki/sources/c0de517e-env-lighting-occlusion.md 已存在且基于完整全文撰写，无需重复。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-03-15_half-baked-dynamic-occlusion-culling.md",
+      "status": "skipped_duplicate",
+      "source_slug": "c0de517e-half-baked-occlusion",
+      "reason": "同一篇文章已在前批次以 slug c0de517e-dynamic-occlusion-culling 入库，对应 wiki/sources/c0de517e-dynamic-occlusion-culling.md 与概念页 wiki/rendering/dynamic-occlusion-culling-roblox.md，内容完整。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-07-10_siggraph-2015-notes-for-approximate-models-for-physically-ba-2.md",
+      "status": "skipped_offtopic",
+      "source_slug": "c0de517e-siggraph2015-approx-pbr-pt2",
+      "reason": "博文正文仅为 draft 课程笔记的临时托管说明，正文无技术内容，评论区指出所有链接已失效。实际课程笔记 PDF 无法访问。Worker NU 被分配处理配对的第一部分（相同 SIGGRAPH 2015 课程），两者均无可用内容；若 NU 找到可访问版本，可联合处理。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-129 Worker NV (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。全部跳过：Sources 2、3、4 已在前批次以不同 slug 入库（c0de517e-how-to-render、c0de517e-env-lighting-occlusion、c0de517e-dynamic-occlusion-culling），内容完整；Source 1 为私有 keynote 存根；Source 5 为失效链接的 SIGGRAPH 2015 课程笔记托管页。新增 0 概念页、0 人物页、0 source 摘要。"
+}

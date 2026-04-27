@@ -39,6 +39,7 @@ sources: 9
 - [[frequency-is-not-latency]] —— 2011 Fight Night Champion 的 30fps + 正确运动模糊
 - [[component-degradable-build]] —— 2011 「broken build」是个糟糕术语
 - [[stable-csm-implementation-tips]] —— 2011 Stable CSM 实施要点 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch
+- **COD 渲染回顾**：2016 年的跨代渲染回顾文章，以 Ghosts / Advanced Warfare / Black Ops 3 三款游戏为轴，展示了 COD 三个内部工作室如何在同一产品线内打造出三套截然不同的渲染系统，并阐述了感知校准（perceptual realism）比 PBR 数学精度更重要的观点（见 [[sources/c0de517e-cod-rendering-retrospective]]）。
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -130,3 +131,4 @@ sources: 9
 - [[sources/c0de517e-env-lighting-occlusion]]
 - [[sources/c0de517e-remote-scene-approximation]]
 - [[sources/c0de517e-well-architected-bad-code]]
+- [[sources/c0de517e-cod-rendering-retrospective]]

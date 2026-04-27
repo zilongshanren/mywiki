@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch-w129-nu",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章：2 篇已处理（duplicate）、2 篇内容为空无法入库、1 篇实质性回顾文章新增入库。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-02-06_low-resolution-effects-with-depth-aware-upsampling.md",
+      "status": "skipped_duplicate",
+      "reason": "已以 slug c0de517e-low-res-upsampling 处理并入库，wiki/sources/c0de517e-low-res-upsampling.md 存在"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-07-10_siggraph-2015-notes-for-approximate-models-for-physically-ba.md",
+      "status": "skipped_offtopic",
+      "reason": "原文仅为一段声明，称课程笔记仍处于草稿状态且链接已失效，无实质技术内容可提取"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-08-28_a-retrospective-on-call-of-duty-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-cod-rendering-retrospective",
+      "title": "A Retrospective on Call of Duty Rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-02-23_tonemapping-on-hdr-displays-aces-to-rule-em-all.md",
+      "status": "skipped_duplicate",
+      "reason": "已以 slug c0de517e-hdr-displays-aces 处理并入库，wiki/sources/c0de517e-hdr-displays-aces.md 存在"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-05-11_where-do-gpus-come-from.md",
+      "status": "skipped_offtopic",
+      "reason": "原文仅含简介说明和两条读者评论，无课件内容、无技术叙述，实质为空白页面"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["c0de517e-cod-rendering-retrospective"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 主要贡献 / 相关作品",
+      "content": "- **COD 渲染回顾**：2016 年的跨代渲染回顾文章，以 Ghosts / Advanced Warfare / Black Ops 3 三款游戏为轴，展示了 COD 三个内部工作室如何在同一产品线内打造出三套截然不同的渲染系统，并阐述了感知校准（perceptual realism）比 PBR 数学精度更重要的观点（见 [[sources/c0de517e-cod-rendering-retrospective]]）。"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-cod-rendering-retrospective]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-cod-rendering-retrospective]] | Pesce：COD 系列渲染技术跨代回顾（Ghosts / AW / BO3） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-129 Worker NU (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e 文章。新增 1 source 摘要（c0de517e-cod-rendering-retrospective）。跳过 2 篇重复（low-res-upsampling、hdr-displays-aces 已入库），跳过 2 篇无实质内容（siggraph-2015-approx-pbr 链接失效、where-do-gpus-come-from 仅含评论）。未新增概念页，现有概念库已覆盖（deferred-rendering、physically-based-shading）。为 angelo-pesce 人物页打 patch 新增贡献条目和 Sources 链接。"
+}

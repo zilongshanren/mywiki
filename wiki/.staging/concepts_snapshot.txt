@@ -558,3 +558,12 @@ generative-generators-clip-evo
 substitution-tilings
 infinite-quadtrees-fractal-coords
 chiseling-random-paths
+tone-mapping
+luminance-histogram-exposure
+phantomgrammar-ludoscope
+quaternion-for-games
+quarter-tile-autotiling
+procedural-generation-taxonomy
+wraparound-hex-grids
+debroglie-wfc-library
+poisson-point-process-infinite-plane

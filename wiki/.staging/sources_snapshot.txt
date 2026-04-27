@@ -498,3 +498,12 @@ boris-substitution-tilings
 boris-infinite-quadtrees
 boris-random-path-algorithm
 boris-random-paths-chiseling
+bruop-exposure-histogram
+bruop-tone-mapping
+boris-phantomgrammar-ludoscope
+boris-quaternions-game-dev
+boris-quarter-tile-autotiling
+boris-what-is-proc-gen
+boris-wraparound-hex-grids
+boris-debroglie-v01
+boris-infinite-uniform-points

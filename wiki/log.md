@@ -1598,3 +1598,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-128 Worker NS (vertexfragment ×3 + boristhebrave ×2)
 
 3 篇 vertexfragment 已处理过，跳过。新增 2 篇 boristhebrave：DeBroglie v0.1、无限均匀点分布。新建 2 概念页（debroglie-wfc-library、poisson-point-process-infinite-plane）、2 source 摘要。
+
+## [2026-04-27] ingest | Wave-129 Worker NT (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章，全部收录。新增 2 概念页（traversability-checking、barycentric-perlin-noise）、5 source 摘要。triangle-grid 与 chiseling-random-paths 概念页内容增强。boris-the-brave 计数更新至 56。
+
+## [2026-04-27] ingest | Wave-129 Worker NU (c0de517e.blogspot.com ×5)
+
+处理 5 篇 c0de517e 文章，仅 1 篇入库（cod-rendering-retrospective）。4 篇跳过（2 重复、2 空白内容）。补丁更新 angelo-pesce 人物页。
+
+## [2026-04-27] ingest | Wave-129 Worker NV (c0de517e.blogspot.com ×5)
+
+所有 5 篇文章均为重复或空内容，跳过。0 篇入库。后续应优先使用 c0de517e.com 域名的文章。

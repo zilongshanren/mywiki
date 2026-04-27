@@ -1,7 +1,7 @@
 ---
 tags: [game-development, grid, procedural-generation, math, geometry]
 date: 2026-04-27
-sources: 1
+sources: 2
 ---
 
 # 三角网格（Triangle Grid）
@@ -37,6 +37,9 @@ sources: 1
 
 Boris 的 .NET 几何库 **Sylves** 内置了对三角网格的完整支持，其 [[game-development/wave-function-collapse]] 扩展工具 **Tessera** 也因此可以在三角网格上做程序化生成。
 
+关于三角网格的延伸研究还包括：**Trihex（三联六边形）格**（间距加倍即得六边形+三角形交替铺砌）、允许经顶点中转的**替代距离函数**（`(|da-db|+|db-dc|+|dc-da|)/2`，行为接近六边形距离），以及三角列式排列天然对应**等距（Isometric）视图**的几何关系——见 [[sources/boris-triangle-grid-extensions]]。
+
 ## Sources
 
 - [[sources/boris-triangle-grids]]
+- [[sources/boris-triangle-grid-extensions]]

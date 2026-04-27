@@ -1,7 +1,7 @@
 ---
 tags: [程序化生成, 随机路径, 关节点, 地图生成, 图算法]
 date: 2026-04-27
-sources: 2
+sources: 3
 ---
 
 # 凿刻法随机路径（Chiseling Random Paths）
@@ -37,9 +37,16 @@ sources: 2
 
 通过调整各节点的被选概率，可以引导路径形状：偏向中央、偏向边缘、贴墙、螺旋等。支持任意数量的端点——路径需连通全部端点即可。
 
-## 2022 年改进版
+## 2022 年改进版：见证路径优化
 
-Boris 注明 2022 年发布了 "Chiseled Paths Revisited"，提出了进一步优化，减少了每步的关节点重新计算开销。
+[[sources/boris-chiseled-paths-revisited]] 引入**见证路径（witness）**机制，彻底解决了性能问题：
+
+- 维护一条已知从起点到终点的可通路径作为 witness
+- 每轮随机选取一个 Open 格子：若该格子**不在** witness 上，直接移除，无需任何连通性检测
+- 若格子**在** witness 上，才调用 find_path 寻找新 witness；如果找不到则标记为 Forced
+- 由于大多数格子不在 witness 上，关节点检测调用频率极低，实现也比关节点算法简单
+- witness 的选取不影响输出路径的分布，可用任意寻路算法
+- 通过给 witness 上的格子设置权重参数 w，可控制路径弯曲程度：w=0 得最短路，w>1 得更弯曲路径
 
 ## 相关
 
@@ -51,3 +58,4 @@ Boris 注明 2022 年发布了 "Chiseled Paths Revisited"，提出了进一步�
 
 - [[sources/boris-random-path-algorithm]]
 - [[sources/boris-random-paths-chiseling]]
+- [[sources/boris-chiseled-paths-revisited]]
