@@ -42,3 +42,4 @@ Pesce 强调：这些问题把 DX11 变成"不如它本可以做到的"，但不
 ## Sources
 
 - [[sources/c0de517e-on-mantle]]
+- [[sources/alain-raw-dx11]]

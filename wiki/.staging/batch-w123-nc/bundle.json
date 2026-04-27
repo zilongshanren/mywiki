@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w123-nc",
+  "agent_note": "5 篇 anteru.net 研究论文，均为图形渲染方向。新增 4 个概念页 + 1 个研究论文级头发渲染页，5 个 source 摘要。matthaeus-chajdas 和 meshlets-and-mesh-shaders 两页需 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_edge-friend-fast-and-deterministic-catmull-clark-subdivision.md",
+      "status": "ingested",
+      "source_slug": "anteru-edge-friend-subdivision",
+      "title": "Edge-Friend: Fast and Deterministic Catmull-Clark Subdivision Surfaces"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_high-quality-shadows-for-streaming-terrain-rendering.md",
+      "status": "ingested",
+      "source_slug": "anteru-terrain-shadow-streaming",
+      "title": "High-Quality Shadows for Streaming Terrain Rendering"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_real-time-hybrid-hair-rendering.md",
+      "status": "ingested",
+      "source_slug": "anteru-realtime-hybrid-hair",
+      "title": "Real-Time Hybrid Hair Rendering (EGSR 2019)"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_towards-practical-meshlet-compression.md",
+      "status": "ingested",
+      "source_slug": "anteru-meshlet-compression",
+      "title": "Towards Practical Meshlet Compression"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_spatiotemporal-variance-guided-filtering-for-motion-blur.md",
+      "status": "ingested",
+      "source_slug": "anteru-svgf-motion-blur",
+      "title": "Spatiotemporal Variance-Guided Filtering for Motion Blur"
+    }
+  ],
+  "concepts_created": [
+    "catmull-clark-subdivision",
+    "terrain-shadow-streaming",
+    "realtime-hair-hybrid-volume",
+    "meshlet-compression",
+    "motion-blur-variance-filter"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "anteru-edge-friend-subdivision",
+    "anteru-terrain-shadow-streaming",
+    "anteru-realtime-hybrid-hair",
+    "anteru-meshlet-compression",
+    "anteru-svgf-motion-blur"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[catmull-clark-subdivision]] — Edge-Friend，实时确定性 Catmull-Clark 细分曲面\n- [[terrain-shadow-streaming]] — Eurographics 2015，流式地形近/远阴影分治\n- [[realtime-hair-hybrid-volume]] — EGSR 2019，发丝/体积混合头发渲染\n- [[meshlet-compression]] — Meshlet 索引 16:1 压缩 + crack-free 量化\n- [[motion-blur-variance-filter]] — SVGF 扩展到运动模糊，单样本实时"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-edge-friend-subdivision]]\n- [[sources/anteru-terrain-shadow-streaming]]\n- [[sources/anteru-realtime-hybrid-hair]]\n- [[sources/anteru-meshlet-compression]]\n- [[sources/anteru-svgf-motion-blur]]"
+    },
+    {
+      "file": "wiki/rendering/meshlets-and-mesh-shaders.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-meshlet-compression]] — meshlet 专用压缩 codec，索引 16:1，GPU 内解压"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[catmull-clark-subdivision]] | GPU 实时 Catmull-Clark 细分：Edge-Friend 数据结构，单 kernel，确定性 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[terrain-shadow-streaming]] | 流式地形阴影：近阴影实时光追 + 远阴影预计算 3bit/采样 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[realtime-hair-hybrid-volume]] | EGSR 2019 发丝/体积混合头发渲染，体积复用阴影与 AO |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[meshlet-compression]] | Meshlet 压缩：GTS 索引 16:1 + crack-free 量化，mesh shader 内解压 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[motion-blur-variance-filter]] | SVGF 扩展运动模糊：单样本方差引导小波滤波，<4ms 实时 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-edge-friend-subdivision]] | Chajdas：Edge-Friend Catmull-Clark 细分曲面 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-terrain-shadow-streaming]] | Chajdas 等：流式地形阴影（Eurographics 2015）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-realtime-hybrid-hair]] | Jansson/Chajdas 等：实时混合头发渲染（EGSR 2019）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-meshlet-compression]] | Chajdas：实用 Meshlet 压缩 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-svgf-motion-blur]] | Chajdas：时空方差引导运动模糊滤波 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-123 Worker NC (anteru.net ×5 研究论文)\n\n处理 5 篇 anteru.net 图形渲染研究论文：Edge-Friend Catmull-Clark 细分、流式地形阴影（EG2015）、混合头发渲染（EGSR2019）、Meshlet 压缩、SVGF 运动模糊。新增 5 个概念页、5 个 source 摘要。matthaeus-chajdas、meshlets-and-mesh-shaders 各有 patch。"
+}

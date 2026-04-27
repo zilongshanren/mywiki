@@ -414,6 +414,8 @@ CAQA + CSAPP 的底层视角。
 | [[snapdragon-x2-elite-soc]] | 高通 Snapdragon X2 Elite SoC：Oryon Gen 3 + Adreno X2 + Hexagon NPU 6 |
 | [[cortex-a725-microarchitecture]] | Arm A725 效率核：去掉 MOP Cache 改用 predecode sideband，ROB 224 |
 | [[cortex-x925-microarchitecture]] | Arm X925 旗舰大核：10-wide，ROB ~525，SPEC 整数追平 Zen 5 / Lion Cove |
+| [[cpp-final-keyword-performance]] | C++ final 关键字性能实测：GCC 有益，Clang 有害，总体不可信赖 |
+| [[cpp-noexcept-keyword-performance]] | C++ noexcept 性能实测：整体接近噪声，vector 场景有条件受益 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1135,6 +1137,19 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[bdpt-mis-weights]] | BDPT 中 MIS 权重的递推简化（vc/vcm），每顶点仅 2 个浮点数 |
 | [[primary-ray-pdf]] | 主光线 PDF 与相机重要性函数对消，路径追踪吞掉该项的数学原因 |
 | [[sss-practical-implementation]] | BSSRDF 工程实现：萤火虫消除、全交叉点评估、材质系统扩展 |
+| [[rt-denoising]] | 实时光追去噪技术综述（滤波/时空重投影/采样/ML四类方案） |
+| [[svgf]] | SVGF/A-SVGF — 时空方差引导滤波，Quake2RTX/Minecraft RTX 基础降噪算法 |
+| [[northlight-frame-analysis]] | Control（Northlight 引擎）帧分析——混合光追管线实现 |
+| [[shader-ir-pipeline]] | 着色器语言与 IR 编译链（HLSL/GLSL/MSL/WGSL → SPIR-V/DXIL） |
+| [[bvh-construction]] | BVH 构建算法（SAH、Morton 码、PLOC、TLAS/BLAS 两级结构） |
+| [[catmull-clark-subdivision]] | GPU 实时 Catmull-Clark 细分：Edge-Friend 数据结构，单 kernel |
+| [[terrain-shadow-streaming]] | 流式地形阴影：近阴影实时光追 + 远阴影预计算 3bit/采样 |
+| [[realtime-hair-hybrid-volume]] | EGSR 2019 发丝/体积混合头发渲染 |
+| [[meshlet-compression]] | Meshlet 压缩：GTS 索引 16:1 + crack-free 量化 |
+| [[motion-blur-variance-filter]] | SVGF 扩展运动模糊：单样本方差引导小波滤波 |
+| [[directx11-api-overview]] | DirectX 11 API 初始化到渲染的完整流程概览 |
+| [[directx12-api-overview]] | DirectX 12 命令队列、描述符堆、资源屏障的现代 API 概览 |
+| [[gpgpu-compute-simt-model]] | GPGPU SIMT 执行模型：wave、线程组、LDS、原子操作 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1328,6 +1343,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[apex-chipsandcheese]] | Chips and Cheese 匿名作者，社区视角批评厂商 PR 策略 |
 | [[serebit]] | Chips and Cheese GPU 横测作者，Video Card Efficiency 系列 |
 | [[mohamed-ahmed-chipsandcheese]] | Mohamed Ahmed，Chips and Cheese GPU/HPC 撰稿人 |
+| [[alain-galvan]] | Alain Galvan，AMD 光线追踪驱动工程师，Raw 图形 API 教程系列作者 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2619,6 +2635,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/graphics-guy-primary-ray-pdf]] | Jiayin Cao：路径追踪中消失的主光线 PDF |
 | [[sources/graphics-guy-color-science-basics]] | Jiayin Cao：图形程序员基础色彩科学 |
 | [[sources/graphics-guy-sss-practical-tips]] | Jiayin Cao：离线渲染器中 SSS 实现的实践技巧 |
+| [[sources/alain-rt-denoising]] | Galvan：实时光追去噪技术综述 |
+| [[sources/alain-modern-graphics-apis]] | Galvan：现代图形 API 对比（Vulkan/DX12/Metal/WebGPU） |
+| [[sources/alain-frame-analysis-control]] | Galvan：Control 帧分析（Northlight 混合光追管线） |
+| [[sources/alain-shader-languages-review]] | Galvan：着色器语言综述（HLSL/GLSL/MSL/WGSL 对比） |
+| [[sources/alain-rt-acceleration-structures]] | Galvan：光追加速结构（BVH/SAH/TLAS/BLAS/DX12 实现） |
+| [[sources/anteru-edge-friend-subdivision]] | Chajdas：Edge-Friend Catmull-Clark 细分曲面 |
+| [[sources/anteru-terrain-shadow-streaming]] | Chajdas 等：流式地形阴影（Eurographics 2015）|
+| [[sources/anteru-realtime-hybrid-hair]] | Jansson/Chajdas 等：实时混合头发渲染（EGSR 2019）|
+| [[sources/anteru-meshlet-compression]] | Chajdas：实用 Meshlet 压缩 |
+| [[sources/anteru-svgf-motion-blur]] | Chajdas：时空方差引导运动模糊滤波 |
+| [[sources/alain-raw-dx11]] | Galvan：DirectX 11 Hello Triangle 完整流程 |
+| [[sources/alain-raw-dx12]] | Galvan：DirectX 12 现代 API 完整流程 |
+| [[sources/alain-gpgpu-compute]] | Galvan：GPGPU 计算概念综述（WebGPU + DX12） |
+| [[sources/16bpp-cpp-final-keyword]] | 16bpp：C++ final 关键字 125 小时性能测试 |
+| [[sources/16bpp-noexcept-keyword]] | 16bpp：C++ noexcept 关键字 370 小时性能测试 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

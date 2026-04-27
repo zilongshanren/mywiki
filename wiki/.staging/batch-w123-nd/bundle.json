@@ -1,0 +1,158 @@
+{
+  "batch_id": "batch-w123-nd",
+  "agent_note": "alain.xyz 3篇（DX11 / DX12 / GPGPU）+ 16bpp.net 2篇（final / noexcept 性能实验）。跳过 16bpp 的光线追踪回顾文（2021-02-22）和 asin Estrin 后续文（2026-03-16），前者与 psraytracing.md 高度重叠，后者已有 asin-cg-approximation.md 和 estrin-scheme.md 覆盖。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alain.xyz/2021-10-23_raw-directx-11.md",
+      "status": "ingested",
+      "source_slug": "alain-raw-dx11",
+      "title": "Raw DirectX 11"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2021-10-24_raw-directx-12.md",
+      "status": "ingested",
+      "source_slug": "alain-raw-dx12",
+      "title": "Raw DirectX 12"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2023-01-19_gpgpu-compute-concepts.md",
+      "status": "ingested",
+      "source_slug": "alain-gpgpu-compute",
+      "title": "GPGPU Compute Concepts"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2024-04-22_16bpp-net-blog-the-performance-impact-of-c-s-final-keyword.md",
+      "status": "ingested",
+      "source_slug": "16bpp-cpp-final-keyword",
+      "title": "The Performance Impact of C++'s final Keyword"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2024-08-05_https-16bpp-net-blog-post-noexcept-can-sometimes-help-or-hur.md",
+      "status": "ingested",
+      "source_slug": "16bpp-noexcept-keyword",
+      "title": "noexcept Can Sometimes Help or Hurt Performance"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2021-02-22_books-1-2-ray-tracing-in-one-weekend-and-the-next-week.md",
+      "status": "skipped_offtopic",
+      "reason": "PSRayTracing 项目回顾 / 优化过程叙事，核心技术内容（BVH 优化、asin 近似、noexcept 实验）已被其他已处理文章覆盖，且与现有 psraytracing.md、asin-cg-approximation.md 高度重叠"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2026-03-16_gotta-go-fast.md",
+      "status": "skipped_offtopic",
+      "reason": "asin Estrin 优化后续，核心概念 Estrin Scheme 已有 wiki/computer-systems/estrin-scheme.md，asin Cg 近似已有 wiki/rendering/asin-cg-approximation.md，无新增实质内容"
+    }
+  ],
+  "concepts_created": [
+    "rendering/directx11-api-overview",
+    "rendering/directx12-api-overview",
+    "rendering/gpgpu-compute-simt-model",
+    "programming-languages/cpp-final-keyword-performance",
+    "programming-languages/cpp-noexcept-keyword-performance"
+  ],
+  "people_created": ["alain-galvan"],
+  "source_summaries_created": [
+    "alain-raw-dx11",
+    "alain-raw-dx12",
+    "alain-gpgpu-compute",
+    "16bpp-cpp-final-keyword",
+    "16bpp-noexcept-keyword"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/directx11-early-pitfalls.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-raw-dx11]] — Alain Galvan DX11 Hello Triangle 完整流程"
+    },
+    {
+      "file": "wiki/rendering/dx11-driver-overhead.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/alain-raw-dx11]] — DX11 API 整体流程对比参照\n- [[rendering/directx12-api-overview]] — DX12 如何通过显式命令队列规避驱动 overhead"
+    },
+    {
+      "file": "wiki/rendering/d3d12-root-signature.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-raw-dx12]] — Root Signature 创建代码示例"
+    },
+    {
+      "file": "wiki/rendering/d3d12-resource-binding.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-raw-dx12]] — DescriptorHeap + CBV 完整流程"
+    },
+    {
+      "file": "wiki/rendering/async-compute.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/gpgpu-compute-simt-model]] — SIMT 模型基础与 compute shader dispatch"
+    },
+    {
+      "file": "wiki/rendering/compute-shader-dispatch-ids.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-gpgpu-compute]] — Alain Galvan GPGPU 概念综述"
+    },
+    {
+      "file": "wiki/computer-systems/benchmark-methodology-end-to-end.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-cpp-final-keyword]] — final 关键字 125 小时跨平台 A/B 测试案例\n- [[sources/16bpp-noexcept-keyword]] — noexcept 关键字 370 小时跨平台 A/B 测试案例"
+    },
+    {
+      "file": "wiki/programming-languages/throwing-destructor-noexcept-terminate.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[programming-languages/cpp-noexcept-keyword-performance]] — noexcept 的性能实测数据"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/directx11-api-overview]] | DirectX 11 API 初始化到渲染的完整流程概览 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/directx12-api-overview]] | DirectX 12 命令队列、描述符堆、资源屏障的现代 API 概览 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/gpgpu-compute-simt-model]] | GPGPU SIMT 执行模型：wave、线程组、LDS、原子操作 |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[programming-languages/cpp-final-keyword-performance]] | C++ final 关键字性能实测：GCC 有益，Clang 有害，总体不可信赖 |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[programming-languages/cpp-noexcept-keyword-performance]] | C++ noexcept 性能实测：整体接近噪声，vector 场景有条件受益 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[people/alain-galvan]] | Alain Galvan，AMD 光线追踪驱动工程师，Raw 图形 API 教程系列作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-raw-dx11]] | Galvan：DirectX 11 Hello Triangle 完整流程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-raw-dx12]] | Galvan：DirectX 12 现代 API 完整流程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-gpgpu-compute]] | Galvan：GPGPU 计算概念综述（WebGPU + DX12） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/16bpp-cpp-final-keyword]] | 16bpp：C++ final 关键字 125 小时性能测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/16bpp-noexcept-keyword]] | 16bpp：C++ noexcept 关键字 370 小时性能测试 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-123 Worker ND (alain.xyz ×3 + 16bpp.net ×2)\n\n处理 5 篇文章（跳过 2 篇）。新增 3 渲染概念页（directx11-api-overview、directx12-api-overview、gpgpu-compute-simt-model）、2 编程语言概念页（cpp-final-keyword-performance、cpp-noexcept-keyword-performance）、1 人物页（alain-galvan）、5 source 摘要页。跳过 16bpp 的 PSRayTracing 回顾文（与 psraytracing.md 重叠）和 asin Estrin 后续文（已有 estrin-scheme.md / asin-cg-approximation.md）。"
+}

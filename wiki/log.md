@@ -1526,3 +1526,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-122 Worker NA (agraphicsguynotes 2015-2020 ×5)
 
 处理 5 篇 Jiayin Cao 文章（方向性光照贴图、BDPT MIS、主光线 PDF、色彩科学、SSS 实现）。新增 5 概念页（directional-lightmap、bdpt-mis-weights、primary-ray-pdf、color-science-basics、sss-practical-implementation）、5 source 摘要。adriancourreges.com 和 agraphicsguynotes.com 全部处理完毕！
+
+## [2026-04-27] ingest | Wave-123 Worker NB (alain.xyz ×5)
+
+处理 5 篇 alain.xyz 技术文章。新增 5 概念页（rt-denoising、svgf、northlight-frame-analysis、shader-ir-pipeline、bvh-construction）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-123 Worker NC (anteru.net 研究论文 ×5)
+
+处理 5 篇 anteru.net 图形渲染研究论文。新增 5 概念页（catmull-clark-subdivision、terrain-shadow-streaming、realtime-hair-hybrid-volume、meshlet-compression、motion-blur-variance-filter）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-123 Worker ND (alain.xyz ×3 + 16bpp.net ×2 + 2 skip)
+
+处理 5 篇文章（跳过 2 篇）。新增 3 渲染概念页 + 2 编程语言概念页 + 1 人物页（alain-galvan）。alain.xyz 全部处理完毕！

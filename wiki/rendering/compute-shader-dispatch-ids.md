@@ -36,3 +36,4 @@ GLSL 则用 `WorkGroup` vs `Invocation`、`Local` vs `Global` 两对词划清层
 ## Sources
 
 - [[sources/asawicki-compute-shader-sv-cheat-sheet]]
+- [[sources/alain-gpgpu-compute]] — Alain Galvan GPGPU 概念综述

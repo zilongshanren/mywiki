@@ -38,3 +38,8 @@ sources: 6
 - [[sources/anteru-workgraph-spmv]]
 - [[sources/anteru-hybrid-sample-surface]]
 - [[sources/anteru-giga-particle-fluid]]
+- [[sources/anteru-edge-friend-subdivision]]
+- [[sources/anteru-terrain-shadow-streaming]]
+- [[sources/anteru-realtime-hybrid-hair]]
+- [[sources/anteru-meshlet-compression]]
+- [[sources/anteru-svgf-motion-blur]]

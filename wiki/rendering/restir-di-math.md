@@ -60,3 +60,4 @@ ReSTIR GI 是同一套数学用在**全局光照**上：initial candidate 不再
 ## Sources
 
 - [[sources/graphics-guy-restir-di-math]]
+- [[sources/alain-rt-denoising]]

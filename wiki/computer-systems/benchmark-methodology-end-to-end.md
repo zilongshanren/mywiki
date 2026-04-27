@@ -71,3 +71,5 @@ Small benchmark 和 end-to-end 常常不一致：
 - [[sources/16bpp-free-functions-hypothesis]]
 - [[sources/16bpp-quicker-trig-asin-cg]]
 - [[sources/chipsandcheese-zen2-cinebench-analysis]] — Zen 2 vs Skylake 的性能计数器实测方法
+- [[sources/16bpp-cpp-final-keyword]] — final 关键字 125 小时跨平台 A/B 测试案例
+- [[sources/16bpp-noexcept-keyword]] — noexcept 关键字 370 小时跨平台 A/B 测试案例

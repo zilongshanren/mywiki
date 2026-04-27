@@ -127,3 +127,4 @@ Mesh shader 不是做 meshlet cull 的唯一方式：**Frostbite 在 GDC 2016 �
 ## Sources
 
 - [[sources/interplay-meshlets-mesh-shaders]]
+- [[sources/anteru-meshlet-compression]] — meshlet 专用压缩 codec，索引 16:1，GPU 内解压

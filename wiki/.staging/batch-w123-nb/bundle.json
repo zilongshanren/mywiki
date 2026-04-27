@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w123-nb",
+  "agent_note": "5 篇 alain.xyz 技术文章（光追去噪、图形API对比、Control帧分析、着色器语言综述、加速结构）。alain-galvan 人物页已存在，直接 patch 补充 sources。新建 5 概念页、5 source 摘要页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alain.xyz/2020-10-06_ray-tracing-denoising.md",
+      "status": "ingested",
+      "source_slug": "alain-rt-denoising",
+      "title": "Ray Tracing Denoising"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2021-01-31_a-comparison-of-modern-graphics-apis.md",
+      "status": "ingested",
+      "source_slug": "alain-modern-graphics-apis",
+      "title": "A Comparison of Modern Graphics APIs"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2021-06-11_frame-analysis-control.md",
+      "status": "ingested",
+      "source_slug": "alain-frame-analysis-control",
+      "title": "Frame Analysis: Control"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2022-02-12_a-review-of-shader-languages.md",
+      "status": "ingested",
+      "source_slug": "alain-shader-languages-review",
+      "title": "A Review of Shader Languages"
+    },
+    {
+      "path": "raw/articles/alain.xyz/2022-04-24_ray-tracing-acceleration-structures.md",
+      "status": "ingested",
+      "source_slug": "alain-rt-acceleration-structures",
+      "title": "Ray Tracing Acceleration Structures"
+    }
+  ],
+  "concepts_created": [
+    "rendering/rt-denoising",
+    "rendering/svgf",
+    "rendering/northlight-frame-analysis",
+    "rendering/shader-ir-pipeline",
+    "rendering/bvh-construction"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "alain-rt-denoising",
+    "alain-modern-graphics-apis",
+    "alain-frame-analysis-control",
+    "alain-shader-languages-review",
+    "alain-rt-acceleration-structures"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/alain-galvan.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/rt-denoising]]\n- [[rendering/northlight-frame-analysis]]\n- [[rendering/shader-ir-pipeline]]\n- [[rendering/bvh-construction]]"
+    },
+    {
+      "file": "wiki/people/alain-galvan.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/alain-rt-denoising]]\n- [[sources/alain-modern-graphics-apis]]\n- [[sources/alain-frame-analysis-control]]\n- [[sources/alain-shader-languages-review]]\n- [[sources/alain-rt-acceleration-structures]]"
+    },
+    {
+      "file": "wiki/rendering/bvh-traversal-hardware.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-rt-acceleration-structures]]"
+    },
+    {
+      "file": "wiki/rendering/graphics-api-history.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-modern-graphics-apis]]"
+    },
+    {
+      "file": "wiki/rendering/ray-tracing-api-debate.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-rt-acceleration-structures]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-frame-analysis-control]]"
+    },
+    {
+      "file": "wiki/game-engines/slang-shader-language.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-shader-languages-review]]"
+    },
+    {
+      "file": "wiki/rendering/restir-di-math.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/alain-rt-denoising]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/rt-denoising]] | 实时光追去噪技术综述（滤波/时空重投影/采样/ML四类方案） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/svgf]] | SVGF/A-SVGF — 时空方差引导滤波，Quake2RTX/Minecraft RTX 基础降噪算法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/northlight-frame-analysis]] | Control（Northlight 引擎）帧分析——混合光追管线实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/shader-ir-pipeline]] | 着色器语言与 IR 编译链（HLSL/GLSL/MSL/WGSL → SPIR-V/DXIL） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/bvh-construction]] | BVH 构建算法（SAH、Morton 码、PLOC、TLAS/BLAS 两级结构） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-rt-denoising]] | Galvan：实时光追去噪技术综述 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-modern-graphics-apis]] | Galvan：现代图形 API 对比（Vulkan/DX12/Metal/WebGPU） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-frame-analysis-control]] | Galvan：Control 帧分析（Northlight 混合光追管线） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-shader-languages-review]] | Galvan：着色器语言综述（HLSL/GLSL/MSL/WGSL 对比） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alain-rt-acceleration-structures]] | Galvan：光追加速结构（BVH/SAH/TLAS/BLAS/DX12 实现） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-123 Worker NB (alain.xyz ×5)\n\n处理 5 篇 alain.xyz 技术文章（光追去噪、现代图形API对比、Control帧分析、着色器语言综述、光追加速结构）。新建 5 概念页（rt-denoising、svgf、northlight-frame-analysis、shader-ir-pipeline、bvh-construction）、5 source 摘要页。alain-galvan 人物页已存在，生成 patch 补充链接。同时对 bvh-traversal-hardware、graphics-api-history、ray-tracing-api-debate、hybrid-raytracing-pipeline、slang-shader-language、restir-di-math 生成 add_source_link patch。"
+}

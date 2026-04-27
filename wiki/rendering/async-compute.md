@@ -85,3 +85,4 @@ async 本身不是魔法——在 AAA 引擎里加入 async 路径的收益通�
 ## Sources
 - [[sources/interplay-async-compute]]
 - [[sources/interplay-gpu-utilisation-holistic]]
+- [[sources/alain-gpgpu-compute]]

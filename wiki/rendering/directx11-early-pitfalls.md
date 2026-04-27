@@ -47,3 +47,4 @@ compute shader 把 SRV 与 UAV 引入了 [[d3d12-resource-binding|资源绑定]]
 ## Sources
 
 - [[sources/anteru-directx11-hints]]
+- [[sources/alain-raw-dx11]] — Alain Galvan DX11 Hello Triangle 完整流程

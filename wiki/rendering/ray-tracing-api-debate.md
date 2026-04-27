@@ -61,3 +61,4 @@ PC 上发售新游戏本来就要先陪硬件厂商打一轮驱动官司——�
 
 - [[sources/wolfgang-engel-dxr-api-debate]]
 - [[sources/wolfgang-engel-ray-tracing-without-api]]
+- [[sources/alain-rt-acceleration-structures]]

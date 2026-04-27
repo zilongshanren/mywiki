@@ -42,3 +42,4 @@ sources: 2
 - [[sources/interplay-hybrid-raytraced-shadows-reflections]]
 - [[sources/c0de517e-unbiased-rt]] —— Pesce 2019：DO/DO NOT 清单，occlusion 优先于 specular 反射
 - [[sources/c0de517e-rt-wont-simplify]]
+- [[sources/alain-frame-analysis-control]]

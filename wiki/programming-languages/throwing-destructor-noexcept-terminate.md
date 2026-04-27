@@ -36,6 +36,7 @@ Supnik 报告的症状是：同一份 Apple OpenAL 代码在 Yosemite 上没事�
 - [[good-software-no-double-check]] —— 别把 `noexcept` 析构当逃生门，真正的错误路径要一次性明确走通
 - [[minimize-points-and-types-of-failure]]
 - [[ben-supnik]]
+- [[programming-languages/cpp-noexcept-keyword-performance]] — noexcept 的性能实测数据
 
 ## Sources
 - [[sources/supnik-sasl-crash-el-capitan]]
