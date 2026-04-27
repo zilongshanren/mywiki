@@ -1,0 +1,146 @@
+{
+  "batch_id": "batch-w135-om",
+  "agent_note": "5 篇 diaryofagraphicsprogrammer.blogspot.com（Wolfgang Engel / Confetti FX）。4 篇完整摄入，1 篇工具更新通知（vs2013-skeleton）内容极薄但仍属技术范畴，创建最小 source 摘要，不创建新概念页。作者页已存在，仅 patch 追加新 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2014-03-13_gdc-2014-compute-shader-optimizations.md",
+      "status": "ingested",
+      "source_slug": "humus-compute-optimizations-gdc2014",
+      "title": "GDC 2014 – Compute Shader Optimizations"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2013-05-19_re-cap-of-deferred-lighting.md",
+      "status": "ingested",
+      "source_slug": "humus-deferred-lighting-recap",
+      "title": "Re-cap of Deferred Lighting"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-02-28_shadows-thoughts-on-ellipsoid-light-shadow-rendering.md",
+      "status": "ingested",
+      "source_slug": "humus-ellipsoid-light-shadow",
+      "title": "Shadows – Thoughts on Ellipsoid Light Shadow Rendering"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2013-06-24_lighting-a-game-lighting-artists-physically-observational-li.md",
+      "status": "ingested",
+      "source_slug": "humus-pbr-observational-lighting",
+      "title": "Lighting a Game / Observational vs Physical Lighting"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2013-11-07_visual-studio-2013-demo-skeleton-programming.md",
+      "status": "ingested",
+      "source_slug": "humus-skeleton-programming",
+      "title": "Visual Studio 2013 / Demo Skeleton Programming",
+      "note": "内容极薄（demoscene 工具更新通知），通过拓扑门但仅创建最小 source 摘要，无新概念页。"
+    }
+  ],
+  "concepts_created": [
+    "rendering/gcn-compute-tgsm-patterns",
+    "rendering/deferred-lighting-vs-shading",
+    "rendering/cube-shadow-map-rendering",
+    "rendering/realtime-gi-per-light"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "humus-compute-optimizations-gdc2014",
+    "humus-deferred-lighting-recap",
+    "humus-ellipsoid-light-shadow",
+    "humus-pbr-observational-lighting",
+    "humus-skeleton-programming"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-compute-optimizations-gdc2014]]\n- [[sources/humus-deferred-lighting-recap]]\n- [[sources/humus-ellipsoid-light-shadow]]\n- [[sources/humus-pbr-observational-lighting]]\n- [[sources/humus-skeleton-programming]]"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 15"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-deferred-lighting-recap]] —— Engel 2013：三阶段 Deferred Lighting 架构综述，XBOX 360/PS3 带宽驱动的 thin G-Buffer 设计"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-ellipsoid-light-shadow]] —— Engel 2011：cube shadow map 渲染、缓存策略、ESM bias 方案、屏幕空间软化"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-pbr-observational-lighting]] —— Engel 2013：「光源数量优先于 PBR 切换」的反直觉优先级论断"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-lighting-vs-shading]] —— Deferred Lighting（Light Prepass）与 Deferred Shading 的三阶段结构差异与带宽权衡"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cube-shadow-map-rendering]] —— 点光源/椭球光源的 cube map 阴影渲染、GS 优化、ESM、缓存策略"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[realtime-gi-per-light]] —— Engel 2013：「光源数量优先于 PBR」，per-light bounce GI 的次世代工作流"
+    },
+    {
+      "file": "wiki/computer-systems/gcn-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-compute-optimizations-gdc2014]] —— Engel GDC 2014：GCN TGSM bank layout、wavefront barrier 省略、loop unrolling 的实测数据"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/gcn-compute-tgsm-patterns]] | AMD GCN compute shader 的 TGSM bank layout、wavefront barrier 省略、预取打包规则 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/deferred-lighting-vs-shading]] | Deferred Lighting（Light Prepass）三阶段结构与 Deferred Shading 的带宽/材质权衡对比 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/cube-shadow-map-rendering]] | 点光源/椭球光源 cube shadow map：GS 单 draw call 渲染六面、ESM bias、缓存策略、屏幕空间软化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/realtime-gi-per-light]] | per-light 反弹 GI 工作流与「光源数量优先于 PBR」的优先级论断 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-compute-optimizations-gdc2014]] | Engel GDC 2014：AMD GCN compute shader TGSM 优化实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-deferred-lighting-recap]] | Engel 2013：Deferred Lighting 三阶段架构综述 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-ellipsoid-light-shadow]] | Engel 2011：椭球/点光源 cube shadow map 渲染与 ESM |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-pbr-observational-lighting]] | Engel 2013：光源数量 vs PBR 切换的优先级论断 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-skeleton-programming]] | Engel 2013：demoscene 骨架更新至 VS2013/C99，Crinkler 1.4 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-135 Worker OM (diaryofagraphicsprogrammer ×5)\n\n处理 5 篇 Wolfgang Engel（Diary of a Graphics Programmer）文章。摄入 5 篇（其中 1 篇内容极薄，仅创建最小 source 摘要）。新增 4 概念页：gcn-compute-tgsm-patterns（GCN TGSM bank 布局与 wavefront barrier 省略规则）、deferred-lighting-vs-shading（Deferred Lighting vs Deferred Shading 三阶段差异）、cube-shadow-map-rendering（椭球/点光源 cube shadow map 渲染全流程与 ESM）、realtime-gi-per-light（per-light bounce GI 与「光源数量优先于 PBR」命题）。人物页 wolfgang-engel 已存在，patch 追加 5 条新 source 链接。"
+}

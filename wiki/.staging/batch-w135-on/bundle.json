@@ -1,0 +1,145 @@
+{
+  "batch_id": "batch-w135-on",
+  "agent_note": "5 篇 Outerra 技术文章：行星尺度深度缓冲精度（2 篇合并为 1 概念页）、球面地形视锥剔除、OpenGL 纹理绑定批处理、异步 Job 调度器。新增 4 概念页、5 source 摘要；patch outerra-team.md（sources 5→11）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/outerra.blogspot.com/2012-11-17_view-frustum-culling-of-sphere-mapped-terrain.md",
+      "status": "ingested",
+      "source_slug": "outerra-sphere-terrain-culling",
+      "title": "View Frustum Culling of Sphere-mapped Terrain"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2012-11-28_maximizing-depth-buffer-range-and-precision.md",
+      "status": "ingested",
+      "source_slug": "outerra-depth-buffer-precision",
+      "title": "Maximizing Depth Buffer Range and Precision"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2013-07-18_logarithmic-depth-buffer-optimizations-fixes.md",
+      "status": "ingested",
+      "source_slug": "outerra-log-depth-buffer",
+      "title": "Logarithmic Depth Buffer Optimizations & Fixes"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2012-11-15_opengl-notes-2-texture-bind-performance.md",
+      "status": "ingested",
+      "source_slug": "outerra-texture-bind-perf",
+      "title": "OpenGL Notes #2: Texture Bind Performance"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2010-09-26_asynchronous-job-scheduler.md",
+      "status": "ingested",
+      "source_slug": "outerra-async-job-scheduler",
+      "title": "Asynchronous Job Scheduler"
+    }
+  ],
+  "concepts_created": [
+    "rendering/logarithmic-depth-buffer",
+    "rendering/sphere-mapped-terrain-culling",
+    "rendering/opengl-texture-bind-batching",
+    "game-engines/fiber-based-job-scheduler"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "outerra-sphere-terrain-culling",
+    "outerra-depth-buffer-precision",
+    "outerra-log-depth-buffer",
+    "outerra-texture-bind-perf",
+    "outerra-async-job-scheduler"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 11"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[logarithmic-depth-buffer]] —— 行星尺度深度精度完整推导与实现\n- [[sphere-mapped-terrain-culling]] —— 球面 tile 仿射剪切空间视锥剔除\n- [[opengl-texture-bind-batching]] —— NVIDIA 纹理绑定性能陷阱与 bind group 解法\n- [[fiber-based-job-scheduler]] —— Outerra jobmaster 异步 I/O 调度器"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-sphere-terrain-culling]]\n- [[sources/outerra-depth-buffer-precision]]\n- [[sources/outerra-log-depth-buffer]]\n- [[sources/outerra-texture-bind-perf]]\n- [[sources/outerra-async-job-scheduler]]"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 改进方案",
+      "content": "- **[[logarithmic-depth-buffer|Logarithmic Depth Buffer]]**：顶点着色器输出 log2 深度，全厂商可用，32 位精度约为 reversed-Z 的 20 倍，16 位即可覆盖行星尺度。"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[logarithmic-depth-buffer]] —— 对数深度映射：行星引擎处理 9 个数量级深度范围的完整推导"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-depth-buffer-precision]]"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-sphere-terrain-culling]] — Outerra：球面 quad-tree tile 的仿射剪切空间精确视锥剔除"
+    },
+    {
+      "file": "wiki/rendering/reversed-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[logarithmic-depth-buffer]] —— 另一路线：顶点着色器 log2 映射，全厂商可用，精度更高；OpenGL 上 reversed-Z 需要 glDepthRangedNV 扩展才有效"
+    },
+    {
+      "file": "wiki/rendering/bindless-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-texture-bind-batching]] —— bindless 出现前的工程近似：预绑定所有纹理到连续 unit，逐 mesh 发索引"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/logarithmic-depth-buffer]] | 对数深度缓冲：行星尺度精度的顶点着色器实现与 reversed-Z 对比 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/sphere-mapped-terrain-culling]] | 球面 quad-tree tile 的仿射剪切空间视锥剔除 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/opengl-texture-bind-batching]] | NVIDIA glBindMultiTextureEXT 性能陷阱与 Texture Bind Group 解法 |"
+    },
+    {
+      "category_header": "## 引擎架构（wiki/game-engines/）",
+      "row": "| [[game-engines/fiber-based-job-scheduler]] | Fiber/协程 Job 调度器：同步代码写异步 I/O，lock-free 线程池 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-sphere-terrain-culling]] | Outerra：球面地形 tile 视锥剔除 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-depth-buffer-precision]] | Outerra：深度缓冲范围与精度最大化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-log-depth-buffer]] | Outerra：对数深度缓冲优化与修复 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-texture-bind-perf]] | Outerra：OpenGL 纹理绑定性能（Laco Hrabcak） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-async-job-scheduler]] | Outerra：异步 Job 调度器（jobmaster） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-135 Worker ON (outerra.blogspot.com ×5)\n\n处理 5 篇 Outerra 技术文章，全部摄入。新增 4 概念页：logarithmic-depth-buffer（合并 2012 深度精度 + 2013 优化两篇）、sphere-mapped-terrain-culling、opengl-texture-bind-batching、fiber-based-job-scheduler（game-engines 目录）。新增 5 source 摘要。Patch wiki/people/outerra-team.md（sources 5→11，新增 4 相关链接 + 5 source 链接）。Patch z-buffer.md 新增对数深度方案条目；patch culling.md 新增 source；patch reversed-z.md 补充交叉比较；patch bindless-rendering.md 补充预绑定近似路线。"
+}

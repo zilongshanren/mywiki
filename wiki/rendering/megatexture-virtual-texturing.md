@@ -31,3 +31,4 @@ Mega-Texture（又称 Virtual Texturing，VT）是一种让 GPU 使用远超显�
 ## Sources
 
 - [[sources/adrian-doom-2016-graphics]]
+- [[sources/humus-tiled-resources]] — Engel 2013：D3D11.2 Tiled Resources vs 软件 MegaTexture，艺术家成本分析

@@ -1670,3 +1670,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-134 Worker OK (jonolick ×2 + diaryofagraphicsprogrammer ×3)
 
 5 篇全部入库。新建 4 概念页（projective-cross-product-geometry、index-buffer-compression、graphics-subsystem-no-lut、graphics-subsystem-even-error-distribution）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-135 Worker OL (diaryofagraphicsprogrammer ×5)
+
+Wolfgang Engel 文章 5 篇全部入库。新建 compute-parallel-reduction 概念页、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-135 Worker OM (diaryofagraphicsprogrammer ×5)
+
+Wolfgang Engel 文章 5 篇全部入库。新建 4 概念页（gcn-compute-tgsm-patterns、deferred-lighting-vs-shading、cube-shadow-map-rendering、realtime-gi-per-light）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-135 Worker ON (outerra.blogspot.com ×5)
+
+Outerra 文章 5 篇全部入库。新建 4 概念页（logarithmic-depth-buffer、sphere-mapped-terrain-culling、opengl-texture-bind-batching、fiber-based-job-scheduler）、5 source 摘要。Worker 直接 patch outerra-team.md。

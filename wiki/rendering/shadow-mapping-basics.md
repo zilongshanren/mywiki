@@ -140,7 +140,9 @@ v_normal = mat3(u_sha_view) * mat3(world_mat) * in_Normal;
 - [[selective-shadow-fade-pass-switch]] — 让单个 actor 的阴影独立淡入淡出（UE Shadow Pass Switch）
 - [[blob-shadow-decal-vs-plane]] — 传统 blob 阴影 vs 投影 decal 的水面/地形处理差异
 - [[cascaded-shadow-maps]] —— 视锥分段的经典阴影技术，NVIDIA 的默认推荐
+- [[cube-shadow-map-rendering]] —— 点光源/椭球光源的 cube map 阴影渲染、GS 优化、ESM、缓存策略
 
 ## Sources
 
 - [[sources/xor-shadowmaps]]
+- [[sources/humus-ellipsoid-light-shadow]] —— Engel 2011：cube shadow map 渲染、缓存策略、ESM bias 方案、屏幕空间软化

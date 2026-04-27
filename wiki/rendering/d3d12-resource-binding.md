@@ -57,3 +57,4 @@ DirectX 12 相比 DirectX 11 最大的负担就是**资源绑定不再被驱动�
 - [[sources/asawicki-dx12-root-signatures]]
 - [[sources/asawicki-dx12-clearuav-behavior]]
 - [[sources/alain-raw-dx12]] — DescriptorHeap + CBV 完整流程
+- [[sources/humus-dx12-resource-binding-intro]] — Engel 2015：DX12 发布前的资源绑定入门导引（正文未完整抓取）

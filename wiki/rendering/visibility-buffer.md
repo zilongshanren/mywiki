@@ -39,3 +39,5 @@ Visibility Buffer 在混合渲染管线里可以 **完美替代 primary ray**：
 - [[sources/gameknife-gknextrenderer-yearone]]
 - [[sources/wolfgang-engel-triangle-visibility-buffer]]
 - [[sources/c0de517e-nanite-thoughts]]
+- [[sources/humus-filtered-culled-vbuffer]] — GDCE 2016：多视图 cluster 剔除 + 过滤三角形填充多个 VB
+- [[sources/humus-v-buffer-deferred]] — Engel 2015：V-Buffer 延迟光照变体架构

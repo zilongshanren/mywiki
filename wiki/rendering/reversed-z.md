@@ -31,6 +31,7 @@ Unity 的 URP/HDRP 默认启用 Reversed-Z（对应 `UNITY_REVERSED_Z` 宏）。
 - [[z-fighting]]
 - [[scene-color-depth-nodes]] —— Shader Graph 里 Scene Depth 的三档模式（Raw / Linear01 / Eye）与 reversed Z 的交互
 - [[linear-z-trick]] —— 2010 年 Pesce 的 VS 软件 W-buffer 小把戏，现代被 reversed-z 替代
+- [[logarithmic-depth-buffer]] —— 另一路线：顶点着色器 log2 映射，全厂商可用，精度更高；OpenGL 上 reversed-Z 需要 glDepthRange
 
 ## Sources
 

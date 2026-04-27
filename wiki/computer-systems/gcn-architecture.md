@@ -58,3 +58,4 @@ GCN 的设计预见了 GPU 向通用计算的演进方向，尽管 AMD 在 CUDA 
 ## Sources
 
 - [[sources/chipsandcheese-gcn-modernization]]
+- [[sources/humus-compute-optimizations-gdc2014]] —— Engel GDC 2014：GCN TGSM bank layout、wavefront barrier 消除、并行归约优化

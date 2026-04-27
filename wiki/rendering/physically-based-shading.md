@@ -44,6 +44,7 @@ sources: 1
 - [[normalised-blinn-phong-shader]] —— 面向美术的 PBR 教学 shader，每个 PBR 组件可切换演示
 - [[openpbr]] —— 2023+ 的开放式 uber-shader 标准，Kutz / Portsmouth 主笔
 - [[neural-materials]] —— 把离线 shader graph 压进实时推理的神经材质方向
+- [[realtime-gi-per-light]] —— Engel 2013：「光源数量优先于 PBR」，per-light bounce GI 的次世代工作流
 
 ## Sources
 - [[sources/selfshadow-pbs-siggraph-2014]]
@@ -52,3 +53,4 @@ sources: 1
 - [[sources/c0de517e-beyond-photorealism]] — Pesce 2016：PBR 之后需要主动构建视觉语言，感知现实 ≠ 物理正确
 - [[sources/agraphicsguynotes-pbs-in-games]]
 - [[sources/rory-physically-based-shading]] — Driscoll 2013：LBP vs Disney BRDF 的 MERL 对比；「physically-correct」与「physically-based」的区分
+- [[sources/humus-pbr-observational-lighting]] —— Engel 2013：「光源数量优先于 PBR 切换」的反直觉优先级论断

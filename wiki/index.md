@@ -505,6 +505,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[blender-euler-extrinsic-xyz-export]] | Blender XYZ Euler 约定与 X-Plane OBJ 导出顺序反转 |
 | [[rendering-engine-taxonomy]] | 渲染引擎分类学：9 维度描述上下文，非平凡问题只在具体上下文中有解 |
 | [[game-engines/unity-guid-fileid]] | Unity Asset GUID 与 FileID：本地 ID 寻址、meta 文件职责、冲突根因 |
+| [[game-engines/fiber-based-job-scheduler]] | Outerra jobmaster：fiber 协程 + 事件驱动异步 I/O Job 调度器 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1182,6 +1183,14 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |
 | [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |
 | [[rendering/maxwell-architecture]] | NVIDIA Maxwell：SM 精简 + 21 位控制码 + L2 加倍，28nm 最优解 |
+| [[compute-parallel-reduction]] | AMD GCN compute parallel reduction：TGSM bank 布局、wavefront barrier 消除、循环展开 |
+| [[gcn-compute-tgsm-patterns]] | GCN TGSM bank layout、wavefront barrier elision、loop unrolling GDC 2014 实测 |
+| [[deferred-lighting-vs-shading]] | Deferred Lighting（Light Prepass）三阶段结构 vs Deferred Shading 带宽权衡 |
+| [[cube-shadow-map-rendering]] | 点光源/椭球光源 cube shadow map：GS 单 draw、ESM bias、帧间缓存策略 |
+| [[realtime-gi-per-light]] | Engel：per-light bounce GI 工作流，「光源数量优先于 PBR 切换」 |
+| [[logarithmic-depth-buffer]] | 对数深度缓冲：顶点着色器 log2 映射，行星引擎 9 个数量级深度精度方案 |
+| [[sphere-mapped-terrain-culling]] | 球面 quad-tree tile 仿射剪切空间精确视锥剔除 |
+| [[opengl-texture-bind-batching]] | NVIDIA glBindMultiTextureEXT 性能陷阱与 Texture Bind Group 预绑定方案 |
 | [[rendering/screen-space-filter-kernel]] | Engel：屏幕空间滤波核的距离缩放/各向异性/深度剔除三条设计规则 |
 | [[rendering/msaa-deferred-edge-detection]] | Engel：延迟管线 MSAA 边缘检测，POINT/LINEAR 法线差值 + stencil 复用 |
 | [[rendering/procedural-grass-rendering]] | Outerra：两阶段 canopy + 几何着色器草叶，LOD 策略 |
@@ -2265,6 +2274,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/green-steering-behaviors]] | Robin Green：Craig Reynolds 转向行为 SIGGRAPH 2000 讲义 |
 | [[sources/green-even-faster-math]] | Robin Green：GDC 2020 续篇，Sollya/FloPoCo/bipartite/数字振荡器 |
 | [[sources/outerra-procedural-grass]] | Outerra：两阶段 canopy + 几何着色器草叶生成 |
+| [[sources/outerra-sphere-terrain-culling]] | Outerra：球面 tile 仿射剪切空间视锥剔除 |
+| [[sources/outerra-depth-buffer-precision]] | Outerra：深度缓冲精度分析（2012） |
+| [[sources/outerra-log-depth-buffer]] | Outerra：对数深度缓冲优化与修正（2013） |
+| [[sources/outerra-texture-bind-perf]] | Outerra：OpenGL 纹理绑定性能测试 |
+| [[sources/outerra-async-job-scheduler]] | Outerra：异步 Job 调度器设计 |
 | [[sources/humus-hardware-tessellation]] | Engel：硬件曲面细分三大优势及 DX11 非递归限制 |
 | [[sources/humus-edge-detection-trick]] | Engel：延迟管线 MSAA 边缘检测 trick |
 | [[sources/humus-screen-space-rules]] | Engel：屏幕空间滤波核设计规则（第一条） |
@@ -2273,6 +2287,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/humus-no-lut-rules]] | Engel：避免查找表的图形子系统规则 |
 | [[sources/humus-even-error-distribution-rules]] | Engel：均匀误差分布规则 |
 | [[sources/humus-dx11-1-notes]] | Engel：DirectX 11.1 API 变化笔记 |
+| [[sources/humus-filtered-culled-vbuffer]] | Engel：GDCE 2016 多视图 cluster 剔除 + 过滤三角形填充多个 VB |
+| [[sources/humus-v-buffer-deferred]] | Engel：V-Buffer 延迟光照变体架构（2015） |
+| [[sources/humus-compute-parallel-reduction]] | Engel：GCN 并行归约 compute shader 优化 |
+| [[sources/humus-tiled-resources]] | Engel：D3D11.2 Tiled Resources vs 软件 MegaTexture |
+| [[sources/humus-dx12-resource-binding-intro]] | Engel：DX12 资源绑定导引（2015） |
+| [[sources/humus-compute-optimizations-gdc2014]] | Engel：GDC 2014 AMD GCN PostFX compute 优化 |
+| [[sources/humus-deferred-lighting-recap]] | Engel：三阶段 Deferred Lighting 架构综述 |
+| [[sources/humus-ellipsoid-light-shadow]] | Engel：cube shadow map + ESM + 帧间缓存 |
+| [[sources/humus-pbr-observational-lighting]] | Engel：光源数量优先于 PBR 的反直觉论断 |
+| [[sources/humus-skeleton-programming]] | Engel：VS 2013 演示骨架编程工具 |
 | [[sources/jonolick-cross-product-tricks]] | Jon Olick：射影叉积对偶运算技巧 |
 | [[sources/jonolick-index-buffer-compression]] | Jon Olick：索引缓冲无损压缩算法 |
 | [[sources/boris-lucky-fluke-postmortem]] | Boris：Lucky Fluke 游戏 jam 开发后记 |

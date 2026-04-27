@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-19
-sources: 10
+sources: 20
 ---
 
 # Wolfgang Engel
@@ -44,3 +44,13 @@ Confetti 用 The Forge 为 Supergiant 重写了 *Hades* 的引擎（PC / macOS /
 - [[sources/humus-no-lut-rules]]
 - [[sources/humus-even-error-distribution-rules]]
 - [[sources/humus-dx11-1-notes]]
+- [[sources/humus-filtered-culled-vbuffer]]
+- [[sources/humus-v-buffer-deferred]]
+- [[sources/humus-compute-parallel-reduction]]
+- [[sources/humus-tiled-resources]]
+- [[sources/humus-dx12-resource-binding-intro]]
+- [[sources/humus-compute-optimizations-gdc2014]]
+- [[sources/humus-deferred-lighting-recap]]
+- [[sources/humus-ellipsoid-light-shadow]]
+- [[sources/humus-pbr-observational-lighting]]
+- [[sources/humus-skeleton-programming]]

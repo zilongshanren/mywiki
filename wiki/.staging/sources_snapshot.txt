@@ -541,3 +541,16 @@ asawicki-gpu-state-2025
 boris-lucky-fluke-postmortem
 boris-announcing-sylves
 boris-unity-guids
+humus-hardware-tessellation
+humus-edge-detection-trick
+humus-screen-space-rules
+humus-tile-based-deferred-forward
+humus-graphics-programmer-knowledge
+humus-no-lut-rules
+humus-even-error-distribution-rules
+humus-dx11-1-notes
+green-steering-behaviors
+green-even-faster-math
+outerra-procedural-grass
+jonolick-cross-product-tricks
+jonolick-index-buffer-compression

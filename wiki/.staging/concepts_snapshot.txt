@@ -593,3 +593,11 @@ telum-ii-microarchitecture
 ibm-virtual-cache-hierarchy
 d3d12-hardware-feature-adoption
 unity-guid-fileid
+screen-space-filter-kernel
+msaa-deferred-edge-detection
+procedural-grass-rendering
+steering-behaviors
+projective-cross-product-geometry
+index-buffer-compression
+graphics-subsystem-no-lut
+graphics-subsystem-even-error-distribution

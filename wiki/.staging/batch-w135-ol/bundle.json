@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w135-ol",
+  "agent_note": "5 篇 Wolfgang Engel (diaryofagraphicsprogrammer.blogspot.com) 文章。visibility-buffer、d3d12-resource-binding、megatexture-virtual-texturing 均为已有概念页，仅发 patch；新增 compute-parallel-reduction 概念页。dx12 resource binding 源文正文未被完整抓取，已在源摘要中注明信息空白。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2016-08-22_gdce-2016-the-filtered-and-culled-visibility-buffer.md",
+      "status": "ingested",
+      "source_slug": "humus-filtered-culled-vbuffer",
+      "title": "GDCE 2016 – The Filtered and Culled Visibility Buffer"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2015-05-27_v-buffer-deferred-lighting-re-thought.md",
+      "status": "ingested",
+      "source_slug": "humus-v-buffer-deferred",
+      "title": "V Buffer – Deferred Lighting Re-Thought"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2014-03-26_compute-shader-optimizations-for-amd-gpus-parallel-reduction.md",
+      "status": "ingested",
+      "source_slug": "humus-compute-parallel-reduction",
+      "title": "Compute Shader Optimizations for AMD GPUs: Parallel Reduction"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2013-07-22_tiled-resources-partially-resident-textures-megatextures.md",
+      "status": "ingested",
+      "source_slug": "humus-tiled-resources",
+      "title": "Tiled Resources / Partially Resident Textures / MegaTextures"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2015-04-09_introduction-to-resource-binding-in-microsoft-directx-12.md",
+      "status": "ingested",
+      "source_slug": "humus-dx12-resource-binding-intro",
+      "title": "Introduction to Resource Binding in Microsoft DirectX 12"
+    }
+  ],
+  "concepts_created": ["compute-parallel-reduction"],
+  "people_created": [],
+  "source_summaries_created": [
+    "humus-filtered-culled-vbuffer",
+    "humus-v-buffer-deferred",
+    "humus-compute-parallel-reduction",
+    "humus-tiled-resources",
+    "humus-dx12-resource-binding-intro"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/visibility-buffer.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-filtered-culled-vbuffer]] — GDCE 2016：多视图 cluster 剔除 + 过滤三角形填充多个 VB\n- [[sources/humus-v-buffer-deferred]] — 2015：从 Light Pre-Pass 到 V-Buffer 的管线演化分析"
+    },
+    {
+      "file": "wiki/rendering/megatexture-virtual-texturing.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-tiled-resources]] — Engel 2013：D3D11.2 Tiled Resources vs 软件 MegaTexture，艺术家成本分析"
+    },
+    {
+      "file": "wiki/rendering/d3d12-resource-binding.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-dx12-resource-binding-intro]] — Engel 2015：DX12 发布前的资源绑定入门导引（正文未完整抓取）"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-filtered-culled-vbuffer]]\n- [[sources/humus-v-buffer-deferred]]\n- [[sources/humus-compute-parallel-reduction]]\n- [[sources/humus-tiled-resources]]\n- [[sources/humus-dx12-resource-binding-intro]]"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 15"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[compute-parallel-reduction]] | AMD GPU 上并行归约 compute shader 的 TGSM / 屏障 / 预取优化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-filtered-culled-vbuffer]] | Engel GDCE 2016：多视图 cluster 剔除 + Visibility Buffer |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-v-buffer-deferred]] | Engel 2015：Light Pre-Pass → V-Buffer 管线演化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-compute-parallel-reduction]] | Engel 2014：AMD GPU 并行归约 compute 优化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-tiled-resources]] | Engel 2013：D3D11.2 Tiled Resources vs MegaTexture |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-dx12-resource-binding-intro]] | Engel 2015：DX12 资源绑定入门（导引，正文未完整抓取） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-135 Worker OL (diaryofagraphicsprogrammer.blogspot.com ×5)\n\n处理 5 篇 Wolfgang Engel 博客文章（2013–2016）。新增 1 概念页（compute-parallel-reduction：AMD GCN 并行归约优化，覆盖 TGSM bank、循环展开、wavefront 屏障消除、多值预取）、5 source 摘要。visibility-buffer、megatexture-virtual-texturing、d3d12-resource-binding、wolfgang-engel 人物页均追加 source 链接。注：dx12-resource-binding-intro 原文正文未完整抓取，源摘要中已注明信息空白。"
+}

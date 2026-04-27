@@ -23,7 +23,7 @@ sources: 2
 
 ## 改进方案
 - **Reversed-Z**：见 [[reversed-z]]，把近远翻转到 1→0，结合 float 精度分布改善远平面。
-- **Logarithmic Depth**：手动对数映射，均匀化精度。
+- **[[logarithmic-depth-buffer|Logarithmic Depth Buffer]]**：顶点着色器输出 log2 深度，全厂商可用，32 位精度约为 reversed-Z 的 4 倍，行星引擎处理 9 个数量级深度范围的标准方案。
 - **Clustered depth**：近远分段，各自独立 Z buffer。
 - **[[linear-z-trick|Linear-Z VS trick]]**：`hPos.z *= hPos.w / far` 软件模拟 W-buffer，不破坏纹理透视插值；代价是屏幕空间非线性导致 Hi-Z 退化。
 
@@ -44,9 +44,11 @@ sources: 2
 - [[hierarchical-z-buffer]] — Z-buffer 的 max-downsample 金字塔，用于遮挡剔除
 - [[scene-color-depth-nodes]] —— 在 shader 里采样 `_CameraDepthTexture` 并线性化
 - [[depth-texture-silhouette]] —— 在 image effect 里采样 `_CameraDepthTexture` 做距离着色
+- [[logarithmic-depth-buffer]] —— 对数深度映射：行星引擎处理 9 个数量级深度范围的完整推导
 
 ## Sources
 
 - [[sources/rtr-day03]]
 - [[sources/rtr-day05]]
 - [[sources/supnik-custom-z-buffer-early-z]]
+- [[sources/outerra-depth-buffer-precision]]

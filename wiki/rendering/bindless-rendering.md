@@ -33,6 +33,7 @@ Bindless 的硬件/驱动兼容性在 2024 年已经相当成熟：gkNextRendere
 - [[d3d12-resource-binding]]
 - [[gpu-hazard-tracking]]
 - [[rendering-api-depth]]
+- [[opengl-texture-bind-batching]] —— bindless 出现前的工程近似：预绑定所有纹理到连续 unit，逐 mesh 发索引
 
 ## Sources
 
