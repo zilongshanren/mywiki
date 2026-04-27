@@ -567,3 +567,5 @@ procedural-generation-taxonomy
 wraparound-hex-grids
 debroglie-wfc-library
 poisson-point-process-infinite-plane
+traversability-checking
+barycentric-perlin-noise

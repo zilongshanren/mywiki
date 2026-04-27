@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w130-nw",
+  "agent_note": "5 篇 c0de517e.com 文章（新站）。4 篇 ingested，1 篇 skipped（HPG 2025 keynote stub，无实质技术内容）。新增 4 概念页、0 人物页（angelo-pesce 已存在）、4 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.com/2013-02-17_portals-are-misunderstood-portals-cells-predicated-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-portals-predicated-rendering",
+      "title": "Portals are misunderstood. Portals, cells, predicated rendering and their mirrors."
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-01-03_recollecting-the-history-of-offline-rendering-was-ray-tracin.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-history-offline-rendering",
+      "title": "Recollecting the history of offline rendering. Was ray-tracing 'early' and path-tracing 'late'?"
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-02-10_learning-to-differentiably-rasterize-doing-things-my-way-a-k.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-differentiable-rasterize",
+      "title": "Learning to differentiably rasterize. Doing things my way. A.k.a. the wrong way."
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-04-27_a-taxonomy-for-rendering-engines-non-trivial-problems-are-so.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-rendering-engine-taxonomy",
+      "title": "A Taxonomy for Rendering Engines. Non-trivial problems are solved only in context."
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-07-12_hallucinations-on-the-future-of-real-time-rendering-keynote.md",
+      "status": "skipped_offtopic",
+      "reason": "HPG 2025 keynote 发布帖：正文内容为会议感受 + 个人演讲流程方法论，无具体技术论点；实际技术内容在外链 PDF/视频中，本地文件不含可摘要的技术主体。"
+    }
+  ],
+  "concepts_created": [
+    "portals-cells-predicated-rendering",
+    "offline-rendering-history",
+    "differentiable-rendering",
+    "rendering-engine-taxonomy"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-portals-predicated-rendering",
+    "c0de517e-history-offline-rendering",
+    "c0de517e-differentiable-rasterize",
+    "c0de517e-rendering-engine-taxonomy"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[portals-cells-predicated-rendering]] — 2013 Portal 即谓词化渲染\n- [[offline-rendering-history]] — 2025 离线渲染历史考古\n- [[differentiable-rendering]] — 2025 SDF 可微渲染实验\n- [[rendering-engine-taxonomy]] — 2025 渲染引擎分类学框架"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-portals-predicated-rendering]]\n- [[sources/c0de517e-history-offline-rendering]]\n- [[sources/c0de517e-differentiable-rasterize]]\n- [[sources/c0de517e-rendering-engine-taxonomy]]"
+    },
+    {
+      "file": "wiki/rendering/occlusion-culling.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-portals-predicated-rendering]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[portals-cells-predicated-rendering]] | Portal/Cell 可见性系统的本质是谓词化渲染，可脱离 BSP 关卡编辑器使用 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[offline-rendering-history]] | 离线渲染历史：光线追踪早至，路径追踪迟到，Radiosity/Unbiased 均被滥用 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[differentiable-rendering]] | 可微渲染原理、SDF 天然可微路线、JAX vs PyTorch、全局优化策略 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[rendering-engine-taxonomy]] | 渲染引擎分类学：9 维度描述上下文，非平凡问题只在具体上下文中有解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-portals-predicated-rendering]] | Pesce：Portal 即谓词化渲染 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-history-offline-rendering]] | Pesce：离线渲染历史考古 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-differentiable-rasterize]] | Pesce：SDF 可微渲染器实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-rendering-engine-taxonomy]] | Pesce：渲染引擎分类学框架 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-130 Worker NW (c0de517e.com ×5)\n\n处理 5 篇 c0de517e.com（新站）文章。新增 4 概念页（portals-cells-predicated-rendering、offline-rendering-history、differentiable-rendering、rendering-engine-taxonomy）、4 source 摘要，补充 angelo-pesce 人物页相关链接。跳过 1 篇（HPG 2025 keynote stub，无本地技术内容）。"
+}

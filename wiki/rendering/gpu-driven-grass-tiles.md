@@ -63,3 +63,4 @@ MSAA 当时没做，作者自嘲"谁不喜欢一片闪烁的锯齿呢"。
 ## Sources
 
 - [[sources/giordi91-grass-shader]]
+- [[sources/c0de517e-vegetation-cod-bo4]] — 编辑时生成 vs 运行时 GPU 生成的对比视角

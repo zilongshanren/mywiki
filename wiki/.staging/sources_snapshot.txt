@@ -507,3 +507,9 @@ boris-what-is-proc-gen
 boris-wraparound-hex-grids
 boris-debroglie-v01
 boris-infinite-uniform-points
+boris-fast-traversal-proc-rooms
+boris-barycentric-perlin-noise
+boris-tessera-3d-tiles
+boris-triangle-grid-extensions
+boris-chiseled-paths-revisited
+c0de517e-cod-rendering-retrospective

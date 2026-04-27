@@ -75,3 +75,4 @@ DICE 在 Frostbite 引擎里选了另一条路：把 occluder 低模送到 SPU �
 ## Sources
 
 - [[sources/selfshadow-practical-visibility]]
+- [[sources/c0de517e-portals-predicated-rendering]]

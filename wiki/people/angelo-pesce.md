@@ -40,6 +40,15 @@ sources: 9
 - [[component-degradable-build]] —— 2011 「broken build」是个糟糕术语
 - [[stable-csm-implementation-tips]] —— 2011 Stable CSM 实施要点 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch
 - **COD 渲染回顾**：2016 年的跨代渲染回顾文章，以 Ghosts / Advanced Warfare / Black Ops 3 三款游戏为轴，展示了 COD 三个内部工作室如何在同一产品线内打造出三套截然不同的渲染系统，并阐述了感知校准（perceptual realism）比 PBR 数学精度更重要的观点（见 [[sources/c0de517e-cod-rendering-retrospective]]）。
+- [[portals-cells-predicated-rendering]] — 2013 Portal 即谓词化渲染
+- [[offline-rendering-history]] — 2025 离线渲染历史考古
+- [[differentiable-rendering]] — 2025 SDF 可微渲染实验
+- [[rendering-engine-taxonomy]] — 2025 渲染引擎分类学框架
+- [[rendering/meshblend-ssao-material-blend]] —— SSAO 语义重用于材质混合的推断推导
+- [[rendering/probe-warping]] —— 探针 warp 重投影：视差映射的球面推广
+- [[peaked-technology]] — 到顶技术概念框架
+- [[game-engine-web-engineering-lessons]] — 引擎向 web 工程学习的四堂课
+- [[vegetation-procedural-placement]] — COD: BO4 程序化植被散布 R&D
 
 ## Sources
 - [[sources/c0de517e-cached-shadowmaps]]
@@ -132,3 +141,12 @@ sources: 9
 - [[sources/c0de517e-remote-scene-approximation]]
 - [[sources/c0de517e-well-architected-bad-code]]
 - [[sources/c0de517e-cod-rendering-retrospective]]
+- [[sources/c0de517e-portals-predicated-rendering]]
+- [[sources/c0de517e-history-offline-rendering]]
+- [[sources/c0de517e-differentiable-rasterize]]
+- [[sources/c0de517e-rendering-engine-taxonomy]]
+- [[sources/c0de517e-meshblend-ue]]
+- [[sources/c0de517e-probe-warping-half-baked]]
+- [[sources/c0de517e-peaked-technologies]]
+- [[sources/c0de517e-engine-arch-languages]]
+- [[sources/c0de517e-vegetation-cod-bo4]]

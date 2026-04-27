@@ -1610,3 +1610,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-129 Worker NV (c0de517e.blogspot.com ×5)
 
 所有 5 篇文章均为重复或空内容，跳过。0 篇入库。后续应优先使用 c0de517e.com 域名的文章。
+
+## [2026-04-27] ingest | Wave-130 Worker NW (c0de517e.com ×5)
+
+处理 5 篇 c0de517e.com 新站文章，4 篇入库（portals-predicated-rendering、history-offline-rendering、differentiable-rasterize、rendering-engine-taxonomy），1 篇跳过（HPG 2025 keynote stub）。
+
+## [2026-04-27] ingest | Wave-130 Worker NX (boristhebrave ×3 + c0de517e.com ×2)
+
+处理 5 篇文章，全部入库。Boris: chess-move-regex、planet-tile-assembly、puzzlescript-rule-system。Pesce: meshblend-ssao-material-blend、probe-warping。
+
+## [2026-04-27] ingest | Wave-130 Worker NY (c0de517e.com ×3 + danielilett ×0)
+
+3 篇 c0de517e.com 入库（peaked-technologies、engine-arch-languages、vegetation-cod-bo4）。2 篇 danielilett 文件不存在，跳过。

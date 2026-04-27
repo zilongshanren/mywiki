@@ -53,6 +53,9 @@ sources: 56
 - [[game-development/poisson-point-process-infinite-plane]]
 - [[game-development/traversability-checking]]
 - [[game-development/barycentric-perlin-noise]]
+- [[game-development/chess-move-regex]]
+- [[game-development/planet-tile-assembly]]
+- [[game-development/puzzlescript-rule-system]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -111,3 +114,6 @@ sources: 56
 - [[sources/boris-tessera-3d-tiles]]
 - [[sources/boris-triangle-grid-extensions]]
 - [[sources/boris-chiseled-paths-revisited]]
+- [[sources/boris-chess-piece-regex]]
+- [[sources/boris-planet-generation]]
+- [[sources/boris-puzzlescript-rules]]

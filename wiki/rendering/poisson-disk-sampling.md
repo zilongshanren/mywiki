@@ -60,3 +60,4 @@ sources: 3
 - [[sources/bartwronski-poisson-gui]]
 - [[sources/c0de517e-sample-generator-3d]]
 - [[sources/boris-infinite-uniform-points]]
+- [[sources/c0de517e-vegetation-cod-bo4]] — BO4 植被系统中分层蓝噪声点集的实际应用

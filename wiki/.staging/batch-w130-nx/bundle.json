@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w130-nx",
+  "agent_note": "5 篇技术文章：Boris 3 篇（正则表达式棋子走法、Planet 地形、PuzzleScript 规则系统），Pesce 2 篇（MeshBlend 屏幕空间材质混合、探针 Warp 重投影）。两位作者页面已存在，仅 patch。新增 5 个概念页、5 个 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2022-10-22_defining-chess-piece-moves-using-regular-expressions.md",
+      "status": "ingested",
+      "source_slug": "boris-chess-piece-regex",
+      "title": "Defining Chess Piece Moves using Regular Expressions"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-12-18_how-does-planet-work.md",
+      "status": "ingested",
+      "source_slug": "boris-planet-generation",
+      "title": "How Does Planet Work"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2024-06-10_puzzlescript-rules.md",
+      "status": "ingested",
+      "source_slug": "boris-puzzlescript-rules",
+      "title": "PuzzleScript Rules"
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-07-29_fun-with-meshblend-let-s-learn-from-an-amazing-unreal-plugin.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-meshblend-ue",
+      "title": "Fun with MeshBlend! Let's learn from an amazing Unreal plugin"
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2025-08-04_half-baked-probe-warping-reinventing-the-obvious-in-a-contri.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-probe-warping-half-baked",
+      "title": "Half-baked: Probe warping. Reinventing the obvious in a contrived way."
+    }
+  ],
+  "concepts_created": [
+    "game-development/chess-move-regex",
+    "game-development/planet-tile-assembly",
+    "game-development/puzzlescript-rule-system",
+    "rendering/meshblend-ssao-material-blend",
+    "rendering/probe-warping"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-chess-piece-regex",
+    "boris-planet-generation",
+    "boris-puzzlescript-rules",
+    "c0de517e-meshblend-ue",
+    "c0de517e-probe-warping-half-baked"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/chess-move-regex]]\n- [[game-development/planet-tile-assembly]]\n- [[game-development/puzzlescript-rule-system]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-chess-piece-regex]]\n- [[sources/boris-planet-generation]]\n- [[sources/boris-puzzlescript-rules]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/meshblend-ssao-material-blend]] —— SSAO 语义重用于材质混合的推断推导\n- [[rendering/probe-warping]] —— 探针 warp 重投影：视差映射的球面推广"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-meshblend-ue]]\n- [[sources/c0de517e-probe-warping-half-baked]]"
+    },
+    {
+      "file": "wiki/rendering/parallax-corrected-cubemap.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/probe-warping]] — 利用烘焙深度直接 warp 探针的迭代方案，避免代理形体假设"
+    },
+    {
+      "file": "wiki/game-development/rotation-graphs.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-chess-piece-regex]] — 用正则表达式在旋转图路径上定义棋子走法"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/chess-move-regex]] | 用正则表达式在旋转图路径上泛化定义棋子走法 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/planet-tile-assembly]] | Stålberg《Planet》的测地球面 + 类 Marching Cubes 瓦片组装系统 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/puzzlescript-rule-system]] | PuzzleScript 查找替换规则系统与「冻结运动」设计模式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/meshblend-ssao-material-blend]] | 将 SSAO 深度采样语义重用于相交网格材质混合 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-chess-piece-regex]] | Boris：正则表达式定义棋子走法（泛化到任意网格） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-planet-generation]] | Boris：拆解 Oskar Stålberg《Planet》的程序化地形系统 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-puzzlescript-rules]] | Boris：PuzzleScript 规则系统分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-meshblend-ue]] | Pesce：MeshBlend 原理推断与 SSAO 语义重用 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-probe-warping-half-baked]] | Pesce：探针 Warp 重投影半成品实验 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-130 Worker NX (boristhebrave.com ×3 + c0de517e.com ×2)\n\n处理 5 篇技术文章：Boris 3 篇（正则表达式棋子走法 / Planet 地形系统 / PuzzleScript 规则系统），Pesce 2 篇（MeshBlend 屏幕空间材质混合 / 探针 Warp 重投影）。新增 5 概念页（chess-move-regex, planet-tile-assembly, puzzlescript-rule-system, meshblend-ssao-material-blend, probe-warping）、5 source 摘要。两位作者页已存在，patch 追加链接与 source 引用。跳过：0 篇。"
+}

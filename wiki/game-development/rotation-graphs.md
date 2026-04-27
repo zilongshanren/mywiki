@@ -41,3 +41,4 @@ sources: 1
 ## Sources
 
 - [[sources/boris-rotation-graphs]]
+- [[sources/boris-chess-piece-regex]] — 用正则表达式在旋转图路径上定义棋子走法

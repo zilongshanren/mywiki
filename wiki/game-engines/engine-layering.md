@@ -55,3 +55,4 @@ Gregory 说得直白：**循环依赖是引擎设计的死刑**。一旦出现�
 ## Sources
 
 - [[sources/gea-day01]]
+- [[sources/c0de517e-engine-arch-languages]] — Pesce 从 web 工程角度论述子系统隔离的价值

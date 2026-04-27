@@ -60,3 +60,4 @@ ReflDirWS      *= BoxScale;
 - [[sources/c0de517e-parallax-corrected-followup]]
 - [[sources/c0de517e-ggx-parallax-correction]] — Pesce：GGX 波瓣距离—粗糙度修正推导（2015 存档，2023 公开）
 - [[sources/c0de517e-env-lighting-occlusion]] — Pesce：基于 diffuse probe 的 specular 上界 clamping，解决光泄漏
+- [[rendering/probe-warping]] — 利用烘焙深度直接 warp 探针的迭代方案，避免代理形体假设

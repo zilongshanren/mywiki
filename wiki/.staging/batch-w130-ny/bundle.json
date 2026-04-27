@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w130-ny",
+  "agent_note": "5 sources: 3 Pesce ingested, 2 Daniel Ilett URP lit shader files missing from filesystem. New concepts: peaked-technology (meta/), game-engine-web-engineering-lessons (game-engines/), vegetation-procedural-placement (rendering/).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.com/2024-02-19_peaked-technologies-definition-and-some-predictions.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-peaked-technologies",
+      "title": "Peaked Technologies: Definition and Some Predictions"
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2024-03-24_engine-architecture-web-engineering-and-languages-what-game.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-engine-arch-languages",
+      "title": "Engine Architecture, Web Engineering and Languages"
+    },
+    {
+      "path": "raw/articles/c0de517e.com/2014-03-10_from-the-archive-vegetation-in-cod-bo4-another-tale-of-twist.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-vegetation-cod-bo4",
+      "title": "Vegetation in COD: BO4 — Another Tale of Twists and Turns in R&D"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2023-09-27_unity-urp-14-complete-lit-shader-part-1.md",
+      "status": "skipped_missing",
+      "reason": "File does not exist on disk — not yet fetched by the ingest pipeline"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2023-09-27_unity-urp-14-complete-lit-shader-part-2.md",
+      "status": "skipped_missing",
+      "reason": "File does not exist on disk — not yet fetched by the ingest pipeline"
+    }
+  ],
+  "concepts_created": [
+    "peaked-technology",
+    "game-engine-web-engineering-lessons",
+    "vegetation-procedural-placement"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-peaked-technologies",
+    "c0de517e-engine-arch-languages",
+    "c0de517e-vegetation-cod-bo4"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[peaked-technology]] — 到顶技术概念框架\n- [[game-engine-web-engineering-lessons]] — 引擎向 web 工程学习的四堂课\n- [[vegetation-procedural-placement]] — COD: BO4 程序化植被散布 R&D"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-peaked-technologies]]\n- [[sources/c0de517e-engine-arch-languages]]\n- [[sources/c0de517e-vegetation-cod-bo4]]"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-vegetation-cod-bo4]] — BO4 植被系统中分层蓝噪声点集的实际应用"
+    },
+    {
+      "file": "wiki/rendering/gpu-driven-grass-tiles.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-vegetation-cod-bo4]] — 编辑时生成 vs 运行时 GPU 生成的对比视角"
+    },
+    {
+      "file": "wiki/game-engines/engine-layering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-engine-arch-languages]] — Pesce 从 web 工程角度论述子系统隔离的价值"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[peaked-technology]] | 技术或艺术形式达到历史顶点后不可逾越的分析框架（Pesce 2024） |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-engine-web-engineering-lessons]] | Pesce：引擎工程师向 web 后端学习模块化、运行时隔离的四堂课 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-peaked-technologies]] | Pesce：到顶技术的三个判据与预测（2024） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-engine-arch-languages]] | Pesce：引擎架构、web 工程与语言设计的跨领域论述（2024） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-vegetation-cod-bo4]] | Pesce：COD: BO4 植被程序化放置系统 R&D 回顾 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-130 Worker NY (c0de517e ×3 + danielilett ×0)\n\n处理 5 个指定源文件。成功摄入 3 篇 c0de517e.com Pesce 文章：peaked-technologies（到顶技术概念框架）、engine-arch-languages（引擎向 web 学习）、vegetation-cod-bo4（BO4 植被 R&D 回顾）。2 篇 danielilett.com URP lit shader 文件（Part 1 & Part 2，日期 2023-09-27）在本地文件系统中不存在，标记为 skipped_missing，需要 ingest 管道重新抓取。\n\n新增概念页 3 个（peaked-technology / game-engine-web-engineering-lessons / vegetation-procedural-placement），source 摘要页 3 个，人物页 0 个（angelo-pesce 已存在）。向 angelo-pesce 人物页、poisson-disk-sampling、gpu-driven-grass-tiles、engine-layering 发出补丁。"
+}

@@ -494,6 +494,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[stingray-renderer-three-stage-pipeline]] | Tobias：Cull/Render/Dispatch 三阶段数据并行 + simulation/render overlay |
 | [[hot-swap-pointer-patching]] | Pesce 2011：热重载的四种替代方案与它们为什么没赢过句柄 |
 | [[blender-euler-extrinsic-xyz-export]] | Blender XYZ Euler 约定与 X-Plane OBJ 导出顺序反转 |
+| [[rendering-engine-taxonomy]] | 渲染引擎分类学：9 维度描述上下文，非平凡问题只在具体上下文中有解 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -1164,6 +1165,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[render-integration-testing]] | 渲染器集成测试：idiff 像素对比 + 确定性保证 + Python 测试脚本 |
 | [[tone-mapping]] | HDR→LDR 全局色调曲线综述：Reinhard、ACES、GT、Lottes，逐亮度 vs 逐通道 |
 | [[luminance-histogram-exposure]] | Compute shader 256-bin 亮度直方图 + 并行归约自动曝光，含帧间插值防闪烁 |
+| [[portals-cells-predicated-rendering]] | Portal/Cell 可见性系统的本质是谓词化渲染，可脱离 BSP 关卡编辑器使用 |
+| [[offline-rendering-history]] | 离线渲染历史：光线追踪早至，路径追踪迟到，Radiosity/Unbiased 均被滥用 |
+| [[differentiable-rendering]] | 可微渲染原理、SDF 天然可微路线、JAX vs PyTorch、全局优化策略 |
+| [[rendering/meshblend-ssao-material-blend]] | 将 SSAO 深度采样语义重用于相交网格材质混合 |
+| [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |
+| [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1282,6 +1289,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/poisson-point-process-infinite-plane]] | 无限均匀点分布的正确模型：泊松点过程 vs jittered grid |
 | [[game-development/traversability-checking]] | 持久化不相交集预计算可通行性，批量检测障碍物放置安全性 |
 | [[game-development/barycentric-perlin-noise]] | 重心柏林噪声，n 维多纹理混合与生物群系划分 |
+| [[game-development/chess-move-regex]] | 用正则表达式在旋转图路径上泛化定义棋子走法 |
+| [[game-development/planet-tile-assembly]] | Stålberg《Planet》的测地球面 + 类 Marching Cubes 瓦片组装系统 |
+| [[game-development/puzzlescript-rule-system]] | PuzzleScript 查找替换规则系统与「冻结运动」设计模式 |
+| [[game-engine-web-engineering-lessons]] | Pesce：引擎工程师向 web 后端学习模块化、运行时隔离的四堂课 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2221,6 +2232,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-tessera-3d-tiles]] | Boris：Tessera 3D 瓦片关卡生成公告 |
 | [[sources/boris-triangle-grid-extensions]] | Boris：三角网格扩展——Trihex、替代距离函数、等距视图关系 |
 | [[sources/boris-chiseled-paths-revisited]] | Boris：见证路径优化凿刻法，彻底解决关节点检测性能问题 |
+| [[sources/boris-chess-piece-regex]] | Boris：正则表达式定义棋子走法（泛化到任意网格） |
+| [[sources/boris-planet-generation]] | Boris：拆解 Oskar Stålberg《Planet》的程序化地形系统 |
+| [[sources/boris-puzzlescript-rules]] | Boris：PuzzleScript 规则系统分析 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2663,6 +2677,15 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/c0de517e-remote-scene-approximation]] | Pesce：远端场景近似 R&D 日志，impostor 到 Poisson 重建 |
 | [[sources/c0de517e-well-architected-bad-code]] | Pesce：好架构 = 隔离，让坏代码能够存活 |
 | [[sources/c0de517e-cod-rendering-retrospective]] | Pesce：COD 系列渲染技术跨代回顾（Ghosts / AW / BO3） |
+| [[sources/c0de517e-portals-predicated-rendering]] | Pesce：Portal 即谓词化渲染 |
+| [[sources/c0de517e-history-offline-rendering]] | Pesce：离线渲染历史考古 |
+| [[sources/c0de517e-differentiable-rasterize]] | Pesce：SDF 可微渲染器实验 |
+| [[sources/c0de517e-rendering-engine-taxonomy]] | Pesce：渲染引擎分类学框架 |
+| [[sources/c0de517e-meshblend-ue]] | Pesce：MeshBlend 原理推断与 SSAO 语义重用 |
+| [[sources/c0de517e-probe-warping-half-baked]] | Pesce：探针 Warp 重投影半成品实验 |
+| [[sources/c0de517e-peaked-technologies]] | Pesce：到顶技术的三个判据与预测（2024） |
+| [[sources/c0de517e-engine-arch-languages]] | Pesce：引擎架构、web 工程与语言设计的跨领域论述（2024） |
+| [[sources/c0de517e-vegetation-cod-bo4]] | Pesce：COD: BO4 植被程序化放置系统 R&D 回顾 |
 | [[sources/chipsandcheese-crestmont]] | Chester Lam：Meteor Lake Crestmont E-Core 微架构测评 |
 | [[sources/chipsandcheese-lion-cove]] | George Cozma：Intel Lion Cove P-Core 架构预览 |
 | [[sources/chipsandcheese-goldmont-plus]] | Chester Lam：Intel Atom Goldmont Plus 历史评测 |
@@ -2771,6 +2794,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[quilt-cpp-ai-driven-clone]] | Wellons 4 天用 AI 克隆 Quilt 的案例 |
 | [[ai-driven-conformance-clone]] | 用 AI 克隆既有 CLI 工具的 conformance 测试法 |
 | [[c-memory-safety-even-for-ai]] | 为何 AI 协作时代应选 C++ 而非 C |
+| [[peaked-technology]] | 技术或艺术形式达到历史顶点后不可逾越的分析框架（Pesce 2024） |
 
 | [[code-as-art-manifesto]] | Pesce 2010「代码平权」manifesto：五项诉求 + Fuck OOP + 轻框架厚应用 |
 | [[platform-specific-features-poll-2010]] | Pesce 2010 70 人调研：360/PS3/DX10/DX11 平台特性使用率快照 |
