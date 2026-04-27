@@ -72,3 +72,5 @@ sources: 5
 - [[sources/chipsandcheese-qualcomm-kryo]]
 - [[sources/chipsandcheese-sandy-bridge]]
 - [[sources/chipsandcheese-cortex-a710]]
+- [[sources/chipsandcheese-cortex-a725]]
+- [[sources/chipsandcheese-cortex-x925]]

@@ -56,3 +56,4 @@ Oryon 是高通融合 Apple Firestorm 理念与自身 Kryo 传统的产物：超
 ## Sources
 
 - [[sources/chipsandcheese-oryon-core]]
+- [[sources/chipsandcheese-snapdragon-x2]]

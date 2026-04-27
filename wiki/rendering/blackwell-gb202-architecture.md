@@ -68,3 +68,4 @@ Blackwell 的主要竞争力来自规模而非单核效率：188 SM 对比 AMD R
 ## Sources
 
 - [[sources/chipsandcheese-blackwell-gb202]]
+- [[sources/chipsandcheese-b200-blackwell]]

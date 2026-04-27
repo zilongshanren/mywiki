@@ -65,3 +65,4 @@ Chester 的个人评价：等面积更愿意把 32 MB 都做成单级快速 cach
 ## Sources
 
 - [[sources/chipsandcheese-gb10-cpu-memory]]
+

@@ -1,0 +1,105 @@
+{
+  "batch_id": "batch-w120-mu",
+  "agent_note": "5篇 chipsandcheese.com 文章。第4篇 GB10 CPU 内存子系统已有 source slug chipsandcheese-gb10-cpu-memory，标记 duplicate_skipped。新建 2 个概念页（snapdragon-x2-elite-soc、adreno-x2-igpu-architecture），4 个 source 摘要（其中1个跳过）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-11-19_qualcomms-snapdragon-x2-elite.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-snapdragon-x2",
+      "title": "Qualcomm's Snapdragon X2 Elite"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-11-26_evaluating-uniform-memory-access-mode-on-amd-s-turin-ft-verd.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-turin-uma",
+      "title": "Evaluating Uniform Memory Access Mode on AMD's Turin"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-12-15_nvidias-b200-keeping-the-cuda-juggernaut-rolling-ft-verda-fo.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-b200-blackwell",
+      "title": "Nvidia's B200: Keeping the CUDA Juggernaut Rolling"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-12-31_inside-nvidia-gb10s-memory-subsystem-from-the-cpu-side.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-gb10-cpu-memory.md 已存在，内容已覆盖"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-01-04_diving-into-qualcomm-s-upcoming-adreno-x2-gpu-with-eric-deme.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-adreno-x2",
+      "title": "Diving into Qualcomm's Upcoming Adreno X2 GPU with Eric Demers"
+    }
+  ],
+  "concepts_created": [
+    "snapdragon-x2-elite-soc",
+    "adreno-x2-igpu-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-snapdragon-x2",
+    "chipsandcheese-turin-uma",
+    "chipsandcheese-b200-blackwell",
+    "chipsandcheese-adreno-x2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/oryon-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-snapdragon-x2]]"
+    },
+    {
+      "file": "wiki/computer-systems/numa-multi-socket-design.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-turin-uma]]"
+    },
+    {
+      "file": "wiki/rendering/blackwell-gb202-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-b200-blackwell]]"
+    },
+    {
+      "file": "wiki/rendering/adreno-x1-igpu-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[adreno-x2-igpu-architecture]] — X2 继任者，引入 HPM 与 Wave64 双发射"
+    },
+    {
+      "file": "wiki/computer-systems/gb10-memory-subsystem.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-gb10-cpu-memory]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[snapdragon-x2-elite-soc]] | 高通 Snapdragon X2 Elite SoC：Oryon Gen 3 + Adreno X2 + Hexagon NPU 6 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[adreno-x2-igpu-architecture]] | Qualcomm Adreno X2：HPM 21 MB 片上帧缓冲 + Wave64 双发射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-snapdragon-x2]] | Cozma：Snapdragon X2 Elite 架构全览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-turin-uma]] | Lam：Turin NPS0 UMA 模式实测——高延迟代价 vs 低频率收益 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-b200-blackwell]] | Lam：Nvidia B200 Blackwell 服务器 GPU——Chiplet 首作，TMEM 引入 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-adreno-x2]] | Cozma/Demers：Adreno X2 架构专访——HPM 设计决策与 Wave64 双发射 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-120 Worker MU (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。跳过 1 篇（GB10 CPU 内存子系统，source slug 已存在）。新增 2 概念页（snapdragon-x2-elite-soc、adreno-x2-igpu-architecture）、4 source 摘要（chipsandcheese-snapdragon-x2、chipsandcheese-turin-uma、chipsandcheese-b200-blackwell、chipsandcheese-adreno-x2）。5 个 existing page patch（oryon-microarchitecture、numa-multi-socket-design、blackwell-gb202-architecture、adreno-x1-igpu-architecture、gb10-memory-subsystem）。"
+}

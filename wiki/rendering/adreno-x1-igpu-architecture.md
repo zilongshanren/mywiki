@@ -49,6 +49,10 @@ Adreno X1 继承自 Snapdragon 8 Gen 2 引入的硬件光追加速，但**不支
 
 驱动成熟度是 2024 年 Adreno X1 的核心短板：部分游戏无法启动，驱动更新后稳定性反而下降，无统一安装包，用户体验远落后于 AMD/Intel/NVIDIA 的驱动生态。
 
+## 相关
+
+- [[adreno-x2-igpu-architecture]] — X2 继任者，引入 HPM 与 Wave64 双发射
+
 ## Sources
 
 - [[sources/chipsandcheese-sde-adreno]]

@@ -65,3 +65,4 @@ Intel Broadwell 支持 cluster-on-die（CoD）模式，将一个 die 划分成�
 ## Sources
 
 - [[sources/chipsandcheese-centaur-cha-dual-socket]]
+- [[sources/chipsandcheese-turin-uma]]

@@ -411,6 +411,9 @@ CAQA + CSAPP 的底层视角。
 | [[zhaoxin-century-avenue-microarchitecture]] | 兆芯世纪大道：4-wide x86 AVX2，Bulldozer 级性能 |
 | [[qualcomm-falkor-centriq-microarchitecture]] | Qualcomm Falkor Centriq：2017 年 Arm 服务器核，商业失败 |
 | [[amd-trinity-northbridge-interconnect]] | AMD Trinity Northbridge：Garlic/Onion 双链路，Infinity Fabric 前身 |
+| [[snapdragon-x2-elite-soc]] | 高通 Snapdragon X2 Elite SoC：Oryon Gen 3 + Adreno X2 + Hexagon NPU 6 |
+| [[cortex-a725-microarchitecture]] | Arm A725 效率核：去掉 MOP Cache 改用 predecode sideband，ROB 224 |
+| [[cortex-x925-microarchitecture]] | Arm X925 旗舰大核：10-wide，ROB ~525，SPEC 整数追平 Zen 5 / Lion Cove |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1122,6 +1125,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[infinity-cache-efficacy]] | Strix Halo Infinity Cache 实测：命中率测量方法及带宽放大效果 |
 | [[nv40-geforce6-architecture]] | NV40 GeForce 6000：MIMD 顶点 + SIMT 像素双架构，可编程 GPU 历史节点 |
 | [[arm-bifrost-mali-architecture]] | ARM Bifrost Mali-G52：标量 SIMT + clause ISA + tile 渲染 |
+| [[adreno-x2-igpu-architecture]] | Qualcomm Adreno X2：HPM 21 MB 片上帧缓冲 + Wave64 双发射 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2578,6 +2582,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen5-gaming]] | Chester Lam：Zen 5 游戏负载 top-down 分析 |
 | [[sources/chipsandcheese-rdna4-hot-chips-2025]] | Chester Lam：RDNA4 Hot Chips 2025 架构演讲报道与实测 |
 | [[sources/chipsandcheese-strix-halo-infinity-cache]] | Chester Lam：Strix Halo Infinity Cache 量化实测 |
+| [[sources/chipsandcheese-snapdragon-x2]] | Cozma：Snapdragon X2 Elite 架构全览 |
+| [[sources/chipsandcheese-turin-uma]] | Lam：Turin NPS0 UMA 模式实测——高延迟代价 vs 低频率收益 |
+| [[sources/chipsandcheese-b200-blackwell]] | Lam：Nvidia B200 Blackwell 服务器 GPU——Chiplet 首作，TMEM 引入 |
+| [[sources/chipsandcheese-adreno-x2]] | Cozma/Demers：Adreno X2 架构专访——HPM 设计决策与 Wave64 双发射 |
+| [[sources/chipsandcheese-cortex-a725]] | Chester Lam：Cortex-A725 效率核深度剖析（2026-01） |
+| [[sources/chipsandcheese-cortex-x925]] | Chester Lam：Cortex-X925 高性能核，首次追平桌面 Zen 5 / Lion Cove（2026-03） |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

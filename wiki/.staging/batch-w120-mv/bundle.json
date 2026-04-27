@@ -1,0 +1,75 @@
+{
+  "batch_id": "batch-w120-mv",
+  "agent_note": "5 篇 chipsandcheese.com 文章。3 篇已有 source page（april-fools、split-locks、gb10-gpu）直接跳过。新增 A725 与 X925 微架构 source + concept 页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-01-27_arms-cortex-a725-ft-dells-pro-max-with-gb10.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-a725",
+      "title": "Arm's Cortex A725 ft. Dell's Pro Max with GB10"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-03-03_arm-s-cortex-x925-reaching-desktop-performance.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-x925",
+      "title": "Arm's Cortex X925: Reaching Desktop Performance"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-03-14_analyzing-nvidia-gb10-s-gpu.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-gb10-gpu.md 已存在，内容完整"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-04-01_embracing-ai-with-claude-s-c-compiler.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-ccc-april-fools.md 已存在，内容完整"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2026-04-08_investigating-split-locks-on-x86-64.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-split-locks.md 已存在，内容完整"
+    }
+  ],
+  "concepts_created": [
+    "cortex-a725-microarchitecture",
+    "cortex-x925-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-cortex-a725",
+    "chipsandcheese-cortex-x925"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cortex-a725-microarchitecture]] — A725 效率核去掉 MOP Cache、重新分配 TLB 的微架构分析\n- [[cortex-x925-microarchitecture]] — X925 旗舰大核，SPEC 整数与 Zen 5 / Lion Cove 持平"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cortex-a725]]\n- [[sources/chipsandcheese-cortex-x925]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cortex-a725-microarchitecture]] | Arm A725 效率核：去掉 MOP Cache 改用 predecode sideband，ROB 224，TLB 资源向数据侧倾斜 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cortex-x925-microarchitecture]] | Arm X925 旗舰大核：10-wide，ROB ~525，SPEC 整数追平 Zen 5 / Lion Cove，向量宽度 128-bit 是 FP 短板 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-a725]] | Chester Lam：Cortex-A725 效率核深度剖析，在 GB10 中测试（2026-01） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-x925]] | Chester Lam：Cortex-X925 高性能核，首次追平桌面 Zen 5 / Lion Cove（2026-03） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-120 Worker MV (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。3 篇重复跳过（gb10-gpu、ccc-april-fools、split-locks 已有完整 source page）。新增 2 概念页（cortex-a725-microarchitecture、cortex-x925-microarchitecture）、2 source 摘要（chipsandcheese-cortex-a725、chipsandcheese-cortex-x925）。patch：chester-lam 人物页新增 2 条相关链接和 2 条 source 引用。"
+}

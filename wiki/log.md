@@ -1498,3 +1498,11 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-119 Worker MT (chipsandcheese 2025-06~10 ×5)
 
 处理 5 篇 chipsandcheese.com 文章（2025-06 ~ 2025-10）。新增 3 概念页（blackwell-gb202、rdna4-architecture(rendering/)、infinity-cache-efficacy）、5 source 摘要。Lion Cove 和 Zen 5 游戏负载分析 patch 到已有页面。
+
+## [2026-04-27] ingest | Wave-120 Worker MU (chipsandcheese 2025-11~2026-01 ×4 + 1 skip)
+
+处理 5 篇文章。1 篇重复跳过（GB10 CPU 内存）。新增 2 概念页（snapdragon-x2-elite-soc、adreno-x2-igpu-architecture）、4 source 摘要。chipsandcheese.com 处理完毕。
+
+## [2026-04-27] ingest | Wave-120 Worker MV (chipsandcheese 2026 final ×2 + 3 skip)
+
+处理 5 篇文章。3 篇重复跳过。新增 2 概念页（cortex-a725-microarchitecture、cortex-x925-microarchitecture）、2 source 摘要。chipsandcheese.com 全部文章已处理完毕！
