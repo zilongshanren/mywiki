@@ -1426,3 +1426,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-113 Worker MB (c0de517e 2017 ×1 + 4 skip)
 
 处理 5 篇 c0de517e 文章。1 篇 ingest（shadow-mystery），1 篇重复跳过（tiled-hardware），3 篇文件不存在于 raw/。
+
+## [2026-04-27] ingest | Wave-114 Worker MC (c0de517e 2017-2019 ×5)
+
+处理 5 篇 Angelo Pesce 文章，全部 ingest。新增 4 概念页（rendering-roi-philosophy、pbr-approximation-stack、ggx-multiscattering-normalization、perceptual-palette-functions）、5 source 摘要。patch：hybrid-raytracing-pipeline、microfacet-brdf、ibl-multiple-scattering、realtime-quality-vs-quantity、color-blindness-accessibility、angelo-pesce。
+
+## [2026-04-27] ingest | Wave-114 Worker MD (chipsandcheese 2023-10/11 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 5 概念页（cortex-a510-microarchitecture、cortex-x2-microarchitecture、cortex-a72-microarchitecture、kepler-architecture、apple-m2-pro-igpu）、5 source 摘要。patch：cortex-a710、neoverse-n1、bulldozer、gcn-wave-occupancy。
+
+## [2026-04-27] ingest | Wave-114 Worker ME (chipsandcheese 2023-11~2024-01 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（sw26010-pro-architecture、cdna3-mi300x-architecture、gcn-architecture、rdna4-architecture）、5 source 摘要。patch：cdna2-mi200-architecture、meteor-lake-chiplet-architecture。

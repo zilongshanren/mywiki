@@ -372,6 +372,13 @@ CAQA + CSAPP 的底层视角。
 | [[neoverse-n2-microarchitecture]] | ARM 服务器核第二代，Cortex-A710 衍生，CMN-700 mesh 互联，倚天 710 落地 |
 | [[intel-gen7-igpu]] | Ivy Bridge Gen 7 iGPU，Intel GPU 设计语言起点，EU/subslice/send 指令模型 |
 | [[amd-phoenix-soc]] | AMD Phoenix APU（Ryzen 7040/Z1），Zen4+RDNA3+XDNA，TSMC N4，178mm² |
+| [[cortex-a510-microarchitecture]] | Arm ARMv9 小核，3 宽顺序，双核共享 FPU/L2/TLB 的合并核设计 |
+| [[cortex-x2-microarchitecture]] | Arm ARMv9 旗舰大核，A710 放大版，四管道 FPU，288 条目 ROB |
+| [[cortex-a72-microarchitecture]] | Arm ARMv8 3 宽乱序核，Raspberry Pi 4 / Graviton 一代，AArch64 普及标志 |
+| [[sw26010-pro-architecture]] | 中国神威 SW26010-Pro 超算 CPU——极端算力密度但内存带宽严重不足 |
+| [[cdna3-mi300x-architecture]] | AMD CDNA 3 / MI300X：8 XCD chiplet + Infinity Cache + 跨 die 一致性 |
+| [[gcn-architecture]] | AMD GCN：从 VLIW 到线程级并行调度的 GPU 架构现代化 |
+| [[rdna4-architecture]] | AMD RDNA 4（GFX12）：ISA 预览，细粒度等待、稀疏矩阵、数据侧预取 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1061,6 +1068,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering-pipeline-taxonomy]] | Pesce 2016 渲染管线连续体分类学：Forward/Deferred/VB/Texture-Space 统一框架 |
 | [[aces-hdr-display-calibration]] | ACES 在 HDR 游戏显示中的适用性批判与 look/calibration 分离架构 |
 | [[gpu-register-file-occupancy]] | GPU 寄存器文件容量与占用率的权衡，RDNA3 vs Ada Lovelace 对比 |
+| [[rendering-roi-philosophy]] | Pesce 2019：渲染工作 ROI 框架——三级优先级桶与资产生产瓶颈 |
+| [[pbr-approximation-stack]] | PBR 管线从光学框架到像素的完整近似层级分析 |
+| [[ggx-multiscattering-normalization]] | GGX 多次散射能量补偿：split-sum LUT 归一化与 Kulla/Conty 方案的权衡 |
+| [[perceptual-palette-functions]] | 感知均匀 shader 调色板函数——替代「coder colors」的零依赖调试可视化 |
+| [[kepler-architecture]] | Nvidia 2012 年 28nm GPU，静态编译器调度，SMX 四分区设计 |
+| [[apple-m2-pro-igpu]] | Apple M2 Pro 19 核 iGPU，256-bit LPDDR5，主机级带宽设计 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2437,6 +2450,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen4-gaming-workloads]] | Chester Lam：Zen 4 游戏 workload pipeline slot 级剖析 |
 | [[sources/chipsandcheese-starfield-gpu]] | Chester Lam & Ryan Mull：Starfield 帧级 GPU 分析，RDNA3 vs Ada |
 | [[sources/chipsandcheese-phoenix-soc]] | Chester Lam：AMD Phoenix SoC 全面剖析（Hot Chips 2023）|
+| [[sources/c0de517e-rendering-doesnt-matter]] | Pesce：渲染 ROI 哲学与资产生产瓶颈（2019） |
+| [[sources/c0de517e-unbiased-rt]] | Pesce：实时光追 DO/DO NOT 务实评估（2019） |
+| [[sources/c0de517e-whole-pbs-picture]] | Pesce：PBR 管线的完整物理假设清单（2019） |
+| [[sources/c0de517e-misunderstanding-multiscattering]] | Pesce：GGX 多次散射归一化的最简近似（2019） |
+| [[sources/c0de517e-coder-color-palettes]] | Pesce：面向程序员的感知均匀 shader 调色板函数（2017） |
+| [[sources/chipsandcheese-cortex-a510]] | Chester Lam：Cortex-A510 小核合并核微架构分析 |
+| [[sources/chipsandcheese-cortex-x2]] | Chester Lam：Cortex-X2 旗舰核微架构与 Zen 4 对比 |
+| [[sources/chipsandcheese-m2pro-igpu]] | Chester Lam：M2 Pro iGPU 缓存与带宽深度测评 |
+| [[sources/chipsandcheese-cortex-a72]] | Chester Lam：Cortex-A72 微架构，Graviton 一代集群分析 |
+| [[sources/chipsandcheese-kepler-architecture]] | Chester Lam：Kepler 架构深度解析，静态调度与 GCN 对比 |
+| [[sources/chipsandcheese-sw26010-pro]] | Chester Lam：SW26010-Pro 超算处理器深度解析 |
+| [[sources/chipsandcheese-gcn-modernization]] | Chester Lam：GCN 架构历史与设计哲学 |
+| [[sources/chipsandcheese-cdna3]] | Chester Lam：AMD CDNA 3 计算架构全析 |
+| [[sources/chipsandcheese-meteor-lake-ces]] | Chester Lam：Meteor Lake CES 三核缓存微基准 |
+| [[sources/chipsandcheese-rdna4-llvm]] | Chester Lam：RDNA 4 LLVM ISA 预览 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

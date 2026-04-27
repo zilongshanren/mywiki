@@ -15,3 +15,4 @@ Fdez-Agüera 2019（JCGT）给出一个无需额外 LUT 的实时补偿：将总
 ## Sources
 
 - [[sources/bruop-ibl-multiple-scattering]]
+- [[sources/c0de517e-misunderstanding-multiscattering]] —— Pesce 2019：用 split-sum LUT 直接归一化的替代方案

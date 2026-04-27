@@ -54,3 +54,5 @@ A710 在技术上更接近"不出错的迭代"而非革命性设计。Samsung �
 ## Sources
 
 - [[sources/chipsandcheese-cortex-a710]]
+- [[sources/chipsandcheese-cortex-a510]] — A510 合并核与 A710 同代对比
+- [[sources/chipsandcheese-cortex-x2]] — X2 作为 A710 放大版的详细分析

@@ -49,3 +49,5 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 - [[sources/selfshadow-multi-faceted-part-2]]
 - [[sources/selfshadow-pbs-siggraph-2014]]
 - [[sources/graphics-guy-anisotropic-microfacet-sampling]]
+- [[sources/c0de517e-misunderstanding-multiscattering]] —— Pesce 2019：split-sum LUT 归一化的最简多次散射补偿
+- [[sources/c0de517e-whole-pbs-picture]] —— Pesce 2019：从整体管线角度审视单次散射假设的代价

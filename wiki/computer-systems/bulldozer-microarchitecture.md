@@ -58,6 +58,7 @@ Bulldozer 为 AMD 带来了 PRF 方案、先进分支预测器、FMA 等一批�
 - [[netburst-microarchitecture]] — 同样是"必要的失败"，为后来成功奠基
 - [[non-scheduling-queue]] — AMD 的调度器设计历史
 - [[amd-k8-microarchitecture]] — Bulldozer 的前辈架构
+- [[computer-systems/cortex-a510-microarchitecture]] — 同样采用共享资源（FPU、L2 TLB），但目标是低功耗而非高性能
 
 ## Sources
 

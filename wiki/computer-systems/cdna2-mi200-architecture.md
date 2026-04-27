@@ -59,3 +59,4 @@ MI250X 成功进入 Frontier（世界第一超算）和 LUMI（世界第三超�
 ## Sources
 
 - [[sources/chipsandcheese-mi200-architecture]]
+- [[sources/chipsandcheese-cdna3]] — CDNA 3 对 CDNA 2 的继承与超越

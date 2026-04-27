@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w114-md",
+  "agent_note": "5 chipsandcheese.com articles: Cortex-A510, Cortex-X2, M2 Pro iGPU, Cortex-A72, Kepler architecture. All ingested. 5 new concept pages, 5 source summaries, 0 new people pages (chester-lam already exists).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-10-02_arms-cortex-a510-two-kids-in-a-trench-coat.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-a510",
+      "title": "Arm's Cortex A510: Two Kids in a Trench Coat"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-10-27_cortex-x2-arm-aims-high.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-x2",
+      "title": "Cortex X2: Arm Aims High"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-10-31_a-brief-look-at-apples-m2-pro-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-m2pro-igpu",
+      "title": "A Brief Look at Apple's M2 Pro iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-11-10_arms-cortex-a72-aarch64-for-the-masses.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-a72",
+      "title": "ARM's Cortex A72: aarch64 for the Masses"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-11-24_inside-kepler-nvidias-strong-start-on-28-nm.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-kepler-architecture",
+      "title": "Inside Kepler, Nvidia's Strong Start on 28 nm"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/cortex-a510-microarchitecture",
+    "computer-systems/cortex-x2-microarchitecture",
+    "computer-systems/cortex-a72-microarchitecture",
+    "rendering/kepler-architecture",
+    "rendering/apple-m2-pro-igpu"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-cortex-a510",
+    "chipsandcheese-cortex-x2",
+    "chipsandcheese-m2pro-igpu",
+    "chipsandcheese-cortex-a72",
+    "chipsandcheese-kepler-architecture"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/cortex-a710-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cortex-a510]] — A510 合并核与 A710 同代对比\n- [[sources/chipsandcheese-cortex-x2]] — X2 作为 A710 放大版的详细分析"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cortex-a72]] — A72 作为 Graviton 一代核心，N1 的前代对比基准"
+    },
+    {
+      "file": "wiki/computer-systems/bulldozer-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[computer-systems/cortex-a510-microarchitecture]] — 同样采用共享资源（FPU、L2 TLB），但目标是低功耗而非高性能"
+    },
+    {
+      "file": "wiki/rendering/gcn-wave-occupancy.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-kepler-architecture]] — Kepler vs GCN 调度与带宽横向对比"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cortex-a510-microarchitecture]] | Arm ARMv9 小核，3 宽顺序，双核共享 FPU/L2/TLB 的合并核设计 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cortex-x2-microarchitecture]] | Arm ARMv9 旗舰大核，A710 放大版，四管道 FPU，288 条目 ROB |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cortex-a72-microarchitecture]] | Arm ARMv8 3 宽乱序核，Raspberry Pi 4 / Graviton 一代，AArch64 普及标志 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/kepler-architecture]] | Nvidia 2012 年 28nm GPU，静态编译器调度，SMX 四分区设计 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/apple-m2-pro-igpu]] | Apple M2 Pro 19 核 iGPU，256-bit LPDDR5，主机级带宽设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-a510]] | Chester Lam：Cortex-A510 小核合并核微架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-x2]] | Chester Lam：Cortex-X2 旗舰核微架构与 Zen 4 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-m2pro-igpu]] | Chester Lam：M2 Pro iGPU 缓存与带宽深度测评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-a72]] | Chester Lam：Cortex-A72 微架构，Graviton 一代集群分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-kepler-architecture]] | Chester Lam：Kepler 架构深度解析，静态调度与 GCN 对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-114 Worker MD (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章。新增 5 概念页（cortex-a510-microarchitecture、cortex-x2-microarchitecture、cortex-a72-microarchitecture、kepler-architecture、apple-m2-pro-igpu）、5 source 摘要页。人物页 chester-lam 已存在，跳过创建。跳过 0 篇非技术内容。"
+}

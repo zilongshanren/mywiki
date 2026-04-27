@@ -57,3 +57,4 @@ AMD 当时的 Dragon Range（55W+）复用了桌面 chiplet 架构，Phoenix Poi
 ## Sources
 
 - [[sources/chipsandcheese-meteor-lake-chiplets]]
+- [[sources/chipsandcheese-meteor-lake-ces]] — CES 微基准：P/E/LP 三核缓存延迟与带宽数据

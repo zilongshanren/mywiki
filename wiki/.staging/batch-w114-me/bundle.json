@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w114-me",
+  "agent_note": "5 chipsandcheese.com articles from 2023-11 to 2024-01. 原始任务列出的 3 个文件不存在（L40S、RX 7900 XTX、Oryon、Zen 5），改用实际存在的 5 篇技术性最强文章：SW26010-Pro、CDNA 3、GCN 历史、RDNA 4 LLVM 分析、Meteor Lake CES 预览。chester-lam 与 george-cozma 人物页均已存在，未重建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-11-20_chinas-new-ish-sw26010-pro-supercomputer-at-sc23.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sw26010-pro",
+      "title": "China's New(ish) SW26010-Pro Supercomputer at SC23"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-12-05_gcn-amds-gpu-architecture-modernization.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gcn-modernization",
+      "title": "GCN, AMD's GPU Architecture Modernization"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-12-17_amds-cdna-3-compute-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cdna3",
+      "title": "AMD's CDNA 3 Compute Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-01-11_previewing-meteor-lake-at-ces.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-meteor-lake-ces",
+      "title": "Previewing Meteor Lake at CES"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-01-29_examining-amds-rdna-4-changes-in-llvm.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna4-llvm",
+      "title": "Examining AMD's RDNA 4 Changes in LLVM"
+    }
+  ],
+  "concepts_created": [
+    "sw26010-pro-architecture",
+    "cdna3-mi300x-architecture",
+    "gcn-architecture",
+    "rdna4-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-sw26010-pro",
+    "chipsandcheese-gcn-modernization",
+    "chipsandcheese-cdna3",
+    "chipsandcheese-meteor-lake-ces",
+    "chipsandcheese-rdna4-llvm"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/cdna2-mi200-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cdna3]] — CDNA 3 对 CDNA 2 的继承与超越"
+    },
+    {
+      "file": "wiki/computer-systems/meteor-lake-chiplet-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-ces]] — CES 微基准：P/E/LP 三核缓存延迟与带宽数据"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[sw26010-pro-architecture]] | 中国神威 SW26010-Pro 超算 CPU——极端算力密度但内存带宽严重不足 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cdna3-mi300x-architecture]] | AMD CDNA 3 / MI300X：8 XCD chiplet + Infinity Cache + 跨 die 一致性 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[gcn-architecture]] | AMD GCN：从 VLIW 到线程级并行调度的 GPU 架构现代化 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[rdna4-architecture]] | AMD RDNA 4（GFX12）：ISA 预览，细粒度等待、稀疏矩阵、数据侧预取 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sw26010-pro]] | Chester Lam：SW26010-Pro 超算处理器深度解析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gcn-modernization]] | Chester Lam：GCN 架构历史与设计哲学 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cdna3]] | Chester Lam：AMD CDNA 3 计算架构全析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-meteor-lake-ces]] | Chester Lam：Meteor Lake CES 三核缓存微基准 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna4-llvm]] | Chester Lam：RDNA 4 LLVM ISA 预览 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-114 Worker ME (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章（2023-11 ~ 2024-01）。新增 4 个概念页（sw26010-pro-architecture, cdna3-mi300x-architecture, gcn-architecture, rdna4-architecture）、5 个 source 摘要页，0 个人物页（chester-lam 与 george-cozma 已存在）。对 cdna2-mi200-architecture 和 meteor-lake-chiplet-architecture 各追加一条 source 链接 patch。注意：原始任务列出的 5 个文件中有 3 个不存在（L40S、RX 7900 XTX、Oryon CPU、Zen 5 paper launch），改用仓库中实际存在的同时期 5 篇最强技术文章。"
+}

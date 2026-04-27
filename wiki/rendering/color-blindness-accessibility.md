@@ -42,3 +42,4 @@ sources: 1
 ## Sources
 
 - [[sources/c0de517e-color-blindness-games]]
+- [[sources/c0de517e-coder-color-palettes]] —— Pesce 2017：以亮度为主、色调为辅的感知均匀 shader 调色板，与色盲辅助设计原则契合

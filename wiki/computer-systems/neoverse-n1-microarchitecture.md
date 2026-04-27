@@ -52,3 +52,4 @@ N1 的真实性能天花板往往是软件生态。libaom-av1 在 aarch64 上没
 - [[sources/chipsandcheese-graviton3-first-impressions]]
 - [[sources/chipsandcheese-phytium-d2000]]
 - [[sources/chipsandcheese-neoverse-n2]] — N2 实测，与 N1 横向对比
+- [[sources/chipsandcheese-cortex-a72]] — A72 作为 Graviton 一代核心，N1 的前代对比基准

@@ -81,3 +81,4 @@ Wronski 总结的经验：
 ## Sources
 
 - [[sources/bartwronski-gcn-latency-hiding]]
+- [[sources/chipsandcheese-kepler-architecture]] — Kepler vs GCN 调度与带宽横向对比

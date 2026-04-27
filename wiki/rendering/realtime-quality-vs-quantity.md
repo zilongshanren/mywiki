@@ -60,3 +60,4 @@ Pesce 提出：如果从基础的前向渲染 + 烘焙出发，只做好这几�
 ## Sources
 
 - [[sources/c0de517e-nextgen-quality-quantity]]
+- [[sources/c0de517e-rendering-doesnt-matter]] —— Pesce 2019：渲染 ROI 的三级优先级桶与资产生产瓶颈论

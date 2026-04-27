@@ -116,3 +116,8 @@ sources: 9
 - [[sources/c0de517e-over-engineering-evil]]
 - [[sources/c0de517e-hdr-displays-aces]]
 - [[sources/c0de517e-shadow-mystery]]
+- [[sources/c0de517e-rendering-doesnt-matter]]
+- [[sources/c0de517e-unbiased-rt]]
+- [[sources/c0de517e-whole-pbs-picture]]
+- [[sources/c0de517e-misunderstanding-multiscattering]]
+- [[sources/c0de517e-coder-color-palettes]]
