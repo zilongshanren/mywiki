@@ -41,3 +41,4 @@ PIMPL 的"能 new、能栈分配、能继承"这几个所谓优势，在 Bitsqui
 ## Sources
 
 - [[sources/bitsquid-pimpl-vs-pure-virtual]]
+- [[sources/c0de517e-cpp-style-pain]] —— Pesce 2012：C-style 不透明指针在实战中天然实现 PIMPL 隔离

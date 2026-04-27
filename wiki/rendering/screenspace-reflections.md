@@ -56,3 +56,4 @@ Wronski 在 2014 年就预见到 SSR 的演进必然走向「屏幕空间之外�
 ## Sources
 
 - [[sources/bartwronski-future-of-ssr]]
+- [[sources/supnik-hiz-ssr-tracing]] — Hi-Z trace 用参数 t 而非 Z 坐标，解决 reverse-Z 精度与方向泛化问题

@@ -52,3 +52,4 @@ RTX 4090 相比 3090 的理论 FP32 吞吐量翻倍，但在 Assassin's Creed Va
 ## Sources
 
 - [[sources/chipsandcheese-rtx4090-ada-lovelace]]
+- [[sources/chipsandcheese-arc-a770]]

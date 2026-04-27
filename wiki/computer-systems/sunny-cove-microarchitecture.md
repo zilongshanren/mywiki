@@ -42,3 +42,5 @@ Sunny Cove 几乎在所有维度上结构更大，但"聪明程度"相当。Zen 
 
 - [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]
 - [[sources/chipsandcheese-graviton3-first-impressions]]
+- [[sources/chipsandcheese-skylake-architecture]]
+- [[sources/chipsandcheese-cannon-lake]]

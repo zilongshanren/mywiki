@@ -1,0 +1,133 @@
+{
+  "batch_id": "batch-w107-lj",
+  "agent_note": "5篇 chipsandcheese.com 文章：Skylake 六年服役、Arc A770 微测试、Zen 4 Part1/Part2、Cannon Lake。新建 4 个概念页 + 5 个 source 摘要。chester-lam 已存在，仅需 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-10-14_skylake-intels-longest-serving-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-skylake-architecture",
+      "title": "Skylake: Intel's Longest Serving Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-10-20_microbenchmarking-intels-arc-a770.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-arc-a770",
+      "title": "Microbenchmarking Intel's Arc A770"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-11-05_amds-zen-4-part-1-frontend-and-execution-engine.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen4-part1",
+      "title": "AMD's Zen 4 Part 1: Frontend and Execution Engine"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-11-08_amds-zen-4-part-2-memory-subsystem-and-conclusion.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen4-part2",
+      "title": "AMD's Zen 4, Part 2: Memory Subsystem and Conclusion"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-11-15_cannon-lake-intels-forgotten-generation.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cannon-lake",
+      "title": "Cannon Lake: Intel's Forgotten Generation"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/skylake-microarchitecture",
+    "computer-systems/zen4-microarchitecture",
+    "computer-systems/cannon-lake-microarchitecture",
+    "rendering/xe-hpg-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-skylake-architecture",
+    "chipsandcheese-arc-a770",
+    "chipsandcheese-zen4-part1",
+    "chipsandcheese-zen4-part2",
+    "chipsandcheese-cannon-lake"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skylake-architecture]]\n- [[sources/chipsandcheese-arc-a770]]\n- [[sources/chipsandcheese-zen4-part1]]\n- [[sources/chipsandcheese-zen4-part2]]\n- [[sources/chipsandcheese-cannon-lake]]"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skylake-architecture]]\n- [[sources/chipsandcheese-zen4-part1]]\n- [[sources/chipsandcheese-zen4-part2]]"
+    },
+    {
+      "file": "wiki/computer-systems/sunny-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skylake-architecture]]\n- [[sources/chipsandcheese-cannon-lake]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen2-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skylake-architecture]]"
+    },
+    {
+      "file": "wiki/computer-systems/intel-hybrid-alder-lake.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen4-part2]]"
+    },
+    {
+      "file": "wiki/computer-systems/raptor-lake-l2-cache.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen4-part2]]"
+    },
+    {
+      "file": "wiki/rendering/ada-lovelace-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-arc-a770]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/skylake-microarchitecture]] | Intel Skylake 微架构：六年最长服役，分析设计权衡与 Zen 竞争历史 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/zen4-microarchitecture]] | AMD Zen 4 微架构：Ryzen 7000，前端/AVX-512/内存子系统全解析 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cannon-lake-microarchitecture]] | Intel Cannon Lake（Palm Cove）：10nm 首代失败，iGPU 禁用的遗憾产品 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/xe-hpg-architecture]] | Intel Xe-HPG 架构（Arc A770）：高占用度依赖、大 L2 策略、EU 遗产 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-skylake-architecture]] | Chester Lam：Skylake 六年服役架构深度解析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-arc-a770]] | Chester Lam 等：Arc A770 微测试——内存层次、带宽、计算延迟 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen4-part1]] | Chester Lam：Zen 4 Part1——前端与执行引擎（含 AVX-512） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen4-part2]] | Chester Lam：Zen 4 Part2——内存子系统与总结 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cannon-lake]] | Chester Lam：Cannon Lake——Intel 被遗忘的 10nm 首代产品 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-107 Worker LJ (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章（Skylake、Arc A770、Zen 4 Part1/2、Cannon Lake）。新增 4 概念页（skylake-microarchitecture、zen4-microarchitecture、cannon-lake-microarchitecture、xe-hpg-architecture）、5 source 摘要页。chester-lam 人物页已存在，patch 添加新 source 链接。跳过 0 篇。"
+}

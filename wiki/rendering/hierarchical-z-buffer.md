@@ -68,3 +68,4 @@ GPU 硬件里的 **Hi-Z** 是固定功能路径上的加速结构，外部着色
 ## Sources
 
 - [[sources/selfshadow-practical-visibility]]
+- [[sources/supnik-hiz-ssr-tracing]] — 参数 t 重构：精度、方向泛化与遮挡穿越

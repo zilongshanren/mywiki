@@ -72,3 +72,4 @@ Clean Code 主张「函数不超过 N 行」「类要小」。Ousterhout 反驳�
 - [[sources/aposd-day04]]
 - [[sources/aposd-day05]]
 - [[sources/aras-syntonic-dentiforms-redux]]
+- [[sources/c0de517e-cpp-style-pain]] —— Pesce 2012：C-style 不透明指针模块「免费」解决了 singleton / 依赖注入 / PIMPL，证明许多 C++ 包裹是无谓的复杂度

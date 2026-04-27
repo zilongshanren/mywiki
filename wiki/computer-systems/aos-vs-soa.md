@@ -71,3 +71,4 @@ healths:    [h|h|h|...]
 
 - [[sources/caqa-day02]]
 - [[sources/csapp-day01]]
+- [[sources/supnik-soa-tolerable]] — C++ SoA 惯用法：结构体同时作数组与迭代器，UTL_block_alloc 合并分配

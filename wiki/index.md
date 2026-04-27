@@ -179,6 +179,7 @@ SICP 及 Lambda 演算传统的核心概念。
 | [[javascript-hot-reload-dom-script]] | Niklas：动态 script 节点 + polling 做出的 30 行 JS 热重载 |
 | [[cpp-ranges-vs-iterators]] | Supnik 2011 独立发明 range：自包含终止的 sequence 抽象 vs STL iterator 配对 |
 | [[throwing-destructor-noexcept-terminate]] | C++11 析构隐式 noexcept 引出的 std::terminate |
+| [[cpp-coroutine-promise-type]] | C++20 promise_type 控制块、协程工厂语义与 co_await 即 .then |
 ## 计算机体系结构与系统（wiki/computer-systems/）
 CAQA + CSAPP 的底层视角。
 
@@ -349,6 +350,9 @@ CAQA + CSAPP 的底层视角。
 | [[cpu-clock-frequency-ramp]] | CPU 从空闲到最高 boost 频率的爬升速度，Speed Shift 与各架构实测对比 |
 | [[cdna2-mi200-architecture]] | AMD CDNA2 / MI200 HPC 加速器，全速 FP64，双 GCD chiplet，CPU-GPU 统一内存 |
 | [[phytium-ftc663-microarchitecture]] | 飞腾 FTC663 微架构，强烈疑似基于 Cortex-A72，分支预测倒退 |
+| [[skylake-microarchitecture]] | Intel Skylake 微架构：六年最长服役，分析设计权衡与 Zen 竞争历史 |
+| [[zen4-microarchitecture]] | AMD Zen 4 微架构：Ryzen 7000，前端/AVX-512/内存子系统全解析 |
+| [[cannon-lake-microarchitecture]] | Intel Cannon Lake（Palm Cove）：10nm 首代失败，iGPU 禁用的遗憾产品 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1016,6 +1020,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[normalmap-mipmap-aliasing]] | 法线贴图 mipmap 走样根因及遮蔽/gloss 贴图替代方案 |
 | [[dx9-msaa-depth-variance]] | DX9 MSAA 深度 resolve 精度问题的方差补偿 hack |
 | [[ada-lovelace-architecture]] | Nvidia Ada Lovelace（RTX 4000），BVH 胖结构、SER、DLSS 3 帧生成 |
+| [[xe-hpg-architecture]] | Intel Xe-HPG 架构（Arc A770）：高占用度依赖、大 L2 策略、EU 遗产 |
+| [[realtime-quality-vs-quantity]] | Pesce 2012：数量 vs 质量的结构性取舍——为何「加功能」总赢过「做精功能」 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2311,6 +2317,21 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-mi200-architecture]] | Lam & Ahmed：AMD Instinct MI200 CDNA2 架构 |
 | [[sources/chipsandcheese-rtx4090-ada-lovelace]] | Lam：Nvidia RTX 4090 Ada Lovelace 发布分析 |
 | [[sources/chipsandcheese-phytium-d2000]] | Lam：飞腾 D2000 微架构深度评测 |
+| [[sources/supnik-hiz-ssr-tracing]] | Supnik：Hi-Z SSR 参数 t 重构——精度、泛化与遮挡穿越 |
+| [[sources/supnik-soa-tolerable]] | Supnik：C++ SoA 惯用法与 UTL_block_alloc 合并分配 |
+| [[sources/supnik-coroutines-1-names]] | Supnik 协程系列①：promise_type 是控制块不是承诺 |
+| [[sources/supnik-coroutines-2-factories]] | Supnik 协程系列②：协程调用语义是工厂，非函数 |
+| [[sources/supnik-coroutines-3-coawait]] | Supnik 协程系列③：co_await 即 continuation 的 .then |
+| [[sources/c0de517e-nextgen-quality-quantity]] | Pesce：下一代画质的质量 vs 数量哲学 |
+| [[sources/c0de517e-cpp-style-pain]] | Pesce：C-style API 与 C++ OOP 的适用边界 |
+| [[sources/c0de517e-sdf-antialiasing]] | Pesce：4-tap SDF 覆盖率计算——marching squares × 凸多边形面积 |
+| [[sources/c0de517e-deferred-optimizer-notes]] | Pesce：Space Marine 延迟渲染性能翻倍 post-mortem |
+| [[sources/c0de517e-gpu-compute-how]] | Pesce：GPU Compute 入门 slide deck（2012） |
+| [[sources/chipsandcheese-skylake-architecture]] | Chester Lam：Skylake 六年服役架构深度解析 |
+| [[sources/chipsandcheese-arc-a770]] | Chester Lam 等：Arc A770 微测试——内存层次、带宽、计算延迟 |
+| [[sources/chipsandcheese-zen4-part1]] | Chester Lam：Zen 4 Part1——前端与执行引擎（含 AVX-512） |
+| [[sources/chipsandcheese-zen4-part2]] | Chester Lam：Zen 4 Part2——内存子系统与总结 |
+| [[sources/chipsandcheese-cannon-lake]] | Chester Lam：Cannon Lake——Intel 被遗忘的 10nm 首代产品 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

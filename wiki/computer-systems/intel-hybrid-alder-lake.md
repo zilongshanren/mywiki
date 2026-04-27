@@ -47,3 +47,4 @@ Chester 明确指出：Raptor Lake（Alder Lake 的直接后继）泄漏路线�
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-alder-lake-caching-power]]
 - [[sources/chipsandcheese-meteor-lake-chiplets]]
+- [[sources/chipsandcheese-zen4-part2]]

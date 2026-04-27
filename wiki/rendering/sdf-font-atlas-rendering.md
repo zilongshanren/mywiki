@@ -50,3 +50,4 @@ Bitsquid 这篇开源工具在后续很长一段时间里是小引擎 / 独立�
 ## Sources
 
 - [[sources/bitsquid-distance-field-angelcode-fonts]]
+- [[sources/c0de517e-sdf-antialiasing]] —— Pesce 2012：4-tap marching squares 凸多边形面积 = SDF coverage 精确算法

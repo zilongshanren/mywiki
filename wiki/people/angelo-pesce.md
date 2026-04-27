@@ -80,3 +80,8 @@ sources: 5
 - [[sources/c0de517e-fight-night-champion-gdc]]
 - [[sources/c0de517e-dont-lie]]
 - [[sources/c0de517e-open-questions]]
+- [[sources/c0de517e-nextgen-quality-quantity]]
+- [[sources/c0de517e-cpp-style-pain]]
+- [[sources/c0de517e-sdf-antialiasing]]
+- [[sources/c0de517e-deferred-optimizer-notes]]
+- [[sources/c0de517e-gpu-compute-how]]

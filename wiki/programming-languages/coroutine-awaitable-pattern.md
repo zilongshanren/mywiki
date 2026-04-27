@@ -57,3 +57,4 @@ Supnik 在 X-Plane 里还写过**「fire and forget」** 风格的协程：顶�
 ## Sources
 
 - [[sources/supnik-coroutine-as-awaitable]]
+- [[sources/supnik-coroutines-3-coawait]] — co_await 即 continuation 的 .then

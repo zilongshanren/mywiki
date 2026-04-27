@@ -39,3 +39,4 @@ E-Core 的 L2 角色随 Intel Atom 演化而变化：在 Goldmont Plus 时代，
 ## Sources
 
 - [[sources/chipsandcheese-raptor-lake-l2]]
+- [[sources/chipsandcheese-zen4-part2]]

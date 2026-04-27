@@ -46,3 +46,6 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[sources/chipsandcheese-graviton3-first-impressions]]
 - [[sources/chipsandcheese-alder-lake-caching-power]]
 - [[sources/chipsandcheese-raptor-lake-l2]]
+- [[sources/chipsandcheese-skylake-architecture]]
+- [[sources/chipsandcheese-zen4-part1]]
+- [[sources/chipsandcheese-zen4-part2]]

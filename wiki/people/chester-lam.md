@@ -62,3 +62,8 @@ sources: 5
 - [[sources/chipsandcheese-gpu-video-encoders]]
 - [[sources/chipsandcheese-centaur-cha-dual-socket]]
 - [[sources/chipsandcheese-centaur-cha-die]]
+- [[sources/chipsandcheese-skylake-architecture]]
+- [[sources/chipsandcheese-arc-a770]]
+- [[sources/chipsandcheese-zen4-part1]]
+- [[sources/chipsandcheese-zen4-part2]]
+- [[sources/chipsandcheese-cannon-lake]]

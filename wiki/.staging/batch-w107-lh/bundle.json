@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w107-lh",
+  "agent_note": "5篇 Ben Supnik 文章：HiZ SSR 参数 t 技巧、SoA C++ 惯用法、协程三连（promise_type / 工厂语义 / co_await=.then）。协程三篇合并为一个新概念页 cpp-coroutine-promise-type，避免与已有 coroutine-awaitable-pattern 和 stackless-vs-stackful-coroutines 重复。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2020-10-21_a-tip-for-hiz-ssr-parametric-t-tracing.md",
+      "status": "ingested",
+      "source_slug": "supnik-hiz-ssr-tracing",
+      "title": "A Tip for HiZ SSR - Parametric 't' Tracing"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-02-27_making-soa-tollerable.md",
+      "status": "ingested",
+      "source_slug": "supnik-soa-tolerable",
+      "title": "Making SoA Tolerable"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-06-17_c-coroutines-getting-past-the-names.md",
+      "status": "ingested",
+      "source_slug": "supnik-coroutines-1-names",
+      "title": "C++ Coroutines - Getting Past the Names"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-06-18_coroutines-look-like-factories.md",
+      "status": "ingested",
+      "source_slug": "supnik-coroutines-2-factories",
+      "title": "Coroutines Look Like Factories"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2021-06-19_co-await-is-the-then-of-coroutines.md",
+      "status": "ingested",
+      "source_slug": "supnik-coroutines-3-coawait",
+      "title": "co_await is the .then of Coroutines"
+    }
+  ],
+  "concepts_created": ["cpp-coroutine-promise-type"],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-hiz-ssr-tracing",
+    "supnik-soa-tolerable",
+    "supnik-coroutines-1-names",
+    "supnik-coroutines-2-factories",
+    "supnik-coroutines-3-coawait"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/hierarchical-z-buffer.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-hiz-ssr-tracing]] — 参数 t 重构：精度、方向泛化与遮挡穿越"
+    },
+    {
+      "file": "wiki/rendering/screenspace-reflections.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-hiz-ssr-tracing]] — Hi-Z trace 用参数 t 而非 Z 坐标，解决 reverse-Z 精度与方向泛化问题"
+    },
+    {
+      "file": "wiki/computer-systems/aos-vs-soa.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-soa-tolerable]] — C++ SoA 惯用法：结构体同时作数组与迭代器，UTL_block_alloc 合并分配"
+    },
+    {
+      "file": "wiki/programming-languages/coroutine-awaitable-pattern.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-coroutines-3-coawait]] — co_await 即 .then：任何有完成回调的接口均可包装为 awaitable"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[cpp-coroutine-promise-type]] | C++20 promise_type 控制块、协程工厂语义与 co_await 即 .then |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-hiz-ssr-tracing]] | Supnik：Hi-Z SSR 参数 t 重构——精度、泛化与遮挡穿越 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-soa-tolerable]] | Supnik：C++ SoA 惯用法与 UTL_block_alloc 合并分配 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-coroutines-1-names]] | Supnik 协程系列①：promise_type 是控制块不是承诺 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-coroutines-2-factories]] | Supnik 协程系列②：协程调用语义是工厂，非函数 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-coroutines-3-coawait]] | Supnik 协程系列③：co_await 即 continuation 的 .then |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-107 Worker LH (hacksoflife.blogspot.com ×5)\n\n处理 5 篇 Ben Supnik 技术文章。新增 1 概念页（cpp-coroutine-promise-type，合并协程三连前三篇内容）、5 source 摘要（supnik-hiz-ssr-tracing / supnik-soa-tolerable / supnik-coroutines-1-names / supnik-coroutines-2-factories / supnik-coroutines-3-coawait）。无跳过。补充了 hierarchical-z-buffer、screenspace-reflections、aos-vs-soa、coroutine-awaitable-pattern 四个现有页的 Sources 节。"
+}

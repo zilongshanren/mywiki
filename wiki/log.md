@@ -1342,3 +1342,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-106 Worker LG (chipsandcheese.com ×5, 2022-09)
 
 处理 5 篇 chipsandcheese.com 文章（2022-09-10 至 2022-09-28）。新增 5 概念页（meteor-lake-chiplet-architecture、cpu-clock-frequency-ramp、cdna2-mi200-architecture、ada-lovelace-architecture、phytium-ftc663-microarchitecture）、1 人物页（mohamed-ahmed-chipsandcheese）、5 source 摘要。0 篇跳过。4 个 patch 到现有概念页。
+
+## [2026-04-27] ingest | Wave-107 Worker LH (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 技术文章。新增 1 概念页（cpp-coroutine-promise-type，合并协程三连前三篇内容）、5 source 摘要。无跳过。补充了 hierarchical-z-buffer、screenspace-reflections、aos-vs-soa、coroutine-awaitable-pattern 四个现有页的 Sources 节。
+
+## [2026-04-27] ingest | Wave-107 Worker LI (c0de517e.blogspot.com ×5)
+
+处理 5 篇 Angelo Pesce 2012 年文章。新增 1 概念页（realtime-quality-vs-quantity）、5 source 摘要。跳过 0 篇。发 patch 更新：deferred-rendering、sdf-font-atlas-rendering、classitis、pimpl-vs-pure-virtual、angelo-pesce。
+
+## [2026-04-27] ingest | Wave-107 Worker LJ (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 文章（Skylake、Arc A770、Zen 4 Part1/2、Cannon Lake）。新增 4 概念页（skylake-microarchitecture、zen4-microarchitecture、cannon-lake-microarchitecture、xe-hpg-architecture）、5 source 摘要页。chester-lam 人物页已存在，patch 添加新 source 链接。跳过 0 篇。
