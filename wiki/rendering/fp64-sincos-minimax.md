@@ -92,6 +92,7 @@ Outerra 的贡献是把这套方法论**按在 GPU 端具体落地**，而且把
 - [[sse-tricks]]
 - [[robin-green]]
 - [[asin-cg-approximation]] — 同是 Minimax 3 阶近似，来源是 1964 年 Abramowitz-Stegun 4.4.45，Nvidia Cg 2012 年打包
+- [[fp64-map-projections]] —— 同一作者把 fp64 缺失问题延伸到地图投影：atan2 minimax + 对数差值
 
 ## Sources
 

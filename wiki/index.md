@@ -1183,6 +1183,10 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |
 | [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |
 | [[rendering/maxwell-architecture]] | NVIDIA Maxwell：SM 精简 + 21 位控制码 + L2 加倍，28nm 最优解 |
+| [[rendering/multi-gpu-rendering]] | 多 GPU 渲染：AFR/SFR 分帧策略、G-Buffer 带宽瓶颈与 VB 作为后继方向 |
+| [[fp64-map-projections]] | GPU fp64 地图投影近似：atan2 minimax + 墨卡托对数差值代数变形 |
+| [[gerstner-wave-ocean-rendering]] | Gerstner 波叠加 + 岸线距离图海岸破碎浪渲染 |
+| [[terrain-vector-overlay-crater]] | 地形向量覆盖层动态弹坑：64 bit/坑，同步碰撞检测 |
 | [[compute-parallel-reduction]] | AMD GCN compute parallel reduction：TGSM bank 布局、wavefront barrier 消除、循环展开 |
 | [[gcn-compute-tgsm-patterns]] | GCN TGSM bank layout、wavefront barrier elision、loop unrolling GDC 2014 实测 |
 | [[deferred-lighting-vs-shading]] | Deferred Lighting（Light Prepass）三阶段结构 vs Deferred Shading 带宽权衡 |
@@ -2273,12 +2277,17 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-voronatorsharp]] | Boris：VoronatorSharp C# Voronoi/Delaunay 库 |
 | [[sources/green-steering-behaviors]] | Robin Green：Craig Reynolds 转向行为 SIGGRAPH 2000 讲义 |
 | [[sources/green-even-faster-math]] | Robin Green：GDC 2020 续篇，Sollya/FloPoCo/bipartite/数字振荡器 |
+| [[sources/green-even-faster-math-2021]] | Robin Green：GDC 2021 精简版，FPGA 导向的数字递推/位堆/CORDIC |
 | [[sources/outerra-procedural-grass]] | Outerra：两阶段 canopy + 几何着色器草叶生成 |
 | [[sources/outerra-sphere-terrain-culling]] | Outerra：球面 tile 仿射剪切空间视锥剔除 |
 | [[sources/outerra-depth-buffer-precision]] | Outerra：深度缓冲精度分析（2012） |
 | [[sources/outerra-log-depth-buffer]] | Outerra：对数深度缓冲优化与修正（2013） |
 | [[sources/outerra-texture-bind-perf]] | Outerra：OpenGL 纹理绑定性能测试 |
 | [[sources/outerra-async-job-scheduler]] | Outerra：异步 Job 调度器设计 |
+| [[sources/outerra-dp-map-projections]] | Outerra：GPU fp64 地图投影近似（atan2 minimax + 墨卡托） |
+| [[sources/outerra-crater-rendering]] | Outerra：地形向量覆盖层动态弹坑方案 |
+| [[sources/outerra-lighting-fix]] | Outerra：Jacobian 光照修正 + FP render target 精度 bug |
+| [[sources/outerra-ocean-rendering]] | Outerra：Gerstner 波 + 海岸破碎浪渲染 |
 | [[sources/humus-hardware-tessellation]] | Engel：硬件曲面细分三大优势及 DX11 非递归限制 |
 | [[sources/humus-edge-detection-trick]] | Engel：延迟管线 MSAA 边缘检测 trick |
 | [[sources/humus-screen-space-rules]] | Engel：屏幕空间滤波核设计规则（第一条） |
@@ -2297,6 +2306,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/humus-ellipsoid-light-shadow]] | Engel：cube shadow map + ESM + 帧间缓存 |
 | [[sources/humus-pbr-observational-lighting]] | Engel：光源数量优先于 PBR 的反直觉论断 |
 | [[sources/humus-skeleton-programming]] | Engel：VS 2013 演示骨架编程工具 |
+| [[sources/humus-multi-gpu-engine]] | Engel：4K G-Buffer 带宽瓶颈与 multi-GPU 引擎方案 |
+| [[sources/humus-compute-reloaded]] | Engel：GCN 并行归约 2015 再版，HD 6770/290X 实测 |
+| [[sources/humus-points-vertices-vectors]] | Engel：3D 数学基础（点/顶点/向量/射线） |
 | [[sources/jonolick-cross-product-tricks]] | Jon Olick：射影叉积对偶运算技巧 |
 | [[sources/jonolick-index-buffer-compression]] | Jon Olick：索引缓冲无损压缩算法 |
 | [[sources/boris-lucky-fluke-postmortem]] | Boris：Lucky Fluke 游戏 jam 开发后记 |

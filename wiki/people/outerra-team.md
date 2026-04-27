@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, planet-engine, 程序化地形]
 date: 2026-04-19
-sources: 11
+sources: 15
 ---
 
 # Outerra Team（Brano Kemen / Ladislav "Angrypig" Kralik）
@@ -22,6 +22,9 @@ Outerra（Anteworld）是斯洛伐克出品的**全球尺度行星引擎**，由
 - [[sphere-mapped-terrain-culling]] —— 球面 tile 仿射剪切空间视锥剔除
 - [[opengl-texture-bind-batching]] —— NVIDIA 纹理绑定性能陷阱与 bind group 解法
 - [[fiber-based-job-scheduler]] —— Outerra jobmaster 异步 I/O 调度器
+- [[fp64-map-projections]] —— GPU fp64 地图投影近似（等经纬/墨卡托），atan2 minimax + 对数差值技巧
+- [[gerstner-wave-ocean-rendering]] —— Gerstner 波叠加 + 岸线距离图海岸破碎浪
+- [[terrain-vector-overlay-crater]] —— 地形向量覆盖层动态弹坑
 
 ## Sources
 
@@ -36,3 +39,7 @@ Outerra（Anteworld）是斯洛伐克出品的**全球尺度行星引擎**，由
 - [[sources/outerra-log-depth-buffer]]
 - [[sources/outerra-texture-bind-perf]]
 - [[sources/outerra-async-job-scheduler]]
+- [[sources/outerra-dp-map-projections]]
+- [[sources/outerra-crater-rendering]]
+- [[sources/outerra-lighting-fix]]
+- [[sources/outerra-ocean-rendering]]

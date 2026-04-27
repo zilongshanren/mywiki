@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w136-op",
+  "agent_note": "5 篇 Wolfgang Engel (diaryofagraphicsprogrammer.blogspot.com) 文章。TressFX SIGGRAPH 2013 仅为链接聚合无实质内容跳过；VB 2018 文章与已有 source 页 wolfgang-engel-triangle-visibility-buffer 完全重复跳过（patch VB 概念页补充关联）；其余 3 篇新增 source 摘要页，新增 multi-gpu-rendering 概念页，patch compute-parallel-reduction 概念页、visibility-buffer 概念页和 wolfgang-engel 人物页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2013-07-29_tressfx-crystal-dynamics-and-amd-cover-tressfx-on-siggraph.md",
+      "status": "skipped_offtopic",
+      "reason": "纯链接聚合帖（3 条 SIGGRAPH 演讲链接 + 一行联系邮件），无技术内容，不构成可摘要的知识点"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2015-05-31_multi-gpu-game-engine.md",
+      "status": "ingested",
+      "source_slug": "humus-multi-gpu-engine",
+      "title": "Multi-GPU Game Engine"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2015-01-12_reloaded-compute-shader-optimizations-for-amd-gpus-parallel.md",
+      "status": "ingested",
+      "source_slug": "humus-compute-reloaded",
+      "title": "Reloaded: Compute Shader Optimizations for AMD GPUs: Parallel Reduction"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-05-29_points-vertices-and-vectors.md",
+      "status": "ingested",
+      "source_slug": "humus-points-vertices-vectors",
+      "title": "Points, Vertices and Vectors"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-03-30_triangle-visibility-buffer.md",
+      "status": "skipped_duplicate",
+      "reason": "与已有 source 页 wiki/sources/wolfgang-engel-triangle-visibility-buffer.md 覆盖同一篇文章（同 URL 同内容）。按指示仅 patch 现有 VB 概念页补充 humus-triangle-vbuffer-2018 的 slug 关联，不重复建 source 页。"
+    }
+  ],
+  "concepts_created": ["multi-gpu-rendering"],
+  "people_created": [],
+  "source_summaries_created": [
+    "humus-multi-gpu-engine",
+    "humus-compute-reloaded",
+    "humus-points-vertices-vectors"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/compute-parallel-reduction.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-compute-reloaded]] — 2015 年再版：补充 HD 6770/290X 实测、确认带宽为最终瓶颈"
+    },
+    {
+      "file": "wiki/rendering/compute-parallel-reduction.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/visibility-buffer.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-multi-gpu-engine]] — Engel 2015：G-Buffer 带宽在 4K 下成为瓶颈，指向 VB 作为后继"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-multi-gpu-engine]]\n- [[sources/humus-compute-reloaded]]\n- [[sources/humus-points-vertices-vectors]]"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "replace_line",
+      "match": "sources: 20",
+      "content": "sources: 23"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[multi-gpu-rendering]] | 多 GPU 延迟渲染管线切分方案，G-Buffer vs Visibility Buffer 带宽权衡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-multi-gpu-engine]] | Engel：多 GPU 游戏引擎管线拆分方案（2015）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-compute-reloaded]] | Engel：并行归约 compute 优化再版，带宽瓶颈确认（2015）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-points-vertices-vectors]] | Engel：3D 图形数学入门——点、向量、点积、叉积（2011）|"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-136 Worker OP (diaryofagraphicsprogrammer.blogspot.com ×5)\n\n处理 Wolfgang Engel 博客 5 篇文章。跳过 2 篇（TressFX SIGGRAPH 2013 为纯链接聚合；VB 2018 与已有 source 页完全重复）。新增 1 个概念页（multi-gpu-rendering）、3 个 source 摘要页（humus-multi-gpu-engine, humus-compute-reloaded, humus-points-vertices-vectors）。Patch compute-parallel-reduction 概念页补充再版数据；patch visibility-buffer 概念页补充 multi-gpu 指向；patch wolfgang-engel 人物页新增 3 条 source 链接。"
+}

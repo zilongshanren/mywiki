@@ -41,3 +41,4 @@ Visibility Buffer 在混合渲染管线里可以 **完美替代 primary ray**：
 - [[sources/c0de517e-nanite-thoughts]]
 - [[sources/humus-filtered-culled-vbuffer]] — GDCE 2016：多视图 cluster 剔除 + 过滤三角形填充多个 VB
 - [[sources/humus-v-buffer-deferred]] — Engel 2015：V-Buffer 延迟光照变体架构
+- [[sources/humus-multi-gpu-engine]] — Engel 2015：G-Buffer 带宽在 4K 下成为瓶颈，指向 VB 作为后继

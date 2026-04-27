@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch-w136-or",
+  "agent_note": "4 of 5 sources already processed (all karis-* slugs exist in wiki/sources/). Only source 4 (green-even-faster-math-2021) is new. Raw file is a thin 30-min GDC 2021 virtual presentation slide summary — FPGA-focused condensed version of the 2020 extended talk. Created one source summary page and two patches.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/graphicsrunner.blogspot.com/2011-01-30_virtualized-volume-textures.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/karis-virtualized-volume-textures.md already exists and is fully processed"
+    },
+    {
+      "path": "raw/articles/graphicsrunner.blogspot.com/2012-04-29_tiled-light-culling.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/karis-tiled-light-culling.md already exists and is fully processed"
+    },
+    {
+      "path": "raw/articles/graphicsrunner.blogspot.com/2012-05-14_sparse-shadows-through-tracing.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/karis-sparse-shadows-tracing.md already exists and is fully processed"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2021-09-06_even-faster-math-functions-2021-edition.md",
+      "status": "ingested",
+      "source_slug": "green-even-faster-math-2021",
+      "title": "Even Faster Math Functions, 2021 Edition"
+    },
+    {
+      "path": "raw/articles/graphicsrunner.blogspot.com/2026-03-15_variable-sized-work.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/karis-variable-sized-work.md already exists and is fully processed"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["green-even-faster-math-2021"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/robin-green.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/green-even-faster-math-2021]]"
+    },
+    {
+      "file": "wiki/computer-systems/faster-math-functions.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/green-even-faster-math-2021]] — GDC 2021 精简版：数字递推 / 位堆 / CORDIC 适用边界 / 等间距三角函数，面向 FPGA 硬件实现"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-even-faster-math-2021]] | Robin Green：GDC 2021 精简版，FPGA 数学单元实现方法论 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-136 Worker OR (graphicsrunner×4 + basesandframes×1)\n\n处理 5 篇文章：4 篇 karis-* 已存在（virtualized-volume-textures、tiled-light-culling、sparse-shadows-tracing、variable-sized-work），均跳过。新增 1 篇：green-even-faster-math-2021（Robin Green，GDC 2021 虚拟演讲，FPGA 数学函数实现精简版）。补丁：robin-green.md 和 faster-math-functions.md 各追加一条 source 引用。"
+}

@@ -74,3 +74,4 @@ Robin 自己在给 tutorial 补料时临时加了一个叫 BitLog 的「快速�
 
 - [[sources/green-faster-math-functions]]
 - [[sources/green-even-faster-math]] — GDC 2020 续篇：Sollya、FloPoCo、bipartite tables、数字振荡器
+- [[sources/green-even-faster-math-2021]] — GDC 2021 精简版：数字递推 / 位堆 / CORDIC 适用边界 / 等间距三角函数，面向 FPGA

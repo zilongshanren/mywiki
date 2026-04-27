@@ -1,7 +1,7 @@
 ---
 tags: [渲染, compute-shader, 性能优化, gpu, amd]
 date: 2026-04-27
-sources: 1
+sources: 2
 ---
 
 # Compute Shader 并行归约优化
@@ -46,3 +46,4 @@ NVIDIA Warp 宽度为 32，AMD Wavefront 宽度为 64。在同一 Warp/Wavefront
 ## Sources
 
 - [[sources/humus-compute-parallel-reduction]]
+- [[sources/humus-compute-reloaded]] — 2015 年再版：补充 HD 6770/290X 实测、确认带宽为最终瓶颈

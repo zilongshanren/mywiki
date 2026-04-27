@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w136-oq",
+  "agent_note": "Outerra ×5: 4 ingested (dp-map-projections, craters, fixing-lighting, ocean-rendering), 1 skipped (himalayas outtakes video). New concepts: fp64-map-projections, gerstner-wave-ocean-rendering, terrain-vector-overlay-crater. outerra-team patch adds 4 new sources + links.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/outerra.blogspot.com/2014-05-11_double-precision-approximations-for-map-projections-in-openg.md",
+      "status": "ingested",
+      "source_slug": "outerra-dp-map-projections",
+      "title": "Double Precision Approximations for Map Projections in OpenGL"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2013-03-27_craters.md",
+      "status": "ingested",
+      "source_slug": "outerra-crater-rendering",
+      "title": "Craters"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2012-03-17_fixing-the-lighting.md",
+      "status": "ingested",
+      "source_slug": "outerra-lighting-fix",
+      "title": "Fixing the Lighting"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2010-09-21_himalayas-unused-footage-and-failed-attempts.md",
+      "status": "skipped_offtopic",
+      "reason": "航班模拟器拍摄花絮视频，无技术内容"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2011-02-18_ocean-rendering.md",
+      "status": "ingested",
+      "source_slug": "outerra-ocean-rendering",
+      "title": "Ocean Rendering"
+    }
+  ],
+  "concepts_created": [
+    "fp64-map-projections",
+    "gerstner-wave-ocean-rendering",
+    "terrain-vector-overlay-crater"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "outerra-dp-map-projections",
+    "outerra-crater-rendering",
+    "outerra-lighting-fix",
+    "outerra-ocean-rendering"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "replace_line",
+      "match": "sources: 11",
+      "content": "sources: 15"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fp64-map-projections]] —— GPU fp64 地图投影近似（等经纬/墨卡托），atan2 minimax + 对数差值技巧\n- [[gerstner-wave-ocean-rendering]] —— Gerstner 波叠加 + 岸线距离图驱动的海岸破碎浪\n- [[terrain-vector-overlay-crater]] —— 64 bit/坑的向量覆盖层动态弹坑，同步写入碰撞数据"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-dp-map-projections]]\n- [[sources/outerra-crater-rendering]]\n- [[sources/outerra-lighting-fix]]\n- [[sources/outerra-ocean-rendering]]"
+    },
+    {
+      "file": "wiki/rendering/fp64-sincos-minimax.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fp64-map-projections]] —— 同一作者把 fp64 缺失问题延伸到地图投影：atan2 minimax + 对数差值"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fp64-map-projections]] | GPU fp64 地图投影：atan2 minimax 近似 + 墨卡托对数差值技巧 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gerstner-wave-ocean-rendering]] | Gerstner 波叠加 + 岸线距离图海岸破碎浪，Outerra 行星引擎实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[terrain-vector-overlay-crater]] | 地形向量覆盖层的动态弹坑：64 bit/坑，表面类型感知，同步碰撞数据 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-dp-map-projections]] | Outerra：GPU fp64 地图投影近似（2014） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-crater-rendering]] | Outerra：动态弹坑向量覆盖层（2013） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-lighting-fix]] | Outerra：地形法向量 Jacobian bug + ATI fp render target bit 精度（2012） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-ocean-rendering]] | Outerra：Gerstner 波 + 海岸破碎浪实现（2011） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-136 Worker OQ (outerra.blogspot.com ×5)\n\n处理 5 篇 Outerra 技术文章。新增 3 概念页（fp64-map-projections、gerstner-wave-ocean-rendering、terrain-vector-overlay-crater）、4 source 摘要。跳过 1 篇非技术内容（喜马拉雅飞行拍摄花絮）。patch outerra-team 人物页新增 3 个 related links 与 4 条 source 引用。"
+}

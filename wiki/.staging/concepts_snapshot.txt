@@ -601,3 +601,12 @@ projective-cross-product-geometry
 index-buffer-compression
 graphics-subsystem-no-lut
 graphics-subsystem-even-error-distribution
+compute-parallel-reduction
+gcn-compute-tgsm-patterns
+deferred-lighting-vs-shading
+cube-shadow-map-rendering
+realtime-gi-per-light
+logarithmic-depth-buffer
+sphere-mapped-terrain-culling
+opengl-texture-bind-batching
+fiber-based-job-scheduler

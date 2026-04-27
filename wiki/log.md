@@ -1682,3 +1682,15 @@ Wolfgang Engel 文章 5 篇全部入库。新建 4 概念页（gcn-compute-tgsm-
 ## [2026-04-27] ingest | Wave-135 Worker ON (outerra.blogspot.com ×5)
 
 Outerra 文章 5 篇全部入库。新建 4 概念页（logarithmic-depth-buffer、sphere-mapped-terrain-culling、opengl-texture-bind-batching、fiber-based-job-scheduler）、5 source 摘要。Worker 直接 patch outerra-team.md。
+
+## [2026-04-27] ingest | Wave-136 Worker OP (diaryofagraphicsprogrammer ×5)
+
+3 篇入库（multi-gpu-engine、compute-reloaded、points-vertices-vectors），2 篇跳过（TressFX 链接帖、VB 2018 重复）。新建 multi-gpu-rendering 概念页。
+
+## [2026-04-27] ingest | Wave-136 Worker OQ (outerra.blogspot.com ×5)
+
+4 篇入库，1 篇跳过（喜马拉雅视频无内容）。新建 3 概念页（fp64-map-projections、gerstner-wave-ocean-rendering、terrain-vector-overlay-crater）、4 source 摘要。
+
+## [2026-04-27] ingest | Wave-136 Worker OR (graphicsrunner/basesandframes ×5)
+
+1 篇入库（green-even-faster-math-2021），4 篇重复（Karis 全已处理完毕）。
