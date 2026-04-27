@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w118-mq",
+  "agent_note": "5篇 chipsandcheese.com 2024-12 至 2025-02 技术深度文章。新增3个概念页（strix-halo-soc、sifive-p550-microarchitecture、battlemage-architecture）和5个source摘要页。lion-cove-arrow-lake 文章丰富了已有 lion-cove-microarchitecture 概念页，zen5-clustered-decode 丰富了已有 op-cache-decoded-uop-cache 和 zen5-microarchitecture 页面。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-06_analyzing-lion-cove-s-memory-subsystem-in-arrow-lake.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-lion-cove-arrow-lake",
+      "title": "Analyzing Lion Cove's Memory Subsystem in Arrow Lake"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-13_amd-s-strix-halo-under-the-hood.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-strix-halo-interview",
+      "title": "AMD's Strix Halo - Under the Hood"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-23_disabling-zen-5s-op-cache-and-exploring-its-clustered-decode.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-clustered-decode",
+      "title": "Disabling Zen 5's Op Cache and Exploring its Clustered Decoder"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-01-26_inside-sifives-p550-microarchitecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sifive-p550",
+      "title": "Inside SiFive's P550 Microarchitecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-02-11_intels-battlemage-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-battlemage",
+      "title": "Intel's Battlemage Architecture"
+    }
+  ],
+  "concepts_created": [
+    "strix-halo-soc",
+    "sifive-p550-microarchitecture",
+    "battlemage-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-lion-cove-arrow-lake",
+    "chipsandcheese-strix-halo-interview",
+    "chipsandcheese-zen5-clustered-decode",
+    "chipsandcheese-sifive-p550",
+    "chipsandcheese-battlemage"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/lion-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-lion-cove-arrow-lake]]"
+    },
+    {
+      "file": "wiki/computer-systems/op-cache-decoded-uop-cache.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-clustered-decode]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-clustered-decode]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/strix-halo-soc]] | AMD Ryzen AI Max SoC：扇出互连 + 32MB MALL + 全幅 Zen 5 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/sifive-p550-microarchitecture]] | SiFive P550：RISC-V 3-wide OoO，无对齐访问硬件支持 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/battlemage-architecture]] | Intel Arc B580 Battlemage GPU 架构：标量优化 + atomic 重构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-lion-cove-arrow-lake]] | Chester Lam：Lion Cove 内存子系统在 Arrow Lake 的实测分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-strix-halo-interview]] | George Cozma：AMD Senior Fellow Mahesh Subramony 访谈——Strix Halo 架构决策 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-clustered-decode]] | Chester Lam：禁用 Zen 5 op cache 实验，验证集群式解码器能力 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sifive-p550]] | Chester Lam：SiFive P550 微架构完整剖析，RISC-V 乱序设计里程碑 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-battlemage]] | Chester Lam：Intel Battlemage（Arc B580）GPU 架构深度分析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-118 Worker MQ (chipsandcheese.com ×5, 2025-01~02)\n\n处理 5 篇 chipsandcheese.com 技术深度文章。新增 3 概念页（strix-halo-soc、sifive-p550-microarchitecture、battlemage-architecture）、0 人物页（chester-lam 和 george-cozma 已存在）、5 source 摘要页。跳过 0 篇。patch 更新：lion-cove-microarchitecture、op-cache-decoded-uop-cache、zen5-microarchitecture 的 Sources 节。"
+}

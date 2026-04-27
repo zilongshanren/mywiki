@@ -1,0 +1,105 @@
+{
+  "batch_id": "batch-w118-mp",
+  "agent_note": "5 chipsandcheese.com 文章：2 跳过（公告/会议速报）、3 入库。新增 2 概念页、3 source 摘要。Loop Buffer 文章新增，Infinity Fabric 延迟新增，SPEC 方法论新增。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-11-13_chips-and-cheese-s-microbenchmark-framework.md",
+      "status": "skipped_offtopic",
+      "reason": "社区公告帖，内容仅为宣布开源 CnC-Tools 框架并征集代码贡献者，无技术分析内容"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-11-24_pushing-amds-infinity-fabric-to-its-limits.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-infinity-fabric-limits",
+      "title": "Pushing AMD's Infinity Fabric to its Limits"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-11-30_amd-disables-zen-4-s-loop-buffer.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen4-loop-buffer",
+      "title": "AMD Disables Zen 4's Loop Buffer"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-12-02_an-epyc-exclusive-for-azure-amd-s-mi300c.md",
+      "status": "skipped_offtopic",
+      "reason": "极短的会议速报（SC24 Azure 展台），仅列出 EPYC 9v64H 基本规格参数，无独立技术分析"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-10-19_running-spec-cpu2017-on-chinese-cpus-and-more.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-spec-chinese-cpus",
+      "title": "Running SPEC CPU2017 on Chinese CPUs, and More"
+    }
+  ],
+  "concepts_created": [
+    "infinity-fabric-loaded-latency",
+    "spec-cpu2017-methodology"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-infinity-fabric-limits",
+    "chipsandcheese-zen4-loop-buffer",
+    "chipsandcheese-spec-chinese-cpus"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 结论",
+      "content": "\nZen 4 的 Loop Buffer（144 µop 容量）在 AGESA 1.2.0.2a 附近被 AMD 静默禁用，推测原因为硬件缺陷（类比 Intel Skylake LSD bug）。因 op cache 带宽已完全覆盖 6-wide 重命名级，性能影响 < 1%。见 [[sources/chipsandcheese-zen4-loop-buffer]]。"
+    },
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 系统级：Infinity Fabric 与内存带宽",
+      "content": "\nZen 4 单核 DRAM 带宽能力约 50 GB/s，在高并发带宽测试中可使 CCD 内 XI 队列迅速饱和，引发软件可见延迟超过 700 ns。CCD 边界提供天然 QoS 隔离。详见 [[infinity-fabric-loaded-latency]] 与 [[sources/chipsandcheese-infinity-fabric-limits]]。"
+    },
+    {
+      "file": "wiki/computer-systems/op-cache-decoded-uop-cache.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen4-loop-buffer]] — AMD 静默禁用 Zen 4 Loop Buffer，op cache 无缝接管"
+    },
+    {
+      "file": "wiki/computer-systems/loongson-3a6000-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-spec-chinese-cpus]] — SPEC CPU2017 单核测试：低于 Crestmont，分支预测优于 Skylake"
+    },
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-spec-chinese-cpus]] — SPEC CPU2017：约等于 Bulldozer FX-8150，远落后于 Skylake"
+    },
+    {
+      "file": "wiki/computer-systems/via-x86-isaiah-lujiazui.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-spec-chinese-cpus]] — 兆芯 KX-6640MA SPEC CPU2017：略低于 Goldmont Plus，约等于 Cortex A73"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[infinity-fabric-loaded-latency]] | AMD Infinity Fabric 带宽负载下的 XI 队列竞争与多层延迟叠加机制 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[spec-cpu2017-methodology]] | SPEC CPU2017 基准测试方法学：跨 ISA 对比、编译标志、局限性 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-infinity-fabric-limits]] | Chester Lam：Infinity Fabric 极限带宽测试——XI 队列饱和与 CCD QoS 隔离 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen4-loop-buffer]] | Chester Lam：AMD 静默禁用 Zen 4 Loop Buffer，op cache 接管，性能无感知 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-spec-chinese-cpus]] | Chester Lam：SPEC CPU2017 实测龙芯/兆芯——低于 Crestmont，差距量化 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-118 Worker MP (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。跳过 2 篇（microbenchmark 框架公告 + MI300C 会议速报）。入库 3 篇：Infinity Fabric 带宽极限测试、Zen 4 Loop Buffer 静默禁用、SPEC CPU2017 国产 CPU 测试。新增 2 概念页（infinity-fabric-loaded-latency、spec-cpu2017-methodology）、3 source 摘要。补丁：zen4-microarchitecture ×2、op-cache-decoded-uop-cache ×1、loongson-3a6000 ×1、loongson-3a5000 ×1、via-x86-isaiah-lujiazui ×1。"
+}

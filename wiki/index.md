@@ -399,6 +399,12 @@ CAQA + CSAPP 的底层视角。
 | [[zen5-microarchitecture]] | AMD Zen 5 微架构：8-wide 重命名、BTB 受害者缓存、集群前端 |
 | [[strix-point-soc]] | AMD 2024 移动 APU：4P+8E Zen 5、RDNA 3.5 iGPU、LPDDR5-7500 |
 | [[redwood-cove-microarchitecture]] | Intel Meteor Lake P-Core：Golden Cove 小幅迭代，64 KB L1i、LLC 页预取器 |
+| [[zen5-epyc-server]] | AMD Turin 第五代 EPYC，GMI3-W 双链路，全核 5 GHz，576 GB/s 内存带宽 |
+| [[broadwell-edram-l4]] | Broadwell Crystal Well 128 MB eDRAM L4，V-Cache 历史前驱，OPIO 接口 |
+| [[infinity-fabric-loaded-latency]] | AMD Infinity Fabric 带宽负载下的 XI 队列竞争与多层延迟叠加机制 |
+| [[spec-cpu2017-methodology]] | SPEC CPU2017 基准测试方法学：跨 ISA 对比、编译标志、局限性 |
+| [[strix-halo-soc]] | AMD Ryzen AI Max SoC：扇出互连 + 32MB MALL + 全幅 Zen 5 |
+| [[sifive-p550-microarchitecture]] | SiFive P550：RISC-V 3-wide OoO，无对齐访问硬件支持 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1103,6 +1109,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[remote-scene-approximation]] | Pesce：远端场景近似设计空间——从 octahedral impostor 到 Poisson 重建 |
 | [[adreno-x1-igpu-architecture]] | Qualcomm Snapdragon X Elite 的 Adreno X1 iGPU，四级缓存、GMEM 多用途复用 |
 | [[rdna35-architecture]] | AMD RDNA 3.5：Strix Point Radeon 890M，8 WGP，LDS 延迟改善，~5 TFLOPS |
+| [[xe2-igpu-architecture]] | Intel Xe2 iGPU 架构，Vector Engine 合并 + XMX 矩阵单元，Lunar Lake / Battlemage |
+| [[battlemage-architecture]] | Intel Arc B580 Battlemage GPU 架构：标量优化 + atomic 重构 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2531,6 +2539,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-zen5-variants]] | Chester Lam：Zen 5 变体与多代 CPU 3 GHz 时钟对齐横向比较 |
 | [[sources/chipsandcheese-radeon-890m]] | Chester Lam：Radeon 890M（RDNA 3.5）iGPU 全面测试 |
 | [[sources/chipsandcheese-redwood-cove]] | Chester Lam：Redwood Cove（Meteor Lake P-Core）微架构解析 |
+| [[sources/chipsandcheese-skymont-detailed]] | Chester Lam：Skymont E-Core 详测，ROB/BTB/FPU/TLB 实测数据 |
+| [[sources/chipsandcheese-xe2-architecture]] | Chester Lam：Lunar Lake Xe2 iGPU，VE 重组、XMX 回归、8 MB L2 |
+| [[sources/chipsandcheese-turin-epyc]] | George Cozma：Turin EPYC 9575F，GMI3-W、内存带宽、延迟实测 |
+| [[sources/chipsandcheese-broadwell-edram]] | Chester Lam：Broadwell Crystal Well eDRAM L4，技术原理与性能局限 |
+| [[sources/chipsandcheese-9800x3d-vcache]] | George Cozma：9800X3D 第二代 V-Cache，封装颠倒，热阻改善 |
+| [[sources/chipsandcheese-infinity-fabric-limits]] | Chester Lam：Infinity Fabric 极限带宽测试——XI 队列饱和与 CCD QoS 隔离 |
+| [[sources/chipsandcheese-zen4-loop-buffer]] | Chester Lam：AMD 静默禁用 Zen 4 Loop Buffer，op cache 接管 |
+| [[sources/chipsandcheese-spec-chinese-cpus]] | Chester Lam：SPEC CPU2017 实测龙芯/兆芯——低于 Crestmont，差距量化 |
+| [[sources/chipsandcheese-lion-cove-arrow-lake]] | Chester Lam：Lion Cove 内存子系统在 Arrow Lake 的实测分析 |
+| [[sources/chipsandcheese-strix-halo-interview]] | George Cozma：AMD Senior Fellow 访谈——Strix Halo 架构决策 |
+| [[sources/chipsandcheese-zen5-clustered-decode]] | Chester Lam：禁用 Zen 5 op cache 实验，验证集群式解码器能力 |
+| [[sources/chipsandcheese-sifive-p550]] | Chester Lam：SiFive P550 微架构完整剖析，RISC-V 乱序设计里程碑 |
+| [[sources/chipsandcheese-battlemage]] | Chester Lam：Intel Battlemage（Arc B580）GPU 架构深度分析 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

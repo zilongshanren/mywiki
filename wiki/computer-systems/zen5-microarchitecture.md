@@ -55,3 +55,4 @@ Strix Point APU 实现了 12 核 Zen 5，分为两个集群：高性能集群（
 - [[sources/chipsandcheese-strix-point-zen5]]
 - [[sources/chipsandcheese-zen5-desktop]]
 - [[sources/chipsandcheese-zen5-variants]]
+- [[sources/chipsandcheese-zen5-clustered-decode]]

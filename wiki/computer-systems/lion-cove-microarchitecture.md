@@ -51,3 +51,4 @@ Lion Cove 是 P6 系首次在调度器拓扑上做结构性重构，标志着 In
 ## Sources
 
 - [[sources/chipsandcheese-lion-cove]]
+- [[sources/chipsandcheese-lion-cove-arrow-lake]]

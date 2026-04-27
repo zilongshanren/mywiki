@@ -52,3 +52,4 @@ LA664 的单核性能约等于 Zen 1，代表中国自研 CPU 的重大突破，
 ## Sources
 
 - [[sources/chipsandcheese-loongson-3a6000]]
+- [[sources/chipsandcheese-spec-chinese-cpus]] — SPEC CPU2017 单核测试

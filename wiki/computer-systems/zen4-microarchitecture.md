@@ -30,6 +30,8 @@ Zen 4 的每个 CCD 有一条 32B/cycle 读链路和 16B/cycle 写链路连接�
 
 Raphael 平台是首个高性能 AMD 桌面平台集成 iGPU 的方案：RDNA2 架构，1 WGP，L1 64 KB（标准 128 KB 的一半），L2 256 KB，无 Infinity Cache。DRAM 延迟约 191 ns，优于桌面独立显卡 RDNA2 的 >250 ns，因为 iGPU 与内存控制器同在 IO die 上。
 
+Zen 4 单核 DRAM 带宽能力约 50 GB/s，在高并发带宽测试中可使 CCD 内 XI 队列迅速饱和，引发软件可见延迟超过 700 ns。CCD 边界提供天然 QoS 隔离。详见 [[infinity-fabric-loaded-latency]] 与 [[sources/chipsandcheese-infinity-fabric-limits]]。
+
 ## AVX-512 实现
 
 Zen 4 是 AMD 首款支持 AVX-512 的桌面架构。实现策略上走"平衡路线"：512-bit 指令在流水线中大部分阶段保持为单条微操作，进入 256-bit 执行管道前才分为两个 256-bit 半，即"double pumping"。主要特点：
@@ -60,6 +62,8 @@ Intel Golden Cove 在各级缓存上都比 Zen 4 延迟更高（L1 +1 cycle、L3
 ## 结论
 
 Zen 4 通过前端优化（更强分支预测、更大微操作缓存）和频率提升挖掘现有执行资源的利用率，而非直接扩大执行宽度或 L1D 带宽。核心是"喂饱执行单元"而非"添加执行单元"。AVX-512 的加入是关键亮点，在支持该指令集的应用中可拉开对缺乏 AVX-512 竞争对手的差距。
+
+Zen 4 的 Loop Buffer（144 µop 容量）在 AGESA 1.2.0.2a 附近被 AMD 静默禁用，推测原因为硬件缺陷（类比 Intel Skylake LSD bug）。因 op cache 带宽已完全覆盖 6-wide 重命名级，性能影响 < 1%。见 [[sources/chipsandcheese-zen4-loop-buffer]]。
 
 ## 相关
 

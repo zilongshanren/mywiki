@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w118-mo",
+  "agent_note": "5 chipsandcheese.com 文章：Skymont 详测（patch 已有页面）、Xe2 iGPU（新架构页）、Turin EPYC（新服务器页）、Broadwell eDRAM（新历史页）、9800X3D 第二代 V-Cache（patch 已有页面）。新增 3 concept 页、5 source 摘要页，无新人物页（chester-lam 和 george-cozma 均已存在）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-10-03_skymont-intels-e-cores-reach-for-the-sky.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-skymont-detailed",
+      "title": "Skymont: Intel's E-Cores Reach for the Sky"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-10-08_lunar-lakes-igpu-debut-of-intels-xe2-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-xe2-architecture",
+      "title": "Lunar Lake's iGPU: Debut of Intel's Xe2 Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-10-11_amd-s-turin-5th-gen-epyc-launched.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-turin-epyc",
+      "title": "AMD's Turin: 5th Gen EPYC Launched"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-11-01_broadwells-edram-vcache-before-vcache-was-cool.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-broadwell-edram",
+      "title": "Broadwell's eDRAM: VCache before VCache was Cool"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-11-06_amd-s-9800x3d-2nd-generation-v-cache.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-9800x3d-vcache",
+      "title": "AMD's 9800X3D: 2nd Generation V-Cache"
+    }
+  ],
+  "concepts_created": [
+    "xe2-igpu-architecture",
+    "zen5-epyc-server",
+    "broadwell-edram-l4"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-skymont-detailed",
+    "chipsandcheese-xe2-architecture",
+    "chipsandcheese-turin-epyc",
+    "chipsandcheese-broadwell-edram",
+    "chipsandcheese-9800x3d-vcache"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/skymont-microarchitecture.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/computer-systems/skymont-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skymont-detailed]]"
+    },
+    {
+      "file": "wiki/computer-systems/skymont-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 大幅扩容的后端",
+      "content": "\n实测 ROB 容量：Chester Lam 通过微基准确认 416 条目（方法同 Henry Wong），分支 BOB 仅 96 条目（覆盖 ROB 的 23%），在分支密集工作负载中可能偏紧。L1 DTLB 仍仅 48 条目（保持 Crestmont 水平），L2 TLB 扩至 4096 条目（超过 Lion Cove 的 2048 及 Zen 5 的 4096）。Subnormal 浮点快速路径已加入硬件，消除原 >100 cycle 惩罚——反而 Lion Cove P-Core 未跟进此优化。"
+    },
+    {
+      "file": "wiki/computer-systems/vcache-3d-die-stacking.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/computer-systems/vcache-3d-die-stacking.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-broadwell-edram]]\n- [[sources/chipsandcheese-9800x3d-vcache]]"
+    },
+    {
+      "file": "wiki/computer-systems/vcache-3d-die-stacking.md",
+      "operation": "append_to_section",
+      "section": "## 与历史方案对比",
+      "content": "\n**第二代 V-Cache（9800X3D，Zen 5）**：SRAM die 翻转至 CCD 下方，去除支撑 silicon die，热阻大幅降低，电压耐受上限从 1.2V 提升至 1.4V，核心频率一致性改善（core-to-core delta ~10 MHz vs 第一代 ~70 MHz）。L3 延迟额外 4 cycle 惩罚与第一代相同，带宽无明显变化。剩余痛点：boost 时钟仍低于非 X3D 版本约 300 MHz。\n\n**Broadwell Crystal Well（eDRAM L4 历史前驱）**：128 MB eDRAM die，延迟 ~36.6 ns（~140 cycle @ 3.8 GHz），带宽约 50 GB/s，通过 OPIO 接口连接。128-bank 设计和独立读写总线使其在高带宽负载下延迟稳定。但带宽不随核数扩展，CPU 侧高延迟限制其只能作 L4，而非 L3 替代。TSV SRAM 堆叠（V-Cache）将等效延迟缩短到 ~1.6 ns，从根本上超越了 eDRAM 方案。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染与 GPU（wiki/rendering/）",
+      "row": "| [[rendering/xe2-igpu-architecture]] | Intel Xe2 iGPU 架构，Vector Engine 合并 + XMX 矩阵单元，Lunar Lake / Battlemage |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/zen5-epyc-server]] | AMD Turin 第五代 EPYC，GMI3-W 双链路，全核 5 GHz，576 GB/s 内存带宽 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/broadwell-edram-l4]] | Broadwell Crystal Well 128 MB eDRAM L4，V-Cache 历史前驱，OPIO 接口 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-skymont-detailed]] | Chester Lam：Skymont E-Core 详测，ROB/BTB/FPU/TLB 实测数据 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-xe2-architecture]] | Chester Lam：Lunar Lake Xe2 iGPU，VE 重组、XMX 回归、8 MB L2 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-turin-epyc]] | George Cozma：Turin EPYC 9575F，GMI3-W、内存带宽、延迟实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-broadwell-edram]] | Chester Lam：Broadwell Crystal Well eDRAM L4，技术原理与性能局限 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-9800x3d-vcache]] | George Cozma：9800X3D 第二代 V-Cache，封装颠倒，热阻改善 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-118 Worker MO (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章（2024-10 至 2024-11）。新增 3 概念页（xe2-igpu-architecture, zen5-epyc-server, broadwell-edram-l4）、0 人物页（chester-lam / george-cozma 均已存在）、5 source 摘要页。Patch：skymont-microarchitecture（补充实测数据 + 新 source 引用）、vcache-3d-die-stacking（补充第二代 V-Cache 和 eDRAM 历史前驱内容 + 两个新 source 引用）。"
+}

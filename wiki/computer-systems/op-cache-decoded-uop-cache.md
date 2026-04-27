@@ -48,3 +48,5 @@ AMD、Intel、ARM 的高性能核几乎都已采用 op cache：Intel 在 Sandy B
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-intel-netburst-failure]]
 - [[sources/chipsandcheese-sunny-cove-intel-lost-gen]]
+- [[sources/chipsandcheese-zen4-loop-buffer]] — AMD 静默禁用 Zen 4 Loop Buffer，op cache 无缝接管
+- [[sources/chipsandcheese-zen5-clustered-decode]]

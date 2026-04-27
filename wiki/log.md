@@ -1474,3 +1474,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-117 Worker MN (c0de517e + eurogamer ×0 + 5 skip)
 
 c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全部跳过。
+
+## [2026-04-27] ingest | Wave-118 Worker MO (chipsandcheese 2024-10/11 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 3 概念页（xe2-igpu-architecture、zen5-epyc-server、broadwell-edram-l4）、5 source 摘要。patch：skymont-microarchitecture 补充实测数据、vcache-3d-die-stacking 补充第二代 V-Cache 和 eDRAM 历史内容。
+
+## [2026-04-27] ingest | Wave-118 Worker MP (chipsandcheese 2024-11/12 ×3 + 2 skip)
+
+处理 5 篇 chipsandcheese.com 文章。3 篇 ingest（Infinity Fabric 极限、Zen 4 Loop Buffer、SPEC CPU 中国）；2 篇跳过（公告帖和会议速报）。新增 2 概念页。
+
+## [2026-04-27] ingest | Wave-118 Worker MQ (chipsandcheese 2025-01~02 ×5)
+
+处理 5 篇 chipsandcheese.com 文章（2025-01 ~ 2025-02）。新增 3 概念页（strix-halo-soc、sifive-p550-microarchitecture、battlemage-architecture）、5 source 摘要。

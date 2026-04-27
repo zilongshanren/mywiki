@@ -39,3 +39,5 @@ EDRAM 因延迟过高只能作 L4，且带宽不足，实用价值有限。TSV �
 
 - [[sources/chipsandcheese-7950x3d-vcache]]
 - [[sources/chipsandcheese-ibm-l3-v-cache-future]]
+- [[sources/chipsandcheese-broadwell-edram]]
+- [[sources/chipsandcheese-9800x3d-vcache]]

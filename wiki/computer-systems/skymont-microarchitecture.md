@@ -40,3 +40,4 @@ Intel 声称 Skymont 性能/时钟已接近 Redwood Cove P-Core，标志着 E-Co
 ## Sources
 
 - [[sources/chipsandcheese-skymont]]
+- [[sources/chipsandcheese-skymont-detailed]]
