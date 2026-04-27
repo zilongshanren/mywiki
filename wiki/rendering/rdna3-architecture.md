@@ -68,6 +68,10 @@ AMD 和 Nvidia 在同一性能档位（7900 XTX vs RTX 4080）采用了截然不
 
 [[rendering/ada-lovelace-architecture|Ada Lovelace]] 在高 SM 占用时 VRAM 带宽略逊，但缓存层次更简单，L2 容量巨大，减少了对外部带宽的依赖。
 
+## 相关
+
+- [[rendering/rdna35-architecture]] — RDNA 3.5：Strix Point 的半代演进 iGPU
+
 ## Sources
 
 - [[sources/chipsandcheese-rdna3-architecture]]

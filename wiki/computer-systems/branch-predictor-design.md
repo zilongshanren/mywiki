@@ -56,3 +56,5 @@ Skylake 的 op cache 容量为 1536 条目，Zen 2 为 4096 条目，但 CBR15 �
 - [[sources/chipsandcheese-intel-netburst-failure]]
 - [[sources/chipsandcheese-tachyum-claims]]
 - [[sources/chipsandcheese-phytium-d2000]]
+- [[sources/chipsandcheese-zen5-branch-predictor]] — Zen 5 2-Ahead BPU：双 fetch 管道 + 16K BTB
+- [[sources/chipsandcheese-oryon-core]] — Oryon BTB 与 L1i 绑定，8 KB 内单周期 taken branch

@@ -1462,3 +1462,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-116 Worker MK (chipsandcheese 2024-06/07 GPU ×3 + 2 missing)
 
 处理 5 篇 chipsandcheese.com 文章，3 篇 ingest，2 篇文件不存在。新增 2 概念页（adreno-x1-igpu-architecture、tegra-x1-video-engine）、3 source 摘要。
+
+## [2026-04-27] ingest | Wave-117 Worker ML (chipsandcheese 2024-07 ×5)
+
+处理 5 篇 chipsandcheese.com 文章（2024-07）。新增 5 概念页（oryon、cortex-a73、neoverse-v2、zen5-2ahead-branch-predictor、grace-hopper-cpu-gpu-system）、1 人物页（camacho）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-117 Worker MM (chipsandcheese 2024-08/09 Zen5 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（zen5-microarchitecture、strix-point-soc、rdna35-architecture、redwood-cove-microarchitecture）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-117 Worker MN (c0de517e + eurogamer ×0 + 5 skip)
+
+c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全部跳过。

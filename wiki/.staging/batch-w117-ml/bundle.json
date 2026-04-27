@@ -1,0 +1,124 @@
+{
+  "batch_id": "batch-w117-ml",
+  "agent_note": "5 篇 chipsandcheese.com 文章全部 ingested。新增 5 概念页（oryon、cortex-a73、neoverse-v2、zen5-2ahead、grace-hopper-cpu-gpu-system）、1 人物页（camacho）、5 source 摘要。neoverse-v2 概念页合并了 Graviton 4 与 Grace Hopper 两篇的内容（sources: 2）。Patches 覆盖 qualcomm-kryo、branch-predictor-design、neoverse-n2、h100-hopper 四页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-10_qualcomms-oryon-core-a-long-time-in-the-making.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-oryon-core",
+      "title": "Qualcomm's Oryon Core: A Long Time in the Making"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-18_arms-cortex-a73-resource-limits-what-are-those.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cortex-a73",
+      "title": "Arm's Cortex A73: Resource Limits, What are Those?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-22_arms-neoverse-v2-in-awss-graviton-4.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-neoverse-v2",
+      "title": "Arm's Neoverse V2, in AWS's Graviton 4"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-26_zen-5s-2-ahead-branch-predictor-unit-how-a-30-year-old-idea.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-branch-predictor",
+      "title": "Zen 5's 2-Ahead Branch Predictor Unit"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-31_grace-hopper-nvidias-halfway-apu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-grace-hopper",
+      "title": "Grace Hopper, Nvidia's Halfway APU"
+    }
+  ],
+  "concepts_created": [
+    "oryon-microarchitecture",
+    "cortex-a73-microarchitecture",
+    "neoverse-v2-microarchitecture",
+    "zen5-2ahead-branch-predictor",
+    "grace-hopper-cpu-gpu-system"
+  ],
+  "people_created": ["camacho"],
+  "source_summaries_created": [
+    "chipsandcheese-oryon-core",
+    "chipsandcheese-cortex-a73",
+    "chipsandcheese-neoverse-v2",
+    "chipsandcheese-zen5-branch-predictor",
+    "chipsandcheese-grace-hopper"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/qualcomm-kryo-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-oryon-core]] — Oryon 作为 Kryo 之后的自研后继核，文章有大量 Kryo 对比"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-branch-predictor]] — Zen 5 2-Ahead BPU：双 fetch 管道 + 16K BTB，每周期 2 taken branch\n- [[sources/chipsandcheese-oryon-core]] — Oryon BTB 与 L1i 绑定，8 KB 内单周期 taken branch"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n2-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-neoverse-v2]] — Neoverse V2（Cortex X3 服务器衍生）与 N2 同代，文章包含大量 Zen 4 对比"
+    },
+    {
+      "file": "wiki/computer-systems/h100-hopper-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-grace-hopper]] — GH200 中的 H100 GPU 实测，NVLink C2C 互联分析"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[oryon-microarchitecture]] | 高通 Oryon 微架构（Snapdragon X Elite），融合 Firestorm 大后端与 Kryo TLB 传统 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cortex-a73-microarchitecture]] | ARM Cortex-A73：2 宽效率优先，slot 机制无限乱序容量，骁龙 835 核心 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[neoverse-v2-microarchitecture]] | ARM Neoverse V2：Graviton 4 / GH200 Grace，低频高 IPC，ARM 服务器高性能核 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[zen5-2ahead-branch-predictor]] | Zen 5 双 fetch 管道 + 2-Ahead BPU，每周期 2 taken branch，源自 90 年代学术方案 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[grace-hopper-cpu-gpu-system]] | Nvidia GH200：Grace CPU（Neoverse V2）+ H100 GPU，NVLink C2C 互联，\"半成品 APU\" |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[camacho]] | Chips and Cheese 撰稿人，Zen 5 分支预测器分析合著者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-oryon-core]] | Cozma & Lam：Qualcomm Oryon 微架构深度拆解，Snapdragon X Elite |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cortex-a73]] | Chester Lam：Cortex-A73 效率优先设计，slot 机制与无限乱序容量 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-neoverse-v2]] | Chester Lam：Neoverse V2 微基准实测，AWS Graviton 4（96 核）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-branch-predictor]] | Cozma & Camacho：Zen 5 2-Ahead BPU 原理与实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-grace-hopper]] | Chester Lam：GH200 Grace Hopper CPU+GPU 实测，NVLink C2C 分析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-117 Worker ML (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章（2024 年 7 月）。新增 5 概念页（oryon-microarchitecture、cortex-a73-microarchitecture、neoverse-v2-microarchitecture、zen5-2ahead-branch-predictor、grace-hopper-cpu-gpu-system）、1 人物页（camacho）、5 source 摘要。neoverse-v2 概念页合并 Graviton 4 与 Grace Hopper 两篇 sources。patches 覆盖 qualcomm-kryo、branch-predictor-design、neoverse-n2、h100-hopper 四个已有页面。跳过 0 篇，全部内容属于 computer-systems 领域。"
+}

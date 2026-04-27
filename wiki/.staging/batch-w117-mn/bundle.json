@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w117-mn",
+  "agent_note": "全部5篇跳过：c0de517e peaked-technologies 为重定向stub页（实际内容已迁移至新站，raw文件无正文）；4篇eurogamer文章均为游戏发布新闻或游戏评测，无技术工程内容。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-02-19_peaked-technologies.md",
+      "status": "skipped_offtopic",
+      "reason": "stub重定向页：blogspot已停用，实际文章在c0de517e.com/012_peak_tech.htm，本地raw文件无正文内容，无法摄入"
+    },
+    {
+      "path": "raw/articles/eurogamer.net/2010-05-04_about-90-of-gran-turismo-5-is-done.md",
+      "status": "skipped_offtopic",
+      "reason": "纯游戏发布进度新闻（GT5开发状态），无技术工程内容"
+    },
+    {
+      "path": "raw/articles/eurogamer.net/2010-06-14_ac-brotherhood-due-out-in-november.md",
+      "status": "skipped_offtopic",
+      "reason": "纯游戏发布日期新闻（AC Brotherhood上市时间），无技术工程内容"
+    },
+    {
+      "path": "raw/articles/eurogamer.net/2010-10-13_a-shadows-tale-review.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏评测文章（A Shadow's Tale），内容为游戏玩法评价，无引擎/渲染/技术工程分析"
+    },
+    {
+      "path": "raw/articles/eurogamer.net/2010-11-03_ac-brotherhood-gets-mgs-cameo.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏彩蛋新闻（AC Brotherhood / MGS Raiden联动），无技术工程内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-117 Worker MN (c0de517e ×1 + eurogamer ×4)\n\n处理5篇文章，全部跳过。c0de517e peaked-technologies 为stub重定向页（无正文）；4篇eurogamer文章为游戏新闻/评测，不符合技术主题门槛。新增0概念页、0人物页、0source摘要。"
+}

@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch-w117-mm",
+  "agent_note": "5 chipsandcheese.com 文章：Zen 5 移动/桌面深度拆解 × 2、Zen 5 变体时钟对齐比较、Radeon 890M iGPU、Redwood Cove P-Core。新增 4 概念页（zen5、strix-point、rdna35、redwood-cove）和 5 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-10_amds-strix-point-zen-5-hits-mobile.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-strix-point-zen5",
+      "title": "AMD's Strix Point: Zen 5 Hits Mobile"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-14_amds-ryzen-9950x-zen-5-on-desktop.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-desktop",
+      "title": "AMD's Ryzen 9950X: Zen 5 on Desktop"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-20_zen-5-variants-and-more-clock-for-clock.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-variants",
+      "title": "Zen 5 Variants and More, Clock for Clock"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-24_amds-radeon-890m-strix-points-bigger-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-radeon-890m",
+      "title": "AMD's Radeon 890M: Strix Point's Bigger iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-09-22_intels-redwood-cove-baby-steps-are-still-steps.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-redwood-cove",
+      "title": "Intel's Redwood Cove: Baby Steps are Still Steps"
+    }
+  ],
+  "concepts_created": [
+    "zen5-microarchitecture",
+    "strix-point-soc",
+    "rdna35-architecture",
+    "redwood-cove-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-strix-point-zen5",
+    "chipsandcheese-zen5-desktop",
+    "chipsandcheese-zen5-variants",
+    "chipsandcheese-radeon-890m",
+    "chipsandcheese-redwood-cove"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-desktop]] — 桌面 Zen 5 对比参考"
+    },
+    {
+      "file": "wiki/computer-systems/amd-phoenix-soc.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-radeon-890m]] — Strix Point 890M iGPU 对比 Phoenix"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-redwood-cove]] — Redwood Cove 与 Golden Cove 对比分析"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/rdna35-architecture]] — RDNA 3.5：Strix Point 的半代演进 iGPU"
+    },
+    {
+      "file": "wiki/computer-systems/meteor-lake-chiplet-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-redwood-cove]] — Redwood Cove P-Core 深度分析\n- [[sources/chipsandcheese-strix-point-zen5]] — Strix Point 与 Meteor Lake 系统级对比"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/zen5-microarchitecture]] | AMD Zen 5 微架构：8-wide 重命名、BTB 受害者缓存、集群前端、RDNA 3.5 搭配 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/strix-point-soc]] | AMD 2024 移动 APU：4P+8E Zen 5、RDNA 3.5 iGPU、LPDDR5-7500 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/redwood-cove-microarchitecture]] | Intel Meteor Lake P-Core：Golden Cove 小幅迭代，64 KB L1i、LLC 页预取器 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/rdna35-architecture]] | AMD RDNA 3.5：Strix Point Radeon 890M，8 WGP，LDS 延迟改善，~5 TFLOPS |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-strix-point-zen5]] | Chester Lam：Zen 5 移动版首篇微架构深度拆解（Strix Point） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-desktop]] | Chester Lam：桌面 Zen 5（Ryzen 9950X）与移动版差异及 top-down 分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-variants]] | Chester Lam：Zen 5 变体与多代 CPU 3 GHz 时钟对齐横向比较 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-radeon-890m]] | Chester Lam：Radeon 890M（RDNA 3.5）iGPU 全面测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-redwood-cove]] | Chester Lam：Redwood Cove（Meteor Lake P-Core）微架构解析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-117 Worker MM (chipsandcheese.com Zen 5 + Redwood Cove ×5)\n\n处理 5 篇 chipsandcheese.com 文章（2024-08 至 2024-09）。新增 4 概念页：zen5-microarchitecture（含移动/桌面版差异、BTB 受害者缓存、集群前端设计）、strix-point-soc（4P+8E 双集群配置、跨集群延迟异常）、rdna35-architecture（RDNA 3.5 移动 iGPU，LDS 延迟改善）、redwood-cove-microarchitecture（Intel Golden Cove 迭代，64 KB L1i、LLC 页预取）。新增 5 source 摘要。跳过 0 篇。"
+}

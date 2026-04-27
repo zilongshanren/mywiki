@@ -52,3 +52,4 @@ H100 的设计哲学与消费级 GPU（[[rendering/rdna3-architecture]]、[[rend
 ## Sources
 
 - [[sources/chipsandcheese-h100-l2-bandwidth]]
+- [[sources/chipsandcheese-grace-hopper]] — GH200 中的 H100 GPU 实测，NVLink C2C 互联分析

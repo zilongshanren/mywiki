@@ -35,3 +35,4 @@ ARM 的服务器策略与 AMD/Intel 相反：后者从桌面高性能核"降档"
 ## Sources
 
 - [[sources/chipsandcheese-neoverse-n2]]
+- [[sources/chipsandcheese-neoverse-v2]] — Neoverse V2（Cortex X3 服务器衍生）与 N2 同代

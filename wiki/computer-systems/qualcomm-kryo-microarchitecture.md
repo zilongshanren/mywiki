@@ -50,3 +50,4 @@ Snapdragon 821 的继任者 835 采用定制 A73，Kryo 品牌名被沿用但实
 ## Sources
 
 - [[sources/chipsandcheese-qualcomm-kryo]]
+- [[sources/chipsandcheese-oryon-core]] — Oryon 作为 Kryo 之后的自研后继核

@@ -62,3 +62,4 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[sources/chipsandcheese-golden-cove-vrf-official]]
 - [[sources/chipsandcheese-sapphire-rapids]]
 - [[sources/chipsandcheese-lion-cove]] — Lion Cove（后继者）架构预览
+- [[sources/chipsandcheese-redwood-cove]] — Redwood Cove 与 Golden Cove 对比分析

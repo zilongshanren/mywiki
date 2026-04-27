@@ -391,6 +391,14 @@ CAQA + CSAPP 的底层视角。
 | [[goldmont-plus-microarchitecture]] | Intel Atom Gemini Lake，3-wide OoO，过渡期架构，write-through L1D |
 | [[skymont-microarchitecture]] | Intel Lunar Lake E-Core，三簇解码 9-wide，ROB 416，4×128-bit 向量，Nanocode |
 | [[tegra-x1-video-engine]] | Nintendo Switch Tegra X1 专用视频引擎，HEVC 全支持 |
+| [[oryon-microarchitecture]] | 高通 Oryon 微架构（Snapdragon X Elite），融合 Firestorm 大后端与 Kryo TLB 传统 |
+| [[cortex-a73-microarchitecture]] | ARM Cortex-A73：2 宽效率优先，slot 机制无限乱序容量，骁龙 835 核心 |
+| [[neoverse-v2-microarchitecture]] | ARM Neoverse V2：Graviton 4 / GH200 Grace，低频高 IPC，ARM 服务器高性能核 |
+| [[zen5-2ahead-branch-predictor]] | Zen 5 双 fetch 管道 + 2-Ahead BPU，每周期 2 taken branch |
+| [[grace-hopper-cpu-gpu-system]] | Nvidia GH200：Grace CPU（Neoverse V2）+ H100 GPU，NVLink C2C 互联 |
+| [[zen5-microarchitecture]] | AMD Zen 5 微架构：8-wide 重命名、BTB 受害者缓存、集群前端 |
+| [[strix-point-soc]] | AMD 2024 移动 APU：4P+8E Zen 5、RDNA 3.5 iGPU、LPDDR5-7500 |
+| [[redwood-cove-microarchitecture]] | Intel Meteor Lake P-Core：Golden Cove 小幅迭代，64 KB L1i、LLC 页预取器 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1094,6 +1102,7 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[dynamic-occlusion-culling-roblox]] | Pesce/Roblox：全动态场景深度重投影 + 体素 occluder 数据库 |
 | [[remote-scene-approximation]] | Pesce：远端场景近似设计空间——从 octahedral impostor 到 Poisson 重建 |
 | [[adreno-x1-igpu-architecture]] | Qualcomm Snapdragon X Elite 的 Adreno X1 iGPU，四级缓存、GMEM 多用途复用 |
+| [[rdna35-architecture]] | AMD RDNA 3.5：Strix Point Radeon 890M，8 WGP，LDS 延迟改善，~5 TFLOPS |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2512,6 +2521,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-mi300x-testing]] | Chester Lam 等：MI300X 全面微基准实测，vs H100 PCIe |
 | [[sources/chipsandcheese-sde-adreno]] | Chester Lam：Snapdragon X Elite Adreno X1 iGPU 深度评测 |
 | [[sources/chipsandcheese-tegra-x1-video]] | Chester Lam：Tegra X1 硬件视频引擎与 Maxwell NVENC 对比 |
+| [[sources/chipsandcheese-oryon-core]] | Cozma & Lam：Qualcomm Oryon 微架构深度拆解，Snapdragon X Elite |
+| [[sources/chipsandcheese-cortex-a73]] | Chester Lam：Cortex-A73 效率优先设计，slot 机制与无限乱序容量 |
+| [[sources/chipsandcheese-neoverse-v2]] | Chester Lam：Neoverse V2 微基准实测，AWS Graviton 4（96 核）|
+| [[sources/chipsandcheese-zen5-branch-predictor]] | Cozma & Camacho：Zen 5 2-Ahead BPU 原理与实现 |
+| [[sources/chipsandcheese-grace-hopper]] | Chester Lam：GH200 Grace Hopper CPU+GPU 实测，NVLink C2C 分析 |
+| [[sources/chipsandcheese-strix-point-zen5]] | Chester Lam：Zen 5 移动版首篇微架构深度拆解（Strix Point） |
+| [[sources/chipsandcheese-zen5-desktop]] | Chester Lam：桌面 Zen 5（Ryzen 9950X）与移动版差异及 top-down 分析 |
+| [[sources/chipsandcheese-zen5-variants]] | Chester Lam：Zen 5 变体与多代 CPU 3 GHz 时钟对齐横向比较 |
+| [[sources/chipsandcheese-radeon-890m]] | Chester Lam：Radeon 890M（RDNA 3.5）iGPU 全面测试 |
+| [[sources/chipsandcheese-redwood-cove]] | Chester Lam：Redwood Cove（Meteor Lake P-Core）微架构解析 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

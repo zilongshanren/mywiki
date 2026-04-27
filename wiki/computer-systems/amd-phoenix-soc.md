@@ -42,3 +42,4 @@ Phoenix 集成 2 个 DSP 的音频协处理器，可在极低时钟下持续运�
 
 - [[sources/chipsandcheese-phoenix-soc]]
 - [[sources/chipsandcheese-meteor-lake-igpu]]
+- [[sources/chipsandcheese-radeon-890m]] — Strix Point 890M iGPU 对比 Phoenix
