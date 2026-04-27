@@ -1414,3 +1414,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-112 Worker LY (c0de517e 2016 ×4 + 1 skip)
 
 处理 5 篇 c0de517e 文章。ingested 4 篇，跳过 1 篇（SIGGRAPH 2015 PBR 笔记帖内容为空）。新增 1 概念页（rendering-pipeline-taxonomy）、4 source 摘要。8 个已有页均补充 patch。
+
+## [2026-04-27] ingest | Wave-113 Worker LZ (c0de517e 2016-2017 ×4 + 1 skip)
+
+处理 5 篇 c0de517e 文章（tonemapping + 过度工程 + HDR ACES）。ingested 4 篇，跳过 1 篇。新增 2 概念页（over-engineering、aces-hdr-display-calibration）、4 source 摘要。patch：local-tonemapping、filmic-post-processing-critique、angelo-pesce。
+
+## [2026-04-27] ingest | Wave-113 Worker MA (chipsandcheese 2023-08/09 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（neoverse-n2-microarchitecture、intel-gen7-igpu、amd-phoenix-soc、gpu-register-file-occupancy）、5 source 摘要。patch 到 neoverse-n1、zen4、rdna3、xe-hpg。
+
+## [2026-04-27] ingest | Wave-113 Worker MB (c0de517e 2017 ×1 + 4 skip)
+
+处理 5 篇 c0de517e 文章。1 篇 ingest（shadow-mystery），1 篇重复跳过（tiled-hardware），3 篇文件不存在于 raw/。

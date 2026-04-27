@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 图形程序员]
 date: 2026-04-14
-sources: 5
+sources: 9
 ---
 
 # Angelo Pesce
@@ -111,3 +111,8 @@ sources: 5
 - [[sources/c0de517e-beyond-photorealism]]
 - [[sources/c0de517e-rendering-continuum]]
 - [[sources/c0de517e-activision-siggraph-2016]]
+- [[sources/c0de517e-tone-mapping-local]]
+- [[sources/c0de517e-tone-mapping-silly]]
+- [[sources/c0de517e-over-engineering-evil]]
+- [[sources/c0de517e-hdr-displays-aces]]
+- [[sources/c0de517e-shadow-mystery]]

@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 后处理, color-grading, 渲染哲学, 艺术指导]
 date: 2026-04-27
-sources: 1
+sources: 2
 ---
 
 # 电影后处理管线的惯性批判
@@ -49,3 +49,4 @@ sources: 1
 ## Sources
 
 - [[sources/c0de517e-color-grading-excuses]]
+- [[sources/c0de517e-hdr-displays-aces]] — Pesce：HDR 显示时代 ACES 的适用性批判与分离 look/calibration 的管线方案

@@ -81,3 +81,5 @@ Zen 4 通过前端优化（更强分支预测、更大微操作缓存）和频�
 - [[sources/chipsandcheese-zen4-part2]]
 - [[sources/chipsandcheese-zen4-part3]]
 - [[sources/chipsandcheese-7950x3d-vcache]]
+- [[sources/chipsandcheese-zen4-gaming-workloads]] — 游戏 workload pipeline slot 级剖析
+- [[sources/chipsandcheese-phoenix-soc]] — Phoenix APU CPU 侧测试

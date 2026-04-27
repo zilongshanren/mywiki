@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w113-ma",
+  "agent_note": "5篇 chipsandcheese.com 2023年8-9月文章：Neoverse N2服务器核、Ivy Bridge Gen7 iGPU、Zen4游戏workload剖析、Starfield GPU性能分析、AMD Phoenix SoC。新建4个概念页+5个source摘要页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-08-18_arms-neoverse-n2-cortex-a710-for-servers.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-neoverse-n2",
+      "title": "ARM's Neoverse N2: Cortex A710 for Servers"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-08-25_ivy-bridges-gen7-graphics-intels-modern-igpu-push.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ivy-bridge-igpu",
+      "title": "Ivy Bridge's Gen7 Graphics: Intel's Modern iGPU Push"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-09-06_hot-chips-2023-characterizing-gaming-workloads-on-zen-4.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen4-gaming-workloads",
+      "title": "Hot Chips 2023: Characterizing Gaming Workloads on Zen 4"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-09-14_analyzing-starfields-performance-on-nvidias-4090-and-amds-79.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-starfield-gpu",
+      "title": "Analyzing Starfield's Performance on Nvidia's 4090 and AMD's 7900 XTX"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-09-16_hot-chips-2023-amds-phoenix-soc.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-phoenix-soc",
+      "title": "Hot Chips 2023: AMD's Phoenix SoC"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/neoverse-n2-microarchitecture",
+    "computer-systems/intel-gen7-igpu",
+    "computer-systems/amd-phoenix-soc",
+    "rendering/gpu-register-file-occupancy"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-neoverse-n2",
+    "chipsandcheese-ivy-bridge-igpu",
+    "chipsandcheese-zen4-gaming-workloads",
+    "chipsandcheese-starfield-gpu",
+    "chipsandcheese-phoenix-soc"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-neoverse-n2]] — N2 实测，与 N1 横向对比"
+    },
+    {
+      "file": "wiki/computer-systems/zen4-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen4-gaming-workloads]] — 游戏 workload pipeline slot 级剖析\n- [[sources/chipsandcheese-phoenix-soc]] — Phoenix APU CPU 侧测试"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-starfield-gpu]] — Starfield 帧剖析，寄存器文件与 L2 带宽分析\n- [[sources/chipsandcheese-phoenix-soc]] — Phoenix iGPU（Radeon 780M）测试"
+    },
+    {
+      "file": "wiki/rendering/xe-hpg-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-ivy-bridge-igpu]] — Gen 7 设计语言追溯至 Xe"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/neoverse-n2-microarchitecture]] | ARM 服务器核第二代，Cortex-A710 衍生，CMN-700 mesh 互联，倚天 710 落地 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/intel-gen7-igpu]] | Ivy Bridge Gen 7 iGPU，Intel GPU 设计语言起点，EU/subslice/send 指令模型 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/amd-phoenix-soc]] | AMD Phoenix APU（Ryzen 7040/Z1），Zen4+RDNA3+XDNA，TSMC N4，178mm² |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/gpu-register-file-occupancy]] | GPU 寄存器文件容量与占用率的权衡，RDNA3 vs Ada Lovelace 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-neoverse-n2]] | Chester Lam：Neoverse N2 微基准实测与 Zen 4 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ivy-bridge-igpu]] | Chester Lam：Ivy Bridge Gen7 iGPU 深度分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen4-gaming-workloads]] | Chester Lam：Zen 4 游戏 workload pipeline slot 级剖析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-starfield-gpu]] | Chester Lam & Ryan Mull：Starfield 帧级 GPU 分析，RDNA3 vs Ada |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-phoenix-soc]] | Chester Lam：AMD Phoenix SoC 全面剖析（Hot Chips 2023）|"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-113 Worker MA (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章（2023年8-9月）。新建 4 概念页（neoverse-n2-microarchitecture、intel-gen7-igpu、amd-phoenix-soc、gpu-register-file-occupancy）、5 source 摘要页。patch 到已有页：neoverse-n1-microarchitecture、zen4-microarchitecture、rdna3-architecture、xe-hpg-architecture。跳过 0 篇。"
+}

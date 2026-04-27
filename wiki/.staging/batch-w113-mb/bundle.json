@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch-w113-mb",
+  "agent_note": "2篇文章实际存在：shadow-mistery（已处理）和 tiled-hardware-speculations（重复跳过）。其余3篇文件在 raw/ 目录中不存在。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-05-06_shadow-mistery.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-shadow-mystery",
+      "title": "Shadow Mistery"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-08-07_tiled-hardware-speculations.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/c0de517e-tiled-hardware-speculations.md 已存在且内容完整，无需重复处理"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-10-22_notes-on-dithering.md",
+      "status": "skipped_missing",
+      "reason": "文件在 raw/ 目录中不存在（实际存在的是 2017-10-22_the-curse-of-success-why-nothing-great-is-ever-good.md）"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-10-28_do-we-even-need-shadow-maps-anymore.md",
+      "status": "skipped_missing",
+      "reason": "文件在 raw/ 目录中不存在"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-11-02_digging-in-the-dirt.md",
+      "status": "skipped_missing",
+      "reason": "文件在 raw/ 目录中不存在（最近的是 2017-11-18_coder-color-palettes-for-data-visualization.md）"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["c0de517e-shadow-mystery"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-shadow-mystery]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-shadow-mystery]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-shadow-mystery]] | Pesce：法线贴图高光跳变造成「纹理位移」视觉幻觉 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-113 Worker MB (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。1 篇已处理（shadow-mystery，新增 source 摘要）；1 篇跳过重复（tiled-hardware-speculations，source 页已存在）；3 篇跳过缺失（notes-on-dithering、do-we-even-need-shadow-maps-anymore、digging-in-the-dirt 均不在 raw/ 目录中）。无新概念页或人物页。"
+}

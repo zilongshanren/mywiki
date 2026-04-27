@@ -74,3 +74,5 @@ AMD 和 Nvidia 在同一性能档位（7900 XTX vs RTX 4080）采用了截然不
 - [[sources/chipsandcheese-rt-rdna-turing]]
 - [[sources/chipsandcheese-cyberpunk-path-tracing]]
 - [[sources/chipsandcheese-rx7600-rdna3-small]]
+- [[sources/chipsandcheese-starfield-gpu]] — Starfield 帧剖析，寄存器文件与 L2 带宽分析
+- [[sources/chipsandcheese-phoenix-soc]] — Phoenix iGPU（Radeon 780M）测试

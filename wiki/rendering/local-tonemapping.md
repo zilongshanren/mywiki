@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 后处理, hdr, 色调映射]
 date: 2026-04-14
-sources: 1
+sources: 3
 ---
 
 # 局部色调映射（Local Tonemapping，LTM）
@@ -45,3 +45,5 @@ Ansel Adams 的 [Zone System / dodge & burn] 已经是手工做的 LTM；Lightro
 ## Sources
 
 - [[sources/bartwronski-exposure-fusion]]
+- [[sources/c0de517e-tone-mapping-local]] — Pesce：用渲染器 illuminance pass 直接做局部 TM，零滤波成本
+- [[sources/c0de517e-tone-mapping-silly]] — Pesce：大半径高斯 ND 滤镜 + 胶片颗粒扩展动态范围的快速实验

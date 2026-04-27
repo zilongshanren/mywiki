@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w113-lz",
+  "agent_note": "5篇 c0de517e 文章：4篇摄取（局部TM光照分解、ND滤镜+胶片颗粒TM、过度工程论、HDR显示ACES批判），1篇跳过（where-do-gpus-come-from 仅有2条评论无实质内容）。新增2概念页（over-engineering、aces-hdr-display-calibration），4源摘要，0人物页（angelo-pesce已存在）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-09-11_tone-mapping-local-adaption.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-tone-mapping-local",
+      "title": "Tone mapping & local adaption"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-10-01_more-silly-tone-mapping-ideas.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-tone-mapping-silly",
+      "title": "More (silly) tone-mapping ideas"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2016-10-26_over-engineering-the-root-of-all-evil.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-over-engineering-evil",
+      "title": "Over-engineering (the root of all evil)"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-02-23_tonemapping-on-hdr-displays-aces-to-rule-em-all.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-hdr-displays-aces",
+      "title": "Tonemapping on HDR displays. ACES to rule 'em all?"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2017-05-11_where-do-gpus-come-from.md",
+      "status": "skipped_offtopic",
+      "reason": "仅有课程幻灯片链接和2条评论，无实质技术内容可摘要"
+    }
+  ],
+  "concepts_created": ["over-engineering", "aces-hdr-display-calibration"],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-tone-mapping-local",
+    "c0de517e-tone-mapping-silly",
+    "c0de517e-over-engineering-evil",
+    "c0de517e-hdr-displays-aces"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/local-tonemapping.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-tone-mapping-local]] — Pesce：用渲染器 illuminance pass 直接做局部 TM，零滤波成本\n- [[sources/c0de517e-tone-mapping-silly]] — Pesce：大半径高斯 ND 滤镜 + 胶片颗粒扩展动态范围的快速实验"
+    },
+    {
+      "file": "wiki/rendering/local-tonemapping.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/rendering/filmic-post-processing-critique.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-hdr-displays-aces]] — Pesce：HDR 显示时代 ACES 的适用性批判与分离 look/calibration 的管线方案"
+    },
+    {
+      "file": "wiki/rendering/filmic-post-processing-critique.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[over-engineering]] — 过度工程是万恶之源（2016）\n- [[aces-hdr-display-calibration]] — HDR 显示 ACES 批判与校准框架\n- [[local-tonemapping]] — illuminance 分解做局部 TM"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-tone-mapping-local]]\n- [[sources/c0de517e-tone-mapping-silly]]\n- [[sources/c0de517e-over-engineering-evil]]\n- [[sources/c0de517e-hdr-displays-aces]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 9"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[aces-hdr-display-calibration]] | ACES 在 HDR 游戏显示中的适用性批判与 look/calibration 分离架构 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[over-engineering]] | 过度工程的识别、成因与防范：具体问题 + ROI 判断框架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-tone-mapping-local]] | Pesce 2016-09：illuminance 分解做零滤波局部 TM |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-tone-mapping-silly]] | Pesce 2016-10：大半径高斯 ND 滤镜 + 胶片颗粒扩展动态范围实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-over-engineering-evil]] | Pesce 2016-10：过度工程是隐性技术债，ROI 框架判断工程决策 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-hdr-displays-aces]] | Pesce 2017-02：HDR 显示时代 ACES 适用性批判，分离 look 与校准 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-113 Worker LZ (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 技术文章（2016-09 至 2017-05）。新增 2 概念页（over-engineering、aces-hdr-display-calibration）、4 source 摘要。跳过 1 篇（where-do-gpus-come-from：仅幻灯片链接，无实质文本）。patch：local-tonemapping +2 source、filmic-post-processing-critique +1 source、angelo-pesce +4 source + 相关链接。"
+}

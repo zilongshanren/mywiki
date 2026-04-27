@@ -105,6 +105,7 @@ sources: 371
 | [[always-shippable-game]] | 游戏生产阶段任意时刻必须处于可发布状态；Pesce 五项「完成」标准 |
 | [[software-release-estimation]] | 软件估时难题；可复用性使每个功能都是第一次；缩减范围是唯一有效手段 |
 | [[push-updater-pattern]] | Push Updater 模式：写时广播替代读时跳转，消除渲染循环间接指针 |
+| [[over-engineering]] | 过度工程的识别、成因与防范：具体问题 + ROI 判断框架 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -368,6 +369,9 @@ CAQA + CSAPP 的底层视角。
 | [[qualcomm-kryo-microarchitecture]] | 高通 Kryo：首末款自研 64-bit 移动核，4-wide 乱序，store forwarding 极慢 |
 | [[sandy-bridge-microarchitecture]] | Intel Sandy Bridge：µop cache + 环形总线 L3 + PRF 乱序，现代 CPU 设计奠基 |
 | [[cortex-a710-microarchitecture]] | ARM Cortex-A710：5-wide 效率优先迭代，10K BTB，DSU-110 环形总线互联 |
+| [[neoverse-n2-microarchitecture]] | ARM 服务器核第二代，Cortex-A710 衍生，CMN-700 mesh 互联，倚天 710 落地 |
+| [[intel-gen7-igpu]] | Ivy Bridge Gen 7 iGPU，Intel GPU 设计语言起点，EU/subslice/send 指令模型 |
+| [[amd-phoenix-soc]] | AMD Phoenix APU（Ryzen 7040/Z1），Zen4+RDNA3+XDNA，TSMC N4，178mm² |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1055,6 +1059,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[filmic-post-processing-critique]] | 游戏后处理管线对电影惯性借鉴的批判：源数据控制优于全局滤波 |
 | [[gbuffer-multi-basis-normal-encoding]] | G-Buffer 多基底法线编码：用 2–3 bit basis index 同时满足可混合与高精度 |
 | [[rendering-pipeline-taxonomy]] | Pesce 2016 渲染管线连续体分类学：Forward/Deferred/VB/Texture-Space 统一框架 |
+| [[aces-hdr-display-calibration]] | ACES 在 HDR 游戏显示中的适用性批判与 look/calibration 分离架构 |
+| [[gpu-register-file-occupancy]] | GPU 寄存器文件容量与占用率的权衡，RDNA3 vs Ada Lovelace 对比 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2421,6 +2427,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-qualcomm-kryo]] | Chester Lam：高通 Kryo 微架构深度分析 |
 | [[sources/chipsandcheese-sandy-bridge]] | Chester Lam：Sandy Bridge 微架构与 Intel 现代架构基础 |
 | [[sources/chipsandcheese-cortex-a710]] | Chester Lam：Cortex-A710 微架构分析，默胜策略 |
+| [[sources/c0de517e-tone-mapping-local]] | Pesce 2016-09：illuminance 分解做零滤波局部 TM |
+| [[sources/c0de517e-tone-mapping-silly]] | Pesce 2016-10：大半径高斯 ND 滤镜 + 胶片颗粒扩展动态范围实验 |
+| [[sources/c0de517e-over-engineering-evil]] | Pesce 2016-10：过度工程是隐性技术债，ROI 框架判断工程决策 |
+| [[sources/c0de517e-hdr-displays-aces]] | Pesce 2017-02：HDR 显示时代 ACES 适用性批判，分离 look 与校准 |
+| [[sources/c0de517e-shadow-mystery]] | Pesce：法线贴图高光跳变造成「纹理位移」视觉幻觉 |
+| [[sources/chipsandcheese-neoverse-n2]] | Chester Lam：Neoverse N2 微基准实测与 Zen 4 对比 |
+| [[sources/chipsandcheese-ivy-bridge-igpu]] | Chester Lam：Ivy Bridge Gen7 iGPU 深度分析 |
+| [[sources/chipsandcheese-zen4-gaming-workloads]] | Chester Lam：Zen 4 游戏 workload pipeline slot 级剖析 |
+| [[sources/chipsandcheese-starfield-gpu]] | Chester Lam & Ryan Mull：Starfield 帧级 GPU 分析，RDNA3 vs Ada |
+| [[sources/chipsandcheese-phoenix-soc]] | Chester Lam：AMD Phoenix SoC 全面剖析（Hot Chips 2023）|
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

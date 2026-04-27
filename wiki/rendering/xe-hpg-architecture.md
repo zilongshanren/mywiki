@@ -63,3 +63,4 @@ A770 与 AMD Vega（Radeon VII）有相似的高占用度依赖特征：两者�
 ## Sources
 
 - [[sources/chipsandcheese-arc-a770]]
+- [[sources/chipsandcheese-ivy-bridge-igpu]] — Gen 7 设计语言追溯至 Xe
