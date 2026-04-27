@@ -51,3 +51,4 @@ DXC 库的 `IDxcUtils::CreateReflection` 接口可通过读取编译好的 shade
 ## Sources
 
 - [[sources/asawicki-dx12-root-signatures]]
+- [[sources/graphics-guy-d3d12-intro]]

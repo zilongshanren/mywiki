@@ -36,3 +36,4 @@ sources: 1
 ## Sources
 
 - [[sources/interplay-instant-radiosity-light-prepass]]
+- [[sources/graphics-guy-instant-radiosity]]

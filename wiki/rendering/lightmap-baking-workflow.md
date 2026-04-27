@@ -29,3 +29,4 @@ sources: 1
 ## Sources
 
 - [[sources/joostdevblog-lighting-in-proun]]
+- [[sources/graphics-guy-directional-lightmap]]

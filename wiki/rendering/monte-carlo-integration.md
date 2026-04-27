@@ -60,3 +60,4 @@ F_M = |Ω|/M · Σᵢ f(Uᵢ),   Uᵢ ~ Uniform(Ω)
 - [[sources/slater-mc-integration]]
 - [[sources/slater-continuous-probability]]
 - [[sources/graphics-guy-monte-carlo-mis]] — Cao 2015：MIS 四种权重启发式推导
+- [[sources/graphics-guy-mis-bdpt]]

@@ -1129,6 +1129,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[clustered-forward-rendering]] | 3D froxel 分簇管理灯光列表的前向渲染架构，DOOM 2016 工业实现 |
 | [[megatexture-virtual-texturing]] | 虚拟纹理/Mega-Texture：按 tile 流式加载超显存容量纹理集 |
 | [[alpha-stippling-lod-dithering]] | 棋盘格半像素丢弃实现不透明几何体 LOD 平滑过渡 |
+| [[bidirectional-path-tracing]] | 双向路径追踪：相机+光源双端子路径的 BDPT 框架 |
+| [[microfacet-btdf]] | 微表面折射 BTDF：粗糙玻璃材质的 Walter et al. 推导 |
+| [[directional-lightmap]] | 方向性光照贴图：RNM 与球谐函数方案，让烘焙光照响应法线贴图 |
+| [[bdpt-mis-weights]] | BDPT 中 MIS 权重的递推简化（vc/vcm），每顶点仅 2 个浮点数 |
+| [[primary-ray-pdf]] | 主光线 PDF 与相机重要性函数对消，路径追踪吞掉该项的数学原因 |
+| [[sss-practical-implementation]] | BSSRDF 工程实现：萤火虫消除、全交叉点评估、材质系统扩展 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2603,6 +2609,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/graphics-guy-sampling-microfacet]] | Cao 2015：GGX/Beckmann/Blinn NDF importance sampling |
 | [[sources/agraphicsguynotes-pbs-in-games]] | A Graphics Guy：PBS 在游戏中的核心特性——能量守恒、微表面模型 |
 | [[sources/agraphicsguynotes-ibl-offline-rt]] | A Graphics Guy：IBL 离线 vs 实时对比，UE4 Split-Sum 推导 |
+| [[sources/adrian-gta-v-graphics-3]] | Courrèges：GTA V 帧分析 Part 3，后处理（DoF / 镜头光晕 / 变形条纹） |
+| [[sources/graphics-guy-d3d12-intro]] | Jiayin Cao：D3D12 七大核心变化概览 |
+| [[sources/graphics-guy-glass-bxdf]] | Jiayin Cao：微表面 BTDF 推导，粗糙玻璃折射模型 |
+| [[sources/graphics-guy-naive-bdpt]] | Jiayin Cao：朴素 BDPT 实现与三算法收敛对比 |
+| [[sources/graphics-guy-instant-radiosity]] | Jiayin Cao：Instant Radiosity 实现、热点修复与收敛局限 |
+| [[sources/graphics-guy-directional-lightmap]] | Jiayin Cao：方向性光照贴图从零推导 |
+| [[sources/graphics-guy-mis-bdpt]] | Jiayin Cao：BDPT 中 MIS 的实际实现 |
+| [[sources/graphics-guy-primary-ray-pdf]] | Jiayin Cao：路径追踪中消失的主光线 PDF |
+| [[sources/graphics-guy-color-science-basics]] | Jiayin Cao：图形程序员基础色彩科学 |
+| [[sources/graphics-guy-sss-practical-tips]] | Jiayin Cao：离线渲染器中 SSS 实现的实践技巧 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

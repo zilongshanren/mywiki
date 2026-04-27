@@ -29,3 +29,4 @@ sources: 3
 - [[sources/adrian-doom-2016-graphics]]
 - [[sources/adrian-supcom-graphics]]
 - [[sources/adrian-gta-v-graphics-2]]
+- [[sources/adrian-gta-v-graphics-3]]

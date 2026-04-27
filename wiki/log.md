@@ -1518,3 +1518,11 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-121 Worker MY (agraphicsguynotes.com ×2 + 3 skip)
 
 处理 5 篇文章，2 篇 ingest，3 篇重复跳过。新增 2 source 摘要。
+
+## [2026-04-27] ingest | Wave-122 Worker MZ (adriancourreges ×1 + agraphicsguynotes ×4)
+
+处理 5 篇文章：GTA V Part3 后处理帧分析 + D3D12 概览、玻璃 BTDF、朴素 BDPT、Instant Radiosity。新增 2 概念页（bidirectional-path-tracing、microfacet-btdf）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-122 Worker NA (agraphicsguynotes 2015-2020 ×5)
+
+处理 5 篇 Jiayin Cao 文章（方向性光照贴图、BDPT MIS、主光线 PDF、色彩科学、SSS 实现）。新增 5 概念页（directional-lightmap、bdpt-mis-weights、primary-ray-pdf、color-science-basics、sss-practical-implementation）、5 source 摘要。adriancourreges.com 和 agraphicsguynotes.com 全部处理完毕！

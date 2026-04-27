@@ -67,3 +67,7 @@ workshop Part 3（importance sampling）从未写完——取而代之的是**TU
 - [[sources/peters-path-tracing-lectures]]
 - [[sources/chipsandcheese-cyberpunk-path-tracing]]
 - [[sources/graphics-guy-path-tracing-basics]] — Cao 2015：渲染方程展开到 P(n) 的路径追踪推导 + 俄罗斯轮盘赌
+- [[sources/graphics-guy-naive-bdpt]]
+- [[sources/graphics-guy-mis-bdpt]]
+- [[sources/graphics-guy-primary-ray-pdf]]
+- [[sources/graphics-guy-sss-practical-tips]]

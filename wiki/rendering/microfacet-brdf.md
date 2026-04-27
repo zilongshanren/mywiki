@@ -53,3 +53,4 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 - [[sources/c0de517e-whole-pbs-picture]] —— Pesce 2019：从整体管线角度审视单次散射假设的代价
 - [[sources/graphics-guy-specular-brdf-derivation]] — Cao 2015：纯镜面 delta BRDF 完整推导
 - [[sources/graphics-guy-sampling-microfacet]] — Cao 2015：GGX/Beckmann/Blinn NDF importance sampling
+- [[sources/graphics-guy-glass-bxdf]]

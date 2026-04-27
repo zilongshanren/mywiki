@@ -1,0 +1,105 @@
+{
+  "batch_id": "batch-w122-mz",
+  "agent_note": "5篇技术文章全部摄入：adriancourreges GTA V Part 3（后处理）+ agraphicsguynotes 4篇（D3D12概览、微表面玻璃BXDF、朴素BDPT、Instant Radiosity）。新建2个概念页（bidirectional-path-tracing、microfacet-btdf）、5个source摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/adriancourreges.com/2015-11-02_gta-v-graphics-study-part-3-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-gta-v-graphics-3",
+      "title": "GTA V – Graphics Study Part 3"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-06-17_unleash-the-power-of-direct3d-12.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-d3d12-intro",
+      "title": "Unleash the Power of Direct3D 12"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-11-11_glass-material-simulated-by-microfacet-bxdf.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-glass-bxdf",
+      "title": "Glass Material Simulated by Microfacet BXDF"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2016-01-03_naive-bidirectional-path-tracing.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-naive-bdpt",
+      "title": "Naive Bidirectional Path Tracing"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2016-02-08_instant-radiosity-in-my-renderer.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-instant-radiosity",
+      "title": "Instant Radiosity in my Renderer"
+    }
+  ],
+  "concepts_created": [
+    "rendering/bidirectional-path-tracing",
+    "rendering/microfacet-btdf"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "adrian-gta-v-graphics-3",
+    "graphics-guy-d3d12-intro",
+    "graphics-guy-glass-bxdf",
+    "graphics-guy-naive-bdpt",
+    "graphics-guy-instant-radiosity"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/instant-radiosity-vpl.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-instant-radiosity]]"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-glass-bxdf]]"
+    },
+    {
+      "file": "wiki/rendering/d3d12-root-signature.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-d3d12-intro]]"
+    },
+    {
+      "file": "wiki/rendering/path-tracing-basics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-naive-bdpt]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bidirectional-path-tracing]] | 双向路径追踪：相机+光源双端子路径的 BDPT 框架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[microfacet-btdf]] | 微表面折射 BTDF：粗糙玻璃材质的 Walter et al. 推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-gta-v-graphics-3]] | Courrèges：GTA V 帧分析 Part 3，后处理（DoF / 镜头光晕 / 变形条纹） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-d3d12-intro]] | Jiayin Cao：D3D12 七大核心变化概览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-glass-bxdf]] | Jiayin Cao：微表面 BTDF 推导，粗糙玻璃折射模型 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-naive-bdpt]] | Jiayin Cao：朴素 BDPT 实现与三算法收敛对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-instant-radiosity]] | Jiayin Cao：Instant Radiosity 实现、热点修复与收敛局限 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-122 Worker MZ (adriancourreges.com ×1 + agraphicsguynotes.com ×4)\n\n处理5篇文章：GTA V Part 3后处理帧分析（Courrèges）+ D3D12架构概览、微表面玻璃BXDF、朴素BDPT、Instant Radiosity（Jiayin Cao）。新增2个概念页（bidirectional-path-tracing、microfacet-btdf）、5个source摘要。无新建人物页（两位作者已存在）。4处已有概念页追加source链接（instant-radiosity-vpl、microfacet-brdf、d3d12-root-signature、path-tracing-basics）。"
+}
