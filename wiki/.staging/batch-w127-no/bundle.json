@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w127-no",
+  "agent_note": "5 篇 boristhebrave.com 文章。新增 4 个概念页（generative-generators-clip-evo, substitution-tilings, infinite-quadtrees-fractal-coords, chiseling-random-paths）、5 个 source 摘要页。boris-the-brave 人物页已存在，仅追加 patch。random-path-algorithm 内容极短（无技术深度），与 chiseling 合并为同一概念页处理。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2023-12-03_generative-generators.md",
+      "status": "ingested",
+      "source_slug": "boris-generative-generators",
+      "title": "Generative Generators"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2024-11-30_substitution-tilings.md",
+      "status": "ingested",
+      "source_slug": "boris-substitution-tilings",
+      "title": "Substitution Tilings"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-01-28_infinite-quadtrees-fractal-coordinates.md",
+      "status": "ingested",
+      "source_slug": "boris-infinite-quadtrees",
+      "title": "Infinite Quadtrees – Fractal Coordinates"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2017-07-15_random-path-algorithm.md",
+      "status": "ingested",
+      "source_slug": "boris-random-path-algorithm",
+      "title": "Random Path Algorithm"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2018-04-28_random-paths-via-chiseling.md",
+      "status": "ingested",
+      "source_slug": "boris-random-paths-chiseling",
+      "title": "Random Paths via Chiseling"
+    }
+  ],
+  "concepts_created": [
+    "generative-generators-clip-evo",
+    "substitution-tilings",
+    "infinite-quadtrees-fractal-coords",
+    "chiseling-random-paths"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-generative-generators",
+    "boris-substitution-tilings",
+    "boris-infinite-quadtrees",
+    "boris-random-path-algorithm",
+    "boris-random-paths-chiseling"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/generative-generators-clip-evo]]\n- [[game-development/substitution-tilings]]\n- [[game-development/infinite-quadtrees-fractal-coords]]\n- [[game-development/chiseling-random-paths]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-generative-generators]]\n- [[sources/boris-substitution-tilings]]\n- [[sources/boris-infinite-quadtrees]]\n- [[sources/boris-random-path-algorithm]]\n- [[sources/boris-random-paths-chiseling]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 34",
+      "content": "sources: 39"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/generative-generators-clip-evo]] | CLIP 评分 + 进化算法自动调优程序化生成器参数 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/substitution-tilings]] | 替换铺砖：惰性无限树实现非周期铺砖（Penrose 等），含 spigot 区域查询算法 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/infinite-quadtrees-fractal-coords]] | 分形坐标系：覆盖无限平面的多级格网，交替坐标保证任意区域有唯一包含正方形 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/chiseling-random-paths]] | 凿刻法随机路径：从填满区域移除非关节点格子直到路径成形 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-generative-generators]] | Boris：CLIP + 进化算法调优程序化图像生成器（ProcJam 2023 实验） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-substitution-tilings]] | Boris：Sylves 替换铺砖实现——惰性树 + spigot 区域查询 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-infinite-quadtrees]] | Boris：分形坐标（Mawhorter 论文）——无限四叉树与交替坐标系 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-random-path-algorithm]] | Boris：随机路径算法速写——凿刻法前身 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-random-paths-chiseling]] | Boris：凿刻法随机路径——关节点检测 + 逆向移除 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-127 Worker NO (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章，全部收录。新增 4 概念页：generative-generators-clip-evo（CLIP+进化算法调优）、substitution-tilings（替换铺砖惰性树实现）、infinite-quadtrees-fractal-coords（分形坐标/无限四叉树）、chiseling-random-paths（凿刻法随机路径）。新增 5 source 摘要。boris-the-brave 人物页追加 5 个 source 链接及 4 个概念链接，sources 计数从 34 更新至 39。无跳过。"
+}

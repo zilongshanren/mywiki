@@ -42,3 +42,4 @@ sources: 2
 
 - [[sources/boris-classification-of-tilesets]]
 - [[sources/boris-beyond-basic-autotiling]]
+- [[sources/boris-wang-tileset-creator]]

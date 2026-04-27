@@ -541,3 +541,12 @@ imgui-edge-feathering
 graph-rewriting-proc-gen
 driven-wfc
 arc-consistency
+tileset-classification
+constraint-based-tile-generators
+model-synthesis
+modifying-in-blocks
+marching-squares-multicolor
+marching-squares-ambiguities
+recursive-subdivision
+studio-dcc-standardization
+render-integration-testing

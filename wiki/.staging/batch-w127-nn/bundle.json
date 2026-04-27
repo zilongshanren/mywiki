@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w127-nn",
+  "agent_note": "5 篇 boristhebrave.com 技术文章。新增 4 概念页（triangle-grid, rotation-graphs, ortho-tiles, seed-growth-algorithm）、5 source 摘要。wang-tileset-creator 内容极短（工具公告），仅建 source 摘要，链接到已有 tileset-classification 和 autotile-tileset-layouts 概念，不新建概念页。需给 boris-the-brave 人物页追加本批次 4 条 source 链接与 5 条相关概念链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2021-05-23_triangle-grids.md",
+      "status": "ingested",
+      "source_slug": "boris-triangle-grids",
+      "title": "Triangle Grids"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-06-04_wang-tileset-creator.md",
+      "status": "ingested",
+      "source_slug": "boris-wang-tileset-creator",
+      "title": "Wang Tileset Creator"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-07-31_rotation-graphs.md",
+      "status": "ingested",
+      "source_slug": "boris-rotation-graphs",
+      "title": "Rotation Graphs"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-05-31_ortho-tiles.md",
+      "status": "ingested",
+      "source_slug": "boris-ortho-tiles",
+      "title": "Ortho-tiles"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-11-19_how-does-cave-glade-generator-work.md",
+      "status": "ingested",
+      "source_slug": "boris-cave-glade-generator",
+      "title": "How Does Cave/Glade Generator Work"
+    }
+  ],
+  "concepts_created": [
+    "game-development/triangle-grid",
+    "game-development/rotation-graphs",
+    "game-development/ortho-tiles",
+    "game-development/seed-growth-algorithm"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-triangle-grids",
+    "boris-wang-tileset-creator",
+    "boris-rotation-graphs",
+    "boris-ortho-tiles",
+    "boris-cave-glade-generator"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/triangle-grid]]\n- [[game-development/rotation-graphs]]\n- [[game-development/ortho-tiles]]\n- [[game-development/seed-growth-algorithm]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-triangle-grids]]\n- [[sources/boris-wang-tileset-creator]]\n- [[sources/boris-rotation-graphs]]\n- [[sources/boris-ortho-tiles]]\n- [[sources/boris-cave-glade-generator]]"
+    },
+    {
+      "file": "wiki/game-development/tileset-classification.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-wang-tileset-creator]]"
+    },
+    {
+      "file": "wiki/game-development/dungeon-generation-algorithm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-cave-glade-generator]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/triangle-grid]] | 三角网格三坐标系统：比六边形更简洁的平面网格拓扑 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/rotation-graphs]] | 旋转图：为图添加方向感知，支持无坐标的拓扑导航与网格遍历 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/ortho-tiles]] | 正交瓦片：将 Quarter-tile 自动切片推广到任意多边形网格 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/seed-growth-algorithm]] | 种子扩张算法：基于权重洪水填充的程序化区域生成 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-triangle-grids]] | Boris：三角网格三坐标系统与几何优势 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-wang-tileset-creator]] | Boris：Wang 瓦片集在线可视化工具公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-rotation-graphs]] | Boris：旋转图数据结构及在游戏与几何中的应用 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-ortho-tiles]] | Boris：Ortho-tiles 将 Quarter-tile 推广到任意网格 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-cave-glade-generator]] | Boris：逆向分析 Watabou Cave/Glade Generator 完整管线 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-127 Worker NN (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章（三角网格、Wang 瓦片工具、旋转图、正交瓦片、Cave/Glade 生成器）。新增 4 概念页（triangle-grid, rotation-graphs, ortho-tiles, seed-growth-algorithm）、5 source 摘要。wang-tileset-creator 文章内容极短仅建 source 摘要。追加 boris-the-brave 人物页相关链接与 source 链接。"
+}

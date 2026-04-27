@@ -1574,3 +1574,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-126 Worker NM (bartwronski.com ×2, 16bpp.net ×3)
 
 处理 5 篇文章，无跳过。新增 2 概念页（studio-dcc-standardization、render-integration-testing）、5 source 摘要。补丁更新 bartosz-wronski、16bpp、psraytracing、estrin-scheme、asin-cg-approximation、automated-test-philosophy、automated-test-philosophy 页面。
+
+## [2026-04-27] ingest | Wave-127 Worker NN (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 技术文章（三角网格、Wang 瓦片工具、旋转图、正交瓦片、Cave/Glade 生成器）。新增 4 概念页（triangle-grid、rotation-graphs、ortho-tiles、seed-growth-algorithm）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-127 Worker NO (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 技术文章，全部收录。新增 4 概念页：generative-generators-clip-evo、substitution-tilings、infinite-quadtrees-fractal-coords、chiseling-random-paths。新增 5 source 摘要。
+
+## [2026-04-27] ingest | Wave-127 Worker NP (0 ingested, 5 skipped)
+
+所有 5 篇文章不存在（raphlinus/simonschreibt 目标文件在 raw/ 中缺失）。无新建文件。

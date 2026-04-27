@@ -1263,6 +1263,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[modifying-in-blocks]] | 分块修改技术：解决 WFC/Model Synthesis 大面积生成的矛盾问题；可扩展为无限确定性惰性生成 |
 | [[recursive-subdivision]] | 递归细分（BSP）的程序化生成变体：多边形化、弯折切割、Diablo 式十字分割等 |
 | [[studio-dcc-standardization]] | 大型工作室为何强制统一 DCC 工具——资产管理、live-connection、插件维护的综合成本 |
+| [[game-development/triangle-grid]] | 三角网格三坐标系统：比六边形更简洁的平面网格拓扑 |
+| [[game-development/rotation-graphs]] | 旋转图：为图添加方向感知，支持无坐标的拓扑导航与网格遍历 |
+| [[game-development/ortho-tiles]] | 正交瓦片：将 Quarter-tile 自动切片推广到任意多边形网格 |
+| [[game-development/seed-growth-algorithm]] | 种子扩张算法：基于权重洪水填充的程序化区域生成 |
+| [[game-development/generative-generators-clip-evo]] | CLIP 评分 + 进化算法自动调优程序化生成器参数 |
+| [[game-development/substitution-tilings]] | 替换铺砖：惰性无限树实现非周期铺砖（Penrose 等），含 spigot 区域查询算法 |
+| [[game-development/infinite-quadtrees-fractal-coords]] | 分形坐标系：覆盖无限平面的多级格网，交替坐标保证任意区域有唯一包含正方形 |
+| [[game-development/chiseling-random-paths]] | 凿刻法随机路径：从填满区域移除非关节点格子直到路径成形 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2178,6 +2186,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-2d-marching-cubes-multicolor]] | Boris：2D Marching Cubes 多色扩展 |
 | [[sources/boris-marching-squares-ambiguities]] | Boris：Marching Squares 歧义解析（Asymptotic Decider） |
 | [[sources/boris-recursive-subdivision]] | Boris：递归细分变体综述 |
+| [[sources/boris-triangle-grids]] | Boris：三角网格三坐标系统与几何优势 |
+| [[sources/boris-wang-tileset-creator]] | Boris：Wang 瓦片集在线可视化工具公告 |
+| [[sources/boris-rotation-graphs]] | Boris：旋转图数据结构及在游戏与几何中的应用 |
+| [[sources/boris-ortho-tiles]] | Boris：Ortho-tiles 将 Quarter-tile 推广到任意网格 |
+| [[sources/boris-cave-glade-generator]] | Boris：逆向分析 Watabou Cave/Glade Generator 完整管线 |
+| [[sources/boris-generative-generators]] | Boris：CLIP + 进化算法调优程序化图像生成器（ProcJam 2023 实验） |
+| [[sources/boris-substitution-tilings]] | Boris：Sylves 替换铺砖实现——惰性树 + spigot 区域查询 |
+| [[sources/boris-infinite-quadtrees]] | Boris：分形坐标（Mawhorter 论文）——无限四叉树与交替坐标系 |
+| [[sources/boris-random-path-algorithm]] | Boris：随机路径算法速写——凿刻法前身 |
+| [[sources/boris-random-paths-chiseling]] | Boris：凿刻法随机路径——关节点检测 + 逆向移除 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |

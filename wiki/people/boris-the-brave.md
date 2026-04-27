@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 34
+sources: 44
 ---
 
 # Boris The Brave
@@ -36,6 +36,14 @@ sources: 34
 - [[rendering/marching-squares-multicolor]]
 - [[rendering/marching-squares-ambiguities]]
 - [[game-development/recursive-subdivision]]
+- [[game-development/triangle-grid]]
+- [[game-development/rotation-graphs]]
+- [[game-development/ortho-tiles]]
+- [[game-development/seed-growth-algorithm]]
+- [[game-development/generative-generators-clip-evo]]
+- [[game-development/substitution-tilings]]
+- [[game-development/infinite-quadtrees-fractal-coords]]
+- [[game-development/chiseling-random-paths]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -72,3 +80,13 @@ sources: 34
 - [[sources/boris-2d-marching-cubes-multicolor]]
 - [[sources/boris-marching-squares-ambiguities]]
 - [[sources/boris-recursive-subdivision]]
+- [[sources/boris-triangle-grids]]
+- [[sources/boris-wang-tileset-creator]]
+- [[sources/boris-rotation-graphs]]
+- [[sources/boris-ortho-tiles]]
+- [[sources/boris-cave-glade-generator]]
+- [[sources/boris-generative-generators]]
+- [[sources/boris-substitution-tilings]]
+- [[sources/boris-infinite-quadtrees]]
+- [[sources/boris-random-path-algorithm]]
+- [[sources/boris-random-paths-chiseling]]

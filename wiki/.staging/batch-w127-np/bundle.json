@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w127-np",
+  "agent_note": "所有5个指定原始文件均不存在于仓库中。source 2（raphlinus fearless-simd）有一个日期不同的版本（2018-10-19），但该版本已在早先的 wave 中处理完毕（wiki/sources/raphlinus-fearless-simd.md 已存在，concepts_snapshot 中 fearless-simd 已存在，raph-linus.md 已有对应条目）。三篇 simonschreibt 文章（AC3、Far Cry 4、F1 2015）完全不在 raw/ 目录中。编排员应检查 ingest pipeline 是否抓取了这些 URL，或将它们重新排入下一次抓取任务。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raphlinus.github.io/2019-02-14_performance-without-the-event-loop.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于仓库中。对应 URL 可能为 https://raphlinus.github.io/performance/2019/02/14/performance-without-the-event-loop.html，尚未被 ingest pipeline 抓取。"
+    },
+    {
+      "path": "raw/articles/raphlinus.github.io/2020-06-25_towards-fearless-simd.md",
+      "status": "skipped_already_ingested",
+      "reason": "指定日期（2020-06-25）的文件不存在。仓库中存在 2018-10-19 版本（2018-10-19_towards-fearless-simd.md），该文章已在早先 wave 中完整处理：wiki/sources/raphlinus-fearless-simd.md 已存在，fearless-simd 概念页已存在，raph-linus.md 中已有引用。无需重复操作。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2014-07-31_assassins-creed-3-drawing-the-cloak-dagger.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于仓库中。simonschreibt.de 目录中无任何 2014 年文件，也无匹配 assassin/cloak/dagger 的文件名。对应 URL 应为 https://simonschreibt.de/gat/assassins-creed-3-drawing-the-cloak-dagger/，尚未被 ingest pipeline 抓取。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2015-04-10_far-cry-4-a-world-of-shading.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于仓库中。simonschreibt.de 目录中无 2015-04-10 日期文件，也无匹配 far-cry-4/shading 的文件名。对应 URL 应为 https://simonschreibt.de/gat/far-cry-4-a-world-of-shading/，尚未被 ingest pipeline 抓取。"
+    },
+    {
+      "path": "raw/articles/simonschreibt.de/2016-04-29_f1-2015-shader-effects.md",
+      "status": "skipped_missing",
+      "reason": "文件不存在于仓库中。simonschreibt.de 目录中无 2016 年文件（目录仅含 2013、2022、2024、2025 年文件），也无匹配 f1-2015/shader-effects 的文件名。对应 URL 应为 https://simonschreibt.de/gat/f1-2015-shader-effects/，尚未被 ingest pipeline 抓取。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-127 Worker NP (raphlinus ×2 + simonschreibt ×3)\n\n批次 batch-w127-np 处理 5 篇指定源文件，全部跳过。原因：4 篇文件完全不存在于 raw/ 目录（2019-02-14_performance-without-the-event-loop、2014-07-31_assassins-creed-3、2015-04-10_far-cry-4、2016-04-29_f1-2015），应安排重新抓取；1 篇（2020-06-25_towards-fearless-simd）对应的 2018-10-19 版本已在早先 wave 中完整处理。新增 0 概念页、0 人物页、0 源摘要。编排员建议：将缺失的 5 篇 URL 重新加入 ingest pipeline 待抓取队列。"
+}
