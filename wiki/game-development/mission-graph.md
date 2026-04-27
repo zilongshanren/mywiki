@@ -34,8 +34,10 @@ Mark Brown 的 **Boss Keys** 图在任务图基础上叠加了物理连通信息
 - [[procedural-dungeon-generation]] — 程序化关卡生成如何利用任务图
 - [[sources/boris-lock-key-dungeons]]
 - [[sources/boris-unexplored-dungeon]]
+- [[sources/boris-outer-wilds-mission-graph]] — 《星际拓荒》任务图实例分析：不足半数地点在关键路径上
 
 ## Sources
 
 - [[sources/boris-lock-key-dungeons]]
 - [[sources/boris-unexplored-dungeon]]
+- [[sources/boris-outer-wilds-mission-graph]]

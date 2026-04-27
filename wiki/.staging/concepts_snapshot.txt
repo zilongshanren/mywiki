@@ -533,3 +533,11 @@ marching-cubes
 dual-contouring
 procedural-work-graph-generation
 voxel-lod-large-mesh
+derivative-map
+cubemap-texel-solid-angle
+lt-spherical-harmonics
+sh-glyphs-ray-tracing
+imgui-edge-feathering
+graph-rewriting-proc-gen
+driven-wfc
+arc-consistency

@@ -47,7 +47,9 @@ sources: 1
 - [[deep-modules]]
 - [[identity-problem-naming]]
 - [[evan-todd]]
+- [[render-integration-testing]] — 图形渲染器的像素级集成测试，idiff + Python 脚本方案
 
 ## Sources
 
 - [[sources/etodd-zero-to-100k-tests]]
+- [[sources/16bpp-methods-of-testing]]

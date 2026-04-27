@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w126-nl",
+  "agent_note": "5 篇 boristhebrave.com 文章：Model Synthesis / Modifying in Blocks / 无限 MiB / 多色 Marching Squares / Marching Squares 歧义 / 递归细分变体。新增 5 个概念页、5 个 source 摘要；已有 marching-cubes、wave-function-collapse、dual-contouring 等页打补丁。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2021-10-26_model-synthesis-and-modifying-in-blocks.md",
+      "status": "ingested",
+      "source_slug": "boris-model-synthesis-modifying-blocks",
+      "title": "Model Synthesis and Modifying in Blocks"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-11-08_infinite-modifying-in-blocks.md",
+      "status": "ingested",
+      "source_slug": "boris-infinite-modifying-blocks",
+      "title": "Infinite Modifying in Blocks"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-12-29_2d-marching-cubes-with-multiple-colors.md",
+      "status": "ingested",
+      "source_slug": "boris-2d-marching-cubes-multicolor",
+      "title": "2D Marching Cubes with Multiple Colors"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-01-03_resolving-ambiguities-in-marching-squares.md",
+      "status": "ingested",
+      "source_slug": "boris-marching-squares-ambiguities",
+      "title": "Resolving Ambiguities in Marching Squares"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-08-14_recursive-subdivision-variants.md",
+      "status": "ingested",
+      "source_slug": "boris-recursive-subdivision",
+      "title": "Recursive Subdivision Variants"
+    }
+  ],
+  "concepts_created": [
+    "game-development/model-synthesis",
+    "game-development/modifying-in-blocks",
+    "rendering/marching-squares-multicolor",
+    "rendering/marching-squares-ambiguities",
+    "game-development/recursive-subdivision"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-model-synthesis-modifying-blocks",
+    "boris-infinite-modifying-blocks",
+    "boris-2d-marching-cubes-multicolor",
+    "boris-marching-squares-ambiguities",
+    "boris-recursive-subdivision"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-model-synthesis-modifying-blocks]]\n- [[sources/boris-infinite-modifying-blocks]]"
+    },
+    {
+      "file": "wiki/rendering/marching-cubes.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[marching-squares-multicolor]] — 多色 2D 扩展，支持 N 种颜色区域间的边界绘制\n- [[marching-squares-ambiguities]] — Asymptotic Decider 方法系统消解歧义情形"
+    },
+    {
+      "file": "wiki/rendering/marching-cubes.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-2d-marching-cubes-multicolor]]\n- [[sources/boris-marching-squares-ambiguities]]"
+    },
+    {
+      "file": "wiki/rendering/marching-cubes.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "append_to_section",
+      "section": "## 实践弱点与补救",
+      "content": "\n- **分块修改（[[modifying-in-blocks]]）**：将生成区域划分为互相重叠的小块，每块独立求解，矛盾时只重启该块。配合分层依赖树可实现无限大地图的确定性惰性生成。"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[model-synthesis]]\n- [[modifying-in-blocks]]\n- [[rendering/marching-squares-multicolor]]\n- [[rendering/marching-squares-ambiguities]]\n- [[game-development/recursive-subdivision]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-model-synthesis-modifying-blocks]]\n- [[sources/boris-infinite-modifying-blocks]]\n- [[sources/boris-2d-marching-cubes-multicolor]]\n- [[sources/boris-marching-squares-ambiguities]]\n- [[sources/boris-recursive-subdivision]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 24",
+      "content": "sources: 29"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[model-synthesis]] | Paul Merrell 2007 年的约束式程序化生成算法，WFC 的学术前身 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[modifying-in-blocks]] | 分块修改技术：解决 WFC/Model Synthesis 大面积生成的矛盾问题；可扩展为无限确定性惰性生成 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[recursive-subdivision]] | 递归细分（BSP）的程序化生成变体：多边形化、弯折切割、Diablo 式十字分割等 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[marching-squares-multicolor]] | 多色 Marching Squares：将边界绘制扩展至 N 种颜色区域，15 种基本情形 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[marching-squares-ambiguities]] | Asymptotic Decider：用双线性插值判别量 Q 消解 Marching Squares 歧义情形 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-model-synthesis-modifying-blocks]] | Boris：Model Synthesis 与 Modifying in Blocks |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-infinite-modifying-blocks]] | Boris：无限 Modifying in Blocks 分层求值方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-2d-marching-cubes-multicolor]] | Boris：2D Marching Cubes 多色扩展 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-marching-squares-ambiguities]] | Boris：Marching Squares 歧义解析（Asymptotic Decider） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-recursive-subdivision]] | Boris：递归细分变体综述 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-126 Worker NL (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章。新增 5 概念页（model-synthesis、modifying-in-blocks、marching-squares-multicolor、marching-squares-ambiguities、recursive-subdivision）、5 source 摘要。无跳过。对 wave-function-collapse、marching-cubes 及 boris-the-brave 人物页打补丁，添加新概念链接和 source 引用。"
+}

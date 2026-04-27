@@ -1562,3 +1562,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-125 Worker NJ (Peters ×2, Sawicki ×1, Driscoll ×1)
 
 处理 5 篇文章，跳过 1 篇（Sawicki GPU 2025 通知帖无技术内容）。新增 3 概念页（lt-spherical-harmonics、sh-glyphs-ray-tracing、imgui-edge-feathering）、4 source 摘要。修补 christoph-peters、adam-sawicki、rory-driscoll 人物页及 spherical-harmonics、directx12-api-overview 概念页。
+
+## [2026-04-27] ingest | Wave-126 Worker NK (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章：瓦片集分类框架、进阶自动切片、约束驱动生成器综述、量子 WFC 评述、《星际拓荒》任务图分析。新增 2 概念页（tileset-classification、constraint-based-tile-generators）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-126 Worker NL (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 技术文章：Model Synthesis、Modifying in Blocks、2D 多色 Marching Cubes、Marching Squares 歧义解析、递归细分变体。新增 5 概念页（model-synthesis、modifying-in-blocks、marching-squares-multicolor、marching-squares-ambiguities、recursive-subdivision）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-126 Worker NM (bartwronski.com ×2, 16bpp.net ×3)
+
+处理 5 篇文章，无跳过。新增 2 概念页（studio-dcc-standardization、render-integration-testing）、5 source 摘要。补丁更新 bartosz-wronski、16bpp、psraytracing、estrin-scheme、asin-cg-approximation、automated-test-philosophy、automated-test-philosophy 页面。

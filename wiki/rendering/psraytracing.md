@@ -47,3 +47,5 @@ sources: 3
 - [[sources/16bpp-greedy-vs-analytical]]
 - [[sources/16bpp-free-functions-hypothesis]]
 - [[sources/16bpp-quicker-trig-asin-cg]]
+- [[sources/16bpp-rtow-books]]
+- [[sources/16bpp-methods-of-testing]]

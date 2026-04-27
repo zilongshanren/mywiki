@@ -1,0 +1,124 @@
+{
+  "batch_id": "batch-w126-nk",
+  "agent_note": "5 篇 boristhebrave.com 文章，涵盖瓦片集分类、进阶自动切片、约束驱动生成器、量子 WFC、以及《星际拓荒》任务图分析。新增 2 概念页（tileset-classification、constraint-based-tile-generators）、5 source 摘要页。autotile-tileset-layouts 和 mission-graph 已存在，改为 patch。boris-the-brave 人物页已存在，patch 追加新 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2021-11-14_classification-of-tilesets.md",
+      "status": "ingested",
+      "source_slug": "boris-classification-of-tilesets",
+      "title": "Classification of Tilesets"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-09-12_beyond-basic-autotiling.md",
+      "status": "ingested",
+      "source_slug": "boris-beyond-basic-autotiling",
+      "title": "Beyond Basic Autotiling"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-10-31_constraint-based-tile-generators.md",
+      "status": "ingested",
+      "source_slug": "boris-constraint-based-tile-generators",
+      "title": "Constraint-Based Tile Generators"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2024-11-03_quantum-wavefunctioncollapse.md",
+      "status": "ingested",
+      "source_slug": "boris-quantum-wfc",
+      "title": "Quantum WaveFunctionCollapse"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-02-25_outer-wilds-mission-graph.md",
+      "status": "ingested",
+      "source_slug": "boris-outer-wilds-mission-graph",
+      "title": "Outer Wilds Mission Graph",
+      "note": "调度清单给的日期是 2025-03-29，实际文件为 2025-02-25_outer-wilds-mission-graph.md，已使用正确路径"
+    }
+  ],
+  "concepts_created": [
+    "game-development/tileset-classification",
+    "game-development/constraint-based-tile-generators"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-classification-of-tilesets",
+    "boris-beyond-basic-autotiling",
+    "boris-constraint-based-tile-generators",
+    "boris-quantum-wfc",
+    "boris-outer-wilds-mission-graph"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/autotile-tileset-layouts.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-classification-of-tilesets]]\n- [[sources/boris-beyond-basic-autotiling]]"
+    },
+    {
+      "file": "wiki/game-development/mission-graph.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-outer-wilds-mission-graph]]"
+    },
+    {
+      "file": "wiki/game-development/mission-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/boris-outer-wilds-mission-graph]] — 《星际拓荒》任务图实例分析：不足半数地点在关键路径上"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-constraint-based-tile-generators]]\n- [[sources/boris-quantum-wfc]]"
+    },
+    {
+      "file": "wiki/game-development/arc-consistency.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-constraint-based-tile-generators]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/tileset-classification]]\n- [[game-development/constraint-based-tile-generators]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-classification-of-tilesets]]\n- [[sources/boris-beyond-basic-autotiling]]\n- [[sources/boris-constraint-based-tile-generators]]\n- [[sources/boris-quantum-wfc]]\n- [[sources/boris-outer-wilds-mission-graph]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/tileset-classification]] | Boris 提出的瓦片集形式化分类框架：四维短代码（单元类型/识别方式/对称性/限制） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/constraint-based-tile-generators]] | WFC/MS 所属「约束驱动瓦片生成器」大家族：五个可独立替换的设计维度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-classification-of-tilesets]] | Boris：瓦片集形式化分类（四维短代码体系） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-beyond-basic-autotiling]] | Boris：进阶自动切片——分层合成、遮罩混合、翼式瓦片、波纹传播 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-constraint-based-tile-generators]] | Boris：约束驱动瓦片生成器五维变体综述（WFC/MS 是子集） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-quantum-wfc]] | Boris：量子 WFC 评述——概率优势非算法加速，现阶段不可实用 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-outer-wilds-mission-graph]] | Boris：《星际拓荒》任务图——不足半数地点处于关键路径 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-126 Worker NK (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 文章：瓦片集分类框架、进阶自动切片、约束驱动生成器综述、量子 WFC 评述、《星际拓荒》任务图分析。新增 2 概念页（tileset-classification、constraint-based-tile-generators）、5 source 摘要页。autotile-tileset-layouts / mission-graph / wave-function-collapse / arc-consistency / boris-the-brave 已存在页面均通过 patch 追加引用，未直接修改。注意：outer-wilds 文件实际日期为 2025-02-25（调度清单误写为 2025-03-29）。"
+}

@@ -1,0 +1,125 @@
+{
+  "batch_id": "batch-w126-nm",
+  "agent_note": "5 sources: 2x Bart Wronski (2014 math toolbox + DCC standardization), 3x 16BPP.net (RTOW books, Estrin follow-up, methods of testing). New concepts: studio-dcc-standardization, render-integration-testing. Patches: bartosz-wronski person page, psraytracing, estrin-scheme, asin-cg-approximation, automated-test-philosophy.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-01-19_on-pursuit-of-good-free-mathematics-toolbox.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-math-toolbox",
+      "title": "On Pursuit of Good Free Mathematics Toolbox"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-02-25_why-big-game-studios-usually-use-single-main-3d-software-env.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-3d-software-dccs",
+      "title": "Why Big Game Studios Use Single Main 3D Software Environment"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2021-02-22_books-1-2-ray-tracing-in-one-weekend-and-the-next-week.md",
+      "status": "ingested",
+      "source_slug": "16bpp-rtow-books",
+      "title": "Books 1 & 2: Ray Tracing in One Weekend, and The Next Week"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2026-03-16_gotta-go-fast.md",
+      "status": "ingested",
+      "source_slug": "16bpp-gotta-go-fast",
+      "title": "Gotta Go Fast"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2021-07-08_methods-of-testing.md",
+      "status": "ingested",
+      "source_slug": "16bpp-methods-of-testing",
+      "title": "Methods of Testing"
+    }
+  ],
+  "concepts_created": [
+    "studio-dcc-standardization",
+    "render-integration-testing"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-math-toolbox",
+    "bartwronski-3d-software-dccs",
+    "16bpp-rtow-books",
+    "16bpp-gotta-go-fast",
+    "16bpp-methods-of-testing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| On Pursuit of Good Free Mathematics Toolbox | [[sources/bartwronski-math-toolbox]] — NumPy/SciPy 作为图形程序员免费数学工具箱 |\n| Why Big Studios Use Single 3D Software | [[studio-dcc-standardization]] — DCC 标准化的管理与技术论据 |"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-math-toolbox]]\n- [[sources/bartwronski-3d-software-dccs]]"
+    },
+    {
+      "file": "wiki/rendering/psraytracing.md",
+      "operation": "append_to_section",
+      "section": "## 在这里测过的结论",
+      "content": "- **shared_ptr 裸指针替换**：`HitRecord` 材质指针改为裸指针，一行代码 10–30% 提升（r4）；\n- **每线程深拷贝场景图**：消除多线程引用计数竞争，4 线程下 20–30% 加速（r3）；\n- **`std::variant` 替代 PDF 虚函数**：把 PDF 从堆内存移到栈，消除 `shared_ptr` 开销（r6）；\n- **AABB/Box hit() 去分支**：聚拢同类运算让编译器自动向量化，Box 约快 40%（r1–r2）。"
+    },
+    {
+      "file": "wiki/rendering/psraytracing.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-rtow-books]]\n- [[sources/16bpp-methods-of-testing]]"
+    },
+    {
+      "file": "wiki/computer-systems/estrin-scheme.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-gotta-go-fast]]"
+    },
+    {
+      "file": "wiki/rendering/asin-cg-approximation.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-gotta-go-fast]]"
+    },
+    {
+      "file": "wiki/software-design/automated-test-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-integration-testing]] — 图形渲染器的像素级集成测试，idiff + Python 脚本方案"
+    },
+    {
+      "file": "wiki/software-design/automated-test-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-methods-of-testing]]"
+    },
+    {
+      "file": "wiki/people/16bpp.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-integration-testing]]\n- [[studio-dcc-standardization]]"
+    },
+    {
+      "file": "wiki/people/16bpp.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/16bpp-rtow-books]]\n- [[sources/16bpp-gotta-go-fast]]\n- [[sources/16bpp-methods-of-testing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[studio-dcc-standardization]] | 大型工作室为何强制统一 DCC 工具——资产管理、live-connection、插件维护的综合成本 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[render-integration-testing]] | 渲染器集成测试：idiff 像素对比 + 确定性保证 + Python 测试脚本 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-math-toolbox]] | Wronski：Python/NumPy/SciPy 作为图形程序员免费数学工具箱 |\n| [[sources/bartwronski-3d-software-dccs]] | Wronski：大型工作室单一 DCC 标准化的 11 个理由 |\n| [[sources/16bpp-rtow-books]] | 16BPP.net：PSRayTracing RTOW 重写记——C++ 性能优化各版本实录 |\n| [[sources/16bpp-gotta-go-fast]] | 16BPP.net：Estrin's Scheme 应用于 asin_cg 近似，Intel 再快 +17% |\n| [[sources/16bpp-methods-of-testing]] | 16BPP.net：渲染器自动化测试——idiff 像素对比 + Python 回归脚本 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-126 Worker NM (bartwronski.com ×2, 16bpp.net ×3)\n\n处理 5 篇文章。新增 2 概念页（studio-dcc-standardization、render-integration-testing）、5 source 摘要。人物页均已存在（bartosz-wronski、16bpp），发出 patch 追加新源。核心概念页（psraytracing、estrin-scheme、asin-cg-approximation、automated-test-philosophy）已有高质量内容，仅 patch 追加 source 链接和补充要点。bartwronski-math-toolbox 主要是 2014 年工具推荐，内容较旧，仅建源页不新建概念页。"
+}

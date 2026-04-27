@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 24
+sources: 34
 ---
 
 # Boris The Brave
@@ -29,6 +29,13 @@ sources: 24
 - [[game-development/graph-rewriting-proc-gen]]
 - [[game-development/driven-wfc]]
 - [[game-development/arc-consistency]]
+- [[game-development/tileset-classification]]
+- [[game-development/constraint-based-tile-generators]]
+- [[model-synthesis]]
+- [[modifying-in-blocks]]
+- [[rendering/marching-squares-multicolor]]
+- [[rendering/marching-squares-ambiguities]]
+- [[game-development/recursive-subdivision]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -55,3 +62,13 @@ sources: 24
 - [[sources/boris-driven-wfc]]
 - [[sources/boris-arc-consistency]]
 - [[sources/boris-tessera-practical-system]]
+- [[sources/boris-classification-of-tilesets]]
+- [[sources/boris-beyond-basic-autotiling]]
+- [[sources/boris-constraint-based-tile-generators]]
+- [[sources/boris-quantum-wfc]]
+- [[sources/boris-outer-wilds-mission-graph]]
+- [[sources/boris-model-synthesis-modifying-blocks]]
+- [[sources/boris-infinite-modifying-blocks]]
+- [[sources/boris-2d-marching-cubes-multicolor]]
+- [[sources/boris-marching-squares-ambiguities]]
+- [[sources/boris-recursive-subdivision]]

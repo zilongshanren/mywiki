@@ -39,3 +39,4 @@ WFC 的求解流程是经典的 **Maintaining Arc Consistency（MAC）**框架�
 ## Sources
 
 - [[sources/boris-arc-consistency]]
+- [[sources/boris-constraint-based-tile-generators]]

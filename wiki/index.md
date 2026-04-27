@@ -1159,6 +1159,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[lt-spherical-harmonics]] | LT-SH：结合 SH 积分与 LTC 的多边形面光源高光技术 |
 | [[sh-glyphs-ray-tracing]] | SH 字形光线追踪：高次多项式求根解决 ODF 可视化求交 |
 | [[imgui-edge-feathering]] | IMGUI 边缘羽化：挤出 alpha=0 顶点实现无 MSAA 平滑边缘 |
+| [[marching-squares-multicolor]] | 多色 Marching Squares：将边界绘制扩展至 N 种颜色区域，15 种基本情形 |
+| [[marching-squares-ambiguities]] | Asymptotic Decider：用双线性插值判别量 Q 消解 Marching Squares 歧义情形 |
+| [[render-integration-testing]] | 渲染器集成测试：idiff 像素对比 + 确定性保证 + Python 测试脚本 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1254,6 +1257,12 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/graph-rewriting-proc-gen]] | 图改写技术在游戏程序化关卡生成中的应用，Unexplored / PhantomGrammar 核心机制 |
 | [[game-development/driven-wfc]] | Driven WFC：外部驱动宏观结构 + WFC 负责局部细节，Townscaper 典型实现 |
 | [[game-development/arc-consistency]] | 弧相容算法（AC-3/AC-4），WFC 约束传播的理论基础 |
+| [[game-development/tileset-classification]] | Boris 提出的瓦片集形式化分类框架：四维短代码（单元类型/识别方式/对称性/限制） |
+| [[game-development/constraint-based-tile-generators]] | WFC/MS 所属「约束驱动瓦片生成器」大家族：五个可独立替换的设计维度 |
+| [[model-synthesis]] | Paul Merrell 2007 年的约束式程序化生成算法，WFC 的学术前身 |
+| [[modifying-in-blocks]] | 分块修改技术：解决 WFC/Model Synthesis 大面积生成的矛盾问题；可扩展为无限确定性惰性生成 |
+| [[recursive-subdivision]] | 递归细分（BSP）的程序化生成变体：多边形化、弯折切割、Diablo 式十字分割等 |
+| [[studio-dcc-standardization]] | 大型工作室为何强制统一 DCC 工具——资产管理、live-connection、插件维护的综合成本 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2027,6 +2036,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/16bpp-greedy-vs-analytical]] | 16BPP：拒绝采样 vs 解析采样，开 O1 后拒绝胜 |
 | [[sources/16bpp-free-functions-hypothesis]] | 16BPP：重测 Klaus 2017「free function 更快」主张 |
 | [[sources/16bpp-quicker-trig-asin-cg]] | 16BPP：从 Taylor/Padé 到 Nvidia Cg Minimax + Estrin 的 asin 近似优化历程 |
+| [[sources/16bpp-rtow-books]] | 16BPP.net：PSRayTracing RTOW 重写记——C++ 性能优化各版本实录 |
+| [[sources/16bpp-gotta-go-fast]] | 16BPP.net：Estrin's Scheme 应用于 asin_cg 近似，Intel 再快 +17% |
+| [[sources/16bpp-methods-of-testing]] | 16BPP.net：渲染器自动化测试——idiff 像素对比 + Python 回归脚本 |
 | [[sources/jonolick-ediz-critique]] | Jon Olick：批判 EDIZ 简单上采样算法 |
 | [[sources/jonolick-laplacian-error-diffusion]] | Jon Olick：介绍 Laplacian 结构感知误差扩散 |
 | [[sources/jonolick-sift-library]] | Jon Olick：jo_sift.h 单文件 SIFT 库 |
@@ -2037,6 +2049,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-dx12-gdc-2026-comments]] | Sawicki：GDC 2026 DirectX 12 新特性的应用端点评 |
 | [[sources/bartwronski-poisson-gui]] | Wronski：Poisson 采样生成器加 PyQt GUI + 旋转 disk 模式 |
 | [[sources/bartwronski-multithreading-vfx-review]] | Wronski：《Multithreading for Visual Effects》书评，VFX 工具链多线程改造 |
+| [[sources/bartwronski-math-toolbox]] | Wronski：Python/NumPy/SciPy 作为图形程序员免费数学工具箱 |
+| [[sources/bartwronski-3d-software-dccs]] | Wronski：大型工作室单一 DCC 标准化的 11 个理由 |
 | [[sources/danielilett-snapshot-pro-pixelate]] | Ilett：Snapshot Shaders Pro - Pixelate 单参数空间量化 |
 | [[sources/danielilett-snapshot-pro-posterize]] | Ilett：Snapshot Shaders Pro - Posterize 三通道独立色阶 + Power Ramp |
 | [[sources/danielilett-snapshot-pro-radial-blur]] | Ilett：Snapshot Shaders Pro - Radial Blur kernel 随径向距离变化 |
@@ -2154,6 +2168,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-driven-wfc]] | Boris：Driven WFC 设计模式，Townscaper 案例 |
 | [[sources/boris-arc-consistency]] | Boris：弧相容算法 AC-3 与 AC-4 详解 |
 | [[sources/boris-tessera-practical-system]] | Boris：Tessera Unity 插件与 FDG 2021 论文公告 |
+| [[sources/boris-classification-of-tilesets]] | Boris：瓦片集形式化分类（四维短代码体系） |
+| [[sources/boris-beyond-basic-autotiling]] | Boris：进阶自动切片——分层合成、遮罩混合、翼式瓦片、波纹传播 |
+| [[sources/boris-constraint-based-tile-generators]] | Boris：约束驱动瓦片生成器五维变体综述（WFC/MS 是子集） |
+| [[sources/boris-quantum-wfc]] | Boris：量子 WFC 评述——概率优势非算法加速，现阶段不可实用 |
+| [[sources/boris-outer-wilds-mission-graph]] | Boris：《星际拓荒》任务图——不足半数地点处于关键路径 |
+| [[sources/boris-model-synthesis-modifying-blocks]] | Boris：Model Synthesis 与 Modifying in Blocks |
+| [[sources/boris-infinite-modifying-blocks]] | Boris：无限 Modifying in Blocks 分层求值方案 |
+| [[sources/boris-2d-marching-cubes-multicolor]] | Boris：2D Marching Cubes 多色扩展 |
+| [[sources/boris-marching-squares-ambiguities]] | Boris：Marching Squares 歧义解析（Asymptotic Decider） |
+| [[sources/boris-recursive-subdivision]] | Boris：递归细分变体综述 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |

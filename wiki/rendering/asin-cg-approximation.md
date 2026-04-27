@@ -85,3 +85,4 @@ PSRayTracing 端到端测试：**101.5 秒 vs `std::asin()` 的 110.9 秒**，�
 ## Sources
 
 - [[sources/16bpp-quicker-trig-asin-cg]]
+- [[sources/16bpp-gotta-go-fast]]

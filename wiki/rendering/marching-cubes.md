@@ -1,7 +1,7 @@
 ---
 tags: [rendering, mesh, procedural-generation, isosurface, voxel]
 date: 2026-04-27
-sources: 1
+sources: 3
 ---
 
 # Marching Cubes
@@ -31,7 +31,11 @@ Boris The Brave 提供了带注释的 Python 实现：[mc-dc on GitHub](https://
 
 - [[dual-contouring]] — 解决 Marching Cubes 歧义和尖角问题的改进算法
 - [[greedy-voxel-meshing]] — 另一种体素网格化策略，侧重面数优化
+- [[marching-squares-multicolor]] — 多色 2D 扩展，支持 N 种颜色区域间的边界绘制
+- [[marching-squares-ambiguities]] — Asymptotic Decider 方法系统消解歧义情形
 
 ## Sources
 
 - [[sources/boris-marching-cubes]]
+- [[sources/boris-2d-marching-cubes-multicolor]]
+- [[sources/boris-marching-squares-ambiguities]]

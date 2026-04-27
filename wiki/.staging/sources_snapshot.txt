@@ -459,3 +459,17 @@ boris-unexplored-dungeon
 anteru-image-error-metrics
 anteru-procedural-work-graphs
 anteru-scalable-large-mesh
+rory-derivative-maps
+rory-cubemap-texel-solid-angle
+rory-derivative-maps-vs-normal-maps
+rory-derivative-map-artifacts
+rory-physically-based-shading
+rory-ui-antialiasing
+boris-blue-noise-particles
+boris-graph-rewriting-proc-gen
+boris-driven-wfc
+boris-arc-consistency
+boris-tessera-practical-system
+peters-lt-spherical-harmonics
+peters-rt-sh-glyphs
+asawicki-dx12-all-sources

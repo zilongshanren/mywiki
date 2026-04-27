@@ -27,6 +27,8 @@ sources: 9
 | Runtime editor-console connection in The Witcher 2 | [[runtime-editor-console-connection]] |
 | Updated Poisson-like generator with GUI and more | [[poisson-disk-sampling]] 工具侧的 GUI / 旋转 disk 补充 |
 | Review: Multithreading for Visual Effects (CRC Press 2014) | [[vfx-multithreading-patterns]] |
+| On Pursuit of Good Free Mathematics Toolbox | [[sources/bartwronski-math-toolbox]] — NumPy/SciPy 作为图形程序员免费数学工具箱 |
+| Why Big Studios Use Single 3D Software | [[studio-dcc-standardization]] — DCC 标准化的管理与技术论据 |
 
 ## 相关
 
@@ -63,3 +65,5 @@ sources: 9
 - [[sources/bartwronski-csharprenderer-volumetric-fog]]
 - [[sources/bartwronski-poisson-gui]]
 - [[sources/bartwronski-multithreading-vfx-review]]
+- [[sources/bartwronski-math-toolbox]]
+- [[sources/bartwronski-3d-software-dccs]]

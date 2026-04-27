@@ -18,9 +18,14 @@ sources: 3
 - [[estrin-scheme]]
 - [[pade-approximants]]
 - [[psraytracing]]
+- [[render-integration-testing]]
+- [[studio-dcc-standardization]]
 
 ## Sources
 
 - [[sources/16bpp-greedy-vs-analytical]]
 - [[sources/16bpp-free-functions-hypothesis]]
 - [[sources/16bpp-quicker-trig-asin-cg]]
+- [[sources/16bpp-rtow-books]]
+- [[sources/16bpp-gotta-go-fast]]
+- [[sources/16bpp-methods-of-testing]]

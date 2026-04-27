@@ -77,3 +77,4 @@ const double p = (a3 * x + a2) * x2 + (a1 * x + a0);
 ## Sources
 
 - [[sources/16bpp-quicker-trig-asin-cg]]
+- [[sources/16bpp-gotta-go-fast]]
