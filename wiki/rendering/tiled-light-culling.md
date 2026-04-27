@@ -74,3 +74,4 @@ Karis 在 Prey 2 当前世代（360/PS3）上的实际做法是**把 deferred �
 ## Sources
 
 - [[sources/karis-tiled-light-culling]]
+- [[sources/humus-tile-based-deferred-forward]] —— Engel 2012：全阴影场景下 Tiled 带宽优势消失的论证，Tiled Forward 在阴影密集场景的优势

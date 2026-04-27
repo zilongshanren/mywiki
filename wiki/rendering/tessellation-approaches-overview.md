@@ -67,3 +67,4 @@ Tessellation Table 的均匀密度 dicing 只产生 D3D 拓扑均匀方案 **69%
 - [[sources/karis-possible-approaches-tessellation]]
 - [[sources/karis-how-to-tessellate]]
 - [[sources/graphics-guy-tessellation-dx11]]
+- [[sources/humus-hardware-tessellation]] —— Engel 2010：硬件曲面细分三大优势（压缩/带宽/可扩展性）及 DX11 非递归限制

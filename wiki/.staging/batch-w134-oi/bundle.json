@@ -1,0 +1,123 @@
+{
+  "batch_id": "batch-w134-oi",
+  "agent_note": "重要更正：所有 5 篇文章均来自 Wolfgang Engel（非 Emil Persson/Humus），博客名为 Diary of a Graphics Programmer。wiki/people/wolfgang-engel.md 已存在，本批次仅新增 source 摘要和两个新概念页。slug 前缀 humus- 保留以匹配任务分配中的映射表，但作者是 Wolfgang Engel。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2010-01-31_hardware-tessellation.md",
+      "status": "ingested",
+      "source_slug": "humus-hardware-tessellation",
+      "title": "Hardware Tessellation"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2010-03-20_edge-detection-trick.md",
+      "status": "ingested",
+      "source_slug": "humus-edge-detection-trick",
+      "title": "Edge Detection Trick"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-06-13_screen-space-rules-for-designing-graphics-sub-systems-part-i.md",
+      "status": "ingested",
+      "source_slug": "humus-screen-space-rules",
+      "title": "Screen-Space: Rules for Designing Graphics Sub-systems (Part I)"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2012-04-15_tile-based-deferred-and-forward-lighting.md",
+      "status": "ingested",
+      "source_slug": "humus-tile-based-deferred-forward",
+      "title": "Tile-based Deferred and Forward Lighting"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-03-15_thoughts-on-the-knowledge-of-an-up-to-date-graphics-programm.md",
+      "status": "ingested",
+      "source_slug": "humus-graphics-programmer-knowledge",
+      "title": "Thoughts on the Knowledge of an Up-to-date Graphics Programmer"
+    }
+  ],
+  "concepts_created": [
+    "screen-space-filter-kernel",
+    "msaa-deferred-edge-detection"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "humus-hardware-tessellation",
+    "humus-edge-detection-trick",
+    "humus-screen-space-rules",
+    "humus-tile-based-deferred-forward",
+    "humus-graphics-programmer-knowledge"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-hardware-tessellation]]\n- [[sources/humus-edge-detection-trick]]\n- [[sources/humus-screen-space-rules]]\n- [[sources/humus-tile-based-deferred-forward]]\n- [[sources/humus-graphics-programmer-knowledge]]"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[msaa-deferred-edge-detection]] —— MSAA 延迟管线下 POINT/LINEAR 法线差值边缘检测，stencil 复用模式\n- [[screen-space-filter-kernel]] —— Engel 2011：屏幕空间大滤波核的三个工程挑战（距离缩放 / 各向异性 / 深度剔除）"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-tile-based-deferred-forward]] —— Engel 2012：分块延迟/前向的带宽收益及阴影代价抵消分析\n- [[sources/humus-graphics-programmer-knowledge]] —— Engel 2011：2011 年前后图形程序员知识图谱综述"
+    },
+    {
+      "file": "wiki/rendering/tiled-light-culling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-tile-based-deferred-forward]] —— Engel 2012：全阴影场景下 Tiled 带宽优势消失的论证，Tiled Forward 解决半透明物体问题"
+    },
+    {
+      "file": "wiki/rendering/tessellation-approaches-overview.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-hardware-tessellation]] —— Engel 2010：硬件曲面细分三大优势（压缩/带宽/可扩展性）及 DX11 非递归限制"
+    },
+    {
+      "file": "wiki/rendering/msaa-ssaa.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-edge-detection-trick]] —— Engel 2010：POINT/LINEAR 法线差值边缘检测 + stencil 复用，用于延迟管线 MSAA"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[screen-space-filter-kernel]] | Engel 2011 三条设计规则之一：屏幕空间大滤波核的距离缩放、各向异性与深度剔除 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[msaa-deferred-edge-detection]] | 延迟管线 MSAA：POINT/LINEAR 法线差值检测边缘像素，stencil 复用多光源路径 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-hardware-tessellation]] | Engel 2010：硬件曲面细分三大优势及 DX11 非递归限制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-edge-detection-trick]] | Engel 2010：MSAA 延迟管线 POINT/LINEAR 法线差值边缘检测技巧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-screen-space-rules]] | Engel 2011：屏幕空间设计规则第一篇，大滤波核的三个工程挑战 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-tile-based-deferred-forward]] | Engel 2012：分块延迟/前向光照的带宽与阴影权衡分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-graphics-programmer-knowledge]] | Engel 2011：2011 年图形程序员知识图谱课程大纲 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-134 Worker OI (diaryofagraphicsprogrammer.blogspot.com ×5)\n\n处理 5 篇 Wolfgang Engel「Diary of a Graphics Programmer」技术文章（注：任务分配误标为 Emil Persson/Humus，实际作者为 Wolfgang Engel，其人物页 wiki/people/wolfgang-engel.md 已存在，本批次打 patch 更新 sources 计数）。新增 2 概念页（screen-space-filter-kernel、msaa-deferred-edge-detection）、5 source 摘要。跳过 0 篇。主要内容：硬件曲面细分早期分析（2010）、延迟管线 MSAA 边缘检测技巧（2010）、屏幕空间大滤波核设计规则（2011）、分块延迟/前向阴影权衡（2012）、2011 年图形程序员知识图谱（2011）。"
+}

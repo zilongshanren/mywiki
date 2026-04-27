@@ -17,6 +17,7 @@ Outerra（Anteworld）是斯洛伐克出品的**全球尺度行星引擎**，由
 - [[fp64-sincos-minimax]] —— GLSL 下用 Remez minimax 补齐 fp64 sin/cos
 - [[faster-math-functions]] —— Robin Green 讲的同类方法论
 - [[draw-call]]
+- [[procedural-grass-rendering]] —— 2012 年两阶段 canopy + 几何着色器草叶生成方案
 
 ## Sources
 
@@ -25,3 +26,4 @@ Outerra（Anteworld）是斯洛伐克出品的**全球尺度行星引擎**，由
 - [[sources/outerra-opengl-perf-blocks]]
 - [[sources/outerra-fp64-sincos]]
 - [[sources/outerra-nasadem-comparison]]
+- [[sources/outerra-procedural-grass]]

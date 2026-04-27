@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-19
-sources: 5
+sources: 10
 ---
 
 # Wolfgang Engel
@@ -24,6 +24,10 @@ Confetti 用 The Forge 为 Supergiant 重写了 *Hades* 的引擎（PC / macOS /
 - [[deferred-rendering]]
 - [[async-compute]]
 - [[kostas-anagnostou]]
+- [[graphics-subsystem-no-lut]] — 避免查找表的图形子系统设计原则
+- [[graphics-subsystem-even-error-distribution]] — 均匀误差分布设计规则
+- [[msaa-deferred-edge-detection]] — 延迟管线 MSAA 边缘检测
+- [[screen-space-filter-kernel]] — 屏幕空间滤波核设计规则
 
 ## Sources
 
@@ -32,3 +36,11 @@ Confetti 用 The Forge 为 Supergiant 重写了 *Hades* 的引擎（PC / macOS /
 - [[sources/wolfgang-engel-dxr-api-debate]]
 - [[sources/wolfgang-engel-ray-tracing-without-api]]
 - [[sources/wolfgang-engel-forge-history]]
+- [[sources/humus-hardware-tessellation]]
+- [[sources/humus-edge-detection-trick]]
+- [[sources/humus-screen-space-rules]]
+- [[sources/humus-tile-based-deferred-forward]]
+- [[sources/humus-graphics-programmer-knowledge]]
+- [[sources/humus-no-lut-rules]]
+- [[sources/humus-even-error-distribution-rules]]
+- [[sources/humus-dx11-1-notes]]

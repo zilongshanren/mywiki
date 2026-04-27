@@ -37,3 +37,4 @@ DX11 的隐式同步和驱动封装带来开发便利，代价是驱动端 overh
 ## Sources
 
 - [[sources/alain-raw-dx11]]
+- [[sources/humus-dx11-1-notes]]

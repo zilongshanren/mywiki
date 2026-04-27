@@ -48,3 +48,4 @@ sources: 1
 ## Sources
 
 - [[sources/rtr-day04]]
+- [[sources/humus-edge-detection-trick]] —— Engel 2010：POINT/LINEAR 法线差值边缘检测 + stencil 复用，用于延迟管线 MSAA

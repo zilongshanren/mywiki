@@ -19,6 +19,7 @@ Robin Green，前 Sony Computer Entertainment America R&D 图形工程师，后�
 - [[faster-math-functions]]
 - [[procedural-rendering-ps2]]
 - [[display-edid-colorspace]]
+- [[steering-behaviors]]
 
 ## Sources
 
@@ -27,3 +28,5 @@ Robin Green，前 Sony Computer Entertainment America R&D 图形工程师，后�
 - [[sources/green-faster-math-functions]]
 - [[sources/green-procedural-rendering-ps2]]
 - [[sources/green-display-edid-colorspace]]
+- [[sources/green-steering-behaviors]]
+- [[sources/green-even-faster-math]]

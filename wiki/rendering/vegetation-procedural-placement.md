@@ -33,3 +33,4 @@ sources: 1
 ## Sources
 
 - [[sources/c0de517e-vegetation-cod-bo4]]
+- [[sources/outerra-procedural-grass]]

@@ -73,3 +73,4 @@ Robin 自己在给 tutorial 补料时临时加了一个叫 BitLog 的「快速�
 ## Sources
 
 - [[sources/green-faster-math-functions]]
+- [[sources/green-even-faster-math]] — GDC 2020 续篇：Sollya、FloPoCo、bipartite tables、数字振荡器

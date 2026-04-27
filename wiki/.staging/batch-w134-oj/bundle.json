@@ -1,0 +1,105 @@
+{
+  "batch_id": "batch-w134-oj",
+  "agent_note": "5 sources from basesandframes.wordpress.com (Robin Green) and outerra.blogspot.com. 2 skipped (already ingested in prior waves). 3 ingested: steering-behaviors (new concept), even-faster-math (patch to faster-math-functions concept), outerra procedural-grass 2012 (new concept page).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-05-13_steering-behaviors-siggraph-2000.md",
+      "status": "ingested",
+      "source_slug": "green-steering-behaviors",
+      "title": "Steering Behaviors – Siggraph 2000"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2016-07-25_procedural-rendering-on-ps2.md",
+      "status": "skipped_already_ingested",
+      "reason": "concept 'procedural-rendering-ps2' and source 'green-procedural-rendering-ps2' already exist in wiki from a prior wave"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2017-05-12_extracting-your-display-colorspace.md",
+      "status": "skipped_already_ingested",
+      "reason": "concept 'display-edid-colorspace' and source 'green-display-edid-colorspace' already exist in wiki from a prior wave"
+    },
+    {
+      "path": "raw/articles/basesandframes.wordpress.com/2020-04-04_even-faster-math-functions.md",
+      "status": "ingested",
+      "source_slug": "green-even-faster-math",
+      "title": "Even Faster Math Functions (GDC 2020)"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2012-05-27_procedural-grass-rendering.md",
+      "status": "ingested",
+      "source_slug": "outerra-procedural-grass",
+      "title": "Procedural Grass Rendering"
+    }
+  ],
+  "concepts_created": [
+    "steering-behaviors",
+    "procedural-grass-rendering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "green-steering-behaviors",
+    "green-even-faster-math",
+    "outerra-procedural-grass"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/faster-math-functions.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/green-even-faster-math]] — GDC 2020 续篇：Sollya、FloPoCo、bipartite tables、数字振荡器"
+    },
+    {
+      "file": "wiki/people/robin-green.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/green-steering-behaviors]]\n- [[sources/green-even-faster-math]]"
+    },
+    {
+      "file": "wiki/people/robin-green.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[steering-behaviors]]"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-procedural-grass]]"
+    },
+    {
+      "file": "wiki/people/outerra-team.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-grass-rendering]] —— 2012 年两阶段 canopy + 几何着色器草叶生成方案"
+    },
+    {
+      "file": "wiki/rendering/vegetation-procedural-placement.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/outerra-procedural-grass]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[steering-behaviors]] | Craig Reynolds 转向行为系统：Seek/Flee/Pursue/Wander 等基本行为的组合与混合 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-grass-rendering]] | 程序化草地渲染：canopy 高度掩码 + 几何着色器叶片生成的双阶段方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-steering-behaviors]] | Green：Siggraph 2000 转向行为 tutorial 回顾，Bullfrog 实现经验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/green-even-faster-math]] | Green：GDC 2020 快速数学函数续篇，Sollya / FloPoCo / bipartite tables |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-procedural-grass]] | Outerra：2012 年两阶段程序化草地渲染（canopy + GS 叶片生成） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-134 Worker OJ (basesandframes × 4 + outerra × 1)\n\n处理 5 篇文章：跳过 2 篇（procedural-rendering-ps2、display-edid-colorspace 已在早前 wave 入库）。入库 3 篇：新增概念页 steering-behaviors（game-development/）和 procedural-grass-rendering（rendering/）；为 green-even-faster-math 创建 source 摘要并 patch 到 faster-math-functions 概念页。Robin Green 人物页新增 steering-behaviors source 与 even-faster-math source；Outerra 人物页新增 procedural-grass source。"
+}

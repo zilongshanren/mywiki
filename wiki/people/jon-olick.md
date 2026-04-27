@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者]
 date: 2026-04-14
-sources: 7
+sources: 9
 ---
 
 # Jon Olick
@@ -15,6 +15,8 @@ sources: 7
 - [[floyd-steinberg-dithering]] — 经典误差扩散背景
 - [[dxt-entropy-reduction]] — DXT selection bits 降熵压缩（Firefall）
 - [[dxt-codebooks-sliding-window]] — 滑窗码表与 Zeng 优化
+- [[projective-cross-product-geometry]] — 叉积作为点/线/面对偶算子的射影几何技巧
+- [[index-buffer-compression]] — 无损索引缓冲压缩（repeat/sequential table + delta）
 
 ## Sources
 - [[sources/jonolick-ediz-critique]]
@@ -24,3 +26,5 @@ sources: 7
 - [[sources/jonolick-dxt-codebooks-sliding-windows]]
 - [[sources/jonolick-dxt-part3-transposes]]
 - [[sources/jonolick-dxt-part4-entropy]]
+- [[sources/jonolick-cross-product-tricks]]
+- [[sources/jonolick-index-buffer-compression]]

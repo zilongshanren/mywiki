@@ -587,3 +587,9 @@ slige-doom-level-gen
 rectangle-subdivisions
 constrained-beam-search-llm
 maxwell-architecture
+ttpoe-protocol
+ampereone-microarchitecture
+telum-ii-microarchitecture
+ibm-virtual-cache-hierarchy
+d3d12-hardware-feature-adoption
+unity-guid-fileid

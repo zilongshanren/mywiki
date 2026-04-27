@@ -1658,3 +1658,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-133 Worker OH (boristhebrave ×3 + asawicki ×2)
 
 4 篇入库，1 篇重复（asawicki-dx12-all-sources）。新建 d3d12-hardware-feature-adoption、unity-guid-fileid 概念页。
+
+## [2026-04-27] ingest | Wave-134 Worker OI (diaryofagraphicsprogrammer ×5)
+
+注意：该博客作者为 Wolfgang Engel（非 Emil Persson）。5 篇全部入库。新建 2 概念页（screen-space-filter-kernel、msaa-deferred-edge-detection）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-134 Worker OJ (basesandframes ×4 + outerra ×1)
+
+3 篇入库，2 篇重复。新建 steering-behaviors、procedural-grass-rendering 概念页，3 source 摘要。
+
+## [2026-04-27] ingest | Wave-134 Worker OK (jonolick ×2 + diaryofagraphicsprogrammer ×3)
+
+5 篇全部入库。新建 4 概念页（projective-cross-product-geometry、index-buffer-compression、graphics-subsystem-no-lut、graphics-subsystem-even-error-distribution）、5 source 摘要。

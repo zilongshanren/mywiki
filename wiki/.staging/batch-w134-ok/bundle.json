@@ -1,0 +1,139 @@
+{
+  "batch_id": "batch-w134-ok",
+  "agent_note": "Jon Olick (2 篇) + Wolfgang Engel Diary of a Graphics Programmer (3 篇)。注意：批次说明中将 Emil Persson 列为 Humus 博客作者，但原始文章 frontmatter 明确标注 author: Wolfgang Engel；已按实际作者处理，打补丁到 wolfgang-engel.md 而非 humus.md。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jonolick.com/2021-12-09_unusual-cross-product-tricks.md",
+      "status": "ingested",
+      "source_slug": "jonolick-cross-product-tricks",
+      "title": "Unusual Cross Product Tricks"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2021-01-26_how-to-compress-an-index-buffer.md",
+      "status": "ingested",
+      "source_slug": "jonolick-index-buffer-compression",
+      "title": "How to Compress an Index Buffer"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-07-03_no-look-up-tables-rules-for-designing-graphics-sub-systems-p.md",
+      "status": "ingested",
+      "source_slug": "humus-no-lut-rules",
+      "title": "No Look-up Tables: Rules for Designing Graphics Sub-systems Part II"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-07-31_even-error-distribution-rules-for-designing-graphics-sub-sys.md",
+      "status": "ingested",
+      "source_slug": "humus-even-error-distribution-rules",
+      "title": "Even Error-Distribution: Rules for Designing Graphics Sub-Systems Part III"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2011-09-14_directx-11-1-notes.md",
+      "status": "ingested",
+      "source_slug": "humus-dx11-1-notes",
+      "title": "DirectX 11.1 Notes"
+    }
+  ],
+  "concepts_created": [
+    "projective-cross-product-geometry",
+    "index-buffer-compression",
+    "graphics-subsystem-no-lut",
+    "graphics-subsystem-even-error-distribution"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "jonolick-cross-product-tricks",
+    "jonolick-index-buffer-compression",
+    "humus-no-lut-rules",
+    "humus-even-error-distribution-rules",
+    "humus-dx11-1-notes"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "replace_line",
+      "match": "sources: 7",
+      "content": "sources: 9"
+    },
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[projective-cross-product-geometry]] — 叉积作为点/线/面对偶算子的射影几何技巧\n- [[index-buffer-compression]] — 2007-2008 年演讲中的索引缓冲无损压缩方案"
+    },
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/jonolick-cross-product-tricks]]\n- [[sources/jonolick-index-buffer-compression]]"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 8"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[graphics-subsystem-no-lut]] — 避免查找表的图形子系统设计原则\n- [[graphics-subsystem-even-error-distribution]] — 均匀误差分布设计原则"
+    },
+    {
+      "file": "wiki/people/wolfgang-engel.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-no-lut-rules]]\n- [[sources/humus-even-error-distribution-rules]]\n- [[sources/humus-dx11-1-notes]]"
+    },
+    {
+      "file": "wiki/rendering/directx11-api-overview.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/directx11-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/humus-dx11-1-notes]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[projective-cross-product-geometry]] | 射影叉积：两点定直线、两线定交点、三点定平面的对偶运算 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[graphics-subsystem-no-lut]] | Engel 图形子系统设计原则：用算术替代查找表，带宽>算术的时代下的决策 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[graphics-subsystem-even-error-distribution]] | Engel 图形子系统设计原则：均匀误差分布，感知适应驱动的技术选型 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[index-buffer-compression]] | 利用三角形邻接重复性的索引缓冲无损压缩（repeat table + sequential table + delta encode）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-cross-product-tricks]] | Olick：叉积作为点/线/面对偶算子的射影几何技巧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-index-buffer-compression]] | Olick：2007-2008 演讲中的索引缓冲无损压缩详解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-no-lut-rules]] | Engel：图形子系统设计规则 II——避免查找表 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-even-error-distribution-rules]] | Engel：图形子系统设计规则 III——均匀误差分布 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/humus-dx11-1-notes]] | Engel：DirectX 11.1 早期功能整理笔记（UAV 全管线 + 逻辑操作 + 低功耗优化）|"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-134 Worker OK (jonolick.com ×2 + diaryofagraphicsprogrammer.blogspot.com ×3)\n\n处理 5 篇技术文章。新增 4 概念页（projective-cross-product-geometry、index-buffer-compression、graphics-subsystem-no-lut、graphics-subsystem-even-error-distribution）、0 人物页（jon-olick 和 wolfgang-engel 均已存在，打补丁）、5 source 摘要页。\n\n注意：批次说明将博客作者标注为 Emil Persson，但原文 frontmatter 明确为 Wolfgang Engel（Confetti FX）；已按实际作者处理。DX11.1 notes 补丁到现有 directx11-api-overview 页。跳过 0 篇。"
+}

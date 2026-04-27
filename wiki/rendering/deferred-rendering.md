@@ -69,6 +69,8 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[rendering-perception-psychology]] —— Pesce 2011 质疑 deferred 是否损失了预计算光照对材质微妙性的表现
 - [[realtime-quality-vs-quantity]] —— Pesce 2012：数量 vs 质量的结构性取舍，延迟渲染的功能堆砌是典型案例
 - [[rendering-pipeline-taxonomy]] — Pesce 2016 的统一管线分类框架，把 deferred 放入更大的连续体中定位
+- [[msaa-deferred-edge-detection]] —— MSAA 延迟管线下 POINT/LINEAR 法线差值边缘检测，stencil 复用模式
+- [[screen-space-filter-kernel]] —— 屏幕空间滤波核的距离缩放/各向异性/深度剔除设计规则
 
 ## Sources
 
@@ -85,3 +87,5 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[sources/adrian-gta-v-graphics-1]]
 - [[sources/adrian-gta-v-graphics-2]]
 - [[sources/adrian-doom-2016-graphics]]
+- [[sources/humus-tile-based-deferred-forward]] —— Engel 2012：分块延迟/前向的带宽收益及阴影代价抵消分析
+- [[sources/humus-edge-detection-trick]] —— Engel 2010：MSAA 边缘检测，延迟管线应用

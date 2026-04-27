@@ -533,3 +533,11 @@ boris-rectangle-subdivisions
 boris-constrained-text-gen-ai
 boris-voronatorsharp
 chipsandcheese-maxwell-nvidia
+chipsandcheese-ttpoe
+chipsandcheese-zen5-hot-chips
+chipsandcheese-ampereone
+chipsandcheese-telum-ii
+asawicki-gpu-state-2025
+boris-lucky-fluke-postmortem
+boris-announcing-sylves
+boris-unity-guids

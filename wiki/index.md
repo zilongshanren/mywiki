@@ -421,6 +421,10 @@ CAQA + CSAPP 的底层视角。
 | [[telum-ii-microarchitecture]] | IBM Telum II：8 核 360 MB 片上缓存，虚拟 L3/L4 饱和度驱动 |
 | [[ibm-virtual-cache-hierarchy]] | IBM 大型机虚拟缓存层级：饱和度指标动态分配 L3/L4 |
 | [[d3d12-hardware-feature-adoption]] | D3D12 特性覆盖率 2025：各 GPU 世代在活跃驱动下的实测支持率 |
+| [[projective-cross-product-geometry]] | 射影叉积对偶：点↔线↔面交点的统一 2D/3D 线性算子 |
+| [[index-buffer-compression]] | 索引缓冲无损压缩：repeat/sequential table + delta encode |
+| [[software-design/graphics-subsystem-no-lut]] | Engel 图形子系统设计规则：避免查找表 |
+| [[software-design/graphics-subsystem-even-error-distribution]] | Engel 图形子系统设计规则：均匀误差分布 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1178,6 +1182,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering/probe-warping]] | 利用烘焙深度的探针 Warp 重投影，视差映射的球面推广 |
 | [[vegetation-procedural-placement]] | COD: BO4 程序化植被散布：蓝噪声点集、多层影响、bitmask 存储 |
 | [[rendering/maxwell-architecture]] | NVIDIA Maxwell：SM 精简 + 21 位控制码 + L2 加倍，28nm 最优解 |
+| [[rendering/screen-space-filter-kernel]] | Engel：屏幕空间滤波核的距离缩放/各向异性/深度剔除三条设计规则 |
+| [[rendering/msaa-deferred-edge-detection]] | Engel：延迟管线 MSAA 边缘检测，POINT/LINEAR 法线差值 + stencil 复用 |
+| [[rendering/procedural-grass-rendering]] | Outerra：两阶段 canopy + 几何着色器草叶，LOD 策略 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1304,6 +1311,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/celtic-knots]] | 框架网格 → 3D 贝塞尔曲线的 over-under 拓扑约束生成 |
 | [[game-development/slige-doom-level-gen]] | SLIGE 栈式 Quest 锁钥系统与难度预算的早期实践 |
 | [[game-development/rectangle-subdivisions]] | 不可约矩形细分的形式化定义与枚举，程序化城市生成应用 |
+| [[game-development/steering-behaviors]] | Craig Reynolds 转向行为：Seek/Flee/Pursue/Wander，混合问题与游戏权衡 |
 | [[game-development/constrained-beam-search-llm]] | 用受约束束搜索让 LLM 只从预审核短语集输出，适用于游戏 NPC 对话 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
@@ -2254,6 +2262,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-rectangle-subdivisions]] | Boris：不可约矩形细分的形式化枚举与应用 |
 | [[sources/boris-constrained-text-gen-ai]] | Boris：约束 LLM 生成用于游戏对话 |
 | [[sources/boris-voronatorsharp]] | Boris：VoronatorSharp C# Voronoi/Delaunay 库 |
+| [[sources/green-steering-behaviors]] | Robin Green：Craig Reynolds 转向行为 SIGGRAPH 2000 讲义 |
+| [[sources/green-even-faster-math]] | Robin Green：GDC 2020 续篇，Sollya/FloPoCo/bipartite/数字振荡器 |
+| [[sources/outerra-procedural-grass]] | Outerra：两阶段 canopy + 几何着色器草叶生成 |
+| [[sources/humus-hardware-tessellation]] | Engel：硬件曲面细分三大优势及 DX11 非递归限制 |
+| [[sources/humus-edge-detection-trick]] | Engel：延迟管线 MSAA 边缘检测 trick |
+| [[sources/humus-screen-space-rules]] | Engel：屏幕空间滤波核设计规则（第一条） |
+| [[sources/humus-tile-based-deferred-forward]] | Engel：分块延迟/前向带宽与阴影代价分析 |
+| [[sources/humus-graphics-programmer-knowledge]] | Engel：图形程序员知识体系概述 |
+| [[sources/humus-no-lut-rules]] | Engel：避免查找表的图形子系统规则 |
+| [[sources/humus-even-error-distribution-rules]] | Engel：均匀误差分布规则 |
+| [[sources/humus-dx11-1-notes]] | Engel：DirectX 11.1 API 变化笔记 |
+| [[sources/jonolick-cross-product-tricks]] | Jon Olick：射影叉积对偶运算技巧 |
+| [[sources/jonolick-index-buffer-compression]] | Jon Olick：索引缓冲无损压缩算法 |
 | [[sources/boris-lucky-fluke-postmortem]] | Boris：Lucky Fluke 游戏 jam 开发后记 |
 | [[sources/boris-announcing-sylves]] | Boris：Sylves 程序化生成 .NET 网格库正式发布 |
 | [[sources/boris-unity-guids]] | Boris：Unity Asset GUID 与 FileID 内部寻址机制 |
