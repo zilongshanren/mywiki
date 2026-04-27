@@ -1154,6 +1154,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[rendering/dual-contouring]] | 每格一顶点的等值面算法，用 QEF 最小化还原尖锐边角 |
 | [[procedural-work-graph-generation]] | GPU Work Graphs + Mesh Shaders 实现实时递归程序化内容生成 |
 | [[voxel-lod-large-mesh]] | 体素 LOD 统一流式加载、遮挡剔除、LOD 的数亿三角形光栅化渲染 |
+| [[derivative-map]] | Mikkelsen/Driscoll：用高度场导数贴图替代法线贴图，免切线向量，可直接叠加混合 |
+| [[cubemap-texel-solid-angle]] | cubemap 各 texel 在单位球上的立体角精确计算，含完整数学推导 |
+| [[lt-spherical-harmonics]] | LT-SH：结合 SH 积分与 LTC 的多边形面光源高光技术 |
+| [[sh-glyphs-ray-tracing]] | SH 字形光线追踪：高次多项式求根解决 ODF 可视化求交 |
+| [[imgui-edge-feathering]] | IMGUI 边缘羽化：挤出 alpha=0 顶点实现无 MSAA 平滑边缘 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1246,6 +1251,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[dungeon-generation-algorithm]] | 地牢生成两阶段范式：预地牢/图结构先行，Diablo 1 递归萌芽/细分/有机扩展，Gungeon Flow 图 + Composite 布局 |
 | [[game-development/procedural-dungeon-generation]] | 程序化地牢生成：BFS 扩展、循环地牢生成、布局与内容解耦 |
 | [[game-development/mission-graph]] | 任务图：锁钥依赖关系的有向图抽象，用于分析与生成关卡 |
+| [[game-development/graph-rewriting-proc-gen]] | 图改写技术在游戏程序化关卡生成中的应用，Unexplored / PhantomGrammar 核心机制 |
+| [[game-development/driven-wfc]] | Driven WFC：外部驱动宏观结构 + WFC 负责局部细节，Townscaper 典型实现 |
+| [[game-development/arc-consistency]] | 弧相容算法（AC-3/AC-4），WFC 约束传播的理论基础 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -1309,6 +1317,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[ben-supnik]] | Ben Supnik，Laminar Research / X-Plane 图形与引擎程序员 |
 | [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |
 | [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |
+| [[rory-driscoll]] | Rory Driscoll，CodeItNow 博客，derivative map 与 cubemap 积分推导 |
 | [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |
 | [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |
 | [[ted-sie]] | Ted Sie，Unity 中文技术博客作者（分形 / DOTS / 群体仿真） |
@@ -1860,6 +1869,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/peters-radiometry-1-backwards]] | Peters：从 radiance 起步的辐射度量积分式重构 |
 | [[sources/peters-radiometry-2-photometry]] | Peters：光谱量、CIE XYZ 与 photometric 单位 |
 | [[sources/peters-spectral-rendering-3-vs-rgb]] | Peters：RGB vs 光谱渲染在多种光源下的实证对比 |
+| [[sources/peters-lt-spherical-harmonics]] | Peters：线性变换球谐（LT-SH）学生论文介绍 |
+| [[sources/peters-rt-sh-glyphs]] | Peters et al.：VMV 2023 SH 字形光线追踪（荣誉提名） |
 | [[sources/danielilett-toon-shaders-pro-toon]] | Ilett：Toon Shaders Pro 核心 HLSL shader 参数手册 |
 | [[sources/danielilett-toon-shaders-pro-toon-graph]] | Ilett：Toon Shader Graph 变体，`CalculateToonLighting` subgraph |
 | [[sources/danielilett-toon-shaders-pro-terrain]] | Ilett：Toon Terrain，splatmap + stochastic texturing |
@@ -2138,6 +2149,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-isaac-dungeon]] | Boris：以撒结合地牢生成逆向分析（BFS 扩展 + 特殊房间规则） |
 | [[sources/boris-lock-key-dungeons]] | Boris：锁钥地牢设计模式与任务图分析工具 |
 | [[sources/boris-unexplored-dungeon]] | Boris：Unexplored 循环地牢生成深度解析（图重写 + biome + 5000 规则） |
+| [[sources/boris-blue-noise-particles]] | Boris：蓝噪声粒子 Blender 插件（泊松磁盘采样） |
+| [[sources/boris-graph-rewriting-proc-gen]] | Boris：图改写在程序化关卡生成中的应用 |
+| [[sources/boris-driven-wfc]] | Boris：Driven WFC 设计模式，Townscaper 案例 |
+| [[sources/boris-arc-consistency]] | Boris：弧相容算法 AC-3 与 AC-4 详解 |
+| [[sources/boris-tessera-practical-system]] | Boris：Tessera Unity 插件与 FDG 2021 论文公告 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2666,6 +2682,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/anteru-image-error-metrics]] | Chajdas：误差度量驱动的混合光栅+光追自适应细化 |
 | [[sources/anteru-procedural-work-graphs]] | Chajdas：GPU Work Graphs 用于实时程序化生成，79,710 实例 3.74 ms |
 | [[sources/anteru-scalable-large-mesh]] | Chajdas：体素 LOD 统一管线，数亿三角形纯光栅化渲染 |
+| [[sources/asawicki-dx12-all-sources]] | Sawicki：D3D12 文档来源全梳理与碎片化批评 |
+| [[sources/rory-derivative-maps]] | Driscoll：derivative map 原理与预计算方案实现 |
+| [[sources/rory-cubemap-texel-solid-angle]] | Driscoll：cubemap texel 立体角完整数学推导 |
+| [[sources/rory-derivative-maps-vs-normal-maps]] | Driscoll：derivative map vs normal map 性能/质量/内存实测对比 |
+| [[sources/rory-derivative-map-artifacts]] | Driscoll：derivative map 条纹 artifact 根因为 mipmap 生成 bug |
+| [[sources/rory-physically-based-shading]] | Driscoll：PBS 概念辨析，LBP vs Disney BRDF 的 MERL 对比 |
+| [[sources/rory-ui-antialiasing]] | Driscoll：IMGUI 多边形边缘羽化 AA 技巧 |
 | [[sources/alain-raw-dx11]] | Galvan：DirectX 11 Hello Triangle 完整流程 |
 | [[sources/alain-raw-dx12]] | Galvan：DirectX 12 现代 API 完整流程 |
 | [[sources/alain-gpgpu-compute]] | Galvan：GPGPU 计算概念综述（WebGPU + DX12） |

@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 19
+sources: 24
 ---
 
 # Boris The Brave
@@ -26,6 +26,9 @@ sources: 19
 - [[rendering/dual-contouring]]
 - [[game-development/procedural-dungeon-generation]]
 - [[game-development/mission-graph]]
+- [[game-development/graph-rewriting-proc-gen]]
+- [[game-development/driven-wfc]]
+- [[game-development/arc-consistency]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -47,3 +50,8 @@ sources: 19
 - [[sources/boris-isaac-dungeon]]
 - [[sources/boris-lock-key-dungeons]]
 - [[sources/boris-unexplored-dungeon]]
+- [[sources/boris-blue-noise-particles]]
+- [[sources/boris-graph-rewriting-proc-gen]]
+- [[sources/boris-driven-wfc]]
+- [[sources/boris-arc-consistency]]
+- [[sources/boris-tessera-practical-system]]

@@ -446,3 +446,16 @@ xor-mini-webgpu
 xor-shadowmaps
 yaazarai-radiance-cascades-2
 yaazarai-radiance-cascades
+boris-wfc-explained
+boris-wfc-tips
+boris-editable-wfc
+boris-diablo1-dungeon
+boris-gungeon-dungeon
+boris-marching-cubes
+boris-dual-contouring
+boris-isaac-dungeon
+boris-lock-key-dungeons
+boris-unexplored-dungeon
+anteru-image-error-metrics
+anteru-procedural-work-graphs
+anteru-scalable-large-mesh

@@ -36,3 +36,4 @@ DX12 还扩展至 GPGPU 领域（[[gpgpu-compute-simt-model]]）和硬件光线�
 ## Sources
 
 - [[sources/alain-raw-dx12]]
+- [[sources/asawicki-dx12-all-sources]]

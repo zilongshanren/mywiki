@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w125-nh",
+  "agent_note": "5 篇 rorydriscoll.com 文章。3 篇 derivative map 系列 + 1 篇 cubemap 立体角数学推导 + 1 篇 PBS 概念辨析。新增 2 个概念页（derivative-map, cubemap-texel-solid-angle）、1 个人物页（rory-driscoll）、5 个 source 摘要。physically-based-shading 已有页面，以 patch 方式补充 Driscoll 视角；tangent-free-normal-mapping 和 tangent-space-normal-mapping 已有页面，derivative-map 页内交叉链接即可，无需 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/rorydriscoll.com/2012-01-11_derivative-maps.md",
+      "status": "ingested",
+      "source_slug": "rory-derivative-maps",
+      "title": "Derivative Maps"
+    },
+    {
+      "path": "raw/articles/rorydriscoll.com/2012-01-15_cubemap-texel-solid-angle.md",
+      "status": "ingested",
+      "source_slug": "rory-cubemap-texel-solid-angle",
+      "title": "Cubemap Texel Solid Angle"
+    },
+    {
+      "path": "raw/articles/rorydriscoll.com/2012-01-15_derivative-maps-vs-normal-maps.md",
+      "status": "ingested",
+      "source_slug": "rory-derivative-maps-vs-normal-maps",
+      "title": "Derivative Maps vs Normal Maps"
+    },
+    {
+      "path": "raw/articles/rorydriscoll.com/2012-01-22_derivative-map-artifacts.md",
+      "status": "ingested",
+      "source_slug": "rory-derivative-map-artifacts",
+      "title": "Derivative Map Artifacts"
+    },
+    {
+      "path": "raw/articles/rorydriscoll.com/2013-11-22_physically-based-shading.md",
+      "status": "ingested",
+      "source_slug": "rory-physically-based-shading",
+      "title": "Physically-Based Shading"
+    }
+  ],
+  "concepts_created": ["derivative-map", "cubemap-texel-solid-angle"],
+  "people_created": ["rory-driscoll"],
+  "source_summaries_created": [
+    "rory-derivative-maps",
+    "rory-cubemap-texel-solid-angle",
+    "rory-derivative-maps-vs-normal-maps",
+    "rory-derivative-map-artifacts",
+    "rory-physically-based-shading"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/rory-physically-based-shading]] — Driscoll 2013：LBP vs Disney BRDF 的 MERL 对比；「physically-correct」与「physically-based」的区分"
+    },
+    {
+      "file": "wiki/rendering/tangent-free-normal-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/derivative-map]] — 另一种免切线法线扰动：存储高度导数而非法线方向"
+    },
+    {
+      "file": "wiki/rendering/tangent-space-normal-mapping.md",
+      "operation": "append_to_section",
+      "section": "## 与其它法线贴图技术的关系",
+      "content": "- [[derivative-map]] —— Mikkelsen / Driscoll：用高度场导数代替法线向量，无需切线，可直接混合。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[derivative-map]] | Mikkelsen/Driscoll：用高度场导数贴图替代法线贴图，免切线向量，可直接叠加混合 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cubemap-texel-solid-angle]] | cubemap 各 texel 在单位球上的立体角精确计算，含完整数学推导 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[rory-driscoll]] | Rory Driscoll，CodeItNow 博客，derivative map 与 cubemap 积分推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-derivative-maps]] | Driscoll：derivative map 原理与预计算方案实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-cubemap-texel-solid-angle]] | Driscoll：cubemap texel 立体角完整数学推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-derivative-maps-vs-normal-maps]] | Driscoll：derivative map vs normal map 性能/质量/内存实测对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-derivative-map-artifacts]] | Driscoll：derivative map 条纹 artifact 根因为 mipmap 生成 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-physically-based-shading]] | Driscoll：PBS 概念辨析，LBP vs Disney BRDF 的 MERL 对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-125 Worker NH (rorydriscoll.com ×5)\n\n处理 5 篇 rorydriscoll.com（CodeItNow）技术文章。新增 2 个概念页（derivative-map、cubemap-texel-solid-angle）、1 个人物页（rory-driscoll）、5 个 source 摘要。physically-based-shading / tangent-free-normal-mapping / tangent-space-normal-mapping 已有页面，以 patch 方式补充交叉链接。5 篇全部 ingested，无跳过。"
+}

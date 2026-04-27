@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w124-nf",
+  "agent_note": "5 篇 boristhebrave.com 文章：2 篇等值面网格教程（rendering/）+ 3 篇地牢生成系列（game-development/）。人物页 boris-the-brave 已存在，仅 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2018-04-15_marching-cubes-tutorial.md",
+      "status": "ingested",
+      "source_slug": "boris-marching-cubes",
+      "title": "Marching Cubes Tutorial"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2018-04-15_dual-contouring-tutorial.md",
+      "status": "ingested",
+      "source_slug": "boris-dual-contouring",
+      "title": "Dual Contouring Tutorial"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2020-09-12_dungeon-generation-in-binding-of-isaac.md",
+      "status": "ingested",
+      "source_slug": "boris-isaac-dungeon",
+      "title": "Dungeon Generation in Binding of Isaac"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-02-27_lock-and-key-dungeons.md",
+      "status": "ingested",
+      "source_slug": "boris-lock-key-dungeons",
+      "title": "Lock and Key Dungeons"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-04-10_dungeon-generation-in-unexplored.md",
+      "status": "ingested",
+      "source_slug": "boris-unexplored-dungeon",
+      "title": "Dungeon Generation in Unexplored"
+    }
+  ],
+  "concepts_created": [
+    "rendering/marching-cubes",
+    "rendering/dual-contouring",
+    "game-development/procedural-dungeon-generation",
+    "game-development/mission-graph"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-marching-cubes",
+    "boris-dual-contouring",
+    "boris-isaac-dungeon",
+    "boris-lock-key-dungeons",
+    "boris-unexplored-dungeon"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/marching-cubes]]\n- [[rendering/dual-contouring]]\n- [[game-development/procedural-dungeon-generation]]\n- [[game-development/mission-graph]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-marching-cubes]]\n- [[sources/boris-dual-contouring]]\n- [[sources/boris-isaac-dungeon]]\n- [[sources/boris-lock-key-dungeons]]\n- [[sources/boris-unexplored-dungeon]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 6",
+      "content": "sources: 11"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/marching-cubes]] | 从标量场提取等值面的经典算法，查找表驱动，逐格处理 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/dual-contouring]] | 每格一顶点的等值面算法，用 QEF 最小化还原尖锐边角 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/procedural-dungeon-generation]] | 程序化地牢生成：BFS 扩展、循环地牢生成、布局与内容解耦 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/mission-graph]] | 任务图：锁钥依赖关系的有向图抽象，用于分析与生成关卡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-marching-cubes]] | Boris：Marching Cubes 算法教程（2D/3D 等值面提取） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-dual-contouring]] | Boris：Dual Contouring 教程（QEF、尖角还原、Surface Nets 对比） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-isaac-dungeon]] | Boris：以撒结合地牢生成逆向分析（BFS 扩展 + 特殊房间规则） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-lock-key-dungeons]] | Boris：锁钥地牢设计模式与任务图分析工具 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-unexplored-dungeon]] | Boris：Unexplored 循环地牢生成深度解析（图重写 + biome + 5000 规则） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-124 Worker NF (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章。新增 4 概念页（rendering/marching-cubes, rendering/dual-contouring, game-development/procedural-dungeon-generation, game-development/mission-graph）、0 人物页（boris-the-brave 已存在，patch sources 计数和链接）、5 source 摘要。跳过 0 篇。"
+}

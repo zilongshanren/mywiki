@@ -42,6 +42,7 @@ $$
 - [[compact-vertex-format]] —— 另一个从顶点格式里省字节的角度
 - [[microfacet-brdf]]
 - [[tangent-space-normal-mapping]] —— 传统的预计算 TBN 方案，本页是它的 derivative-based 替代
+- [[rendering/derivative-map]] — 另一种免切线法线扰动：存储高度导数而非法线方向
 
 ## Sources
 

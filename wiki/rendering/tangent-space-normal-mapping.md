@@ -48,6 +48,7 @@ $$
 - [[normal-map-blending]] —— 把两张切线空间法线贴图叠加为一张，关注的是**叠加运算**而不是怎么得到 TBN。
 - [[tangent-free-normal-mapping]] —— 用 `dFdx` / `dFdy` 在 fragment shader 里现算 TBN，省掉顶点缓冲里的 T、B，是本页传统方案的优化版。
 - [[diffuse-lighting-lambertian]] —— 视差和 normal 都是为 Lambertian / 镜面项**喂角度**用的。
+- [[derivative-map]] —— Mikkelsen / Driscoll：用高度场导数代替法线向量，无需切线，可直接混合。
 
 ## 相关
 

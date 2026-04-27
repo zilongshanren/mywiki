@@ -1,0 +1,140 @@
+{
+  "batch_id": "batch-w125-nj",
+  "agent_note": "5 sources: 2x Peters/momentsingraphics (LT-SH + RT SH glyphs), 1x Sawicki DX12 docs, 1x Sawicki GPU 2025 stub (skipped), 1x Rory Driscoll UI AA. New concepts: lt-spherical-harmonics, sh-glyphs-ray-tracing, imgui-edge-feathering.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/momentsingraphics.de/2020-12-02_linearly-transformed-spherical-harmonics-expansions.md",
+      "status": "ingested",
+      "source_slug": "peters-lt-spherical-harmonics",
+      "title": "Linearly Transformed Spherical Harmonics Expansions"
+    },
+    {
+      "path": "raw/articles/momentsingraphics.de/2023-12-23_ray-tracing-spherical-harmonics-glyphs.md",
+      "status": "ingested",
+      "source_slug": "peters-rt-sh-glyphs",
+      "title": "Ray Tracing Spherical Harmonics Glyphs"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2025-11-25_all-sources-of-directx-12-documentation.md",
+      "status": "ingested",
+      "source_slug": "asawicki-dx12-all-sources",
+      "title": "All Sources of DirectX 12 Documentation"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2025-12-29_state-of-gpu-hardware-end-of-year-2025-new-article.md",
+      "status": "skipped_offtopic",
+      "reason": "仅为通知帖，内容是宣布由 Dmytro Bulatov 撰写的外部客座文章已发布，正文只有两句话，不含可提炼的技术内容。"
+    },
+    {
+      "path": "raw/articles/rorydriscoll.com/2012-01-08_ui-anti-aliasing.md",
+      "status": "ingested",
+      "source_slug": "rory-ui-antialiasing",
+      "title": "UI Anti-Aliasing"
+    }
+  ],
+  "concepts_created": [
+    "lt-spherical-harmonics",
+    "sh-glyphs-ray-tracing",
+    "imgui-edge-feathering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "peters-lt-spherical-harmonics",
+    "peters-rt-sh-glyphs",
+    "asawicki-dx12-all-sources",
+    "rory-ui-antialiasing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lt-spherical-harmonics]] — LT-SH：多边形面光源高光的线性变换球谐技术\n- [[sh-glyphs-ray-tracing]] — SH 字形的光线追踪渲染与多项式求根"
+    },
+    {
+      "file": "wiki/rendering/spherical-harmonics.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/peters-lt-spherical-harmonics]]\n- [[sources/peters-rt-sh-glyphs]]"
+    },
+    {
+      "file": "wiki/rendering/directx12-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/asawicki-dx12-all-sources]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "replace_line",
+      "match": "| Path tracing lectures | [[path-tracing-basics]]（进阶：重要性采样、MIS） |",
+      "content": "| Path tracing lectures | [[path-tracing-basics]]（进阶：重要性采样、MIS） |\n| Linearly Transformed SH (via student thesis) | [[lt-spherical-harmonics]] — 多边形面光源高光 |\n| Ray Tracing Spherical Harmonics Glyphs (VMV 2023) | [[sh-glyphs-ray-tracing]] — SH 字形光线追踪，荣誉提名奖 |"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lt-spherical-harmonics]]\n- [[sh-glyphs-ray-tracing]]"
+    },
+    {
+      "file": "wiki/people/christoph-peters.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/peters-lt-spherical-harmonics]]\n- [[sources/peters-rt-sh-glyphs]]"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "replace_line",
+      "match": "- **D3D12 的角落与坑**：资源对齐、root signature、`ClearUnorderedAccessView` 行为、文档分散等"秘密"系列",
+      "content": "- **D3D12 的角落与坑**：资源对齐、root signature、`ClearUnorderedAccessView` 行为、文档分散等"秘密"系列（见 [[asawicki-dx12-all-sources]]）"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/asawicki-dx12-all-sources]]"
+    },
+    {
+      "file": "wiki/people/rory-driscoll.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/imgui-edge-feathering]]"
+    },
+    {
+      "file": "wiki/people/rory-driscoll.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/rory-ui-antialiasing]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[lt-spherical-harmonics]] | LT-SH：结合 SH 积分与 LTC 的多边形面光源高光技术 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sh-glyphs-ray-tracing]] | SH 字形光线追踪：高次多项式求根解决 ODF 可视化求交 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[imgui-edge-feathering]] | IMGUI 边缘羽化：挤出 alpha=0 顶点实现无 MSAA 平滑边缘 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-lt-spherical-harmonics]] | Peters：线性变换球谐（LT-SH）学生论文介绍 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/peters-rt-sh-glyphs]] | Peters et al.：VMV 2023 SH 字形光线追踪（荣誉提名） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-dx12-all-sources]] | Sawicki：D3D12 文档来源全梳理与碎片化批评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/rory-ui-antialiasing]] | Driscoll：IMGUI 多边形边缘羽化 AA 技巧 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-125 Worker NJ (Peters ×2, Sawicki ×1, Driscoll ×1)\n\n处理 5 篇文章：Peters/momentsingraphics 两篇（LT-SH 学生论文导引、VMV 2023 SH 字形光线追踪），Sawicki D3D12 文档碎片化批评，Driscoll UI 边缘羽化 AA 技巧。跳过 1 篇（Sawicki GPU 2025 通知帖，无技术内容）。新增 3 概念页（lt-spherical-harmonics、sh-glyphs-ray-tracing、imgui-edge-feathering）、4 source 摘要。修补 christoph-peters、adam-sawicki、rory-driscoll 人物页及 spherical-harmonics、directx12-api-overview 概念页。"
+}

@@ -1,0 +1,90 @@
+{
+  "batch_id": "batch-w124-ne",
+  "agent_note": "5 篇 boristhebrave.com 文章：WFC 三部曲 + Diablo 1 / Gungeon 地牢生成逆向分析。新增 2 概念页、5 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2020-04-13_wave-function-collapse-explained.md",
+      "status": "ingested",
+      "source_slug": "boris-wfc-explained",
+      "title": "Wave Function Collapse Explained"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2020-02-08_wave-function-collapse-tips-and-tricks.md",
+      "status": "ingested",
+      "source_slug": "boris-wfc-tips",
+      "title": "Wave Function Collapse Tips and Tricks"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-04-25_editable-wfc.md",
+      "status": "ingested",
+      "source_slug": "boris-editable-wfc",
+      "title": "Editable WFC"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2019-07-14_dungeon-generation-in-diablo-1.md",
+      "status": "ingested",
+      "source_slug": "boris-diablo1-dungeon",
+      "title": "Dungeon Generation in Diablo 1"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2019-07-28_dungeon-generation-in-enter-the-gungeon.md",
+      "status": "ingested",
+      "source_slug": "boris-gungeon-dungeon",
+      "title": "Dungeon Generation in Enter The Gungeon"
+    }
+  ],
+  "concepts_created": ["wave-function-collapse", "dungeon-generation-algorithm"],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-wfc-explained",
+    "boris-wfc-tips",
+    "boris-editable-wfc",
+    "boris-diablo1-dungeon",
+    "boris-gungeon-dungeon"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[wave-function-collapse]]\n- [[dungeon-generation-algorithm]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-wfc-explained]]\n- [[sources/boris-wfc-tips]]\n- [[sources/boris-editable-wfc]]\n- [[sources/boris-diablo1-dungeon]]\n- [[sources/boris-gungeon-dungeon]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[wave-function-collapse]] | WFC 算法：约束传播 + 最小熵随机采样，邻接/重叠两种变体，路径约束补全局结构 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[dungeon-generation-algorithm]] | 地牢生成两阶段范式：预地牢/图结构先行，Diablo 1 递归萌芽/细分/有机扩展，Gungeon Flow 图 + Composite 布局 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-wfc-explained]] | Boris：WFC 作为约束编程的系统讲解，约束传播 + 最小熵 + Overlapped 变体 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-wfc-tips]] | Boris：WFC 实践指南，路径约束 / Marching Cubes 瓦片 / 分区 Biome 解决单调感 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-editable-wfc]] | Boris：Editable WFC，脏格启发 + 相似度权重 + 提前终止，对标 Townscaper |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-diablo1-dungeon]] | Boris：Diablo 1 地牢生成逆向，预地牢两阶段 + 递归萌芽/细分/有机扩展 + Miniset |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-gungeon-dungeon]] | Boris：Enter The Gungeon 地牢生成逆向，Flow 图 + Composite 拆分 + 循环布局 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave 124 Worker NE (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 文章：WFC 三部曲（算法讲解、实践技巧、可编辑变体）+ Diablo 1 / Enter The Gungeon 地牢生成逆向分析。新增概念页 2 个（wave-function-collapse、dungeon-generation-algorithm）、source 摘要 5 个。更新人物页 boris-the-brave（patch）。跳过 0 篇。"
+}

@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w125-ni",
+  "agent_note": "5 篇 boristhebrave.com 文章：图改写、Driven WFC、弧相容 3 个新概念页；蓝噪声粒子和 Tessera 内容过短，仅建 source 页不建概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2017-05-14_blue-noise-particles.md",
+      "status": "ingested",
+      "source_slug": "boris-blue-noise-particles",
+      "title": "Blue Noise Particles"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-04-02_graph-rewriting-for-procedural-level-generation.md",
+      "status": "ingested",
+      "source_slug": "boris-graph-rewriting-proc-gen",
+      "title": "Graph Rewriting for Procedural Level Generation"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-06-06_driven-wavefunctioncollapse.md",
+      "status": "ingested",
+      "source_slug": "boris-driven-wfc",
+      "title": "Driven WaveFunctionCollapse"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-08-30_arc-consistency-explained.md",
+      "status": "ingested",
+      "source_slug": "boris-arc-consistency",
+      "title": "Arc Consistency Explained"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2021-08-12_tessera-a-practical-system-for-extended-wavefunctioncollapse.md",
+      "status": "ingested",
+      "source_slug": "boris-tessera-practical-system",
+      "title": "Tessera: A Practical System for Extended WaveFunctionCollapse"
+    }
+  ],
+  "concepts_created": [
+    "game-development/graph-rewriting-proc-gen",
+    "game-development/driven-wfc",
+    "game-development/arc-consistency"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-blue-noise-particles",
+    "boris-graph-rewriting-proc-gen",
+    "boris-driven-wfc",
+    "boris-arc-consistency",
+    "boris-tessera-practical-system"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/graph-rewriting-proc-gen]]\n- [[game-development/driven-wfc]]\n- [[game-development/arc-consistency]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-blue-noise-particles]]\n- [[sources/boris-graph-rewriting-proc-gen]]\n- [[sources/boris-driven-wfc]]\n- [[sources/boris-arc-consistency]]\n- [[sources/boris-tessera-practical-system]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 19",
+      "content": "sources: 24"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-driven-wfc]]\n- [[sources/boris-arc-consistency]]\n- [[sources/boris-tessera-practical-system]]"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 6"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/graph-rewriting-proc-gen]] | 图改写技术在游戏程序化关卡生成中的应用，Unexplored / PhantomGrammar 核心机制 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/driven-wfc]] | Driven WFC：外部驱动宏观结构 + WFC 负责局部细节，Townscaper 典型实现 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/arc-consistency]] | 弧相容算法（AC-3/AC-4），WFC 约束传播的理论基础 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-blue-noise-particles]] | Boris：蓝噪声粒子 Blender 插件（泊松磁盘采样） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-graph-rewriting-proc-gen]] | Boris：图改写在程序化关卡生成中的应用 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-driven-wfc]] | Boris：Driven WFC 设计模式，Townscaper 案例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-arc-consistency]] | Boris：弧相容算法 AC-3 与 AC-4 详解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-tessera-practical-system]] | Boris：Tessera Unity 插件与 FDG 2021 论文公告 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-125 Worker NI (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 文章。新增 3 概念页（graph-rewriting-proc-gen、driven-wfc、arc-consistency）、0 人物页、5 source 摘要页。Boris 人物页与 wave-function-collapse 概念页均有 patch（新增 source 链接与 sources 计数更新）。蓝噪声粒子与 Tessera 两篇内容过短（发布公告性质），仅建 source 摘要，不新开概念页。"
+}

@@ -1,0 +1,93 @@
+{
+  "batch_id": "batch-w124-ng",
+  "agent_note": "5篇 anteru.net 文章。2篇完全重复（probe placement + SRAA 已在波123前处理），跳过；3篇新增。新概念页：procedural-work-graph-generation、voxel-lod-large-mesh。新source摘要：anteru-image-error-metrics、anteru-procedural-work-graphs、anteru-scalable-large-mesh。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_assisted-environment-probe-placement.md",
+      "status": "skipped_duplicate",
+      "reason": "source summary wiki/sources/chajdas-assisted-probe-placement.md 已存在，concept wiki/rendering/environment-probe-placement.md 已存在，内容完全覆盖"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_subpixel-reconstruction-antialiasing.md",
+      "status": "skipped_duplicate",
+      "reason": "source summary wiki/sources/anteru-sraa.md 已存在，concept wiki/rendering/subpixel-reconstruction-antialiasing.md 已存在，内容完全覆盖"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_error-metrics-for-smart-image-refinement.md",
+      "status": "ingested",
+      "source_slug": "anteru-image-error-metrics",
+      "title": "Error Metrics for Smart Image Refinement"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_real-time-procedural-generation-with-gpu-work-graphs.md",
+      "status": "ingested",
+      "source_slug": "anteru-procedural-work-graphs",
+      "title": "Real-Time Procedural Generation with GPU Work Graphs"
+    },
+    {
+      "path": "raw/articles/anteru.net/2025-02-16_scalable-rendering-for-very-large-meshes.md",
+      "status": "ingested",
+      "source_slug": "anteru-scalable-large-mesh",
+      "title": "Scalable Rendering for Very Large Meshes"
+    }
+  ],
+  "concepts_created": [
+    "procedural-work-graph-generation",
+    "voxel-lod-large-mesh"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "anteru-image-error-metrics",
+    "anteru-procedural-work-graphs",
+    "anteru-scalable-large-mesh"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-image-error-metrics]] — Chajdas：GPU 误差估计驱动的混合光栅 + 光追 smart refinement"
+    },
+    {
+      "file": "wiki/rendering/d3d12-work-graphs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-work-graph-generation]] — Work Graphs + Mesh Shaders 用于实时程序化内容生成（Chajdas 等）"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[procedural-work-graph-generation]] — Work Graphs 驱动程序化生成，79,710 实例 / 3.74 ms\n- [[voxel-lod-large-mesh]] — 体素 LOD 统一流式 + 剔除 + LOD 的超大网格光栅化方案"
+    },
+    {
+      "file": "wiki/people/matthaeus-chajdas.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/anteru-image-error-metrics]]\n- [[sources/anteru-procedural-work-graphs]]\n- [[sources/anteru-scalable-large-mesh]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[procedural-work-graph-generation]] | GPU Work Graphs + Mesh Shaders 实现实时递归程序化内容生成 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[voxel-lod-large-mesh]] | 体素 LOD 统一流式加载、遮挡剔除、LOD 的数亿三角形光栅化渲染 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-image-error-metrics]] | Chajdas：误差度量驱动的混合光栅+光追自适应细化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-procedural-work-graphs]] | Chajdas：GPU Work Graphs 用于实时程序化生成，79,710 实例 3.74 ms |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anteru-scalable-large-mesh]] | Chajdas：体素 LOD 统一管线，数亿三角形纯光栅化渲染 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-124 Worker NG (anteru.net ×5)\n\n处理 5 篇 anteru.net 研究摘要页。跳过 2 篇重复（assisted-probe-placement、SRAA 已在前序波次处理）。新增 2 概念页（procedural-work-graph-generation、voxel-lod-large-mesh）、3 source 摘要（anteru-image-error-metrics、anteru-procedural-work-graphs、anteru-scalable-large-mesh）。Patch：hybrid-raytracing-pipeline（+image-error-metrics source link）、d3d12-work-graphs（+procedural generation 相关链接）、matthaeus-chajdas（+3 source links + 2 concept links）。"
+}

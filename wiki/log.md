@@ -1550,3 +1550,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-124 Worker NG (anteru.net ×5)
 
 处理 5 篇 anteru.net 研究摘要页。跳过 2 篇重复（assisted-probe-placement、SRAA 已在前序波次处理）。新增 2 概念页（procedural-work-graph-generation、voxel-lod-large-mesh）、3 source 摘要（anteru-image-error-metrics、anteru-procedural-work-graphs、anteru-scalable-large-mesh）。Patch：hybrid-raytracing-pipeline、d3d12-work-graphs、matthaeus-chajdas。
+
+## [2026-04-27] ingest | Wave-125 Worker NH (rorydriscoll.com ×5)
+
+处理 5 篇 rorydriscoll.com（CodeItNow）技术文章。新增 2 个概念页（derivative-map、cubemap-texel-solid-angle）、1 个人物页（rory-driscoll）、5 个 source 摘要。physically-based-shading / tangent-free-normal-mapping / tangent-space-normal-mapping 已有页面，以 patch 方式补充交叉链接。5 篇全部 ingested。
+
+## [2026-04-27] ingest | Wave-125 Worker NI (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章。新增 3 概念页（graph-rewriting-proc-gen、driven-wfc、arc-consistency）、source 摘要 5 个。Boris 人物页与 wave-function-collapse 概念页均有 patch。蓝噪声粒子与 Tessera 两篇内容过短，仅建 source 摘要。
+
+## [2026-04-27] ingest | Wave-125 Worker NJ (Peters ×2, Sawicki ×1, Driscoll ×1)
+
+处理 5 篇文章，跳过 1 篇（Sawicki GPU 2025 通知帖无技术内容）。新增 3 概念页（lt-spherical-harmonics、sh-glyphs-ray-tracing、imgui-edge-feathering）、4 source 摘要。修补 christoph-peters、adam-sawicki、rory-driscoll 人物页及 spherical-harmonics、directx12-api-overview 概念页。

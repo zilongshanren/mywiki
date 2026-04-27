@@ -10,7 +10,7 @@ sources: 7
 
 ## 关注方向
 
-- **D3D12 的角落与坑**：资源对齐、root signature、`ClearUnorderedAccessView` 行为、文档分散等"秘密"系列
+- **D3D12 的角落与坑**：资源对齐、root signature、`ClearUnorderedAccessView` 行为、文档分散等"秘密"系列（见 [[sources/asawicki-dx12-all-sources]]）
 - **GPU 内存分配器**：子块分配、碎片度量，见 [[a-metric-for-memory-fragmentation]]（2022）
 - **小工具与数值**：系统级数学问题 + 交互式 demo，见 [[system-load-formula]]
 - **GDC / Agility SDK 跟踪**：以应用端视角评注 Microsoft 每年的 DX12 公告，见 [[pix-api-and-dxdmp]]、[[dxr-tier-2-clas-ptlas]]、[[advanced-shader-delivery]]
@@ -45,3 +45,4 @@ sources: 7
 - [[sources/asawicki-dx12-root-signatures]]
 - [[sources/asawicki-dx12-clearuav-behavior]]
 - [[sources/asawicki-app-startup-5min-fix]]
+- [[sources/asawicki-dx12-all-sources]]

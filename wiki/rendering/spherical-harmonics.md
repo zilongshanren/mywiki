@@ -64,6 +64,8 @@ $$
 - [[max-slater]]
 - [[robin-green]] — GDC 2003 *SH Lighting: The Gritty Details* 的作者
 - [[valve-ambient-cube]] —— 非正交的六方向紧凑表示，shader 指令更便宜，精度逊于 L2 SH
+- [[lt-spherical-harmonics]] — LT-SH：多边形面光源高光的线性变换球谐技术
+- [[sh-glyphs-ray-tracing]] — SH 字形的光线追踪渲染与多项式求根
 
 ## Sources
 
@@ -72,3 +74,5 @@ $$
 - [[sources/green-implementing-needlets]]
 - [[sources/slater-spherical-integration]]
 - [[sources/c0de517e-mathematica-spherical-harmonics]]
+- [[sources/peters-lt-spherical-harmonics]]
+- [[sources/peters-rt-sh-glyphs]]

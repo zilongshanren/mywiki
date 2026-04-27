@@ -27,6 +27,8 @@ sources: 3
 | Solving Trigonometric Moment Problems for Fast Transient Imaging (SGA 2015) | [[trigonometric-moment-transient-imaging]] |
 | Path tracing workshop | [[path-tracing-basics]] — 76 分钟 GLSL/ShaderToy 入门 |
 | Path tracing lectures | [[path-tracing-basics]]（进阶：重要性采样、MIS） |
+| Linearly Transformed SH (via student thesis) | [[lt-spherical-harmonics]] — 多边形面光源高光 |
+| Ray Tracing Spherical Harmonics Glyphs (VMV 2023) | [[sh-glyphs-ray-tracing]] — SH 字形光线追踪，荣誉提名奖 |
 | Radiometry, part 1: I got it backwards | [[radiometry-integral-view]] — 从 radiance 起步的积分式重构 |
 | Radiometry, part 2: Spectra and photometry | [[photometry-luminance]] — 光度量与 CIE XYZ 衔接 |
 | Spectral rendering, part 3: Spectral vs. RGB | [[spectral-vs-rgb-comparison]] — 实证对比 RGB 与光谱渲染 |
@@ -44,6 +46,8 @@ sources: 3
 - [[radiometry-integral-view]]
 - [[photometry-luminance]]
 - [[spectral-vs-rgb-comparison]]
+- [[lt-spherical-harmonics]]
+- [[sh-glyphs-ray-tracing]]
 
 ## Sources
 - [[sources/peters-spectral-rendering-1-spectra]]
@@ -63,3 +67,5 @@ sources: 3
 - [[sources/peters-radiometry-1-backwards]]
 - [[sources/peters-radiometry-2-photometry]]
 - [[sources/peters-spectral-rendering-3-vs-rgb]]
+- [[sources/peters-lt-spherical-harmonics]]
+- [[sources/peters-rt-sh-glyphs]]
