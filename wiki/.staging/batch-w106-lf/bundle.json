@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w106-lf",
+  "agent_note": "5 篇 c0de517e.blogspot.com（Angelo Pesce）文章，覆盖皮肤渲染、DOF+MB 联合滤波、渲染原型框架、法线贴图 mipmap 走样、DX9 MSAA 深度方差补偿。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-12-12_the-three-skin-rendering-horrors-you-want-to-avoid.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-skin-rendering-horrors",
+      "title": "The Three Skin Rendering Horrors You Want to Avoid"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-01-04_current-gen-dof-and-mb.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-current-gen-dof-mb",
+      "title": "Current-gen DOF and MB"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-01-18_prototyping-frameworks-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-prototyping-rendering-frameworks",
+      "title": "Prototyping Frameworks (Rendering)"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-02-01_normalmaps-everywhere.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-normalmaps-everywhere",
+      "title": "Normalmaps Everywhere"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2012-03-17_directx9-vs-depth-resolve.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-dx9-depth-resolve",
+      "title": "DirectX9 vs Depth Resolve"
+    }
+  ],
+  "concepts_created": [
+    "dof-mb-combined-filter",
+    "normalmap-mipmap-aliasing",
+    "dx9-msaa-depth-variance"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-skin-rendering-horrors",
+    "c0de517e-current-gen-dof-mb",
+    "c0de517e-prototyping-rendering-frameworks",
+    "c0de517e-normalmaps-everywhere",
+    "c0de517e-dx9-depth-resolve"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/preintegrated-skin-shading.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-skin-rendering-horrors]]"
+    },
+    {
+      "file": "wiki/rendering/preintegrated-skin-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-skin-rendering-horrors]] — Pesce 2011 皮肤渲染三大错误的实践总结，涵盖 SSS ramp、AO 混合、高光形状等 hack"
+    },
+    {
+      "file": "wiki/rendering/shader-prototyping-tools.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-prototyping-rendering-frameworks]]"
+    },
+    {
+      "file": "wiki/rendering/shader-prototyping-tools.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-prototyping-rendering-frameworks]] — Pesce 2012 渲染原型框架横评，含 FX Composer、Mathematica、SharpDX、Processing、ShaderToy、MJP/Humus 框架等"
+    },
+    {
+      "file": "wiki/rendering/tangent-space-normal-mapping.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-normalmaps-everywhere]]"
+    },
+    {
+      "file": "wiki/rendering/moment-shadow-mapping.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dx9-depth-resolve]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dof-mb-combined-filter]] | DOF 与运动模糊联合可分离后处理滤波器（Pesce 2012） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[normalmap-mipmap-aliasing]] | 法线贴图 mipmap 走样根因及遮蔽/gloss 贴图替代方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dx9-msaa-depth-variance]] | DX9 MSAA 深度 resolve 精度问题的方差补偿 hack |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-skin-rendering-horrors]] | Pesce：皮肤渲染三大错误（色调/细节/体积） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-current-gen-dof-mb]] | Pesce：DOF+MB 联合后处理滤波方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-prototyping-rendering-frameworks]] | Pesce：渲染原型框架横评 2012 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-normalmaps-everywhere]] | Pesce：法线贴图 mipmap 失效与替代编码 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-dx9-depth-resolve]] | Pesce：DX9 MSAA 深度方差补偿 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-106 Worker LF (c0de517e.blogspot.com ×5)\n\n处理 5 篇 Angelo Pesce 博文（2011-12 至 2012-03）。新增 3 概念页（dof-mb-combined-filter、normalmap-mipmap-aliasing、dx9-msaa-depth-variance）、5 source 摘要。皮肤渲染文章以 patch 形式补充到已有的 preintegrated-skin-shading 页面；原型框架文章 patch 到 shader-prototyping-tools；normalmaps 和 DX9 depth 文章分别 patch 到 tangent-space-normal-mapping 和 moment-shadow-mapping。跳过 0 篇。"
+}

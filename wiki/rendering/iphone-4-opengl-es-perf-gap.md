@@ -31,3 +31,4 @@ Supnik 写这篇时已经把 iPhone 4 从支持列表剔掉。**他承认自己�
 ## Sources
 
 - [[sources/supnik-iphone-4-perf-gap]]
+- [[sources/supnik-iphone-pc-hardware-performance]]

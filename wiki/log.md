@@ -1330,3 +1330,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-105 Worker LD (chipsandcheese.com ×5)
 
 处理 5 篇 chipsandcheese.com 技术文章（2022-07 ~ 2022-09）。新增 4 概念页（avx512-cache-efficiency、amd-k8-microarchitecture、raptor-lake-l2-cache、tesla-dojo-microarchitecture）、5 source 摘要。Tachyum 修订版文章为已有 tachyum-prodigy-architecture 页面提供补充，emit patch。全部 5 篇 ingested。
+
+## [2026-04-27] ingest | Wave-106 Worker LE (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 文章。新增 3 概念页（mobile-tiler-no-blend-rule、software-release-estimation、specular-parallax-depth-vr）、4 source 摘要。跳过 1 篇（macOS 终端 SSH 配色脚本，offtopic）。为 refcount-decrement-before-table-lock-race 和 iphone-4-opengl-es-perf-gap 追加 source 链接 patch。
+
+## [2026-04-27] ingest | Wave-106 Worker LF (c0de517e.blogspot.com ×5)
+
+处理 5 篇 Angelo Pesce 博文（2011-12 至 2012-03）。新增 3 概念页（dof-mb-combined-filter、normalmap-mipmap-aliasing、dx9-msaa-depth-variance）、5 source 摘要。皮肤渲染文章 patch 到 preintegrated-skin-shading；原型框架文章 patch 到 shader-prototyping-tools；normalmaps 和 DX9 depth 文章分别 patch 到 tangent-space-normal-mapping 和 moment-shadow-mapping。
+
+## [2026-04-27] ingest | Wave-106 Worker LG (chipsandcheese.com ×5, 2022-09)
+
+处理 5 篇 chipsandcheese.com 文章（2022-09-10 至 2022-09-28）。新增 5 概念页（meteor-lake-chiplet-architecture、cpu-clock-frequency-ramp、cdna2-mi200-architecture、ada-lovelace-architecture、phytium-ftc663-microarchitecture）、1 人物页（mohamed-ahmed-chipsandcheese）、5 source 摘要。0 篇跳过。4 个 patch 到现有概念页。

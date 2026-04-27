@@ -1,0 +1,124 @@
+{
+  "batch_id": "batch-w106-lg",
+  "agent_note": "5篇 chipsandcheese.com 文章（2022-09-10 至 2022-09-28），全部技术内容，全部 ingest。涉及 Intel Meteor Lake chiplet、CPU 时钟爬升、AMD MI200 CDNA2、Nvidia Ada Lovelace RTX 4090、飞腾 D2000 微架构。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-10_hot-chips-34-intels-meteor-lake-chiplets-compared-to-amds.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-meteor-lake-chiplets",
+      "title": "Hot Chips 34 – Intel's Meteor Lake Chiplets, Compared to AMD's"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-15_how-quickly-do-cpus-change-clock-speeds.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cpu-clock-ramp",
+      "title": "How Quickly do CPUs Change Clock Speeds?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-18_hot-chips-34-amds-instinct-mi200-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mi200-architecture",
+      "title": "Hot Chips 34 – AMD's Instinct MI200 Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-22_nvidias-rtx-4090-launch-a-strong-ray-tracing-focus.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rtx4090-ada-lovelace",
+      "title": "Nvidia's RTX 4090 Launch: A Strong Ray-Tracing Focus"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-09-28_chinas-phytium-d2000-building-on-a72.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-phytium-d2000",
+      "title": "China's Phytium D2000: Building on A72?"
+    }
+  ],
+  "concepts_created": [
+    "meteor-lake-chiplet-architecture",
+    "cpu-clock-frequency-ramp",
+    "cdna2-mi200-architecture",
+    "ada-lovelace-architecture",
+    "phytium-ftc663-microarchitecture"
+  ],
+  "people_created": ["mohamed-ahmed-chipsandcheese"],
+  "source_summaries_created": [
+    "chipsandcheese-meteor-lake-chiplets",
+    "chipsandcheese-cpu-clock-ramp",
+    "chipsandcheese-mi200-architecture",
+    "chipsandcheese-rtx4090-ada-lovelace",
+    "chipsandcheese-phytium-d2000"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/intel-hybrid-alder-lake.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-chiplets]]"
+    },
+    {
+      "file": "wiki/computer-systems/mcm-gpu-design.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-mi200-architecture]]"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-phytium-d2000]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-phytium-d2000]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[meteor-lake-chiplet-architecture]] | Intel Meteor Lake 四 tile chiplet 设计，FDI 互联，iGPU 与 CPU L3 解耦 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cpu-clock-frequency-ramp]] | CPU 从空闲到最高 boost 频率的爬升速度，Speed Shift 与各架构实测对比 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cdna2-mi200-architecture]] | AMD CDNA2 / MI200 HPC 加速器，全速 FP64，双 GCD chiplet，CPU-GPU 统一内存 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[ada-lovelace-architecture]] | Nvidia Ada Lovelace（RTX 4000），BVH 胖结构、SER、DLSS 3 帧生成 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[phytium-ftc663-microarchitecture]] | 飞腾 FTC663 微架构，强烈疑似基于 Cortex-A72，分支预测倒退 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[mohamed-ahmed-chipsandcheese]] | Mohamed Ahmed，Chips and Cheese GPU/HPC 撰稿人 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-meteor-lake-chiplets]] | Lam：Meteor Lake chiplet 架构与 AMD 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cpu-clock-ramp]] | Lam：CPU 时钟频率爬升速度实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mi200-architecture]] | Lam & Ahmed：AMD Instinct MI200 CDNA2 架构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rtx4090-ada-lovelace]] | Lam：Nvidia RTX 4090 Ada Lovelace 发布分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-phytium-d2000]] | Lam：飞腾 D2000 微架构深度评测 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-106 Worker LG (chipsandcheese.com ×5, 2022-09)\n\n处理 5 篇 chipsandcheese.com 文章（2022-09-10 至 2022-09-28）。新增 5 概念页（meteor-lake-chiplet-architecture、cpu-clock-frequency-ramp、cdna2-mi200-architecture、ada-lovelace-architecture、phytium-ftc663-microarchitecture）、1 人物页（mohamed-ahmed-chipsandcheese）、5 source 摘要。0 篇跳过。4 个 patch 到现有概念页。"
+}

@@ -33,3 +33,4 @@ MCM（Multi-Chip Module）GPU 指的是把一颗"巨无霸"单片 GPU 拆成若�
 ## Sources
 
 - [[sources/chipsandcheese-nvidia-mcm-gpu]]
+- [[sources/chipsandcheese-mi200-architecture]]

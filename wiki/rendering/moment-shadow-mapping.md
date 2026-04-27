@@ -60,3 +60,4 @@ MSM 的承诺是：**用 VSM 的存储预算拿到接近 ray-traced 硬阴影的
 - [[sources/peters-improved-msm-jcgt2017]]
 - [[sources/peters-non-linearly-quantized-msm]]
 - [[sources/peters-cubic-equation-revisited]]
+- [[sources/c0de517e-dx9-depth-resolve]]

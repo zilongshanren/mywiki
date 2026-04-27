@@ -103,6 +103,7 @@ sources: 371
 | [[app-space-lock-free-simplification]] | 不做通用 lock-free，在应用层分层让 fast path 无锁 |
 | [[file-format-vs-data-model]] | 文件格式与内存数据模型的分离：两者目标不同，不该捆绑在一起 |
 | [[always-shippable-game]] | 游戏生产阶段任意时刻必须处于可发布状态；Pesce 五项「完成」标准 |
+| [[software-release-estimation]] | 软件估时难题；可复用性使每个功能都是第一次；缩减范围是唯一有效手段 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -344,6 +345,10 @@ CAQA + CSAPP 的底层视角。
 | [[amd-k8-microarchitecture]] | AMD K8（Athlon 64）：保守迭代 + 片上 IMC，与 Netburst 的对比 |
 | [[raptor-lake-l2-cache]] | Raptor Lake L2 改进：P-Core 2 MB、E-Core 4 MB，功耗与频率余量收益 |
 | [[tesla-dojo-microarchitecture]] | Tesla Dojo：放弃精确异常与虚拟内存以最大化 ML 训练计算密度 |
+| [[meteor-lake-chiplet-architecture]] | Intel Meteor Lake 四 tile chiplet 设计，FDI 互联，iGPU 与 CPU L3 解耦 |
+| [[cpu-clock-frequency-ramp]] | CPU 从空闲到最高 boost 频率的爬升速度，Speed Shift 与各架构实测对比 |
+| [[cdna2-mi200-architecture]] | AMD CDNA2 / MI200 HPC 加速器，全速 FP64，双 GCD chiplet，CPU-GPU 统一内存 |
+| [[phytium-ftc663-microarchitecture]] | 飞腾 FTC663 微架构，强烈疑似基于 Cortex-A72，分支预测倒退 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1005,6 +1010,12 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[raytracing-vs-rasterization]] | 光线追踪 vs 光栅化：双循环对偶性，算法复杂度与并行性神话拆解 |
 | [[framebuffer-coordinate-conventions]] | OpenGL / Metal / Vulkan 帧缓冲坐标 Y 轴约定对照及跨 API 适配策略 |
 | [[rendering-perception-psychology]] | 渲染行业知道物理但不知感知；Pesce 2011 提出的未解问题集 |
+| [[mobile-tiler-no-blend-rule]] | 移动 TBDR GPU 的禁止混合性能规则；HSR 与 overdraw 的权衡 |
+| [[specular-parallax-depth-vr]] | 高光视差深度比表面更远；VR 中每眼独立光照计算的正确性 |
+| [[dof-mb-combined-filter]] | DOF 与运动模糊联合可分离后处理滤波器（Pesce 2012） |
+| [[normalmap-mipmap-aliasing]] | 法线贴图 mipmap 走样根因及遮蔽/gloss 贴图替代方案 |
+| [[dx9-msaa-depth-variance]] | DX9 MSAA 深度 resolve 精度问题的方差补偿 hack |
+| [[ada-lovelace-architecture]] | Nvidia Ada Lovelace（RTX 4000），BVH 胖结构、SER、DLSS 3 帧生成 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1197,6 +1208,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[jeremy-tingle]] | Chips and Cheese 撰稿人，process node 与架构因果的宏观分析 |
 | [[apex-chipsandcheese]] | Chips and Cheese 匿名作者，社区视角批评厂商 PR 策略 |
 | [[serebit]] | Chips and Cheese GPU 横测作者，Video Card Efficiency 系列 |
+| [[mohamed-ahmed-chipsandcheese]] | Mohamed Ahmed，Chips and Cheese GPU/HPC 撰稿人 |
 ## 源摘要（wiki/sources/）
 | 源 | 一句话描述 |
 |---|---|
@@ -2285,6 +2297,20 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-raptor-lake-l2]] | Chester Lam：Raptor Lake L2 缓存改进预览（2022-08） |
 | [[sources/chipsandcheese-tachyum-revised]] | Chester Lam & Cutress：Tachyum 2022 修订版 Prodigy 架构（2022-08） |
 | [[sources/chipsandcheese-tesla-dojo]] | Chester Lam：Hot Chips 34 — Tesla Dojo 微架构（2022-09） |
+| [[sources/supnik-iphone-pc-hardware-performance]] | Supnik：移动 GPU 性能转变与"禁止混合"规则 |
+| [[sources/supnik-klingons-software-release]] | Supnik：软件发布估时难题与 Klingon 软件 |
+| [[sources/supnik-specular-depth-separation]] | Supnik：高光的视差深度与 VR 双眼独立光照 |
+| [[sources/supnik-second-worst-lock]] | Supnik：引用计数锁第三版——双重检查优化 |
+| [[sources/c0de517e-skin-rendering-horrors]] | Pesce：皮肤渲染三大错误（色调/细节/体积） |
+| [[sources/c0de517e-current-gen-dof-mb]] | Pesce：DOF+MB 联合后处理滤波方案 |
+| [[sources/c0de517e-prototyping-rendering-frameworks]] | Pesce：渲染原型框架横评 2012 |
+| [[sources/c0de517e-normalmaps-everywhere]] | Pesce：法线贴图 mipmap 失效与替代编码 |
+| [[sources/c0de517e-dx9-depth-resolve]] | Pesce：DX9 MSAA 深度方差补偿 |
+| [[sources/chipsandcheese-meteor-lake-chiplets]] | Lam：Meteor Lake chiplet 架构与 AMD 对比 |
+| [[sources/chipsandcheese-cpu-clock-ramp]] | Lam：CPU 时钟频率爬升速度实测 |
+| [[sources/chipsandcheese-mi200-architecture]] | Lam & Ahmed：AMD Instinct MI200 CDNA2 架构 |
+| [[sources/chipsandcheese-rtx4090-ada-lovelace]] | Lam：Nvidia RTX 4090 Ada Lovelace 发布分析 |
+| [[sources/chipsandcheese-phytium-d2000]] | Lam：飞腾 D2000 微架构深度评测 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

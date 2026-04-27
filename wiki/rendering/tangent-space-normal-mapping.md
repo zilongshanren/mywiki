@@ -59,3 +59,4 @@ $$
 ## Sources
 
 - [[sources/apoorvaj-normal-mapping]]
+- [[sources/c0de517e-normalmaps-everywhere]]

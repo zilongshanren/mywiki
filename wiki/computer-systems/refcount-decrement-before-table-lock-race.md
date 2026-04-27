@@ -94,3 +94,4 @@ Supnik 在文末勾出一个更干净的架构：
 ## Sources
 
 - [[sources/supnik-worst-lock-ever]]
+- [[sources/supnik-second-worst-lock]]
