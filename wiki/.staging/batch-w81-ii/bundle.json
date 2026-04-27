@@ -1,0 +1,93 @@
+{
+  "batch_id": "batch-w81-ii",
+  "agent_note": "5 Ben Supnik posts (2010-05 ~ 2010-08). 3 ingested (cgal-arrangements-import / fear-of-threading / vbo-really-double-buffered), 2 skipped (how-does-opengl-work 仅推荐 WWDC 视频无实质内容; restarting-os-x-window-server 只是 macOS 调试小技巧). Supnik 人物页已存在，只追加 source 链接和新 concept 引用。VBO 第四篇直接 patch 现有 vbo-double-buffering-orphaning 页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-05-06_importing-faces-into-cgal-arrangements.md",
+      "status": "ingested",
+      "source_slug": "supnik-cgal-arrangements-import",
+      "title": "Importing Faces Into CGAL Arrangements"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-07-18_how-does-opengl-work.md",
+      "status": "skipped_offtopic",
+      "reason": "正文仅 3 行推荐 WWDC 2010 OpenGL 视频 + 一条评论抖机灵，无工程内容可提取"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-08-06_a-healthy-fear-of-threading.md",
+      "status": "ingested",
+      "source_slug": "supnik-fear-of-threading",
+      "title": "A Healthy Fear of Threading"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-08-06_restarting-the-os-x-window-server-for-fun-and-profit.md",
+      "status": "skipped_offtopic",
+      "reason": "macOS 调试小技巧（ssh + sudo killall -HUP WindowServer），非图形/引擎/系统工程内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-08-11_when-is-your-vbo-double-buffered.md",
+      "status": "ingested",
+      "source_slug": "supnik-vbo-really-double-buffered",
+      "title": "When Is Your VBO Double Buffered?"
+    }
+  ],
+  "concepts_created": [
+    "cgal-arrangement-import-antennas",
+    "message-queue-thread-ownership"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-cgal-arrangements-import",
+    "supnik-fear-of-threading",
+    "supnik-vbo-really-double-buffered"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cgal-arrangement-import-antennas]]\n- [[message-queue-thread-ownership]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-cgal-arrangements-import]]\n- [[sources/supnik-fear-of-threading]]\n- [[sources/supnik-vbo-really-double-buffered]]"
+    },
+    {
+      "file": "wiki/rendering/vbo-double-buffering-orphaning.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-vbo-really-double-buffered]] —— Supnik 用「如果是我写 driver」的视角重新整理了前三篇的结论"
+    },
+    {
+      "file": "wiki/computer-systems/cgal-exact-arithmetic-mantissa-growth.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cgal-arrangement-import-antennas]] —— CGAL arrangement 导入脏多边形时的拓扑策略与 antenna 陷阱"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cgal-arrangement-import-antennas]] | CGAL arrangement 导入脏多边形的三条路径与 antenna 对 toggle / winding 策略的破坏 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[message-queue-thread-ownership]] | 消息队列作为线程所有权原语：数据访问权随消息流动，缩小 interleaving 状态空间 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-cgal-arrangements-import]] | Supnik：把脏多边形导入 CGAL arrangement 的策略与 antenna 问题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-fear-of-threading]] | Supnik：线程的开发成本与消息队列所有权模式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-vbo-really-double-buffered]] | Supnik：driver 视角重新解释 VBO 为什么没法自动双缓冲 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-81 Worker II (hacksoflife.blogspot.com Supnik 2010-05~08 ×5)\n\n处理 5 篇 Ben Supnik 博文，3 ingested（cgal-arrangements-import / fear-of-threading / vbo-really-double-buffered），2 skipped（how-does-opengl-work 仅推荐 WWDC 视频；restarting-os-x-window-server macOS 小技巧）。新增 2 概念页（cgal-arrangement-import-antennas, message-queue-thread-ownership）、3 source 摘要。Supnik 人物页 / vbo-double-buffering-orphaning / cgal-exact-arithmetic-mantissa-growth patch 已入栈。"
+}

@@ -1,0 +1,124 @@
+{
+  "batch_id": "batch-w95-jx",
+  "agent_note": "Stingray Walkthrough 7+8 (Tobias Persson) + two hacksoflife posts (Supnik). Walkthrough 7 is heavily covered by existing stingray-data-driven-render-config; Walkthrough 8 gets a new concept page stingray-default-frame-flow for the concrete frame breakdown. Beyond glMapBuffer gets a new page opengl-pinned-memory-vbo-streaming covering GL_AMD_pinned_memory. Xcode Lion GCC skipped as low-value 2012 dev-env workaround. Lisp Hater kept as source-only (retrospectively made obsolete by C++11 lambdas per the comments).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2017-03-09_stingray-renderer-walkthrough-7-data-driven-rendering.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-renderer-walkthrough-7-data-driven",
+      "title": "Stingray Renderer Walkthrough #7: Data-driven rendering"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2017-03-14_stingray-renderer-walkthrough-8-stingray-renderer-mini-rende.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-renderer-walkthrough-8-default-pipes",
+      "title": "Stingray Renderer Walkthrough #8: stingray-renderer & mini-renderer"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-02-17_xcode-lion-gcc-oh-my.md",
+      "status": "skipped_offtopic",
+      "reason": "2012 Xcode 3.2.6 on Lion install workaround (symlink SDK paths). No reusable engineering insight, obsolete dev-environment note."
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-02-27_confessions-of-a-lisp-hater.md",
+      "status": "ingested",
+      "source_slug": "supnik-confessions-lisp-hater",
+      "title": "Confessions of a Lisp Hater"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-04-04_beyond-glmapbuffer.md",
+      "status": "ingested",
+      "source_slug": "supnik-beyond-glmapbuffer",
+      "title": "Beyond glMapBuffer"
+    }
+  ],
+  "concepts_created": [
+    "stingray-default-frame-flow",
+    "opengl-pinned-memory-vbo-streaming"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-renderer-walkthrough-7-data-driven",
+    "bitsquid-renderer-walkthrough-8-default-pipes",
+    "supnik-confessions-lisp-hater",
+    "supnik-beyond-glmapbuffer"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/stingray-data-driven-render-config.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-renderer-walkthrough-7-data-driven]] —— Walkthrough #7 机制层正典：render_settings/render_caps/global_resources/layer_config 的 C++ 对应结构\n- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]] —— Walkthrough #8 默认 stingray + mini renderer 两套 shipping 模板的一帧走向"
+    },
+    {
+      "file": "wiki/rendering/stingray-data-driven-render-config.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-default-frame-flow]] —— 默认 renderer.render_config 的一帧八段走向 + mini renderer 减法哲学"
+    },
+    {
+      "file": "wiki/rendering/render-config-extension-points.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-renderer-walkthrough-7-data-driven]]\n- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]]"
+    },
+    {
+      "file": "wiki/people/tobias-persson.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-renderer-walkthrough-7-data-driven]]\n- [[sources/bitsquid-renderer-walkthrough-8-default-pipes]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-confessions-lisp-hater]]\n- [[sources/supnik-beyond-glmapbuffer]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-pinned-memory-vbo-streaming]] —— 2012 X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 开销"
+    },
+    {
+      "file": "wiki/rendering/vbo-double-buffering-orphaning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-pinned-memory-vbo-streaming]] —— orphan-and-map 在 ATI 驱动上慢到 6 ms 时的替代方案"
+    },
+    {
+      "file": "wiki/rendering/agp-vs-vram-streaming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-pinned-memory-vbo-streaming]] —— AGP 精神在 GL_AMD_pinned_memory 里的回归"
+    },
+    {
+      "file": "wiki/programming-languages/closure.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-confessions-lisp-hater]] —— 2012 X-Plane 工程师关于 C++03 没闭包的诚实一刻，顺便被 C++11 lambda 历史解决"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-default-frame-flow]] | Stingray 默认 render_config 一帧八段走向 + mini renderer 减法哲学 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-pinned-memory-vbo-streaming]] | GL_AMD_pinned_memory：用应用内存直接当 VBO 跳过 glMapBuffer |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-renderer-walkthrough-7-data-driven]] | Walkthrough #7：render_config 四件套的机制层正典 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-renderer-walkthrough-8-default-pipes]] | Walkthrough #8：stingray + mini 两套默认 render_config 走完一帧 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-confessions-lisp-hater]] | Supnik 2012 对 C++03 没闭包的诚实一刻（C++11 lambda 回来救场） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-beyond-glmapbuffer]] | X-Plane 用 GL_AMD_pinned_memory 绕开 ATI 上 glMapBuffer 的 6ms 开销 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-95 Worker JX (bitsquid Walkthrough 7-8 + hacksoflife 2012 ×3)\n\n处理 5 篇：Stingray Renderer Walkthrough #7 (data-driven) + #8 (default + mini renderer)；Ben Supnik 2012 Lisp Hater + Beyond glMapBuffer；跳过 Xcode Lion GCC 2012 dev-env 小笔记。新增 2 概念页（stingray-default-frame-flow、opengl-pinned-memory-vbo-streaming）+ 4 source 摘要。未新增人物页（Tobias Persson / Ben Supnik 已存在）。"
+}

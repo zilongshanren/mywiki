@@ -1,0 +1,124 @@
+{
+  "batch_id": "batch-w64-gh",
+  "agent_note": "Steven Wittens / acko.net 5 篇。3 篇硬技术 ingest（intent, occlusion, html-is-dead），2 篇跳过（bouquet 是管理文化评论；llm-lying 是 AI 批评观点文）。新人物 steven-wittens。新概念：intent-vs-state, ground-truth-ambient-occlusion, use-gpu-reactive-runtime, render-pass-orchestration, dom-replacement-rethink。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/acko.net/2024-02-05_i-is-for-intent.md",
+      "status": "ingested",
+      "source_slug": "acko-i-is-for-intent",
+      "title": "I is for Intent"
+    },
+    {
+      "path": "raw/articles/acko.net/2024-07-24_the-bouquet-residence.md",
+      "status": "skipped_offtopic",
+      "reason": "CrowdStrike 公关声明批评 + 科技行业管理文化评论，无软件工程/图形学硬内容"
+    },
+    {
+      "path": "raw/articles/acko.net/2025-03-24_occlusion-with-bells-on.md",
+      "status": "ingested",
+      "source_slug": "acko-occlusion-with-bells-on",
+      "title": "Occlusion with Bells On"
+    },
+    {
+      "path": "raw/articles/acko.net/2025-08-06_html-is-dead-long-live-html.md",
+      "status": "ingested",
+      "source_slug": "acko-html-is-dead",
+      "title": "HTML is Dead, Long Live HTML"
+    },
+    {
+      "path": "raw/articles/acko.net/2026-03-04_the-l-in-llm-stands-for-lying.md",
+      "status": "skipped_offtopic",
+      "reason": "AI/LLM 社会评论观点文（forgery、source attribution、vibe-coding 批评），无具体工程/图形学技术内容"
+    }
+  ],
+  "concepts_created": [
+    "intent-vs-state",
+    "ground-truth-ambient-occlusion",
+    "use-gpu-reactive-runtime",
+    "render-pass-orchestration",
+    "dom-replacement-rethink"
+  ],
+  "people_created": ["steven-wittens"],
+  "source_summaries_created": [
+    "acko-i-is-for-intent",
+    "acko-occlusion-with-bells-on",
+    "acko-html-is-dead"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/temporal-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ground-truth-ambient-occlusion]] — Use.GPU 的 GTAO 靠 3D motion vector + depth/normal bilateral 做 reprojection，与 TAA 同构"
+    },
+    {
+      "file": "wiki/rendering/motion-vectors.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ground-truth-ambient-occlusion]] — Use.GPU 用 3D motion vector 给 GTAO 做 temporal reprojection"
+    },
+    {
+      "file": "wiki/rendering/hbao-interleaved-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ground-truth-ambient-occlusion]] — Steven Wittens 在 Use.GPU 0.14 实现的现代 GTAO，用 IGN + 2x2 quad 预过滤 + 时间累积"
+    },
+    {
+      "file": "wiki/rendering/webgpu-intro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[use-gpu-reactive-runtime]] — Steven Wittens 的声明式 WebGPU 运行时"
+    },
+    {
+      "file": "wiki/rendering/render-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-pass-orchestration]] — Use.GPU 0.14 的声明式 render pass 编排：通过 well-known names 隐式 wiring"
+    },
+    {
+      "file": "wiki/software-design/reactive-ui-rust.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[intent-vs-state]] — Steven Wittens 主张 Intent 作为 source of truth，State 是其派生；与 Rust reactive UI 有共通观察"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[steven-wittens]] | Steven Wittens，acko.net 作者，Use.GPU 创建者，UI 与渲染架构评论家 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[intent-vs-state]] | 用户 Intent 作为 source of truth，State 为派生——Wittens 的前端架构观 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[dom-replacement-rethink]] | DOM/CSS/HTML 的系统性批判与替代路径 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ground-truth-ambient-occlusion]] | GTAO 完整实现：IGN 噪声、temporal reprojection、bent normal、overscan |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[use-gpu-reactive-runtime]] | Steven Wittens 的声明式/响应式 WebGPU 运行时 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[render-pass-orchestration]] | Use.GPU 声明式 render pass 编排：well-known names 隐式 wiring、buffer history 一等化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/acko-i-is-for-intent]] | Wittens：Intent 作为 source of truth，patch 驱动的前端架构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/acko-occlusion-with-bells-on]] | Wittens：Use.GPU 0.14 GTAO + render pass 编排实录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/acko-html-is-dead]] | Wittens：DOM/CSS/HTML 批判与替代路径 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-64 Worker gh (acko.net / Steven Wittens ×5)\n\n处理 5 篇 Steven Wittens（acko.net）文章。3 篇硬技术 ingest：I is for Intent（Intent vs State 架构）、Occlusion with Bells On（Use.GPU 0.14 GTAO）、HTML is Dead（DOM/CSS 批判）。2 篇跳过：Bouquet Residence（CrowdStrike 公关/管理文化评论）、L in LLM Stands for Lying（AI 批评观点文）。新增 1 人物（steven-wittens）、5 概念（intent-vs-state、ground-truth-ambient-occlusion、use-gpu-reactive-runtime、render-pass-orchestration、dom-replacement-rethink）、3 source 摘要。"
+}

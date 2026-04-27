@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w96-kc",
+  "agent_note": "5 篇 Joost 2011-08~10：1) user-tracks 概览（SKIP，只是赛道画廊）；2) patch v108（INGEST，ATI X1xxx SM3.0 说谎 + Intel GMA 3xxx D3D 接口矛盾 + 6 年埋下的 cross(dir,up) 退化 bug，强化已有 pc-gpu-driver-compat-qa）；3) 一百万场 highscore 统计（INGEST，奖励必须在主玩家路径 / 4P 分屏 0.085% / UGC 冷启动红利，新建 indie-gameplay-telemetry 概念）；4) PWYW 销售复盘（SKIP，纯商业分析）；5) Stedelijk Museum 展览合影（SKIP，无技术内容）。Joost 人物页已存在，追加 2 条 source 链接与 1 条概念交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-08-28_overview-of-proun-user-tracks.md",
+      "status": "skipped_offtopic",
+      "reason": "6 个 modder 用户赛道的截图画廊 + 链接，无技术或设计分析"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-09-10_proun-patch-v108-released.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-proun-patch-v108",
+      "title": "Proun patch v108 released!"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-09-26_one-million-races-played-proun-s-gameplay-statistics.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-proun-gameplay-stats",
+      "title": "One million races played! Proun's gameplay statistics"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-10-03_proun-sales-data-revealed-proun-is-a-big-success-pay-what-yo.md",
+      "status": "skipped_offtopic",
+      "reason": "PWYW 销售数据复盘：价格分布、revenue、盗版率、Fastspring 手续费、营销反思。纯商业分析，无工程/设计技术内容"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-10-10_matisse-malevich-warhol-lichtenstein-mondriaan-van-dongen.md",
+      "status": "skipped_offtopic",
+      "reason": "Stedelijk 现代艺术博物馆把 Proun 放在 Mondriaan 旁边展出的合影贴，外加 Ibb & Obb 友情推荐。无技术内容"
+    }
+  ],
+  "concepts_created": ["indie-gameplay-telemetry"],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-proun-patch-v108",
+    "joostdevblog-proun-gameplay-stats"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "tags: [人物, 作者, indie, ronimo, galaxy-grove]",
+      "content": "tags: [人物, 作者, indie, ronimo, galaxy-grove]"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "sources: 16",
+      "content": "sources: 18"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[indie-gameplay-telemetry]] —— Proun 一百万场 highscore 的游玩分布复盘（模式使用、解锁奖励触达率、UGC 冷启动红利）"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-proun-patch-v108]]\n- [[sources/joostdevblog-proun-gameplay-stats]]"
+    },
+    {
+      "file": "wiki/rendering/pc-gpu-driver-compat-qa.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/pc-gpu-driver-compat-qa.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-proun-patch-v108]] —— Proun v108 补丁：ATI X1xxx SM3.0 说谎触发 DOF 崩溃；Intel GMA 3xxx 上 `IDirect3D9` 与 `IDirect3DDevice9` 对 vertex shader 能力答案互斥；另带一个 6 年埋下的 `cross(dir,[0,1,0])` 退化 bug，被 Cubed 用户赛道当模糊测试触发"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[indie-gameplay-telemetry]] | 独立游戏游玩埋点：模式分布、解锁触达、UGC 冷启动、首关退出率 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-proun-patch-v108]] | Joost：Proun v108 补丁的显卡驱动说谎三连与 6 年 cross-product 退化 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-proun-gameplay-stats]] | Joost：一百万场 Proun highscore 的游玩分布与设计教训 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-96 Worker KC (joostdevblog.blogspot.com ×5, 2011-08~10)\n\n处理 Joost van Dongen 2011 年秋的 5 篇文章：2 篇 INGEST，3 篇 SKIP。新增概念页 indie-gameplay-telemetry（独立游戏游玩埋点分析方法论，Proun 一百万场数据样本），新增 2 篇 source 摘要（patch v108 显卡驱动说谎复盘、一百万场 highscore 游玩分布）。Joost 人物页追加新概念交叉引用与 2 条 source。pc-gpu-driver-compat-qa 概念页追加 patch v108 作为第二个一手样本。SKIP：user-tracks 画廊、PWYW 销售商业分析、Stedelijk 博物馆展览合影。"
+}

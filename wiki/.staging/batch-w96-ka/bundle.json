@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w96-ka",
+  "agent_note": "5 篇 c0de517e (Angelo Pesce) 2010-08/09。threads-buffers-and-latency-2.md 是 2026-04-19 重抓的存档副本（内容与 -.md 完全一致），SKIP 不单独建源页。其余 4 篇全部入库：know-your-z 是最有技术密度的一篇（VS 里 linear-Z trick + 其屏幕空间非线性代价），threads-buffers-and-latency 触发帧管线延迟讨论（新概念 frame-pipeline-latency），code-rights 是 Pesce 2010 系列 live-editing/tools/dependencies 的纲领性 manifesto，platform-features-poll 是世代末期特性使用率快照。新增 4 概念页（2 rendering + 2 meta）、4 源摘要。angelo-pesce 人物页已存在，仅追加 source 引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-10_threads-buffers-and-latency.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-threads-buffers-and-latency",
+      "title": "Threads, buffers and latency"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-10_threads-buffers-and-latency-2.md",
+      "status": "skipped_offtopic",
+      "reason": "归档重复文件（2026-04-19 重抓），与 2010-08-10_threads-buffers-and-latency.md 内容完全一致，url 仅协议差别 http/https，不单独建源页"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-13_know-your-z.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-know-your-z",
+      "title": "Know your Z"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-09-01_international-movement-for-code-rights.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-code-rights",
+      "title": "International movement for code rights"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-09-12_platform-specific-features-poll-results.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-platform-specific-features-poll-2010",
+      "title": "Platform specific features - poll results"
+    }
+  ],
+  "concepts_created": [
+    "linear-z-trick",
+    "frame-pipeline-latency",
+    "code-as-art-manifesto",
+    "platform-specific-features-poll-2010"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-threads-buffers-and-latency",
+    "c0de517e-know-your-z",
+    "c0de517e-code-rights",
+    "c0de517e-platform-specific-features-poll-2010"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-threads-buffers-and-latency]]\n- [[sources/c0de517e-know-your-z]]\n- [[sources/c0de517e-code-rights]]\n- [[sources/c0de517e-platform-specific-features-poll-2010]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linear-z-trick]]\n- [[frame-pipeline-latency]]\n- [[code-as-art-manifesto]]\n- [[platform-specific-features-poll-2010]]"
+    },
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 改进方案",
+      "content": "- **[[linear-z-trick|Linear-Z VS trick]]**：`hPos.z *= hPos.w / far` 软件模拟 W-buffer，不破坏纹理透视插值；代价是屏幕空间非线性导致 Hi-Z 退化。"
+    },
+    {
+      "file": "wiki/rendering/reversed-z.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linear-z-trick]] —— 2010 年 Pesce 的 VS 软件 W-buffer 小把戏，现代被 reversed-z 替代"
+    },
+    {
+      "file": "wiki/game-development/live-editing-taxonomy-2010.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[code-as-art-manifesto]] —— 2010-09 Pesce 把 live-editing 上升为「代码平权」的纲领性宣言"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[linear-z-trick]] | Pesce 2010：VS 里 `hPos.z *= hPos.w / far` 软件模拟线性视深度 / W-buffer |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[frame-pipeline-latency]] | 帧管线多级缓冲的总延迟——30fps 下不拆 stage 反而手感更好 |"
+    },
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[code-as-art-manifesto]] | Pesce 2010「代码平权」manifesto：五项诉求 + Fuck OOP + 轻框架厚应用 |"
+    },
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[platform-specific-features-poll-2010]] | Pesce 2010 70 人调研：360/PS3/DX10/DX11 平台特性使用率快照 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-threads-buffers-and-latency]] | Pesce 2010：下一作 NFS 单线程，多级 buffer 的延迟代价 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-know-your-z]] | Pesce 2010：VS 里操作 hPos 的两个 Z trick 测题及代价 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-code-rights]] | Pesce 2010：代码与数据应享有同等基础设施——manifesto |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-platform-specific-features-poll-2010]] | Pesce 2010：70 人平台特性使用率调研结果 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-96 Worker KA (c0de517e.blogspot.com ×5, 2010-08/09)\n\n处理 5 篇 Angelo Pesce 2010 年 8-9 月博文，4 ingest + 1 SKIP（threads-buffers-and-latency-2.md 是 2026-04-19 重抓的存档副本，内容与 -.md 完全一致）。新增 4 概念页：linear-z-trick（VS 里 z*=w/far 软件 W-buffer + 其屏幕空间非线性代价）、frame-pipeline-latency（多级 buffer 的总延迟 & NFS 单线程选择）、code-as-art-manifesto（Pesce 2010 代码平权宣言：五项诉求 + Fuck OOP + 轻框架厚应用）、platform-specific-features-poll-2010（70 人调研快照：360 压管线、PS3 挤 SPU、DX10 没爆点、DX11 multithread 仅 7%）。新增 4 源摘要。angelo-pesce 人物页追加 4 个 source 链接与 4 个相关概念。z-buffer 追加 linear-z 小把戏条目，reversed-z 与 live-editing-taxonomy-2010 追加相关链接。"
+}

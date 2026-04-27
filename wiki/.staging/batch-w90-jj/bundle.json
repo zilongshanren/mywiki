@@ -1,0 +1,157 @@
+{
+  "batch_id": "batch-w90-jj",
+  "agent_note": "Supnik 2011-03~05 wave: instancing numbers data point + AA techniques survey + memory-latency human metaphor + cache/allocator failure story. 1 skipped: i-love-surprises is a 3-line Java Memory Model quote + political joke, not substantive technical content.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-03-07_instancing-numbers.md",
+      "status": "ingested",
+      "source_slug": "supnik-instancing-numbers",
+      "title": "Instancing Numbers"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-04-22_i-love-surprises.md",
+      "status": "skipped_offtopic",
+      "reason": "Three-line post: a Java Memory Model quote about explicit synchronization plus a YouTube-linked political joke. No substantive technical content beyond the quote itself."
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-04-22_so-many-aa-techniques-so-little-time.md",
+      "status": "ingested",
+      "source_slug": "supnik-aa-techniques-survey",
+      "title": "So Many AA Techniques, So Little Time"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-04-25_going-to-california-with-an-aching-in-my-heart.md",
+      "status": "ingested",
+      "source_slug": "supnik-going-to-california",
+      "title": "Going to California (with an Aching in My Heart)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-01_damn-you-l2-cache.md",
+      "status": "ingested",
+      "source_slug": "supnik-damn-you-l2-cache",
+      "title": "Damn You, L2 Cache!!!"
+    }
+  ],
+  "concepts_created": [
+    "aa-techniques-survey-2011",
+    "memory-latency-human-metaphor",
+    "alloc-order-matches-draw-order",
+    "xplane-instancing-2011-numbers"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-instancing-numbers",
+    "supnik-aa-techniques-survey",
+    "supnik-going-to-california",
+    "supnik-damn-you-l2-cache"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[aa-techniques-survey-2011]] —— 2011 年抗锯齿方案五档分类（Universal / HW FSAA / 2D / Post / Deferred）\n- [[xplane-instancing-2011-numbers]] —— 2011 X-Plane GPU instancing 吞吐基线数据\n- [[memory-latency-human-metaphor]] —— L1=桌上、磁盘=加州的日常时间尺度翻译\n- [[alloc-order-matches-draw-order]] —— 精心改写的 cache 友好 allocator 反而输给老启发的一次惨败"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-instancing-numbers]]\n- [[sources/supnik-aa-techniques-survey]]\n- [[sources/supnik-going-to-california]]\n- [[sources/supnik-damn-you-l2-cache]]"
+    },
+    {
+      "file": "wiki/rendering/msaa-ssaa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[aa-techniques-survey-2011]] —— Supnik 2011 把 SSAA/MSAA/CSAA 放进五档 AA 分类的上下文"
+    },
+    {
+      "file": "wiki/rendering/subpixel-reconstruction-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[aa-techniques-survey-2011]] —— Supnik 2011 综述里把 SRAA 归入 deferred-only 档"
+    },
+    {
+      "file": "wiki/rendering/temporal-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[aa-techniques-survey-2011]] —— Supnik 2011 把 TAA 归到 post-process 档，显示当时它还没独立成类"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-instancing-2011-numbers]] —— 2011 基线：87K mesh / 60 fps / 32 instance per call"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-instancing-numbers]]"
+    },
+    {
+      "file": "wiki/rendering/opengl-draw-call-batching-sweet-spot.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-instancing-2011-numbers]] —— Supnik 2011 给的前向数据锚点：同代硬件 instancing 的吞吐基线"
+    },
+    {
+      "file": "wiki/computer-systems/locality-principle.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[memory-latency-human-metaphor]] —— 把层次延迟翻译成人类时间尺度的教学比喻\n- [[alloc-order-matches-draw-order]] —— X-Plane 的隐式对齐：构建顺序→分配顺序→遍历顺序"
+    },
+    {
+      "file": "wiki/computer-systems/cache-friendliness.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[memory-latency-human-metaphor]] —— 让 cache miss 的代价变直觉\n- [[alloc-order-matches-draw-order]] —— Supnik 实测：精心规划的 cache 友好布局不一定赢"
+    },
+    {
+      "file": "wiki/computer-systems/custom-allocator-interface.md",
+      "operation": "append_to_section",
+      "section": "## 和其他设计的关系",
+      "content": "- [[alloc-order-matches-draw-order]] —— 在 X-Plane 的 custom allocator 上做「精心聚拢」反而更慢的案例"
+    },
+    {
+      "file": "wiki/computer-systems/memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[memory-latency-human-metaphor]] —— L1/L2/DRAM/Disk 翻译成人类时间尺度"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[aa-techniques-survey-2011]] | Supnik 2011 把当时 AA 方案按决定权分五档（Universal/HW FSAA/2D/Post/Deferred） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[xplane-instancing-2011-numbers]] | X-Plane 2011 GPU instancing 吞吐基线：87K mesh / 60 fps / 32 instance per call（ATI 4870） |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[memory-latency-human-metaphor]] | 1 cycle = 1 秒：L1 在桌上、磁盘在加州——延迟翻译成人类时间尺度 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[alloc-order-matches-draw-order]] | Supnik 的 cache 优化惨败：分配顺序 ≈ 遍历顺序的老启发赢过精心规划 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-instancing-numbers]] | Supnik 2011：X-Plane GPU instancing 吞吐的一个现场数据点 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-aa-techniques-survey]] | Supnik 2011：抗锯齿方案五档分类综述 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-going-to-california]] | Supnik 2011：把 L1/L2/DRAM/Disk 翻译成人类时间尺度，推到 X-Plane 场景包合并 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-damn-you-l2-cache]] | Supnik 2011：精心改写的 cache 友好 allocator 输给老启发的惨败小记 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-90 Worker JJ (hacksoflife / Supnik 2011-03~05 x5)\n\n处理 5 篇 Supnik 2011 博文。新增 4 概念页（aa-techniques-survey-2011, memory-latency-human-metaphor, alloc-order-matches-draw-order, xplane-instancing-2011-numbers）、4 source 摘要。跳过 1 篇（i-love-surprises：三行 JMM 引用+政治段子，非技术实质内容）。"
+}

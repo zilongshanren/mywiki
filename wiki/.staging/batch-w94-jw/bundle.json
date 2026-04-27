@@ -1,0 +1,70 @@
+{
+  "batch_id": "batch-w94-jw",
+  "agent_note": "Joost van Dongen 2011-07 to 2011-08. 2 substantive posts ingested: games-as-expression (design philosophy essay, Proun as self-expression, anti-playtest feature decision) and solid-motion (MAXScript technique sweeping animated mesh into static 4D-to-3D sculpture, 400万 triangle outputs, Futurism-driven). 3 posts skipped: Sheriff Lonestar trailer reveal (no technical substance), Proun highscore SQL server patch note (server drama, 3 paragraphs), Awesomenauts intro cinematic release note (2 paragraphs). Hub page joost-van-dongen patched, not rewritten. New concept page: solid-motion-sweep (rendering/).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-07-02_games-as-expression-proun-as-me.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-games-as-expression",
+      "title": "Games as expression / Proun as me"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-07-26_meet-the-awesomenauts-sheriff-lonestar.md",
+      "status": "skipped_offtopic",
+      "reason": "Character reveal trailer announcement for Awesomenauts. 3 sentences of marketing + 2 sentences of comments. No technical or design substance."
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-07-26_proun-highscore-system-patched.md",
+      "status": "skipped_offtopic",
+      "reason": "Server-side SQL patch announcement for Proun highscore system — short apology + thanks to Jan-Pieter van den Heuvel for SQL help + new host recommendation (Byte.nl). Same hosting-drama category as w92's 3 skipped posts. No technical detail on schema or query."
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-07-30_solid-motion.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-solid-motion",
+      "title": "Solid Motion"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-08-23_awesomenauts-intro-cinematic-released.md",
+      "status": "skipped_offtopic",
+      "reason": "Awesomenauts intro cinematic release announcement + Gamescom visitor reception note. 2 paragraphs, no technical or design content."
+    }
+  ],
+  "concepts_created": [
+    "solid-motion-sweep"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-games-as-expression",
+    "joostdevblog-solid-motion"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[solid-motion-sweep]] —— 2006 年 MAXScript：沿动画时间轴把 mesh 扫成静态 4D→3D 雕塑，Futurism 驱动"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-games-as-expression]]\n- [[sources/joostdevblog-solid-motion]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[solid-motion-sweep]] | 沿动画时间轴扫掠 mesh 生成实体雕塑的 MAXScript |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-games-as-expression]] | Joost：游戏作为自我表达，Proun 为例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-solid-motion]] | Joost：Solid Motion 扫掠体的 MAXScript 实现 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-94 Worker JW (joostdevblog 2011-07 to 2011-08 ×5)\n\nJoost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expression`（游戏作为第三种开发动机——自我表达，Proun 为案例，反 playtest 决策）、`solid-motion`（2006 年自创 MAXScript 技术：沿动画时间轴扫掠 mesh 生成高面数静态雕塑，400 万三角形，Futurism 艺术史驱动）。3 篇跳过：Sheriff Lonestar 角色 reveal 预告、Proun highscore SQL 服务器补丁通告、Awesomenauts 开场 CG 发布公告——均为纯营销/运营短文。新增 1 概念页（solid-motion-sweep）、2 source 摘要；在 joost-van-dongen 人物页追加 1 概念 + 2 条 Sources 引用。"
+}

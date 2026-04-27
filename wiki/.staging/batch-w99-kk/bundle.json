@@ -1,0 +1,139 @@
+{
+  "batch_id": "batch-w99-kk",
+  "agent_note": "Ben Supnik hacksoflife 2013-10 ~ 2015-03. 4 ingested (iPhone 4 perf + performance-by-design + four-horsemen + glNext/Vulkan). 1 skipped (good-advice-from-git: 3-line quote-relay, no technical substance).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-10-29_good-advice-from-git.md",
+      "status": "skipped_offtopic",
+      "reason": "three-line post quoting git union merge strategy doc; no standalone technical content beyond 'good advice for all programming'"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2014-12-26_opengl-es-performance-the-iphone-4-performance-gap.md",
+      "status": "ingested",
+      "source_slug": "supnik-iphone-4-perf-gap",
+      "title": "OpenGL ES Performance: The iPhone 4 Performance Gap"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-01-04_high-performance-code-is-designed-not-optimized.md",
+      "status": "ingested",
+      "source_slug": "supnik-performance-by-design",
+      "title": "High Performance Code Is Designed, Not Optimized"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-01-31_the-four-horsemen-of-the-performance-apocalypse.md",
+      "status": "ingested",
+      "source_slug": "supnik-four-horsemen",
+      "title": "The Four Horsemen of the Performance Apocalypse"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-03-14_glnext-is-neither-opengl-nor-next-discuss.md",
+      "status": "ingested",
+      "source_slug": "supnik-glnext-vulkan-discuss",
+      "title": "glNext is Neither OpenGL nor Next, Discuss"
+    }
+  ],
+  "concepts_created": [
+    "iphone-4-opengl-es-perf-gap",
+    "performance-by-design",
+    "four-horsemen-performance",
+    "vulkan-explicit-performance"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-iphone-4-perf-gap",
+    "supnik-performance-by-design",
+    "supnik-four-horsemen",
+    "supnik-glnext-vulkan-discuss"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[iphone-4-opengl-es-perf-gap]] —— 2014-12 X-Plane 10 Mobile 复盘：iPhone 4 的顶点/varying/VBO orphan 三条老机独有症状\n- [[performance-by-design]] —— 2015-01 反 Knuth 误引的立场帖：高性能是设计出来的\n- [[four-horsemen-performance]] —— 2015-01 续篇：冗余工作 / 常数时间低效 / 不必要泛化 / 复利\n- [[vulkan-explicit-performance]] —— 2015-03 glNext 立场帖：线程友好 + 显式性能 + shim 迁移路径"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-iphone-4-perf-gap]]\n- [[sources/supnik-performance-by-design]]\n- [[sources/supnik-four-horsemen]]\n- [[sources/supnik-glnext-vulkan-discuss]]"
+    },
+    {
+      "file": "wiki/software-design/pragmatic-performance-philosophy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[performance-by-design]] —— Supnik 同期（2015）的「高性能是设计出来的」立场帖\n- [[four-horsemen-performance]] —— Supnik 续篇：把「为什么后期救不回」拆成四条具体机制"
+    },
+    {
+      "file": "wiki/software-design/false-abstraction.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[four-horsemen-performance]] —— 「不必要的泛化」是四骑士的第三骑，Supnik 给出具体识别准则"
+    },
+    {
+      "file": "wiki/software-design/strategic-programming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[performance-by-design]] —— 把 strategic 立场直接应用到性能的 Supnik 版本"
+    },
+    {
+      "file": "wiki/software-design/optimization-leverage-ratio.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[four-horsemen-performance]] —— 复利骑士：1% 在驱动代码里是大事的同源直觉"
+    },
+    {
+      "file": "wiki/rendering/graphics-api-history.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vulkan-explicit-performance]] —— Supnik 2015 年 Vulkan 公布当日的立场帖：三大卖点与未解的资源管理问题"
+    },
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vulkan-explicit-performance]] —— Metal 是 Vulkan 思路的早期实例（但受益于 iOS 共享内存）"
+    },
+    {
+      "file": "wiki/rendering/vbo-double-buffering-orphaning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[iphone-4-opengl-es-perf-gap]] —— VBO orphan 回收在 iPhone 4 上的可观测代价，新设备上 < 1%"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[iphone-4-opengl-es-perf-gap]] | Supnik: iPhone 4 的 OpenGL ES 性能断崖（顶点/varying 打包/VBO orphan 三条独有症状） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vulkan-explicit-performance]] | Supnik: glNext/Vulkan 三大卖点（线程/显式性能/shim 迁移）+ 资源管理 open question |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[performance-by-design]] | Supnik: 高性能是设计出来的，不是后期 profile 出来的 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[four-horsemen-performance]] | Supnik: 冗余工作 / 常数时间低效 / 不必要泛化 / 复利——四骑士解释为何后期救不回 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-iphone-4-perf-gap]] | Supnik 2014-12：X-Plane 10 Mobile 的 iPhone 4 复盘 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-performance-by-design]] | Supnik 2015-01：高性能是设计出来的立场帖 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-four-horsemen]] | Supnik 2015-01：性能末日的四骑士 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-glnext-vulkan-discuss]] | Supnik 2015-03：glNext/Vulkan 立场帖 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-99 Worker KK (hacksoflife / Supnik ×5)\n\n处理 5 篇 Ben Supnik 2013-10 ~ 2015-03 的博客。新增 4 概念页（iphone-4-opengl-es-perf-gap, performance-by-design, four-horsemen-performance, vulkan-explicit-performance）、4 source 摘要。跳过 1 篇（good-advice-from-git，三行 git union-merge 引用，非技术原创）。"
+}

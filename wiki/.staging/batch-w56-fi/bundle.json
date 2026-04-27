@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w56-fi",
+  "agent_note": "Outerra blog (Brano Kemen/cameni + Angrypig Kralik): 5 篇 planet-engine 实测——DEM 数据管线（SRTM 30m vs NasaDEM + bathymetric）、OpenGL 三角形吞吐甜点（grass + blocks 两组，5k-20k tri/instance）、GLSL fp64 sin/cos minimax 近似。全部 ingest。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/outerra.blogspot.com/2015-05-27_evaluation-of-30m-elevation-data-in-outerra.md",
+      "status": "ingested",
+      "source_slug": "outerra-srtm-30m-evaluation",
+      "title": "Evaluation of 30m elevation data in Outerra"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2016-01-31_opengl-rendering-performance-test-1-procedural-grass.md",
+      "status": "ingested",
+      "source_slug": "outerra-opengl-perf-grass",
+      "title": "OpenGL rendering performance test #1 - Procedural grass"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2016-02-06_opengl-rendering-performance-test-2-blocks.md",
+      "status": "ingested",
+      "source_slug": "outerra-opengl-perf-blocks",
+      "title": "OpenGL rendering performance test #2 - blocks"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2017-06-13_fp64-approximations-for-sin-cos-for-opengl.md",
+      "status": "ingested",
+      "source_slug": "outerra-fp64-sincos",
+      "title": "fp64 approximations for sin/cos for OpenGL"
+    },
+    {
+      "path": "raw/articles/outerra.blogspot.com/2018-01-28_preliminary-comparison-of-nasadem-dataset.md",
+      "status": "ingested",
+      "source_slug": "outerra-nasadem-comparison",
+      "title": "Preliminary comparison of NasaDEM dataset"
+    }
+  ],
+  "concepts_created": [
+    "planet-terrain-dem-pipeline",
+    "opengl-draw-call-batching-sweet-spot",
+    "fp64-sincos-minimax"
+  ],
+  "people_created": [
+    "outerra-team"
+  ],
+  "source_summaries_created": [
+    "outerra-srtm-30m-evaluation",
+    "outerra-opengl-perf-grass",
+    "outerra-opengl-perf-blocks",
+    "outerra-fp64-sincos",
+    "outerra-nasadem-comparison"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-draw-call-batching-sweet-spot]] —— Outerra 实测：per-instance 5k-20k 三角形是跨厂吞吐甜点"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/outerra-opengl-perf-grass]]"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/outerra-opengl-perf-blocks]]"
+    },
+    {
+      "file": "wiki/computer-systems/faster-math-functions.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[fp64-sincos-minimax]] —— Outerra 把同一套 minimax 三段式方法论搬到 GLSL fp64 sin/cos"
+    },
+    {
+      "file": "wiki/rendering/fractal-texturing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[planet-terrain-dem-pipeline]] —— Outerra 的行星尺度 DEM + fractal resample 管线"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[planet-terrain-dem-pipeline]] | Outerra 行星 DEM 管线：SRTM/NasaDEM + fractal resample 实战 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-draw-call-batching-sweet-spot]] | instanced draw 的 5k-20k 三角形跨厂甜点（Outerra 实测） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fp64-sincos-minimax]] | GLSL fp64 sin/cos 的 Remez minimax 近似（Outerra） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[outerra-team]] | Brano Kemen / Angrypig Kralik —— Outerra 行星引擎双人组 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-srtm-30m-evaluation]] | Outerra：SRTM 30m 数据评估与 76/30 甜点 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-opengl-perf-grass]] | Outerra：procedural grass 的 OpenGL 三角形吞吐测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-opengl-perf-blocks]] | Outerra：building block 的 OpenGL 三角形吞吐测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-fp64-sincos]] | Outerra：GLSL fp64 sin/cos 的 minimax 近似实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/outerra-nasadem-comparison]] | Outerra：NasaDEM preliminary 对比 SRTM/Viewfinder |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-56 Worker FI (outerra.blogspot.com ×5)\n\n处理 5 篇 Outerra 行星引擎技术博文（2015-2018）：SRTM 30m 数据评估、NasaDEM preliminary 对比、OpenGL 三角形吞吐测试 grass + blocks、GLSL fp64 sin/cos minimax 近似。新增 3 概念页（planet-terrain-dem-pipeline, opengl-draw-call-batching-sweet-spot, fp64-sincos-minimax），1 人物页（outerra-team），5 源摘要。Patch draw-call.md / faster-math-functions.md / fractal-texturing.md 交叉链接。"
+}

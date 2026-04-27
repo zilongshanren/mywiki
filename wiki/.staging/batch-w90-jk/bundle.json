@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w90-jk",
+  "agent_note": "Joost van Dongen 2011-02 到 2011-06 的 5 篇博客，全部为营销/业务模式随笔（blog pause 公告、Proun graphics-only trailer 的设计思路、Awesomenauts 首发公告与 trailer、Proun Pay-What-You-Want 定价理由）。未触及可作为概念页素材的渲染/引擎/工具技术细节，只有零散提示（2.5D area light shadowing、real-time camera mapping、SolidMotion、RoniTech 2 编辑器、6000 物体关卡）被许诺将在后续文章中展开。按 topicality gate 全部跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-02-20_pause.md",
+      "status": "skipped_offtopic",
+      "reason": "blog pause 公告，仅列出未来话题；无技术内容。"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-04-18_why-i-made-a-graphics-only-trailer-of-proun.md",
+      "status": "skipped_offtopic",
+      "reason": "trailer 设计思路（营销文案），提到的 motion sickness / camera 设计已在此前文章单独覆盖。"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-05-30_awesomenauts-announced.md",
+      "status": "skipped_offtopic",
+      "reason": "Awesomenauts 首发公告；仅提到 RoniTech 2 名字，无技术细节。"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-06-07_awesomenauts-trailer-released.md",
+      "status": "skipped_offtopic",
+      "reason": "trailer 发布公告，含 6000 物体关卡提示但无实现细节；承诺后续文章展开。"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-06-13_proun-will-be-pay-what-you-want-here-s-why.md",
+      "status": "skipped_offtopic",
+      "reason": "Pay-What-You-Want 定价与商业模式随笔，非技术内容。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-90 Worker JK (joostdevblog.blogspot.com 2011-02~06 ×5)\n\n处理 5 篇 Joost van Dongen 博客（2011-02 到 2011-06）。全部为营销/业务模式随笔（blog pause、Proun graphics-only trailer 设计、Awesomenauts 公告与首支 trailer、Proun Pay-What-You-Want 定价理由），按 topicality gate 全部跳过（skipped_offtopic ×5）。未新增概念 / 人物 / 源摘要页。"
+}

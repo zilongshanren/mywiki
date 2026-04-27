@@ -1,0 +1,87 @@
+{
+  "batch_id": "batch-w77-hx",
+  "agent_note": "Joost van Dongen / Proun 2010-10：三篇 camera mapping 合并为 1 个 source 摘要 + 1 个 concept（rendering/camera-mapping-2d-to-3d）；碰撞检测 3000fps trick 与抗晕眩摄像机各自独立成 source+concept。Joost 人物页已存在，走 patch 追加 sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-10-03_camera-mapping-the-evil-pope.md",
+      "status": "ingested_merged",
+      "source_slug": "joostdevblog-camera-mapping",
+      "title": "Camera mapping the Evil Pope"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-10-10_captain-august-got-camera-mapped.md",
+      "status": "ingested_merged",
+      "source_slug": "joostdevblog-camera-mapping",
+      "title": "Captain August got camera mapped!"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-10-16_camera-mapping-tips-and-tricks.md",
+      "status": "ingested_merged",
+      "source_slug": "joostdevblog-camera-mapping",
+      "title": "Camera mapping tips and tricks"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-10-20_dirty-collision-detection-trickery-in-proun.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-proun-3000fps-collision",
+      "title": "Dirty collision detection trickery in Proun"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-10-30_designing-against-motion-sickness-in-proun.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-proun-motion-sickness",
+      "title": "Designing against motion sickness in Proun"
+    }
+  ],
+  "concepts_created": [
+    "camera-mapping-2d-to-3d",
+    "fixed-3000fps-gameplay-simplicity",
+    "motion-sickness-camera-design"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-camera-mapping",
+    "joostdevblog-proun-3000fps-collision",
+    "joostdevblog-proun-motion-sickness"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/joostdevblog-camera-mapping]]\n- [[sources/joostdevblog-proun-3000fps-collision]]\n- [[sources/joostdevblog-proun-motion-sickness]]"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[camera-mapping-2d-to-3d]] —— 把 2D 插画投影到粗 3D 几何做可动画的「活画」\n- [[fixed-3000fps-gameplay-simplicity]] —— Proun 的 3000fps 固定步长碰撞 trick\n- [[motion-sickness-camera-design]] —— Proun 抗晕眩摄像机设计"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[camera-mapping-2d-to-3d]] | 把 2D 插画投影到粗 3D 几何上做可动画的「活画」（Joost van Dongen / Proun） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[fixed-3000fps-gameplay-simplicity]] | Proun 用 3000fps 固定步长换碰撞代码简单性 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[motion-sickness-camera-design]] | 无地平线游戏的抗晕眩摄像机：不做 smoothing、载具钉中心 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-camera-mapping]] | Joost van Dongen：把 2D 插画投影成 3D 动画的三连载（Evil Pope / Captain August / tips）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-proun-3000fps-collision]] | Joost van Dongen：Proun 把 gameplay 锁在 3000fps 解决碰撞 tunneling |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-proun-motion-sickness]] | Joost van Dongen：Proun 抗晕眩的摄像机设计决策 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-77 Worker HX (joostdevblog.blogspot.com ×5 — Proun 2010-10)\n\n处理 5 篇 Joost van Dongen 2010-10 博客：三篇 camera mapping 合并为 1 source 摘要 + 1 概念页（camera-mapping-2d-to-3d）；碰撞 3000fps trick 与抗晕眩摄像机各自独立成 source+concept。新增 3 概念页、3 source 摘要，给已有 joost-van-dongen 人物页追加 sources 与相关链接。"
+}

@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w89-jh",
+  "agent_note": "Pesce 2010-03/04 wave: homework-2 dependency exercise, PIX critique, live-editing poll (post+results). 2 skipped: homework-2-2 is a http/https archive duplicate of homework-2; live-editing-poll is a pre-poll post with no substantive content (results post is the substantive one).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-18_homework-2.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-homework-2-dependencies",
+      "title": "Homework 2"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-18_homework-2-2.md",
+      "status": "skipped_duplicate",
+      "reason": "Identical content to 2010-03-18_homework-2.md (http vs https re-fetch of the same post)."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-19_pix-is-great-but.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-pix-is-great-but",
+      "title": "PIX is great but..."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-04-09_live-editing-poll.md",
+      "status": "skipped_offtopic",
+      "reason": "Poll announcement post with only a postscript and reader comments; the substantive content lives in the 2010-05-10 results post which we ingest instead."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-05-10_poll-results.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-live-editing-poll-results",
+      "title": "Poll results"
+    }
+  ],
+  "concepts_created": ["live-editing-taxonomy-2010"],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-homework-2-dependencies",
+    "c0de517e-pix-is-great-but",
+    "c0de517e-live-editing-poll-results"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-homework-2-dependencies]]\n- [[sources/c0de517e-pix-is-great-but]]\n- [[sources/c0de517e-live-editing-poll-results]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[live-editing-taxonomy-2010]]"
+    },
+    {
+      "file": "wiki/software-design/dependencies.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- 工具清单与实操：[[sources/c0de517e-homework-2-dependencies]] —— Pesce 2010 年给读者的 DSM 作业"
+    },
+    {
+      "file": "wiki/game-development/tools-first-iteration-loop.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[live-editing-taxonomy-2010]] —— Pesce 2010 poll 把「改 → 看」延迟的不同解法分成 8 档"
+    },
+    {
+      "file": "wiki/game-development/runtime-editor-console-connection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[live-editing-taxonomy-2010]] —— Pesce 把这套做法定位在「tool + RPC live-update」与 reflection/RPC 之间"
+    },
+    {
+      "file": "wiki/rendering/pix-api-and-dxdmp.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-pix-is-great-but]] —— Pesce 2010 年的老观察：PIX 精确但切工具成本高，屏幕涂色 + shader live-reload 的迭代速度往往更快"
+    },
+    {
+      "file": "wiki/rendering/debug-visualization.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-pix-is-great-but]] —— 把中间数据画到画面角落 + 让 main shader 输出 ground truth 的 2010 年工作流"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[live-editing-taxonomy-2010]] | Pesce 2010 poll：live-editing 方案八档阶梯（None 到 code hot-swap） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-homework-2-dependencies]] | Pesce 2010：用 DSM 工具审视依赖的动手作业 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-pix-is-great-but]] | Pesce 2010：PIX 精确但迭代慢，屏幕涂色 + shader live-reload 往往更快 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-live-editing-poll-results]] | Pesce 2010：live-editing poll 75 人结果与八档分类吐槽 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-89 Worker jh (c0de517e Pesce 2010-03/04 ×5)\n\nPesce 2010 年 3-5 月五篇：homework-2 依赖作业、PIX 批评、live-editing poll（公告 + 结果）。新增 1 概念页 [[live-editing-taxonomy-2010]]、3 source 摘要。跳过 2 篇：homework-2-2 是 http/https 归档重复（skipped_duplicate）、live-editing-poll 是公告无实质内容，实质在结果篇。Patch 了 dependencies / tools-first-iteration-loop / runtime-editor-console-connection / pix-api-and-dxdmp / debug-visualization / angelo-pesce 六页。"
+}

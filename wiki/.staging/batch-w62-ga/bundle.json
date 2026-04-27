@@ -1,0 +1,89 @@
+{
+  "batch_id": "batch-w62-ga",
+  "agent_note": "cmwdexint (Ming Wai Chan) URP tips. 3 篇 URP 技术贴士全部 ingest；Stable Diffusion 本地安装流水账 + Spotify Android SDK 集成教程（纯 Android plumbing）跳过，偏离 graphics/rendering 主题。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/cmwdexint.com/2021-01-15_urp-and-built-in-rp-feature-mapping.md",
+      "status": "ingested",
+      "source_slug": "cmwdexint-urp-builtin-feature-mapping",
+      "title": "URP and Built-in RP feature mapping"
+    },
+    {
+      "path": "raw/articles/cmwdexint.com/2021-12-02_where-to-find-urp-settings.md",
+      "status": "ingested",
+      "source_slug": "cmwdexint-urp-settings-locations",
+      "title": "Where to find URP Settings"
+    },
+    {
+      "path": "raw/articles/cmwdexint.com/2022-08-24_disable-fog-for-urp-lit-shadergraph.md",
+      "status": "ingested",
+      "source_slug": "cmwdexint-urp-shadergraph-fog-disable",
+      "title": "Disable Fog for URP Lit ShaderGraph"
+    },
+    {
+      "path": "raw/articles/cmwdexint.com/2022-10-09_exploring-stable-diffusion-setup.md",
+      "status": "skipped_offtopic",
+      "reason": "本地 Stable Diffusion 安装流水账（CUDA + pytorch + AUTOMATIC1111 WebUI），偏向 ML 工具安装踩坑，不涉及 graphics / rendering / engine / shader 主题"
+    },
+    {
+      "path": "raw/articles/cmwdexint.com/2024-01-13_using-spotify-android-sdk-in-unity.md",
+      "status": "skipped_offtopic",
+      "reason": "Unity + Spotify Android SDK 集成教程（keystore、AndroidManifest、BroadcastReceiver、Java↔C# 互调），纯 Android plumbing，不涉及渲染/引擎架构，技术含量偏低"
+    }
+  ],
+  "concepts_created": [
+    "urp-builtin-feature-mapping",
+    "urp-settings-locations",
+    "urp-shadergraph-fog-strip",
+    "shader-variant-stripping"
+  ],
+  "people_created": ["ming-wai-chan"],
+  "source_summaries_created": [
+    "cmwdexint-urp-builtin-feature-mapping",
+    "cmwdexint-urp-settings-locations",
+    "cmwdexint-urp-shadergraph-fog-disable"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/scriptable-render-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[urp-builtin-feature-mapping]] —— Built-in RP → URP 的 API 迁移速查（相机回调、LightMode 标签、材质属性、深度/不透明纹理）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-builtin-feature-mapping]] | Built-in RP 与 URP 的 API 一一对照 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-settings-locations]] | URP 设置入口的散落地图 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[urp-shadergraph-fog-strip]] | 给指定 ShaderGraph 材质关掉 URP 雾效 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[shader-variant-stripping]] | Unity 构建期剥 shader 变体（IPreprocessShaders） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[ming-wai-chan]] | Ming Wai Chan（cmwdexint），Unity URP 实用贴士 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cmwdexint-urp-builtin-feature-mapping]] | cmwdexint：URP 与 Built-in RP 特性映射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cmwdexint-urp-settings-locations]] | cmwdexint：URP 设置面板在哪里找 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cmwdexint-urp-shadergraph-fog-disable]] | cmwdexint：关掉 URP Lit ShaderGraph 的雾效 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-62 Worker GA (cmwdexint.com ×5)\n\n处理 5 篇 cmwdexint.com / Ming Wai Chan 的 URP 贴士。Ingest 3 篇（URP↔Built-in 映射、URP 设置入口、ShaderGraph 关雾效 + 变体剥离）。新增 4 概念页（urp-builtin-feature-mapping, urp-settings-locations, urp-shadergraph-fog-strip, shader-variant-stripping）、1 人物页（ming-wai-chan）、3 source 摘要。跳过 2 篇：Stable Diffusion 本地安装、Unity × Spotify Android SDK 集成（偏离 graphics/rendering 主题）。"
+}

@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w57-fk",
+  "agent_note": "Daniel Ilett 产品文档收尾——Snapshot Shaders Pro 的 underwater / vortex / world-scan 三款 effect 参考文档 + Toon Shaders Pro 顶层营销页 + install guide。3 ingest（新增 vortex-distortion 概念页，复用既有 underwater-post-effect 与 world-scan-shader-effect）+ 2 skip（Toon 顶层与 install 与先例 w47 一致）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-underwater.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-underwater",
+      "title": "Snapshot Shaders Pro - Underwater"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-vortex.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-vortex",
+      "title": "Snapshot Shaders Pro - Vortex"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-world-scan.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-world-scan",
+      "title": "Snapshot Shaders Pro - World Scan"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp-installation-guide.md",
+      "status": "skipped_offtopic",
+      "reason": "安装步骤文档，无技术内容——package manager + .unitypackage 导入 + 材质创建流程（先例：w47 跳过 snapshot-shaders-2-installation-guide）"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_toon-shaders-pro-for-urp.md",
+      "status": "skipped_offtopic",
+      "reason": "asset pack 顶层营销页——features 列表（toon shader / outline / 多光源支持），无可供 wiki 化的算法细节（先例：w47 跳过 shader-toolbox-for-urp 与 snapshot-shaders-pro 顶层页）"
+    }
+  ],
+  "concepts_created": [
+    "vortex-distortion"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-snapshot-pro-underwater",
+    "danielilett-snapshot-pro-vortex",
+    "danielilett-snapshot-pro-world-scan"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vortex-distortion]]"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-underwater]]\n- [[sources/danielilett-snapshot-pro-vortex]]\n- [[sources/danielilett-snapshot-pro-world-scan]]"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vortex-distortion]] —— Snapshot Pro 的极坐标 UV 漩涡扭曲 Volume override"
+    },
+    {
+      "file": "wiki/rendering/urp-volume-post-processing.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-underwater]]\n- [[sources/danielilett-snapshot-pro-vortex]]\n- [[sources/danielilett-snapshot-pro-world-scan]]"
+    },
+    {
+      "file": "wiki/rendering/underwater-post-effect.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vortex-distortion]] —— 另一种 UV 扭曲后处理（极坐标驱动），可与水下扭曲叠加"
+    },
+    {
+      "file": "wiki/rendering/underwater-post-effect.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-underwater]] —— Snapshot Shaders Pro 的简化版 Underwater（bump + fog，无 caustics / flow map / triplanar）"
+    },
+    {
+      "file": "wiki/rendering/world-scan-shader-effect.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-world-scan]] —— Snapshot Shaders Pro 的 Volume override 版 World Scan，含 ramp 纹理驱动的条带颜色过渡"
+    },
+    {
+      "file": "wiki/rendering/chromatic-aberration-post.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vortex-distortion]] —— 与色差叠加常见（漩涡越强、色差越强）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vortex-distortion]] | 极坐标下半径相关旋转的 UV 扭曲后处理（漩涡） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-underwater]] | Ilett：Snapshot Pro Underwater——bump + fog 简化版水下后处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-vortex]] | Ilett：Snapshot Pro Vortex——Strength/Center/Offset 三参数极坐标漩涡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-world-scan]] | Ilett：Snapshot Pro World Scan——世界空间扫描条带 + ramp 纹理颜色过渡 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-57 Worker FK (danielilett.com Snapshot Shaders Pro effects + Toon Shaders Pro top pages ×5)\n\n处理 5 篇 Daniel Ilett 产品文档收尾：Snapshot Shaders Pro 的 underwater / vortex / world-scan 三款 effect 参考文档（ingest），Toon Shaders Pro URP 顶层营销页与 install guide（skip，沿用 w47 对顶层/install 文档一贯处理）。新增 1 概念页 vortex-distortion、3 source 摘要。patch daniel-ilett 人物页 + urp-volume-post-processing、underwater-post-effect、world-scan-shader-effect、chromatic-aberration-post 四个既有概念页。"
+}

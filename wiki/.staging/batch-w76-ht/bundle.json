@@ -1,0 +1,50 @@
+{
+  "batch_id": "batch-w76-ht",
+  "agent_note": "c0de517e.blogspot.com 2010-03 小批。3 篇独立原文里只有 skin 值得保留：本体只有三句话，真正信息密度在评论区（Jim Hejl 确认 FN4 走 ShaderX7 的屏幕空间扩散路线，Pesce 最终没把 SSS 送入 gameplay）。homework 是个人工作方法论的 post-it note 心得 + 对游戏业保守文化的抱怨，缺实操；68000 是访问量里程碑贴加 Amiga 怀旧调侃，纯闲聊。两篇 -2.md 按说明标记为 archive 重复。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-06_homework-2.md",
+      "status": "skipped_duplicate",
+      "reason": "archive duplicate of 2010-03-06_homework.md（不在本批非重复列表内，但文件存在则按规则处理）"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-07_skin-2.md",
+      "status": "skipped_duplicate",
+      "reason": "archive duplicate of 2010-03-07_skin.md（http vs https，内容一致）"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-07_skin.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-skin",
+      "title": "Skin"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-09_68000-2.md",
+      "status": "skipped_duplicate",
+      "reason": "archive duplicate of 2010-03-09_68000.md（http vs https，内容一致）"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-09_68000.md",
+      "status": "skipped_offtopic",
+      "reason": "博客访问量里程碑 + Amiga 怀旧调侃，无技术内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["c0de517e-skin"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-skin]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-skin]] | Pesce 2010：皮肤渲染 benchmark + Jim Hejl 关于 FN4 屏幕空间 SSS 的评论 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-76 Worker HT (c0de517e.blogspot.com 2010-03 ×5)\n\n处理 Angelo Pesce 2010-03 的 5 个文件：1 篇独立 ingest（skin）、1 篇 skipped_offtopic（68000 访问量里程碑 + Amiga 调侃）、1 篇 skipped_offtopic（homework 工作方法论短文，非技术）、2 篇 skipped_duplicate（-2.md archive 副本）。新增 1 份 source 摘要（c0de517e-skin），触及 [[angelo-pesce]] 与 [[sss-practical-implementation]]。"
+}

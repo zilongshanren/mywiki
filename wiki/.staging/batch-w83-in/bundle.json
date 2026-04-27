@@ -1,0 +1,119 @@
+{
+  "batch_id": "batch-w83-in",
+  "agent_note": "Bitsquid early 2012 (5 posts): 5 productivity tips + Sensible Error Handling 3-part series + documentation system code share. All 5 ingested; 5 new concepts in software-design (crash-on-unexpected-errors, error-context-stack, minimize-points-and-types-of-failure, warnings-as-errors-strategy, now-principle-productivity); doc-system post patches existing minimal-markup-pipeline page rather than duplicating. niklas-frykholm person page exists; appended 5 new source links.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-01-05_5-tips-for-programmer-productivity.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-5-tips-programmer-productivity",
+      "title": "5 Tips for Programmer Productivity"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-01-22_sensible-error-handling-part-1.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-sensible-error-handling-part-1",
+      "title": "Sensible Error Handling: Part 1"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-02-05_sensible-error-handling-part-2.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-sensible-error-handling-part-2",
+      "title": "Sensible Error Handling: Part 2"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-02-20_sensible-error-handling-part-3.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-sensible-error-handling-part-3",
+      "title": "Sensible Error Handling: Part 3"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-03-04_caring-by-sharing-the-bitsquid-documentation-system.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-documentation-system-code",
+      "title": "Caring by Sharing: The Bitsquid Documentation System"
+    }
+  ],
+  "concepts_created": [
+    "crash-on-unexpected-errors",
+    "error-context-stack",
+    "minimize-points-and-types-of-failure",
+    "warnings-as-errors-strategy",
+    "now-principle-productivity"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-5-tips-programmer-productivity",
+    "bitsquid-sensible-error-handling-part-1",
+    "bitsquid-sensible-error-handling-part-2",
+    "bitsquid-sensible-error-handling-part-3",
+    "bitsquid-documentation-system-code"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[crash-on-unexpected-errors]] — Bitsquid 对 unexpected error 的 crash-fast 哲学\n- [[error-context-stack]] — thread-local 作用域变量栈给深层 assert 补上现场\n- [[minimize-points-and-types-of-failure]] — expected error API 设计的两条原则\n- [[warnings-as-errors-strategy]] — warning 分类、升格与 deprecation 四档降级路径\n- [[now-principle-productivity]] — Bitsquid 五条日常纪律（5-min 规则、修病根、心流、VCS、build server）"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-5-tips-programmer-productivity]]\n- [[sources/bitsquid-sensible-error-handling-part-1]]\n- [[sources/bitsquid-sensible-error-handling-part-2]]\n- [[sources/bitsquid-sensible-error-handling-part-3]]\n- [[sources/bitsquid-documentation-system-code]]"
+    },
+    {
+      "file": "wiki/software-design/minimal-markup-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-documentation-system-code]] — 2012 年的代码公开版本，补充 @api Lua 模式、bsdoc 文件扩展、HTML context stack 的具体写法"
+    },
+    {
+      "file": "wiki/software-design/zero-tolerance.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[warnings-as-errors-strategy]] — Bitsquid 对 warning 的治理：升格为 error 是主战术"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[crash-on-unexpected-errors]] | Bitsquid：unexpected error 立刻崩，API 对调用方负全责 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[error-context-stack]] | thread-local 作用域变量栈：深层 assert 的现场信息 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[minimize-points-and-types-of-failure]] | expected error 的 API 设计：少失败点 + 函数级 enum + struct 返回 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[warnings-as-errors-strategy]] | warning 治理：升格为 error + deprecation 四档降级 + tool-first 显示 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[now-principle-productivity]] | Bitsquid 五条日常纪律：5 分钟规则、修病根、心流、VCS、build server |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-5-tips-programmer-productivity]] | Niklas：五条程序员日常纪律 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-sensible-error-handling-part-1]] | Niklas：unexpected error 立即 crash 的哲学 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-sensible-error-handling-part-2]] | Niklas：expected error 的 API 收敛与错误码回归 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-sensible-error-handling-part-3]] | Niklas：warning 分类与升格为 error 的战术 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-documentation-system-code]] | Niklas：Bitsquid 文档系统代码公开，line-by-line + HTML context 栈 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-83 Worker IN (bitsquid 2012 early x5)\n\n处理 5 篇 2012 年初 Bitsquid Blog：5 Tips + Sensible Error Handling 三部曲 + 文档系统代码公开。新增 5 个 software-design 概念页：crash-on-unexpected-errors、error-context-stack、minimize-points-and-types-of-failure、warnings-as-errors-strategy、now-principle-productivity。新增 5 个 source 摘要。文档系统一文不单建概念页，而是补丁到已有 minimal-markup-pipeline。niklas-frykholm 人物页已存在，追加相关概念与 5 条 source 链接。"
+}

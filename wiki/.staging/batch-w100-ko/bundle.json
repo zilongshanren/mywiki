@@ -1,0 +1,191 @@
+{
+  "batch_id": "batch-w100-ko",
+  "agent_note": "Chips and Cheese 2021-07/08 五连发：4 篇微架构主文（Zen 2 op cache、ISA 无关论、Zen 3 bottlenecks、Neoverse N1 vs Zen 2）全部 ingest 并各产一个 concept 页；第 5 篇 Gigabyte leak 是 news+技术解读混合，只做 source summary、不开 concept（结论基于泄露 PPR 而非作者实测）。作者 Chester Lam / George Cozma 已有 people 页，仅 append 新 source/concept 链接。主要概念页 op-cache-decoded-uop-cache、isa-implementation-not-architecture、neoverse-n1-microarchitecture、dispatch-stall-breakdown 均为新。既有 zen2-microarchitecture 与 branch-predictor-design 通过 patch 补交叉链接，未改正文。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-07-03_how-zen-2s-op-cache-affects-performance.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen2-op-cache-performance",
+      "title": "How Zen 2's Op Cache Affects Performance"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-07-13_arm-or-x86-isa-doesnt-matter.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-isa-doesnt-matter",
+      "title": "ARM or x86? ISA Doesn't Matter"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-07-23_measuring-zen-3s-bottlenecks.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen3-bottlenecks",
+      "title": "Measuring Zen 3's Bottlenecks"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-08-05_neoverse-n1-vs-zen-2-arm-in-practice.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-neoverse-n1-vs-zen2",
+      "title": "Neoverse N1 vs Zen 2: ARM in Practice"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-08-22_details-on-the-gigabyte-leak.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gigabyte-zen4-leak",
+      "title": "Details on the Gigabyte Leak"
+    }
+  ],
+  "concepts_created": [
+    "op-cache-decoded-uop-cache",
+    "isa-implementation-not-architecture",
+    "dispatch-stall-breakdown",
+    "neoverse-n1-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-zen2-op-cache-performance",
+    "chipsandcheese-isa-doesnt-matter",
+    "chipsandcheese-zen3-bottlenecks",
+    "chipsandcheese-neoverse-n1-vs-zen2",
+    "chipsandcheese-gigabyte-zen4-leak"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[op-cache-decoded-uop-cache]] — Zen 2 op cache 对性能与功耗的影响\n- [[isa-implementation-not-architecture]] — ISA 无关论的实测支撑\n- [[neoverse-n1-microarchitecture]] — Neoverse N1 vs Zen 2 实测对比"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen2-op-cache-performance]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-isa-doesnt-matter]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-gigabyte-zen4-leak]]"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（前端 vs 后端）"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen3-bottlenecks]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[op-cache-decoded-uop-cache]]\n- [[isa-implementation-not-architecture]]\n- [[dispatch-stall-breakdown]]\n- [[neoverse-n1-microarchitecture]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen2-op-cache-performance]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-isa-doesnt-matter]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen3-bottlenecks]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-gigabyte-zen4-leak]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen2-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[op-cache-decoded-uop-cache]] — Zen 2 op cache 的性能与功耗实测\n- [[isa-implementation-not-architecture]] — ARM/x86 ISA 无关论\n- [[neoverse-n1-microarchitecture]] — 同代 ARM 服务器核横向对比\n- [[dispatch-stall-breakdown]] — Zen 3 派发停顿分解（沿用分析方法）"
+    },
+    {
+      "file": "wiki/computer-systems/zen2-microarchitecture.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen2-op-cache-performance]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen2-microarchitecture.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[op-cache-decoded-uop-cache]]\n- [[neoverse-n1-microarchitecture]] — N1 走速度优先、精度次之的反向权衡\n- [[dispatch-stall-breakdown]] — Zen 3 上误预测在后端的真实代价"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zen3-bottlenecks]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-vs-zen2]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[op-cache-decoded-uop-cache]] | 已解码微操作缓存：性能与功耗实测，ARM/x86 都在用 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[isa-implementation-not-architecture]] | ISA 无关论：x86 vs ARM 性能差异来自实现而非指令集 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[dispatch-stall-breakdown]] | Zen 3 派发停顿分解：前端 op queue empty vs 后端资源满 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[neoverse-n1-microarchitecture]] | ARM Neoverse N1 实测：与 Zen 2 的同代对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen2-op-cache-performance]] | Chester Lam：关闭 Zen 2 op cache 定量其性能/功耗贡献 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-isa-doesnt-matter]] | Chester Lam：ARM/x86 ISA 差异不决定性能与能效 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen3-bottlenecks]] | George Cozma：Zen 3 六 workload 派发停顿逐项分解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-neoverse-n1-vs-zen2]] | Chester Lam：Ampere Altra vs 3950X 实战对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gigabyte-zen4-leak]] | Chester Lam：Gigabyte 泄露里的 Zen 4 PPR 摘要 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-100 Worker KO (chipsandcheese.com ×5 / 2021-07–08)\n\n处理 Chips and Cheese 2021 年 7–8 月五篇：Zen 2 op cache 性能与功耗、ARM/x86 ISA 无关论、Zen 3 派发停顿分解、Neoverse N1 vs Zen 2 实战、Gigabyte 泄露中的 Zen 4 细节。新增 4 概念页（op-cache-decoded-uop-cache、isa-implementation-not-architecture、dispatch-stall-breakdown、neoverse-n1-microarchitecture）、5 source 摘要；既有 chester-lam / george-cozma / chips-and-cheese / zen2-microarchitecture / branch-predictor-design 通过 patch 补交叉链接。无跳过项。"
+}

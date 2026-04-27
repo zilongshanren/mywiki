@@ -1,0 +1,83 @@
+{
+  "batch_id": "batch-w86-iy",
+  "agent_note": "Ted Sie 2016 NGUI 系列（4 篇）合并为 1 个 source + 1 新概念 ngui-legacy-ui-system；Draw Call 入门篇独立成 source 并 patch 进既有 draw-call.md。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_basic-knowledge-of-draw-call-draw-call-chu-bu-li-jie.md",
+      "status": "ingested",
+      "source_slug": "tedsie-draw-call-basics",
+      "title": "Basic Knowledge of Draw Call – Draw Call 初步理解"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uipanel-and-uisprite-jian-li-ngui-mian-ban-jian-l.md",
+      "status": "ingested",
+      "source_slug": "tedsie-ngui-tutorials",
+      "title": "Comment on UIPanel and UISprite – 建立 NGUI 面板、建立第一张图片",
+      "merged_into": "tedsie-ngui-tutorials"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-uiatlas-ngui-tu-ji-xin-zeng-geng-xin-dao-chu-yi-c.md",
+      "status": "ingested",
+      "source_slug": "tedsie-ngui-tutorials",
+      "title": "Comment on UIAtlas – NGUI 图集新增、更新、导出、移除",
+      "merged_into": "tedsie-ngui-tutorials"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-scroll-view-ke-hua-dong-qu-kuai-scroll-view.md",
+      "status": "ingested",
+      "source_slug": "tedsie-ngui-tutorials",
+      "title": "Comment on Scroll View – 可滑动区块 Scroll View",
+      "merged_into": "tedsie-ngui-tutorials"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_comment-on-button-button-xi-lie-gong-neng-jiang-jie.md",
+      "status": "ingested",
+      "source_slug": "tedsie-ngui-tutorials",
+      "title": "Comment on Button – Button 系列功能讲解",
+      "merged_into": "tedsie-ngui-tutorials"
+    }
+  ],
+  "concepts_created": ["ngui-legacy-ui-system"],
+  "people_created": [],
+  "source_summaries_created": ["tedsie-ngui-tutorials", "tedsie-draw-call-basics"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ngui-legacy-ui-system]] —— NGUI 下 UIPanel + UIAtlas 的合批机制：相同 Material 实例才能合批，Shader 相同 Material 不同仍会拆批"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/tedsie-draw-call-basics]]"
+    },
+    {
+      "file": "wiki/people/ted-sie.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ngui-legacy-ui-system]]"
+    },
+    {
+      "file": "wiki/people/ted-sie.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/tedsie-ngui-tutorials]]\n- [[sources/tedsie-draw-call-basics]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ngui-legacy-ui-system]] | NGUI 遗留 UI 系统：UI Root / UIPanel / UIAtlas / Button 家族 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tedsie-ngui-tutorials]] | Ted Sie 2016-07 NGUI 入门四讲合并（UIPanel/UISprite + UIAtlas + Scroll View + Button） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tedsie-draw-call-basics]] | Ted Sie：Draw Call 初步理解（材质实例即批边界） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-86 Worker IY (tedsieblog.wordpress.com ×5)\n\n处理 Ted Sie 2016-07 的 5 篇 NGUI / Draw Call 入门文章。新增 1 概念页（ngui-legacy-ui-system）、2 source 摘要（tedsie-ngui-tutorials 合并 4 篇 NGUI 教学、tedsie-draw-call-basics 单独成文）。Draw Call 入门篇通过 patch 链进既有 [[draw-call]]。无跳过。"
+}

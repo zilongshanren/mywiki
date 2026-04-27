@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w88-je",
+  "agent_note": "joostdevblog 2011-01 to 2011-02: 5 ingested (RTS balance taxonomy, designer role, reset-vs-recreate, 10 tips lonely programmer, meta-shapes from perspective). 4 new concept pages (rts-balance-taxonomy, destroy-recreate-vs-reset, solo-programmer-discipline, perspective-meta-shapes) + 5 source summaries. Role-of-designer rolled into source summary only (no new concept — already covered by existing tools-first-iteration-loop). joost-van-dongen person page patched (sources 11->16, 4 new 相关 links, 5 new Sources links).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-01-13_the-many-faces-of-balance-in-an-rts.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-rts-balance-faces",
+      "title": "The many faces of balance in an RTS"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-01-22_the-role-of-the-game-designer.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-role-of-game-designer",
+      "title": "The role of the game designer"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-01-30_resetting-versus-re-creating.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-resetting-vs-re-creating",
+      "title": "Resetting versus re-creating"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-02-10_10-tips-for-the-lonely-programmer.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-lonely-programmer-tips",
+      "title": "10 Tips for the lonely programmer"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-02-10_meta-shapes-emerging-from-perspective.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-meta-shapes-perspective",
+      "title": "Meta-shapes emerging from perspective"
+    }
+  ],
+  "concepts_created": [
+    "rts-balance-taxonomy",
+    "destroy-recreate-vs-reset",
+    "solo-programmer-discipline",
+    "perspective-meta-shapes"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-rts-balance-faces",
+    "joostdevblog-role-of-game-designer",
+    "joostdevblog-resetting-vs-re-creating",
+    "joostdevblog-lonely-programmer-tips",
+    "joostdevblog-meta-shapes-perspective"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "sources: 11",
+      "content": "sources: 16"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rts-balance-taxonomy]] —— RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气）\n- [[destroy-recreate-vs-reset]] —— 销毁重建胜过隐藏重置的对象生命周期纪律\n- [[solo-programmer-discipline]] —— 独行程序员的十条生存纪律\n- [[perspective-meta-shapes]] —— 透视投影下视角相关的 meta-shape 构图"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-rts-balance-faces]]\n- [[sources/joostdevblog-role-of-game-designer]]\n- [[sources/joostdevblog-resetting-vs-re-creating]]\n- [[sources/joostdevblog-lonely-programmer-tips]]\n- [[sources/joostdevblog-meta-shapes-perspective]]"
+    },
+    {
+      "file": "wiki/game-development/tools-first-iteration-loop.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/joostdevblog-role-of-game-designer]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[rts-balance-taxonomy]] | RTS 平衡的七种面孔（阵营/新手/战术/地图/节奏/趣味/运气） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[solo-programmer-discipline]] | 独行程序员的十条生存纪律（Swords & Soldiers Wii 版经验） |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[destroy-recreate-vs-reset]] | 销毁重建胜过隐藏重置——用对象生命周期消除状态同步 bug |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[perspective-meta-shapes]] | 透视投影下视角相关的 meta-shape 构图（Proun 相机设计） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-rts-balance-faces]] | Joost：RTS 平衡的七种面孔 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-role-of-game-designer]] | Joost：游戏设计师的真正职责（不是想点子，是做内容） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-resetting-vs-re-creating]] | Joost：销毁重建 vs 隐藏重置的 C++ 对象生命周期纪律 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-lonely-programmer-tips]] | Joost：独行程序员的 10 条瓷砖格言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-meta-shapes-perspective]] | Joost：透视下的 meta-shape 构图与 Proun 相机设计 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-88 Worker JE (joostdevblog 2011-01 to 2011-02 x5)\n\n处理 5 篇 joostdevblog（2011-01-13 至 2011-02-10），全部 ingested。新增 4 概念页：rts-balance-taxonomy（Joost 七种 RTS 平衡面孔）、destroy-recreate-vs-reset（Maarten 的销毁重建替代隐藏重置）、solo-programmer-discipline（独行程序员十条瓷砖格言）、perspective-meta-shapes（Proun 的视角相关 meta-shape 构图）。新增 5 source 摘要；role-of-game-designer 未建独立概念页（与既有 tools-first-iteration-loop 重叠），以 source 摘要形式保留并挂到 tools-first 的 Sources。更新 joost-van-dongen 人物页（sources 11→16）。"
+}

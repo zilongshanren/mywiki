@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w82-ik",
+  "agent_note": "Bitsquid 2011 晚期五篇：low-level animation part 2（流式 cache 布局 + active 数组）、sound parameters DOD 五步重构、务实性能观七条、platform-specific resources property 系统、patch link.exe 忽略 LNK4099。niklas-frykholm 人物页已存在，仅追加 source links。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-10-23_low-level-animation-part-2.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-low-level-animation-part-2",
+      "title": "Low Level Animation — Part 2"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-11-07_an-example-in-data-oriented-design-sound-parameters.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-dod-sound-parameters",
+      "title": "An Example in Data-Oriented Design: Sound Parameters"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-12-08_a-pragmatic-approach-to-performance.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-pragmatic-performance",
+      "title": "A Pragmatic Approach to Performance"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-12-22_platform-specific-resources.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-platform-specific-resources",
+      "title": "Platform Specific Resources"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-12-28_code-share-patch-link-exe-to-ignore-lnk4099.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-link-exe-lnk4099-patch",
+      "title": "Code Share: Patch link.exe to Ignore LNK4099"
+    }
+  ],
+  "concepts_created": [
+    "animation-stream-cache-layout",
+    "parameter-nodes-intrusive-linked-list",
+    "pragmatic-performance-philosophy",
+    "platform-specific-resources-property-system",
+    "link-exe-lnk4099-patch"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-low-level-animation-part-2",
+    "bitsquid-dod-sound-parameters",
+    "bitsquid-pragmatic-performance",
+    "bitsquid-platform-specific-resources",
+    "bitsquid-link-exe-lnk4099-patch"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-low-level-animation-part-2]]\n- [[sources/bitsquid-dod-sound-parameters]]\n- [[sources/bitsquid-pragmatic-performance]]\n- [[sources/bitsquid-platform-specific-resources]]\n- [[sources/bitsquid-link-exe-lnk4099-patch]]"
+    },
+    {
+      "file": "wiki/computer-systems/cache-friendliness.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[animation-stream-cache-layout]] — Bitsquid 动画流的 hot/cold 分离 + active 数组\n- [[parameter-nodes-intrusive-linked-list]] — 池化数组 + intrusive 链表的 cache 友好变长结构"
+    },
+    {
+      "file": "wiki/game-engines/resource-system-design.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[platform-specific-resources-property-system]] — Bitsquid 用文件名 property 段统一吃掉平台/本地化/业务变体"
+    },
+    {
+      "file": "wiki/software-design/strategic-programming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pragmatic-performance-philosophy]] — Frykholm 的务实性能观：数据结构前期决策 + profiler 驱动后期优化"
+    },
+    {
+      "file": "wiki/software-design/red-flags.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[parameter-nodes-intrusive-linked-list]] — std::map / vectors-of-vectors / std::string 三面红旗的重构案例"
+    },
+    {
+      "file": "wiki/software-design/tactical-programming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pragmatic-performance-philosophy]] — 对「先烂写再优化」的精细反驳：数据结构决策只有设计时最便宜"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[animation-stream-cache-layout]] | Bitsquid 动画数据的流式 cache 布局：active 数组 + 时间排序流 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[platform-specific-resources-property-system]] | Bitsquid property 机制：文件名段统一处理平台/本地化/业务变体 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[parameter-nodes-intrusive-linked-list]] | 池化数组 + intrusive 链表：变长小集合的 DOD 容器 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[pragmatic-performance-philosophy]] | Frykholm 的务实性能观七条 + 数量级驱动设计 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[link-exe-lnk4099-patch]] | 二进制 patch MSVC link.exe 让 LNK4099 可被 /ignore |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-low-level-animation-part-2]] | Bitsquid：动画流式 cache 布局 + active 数组 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-dod-sound-parameters]] | Bitsquid：声音参数集合的五步 DOD 重构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-pragmatic-performance]] | Bitsquid：务实性能观七条 + 数量级设计指南 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-platform-specific-resources]] | Bitsquid：property 资源变体系统（平台编译期 + 语言运行期） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-link-exe-lnk4099-patch]] | Bitsquid：patch link.exe 忽略 LNK4099 的 Ruby 脚本 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-82 Worker IK (bitsquid 2011 late ×5)\n\n处理 5 篇 2011-Q4 bitsquid.blogspot.com 文章：low-level animation part 2、DOD sound parameters、pragmatic performance、platform-specific resources、patch link.exe LNK4099。新增 5 概念页（animation-stream-cache-layout、parameter-nodes-intrusive-linked-list、pragmatic-performance-philosophy、platform-specific-resources-property-system、link-exe-lnk4099-patch）、5 source 摘要。人物页已存在（niklas-frykholm），仅追加 source 链接。"
+}

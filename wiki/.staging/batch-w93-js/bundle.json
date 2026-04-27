@@ -1,0 +1,77 @@
+{
+  "batch_id": "batch-w93-js",
+  "agent_note": "Supnik hacksoflife 2011-06/08 ×5. Merged 2 fine-print posts (EXT-vs-ARB + Guessing) into one rendering concept page. Skipped 2 WordPress ops posts + 1 OS X installer post as off-topic.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-06-01_ext-vs-arb-the-fine-print.md",
+      "status": "ingested",
+      "source_slug": "supnik-ext-vs-arb-fine-print",
+      "title": "EXT vs ARB - The Fine Print"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-06-01_guessing-the-fine-print.md",
+      "status": "ingested",
+      "source_slug": "supnik-guessing-fine-print",
+      "title": "Guessing the Fine Print"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-08-18_fixing-wordpress-auto-update-issues.md",
+      "status": "skipped_offtopic",
+      "reason": "WordPress sysadmin troubleshooting, not graphics/engine related"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-08-18_why-is-wordpress-slow.md",
+      "status": "skipped_offtopic",
+      "reason": "WordPress/blog hosting performance, not graphics/engine related"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-08-19_installer.md",
+      "status": "skipped_offtopic",
+      "reason": "OS X installer command-line trick for triple-boot partition, sysadmin not graphics/engine"
+    }
+  ],
+  "concepts_created": ["opengl-ext-vs-arb-fast-path-leak"],
+  "people_created": [],
+  "source_summaries_created": ["supnik-ext-vs-arb-fine-print", "supnik-guessing-fine-print"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-ext-vs-arb-fast-path-leak]] —— 2011-06 双篇 fine-print 合编：EXT/ARB FBO completeness 差异 + 驱动 fast path 的隐式 if 瀑布"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-ext-vs-arb-fine-print]]\n- [[sources/supnik-guessing-fine-print]]"
+    },
+    {
+      "file": "wiki/rendering/opengl-extension-bucket-strategy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-ext-vs-arb-fast-path-leak]] —— EXT 与 ARB 版 FBO 完整性规则不同，驱动按入口点跟踪变体"
+    },
+    {
+      "file": "wiki/software-design/api-fast-path-design.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-ext-vs-arb-fast-path-leak]] —— 驱动内部 fast path 条件的 if 瀑布反面案例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-ext-vs-arb-fast-path-leak]] | EXT/ARB FBO 规则差异与驱动 fast path 的隐式契约（Supnik 2011-06 双篇合编） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-ext-vs-arb-fine-print]] | Supnik：EXT 版 FBO 要求同格式，ARB 版放宽，驱动按入口点分叉 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-guessing-fine-print]] | Supnik：驱动 fast path 是一堆 if 串起来的隐式契约，profile 反推 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-93 Worker JS (hacksoflife Supnik 2011-06~08 ×5)\n\n处理 5 篇 hacksoflife.blogspot.com 博文。新增 1 渲染概念页 opengl-ext-vs-arb-fast-path-leak（合编 2 篇 2011-06-01 fine-print）、2 源摘要。跳过 3 篇非技术内容（2 篇 WordPress 运维、1 篇 OS X installer 命令行技巧）。补 patch 到 ben-supnik、opengl-extension-bucket-strategy、api-fast-path-design 的「相关」段与 ben-supnik Sources 段。"
+}

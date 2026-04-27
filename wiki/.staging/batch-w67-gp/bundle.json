@@ -1,0 +1,106 @@
+{
+  "batch_id": "batch-w67-gp",
+  "agent_note": "Erfan Ahmadi / Nabla & The Forge — 3 篇全部 ingest。2 篇 Vulkan 同步/上传（Nabla 框架），1 篇 Bokeh DoF 项目（The Forge）。新增人物页 erfan-ahmadi、3 个概念页 streaming-staging-texture-upload / frames-in-flight / circular-separable-dof。3 个 source summary。给已有页面（gpu-fence-timeline-semaphore、gather-bokeh-dof、scatter-bokeh-dof、the-forge-renderer、buffer-renaming）打补丁交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/erfan-ahmadi.github.io/2015-01-01_uploading-textures-to-gpu-the-good-way.md",
+      "status": "ingested",
+      "source_slug": "erfan-ahmadi-texture-upload-staging",
+      "title": "Uploading Textures to GPU - The Good Way"
+    },
+    {
+      "path": "raw/articles/erfan-ahmadi.github.io/2017-03-01_frames-in-flight-explained.md",
+      "status": "ingested",
+      "source_slug": "erfan-ahmadi-frames-in-flight",
+      "title": "Frames In Flight Explained"
+    },
+    {
+      "path": "raw/articles/erfan-ahmadi.github.io/2018-05-04_bokeh-depth-of-field-project.md",
+      "status": "ingested",
+      "source_slug": "erfan-ahmadi-bokeh-dof-project",
+      "title": "Bokeh Depth Of Field Project"
+    }
+  ],
+  "concepts_created": [
+    "streaming-staging-texture-upload",
+    "frames-in-flight",
+    "circular-separable-dof"
+  ],
+  "people_created": [
+    "erfan-ahmadi"
+  ],
+  "source_summaries_created": [
+    "erfan-ahmadi-texture-upload-staging",
+    "erfan-ahmadi-frames-in-flight",
+    "erfan-ahmadi-bokeh-dof-project"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gpu-fence-timeline-semaphore.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[frames-in-flight]] —— CPU 领先 GPU 录制的上限机制\n- [[streaming-staging-texture-upload]] —— 多 submit 上传与 timeline 的耦合"
+    },
+    {
+      "file": "wiki/rendering/gpu-fence-timeline-semaphore.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/erfan-ahmadi-frames-in-flight]]"
+    },
+    {
+      "file": "wiki/rendering/gather-bokeh-dof.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[circular-separable-dof]] —— Frostbite/EA 的复数可分离圆盘 gather 路线"
+    },
+    {
+      "file": "wiki/rendering/scatter-bokeh-dof.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[circular-separable-dof]] —— gather 家族里性能最接近生产主力的一支"
+    },
+    {
+      "file": "wiki/rendering/the-forge-renderer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[circular-separable-dof]] —— Erfan Ahmadi 在 The Forge 上的 Bokeh DoF UnitTest 之一\n- [[people/erfan-ahmadi]]"
+    },
+    {
+      "file": "wiki/rendering/buffer-renaming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[streaming-staging-texture-upload]] —— 显式 API 下自己做的 staging ring\n- [[frames-in-flight]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[streaming-staging-texture-upload]] | Nabla 的固定大小 staging + 流式格式转换纹理上传 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[frames-in-flight]] | CPU 领先 GPU 录制的机制、timeline semaphore、swapchain 上限 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[circular-separable-dof]] | Kleber Garcia 的复数可分离圆盘 bokeh gather |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[people/erfan-ahmadi]] | Erfan Ahmadi，Nabla 框架贡献者、The Forge Bokeh DoF UnitTest 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/erfan-ahmadi-texture-upload-staging]] | Ahmadi：Nabla 流式 staging 纹理上传 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/erfan-ahmadi-frames-in-flight]] | Ahmadi：Frames In Flight 与 timeline semaphore |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/erfan-ahmadi-bokeh-dof-project]] | Ahmadi：The Forge 上三种 Bokeh DoF 实现 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-67 Worker P (erfan-ahmadi.github.io ×3)\n\n处理 3 篇 Erfan Ahmadi 博客（Nabla / The Forge）：纹理流式上传、Frames In Flight 讲解、Bokeh DoF 三种实现并排比较。新增 1 人物页（erfan-ahmadi）、3 概念页（streaming-staging-texture-upload, frames-in-flight, circular-separable-dof）、3 source 摘要。补丁到 gpu-fence-timeline-semaphore / gather-bokeh-dof / scatter-bokeh-dof / the-forge-renderer / buffer-renaming。"
+}

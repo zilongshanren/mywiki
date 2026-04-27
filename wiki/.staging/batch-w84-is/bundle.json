@@ -1,0 +1,58 @@
+{
+  "batch_id": "batch-w84-is",
+  "agent_note": "playcanvas 2013 早期文章：4 篇纯公告（meetup / Ludum Dare / 域名搬家 / 招人）SKIP，保留 1 篇云端资产管线发布公告。内容偏薄，但与 PlayCanvas 后续 pure-web-engine 叙事形成伏笔，值得入库。新增 Dave Evans 人物页（PlayCanvas 联合创始人，与 Will Eastcott 并列的早期博客作者）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-04-22_london-html5-game-developers-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "伦敦 HTML5 meetup 组织公告，社区活动无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-04-24_welcome-ludum-darers-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "Ludum Dare 参赛邀请 + beta 邀请码营销，无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-06-21_importing-in-the-cloud-new-asset-pipeline-playcanvas-blog.md",
+      "status": "ingested",
+      "source_slug": "playcanvas-cloud-asset-pipeline",
+      "title": "Importing in the Cloud: New Asset Pipeline"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-08-06_moving-to-playcanvas-com-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "域名搬家公告（platform.playcanvas.com → playcanvas.com），无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2013-08-07_a-wild-programmer-appears-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "首位全职程序员 Vaios 入职公告，无技术内容"
+    }
+  ],
+  "concepts_created": ["playcanvas-cloud-asset-pipeline"],
+  "people_created": ["dave-evans"],
+  "source_summaries_created": ["playcanvas-cloud-asset-pipeline"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/will-eastcott.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dave-evans]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[playcanvas-cloud-asset-pipeline]] | PlayCanvas 2013 云端资产管线：浏览器拖入 FBX/COLLADA 即转码 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[dave-evans]] | Dave Evans，PlayCanvas 联合创始人，早期博客主力作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/playcanvas-cloud-asset-pipeline]] | Evans：PlayCanvas 把资产转码搬进浏览器（2013） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-84 Worker IS (blog.playcanvas.com 2013 ×5)\n\n处理 5 篇 2013 年 PlayCanvas 早期博客。仅保留 1 篇云端资产管线发布公告（Dave Evans, 2013-06），其余 4 篇（meetup / Ludum Dare / 域名搬家 / 招人）SKIP 为社区公告。新增 1 概念页 [[playcanvas-cloud-asset-pipeline]]、1 人物页 [[dave-evans]]、1 source 摘要。"
+}

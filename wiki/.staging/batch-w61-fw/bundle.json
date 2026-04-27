@@ -1,0 +1,108 @@
+{
+  "batch_id": "batch-w61-fw",
+  "agent_note": "Daniel Ilett Snapshot Shaders Pro 最后 5 个 effects（Pixelate / Posterize / Radial Blur / Scanlines / Sepia Tone）。产品参考页，短小；新增 2 个概念页（pixelate-postfx / radial-blur-postfx）其余链已有页（color-quantization-retro / crt-shader-effects / image-effect-colour-transform）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-pixelate.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-pixelate",
+      "title": "Snapshot Shaders Pro - Pixelate"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-posterize.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-posterize",
+      "title": "Snapshot Shaders Pro - Posterize"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-radial-blur.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-radial-blur",
+      "title": "Snapshot Shaders Pro - Radial Blur"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-scanlines.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-scanlines",
+      "title": "Snapshot Shaders Pro - Scanlines"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-sepia-tone.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-sepia-tone",
+      "title": "Snapshot Shaders Pro - Sepia Tone"
+    }
+  ],
+  "concepts_created": ["pixelate-postfx", "radial-blur-postfx"],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-snapshot-pro-pixelate",
+    "danielilett-snapshot-pro-posterize",
+    "danielilett-snapshot-pro-radial-blur",
+    "danielilett-snapshot-pro-scanlines",
+    "danielilett-snapshot-pro-sepia-tone"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/color-quantization-retro.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pixelate-postfx]] —— 空间维度的量化，NES 风格需和色阶量化串联\n- [[sources/danielilett-snapshot-pro-posterize]] —— 三通道独立级数 + `Power Ramp` gamma 的通用化 per-channel posterize\n- [[sources/danielilett-snapshot-pro-pixelate]] —— 单参数 Pixelate override，空间量化工具"
+    },
+    {
+      "file": "wiki/rendering/crt-shader-effects.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-snapshot-pro-scanlines]] —— 贴图驱动的扫描线 override，和 Cyan 程序化扫描线做同一件事，选了查表路径换灵活性"
+    },
+    {
+      "file": "wiki/rendering/image-effect-colour-transform.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/danielilett-snapshot-pro-sepia-tone]] —— 教程版 Sepia 固化成 Volume override，只留一个 `Blend` 强度旋钮"
+    },
+    {
+      "file": "wiki/rendering/separable-gaussian-blur.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[radial-blur-postfx]] —— 空间变化 kernel 强度的分离高斯 blur 变体\n- [[sources/danielilett-snapshot-pro-radial-blur]] —— Pro 版 Radial Blur 的两参数实现"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-pixelate]]\n- [[sources/danielilett-snapshot-pro-posterize]]\n- [[sources/danielilett-snapshot-pro-radial-blur]]\n- [[sources/danielilett-snapshot-pro-scanlines]]\n- [[sources/danielilett-snapshot-pro-sepia-tone]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[pixelate-postfx]] | Pixelate 像素化后处理：空间维度量化，与色阶量化正交 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[radial-blur-postfx]] | Radial Blur：kernel 随径向距离变化的空间变化 blur |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-pixelate]] | Ilett：Snapshot Shaders Pro - Pixelate 单参数空间量化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-posterize]] | Ilett：Snapshot Shaders Pro - Posterize 三通道独立色阶 + Power Ramp |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-radial-blur]] | Ilett：Snapshot Shaders Pro - Radial Blur kernel 随径向距离变化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-scanlines]] | Ilett：Snapshot Shaders Pro - Scanlines 贴图驱动扫描线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-sepia-tone]] | Ilett：Snapshot Shaders Pro - Sepia Tone 单 Blend 参数 luminance 棕褐调色 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-61 Worker FW (Daniel Ilett Snapshot Pro 最后 5 effects)\n\n处理 5 篇 danielilett.com 产品参考文档（Pixelate / Posterize / Radial Blur / Scanlines / Sepia Tone）。新增 2 概念页（pixelate-postfx, radial-blur-postfx）、5 source 摘要。Scanlines 链 [[crt-shader-effects]]、Posterize 链 [[color-quantization-retro]]、Sepia 链 [[image-effect-colour-transform]]，均不另建概念。Snapshot Shaders Pro 产品文档系列至此完结。"
+}

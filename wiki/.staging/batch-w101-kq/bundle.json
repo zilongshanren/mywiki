@@ -1,0 +1,172 @@
+{
+  "batch_id": "batch-w101-kq",
+  "agent_note": "P8 wave-101 ingest: 5 hacksoflife.blogspot.com posts (Supnik, 2015-06 through 2015-12). All five processed (none skipped). Created 7 new concept pages (two for glMapBuffer topic, one each for C++ noexcept destructor, SASL RAII bug, importance sampling PDF cancellation, Blender euler export, art asset VCS) plus 5 source summaries. Existing person page ben-supnik.md is in registry so patched via append rather than re-written.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-06-18_glmapbuffer-no-longer-cool.md",
+      "status": "ingested",
+      "source_slug": "supnik-glmapbuffer-no-longer-cool",
+      "title": "glMapBuffer No Longer Cool"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-11-20_sasl-crash-on-el-capitan-the-gory-details.md",
+      "status": "ingested",
+      "source_slug": "supnik-sasl-crash-el-capitan",
+      "title": "SASL Crash on El Capitan - the Gory Details"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-11-21_blender-notepad-eulers.md",
+      "status": "ingested",
+      "source_slug": "supnik-blender-eulers-notepad",
+      "title": "Blender Notepad - Eulers"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-12-10_importance-sampling-look-mom-no-weights.md",
+      "status": "ingested",
+      "source_slug": "supnik-importance-sampling-no-weights",
+      "title": "Importance Sampling: Look Mom, No Weights"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-12-10_source-control-for-art-assets-this-must-exist.md",
+      "status": "ingested",
+      "source_slug": "supnik-source-control-art-assets",
+      "title": "Source Control for Art Assets - This Must Exist"
+    }
+  ],
+  "concepts_created": [
+    "glmapbuffer-threaded-driver-stall",
+    "glbuffersubdata-in-band-streaming",
+    "throwing-destructor-noexcept-terminate",
+    "sasl-context-changer-raii-bug",
+    "importance-sampling-pdf-cancellation",
+    "blender-euler-extrinsic-xyz-export",
+    "art-asset-version-control-gap"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-glmapbuffer-no-longer-cool",
+    "supnik-sasl-crash-el-capitan",
+    "supnik-blender-eulers-notepad",
+    "supnik-importance-sampling-no-weights",
+    "supnik-source-control-art-assets"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[glmapbuffer-threaded-driver-stall]] —— 2015-06 threaded driver 下 map buffer 为什么变慢，反转 2010 年的结论\n- [[glbuffersubdata-in-band-streaming]] —— 2015-06 SubData 作为 single-direction API 在命令 FIFO 里的 fast path\n- [[throwing-destructor-noexcept-terminate]] —— 2015-11 Apple OpenAL 崩在 C++11 隐式 noexcept 析构上\n- [[sasl-context-changer-raii-bug]] —— 2015-11 ContextChanger(arg) 匿名临时对象陷阱 + 六年没爆的静默 alGetError\n- [[blender-euler-extrinsic-xyz-export]] —— 2015-11 Blender XYZ Euler 约定 + X-Plane OBJ 顺序反转\n- [[importance-sampling-pdf-cancellation]] —— 2015-12 为什么 GGX importance sampling 代码里没有 weight 也没有 D 项\n- [[art-asset-version-control-gap]] —— 2015-12 艺术资产 VCS 的理想形态与市场缺口"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-glmapbuffer-no-longer-cool]]\n- [[sources/supnik-sasl-crash-el-capitan]]\n- [[sources/supnik-blender-eulers-notepad]]\n- [[sources/supnik-importance-sampling-no-weights]]\n- [[sources/supnik-source-control-art-assets]]"
+    },
+    {
+      "file": "wiki/rendering/glbuffersubdata-serialization.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[glmapbuffer-threaded-driver-stall]] —— 2015 Supnik 反转：threaded driver 下 map 才是串行化来源，SubData 反而快\n- [[glbuffersubdata-in-band-streaming]] —— SubData 的现代 fast path（DMA in command stream / resource renaming）"
+    },
+    {
+      "file": "wiki/rendering/vbo-double-buffering-orphaning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[glmapbuffer-threaded-driver-stall]] —— 2015 更新：threaded driver 下 orphan+map 不再是首选\n- [[glbuffersubdata-in-band-streaming]] —— SubData 在 2015+ 驱动上的 in-band update 机制"
+    },
+    {
+      "file": "wiki/rendering/monte-carlo-integration.md",
+      "operation": "append_to_section",
+      "section": "## 本 wiki 的 MC 链",
+      "content": "- [[importance-sampling-pdf-cancellation]]：PDF 与 BRDF 分布项互相抵消——GGX prefilter 没有 weight 也没有 D 项的代数根因"
+    },
+    {
+      "file": "wiki/rendering/inversion-sampling-prng.md",
+      "operation": "append_to_section",
+      "section": "## 与其他采样页的关系",
+      "content": "- [[importance-sampling-pdf-cancellation]] —— 配对的 PDF 与 BRDF 分布项在最终估计里抵消的代数化简"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[importance-sampling-pdf-cancellation]] — GGX IS 代码里没有 D 项没有 weight 的代数根因"
+    },
+    {
+      "file": "wiki/game-engines/asset-exchange-format-strategy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[blender-euler-extrinsic-xyz-export]] —— 另一条跨坐标系 exporter 陷阱（同作者同 X-Plane 视角）\n- [[art-asset-version-control-gap]] —— 资产管线的另一层：版本控制"
+    },
+    {
+      "file": "wiki/rendering/gimbal-lock-euler-interpolation.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 另见 [[blender-euler-extrinsic-xyz-export]] 的跨坐标系 Euler 分解讨论"
+    },
+    {
+      "file": "wiki/software-design/good-software-no-double-check.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 同主题的 Supnik 案例：[[sasl-context-changer-raii-bug]]（静默丢弃 alGetError 六年没爆）"
+    },
+    {
+      "file": "wiki/computer-systems/cross-platform-openal-runtime-loader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sasl-context-changer-raii-bug]] —— 同作者对 OpenAL 跨平台问题的 2015 调试帖：El Capitan 的 C++11 noexcept 析构 + SASL RAII 陷阱\n- [[throwing-destructor-noexcept-terminate]] —— SASL/OpenAL 崩溃的 C++ 语言机制根因"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[glmapbuffer-threaded-driver-stall]] | Threaded driver 下 glMapBuffer 的隐式同步代价 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[glbuffersubdata-in-band-streaming]] | glBufferSubData 的 in-band 更新与 UBO 流式 fast path |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[importance-sampling-pdf-cancellation]] | PDF 与 BRDF 分布项互相抵消——为什么 GGX IS 代码里没有 weight |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[blender-euler-extrinsic-xyz-export]] | Blender XYZ Euler 约定与 X-Plane OBJ 导出顺序反转 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[throwing-destructor-noexcept-terminate]] | C++11 析构隐式 noexcept 引出的 std::terminate |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[sasl-context-changer-raii-bug]] | RAII 匿名临时对象陷阱 + 静默 alGetError 六年无 bug report |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[art-asset-version-control-gap]] | 艺术资产版本控制的需求清单与工具缺口（Supnik 2015） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-glmapbuffer-no-longer-cool]] | Supnik：threaded driver 下 map 变慢、SubData 成 fast path |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-sasl-crash-el-capitan]] | Supnik：SASL / OpenAL / El Capitan 崩溃的两条叠加 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-blender-eulers-notepad]] | Supnik：Blender XYZ Euler 约定 + OBJ 顺序反转备忘录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-importance-sampling-no-weights]] | Supnik：IS 里 BRDF 分布项与 PDF 为什么会抵消 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-source-control-art-assets]] | Supnik：艺术资产 VCS 理想形态与市场缺口 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-101 Worker KQ (hacksoflife.blogspot.com ×5, Supnik 2015-06~12)\n\n处理 Ben Supnik 2015-06 至 2015-12 的 5 篇：glMapBuffer 反转帖（2015-06）、SASL/El Capitan 崩溃复盘（2015-11）、Blender Euler 备忘录（2015-11）、importance sampling 化简（2015-12）、艺术资产 VCS（2015-12）。全部 ingest，无 skip。新增 7 概念页：rendering 层 glmapbuffer-threaded-driver-stall / glbuffersubdata-in-band-streaming / importance-sampling-pdf-cancellation，programming-languages 层 throwing-destructor-noexcept-terminate，software-design 层 sasl-context-changer-raii-bug / art-asset-version-control-gap，game-engines 层 blender-euler-extrinsic-xyz-export。5 source 摘要、ben-supnik 人物页 append、对 glbuffersubdata-serialization / vbo-double-buffering-orphaning / monte-carlo-integration / inversion-sampling-prng / microfacet-brdf / asset-exchange-format-strategy / gimbal-lock-euler-interpolation / good-software-no-double-check / cross-platform-openal-runtime-loader 9 条 cross-link 补丁。"
+}

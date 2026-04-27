@@ -59,3 +59,4 @@ C89 时代标准 C 语言完全没有线程概念，pthreads 是作为库、按�
 ## Sources
 - [[sources/raphlinus-undefined-behavior]]
 - [[sources/supnik-dangers-super-smart-compilers]] —— `&*ptr` idiom 在 Clang post-classical 优化下的生产事故
+- [[sources/supnik-race-condition-vroom]]

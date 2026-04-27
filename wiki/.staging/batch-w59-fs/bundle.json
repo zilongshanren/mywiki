@@ -1,0 +1,107 @@
+{
+  "batch_id": "batch-w59-fs",
+  "agent_note": "Yining Karl Li / Disney Animation Hyperion 渲染工程师博客 6 篇：4 篇技术文入库（Moana 2、Zootopia 2、SIGGRAPH 2025 texture streaming、SIGGRAPH 2025 path guiding），2 篇非技术跳过。新建 1 人物页 + 5 概念页 + 4 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2024-12-18_moana-2.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-moana-2",
+      "title": "Moana 2"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2025-05-06_new-unified-site-design.md",
+      "status": "skipped_offtopic",
+      "reason": "个人博客/作品集 CSS 重设计，与图形/渲染/引擎/系统无关"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2025-05-11_photography-show-at-disney-animation.md",
+      "status": "skipped_offtopic",
+      "reason": "公司内部摄影展个人作品分享，非技术内容（HDR 显示也只是展示说明，并非原创技术讨论）"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2025-08-10_siggraph-2025-talk-a-texture-streaming-pipeline-for-real-tim.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-texture-streaming-siggraph2025",
+      "title": "SIGGRAPH 2025 Talk — A Texture Streaming Pipeline for Real-Time GPU Ray Tracing"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2025-08-12_siggraph-2025-course-notes-path-guiding-surfaces-and-volumes.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-path-guiding-siggraph2025",
+      "title": "SIGGRAPH 2025 Course — Path Guiding Surfaces and Volumes in Disney's Hyperion Renderer"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2025-12-17_zootopia-2.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-zootopia-2",
+      "title": "Zootopia 2"
+    }
+  ],
+  "concepts_created": [
+    "hyperion-renderer",
+    "wavefront-path-tracing",
+    "path-guiding-production",
+    "ptex-gpu-streaming",
+    "nested-dielectrics"
+  ],
+  "people_created": [
+    "yining-karl-li"
+  ],
+  "source_summaries_created": [
+    "yiningkarlli-moana-2",
+    "yiningkarlli-texture-streaming-siggraph2025",
+    "yiningkarlli-path-guiding-siggraph2025",
+    "yiningkarlli-zootopia-2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/mipmap-generation-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ptex-gpu-streaming]] — 生产 Ptex 在随机路径追踪下的一条务实结论：点采样 + 两层 MIP 线性插值即可，胜过跨面各向异性滤波"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hyperion-renderer]] | Disney Animation 自研生产路径追踪器，从 Moana 到 Zootopia 2 的十年演进 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[wavefront-path-tracing]] | 按 bounce 批处理的路径追踪架构，Hyperion / RenderMan XPU 的共同骨架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[path-guiding-production]] | 把 path guiding 从 PPG 论文铺到影片管线的工程账：Hyperion × OpenPGL 的二代系统 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ptex-gpu-streaming]] | Disney 的实时 GPU Ptex 纹理流送：小 cache + 激进 LRU + 原始 face 数据流送 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nested-dielectrics]] | 水-玻璃-环境多层嵌套介质，Schmidt & Budge 2002 的栈式算法与产线扩展 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[yining-karl-li]] | Disney Animation Hyperion 渲染工程师，Code & Visuals 博主 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-moana-2]] | Yining Karl Li：Moana 2 与 Hyperion 十年演进 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-texture-streaming-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 GPU Ptex 纹理流送 talk 配文 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-path-guiding-siggraph2025]] | Yining Karl Li：SIGGRAPH 2025 Hyperion 二代 path guiding course 配文 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-zootopia-2]] | Yining Karl Li：Zootopia 2 水管嵌套介质 + 二代 path guiding 首次大规模部署 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-59 Worker FS (blog.yiningkarlli.com ×6)\n\n处理 Yining Karl Li（Disney Animation Hyperion 渲染工程师）博客 6 篇。Ingest 4 篇技术文：Moana 2 / Zootopia 2 / SIGGRAPH 2025 GPU Ptex 纹理流送 / SIGGRAPH 2025 Hyperion 二代 path guiding。跳过 2 篇（个人博客 CSS 重设计、公司内部摄影展）。新增 1 人物页（yining-karl-li）、5 概念页（hyperion-renderer、wavefront-path-tracing、path-guiding-production、ptex-gpu-streaming、nested-dielectrics）、4 source 摘要。给 mipmap-generation-sampling 追加一条交叉引用。"
+}

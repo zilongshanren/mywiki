@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w81-ih",
+  "agent_note": "Bitsquid 2011-Q3/Q4 五篇：外部 watch window 设想、MurmurHash2 inverse、自制 100 行 Ruby 文档系统、ID lookup table 三级演化、Header Hero 编译时间分析工具。人物页已存在 niklas-frykholm。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-08-24_an-idea-for-better-watch-windows.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-better-watch-windows",
+      "title": "An idea for better watch windows"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-08-25_code-snippet-murmur-hash-inverse-pre-image.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-murmur-hash-inverse",
+      "title": "Code Snippet: Murmur hash inverse / pre-image"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-09-08_a-simple-roll-your-own-documentation-system.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-roll-your-own-docs",
+      "title": "A Simple Roll-Your-Own Documentation System"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-09-23_managing-decoupling-part-4-the-id-lookup-table.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-id-lookup-table",
+      "title": "Managing Decoupling Part 4 — The ID Lookup Table"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-10-08_caring-by-sharing-header-hero.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-header-hero",
+      "title": "Caring by Sharing: Header Hero"
+    }
+  ],
+  "concepts_created": [
+    "external-data-inspector",
+    "murmur-hash-inverse",
+    "minimal-markup-pipeline",
+    "id-lookup-table-packed",
+    "header-hero-compile-analysis"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-better-watch-windows",
+    "bitsquid-murmur-hash-inverse",
+    "bitsquid-roll-your-own-docs",
+    "bitsquid-id-lookup-table",
+    "bitsquid-header-hero"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-better-watch-windows]]\n- [[sources/bitsquid-murmur-hash-inverse]]\n- [[sources/bitsquid-roll-your-own-docs]]\n- [[sources/bitsquid-id-lookup-table]]\n- [[sources/bitsquid-header-hero]]"
+    },
+    {
+      "file": "wiki/software-design/id-based-lifetime-with-kill-flag.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[id-lookup-table-packed]] — Bitsquid 2011 ID→Object 查找的三级演化（STL → array-with-holes → packed array）"
+    },
+    {
+      "file": "wiki/game-engines/handle-based-resource-manager.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[id-lookup-table-packed]] — Bitsquid 同思想的三种实现细节与权衡"
+    },
+    {
+      "file": "wiki/software-design/system-decoupling-patterns.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[id-lookup-table-packed]] — 用 ID 解耦后，ID→Object 查找表的三种实现"
+    },
+    {
+      "file": "wiki/programming-languages/static-hash-value-debug-assert.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[murmur-hash-inverse]] — MurmurHash2 32/64 位的 inverse，用于反查 ≤ bucket 长度的 pre-image"
+    },
+    {
+      "file": "wiki/sources/bitsquid-static-hash-values.md",
+      "operation": "append_to_section",
+      "section": "## 链接到的概念",
+      "content": "- [[murmur-hash-inverse]]"
+    },
+    {
+      "file": "wiki/sources/bitsquid-managing-coupling.md",
+      "operation": "append_to_section",
+      "section": "## 链接到的概念",
+      "content": "- [[id-lookup-table-packed]]"
+    },
+    {
+      "file": "wiki/sources/bitsquid-managing-coupling-part-2.md",
+      "operation": "append_to_section",
+      "section": "## 链接到的概念",
+      "content": "- [[id-lookup-table-packed]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[external-data-inspector]] | Bitsquid 2011：跨平台外部 watch window 设想与 blob 描述 DSL |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[header-hero-compile-analysis]] | Bitsquid 2011：C++ include 图剖析工具与 Blowup Factor 指标 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[murmur-hash-inverse]] | MurmurHash2 32/64 位的数学逆运算（乘法逆元 + 逆异或移位）|"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[minimal-markup-pipeline]] | Bitsquid 100 行 Ruby：line-list parser + tag-stack generator |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[id-lookup-table-packed]] | Bitsquid 2011 ID→Object 查找的三级演化：STL / array-with-holes / packed array |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-better-watch-windows]] | Frykholm 2011：跨平台外部 watch window 设想 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-murmur-hash-inverse]] | Frykholm 2011：MurmurHash2 32/64 位 inverse 代码 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-roll-your-own-docs]] | Frykholm 2011：100 行 Ruby 自制文档管线（parser + generator）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-id-lookup-table]] | Frykholm 2011：Managing Decoupling Part 4 — ID Lookup Table |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-header-hero]] | Frykholm 2011：Header Hero 工具与 C++ include 瘦身实操 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-81 Worker IH (bitsquid 2011-Q3/Q4 ×5)\n\n处理 5 篇 Niklas Frykholm 博文（watch-window 设想 / MurmurHash2 inverse / 自制 Ruby 文档系统 / ID lookup table 三级演化 / Header Hero 编译时间分析）。新增 5 概念页（external-data-inspector, murmur-hash-inverse, minimal-markup-pipeline, id-lookup-table-packed, header-hero-compile-analysis）、5 source 摘要。人物页 niklas-frykholm 已存在，补充 5 条 source 链接。跨引至 id-based-lifetime-with-kill-flag、handle-based-resource-manager、system-decoupling-patterns、static-hash-value-debug-assert 等既有概念。"
+}

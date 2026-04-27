@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w83-io",
+  "agent_note": "Supnik 2010-10/11 五篇：GPU sliced shadow 为 flight-sim 云失败、OpenAL 三平台装载、C++ child-find-parent 限制、C 位运算优先级历史。跳过 mediawiki-and-modsecurity（纯 WAF/sysadmin）。3 概念 + 4 source 摘要；patch 到 ben-supnik / shared-library-soname-versioning / cloudscape-sdf-volumetric / parameter-nodes-intrusive-linked-list。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-10-08_why-gpu-sliced-shadows-fail-for-clouds.md",
+      "status": "ingested",
+      "source_slug": "supnik-gpu-sliced-shadows-fail-clouds",
+      "title": "Why GPU Sliced Shadows Fail For Clouds"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-08_openal-on-three-platforms.md",
+      "status": "ingested",
+      "source_slug": "supnik-openal-three-platforms",
+      "title": "OpenAL on Three Platforms"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-10_finding-mom-and-dad.md",
+      "status": "ingested",
+      "source_slug": "supnik-finding-mom-and-dad",
+      "title": "Finding Mom and Dad"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-10_mediawiki-and-modsecurity.md",
+      "status": "skipped_offtopic",
+      "reason": "纯 sysadmin/WAF false-positive 记录：ModSecurity 的 SQL injection 正则匹配到了一篇普通帖子里的 insert/into/from/convert 等常见英文词。没有软件工程或图形相关的技术价值。"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-11_the-very-best-seventies-technology.md",
+      "status": "ingested",
+      "source_slug": "supnik-c-seventies-technology",
+      "title": "The Very Best Seventies Technology"
+    }
+  ],
+  "concepts_created": [
+    "gpu-sliced-volumetric-shadows-limits",
+    "cross-platform-openal-runtime-loader",
+    "c-bitwise-operator-precedence-history"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-gpu-sliced-shadows-fail-clouds",
+    "supnik-openal-three-platforms",
+    "supnik-finding-mom-and-dad",
+    "supnik-c-seventies-technology"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 18",
+      "content": "sources: 22"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-sliced-volumetric-shadows-limits]]\n- [[cross-platform-openal-runtime-loader]]\n- [[c-bitwise-operator-precedence-history]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-gpu-sliced-shadows-fail-clouds]]\n- [[sources/supnik-openal-three-platforms]]\n- [[sources/supnik-finding-mom-and-dad]]\n- [[sources/supnik-c-seventies-technology]]"
+    },
+    {
+      "file": "wiki/computer-systems/shared-library-soname-versioning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cross-platform-openal-runtime-loader]] —— 同一作者后续写到三平台装 OpenAL 的统一策略，Linux 侧正是 dlopen 双 SONAME fallback"
+    },
+    {
+      "file": "wiki/rendering/cloudscape-sdf-volumetric.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-sliced-volumetric-shadows-limits]] —— flight-sim 云为什么不适合 sliced shadow，解释了现代 SDF/raymarch 路径的动机之一"
+    },
+    {
+      "file": "wiki/software-design/parameter-nodes-intrusive-linked-list.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/supnik-finding-mom-and-dad]] —— Supnik：侵入式结构中「孩子找父亲」的 C++ 类型系统限制与 back-pointer 取舍"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-sliced-volumetric-shadows-limits]] | GPU sliced shadow 在 flight-sim 云场景下的失败模式：不透明粒子 + 分桶 + popping |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cross-platform-openal-runtime-loader]] | X-Plane 的 OpenAL 三平台装载：封装层 + dlopen fallback + 自带 LGPL 副本 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[c-bitwise-operator-precedence-history]] | 为何 C 的 `&` 优先级低于 `==`：B/BCPL 的历史包袱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gpu-sliced-shadows-fail-clouds]] | Supnik：flight-sim 云为什么不能用 GPU sliced shadow |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-openal-three-platforms]] | Supnik：OpenAL 在 OS X / Linux / Windows 的统一装载策略 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-finding-mom-and-dad]] | Supnik：C++ 侵入式结构里孩子找父亲的类型系统限制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-c-seventies-technology]] | Supnik：C 位运算符优先级的 B/BCPL 历史根源 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-83 Worker IO (hacksoflife.blogspot.com Supnik 2010-10/11 × 5)\n\n处理 5 篇 Ben Supnik 短文，4 篇 ingest、1 篇 skip（mediawiki-modsecurity 纯 WAF 误伤的 sysadmin 记录）。新增 3 概念页（gpu-sliced-volumetric-shadows-limits, cross-platform-openal-runtime-loader, c-bitwise-operator-precedence-history）、4 source 摘要。主题：GPU sliced shadow 算法对 flight-sim 云（偏不透明粒子 + 空间分桶 + 切片方向翻转）的失败模式；OpenAL 三平台装载策略统一成封装层 + dlopen/LoadLibrary fallback + Windows 自带 LGPL 副本；C++ 侵入式结构中 child 找 parent 的类型系统限制（byte offset 不可作为模板参数）；C 位运算符优先级低于比较的 B/BCPL 历史根源——Ritchie 选择不破坏旧代码语义。Patch 到 ben-supnik / shared-library-soname-versioning / cloudscape-sdf-volumetric / parameter-nodes-intrusive-linked-list。"
+}

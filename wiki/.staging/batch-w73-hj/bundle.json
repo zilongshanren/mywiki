@@ -1,0 +1,75 @@
+{
+  "batch_id": "batch-w73-hj",
+  "agent_note": "Joost van Dongen / Proun 2010 早期技术博客 5 篇：2 篇渲染技术（可变大小 gather DoF + 8-bit 伪 HDR）入库，3 篇短/偏艺术/元帖跳过。人物页已存在。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-08-29_opening-speech.md",
+      "status": "skipped_offtopic",
+      "reason": "博客开场白，一句话自我介绍，无技术内容"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-09-05_failed-fixed-leashing-in-proun.md",
+      "status": "skipped_offtopic",
+      "reason": "关卡 UX/玩家引导小故事（用灯光提示而非颜色对比），非渲染/系统技术内容"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-09-12_depth-of-field-blur-in-proun.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-dof-blur-proun",
+      "title": "Depth of field blur in Proun"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-09-18_overbright-colours-blur-and-faking-it.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-overbright-fake-hdr",
+      "title": "Overbright colours, blur and faking it"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-09-25_abstract-art.md",
+      "status": "skipped_offtopic",
+      "reason": "抽象艺术（Mondriaan/Kandinsky）对 Proun 美术风格的影响，属艺术史随笔，非技术"
+    }
+  ],
+  "concepts_created": [
+    "variable-size-gather-dof",
+    "fake-hdr-half-brightness"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-dof-blur-proun",
+    "joostdevblog-overbright-fake-hdr"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gather-bokeh-dof.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[variable-size-gather-dof]] —— Scheuermann 2004 的早期 gather DoF，按 CoC 调整采样半径"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-dof-blur-proun]]\n- [[sources/joostdevblog-overbright-fake-hdr]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[variable-size-gather-dof]] | ATI Scheuermann 风格的按 CoC 变采样半径 gather DoF |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[fake-hdr-half-brightness]] | 8-bit 渲染目标下以半亮度渲染 + 后期乘 2 伪装 HDR bloom |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-dof-blur-proun]] | van Dongen：Proun 的变采样半径景深（2010） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-overbright-fake-hdr]] | van Dongen：用半亮度渲染在 8-bit 后端伪装 HDR（2010） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-73 Worker HJ (joostdevblog.blogspot.com ×5)\n\n处理 5 篇 Joost van Dongen 2010 年 Proun 早期博客。ingest 2（景深 + 伪 HDR）、skip 3（开场白/关卡 UX leashing/抽象艺术史随笔）。新增 2 概念页（variable-size-gather-dof, fake-hdr-half-brightness）、2 source 摘要；joost-van-dongen 人物页已存在，仅追加 source 链接。"
+}

@@ -1,0 +1,87 @@
+{
+  "batch_id": "batch-w68-gr",
+  "agent_note": "Jon Olick 4 篇：WAV 单函数库 + DXT 压缩系列 part 1/3/4。Part 3 正文抓取不完整（原文 body 缺失），靠 Part 4 的回顾数值补全。新增 2 个概念页：dxt-entropy-reduction（Part 4 核心），dxt-codebooks-sliding-window（Part 1 核心）。Part 3 因内容稀薄不单独立概念。人物页 jon-olick 已存在，只追加 Sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jonolick.com/2012-03-12_wav-file-writer-in-one-function.md",
+      "status": "ingested",
+      "source_slug": "jonolick-wav-one-function",
+      "title": "WAV File Writer in One Function"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2013-02-07_dxt-compression-codebooks-and-sliding-windows.md",
+      "status": "ingested",
+      "source_slug": "jonolick-dxt-codebooks-sliding-windows",
+      "title": "DXT Compression, Codebooks and Sliding Windows"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2013-07-16_dxt-compression-part-3-transposes.md",
+      "status": "ingested",
+      "source_slug": "jonolick-dxt-part3-transposes",
+      "title": "DXT compression - part 3 - Transposes"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2013-08-16_dxt-compression-part-4-entropy.md",
+      "status": "ingested",
+      "source_slug": "jonolick-dxt-part4-entropy",
+      "title": "DXT compression - part 4 - Entropy"
+    }
+  ],
+  "concepts_created": [
+    "dxt-entropy-reduction",
+    "dxt-codebooks-sliding-window"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "jonolick-wav-one-function",
+    "jonolick-dxt-codebooks-sliding-windows",
+    "jonolick-dxt-part3-transposes",
+    "jonolick-dxt-part4-entropy"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dxt-entropy-reduction]] — DXT selection bits 降熵压缩（Firefall）\n- [[dxt-codebooks-sliding-window]] — 滑窗码表与 Zeng 优化"
+    },
+    {
+      "file": "wiki/people/jon-olick.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/jonolick-wav-one-function]]\n- [[sources/jonolick-dxt-codebooks-sliding-windows]]\n- [[sources/jonolick-dxt-part3-transposes]]\n- [[sources/jonolick-dxt-part4-entropy]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dxt-entropy-reduction]] | DXT selection bits 熵压缩：1.51 bpp 的 Firefall 方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dxt-codebooks-sliding-window]] | Zeng 码表与滑窗码表在 DXT 二次压缩中的定位 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-wav-one-function]] | Olick：单函数 WAV 写入器（2012 短贴） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-dxt-codebooks-sliding-windows]] | Olick：DXT 压缩之码表与滑窗（Part 1） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-dxt-part3-transposes]] | Olick：DXT Part 3 transpose（正文不完整） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-dxt-part4-entropy]] | Olick：DXT Part 4 熵降维到 1.51 bpp |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-68 Worker gr (jonolick.com DXT 系列 + WAV ×4)\n\n处理 Jon Olick 4 篇：WAV 单函数写入器（2012）、DXT 压缩 Part 1 codebooks/sliding-windows（2013-02）、Part 3 transposes（2013-07，正文抓取不全）、Part 4 entropy（2013-08）。新增 2 概念页（dxt-entropy-reduction, dxt-codebooks-sliding-window）、4 source 摘要。补 jon-olick 人物页 sources 计数 3→7 及相关链接。Part 4 是系列干货：selection bits 占 LZMA 后 75% 体积，用 rate-distortion 降熵把 2.28 bpp 压到 1.51 bpp / MSE 0.64，比 crunch 质量高 4.3×、速度快 16×。"
+}

@@ -49,3 +49,4 @@ sources: 2
 
 - [[sources/rtr-day03]]
 - [[sources/rtr-day05]]
+- [[sources/supnik-custom-z-buffer-early-z]]

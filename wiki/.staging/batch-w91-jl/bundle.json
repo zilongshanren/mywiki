@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w91-jl",
+  "agent_note": "Bitsquid 2015-08 ~ 2016-01 共 5 篇。其中 JavaScript Animation 仅一段元信息加嵌入 canvas 脚本，无独立技术贡献，skipped_offtopic。新增 3 concept: stingray-data-driven-render-config (rendering), stingray-package-manager (computer-systems), temporal-sao-reprojection (rendering)。Buddy Part 3 作为 buddy-memory-allocation 的实现细节补丁追加 Implementation 段 + Sources 新增 bitsquid-buddy-allocator。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-08-04_allocation-adventures-3-the-buddy-allocator.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-buddy-allocator",
+      "title": "Allocation Adventures 3: The Buddy Allocator"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-08-20_allocation-interlude-javascript-animation.md",
+      "status": "skipped_offtopic",
+      "reason": "仅两三句话的 interlude：作者吐槽 SVG 手绘麻烦、嵌入一段 JavaScript canvas 动画展示 buddy 过程。正文没有独立的技术内容，所有讲解都在同系列第三篇里。ES2015 的 Chrome/Firefox 兼容性吐槽也不构成可复用知识。"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-09-10_temporal-reprojection-and-sao.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-temporal-sao",
+      "title": "Temporal Reprojection and SAO"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-12-18_data-driven-rendering-in-stingray.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-stingray-data-driven-rendering",
+      "title": "Data Driven Rendering in Stingray"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-01-20_introducing-the-stingray-package-manager-spm.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-stingray-package-manager",
+      "title": "Introducing the Stingray Package Manager (spm)"
+    }
+  ],
+  "concepts_created": [
+    "stingray-data-driven-render-config",
+    "stingray-package-manager",
+    "temporal-sao-reprojection"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-buddy-allocator",
+    "bitsquid-temporal-sao",
+    "bitsquid-stingray-data-driven-rendering",
+    "bitsquid-stingray-package-manager"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/buddy-memory-allocation.md",
+      "operation": "append_to_section",
+      "section": "## 在 Bitsquid 语境里",
+      "content": "\n## 实现细节（Part 3 补全）\n\nNiklas 2015 年 8 月的 Part 3 把 buddy 从教科书推到了可动手的实现。几条关键工程压榨：\n\n- **自由块 in-place linked list**：每层一个链表头指针，`prev`/`next` 直接存在空闲块里——零额外 bookkeeping 内存。`MAX_LEVELS = 32` 足够覆盖 `leaf_size * 4 GB` 总容量。\n- **Block 扁平索引**：`(1<<level) + index_in_level - 1` 把整棵树展平到一维，便于挂元数据。\n- **合并位压到半 bit / pair**：每对 buddy 只存 `is_A_free XOR is_B_free`。free 时已知本块为 free，XOR 位足以推出 buddy 状态——总开销 `1 / 16 / leaf_size`。\n- **Split bitmap 替代 preamble 存 size**：对已分配块从顶向下找第一个 split 过的祖先即可倒推 level，`free(void*)` 不需要 caller 传 size；同样是半 bit/block。两张 bitmap 合起来 **1 bit / block**。\n- **Metadata 放 buffer 内**：前几个 leaf block 标为 allocated，元数据本身的分配要特判避免 chicken-and-egg。\n- **非 2-幂 buffer**（比如 400K 当 512K 用）：把不足的那部分预标为 allocated，usable region 从 buffer 内对齐，边界小心不要 access-violate。\n- **与增长容器配合**：`vector` 2 倍扩容天然对齐 buddy 的层级尺寸——升级即\u201c还旧 2 幂块、要更大 2 幂块\u201d，几乎消除 internal fragmentation。这也是 Niklas 把 buddy 选进 Bitsquid 的主要理由。"
+    },
+    {
+      "file": "wiki/computer-systems/buddy-memory-allocation.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-buddy-allocator]]"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-buddy-allocator]]\n- [[sources/bitsquid-temporal-sao]]\n- [[sources/bitsquid-stingray-data-driven-rendering]]\n- [[sources/bitsquid-stingray-package-manager]]"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-data-driven-render-config]] —— Stingray 把 data-driven 从 gameplay 推到整条渲染管线\n- [[stingray-package-manager]] —— Bitsquid 的 one-button build 工具链\n- [[temporal-sao-reprojection]] —— Jp Guertin 的 SAO temporal reprojection 工程记录"
+    },
+    {
+      "file": "wiki/rendering/temporal-supersampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-sao-reprojection]] —— Bitsquid Stingray 把 SAO temporal 化、用 depth-mip 里的 moving bit 抓 dangerous samples"
+    },
+    {
+      "file": "wiki/rendering/hbao-interleaved-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[temporal-sao-reprojection]] —— Stingray SAO 用时间分摊采样的另一条路径；HBAO 是空间分摊"
+    },
+    {
+      "file": "wiki/game-engines/data-driven-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-data-driven-render-config]] —— Stingray 把数据驱动推到渲染管线层的工业案例\n- [[stingray-package-manager]] —— 数据驱动构建：artifact 版本以 hash 精确锁定"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-data-driven-render-config]] | Stingray 的 render_config：把整条渲染管线声明为配置文件 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[temporal-sao-reprojection]] | Stingray SAO 的 temporal reprojection + depth-mip moving bit |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[stingray-package-manager]] | Stingray spm：one-button build 的 artifact 包管理器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-buddy-allocator]] | Niklas：Buddy allocator 第三篇，实现细节 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-temporal-sao]] | Jp Guertin：SAO 的 temporal reprojection 与 dangerous samples |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-stingray-data-driven-rendering]] | Ben Mowery：Stingray 渲染管线的数据驱动宣言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-stingray-package-manager]] | Niklas：Stingray 自家的 Ruby artifact 包管理器 spm |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-91 Worker JL (bitsquid 2015-08 ~ 2016-01 ×5)\n\n处理 5 篇 bitsquid 后期博客。Ingested 4 篇：buddy allocator Part 3、SAO temporal reprojection、Stingray data-driven rendering、Stingray package manager (spm)。Skipped 1 篇 JavaScript animation interlude（无独立技术内容）。新增 3 concept：stingray-data-driven-render-config、stingray-package-manager、temporal-sao-reprojection。Buddy Part 3 作为 buddy-memory-allocation 的实现细节段补丁。Niklas Frykholm 人物页追加 4 条 source + 3 条相关。temporal-supersampling 与 hbao-interleaved-sampling 增加对 temporal-sao-reprojection 的交叉引用。data-driven-architecture 增加对 stingray 两篇的引用。"
+}

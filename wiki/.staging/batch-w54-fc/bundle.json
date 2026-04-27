@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w54-fc",
+  "agent_note": "Sebastian Schöner 5 篇：Zig header/ABI + Unity Mono codegen 改良系列（公告 + part1/2）。新增 1 人物、5 源摘要、5 概念；全部 ingested，无 skipped。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.s-schoener.com/2026-03-27_i-miss-header-files-sebastian-schoner.md",
+      "status": "ingested",
+      "source_slug": "schoener-i-miss-header-files",
+      "title": "I miss header files"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2026-03-31_better-codegen-for-unity-games-on-mono-sebastian-schoner.md",
+      "status": "ingested",
+      "source_slug": "schoener-better-mono-codegen",
+      "title": "Better codegen for Unity games on Mono"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2026-04-07_what-i-learned-from-improving-unity-s-mono-codegen-part-1-se.md",
+      "status": "ingested",
+      "source_slug": "schoener-mono-codegen-part-1",
+      "title": "What I learned from improving Unity's Mono codegen, part 1"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2026-04-13_what-i-learned-from-improving-unity-s-mono-codegen-part-2-se.md",
+      "status": "ingested",
+      "source_slug": "schoener-mono-codegen-part-2",
+      "title": "What I learned from improving Unity's Mono codegen, part 2"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2026-04-16_zig-hot-reload-and-abi-trouble-sebastian-schoner.md",
+      "status": "ingested",
+      "source_slug": "schoener-zig-hot-reload-abi",
+      "title": "Zig, hot reload, and ABI trouble"
+    }
+  ],
+  "concepts_created": [
+    "mono-jit-pipeline",
+    "pointer-alias-analysis",
+    "dead-store-elimination",
+    "zig-c-abi-boundary",
+    "header-file-vs-pub-export"
+  ],
+  "people_created": ["sebastian-schoener"],
+  "source_summaries_created": [
+    "schoener-i-miss-header-files",
+    "schoener-better-mono-codegen",
+    "schoener-mono-codegen-part-1",
+    "schoener-mono-codegen-part-2",
+    "schoener-zig-hot-reload-abi"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/binary-hot-reload.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[zig-c-abi-boundary]] — Zig 想做同样的 DLL 热重载时被 ABI 问题绊住\n- [[sebastian-schoener]]"
+    },
+    {
+      "file": "wiki/computer-systems/compilation-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mono-jit-pipeline]] — Mono JIT 的 IL→IR→lowering→x64 多阶段管线实例\n- [[pointer-alias-analysis]]\n- [[dead-store-elimination]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[mono-jit-pipeline]] | Mono JIT 的五阶段管线与值类型导致的 400 行 `dot4` 之灾 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[pointer-alias-analysis]] | 指针别名分析：几乎所有 load/store/copy 优化的前置条件 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[dead-store-elimination]] | DSE 本质非局部，应集中到单一 pass——don't multiply the hard parts |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[zig-c-abi-boundary]] | Zig 跨 DLL 只有 C ABI：三文件结构 + comptime 分支的绕法 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[header-file-vs-pub-export]] | `pub` 内联标注把维护成本转嫁为消费者阅读成本 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[sebastian-schoener]] | Sebastian Schöner，Unity Mono/IL2CPP codegen 改良、Zig/C++ 底层工程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-i-miss-header-files]] | Schöner：从 Zig `pub` 回望 C header 的消费者价值 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-better-mono-codegen]] | Schöner：给 Unity Mono 加优化 pass 的商业化公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-mono-codegen-part-1]] | Schöner：Mono 如何把 `dot4` 变成 400 行汇编 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-mono-codegen-part-2]] | Schöner：LLVM vs 自写 pass、别名分析、DSE 方法论 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-zig-hot-reload-abi]] | Schöner：Zig 热重载/DLL 场景的 ABI 痛与三文件绕法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-54 Worker FC (blog.s-schoener.com ×5)\n\n处理 Sebastian Schöner 5 篇技术文章：`i miss header files`（Zig 视角）、`better codegen for Unity games on Mono`（公告）、Mono codegen 学习笔记 part 1 / part 2、`Zig, hot reload, and ABI trouble`。新增 5 概念页（mono-jit-pipeline, pointer-alias-analysis, dead-store-elimination, zig-c-abi-boundary, header-file-vs-pub-export）、1 人物页（sebastian-schoener）、5 源摘要。无跳过。"
+}

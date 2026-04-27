@@ -1,0 +1,62 @@
+{
+  "batch_id": "batch-w82-im",
+  "agent_note": "nklein/Patrick Stein 2010-02~04 五篇：3 篇跳过（iPhone 拼写 app 两则产品更新、GIMP 装饰 Script-Fu 插件），2 篇 XML parser generator 合并为一份 source 摘要 + 1 新概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/nklein.com/2010-02-10_submitted-small-bug-fix-to-iphone-spelling-toy-nklein-softwa.md",
+      "status": "skipped_offtopic",
+      "reason": "iPhone 拼写玩具 app 的产品小修复与发布新闻，无工程或渲染技术内容"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-02-16_burnt-paper-plugin-for-gimp-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "GIMP Script-Fu 装饰滤镜（烧焦纸张效果）的使用说明，未涉及图形算法或渲染系统实现"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-03-16_xml-parser-generator-nklein-software.md",
+      "status": "ingested",
+      "source_slug": "nklein-xml-parser-generator",
+      "title": "XML Parser Generator"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-03-29_animal-artwork-and-more-languages-in-iphone-spelling-app-nkl.md",
+      "status": "skipped_offtopic",
+      "reason": "iPhone 拼写 app 增补动物美术与翻译，纯产品公告"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-04-09_parser-generator-released-nklein-software.md",
+      "status": "ingested_merged",
+      "source_slug": "nklein-xml-parser-generator",
+      "title": "Parser Generator released",
+      "note": "两行版本发布公告，合并进 2010-03-16 的 source 摘要"
+    }
+  ],
+  "concepts_created": ["schema-driven-xml-parser-generator"],
+  "people_created": [],
+  "source_summaries_created": ["nklein-xml-parser-generator"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/patrick-stein.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/nklein-xml-parser-generator]] — 2010 年用 Common Lisp 重写的 schema-driven XML 解析器生成器\n- [[schema-driven-xml-parser-generator]]"
+    },
+    {
+      "file": "wiki/people/patrick-stein.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/nklein-xml-parser-generator]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[schema-driven-xml-parser-generator]] | Patrick Stein 基于 XML schema 的 CLOS 解析器代码生成（tagstack + 自举 + 多后端） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nklein-xml-parser-generator]] | Stein：用 Common Lisp 重写 XML Parser Generator，两文合并 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-82 Worker IM (nklein.com Patrick Stein 2010-02~04 ×5)\n\n处理 5 篇 nklein 博文。3 篇跳过：iPhone 拼写 app 两则产品更新（bugfix / 动物美术+翻译）、GIMP 烧焦纸张 Script-Fu 插件。2 篇（2010-03 XML Parser Generator 长文 + 2010-04 两行发布公告）合并为一份 source 摘要 nklein-xml-parser-generator，新增 1 概念页 schema-driven-xml-parser-generator（Common Lisp schema-driven codegen、tagstack SAX、自举、多语言后端），并在 patrick-stein 人物页补链。"
+}

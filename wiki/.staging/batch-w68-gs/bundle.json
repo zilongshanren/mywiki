@@ -1,0 +1,40 @@
+{
+  "batch_id": "batch-w68-gs",
+  "agent_note": "halisavakis 三篇 portfolio 短贴：animated-light-cookies 做 source 摘要（内容极薄，仅记录思路节点，不新建概念页）；pac-tac-atac 2018 与 paul-paul 2019 为 VR 小游戏宣传页，无技术内容，skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2020-06-20_animated-light-cookies.md",
+      "status": "ingested",
+      "source_slug": "halisavakis-animated-light-cookies",
+      "title": "Animated light cookies"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2018-02-12_pac-tac-atac-global-game-jam-athens-2018.md",
+      "status": "skipped_offtopic",
+      "reason": "Global Game Jam VR 小游戏作品介绍，仅有玩法描述与团队名单，无任何技术/shader 细节。"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2019-01-08_paul-paul.md",
+      "status": "skipped_offtopic",
+      "reason": "VR 叙事体验作品的宣传简介，只列支持的 VR 设备，无技术内容。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["halisavakis-animated-light-cookies"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/harry-alisavakis.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/halisavakis-animated-light-cookies]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/halisavakis-animated-light-cookies]] | Alisavakis：Custom Render Texture 驱动的动画 light cookie 小实验 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-68 Worker GS (halisavakis 早期 portfolio ×3)\n\n处理 3 篇 halisavakis.com 早期 portfolio 贴：animated-light-cookies（2020）—— Unity Custom Render Texture 做动画光斑，内容极薄仅做 source 摘要；pac-tac-atac（2018 GGJ VR 游戏）与 paul-paul（2019 VR 叙事体验）均为纯作品宣传，无技术内容，skip。新增 1 source 摘要，补 1 条 harry-alisavakis Sources 链接。"
+}

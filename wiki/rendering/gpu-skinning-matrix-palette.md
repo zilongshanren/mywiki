@@ -65,3 +65,4 @@ GPU 蒙皮虽然是默认选项，CPU 版本依然有用：服务器端的命中
 ## Sources
 
 - [[sources/3dgep-md5-gpu-skinning]]
+- [[sources/c0de517e-skinning-normals-notes]]

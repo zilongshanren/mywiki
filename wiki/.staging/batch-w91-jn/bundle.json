@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w91-jn",
+  "agent_note": "All 5 c0de517e posts (May-Jul 2010) are thin link-dumps or duplicate archive copies. No substantive technical content that would survive the topicality+substance gate. Angelo Pesce person page already exists; nothing to add.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-05-31_some-links-2.md",
+      "status": "skipped_duplicate",
+      "reason": "Archive duplicate of 2010-05-31_some-links.md (identical body, only URL scheme differs http vs https)."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-05-31_some-links.md",
+      "status": "skipped_offtopic",
+      "reason": "Three one-line link callouts (DOD slides, branch prediction article, RSA Animate video) plus an opinion paragraph celebrating Intel killing Larrabee. No original technical analysis; below substance bar."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-06-12_more-links-generative-art.md",
+      "status": "skipped_offtopic",
+      "reason": "Curated link dump of generative-art tools (Processing, vvvv, Houdini, Cinder, openFrameworks, Arduino, etc.) with one-line annotations. Directory-style post, no technical argument or insight worth an entry."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever-2.md",
+      "status": "skipped_duplicate",
+      "reason": "Archive duplicate of 2010-07-02_java4ever.md (identical body)."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-07-02_java4ever.md",
+      "status": "skipped_offtopic",
+      "reason": "One-sentence post ('Simply too well made not to share.') pointing to a Java parody video. No technical content."
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-91 Worker JN (c0de517e 2010-05~07 ×5)\n\nPesce 2010 年 5-7 月 5 篇全部跳过：2 篇为归档重复（some-links-2、java4ever-2），2 篇为纯链接聚合（some-links、more-links-generative-art），1 篇为一句话转视频（java4ever）。无可沉淀的技术内容。"
+}

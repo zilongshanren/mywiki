@@ -1,0 +1,81 @@
+{
+  "batch_id": "batch-w66-gl",
+  "agent_note": "bkaradzic (bgfx 作者) 三篇：Orthodox C++ 经典文、AirMech open-source 守则、AirMech NaCl 移植笔记。三篇均 ingest。新增 1 人物页、3 概念页、3 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bkaradzic.github.io/2011-09-20_open-source-or-it-didn-t-happen.md",
+      "status": "ingested",
+      "source_slug": "bkaradzic-open-source-or-it-didnt-happen",
+      "title": "Open source or it didn't happen!"
+    },
+    {
+      "path": "raw/articles/bkaradzic.github.io/2012-01-06_porting-airmech-to-native-client.md",
+      "status": "ingested",
+      "source_slug": "bkaradzic-airmech-native-client",
+      "title": "Porting AirMech to Native Client"
+    },
+    {
+      "path": "raw/articles/bkaradzic.github.io/2016-01-16_orthodox-c.md",
+      "status": "ingested",
+      "source_slug": "bkaradzic-orthodox-cpp",
+      "title": "Orthodox C++"
+    }
+  ],
+  "concepts_created": [
+    "orthodox-cpp",
+    "middleware-vs-open-source",
+    "native-client-porting"
+  ],
+  "people_created": [
+    "branimir-karadzic"
+  ],
+  "source_summaries_created": [
+    "bkaradzic-orthodox-cpp",
+    "bkaradzic-open-source-or-it-didnt-happen",
+    "bkaradzic-airmech-native-client"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/programming-languages/cpp-multi-paradigm-discipline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[orthodox-cpp]] —— Branimir Karadžić 的 C+ 子集主张，是这种 C++ 自律取向的最广为流传版本"
+    },
+    {
+      "file": "wiki/programming-languages/rpp-stl-replacement.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bkaradzic-orthodox-cpp]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[orthodox-cpp]] | Orthodox C++（C+）：反 Modern C++ 的最小 C++ 子集主张 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[middleware-vs-open-source]] | 独立团队在闭源中间件与开源库之间的取舍守则 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[native-client-porting]] | AirMech 移植到 NaCl 的工程笔记（archival，可迁移到 Emscripten） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[branimir-karadzic]] | Branimir Karadžić，bgfx 作者，Orthodox C++ 提出者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bkaradzic-orthodox-cpp]] | Karadžić：Orthodox C++ 子集主张 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bkaradzic-open-source-or-it-didnt-happen]] | Karadžić：独立团队的中间件与开源取舍 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bkaradzic-airmech-native-client]] | Karadžić：AirMech 移植到 Native Client 的工程笔记 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-66 Worker GL (bkaradzic ×3)\n\n处理 3 篇 bkaradzic.github.io 文章（Orthodox C++、AirMech 开源守则、AirMech NaCl 移植）。三篇均 ingest。新增人物页 branimir-karadzic；新增 3 概念页（orthodox-cpp、middleware-vs-open-source、native-client-porting）；新增 3 source 摘要。对 cpp-multi-paradigm-discipline 与 rpp-stl-replacement 做了轻量交叉链接 patch。"
+}

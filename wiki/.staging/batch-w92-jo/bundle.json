@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w92-jo",
+  "agent_note": "bitsquid 2016 × 5：两篇 skip（Stingray support intro 由 Autodesk support specialist Dan Matlack 写，纯文档索引；The Poolroom 为艺术家 Paul Kind 的 ArchViz 场景制作手记，PBS/grunge 等点到为止无工程价值）。三篇 ingest：Niklas 的 JS 热重载小 trick、Jp Guertin 的 Stingray 体积云 plugin、Tobias Persson 的 render_config_extensions。新概念 3：javascript-hot-reload-dom-script (programming-languages), stingray-volumetric-clouds-plugin (rendering), render-config-extension-points (rendering)。新 people 2：jp-guertin, tobias-persson。niklas-frykholm 人物页通过 append_to_section patch 追加三条 Related 与三条 Sources。stingray-data-driven-render-config 的 相关 与 Sources 通过 patch 追加 render-config-extension-points 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-01-29_stingray-support-hello-i-am-someone-who-can-help.md",
+      "status": "skipped_offtopic",
+      "reason": "Autodesk support specialist Dan Matlack 写的介绍性公告，只是给 Stingray 用户指路：YouTube 系列、论坛、Creative Market、Online Help。通篇没有工程或渲染内容，属于产品支持流程文案，不具备 wiki 收录价值。"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-01-31_hot-reloadable-javascript-batman.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-hot-reload-javascript",
+      "title": "Hot Reloadable JavaScript, Batman!"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-04-01_the-poolroom.md",
+      "status": "skipped_offtopic",
+      "reason": "艺术家 Paul Kind 的 Stingray ArchViz 场景制作手记（Poolroom）。虽然触及 PBS 工作流、grunge map 叠到 roughness、轻量 RMA shader 等，但都是艺术家视角的感受层描述，没有可复用的技术决策、算法或参数；全文更像社区分享与制作日记（配合 twitch.tv/paulkind3d 的直播），不具备 wiki 技术收录价值。"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-07-31_volumetric-clouds.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-volumetric-clouds",
+      "title": "Volumetric Clouds"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-08-16_render-config-extensions.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-render-config-extensions",
+      "title": "Render Config Extensions"
+    }
+  ],
+  "concepts_created": [
+    "javascript-hot-reload-dom-script",
+    "stingray-volumetric-clouds-plugin",
+    "render-config-extension-points"
+  ],
+  "people_created": [
+    "jp-guertin",
+    "tobias-persson"
+  ],
+  "source_summaries_created": [
+    "bitsquid-hot-reload-javascript",
+    "bitsquid-volumetric-clouds",
+    "bitsquid-render-config-extensions"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[javascript-hot-reload-dom-script]] —— 30 行浏览器 JS 做出的最小化 code hot-swap\n- [[stingray-volumetric-clouds-plugin]] —— Jp Guertin 在 Stingray 里落地 HZD 体积云方案\n- [[render-config-extension-points]] —— Stingray 1.5 给 plugin 准备的命名扩展点"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-hot-reload-javascript]]\n- [[sources/bitsquid-volumetric-clouds]]\n- [[sources/bitsquid-render-config-extensions]]"
+    },
+    {
+      "file": "wiki/rendering/stingray-data-driven-render-config.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[render-config-extension-points]] —— Stingray 1.5 的 plugin 扩展接口：append + insert_at 命名 hook"
+    },
+    {
+      "file": "wiki/rendering/stingray-data-driven-render-config.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-render-config-extensions]]"
+    },
+    {
+      "file": "wiki/game-development/live-editing-taxonomy-2010.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[javascript-hot-reload-dom-script]] —— Niklas 用 30 行 JS 做出的 code hot-swap 最小实现"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[javascript-hot-reload-dom-script]] | Niklas：动态 script 节点 + polling 做出的 30 行 JS 热重载 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-volumetric-clouds-plugin]] | Jp Guertin：HZD 体积云方案在 Stingray 里的开源实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[render-config-extension-points]] | Stingray 1.5：render_config 的 append + insert_at 命名扩展点 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jp-guertin]] | Jean-Philippe Guertin，Bitsquid/Stingray 渲染工程师（体积云/SAO/SSR/lens flare） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[tobias-persson]] | Tobias Persson，Bitsquid 共同创始人、data-driven renderer 主架构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-hot-reload-javascript]] | Niklas 2016：浏览器 JS 最小化热重载的实作笔记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-volumetric-clouds]] | Jp Guertin 2016：Stingray 体积云 plugin 的方法权衡实录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-render-config-extensions]] | Tobias Persson 2016：Stingray 1.5 的 render_config 扩展机制 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-92 Worker JO (bitsquid 2016 ×5)\n\n处理 bitsquid.blogspot.com 2016 年五篇。Ingest 3：Niklas 的 JS 热重载小 trick（[[javascript-hot-reload-dom-script]]）、Jp Guertin 的 Stingray 体积云 plugin（[[stingray-volumetric-clouds-plugin]]）、Tobias Persson 的 render_config_extensions（[[render-config-extension-points]]）。新增 2 人物页（jp-guertin, tobias-persson）+ 3 source 摘要。Skip 2：Autodesk support specialist Dan Matlack 的 Stingray 用户指路公告（纯客服文档）、艺术家 Paul Kind 的 ArchViz 场景 Poolroom 制作手记（美术感想，无工程决策）。Niklas 人物页、stingray-data-driven-render-config、live-editing-taxonomy-2010 通过 patch 追加 Related 与 Sources。"
+}

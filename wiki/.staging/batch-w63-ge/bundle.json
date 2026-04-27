@@ -1,0 +1,173 @@
+{
+  "batch_id": "batch-w63-ge",
+  "agent_note": "5 篇 nullprogram.com (Chris Wellons) 博文：数据结构、Python+Wasm、Wine 多身份二进制、AI 协作编码宣言、CMake 调试器。5 个文件是不同 URL 的独立博文（不是首页重复抓取），全部 ingest。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/nullprogram.com/2025-12-31_null-program.md",
+      "status": "ingested",
+      "source_slug": "nullprogram-linked-list-intrusive-index",
+      "title": "Linked lists, revisited"
+    },
+    {
+      "path": "raw/articles/nullprogram.com/2026-01-01_null-program.md",
+      "status": "ingested",
+      "source_slug": "nullprogram-python-wasmtime",
+      "title": "Extending Python with WebAssembly via wasmtime-py"
+    },
+    {
+      "path": "raw/articles/nullprogram.com/2026-01-19_null-program.md",
+      "status": "ingested",
+      "source_slug": "nullprogram-u-config-wine",
+      "title": "Frankenwine: u-config as Windows native + Linux cross pkg-config"
+    },
+    {
+      "path": "raw/articles/nullprogram.com/2026-03-29_null-program.md",
+      "status": "ingested",
+      "source_slug": "nullprogram-ai-programming-quiltcpp",
+      "title": "My transition to AI-driven software engineering / Quilt.cpp"
+    },
+    {
+      "path": "raw/articles/nullprogram.com/2026-04-07_null-program.md",
+      "status": "ingested",
+      "source_slug": "nullprogram-dcmake",
+      "title": "dcmake: a GUI debugger for CMake"
+    }
+  ],
+  "concepts_created": [
+    "hash-trie-intrusive",
+    "msi-hash-table",
+    "wasm-pointer-sign-trap",
+    "wasmtime-py",
+    "bump-allocator-wasm-guest",
+    "monocypher-aead",
+    "u-config-frankenwine",
+    "wine-linux-syscall",
+    "unity-build-macro-renaming",
+    "lp64-vs-llp64",
+    "quilt-cpp-ai-driven-clone",
+    "ai-driven-conformance-clone",
+    "c-memory-safety-even-for-ai",
+    "dcmake",
+    "cmake-dap-debugger",
+    "dear-imgui-docking"
+  ],
+  "people_created": ["chris-wellons"],
+  "source_summaries_created": [
+    "nullprogram-linked-list-intrusive-index",
+    "nullprogram-python-wasmtime",
+    "nullprogram-u-config-wine",
+    "nullprogram-ai-programming-quiltcpp",
+    "nullprogram-dcmake"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bump-allocator-wasm-guest]] — Wasm guest 端的 bump 分配器模式\n- [[hash-trie-intrusive]] — 配合 arena 使用的无 resize 哈希结构\n- [[msi-hash-table]] — 同样配合 arena 使用的扁平索引表"
+    },
+    {
+      "file": "wiki/computer-systems/open-addressing-hashtable.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[msi-hash-table]] — Chris Wellons 的 MSI (Mask-Step-Index) 变体"
+    },
+    {
+      "file": "wiki/software-design/vibe-coding-workflow.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[quilt-cpp-ai-driven-clone]] — Chris Wellons 用 AI 4 天克隆 Quilt\n- [[ai-driven-conformance-clone]] — 克隆既有工具的方法论\n- [[c-memory-safety-even-for-ai]] — 为何 AI 时代应选 C++ 而非 C"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[chris-wellons]] | Chris Wellons (skeeto)，nullprogram.com，C/Wasm/Windows 底层 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nullprogram-linked-list-intrusive-index]] | Wellons：链表 + 侵入 trie + MSI 索引 的渐进叠加 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nullprogram-python-wasmtime]] | Wellons：用 wasmtime-py 把 Wasm 作为 Python 扩展机制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nullprogram-u-config-wine]] | Wellons：单个 exe 在 Windows/Wine 下双身份 pkg-config |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nullprogram-ai-programming-quiltcpp]] | Wellons：转向 AI 协作编码与 Quilt.cpp 案例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nullprogram-dcmake]] | Wellons：基于 CMake DAP 的 GUI 调试器 dcmake |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[hash-trie-intrusive]] | 链表节点兼任哈希 trie 的侵入式结构 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[unity-build-macro-renaming]] | C 里用 `#define` + unity build 合并同名符号的平台层 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[msi-hash-table]] | Mask-Step-Index 扁平 open addressing 哈希表 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[wasm-pointer-sign-trap]] | Wasm 把整数视作有符号导致的指针截断陷阱 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[wasmtime-py]] | bytecodealliance 的 wasmtime Python 绑定 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[bump-allocator-wasm-guest]] | Wasm guest 端用 bump 分配器代替 malloc |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[monocypher-aead]] | Monocypher AEAD 接口及其 Wasm 包装 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[u-config-frankenwine]] | 单个 exe 根据 Wine 检测切换 Windows/Linux 身份 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[wine-linux-syscall]] | Wine 下 Windows 进程直接发 Linux syscall |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[lp64-vs-llp64]] | Unix 和 Windows x64 的 64 位数据模型差异 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[dcmake]] | CMake 的多平台 GUI 调试器 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[cmake-dap-debugger]] | CMake 3.27+ 的 DAP 调试模式 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[dear-imgui-docking]] | Dear ImGui 的 docking 分支 |"
+    },
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[quilt-cpp-ai-driven-clone]] | Wellons 4 天用 AI 克隆 Quilt 的案例 |"
+    },
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[ai-driven-conformance-clone]] | 用 AI 克隆既有 CLI 工具的 conformance 测试法 |"
+    },
+    {
+      "category_header": "## 元（wiki/meta/）",
+      "row": "| [[c-memory-safety-even-for-ai]] | 为何 AI 协作时代应选 C++ 而非 C |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-63 Worker GE (nullprogram.com ×5)\n\n处理 5 篇 Chris Wellons (nullprogram) 技术博文。每篇对应独立 URL（非首页重复抓取），全部 ingest。新增 16 概念页（链表+trie+MSI 数据结构三件套、Wasm 三件套 wasmtime-py/指针陷阱/bump allocator、Monocypher AEAD、u-config Frankenwine + Wine syscall + unity 宏改名 + LP64/LLP64、AI 协作三件套 Quilt.cpp/conformance 克隆/C 内存安全、dcmake + CMake DAP + Dear ImGui docking）、1 人物页（chris-wellons）、5 source 摘要。"
+}

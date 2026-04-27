@@ -35,3 +35,4 @@ Unity 的 URP/HDRP 默认启用 Reversed-Z（对应 `UNITY_REVERSED_Z` 宏）。
 ## Sources
 
 - [[sources/rtr-day03]]
+- [[sources/supnik-custom-z-buffer-early-z]]

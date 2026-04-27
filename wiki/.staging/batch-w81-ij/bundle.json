@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w81-ij",
+  "agent_note": "PlayCanvas 2012 早期博客文章 5 篇全部为低信息量的公司/产品动态（博客开张、Google I/O 展台、GitHub 集成公告、HTML5 宣传转载、年度榜单入选），无技术深度内容。全部 skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-02-12_hello-world-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "PlayCanvas 博客开张贴，仅一段营销文案介绍公司愿景，零技术内容"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-07-03_playcanvas-google-i-o-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "Google I/O 2012 展台感谢贴，仅提及在 MacBook Pro + ChromeBook 上演示第三人称射击 demo，无技术细节"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-07-25_new-feature-github-and-private-repository-support-playcanvas.md",
+      "status": "skipped_offtopic",
+      "reason": "产品功能上线公告：GitHub 集成 + 私有仓库支持，属运营通告"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-09-10_will-html5-change-the-way-games-are-made-playcanvas-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "转载 Will Eastcott 在 Game Developer 上的 HTML5 观点文章，仅摘录三段泛泛而谈的云工具/URL 资源/协作观点，无技术论证"
+    },
+    {
+      "path": "raw/articles/blog.playcanvas.com/2012-12-21_playcanvas-features-in-the-top-10-html5-games-of-2012-playca.md",
+      "status": "skipped_offtopic",
+      "reason": "D.E.M.O. demo 入选 .net 杂志 2012 年 HTML5 游戏 top 10 的庆祝贴，纯营销"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-81 Worker IJ (blog.playcanvas.com 2012 ×5)\n\n处理 PlayCanvas 博客 2012 年 5 篇早期文章，全部低信息量营销/动态贴（博客开张、Google I/O 展台、GitHub 集成、HTML5 观点转载、年度榜单入选），无技术深度，全部 skip。"
+}

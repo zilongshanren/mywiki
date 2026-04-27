@@ -1,0 +1,70 @@
+{
+  "batch_id": "batch-w61-fy",
+  "agent_note": "Bart Wronski 2014-2020 小件：poisson GUI 更新（ingest as source，patch 回 bartosz-wronski 人物页）、VFX 多线程书评（ingest + 新概念 vfx-multithreading-patterns）。小 coding projects 列表、film negatives 摄影教程、articles-index 均 skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bartwronski.com/2014-09-05_updated-poisson-like-generator-with-gui-and-more.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-poisson-gui",
+      "title": "Updated Poisson-like generator with GUI and more"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-09-06_small-coding-projects.md",
+      "status": "skipped_offtopic",
+      "reason": "作者个人开源项目简介页（Blue Noise Generator / CSharpRenderer / Poisson Sampling Generator），只有项目名片无具体技术内容；CSharpRenderer 已由其他 Wronski 源覆盖（bartwronski-csharprenderer-debug / volumetric-fog），Poisson Sampling 亦已覆盖"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2014-09-21_review-multithreading-for-visual-effects-crc-press-2014.md",
+      "status": "ingested",
+      "source_slug": "bartwronski-multithreading-vfx-review",
+      "title": "Review: Multithreading for Visual Effects, CRC Press 2014"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2015-02-19_processing-scanned-dslr-photos-of-film-negatives-in-lightroo.md",
+      "status": "skipped_offtopic",
+      "reason": "Lightroom 胶片底片后期处理教程，摄影 hobby 内容；S 曲线与 filmic tonemapping 的一句类比不足以支持技术页"
+    },
+    {
+      "path": "raw/articles/bartwronski.com/2020-03-23_articles-index.md",
+      "status": "skipped_duplicate",
+      "reason": "bartwronski.com 的文章索引页，所有链接均为已覆盖或计划中的单篇文章入口，无独立技术内容"
+    }
+  ],
+  "concepts_created": ["vfx-multithreading-patterns"],
+  "people_created": [],
+  "source_summaries_created": [
+    "bartwronski-poisson-gui",
+    "bartwronski-multithreading-vfx-review"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-poisson-gui]]\n- [[sources/bartwronski-multithreading-vfx-review]]"
+    },
+    {
+      "file": "wiki/people/bartosz-wronski.md",
+      "operation": "append_to_section",
+      "section": "## 对本 wiki 的贡献",
+      "content": "| Updated Poisson-like generator with GUI and more | [[poisson-disk-sampling]] 工具侧的 GUI / 旋转 disk 补充 |\n| Review: Multithreading for Visual Effects (CRC Press 2014) | [[vfx-multithreading-patterns]] |"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bartwronski-poisson-gui]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[vfx-multithreading-patterns]] | VFX 工具链把遗留代码改造成多线程 / 任务化的几类模式（Houdini / Presto / LibEE） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bartwronski-poisson-gui]] | Wronski：Poisson 采样生成器加 PyQt GUI + 旋转 disk 模式 |\n| [[sources/bartwronski-multithreading-vfx-review]] | Wronski：《Multithreading for Visual Effects》书评，VFX 工具链多线程改造 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-61 Worker FY (bartwronski.com ×5)\n\n处理 5 篇 Bart Wronski 2014–2020 文章。2 篇入库：Poisson 生成器 GUI 更新（patch 回 [[poisson-disk-sampling]] 和 [[bartosz-wronski]]）、《Multithreading for Visual Effects》书评（新建概念 [[vfx-multithreading-patterns]]）。跳过 3 篇：small-coding-projects（项目名片页，CSharpRenderer / Poisson 均已覆盖）、Lightroom 胶片底片教程（摄影）、articles-index（目录页 skip_duplicate）。"
+}

@@ -1,0 +1,50 @@
+{
+  "batch_id": "batch-w98-kg",
+  "agent_note": "c0de517e Pesce 2010-12 ~ 2011-01 bundle: 1 ingested (2011 next-gen poll, 115-person industry sentiment snapshot). 4 skipped: stupid-sample-generator 2D is precursor of already-ingested 3D version same-day; two shameless-plug files are Fight Night Champion self-promo; http-variant of poll-results is archive duplicate of https version.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-12-15_stupid-sample-generator.md",
+      "status": "skipped_offtopic",
+      "reason": "Same-day 2D precursor of the 3D version already covered by wiki/sources/c0de517e-sample-generator-3d.md; the 3D source page already implies the relaxation-sketch lineage (line uses '原始形态'). No new technical content beyond what 3D version documents."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-12-16_shameless-plug-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Self-promotion post about Fight Night Champion (Pesce's shipping title). No technical content—points to gametrailers / ign marketing videos. Archive-duplicate of the http version."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-12-16_shameless-plug.md",
+      "status": "skipped_offtopic",
+      "reason": "Self-promotion post about Fight Night Champion. One-paragraph pride note that the team shipped 'more with less compute' via hygiene, but no concrete technique disclosed; comment thread redirects reader to last year's GDC presentation on Round 4."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-02_poll-results-what-will-be-the-next-next-gen.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-next-next-gen-poll-2011",
+      "title": "Poll results - what will be the next next-gen?"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-02_poll-results-what-will-be-the-next-next-gen-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Archive duplicate (http scheme) of the already-ingested https version; identical body."
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["c0de517e-next-next-gen-poll-2011"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-next-next-gen-poll-2011]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-next-next-gen-poll-2011]] | Pesce 2011：115 人投票下一代「次世代」——71% 押主机延续、3% 社交 F2P |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-98 Worker KG (c0de517e Pesce 2010-12 ~ 2011-01 ×5)\n\n处理 5 篇 c0de517e.blogspot.com。1 篇 ingest：2011 年初「next next-gen」投票结果（115 人产业情绪快照：71% 押主机延续、3% 社交 F2P——两端都被低估了的不是方向而是速度）。4 篇 skip：stupid-sample-generator 2D 是同日 3D 版本的前身，已有的 c0de517e-sample-generator-3d 已覆盖；两篇 shameless-plug 是 Fight Night Champion 自宣，无技术内容；poll-results 的 http 版本是 https 版本的 archive 重复。新增 1 个 source 摘要，挂到 [[angelo-pesce]]。"
+}

@@ -1,0 +1,128 @@
+{
+  "batch_id": "batch-w82-il",
+  "agent_note": "Supnik 2010-09/10 五篇：race condition 调试观察副作用、OpenAL/Linux ABI/SONAME、浮点几何谓词、预乘 alpha + tree ring、预乘下 blend state 重推。3 概念 + 5 source 摘要；patch 到 alpha-blending / alpha-blending-front-to-back / alpha-compositing / srgb-premultiplied-alpha-compression / ben-supnik。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-09-01_i-just-saw-a-race-condition.md",
+      "status": "ingested",
+      "source_slug": "supnik-race-condition-debug",
+      "title": "I Just Saw a Race Condition"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-09-03_openal-on-linux-part-27.md",
+      "status": "ingested",
+      "source_slug": "supnik-openal-linux-part-27",
+      "title": "OpenAL on Linux, Part 27"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-09-27_when-good-floating-point-goes-bad.md",
+      "status": "ingested",
+      "source_slug": "supnik-when-good-floating-point-goes-bad",
+      "title": "When Good Floating Point Goes Bad?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-10-06_premultiplication-pros-and-cons.md",
+      "status": "ingested",
+      "source_slug": "supnik-premultiplication-pros-cons",
+      "title": "Premultiplication: Pros and Cons"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-10-07_alpha-blending-lets-try-again.md",
+      "status": "ingested",
+      "source_slug": "supnik-alpha-blending-lets-try-again",
+      "title": "Alpha Blending, Lets Try Again"
+    }
+  ],
+  "concepts_created": [
+    "shared-library-soname-versioning",
+    "floating-point-geometric-predicates",
+    "premultiplied-alpha-bilinear-ring"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-race-condition-debug",
+    "supnik-openal-linux-part-27",
+    "supnik-when-good-floating-point-goes-bad",
+    "supnik-premultiplication-pros-cons",
+    "supnik-alpha-blending-lets-try-again"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 13",
+      "content": "sources: 18"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[shared-library-soname-versioning]]\n- [[floating-point-geometric-predicates]]\n- [[premultiplied-alpha-bilinear-ring]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-race-condition-debug]]\n- [[sources/supnik-openal-linux-part-27]]\n- [[sources/supnik-when-good-floating-point-goes-bad]]\n- [[sources/supnik-premultiplication-pros-cons]]\n- [[sources/supnik-alpha-blending-lets-try-again]]"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[premultiplied-alpha-bilinear-ring]] —— Supnik：预乘为何能自动消除 bilinear filtering 产生的 tree ring 色晕\n- [[sources/supnik-alpha-blending-lets-try-again]] —— 预乘约定下 back-to-front `(1, 1-SA)` 与 front-to-back `(1-DA, 1)` 的对称推导"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending-front-to-back.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[premultiplied-alpha-bilinear-ring]] —— 同一时期 Supnik 讨论预乘为何能自动修 bilinear ring artifact\n- [[sources/supnik-alpha-blending-lets-try-again]] —— 作者本人对先前那篇配方的重写，给出更对称的 `(1, 1-SA)` vs `(1-DA, 1)` 形式"
+    },
+    {
+      "file": "wiki/rendering/alpha-compositing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[premultiplied-alpha-bilinear-ring]] —— 预乘 × bilinear filtering 的交换律为什么是 over 合成的数学保证"
+    },
+    {
+      "file": "wiki/rendering/srgb-premultiplied-alpha-compression.md",
+      "operation": "append_to_section",
+      "section": "## 与其他概念的关系",
+      "content": "- [[premultiplied-alpha-bilinear-ring]] —— 同一位作者在 X-Plane 里为什么最终没采用预乘（BCn 压缩精度 + alpha test 绕路）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[shared-library-soname-versioning]] | Linux SONAME 的 ABI 契约与 OpenAL/X-Plane 翻车案例 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[floating-point-geometric-predicates]] | 点积符号抖动、线线求交条件数爆炸、几何谓词的鲁棒化策略 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[premultiplied-alpha-bilinear-ring]] | 预乘 alpha 为何能修复 bilinear filtering 的 tree-ring 杂色晕 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-race-condition-debug]] | Supnik：debugger 打印 STL 容器释放线程导致观察到 race |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-openal-linux-part-27]] | Supnik：OpenAL/Linux SONAME 升 major + 删旧 .so 的 ABI 管理翻车 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-when-good-floating-point-goes-bad]] | Supnik：X-Plane 里点积谓词与线线求交的浮点失效模式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-premultiplication-pros-cons]] | Supnik：预乘 alpha 修 tree ring，但 BCn 压缩精度让 X-Plane 转走 alpha test |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-alpha-blending-lets-try-again]] | Supnik：预乘约定下 back-to-front / front-to-back blend state 的对称重推 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-82 Worker IL (hacksoflife.blogspot.com Supnik 2010-09/10 × 5)\n\n处理 5 篇 Ben Supnik 短文。新增 3 概念页（shared-library-soname-versioning, floating-point-geometric-predicates, premultiplied-alpha-bilinear-ring）、5 source 摘要。主题：debugger 打印 STL 触发线程释放看到 race condition；OpenAL Linux SONAME major 升级 + 删除旧 .so 的 ABI 管理错位；X-Plane 里点积几何谓词的浮点脆弱性；预乘 alpha 修复 bilinear tree-ring 但 BCn 压缩精度让 X-Plane 最终选 alpha test；预乘约定下 back-to-front/front-to-back 的对称 blend state 配方。Patch 到 alpha-blending / alpha-blending-front-to-back / alpha-compositing / srgb-premultiplied-alpha-compression / ben-supnik。"
+}

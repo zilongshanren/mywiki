@@ -1,0 +1,133 @@
+{
+  "batch_id": "batch-w89-jg",
+  "agent_note": "Supnik 2011-02/03 五篇：OIT+三角形平面排序、CSM 自嘲注脚、gdb scheduler-locking 线程调试技巧。permalink-shortcode 与 mmm-c0ffee 为 WordPress/hex 磁带趣闻，跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-15_permalink-shortcode.md",
+      "status": "skipped_offtopic",
+      "reason": "WordPress shortcode PHP 片段；非图形/引擎/系统技术内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-19_mmm-c0ffee.md",
+      "status": "skipped_offtopic",
+      "reason": "关于 hex magic cookie（C0FFEE/DEADBEEF）的趣味帖，无工程内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-28_order-correct-translucency.md",
+      "status": "ingested",
+      "source_slug": "supnik-order-correct-translucency",
+      "title": "Order-Correct Translucency"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-03-06_csm-for-dummies.md",
+      "status": "ingested",
+      "source_slug": "supnik-csm-for-dummies",
+      "title": "CSM for Dummies"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-03-07_don-t-go-anywhere.md",
+      "status": "ingested",
+      "source_slug": "supnik-dont-go-anywhere",
+      "title": "Don't Go Anywhere!"
+    }
+  ],
+  "concepts_created": [
+    "triangle-plane-sort-translucency",
+    "order-independent-transparency",
+    "cascaded-shadow-maps",
+    "gdb-scheduler-locking"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-order-correct-translucency",
+    "supnik-csm-for-dummies",
+    "supnik-dont-go-anywhere"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-plane-sort-translucency]] —— 2011 单面三角形平面划分给出任意视角正确的半透明预排序\n- [[order-independent-transparency]] —— 2011 对 AMD per-pixel linked-list OIT 的评估与退让\n- [[cascaded-shadow-maps]] —— 2011 X-Plane 10 阴影基线的自嘲式注脚\n- [[gdb-scheduler-locking]] —— 2011 多线程断点里 debug-mode vector::operator[] 踩坑的 gdb 武器"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-order-correct-translucency]]\n- [[sources/supnik-csm-for-dummies]]\n- [[sources/supnik-dont-go-anywhere]]"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-plane-sort-translucency]] —— 拓扑层面的半透明预排序，互补于运行时深度排序\n- [[order-independent-transparency]] —— 硬件 per-pixel linked-list 方案与其替代"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending-front-to-back.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-plane-sort-translucency]] —— 互不相交单面三角形的视角无关预排序"
+    },
+    {
+      "file": "wiki/rendering/shadow-mapping-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cascaded-shadow-maps]] —— 视锥分段的经典阴影技术，NVIDIA 的默认推荐"
+    },
+    {
+      "file": "wiki/rendering/cached-shadowmaps.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cascaded-shadow-maps]] —— 可与级联缓存策略组合的基线"
+    },
+    {
+      "file": "wiki/rendering/camera-relative-sun-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cascaded-shadow-maps]] —— 大世界相机相对处理通常作用在 CSM 每一级"
+    },
+    {
+      "file": "wiki/rendering/gpu-sliced-volumetric-shadows-limits.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cascaded-shadow-maps]] —— X-Plane 10 阴影基线，Supnik 认为 3 级在超远场景下不够"
+    },
+    {
+      "file": "wiki/computer-systems/message-queue-thread-ownership.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gdb-scheduler-locking]] —— 多线程断点求值的精确调试武器"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[triangle-plane-sort-translucency]] | Supnik：单面三角形平面划分导出的视角无关半透明预排序 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[order-independent-transparency]] | AMD per-pixel linked-list OIT 的原理、代价与替代方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cascaded-shadow-maps]] | NVIDIA 默认推荐的阴影技术，X-Plane 10 基线 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[gdb-scheduler-locking]] | gdb 多线程调试：锁定调度器避免断点间隙抢线程 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-order-correct-translucency]] | Supnik：从硬件 OIT 到三角形平面预排序 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-csm-for-dummies]] | Supnik：CSM 作为 X-Plane 10 阴影基线的自嘲注脚 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-dont-go-anywhere]] | Supnik：gdb scheduler-locking 搞定多线程断点求值 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-89 Worker JG (hacksoflife 2011-02/03 Supnik ×5)\n\n处理 5 篇 Ben Supnik 早期 X-Plane 博文。新增 4 概念页（triangle-plane-sort-translucency、order-independent-transparency、cascaded-shadow-maps、gdb-scheduler-locking）、3 source 摘要。跳过 2 篇（WordPress shortcode、hex magic cookie 趣闻）。人物页 [[ben-supnik]] 打补丁加 4 条 related + 3 条 Sources。"
+}

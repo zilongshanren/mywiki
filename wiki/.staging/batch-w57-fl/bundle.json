@@ -1,0 +1,137 @@
+{
+  "batch_id": "batch-w57-fl",
+  "agent_note": "Wolfgang Engel / Diary of a Graphics Programmer ×5 (2017 HDR10、2018 Triangle VB、2018 DXR 质疑、2018 RT without API、2020 Forge 回顾)。全 ingest。新增人物 wolfgang-engel、概念 triangle-filtering-pipeline / ray-tracing-api-debate / the-forge-renderer。visibility-buffer / hybrid-raytraced-shadows-reflections / kostas-anagnostou / color-space / hdr-video-edr-metal 五个现有页走 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2017-04-07_hdr10-tv-setup.md",
+      "status": "ingested",
+      "source_slug": "wolfgang-engel-hdr10-tv-setup",
+      "title": "HDR10 - TV setup"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-03-30_triangle-visibility-buffer.md",
+      "status": "ingested",
+      "source_slug": "wolfgang-engel-triangle-visibility-buffer",
+      "title": "Triangle Visibility Buffer"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-04-05_ray-tracing-with-the-directx-ray-tracing-api-dxr.md",
+      "status": "ingested",
+      "source_slug": "wolfgang-engel-dxr-api-debate",
+      "title": "Ray Tracing with the DirectX Ray Tracing API (DXR)"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2018-09-07_ray-tracing-without-ray-tracing-api.md",
+      "status": "ingested",
+      "source_slug": "wolfgang-engel-ray-tracing-without-api",
+      "title": "Ray Tracing without Ray Tracing API"
+    },
+    {
+      "path": "raw/articles/diaryofagraphicsprogrammer.blogspot.com/2020-11-20_catching-up-history-of-the-forge-gpu-zen-ray-tracing-holiday.md",
+      "status": "ingested",
+      "source_slug": "wolfgang-engel-forge-history",
+      "title": "Catching Up / History of The Forge / GPU Zen / Ray Tracing / Holiday Dinner"
+    }
+  ],
+  "concepts_created": [
+    "triangle-filtering-pipeline",
+    "ray-tracing-api-debate",
+    "the-forge-renderer"
+  ],
+  "people_created": [
+    "wolfgang-engel"
+  ],
+  "source_summaries_created": [
+    "wolfgang-engel-hdr10-tv-setup",
+    "wolfgang-engel-triangle-visibility-buffer",
+    "wolfgang-engel-dxr-api-debate",
+    "wolfgang-engel-ray-tracing-without-api",
+    "wolfgang-engel-forge-history"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/visibility-buffer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-filtering-pipeline]] —— Confetti / The Forge 的 Triangle VB 工程化管线（三级剔除 + Forward++）\n- [[the-forge-renderer]] —— 跨 DX12 / Vulkan / Metal / Linux / 主机的参考实现\n- [[people/wolfgang-engel]]"
+    },
+    {
+      "file": "wiki/rendering/visibility-buffer.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/wolfgang-engel-triangle-visibility-buffer]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytraced-shadows-reflections.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[the-forge-renderer]] —— Confetti 在 2018 年 9 月把这套 hybrid shadow 移植到 The Forge，跨 PC / macOS / iOS / Xbox 运行（含 iPhone 7 Sponza demo）\n- [[ray-tracing-api-debate]] —— Wolfgang Engel 对 DXR 黑盒化的公开质疑，hybrid 移植是这场辩论的工程姿态\n- [[people/wolfgang-engel]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytraced-shadows-reflections.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/wolfgang-engel-ray-tracing-without-api]]"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[people/wolfgang-engel]] —— Confetti / The Forge 负责人，2018 年邀请他把 hybrid shadow 原型移植到 The Forge，同时约稿 GPU Zen 2 culling 章节"
+    },
+    {
+      "file": "wiki/people/kostas-anagnostou.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/wolfgang-engel-ray-tracing-without-api]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/wolfgang-engel-hdr10-tv-setup]] —— LDR demo 直接上 HDR10 电视会翻车的经验教训；Rec.2100 需 scale 到 300 nits + Rec.709 → Rec.2020 + PQ"
+    },
+    {
+      "file": "wiki/rendering/hdr-video-edr-metal.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/wolfgang-engel-hdr10-tv-setup]] —— 2017 年关于 HDR10 TV 用户端校准复杂度的早期观察"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[triangle-filtering-pipeline]] | Confetti/The Forge 的 Triangle VB 工程化：三级剔除 + ExecuteIndirect + Forward++ |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ray-tracing-api-debate]] | Wolfgang Engel 2018 年对 DXR 黑盒化的公开质疑与替代路线 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[the-forge-renderer]] | Confetti 开源跨平台渲染框架，Engel 所谓「下一代 GPU Zen」 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[wolfgang-engel]] | Confetti 联创、The Forge 主推，ShaderX/GPU Pro/GPU Zen 编辑，Light Pre-Pass 提出者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/wolfgang-engel-hdr10-tv-setup]] | Engel 2017：LDR demo 上 HDR10 电视翻车 + 标准校准缺位 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/wolfgang-engel-triangle-visibility-buffer]] | Engel 2018：Triangle VB 全管线长文（The Forge 工程化） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/wolfgang-engel-dxr-api-debate]] | Engel 2018：为什么 RT 不该单独立 API |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/wolfgang-engel-ray-tracing-without-api]] | Engel 2018：The Forge 跨平台 compute hybrid shadow 落地 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/wolfgang-engel-forge-history]] | Engel 2020：The Forge 历史 + GPU Zen 定位调整 + DXR 回望 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-57 Worker FL (Wolfgang Engel / Diary of a Graphics Programmer ×5)\n\n全 ingest 5 篇 Wolfgang Engel 文章（2017 HDR10 TV setup、2018 Triangle Visibility Buffer 长文、2018 DXR API 之辩、2018 Ray Tracing without API、2020 Catching Up / Forge 历史）。新增 1 人物页 wolfgang-engel，3 概念页 triangle-filtering-pipeline / ray-tracing-api-debate / the-forge-renderer，5 source 摘要。对 visibility-buffer、hybrid-raytraced-shadows-reflections、kostas-anagnostou、color-space、hdr-video-edr-metal 五个现有页做 patch（补充相关链接 + source 引用）。这批把 Confetti / The Forge 这条线完整并入 wiki，和已有的 Kostas Anagnostou / gameknife 两个 VB+hybrid RT 入口形成三角引用。"
+}

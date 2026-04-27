@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w58-fo",
+  "agent_note": "Boris The Brave 2025 混合主题：pure-reason skip（LLM 预言非技术）；两篇 GoL 加速（CUDA/Triton + 多步融合）合并为单个概念 gpu-gol-optimization-ladder；菱形铺砖新概念 infinite-random-rhombus-tilings；2026-01-03 infinite-grids 已在 w54-fb 处理，skip_duplicate。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2025-06-04_a-technique-of-pure-reason.md",
+      "status": "skipped_offtopic",
+      "reason": "文章只有一句话，讨论 LLM 未来会演化为 pure-reasoner 模型 + tool-use scaffolding 的哲学预言，非技术内容。"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-09-11_accelerated-game-of-life-with-cuda-triton.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-gol-cuda-triton",
+      "title": "Accelerated Game of Life with CUDA / Triton"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-09-21_more-accelerated-game-of-life.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-gol-multistep",
+      "title": "More Accelerated Game of Life"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-10-17_infinite-random-rhombus-tilings.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-rhombus-tilings",
+      "title": "Infinite Random Rhombus Tilings"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md",
+      "status": "skipped_duplicate",
+      "reason": "已在 wave 54 batch-w54-fb 处理，source 摘要 boristhebrave-infinite-grids 和概念页 infinite-chunked-procedural-generation 已存在。"
+    }
+  ],
+  "concepts_created": [
+    "gpu-gol-optimization-ladder",
+    "infinite-random-rhombus-tilings"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boristhebrave-gol-cuda-triton",
+    "boristhebrave-gol-multistep",
+    "boristhebrave-rhombus-tilings"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-gol-optimization-ladder]]\n- [[infinite-random-rhombus-tilings]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/boristhebrave-gol-cuda-triton]]\n- [[sources/boristhebrave-gol-multistep]]\n- [[sources/boristhebrave-rhombus-tilings]]"
+    },
+    {
+      "file": "wiki/game-development/infinite-chunked-procedural-generation.md",
+      "operation": "append_to_section",
+      "section": "## 工程意义",
+      "content": "\n新增的 [[infinite-random-rhombus-tilings]] 是这套方法论的又一个实例：底层操作从「矩形过滤」换成「3 菱汇合点翻转」，其余 chunking / 相位 / 纯函数查询的骨架完全复用。"
+    },
+    {
+      "file": "wiki/computer-systems/cuda-memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-gol-optimization-ladder]] —— 用 Game of Life 当标尺，对照 register / shared / global 各档优化的实测收益"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gpu-gol-optimization-ladder]] | GPU Game of Life 优化阶梯：PyTorch 223 ms → bitpacked 64-bit CUDA + 多步融合 0.68 ms |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[infinite-random-rhombus-tilings]] | Townscaper 替代方案：3 菱汇合点翻转 + 三层错位 chunking，无全局细分、无 chunk 边界 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-gol-cuda-triton]] | Boris The Brave：Game of Life 在 CUDA / Triton 上 120× 提速阶梯 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-gol-multistep]] | Boris The Brave：shared memory 多步融合再把 GoL 提 2.7×，击穿 DRAM 带宽下限 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-rhombus-tilings]] | Boris The Brave：无限随机菱形铺砖，三层错位 chunking 消除 Townscaper 边界痕 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-58 Worker FO (boristhebrave.com 2025 混合 ×5)\n\n处理 5 篇 Boris The Brave 2025 文章。新增 2 概念页（gpu-gol-optimization-ladder 把两篇 GoL 加速文合并；infinite-random-rhombus-tilings Townscaper 替代方案）、3 source 摘要。跳过 pure-reason（LLM 预言非技术）与 2026-01-03 infinite-grids（wave 54 已 ingest）。patch boris-the-brave 人物页、infinite-chunked-procedural-generation、cuda-memory-hierarchy 三处已有页面。"
+}

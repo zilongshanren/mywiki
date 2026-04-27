@@ -1,0 +1,180 @@
+{
+  "batch_id": "batch-w90-ji",
+  "agent_note": "Bitsquid 2014-10 ~ 2015-06 五篇：ECS Part 4 (entity resources) 补进既有 Bitsquid ECS 页面；Multithreaded Gameplay + Allocation Adventures 1/2 是主菜，分别落位 game-engines 与 computer-systems；DirectX SDK upgrade 是 Amandine Coget 的迁移实录，新建人物页。共 5 ingested、4 新概念页、1 新人物页、5 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2014-10-10_building-a-data-oriented-entity-system-part-4-entity-resourc.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-entity-system-part4-resources",
+      "title": "Building a Data-Oriented Entity System, Part 4: Entity Resources"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-03-10_multithreaded-gameplay.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-multithreaded-gameplay",
+      "title": "Multithreaded Gameplay"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-06-11_upgrading-the-directx-sdk.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-directx-sdk-upgrade",
+      "title": "Upgrading the DirectX SDK"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-06-12_allocation-adventures-1-the-datacomponent.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-allocation-adventures-1-datacomponent",
+      "title": "Allocation Adventures 1: The DataComponent"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2015-06-22_allocation-adventures-2-arrays-of-arrays.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-allocation-adventures-2-arrays",
+      "title": "Allocation Adventures 2: Arrays of Arrays"
+    }
+  ],
+  "concepts_created": [
+    "actor-model-for-gameplay",
+    "directx-sdk-to-windows-sdk-migration",
+    "datacomponent-single-buffer-allocation",
+    "arrays-of-arrays-allocation",
+    "buddy-memory-allocation"
+  ],
+  "people_created": [
+    "amandine-coget"
+  ],
+  "source_summaries_created": [
+    "bitsquid-entity-system-part4-resources",
+    "bitsquid-multithreaded-gameplay",
+    "bitsquid-directx-sdk-upgrade",
+    "bitsquid-allocation-adventures-1-datacomponent",
+    "bitsquid-allocation-adventures-2-arrays"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/bitsquid-data-oriented-entity-system.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[datacomponent-single-buffer-allocation]] —— 2015 Part 1：把 STL 递归容器压成单 buffer 的八步\n- [[arrays-of-arrays-allocation]] —— 2015 Part 2：N 个动态容器共享大 buffer 的三条路线\n- [[actor-model-for-gameplay]] —— 2015 Lua per-API lock + coroutine 切换的 gameplay 并发折中"
+    },
+    {
+      "file": "wiki/game-engines/bitsquid-data-oriented-entity-system.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-entity-system-part4-resources]] —— 2014 Part 4：把 level/prefab 按 component 类型分组 spawn，遵守 \"Do similar things together\""
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[actor-model-for-gameplay]] —— 2015 Lua 多 VM + per-API lock 的 gameplay 并发折中\n- [[datacomponent-single-buffer-allocation]] —— 2015 DataComponent 压到单 buffer 的八步改造\n- [[arrays-of-arrays-allocation]] —— 2015 N 个动态 vector 共享大 buffer 的三条路线\n- [[buddy-memory-allocation]] —— Arrays of Arrays 推出的 2-幂 allocator 选型"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-entity-system-part4-resources]]\n- [[sources/bitsquid-multithreaded-gameplay]]\n- [[sources/bitsquid-allocation-adventures-1-datacomponent]]\n- [[sources/bitsquid-allocation-adventures-2-arrays]]"
+    },
+    {
+      "file": "wiki/game-engines/offset-based-resource-blobs.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-entity-system-part4-resources]] —— ECS Part 4：blob 思路在 entity resource 上的具体应用（按 component 类型分组 + offset 查找）"
+    },
+    {
+      "file": "wiki/computer-systems/custom-allocator-interface.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-allocation-adventures-1-datacomponent]] —— DataComponent 单 buffer 改造的八步\n- [[sources/bitsquid-allocation-adventures-2-arrays]] —— 多 component 共用 buffer 的三条路线与 buddy 预告"
+    },
+    {
+      "file": "wiki/computer-systems/aos-vs-soa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[datacomponent-single-buffer-allocation]] —— DataComponent 改造第 3 步就是 AoS → SoA，让 key 搜索只灌 key 数组"
+    },
+    {
+      "file": "wiki/game-engines/lua-runtime-dynamism-tricks.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[actor-model-for-gameplay]] —— 多 Lua VM + coroutine 切换等锁的 gameplay 并发方案"
+    },
+    {
+      "file": "wiki/computer-systems/message-queue-thread-ownership.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[actor-model-for-gameplay]] —— Bitsquid 2015 脚本层 actor-ish 并发的另一折中"
+    },
+    {
+      "file": "wiki/game-engines/bitsquid-task-scheduler.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[actor-model-for-gameplay]] —— engine 层 task 并行之外，Lua gameplay 层的另一并发问题与折中"
+    },
+    {
+      "file": "wiki/computer-systems/main-thread-task-injection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[actor-model-for-gameplay]] —— 脚本层 per-API lock 模式的替代对照"
+    },
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[buddy-memory-allocation]] —— 2-幂尺寸动态分配的另一方向\n- [[datacomponent-single-buffer-allocation]] —— 单 buffer bump-style value 池的实战"
+    },
+    {
+      "file": "wiki/rendering/directx11-early-pitfalls.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[directx-sdk-to-windows-sdk-migration]] —— June 2010 SDK 迁到 Windows 8.x SDK 的三类隐形依赖"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[actor-model-for-gameplay]] | Bitsquid 2015：多 Lua VM + per-API lock + coroutine 切换的 gameplay 并发折中 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[datacomponent-single-buffer-allocation]] | Bitsquid 2015：DataComponent 从 STL 怪兽压到单 buffer 的八步改造 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[arrays-of-arrays-allocation]] | Bitsquid 2015：N 个动态变长 component 共用大 buffer 的三条路线 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[buddy-memory-allocation]] | 2-幂尺寸的 allocator：分裂/合并、O(log n)、天然抗碎片，适配 vector 2 倍扩容 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[directx-sdk-to-windows-sdk-migration]] | Bitsquid 2015：June 2010 DX SDK → Windows 8.x SDK 迁移的 GUID / d3dcompiler / XInput 三坑 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[amandine-coget]] | Bitsquid / Stingray 渲染工程师，记录 DirectX SDK 迁移实录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-entity-system-part4-resources]] | Niklas：Data-Oriented Entity System Part 4 —— entity resource 按 component 类型分组 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-multithreaded-gameplay]] | Niklas：Lua VM actor + per-API lock，gameplay 并发的迟到折中 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-directx-sdk-upgrade]] | Coget：June 2010 DirectX SDK → Windows 8.x SDK 的六步迁移账本 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-allocation-adventures-1-datacomponent]] | Niklas：DataComponent 八步压到单 buffer |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-allocation-adventures-2-arrays]] | Niklas：数组的数组 —— fixed / linked / custom allocator 三条路线及 buddy 预告 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-90 Worker JI (bitsquid 2014-10 ~ 2015-06 ×5)\n\n处理 5 篇 Bitsquid 2014-10 到 2015-06 博文：ECS Part 4 (entity resources) 补进既有 [[bitsquid-data-oriented-entity-system]]；Multithreaded Gameplay 新概念 [[actor-model-for-gameplay]]；DirectX SDK 迁移新概念 [[directx-sdk-to-windows-sdk-migration]] + 新人物 [[amandine-coget]]；Allocation Adventures 1/2 新概念 [[datacomponent-single-buffer-allocation]]、[[arrays-of-arrays-allocation]]、[[buddy-memory-allocation]]。共 5 ingested、5 概念页（含 buddy allocator 对 2-幂扩容的 allocator 选型）、1 人物页、5 source 摘要。Niklas 人物页补 4 related + 4 Sources；既有 offset-based-resource-blobs / custom-allocator-interface / aos-vs-soa / lua-runtime-dynamism-tricks / message-queue-thread-ownership / bitsquid-task-scheduler / main-thread-task-injection / linear-allocator / directx11-early-pitfalls 各打小补丁。"
+}

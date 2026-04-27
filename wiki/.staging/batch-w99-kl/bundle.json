@@ -1,0 +1,176 @@
+{
+  "batch_id": "batch-w99-kl",
+  "agent_note": "Chips and Cheese 2021-04 ~ 2021-06 五篇。主笔有 Chester Lam（已有页）、集体 byline Chips; Cheese、George Cozma、Jeremy Tingle、Apex。新增 7 个概念页（3 rendering、4 computer-systems）、3 人物页、5 源摘要。Chester Lam 和 chips-and-cheese 页需要 patch（追加新 source/concept 链接）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-04-23_rdna-1-redux-maximizing-performance-with-rx-5000-series-gpus.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna1-redux",
+      "title": "RDNA 1 Redux: Maximizing Performance With RX 5000 Series GPUs"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-05-13_gpu-memory-latencys-impact-and-updated-test.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gpu-memory-latency-impact",
+      "title": "GPU Memory Latency's Impact, and Updated Test"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-06-09_exploring-cpu-core-to-core-latency-and-the-role-that-locks-p.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-core-to-core-latency",
+      "title": "Exploring CPU Core to Core Latency and the Role that Locks Play"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-06-22_nvidias-ampere-process-technology-sunk-by-samsung.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ampere-samsung-process",
+      "title": "Nvidia's Ampere & Process Technology: Sunk by Samsung?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-06-23_the-end-of-an-era-amd-discontinues-pre-2016-gcn-gpu-support.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gcn-eol",
+      "title": "The End of an Era: AMD Discontinues Pre-2016 GCN GPU Support"
+    }
+  ],
+  "concepts_created": [
+    "rdna1-overclocking-navi10",
+    "ampere-warp-stall-utilization",
+    "gpu-driver-support-lifecycle",
+    "gpu-latency-microbench-methodology",
+    "gpu-constant-memory-cache",
+    "core-to-core-latency-lock-test",
+    "samsung-8n-vs-tsmc-n7"
+  ],
+  "people_created": [
+    "george-cozma",
+    "jeremy-tingle",
+    "apex-chipsandcheese"
+  ],
+  "source_summaries_created": [
+    "chipsandcheese-rdna1-redux",
+    "chipsandcheese-gpu-memory-latency-impact",
+    "chipsandcheese-core-to-core-latency",
+    "chipsandcheese-ampere-samsung-process",
+    "chipsandcheese-gcn-eol"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ampere-warp-stall-utilization]] — Ampere warp stall 与 shader 利用率实测\n- [[gpu-latency-microbench-methodology]] — GPU 延迟微基准的方法学修正（Sattolo 随机置换）\n- [[gpu-constant-memory-cache]] — GPU constant memory 专用缓存层次"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-gpu-memory-latency-impact]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[george-cozma]]\n- [[jeremy-tingle]]\n- [[apex-chipsandcheese]]\n- [[rdna1-overclocking-navi10]]\n- [[ampere-warp-stall-utilization]]\n- [[samsung-8n-vs-tsmc-n7]]\n- [[gpu-driver-support-lifecycle]]\n- [[core-to-core-latency-lock-test]]"
+    },
+    {
+      "file": "wiki/computer-systems/gpu-memory-hierarchy-latency.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[gpu-latency-microbench-methodology]] — Sattolo 随机置换与 loop unroll 修订\n- [[gpu-constant-memory-cache]] — Nvidia constant memory 专用缓存\n- [[ampere-warp-stall-utilization]] — latency-bound 的量化证据"
+    },
+    {
+      "file": "wiki/computer-systems/gpu-memory-hierarchy-latency.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-gpu-memory-latency-impact]]"
+    },
+    {
+      "file": "wiki/computer-systems/gpu-latency-hiding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ampere-warp-stall-utilization]] — Nsight warp stall 实证 Ampere/Pascal 被 memory latency bound"
+    },
+    {
+      "file": "wiki/computer-systems/gcn-wave-occupancy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ampere-warp-stall-utilization]] — Ampere/Pascal 的 warp stall 与 occupancy 差异\n- [[gpu-driver-support-lifecycle]] — GCN 2/3 硬件 EOL 话题"
+    },
+    {
+      "file": "wiki/computer-systems/split-lock-x86.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[core-to-core-latency-lock-test]] — 核到核延迟测试本质是 contested lock；真实 workload 中锁频率 ≤ 0.01% 指令"
+    },
+    {
+      "file": "wiki/computer-systems/cas-refcount-lowbit-lock.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[core-to-core-latency-lock-test]] — contested atomic CAS 的 cache-line 迁移延迟在真实 workload 中极少被触发"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gpu-latency-microbench-methodology]] | GPU 延迟微基准方法学：Sattolo 随机置换 + loop unroll 修订 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[gpu-constant-memory-cache]] | Nvidia constant memory 的 L1/L1.5/L2 独立缓存层次 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[core-to-core-latency-lock-test]] | 核到核延迟测试测的是 contested lock，真实 workload 里锁 ≤ 0.01% 指令 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[samsung-8n-vs-tsmc-n7]] | Ampere 能效不全是 node 的锅：架构、GDDR6X、Zen 团队反哺 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rdna1-overclocking-navi10]] | Navi 10 三阶段超频：Wattman / BIOS 刷写 / MPT + SOC Clock 之谜 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ampere-warp-stall-utilization]] | Ampere shader 利用率被 memory latency 与 occupancy 双重限制 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-driver-support-lifecycle]] | AMD 2021 年砍 GCN 2/3 驱动支持的真实原因：市场份额，不是技术 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[george-cozma]] | Chips and Cheese 编辑，擅长用 PMU 事件证伪常识性测试数字 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jeremy-tingle]] | Chips and Cheese 撰稿人，process node 与架构因果的宏观分析 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[apex-chipsandcheese]] | Chips and Cheese 匿名作者，社区视角批评厂商 PR 策略 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna1-redux]] | Chips and Cheese：Navi 10 三阶段超频实操（2021-04） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gpu-memory-latency-impact]] | Chester Lam：Ampere/Pascal warp stall 实测 + 延迟微基准方法学修订（2021-05） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-core-to-core-latency]] | George Cozma：核到核延迟测的是 contested lock，真实 workload 里锁极稀有（2021-06） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ampere-samsung-process]] | Jeremy Tingle：Ampere 能效问题是架构 + GDDR6X + Zen 团队反哺，不只是 Samsung 8N（2021-06） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gcn-eol]] | Apex：AMD 砍 GCN 2/3 驱动支持的真实原因是市场份额（2021-06） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-99 Worker KL (chipsandcheese.com ×5, 2021-04 ~ 06)\n\n处理 Chips and Cheese 2021 年 4–6 月 5 篇：Navi 10 超频实操、GPU memory latency 影响与测试修订、核到核延迟与锁、Ampere 过程节点之争、GCN 2/3 驱动 EOL。新增 7 概念页（rdna1-overclocking-navi10、ampere-warp-stall-utilization、gpu-driver-support-lifecycle、gpu-latency-microbench-methodology、gpu-constant-memory-cache、core-to-core-latency-lock-test、samsung-8n-vs-tsmc-n7）、3 人物页（George Cozma、Jeremy Tingle、Apex）、5 source 摘要。对 chester-lam、chips-and-cheese、gpu-memory-hierarchy-latency、gpu-latency-hiding、gcn-wave-occupancy、split-lock-x86、cas-refcount-lowbit-lock 发出 patch。"
+}

@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch-w76-hs",
+  "agent_note": "5 Bitsquid 2010 posts. 3 ingested with new concept pages, 1 ingested as source-only (practical-examples-in-dod has only comment-thread content on scene graphs, no stand-alone concept), 1 skipped (motion-builder-exporter is a bare code drop). niklas-frykholm person page already exists.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-05-28_practical-examples-in-data-oriented-design.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-practical-dod-scene-graphs",
+      "title": "Practical Examples in Data Oriented Design (comments on per-entity scene graphs)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-06-03_avoiding-content-locks-and-conflicts-3-way-json-merge.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-3-way-json-merge",
+      "title": "Avoiding Content Locks and Conflicts — 3-way JSON Merge"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-08-18_a-new-data-storage-model.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-new-data-storage-model",
+      "title": "A New Data Storage Model"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-08-25_bitsquid-s-dual-mode-guis.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-dual-mode-guis",
+      "title": "BitSquid's Dual Mode GUIs"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-09-08_code-share-motion-builder-exporter.md",
+      "status": "skipped_offtopic",
+      "reason": "Bare code-drop announcement: one paragraph pointing at a MotionBuilder exporter download. No engineering lesson, no design rationale. Not enough substance for a wiki page."
+    }
+  ],
+  "concepts_created": [
+    "per-entity-scene-graph",
+    "json-3-way-merge",
+    "guid-object-database-schema",
+    "dual-mode-gui-bitsquid"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-practical-dod-scene-graphs",
+    "bitsquid-3-way-json-merge",
+    "bitsquid-new-data-storage-model",
+    "bitsquid-dual-mode-guis"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/vcs-vs-database-for-content.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-3-way-json-merge]]\n- [[sources/bitsquid-new-data-storage-model]]"
+    },
+    {
+      "file": "wiki/game-engines/immediate-vs-retained-mode.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dual-mode-gui-bitsquid]] — Bitsquid 用同一 API / 同一实现同时支持两种模式的做法"
+    },
+    {
+      "file": "wiki/game-engines/immediate-vs-retained-mode.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-dual-mode-guis]]"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-practical-dod-scene-graphs]]\n- [[sources/bitsquid-3-way-json-merge]]\n- [[sources/bitsquid-new-data-storage-model]]\n- [[sources/bitsquid-dual-mode-guis]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[per-entity-scene-graph]] | Bitsquid：场景图不覆盖整场景，只挂一个 entity 内部 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[dual-mode-gui-bitsquid]] | Bitsquid 用同一 API 同时支持 retained / immediate GUI |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[json-3-way-merge]] | Bitsquid：理解 JSON 结构的三路合并，解决内容 merge 冲突 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[guid-object-database-schema]] | Bitsquid：GUID + key-value + 5 种操作，把内容数据库做成无冲突可 diff 的小型 NoSQL |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-practical-dod-scene-graphs]] | Frykholm：per-entity 场景图为什么不需要优化增删 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-3-way-json-merge]] | Frykholm：写一个能理解 JSON 的三路合并器 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-new-data-storage-model]] | Frykholm：GUID + 属性 + 5 种操作的无冲突数据库草案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-dual-mode-guis]] | Frykholm：同一 GUI API 两种模式的实现技巧 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-76 Worker HS (bitsquid.blogspot.com 2010 Q2-Q3 x5)\n\n处理 5 篇 Bitsquid 2010 年博客。新增 4 概念页（per-entity-scene-graph, json-3-way-merge, guid-object-database-schema, dual-mode-gui-bitsquid）、4 source 摘要；跳过 MotionBuilder exporter（纯 code-drop 无内容）。补强 vcs-vs-database-for-content 与 immediate-vs-retained-mode 两篇的 Sources 与交叉链接。niklas-frykholm 人物页追加 4 条来源。"
+}

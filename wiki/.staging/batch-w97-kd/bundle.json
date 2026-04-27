@@ -1,0 +1,123 @@
+{
+  "batch_id": "batch-w97-kd",
+  "agent_note": "5 篇 c0de517e Pesce 2010-10~12：1) eastl-2 是 eastl 的归档重复版，SKIP as dup；2) eastl 正文只有 3 句话（EA 开源 EASTL 的书签），无技术展开，但话题本身与既有 rpp-stl-replacement 强相关，做成 source 摘要桥接（不新建概念页）；3) stereoscopic-test INGEST，单眼渲染+另一眼屏幕空间 reprojection 的小实验，引入 stereo-reprojection-hole-fill 概念，强调 disocclusion hole 是 stereo/motion blur/DoF 共享的难题；4) leaving-ea SKIP，离职感想+ EAC 校园照片贴，仅对 EA 技术共享流程有一句轻评论，不足以撑起技术页；5) sample-generator-3d INGEST，带 importance 权重的半球 Poisson-like 点松弛 Processing 小工具，新建 iterative-sample-point-relaxation 概念，和已有 poisson-disk-sampling 做对照。Angelo Pesce 人物页已存在，追加 2 个新概念 + 3 条 source 链接并把 sources 从 2 修到正确计数（实际 Sources 节已有 12 行，加 3 → 15）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-10-20_eastl-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-10-20_eastl.md 内容完全相同，仅 fetched 日期/协议差异；归档重复文件"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-10-20_eastl.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-eastl",
+      "title": "EASTL"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-11-02_stereoscopic-test.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-stereoscopic-test",
+      "title": "Stereoscopic test"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-12-05_leaving-ea.md",
+      "status": "skipped_offtopic",
+      "reason": "离职感想 + EAC Burnaby 校园随拍；除了一句关于 EA 技术共享现状的轻度吐槽外无技术内容，核心是作者宣布跳槽与感谢。不足以支撑单独技术页或为既有页提供新证据"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-12-15_stupid-sample-generator-3d-version.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-sample-generator-3d",
+      "title": "Stupid sample generator - 3d version"
+    }
+  ],
+  "concepts_created": [
+    "stereo-reprojection-hole-fill",
+    "iterative-sample-point-relaxation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-eastl",
+    "c0de517e-stereoscopic-test",
+    "c0de517e-sample-generator-3d"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 5"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stereo-reprojection-hole-fill]] —— 2010 立体渲染的单眼 reproject + 洞补实验\n- [[iterative-sample-point-relaxation]] —— 带 importance 权重的半球 Poisson-like 采样点生成器"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-eastl]]\n- [[sources/c0de517e-stereoscopic-test]]\n- [[sources/c0de517e-sample-generator-3d]]"
+    },
+    {
+      "file": "wiki/programming-languages/rpp-stl-replacement.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-eastl]] —— 2010 年 Pesce 对 EA 开源 EASTL 的书签式推荐，游戏业「写自己的 STL」谱系的一个节点"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[iterative-sample-point-relaxation]] —— Pesce 2010 的 stochastic Lloyd 变体，用 importance 本地化权重到排斥半径"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-sample-generator-3d]]"
+    },
+    {
+      "file": "wiki/rendering/temporal-sao-reprojection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stereo-reprojection-hole-fill]] —— 同一 disocclusion 补洞问题在立体 reprojection 里的早期版本"
+    },
+    {
+      "file": "wiki/rendering/reprojected-planar-reflection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stereo-reprojection-hole-fill]] —— Pesce 2010 把同一 screen-space reprojection 思路用在立体渲染上"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stereo-reprojection-hole-fill]] | 立体渲染的单眼屏幕空间 reprojection 与 disocclusion 洞补 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[iterative-sample-point-relaxation]] | 带 importance 权重的半球采样点 stochastic Lloyd 松弛 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-eastl]] | Pesce：EA 开源 EASTL 的书签贴（游戏业自写 STL 谱系节点） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-stereoscopic-test]] | Pesce：FX Composer + HLSL 的立体 reprojection proof-of-concept |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-sample-generator-3d]] | Pesce：Processing 小工具，带 importance 权重的半球 Poisson-like 点生成 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-97 Worker KD (c0de517e.blogspot.com ×5, 2010-10~12)\n\n处理 Angelo Pesce 2010 年末 5 篇：3 INGEST + 1 SKIP-dup + 1 SKIP-offtopic。新增概念页 stereo-reprojection-hole-fill（立体单眼 reproject + 洞补，2010 proof-of-concept）、iterative-sample-point-relaxation（带 importance 权重的 stochastic Lloyd 半球采样生成器）；新增 3 条 source 摘要（eastl 书签、stereoscopic-test、sample-generator-3d）。交叉补强 rpp-stl-replacement（游戏业写自己的 STL 谱系）、poisson-disk-sampling（Pesce 2010 先例）、temporal-sao-reprojection / reprojected-planar-reflection（disocclusion 洞补是 reprojection 家族共享难题）。Angelo Pesce 人物页追加 2 概念 + 3 sources。SKIP：eastl-2（归档重复），leaving-ea（离职感想 + EAC 校园照片贴，无技术）。"
+}

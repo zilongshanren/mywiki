@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w53-ez",
+  "agent_note": "Gemserk / Ariel 的 4 篇 Unity 工程实战（Input System / Data Prefab / ECS CustomEditor / Asset Refactoring）全部 ingest；zombie-rockers 作为游戏展示短文 skip。新增 1 人物页、4 概念页、4 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.gemserk.com/2019-04-30_zombie-rockers.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏产品展示短文（一段介绍 match-three 玩法），无技术或工程内容"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2019-05-11_using-the-new-unity-s-input-system-during-ludum-dare-44-jam.md",
+      "status": "ingested",
+      "source_slug": "gemserk-new-input-system-ld44",
+      "title": "Using the new Unity's Input System during Ludum Dare 44 Jam"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2020-05-26_using-unity-prefabs-and-gameobjects-only-for-data.md",
+      "status": "ingested",
+      "source_slug": "gemserk-prefabs-as-data",
+      "title": "Using Unity Prefabs and GameObjects only for data"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2020-08-13_using-custom-editors-to-interact-with-unity-ecs-world.md",
+      "status": "ingested",
+      "source_slug": "gemserk-custom-editor-ecs",
+      "title": "Using Custom Editors to interact with Unity ECS World"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2022-04-24_refactoring-data-stored-in-unity-prefabs-scenes-and-other-as.md",
+      "status": "ingested",
+      "source_slug": "gemserk-refactoring-prefab-data",
+      "title": "Refactoring Data stored in Unity Prefabs, Scenes and other Assets"
+    }
+  ],
+  "concepts_created": [
+    "unity-input-system-multi-gamepad",
+    "unity-prefabs-as-data",
+    "unity-ecs-custom-editor-debug",
+    "unity-asset-refactoring"
+  ],
+  "people_created": ["gemserk"],
+  "source_summaries_created": [
+    "gemserk-new-input-system-ld44",
+    "gemserk-prefabs-as-data",
+    "gemserk-custom-editor-ecs",
+    "gemserk-refactoring-prefab-data"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-ecs-custom-editor-debug]] — Gemserk 的 shadow GameObject + CustomEditor 方案，给 ECS Entity 做可写调试 UI"
+    },
+    {
+      "file": "wiki/game-development/ecs.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/gemserk-custom-editor-ecs]]"
+    },
+    {
+      "file": "wiki/game-development/save-load-driven-data-design.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-prefabs-as-data]] — Gemserk 把 Prefab 当数据容器时同样的\"运行时/持久表示分离\"思路"
+    },
+    {
+      "file": "wiki/game-development/unity-complexity-patterns.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unity-input-system-multi-gamepad]] — legacy Input 的字符串键耦合与多平台差异是\"字符串散布\"复杂性的又一实例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unity-input-system-multi-gamepad]] | Unity 新旧 Input System 对比与多手柄配对踩坑 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unity-prefabs-as-data]] | 把 Prefab/GameObject 当纯数据容器用，拿到层级 / 组件 / Variant / Nested 四种结构能力 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unity-ecs-custom-editor-debug]] | Unity ECS 下用 shadow GameObject + CustomEditor 做可写调试 UI |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unity-asset-refactoring]] | Prefab/Scene/Asset 里 MonoBehaviour 字段结构批量重构的四步法 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[gemserk]] | Gemserk / Ariel Coppes，独立工作室，Unity 工程实战博客 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gemserk-new-input-system-ld44]] | Gemserk：Ludum Dare 44 上同时用 legacy 与新 Input System 的复盘 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gemserk-prefabs-as-data]] | Gemserk：Unity Prefab/GameObject 当纯数据容器用 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gemserk-custom-editor-ecs]] | Gemserk：给 Unity ECS 世界写 CustomEditor 调试工具 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gemserk-refactoring-prefab-data]] | Gemserk：Unity Prefab/Scene/Asset 的数据结构批量重构工具 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-53 Worker EZ (blog.gemserk.com ×5)\n\n处理 5 篇 Gemserk / Ariel 博客。Ingest 4 篇 Unity 工程实战（新旧 Input System 对比与多手柄配对、Prefab/GameObject 作为纯数据容器、ECS CustomEditor shadow GameObject 调试方案、Prefab/Scene/Asset 的数据结构批量重构）；skip 1 篇 zombie-rockers 游戏展示短文。新增 4 概念页、1 人物页（gemserk）、4 source 摘要。3 个已有页面补充 patch（ecs、save-load-driven-data-design、unity-complexity-patterns）。"
+}

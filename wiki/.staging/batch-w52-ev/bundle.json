@@ -1,0 +1,79 @@
+{
+  "batch_id": "batch-w52-ev",
+  "agent_note": "raytracey.blogspot.com (Sam Lapere) ×5：2 篇 ingest（Lighthouse 2 / Marbles RTX），3 篇 skip（怀旧空帖 + 纯视频预告）。新增人物页 sam-lapere、两个概念页 lighthouse-2-optix、nvidia-omniverse。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2019-09-15_lighthouse-2-the-new-optix-based-real-time-gpu-path-tracing.md",
+      "status": "ingested",
+      "source_slug": "raytracey-lighthouse-2",
+      "title": "LightHouse 2, the new OptiX based real-time GPU path tracing framework, released as open source"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2020-05-14_finally.md",
+      "status": "skipped_offtopic",
+      "reason": "怀旧短帖：用 Marbles RTX 和 2000 年 Arnold Pepeland demo 做对照感慨，无新的技术论点或可引用事实。"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2020-09-10_marbles-rtx-at-night-rendered-in-nvidia-omniverse.md",
+      "status": "ingested",
+      "source_slug": "raytracey-marbles-rtx-omniverse",
+      "title": "Marbles RTX at night rendered in Nvidia Omniverse"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2021-08-14_nvidia-omniverse-renders-everything-and-the-kitchen-sink.md",
+      "status": "skipped_offtopic",
+      "reason": "纯视频链接帖：只嵌入了 Siggraph/GTC 的 Omniverse making-of 视频，正文无实质论点。"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2022-09-20_nvidia-racer-rtx.md",
+      "status": "skipped_offtopic",
+      "reason": "产品预告感言：Racer RTX 小游戏在 RTX 40 / Omniverse 上展示，正文只有主观赞叹，无技术细节。"
+    }
+  ],
+  "concepts_created": ["lighthouse-2-optix", "nvidia-omniverse"],
+  "people_created": ["sam-lapere"],
+  "source_summaries_created": ["raytracey-lighthouse-2", "raytracey-marbles-rtx-omniverse"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/path-tracing-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lighthouse-2-optix]] — Jacco Bikker 的 OptiX 7 实时 path tracer 教学框架"
+    },
+    {
+      "file": "wiki/rendering/path-tracing-monte-carlo.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lighthouse-2-optix]] — 工业界 real-time path tracing 框架里的蓝噪声 / Disney BRDF 实现范例\n- [[nvidia-omniverse]] — many-light 实时 path tracing 产品化平台"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lighthouse-2-optix]] — OptiX 7 全路径追踪替代混合管线的对照"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[lighthouse-2-optix]] | Jacco Bikker 在 OptiX 7 / RTX 上开源的实时 GPU 路径追踪框架 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nvidia-omniverse]] | 以实时路径追踪为核心的 NVIDIA USD 协作平台与演示序列 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[sam-lapere]] | Sam Lapere，OTOY / NVIDIA，Ray Tracey 博客作者，GPU 路径追踪长期记录者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-lighthouse-2]] | Lapere：Lighthouse 2，Bikker 基于 OptiX 7 的开源实时路径追踪框架 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-marbles-rtx-omniverse]] | Lapere：Marbles RTX 夜景与 Omniverse 上的 many-light 实时路径追踪 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-52 Worker EV (raytracey.blogspot.com ×5)\n\n处理 5 篇 Sam Lapere（Ray Tracey）博文。Ingest 2 篇：2019 Lighthouse 2（Bikker / OptiX 7 / RTX / blue noise）、2020 Marbles RTX × Omniverse（many-light 实时路径追踪的产品化）。Skip 3 篇：finally.md 怀旧短帖、Omniverse kitchen sink 与 Racer RTX 两篇几乎纯视频的感言贴。新增人物页 sam-lapere、概念页 lighthouse-2-optix / nvidia-omniverse；对 path-tracing-basics / path-tracing-monte-carlo / hybrid-raytracing-pipeline 追加 `## 相关` 交叉引用。"
+}

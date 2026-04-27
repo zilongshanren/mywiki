@@ -1,0 +1,66 @@
+{
+  "batch_id": "batch-w72-hi",
+  "agent_note": "randomtower.blogspot.com 2010年1月5篇。2篇FlashPunk技术文章（框架代码评审 + Hello World实践）为实质性技术内容，建立新概念页、人物页和source摘要。VVVVVV仅为游戏短评、截图展示和MW2观感评论均跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-01-13_flashpunk.md",
+      "status": "ingested",
+      "source_slug": "randomtower-flashpunk-review",
+      "title": "Flashpunk — Framework Code Review"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-01-13_vvvvvv.md",
+      "status": "skipped_offtopic",
+      "reason": "brief gameplay impression of VVVVVV, no technical content"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-01-19_flashpunk-hello-world-shooter.md",
+      "status": "ingested",
+      "source_slug": "randomtower-flashpunk-hello-world",
+      "title": "FlashPunk Hello World (Shooter)"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-01-26_escape-from-colors-screenshots-again.md",
+      "status": "skipped_offtopic",
+      "reason": "screenshot dump of in-progress game, no technical discussion"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-01-28_call-of-duty-modern-warfare-2.md",
+      "status": "skipped_offtopic",
+      "reason": "brief opinion on MW2 narrative, no technical content"
+    }
+  ],
+  "concepts_created": ["flashpunk-framework"],
+  "people_created": ["marte-randomtower"],
+  "source_summaries_created": [
+    "randomtower-flashpunk-review",
+    "randomtower-flashpunk-hello-world"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/ecs.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/randomtower-flashpunk-review]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-engines/flashpunk-framework]] | FlashPunk：ActionScript 3 轻量 2D 游戏框架，Entity/World/Grid 架构分析 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[people/marte-randomtower]] | Marte，Random Tower 博客作者，Flash/AS3 独立游戏开发者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/randomtower-flashpunk-review]] | Marte：FlashPunk 框架架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/randomtower-flashpunk-hello-world]] | Marte：FlashPunk Hello World Shooter 实践教程 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-72 Worker HI (randomtower.blogspot.com ×5)\n\n处理 5 篇 randomtower.blogspot.com 2010 年文章。摄入 2 篇 FlashPunk 技术文章，新增 1 概念页（flashpunk-framework）、1 人物页（marte-randomtower）、2 source 摘要。跳过 3 篇非技术内容（VVVVVV 短评、游戏截图展示、MW2 观感）。"
+}

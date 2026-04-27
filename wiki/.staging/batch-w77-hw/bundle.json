@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w77-hw",
+  "agent_note": "Ben Supnik 2010 早期 X-Plane/OpenGL 文章 5 篇。4 篇技术（vertex attribute aliasing / C++ 模板 / SO 调试求助 / 三角带 vs 索引），1 篇编辑性评论（iPhone 沙盒+Moore's Law）跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-28_i-ve-got-the-blues.md",
+      "status": "ingested",
+      "source_slug": "supnik-ive-got-the-blues",
+      "title": "I've Got the Blues"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-28_templating-functions.md",
+      "status": "ingested",
+      "source_slug": "supnik-templating-functions",
+      "title": "Templating Functions"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-29_the-devil-is-in-the-details.md",
+      "status": "ingested",
+      "source_slug": "supnik-devil-in-details",
+      "title": "The Devil Is In the Details"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-31_to-strip-or-not-to-strip.md",
+      "status": "ingested",
+      "source_slug": "supnik-to-strip-or-not-to-strip",
+      "title": "To Strip or Not To Strip"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-01_moore-s-law-and-openness.md",
+      "status": "skipped_offtopic",
+      "reason": "platform/经济学随笔（iPhone 沙盒 + 生产力红利评论），非软件工程内容"
+    }
+  ],
+  "concepts_created": [
+    "opengl-builtin-attribute-aliasing",
+    "cpp-template-value-vs-type-parameter",
+    "triangle-strips-vs-indexed-triangles"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-ive-got-the-blues",
+    "supnik-templating-functions",
+    "supnik-devil-in-details",
+    "supnik-to-strip-or-not-to-strip"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-builtin-attribute-aliasing]]\n- [[cpp-template-value-vs-type-parameter]]\n- [[triangle-strips-vs-indexed-triangles]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-ive-got-the-blues]]\n- [[sources/supnik-templating-functions]]\n- [[sources/supnik-devil-in-details]]\n- [[sources/supnik-to-strip-or-not-to-strip]]"
+    },
+    {
+      "file": "wiki/rendering/opengl-draw-call-batching-sweet-spot.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-strips-vs-indexed-triangles]] — Supnik 用 CPU draw-call 成本证明 indexed triangles 比 strips 更优"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[triangle-strips-vs-indexed-triangles]] — 为减小 VRAM 中的 index buffer 而增加 CPU 调用是反向优化"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-builtin-attribute-aliasing]] | NVidia 对 GLSL 内置顶点属性与 generic attribute 的别名处理偏离 GL 2.1 规范 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[triangle-strips-vs-indexed-triangles]] | 在索引化时代三角带的 vertex 复用优势大幅缩水，draw call 成本才是瓶颈 |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[cpp-template-value-vs-type-parameter]] | C++ 模板按类型 vs 按值参数化：只有后者能真正内联函数指针 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-ive-got-the-blues]] | Supnik：NVidia/Linux 下 gl_Normal 与 attribute 2 的别名 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-templating-functions]] | Supnik：C++ 模板按值参数化函数指针才能内联 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-devil-in-details]] | Supnik：Stack Overflow 不是免费调试服务——OpenGL bug 的三类 taxonomy |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-to-strip-or-not-to-strip]] | Supnik：为什么 X-Plane 在桌面 GL 上全部用 indexed triangles，放弃三角带 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-77 Worker HW (hacksoflife.blogspot.com ×5)\n\n处理 Ben Supnik 2010 年 1-2 月 5 篇早期博文。新增 3 概念页（opengl-builtin-attribute-aliasing / cpp-template-value-vs-type-parameter / triangle-strips-vs-indexed-triangles）、4 source 摘要，跳过 1 篇 iPhone 沙盒+Moore's Law 编辑性评论。Patch 更新 ben-supnik 人物页与 draw-call / opengl-draw-call-batching-sweet-spot 两条相关链接。"
+}

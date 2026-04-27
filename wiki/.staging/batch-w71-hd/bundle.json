@@ -1,0 +1,75 @@
+{
+  "batch_id": "batch-w71-hd",
+  "agent_note": "c0de517e early 2010 batch. 4 of 5 files skipped: 'how-do-you-do-your-work' is pure meta/ergonomics, 'links' is a link dump, two 'i-ve-just-found-out' files are an off-topic Fravia obituary (also duplicates of each other). Only 'pitfalls-of-experience' is substantive — Pesce's essay contains the canonical Crysis-depth-SSAO reverse-engineering anecdote and a long comment reply articulating his widely-cited 'scene graphs are unnecessary in a 3D engine' stance. Ingested as 2 new concepts + 1 source summary + patches.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-01-11_how-do-you-do-your-work-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Pure personal workflow/ergonomics essay: monitor setup, Windows utilities, music, note-taking. No rendering or engineering content. Meta-reflection, not technical."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-01-14_links-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Thin link dump (Sony Pitfalls-of-OOP deck, Java 7 perf notes, PTex release, Eric Lippert blog, flash indie games). No original technical content beyond a one-line AOS-vs-SOA comment exchange. Not worth its own wiki page; relevant concepts already covered elsewhere."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-05_the-pitfalls-of-experience-2.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-pitfalls-of-experience",
+      "title": "The pitfalls of experience"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-22_i-ve-just-found-out-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Obituary for +Fravia+ (reverse-engineering/search-lores figure). Not graphics or engineering technical content. Also byte-identical with the non-suffixed version."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-22_i-ve-just-found-out.md",
+      "status": "skipped_duplicate",
+      "reason": "Identical content to the -2.md sibling (same Fravia obituary, also off-topic)."
+    }
+  ],
+  "concepts_created": [
+    "experience-as-noise-filter",
+    "scene-graph-unnecessary-in-engine"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-pitfalls-of-experience"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[experience-as-noise-filter]]\n- [[scene-graph-unnecessary-in-engine]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-pitfalls-of-experience]]"
+    },
+    {
+      "file": "wiki/game-engines/scene-graph-matrix-stack-visitor.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[scene-graph-unnecessary-in-engine]] —— 反面观点：[[angelo-pesce|Pesce]] 认为引擎根本不应该以通用场景图为核心"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[scene-graph-unnecessary-in-engine]] | Pesce：3D 引擎不该把场景图当核心，应按 renderable 类型特化 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[experience-as-noise-filter]] | Pesce：经验是噪声过滤器，既筛掉平庸也筛掉天才级的「不可能想法」 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-pitfalls-of-experience]] | Pesce：经验的陷阱——从 Crysis 深度缓冲 SSAO 反推谈起 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-71 Worker HD (c0de517e.blogspot.com early 2010 ×5)\n\nPesce 2010 年 1-2 月博客 5 篇：4 篇跳过（工作流/ergonomics meta、链接堆、Fravia 讣告及其重复件），仅 `pitfalls-of-experience` 实质性入库。新增 2 概念页（`experience-as-noise-filter`、`scene-graph-unnecessary-in-engine`）、1 source 摘要，并为 `angelo-pesce` 和 `scene-graph-matrix-stack-visitor` 打补丁（后者增补反面观点链接）。"
+}

@@ -1,0 +1,156 @@
+{
+  "batch_id": "batch-w62-gb",
+  "agent_note": "Thomas Poulet 5 篇全技术，全 ingest。3 篇帧分析（Ni No Kuni 2 / DCS / Anno 1800）是核心，每篇拉出 2 个重点概念；UE 物理工具 + Blueprint 验证各 1 概念。新增 1 人物页 + 9 概念页 + 5 源摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.thomaspoulet.fr/2018-11-07_ni-no-kuni-2-frame-analysis-thomas-poulet.md",
+      "status": "ingested",
+      "source_slug": "thomas-poulet-ninokuni-2-frame",
+      "title": "Ni No Kuni 2: Frame Analysis"
+    },
+    {
+      "path": "raw/articles/blog.thomaspoulet.fr/2021-09-19_digital-combat-simulator-frame-analysis-thomas-poulet.md",
+      "status": "ingested",
+      "source_slug": "thomas-poulet-dcs-frame",
+      "title": "Digital Combat Simulator: Frame Analysis"
+    },
+    {
+      "path": "raw/articles/blog.thomaspoulet.fr/2024-07-22_the-tools-we-use-to-develop-our-physics-game-in-unreal-engin.md",
+      "status": "ingested",
+      "source_slug": "thomas-poulet-physics-tools-ue5",
+      "title": "The tools we use to develop our physics game in UE5"
+    },
+    {
+      "path": "raw/articles/blog.thomaspoulet.fr/2025-08-16_anno-1800-frame-analysis-thomas-poulet.md",
+      "status": "ingested",
+      "source_slug": "thomas-poulet-anno-1800-frame",
+      "title": "Anno 1800: Frame Analysis"
+    },
+    {
+      "path": "raw/articles/blog.thomaspoulet.fr/2025-12-02_validating-blueprints-content-in-unreal-thomas-poulet.md",
+      "status": "ingested",
+      "source_slug": "thomas-poulet-blueprint-validation",
+      "title": "Validating Blueprints' Content in Unreal"
+    }
+  ],
+  "concepts_created": [
+    "light-prepass-pipeline",
+    "ninokuni-2-line-art",
+    "yuv-gbuffer-layered",
+    "cloudscape-sdf-volumetric",
+    "terrain-virtual-node-texture",
+    "texture-driven-gpu-particles",
+    "nine-slice-ui",
+    "ue-observability-stack",
+    "ue-asset-validator-blueprint"
+  ],
+  "people_created": ["thomas-poulet"],
+  "source_summaries_created": [
+    "thomas-poulet-ninokuni-2-frame",
+    "thomas-poulet-dcs-frame",
+    "thomas-poulet-physics-tools-ue5",
+    "thomas-poulet-anno-1800-frame",
+    "thomas-poulet-blueprint-validation"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/sources/simonschreibt-anno-1800-shadows.md",
+      "operation": "append_to_section",
+      "section": "## 链接到的概念",
+      "content": "- [[thomas-poulet-anno-1800-frame]] — Anno 1800 完整帧分析（同一引擎不同视角）"
+    },
+    {
+      "file": "wiki/rendering/unreal-frame-breakdown.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/thomas-poulet-anno-1800-frame]]、[[sources/thomas-poulet-ninokuni-2-frame]]、[[sources/thomas-poulet-dcs-frame]] — Thomas Poulet 的自研引擎帧分析系列"
+    },
+    {
+      "file": "wiki/rendering/cel-shader-outline.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关：[[ninokuni-2-line-art]] — Ni No Kuni 2 用 MRT + 艺术家数据驱动的线稿"
+    },
+    {
+      "file": "wiki/rendering/particle-custom-vertex-streams.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关：[[texture-driven-gpu-particles]] — Anno 1800 的 quad + 时间×粒子纹理方案"
+    },
+    {
+      "file": "wiki/rendering/tiled-light-prepass.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关：[[light-prepass-pipeline]] — Engel 原始 light pre-pass，Ni No Kuni 2 里的实例"
+    },
+    {
+      "file": "wiki/game-development/unreal-insights-counters-traces.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关：[[ue-observability-stack]] — Thomas Poulet 的五档调试工具栈；[[ue-asset-validator-blueprint]] — 蓝图内容验证"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[light-prepass-pipeline]] | Wolfgang Engel 的 light pre-pass 三步走管线（Ni No Kuni 2 实例）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ninokuni-2-line-art]] | MRT + 艺术家数据驱动的角色线稿管线 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[yuv-gbuffer-layered]] | DCS 的 5 层 R8G8 array + YUV albedo GBuffer |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cloudscape-sdf-volumetric]] | SDF 驱动的体积云 cloudscape（DCS 2.7）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[terrain-virtual-node-texture]] | Anno 1800 的 node-texture 地形（763 slice array + bake）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texture-driven-gpu-particles]] | Anno 1800 的 quad + 时间×粒子动画纹理粒子系统 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[nine-slice-ui]] | 九宫格 UI mesh：角不变形的任意矩形缩放 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ue-observability-stack]] | UE 物理游戏调试工具五档（On-screen → GDT → Visual Logger → ImGui → Ariadne）|"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ue-asset-validator-blueprint]] | UE 蓝图资产验证：GeneratedClass + Subobject Data Subsystem |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[thomas-poulet]] | 图形咨询 + 物理游戏独立开发，帧分析系列作者（blog.thomaspoulet.fr）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/thomas-poulet-ninokuni-2-frame]] | Poulet：Ni No Kuni 2 的 light pre-pass + MRT 线稿帧分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/thomas-poulet-dcs-frame]] | Poulet：DCS 2.7 的 YUV GBuffer + SDF cloudscape 帧分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/thomas-poulet-physics-tools-ue5]] | Poulet：UE5 物理游戏的五档可观测性工具栈 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/thomas-poulet-anno-1800-frame]] | Poulet：Anno 1800 完整帧分析（自研引擎、forward+MSAA、node-texture 地形、FFT ocean）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/thomas-poulet-blueprint-validation]] | Poulet：UE 蓝图资产验证的两处坑 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-62 Worker GB (blog.thomaspoulet.fr ×5)\n\n处理 Thomas Poulet 博客 5 篇全技术文章：3 篇自研引擎帧分析（Ni No Kuni 2 light pre-pass + 艺术家驱动线稿 / DCS 2.7 YUV GBuffer + SDF cloudscape / Anno 1800 node-texture 地形 + 纹理驱动粒子 + 9-slice UI），1 篇 UE5 物理游戏的五档可观测性工具栈（On-screen → GDT → Visual Logger → ImGui → Ariadne），1 篇蓝图资产验证（GeneratedClass + Subobject Data Subsystem）。新增 1 人物页（thomas-poulet）、9 概念页、5 源摘要；跨链 simonschreibt-anno-1800-shadows、unreal-frame-breakdown、cel-shader-outline、particle-custom-vertex-streams、tiled-light-prepass、unreal-insights-counters-traces。"
+}

@@ -1,0 +1,108 @@
+{
+  "batch_id": "batch-w72-hh",
+  "agent_note": "5 chipsandcheese.com 2021 articles. 3 ingested (Zen2 microarch, image compression part 2, GPU memory latency), 2 skipped (product launch/disclosure pieces without microarch depth).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-22_analyzing-zen-2s-cinebench-r15-lead.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen2-cinebench-analysis",
+      "title": "Analyzing Zen 2's Cinebench R15 Lead"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-28_modern-data-compression-in-2021-part-2-the-battle-to-dethron.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-image-compression-part2",
+      "title": "Modern Data Compression in 2021 Part 2: JPEG-XL, AVIF, and WebP"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-03-10_lowering-the-bar-amds-6700-xt-launch-and-the-importance-of-d.md",
+      "status": "skipped_offtopic",
+      "reason": "产品发布披露批评文章，无微架构分析内容，属新闻评论类"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-03-15_rocket-lake-when-reviews-are-really-previews.md",
+      "status": "skipped_offtopic",
+      "reason": "测试方法论批评文章，批评其他评测者的基准测试失误，无微架构分析内容"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-04-16_measuring-gpu-memory-latency.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gpu-memory-latency",
+      "title": "Measuring GPU Memory Latency"
+    }
+  ],
+  "concepts_created": [
+    "zen2-microarchitecture",
+    "branch-predictor-design",
+    "cpu-scheduler-design",
+    "jpeg-xl-format",
+    "gpu-memory-hierarchy-latency"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-zen2-cinebench-analysis",
+    "chipsandcheese-image-compression-part2",
+    "chipsandcheese-gpu-memory-latency"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[zen2-microarchitecture]] — Zen 2 分支预测器与调度器的性能优势分析\n- [[gpu-memory-hierarchy-latency]] — GPU 多级缓存延迟实测"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen2-cinebench-analysis]]\n- [[sources/chipsandcheese-gpu-memory-latency]]"
+    },
+    {
+      "file": "wiki/computer-systems/benchmark-methodology-end-to-end.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen2-cinebench-analysis]] — Zen 2 vs Skylake 的性能计数器实测方法"
+    },
+    {
+      "file": "wiki/computer-systems/oodle-compression-suite.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-image-compression-part2]] — 现代图像编解码器对比（JPEG-XL/AVIF/WebP）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[zen2-microarchitecture]] | AMD Zen 2 分支预测器、非调度 FP 队列与 L2 缓存的设计分析 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[branch-predictor-design]] | CPU 分支预测器设计：预测惩罚、精度与前端带宽的权衡 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cpu-scheduler-design]] | CPU 后端调度器：统一 vs 分布式调度队列、非调度溢出缓冲 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[gpu-memory-hierarchy-latency]] | GPU 多级缓存延迟实测：RDNA 2 vs Ampere vs 历代 Nvidia |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[jpeg-xl-format]] | JPEG-XL 编解码格式：可变 DCT、渐进解码与 AVIF/WebP 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen2-cinebench-analysis]] | Chester Lam：Zen 2 在 CBR15 的微架构优势分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-image-compression-part2]] | BlueSwordM：JPEG-XL/AVIF/WebP 图像压缩对比（2021 Part 2）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gpu-memory-latency]] | Chester Lam：GPU 多级缓存延迟实测（OpenCL pointer chasing）|"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-72 Worker HH (chipsandcheese.com ×5，2021)\n\n处理 5 篇 chipsandcheese.com 2021 年文章。新增 5 概念页（zen2-microarchitecture、branch-predictor-design、cpu-scheduler-design、jpeg-xl-format、gpu-memory-hierarchy-latency）、3 source 摘要页。跳过 2 篇（6700 XT 发布披露批评 + Rocket Lake 评测方法论批评，无微架构深度内容）。更新 chester-lam 人物页，追加引用 2 篇。"
+}

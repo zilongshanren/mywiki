@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w88-jc",
+  "agent_note": "bitsquid 2013 batch: 4 ingested (gimbal-lock, source-censoring part 2, finding-nearby-stuff, scripted-network-debugging), 1 skipped (gdc-2013-slides body is pure SEO/comment spam, no technical content). 4 new concept pages across rendering/game-engines/computer-systems, 4 new source summaries, niklas-frykholm page patched (sources count + new concept/source links).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-03-15_what-is-gimbal-lock-and-why-do-we-still-have-to-worry-about.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-gimbal-lock",
+      "title": "What is gimbal lock and why do we still have to worry about it?"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-04-03_gdc-2013-slides.md",
+      "status": "skipped_offtopic",
+      "reason": "Post body contains no actual content — original GDC slide links appear to have been lost; what remains is multi-year accumulated link-farm comment spam (Indonesian gambling/slot sites etc.). No reusable technical substance."
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-04-30_code-share-source-censoring-part-2.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-source-censoring-part-2",
+      "title": "Code Share: Source Censoring, Part 2"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-08-16_finding-nearby-stuff.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-finding-nearby-stuff",
+      "title": "Finding nearby stuff"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-09-25_scripted-network-debugging.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-scripted-network-debugging",
+      "title": "Scripted Network Debugging"
+    }
+  ],
+  "concepts_created": [
+    "gimbal-lock-euler-interpolation",
+    "repo-clone-with-filter",
+    "spatial-hash-grid-linked-list",
+    "scripted-network-debugging"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-gimbal-lock",
+    "bitsquid-source-censoring-part-2",
+    "bitsquid-finding-nearby-stuff",
+    "bitsquid-scripted-network-debugging"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 14"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gimbal-lock-euler-interpolation]] — 万向锁本质是欧拉角插值奇异，曲线编辑器让它赶不走\n- [[repo-clone-with-filter]] — hg-clone.rb 给 NDA 客户提供带历史的过滤后源码仓库\n- [[spatial-hash-grid-linked-list]] — grid coord → HashMap → 扁平数组内嵌链表的标配空间查询\n- [[scripted-network-debugging]] — Ruby 脚本 + 引擎内置 TCP Lua 控制台把联机 bug 跑 500 次复现"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-gimbal-lock]]\n- [[sources/bitsquid-source-censoring-part-2]]\n- [[sources/bitsquid-finding-nearby-stuff]]\n- [[sources/bitsquid-scripted-network-debugging]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gimbal-lock-euler-interpolation]] | 万向锁的真正问题是欧拉角插值奇异，曲线编辑器让它永久留在引擎里 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[repo-clone-with-filter]] | hg-clone.rb：按提交遍历 + 过滤程序，给 NDA 客户提供带历史的过滤后源码仓库 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[spatial-hash-grid-linked-list]] | 空间查询默认方案：grid coord → HashMap → 扁平数组内嵌链表 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[scripted-network-debugging]] | 用 Ruby 脚本 + 引擎内置 TCP Lua 控制台把多机联机 bug 跑 500 次复现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-gimbal-lock]] | Frykholm 2013：gimbal lock 的本质与动画师视角下的持久规避 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-source-censoring-part-2]] | Frykholm 2013：hg-clone.rb 给 NDA 客户镜像过滤后的 Mercurial 仓库 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-finding-nearby-stuff]] | Frykholm 2013：空间邻近查询的 grid+HashMap+扁平链表默认解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-scripted-network-debugging]] | Frykholm 2013：Ruby + TCP Lua 控制台把联机 bug 复现跑 500 次 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-88 Worker JC (bitsquid.blogspot.com 2013 ×5)\n\n处理 5 篇 bitsquid 2013 博文：4 篇 ingested（gimbal lock / source censoring part 2 / finding nearby stuff / scripted network debugging），1 篇 skipped（gdc-2013-slides 正文已被 SEO 评论垃圾完全吞噬，无任何技术内容）。新增 4 概念页（gimbal-lock-euler-interpolation, repo-clone-with-filter, spatial-hash-grid-linked-list, scripted-network-debugging）、4 source 摘要，niklas-frykholm 人物页追加概念与 source 链接并把 sources 计数 10 → 14。"
+}

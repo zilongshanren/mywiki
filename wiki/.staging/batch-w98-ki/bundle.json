@@ -1,0 +1,106 @@
+{
+  "batch_id": "batch-w98-ki",
+  "agent_note": "5 Sam Lapere / raytracey.blogspot.com posts from 2010-04 ~ 05. 4 ingested, 1 skipped (Natal/Kinect rant, off-topic console war). Added new concept pages for Brigade engine and Octane Render, and a new person page for Jacco Bikker (the pivotal name in real-time path tracing circa 2010). Reinforces the 2010 GPU unbiased-renderer story already on the wiki.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-10_design-garage-stunning-nvidia-tech-demo-using-raytracing.md",
+      "status": "ingested",
+      "source_slug": "raytracey-design-garage-optix",
+      "title": "Design Garage: stunning Nvidia tech demo using raytracing"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-15_real-time-pathtracing-demo-shows-future-of-game-graphics.md",
+      "status": "ingested",
+      "source_slug": "raytracey-bikker-pathtracing-demo",
+      "title": "Real-time pathtracing demo shows future of game graphics"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-23_comparing-path-tracing-image-quality.md",
+      "status": "ingested",
+      "source_slug": "raytracey-path-tracing-quality-comparison",
+      "title": "Comparing path tracing image quality"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-29_natal-some-sick-joke.md",
+      "status": "skipped_offtopic",
+      "reason": "Kinect/Natal console-war rant, no graphics/engineering substance"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-05-01_1-more-screen-of-design-garage.md",
+      "status": "ingested",
+      "source_slug": "raytracey-design-garage-screenshot",
+      "title": "1 more screen of Design Garage"
+    }
+  ],
+  "concepts_created": ["brigade-engine", "octane-render"],
+  "people_created": ["jacco-bikker"],
+  "source_summaries_created": [
+    "raytracey-design-garage-optix",
+    "raytracey-bikker-pathtracing-demo",
+    "raytracey-path-tracing-quality-comparison",
+    "raytracey-design-garage-screenshot"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/sam-lapere.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[brigade-engine]]\n- [[octane-render]]\n- [[jacco-bikker]]"
+    },
+    {
+      "file": "wiki/people/sam-lapere.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/raytracey-design-garage-optix]]\n- [[sources/raytracey-bikker-pathtracing-demo]]\n- [[sources/raytracey-path-tracing-quality-comparison]]\n- [[sources/raytracey-design-garage-screenshot]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-unbiased-path-tracing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[brigade-engine]]\n- [[octane-render]]\n- [[jacco-bikker]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-unbiased-path-tracing.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/raytracey-bikker-pathtracing-demo]]\n- [[sources/raytracey-path-tracing-quality-comparison]]\n- [[sources/raytracey-design-garage-optix]]"
+    },
+    {
+      "file": "wiki/rendering/lighthouse-2-optix.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[brigade-engine]] — Lighthouse 2 的直接前身"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[brigade-engine]] | Jacco Bikker 的实时路径追踪引擎系列，2010 动态 GI 演示 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[octane-render]] | OTOY 的 GPU 无偏路径追踪器，2010 年面世 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jacco-bikker]] | Jacco Bikker，Arauna / Brigade / Lighthouse 2 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-design-garage-optix]] | Lapere 对 NVIDIA Design Garage OptiX demo 的感想与算法愿望清单 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-bikker-pathtracing-demo]] | Lapere 评 Jacco Bikker 的 Brigade 早期动态 GI 演示 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-path-tracing-quality-comparison]] | Octane 路径追踪 1–96 spp 逐级图像质量对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-design-garage-screenshot]] | Design Garage 室内渲染截图与 OTOY Ruby 对比感想 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-98 Worker KI (raytracey.blogspot.com ×5, 2010-04~05)\n\n处理 5 篇 Sam Lapere / Ray Tracey's blog 2010 年春天的帖子。4 篇 ingest、1 篇 skip（Natal/Kinect rant，非技术）。新增 2 概念页（brigade-engine、octane-render）、1 人物页（jacco-bikker）、4 source 摘要。补强 2010 年 GPU 无偏路径追踪元年的叙事线——Design Garage (OptiX) / Brigade (Bikker) / Octane 收敛曲线三条脉络。"
+}

@@ -1,0 +1,99 @@
+{
+  "batch_id": "batch-w87-jb",
+  "agent_note": "joostdevblog 2010-12 to 2011-01: 4 ingested (all-the-settings kept for F5 hot-reload methodology, designing-levels-without-tools kept, AI part1+part2 merged into one source), 1 skipped (endless art styles — opinion/taste piece, no methodology). 3 new concept pages, 3 new source summaries, updates to joost-van-dongen person page.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-12-11_all-the-settings.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-all-the-settings",
+      "title": "All the settings"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-12-18_designing-levels-without-tools.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-designing-levels-without-tools",
+      "title": "Designing levels without tools"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-12-23_the-endless-possibilities-of-art-styles.md",
+      "status": "skipped_offtopic",
+      "reason": "Ignite-style talk on art-style taxonomy (realism/cartoony/abstract). Pure design commentary with no engineering methodology; content is mostly images + comments debating taste. No reusable technical takeaway."
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2010-12-31_ai-in-swords-soldiers-part-1.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-ai-swords-soldiers",
+      "title": "AI in Swords & Soldiers (part 1+2 merged)"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-01-08_ai-in-swords-soldiers-part-2.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-ai-swords-soldiers",
+      "title": "AI in Swords & Soldiers (part 1+2 merged)"
+    }
+  ],
+  "concepts_created": [
+    "game-settings-hot-reload",
+    "level-design-without-editor",
+    "behaviour-tree-game-ai"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-all-the-settings",
+    "joostdevblog-designing-levels-without-tools",
+    "joostdevblog-ai-swords-soldiers"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "tags: [人物, 作者, indie, ronimo, galaxy-grove]",
+      "content": "tags: [人物, 作者, indie, ronimo, galaxy-grove]"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "sources: 8",
+      "content": "sources: 11"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-settings-hot-reload]] —— F5 + struct 指针的极简 gameplay 数值热重载\n- [[level-design-without-editor]] —— Swords & Soldiers 没有编辑器时的三层关卡做法\n- [[behaviour-tree-game-ai]] —— Ronimo 的行为树 AI 迭代（C++ → Lua → 图形化 BT → 去优先级 if-else 树）"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-all-the-settings]]\n- [[sources/joostdevblog-designing-levels-without-tools]]\n- [[sources/joostdevblog-ai-swords-soldiers]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-settings-hot-reload]] | F5 热重载 gameplay 数值（struct + pointer，禁止拷贝） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[level-design-without-editor]] | 没有关卡编辑器时的三层做法（Notepad + 模糊地形 + 程序化背景） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[behaviour-tree-game-ai]] | 行为树游戏 AI，Ronimo 三代迭代到去优先级的 if-else 树 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-all-the-settings]] | Joost：600 个 gameplay 数值的 F5 热重载工具 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-designing-levels-without-tools]] | Joost：Swords & Soldiers 用 Notepad 做关卡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-ai-swords-soldiers]] | Joost：Swords & Soldiers AI（行为树两篇合并） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-87 Worker JB (joostdevblog 2010-12 to 2011-01 ×5)\n\n处理 5 篇 joostdevblog（2010-12 至 2011-01）。4 ingested（AI part1+part2 合并成单 source），1 skipped（endless art styles —— 纯风格taste论，无方法论）。新增 3 概念页：game-settings-hot-reload（F5 struct 指针热重载）、level-design-without-editor（Notepad 关卡 + 程序化背景）、behaviour-tree-game-ai（Ronimo 三代 AI 演进，含 Halo 2 启发、优先级树 vs if-else 树的迭代）；新增 3 source 摘要；更新 joost-van-dongen 人物页。"
+}

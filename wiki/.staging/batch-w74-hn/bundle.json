@@ -1,0 +1,58 @@
+{
+  "batch_id": "batch-w74-hn",
+  "agent_note": "Gemserk 2010 早期博客 5 篇：仅 1 篇技术内容（Java Applet/Webstart 下的 JAR 签名与 Maven 构建流程）入库；其余 4 篇为博客存档页 / 欢迎帖 / 两篇三行游戏发布通告，全部跳过。Gemserk 人物页已存在，仅追加新 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.gemserk.com/2010-01-28_gemserk.md",
+      "status": "skipped_offtopic",
+      "reason": "2010 年博客归档索引页（Archive of posts），仅含链接列表，无技术正文"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2010-01-28_welcome.md",
+      "status": "skipped_offtopic",
+      "reason": "工作室成立公告 / 欢迎帖，介绍两位创始人与 Agile 开发理念，无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2010-02-07_signing-jars-for-applet-and-webstart.md",
+      "status": "ingested",
+      "source_slug": "gemserk-signing-jars-applet-webstart",
+      "title": "Signing JARs for Applet and Webstart"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2010-02-26_tower-of-defense.md",
+      "status": "skipped_offtopic",
+      "reason": "三行的 Tower Defense 原型发布通告，仅给了两个可玩链接，无架构 / 实现细节"
+    },
+    {
+      "path": "raw/articles/blog.gemserk.com/2010-04-16_jylonwars.md",
+      "status": "skipped_offtopic",
+      "reason": "两行的 Jylonwars（geometry wars 风格 shmup）立项通告，只说目标是活得久，无技术讨论"
+    }
+  ],
+  "concepts_created": [
+    "java-webstart-jar-signing"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "gemserk-signing-jars-applet-webstart"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/gemserk.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/gemserk-signing-jars-applet-webstart]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[java-webstart-jar-signing]] | Java Applet/Web Start 分发时的 JAR 签名与 Maven 自动化流程（Gemserk 2010） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/gemserk-signing-jars-applet-webstart]] | Gemserk：用 maven-webstart-plugin 为 Applet / Webstart 自动签 JAR（2010） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-74 Worker HN (blog.gemserk.com ×5)\n\n处理 5 篇 Gemserk 2010 年早期博客。ingest 1（Applet/Webstart JAR 签名与 Maven profile 自动化）、skip 4（博客存档页 / 工作室欢迎帖 / Tower Defense 三行通告 / Jylonwars 两行通告）。新增 1 概念页（java-webstart-jar-signing）、1 source 摘要；gemserk 人物页已存在，仅追加 source 链接。"
+}

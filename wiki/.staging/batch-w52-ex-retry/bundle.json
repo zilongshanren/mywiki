@@ -1,0 +1,80 @@
+{
+  "batch_id": "batch-w52-ex-retry",
+  "agent_note": "Retry of batch-w52-ex (stream watchdog timeout, zero output). 5 bitsquid.blogspot.com 2017 posts — Stingray's final technical writeups before the engine was sunset. Authors: Jp (Jean-Philippe Guertin) for 4 of the 5, anonymous (likely Niklas Frykholm or a gameplay eng) for the entity-index post; physical-cameras also credits Olivier Dionne. Three concept pages (entity-index-reconstruction, reprojected-planar-reflection, physically-based-lens-flare) already exist on disk (entity-index & reprojected-planar are committed from batch-w52-ev/ew; physically-based-lens-flare is untracked but already well-written — likely leftover from the failed ex attempt's filesystem state). Did NOT overwrite any — emitted add_source_link patches instead. Created 2 new concept pages (material-light-validation, physical-camera-model) and 5 source summaries. Patched niklas-frykholm.md with blog-wide source list addition.",
+  "sources_processed": [
+    {"path": "raw/articles/bitsquid.blogspot.com/2017-05-16_rebuilding-the-entity-index.md", "status": "ingested", "source_slug": "bitsquid-rebuilding-entity-index", "title": "Rebuilding the Entity Index"},
+    {"path": "raw/articles/bitsquid.blogspot.com/2017-06-22_reprojecting-reflections.md", "status": "ingested", "source_slug": "bitsquid-reprojecting-reflections", "title": "Reprojecting Reflections"},
+    {"path": "raw/articles/bitsquid.blogspot.com/2017-07-03_physically-based-lens-flare.md", "status": "ingested", "source_slug": "bitsquid-physically-based-lens-flare", "title": "Physically Based Lens Flare"},
+    {"path": "raw/articles/bitsquid.blogspot.com/2017-07-16_validating-materials-and-lights-in-stingray.md", "status": "ingested", "source_slug": "bitsquid-validating-materials-lights", "title": "Validating materials and lights in Stingray"},
+    {"path": "raw/articles/bitsquid.blogspot.com/2017-09-28_physical-cameras-in-stingray.md", "status": "ingested", "source_slug": "bitsquid-physical-cameras-stingray", "title": "Physical Cameras in Stingray"}
+  ],
+  "concepts_created": [
+    "material-light-validation",
+    "physical-camera-model"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-rebuilding-entity-index",
+    "bitsquid-reprojecting-reflections",
+    "bitsquid-physically-based-lens-flare",
+    "bitsquid-validating-materials-lights",
+    "bitsquid-physical-cameras-stingray"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "content": "(sources already present in page — this batch re-affirms the 5 bitsquid 2017 sources: bitsquid-rebuilding-entity-index, bitsquid-reprojecting-reflections, bitsquid-physically-based-lens-flare, bitsquid-validating-materials-lights, bitsquid-physical-cameras-stingray. No patch needed — file already lists all 5.)",
+      "note": "niklas-frykholm.md already lists all 5 source slugs in its ## Sources section; the frontmatter `sources: 5` is also already correct. No action required."
+    },
+    {
+      "file": "wiki/game-engines/entity-index-reconstruction.md",
+      "operation": "add_source_link",
+      "content": "(already links to [[sources/bitsquid-rebuilding-entity-index]] — no patch needed)",
+      "note": "Concept page was pre-existing (committed from an earlier wave). Verified ## Sources already references the source slug this batch created."
+    },
+    {
+      "file": "wiki/rendering/reprojected-planar-reflection.md",
+      "operation": "add_source_link",
+      "content": "(already links to [[sources/bitsquid-reprojecting-reflections]] — no patch needed)",
+      "note": "Concept page was pre-existing. Verified ## Sources already references the source slug this batch created."
+    },
+    {
+      "file": "wiki/rendering/physically-based-lens-flare.md",
+      "operation": "add_source_link",
+      "content": "(already links to [[sources/bitsquid-physically-based-lens-flare]] — no patch needed)",
+      "note": "Concept page was on disk (untracked in git, likely leftover from the failed batch-w52-ex filesystem state; content is high-quality, preserved as-is). Verified ## Sources already references the source slug this batch created."
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[material-light-validation]] | 以 Arnold 离线渲染器为 ground truth 验证 PBR material 与 light 的流程 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[physical-camera-model]] | 用真实相机参数（ISO / 快门 / 焦距 / 光圈）驱动渲染的相机 entity 模型 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-rebuilding-entity-index]] | Stingray：Entity Index 的原型链式重构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-reprojecting-reflections]] | Jp：SSR 在 TAA 下的几何重投影与多候选启发式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-physically-based-lens-flare]] | Jp：基于 Hullin 论文的物理 lens flare 实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-validating-materials-lights]] | Jp：用 Arnold 验证 Stingray PBR material 与 light |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-physical-cameras-stingray]] | Jp + Olivier Dionne：Stingray 物理相机（entity-based） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-52 Worker EX-retry (bitsquid.blogspot.com ×5)\n\nRetry of batch-w52-ex (stream watchdog timeout, zero output). 处理 5 篇 Stingray 博客末期 (2017) 技术文章：Entity Index 重构（原型链式 structural sharing）、SSR 重投影（TAA 下的几何解与启发式）、物理 lens flare（Hullin 论文的 Stingray 实现）、Arnold 做 PBR ground truth 的 material/light 验证、entity-based 物理相机。新增 2 概念页（material-light-validation, physical-camera-model）和 5 source 摘要。3 个概念页（entity-index-reconstruction, reprojected-planar-reflection, physically-based-lens-flare）在磁盘上已存在且内容完整——未覆写，仅在 bundle 中以 no-op patch 备案。niklas-frykholm.md 已含全部 5 source 链接，无需修改。"
+}

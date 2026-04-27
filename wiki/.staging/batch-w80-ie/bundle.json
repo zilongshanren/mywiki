@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w80-ie",
+  "agent_note": "5 bitsquid posts 2011 Q2/Q3 (Niklas Frykholm). 1 Flow follow-up patches existing flow-graph page. 4 new concepts: game-monitoring-event-buffer, string-handling-game-runtime, lua-light-userdata-bindings, lua-memory-profiling.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-05-06_flow-data-oriented-implementation-of-a-visual-scripting-lang.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-flow-followup-qa",
+      "title": "Flow -- Data-Oriented Implementation of a Visual Scripting Language (Q&A follow-up)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-05-26_monitoring-your-game.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-monitoring-your-game",
+      "title": "Monitoring your game"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-06-10_strings-redux.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-strings-redux",
+      "title": "Strings Redux"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-06-26_lightweight-lua-bindings.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-lightweight-lua-bindings",
+      "title": "Lightweight Lua Bindings"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-08-09_fixing-memory-issues-in-lua.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-fixing-memory-issues-lua",
+      "title": "Fixing memory issues in Lua"
+    }
+  ],
+  "concepts_created": [
+    "game-monitoring-event-buffer",
+    "string-handling-game-runtime",
+    "lua-light-userdata-bindings",
+    "lua-memory-profiling"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-flow-followup-qa",
+    "bitsquid-monitoring-your-game",
+    "bitsquid-strings-redux",
+    "bitsquid-lightweight-lua-bindings",
+    "bitsquid-fixing-memory-issues-lua"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/flow-graph-data-oriented-runtime.md",
+      "operation": "append_to_section",
+      "section": "## 关键做法",
+      "content": "- **分层分组与 query 节点（2011-05 Q&A 补充）**：Flow 支持 hierarchical grouping（把一组节点折叠进子图，像可视化脚本版的 LOD）与 copy-paste 复用（改动不会在副本间传播）。紫色 query 节点是**按需取值**的——比如 `Particle Effect.Create` 被触发时，连着它的 Position Query 才现场抓一次 unit 位置，避免每帧采样。编辑器可以开多个 tab 把功能按门/钥匙/电梯等关卡主题切开。"
+    },
+    {
+      "file": "wiki/game-engines/flow-graph-data-oriented-runtime.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-flow-followup-qa]]"
+    },
+    {
+      "file": "wiki/programming-languages/lua-cpp-binding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-light-userdata-bindings]] —— Bitsquid 版的极端性能取向：改用 light userdata、手写类型 marker、放弃 `:` 方法语法\n- [[lua-memory-profiling]] —— Lua 侧遍历 `_G` 盘点对象 + C 侧 `lua_Alloc` 捕获分配 stack trace"
+    },
+    {
+      "file": "wiki/programming-languages/lua-incremental-gc.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-memory-profiling]] —— 真机上怎么定位 Lua 内存泄漏与 GC 热点；feedback-loop 调节 GC 预算\n- [[lua-light-userdata-bindings]] —— 不产生 GC 垃圾的 C 绑定是控制 GC 成本的前提"
+    },
+    {
+      "file": "wiki/programming-languages/static-hash-value-debug-assert.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[string-handling-game-runtime]] —— 为什么运行时用 hash ID 取代字符串名、以及反查表/嵌入 debug_name 的补救做法"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[game-monitoring-event-buffer]] | 游戏监控：TLS event buffer + 在线/离线 visualizer |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[string-handling-game-runtime]] | Bitsquid 经验：UTF-8 + 不要 string class + 运行时 hash ID |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[lua-light-userdata-bindings]] | Light userdata 绑定：零分配、零 GC、手写类型 marker |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[lua-memory-profiling]] | Lua 内存调优：`_G` 遍历盘点 + `lua_Alloc` stack trace + feedback GC |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-flow-followup-qa]] | Frykholm：Flow 文章后续 Q&A（hierarchical grouping / query 节点） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-monitoring-your-game]] | Frykholm：游戏监控系统 TLS event buffer 设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-strings-redux]] | Frykholm：UTF-8 everywhere、不要 string class、runtime 用 hash |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-lightweight-lua-bindings]] | Frykholm：light userdata 绑定、手写类型 marker、句柄生命周期 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-fixing-memory-issues-lua]] | Frykholm：Lua 内存泄漏定位、GC 预算反馈控制 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-80 Worker IE (bitsquid.blogspot.com 2011-Q2/Q3 ×5)\n\n处理 Niklas Frykholm 2011 年 5-8 月的 5 篇 Bitsquid 博文。新增 4 概念页（game-monitoring-event-buffer、string-handling-game-runtime、lua-light-userdata-bindings、lua-memory-profiling）+ 5 source 摘要；patch flow-graph-data-oriented-runtime（hierarchical grouping / query 节点 follow-up）、lua-cpp-binding、lua-incremental-gc、static-hash-value-debug-assert 的交叉引用。"
+}

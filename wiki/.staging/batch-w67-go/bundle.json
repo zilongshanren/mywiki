@@ -1,0 +1,24 @@
+{
+  "batch_id": "batch-w67-go",
+  "agent_note": "Bruno Opsenica (bruop) 3 篇技术文章：IBL 多次散射 + 两篇 frustum culling 演进（OBB 顶点测试 → SAT）。",
+  "sources_processed": [
+    {"path": "raw/articles/bruop.github.io/2019-08-19_image-based-lighting-with-multiple-scattering.md", "status": "ingested", "source_slug": "bruop-ibl-multiple-scattering", "title": "Image Based Lighting with Multiple Scattering"},
+    {"path": "raw/articles/bruop.github.io/2020-12-24_frustum-culling.md", "status": "ingested", "source_slug": "bruop-frustum-culling", "title": "Frustum Culling"},
+    {"path": "raw/articles/bruop.github.io/2021-02-17_more-robust-frustum-culling.md", "status": "ingested", "source_slug": "bruop-more-robust-frustum-culling", "title": "More (Robust) Frustum Culling"}
+  ],
+  "concepts_created": ["ibl-multiple-scattering", "split-sum-approximation", "obb-frustum-sat", "ispc-simd-culling"],
+  "people_created": ["bruno-opsenica"],
+  "source_summaries_created": ["bruop-ibl-multiple-scattering", "bruop-frustum-culling", "bruop-more-robust-frustum-culling"],
+  "existing_page_patches": [],
+  "index_additions": [
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[ibl-multiple-scattering]] | Fdez-Agüera 2019 的 IBL 多次散射能量补偿 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[split-sum-approximation]] | Karis 2014 的 IBL 镜面积分分解 |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[obb-frustum-sat]] | OBB × 视锥的分离轴定理剔除，消除 false negative |"},
+    {"category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[ispc-simd-culling]] | 用 ISPC / AVX2 做 SoA 剔除，10k/0.3ms |"},
+    {"category_header": "## 人物（wiki/people/）", "row": "| [[bruno-opsenica]] | Bruno Opsenica（bruop）：BGFX/DX12 渲染库作者，IBL 与 culling SIMD 实战 |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bruop-ibl-multiple-scattering]] | Bruop：BGFX 中实现 Fdez-Agüera 多次散射 IBL |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bruop-frustum-culling]] | Bruop：AABB 顶点 clip-space 测试 + AVX2 手写 SIMD |"},
+    {"category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bruop-more-robust-frustum-culling]] | Bruop：SAT 分离轴 + ISPC 实现，修掉 false negative |"}
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-67 Worker GO (bruop.github.io ×3)\n\nBruno Opsenica 3 篇：IBL 多次散射（BGFX + Fdez-Agüera 2019）+ frustum culling（顶点 clip-space 测试，SIMD 加速）+ more robust frustum（SAT 分离轴，ISPC 实现）。新增 1 人物、3 source、4 概念。"
+}

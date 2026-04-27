@@ -1,0 +1,58 @@
+{
+  "batch_id": "batch-w80-ig",
+  "agent_note": "nklein.com / Patrick Stein — 2010-01/02 iPhone dev era. 1 technical keeper (CL-OpenGL 文本反走样 cutoff 自适应)，4 条 iPhone app 进度/发布公告跳过（只有产品里程碑与零星 Objective-C 抱怨）。新增人物页 patrick-stein、源摘要 nklein-cl-opengl-text-cutoff、概念页 screen-space-curve-tessellation-cutoff。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/nklein.com/2010-01-19_better-text-rendering-with-cl-opengl-and-zpb-ttf-nklein-soft.md",
+      "status": "ingested",
+      "source_slug": "nklein-cl-opengl-text-cutoff",
+      "title": "Better Text Rendering with CL-OpenGL and ZPB-TTF"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-01-29_spelling-iphone-app-sent-to-beta-testers-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "项目里程碑公告（beta 测试送测）+ 泛泛的 Objective-C 抱怨，无可复用技术"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-02-04_speedy-iphone-app-programming-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "个人排球数据统计 app 开发日志，仅零星 UIKit/CoreData 提及与一个 UINavigationBar bug 片段，无通用价值"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-02-05_iphone-app-submitted-to-the-app-store-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "App Store 提交里程碑公告，正文只是历史文章列表摘录"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-02-10_spelling-toy-iphone-app-released-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "产品发布公告 + 功能列表 + 评论区 promo code 索取，无技术内容"
+    }
+  ],
+  "concepts_created": ["screen-space-curve-tessellation-cutoff"],
+  "people_created": ["patrick-stein"],
+  "source_summaries_created": ["nklein-cl-opengl-text-cutoff"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/slug-gpu-glyph-rendering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "\n## 相关\n\n- [[screen-space-curve-tessellation-cutoff]] — 在 CPU-side tessellation 路线里用屏幕空间阈值控制 Bézier 细分密度，是 GPU 直接光栅化之前的代表性做法"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[screen-space-curve-tessellation-cutoff]] | 把 Bézier 曲线细分阈值反投影到屏幕像素半径，避免像素内堆叠几十条冗余顶点 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[patrick-stein]] | Patrick Stein（nklein software），Common Lisp / CL-OpenGL 爱好者，TC Lispers 活跃贡献者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/nklein-cl-opengl-text-cutoff]] | Stein：CL-OpenGL + ZPB-TTF 文本反走样的屏幕空间 cutoff 计算 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-80 Worker IG (nklein.com ×5)\n\n处理 5 篇 nklein.com（Patrick Stein，2010-01/02 iPhone dev 时期）。保留 1 篇技术文（CL-OpenGL + ZPB-TTF 矢量字形反走样的屏幕空间 cutoff 自适应细分），跳过 4 篇 iPhone Spelling Toy 里程碑 / 发布公告。新增 1 概念页（screen-space-curve-tessellation-cutoff）、1 人物页（patrick-stein）、1 源摘要。"
+}

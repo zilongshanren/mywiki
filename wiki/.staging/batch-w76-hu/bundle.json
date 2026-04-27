@@ -1,0 +1,64 @@
+{
+  "batch_id": "batch-w76-hu",
+  "agent_note": "Ted Sie 2016-07 A* 系列前 4 篇（intro/node def/node generate/node sort）合并为单一 Unity 实作 tutorial 源摘要，挂到既有 [[a-star-pathfinding]] 概念页。Everyplay SDK 安装教学跳过（6 步清单无技术内容 + Everyplay 2018 已下线）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-07_everyplay-shi-yong-jiao-xue.md",
+      "status": "skipped_offtopic",
+      "reason": "Everyplay SDK 安装 6 步清单（下载/注册/导入/加 prefab/出包/成功），无技术内容；且 Everyplay 于 2018 年关停。"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-introduction-yan-suan-fa-jian-jie.md",
+      "status": "ingested",
+      "source_slug": "tedsie-a-star-tutorial",
+      "title": "A* Algorithm Introduction（并入 Ted Sie A* 系列源摘要）"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-definition-ding-yi-node.md",
+      "status": "ingested",
+      "source_slug": "tedsie-a-star-tutorial",
+      "title": "A* Algorithm Node Definition（并入）"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-generate-sheng-cheng-node-node-ke-shi-hua.md",
+      "status": "ingested",
+      "source_slug": "tedsie-a-star-tutorial",
+      "title": "A* Algorithm Node Generate（并入）"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-08_a-algorithm-node-sort-node-pai-xu-shi-zuo.md",
+      "status": "ingested",
+      "source_slug": "tedsie-a-star-tutorial",
+      "title": "A* Algorithm Node Sort（并入）"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["tedsie-a-star-tutorial"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/a-star-pathfinding.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/tedsie-a-star-tutorial]] — Ted Sie 2016-07 Unity + C# grid-based A* 四步实作教学"
+    },
+    {
+      "file": "wiki/people/ted-sie.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/tedsie-a-star-tutorial]]"
+    },
+    {
+      "file": "wiki/people/ted-sie.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[a-star-pathfinding]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tedsie-a-star-tutorial]] | Ted Sie：Unity A* 寻路四步实作（Node/Manager/Sort） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-76 Worker hu (tedsieblog A* 系列 + Everyplay)\n\n处理 tedsieblog.wordpress.com 5 篇。A* 四篇（intro/node definition/node generate/node sort）合并为单一源摘要 [[sources/tedsie-a-star-tutorial]]，链接到既有 [[a-star-pathfinding]] 概念页；跳过 Everyplay SDK 6 步安装教学（无技术内容、服务 2018 已下线）。无新概念/人物页。"
+}

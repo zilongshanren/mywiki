@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w103-kv",
+  "agent_note": "5 篇 Ben Supnik (hacksoflife.blogspot.com) 文章。跳过 1 篇（macOS 代码签名 CLI 速查，纯工具提示无技术深度）。4 篇 ingest：z-buffer 自定义编码与 Early-Z 的根本矛盾、Instruments 8.0 帧卡顿标记、tsan 竞态检测（含 X-Plane 案例集）、C++ 应保持简单（大脑带宽论点）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-09-08_you-can-never-have-a-custom-z-buffer-distribution-and-early.md",
+      "status": "ingested",
+      "source_slug": "supnik-custom-z-buffer-early-z",
+      "title": "You Can Never Have a Custom Z Buffer Distribution and Early Z at the Same Time"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-09-20_finding-slow-frames-with-instruments-8-0.md",
+      "status": "ingested",
+      "source_slug": "supnik-instruments-slow-frames",
+      "title": "Finding Slow Frames With Instruments 8.0"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-11-07_terminal-voodoo-for-code-signing.md",
+      "status": "skipped_offtopic",
+      "reason": "macOS codesign/spctl/pkgutil 三条命令的速查笔记，内容为 OS 工具使用技巧，无软件工程/图形/系统层面的技术深度，不符合 topicality gate"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2017-02-17_vroom-vroom-i-m-going-to-win-this-race-condition.md",
+      "status": "ingested",
+      "source_slug": "supnik-race-condition-vroom",
+      "title": "Vroom, Vroom! I'm Going to Win This Race Condition!"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2017-03-18_why-your-c-should-be-simple.md",
+      "status": "ingested",
+      "source_slug": "supnik-why-c-should-be-simple",
+      "title": "Why Your C++ Should Be Simple"
+    }
+  ],
+  "concepts_created": [
+    "rendering/z-buffer-custom-encoding-early-z-tradeoff",
+    "computer-systems/frame-hitch-profiler-markers",
+    "computer-systems/tsan-race-condition-detection"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-custom-z-buffer-early-z",
+    "supnik-instruments-slow-frames",
+    "supnik-race-condition-vroom",
+    "supnik-why-c-should-be-simple"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/z-buffer.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-custom-z-buffer-early-z]]"
+    },
+    {
+      "file": "wiki/rendering/early-z-late-z.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-custom-z-buffer-early-z]]"
+    },
+    {
+      "file": "wiki/rendering/reversed-z.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-custom-z-buffer-early-z]]"
+    },
+    {
+      "file": "wiki/programming-languages/orthodox-cpp.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-why-c-should-be-simple]]"
+    },
+    {
+      "file": "wiki/software-design/cpp-multi-paradigm-discipline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-why-c-should-be-simple]]"
+    },
+    {
+      "file": "wiki/computer-systems/undefined-behavior-c-cpp.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-race-condition-vroom]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/z-buffer-custom-encoding-early-z-tradeoff]] | 自定义深度编码（log-Z、eye-space）与 Early-Z 硬件优化的根本矛盾及 reversed-z 出路 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/frame-hitch-profiler-markers]] | 用时间轴标记（Points of Interest）隔离游戏帧卡顿，绕过采样 profiler 的盲点 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/tsan-race-condition-detection]] | ThreadSanitizer 原理与游戏引擎竞态检测实战（X-Plane 案例集） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-custom-z-buffer-early-z]] | Supnik：自定义 Z 编码与 Early-Z 不可兼得 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-instruments-slow-frames]] | Supnik：Instruments 8.0 时间轴标记定位帧卡顿 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-race-condition-vroom]] | Supnik：tsan 竞态检测实战（X-Plane） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-why-c-should-be-simple]] | Supnik：大脑带宽论——C++ 应刻意写简单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-103 Worker KV (hacksoflife.blogspot.com ×5)\n\n处理 5 篇 Ben Supnik 文章。ingest 4 篇，skip 1 篇（macOS 代码签名 CLI 速查，无技术深度）。新增概念页 3 个（z-buffer-custom-encoding-early-z-tradeoff、frame-hitch-profiler-markers、tsan-race-condition-detection）、source 摘要页 4 个。patch existing pages：z-buffer、early-z-late-z、reversed-z、orthodox-cpp、cpp-multi-paradigm-discipline、undefined-behavior-c-cpp 各追加 source 链接。"
+}

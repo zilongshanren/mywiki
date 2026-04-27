@@ -23,3 +23,4 @@ sources: 1
 - [[sources/chipsandcheese-via-isaiah]]
 - [[sources/chipsandcheese-zhaoxin-lujiazui]]
 - [[sources/chipsandcheese-zhaoxin-part3]]
+- [[sources/chipsandcheese-via-centaur-cns]]

@@ -1,0 +1,142 @@
+{
+  "batch_id": "batch-w64-gg",
+  "agent_note": "agraphicsguynotes.com (Jiayin Cao) 早期硬技术 ×5 — 全 ingest：离线体积渲染/PBRT BxDF 单测/各向异性 microfacet importance sampling/色彩科学基础/SSS 工程实践。新增 5 概念页 + 5 源摘要，人物页 graphics-guy-notes 已由 wave 63 创建，本批 patch 追加 sources/相关链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2016-11-10_volume-rendering-in-offline-renderer.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-volume-rendering-offline",
+      "title": "Volume Rendering in Offline Renderer"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2018-03-09_how-does-pbrt-verify-bxdf.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-pbrt-bxdf-verify",
+      "title": "How does PBRT verify BXDF"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2018-07-18_sampling-anisotropic-microfacet-brdf.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-anisotropic-microfacet-sampling",
+      "title": "Sampling Anisotropic Microfacet BRDF"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2018-11-29_basic-color-science-for-graphics-engineer.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-color-science-basics",
+      "title": "Basic Color Science For Graphics Engineer"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2020-11-13_practical-tips-for-implementing-subsurface-scattering-in-a-r.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-sss-practical-tips",
+      "title": "Practical Tips for Implementing Subsurface Scattering in a Ray Tracer"
+    }
+  ],
+  "concepts_created": [
+    "volume-rendering-offline",
+    "bxdf-unit-test",
+    "anisotropic-microfacet-sampling",
+    "color-science-basics",
+    "sss-practical-implementation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "graphics-guy-volume-rendering-offline",
+    "graphics-guy-pbrt-bxdf-verify",
+    "graphics-guy-anisotropic-microfacet-sampling",
+    "graphics-guy-color-science-basics",
+    "graphics-guy-sss-practical-tips"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/graphics-guy-notes.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/graphics-guy-volume-rendering-offline]]\n- [[sources/graphics-guy-pbrt-bxdf-verify]]\n- [[sources/graphics-guy-anisotropic-microfacet-sampling]]\n- [[sources/graphics-guy-color-science-basics]]\n- [[sources/graphics-guy-sss-practical-tips]]\n- [[volume-rendering-offline]]\n- [[bxdf-unit-test]]\n- [[anisotropic-microfacet-sampling]]\n- [[color-science-basics]]\n- [[sss-practical-implementation]]"
+    },
+    {
+      "file": "wiki/people/graphics-guy-notes.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-volume-rendering-offline]]\n- [[sources/graphics-guy-pbrt-bxdf-verify]]\n- [[sources/graphics-guy-anisotropic-microfacet-sampling]]\n- [[sources/graphics-guy-color-science-basics]]\n- [[sources/graphics-guy-sss-practical-tips]]"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[anisotropic-microfacet-sampling]] — GGX/Beckmann/Blinn 各向异性 importance sampling 推导\n- [[bxdf-unit-test]] — PBRT 的 bsdftest 用 2π 收敛作为 BXDF 正确性检验"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/graphics-guy-anisotropic-microfacet-sampling]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[color-science-basics]] — 从 SPD、color matching、CIE XYZ 推 primaries/white point/scaling 的来历"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/graphics-guy-color-science-basics]]"
+    },
+    {
+      "file": "wiki/rendering/inversion-sampling-prng.md",
+      "operation": "append_to_section",
+      "section": "## 与其他采样页的关系",
+      "content": "- [[anisotropic-microfacet-sampling]] — marginal + conditional inversion 的经典工程案例（GGX/Beckmann/Blinn）"
+    },
+    {
+      "file": "wiki/rendering/path-tracing-basics.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[volume-rendering-offline]] — 离线渲染中的体积渲染方程推导\n- [[sss-practical-implementation]] — SSS 集成进 path tracer 的工程坑与 trick\n- [[bxdf-unit-test]] — BXDF 接入前用 bsdftest 提前抓 silent bias"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[volume-rendering-offline]] | Jiayin Cao：离线渲染中的体积渲染方程推导（补齐 PBRT 跳过的 in-scattering ODE 推导）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bxdf-unit-test]] | Jiayin Cao：PBRT bsdftest 用 2π 收敛验证 BXDF 正确性 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[anisotropic-microfacet-sampling]] | Jiayin Cao：GGX/Beckmann/Blinn 各向异性 importance sampling 推导与 arctan 值域坑 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-science-basics]] | Jiayin Cao：图形工程师的色彩科学基础——从 SPD 到 CIE XYZ 到 Rec.2020 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sss-practical-implementation]] | Jiayin Cao：SSS 进 path tracer 的工程实践——消 fireflies 三个 trick 与材质系统重构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-volume-rendering-offline]] | A Graphics Guy：PBRT 体积渲染章节的 in-scattering ODE 推导补齐 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-pbrt-bxdf-verify]] | A Graphics Guy：PBRT bsdftest 如何验证 BXDF 的数学依据 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-anisotropic-microfacet-sampling]] | A Graphics Guy：各向异性 GGX/Beckmann/Blinn importance sampling 全推 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-color-science-basics]] | A Graphics Guy：从 SPD/CIE XYZ 到 Rec.709/sRGB/Rec.2020 的色彩科学地图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-sss-practical-tips]] | A Graphics Guy：SORT 集成 PBRT 3rd SSS 的 fireflies 消除与材质重构经验 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-64 Worker GG (agraphicsguynotes.com ×5)\n\nagraphicsguynotes.com 早期硬核技术文 5 篇全 ingest：2016 离线体积渲染推导、2018 PBRT bsdftest 数学、2018 各向异性 microfacet importance sampling、2018 色彩科学基础、2020 SSS 工程实践。新增 5 概念页（volume-rendering-offline、bxdf-unit-test、anisotropic-microfacet-sampling、color-science-basics、sss-practical-implementation）与 5 source 摘要，patch graphics-guy-notes 人物页追加 sources 链接、microfacet-brdf/color-space/inversion-sampling-prng/path-tracing-basics 互相交叉引用。"
+}

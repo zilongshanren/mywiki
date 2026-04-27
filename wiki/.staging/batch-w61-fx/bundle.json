@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w61-fx",
+  "agent_note": "Allen Chou 早期 DigiPen 作品与职业生涯杂谈：3 篇 DigiPen/DigiJam 游戏展示页（Photon Bunny / Cooncoaster / Sky Spire）几乎只有游戏链接和玩法说明；My Life at Naughty Dog 是办公室生活 brain dump（滑板车、咖喱日、签名柜台、项目代号梗）；GDC Social Tips 是求职社交建议（名片、LinkedIn、follow-up 邮件）。全部跳过，均与 graphics/engine/systems 技术主题无关。allen-chou 人物页已存在，无需修改。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/allenchou.net/2012-06-18_photon-bunny-my-second-digipen-game-ming-lun-allen-chou-zhou.md",
+      "status": "skipped_offtopic",
+      "reason": "DigiPen 作品展示页，正文只有外链到游戏页面和一句 2D 光影解谜平台游戏描述，无任何技术细节可整理。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2012-06-25_cooncoaster-my-second-digijam-game-ming-lun-allen-chou-zhou.md",
+      "status": "skipped_offtopic",
+      "reason": "48 小时 game jam 作品介绍，仅列出使用了 Rusher/Stardust 引擎（其他文章已覆盖），正文是玩法说明和 Flash 播放链接。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2012-07-02_sky-spire-my-third-digijam-game-ming-lun-allen-chou-zhou-min.md",
+      "status": "skipped_offtopic",
+      "reason": "同上，DigiJam 作品展示页；作者仅负责 Rusher 引擎 bug fix/tweak，文章本身没讲具体技术改动。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2014-10-06_my-life-at-naughty-dog-so-far-ming-lun-allen-chou-zhou-ming.md",
+      "status": "skipped_offtopic",
+      "reason": "Naughty Dog 办公室生活 brain dump：滑板车通勤、签名柜台、周二咖喱日、项目代号组合成 'Next Big Thing' 梗等花絮，完全没有工程/图形/引擎技术内容。"
+    },
+    {
+      "path": "raw/articles/allenchou.net/2015-01-25_gdc-social-tips-ming-lun-allen-chou-zhou-ming-lun.md",
+      "status": "skipped_offtopic",
+      "reason": "GDC 求职社交建议：邮箱/Twitter/域名品牌化、名片设计、简历裁剪、W Hotel 大堂社交、follow-up 邮件、个人吉祥物 Long Bunny 等，属 career 软技能，不属技术主题。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-61 Worker FX (allenchou.net ×5 all-skipped)\n\n处理 Allen Chou 5 篇博客：3 篇 DigiPen/DigiJam 作品展示页（Photon Bunny / Cooncoaster / Sky Spire）正文仅游戏链接与玩法说明；My Life at Naughty Dog 是办公室生活 brain dump（滑板车、咖喱日、项目代号梗）；GDC Social Tips 是求职社交建议。全部 5 篇 skipped_offtopic，均与 graphics/engine/systems 技术主题无关。allen-chou 人物页保持不变。"
+}

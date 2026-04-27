@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w102-ks",
+  "agent_note": "c0de517e.blogspot.com 2011-03 ~ 2011-04 五篇 Angelo Pesce。新增 1 概念页（stable-csm-implementation-tips）+ 3 源摘要。DoF Test 为短预告帖（正文一句话 + 几条评论）跳过；VCS -2.md 为同一 URL 的归档重复副本跳过。Pesce 人物页已存在，只 patch Sources 与 相关 区。stable-csm-implementation-tips 是 cached-shadowmaps 那条实现链的 2011 年最上游 sketch；DX9 调试帖为 2011 PC GPU 工具链历史切片，与 2026 Sawicki 的 pix-api-and-dxdmp 形成时间跨度对照。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-15_dof-test.md",
+      "status": "skipped_offtopic",
+      "reason": "短预告帖：正文只有一句话 + 几条未给出实现细节的评论，作者明确拒绝回答实现问题（\"Won't say right now\"），无可提炼的技术内容"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-26_debugging-directx9-is-so-stressful.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-debugging-dx9-stressful",
+      "title": "Debugging DirectX9 is so stressful!"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-27_stable-cascaded-shadow-maps-ideas.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-stable-csm-ideas",
+      "title": "Stable Cascaded Shadow Maps - Ideas"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-vcs-next-gen",
+      "title": "Version Control for the next-gen?"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-04-01_version-control-for-the-next-gen-2.md",
+      "status": "skipped_offtopic",
+      "reason": "与 2011-04-01_version-control-for-the-next-gen.md 为同一 URL 的归档重复副本（内容字节级一致，仅 http vs https 与 fetched 日期不同）"
+    }
+  ],
+  "concepts_created": [
+    "stable-csm-implementation-tips"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-debugging-dx9-stressful",
+    "c0de517e-stable-csm-ideas",
+    "c0de517e-vcs-next-gen"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stable-csm-implementation-tips]] —— 2011 Stable CSM 实施要点 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-debugging-dx9-stressful]]\n- [[sources/c0de517e-stable-csm-ideas]]\n- [[sources/c0de517e-vcs-next-gen]]"
+    },
+    {
+      "file": "wiki/rendering/cached-shadowmaps.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stable-csm-implementation-tips]] —— Pesce 2011 的原始 sketch：Crysis 2 远级联隔帧更新的观察 + shadowmap 原点 wrap + 边界重绘的增量更新思路；就是这条实现链的上游"
+    },
+    {
+      "file": "wiki/rendering/cached-shadowmaps.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-stable-csm-ideas]] —— Pesce 2011 的原始 sketch（本页的上游文本）"
+    },
+    {
+      "file": "wiki/rendering/cascaded-shadow-maps.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-stable-csm-ideas]] —— Pesce 2011：stable CSM 实施要点（pancake / 最优级联 / 贴图打包）+ Crysis 2 阴影考古"
+    },
+    {
+      "file": "wiki/rendering/pix-api-and-dxdmp.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-debugging-dx9-stressful]] —— Pesce 2011 对 PC DX9 调试工具链的一手吐槽：PIX-Windows 差、PerfHUD 无用、GPA 慢、NSight 只支持 DX10/11。15 年后 Sawicki 这篇的痛点在源头上就是同一个"
+    },
+    {
+      "file": "wiki/software-design/art-asset-version-control-gap.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-vcs-next-gen]] —— Pesce 2011 给「下一代」艺术资产 VCS 开的 wishlist（CoW 文件系统 + 依赖驱动 sync），是 Supnik 2015 gap 分析的早期前身"
+    },
+    {
+      "file": "wiki/game-development/vcs-vs-database-for-content.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-vcs-next-gen]] —— Pesce 2011：按「源码 / 资产 / 构建产物」三分法来选工具的早期表述"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stable-csm-implementation-tips]] | Stable CSM 实施要点：整像素滑动、最优级联、pancake、贴图打包、Crysis 2 远级联隔帧更新观察 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-stable-csm-ideas]] | Pesce 2011：Stable CSM 实施清单 + Crysis 2 阴影考古 + cached CSM 的最上游 sketch |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-debugging-dx9-stressful]] | Pesce 2011：PC DX9 调试工具链的一手吐槽（PIX-Windows / PerfHUD / GPA / apitrace / NSight） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-vcs-next-gen]] | Pesce 2011：下一代游戏工作室 VCS 的三分法草图（DVCS 源码 + CoW 资产 FS + CI 分发） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-102 Worker KS (c0de517e.blogspot.com ×5)\n\n处理 Angelo Pesce 2011-03 ~ 2011-04 五篇博文。新增 1 概念页（stable-csm-implementation-tips）与 3 源摘要（stable-csm-ideas / debugging-dx9-stressful / vcs-next-gen）。跳过 2 篇：DoF Test（短预告帖，无技术信息）与 VCS -2.md（同 URL 归档重复副本）。核心发现：stable-csm-ideas 是 cached-shadowmaps 那条实现链的 2011 最上游 sketch，Crysis 2 远级联隔帧更新的观察与 shadowmap 原点 wrap + 边界重绘的思路直接引出了 2012 Mike Day 的完整实现。DX9 吐槽帖与 2026 Sawicki 的 pix-api-and-dxdmp 形成 15 年痛点时间线对照。"
+}

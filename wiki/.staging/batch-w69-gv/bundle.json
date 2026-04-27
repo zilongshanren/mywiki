@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w69-gv",
+  "agent_note": "Daniel Chase Hooper ×5：C 数据结构 / 构建可视化（含产品页）/ SwiftUI 热重载 / AI code agent 实测。全部 ingest，无跳过。跨 computer-systems + software-design。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielchasehooper.com/2025-08-05_a-fast-growable-array-with-stable-pointers-in-c.md",
+      "status": "ingested",
+      "source_slug": "hooper-segment-array",
+      "title": "A Fast, Growable Array With Stable Pointers in C"
+    },
+    {
+      "path": "raw/articles/danielchasehooper.com/2025-08-13_i-made-a-real-time-build-visualizer.md",
+      "status": "ingested",
+      "source_slug": "hooper-build-visualizer",
+      "title": "I Made A Real-Time Build Visualizer"
+    },
+    {
+      "path": "raw/articles/danielchasehooper.com/2025-10-13_hot-reloading-is-better-than-swiftui-previews.md",
+      "status": "ingested",
+      "source_slug": "hooper-swiftui-hot-reloading",
+      "title": "Hot Reloading Is Better Than SwiftUI Previews"
+    },
+    {
+      "path": "raw/articles/danielchasehooper.com/2026-01-01_what-the-fork.md",
+      "status": "ingested",
+      "source_slug": "hooper-what-the-fork",
+      "title": "What The Fork（产品页）"
+    },
+    {
+      "path": "raw/articles/danielchasehooper.com/2026-01-07_testing-ai-for-c-programming.md",
+      "status": "ingested",
+      "source_slug": "hooper-testing-ai-c",
+      "title": "Testing AI For C Programming"
+    }
+  ],
+  "concepts_created": [
+    "segment-array",
+    "build-process-visualization",
+    "swift-dylib-hot-reloading",
+    "ai-code-agent-workflow"
+  ],
+  "people_created": ["daniel-chase-hooper"],
+  "source_summaries_created": [
+    "hooper-segment-array",
+    "hooper-build-visualizer",
+    "hooper-swiftui-hot-reloading",
+    "hooper-what-the-fork",
+    "hooper-testing-ai-c"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/binary-hot-reload.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[swift-dylib-hot-reloading]] — Swift/macOS 版本：dlopen + `@_cdecl` 绕开 name mangling\n- [[daniel-chase-hooper]]"
+    },
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[segment-array]] — 与 arena 配合最好的增长容器，追加不搬迁、不留洞"
+    },
+    {
+      "file": "wiki/software-design/vibe-coding-workflow.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ai-code-agent-workflow]] — Daniel Hooper 从另一极做法给出的对照（老 C 程序员视角）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系（wiki/computer-systems/）",
+      "row": "| [[segment-array]] | 稳定指针 + 常数时间访问 + arena 友好的增长数组（Hooper / Per Vognsen） |"
+    },
+    {
+      "category_header": "## 计算机体系（wiki/computer-systems/）",
+      "row": "| [[build-process-visualization]] | 监听 fork/exec/exit 还原构建时间轴（What The Fork） |"
+    },
+    {
+      "category_header": "## 计算机体系（wiki/computer-systems/）",
+      "row": "| [[swift-dylib-hot-reloading]] | 120 行 Swift：用 dlopen 替代 Xcode Previews |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[ai-code-agent-workflow]] | Hooper 的精确 prompt 路线：AI 当键盘替代而非大脑替代 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[daniel-chase-hooper]] | 独立开发者，前 Apple，Principle 作者；C / Swift / 工具链 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hooper-segment-array]] | Hooper：增长数组 + 稳定指针 + 10 指令 sa_get |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hooper-build-visualizer]] | Hooper：用系统调用监听做构建甘特图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hooper-swiftui-hot-reloading]] | Hooper：SwiftUI 热重载 120 行实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hooper-what-the-fork]] | Hooper：What The Fork 产品页 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hooper-testing-ai-c]] | Hooper：老 C 程序员实测 Claude Code / Opus 4.5 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-69 Worker GV (danielchasehooper.com ×5)\n\n处理 5 篇 Daniel Chase Hooper 博客。新增 4 概念页（segment-array, build-process-visualization, swift-dylib-hot-reloading, ai-code-agent-workflow）、1 人物页（daniel-chase-hooper）、5 source 摘要。无跳过。与 [[binary-hot-reload]] / [[linear-allocator]] / [[vibe-coding-workflow]] 建立交叉引用。主题横跨 computer-systems（数据结构 / 构建系统 / 动态链接）与 software-design（AI coding agent 工作流）。"
+}

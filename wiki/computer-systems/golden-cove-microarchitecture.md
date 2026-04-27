@@ -1,7 +1,7 @@
 ---
 tags: [cpu, 微架构, intel, alder-lake, golden-cove, p-core, x86]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # Golden Cove：Alder Lake 的 P-Core
@@ -28,6 +28,7 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 
 ## 参见
 
+- [[cache-size-vs-latency-tradeoff]] — ChampSim 仿真对 L1D/L2/L3 参数变体的系统分析
 - [[branch-predictor-design]]
 - [[op-cache-decoded-uop-cache]]
 - [[move-elimination-zeroing-idioms]]
@@ -41,3 +42,4 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 ## Sources
 
 - [[sources/chipsandcheese-golden-cove]]
+- [[sources/chipsandcheese-golden-cove-cache-analysis]]

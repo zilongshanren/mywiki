@@ -1,0 +1,79 @@
+{
+  "batch_id": "batch-w78-ia",
+  "agent_note": "4rknova.com (Nikos Papadopoulos / Arkanova) 2012-2013 年早期博客 5 篇。2 篇技术保留（C/C++ embed files、GLSL Conway 生命游戏），3 篇跳过：GNU make -j 只是一行 shell alias 过薄；primus Debian NVIDIA Optimus 是发行版特定驱动折腾，非工程内容；demo preview 只是 demos 页标题列表没正文。新建 1 概念页（c-cpp-embed-binary-blobs）、1 人物页（nikos-papadopoulos）、2 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/4rknova.com/2012-11-28_gnu-make-parallel-processing.md",
+      "status": "skipped_offtopic",
+      "reason": "内容只有一行 shell alias（make -j $(nproc)），过薄，不足以支撑 wiki 页面"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2012-12-07_primus-under-debian-sid.md",
+      "status": "skipped_offtopic",
+      "reason": "2012 年 Debian Sid 下 NVIDIA Optimus / primus / bumblebee 驱动配置笔记，发行版特定、已完全过时，非软件工程/图形学主题"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2013-01-27_c-c-embedded-files.md",
+      "status": "ingested",
+      "source_slug": "4rknova-cpp-embed-files",
+      "title": "C/C++ Embedded Files"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2013-01-27_conway-s-game-of-life.md",
+      "status": "ingested",
+      "source_slug": "4rknova-glsl-game-of-life",
+      "title": "Conway's Game of Life (GLSL)"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2013-01-27_demo-preview.md",
+      "status": "skipped_offtopic",
+      "reason": "demos 页标题 + 一句话描述列表（~40 个 demo），没有任何技术正文，只是 portfolio 目录"
+    }
+  ],
+  "concepts_created": [
+    "c-cpp-embed-binary-blobs"
+  ],
+  "people_created": [
+    "nikos-papadopoulos"
+  ],
+  "source_summaries_created": [
+    "4rknova-cpp-embed-files",
+    "4rknova-glsl-game-of-life"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/gpu-gol-optimization-ladder.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/4rknova-glsl-game-of-life]] — 同题材的 naive GLSL/ShaderToy 实现，作为优化阶梯的起点对照"
+    },
+    {
+      "file": "wiki/rendering/shadertoy-basics.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/4rknova-glsl-game-of-life]]"
+    },
+    {
+      "file": "wiki/rendering/ping-pong-surfaces.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/4rknova-glsl-game-of-life]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[c-cpp-embed-binary-blobs]] | C/C++ 把资源文件嵌入可执行文件的三种做法（xxd、预处理器、`.incbin`） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[nikos-papadopoulos]] | Nikos Papadopoulos（Arkanova），希腊 demoscene / Linux 图形程序员，4rknova.com 站长 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/4rknova-cpp-embed-files]] | 4rknova：C/C++ 嵌入二进制资源的三种做法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/4rknova-glsl-game-of-life]] | 4rknova：Conway 生命游戏的 GLSL/ShaderToy 实现 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-78 Worker IA (4rknova.com ×5)\n\n处理 4rknova.com（Nikos Papadopoulos / Arkanova）2012-2013 早期博客 5 篇。2 篇保留：C/C++ 资源嵌入三段论（xxd / `#include`+STRINGIFY / asm `.incbin`）、GLSL Conway 生命游戏（与 [[gpu-gol-optimization-ladder]] 形成 naive vs optimized 对照）。新增 1 概念页（c-cpp-embed-binary-blobs）、1 人物页（nikos-papadopoulos）、2 source 摘要。跳过 3 篇：GNU make -j alias（过薄）、Debian primus NVIDIA Optimus 配置（偏 distro 运维）、demos 页目录（无正文）。"
+}

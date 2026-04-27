@@ -1,0 +1,116 @@
+{
+  "batch_id": "batch-w101-kp",
+  "agent_note": "c0de517e.blogspot.com 2011-02 ~ 2011-03 四篇 Angelo Pesce 文章。新增 4 概念页（2 software-design + 1 game-engines + 1 rendering）+ 4 源摘要。Pesce 人物页已存在，patch 其 Sources 与 相关 区。关联 patch 涉及 cpp-multi-paradigm-discipline、system-decoupling-patterns、handle-based-resource-manager、frame-pipeline-latency。failed-builds 文件名的 -2 后缀是归档去重计数，不是续作。surviving-c 是 2011-01 survive-cpp-guidelines-experiment 的思辨补完。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-02-26_surviving-c.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-surviving-cpp",
+      "title": "Surviving C++"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-02_alternatives-to-object-handles.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-alternatives-to-object-handles",
+      "title": "Alternatives to Object Handles"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-07_tell-the-internet-that-you-re-not-a-moron.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-tell-internet-not-moron",
+      "title": "Tell the internet that you're not a moron..."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-03-09_do-you-have-failed-builds-2.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-failed-builds",
+      "title": "Do you have failed builds?"
+    }
+  ],
+  "concepts_created": [
+    "cpp-decoupling-over-details",
+    "hot-swap-pointer-patching",
+    "frequency-is-not-latency",
+    "component-degradable-build"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-surviving-cpp",
+    "c0de517e-alternatives-to-object-handles",
+    "c0de517e-tell-internet-not-moron",
+    "c0de517e-failed-builds"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cpp-decoupling-over-details]] —— 2011 Surviving C++ 的核心论断：软件质量 = 可修改性 = 解耦\n- [[hot-swap-pointer-patching]] —— 2011 资源热重载的四种备选（指针 patch / GC / 置换表 / 列表扫描）\n- [[frequency-is-not-latency]] —— 2011 Fight Night Champion 的 30fps + 正确运动模糊\n- [[component-degradable-build]] —— 2011 「broken build」是个糟糕术语"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-surviving-cpp]]\n- [[sources/c0de517e-alternatives-to-object-handles]]\n- [[sources/c0de517e-tell-internet-not-moron]]\n- [[sources/c0de517e-failed-builds]]"
+    },
+    {
+      "file": "wiki/software-design/cpp-multi-paradigm-discipline.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-surviving-cpp]] —— Pesce 2011 Surviving C++：语言联邦论在游戏工作室语境里的再表达"
+    },
+    {
+      "file": "wiki/software-design/system-decoupling-patterns.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-surviving-cpp]] —— Pesce 2011：C++ 侧对「解耦才是唯一重要的事」的同构论证\n- [[sources/c0de517e-failed-builds]] —— Pesce 2011：把解耦原则推到构建与部署层"
+    },
+    {
+      "file": "wiki/game-engines/handle-based-resource-manager.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hot-swap-pointer-patching]] —— Pesce 2011 列出的四种备选方案（指针 patch / GC / 置换表 / 列表扫描），解释为什么工业界没选它们"
+    },
+    {
+      "file": "wiki/rendering/frame-pipeline-latency.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[frequency-is-not-latency]] —— Pesce 2011 Fight Night Champion：FPS != 延迟的大众沟通面"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[cpp-decoupling-over-details]] | Pesce 2011 Surviving C++：软件质量的唯一要义是可修改性 / 解耦 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[component-degradable-build]] | Pesce 2011：`broken build` 是糟糕术语，应当支持部件级可降级构建 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[hot-swap-pointer-patching]] | Pesce 2011：热重载的四种替代方案与它们为什么没赢过句柄 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[frequency-is-not-latency]] | Pesce 2011 Fight Night Champion：FPS != 延迟，各子系统频率应按需设 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-surviving-cpp]] | Pesce：在 C++ 里活下来——解耦比任何规则都重要 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-alternatives-to-object-handles]] | Pesce：资源热重载的四种非句柄方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-tell-internet-not-moron]] | Pesce：Fight Night Champion 为什么 30fps + motion blur，FPS != 延迟 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-failed-builds]] | Pesce：禁用 `broken build` 概念，让子系统降级而不是全员停工 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-101 Worker KP (c0de517e.blogspot.com Pesce 2011-02~03 ×4)\n\n处理 Angelo Pesce 2011 年 2-3 月四篇博文。新增 4 概念页：cpp-decoupling-over-details（Surviving C++ 核心论断：解耦是软件质量的唯一要义）、hot-swap-pointer-patching（热重载四种替代方案分析）、frequency-is-not-latency（Fight Night Champion 30fps + motion blur 的实战沟通）、component-degradable-build（禁用 broken build 概念的子系统降级主张）。新增 4 source 摘要。Patch Pesce 人物页、cpp-multi-paradigm-discipline、system-decoupling-patterns、handle-based-resource-manager、frame-pipeline-latency 五页的 Sources / 相关 区。无跳过。"
+}

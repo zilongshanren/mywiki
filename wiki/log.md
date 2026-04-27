@@ -1294,3 +1294,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-19] ingest | Wave-102 Worker KU (chipsandcheese.com ×5, 2021-11 ~ 2022-01)
 
 处理 Chips and Cheese 2021-11 ~ 2022-01 五篇：Zhaoxin Part 3 收官 benchmark、Alder Lake Golden Cove P-Core 拆解、Alder Lake ring clock 首代毛病、Gracemont E-Core 拆解、Tremont Atom 转型期拆解。新增 8 computer-systems 概念（golden-cove-microarchitecture、gracemont-microarchitecture、tremont-microarchitecture、intel-hybrid-alder-lake、clustered-decode-atom、non-scheduling-queue、move-elimination-zeroing-idioms、littles-law-reorder-buffer）、5 source 摘要。对 via-x86-isaiah-lujiazui、chester-lam、george-cozma、branch-predictor-design、op-cache-decoded-uop-cache、zen2-microarchitecture、neoverse-n1-microarchitecture、dispatch-stall-breakdown、chips-and-cheese、cpu-scheduler-design 发出 patch。
+
+## [2026-04-27] ingest | Wave-103 Worker KV (hacksoflife.blogspot.com ×5)
+
+处理 5 篇 Ben Supnik 文章。ingest 4 篇，skip 1 篇（macOS 代码签名 CLI 速查，无技术深度）。新增概念页 3 个（z-buffer-custom-encoding-early-z-tradeoff、frame-hitch-profiler-markers、tsan-race-condition-detection）、source 摘要页 4 个。patch existing pages：z-buffer、early-z-late-z、reversed-z、orthodox-cpp、cpp-multi-paradigm-discipline、undefined-behavior-c-cpp 各追加 source 链接。
+
+## [2026-04-27] ingest | Wave-103 Worker KW (c0de517e.blogspot.com ×5)
+
+处理 5 篇 c0de517e.blogspot.com 文章。ingested 2 篇（游戏编程语言调查 2011、蒙皮法线推导笔记）；skipped 3 篇（IDE 配置教程、内容为空的 shadowmap bias 评论集、单行链接博文）。新增 1 概念页（skinning-normals-weighted-average）、2 source 摘要。
+
+## [2026-04-27] ingest | Wave-103 Worker KX (chipsandcheese.com ×5)
+
+处理 5 篇 Chips and Cheese 文章。新增 3 概念页（centaur-cns-microarchitecture、numa-multi-socket-design、gpu-hardware-video-encoder）、5 source 摘要。跳过 0 篇。Golden Cove 缓存仿真分析 patch 至 golden-cove-microarchitecture；CHA die 与双路文章内容合并入 centaur-cns-microarchitecture 概念页（3 sources 计数）。george-cozma、chester-lam 人物页均已存在，emit patch 追加新 source 链接。

@@ -1,0 +1,84 @@
+{
+  "batch_id": "batch-w60-fv",
+  "agent_note": "Jon Olick (jonolick.com) 3 实质文章 + 2 skip_duplicate（home / links 索引页）。新建人物页 jon-olick、3 概念页（EDIZ 批判、Laplacian 结构感知误差扩散、SIFT 单文件库）、3 source 摘要。Laplacian 误差扩散页链接到已存在的 floyd-steinberg-dithering。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/jonolick.com/2024-01-09_ediz-a-critical-look-at-a-simplistic-image-upscaling-approac.md",
+      "status": "ingested",
+      "source_slug": "jonolick-ediz-critique",
+      "title": "EDIZ: A Critical Look at a Simplistic Image Upscaling Approach"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2024-08-30_laplacian-based-structure-aware-error-diffusion.md",
+      "status": "ingested",
+      "source_slug": "jonolick-laplacian-error-diffusion",
+      "title": "Laplacian Based Structure-Aware Error Diffusion"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2025-01-28_home.md",
+      "status": "skip_duplicate",
+      "reason": "jonolick.com 首页合集，内容与 SIFT 页及历史 Jon Olick 文章（EDIZ / Laplacian / ADPCM / index buffer / cross product / super-res）重复，非独立资源"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2025-01-28_scale-invariant-feature-transform-sift-single-file-library.md",
+      "status": "ingested",
+      "source_slug": "jonolick-sift-library",
+      "title": "Scale Invariant Feature Transform (SIFT) Single File Library"
+    },
+    {
+      "path": "raw/articles/jonolick.com/2026-04-14_links.md",
+      "status": "skip_duplicate",
+      "reason": "纯外部链接合集（SIMD/Intel intrinsics 等），无原创技术内容"
+    }
+  ],
+  "concepts_created": [
+    "ediz-upscaling-critique",
+    "laplacian-structure-aware-error-diffusion",
+    "sift-single-file-library"
+  ],
+  "people_created": ["jon-olick"],
+  "source_summaries_created": [
+    "jonolick-ediz-critique",
+    "jonolick-laplacian-error-diffusion",
+    "jonolick-sift-library"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/floyd-steinberg-dithering.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "\n## 相关\n\n- [[laplacian-structure-aware-error-diffusion]] — 用 Laplacian 结构感知替代固定 7/3/5/1 扩散权重，低对比度区 MSSIM +25%"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ediz-upscaling-critique]] | Jon Olick：EDIZ 简单上采样方法的五点批判 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[laplacian-structure-aware-error-diffusion]] | Laplacian 结构感知误差扩散，低对比度区 MSSIM +25% |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sift-single-file-library]] | jo_sift.h：专利过期后的 SIFT 单文件 C 库 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[jon-olick]] | 前 id Software 程序员，JO JPEG / jo_*.h 单文件库系列作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-ediz-critique]] | Jon Olick：批判 EDIZ 简单上采样算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-laplacian-error-diffusion]] | Jon Olick：介绍 Laplacian 结构感知误差扩散 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/jonolick-sift-library]] | Jon Olick：jo_sift.h 单文件 SIFT 库 |"
+    }
+  ],
+  "log_entry": "## [2026-04-14] ingest | Wave-60 Worker FV (jonolick.com ×5)\n\n处理 5 篇 Jon Olick（jonolick.com）文章。3 篇实质：EDIZ 上采样批判、Laplacian 结构感知误差扩散、SIFT 单文件库 jo_sift.h；2 篇 skip_duplicate（home 首页合集、links 外链合集）。新增 3 概念页（ediz-upscaling-critique / laplacian-structure-aware-error-diffusion / sift-single-file-library）、1 人物页（jon-olick）、3 source 摘要。Laplacian 页与既有 floyd-steinberg-dithering 交叉引用。"
+}

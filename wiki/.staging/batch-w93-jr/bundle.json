@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w93-jr",
+  "agent_note": "bitsquid.blogspot.com 2016-09 ~ 2017-02 五篇 Stingray 技术博客全部 ingest。作者分布：Niklas Frykholm（本地化重写 1 篇）、Andreas Asplund（state reflection + frustum culling 共 2 篇，需要新建人物页）、Tobias Persson（Renderer Walkthrough #1 Overview、#2 Resources 共 2 篇，已有人物页）。新增 5 个概念页：stingray-resource-override-suffix (rendering), main-render-thread-state-reflection (game-engines), stingray-simd-sphere-oobb-culling (rendering), stingray-renderer-three-stage-pipeline (game-engines), stingray-render-resource-context (rendering)。新增 1 人物页：andreas-asplund。5 个 source 摘要页全部新建。Niklas / Tobias / culling / view-frustum-culling-ryg / stingray-data-driven-render-config 通过 patch 追加 Related 与 Sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-09-06_a-new-localization-system-for-stingray.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-stingray-localization-system",
+      "title": "A New Localization System for Stingray"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-09-07_state-reflection.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-state-reflection",
+      "title": "State Reflection"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2016-10-04_the-implementation-of-frustum-culling-in-stingray.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-frustum-culling-stingray",
+      "title": "The Implementation of Frustum Culling in Stingray"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-1-overview.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-renderer-walkthrough-1-overview",
+      "title": "Stingray Renderer Walkthrough #1: Overview"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2017-02-01_stingray-renderer-walkthrough-2-resources-resource-contexts.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-renderer-walkthrough-2-resources",
+      "title": "Stingray Renderer Walkthrough #2: Resources & Resource Contexts"
+    }
+  ],
+  "concepts_created": [
+    "stingray-resource-override-suffix",
+    "main-render-thread-state-reflection",
+    "stingray-simd-sphere-oobb-culling",
+    "stingray-renderer-three-stage-pipeline",
+    "stingray-render-resource-context"
+  ],
+  "people_created": [
+    "andreas-asplund"
+  ],
+  "source_summaries_created": [
+    "bitsquid-stingray-localization-system",
+    "bitsquid-state-reflection",
+    "bitsquid-frustum-culling-stingray",
+    "bitsquid-renderer-walkthrough-1-overview",
+    "bitsquid-renderer-walkthrough-2-resources"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-resource-override-suffix]] —— 2016 用 resource override + suffix 规则替换旧 property 系统"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-stingray-localization-system]]"
+    },
+    {
+      "file": "wiki/people/tobias-persson.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 CPU 侧三阶段数据并行架构\n- [[stingray-render-resource-context]] —— RenderResource + RRC 的跨 API 资源抽象\n- [[main-render-thread-state-reflection]] —— 主/渲染线程状态镜像（Tobias 在 Walkthrough #1 里引用 Asplund 专文）"
+    },
+    {
+      "file": "wiki/people/tobias-persson.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-renderer-walkthrough-1-overview]]\n- [[sources/bitsquid-renderer-walkthrough-2-resources]]"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-simd-sphere-oobb-culling]] —— Stingray 的暴力 SoA + SIMD + 多线程两级剔除实现"
+    },
+    {
+      "file": "wiki/rendering/view-frustum-culling-ryg.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-simd-sphere-oobb-culling]] —— Stingray 采用与 ryg/Zeux 同路线的 clip-space 8 顶点 SIMD 实现，外加 sphere 预筛与多线程 help-if-idle 分工"
+    },
+    {
+      "file": "wiki/rendering/stingray-data-driven-render-config.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stingray-renderer-three-stage-pipeline]] —— Stingray 渲染 Cull/Render/Dispatch 三阶段数据并行架构\n- [[stingray-render-resource-context]] —— RenderResource 抽象与 RRC 的跨 API 资源分配\n- [[stingray-resource-override-suffix]] —— 同样的 data-driven 思路在资源系统里的应用"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-resource-override-suffix]] | Niklas 2016：resource override + suffix 规则替代文件名 property 魔法 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-simd-sphere-oobb-culling]] | Asplund：SoA + SIMD + 多线程的 sphere→OOBB 两级视锥剔除 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[stingray-render-resource-context]] | Tobias：RenderResource 24+8 位 handle + RRC command-buffer 化的跨 API 资源抽象 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[main-render-thread-state-reflection]] | Asplund：StateStream + render_handle 把主线程状态单向镜像到渲染线程 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[stingray-renderer-three-stage-pipeline]] | Tobias：Cull/Render/Dispatch 三阶段数据并行 + simulation/render overlay |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[andreas-asplund]] | Andreas Asplund，Bitsquid/Stingray 渲染工程师（state reflection / frustum culling 专题文作者） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-stingray-localization-system]] | Niklas 2016：Stingray 本地化系统重写（override + suffix） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-state-reflection]] | Asplund 2016：Stingray 主/渲染线程 StateStream 镜像机制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-frustum-culling-stingray]] | Asplund 2016：Stingray SIMD + 多线程 sphere→OOBB 视锥剔除实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-renderer-walkthrough-1-overview]] | Tobias 2017：Stingray 渲染架构三阶段总纲 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-renderer-walkthrough-2-resources]] | Tobias 2017：Stingray GPU 资源与 RenderResourceContext |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-93 Worker JR (bitsquid Stingray 2016-09 ~ 2017-02 ×5)\n\n处理 bitsquid.blogspot.com 2016-09 至 2017-02 五篇 Stingray 深度技术文章，全部 ingest。新增 5 概念页：stingray-resource-override-suffix（Niklas 2016 本地化系统重写）、main-render-thread-state-reflection（Asplund state reflection 机制）、stingray-simd-sphere-oobb-culling（Asplund SIMD + 多线程视锥剔除）、stingray-renderer-three-stage-pipeline（Tobias Cull/Render/Dispatch 三阶段架构）、stingray-render-resource-context（Tobias RenderResource + RRC 跨 API 资源抽象）。新增 1 人物页：andreas-asplund。5 个 source 摘要全部新建。niklas-frykholm / tobias-persson / culling / view-frustum-culling-ryg / stingray-data-driven-render-config 通过 patch 追加 Related 与 Sources。"
+}

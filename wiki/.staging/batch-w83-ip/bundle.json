@@ -1,0 +1,61 @@
+{
+  "batch_id": "batch-w83-ip",
+  "agent_note": "Ted Sie A* 五篇续作（2016-07-10）：4 篇技术文合并为单一 source 摘要 tedsie-a-star-applied（FindPath 实作 + 8 邻域 + LOS 平滑 + Obstacle raycast），achievement 篇作为 wiring 展示也并入同一摘要。无新概念页，复用既有 [[a-star-pathfinding]]；在 ted-sie 人物页与 a-star-pathfinding 概念页加 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-achievement-yan-suan-fa-shi-zuo-cheng-guo.md",
+      "status": "ingested_merged",
+      "source_slug": "tedsie-a-star-applied",
+      "title": "A* Algorithm Achievement - 演算法实作成果",
+      "note": "纯 wiring 展示（TestAStar.cs 调用前作 API + OnDrawGizmos 画线），无新算法，合并进 tedsie-a-star-applied 摘要"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-eight-ways-xie-xiang-fang-xiang-you-hua.md",
+      "status": "ingested_merged",
+      "source_slug": "tedsie-a-star-applied",
+      "title": "A* Algorithm Eight Ways - 斜向方向优化"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-implement-xu-ni-cheng-shi-ma-shi-li-hua.md",
+      "status": "ingested",
+      "source_slug": "tedsie-a-star-applied",
+      "title": "A* Algorithm Implement - 虚拟程式码实例化"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-line-of-sight-ke-shi-dian-you-hua.md",
+      "status": "ingested_merged",
+      "source_slug": "tedsie-a-star-applied",
+      "title": "A* Algorithm Line of Sight - 可视点优化"
+    },
+    {
+      "path": "raw/articles/tedsieblog.wordpress.com/2016-07-10_a-algorithm-obstacle-detection-zhang-ai-wu-pan-ding.md",
+      "status": "ingested_merged",
+      "source_slug": "tedsie-a-star-applied",
+      "title": "A* Algorithm Obstacle Detection - 障碍物判定"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": ["tedsie-a-star-applied"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ted-sie.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/tedsie-a-star-applied]]"
+    },
+    {
+      "file": "wiki/game-development/a-star-pathfinding.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/tedsie-a-star-applied]] — Ted Sie 2016-07 A* 应用篇：FindPath 实作、8 邻域、LOS 平滑、Obstacle raycast"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tedsie-a-star-applied]] | Ted Sie 2016-07 A* 应用篇（四文合并）：FindPath 伪代码实作 + 斜向优化 + Line-of-sight 平滑 + Obstacle raycast 判定 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-83 Worker IP (tedsieblog.wordpress.com A* 续作 ×5)\n\n处理 Ted Sie 2016-07-10 A* 五篇续作。4 篇技术文（implement / eight-ways / line-of-sight / obstacle-detection）合并为单一 source 摘要 tedsie-a-star-applied，achievement 篇（纯 Unity wiring 展示）作为 runner 段并入同一摘要。无新概念页，复用既有 [[a-star-pathfinding]]。在 ted-sie 人物页与 a-star-pathfinding 概念页 Sources 段加链。"
+}

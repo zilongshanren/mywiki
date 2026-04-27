@@ -1,0 +1,150 @@
+{
+  "batch_id": "batch-w97-ke",
+  "agent_note": "5 篇 hacksoflife (Ben Supnik) 2012-12 到 2013-04，全部入库。新增 5 概念页：unix-symbol-visibility-leakage（扁平命名空间+静态库泄漏+-fvisibility=hidden+exported_symbols_list）、bricksmith-instancing-pipeline（LDraw 新渲染管线：attribute→HW instancing 三桶分流）、cgal-arrangement-to-polygon-set-conversion（sub-class GPS 的两条契约：无 antenna + CCB curve 方向一致）、lego-realistic-lighting-brain-dump（非标准 BRDF / 法线贴图 / LEAN mapping / 折角线段 specular / per-instance 位姿噪声 / AO+envmap）、streaming-quads-drawing-strategies（uniform vs CPU transform vs HW instancing，GLES 2.0 选 CPU transform）。5 source 摘要，全部挂 ben-supnik 人物页。Ben Supnik 人物页已存在——仅 patch 追加。无新人物。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-12-13_static-libraries-and-plugins-global-pain.md",
+      "status": "ingested",
+      "source_slug": "supnik-static-libs-plugins",
+      "title": "Static Libraries and Plugins: Global Pain"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-01-30_instancing-for-bricksmith.md",
+      "status": "ingested",
+      "source_slug": "supnik-instancing-bricksmith",
+      "title": "Instancing for BrickSmith"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-03-14_how-to-jam-an-arrangement-2-into-a-general-polygon-set-2.md",
+      "status": "ingested",
+      "source_slug": "supnik-arrangement-to-polygon-set",
+      "title": "How to Jam an Arrangement_2 into a General_polygon_set_2"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-03-16_lego-lighting-effects.md",
+      "status": "ingested",
+      "source_slug": "supnik-lego-lighting",
+      "title": "Lego Lighting Effects"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-04-20_there-must-be-50-ways-to-draw-your-streaming-quads.md",
+      "status": "ingested",
+      "source_slug": "supnik-streaming-quads",
+      "title": "There Must Be 50 Ways to Draw Your Streaming Quads"
+    }
+  ],
+  "concepts_created": [
+    "unix-symbol-visibility-leakage",
+    "bricksmith-instancing-pipeline",
+    "cgal-arrangement-to-polygon-set-conversion",
+    "lego-realistic-lighting-brain-dump",
+    "streaming-quads-drawing-strategies"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-static-libs-plugins",
+    "supnik-instancing-bricksmith",
+    "supnik-arrangement-to-polygon-set",
+    "supnik-lego-lighting",
+    "supnik-streaming-quads"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-static-libs-plugins]]\n- [[sources/supnik-instancing-bricksmith]]\n- [[sources/supnik-arrangement-to-polygon-set]]\n- [[sources/supnik-lego-lighting]]\n- [[sources/supnik-streaming-quads]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unix-symbol-visibility-leakage]] —— 2012-12 Unix 扁平符号命名空间 + 静态库泄漏 + `-fvisibility=hidden` 全套机制\n- [[bricksmith-instancing-pipeline]] —— 2013-01 BrickSmith 新渲染管线：attribute→HW instancing 三桶分流\n- [[cgal-arrangement-to-polygon-set-conversion]] —— 2013-03 sub-class GPS 导入 arrangement：无 antenna + CCB curve 方向一致\n- [[lego-realistic-lighting-brain-dump]] —— 2013-03 BrickSmith 真实感光照 wish list：BRDF / 法线 / LEAN / 折角 specular / AO\n- [[streaming-quads-drawing-strategies]] —— 2013-04 2D 动态 quad 的 uniform vs CPU transform vs HW instancing 菜谱"
+    },
+    {
+      "file": "wiki/computer-systems/shared-library-soname-versioning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unix-symbol-visibility-leakage]] —— 同作者 2012-12 姊妹篇，把 SONAME 问题下沉到符号级的扁平命名空间 + 静态库泄漏"
+    },
+    {
+      "file": "wiki/computer-systems/cross-platform-openal-runtime-loader.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unix-symbol-visibility-leakage]] —— 把 dlopen + dlsym 那条「唯一能绕过扁平命名空间」的定律放回扁平命名空间的底层语义里解释"
+    },
+    {
+      "file": "wiki/rendering/xplane-instancing-2011-numbers.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-instancing-pipeline]] —— 2013 年 Supnik 把 X-Plane 的 instancing 经验翻译到 BrickSmith：同一套 attribute→HW instancing 阶梯"
+    },
+    {
+      "file": "wiki/rendering/vbo-double-buffering-orphaning.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-instancing-pipeline]] —— instance 数据合并成一条 giant STREAM_DRAW buffer 的实际设计\n- [[streaming-quads-drawing-strategies]] —— 2D quad 每帧流式 VBO 的路线讨论"
+    },
+    {
+      "file": "wiki/rendering/triangle-strips-vs-indexed-triangles.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[streaming-quads-drawing-strategies]] —— 同作者对 2D quad 批画的「全 interleaved + 单一 VBO」立场"
+    },
+    {
+      "file": "wiki/rendering/cgal-halfedge-direction-cache-pitfall.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-arrangement-to-polygon-set]]"
+    },
+    {
+      "file": "wiki/computer-systems/cgal-exact-arithmetic-mantissa-growth.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cgal-arrangement-to-polygon-set-conversion]] —— 2013 年又一次 CGAL 抽象 vs 实现契约不匹配的案例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[unix-symbol-visibility-leakage]] | Unix 扁平符号命名空间 + 静态库泄漏 + GCC 默认可见性 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cgal-arrangement-to-polygon-set-conversion]] | Sub-class GPS 强塞 arrangement：无 antenna + CCB curve 方向一致 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bricksmith-instancing-pipeline]] | BrickSmith 新渲染管线：attribute→HW instancing 三桶分流 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[lego-realistic-lighting-brain-dump]] | Lego 真实感光照 wish list：BRDF lookup / 法线 / LEAN / 折角 specular / AO+envmap |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[streaming-quads-drawing-strategies]] | 2D 动态 quad：uniform vs CPU transform vs HW instancing 菜谱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-static-libs-plugins]] | Supnik：Unix 静态库 + plugin 全局符号泄漏 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-instancing-bricksmith]] | Supnik：BrickSmith 新渲染管线 attribute→HW instancing |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-arrangement-to-polygon-set]] | Supnik：CGAL arrangement 强塞 GPS 的两条契约 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-lego-lighting]] | Supnik：Lego 真实感光照五条线索 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-streaming-quads]] | Supnik：2D 动态 quad 的五十种画法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-97 Worker E (hacksoflife/Supnik ×5, 2012-12 到 2013-04)\n\n处理 5 篇 hacksoflife.blogspot.com 文章，全部入库。新增 5 概念页（unix-symbol-visibility-leakage、bricksmith-instancing-pipeline、cgal-arrangement-to-polygon-set-conversion、lego-realistic-lighting-brain-dump、streaming-quads-drawing-strategies）、5 source 摘要。Ben Supnik 人物页仅 patch。"
+}

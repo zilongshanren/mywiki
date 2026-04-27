@@ -1,0 +1,95 @@
+{
+  "batch_id": "batch-w84-ir",
+  "agent_note": "Supnik 2010-11 gamma trilogy + value-of-gamma-compression 合并为 1 source；新增 1 concept (linear-lighting-pipeline)。i-hate-c-part-492 跳过 (仅 6 行 CFBundleGetFunctionPointerForName 类型转换代码，无独立洞察)。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-1-color-sync.md",
+      "status": "ingested",
+      "source_slug": "supnik-gamma-lighting-trilogy",
+      "title": "Gamma and Lighting Part 1: Color Sync (merged)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-2-working-in-linear-space.md",
+      "status": "ingested",
+      "source_slug": "supnik-gamma-lighting-trilogy",
+      "title": "Gamma and Lighting Part 2: Working in Linear Space (merged)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-22_gamma-and-lighting-part-3-errata.md",
+      "status": "ingested",
+      "source_slug": "supnik-gamma-lighting-trilogy",
+      "title": "Gamma and Lighting Part 3: Errata (merged)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-23_the-value-of-gamma-compression.md",
+      "status": "ingested",
+      "source_slug": "supnik-gamma-lighting-trilogy",
+      "title": "The Value of Gamma Compression (merged)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-22_i-hate-c-part-492.md",
+      "status": "skipped_offtopic",
+      "reason": "仅 6 行 ObjC/CFBundleGetFunctionPointerForName 函数指针转换代码片段，无任何注释或论述。虽然标题是 rant，但正文没有观点——只是 HIWindowCopyColorSpace / HIWindowSetColorSpace 的运行期动态加载样板代码，属于 Part 3 errata 的实现附录，无独立 wiki 价值。"
+    }
+  ],
+  "concepts_created": ["linear-lighting-pipeline"],
+  "people_created": [],
+  "source_summaries_created": ["supnik-gamma-lighting-trilogy"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linear-lighting-pipeline]] —— Gamma and Lighting 三部曲里关于光照累积三种路径的总结"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-gamma-lighting-trilogy]]"
+    },
+    {
+      "file": "wiki/rendering/gamma-correction-srgb.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linear-lighting-pipeline]] —— Supnik 归纳的多 pass 光照累积三条路径（shader 内累加 / sRGB framebuffer blend / HDR float RT）"
+    },
+    {
+      "file": "wiki/rendering/gamma-correction-srgb.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-gamma-lighting-trilogy]]"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[linear-lighting-pipeline]] —— 线性域做光照累积的三种实现方式"
+    },
+    {
+      "file": "wiki/rendering/color-space.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-gamma-lighting-trilogy]]"
+    },
+    {
+      "file": "wiki/rendering/color-banding.md",
+      "operation": "append_to_section",
+      "section": "## 和 wiki 其他条目的关系",
+      "content": "- 和 [[linear-lighting-pipeline]]：Supnik 2010 年用灰阶量化对比图证明，8 bit 存储下 linear 编码会在暗部出现明显色带，而 sRGB 曲线把 code points 集中在暗部——这是「资产必须 sRGB 编码、数学必须在 linear」两条约束共存的根本原因。"
+    },
+    {
+      "file": "wiki/rendering/color-banding.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-gamma-lighting-trilogy]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[linear-lighting-pipeline]] | 线性光照累积的三种管线路径：shader 内累加 / sRGB framebuffer blend / HDR float RT |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gamma-lighting-trilogy]] | Supnik 2010-11 gamma 四连发：color sync + linear lighting + errata + 量化对比实证 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-84 Worker IR (hacksoflife Supnik gamma trilogy ×5)\n\n处理 Supnik 2010-11 gamma 系列 5 篇：三部曲 + value-of-gamma-compression 合并为单一 source 摘要 supnik-gamma-lighting-trilogy；新增 concept linear-lighting-pipeline（光照累积的三条路径）。跳过 i-hate-c-part-492（纯 CFBundleGetFunctionPointerForName 代码片段，无论述）。补强 ben-supnik / gamma-correction-srgb / color-space / color-banding 之间的交叉链接。"
+}

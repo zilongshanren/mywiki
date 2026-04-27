@@ -1,0 +1,65 @@
+{
+  "batch_id": "batch-w75-hp",
+  "agent_note": "Bitsquid 2010 年 1-4 月早期博客 5 篇，全部是 Niklas Frykholm 署名的重度工程文章。5 篇全收。",
+  "sources_processed": [
+    { "path": "raw/articles/bitsquid.blogspot.com/2010-01-19_content-repositories-and-databases.md", "status": "ingested", "source_slug": "bitsquid-content-repositories-vs-databases", "title": "Content Repositories and Databases" },
+    { "path": "raw/articles/bitsquid.blogspot.com/2010-02-12_the-blob-and-i.md", "status": "ingested", "source_slug": "bitsquid-the-blob-and-i", "title": "The Blob and I" },
+    { "path": "raw/articles/bitsquid.blogspot.com/2010-03-25_task-management-a-practical-example.md", "status": "ingested", "source_slug": "bitsquid-task-management-practical", "title": "Task Management - A Practical Example" },
+    { "path": "raw/articles/bitsquid.blogspot.com/2010-04-09_distance-field-based-rendering-of-angelcode-fonts.md", "status": "ingested", "source_slug": "bitsquid-distance-field-angelcode-fonts", "title": "Distance Field Based Rendering of AngelCode Fonts" },
+    { "path": "raw/articles/bitsquid.blogspot.com/2010-04-23_our-tool-architecture.md", "status": "ingested", "source_slug": "bitsquid-our-tool-architecture", "title": "Our Tool Architecture" }
+  ],
+  "concepts_created": [
+    "vcs-vs-database-for-content",
+    "offset-based-resource-blobs",
+    "bitsquid-task-scheduler",
+    "sdf-font-atlas-rendering",
+    "decoupled-tool-engine-json-rpc"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-content-repositories-vs-databases",
+    "bitsquid-the-blob-and-i",
+    "bitsquid-task-management-practical",
+    "bitsquid-distance-field-angelcode-fonts",
+    "bitsquid-our-tool-architecture"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-content-repositories-vs-databases]]\n- [[sources/bitsquid-the-blob-and-i]]\n- [[sources/bitsquid-task-management-practical]]\n- [[sources/bitsquid-distance-field-angelcode-fonts]]\n- [[sources/bitsquid-our-tool-architecture]]"
+    },
+    {
+      "file": "wiki/game-development/tools-first-iteration-loop.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[decoupled-tool-engine-json-rpc]] — Bitsquid 把「工具」和「引擎」拆成网络里两个进程的具体做法"
+    },
+    {
+      "file": "wiki/game-development/runtime-editor-console-connection.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[decoupled-tool-engine-json-rpc]] — Bitsquid 2010 年已经在走同样的「JSON over socket」思路"
+    }
+  ],
+  "index_additions": [
+    { "category_header": "## 游戏引擎（wiki/game-engines/）", "row": "| [[bitsquid-task-scheduler]] | Bitsquid 2010 年的任务调度器：开放表、单依赖 + 子任务、global queue |" },
+    { "category_header": "## 游戏引擎（wiki/game-engines/）", "row": "| [[offset-based-resource-blobs]] | 用 offset 而非 pointer patch 做二进制资源 blob |" },
+    { "category_header": "## 游戏引擎（wiki/game-engines/）", "row": "| [[decoupled-tool-engine-json-rpc]] | 工具与引擎解耦：用 JSON 消息走网络协议 |" },
+    { "category_header": "## 游戏开发（wiki/game-development/）", "row": "| [[vcs-vs-database-for-content]] | 游戏内容存 VCS 还是数据库 |" },
+    { "category_header": "## 实时渲染（wiki/rendering/）", "row": "| [[sdf-font-atlas-rendering]] | 基于 AngelCode BMFont + distance field 的字体渲染 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bitsquid-distance-field-angelcode-fonts]] | Frykholm：用 AngelCode BMFont 生成 SDF 字体 |" },
+    { "category_header": "## 源摘要（wiki/sources/）", "row": "| [[sources/bitsquid-our-tool-architecture]] | Frykholm：Bitsquid 的工具架构 —— JSON 消息 + 子窗口嵌入 |" }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-75 Worker HP (bitsquid.blogspot.com ×5 early 2010)\n\n处理 Bitsquid 2010 年 1-4 月 5 篇早期博客。新增 5 概念页（vcs-vs-database-for-content, offset-based-resource-blobs, bitsquid-task-scheduler, sdf-font-atlas-rendering, decoupled-tool-engine-json-rpc）、5 source 摘要。Niklas Frykholm 人物页追加 sources。"
+}

@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w77-hv",
+  "agent_note": "bitsquid.blogspot.com 2010 Q3-Q4 批次（Niklas Frykholm 5 篇）：4 篇深度技术实质性采纳（Flow 可视化脚本数据导向运行时、Bitsquid Allocator 抽象接口、Static Hash + debug assert、Dependency Checker 工具），1 篇纯博客基础设施公告（迁往 BitBucket）跳过——原文正文完全被 SEO 垃圾评论淹没、无实质内容。4 个新概念页横跨 game-engines / computer-systems / programming-languages 三类。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-09-17_visual-scripting-the-data-oriented-way.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-visual-scripting-data-oriented",
+      "title": "Visual Scripting the Data-Oriented Way"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-09-21_custom-memory-allocation-in-c.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-custom-memory-allocation",
+      "title": "Custom Memory Allocation in C++"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-09-30_bitbucket-for-bitsquid.md",
+      "status": "skipped_offtopic",
+      "reason": "博客基础设施公告（代码仓库迁往 BitBucket），原文文字被 SEO 垃圾评论完全淹没，无技术实质内容"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-10-01_static-hash-values.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-static-hash-values",
+      "title": "Static Hash Values"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-10-05_the-dependency-checker.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-dependency-checker",
+      "title": "The Dependency Checker"
+    }
+  ],
+  "concepts_created": [
+    "flow-graph-data-oriented-runtime",
+    "custom-allocator-interface",
+    "static-hash-value-debug-assert",
+    "dependency-checker-tool"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-visual-scripting-data-oriented",
+    "bitsquid-custom-memory-allocation",
+    "bitsquid-static-hash-values",
+    "bitsquid-dependency-checker"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[flow-graph-data-oriented-runtime]] — Flow 可视化脚本的数据导向 runtime\n- [[custom-allocator-interface]] — Bitsquid 的 Allocator 抽象接口与子系统计数\n- [[static-hash-value-debug-assert]] — MurmurHash 常量化 + debug assert 工程技巧\n- [[dependency-checker-tool]] — 资源依赖图治理工具"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-visual-scripting-data-oriented]]\n- [[sources/bitsquid-custom-memory-allocation]]\n- [[sources/bitsquid-static-hash-values]]\n- [[sources/bitsquid-dependency-checker]]"
+    },
+    {
+      "file": "wiki/game-engines/offset-based-resource-blobs.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-visual-scripting-data-oriented]] — Flow graph blob 是同一思路在脚本 runtime 的应用"
+    },
+    {
+      "file": "wiki/game-engines/data-driven-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[flow-graph-data-oriented-runtime]] — Bitsquid Flow：可视化脚本的数据导向 runtime\n- [[dependency-checker-tool]] — 统一资源格式之上的依赖治理"
+    },
+    {
+      "file": "wiki/computer-systems/linear-allocator.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[custom-allocator-interface]] — FrameAllocator 在 Bitsquid 抽象 allocator 接口下的定位"
+    },
+    {
+      "file": "wiki/computer-systems/malloc-wrapper-debug.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[custom-allocator-interface]] — Bitsquid 的 proxy/trace allocator 是另一套同目标的加壳思路"
+    },
+    {
+      "file": "wiki/computer-systems/non-cryptographic-hash.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[static-hash-value-debug-assert]] — MurmurHash 常量化 + 运行期复算断言的工程技巧"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[flow-graph-data-oriented-runtime]] | Bitsquid Flow：可视化脚本的数据导向 runtime |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[dependency-checker-tool]] | Bitsquid 500 行工具：资源依赖图与 replace/move/copy |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[custom-allocator-interface]] | Bitsquid Allocator：抽象接口 + subsystem proxy + assert-on-leak |"
+    },
+    {
+      "category_header": "## 程序语言（wiki/programming-languages/）",
+      "row": "| [[static-hash-value-debug-assert]] | 字符串 hash 常量化：硬编码值 + debug 复算断言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-visual-scripting-data-oriented]] | Frykholm：Flow 可视化脚本 runtime 的 blob + switch dispatch 设计 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-custom-memory-allocation]] | Frykholm：Allocator 抽象接口、subsystem proxy、bootstrap 与 assert-on-leak |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-static-hash-values]] | Frykholm：字符串 hash 编译期化的三条路线比较 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-dependency-checker]] | Frykholm：500 行依赖图工具，missing/dangling/replace/move/copy |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-77 Worker HV (bitsquid.blogspot.com ×5)\n\n处理 5 篇 Niklas Frykholm 2010 Q3-Q4 博客。新增 4 概念页（flow-graph-data-oriented-runtime、custom-allocator-interface、static-hash-value-debug-assert、dependency-checker-tool）与 4 source 摘要，对 niklas-frykholm、offset-based-resource-blobs、data-driven-architecture、linear-allocator、malloc-wrapper-debug、non-cryptographic-hash 六个已有页追加补丁。跳过 1 篇（bitbucket-for-bitsquid，纯博客基础设施公告、原文被 SEO 垃圾评论淹没）。"
+}

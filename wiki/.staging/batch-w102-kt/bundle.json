@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w102-kt",
+  "agent_note": "hacksoflife.blogspot.com 2015-12 ~ 2016-07 五篇 Ben Supnik 文章全部 prime。新增 4 概念页（2 computer-systems + 1 software-design + 1 rendering）+ 5 源摘要。ASan 短文没拆出概念页，作为纯源摘要归档到 ben-supnik。worst-lock-ever 与 work-stealing-lock-free-chaos 是一对前后呼应的姐妹文——app-space-lock-free-simplification 是总纲、refcount-decrement-before-table-lock-race 是具体翻车案例。clang-null-reference-ub-optimization 与既有 undefined-behavior-c-cpp 并存：后者讲 UB 总论，前者是 CGAL iterator 的具体案例学（ben-supnik Sources 必连两个）。morton-order-parallel-mipmap 独立于既有 mipmap-generation-sampling：前者讲 CPU 非递归算法与 sRGB 甜点，后者讲 GPU 侧采样机制。评论区提到的行扫描替代方案在概念页里有收录。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-12-19_the-dangers-of-super-smart-compilers.md",
+      "status": "ingested",
+      "source_slug": "supnik-dangers-super-smart-compilers",
+      "title": "The Dangers of Super Smart Compilers"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-01-08_work-stealing-and-lock-free-chaos.md",
+      "status": "ingested",
+      "source_slug": "supnik-work-stealing-lock-free-chaos",
+      "title": "Work Stealing and Lock Free Chaos"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-05-07_simultaneous-mipmap-level-generation.md",
+      "status": "ingested",
+      "source_slug": "supnik-simultaneous-mipmap-generation",
+      "title": "Simultaneous Mipmap Level Generation"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-07-06_this-is-why-asan-makes-the-big-bucks.md",
+      "status": "ingested",
+      "source_slug": "supnik-asan-big-bucks",
+      "title": "This is Why ASAN Makes The Big Bucks"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2016-07-08_worst-lock-ever.md",
+      "status": "ingested",
+      "source_slug": "supnik-worst-lock-ever",
+      "title": "Worst. Lock. Ever."
+    }
+  ],
+  "concepts_created": [
+    "clang-null-reference-ub-optimization",
+    "app-space-lock-free-simplification",
+    "morton-order-parallel-mipmap",
+    "refcount-decrement-before-table-lock-race"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-dangers-super-smart-compilers",
+    "supnik-work-stealing-lock-free-chaos",
+    "supnik-simultaneous-mipmap-generation",
+    "supnik-asan-big-bucks",
+    "supnik-worst-lock-ever"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[clang-null-reference-ub-optimization]] —— 2015-12 Clang 把 CGAL handle 的 `&*rhs == NULL` 整块优化为 `return false` 的生产事故\n- [[app-space-lock-free-simplification]] —— 2016-01 X-Plane 的分层锁哲学：loading API 有锁、using API 无锁\n- [[morton-order-parallel-mipmap]] —— 2016-05 Morton 序一次遍历生成整座金字塔，在 sRGB 解码成本下接近 recursive\n- [[refcount-decrement-before-table-lock-race]] —— 2016-07 worst lock ever：必须先锁表再 decrement，atomic_dec 到 0 不等于安全"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-dangers-super-smart-compilers]]\n- [[sources/supnik-work-stealing-lock-free-chaos]]\n- [[sources/supnik-simultaneous-mipmap-generation]]\n- [[sources/supnik-asan-big-bucks]]\n- [[sources/supnik-worst-lock-ever]]"
+    },
+    {
+      "file": "wiki/computer-systems/undefined-behavior-c-cpp.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[clang-null-reference-ub-optimization]] —— Supnik 2015：Clang 利用空引用 UB 删除整块 if 分支的 CGAL iterator 案例"
+    },
+    {
+      "file": "wiki/computer-systems/undefined-behavior-c-cpp.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-dangers-super-smart-compilers]] —— `&*ptr` idiom 在 Clang post-classical 优化下的生产事故"
+    },
+    {
+      "file": "wiki/computer-systems/cas-refcount-lowbit-lock.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[refcount-decrement-before-table-lock-race]] —— Supnik 2016 worst-lock-ever：同一个 refcount + table lookup 问题的另一种翻车方式与正解\n- [[app-space-lock-free-simplification]] —— 背后统一的设计哲学：在应用层分层，不追通用 lock-free"
+    },
+    {
+      "file": "wiki/rendering/mipmap-generation-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[morton-order-parallel-mipmap]] —— Supnik 2016 CPU 侧非递归生成：Morton 序一次遍历建完所有 mip，只在 sRGB 解码成本下值得"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[clang-null-reference-ub-optimization]] | Clang 借空引用 UB 删除 CGAL handle 比较整块的生产事故 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[refcount-decrement-before-table-lock-race]] | 必须先锁表再 decrement：atomic_dec 到 0 不等于安全 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[app-space-lock-free-simplification]] | 不做通用 lock-free，在应用层分层让 fast path 无锁 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[morton-order-parallel-mipmap]] | Morton 序一次遍历 CPU 生成整座 mipmap 金字塔 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-dangers-super-smart-compilers]] | Supnik 2015-12：Clang 把空引用 UB 优化成删除整块 if |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-work-stealing-lock-free-chaos]] | Supnik 2016-01：work-stealing 笔记 + X-Plane 不做通用 lock-free |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-simultaneous-mipmap-generation]] | Supnik 2016-05：Morton 序一次性生成所有 mip 层 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-asan-big-bucks]] | Supnik 2016-07：ASan 在 X-Plane 规模下的实战表现与 VBO 累加器越界案例 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-worst-lock-ever]] | Supnik 2016-07：atomic_dec + table lock 顺序错误的双 race 拆解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-102 Worker KT (hacksoflife.blogspot.com ×5)\n\n处理 5 篇 Ben Supnik 2015-12 ~ 2016-07 文章，全部 prime。新增 4 概念页（clang-null-reference-ub-optimization / app-space-lock-free-simplification / morton-order-parallel-mipmap / refcount-decrement-before-table-lock-race）+ 5 源摘要。patch ben-supnik 人物页、undefined-behavior-c-cpp、cas-refcount-lowbit-lock、mipmap-generation-sampling 的相关/Sources 区。worst-lock-ever 与 cas-refcount-lowbit-lock 互相呼应：前者讲「atomic_dec 与 table lookup 顺序错误」的双 race，后者讲「指针低位当 spin lock」的 RCU 变体——同一问题两条路线。"
+}

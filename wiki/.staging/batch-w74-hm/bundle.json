@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w74-hm",
+  "agent_note": "alfredbaudisch.com daily art/dev log 2021 (posts #0001-#0004 era). All 5 files fail topicality gate: sitemap is pure navigation; 'hello world' intro, dailies-rules are personal accountability meta-posts with no technique; #0003 hard-surface/photobash is 3 one-line laments ('lighting is hard', 'photobashing is fun but hard') with 2 screenshots and zero actual technique; #0004 retro dachshund rigged is a progress note ('rigged it, wasted time exporting GIF, will try Krita') with no rigging workflow details. Per orchestrator brief: 'if pure personal progress log with no technique, SKIP'. Later posts in the series (Day 33 Substance Designer, Day 62 UV refresher, Banjo-Kazooie N64 terrain etc. from the same blog) may warrant ingest; these 5 do not.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alfredbaudisch.com/2021-03-11_sitemap.md",
+      "status": "skipped_offtopic",
+      "reason": "sitemap / navigation index, not content"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2021-03-11_website-and-dailies-again-inspired-by-beeple-everydays.md",
+      "status": "skipped_offtopic",
+      "reason": "'hello world' intro post about starting a daily routine; no technique"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2021-03-12_0002-personal-website-and-dailies-rules.md",
+      "status": "skipped_offtopic",
+      "reason": "personal accountability rules for daily-post project; no technique"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2021-03-13_0003-hard-surface-modeling-first-photobash.md",
+      "status": "skipped_offtopic",
+      "reason": "three one-line laments ('hard-surface modeling without add-ons', 'lighting is hard', 'photobashing is fun but hard') plus two screenshots; no workflow, no tool names, no actual technique described"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2021-03-15_0004-retro-dachshund-rigged.md",
+      "status": "skipped_offtopic",
+      "reason": "progress note: 'rigged the PS1 dachshund, wasted time exporting Blender GIF, next time will use Krita' — no rigging workflow details"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-74 Worker hm (alfredbaudisch.com \u00d75)\n\n\u5904\u7406 alfredbaudisch.com \u65e9\u671f dailies \u6279\u6b21\uff082021-03-11 \u81f3 03-15\uff095 \u7bc7\u3002\u5168\u90e8\u4e0d\u8fc7\u9898\u6750\u5173\uff1asitemap \u4e3a\u7eaf\u5bfc\u822a\uff1bhello-world \u548c dailies-rules \u4e3a\u4e2a\u4eba\u9879\u76ee\u81ea\u5f8b\u5143\u5e16\uff1b#0003 hard-surface + photobash \u4ec5\u4e09\u53e5\u201c\u5efa\u6a21\u96be\u3001\u5149\u5149\u96be\u3001photobash \u6709\u8da3\u4f46\u96be\u201d\u5e76\u9644\u622a\u56fe\uff0c\u65e0\u5177\u4f53\u6280\u672f\uff1b#0004 PS1 \u814a\u80a0\u72d7\u7ed1\u5b9a\u4ec5\u4e3a\u8fdb\u5ea6\u6d41\u6c34\u5e10\u3002\u540c\u535a\u5ba2\u540e\u671f\u7bc7\u76ee\uff08Substance Designer \u9996\u6b21\u3001Banjo-Kazooie N64 \u5730\u5f62\u3001\u9876\u70b9\u8272 Wash Car \u7b49\uff09\u5982\u88ab\u6293\u53d6\u503c\u5f97\u4eca\u540e\u5355\u72ec\u8bc4\u4f30\u3002\u96f6\u65b0\u589e\u9875\u9762\uff0c\u65e0 patch\u3002"
+}

@@ -1,0 +1,65 @@
+{
+  "batch_id": "batch-w85-iv",
+  "agent_note": "c0de517e 2010-03 五篇：两对 monthly-archive 重复（retweeting / the-world-changed）仅保留其一判定，三篇 unique。retweeting 一句话链接到 zefrank 涂鸦 webtoy，无技术内容，SKIP。the-world-changed 是作者感叹自己错过 Web 开发、空列 AWS/Apache 链接，无技术内容，SKIP。collaborative-design-experiment 是 2010 年社区协作产出的引擎分层清单——Pesce 自承结果更接近他本人视角，但这正好是 2010 年 AAA 图形程序员对理想引擎的共识快照，六层结构非常工程化（把 CI/Code Review 写进 Layer -1），与 Gregory 分层、Bitsquid 解耦可互相参照，值得入库。新增 1 概念页、1 source 摘要，顺便给 angelo-pesce / engine-layering 挂 cross-link。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-12_retweeting-2.md",
+      "status": "skipped_duplicate",
+      "reason": "monthly-archive 重复，与 2010-03-12_retweeting.md 内容一致"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-12_retweeting.md",
+      "status": "skipped_offtopic",
+      "reason": "一句话推荐 zefrank scribble webtoy，无技术内容"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-14_collaborative-design-experiment-2.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-collaborative-engine-design",
+      "title": "Collaborative design experiment (引擎分层协作清单)"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed-2.md",
+      "status": "skipped_duplicate",
+      "reason": "monthly-archive 重复，与 2010-03-16_the-world-changed.md 内容一致"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-16_the-world-changed.md",
+      "status": "skipped_offtopic",
+      "reason": "作者感叹错过 Web 开发，空列 AWS/Apache 链接后被截断，无技术内容"
+    }
+  ],
+  "concepts_created": ["pesce-2010-engine-layer-sketch"],
+  "people_created": [],
+  "source_summaries_created": ["c0de517e-collaborative-engine-design"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pesce-2010-engine-layer-sketch]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-collaborative-engine-design]]"
+    },
+    {
+      "file": "wiki/game-engines/engine-layering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pesce-2010-engine-layer-sketch]] —— 2010 年社区协作产出的六层草图，把 CI/Code Review 抬到 Layer -1"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[pesce-2010-engine-layer-sketch]] | Pesce 2010 年社区协作引擎分层草图：六层结构 + DevOps 摆首层 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-collaborative-engine-design]] | Pesce：2010 年 etherpad 协作引擎架构清单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-85 Worker IV (c0de517e.blogspot.com 2010-03 ×5)\n\n处理 5 篇 Pesce 2010-03 博文：2 篇 monthly-archive 重复（retweeting-2 / the-world-changed-2）skipped_duplicate；retweeting（webtoy 推荐）与 the-world-changed（Web 开发感叹）skipped_offtopic；保留 collaborative-design-experiment——2010 年社区协作产出的六层引擎架构清单。新增 1 概念页 [[pesce-2010-engine-layer-sketch]]、1 source 摘要，给 [[angelo-pesce]] / [[engine-layering]] 挂 cross-link。"
+}

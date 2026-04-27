@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w67-gq",
+  "agent_note": "全部为 index/about/tutorials 列表页，无实质技术内容，整批 skip。ronja-bohm 人物页已存在；linden-reid、themaister 人物页按任务指令不新建（源内容不足以支撑概念/人物页）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/ronja-tutorials.com/2021-01-01_shader-basics.md",
+      "status": "skipped_offtopic",
+      "reason": "仅是 4 条教程的超短目录索引（Structure/HLSL/Variables/Basic Shader），无实质内容，技术深度由各子教程承担"
+    },
+    {
+      "path": "raw/articles/ronja-tutorials.com/2021-06-30_posts.md",
+      "status": "skipped_offtopic",
+      "reason": "被截断的 posts 索引页，仅残留一条 outline 后处理提示，不成文"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-04_about.md",
+      "status": "skipped_offtopic",
+      "reason": "作者 About 页，非技术内容"
+    },
+    {
+      "path": "raw/articles/lindenreid.wordpress.com/2017-11-04_unity-shader-tutorials.md",
+      "status": "skipped_offtopic",
+      "reason": "教程目录页，正文仅一句重复 + 一张 gif，无实质技术内容"
+    },
+    {
+      "path": "raw/articles/themaister.net/2011-01-01_themaister-s-den.md",
+      "status": "skipped_offtopic",
+      "reason": "Themaister（Hans-Kristian Arntzen）早期 About 页，2011 年学生自述，非技术内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-67 Worker GQ (ronja + lindenreid + themaister index/about ×5)\n\n5 篇全部为 index/about/tutorials 目录页，无实质技术内容，整批 skip。未新增任何 wiki 页。"
+}

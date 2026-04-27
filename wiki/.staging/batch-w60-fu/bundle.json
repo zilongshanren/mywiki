@@ -1,0 +1,89 @@
+{
+  "batch_id": "batch-w60-fu",
+  "agent_note": "blog.selfshadow.com 5 文件：2 个是空壳 changelog / blog index（skip）；3 个 SIGGRAPH PBS 课程主页（2012/2014/2025）。2014 source 页此前已存在，沿用不动；新增 2012 与 2025 两个 source 摘要页 + openpbr + neural-materials 两个概念页。stephen-hill 作者页已存在，patch 追加 2 条 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_self-shadow.md",
+      "status": "skipped_offtopic",
+      "reason": "纯 changelog 文本（2012 course 的版本修订历史），无独立技术内容。"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_self-shadow-7.md",
+      "status": "skipped_offtopic",
+      "reason": "纯 changelog 文本（2025 course 的版本修订历史），有用的要点已并入 selfshadow-pbs-siggraph-2025 摘要。"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2012-course-practical-physically-based-shading-in-f.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-pbs-siggraph-2012",
+      "title": "SIGGRAPH 2012 Course: Practical Physically Based Shading in Film and Game Production"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2014-course-physically-based-shading-in-theory-and.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/selfshadow-pbs-siggraph-2014.md 此前已存在，内容一致，不重复创建。"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2026-01-01_siggraph-2025-course-physically-based-shading-in-theory-and.md",
+      "status": "ingested",
+      "source_slug": "selfshadow-pbs-siggraph-2025",
+      "title": "SIGGRAPH 2025 Course: Physically Based Shading in Theory and Practice"
+    }
+  ],
+  "concepts_created": ["openpbr", "neural-materials"],
+  "people_created": [],
+  "source_summaries_created": ["selfshadow-pbs-siggraph-2012", "selfshadow-pbs-siggraph-2025"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/stephen-hill.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/selfshadow-pbs-siggraph-2012]]"
+    },
+    {
+      "file": "wiki/people/stephen-hill.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/selfshadow-pbs-siggraph-2025]]"
+    },
+    {
+      "file": "wiki/people/stephen-hill.md",
+      "operation": "replace_line",
+      "match": "sources: 4",
+      "content": "sources: 6"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/selfshadow-pbs-siggraph-2012]]"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/selfshadow-pbs-siggraph-2025]]"
+    },
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[openpbr]] —— 2023+ 的开放式 uber-shader 标准，Kutz / Portsmouth 主笔\n- [[neural-materials]] —— 把离线 shader graph 压进实时推理的神经材质方向"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[openpbr]] | 开放式 PBR uber-shader 标准（Adobe / Autodesk / ILM） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[neural-materials]] | 神经材质：把复杂离线 shader graph 压进小 MLP |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-pbs-siggraph-2012]] | Hill：SIGGRAPH 2012 PBS 课程（Disney Principled BRDF 首发） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/selfshadow-pbs-siggraph-2025]] | Hill：SIGGRAPH 2025 PBS 课程（OpenPBR / EON / 神经材质 / GT7 tone mapping） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-60 Worker FU (blog.selfshadow.com ×5)\n\n处理 5 篇 blog.selfshadow.com 条目（Stephen Hill 的 SIGGRAPH PBS 课程主页）。跳过 2 篇纯 changelog 空壳与 1 篇已在 wiki 中的重复（2014 课程页已存在）。新增 2 个 source 摘要（2012、2025 课程），新增 2 个概念页（openpbr、neural-materials）。Patch stephen-hill 作者页与 physically-based-shading 概念页追加两条 source 链接。"
+}

@@ -1,0 +1,71 @@
+{
+  "batch_id": "batch-w53-ey",
+  "agent_note": "5 篇 alfredbaudisch.com 源文件均为博客的分类 listing/索引页，正文以重复的 teaser 片段为主。3 篇 /project-style/ 指向同一个 Godot 复刻 Banjo-Kazooie N64 地形的项目，合并为一篇 source summary；2 篇 /tools/{blender,godot}/ 是作者的工具栏目聚合页，无独立技术内容，按 topicality gate 标记 skipped_offtopic。新增 1 概念页 + 1 人物页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alfredbaudisch.com/2025-11-30_project-style-photo-texture.md",
+      "status": "ingested",
+      "source_slug": "alfredbaudisch-banjo-godot-terrain",
+      "title": "Project Style: Photo Texture (合并)"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2025-11-30_project-style-shaders.md",
+      "status": "ingested",
+      "source_slug": "alfredbaudisch-banjo-godot-terrain",
+      "title": "Project Style: Shaders (合并)"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2025-11-30_project-style-vertex-colors.md",
+      "status": "ingested",
+      "source_slug": "alfredbaudisch-banjo-godot-terrain",
+      "title": "Project Style: Vertex Colors (合并)"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2025-11-30_tool-blender.md",
+      "status": "skipped_offtopic",
+      "reason": "博客 /tools/blender/ 栏目聚合页，正文为其他 sub-post 的 teaser 片段，无独立技术内容"
+    },
+    {
+      "path": "raw/articles/alfredbaudisch.com/2025-11-30_tool-godot.md",
+      "status": "skipped_offtopic",
+      "reason": "博客 /tools/godot/ 栏目聚合页，正文为其他 sub-post 的 teaser 片段，无独立技术内容"
+    }
+  ],
+  "concepts_created": ["banjo-kazooie-vertex-color-terrain"],
+  "people_created": ["alfred-baudisch"],
+  "source_summaries_created": ["alfredbaudisch-banjo-godot-terrain"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[banjo-kazooie-vertex-color-terrain]] —— N64 的 vertex-color splat 地形：把硬件约束当美学的另一案例（Godot 复刻）"
+    },
+    {
+      "file": "wiki/rendering/retro-rendering-techniques.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/alfredbaudisch-banjo-godot-terrain]]"
+    },
+    {
+      "file": "wiki/rendering/terrain-splatmap-shader-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[banjo-kazooie-vertex-color-terrain]] —— N64 风格的「顶点色即 splat」，比 `_Control` 贴图约定更暴力但零带宽"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[banjo-kazooie-vertex-color-terrain]] | N64 时代把颜色编码进顶点色做 splat 混合的地形风格，Godot/Blender 复刻路径 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[alfred-baudisch]] | Alfred Reinold Baudisch，巴西 Elixir/Godot indie dev，《Brazilian Street Food Simulator》作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alfredbaudisch-banjo-godot-terrain]] | Baudisch：在 Godot Visual Shader 里复刻 Banjo-Kazooie N64 vertex-color 地形并扩展到 runtime dirt paint |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-53 Worker EY (alfredbaudisch.com ×5)\n\n处理 5 篇 alfredbaudisch.com 源文件。3 篇 /project-style/ 栏目页指向同一个 Godot 复刻 Banjo-Kazooie N64 地形的项目，合并为 1 篇 source summary (`alfredbaudisch-banjo-godot-terrain`)。新增概念页 `banjo-kazooie-vertex-color-terrain` 与人物页 `alfred-baudisch`。2 篇 /tools/{blender,godot}/ 栏目聚合页无独立技术内容，skipped_offtopic。交叉链接到 [[retro-rendering-techniques]] 与 [[terrain-splatmap-shader-graph]]。"
+}

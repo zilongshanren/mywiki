@@ -1,0 +1,108 @@
+{
+  "batch_id": "batch-w58-fp",
+  "agent_note": "Daniel Ilett Snapshot Shaders Pro 续：sharpen / silhouette / snes / synthwave / text-adventure。5 篇均为极短产品参考，3 个新概念页（sharpen-filter / synthwave-grid-postfx / text-adventure-terminal-postfx）。silhouette 复用 depth-texture-silhouette；SNES 色阶量化复用 color-quantization-retro。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-sharpen.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-sharpen",
+      "title": "Snapshot Shaders Pro - Sharpen"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-silhouette.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-silhouette",
+      "title": "Snapshot Shaders Pro - Silhouette"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-snes.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-snes",
+      "title": "Snapshot Shaders Pro - SNES"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-synthwave.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-synthwave",
+      "title": "Snapshot Shaders Pro - Synthwave"
+    },
+    {
+      "path": "raw/articles/danielilett.com/2026-01-01_snapshot-shaders-pro-text-adventure.md",
+      "status": "ingested",
+      "source_slug": "danielilett-snapshot-pro-text-adventure",
+      "title": "Snapshot Shaders Pro - Text Adventure"
+    }
+  ],
+  "concepts_created": [
+    "sharpen-filter",
+    "synthwave-grid-postfx",
+    "text-adventure-terminal-postfx"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "danielilett-snapshot-pro-sharpen",
+    "danielilett-snapshot-pro-silhouette",
+    "danielilett-snapshot-pro-snes",
+    "danielilett-snapshot-pro-synthwave",
+    "danielilett-snapshot-pro-text-adventure"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/danielilett-snapshot-pro-sharpen]]\n- [[sources/danielilett-snapshot-pro-silhouette]]\n- [[sources/danielilett-snapshot-pro-snes]]\n- [[sources/danielilett-snapshot-pro-synthwave]]\n- [[sources/danielilett-snapshot-pro-text-adventure]]"
+    },
+    {
+      "file": "wiki/rendering/depth-texture-silhouette.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-snapshot-pro-silhouette]] —— Snapshot Shaders Pro 的 Silhouette override：把同一套 `Linear01Depth` + `lerp(near, far, depth)` 做成可在 Volume 里混合的产品版，参数裁到只剩 Near/Far Color"
+    },
+    {
+      "file": "wiki/rendering/color-quantization-retro.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/danielilett-snapshot-pro-snes]] —— Pro 版把每通道色阶量化做成 Volume override，只暴露 `Banding Levels` 一个滑块，N=6 近 SNES、N=4 近 NES"
+    },
+    {
+      "file": "wiki/people/daniel-ilett.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sharpen-filter]]\n- [[synthwave-grid-postfx]]\n- [[text-adventure-terminal-postfx]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sharpen-filter]] | unsharp mask 锐化后处理：原图加高频残差；Snapshot Shaders Pro 的单参数产品化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[synthwave-grid-postfx]] | 屏幕像素反推世界坐标后判定到三组正交平面的距离，画出透视正确的无限网格 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[text-adventure-terminal-postfx]] | ASCII 终端风格后处理：cell 平均亮度索引字符图集、bg/fg 双色 lerp |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-sharpen]] | Ilett：Snapshot Shaders Pro - Sharpen unsharp mask 单参数 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-silhouette]] | Ilett：Snapshot Shaders Pro - Silhouette 深度剪影 near/far 双色 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-snes]] | Ilett：Snapshot Shaders Pro - SNES 每通道色阶量化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-synthwave]] | Ilett：Snapshot Shaders Pro - Synthwave 世界空间网格后处理 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/danielilett-snapshot-pro-text-adventure]] | Ilett：Snapshot Shaders Pro - Text Adventure ASCII 终端后处理 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-58 Worker FP (danielilett snapshot-pro ×5: sharpen/silhouette/snes/synthwave/text-adventure)\n\n处理 5 篇 Daniel Ilett *Snapshot Shaders Pro* 产品参考（极短文档）。新增 3 概念页：[[sharpen-filter]]（unsharp mask / 3×3 Laplacian 卷积核）、[[synthwave-grid-postfx]]（屏幕像素反推世界坐标 + 三组正交平面距离判定）、[[text-adventure-terminal-postfx]]（cell 亮度索引字符图集 + fg/bg lerp）。Silhouette 与 SNES 分别复用既有 [[depth-texture-silhouette]] 和 [[color-quantization-retro]]，只追加 source 链接。新增 5 source 摘要。无人物、无跳过。"
+}

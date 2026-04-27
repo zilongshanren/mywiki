@@ -1,0 +1,106 @@
+{
+  "batch_id": "batch-w86-iw",
+  "agent_note": "Bitsquid 2012 Q3/Q4 五篇：header 组织、vector field 三部曲、foundation library 发布。三部曲合并为一个 source + 一个概念（vector-field-bytecode-vm）。foundation library 发布文较薄但史料价值高，独立成 source + 概念（bitsquid-foundation-library-concept，避免与 source slug 同名）。header 组织文独立成 source + 概念（types-h-data-code-separation）。niklas-frykholm 人物页已存在，不新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-09-03_a-new-way-of-organizing-header-files.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-organizing-header-files",
+      "title": "A new way of organizing header files"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-09-17_a-data-oriented-data-driven-system-for-vector-fields-part-1.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-vector-fields",
+      "title": "A Data-Oriented, Data-Driven System for Vector Fields - Part 1 (merged into bitsquid-vector-fields)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-10-02_a-data-oriented-data-driven-system-for-vector-fields-part-2.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-vector-fields",
+      "title": "A Data-Oriented, Data-Driven System for Vector Fields - Part 2 (merged)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-10-17_a-data-oriented-data-driven-system-for-vector-fields-part-3.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-vector-fields",
+      "title": "A Data-Oriented, Data-Driven System for Vector Fields - Part 3 (merged)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-11-01_bitsquid-foundation-library.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-foundation-library",
+      "title": "Bitsquid Foundation Library"
+    }
+  ],
+  "concepts_created": [
+    "types-h-data-code-separation",
+    "vector-field-bytecode-vm",
+    "bitsquid-foundation-library-concept"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-organizing-header-files",
+    "bitsquid-vector-fields",
+    "bitsquid-foundation-library"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-organizing-header-files]]\n- [[sources/bitsquid-vector-fields]]\n- [[sources/bitsquid-foundation-library]]"
+    },
+    {
+      "file": "wiki/computer-systems/custom-allocator-interface.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bitsquid-foundation-library-concept]] —— Allocator 抽象在 foundation 库的公开落地实现"
+    },
+    {
+      "file": "wiki/computer-systems/header-hero-compile-analysis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[types-h-data-code-separation]] —— Frykholm 对 include 传染的结构性解法"
+    },
+    {
+      "file": "wiki/computer-systems/bytecode-everywhere.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vector-field-bytecode-vm]] —— 外循环指令/内循环数据的大规模向量化字节码 VM"
+    },
+    {
+      "file": "wiki/software-design/header-as-user-manual.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[types-h-data-code-separation]] —— 另一种 header 组织哲学：数据集中 / 函数按功能分散"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[types-h-data-code-separation]] | Bitsquid：types.h 集中数据、函数按功能分组的 header 组织 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[vector-field-bytecode-vm]] | Bitsquid 向量场：外循环指令 / 内循环数据的向量化字节码 VM |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[bitsquid-foundation-library-concept]] | Bitsquid 2012 开源的最小引擎基座：allocator + 反 STL 集合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-organizing-header-files]] | Frykholm 2012：types.h 集中数据、函数按功能分组的 header 组织方式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-vector-fields]] | Frykholm 2012 三部曲合并：向量场的外循环指令/内循环数据字节码 VM |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-foundation-library]] | Frykholm 2012：Bitsquid Foundation Library 开源发布（MIT / allocator + POD 集合）|"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-86 Worker IW (bitsquid.blogspot.com 2012 Q3/Q4 ×5)\n\n处理 Bitsquid 2012 年下半年 5 篇：header 组织 1 篇、vector field 三部曲（合并为 1 个 source + 1 个概念）、foundation library 发布 1 篇。新增 3 概念页（types-h-data-code-separation / vector-field-bytecode-vm / bitsquid-foundation-library-concept），3 个 source 摘要。niklas-frykholm 人物页已存在，仅追加 sources。补丁 4 个已有概念（custom-allocator-interface / header-hero-compile-analysis / bytecode-everywhere / header-as-user-manual）。无跳过。"
+}

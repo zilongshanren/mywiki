@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch-w96-kb",
+  "agent_note": "Supnik 2012-11 deferred weirdness 四连篇合编为 1 概念 + 1 源摘要 (xplane-deferred-pipeline-hacks / supnik-deferred-weirdness-series)；2012-12 LuaJIT 64-bit 独立为 1 概念 + 1 源摘要 (luajit-2gb-address-constraint / supnik-luajit-x-plane-64bit)。Supnik 人物页已存在，patch Related + Sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-11-16_deferred-lighting-stenciling-is-not-a-win.md",
+      "status": "ingested",
+      "source_slug": "supnik-deferred-weirdness-series",
+      "title": "Deferred Lighting: Stenciling is not a Win"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-11-17_deferred-weirdness-collapsing-two-passes.md",
+      "status": "ingested",
+      "source_slug": "supnik-deferred-weirdness-series",
+      "title": "Deferred Weirdness: Collapsing Two Passes"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-11-18_deferred-weirdness-when-not-to-be-linear.md",
+      "status": "ingested",
+      "source_slug": "supnik-deferred-weirdness-series",
+      "title": "Deferred Weirdness: When Not to be Linear"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-11-19_deferred-weirdness-what-have-we-learned.md",
+      "status": "ingested",
+      "source_slug": "supnik-deferred-weirdness-series",
+      "title": "Deferred Weirdness: What Have We Learned?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-12-09_integrating-luajit-with-x-plane-64-bit-fun.md",
+      "status": "ingested",
+      "source_slug": "supnik-luajit-x-plane-64bit",
+      "title": "Integrating LuaJIT with X-Plane: 64-bit fun"
+    }
+  ],
+  "concepts_created": [
+    "xplane-deferred-pipeline-hacks",
+    "luajit-2gb-address-constraint"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-deferred-weirdness-series",
+    "supnik-luajit-x-plane-64bit"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 2012-11 四连篇：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear 双 blend 共存 / 复杂度来自硬边角叠加）\n- [[luajit-2gb-address-constraint]] —— 2012-12 LuaJIT 64-bit 低 2 GB 地址约束与 X-Plane 预占 VM + dlmalloc hack 的集成方案"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-deferred-weirdness-series]]\n- [[sources/supnik-luajit-x-plane-64bit]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 优化关掉 / 双 depth domain 合并为一 pass / sRGB + linear blend 共存 / 工程复杂度来自硬边角叠加）"
+    },
+    {
+      "file": "wiki/rendering/xplane-gbuffer-format.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 2012-11 系列讲 10.10 版本如何把本条 G-Buffer 格式放进一个带 HDR/LDR/多 stencil 位的缝合管线里"
+    },
+    {
+      "file": "wiki/rendering/deferred-depth-reuse-tradeoffs.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 2012-11 四连篇：路线 C（G-Buffer 写 16F 眼空间 Z）在 10.10 完整管线里的落地全景"
+    },
+    {
+      "file": "wiki/rendering/deferred-light-volume-stencil-depth-clamp-hack.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 2012-11-16 Supnik 把本文描述的 stencil 优化**关掉**的工程决定：顶点带宽比 fill rate 更紧时 stencil 净亏损"
+    },
+    {
+      "file": "wiki/rendering/deferred-alpha-lighting.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— X-Plane 10.10 的 alpha-in-deferred 选择：G-Buffer 内按 src-alpha 加权平均全部通道（除 eye-space Z），albedo/emissive 层间必须 sRGB blend"
+    },
+    {
+      "file": "wiki/rendering/linear-lighting-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— X-Plane 10.10 让 linear 光累加与 sRGB 几何 blend 在同一帧不同 RT 上共存的实例"
+    },
+    {
+      "file": "wiki/rendering/srgb-premultiplied-alpha-compression.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 同一作者 2012-11 延伸版：G-Buffer 内 albedo + emissive 两层 alpha blend 为何必须 sRGB（等式 blend(A,B,α)+blend(C,D,α)=blend(A+C,B+D,α) 只在同色空间成立）"
+    },
+    {
+      "file": "wiki/rendering/agp-vs-vram-streaming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-deferred-pipeline-hacks]] —— 2012-11 实证：X-Plane 关掉 stencil 光源体积优化的根据之一——顶点流带宽（AGP/GART）比 fill rate 更瓶颈"
+    },
+    {
+      "file": "wiki/computer-systems/virtual-memory.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[luajit-2gb-address-constraint]] —— X-Plane 用 OS X 懒提交 VM 预占 1.6 GB 低 2 GB 地址空间给 LuaJIT 的实战案例"
+    },
+    {
+      "file": "wiki/computer-systems/custom-allocator-interface.md",
+      "operation": "append_to_section",
+      "section": "## 和其他设计的关系",
+      "content": "- [[luajit-2gb-address-constraint]] —— 把自定义 allocator 从「性能/预算工具」升级为「地址空间预留工具」的实战：LuaJIT 低 2 GB 约束 + dlmalloc 接自预抓 chunk 池"
+    },
+    {
+      "file": "wiki/programming-languages/lua-memory-profiling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[luajit-2gb-address-constraint]] —— LuaJIT 2.0 的进程级地址约束；和 Lua 5.1 标准 GC 的诊断是不同问题，同一层"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[xplane-deferred-pipeline-hacks]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写四条教训（stencil 关掉 / 双 depth domain 合 pass / sRGB+linear blend 共存 / 复杂度来自硬边角叠加） |"
+    },
+    {
+      "category_header": "## 计算机体系结构（wiki/computer-systems/）",
+      "row": "| [[luajit-2gb-address-constraint]] | LuaJIT 2.0 的低 2 GB 地址约束：signed 32-bit 偏移 × OS X 零页 × 插件 late-load × 预占 VM + dlmalloc hack |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-deferred-weirdness-series]] | Supnik 2012-11 四连篇合编：X-Plane 10.10 延迟管线重写 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-luajit-x-plane-64bit]] | Supnik 2012-12：LuaJIT 64-bit 集成 X-Plane 的低 2 GB 地址空间 workaround |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-96 Worker KB (hacksoflife 2012-11 deferred + 2012-12 LuaJIT ×5)\n\n处理 Supnik 5 篇：2012-11-16 stenciling-is-not-a-win + 11-17 collapsing-two-passes + 11-18 when-not-to-be-linear + 11-19 what-have-we-learned 合编为 1 概念 (xplane-deferred-pipeline-hacks) + 1 合并源摘要 (supnik-deferred-weirdness-series)；2012-12-09 LuaJIT 64-bit 独立为 1 概念 (luajit-2gb-address-constraint) + 1 源摘要 (supnik-luajit-x-plane-64bit)。5 篇全部 ingest，无 skipped。Ben Supnik 人物页已存在，patch 追加 2 条 Related + 2 条 Sources；deferred-rendering / xplane-gbuffer-format / deferred-depth-reuse-tradeoffs / deferred-light-volume-stencil-depth-clamp-hack / deferred-alpha-lighting / linear-lighting-pipeline / srgb-premultiplied-alpha-compression / agp-vs-vram-streaming / virtual-memory / custom-allocator-interface / lua-memory-profiling 通过 patch 追加反向链接。"
+}

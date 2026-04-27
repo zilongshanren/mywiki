@@ -1,0 +1,117 @@
+{
+  "batch_id": "batch-w69-gw",
+  "agent_note": "Hexops devlog / Mach / Stephen Gutekanst (Emi). 4 ingest + 1 skip (2026s 是 pkgmirror 帖子的重复/首页快照).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/devlog.hexops.org/2024-01-07_announcing-mach-nominated-zig-versions.md",
+      "status": "ingested",
+      "source_slug": "hexops-mach-nominated-zig",
+      "title": "Announcing Mach nominated Zig versions"
+    },
+    {
+      "path": "raw/articles/devlog.hexops.org/2024-02-02_mach-v0-3-released-zig-game-engine-graphics-toolkit.md",
+      "status": "ingested",
+      "source_slug": "hexops-mach-v0-3-released",
+      "title": "Mach v0.3 released - Zig game engine & graphics toolkit"
+    },
+    {
+      "path": "raw/articles/devlog.hexops.org/2024-02-09_building-the-directx-shader-compiler-better-than-microsoft.md",
+      "status": "ingested",
+      "source_slug": "hexops-dxcompiler-better-than-microsoft",
+      "title": "Building the DirectX shader compiler better than Microsoft?"
+    },
+    {
+      "path": "raw/articles/devlog.hexops.org/2026-01-01_2026s.md",
+      "status": "skipped_duplicate",
+      "reason": "Hexops devlog 2026 年首页快照，内容是 pkgmirror 公告的前几行摘要，与 2026-03-26 pkgmirror 全文重复"
+    },
+    {
+      "path": "raw/articles/devlog.hexops.org/2026-03-26_announcing-pkgmirror-self-host-your-own-zig-mirror.md",
+      "status": "ingested",
+      "source_slug": "hexops-pkgmirror",
+      "title": "Announcing pkgmirror: self-host your own Zig mirror"
+    }
+  ],
+  "concepts_created": [
+    "mach-engine",
+    "mach-nominated-zig-versions",
+    "sysgpu-webgpu-successor",
+    "dxc-dxil-signing",
+    "mach-dxcompiler-static-build",
+    "zig-package-mirror"
+  ],
+  "people_created": ["stephen-gutekanst"],
+  "source_summaries_created": [
+    "hexops-mach-nominated-zig",
+    "hexops-mach-v0-3-released",
+    "hexops-dxcompiler-better-than-microsoft",
+    "hexops-pkgmirror"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/webgpu-intro.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/hexops-mach-v0-3-released]] — sysgpu 作为 WebGPU 的原生继任者\n- [[sources/hexops-dxcompiler-better-than-microsoft]] — WebGPU 实现背后 WGSL→HLSL→DXIL 的 runtime 困境"
+    },
+    {
+      "file": "wiki/programming-languages/zig-c-abi-boundary.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关阅读：[[mach-engine]]、[[mach-nominated-zig-versions]]、[[zig-package-mirror]]——Mach 生态展示了 Zig 在 pre-1.0 阶段做大型多仓库工程的一整套实践"
+    },
+    {
+      "file": "wiki/rendering/slang-shader-language.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- 相关：[[dxc-dxil-signing]] — DXC/DXIL 体系与 dxil.dll 代码签名 blob"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[mach-engine]] | Mach：Zig 写的模块化游戏引擎，核心是标准库式组件 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[mach-nominated-zig-versions]] | Zig nightly/stable 之间的月度提名版本机制 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[zig-package-mirror]] | pkgmirror：自托管 Zig toolchain 与包镜像服务 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[sysgpu-webgpu-successor]] | Mach sysgpu：Zig 写的 WebGPU 原生实现与继任者 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dxc-dxil-signing]] | DXC/DXIL 工具链与 dxil.dll 专有签名 blob 的历史 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mach-dxcompiler-static-build]] | 用 build.zig 重写 DXC 的构建系统并跨平台分发 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[stephen-gutekanst]] | Emi / emidoots，Mach 引擎与 Hexops 作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hexops-mach-nominated-zig]] | Hexops：Mach 提名 Zig 版本的正式化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hexops-mach-v0-3-released]] | Hexops：Mach v0.3 发布（sysgpu / sysaudio / ECS / Sprite） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hexops-dxcompiler-better-than-microsoft]] | Hexops：比微软自己更好地构建 DXC |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/hexops-pkgmirror]] | Hexops：pkgmirror 自托管 Zig 镜像发布 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-69 Worker GW (Hexops / Mach / Stephen Gutekanst ×5)\n\n处理 5 篇 devlog.hexops.org，4 篇入库（nominated Zig / Mach v0.3 / mach-dxcompiler / pkgmirror），1 篇跳过（2026s 是 pkgmirror 公告首页快照，重复）。新增 6 概念页（mach-engine, mach-nominated-zig-versions, sysgpu-webgpu-successor, dxc-dxil-signing, mach-dxcompiler-static-build, zig-package-mirror）、1 人物页（stephen-gutekanst）、4 source 摘要。给 webgpu-intro / zig-c-abi-boundary / slang-shader-language 追加交叉引用。"
+}

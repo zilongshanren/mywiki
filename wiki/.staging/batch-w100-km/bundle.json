@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w100-km",
+  "agent_note": "Pesce 2011-01/02 five-file batch. Skip linux-is-not-for-nerds (off-topic lifestyle) and the -2.md archive dup of gamma-and-diffuse-shading. Three source summaries + two new concepts (gradient-based-post-aa, deferred-rendering-mythbusting). Gamma shortcut too tiny for own concept page; patched into gamma-correction-srgb + linear-lighting-pipeline 相关 section.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-12_recipe-for-antialiasing-as-post.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-recipe-for-aa",
+      "title": "Recipe for antialiasing as a post"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-14_poll-results-2010-most-envied-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-most-envied-rendering-poll-2010",
+      "title": "Poll results - 2010 most envied rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-22_linux-is-not-for-nerds-anymore.md",
+      "status": "skipped_offtopic",
+      "reason": "lifestyle/opinion piece about Linux desktop usability, no graphics/engine content"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-22_mythbusting-deferred-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-mythbusting-deferred",
+      "title": "Mythbusting: deferred rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading-2.md",
+      "status": "skipped_duplicate",
+      "reason": "identical content to 2011-02-08_gamma-and-diffuse-shading.md (one-line trick post, archive duplicate). Canonical ingest uses the non-suffixed file."
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-02-08_gamma-and-diffuse-shading.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-gamma-diffuse-shortcut",
+      "title": "Gamma and diffuse shading"
+    }
+  ],
+  "concepts_created": [
+    "gradient-based-post-aa",
+    "deferred-rendering-mythbusting"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-recipe-for-aa",
+    "c0de517e-most-envied-rendering-poll-2010",
+    "c0de517e-mythbusting-deferred",
+    "c0de517e-gamma-diffuse-shortcut"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gradient-based-post-aa]] —— 2011 DIY 梯度驱动 post-AA 配方，MLAA 的廉价替代\n- [[deferred-rendering-mythbusting]] —— 2011 延迟渲染六条神话拆解"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-recipe-for-aa]]\n- [[sources/c0de517e-most-envied-rendering-poll-2010]]\n- [[sources/c0de517e-mythbusting-deferred]]\n- [[sources/c0de517e-gamma-diffuse-shortcut]]"
+    },
+    {
+      "file": "wiki/rendering/aa-techniques-survey-2011.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gradient-based-post-aa]] —— Pesce 2011 给出的梯度驱动 post-AA 配方，属 Post-process 档中「纯本地滤镜」子类"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-rendering-mythbusting]] —— Pesce 2011 拆解六条常见误解，提出「deferred 是通用 pattern 不是单一结构」的判断框架"
+    },
+    {
+      "file": "wiki/rendering/light-prepass-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-mythbusting-deferred]] —— Pesce 对 LPP vs DS 的 memory / bandwidth / ALU 瓶颈对比与 specular 精度缺陷讨论"
+    },
+    {
+      "file": "wiki/rendering/gamma-correction-srgb.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-gamma-diffuse-shortcut]] —— Pesce 恒等式 `(tex^a·shading)^b ≡ tex·shading^b` 当 `a=1/b`，diffuse-only 场景可省 decode/encode 两次 pow（仅 shader 内，blend 阶段不变）"
+    },
+    {
+      "file": "wiki/rendering/linear-lighting-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/c0de517e-gamma-diffuse-shortcut]] —— Pesce 的 software-gamma 速记，明确划清「shader 内数学 trick」与「framebuffer blend 阶段 gamma」的责任边界"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gradient-based-post-aa]] | Pesce 2011：梯度驱动的后处理反走样配方，MLAA 的廉价局部替代 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[deferred-rendering-mythbusting]] | Pesce 2011：延迟渲染六条误解拆解，把 deferred 看作通用 pattern |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-recipe-for-aa]] | Pesce 2011-01：三步式 post-AA 模板 + Pixel Bender 梯度滤镜配方 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-most-envied-rendering-poll-2010]] | Pesce 2011-01：2010 最想参与开发的游戏读者投票（GoW3 28% 夺冠） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-mythbusting-deferred]] | Pesce 2011-01：延迟渲染六条神话拆解（LPP vs DS / light-indexed / MSAA） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-gamma-diffuse-shortcut]] | Pesce 2011-02：diffuse-only 的 software-gamma 恒等式速记 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-100 Worker KM (c0de517e Pesce 2011-01/02 ×5)\n\n处理 Angelo Pesce 2011 年 1-2 月 5 个原始文件：成功入库 4（Recipe for AA / Most envied rendering poll 2010 / Mythbusting deferred rendering / Gamma and diffuse shading），跳过 2（linux-is-not-for-nerds 非技术、gamma-and-diffuse-shading-2 归档副本）。新增 2 概念页（gradient-based-post-aa、deferred-rendering-mythbusting），4 源摘要；给 angelo-pesce、aa-techniques-survey-2011、deferred-rendering、light-prepass-pipeline、gamma-correction-srgb、linear-lighting-pipeline 共 6 个已有页打 patch。核心结论：Pesce 的「拒绝把技术神圣化、把 deferred 看作通用 pattern」的判断框架与梯度驱动 post-AA 的三段式模板（识别边 / 拟合基元 / 沿基元混合）进入知识库。"
+}

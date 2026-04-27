@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w54-fb",
+  "agent_note": "Boris The Brave (Sylves/WFC author) × 5. 3 ingested (poisson-rect, infinite-grids pointer, no-double-check), 2 skipped (Silksong walkthrough, NeurIPS travelogue).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2025-11-26_silksong-quick-hints.md",
+      "status": "skipped_offtopic",
+      "reason": "Silksong 游戏攻略/提示，与软件工程/图形/引擎无关。"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-12-14_my-trip-to-neurips-2025.md",
+      "status": "skipped_offtopic",
+      "reason": "NeurIPS 2025 个人会议游记（机票/生病/展厅氛围/SLT 社交），缺乏可抽取的技术干货。"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2026-01-03_dealing-with-infinite-grids.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-infinite-grids",
+      "title": "Dealing With Infinite Grids"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2026-01-22_infinite-random-rectangles-the-poisson-rect-process.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-poisson-rect-process",
+      "title": "Infinite Random Rectangles – the Poisson Rect Process"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2026-04-17_good-software-doesnt-double-check.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-no-double-check",
+      "title": "Good Software Doesn't Double Check"
+    }
+  ],
+  "concepts_created": [
+    "poisson-rect-process",
+    "infinite-chunked-procedural-generation",
+    "good-software-no-double-check"
+  ],
+  "people_created": [
+    "boris-the-brave"
+  ],
+  "source_summaries_created": [
+    "boristhebrave-poisson-rect-process",
+    "boristhebrave-infinite-grids",
+    "boristhebrave-no-double-check"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[poisson-rect-process]] — 把点过程扩展成无限平面上的无重叠随机矩形\n- [[infinite-chunked-procedural-generation]] — 点过程/矩形过程共用的分块无关方法论"
+    },
+    {
+      "file": "wiki/software-design/data-structure-invariants.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[good-software-no-double-check]] — Boris The Brave：不要重复检查假设，一次建立即可"
+    },
+    {
+      "file": "wiki/software-design/type-safety-vs-simplicity.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[good-software-no-double-check]] — 用严格静态类型替代 agent 生成代码里的冗余防御检查"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[poisson-rect-process]] | 无限平面上的无重叠随机矩形：两相过滤 + 分块无关 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[infinite-chunked-procedural-generation]] | 无限世界的分块程序化生成方法论：相位化 + 局部有界依赖 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[good-software-no-double-check]] | Agent 过度防御的新气味，用不变量和静态类型代替重复检查 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[boris-the-brave]] | Sylves/WFC 作者，现 Timaeus（SLT / AI Safety）研究员 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-poisson-rect-process]] | Boris The Brave：无限平面非重叠随机矩形算法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-infinite-grids]] | Boris The Brave：Sylves 无限网格程序化生成入口贴 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-no-double-check]] | Boris The Brave：好软件不重复自检，agent 时代的新代码气味 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-54 Worker FB (boristhebrave.com ×5)\n\n处理 Boris The Brave（Sylves / WFC 作者）5 篇。Ingest 3 篇：Poisson Rect Process（无限平面非重叠随机矩形的两相过滤算法）、Dealing With Infinite Grids（Sylves 无限网格文档入口指针贴）、Good Software Doesn't Double Check（批评 agent 过度防御式编程，提倡用不变量与静态类型替代重复检查）。跳过 2 篇：Silksong 游戏攻略、NeurIPS 2025 会议游记。新增 3 概念页（poisson-rect-process, infinite-chunked-procedural-generation, good-software-no-double-check）+ 1 人物页（boris-the-brave）+ 3 source 摘要，并给 poisson-disk-sampling / data-structure-invariants / type-safety-vs-simplicity 三页打回链 patch。"
+}

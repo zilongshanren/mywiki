@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w56-fh",
+  "agent_note": "greyaliengames 月份归档页。五篇实际各自是单篇内容（casual 游戏发行公告 / 老板年终总结），全部与图形、引擎、系统、编程语言等技术主题无关，全部 skip_offtopic。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/greyaliengames.com/2024-11-21_archive-for-november-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "Shadowhand Solitaire 上架新闻稿，非技术内容。"
+    },
+    {
+      "path": "raw/articles/greyaliengames.com/2024-12-05_archive-for-december-2024.md",
+      "status": "skipped_offtopic",
+      "reason": "Jewel Match Solitaire Winterscapes 3 发行新闻稿，非技术内容。"
+    },
+    {
+      "path": "raw/articles/greyaliengames.com/2025-01-30_archive-for-january-2025.md",
+      "status": "skipped_offtopic",
+      "reason": "Clutter 17 发行公告 + Jake Birkett 2024 年终复盘与 2025 目标（个人/业务 goals），无技术内容。"
+    },
+    {
+      "path": "raw/articles/greyaliengames.com/2025-09-15_archive-for-september-2025.md",
+      "status": "skipped_offtopic",
+      "reason": "Clutter 18 发行新闻稿，非技术内容。"
+    },
+    {
+      "path": "raw/articles/greyaliengames.com/2026-01-03_archive-for-january-2026.md",
+      "status": "skipped_offtopic",
+      "reason": "Jake Birkett 2025 年终复盘与 2026 目标（Forbidden Solitaire 商业与个人 goals），无技术内容。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-56 Worker FH (greyaliengames.com ×5 all skipped)\n\n五篇 greyaliengames.com 月份归档页全部 skip_offtopic：均为 casual 游戏（Shadowhand / Jewel Match / Clutter / Forbidden Solitaire）发行新闻稿与 Jake Birkett 的年度商业/个人 goals 复盘，无渲染、引擎、系统、编程语言等技术内容。"
+}

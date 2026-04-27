@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w78-hz",
+  "agent_note": "Ben Supnik 2010-02 X-Plane/OpenGL 5 篇技术文章，全部 ingest。覆盖 STL 非抽象论、大世界坐标精度、glXGetProcAddressARB 函数指针签名、texture2DGradARB 显式导数、以及 vertex-projected UV 的导数精度耗尽问题。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-03_the-stl-is-not-an-abstraction.md",
+      "status": "ingested",
+      "source_slug": "supnik-stl-not-abstraction",
+      "title": "The STL Is Not An Abstraction"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-04_how-to-scroll-the-opengl-world.md",
+      "status": "ingested",
+      "source_slug": "supnik-scroll-opengl-world",
+      "title": "How To Scroll the OpenGL World"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-08_glxgetprocaddressarb-syntax.md",
+      "status": "ingested",
+      "source_slug": "supnik-glxgetprocaddressarb-syntax",
+      "title": "glXGetProcAddressARB Syntax"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-10_how-to-change-your-uv-map-on-the-fly.md",
+      "status": "ingested",
+      "source_slug": "supnik-change-uv-map-on-fly",
+      "title": "How To Change Your UV Map on the Fly"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-10_running-out-of-derivative-res.md",
+      "status": "ingested",
+      "source_slug": "supnik-running-out-of-derivative-res",
+      "title": "Running Out of Derivative Res"
+    }
+  ],
+  "concepts_created": [
+    "stl-not-abstraction-prescription",
+    "huge-world-coordinate-precision",
+    "function-vs-data-pointer-portability",
+    "texture2dgrad-explicit-derivatives",
+    "uv-precision-derivative-loss"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-stl-not-abstraction",
+    "supnik-scroll-opengl-world",
+    "supnik-glxgetprocaddressarb-syntax",
+    "supnik-change-uv-map-on-fly",
+    "supnik-running-out-of-derivative-res"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stl-not-abstraction-prescription]]\n- [[huge-world-coordinate-precision]]\n- [[function-vs-data-pointer-portability]]\n- [[texture2dgrad-explicit-derivatives]]\n- [[uv-precision-derivative-loss]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-stl-not-abstraction]]\n- [[sources/supnik-scroll-opengl-world]]\n- [[sources/supnik-glxgetprocaddressarb-syntax]]\n- [[sources/supnik-change-uv-map-on-fly]]\n- [[sources/supnik-running-out-of-derivative-res]]"
+    },
+    {
+      "file": "wiki/software-design/false-abstraction.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stl-not-abstraction-prescription]] — Supnik：STL 不是抽象，它是规定；你必须知道每个容器的实现特征才能安全使用"
+    },
+    {
+      "file": "wiki/software-design/abstraction.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[stl-not-abstraction-prescription]] — 反面案例：STL 明确地不隐藏实现复杂度"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 关键操作发生的位置",
+      "content": "\n参见 [[huge-world-coordinate-precision]]：当 world space 覆盖 300×300 km 级别时，单精度 float 会开始丢位，X-Plane 为此必须定期重置坐标系。"
+    },
+    {
+      "file": "wiki/rendering/fwidth-derivative-antialiasing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[texture2dgrad-explicit-derivatives]] — UV 不连续（fract）会让硬件推导出错误的 LOD，需显式喂正确的导数\n- [[uv-precision-derivative-loss]] — vertex-projected 巨型 UV 坐标超出 fp 精度，会导致 dFdx/dFdy 出现像素级噪声"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[stl-not-abstraction-prescription]] | Supnik：STL 不是抽象（不隐藏细节），而是对实现与性能的精确规定 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[huge-world-coordinate-precision]] | 3D 世界远离原点时 32-bit float 丢位的 3 种应对：整体 transform、双缓冲、局部坐标系 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[function-vs-data-pointer-portability]] | glXGetProcAddressARB 返回函数指针而非 void*：C 标准不保证代码指针与数据指针等宽 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[texture2dgrad-explicit-derivatives]] | 当 UV 在 shader 里被 fract/swizzle 破坏连续性时，用 texture2DGradARB 手喂原始导数保住 LOD |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[uv-precision-derivative-loss]] | 300 km 地形由 vertex shader 投影生成 UV，其导数精度低于一像素，per-pixel tangent space 会错乱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-stl-not-abstraction]] | Supnik：STL 不是抽象，它是 shortcut |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-scroll-opengl-world]] | Supnik：X-Plane 如何在 32-bit float 下滚动一个真实大小的地球 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-glxgetprocaddressarb-syntax]] | Supnik：glXGetProcAddressARB 为什么返回函数指针而非 void* |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-change-uv-map-on-fly]] | Supnik：texture2DGradARB 解决 fract-UV 的 LOD 失配 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-running-out-of-derivative-res]] | Supnik：顶点投影 UV 在 8800 GT 上耗尽导数精度 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-78 Worker HZ (hacksoflife.blogspot.com 2010-02 ×5)\n\n处理 Ben Supnik 2010 年 2 月的 5 篇 X-Plane 技术短文，全部 ingest。新增 5 概念页：stl-not-abstraction-prescription（软件设计反面案例）、huge-world-coordinate-precision（大世界 float 精度）、function-vs-data-pointer-portability（GLX 函数指针签名）、texture2dgrad-explicit-derivatives（UV 不连续与 LOD）、uv-precision-derivative-loss（vertex projected UV 精度耗尽）。新增 5 source 摘要。对 ben-supnik、false-abstraction、abstraction、coordinate-spaces、fwidth-derivative-antialiasing 打 patch。"
+}

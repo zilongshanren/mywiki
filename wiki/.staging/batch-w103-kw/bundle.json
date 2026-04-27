@@ -1,0 +1,68 @@
+{
+  "batch_id": "batch-w103-kw",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章。3 篇 skip（IDE 配置教程、内容几乎为空的评论集、单行链接博文）；2 篇 ingest（游戏编程语言调查、蒙皮法线推导）。创建 1 个新概念页、2 个 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-05-06_processing-vs-intellij-idea.md",
+      "status": "skipped_offtopic",
+      "reason": "纯 IDE 配置操作手册（Processing + IntelliJ IDEA 热重载设置），无技术深度，不在渲染/引擎/计算机系统核心范围内"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-05-08_2011-future-programming-languages-for-games-poll.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-game-languages-poll-2011",
+      "title": "2011 Future Programming Languages for Games Poll"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-05-13_shadowmap-bias-notes.md",
+      "status": "skipped_offtopic",
+      "reason": "文章内容几乎全为评论区对话（3 条评论），提及 Normal Offset Shadows 概念但无独立论述，无法提取有意义技术内容；该概念已有 stable-csm-implementation-tips 等相关页覆盖"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-05-15_skinning-normals-notes.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-skinning-normals-notes",
+      "title": "Skinning Normals Notes"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-06-30_metaphor-of-game-development.md",
+      "status": "skipped_offtopic",
+      "reason": "仅含一个 YouTube 链接和一句感慨，无技术内容"
+    }
+  ],
+  "concepts_created": ["skinning-normals-weighted-average"],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-game-languages-poll-2011",
+    "c0de517e-skinning-normals-notes"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gpu-skinning-matrix-palette.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-skinning-normals-notes]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-game-languages-poll-2011]]\n- [[sources/c0de517e-skinning-normals-notes]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/skinning-normals-weighted-average]] | 蒙皮法线加权平均推导：旋转骨骼下的正确权重计算与平移骨骼的边界问题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-game-languages-poll-2011]] | Pesce：2011 游戏编程语言调查（174 份，C++/Lua/C# 三巨头，D 小幅上升）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-skinning-normals-notes]] | Pesce：蒙皮法线权重的正确推导与骨骼平移的边界问题 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-103 Worker KW (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。ingested 2 篇（游戏编程语言调查 2011、蒙皮法线推导笔记）；skipped 3 篇（IDE 配置教程、内容为空的 shadowmap bias 评论集、单行链接博文）。新增 1 概念页（skinning-normals-weighted-average）、2 source 摘要。"
+}

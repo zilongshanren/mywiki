@@ -1,0 +1,66 @@
+{
+  "batch_id": "batch-w75-hr",
+  "agent_note": "Michael Allar 2010 年 UDK 时代 5 篇：2 篇 UnrealScript 入门教程（Beginning Your Game Part 1/2）合并入库为 1 个 source，讲 GameInfo/Pawn/PlayerController 三件套是 Unreal 架构里沿用到 UE4/UE5 的持久概念；3 篇 M16 武器建模 / 绑定教程几乎只有视频入口、文字版要么空要么是 3DS Max+ActorX 的纯工作流步骤（obsolete），全部跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/allarsblog.com/2010-01-15_beginning-your-game-part-1.md",
+      "status": "ingested",
+      "source_slug": "allar-udk-beginning-your-game",
+      "title": "Beginning Your Game Part 1 & 2 (UDK GameInfo / Pawn / PlayerController)"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2010-01-15_beginning-your-game-part-2.md",
+      "status": "ingested_merged",
+      "source_slug": "allar-udk-beginning-your-game",
+      "title": "Beginning Your Game Part 2（合并进 Part 1 的 source 页）",
+      "reason": "两部为同一教程系列的连续两章，合并成一个 source 摘要更合理"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-1-modeling.md",
+      "status": "skipped_offtopic",
+      "reason": "视频教程入口页，文字版只有 2 行『slug 测试模型』，无可抽取的技术内容"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-5-dummy-rigging.md",
+      "status": "skipped_offtopic",
+      "reason": "纯视频教程入口，正文只有 video notes，无文字版技术内容"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2010-03-08_adding-an-m16-part-2-geometry-rigging.md",
+      "status": "skipped_offtopic",
+      "reason": "3DS Max + ActorX PSK 导出的纯操作步骤（2010 UDK 时代专用，早已被 FBX/Unreal 5 Skeletal 取代），没有可泛化的 rigging 技术洞察"
+    }
+  ],
+  "concepts_created": [
+    "unreal-pawn-playercontroller-pattern"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "allar-udk-beginning-your-game"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/michael-allar.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[unreal-pawn-playercontroller-pattern]] — UE 架构中 Pawn/PlayerController 分离模式（2010 UDK 时代写的入门教程里已经在讲）"
+    },
+    {
+      "file": "wiki/people/michael-allar.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/allar-udk-beginning-your-game]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unreal-pawn-playercontroller-pattern]] | Unreal 里 GameMode / Pawn / PlayerController 三件套分离，从 UDK 到 UE5 一脉相承 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-udk-beginning-your-game]] | Allar 2010 UDK 入门：搭空白 GameInfo 与 Pawn/PlayerController 子类 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-75 Worker HR (allarsblog.com ×5)\n\n处理 Michael Allar 2010 年 UDK 时代 5 篇。ingest 1 合并 source（Beginning Your Game Part 1+2：GameInfo / Pawn / PlayerController 搭空白工程）、skip 3（M16 建模 / 几何绑定 / dummy 绑定三篇——视频入口页或 3DS Max+ActorX 纯工作流，无泛化价值）。新增 1 概念页（unreal-pawn-playercontroller-pattern）、1 source 摘要；michael-allar 人物页已存在，patch 追加相关链接与 source。"
+}

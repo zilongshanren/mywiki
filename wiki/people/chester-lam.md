@@ -32,6 +32,9 @@ sources: 5
 - [[tremont-microarchitecture]] — Atom 转型期架构
 - [[intel-hybrid-alder-lake]] — Ring clock 降频与 hybrid 首代毛病
 - [[littles-law-reorder-buffer]] — 用 Little's Law 分析 ROB sizing 的方法学
+- [[centaur-cns-microarchitecture]] — Centaur CNS 核心深度实测
+- [[numa-multi-socket-design]] — CHA 双路 NUMA 带宽缺陷分析
+- [[gpu-hardware-video-encoder]] — GPU 硬件视频编码器质量对比
 
 ## Sources
 - [[sources/chipsandcheese-gb10-cpu-memory]]
@@ -54,3 +57,8 @@ sources: 5
 - [[sources/chipsandcheese-alder-lake-ring-clock]]
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-tremont]]
+- [[sources/chipsandcheese-golden-cove-cache-analysis]]
+- [[sources/chipsandcheese-via-centaur-cns]]
+- [[sources/chipsandcheese-gpu-video-encoders]]
+- [[sources/chipsandcheese-centaur-cha-dual-socket]]
+- [[sources/chipsandcheese-centaur-cha-die]]

@@ -1,0 +1,83 @@
+{
+  "batch_id": "batch-w99-kj",
+  "agent_note": "c0de517e Pesce 2011-01: 2 OT posts skipped, 1 archive-dup skipped. code-tourism is a substantive short essay -> new meta concept page + source summary. survive-c++ is a thin announcement for an etherpad experiment -> source summary only, links back to existing cpp-multi-paradigm-discipline and code-tourism-practice. Author page angelo-pesce already exists.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-06_ot-owner-of-a-samsung-galaxy-t959-in-canada.md",
+      "status": "skipped_offtopic",
+      "reason": "OT post: Android firmware flashing tips for a phone, explicitly tagged OT by author"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines-experiment-2.md",
+      "status": "skipped_duplicate",
+      "reason": "Archive re-fetch (http -> https) of the same post as 2011-01-06_survive-c-collaborative-guidelines-experiment.md"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-06_survive-c-collaborative-guidelines-experiment.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-survive-cpp-guidelines-experiment",
+      "title": "Survive C++ / Collaborative Guidelines Experiment"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-11_code-tourism.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-code-tourism",
+      "title": "Code Tourism"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2011-01-12_ot-dxolabs-luminous-landscape-is-wrong.md",
+      "status": "skipped_offtopic",
+      "reason": "OT post: a rebuttal to a digital-camera-testing article on Luminous Landscape, explicitly tagged OT"
+    }
+  ],
+  "concepts_created": ["code-tourism-practice"],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-code-tourism",
+    "c0de517e-survive-cpp-guidelines-experiment"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[code-tourism-practice]] —— 2011 把读代码类比为画家逛画廊"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-code-tourism]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-survive-cpp-guidelines-experiment]]"
+    },
+    {
+      "file": "wiki/meta/code-as-art-manifesto.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[code-tourism-practice]] —— 宣言的教育学侧补充：读代码作为艺术研习"
+    },
+    {
+      "file": "wiki/software-design/cpp-multi-paradigm-discipline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/c0de517e-survive-cpp-guidelines-experiment]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 元 / 工程文化（wiki/meta/）",
+      "row": "| [[code-tourism-practice]] | Pesce 2011：把读代码类比画家逛画廊，呼吁 code galleries 与内部导览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-code-tourism]] | Pesce：读别人的代码作为学习方式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-survive-cpp-guidelines-experiment]] | Pesce：游戏圈 C++ 视觉指南众包实验（公告） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-99 Worker kj (c0de517e Pesce 2011-01 x5)\n\n处理 5 篇 c0de517e.blogspot.com 文章。跳过 2 篇 OT（手机刷机、相机评测）和 1 篇归档重复。新增 1 概念页（code-tourism-practice）和 2 source 摘要。补丁：angelo-pesce 人物页、code-as-art-manifesto、cpp-multi-paradigm-discipline 增加相关 / 源链接。作者 angelo-pesce 页已存在。"
+}

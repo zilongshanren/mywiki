@@ -1,0 +1,113 @@
+{
+  "batch_id": "batch-w58-fn",
+  "agent_note": "Wave-58 Worker FN: 5 个 anki3d.org 博客（Panagiotis Christopoulos Charitos / AnKi 引擎作者）。SPIR-V 手动解析改写、Vulkan mesh shader PerPrimitiveEXT 坑、GPU-driven 视频、pipeline barrier 简化、土豆级 RT。4 个新概念 + 1 人物 + 5 source。GPU-driven 视频本体无法从博客抽内容，仅作索引保留并留 gap。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/anki3d.org/2024-06-04_parsing-and-rewriting-spir-v.md",
+      "status": "ingested",
+      "source_slug": "anki-spirv-parsing-rewriting",
+      "title": "Parsing and rewriting SPIR-V"
+    },
+    {
+      "path": "raw/articles/anki3d.org/2024-08-19_workarounds-for-issues-with-mesh-shaders-vulkan-hlsl.md",
+      "status": "ingested",
+      "source_slug": "anki-mesh-shader-vulkan-hlsl",
+      "title": "Workarounds for issues with mesh shaders + Vulkan + HLSL"
+    },
+    {
+      "path": "raw/articles/anki3d.org/2024-11-21_gpu-driven-rendering-in-anki.md",
+      "status": "ingested",
+      "source_slug": "anki-gpu-driven-rendering-video",
+      "title": "GPU driven rendering in AnKi (video)"
+    },
+    {
+      "path": "raw/articles/anki3d.org/2025-02-04_simplified-pipeline-barriers.md",
+      "status": "ingested",
+      "source_slug": "anki-simplified-pipeline-barriers",
+      "title": "Simplified pipeline barriers"
+    },
+    {
+      "path": "raw/articles/anki3d.org/2025-12-04_minimalist-ray-tracing-leveraging-only-acceleration-structur.md",
+      "status": "ingested",
+      "source_slug": "anki-minimalist-ray-tracing",
+      "title": "Minimalist ray-tracing leveraging only acceleration structures"
+    }
+  ],
+  "concepts_created": [
+    "spirv-parsing-rewriting",
+    "mesh-shader-vulkan-hlsl-per-primitive",
+    "simplified-pipeline-barriers",
+    "minimalist-rt-acceleration-structures"
+  ],
+  "people_created": ["panagiotis-charitos"],
+  "source_summaries_created": [
+    "anki-spirv-parsing-rewriting",
+    "anki-mesh-shader-vulkan-hlsl",
+    "anki-gpu-driven-rendering-video",
+    "anki-simplified-pipeline-barriers",
+    "anki-minimalist-ray-tracing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gpu-hazard-tracking.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[simplified-pipeline-barriers]] — AnKi 把 25+ stage / 30+ access flag 压成两个 enum 的工程化方案"
+    },
+    {
+      "file": "wiki/rendering/meshlets-and-mesh-shaders.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mesh-shader-vulkan-hlsl-per-primitive]] — HLSL + Vulkan 下 PerPrimitiveEXT 必须手动补的恶性跨厂商坑"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[minimalist-rt-acceleration-structures]] — AnKi 的极端版：只用 ray query + TLAS instanceCustomIndex，不要 SBT、不要材质纹理"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[spirv-parsing-rewriting]] | 手写 SPIR-V 解析器：检测 OpKill、改写 HLSL binding |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mesh-shader-vulkan-hlsl-per-primitive]] | HLSL + Vulkan mesh shader 的 PerPrimitiveEXT 手动 decoration 坑 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[simplified-pipeline-barriers]] | 把 Vulkan 的 stage/access/layout 压成两个引擎侧 enum |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[minimalist-rt-acceleration-structures]] | 只用 ray query + TLAS instanceCustomIndex 的 potato RT |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[panagiotis-charitos]] | AnKi 3D Engine 作者，anki3d.org 博客作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anki-spirv-parsing-rewriting]] | Charitos：手写 SPIR-V 解析与改写 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anki-mesh-shader-vulkan-hlsl]] | Charitos：HLSL + Vulkan mesh shader per-primitive 坑 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anki-gpu-driven-rendering-video]] | Charitos：AnKi GPU-driven 管线视频（占位，待观后回填） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anki-simplified-pipeline-barriers]] | Charitos：pipeline barrier 的激进裁剪 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/anki-minimalist-ray-tracing]] | Charitos：仅用加速结构的 potato RT |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-58 Worker FN (anki3d.org ×5)\n\n处理 5 篇 Panagiotis Christopoulos Charitos 在 anki3d.org 的博客（AnKi 3D Engine 作者）：SPIR-V 手动解析改写、Vulkan mesh shader + HLSL PerPrimitiveEXT 坑、GPU-driven 视频、pipeline barrier 简化、土豆级 RT。新增 4 概念页（spirv-parsing-rewriting, mesh-shader-vulkan-hlsl-per-primitive, simplified-pipeline-barriers, minimalist-rt-acceleration-structures）、1 人物页（panagiotis-charitos）、5 source 摘要。Patch 既有 gpu-hazard-tracking / meshlets-and-mesh-shaders / hybrid-raytracing-pipeline 的相关链接。GPU-driven 视频本体只有 Google Slides 链接，博客无可抽取内容，source 页标注为 data gap。"
+}

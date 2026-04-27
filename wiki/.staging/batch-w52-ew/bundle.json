@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w52-ew",
+  "agent_note": "joostdevblog.blogspot.com (Joost van Dongen / Ronimo / Galaxy Grove) — 3 ingested (Blender hard-surface modeling tricks, indie publisher pitching, game idea generation), 2 skipped (Robo Maestro Steam announcement is pure marketing; Galaxy Grove milestone post is studio update with no technical content).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2021-09-08_where-to-get-original-ideas.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-where-to-get-original-ideas",
+      "title": "Where to get original ideas"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2021-11-24_neat-tricks-for-modelling-the-robo-maestro-robot.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-robo-maestro-modelling-tricks",
+      "title": "Neat tricks for modelling the Robo Maestro robot"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2021-11-24_robo-maestro-is-coming-to-steam.md",
+      "status": "skipped_offtopic",
+      "reason": "pure Steam wishlist announcement / marketing blurb for Robo Maestro, no technical or design content"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2024-08-09_tips-for-pitching-to-game-publishers.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-pitching-to-publishers",
+      "title": "Tips for pitching to game publishers"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2024-12-19_a-big-step-forward.md",
+      "status": "skipped_offtopic",
+      "reason": "Galaxy Grove studio milestone / mission-update post, no technical or design substance"
+    }
+  ],
+  "concepts_created": [
+    "blender-hard-surface-modeling",
+    "indie-pitching-publishers",
+    "game-idea-generation"
+  ],
+  "people_created": [
+    "joost-van-dongen"
+  ],
+  "source_summaries_created": [
+    "joostdevblog-where-to-get-original-ideas",
+    "joostdevblog-robo-maestro-modelling-tricks",
+    "joostdevblog-pitching-to-publishers"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/indie-game-dev-rhythm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[indie-pitching-publishers]] —— 独立工作室找发行商的 pitch 方法论（Joost van Dongen）"
+    },
+    {
+      "file": "wiki/game-development/procedural-mesh-primitives.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[blender-hard-surface-modeling]] —— DCC 侧用 crease + bevel weight 少顶点出硬棱曲面"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[blender-hard-surface-modeling]] | Blender 硬表面建模：crease + bevel weight + harden normals 少顶点出工业硬棱 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[indie-pitching-publishers]] | Joost van Dongen 17 年经验：半年全职 pitch、MeetToMatch、X-factor 与 76 页台账 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-idea-generation]] | 避开创意输入同质化：现代艺术馆、博弈论、古建筑作为非游戏灵感源 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[joost-van-dongen]] | Joost van Dongen，Ronimo 共同创始人（Awesomenauts / Proun），Galaxy Grove CEO |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-where-to-get-original-ideas]] | Joost van Dongen：避开创意输入同质化（Proun 源自 Kandinsky） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-robo-maestro-modelling-tricks]] | Joost van Dongen：Blender 硬表面建模 crease / bevel weight / harden normals |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-pitching-to-publishers]] | Joost van Dongen：17 年 pitch 经验，MeetToMatch、X-factor、bookkeeping |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-52 Worker EW (joostdevblog.blogspot.com ×5)\n\n处理 5 篇 Joost van Dongen 博客文章。3 篇 ingest（Blender 硬表面建模、发行商 pitch 方法论、创意输入多样化），2 篇 skip（Robo Maestro Steam 发售公告与 Galaxy Grove 里程碑博文均为非技术内容）。新增 3 概念页（blender-hard-surface-modeling / indie-pitching-publishers / game-idea-generation）、1 人物页（joost-van-dongen）、3 source 摘要。"
+}

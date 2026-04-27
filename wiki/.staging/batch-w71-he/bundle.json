@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w71-he",
+  "agent_note": "5 blog.s-schoener.com 早期文章：2 篇计算复杂度理论系列（INGEST），3 篇非技术元内容（SKIP：博客 landing/ImageMagick 个人笔记/Jekyll 搭建记）。Sebastian Schöner 人物页已存在，仅追加新 source link 与 tag 扩展。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.s-schoener.com/2016-08-04_blog-sebastian-schoner.md",
+      "status": "skipped_offtopic",
+      "reason": "博客 landing 索引页，只有文章链接列表，无实际内容"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2016-08-04_note-to-myself-image-magick-commands-that-you-will-use-sebas.md",
+      "status": "skipped_offtopic",
+      "reason": "6 条 ImageMagick 单行命令的个人速查笔记，作者自述『给未来的自己』；无通用技术论证、无与图形/渲染/系统知识体系的关联，属于工具备忘而非内容"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2016-10-03_a-short-introduction-to-computational-complexity-theory-seba.md",
+      "status": "ingested",
+      "source_slug": "schoener-intro-computational-complexity",
+      "title": "A Short Introduction to Computational Complexity Theory"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2016-10-10_the-computational-complexity-of-patterna-sebastian-schoner.md",
+      "status": "ingested",
+      "source_slug": "schoener-complexity-of-patterna",
+      "title": "The Computational Complexity of Patterna"
+    },
+    {
+      "path": "raw/articles/blog.s-schoener.com/2017-11-29_how-this-blog-was-setup-sebastian-schoner.md",
+      "status": "skipped_offtopic",
+      "reason": "Jekyll 博客搭建流程、WSL/ConEmu 安装、MathJax/Disqus 配置等个人运维笔记，与本 wiki 技术主题无交集"
+    }
+  ],
+  "concepts_created": [
+    "computational-complexity-theory-intro",
+    "patterna-hexcells-np-vs-conp"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "schoener-intro-computational-complexity",
+    "schoener-complexity-of-patterna"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/sebastian-schoener.md",
+      "operation": "replace_line",
+      "match": "tags: [人物, 作者, 编译器, unity, mono, zig, c++]",
+      "content": "tags: [人物, 作者, 编译器, unity, mono, zig, c++, 复杂度理论]"
+    },
+    {
+      "file": "wiki/people/sebastian-schoener.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/sebastian-schoener.md",
+      "operation": "append_to_section",
+      "section": "## 主要主题",
+      "content": "- 早期（2016）计算复杂度理论短文：$\\P/\\NP/\\coNP$ 入门 + Patterna/HexCells/Minesweeper 的 $\\coNP$-complete 辨析"
+    },
+    {
+      "file": "wiki/people/sebastian-schoener.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[computational-complexity-theory-intro]]\n- [[patterna-hexcells-np-vs-conp]]"
+    },
+    {
+      "file": "wiki/people/sebastian-schoener.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/schoener-intro-computational-complexity]]\n- [[sources/schoener-complexity-of-patterna]]"
+    },
+    {
+      "file": "wiki/programming-languages/order-of-growth.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[computational-complexity-theory-intro]] — $\\P/\\NP$ 和多项式时间作为『高效可解』的操作定义"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言与算法（wiki/programming-languages/）",
+      "row": "| [[computational-complexity-theory-intro]] | 计算复杂度理论入门：$\\P/\\NP/\\coNP$ 与多项式时间归约 |"
+    },
+    {
+      "category_header": "## 编程语言与算法（wiki/programming-languages/）",
+      "row": "| [[patterna-hexcells-np-vs-conp]] | 逻辑消除游戏的玩法复杂度：推理是 $\\coNP$-complete 而非 $\\NP$-complete |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-intro-computational-complexity]] | Schöner：$\\P/\\NP/\\coNP$/归约 入门 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/schoener-complexity-of-patterna]] | Schöner：Patterna/HexCells/Minesweeper 推理问题是 $\\coNP$-complete |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-71 Worker HE (blog.s-schoener.com ×5)\n\n处理 5 篇 Sebastian Schöner 早期（2016-2017）博客。2 篇计算复杂度理论系列入库：新增概念 computational-complexity-theory-intro（$\\P/\\NP/\\coNP$/归约入门）+ patterna-hexcells-np-vs-conp（纠正『扫雷是 NP-complete』的普遍误解：玩家实际做的推理问题是 $\\coNP$-complete）。跳过 3 篇非技术元内容（博客 landing 索引、ImageMagick 个人速查、Jekyll 搭建记）。Sebastian Schöner 人物页已存在，追加复杂度理论主题、相关链接与 2 条 source 引用。"
+}

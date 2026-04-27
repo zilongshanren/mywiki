@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w93-jt",
+  "agent_note": "c0de517e Pesce 2010-07/08: 全部跳过。alan-wake-credits 是玩游戏随感 + MLAA 论文链接，无技术干货；google-reader-sharing 是 Reader 订阅分享通告；spam 是同事食物博客推荐。另有 http/https 双抓的两篇重复稿。Angelo Pesce 人物页已存在，无需改动。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-07-19_alan-wake-credits.md",
+      "status": "skipped_offtopic",
+      "reason": "游戏通关杂感 + David Bowie 片尾曲感慨；顺带吐槽 sub-HD/AA 并贴出 Digital Foundry 与 MLAA 论文链接，但无原创技术分析。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Google Reader 分享频道通告；与 2010-08-07_google-reader-sharing.md 内容完全一致（https vs http 双抓）。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-07_google-reader-sharing.md",
+      "status": "skipped_offtopic",
+      "reason": "博客公告：作者因 SIGGRAPH 太忙，改用 Google Reader 分享链接。无技术内容。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-08_spam-2.md",
+      "status": "skipped_offtopic",
+      "reason": "推广意大利同事的美食博客；与 2010-08-08_spam.md 重复（https vs http）。完全与图形/工程无关。"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-08-08_spam.md",
+      "status": "skipped_offtopic",
+      "reason": "推广同事的意大利美食博客；标题作者自己也写明 Spam。非技术内容。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-93 Worker JT (c0de517e.blogspot.com 2010-07/08 x5 all-skipped)\n\n处理 5 篇 c0de517e (Angelo Pesce) 2010 年 7-8 月小帖：alan-wake-credits（Alan Wake 通关杂感 + MLAA 链接）、google-reader-sharing x2（订阅分享通告，https/http 双抓重复）、spam x2（推广同事美食博客，重复）。全部为 off-topic 或博客公告，无技术干货，按协议 5 篇全部 skipped_offtopic。无概念/人物/源摘要新增，无 index 变更。Angelo Pesce 人物页已存在，无改动。"
+}

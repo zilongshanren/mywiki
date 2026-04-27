@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w85-iu",
+  "agent_note": "Supnik 2010-11/12 连载 5 篇：STL 后续、两篇 change-of-basis、1% 杠杆率、semaphore vs condvar。change-of-basis + basis-projection 合并成 matrix-as-basis-vectors 一个概念页（两篇内容高度耦合，用户也建议合并）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-26_more-stl-abstraction.md",
+      "status": "ingested",
+      "source_slug": "supnik-more-stl-abstraction",
+      "title": "More STL Abstraction"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-28_change-of-basis-revisited.md",
+      "status": "ingested",
+      "source_slug": "supnik-change-of-basis-revisited",
+      "title": "Change of Basis, Revisited"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-29_basis-projection.md",
+      "status": "ingested",
+      "source_slug": "supnik-basis-projection",
+      "title": "Basis Projection"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-11-30_is-1-a-lot.md",
+      "status": "ingested",
+      "source_slug": "supnik-is-1-a-lot",
+      "title": "Is 1% A Lot?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-12-03_performance-of-semaphore-vs-condition-variable.md",
+      "status": "ingested",
+      "source_slug": "supnik-semaphore-vs-condvar",
+      "title": "Performance of Semaphore Vs. Condition Variable"
+    }
+  ],
+  "concepts_created": [
+    "matrix-as-basis-vectors",
+    "optimization-leverage-ratio",
+    "semaphore-vs-condvar-latency"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-more-stl-abstraction",
+    "supnik-change-of-basis-revisited",
+    "supnik-basis-projection",
+    "supnik-is-1-a-lot",
+    "supnik-semaphore-vs-condvar"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 22",
+      "content": "sources: 27"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[matrix-as-basis-vectors]] —— 2010 双篇 change-of-basis / basis-projection 合编\n- [[optimization-leverage-ratio]] —— 「1% 算多吗」的 profile 判断框架\n- [[semaphore-vs-condvar-latency]] —— X-Plane 10 worker 唤醒延迟优化"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-more-stl-abstraction]]\n- [[sources/supnik-change-of-basis-revisited]]\n- [[sources/supnik-basis-projection]]\n- [[sources/supnik-is-1-a-lot]]\n- [[sources/supnik-semaphore-vs-condvar]]"
+    },
+    {
+      "file": "wiki/computer-systems/amdahls-law.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[optimization-leverage-ratio]] —— Supnik 的工程化版本：profile 读出来的杠杆率"
+    },
+    {
+      "file": "wiki/computer-systems/message-queue-thread-ownership.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[semaphore-vs-condvar-latency]] —— 同一条 X-Plane 消息队列的同步原语选择"
+    },
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[matrix-as-basis-vectors]] —— 把矩阵读成 encoder / decoder 的双重视角"
+    },
+    {
+      "file": "wiki/software-design/stl-not-abstraction-prescription.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/software-design/stl-not-abstraction-prescription.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/supnik-more-stl-abstraction]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[matrix-as-basis-vectors]] | 3x3 矩阵作为基向量：列是 decoder、行是 encoder |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[optimization-leverage-ratio]] | 优化杠杆率：局部改善 × 时间占比才是真正收益 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[semaphore-vs-condvar-latency]] | pthread cond var vs semaphore+spinlock：X-Plane worker 唤醒 200→80 µsec |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-more-stl-abstraction]] | Supnik：STL 规格内的实现弹性与容器选型 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-change-of-basis-revisited]] | Supnik：矩阵列即基向量、affine-orthogonal 子集 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-basis-projection]] | Supnik：矩阵行是 encoder、转置即逆的几何意义 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-is-1-a-lot]] | Supnik：杠杆率与 Shark profile 上的 X-Plane 9.62 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-semaphore-vs-condvar]] | Supnik：cond var 重锁开销与 mach semaphore 方案 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-85 Worker IU (hacksoflife Supnik 2010-11/12 ×5)\n\n处理 Ben Supnik 2010 年末 5 篇：more-stl-abstraction / change-of-basis-revisited / basis-projection / is-1-a-lot / semaphore-vs-condvar。change-of-basis 双篇合并成 matrix-as-basis-vectors 一个概念页（encoder/decoder 双视角）；另新增 optimization-leverage-ratio（Amdahl 的工程化）与 semaphore-vs-condvar-latency（pthread cond var 重锁坑）。stl 续篇 patch 回已有 stl-not-abstraction-prescription。人物页 ben-supnik source count 22→27。"
+}

@@ -1,0 +1,63 @@
+{
+  "batch_id": "batch-w54-fd",
+  "agent_note": "Nikos Papadopoulos / 4rknova.com ×5。仅 Mulberry32 一篇可 ingest；Gaia 数据库纯属天文数据查询（ADQL），不在本 wiki 技术范围；One Last Collection / The Synod of the Veil 均为虚构小说；Gameboy Snake ROM 页面只有键位映射表、无技术内容。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/4rknova.com/2026-03-01_mulberry32-a-tiny-fast-deterministic-rng.md",
+      "status": "ingested",
+      "source_slug": "4rknova-mulberry32",
+      "title": "Mulberry32: A Tiny, Fast, Deterministic RNG"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2026-03-05_the-gaia-database.md",
+      "status": "skipped_offtopic",
+      "reason": "天文数据库 (ESA Gaia) 与 ADQL 查询入门，属于天文 / 科学数据领域，不属于渲染、引擎、系统、编程语言等本 wiki 技术范围"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2026-03-08_one-last-collection.md",
+      "status": "skipped_offtopic",
+      "reason": "纯虚构短篇小说（悬疑 / 道德剧），无技术内容"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2026-03-22_the-synod-of-the-veil.md",
+      "status": "skipped_offtopic",
+      "reason": "纯虚构短篇小说（反乌托邦），无技术内容"
+    },
+    {
+      "path": "raw/articles/4rknova.com/2026-04-19_gameboy-snake-rom.md",
+      "status": "skipped_offtopic",
+      "reason": "demo 页面仅含 D-Pad / 键盘按键映射表，无实质技术文字"
+    }
+  ],
+  "concepts_created": ["mulberry32-rng"],
+  "people_created": ["nikos-papadopoulos"],
+  "source_summaries_created": ["4rknova-mulberry32"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/inversion-sampling-prng.md",
+      "operation": "append_to_section",
+      "section": "## 与其他采样页的关系",
+      "content": "- [[mulberry32-rng]]——另一端的选择：32-bit Weyl + xor-shift，为「便利优先 + 确定性」场景设计，不追 PCG 的统计严谨度。"
+    },
+    {
+      "file": "wiki/computer-systems/non-cryptographic-hash.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/4rknova-mulberry32]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言与算法（wiki/programming-languages/）",
+      "row": "| [[mulberry32-rng]] | 极简 32-bit 确定性 PRNG：Weyl + xor-shift-multiply |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[nikos-papadopoulos]] | Nikos Papadopoulos（4rknova），图形 / 仿真工具型博客作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/4rknova-mulberry32]] | 4rknova：Mulberry32 确定性 PRNG 逐 bit 拆解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-54 Worker FD (4rknova.com ×5)\n\n处理 5 篇 Nikos Papadopoulos / 4rknova.com 文章。新增 1 概念页（mulberry32-rng）、1 人物页（nikos-papadopoulos）、1 source 摘要。跳过 4 篇：Gaia 天文数据库（领域不匹配）+ 2 篇虚构小说 + 1 个仅含键位表的 demo 页。"
+}

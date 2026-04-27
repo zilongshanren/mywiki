@@ -1,0 +1,89 @@
+{
+  "batch_id": "batch-w55-fe",
+  "agent_note": "Michael Allar / allarsblog.com 5 篇 UE4 工程笔记：救火顾问长文 + Marketplace JS hack + 编辑器电池 60fps + UMG PreConstruct 顺序 + 通知气泡偏移硬编码。新增 1 人物页、3 概念页、5 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/allarsblog.com/2018-03-17_confessions-of-an-unreal-engine-4-engineering-firefighter.md",
+      "status": "ingested",
+      "source_slug": "allar-ue4-firefighter",
+      "title": "Confessions of an Unreal Engine 4 Engineering Firefighter"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2018-04-14_fixing-ue4-marketplace-comment-usernames-being-unknown.md",
+      "status": "ingested",
+      "source_slug": "allar-marketplace-unknown-usernames",
+      "title": "Fixing UE4 Marketplace Comment Usernames Being Unknown"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2020-01-12_ue4-editor-limited-to-60-fps-when-not-plugged-into-power-on.md",
+      "status": "ingested",
+      "source_slug": "allar-ue4-editor-battery-60fps",
+      "title": "UE4 Editor limited to 60 FPS when not plugged into power (on battery)"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2020-01-29_ue4-umg-uuserwidget-which-fires-first-nativepreconstruct-or.md",
+      "status": "ingested",
+      "source_slug": "allar-umg-native-preconstruct-order",
+      "title": "UE4 UMG UUserWidget: Which fires first, NativePreConstruct or Blueprint PreConstruct?"
+    },
+    {
+      "path": "raw/articles/allarsblog.com/2020-07-25_how-to-offset-ue4-pop-up-notifications.md",
+      "status": "ingested",
+      "source_slug": "allar-ue4-notification-offset",
+      "title": "How To Offset UE4 Pop-Up Notifications"
+    }
+  ],
+  "concepts_created": [
+    "umg-user-widget-lifecycle",
+    "ue4-editor-battery-throttle",
+    "ue4-common-perf-pitfalls"
+  ],
+  "people_created": ["michael-allar"],
+  "source_summaries_created": [
+    "allar-ue4-firefighter",
+    "allar-marketplace-unknown-usernames",
+    "allar-ue4-editor-battery-60fps",
+    "allar-umg-native-preconstruct-order",
+    "allar-ue4-notification-offset"
+  ],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[michael-allar]] | Michael Allar — UE4 救火顾问、ue4.style 维护者 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ue4-editor-battery-throttle]] | UE4 编辑器电池模式 60 FPS 硬限制与 r.DontLimitOnBattery |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ue4-common-perf-pitfalls]] | Allar 救火现场反复出现的 UE4 工程陷阱清单 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[umg-user-widget-lifecycle]] | UMG UUserWidget：NativePreConstruct 与蓝图 PreConstruct 顺序 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-ue4-firefighter]] | Allar：UE4 救火顾问的团队与工程教训 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-marketplace-unknown-usernames]] | Allar：用 Fiddler 修 Epic Marketplace 评论用户名 bug |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-ue4-editor-battery-60fps]] | Allar：UE4 编辑器在电池 / UPS 下被钳到 60 FPS |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-umg-native-preconstruct-order]] | Allar：UMG NativePreConstruct 与蓝图 PreConstruct 触发顺序 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/allar-ue4-notification-offset]] | Allar：UE4 通知气泡位置硬编码在 NotificationManager.cpp |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-55 Worker FE (allarsblog.com ×5)\n\n处理 Michael Allar 5 篇 UE4 工程笔记：救火顾问长文、Marketplace JS hack、编辑器电池 60fps、UMG PreConstruct 顺序、通知气泡偏移。新增 1 人物页（michael-allar）、3 概念页（umg-user-widget-lifecycle / ue4-editor-battery-throttle / ue4-common-perf-pitfalls）、5 source 摘要。无跳过。"
+}

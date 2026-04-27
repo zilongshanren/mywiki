@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w78-hy",
+  "agent_note": "Bitsquid 2010 末/2011 初 Niklas Frykholm 4 篇技术文章 + 1 篇 skip（C++ coding style 博客正文是外链 GitHub，raw 里只有评论区噪声）。核心新概念 4 个：variable-timestep-smoothing、local-navigation-over-pathfinding、system-decoupling-patterns、polling-callbacks-events。a-is-overrated 与既有 a-star-pathfinding 互补 —— 给现有页打了一条补 Sources 的 patch。niklas-frykholm 人物页已存在，仅追加 4 条 sources link。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-10-18_time-step-smoothing.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-time-step-smoothing",
+      "title": "Time Step Smoothing"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-10-20_a-is-overrated.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-a-is-overrated",
+      "title": "A* is Overrated"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2010-12-16_bitsquid-c-coding-style.md",
+      "status": "skipped_offtopic",
+      "reason": "raw 文件正文缺失 —— 原博客把编码风格指南以外链形式放在 https://github.com/niklasfrykholm/blog/blob/master/reference/coding-style.md ，raw 抓到的全部是 'I agree with everything but the underscores' 之类的评论区口水。无可归档的技术内容。"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-01-30_managing-coupling.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-managing-coupling",
+      "title": "Managing Coupling"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-02-11_managing-coupling-part-2-polling-callbacks-and-events.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-managing-coupling-part-2",
+      "title": "Managing Coupling Part 2 — Polling, Callbacks and Events"
+    }
+  ],
+  "concepts_created": [
+    "variable-timestep-smoothing",
+    "local-navigation-over-pathfinding",
+    "system-decoupling-patterns",
+    "polling-callbacks-events"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-time-step-smoothing",
+    "bitsquid-a-is-overrated",
+    "bitsquid-managing-coupling",
+    "bitsquid-managing-coupling-part-2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/a-star-pathfinding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[local-navigation-over-pathfinding]] — Niklas Frykholm 的\"A* is Overrated\"：算法只是导航里一小块，局部避障才是 AI 显得靠谱的关键"
+    },
+    {
+      "file": "wiki/game-development/a-star-pathfinding.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-a-is-overrated]] — Niklas Frykholm 2010：A* is Overrated，反对 cargo-cult 套 A*"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-time-step-smoothing]]\n- [[sources/bitsquid-a-is-overrated]]\n- [[sources/bitsquid-managing-coupling]]\n- [[sources/bitsquid-managing-coupling-part-2]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[variable-timestep-smoothing]] | Bitsquid 变步长时间平滑：11 帧历史去两高两低取 7 均再 lerp |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[local-navigation-over-pathfinding]] | A* is Overrated：局部避障比最短路径算法更决定 AI 靠谱感 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[system-decoupling-patterns]] | Bitsquid 解耦四条：防 framework / 高层调度低层 / 允许复制 / ID 引用 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[polling-callbacks-events]] | 低层→高层通知三种方式：优先 poll / callback 必须延迟 / event 别做 global switchboard |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-time-step-smoothing]] | Niklas Frykholm：变步长下的 time step smoothing 策略 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-a-is-overrated]] | Niklas Frykholm：A* is Overrated，导航不是寻路 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-managing-coupling]] | Niklas Frykholm：引擎解耦四条原则 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-managing-coupling-part-2]] | Niklas Frykholm：polling / callback / event 三选一的工程取舍 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-78 Worker HY (bitsquid.blogspot.com 2010 末/2011 初 ×5)\n\n处理 5 篇 Niklas Frykholm Bitsquid 早期文章：time step smoothing、A* is overrated、C++ coding style（skip：raw 正文为空，全是评论）、managing coupling part 1 & 2。新增 4 概念页：[[variable-timestep-smoothing]]、[[local-navigation-over-pathfinding]]、[[system-decoupling-patterns]]、[[polling-callbacks-events]]；4 source 摘要；对 [[a-star-pathfinding]] 与 [[niklas-frykholm]] 各打一条 append patch。Niklas 的解耦系列与 cloudwu 的 [[id-based-lifetime-with-kill-flag]]、既有 [[handle-based-resource-manager]] 形成交叉引用。"
+}

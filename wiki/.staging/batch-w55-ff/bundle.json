@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w55-ff",
+  "agent_note": "cybereality.com 5 篇短博文。全部是 1-3 段的进度通告 / 观点碎碎念，无技术细节，全部 skip。两篇明显 off-topic（GenAI 音乐视频、3D psy-op 观点），三篇是 Degine 独立 3D 引擎进度通告（GDC demo / Q1 进度 / mocap 重制），标题提及 OpenGL/WebGL/stereoscopic/mocap/hair rendering，但正文无任何技术阐述——属于协议明示的 'conference slide dumps without substance' / 'personal workflow note' 类型。作者 Cybereality 未建 person 页（无 ingest 内容可挂）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/cybereality.com/2026-01-25_gdc-2026-graphics-demo-prototype.md",
+      "status": "skipped_offtopic",
+      "reason": "一段话的 Degine 引擎 GDC 2026 demo 预告，仅提 cyberpunk 场景 / 立体 3D / WebGL 展示计划，无任何实现细节或技术分析。"
+    },
+    {
+      "path": "raw/articles/cybereality.com/2026-03-20_finding-flow-with-genai-music-videos.md",
+      "status": "skipped_offtopic",
+      "reason": "Suno + Midjourney 制作 GenAI 音乐视频的个人抱怨帖，与图形 / 引擎 / 系统无关。"
+    },
+    {
+      "path": "raw/articles/cybereality.com/2026-03-20_is-3d-a-psychological-operation.md",
+      "status": "skipped_offtopic",
+      "reason": "作者对 3D / crypto / NFT / GenAI / metaverse 讨厌者心理的一小时观点视频介绍，政治 schizorant 风格，非技术内容。"
+    },
+    {
+      "path": "raw/articles/cybereality.com/2026-03-20_q1-2026-degine-progress.md",
+      "status": "skipped_offtopic",
+      "reason": "Degine 独立引擎 Q1 进度通告，一段文字仅列出 mesh menu / material UI / SBS 3D / 角色备用服装 / 网站上线等项目，无架构或实现描述。"
+    },
+    {
+      "path": "raw/articles/cybereality.com/2026-03-20_remastered-valentine-s-day-motion-capture-animation-in-openg.md",
+      "status": "skipped_offtopic",
+      "reason": "30 秒 motion capture 动画重制的短博文，仅提到 '处理一个 loop 要一天' 和 'hair rendering 修好了'，无 mocap pipeline / OpenGL 渲染 / 头发方案的任何技术描述。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-55 Worker FF (cybereality.com x5)\n\n处理 5 篇 cybereality.com 博文，全部 skip：两篇 off-topic（GenAI 音乐视频、3D psy-op 观点），三篇 Degine 引擎进度通告（GDC demo / Q1 progress / Valentine's mocap remaster）标题指向 graphics/OpenGL 但正文为 1-3 段无技术细节的宣传帖。未创建任何 wiki 页面。"
+}

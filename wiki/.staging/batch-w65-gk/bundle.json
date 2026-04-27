@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w65-gk",
+  "agent_note": "Adrian Courrèges 5 篇：2 篇首页/索引 skip_duplicate，3 篇硬技术（透明像素 / MGS V 帧 / UE4 后处理补丁）全量吞入。他是 frame-analysis 写作范式的奠基者之一，UE4 patch 三件套有 Switch AAA 出货证明。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/adriancourreges.com/2017-05-09_beware-of-transparent-pixels-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-transparent-pixels",
+      "title": "Beware of Transparent Pixels"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2017-12-15_metal-gear-solid-v-graphics-study-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-mgs-v-graphics-study",
+      "title": "Metal Gear Solid V - Graphics Study"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2018-12-02_ue4-optimized-post-effects-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-ue4-optimized-post-effects",
+      "title": "UE4 Optimized Post-Effects"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2020-12-29_adrian-courreges.md",
+      "status": "skipped_duplicate",
+      "reason": "博客首页/About 页，无独立技术内容"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2020-12-29_graphics-studies-compilation-adrian-courreges.md",
+      "status": "skipped_duplicate",
+      "reason": "所有 graphics study 的目录索引页（含 Deus Ex / Supreme Commander / GTA V / DOOM 2016 / MGS V 等），内容已在各 study 本身里"
+    }
+  ],
+  "concepts_created": [
+    "mgs-v-fox-engine-frame",
+    "gather-bokeh-dof",
+    "ue4-reactive-dynamic-resolution"
+  ],
+  "people_created": [
+    "adrian-courreges"
+  ],
+  "source_summaries_created": [
+    "adrian-transparent-pixels",
+    "adrian-mgs-v-graphics-study",
+    "adrian-ue4-optimized-post-effects"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/srgb-premultiplied-alpha-compression.md",
+      "operation": "append_to_section",
+      "section": "## 与其他概念的关系",
+      "content": "- [[sources/adrian-transparent-pixels]] —— Courrèges 用 PS3 XMB 上 Limbo logo 在白背景 fade-in 的灰斑做入门案例，给出美术端 flood-fill + 程序端预乘 alpha 的双策略"
+    },
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/adrian-transparent-pixels]] —— alpha=0 像素的 RGB 值如何通过 bilinear filtering 污染可见边缘"
+    },
+    {
+      "file": "wiki/rendering/scatter-bokeh-dof.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gather-bokeh-dof]] —— 对偶路线，移动 GPU 上的 drop-in 替代\n- [[mgs-v-fox-engine-frame]] —— Fox Engine 的 DoF 是 scatter 的分级分辨率加强版"
+    },
+    {
+      "file": "wiki/rendering/scatter-bokeh-dof.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/adrian-mgs-v-graphics-study]]\n- [[sources/adrian-ue4-optimized-post-effects]]"
+    },
+    {
+      "file": "wiki/rendering/dynamic-resolution-scaling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ue4-reactive-dynamic-resolution]] —— Courrèges 给 UE4.18 前的反应式 dynamic resolution 补丁，Switch 版《DQ XI S》出货采用"
+    },
+    {
+      "file": "wiki/rendering/unreal-frame-breakdown.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/adrian-mgs-v-graphics-study]] —— Courrèges 的 MGS V 帧分析（[[kostas-anagnostou]] 明言受他 GTA V 研究启发）\n- [[gather-bokeh-dof]] / [[ue4-reactive-dynamic-resolution]] —— UE4 在 Tegra X1 上的两组 drop-in 优化"
+    },
+    {
+      "file": "wiki/people/thomas-poulet.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[adrian-courreges]] —— frame-analysis 写作范式的前辈，Poulet 的 Anno / Ni no Kuni / DCS 系列延续这条路线"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mgs-v-fox-engine-frame]] | Fox Engine 一帧全流程解剖（MGS V：小 G-Buffer、双 SSAO、早 tonemap、分级 scatter DoF） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gather-bokeh-dof]] | Gather 式 bokeh DoF + McIntosh flood-fill，UE4 BokehDOF 的移动端替代（DOOM 2016 技术） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ue4-reactive-dynamic-resolution]] | UE4.18 前的反应式 dynamic resolution 补丁，基于 GGPUFrameTime 两档跳变 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[adrian-courreges]] | Adrian Courrèges，frame-analysis 写作范式奠基者；Switch AAA UE4 优化补丁作者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-transparent-pixels]] | Courrèges：alpha=0 像素的 RGB 值如何污染边缘，flood-fill + 预乘 alpha 双解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-mgs-v-graphics-study]] | Courrèges：MGS V / Fox Engine 一帧完整解剖（定制 ReShade 分支绕反调试） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-ue4-optimized-post-effects]] | Courrèges：UE4 在 Tegra X1 上的三组 drop-in 优化补丁（GatherDOF / half-res SSAO / reactive dynres） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-65 Worker gk (adriancourreges.com ×5)\n\n处理 Adrian Courrèges 5 篇。3 篇硬技术全量 ingest：透明像素陷阱、MGS V / Fox Engine 帧分析（2331 draw / 73 RT，定制 ReShade 绕反调试）、UE4 Switch 优化补丁集（GatherDOF / half-res SSAO / reactive dynres；DQ XI S / Pikmin 4 出货采用）。2 篇 skip_duplicate（首页 + graphics-studies 索引）。新增 3 概念页（mgs-v-fox-engine-frame / gather-bokeh-dof / ue4-reactive-dynamic-resolution）、1 人物页（adrian-courreges）、3 source 摘要。给 srgb-premultiplied-alpha-compression / alpha-blending / scatter-bokeh-dof / dynamic-resolution-scaling / unreal-frame-breakdown / thomas-poulet 7 个 patch。"
+}

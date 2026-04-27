@@ -1,0 +1,54 @@
+{
+  "batch_id": "batch-w70-hb",
+  "agent_note": "Early 2010 blog.runevision.com posts — mostly event recaps (Nordic Game Jam, GDC). Only one technical slice: GDC 2010 recap summarizing Uncharted animation talk (additive idle overlays + IK foot placement). Two files are exact duplicates (March 2010 -2.md vs .md), and the Feb 11 pair is also duplicates. Ingest one canonical source summary, skip the rest.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.runevision.com/2010-02-04_runevision-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "Nordic Game Jam event recap and credits for Preschool Theater Director game; no technical content."
+    },
+    {
+      "path": "raw/articles/blog.runevision.com/2010-02-11_runevision-blog-2.md",
+      "status": "skipped_offtopic",
+      "reason": "Two-sentence teaser pointing to an offsite Unity animation demo + a Unite '09 video; no substantive content in the post itself."
+    },
+    {
+      "path": "raw/articles/blog.runevision.com/2010-02-11_runevision-blog.md",
+      "status": "skipped_offtopic",
+      "reason": "Monthly archive page duplicating the Feb 11 teaser plus the Feb 4 Game Jam recap; no new content."
+    },
+    {
+      "path": "raw/articles/blog.runevision.com/2010-03-14_runevision-blog-2.md",
+      "status": "ingested",
+      "source_slug": "runevision-gdc2010-animation",
+      "title": "GDC 2010 — Unity 展台、Limbo 与 Uncharted 动画讲座笔记"
+    },
+    {
+      "path": "raw/articles/blog.runevision.com/2010-03-14_runevision-blog.md",
+      "status": "skipped_duplicate",
+      "reason": "Identical content to 2010-03-14_runevision-blog-2.md (monthly archive page vs. post URL); already ingested as runevision-gdc2010-animation."
+    }
+  ],
+  "concepts_created": ["additive-animation-layering"],
+  "people_created": [],
+  "source_summaries_created": ["runevision-gdc2010-animation"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/rune-skovbo-johansen.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/runevision-gdc2010-animation]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[additive-animation-layering]] | 叠加式动画层：1 帧 idle + 长周期 wiggle 的变化手法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/runevision-gdc2010-animation]] | Rune Johansen：GDC 2010 现场观察 Uncharted 动画技术 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-70 Worker HB (blog.runevision.com ×5)\n\nblog.runevision.com 早期 2010 年内容：Nordic Game Jam 与 Unity 动画 demo 预告基本为事件通稿，跳过 3 篇；3 月 14 日 GDC 2010 recap 有 Uncharted 动画技术干货，已吸收为 [[sources/runevision-gdc2010-animation]]，并新建 [[additive-animation-layering]] 概念页。另有 1 篇是月度归档页，与 post URL 完全重复，按 skipped_duplicate 处理。"
+}

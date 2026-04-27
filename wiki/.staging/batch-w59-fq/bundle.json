@@ -1,0 +1,134 @@
+{
+  "batch_id": "batch-w59-fq",
+  "agent_note": "30fps.net / Pekka Väänänen 6 篇：坐标系对照表 + 五个图像/数据压缩 notebook（VQ、PCA、SOM、MBD、NumPy tile trick）。全部技术内容，全 ingest。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/30fps.net/2023-03-17_3d-software-coordinate-system-table.md",
+      "status": "ingested",
+      "source_slug": "30fps-coordinate-system-table",
+      "title": "3D Software Coordinate System Table"
+    },
+    {
+      "path": "raw/articles/30fps.net/2023-04-30_image-vector-quantization-is-just-like-creating-a-tilemapp.md",
+      "status": "ingested",
+      "source_slug": "30fps-image-vq",
+      "title": "Image vector quantization is just like creating a tilemap"
+    },
+    {
+      "path": "raw/articles/30fps.net/2024-03-05_pca-image-color-compression-experimentp.md",
+      "status": "ingested",
+      "source_slug": "30fps-pca-colors",
+      "title": "PCA image color compression experiment"
+    },
+    {
+      "path": "raw/articles/30fps.net/2024-03-08_color-quantization-with-a-self-organizing-mapp.md",
+      "status": "ingested",
+      "source_slug": "30fps-som-palette",
+      "title": "Color quantization with a self-organizing map"
+    },
+    {
+      "path": "raw/articles/30fps.net/2024-03-16_moving-basis-decomposition-for-imagesp.md",
+      "status": "ingested",
+      "source_slug": "30fps-mbd-images",
+      "title": "Moving basis decomposition for images"
+    },
+    {
+      "path": "raw/articles/30fps.net/2024-11-07_efficiently-split-a-numpy-array-into-tilesp.md",
+      "status": "ingested",
+      "source_slug": "30fps-split-tiles",
+      "title": "Efficiently split a NumPy array into tiles"
+    }
+  ],
+  "concepts_created": [
+    "coordinate-system-table",
+    "vector-quantization-tilemap",
+    "pca-image-compression",
+    "color-quantization-som",
+    "moving-basis-decomposition",
+    "numpy-tile-reshape-trick"
+  ],
+  "people_created": ["pekka-vaananen"],
+  "source_summaries_created": [
+    "30fps-coordinate-system-table",
+    "30fps-image-vq",
+    "30fps-pca-colors",
+    "30fps-som-palette",
+    "30fps-mbd-images",
+    "30fps-split-tiles"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/coordinate-spaces.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[coordinate-system-table]] —— 主流引擎 / API / DCC 的 Right/Up/Forward + 手性对照表"
+    },
+    {
+      "file": "wiki/rendering/color-quantization-kmeans.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vector-quantization-tilemap]] —— 把 K-Means 推到「块级」，得到瓦片图 + 码本\n- [[color-quantization-som]] —— 用 1D SOM 得到有序调色板（ScreenToGif NeuralQuantizer 的原理）"
+    },
+    {
+      "file": "wiki/rendering/pca-intro.md",
+      "operation": "append_to_section",
+      "section": "## 与本 wiki 其他主题的对接",
+      "content": "- [[pca-image-compression]] —— PCA 直接压缩 RGB 颜色的最简实验\n- [[moving-basis-decomposition]] —— PCA 的「空间变化」扩展，用于预计算光照压缩"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[coordinate-system-table]] | 主流引擎 / API / DCC 的 view/world space 轴向与手性对照表 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vector-quantization-tilemap]] | 向量量化 = 自动生成瓦片表：K-Means 压图到 codebook + tilemap |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[pca-image-compression]] | 用 2D PCA 把 RGB 颜色压成连续「二色调色板」的最简实验 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[color-quantization-som]] | 用 1D 自组织映射学调色板，得到有拓扑的 256 色（ScreenToGif 同款） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[moving-basis-decomposition]] | Silvennoinen / Sloan PRT 压缩技术在 2D 图像上的玩具实现，PCA × PVRTC |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[numpy-tile-reshape-trick]] | reshape + transpose 切瓦片：比 for 循环快 1000×，比 scikit-image 快 15× |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[pekka-vaananen]] | 30fps.net 博主，芬兰独立渲染研究者，擅长 notebook 式图形实验 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-coordinate-system-table]] | Väänänen：3D 软件坐标系对照表 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-image-vq]] | Väänänen：图像向量量化 = 生成瓦片图 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-pca-colors]] | Väänänen：2D PCA 做 RGB 颜色压缩 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-som-palette]] | Väänänen：用自组织映射做调色板量化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-mbd-images]] | Väänänen：Moving Basis Decomposition 在 2D 图像上的复现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/30fps-split-tiles]] | Väänänen：NumPy 切瓦片的 reshape + transpose 高速写法 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-59 Worker FQ (30fps.net / Pekka Väänänen ×6)\n\n处理 6 篇 30fps.net notebook / reference：坐标系对照表、VQ 瓦片图、2D PCA 颜色压缩、SOM 调色板量化、MBD 图像版、NumPy 切瓦片加速。新增 6 概念页（coordinate-system-table、vector-quantization-tilemap、pca-image-compression、color-quantization-som、moving-basis-decomposition、numpy-tile-reshape-trick）、1 人物页（pekka-vaananen）、6 source 摘要。对 coordinate-spaces / color-quantization-kmeans / pca-intro 追加相关链接 patch。全 ingest，无跳过。"
+}

@@ -329,6 +329,10 @@ CAQA + CSAPP 的底层视角。
 | [[non-scheduling-queue]] | 调度器前的候补席：省 wake-up 功耗，Zen 2/Tremont/Gracemont 共用的套路 |
 | [[move-elimination-zeroing-idioms]] | rename 阶段消除 MOV 与 zeroing idiom 的硬件约定 |
 | [[littles-law-reorder-buffer]] | 用 Little's Law 判断 ROB 是否匹配 cache 延迟的方法学 |
+| [[frame-hitch-profiler-markers]] | 用时间轴标记（Points of Interest）隔离游戏帧卡顿，绕过采样 profiler 的盲点 |
+| [[tsan-race-condition-detection]] | ThreadSanitizer 原理与游戏引擎竞态检测实战（X-Plane 案例集） |
+| [[centaur-cns-microarchitecture]] | Centaur CNS：Haswell 级 IPC 的极紧凑 x86 核，首个非 Intel AVX-512 实现，面积密度优先 |
+| [[numa-multi-socket-design]] | NUMA 多路设计：跨路延迟/带宽/一致性，含 CHA 双路带宽缺陷案例 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -979,6 +983,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[importance-sampling-pdf-cancellation]] | PDF 与 BRDF 分布项互相抵消——为什么 GGX IS 代码里没有 weight |
 | [[stable-csm-implementation-tips]] | Stable CSM 实施要点：整像素滑动、最优级联、pancake、贴图打包、Crysis 2 远级联隔帧更新观察 |
 | [[morton-order-parallel-mipmap]] | Morton 序一次遍历 CPU 生成整座 mipmap 金字塔 |
+| [[z-buffer-custom-encoding-early-z-tradeoff]] | 自定义深度编码（log-Z、eye-space）与 Early-Z 硬件优化的根本矛盾及 reversed-z 出路 |
+| [[skinning-normals-weighted-average]] | 蒙皮法线加权平均推导：旋转骨骼下的正确权重计算与平移骨骼的边界问题 |
+| [[gpu-hardware-video-encoder]] | GPU 硬件视频编码器（NVENC/VCN）vs 软件编码：VMAF 质量对比与场景适用性 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2223,6 +2230,17 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-alder-lake-ring-clock]] | Chester Lam：Alder Lake E-Core 启用即降 ring clock 的首代毛病（2021-12） |
 | [[sources/chipsandcheese-gracemont]] | Chester Lam：Gracemont E-Core 深度拆解，Atom 的复仇（2021-12） |
 | [[sources/chipsandcheese-tremont]] | Chester Lam：Tremont 转型期 Atom，Gracemont 的前辈（2022-01） |
+| [[sources/supnik-custom-z-buffer-early-z]] | Supnik：自定义 Z 编码与 Early-Z 不可兼得 |
+| [[sources/supnik-instruments-slow-frames]] | Supnik：Instruments 8.0 时间轴标记定位帧卡顿 |
+| [[sources/supnik-race-condition-vroom]] | Supnik：tsan 竞态检测实战（X-Plane） |
+| [[sources/supnik-why-c-should-be-simple]] | Supnik：大脑带宽论——C++ 应刻意写简单 |
+| [[sources/c0de517e-game-languages-poll-2011]] | Pesce：2011 游戏编程语言调查（174 份，C++/Lua/C# 三巨头，D 小幅上升）|
+| [[sources/c0de517e-skinning-normals-notes]] | Pesce：蒙皮法线权重的正确推导与骨骼平移的边界问题 |
+| [[sources/chipsandcheese-golden-cove-cache-analysis]] | Chester Lam：ChampSim 仿真 Golden Cove 缓存参数变体分析 |
+| [[sources/chipsandcheese-via-centaur-cns]] | Cozma & Lam：Centaur CNS 微架构全面实测 |
+| [[sources/chipsandcheese-gpu-video-encoders]] | Chester Lam：GPU 硬件视频编码器质量对比（NVENC vs VCN vs libx264）|
+| [[sources/chipsandcheese-centaur-cha-dual-socket]] | Chester Lam：CHA 双路 NUMA 延迟与带宽缺陷分析 |
+| [[sources/chipsandcheese-centaur-cha-die]] | Chester Lam：CHA die 面积分布与 CNS 密度设计哲学 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

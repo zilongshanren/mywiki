@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w87-iz",
+  "agent_note": "Bitsquid 2012-11 ~ 2013-03 五篇 Niklas Frykholm 文章：formal data-def language / four meditations on bad design / GC vs allocation sizes / Why Lua / object replication migration race。作者页已存在，直接复用。新增 5 概念页（binary-data-definition-language / strings-as-identifiers-antipattern / four-meditations-on-rewrites / page-granular-system-allocator / object-replication-migration-race）+ 5 source summaries。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-11-21_a-formal-language-for-data-definitions.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-formal-language-data-definitions",
+      "title": "A Formal Language for Data Definitions"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-12-11_four-meditations-on-bad-design-decisions.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-four-meditations-bad-design",
+      "title": "Four meditations on bad design decisions"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-01-31_garbage-collection-and-memory-allocation-sizes.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-gc-and-allocation-sizes",
+      "title": "Garbage Collection and Memory Allocation Sizes"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-02-19_why-lua.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-why-lua",
+      "title": "Why Lua?"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2013-03-01_a-bug-in-object-replication-and-message-reordering.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-object-replication-migration-race",
+      "title": "A Bug in Object Replication and Message Reordering"
+    }
+  ],
+  "concepts_created": [
+    "binary-data-definition-language",
+    "strings-as-identifiers-antipattern",
+    "four-meditations-on-rewrites",
+    "page-granular-system-allocator",
+    "object-replication-migration-race"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-formal-language-data-definitions",
+    "bitsquid-four-meditations-bad-design",
+    "bitsquid-gc-and-allocation-sizes",
+    "bitsquid-why-lua",
+    "bitsquid-object-replication-migration-race"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[binary-data-definition-language]] — 二进制数据布局的形式化描述语言设想\n- [[strings-as-identifiers-antipattern]] — 字符串作标识符的反模式\n- [[four-meditations-on-rewrites]] — 重写 Flow 时总结的四条设计教训\n- [[page-granular-system-allocator]] — 全局只发整页、子系统自治的内存纪律\n- [[object-replication-migration-race]] — P2P 对象迁移的乱序竞态与 migration counter 修复"
+    },
+    {
+      "file": "wiki/programming-languages/lua-design-philosophy.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-why-lua]]"
+    },
+    {
+      "file": "wiki/game-engines/flow-graph-data-oriented-runtime.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-four-meditations-bad-design]] — Flow 第一版留下的四条坏决策与重写教训"
+    },
+    {
+      "file": "wiki/computer-systems/custom-allocator-interface.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-gc-and-allocation-sizes]] — 把全局分配压到页粒度的推理过程"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[binary-data-definition-language]] | Bitsquid：二进制数据布局的形式化描述语言构想 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[strings-as-identifiers-antipattern]] | 字符串作标识符的反模式——Id/DisplayName 必须分离 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[four-meditations-on-rewrites]] | Bitsquid Flow 重写后的四条设计教训 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[page-granular-system-allocator]] | Bitsquid 的内存纪律：全局只发整页、子系统在页内自治 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[object-replication-migration-race]] | P2P 对象迁移的乱序竞态与 migration counter 解法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-formal-language-data-definitions]] | Bitsquid：为什么至今没有形式化二进制布局语言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-four-meditations-bad-design]] | Bitsquid：Flow 重写后的四条设计教训 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-gc-and-allocation-sizes]] | Bitsquid：GC 痛点的真名是分配颗粒度 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-why-lua]] | Bitsquid：为什么选 Lua——四条引擎原则逐条对齐 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-object-replication-migration-race]] | Bitsquid：P2P 对象迁移的消息乱序 bug 与修复 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-87 Worker iz (bitsquid.blogspot.com 2012-11~2013-03 ×5)\n\n处理 5 篇 Niklas Frykholm 早期 Bitsquid 博客：formal data-def language、four meditations on bad design、GC vs allocation sizes、Why Lua、object replication migration race。新增 5 概念页（binary-data-definition-language / strings-as-identifiers-antipattern / four-meditations-on-rewrites / page-granular-system-allocator / object-replication-migration-race）+ 5 source summaries。作者页补 5 条相关链接。"
+}

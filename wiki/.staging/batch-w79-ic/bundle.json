@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w79-ic",
+  "agent_note": "hacksoflife.blogspot.com 2010-02 批次：4 篇硬核 OpenGL VBO/blend 内容全部 ingest，1 篇 Apple Mail multipart-mime 跳过。四篇互相引用（同一作者连载），已交叉链。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-12_multipart-mime-and-apple-mail.md",
+      "status": "skipped_offtopic",
+      "reason": "Apple Mail 对 multipart MIME 邮件处理不当的个人 debugging 随笔，属邮件客户端吐槽，与图形/引擎/系统性能主题无关。"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-18_alpha-blending-back-to-front-front-to-back.md",
+      "status": "ingested",
+      "source_slug": "supnik-alpha-front-to-back",
+      "title": "Alpha Blending, Back To Front, Front To Back"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-24_double-buffering-vbos.md",
+      "status": "ingested",
+      "source_slug": "supnik-double-buffering-vbos",
+      "title": "Double-Buffering VBOs"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-28_double-buffering-part-2-why-agp-might-be-your-friend.md",
+      "status": "ingested",
+      "source_slug": "supnik-agp-vs-vram",
+      "title": "Double-Buffering Part 2 - Why AGP Might Be Your Friend"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-02-28_one-more-on-vbos-glbuffersubdata.md",
+      "status": "ingested",
+      "source_slug": "supnik-glbuffersubdata",
+      "title": "One More On VBOs - glBufferSubData"
+    }
+  ],
+  "concepts_created": [
+    "alpha-blending-front-to-back",
+    "vbo-double-buffering-orphaning",
+    "agp-vs-vram-streaming",
+    "glbuffersubdata-serialization"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-alpha-front-to-back",
+    "supnik-double-buffering-vbos",
+    "supnik-agp-vs-vram",
+    "supnik-glbuffersubdata"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/alpha-blending.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[alpha-blending-front-to-back]] —— Ben Supnik：用 `GL_ONE_MINUS_DST_ALPHA, GL_ONE` 做前向合成与「反转 alpha」累积不透明度的 blend state 技巧"
+    },
+    {
+      "file": "wiki/rendering/alpha-compositing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[alpha-blending-front-to-back]] —— 前向合成为什么仍然要求预乘 alpha，以及「反转 alpha 通道」的 back-to-front 变体"
+    },
+    {
+      "file": "wiki/rendering/buffer-renaming.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[vbo-double-buffering-orphaning]] —— Ben Supnik 2010 年从 OpenGL 应用端视角对 orphaning 的推导\n- [[glbuffersubdata-serialization]] —— SubData 为什么必然与 in-flight draw 串行化\n- [[agp-vs-vram-streaming]] —— 流式几何为什么驱动经常把你放进 AGP/system memory 而不是 VRAM"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[alpha-blending-front-to-back]]\n- [[vbo-double-buffering-orphaning]]\n- [[agp-vs-vram-streaming]]\n- [[glbuffersubdata-serialization]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-alpha-front-to-back]]\n- [[sources/supnik-double-buffering-vbos]]\n- [[sources/supnik-agp-vs-vram]]\n- [[sources/supnik-glbuffersubdata]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[alpha-blending-front-to-back]] | 前向 alpha 合成 + 反转 alpha 的 back-to-front 变体（Supnik） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[vbo-double-buffering-orphaning]] | VBO 双缓冲 / orphaning / MapBufferRange 的应用端推导 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[agp-vs-vram-streaming]] | 流式顶点为何驱动常给 AGP system memory 而非 VRAM |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[glbuffersubdata-serialization]] | 为什么 glBufferSubData 必然与 in-flight draw 串行化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-alpha-front-to-back]] | Supnik：前向/后向 alpha blending 的 blend state 推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-double-buffering-vbos]] | Supnik：VBO 双缓冲与 D3D DISCARD / GL orphaning 的对照 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-agp-vs-vram]] | Supnik：为什么流式 VBO 放 AGP 比 VRAM 更安全 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-glbuffersubdata]] | Supnik：glBufferSubData 为何会串行化阻塞 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-79 Worker IC (hacksoflife 2010-02 ×5)\n\nBen Supnik 2010 年 2 月连载的 OpenGL VBO / alpha blending 四篇全部 ingest，另跳过 1 篇 Apple Mail multipart MIME 吐槽。新增 4 概念页（alpha-blending-front-to-back, vbo-double-buffering-orphaning, agp-vs-vram-streaming, glbuffersubdata-serialization）+ 4 source 摘要。四篇互相引用，并与已有 [[alpha-blending]] / [[alpha-compositing]] / [[buffer-renaming]] / [[ben-supnik]] 交叉链。"
+}

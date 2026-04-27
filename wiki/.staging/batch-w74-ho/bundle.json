@@ -1,0 +1,97 @@
+{
+  "batch_id": "batch-w74-ho",
+  "agent_note": "boristhebrave.com ×5: 3 ingested (tileset roundup, AS3 gems, Axaxaxas), 2 skipped (Box2DFlash release = product announcement, Celtic Knots = tool release note). Tileset article is core procedural-gen content; AS3 gems still relevant as early prefigure of TypeScript/gradual typing; Axaxaxas is short but documents Earley parser choice worth its own concept page. Boris The Brave person page already exists — emitting patches to add the three new sources + two new concept links.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2010-01-15_release-of-box2dflash-2-1a.md",
+      "status": "skipped_offtopic",
+      "reason": "product release announcement for Box2DFlash 2.1a; no technical substance beyond 'here is the new version', just pointers to forum/sourceforge"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2010-05-04_x-gems-of-as3-language-design.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-as3-gems",
+      "title": "X Gems of AS3 Language Design"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2013-07-14_tileset-roundup.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-tileset-roundup",
+      "title": "Tileset Roundup"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2014-05-07_celtic-knots.md",
+      "status": "skipped_offtopic",
+      "reason": "tool release note for a Blender Celtic-knot plugin; only 3 paragraphs, content is 'see tutorial/gallery on GitHub' with no algorithmic or technical depth to extract"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2015-09-13_axaxaxas.md",
+      "status": "ingested",
+      "source_slug": "boristhebrave-axaxaxas",
+      "title": "Axaxaxas (Earley Parser in Python)"
+    }
+  ],
+  "concepts_created": [
+    "autotile-tileset-layouts",
+    "optional-static-typing",
+    "method-binding-semantics",
+    "earley-parser"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boristhebrave-tileset-roundup",
+    "boristhebrave-as3-gems",
+    "boristhebrave-axaxaxas"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 6"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[autotile-tileset-layouts]]\n- [[earley-parser]]\n- [[optional-static-typing]]\n- [[method-binding-semantics]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boristhebrave-tileset-roundup]]\n- [[sources/boristhebrave-as3-gems]]\n- [[sources/boristhebrave-axaxaxas]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[autotile-tileset-layouts]] | 2D autotile 切片布局：Marching Squares / Blob / Sub-blob / Micro-blob 的取舍 |"
+    },
+    {
+      "category_header": "## 程序设计语言（wiki/programming-languages/）",
+      "row": "| [[optional-static-typing]] | 可选静态类型：AS3/haXe 起手，TypeScript/Python hints 承接 |"
+    },
+    {
+      "category_header": "## 程序设计语言（wiki/programming-languages/）",
+      "row": "| [[method-binding-semantics]] | 方法隐式 vs 显式绑定 `this`，以及对事件系统对称性的影响 |"
+    },
+    {
+      "category_header": "## 程序设计语言（wiki/programming-languages/）",
+      "row": "| [[earley-parser]] | Earley parser：接受任意 CFG 的通用解析算法，最坏 O(n^3) |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-tileset-roundup]] | Boris：2D autotile 切片布局综述（Marching Squares/Blob/Sub-blob/Micro-blob） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-as3-gems]] | Boris：AS3 语言设计中值得借鉴的几个「钻石」 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boristhebrave-axaxaxas]] | Boris：Python Earley parser 库发布说明 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-74 Worker HO (boristhebrave.com ×5)\n\n处理 5 篇 Boris The Brave 早期文章。Ingest 3 篇：tileset roundup（autotile 布局综述）、AS3 gems（语言设计）、Axaxaxas（Earley parser 库）。Skip 2 篇：Box2DFlash 2.1a 发布公告、Celtic Knots Blender 插件发布短文，均为无实质内容的 release note。新增概念页 4 张：[[autotile-tileset-layouts]]、[[optional-static-typing]]、[[method-binding-semantics]]、[[earley-parser]]；新增 source 摘要 3 张；对 [[boris-the-brave]] 补 sources: 6 与 4 条相关概念链接。"
+}

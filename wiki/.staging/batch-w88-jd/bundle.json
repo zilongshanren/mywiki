@@ -1,0 +1,123 @@
+{
+  "batch_id": "batch-w88-jd",
+  "agent_note": "hacksoflife 2011-01/02 (5 files): 3 ingested (derivatives-iii = Part III patch of existing derivatives series; is-collada-a-win = asset-pipeline strategy; g-buffer-normals-revisited = Lambert azimuthal 2ch normal encoding, direct follow-up to xplane-gbuffer-format), 2 skipped (losing-javadocs-in-eclipse = IDE UI tip, author Chris not Supnik; random-wordpress-notes = mod_rewrite/WP hosting note, off-topic). 2 new concept pages (compact-normal-encoding, asset-exchange-format-strategy), 3 new source summaries, patches to xplane-gbuffer-format and uv-precision-derivative-loss and ben-supnik person page.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-20_derivatives-iii-i-ran-out-of-rez.md",
+      "status": "ingested",
+      "source_slug": "supnik-derivatives-iii-ran-out-of-rez",
+      "title": "Derivatives III: I Ran Out of Rez"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-28_is-collada-a-win.md",
+      "status": "ingested",
+      "source_slug": "supnik-is-collada-a-win",
+      "title": "Is COLLADA a Win?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-02_losing-javadocs-in-eclipse-solution.md",
+      "status": "skipped_offtopic",
+      "reason": "Eclipse IDE UI fix for Android javadoc path. Author is a commenter 'Chris', not Supnik. Pure IDE-menu walkthrough with no software-engineering substance; fits the skip category of IDE tip / non-technical workflow note."
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-04_g-buffer-normals-revisited.md",
+      "status": "ingested",
+      "source_slug": "supnik-gbuffer-normals-revisited",
+      "title": "G-Buffer Normals, Revisited"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-02-10_random-wordpress-notes.md",
+      "status": "skipped_offtopic",
+      "reason": "WordPress + Apache mod_rewrite hosting tip (merging WP into an existing site). Off-topic for a rendering/engine wiki; no reusable engineering principle beyond 'mod_rewrite exists'."
+    }
+  ],
+  "concepts_created": [
+    "compact-normal-encoding",
+    "asset-exchange-format-strategy"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-derivatives-iii-ran-out-of-rez",
+    "supnik-is-collada-a-win",
+    "supnik-gbuffer-normals-revisited"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 30",
+      "content": "sources: 33"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[compact-normal-encoding]] —— 2011 G-Buffer 法线用 Lambert azimuthal 2 通道编码解条带\n- [[asset-exchange-format-strategy]] —— COLLADA 抉择：三条资源交换路线的权衡"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-derivatives-iii-ran-out-of-rez]]\n- [[sources/supnik-is-collada-a-win]]\n- [[sources/supnik-gbuffer-normals-revisited]]"
+    },
+    {
+      "file": "wiki/rendering/xplane-gbuffer-format.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/xplane-gbuffer-format.md",
+      "operation": "append_to_section",
+      "section": "## 关键权衡",
+      "content": "\n### 后续：法线条带逼出 Lambert azimuthal 编码\n\n这套 RG16F + 重建 Z 的布局几周后在机翼前缘灯 case 上翻车——法线 ⊥ 光方向时条带可见。Supnik 在 *G-Buffer Normals, Revisited*（2011-02）里换成 **Lambert azimuthal equal-area projection**，2 通道不变但解码误差在球面上均匀分布，顺带消除了朴素 XY + 重建 Z 在负 eye-space Z 上的 hand-wave。详见 [[compact-normal-encoding]]。"
+    },
+    {
+      "file": "wiki/rendering/xplane-gbuffer-format.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-gbuffer-normals-revisited]]"
+    },
+    {
+      "file": "wiki/rendering/uv-precision-derivative-loss.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/uv-precision-derivative-loss.md",
+      "operation": "append_to_section",
+      "section": "## 两条出路",
+      "content": "\n### 补充：算法式导数完全替换内建差分\n\nSupnik 在 *Derivatives III*（2011-01）把这条路走到极致：既然出问题的 UV 总是在 vertex shader 里**按公式生成**的（世界坐标直接投影），那对应的公式本身就可微——**直接在 fragment shader 里算出解析的 `du/dx`、`du/dy`，彻底不调内建 `dFdx/dFdy`**。精度由你自己选的浮点路径决定，不再被两像素差分的量化阈值卡住。代价是 shader 里多算几行代数，但对「UV = f(position)」这类构造，公式本就在手边。"
+    },
+    {
+      "file": "wiki/rendering/uv-precision-derivative-loss.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-derivatives-iii-ran-out-of-rez]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[compact-normal-encoding]] | G-Buffer 法线 2 通道编码：Lambert azimuthal vs CryTek best-fit |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[asset-exchange-format-strategy]] | DCC → 引擎资源交换的三条路线（Supnik 2011 COLLADA 决策） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-derivatives-iii-ran-out-of-rez]] | Supnik：Derivatives III，内建导数耗尽浮点后用算法式导数替换 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-is-collada-a-win]] | Supnik：COLLADA 值不值——跨 DCC 资源交换的三条路线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gbuffer-normals-revisited]] | Supnik：G-Buffer 法线条带用 Lambert azimuthal 2 通道编码解 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-88 Worker JD (hacksoflife 2011-01 to 2011-02 ×5)\n\n处理 5 篇 hacksoflife（Supnik 2011 年 1-2 月）。3 ingested：derivatives-iii（内建导数浮点耗尽 → 算法式导数替换，接 derivatives-two-parts 与 uv-precision-derivative-loss）、is-collada-a-win（DCC 资源交换三路线决策）、g-buffer-normals-revisited（Lambert azimuthal 2 通道法线编码，直接迭代 xplane-gbuffer-format 的 XY + 重建 Z 方案）。2 skipped：losing-javadocs-in-eclipse（作者 Chris 的 IDE 菜单操作步骤，off-topic）、random-wordpress-notes（WP + mod_rewrite 博客托管技巧）。新增 2 概念页：compact-normal-encoding、asset-exchange-format-strategy；新增 3 source 摘要；patch xplane-gbuffer-format（补充 Lambert 后续）、uv-precision-derivative-loss（补充算法式导数）、ben-supnik 人物页。"
+}

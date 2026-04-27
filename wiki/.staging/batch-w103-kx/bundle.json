@@ -1,0 +1,128 @@
+{
+  "batch_id": "batch-w103-kx",
+  "agent_note": "5 篇 Chips and Cheese 文章：Golden Cove 缓存仿真分析（补充 patch）、Centaur CNS 深度拆解（新概念页）、GPU 硬件视频编码器对比（新概念页）、CHA 双路 NUMA 缺陷（新概念页）、CHA die 分析（patch 补充 CNS 页 sources 计数）。全部 ingested，无跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-02-11_going-armchair-quarterback-on-golden-coves-caches.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-golden-cove-cache-analysis",
+      "title": "Going Armchair Quarterback on Golden Cove's Caches"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-03-23_via-part-4-a-deep-dive-into-centaurs-last-cpu-core-cns.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-via-centaur-cns",
+      "title": "VIA Part 4 – A Deep Dive into Centaur's Last CPU Core: CNS"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-03-30_gpu-hardware-video-encoders-how-good-are-they.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-gpu-video-encoders",
+      "title": "GPU Hardware Video Encoders – How Good Are They?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-04-23_centaur-chas-probably-unfinished-dual-socket-implementation.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-centaur-cha-dual-socket",
+      "title": "Centaur CHA's Probably Unfinished Dual Socket Implementation"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2022-04-30_examining-centaur-chas-die-and-implementation-goals.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-centaur-cha-die",
+      "title": "Examining Centaur CHA's Die and Implementation Goals"
+    }
+  ],
+  "concepts_created": [
+    "centaur-cns-microarchitecture",
+    "numa-multi-socket-design",
+    "gpu-hardware-video-encoder"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-golden-cove-cache-analysis",
+    "chipsandcheese-via-centaur-cns",
+    "chipsandcheese-gpu-video-encoders",
+    "chipsandcheese-centaur-cha-dual-socket",
+    "chipsandcheese-centaur-cha-die"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-golden-cove-cache-analysis]]"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[cache-size-vs-latency-tradeoff]] — ChampSim 仿真对 L1D/L2/L3 参数变体的系统分析"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[centaur-cns-microarchitecture]] — Centaur CNS 核心深度实测\n- [[numa-multi-socket-design]] — CHA 双路 NUMA 带宽缺陷分析\n- [[gpu-hardware-video-encoder]] — GPU 硬件视频编码器质量对比"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-golden-cove-cache-analysis]]\n- [[sources/chipsandcheese-via-centaur-cns]]\n- [[sources/chipsandcheese-gpu-video-encoders]]\n- [[sources/chipsandcheese-centaur-cha-dual-socket]]\n- [[sources/chipsandcheese-centaur-cha-die]]"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-via-centaur-cns]]"
+    },
+    {
+      "file": "wiki/computer-systems/via-x86-isaiah-lujiazui.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-via-centaur-cns]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[centaur-cns-microarchitecture]] | Centaur CNS：Haswell 级 IPC 的极紧凑 x86 核，首个非 Intel AVX-512 实现，面积密度优先 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[numa-multi-socket-design]] | NUMA 多路设计：跨路延迟/带宽/一致性，含 CHA 双路带宽缺陷案例 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[gpu-hardware-video-encoder]] | GPU 硬件视频编码器（NVENC/VCN）vs 软件编码：VMAF 质量对比与场景适用性 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-golden-cove-cache-analysis]] | Chester Lam：ChampSim 仿真 Golden Cove 缓存参数变体分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-via-centaur-cns]] | Cozma & Lam：Centaur CNS 微架构全面实测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-gpu-video-encoders]] | Chester Lam：GPU 硬件视频编码器质量对比（NVENC vs VCN vs libx264）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-centaur-cha-dual-socket]] | Chester Lam：CHA 双路 NUMA 延迟与带宽缺陷分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-centaur-cha-die]] | Chester Lam：CHA die 面积分布与 CNS 密度设计哲学 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-103 Worker KX (chipsandcheese.com ×5)\n\n处理 5 篇 Chips and Cheese 文章。新增 3 概念页（centaur-cns-microarchitecture、numa-multi-socket-design、gpu-hardware-video-encoder）、5 source 摘要。跳过 0 篇。Golden Cove 缓存仿真分析 patch 至 golden-cove-microarchitecture；CHA die 与双路文章内容合并入 centaur-cns-microarchitecture 概念页（3 sources 计数）。george-cozma、chester-lam 人物页均已存在，emit patch 追加新 source 链接。"
+}

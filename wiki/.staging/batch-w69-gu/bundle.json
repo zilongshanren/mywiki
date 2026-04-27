@@ -1,0 +1,83 @@
+{
+  "batch_id": "batch-w69-gu",
+  "agent_note": "Cyanilux wave 69. 5 文件中只有 gpu-instanced-grass-breakdown 是实质技术文；posts / cookies-privacy / breakdowns / tutorials 是 index/legal 页面，跳过。cyanilux 人物页已存在，追加新链接；新建概念页 gpu-instanced-grass-urp（URP + Shader Graph + RenderMeshIndirect + compute frustum cull，与既有的 gpu-driven-grass-tiles 是同题不同栈的互补关系）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/cyanilux.com/2025-09-29_posts.md",
+      "status": "skipped_offtopic",
+      "reason": "博客文章 index 列表页，非技术内容"
+    },
+    {
+      "path": "raw/articles/cyanilux.com/2025-10-03_gpu-instanced-grass-breakdown.md",
+      "status": "ingested",
+      "source_slug": "cyanilux-gpu-instanced-grass",
+      "title": "GPU Instanced Grass Breakdown"
+    },
+    {
+      "path": "raw/articles/cyanilux.com/2026-01-01_cookies-privacy.md",
+      "status": "skipped_offtopic",
+      "reason": "Cookies / Privacy policy 法律页面，与技术无关"
+    },
+    {
+      "path": "raw/articles/cyanilux.com/2026-02-18_breakdowns.md",
+      "status": "skipped_offtopic",
+      "reason": "Breakdowns 栏目 index 页面，非技术内容"
+    },
+    {
+      "path": "raw/articles/cyanilux.com/2026-02-18_tutorials.md",
+      "status": "skipped_offtopic",
+      "reason": "Tutorials 栏目 index 页面，非技术内容"
+    }
+  ],
+  "concepts_created": ["gpu-instanced-grass-urp"],
+  "people_created": [],
+  "source_summaries_created": ["cyanilux-gpu-instanced-grass"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 11"
+    },
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-instanced-grass-urp]]"
+    },
+    {
+      "file": "wiki/people/cyanilux.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/cyanilux-gpu-instanced-grass]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-driven-grass-tiles.md",
+      "operation": "append_to_section",
+      "section": "## 和其它方案的对比",
+      "content": "- [[gpu-instanced-grass-urp]]：同题的 Unity URP + Shader Graph + `RenderMeshIndirect` 实用版；技术栈完全不同，但 compute frustum cull + AppendBuffer + CopyCount 的 GPU 端数据流同构。"
+    },
+    {
+      "file": "wiki/rendering/waving-grass-shader-vertex-offset.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-instanced-grass-urp]] — 同作者栈的百万 instance 渲染管线，和本文的单株风摆拼在一起覆盖\"一只草的动画 × 百万实例的管线\"两个维度"
+    },
+    {
+      "file": "wiki/rendering/shader-graph-custom-function-hlsl.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gpu-instanced-grass-urp]] — Custom Function 接入 `StructuredBuffer` 做 GPU instancing 的代表性用例"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-instanced-grass-urp]] | Cyan 的 URP + Shader Graph GPU 实例化草地：RenderMeshIndirect + compute frustum cull + `_VisibleIDs` 两级索引 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/cyanilux-gpu-instanced-grass]] | Cyan：Unity URP + Shader Graph 的 GPU 实例化草地全流程（含 Unity 6 Instance ID 变化 + `UnityIndirect.cginc` `_Base` 版本踩坑） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-69 Worker gu (cyanilux.com ×5)\n\n处理 5 篇 cyanilux.com 文件：1 篇实质技术文（gpu-instanced-grass-breakdown）ingest；4 篇是栏目 index / 法律页（posts / cookies-privacy / breakdowns / tutorials），跳过。新增 1 概念页（gpu-instanced-grass-urp）、1 source 摘要。给 cyanilux 人物页、gpu-driven-grass-tiles、waving-grass-shader-vertex-offset、shader-graph-custom-function-hlsl 打补丁互连。"
+}

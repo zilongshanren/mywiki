@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w66-gn",
+  "agent_note": "Yining Karl Li 早期 3 篇（2013 Pixar OptiX RTP / 2016 Zootopia / 2018 Mipmapping with Bidirectional Techniques）。人物页 yining-karl-li 已存在——emit 补丁追加 sources。新增 1 个概念页 ray-differentials（主要由 2018 mipmap 文章驱动，兼收 Igehy/SPI Arnold/Manuka/Takua 工程对照）。2013 RTP 文章内容薄但非 offtopic，仍出 source summary，并把它接到 hyperion-renderer GPU 交互预览的伏笔上。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2013-07-27_pixar-optix-lighting-preview-demo.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-pixar-optix-rtp",
+      "title": "Pixar OptiX Lighting Preview Demo"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2016-02-12_zootopia.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-zootopia",
+      "title": "Zootopia"
+    },
+    {
+      "path": "raw/articles/blog.yiningkarlli.com/2018-10-25_mipmapping-with-bidirectional-techniques.md",
+      "status": "ingested",
+      "source_slug": "yiningkarlli-mipmap-bidirectional",
+      "title": "Mipmapping with Bidirectional Techniques"
+    }
+  ],
+  "concepts_created": ["ray-differentials"],
+  "people_created": [],
+  "source_summaries_created": [
+    "yiningkarlli-pixar-optix-rtp",
+    "yiningkarlli-zootopia",
+    "yiningkarlli-mipmap-bidirectional"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/yining-karl-li.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-pixar-optix-rtp]]"
+    },
+    {
+      "file": "wiki/people/yining-karl-li.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-zootopia]]"
+    },
+    {
+      "file": "wiki/people/yining-karl-li.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-mipmap-bidirectional]]"
+    },
+    {
+      "file": "wiki/rendering/hyperion-renderer.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-zootopia]]"
+    },
+    {
+      "file": "wiki/rendering/hyperion-renderer.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-pixar-optix-rtp]]"
+    },
+    {
+      "file": "wiki/rendering/hyperion-renderer.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ray-differentials]] — Hyperion 用类似 RenderMan 的「单 float 宽度」简化版 ray differentials"
+    },
+    {
+      "file": "wiki/rendering/mipmap-generation-sampling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ray-differentials]] — 路径追踪里替代「屏幕空间导数」的工程化机制，双向技术下是硬骨头"
+    },
+    {
+      "file": "wiki/rendering/mipmap-generation-sampling.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/yiningkarlli-mipmap-bidirectional]]"
+    },
+    {
+      "file": "wiki/rendering/wavefront-path-tracing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ray-differentials]] — Hyperion 的 wavefront 架构和 ray differentials 的简化方案"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ray-differentials]] | 路径追踪里选 mip level 的工程机制，以及双向路径追踪下 Manuka/Takua 的两种绕过方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-pixar-optix-rtp]] | Yining Karl Li：2013 Pixar OptiX Lighting Preview demo 博客 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-zootopia]] | Yining Karl Li：Zootopia 与 Hyperion、Chiang 毛发模型初登场 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/yiningkarlli-mipmap-bidirectional]] | Yining Karl Li：Takua 的 camera-based mip level 选择，解 BDPT 下 ray differentials 难题 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-66 Worker gn (blog.yiningkarlli.com early ×3)\n\n处理 Yining Karl Li 博客 3 篇早期文章（2013 Pixar OptiX RTP / 2016 Zootopia / 2018 Mipmapping with Bidirectional Techniques）。新增 1 概念页 [[ray-differentials]]（路径追踪里 mip level 选择的工程机制、BDPT 难题、Manuka shade-before-hit 与 Takua camera-based 两种绕过方案）、3 source 摘要，0 人物页（[[yining-karl-li]] 已存在，追加 3 条 source 链接）。补丁同步 hyperion-renderer / mipmap-generation-sampling / wavefront-path-tracing 三页的相关链接。全部 ingest，无 offtopic skip。"
+}

@@ -1,0 +1,88 @@
+{
+  "batch_id": "batch-w92-jp",
+  "agent_note": "Supnik 2011-05 小集：i-hate-c 是 comment-thread 片段（C ','-operator 吐槽对话），跳过；instancing-limits 作为 instancing-numbers 续篇单独成 source，并 patch 进 xplane-instancing-2011-numbers 概念页；Mesh Simplification I/II/III 三部曲合并为一个新概念页 arrangement-mesh-simplification 和一份合并 source。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-24_i-hate-c-part-857-but-i-already-had-coffee.md",
+      "status": "skipped_offtopic",
+      "reason": "抓取下来的是 comment-thread 片段（论 C ',' 逗号运算符把 is_edge 4-arg 误用成 2-arg 的语法糖吐槽），无独立技术内容；正文已在同博客体系里覆盖过 C++ 语法陷阱主题。"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-24_instancing-limits.md",
+      "status": "ingested",
+      "source_slug": "supnik-instancing-limits",
+      "title": "Instancing Limits"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-i-it-s-all-about-squatters.md",
+      "status": "ingested_merged",
+      "source_slug": "supnik-mesh-simplification-trilogy",
+      "title": "Mesh Simplification Part I - It's All About Squatters",
+      "note": "合并进 trilogy source"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-ii-arrangement-simplification.md",
+      "status": "ingested_merged",
+      "source_slug": "supnik-mesh-simplification-trilogy",
+      "title": "Mesh Simplification Part II - Arrangement Simplification",
+      "note": "合并进 trilogy source"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-26_mesh-simplification-part-iii-simplifying-a-triangulation.md",
+      "status": "ingested_merged",
+      "source_slug": "supnik-mesh-simplification-trilogy",
+      "title": "Mesh Simplification Part III - Simplifying A Triangulation",
+      "note": "合并进 trilogy source"
+    }
+  ],
+  "concepts_created": ["arrangement-mesh-simplification"],
+  "people_created": [],
+  "source_summaries_created": ["supnik-mesh-simplification-trilogy", "supnik-instancing-limits"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/xplane-instancing-2011-numbers.md",
+      "operation": "append_to_section",
+      "section": "## 一个 Supnik 式的细节",
+      "content": "\n## 两个月后的续篇：上下限\n\n2011-05-24 的 [[sources/supnik-instancing-limits|Instancing Limits]] 给同一组数字加了边界。上限：在 ATI Mac 上 instanced batch 数往上压到 **≈100k** 就卡住。下限：单个 batch 里 instance 数少于 **2–3** 时，immediate mode 多次 draw 反而更快。另有 OS X 10.6.x 的陷阱——instance 数据走 client array（系统内存）不走 VBO 会掉到非加速路径，性能直接塌。更深一层的待调甜点是 clump 粒度：大 clump 省 driver 调用但 cull 不彻底，小 clump cull 干净但 driver 调用多。"
+    },
+    {
+      "file": "wiki/rendering/xplane-instancing-2011-numbers.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-instancing-limits]]"
+    },
+    {
+      "file": "wiki/computer-systems/cgal-arrangement-import-antennas.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[arrangement-mesh-simplification]] —— 同一条 X-Plane 地图管线里「导入后再简化」阶段的 squatter 搜索"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[arrangement-mesh-simplification]] —— 2011-05 三部曲：squatter 搜索从 zone 计算 → Delaunay 索引 → constrained triangulation 邻接"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-mesh-simplification-trilogy]]\n- [[sources/supnik-instancing-limits]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[arrangement-mesh-simplification]] | Arrangement 网格简化：squatter 搜索从 zone 计算 → Delaunay → constrained triangulation |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-mesh-simplification-trilogy]] | Supnik：Mesh Simplification I/II/III 合并——squatter 搜索三档索引选择 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-instancing-limits]] | Supnik：X-Plane OpenGL instancing 上下限（≈100k batch 上限、2–3 instance 下限、client array 非加速） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-92 Worker JP (hacksoflife 2011-05 ×5)\n\nSupnik 2011-05 小集 5 篇：跳过 1 篇（i-hate-c comment-thread 片段），新增 1 概念页 arrangement-mesh-simplification（Mesh Simplification I/II/III 合并），2 份 source 摘要（trilogy 合并 + instancing-limits 单独）。Patch xplane-instancing-2011-numbers 补齐上下限边界、cgal-arrangement-import-antennas 反向交叉引用、ben-supnik 人物页挂两条新 source 与新概念。"
+}

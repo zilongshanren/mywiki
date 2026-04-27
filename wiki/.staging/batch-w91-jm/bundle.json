@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch-w91-jm",
+  "agent_note": "Supnik 2011-05 五连：8-bit normal map 精度极限 / svnx 工具笔记(skip) / SSE shuffle 端序 / SSE 内存带宽短札 / X-Plane 车灯性能拆解。三篇硬核渲染+系统性能，一篇 SIMD debug 小记，一篇非技术跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-07_the-limits-of-8-bit-normal-maps.md",
+      "status": "ingested",
+      "source_slug": "supnik-limits-of-8-bit-normal-maps",
+      "title": "The Limits of 8-bit Normal Maps"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-11_svnx-on-os-x-10-6-you-need-a-key-pair.md",
+      "status": "skipped_offtopic",
+      "reason": "SvnX on OS X 10.6 工具配置小贴士（ssh 密钥对），与图形/引擎/系统性能无实质关联。"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-17_seriosly-strange-execution.md",
+      "status": "ingested",
+      "source_slug": "supnik-sse-shuffle-endianness",
+      "title": "Seriosly Strange Execution?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-17_sse-it-s-the-memory-stupid.md",
+      "status": "ingested",
+      "source_slug": "supnik-sse-its-the-memory",
+      "title": "SSE? It is the Memory, Stupid"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-05-18_performance-tuning-cars.md",
+      "status": "ingested",
+      "source_slug": "supnik-performance-tuning-cars",
+      "title": "Performance Tuning Cars"
+    }
+  ],
+  "concepts_created": [
+    "8-bit-normal-map-precision-limits",
+    "sse-shuffle-endianness",
+    "simd-memory-bandwidth-bound",
+    "xplane-headlight-perf-teardown"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-limits-of-8-bit-normal-maps",
+    "supnik-sse-shuffle-endianness",
+    "supnik-sse-its-the-memory",
+    "supnik-performance-tuning-cars"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[8-bit-normal-map-precision-limits]] —— 2011-05 specular exponent 放大 RG8 法线量化误差的权衡\n- [[sse-shuffle-endianness]] —— 2011-05 `_MM_SHUFFLE` 宏的 little-endian 参数约定\n- [[simd-memory-bandwidth-bound]] —— 2011-05 SSE 被内存带宽吃掉的 15% → 0 教训\n- [[xplane-headlight-perf-teardown]] —— 2011-05 X-Plane 10 车灯/AI 性能手术全流程案例"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-limits-of-8-bit-normal-maps]]\n- [[sources/supnik-sse-shuffle-endianness]]\n- [[sources/supnik-sse-its-the-memory]]\n- [[sources/supnik-performance-tuning-cars]]"
+    },
+    {
+      "file": "wiki/rendering/compact-normal-encoding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[8-bit-normal-map-precision-limits]] —— 贴图侧 RG8 精度问题（与 G-Buffer 编码互为独立战线）"
+    },
+    {
+      "file": "wiki/computer-systems/sse-tricks.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sse-shuffle-endianness]] —— `_MM_SHUFFLE` 宏的端序约定\n- [[simd-memory-bandwidth-bound]] —— 再聪明的 SSE 也喂不过内存带宽"
+    },
+    {
+      "file": "wiki/rendering/bottleneck-analysis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[xplane-headlight-perf-teardown]] —— 2011 X-Plane 10 车灯全流程瓶颈手术案例\n- [[simd-memory-bandwidth-bound]] —— 「更聪明的 SIMD 反而更慢」的判别路径"
+    },
+    {
+      "file": "wiki/computer-systems/memory-hierarchy.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[simd-memory-bandwidth-bound]] —— SIMD 碰到内存带宽墙的识别与应对"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[8-bit-normal-map-precision-limits]] | Supnik 2011：RG8 切线法线贴图在高 specular exponent 下的量化极限 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[xplane-headlight-perf-teardown]] | Supnik 2011：X-Plane 10 车灯/AI 全流程性能手术案例 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[sse-shuffle-endianness]] | Supnik：`_MM_SHUFFLE` 宏的 little-endian 参数顺序 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[simd-memory-bandwidth-bound]] | Supnik：SIMD 优化被内存带宽吃掉的判别与对策 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-limits-of-8-bit-normal-maps]] | Supnik 2011-05：8-bit 法线贴图在高 specular 下的量化极限 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-sse-shuffle-endianness]] | Supnik 2011-05：SSE `_MM_SHUFFLE` 参数端序 debug 小记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-sse-its-the-memory]] | Supnik 2011-05：SSE 加速被内存带宽吃掉的短札 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-performance-tuning-cars]] | Supnik 2011-05：X-Plane 10 车灯/车 AI 全流程性能调优 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-91 Worker jm (hacksoflife.blogspot.com ×5, Supnik 2011-05)\n\n处理 Supnik 2011 年 5 月五篇：`limits-of-8-bit-normal-maps`（RG8 法线贴图在 specular exponent 下的精度极限）、`seriosly-strange-execution`（SSE `_MM_SHUFFLE` 端序约定）、`sse-its-the-memory`（SSE 被内存带宽吃掉的 15%→0 短札）、`performance-tuning-cars`（X-Plane 10 车灯/AI 性能手术全流程案例）。新增 4 概念页（`8-bit-normal-map-precision-limits`、`sse-shuffle-endianness`、`simd-memory-bandwidth-bound`、`xplane-headlight-perf-teardown`）、4 source 摘要；patch `ben-supnik` / `compact-normal-encoding` / `sse-tricks` / `bottleneck-analysis` / `memory-hierarchy`。跳过 1 篇：`svnx-on-os-x-10-6-you-need-a-key-pair`（ssh 密钥对配置的非技术小贴士）。"
+}

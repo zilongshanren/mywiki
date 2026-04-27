@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w73-hk",
+  "agent_note": "5 Supnik posts from 2010-01; all topical. 4 new concepts (incremental-rearchitecting, header-as-user-manual, api-fast-path-design, number-puzzle-tile-shader), 5 source summaries. ben-supnik and gpu-printf-debugging are registry-existing concepts — patches emitted.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-02_when-to-rewrite.md",
+      "status": "ingested",
+      "source_slug": "supnik-when-to-rewrite",
+      "title": "When To Rewrite"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-05_coding-for-two-audiences.md",
+      "status": "ingested",
+      "source_slug": "supnik-coding-for-two-audiences",
+      "title": "Coding For Two Audiences"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-14_fast-paths.md",
+      "status": "ingested",
+      "source_slug": "supnik-fast-paths",
+      "title": "Fast Paths"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-27_a-tile-too-far.md",
+      "status": "ingested",
+      "source_slug": "supnik-tile-too-far",
+      "title": "A Tile Too Far"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-01-27_debugging-glsl.md",
+      "status": "ingested",
+      "source_slug": "supnik-debugging-glsl",
+      "title": "Debugging GLSL"
+    }
+  ],
+  "concepts_created": [
+    "incremental-rearchitecting",
+    "header-as-user-manual",
+    "api-fast-path-design",
+    "number-puzzle-tile-shader"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-when-to-rewrite",
+    "supnik-coding-for-two-audiences",
+    "supnik-fast-paths",
+    "supnik-tile-too-far",
+    "supnik-debugging-glsl"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 5",
+      "content": "sources: 10"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[incremental-rearchitecting]]\n- [[header-as-user-manual]]\n- [[api-fast-path-design]]\n- [[number-puzzle-tile-shader]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-when-to-rewrite]]\n- [[sources/supnik-coding-for-two-audiences]]\n- [[sources/supnik-fast-paths]]\n- [[sources/supnik-tile-too-far]]\n- [[sources/supnik-debugging-glsl]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-printf-debugging.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/supnik-debugging-glsl]] — 2010 年 Ben Supnik 的前 UAV 时代 GLSL printf（写 `gl_FragColor` + shader 热重载）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[incremental-rearchitecting]] | Supnik：增量重构替代大重写，以及大重写失败的组织动力学 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[header-as-user-manual]] | Supnik：头文件即用户手册，物理隔离 > 逻辑封装 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[api-fast-path-design]] | Supnik：快/慢路径在 API 上显式拆分（X-Plane dataref 模式）|"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[number-puzzle-tile-shader]] | Supnik：shader 级瓦片随机化去除纹理重复感 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-when-to-rewrite]] | Supnik：何时重写——大重写的失败剧本与增量重构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-coding-for-two-audiences]] | Supnik：代码写给编译器和人类两类读者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-fast-paths]] | Supnik：API 设计的快/慢路径显式分层 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-tile-too-far]] | Supnik：number puzzle 瓦片随机化 shader 与 fixed function 壁垒 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-debugging-glsl]] | Supnik：GLSL printf = 写 gl_FragColor + shader 热重载 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-73 Worker HK (hacksoflife.blogspot.com ×5, 2010-01)\n\n处理 Ben Supnik 2010 年 1 月 5 篇文章，全部 topical。新增 4 概念页（incremental-rearchitecting、header-as-user-manual、api-fast-path-design、number-puzzle-tile-shader）、5 source 摘要。ben-supnik 人物页和 gpu-printf-debugging 概念页为 registry 已有页——发 patch。主题覆盖：大重写的组织动力学 + 增量重构、头文件即用户手册、API 快/慢路径显式拆分（X-Plane dataref 模式）、shader 级瓦片随机化、GLSL printf 调试。"
+}

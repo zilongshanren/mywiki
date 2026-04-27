@@ -1,0 +1,198 @@
+{
+  "batch_id": "batch-w101-kr",
+  "agent_note": "5 chipsandcheese 2021-09/10 ingested, 0 skipped. VIA 2-part narrative merged into one combined concept page via-x86-isaiah-lujiazui (two source summaries kept separate since they are distinct articles written 3 weeks apart). Video card efficiency -> new concept gpu-efficiency-fps-per-joule. IBM L3 / V-Cache -> new concept cache-size-vs-latency-tradeoff. Neoverse N1 deep dive extends the existing neoverse-n1-microarchitecture page via patches. New author page: serebit. george-cozma and chester-lam already exist.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-09-01_the-weird-and-wacky-world-of-via-the-3rd-player-in-the-moder.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-via-isaiah",
+      "title": "The Weird and Wacky World of VIA, Part 1 (Isaiah)"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-09-09_analyzing-video-card-efficiency-part-i-power.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-video-card-efficiency-power",
+      "title": "Analyzing Video Card Efficiency, Part I - Power"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-09-22_the-weird-and-wacky-world-of-via-part-2-zhaoxins-not-quite-e.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zhaoxin-lujiazui",
+      "title": "The Weird and Wacky World of VIA Part 2: Zhaoxin's Lujiazui"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-09-29_do-ibms-giant-l3-and-v-cache-represent-the-future.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ibm-l3-v-cache-future",
+      "title": "Do IBM's Giant L3 and V-Cache Represent the Future?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-10-22_deep-diving-neoverse-n1.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-neoverse-n1-deep-dive",
+      "title": "Deep Diving Neoverse N1"
+    }
+  ],
+  "concepts_created": [
+    "via-x86-isaiah-lujiazui",
+    "gpu-efficiency-fps-per-joule",
+    "cache-size-vs-latency-tradeoff"
+  ],
+  "people_created": [
+    "serebit"
+  ],
+  "source_summaries_created": [
+    "chipsandcheese-via-isaiah",
+    "chipsandcheese-zhaoxin-lujiazui",
+    "chipsandcheese-video-card-efficiency-power",
+    "chipsandcheese-ibm-l3-v-cache-future",
+    "chipsandcheese-neoverse-n1-deep-dive"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cache-size-vs-latency-tradeoff]] — 用 ChampSim 仿真比较 IBM 256 MB L3 与 AMD V-Cache 的延迟/容量取舍"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-ibm-l3-v-cache-future]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-deep-dive]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zhaoxin-lujiazui]]"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[via-x86-isaiah-lujiazui]] — VIA Isaiah / Zhaoxin Lujiazui 两代 x86 核的结构拆解"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-via-isaiah]]"
+    },
+    {
+      "file": "wiki/people/george-cozma.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zhaoxin-lujiazui]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[via-x86-isaiah-lujiazui]] — VIA/兆芯 x86 血脉拆解\n- [[gpu-efficiency-fps-per-joule]] — GPU 能效横测（Serebit）\n- [[cache-size-vs-latency-tradeoff]] — IBM 256 MB L3 vs V-Cache 仿真\n- [[serebit]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-via-isaiah]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zhaoxin-lujiazui]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-video-card-efficiency-power]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-ibm-l3-v-cache-future]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-deep-dive]]"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[cache-size-vs-latency-tradeoff]] — Altra L3 延迟是 Zen 2 两倍，是作者否定 IOD L4 的依据"
+    },
+    {
+      "file": "wiki/computer-systems/neoverse-n1-microarchitecture.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-deep-dive]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[via-x86-isaiah-lujiazui]] — Isaiah 2008 年就用 tournament + 4096 BTB，代价是 3-cycle/taken 气泡\n- [[cache-size-vs-latency-tradeoff]] — 缓存大小对前端再好也抵不过 miss 率基线差异"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-via-isaiah]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-zhaoxin-lujiazui]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-neoverse-n1-deep-dive]]"
+    },
+    {
+      "file": "wiki/computer-systems/isa-implementation-not-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 真正体现 ISA 差异的地方",
+      "content": "\n补充佐证：[[via-x86-isaiah-lujiazui]] 一文显示，VIA 同一脉 x86 核 Isaiah（2008 低功耗定位却跑得比 Core 2 还热）与 Lujiazui（砍窄 2-wide、AVX 聋哑化）微架构行为差异极大，但都是 x86——再度验证「实现 >> ISA」。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[via-x86-isaiah-lujiazui]] | VIA Isaiah（大装低功耗）与 Zhaoxin Lujiazui（砍窄凑 8 核）的两代 x86 拆解 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cache-size-vs-latency-tradeoff]] | ChampSim 仿真：IBM 256 MB L3 vs AMD V-Cache 96 MB 的延迟/容量取舍 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-efficiency-fps-per-joule]] | Serebit：Turing/Ampere/RDNA1/RDNA2 的 f/J 横测，分辨率换档会重排架构能效 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[serebit]] | Chips and Cheese GPU 横测作者，Video Card Efficiency 系列 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-via-isaiah]] | Cozma：VIA Nano / Isaiah 微架构拆解——伪装成低功耗的大核 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zhaoxin-lujiazui]] | Cozma + Lam：兆芯 Lujiazui 把 Isaiah 砍窄塞 8 核、AVX 聋哑化 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-video-card-efficiency-power]] | Serebit：GPU 每瓦帧数三分辨率横测（2021 Q3） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ibm-l3-v-cache-future]] | Lam：ChampSim 仿真 IBM 256 MB L3 与 AMD V-Cache 的取舍 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-neoverse-n1-deep-dive]] | Lam：Neoverse N1 结构尺寸 + 宏观 benchmark 重测（修正 WSL1 偏差） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-101 Worker KR (chipsandcheese 2021-09/10 ×5)\n\n处理 5 篇 chipsandcheese.com 2021 年 9–10 月文章，0 篇跳过。新增 3 个概念页（via-x86-isaiah-lujiazui、gpu-efficiency-fps-per-joule、cache-size-vs-latency-tradeoff）、1 个人物页（serebit），5 个 source 摘要。VIA 两部曲共享同一个概念页但保留两个 source 摘要（原文发表时间相差 3 周、内容互补）。Neoverse N1 deep dive 通过 patch 扩充既有 neoverse-n1-microarchitecture 页而非另建。"
+}

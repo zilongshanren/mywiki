@@ -46,3 +46,4 @@ TBDR 在 tile 粒度上做的 **HSR（Hidden Surface Removal）**比 Early-Z 更
 
 - [[sources/rtr-day05]]
 - [[sources/interplay-depth-testing]] —— Anagnostou 的 D3D11 depth testing 阶段与 Conservative Depth / `[earlydepthstencil]` 整理
+- [[sources/supnik-custom-z-buffer-early-z]]

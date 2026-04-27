@@ -1,0 +1,92 @@
+{
+  "batch_id": "batch-w80-if",
+  "agent_note": "5 Ben Supnik posts (2010-03 ~ 2010-04). 3 ingested (granularity / santa-idiot / cgal-mantissa), 2 skipped (constitutional-opposition 纯 Apple SDK licensing 评论, thank-you-jeeves C++ 笑话短贴)。Supnik 已有人物页，只追加 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-03-10_the-value-of-granularity.md",
+      "status": "ingested",
+      "source_slug": "supnik-value-of-granularity",
+      "title": "The Value Of Granularity"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-03-16_santa-to-ben-you-re-an-idiot.md",
+      "status": "ingested",
+      "source_slug": "supnik-santa-youre-an-idiot",
+      "title": "Santa to Ben: You're An Idiot"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-04-21_constitutional-opposition.md",
+      "status": "skipped_offtopic",
+      "reason": "纯评论 Apple iPhone SDK §3.3.1 条款的短贴，无工程内容"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-04-21_thank-you-jeeves-that-will-be-all.md",
+      "status": "skipped_offtopic",
+      "reason": "C++ 语法小笑话（空格意外打断函数调用、switch 里的意外 label），内容极短且已存在 undefined-behavior-c-cpp 等页面覆盖类似主题"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-04-23_cgal-it-s-all-about-the-mantissa.md",
+      "status": "ingested",
+      "source_slug": "supnik-cgal-mantissa",
+      "title": "CGAL: It's All About the Mantissa"
+    }
+  ],
+  "concepts_created": [
+    "opengl-extension-bucket-strategy",
+    "gpu-embarrassingly-parallel-serial-dispatch",
+    "cgal-exact-arithmetic-mantissa-growth"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-value-of-granularity",
+    "supnik-santa-youre-an-idiot",
+    "supnik-cgal-mantissa"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-extension-bucket-strategy]]\n- [[gpu-embarrassingly-parallel-serial-dispatch]]\n- [[cgal-exact-arithmetic-mantissa-growth]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-value-of-granularity]]\n- [[sources/supnik-santa-youre-an-idiot]]\n- [[sources/supnik-cgal-mantissa]]"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 10",
+      "content": "sources: 13"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-extension-bucket-strategy]] | OpenGL 扩展分桶策略与现场调试用的细粒度开关 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-embarrassingly-parallel-serial-dispatch]] | GPU 天生并行：为何无需应用层并行命令派发 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cgal-exact-arithmetic-mantissa-growth]] | CGAL 无限精度代数在深层构造下的尾数膨胀陷阱与精度重置 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-value-of-granularity]] | Supnik：OpenGL 扩展分桶与细粒度开关 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-santa-youre-an-idiot]] | Supnik：GPU 已经足够并行，不需要并行命令派发 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-cgal-mantissa]] | Supnik：CGAL 尾数膨胀与 float round-trip 精度重置 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-80 Worker batch-w80-if (hacksoflife.blogspot.com ×5)\n\n处理 Ben Supnik 2010-03 ~ 2010-04 共 5 篇。入库 3 篇（OpenGL 扩展分桶策略、GPU 并行性与串行派发、CGAL 尾数膨胀）。跳过 2 篇：constitutional-opposition（Apple SDK 许可证评论）、thank-you-jeeves（C++ 语法小笑话）。新增 3 个概念页、3 个 source 摘要；Supnik 人物页追加相关与 Sources。"
+}

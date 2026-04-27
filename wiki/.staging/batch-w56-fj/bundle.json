@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w56-fj",
+  "agent_note": "Sebastiano Mandalà / sebaslab.com 5 篇 Svelto.ECS 文章：ECS 抽象层、Filters API、Survival mini example、Svelto-on-DOTS 更新、ComputeSharp ECS-on-GPU。新增 1 人物页、5 概念页（svelto-ecs + ecs-abstraction-layers + svelto-filters-api + svelto-on-dots + ecs-on-gpu-computesharp）、5 source 摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/sebaslab.com/2022-03-20_entity-component-system-abstraction-layers-and-modules-encap.md",
+      "status": "ingested",
+      "source_slug": "sebaslab-ecs-abstraction-layers",
+      "title": "Entity Component System abstraction layers and modules encapsulation"
+    },
+    {
+      "path": "raw/articles/sebaslab.com/2022-04-12_svelto-ecs-3-3-and-the-new-filters-api-seba-s-lab.md",
+      "status": "ingested",
+      "source_slug": "sebaslab-svelto-filters-api",
+      "title": "Svelto.ECS 3.3 and the new Filters API"
+    },
+    {
+      "path": "raw/articles/sebaslab.com/2022-12-31_the-new-svelto-ecs-survival-mini-example-seba-s-lab.md",
+      "status": "ingested",
+      "source_slug": "sebaslab-survival-mini-example",
+      "title": "The new Svelto.ECS Survival Mini Example"
+    },
+    {
+      "path": "raw/articles/sebaslab.com/2023-03-13_svelto-ecs-3-4-svelto-on-dots-ecs-update-seba-s-lab.md",
+      "status": "ingested",
+      "source_slug": "sebaslab-svelto-on-dots-update",
+      "title": "Svelto.ECS 3.4 – Svelto On DOTS ECS update"
+    },
+    {
+      "path": "raw/articles/sebaslab.com/2023-03-31_svelto-ecs-3-4-internals-how-to-run-ecs-systems-on-the-gpu-s.md",
+      "status": "ingested",
+      "source_slug": "sebaslab-ecs-on-gpu-computesharp",
+      "title": "Svelto ECS 3.4 internals: How to run ECS systems on the GPU"
+    }
+  ],
+  "concepts_created": [
+    "svelto-ecs",
+    "ecs-abstraction-layers",
+    "svelto-filters-api",
+    "svelto-on-dots",
+    "ecs-on-gpu-computesharp"
+  ],
+  "people_created": ["sebastiano-mandala"],
+  "source_summaries_created": [
+    "sebaslab-ecs-abstraction-layers",
+    "sebaslab-svelto-filters-api",
+    "sebaslab-survival-mini-example",
+    "sebaslab-svelto-on-dots-update",
+    "sebaslab-ecs-on-gpu-computesharp"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-engines/dots-ecs-programming-patterns.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[svelto-ecs]] — Sebastiano Mandalà 的对照路线：group 模型 + 显式 composition root + ECS-centric 而非 ECS-only\n- [[svelto-on-dots]] — 把 DOTS ECS 当作引擎库接入 Svelto 的集成模式\n- [[svelto-filters-api]] — filter 语义比 [[dots-enableable-components]] 更通用"
+    },
+    {
+      "file": "wiki/game-engines/dots-enableable-components.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[svelto-filters-api]] — Sebastiano Mandalà 认为 IEnableableComponents 只是 filter 的弱化版，filter 还能表达 ownership relationship 而非仅状态"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[sebastiano-mandala]] | Sebastiano Mandalà — Svelto.ECS 作者、Freejam 工程师 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[svelto-ecs]] | 平台无关 C# ECS 框架：group 模型、显式 composition root、ECS-centric 多范式 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ecs-abstraction-layers]] | Svelto 的 ECS 分层封装方法论：asmdef 单向依赖 + 依赖倒置 + Hollywood Principle |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[svelto-filters-api]] | 跨 group 的 entity 子集索引：transient / persistent filter，取代 event / publisher-consumer |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[svelto-on-dots]] | Svelto 接管 DOTS 调度、把 DOTS ECS 当作引擎库而非游戏框架 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ecs-on-gpu-computesharp]] | 用 ComputeSharp 把 Svelto component 存到 GPU buffer、engine 以 compute shader 形式跑 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/sebaslab-ecs-abstraction-layers]] | Mandalà：ECS 抽象层与 assembly 级模块封装 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/sebaslab-svelto-filters-api]] | Mandalà：Svelto.ECS 3.3 Filters API 重写，persistent + transient 两档 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/sebaslab-survival-mini-example]] | Mandalà：Svelto.ECS Survival 示例重写，六层 asmdef + filter 取代 event |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/sebaslab-svelto-on-dots-update]] | Mandalà：Svelto.ECS 3.4 的 DOTS 1.0 集成，废弃 ECB 改用 batched ops |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/sebaslab-ecs-on-gpu-computesharp]] | Mandalà：用 ComputeSharp 把 Svelto ECS 的 component 存到 GPU compute buffer |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-56 Worker FJ (sebaslab.com ×5)\n\n处理 Sebastiano Mandalà 5 篇 Svelto.ECS 文章：ECS 抽象层与模块封装、Svelto 3.3 Filters API、Survival mini example 重写、Svelto-on-DOTS 3.4 更新、ComputeSharp 实现 ECS-on-GPU。新增 1 人物页（sebastiano-mandala）、5 概念页（svelto-ecs / ecs-abstraction-layers / svelto-filters-api / svelto-on-dots / ecs-on-gpu-computesharp）、5 source 摘要。无跳过。Patch 到 dots-ecs-programming-patterns 与 dots-enableable-components 加入 Svelto 对照链接。"
+}

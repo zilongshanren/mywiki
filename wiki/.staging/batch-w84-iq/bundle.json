@@ -1,0 +1,130 @@
+{
+  "batch_id": "batch-w84-iq",
+  "agent_note": "Bitsquid 2012 Q1/Q2 (5 posts). 4 ingested + 1 skipped. cutting-the-pipe raw file only captured comments (no article body) but the Q&A is itself substantive on tool/engine separation — summarized as a source page referencing existing decoupled-tool-engine-json-rpc. gdc2012 rendering-talks was SPAM-only (Freestyle furniture / Yellowstone coat copy-paste), skipped. pimpl-vs-pure-virtual yields new concept contrasting C opaque / PIMPL / pure-virtual (complements existing c-opaque-struct-modules and interface-vs-implementation at a different level). inheriting-velocity-ragdolls yields two concepts: the mechanism page (ragdoll-velocity-inheritance) and the Bitsquid 'no frame delays' principle (no-frame-delays-principle) that the article casually coined — worth promoting because it cross-cuts system design. embracing-dynamism yields lua-runtime-dynamism-tricks (Lua hot-reload + API hijacking + dynamic profiling — sits alongside existing lua-cpp-binding / lua-design-philosophy at a different angle: runtime reflexivity as tooling substrate). niklas-frykholm person page already exists — patched for new sources + 相关 links.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-03-12_cutting-the-pipe-achieving-sub-second-iteration-times.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-cutting-the-pipe-qa",
+      "title": "Cutting the Pipe: Achieving Sub-Second Iteration Times (Q&A)"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-03-12_rendering-related-talks-gdc2012.md",
+      "status": "skipped_offtopic",
+      "reason": "raw file is entirely spam comments (Freestyle furniture, Yellowstone coat boilerplate) — no article body, no technical content"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-03-21_pimpl-vs-pure-virtual-interfaces.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-pimpl-vs-pure-virtual",
+      "title": "PIMPL vs Pure Virtual Interfaces"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-04-20_inheriting-velocity-in-ragdolls.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-inheriting-velocity-ragdolls",
+      "title": "Inheriting Velocity in Ragdolls"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2012-05-05_embracing-dynamism.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-embracing-dynamism",
+      "title": "Embracing Dynamism"
+    }
+  ],
+  "concepts_created": [
+    "pimpl-vs-pure-virtual",
+    "ragdoll-velocity-inheritance",
+    "no-frame-delays-principle",
+    "lua-runtime-dynamism-tricks"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-cutting-the-pipe-qa",
+    "bitsquid-pimpl-vs-pure-virtual",
+    "bitsquid-inheriting-velocity-ragdolls",
+    "bitsquid-embracing-dynamism"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pimpl-vs-pure-virtual]] — 三种接口-实现分离写法的横向评测，偏好纯虚抽象类\n- [[ragdoll-velocity-inheritance]] — ragdoll 切换瞬间继承动画速度的工程解法\n- [[no-frame-delays-principle]] — Bitsquid 戒律：动作立即生效，灰色过渡态会扩散补丁逻辑\n- [[lua-runtime-dynamism-tricks]] — Bitsquid 把 Lua 动态性用到底的七招"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-cutting-the-pipe-qa]]\n- [[sources/bitsquid-pimpl-vs-pure-virtual]]\n- [[sources/bitsquid-inheriting-velocity-ragdolls]]\n- [[sources/bitsquid-embracing-dynamism]]"
+    },
+    {
+      "file": "wiki/software-design/c-opaque-struct-modules.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pimpl-vs-pure-virtual]] — Niklas 把 C 不透明指针摆在 C++ PIMPL 旁边横向对比，结论是三种方式里他更欣赏 C"
+    },
+    {
+      "file": "wiki/software-design/interface-vs-implementation.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pimpl-vs-pure-virtual]] — 工程落地时 C++ 三种隔离写法的对比（纯虚 vs PIMPL vs C opaque）"
+    },
+    {
+      "file": "wiki/game-engines/decoupled-tool-engine-json-rpc.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-cutting-the-pipe-qa]] — 2012 年 Q&A 里 Niklas 直白地声明 工具 C# / 引擎 C++ 零代码共享、仅通过 JSON 通信"
+    },
+    {
+      "file": "wiki/programming-languages/lua-cpp-binding.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[lua-runtime-dynamism-tricks]] — 手写绑定之上，Niklas 列出的七条 Lua 动态性用法"
+    },
+    {
+      "file": "wiki/programming-languages/lua-cpp-binding.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/bitsquid-embracing-dynamism]] — 文末评论里 Niklas 重申：Lua 绑定手写优于自动生成器"
+    },
+    {
+      "file": "wiki/game-engines/per-entity-scene-graph.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ragdoll-velocity-inheritance]] — 场景图常驻 last_world 是 Bitsquid 给 ragdoll 速度继承的选择"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[pimpl-vs-pure-virtual]] | Bitsquid：C 不透明指针 / C++ PIMPL / 纯虚抽象类三种隔离方式的工程取舍 |"
+    },
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[no-frame-delays-principle]] | Bitsquid 戒律：动作立即生效，禁止延迟一帧引入灰色过渡态 |"
+    },
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[ragdoll-velocity-inheritance]] | 角色切 ragdoll 瞬间把动画速度传进物理：last_world 方案与四种候选对比 |"
+    },
+    {
+      "category_header": "## 编程语言（wiki/programming-languages/）",
+      "row": "| [[lua-runtime-dynamism-tricks]] | Bitsquid 的 Lua 七招：REPL、热重载、API 劫持、动态 profiler、对象枚举 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-cutting-the-pipe-qa]] | Niklas 讲座评论区 Q&A：工具 C# / 引擎 C++ / JSON 通信 / 零代码共享 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-pimpl-vs-pure-virtual]] | Niklas 对 C / PIMPL / 纯虚三种接口-实现分离方式的横向评测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-inheriting-velocity-ragdolls]] | Niklas：ragdoll 切换时速度继承的四种候选与 last_world 选择 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-embracing-dynamism]] | Niklas：Bitsquid 把 Lua 动态性榨到底的七条常见技巧 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-84 Worker IQ (bitsquid 2012 Q1/Q2 x5)\n\n处理 5 篇 Bitsquid 2012 年 3–5 月博客：4 篇 ingested、1 篇 skipped（GDC2012 rendering-talks 抓到的全是垃圾评论）。cutting-the-pipe 虽只抓到评论区，但 Q&A 直接点明 Bitsquid 工具/引擎零共享 + JSON 通信取舍，作为 source 页补充到 decoupled-tool-engine-json-rpc。新增 4 概念：pimpl-vs-pure-virtual（对比 C opaque / PIMPL / 纯虚）、ragdoll-velocity-inheritance（last_world 方案）、no-frame-delays-principle（本文顺手立下的 Bitsquid 戒律）、lua-runtime-dynamism-tricks（七条 Lua 动态性用法）。niklas-frykholm 页已存在，补挂 4 条 source 链接与 4 条 相关。"
+}

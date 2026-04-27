@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w72-hg",
+  "agent_note": "全部跳过。5 篇均为 -2 后缀月度归档副本，与无后缀原文内容完全相同（仅 URL http→https 及 fetched 日期不同）。原文均已在早期波次中处理：ergonomy-rant 与 iphone-ipad-ipod 在 batch-w14-ao 中跳过，new-layout、small-brdf-visualizer、3d-engines-out-there 在 batch-w25-bu 中跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-24_ergonomy-rant-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-02-24_ergonomy-rant.md 内容完全相同，原文已在 batch-w14-ao 中标记 skipped_offtopic"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-27_iphone-ipad-ipod-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-02-27_iphone-ipad-ipod.md 内容完全相同，原文已在 batch-w14-ao 中标记 skipped_offtopic"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-27_new-layout-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-02-27_new-layout.md 内容完全相同，原文已在 batch-w25-bu 中标记 skipped_offtopic"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-02-28_small-brdf-visualizer-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-02-28_small-brdf-visualizer.md 内容完全相同，原文已在 batch-w25-bu 中标记 skipped_offtopic"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2010-03-03_3d-engines-out-there-2.md",
+      "status": "skipped_duplicate",
+      "reason": "与 2010-03-03_3d-engines-out-there.md 内容完全相同，原文已在 batch-w25-bu 中标记 skipped_offtopic"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-72 Worker HG (c0de517e ×5 all-duplicate)\n\n批次 batch-w72-hg：全部跳过。5 篇均为 -2 后缀月度归档副本，内容与无后缀原文完全相同（仅 URL scheme 及 fetched 日期有差异）。原文已在 batch-w14-ao（ergonomy-rant、iphone-ipad-ipod）和 batch-w25-bu（new-layout、small-brdf-visualizer、3d-engines-out-there）中处理并跳过。无新增页面。"
+}

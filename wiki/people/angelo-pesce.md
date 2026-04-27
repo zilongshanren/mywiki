@@ -70,3 +70,5 @@ sources: 5
 - [[sources/c0de517e-debugging-dx9-stressful]]
 - [[sources/c0de517e-stable-csm-ideas]]
 - [[sources/c0de517e-vcs-next-gen]]
+- [[sources/c0de517e-game-languages-poll-2011]]
+- [[sources/c0de517e-skinning-normals-notes]]

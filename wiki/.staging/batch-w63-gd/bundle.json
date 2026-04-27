@@ -1,0 +1,90 @@
+{
+  "batch_id": "batch-w63-gd",
+  "agent_note": "agraphicsguynotes.com (Jiayin Cao)×5 — 1 skip (posts listing), 4 ingest: TSL shading language / ReSTIR DI math / Fiber C++ / ReSTIR GI math. 新建 1 人物页 + 4 概念页 + 4 源摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2021-03-09_making-a-shading-language-for-my-offline-renderer.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-tsl-shading-language",
+      "title": "Making a Shading Language for my Offline Renderer"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2022-12-05_understanding-the-math-behind-restir-di.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-restir-di-math",
+      "title": "Understanding The Math Behind ReSTIR DI"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2023-08-26_fiber-in-c-understanding-the-basics.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-fiber-cpp-basics",
+      "title": "Fiber in C++: Understanding the Basics"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2025-05-09_posts.md",
+      "status": "skipped_duplicate",
+      "reason": "博客 posts 列表页，仅为文章索引，不含技术内容"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2025-05-09_understanding-the-math-behind-restir-gi.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-restir-gi-math",
+      "title": "Understanding The Math Behind ReSTIR GI"
+    }
+  ],
+  "concepts_created": [
+    "tiny-shading-language",
+    "restir-di-math",
+    "restir-gi-math",
+    "fiber-cpp-basics"
+  ],
+  "people_created": [
+    "graphics-guy-notes"
+  ],
+  "source_summaries_created": [
+    "graphics-guy-tsl-shading-language",
+    "graphics-guy-restir-di-math",
+    "graphics-guy-fiber-cpp-basics",
+    "graphics-guy-restir-gi-math"
+  ],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tiny-shading-language]] | Jiayin Cao：四个月写一门 CPU 路径追踪器的着色语言（Flex+Bison+LLVM + closure tree） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[restir-di-math]] | ReSTIR DI 背后的数学：SIR/RIS/WRS、邻居 target function 不同为何无偏、uniform MIS weight 的代价 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[restir-gi-math]] | ReSTIR GI 数学：Primary Sample Space、per-initial-candidate target function、路径 initial candidate 的 GRIS 处理 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[fiber-cpp-basics]] | Jiayin Cao：fiber 动机、与 thread/C++20 coroutine 的差异、x64 System V ABI 上的最小实现 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[graphics-guy-notes]] | Jiayin Cao，NVIDIA（前 Naughty Dog），SORT/TSL 作者，Zorah ReSTIR PT 实装参与者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-tsl-shading-language]] | Cao 2021：为离线渲染器 SORT 写 Tiny Shading Language |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-restir-di-math]] | Cao 2022：ReSTIR DI 数学补完（SIR/RIS/WRS/邻居复用/visibility reuse） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-fiber-cpp-basics]] | Cao 2023：Fiber 基础、与 C++20 coroutine 的对比、x64 最小实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-restir-gi-math]] | Cao 2025：ReSTIR GI 数学（PSS、per-candidate target function、路径 initial candidate），Zorah/RTX 50 背景 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-63 Worker gd (agraphicsguynotes.com ×5)\n\n处理 Jiayin Cao 博客 5 篇，4 篇 ingest（TSL shading language / ReSTIR DI 数学 / C++ Fiber 基础 / ReSTIR GI 数学）、1 篇 skip（posts 列表页）。新增 4 概念页（tiny-shading-language、restir-di-math、restir-gi-math、fiber-cpp-basics）、1 人物页（graphics-guy-notes）、4 源摘要。覆盖离线渲染语言设计、ReSTIR 家族数学基础、fiber-based job system 三个主题。"
+}

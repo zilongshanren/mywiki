@@ -1,0 +1,83 @@
+{
+  "batch_id": "batch-w73-hl",
+  "agent_note": "5 篇 raytracey.blogspot.com 2010-03/04 短博。3 篇 off-topic（OTOY press PR、Gaiking trailer 转载、Octane 荷兰文招聘）；2 篇有技术/史料价值：SVO + Laine 论文、Fermi + OptiX Design Garage 基准。新增 1 概念页 efficient-sparse-voxel-octrees、2 source 摘要。sam-lapere 人物页已存在，仅追加 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-03-11_otoy-this-summer.md",
+      "status": "skipped_offtopic",
+      "reason": "转载 VentureBeat 的 OTOY Fusion Render Cloud 新闻稿，无独立技术内容；OTOY 云渲染技术面已由 otoy-cloud-rendering 与 gpu-unbiased-path-tracing 覆盖。"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-03-11_svo-and-path-tracing-update.md",
+      "status": "ingested",
+      "source_slug": "raytracey-svo-path-tracing-update",
+      "title": "SVO and path tracing update"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-03-27_fermi-a-raytracing-beast-and-fyc-fuck-you-charlie.md",
+      "status": "ingested",
+      "source_slug": "raytracey-fermi-optix-benchmark",
+      "title": "Fermi: a raytracing BEAST"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-02_gaiking-the-first-realtime-raytraced-game-using-otoy.md",
+      "status": "skipped_offtopic",
+      "reason": "仅两行文字 + 两个 YouTube/BSN 链接，无技术内容；Gaiking 项目最终未落地，也不构成独立概念。"
+    },
+    {
+      "path": "raw/articles/raytracey.blogspot.com/2010-04-03_octane-render-is-de-max.md",
+      "status": "skipped_offtopic",
+      "reason": "荷兰文招聘转载（Refractive Software / Octane），无技术内容；且贴尾已注明职位已填。"
+    }
+  ],
+  "concepts_created": ["efficient-sparse-voxel-octrees"],
+  "people_created": [],
+  "source_summaries_created": [
+    "raytracey-svo-path-tracing-update",
+    "raytracey-fermi-optix-benchmark"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/sam-lapere.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/raytracey-svo-path-tracing-update]]"
+    },
+    {
+      "file": "wiki/people/sam-lapere.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/raytracey-fermi-optix-benchmark]]"
+    },
+    {
+      "file": "wiki/people/sam-lapere.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[efficient-sparse-voxel-octrees]]"
+    },
+    {
+      "file": "wiki/rendering/gpu-unbiased-path-tracing.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/raytracey-fermi-optix-benchmark]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-voxel-software-raytracing.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[efficient-sparse-voxel-octrees]] — Laine 2010 年 SVO 论文，本条路线的学术源头之一"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[efficient-sparse-voxel-octrees]] | Laine 2010 年 SVO 论文：contour + 紧凑编码 + CUDA 开源 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-svo-path-tracing-update]] | Lapere：Voxelstein 3D + Laine SVO 论文 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/raytracey-fermi-optix-benchmark]] | Lapere：Fermi / OptiX Design Garage 相对 GTX 285 提升 870% |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-73 Worker HL (raytracey.blogspot.com 2010-03/04 ×5)\n\n处理 5 篇 Sam Lapere 2010 年 3-4 月短博。2 篇入库（SVO+Laine 论文、Fermi+OptiX 基准），3 篇跳过（OTOY 新闻稿、Gaiking trailer、Octane 荷兰招聘）。新增 1 概念页 efficient-sparse-voxel-octrees，2 source 摘要；sam-lapere 已有页仅追加 source/相关链接。"
+}

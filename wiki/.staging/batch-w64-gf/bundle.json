@@ -1,0 +1,84 @@
+{
+  "batch_id": "batch-w64-gf",
+  "agent_note": "alexharri.com ×5 — clipboard / icelandic name trie / ASCII rendering ingested; about-me + Icelandic dev survey skipped.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/alexharri.com/2024-07-13_2024-icelandic-developer-survey-compensation-technologies-an.md",
+      "status": "skipped_offtopic",
+      "reason": "regional developer compensation/tech usage survey, not software engineering or graphics content"
+    },
+    {
+      "path": "raw/articles/alexharri.com/2024-09-01_the-webs-clipboard-and-how-it-stores-data-of-different-types.md",
+      "status": "ingested",
+      "source_slug": "alexharri-web-clipboard",
+      "title": "The web's clipboard, and how it stores data of different types"
+    },
+    {
+      "path": "raw/articles/alexharri.com/2025-08-02_compressing-icelandic-name-declension-patterns-into-a-3-27-k.md",
+      "status": "ingested",
+      "source_slug": "alexharri-icelandic-name-trie",
+      "title": "Compressing Icelandic name declension patterns into a 3.27 kB trie"
+    },
+    {
+      "path": "raw/articles/alexharri.com/2026-01-01_personal-website-alex-harri-jonsson.md",
+      "status": "skipped_offtopic",
+      "reason": "about-me page, not technical content"
+    },
+    {
+      "path": "raw/articles/alexharri.com/2026-01-17_ascii-characters-are-not-pixels-a-deep-dive-into-ascii-rende.md",
+      "status": "ingested",
+      "source_slug": "alexharri-ascii-rendering",
+      "title": "ASCII characters are not pixels: a deep dive into ASCII rendering"
+    }
+  ],
+  "concepts_created": [
+    "web-clipboard-api",
+    "compressed-trie-pattern-matching",
+    "ascii-shape-vector-rendering"
+  ],
+  "people_created": ["alex-harri-jonsson"],
+  "source_summaries_created": [
+    "alexharri-web-clipboard",
+    "alexharri-icelandic-name-trie",
+    "alexharri-ascii-rendering"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/aliasing.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/alexharri-ascii-rendering]] — ASCII 渲染里最近邻下采样产生的 jaggies，用形状向量绕过"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[web-clipboard-api]] | Web 剪贴板两套 API 的历史分裂：异步严类型白名单 vs Clipboard Events 任意类型，Google Docs / Figma / Web Custom Formats 的三种绕行方案（Alex Harri） |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[compressed-trie-pattern-matching]] | 倒序插入 + 子树压缩让 trie 自发泛化出后缀模式匹配，3,600 冰岛名压进 3.27 kB trie（beygla / Alex Harri） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ascii-shape-vector-rendering]] | 字符不是像素：6D 形状向量 + 最近邻 + 双层对比度增强的 ASCII 渲染器（Alex Harri） |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[alex-harri-jonsson]] | 冰岛软件工程师，博客 alexharri.com 深挖 Web 剪贴板、trie 压缩、ASCII 渲染等细节主题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alexharri-web-clipboard]] | Alex Harri：Web 剪贴板如何存储不同类型数据 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alexharri-icelandic-name-trie]] | Alex Harri：把冰岛人名格变规则压进 3.27 kB trie |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/alexharri-ascii-rendering]] | Alex Harri：ASCII 字符不是像素——形状向量渲染深入 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-64 Worker gf (alexharri.com ×5)\n\n处理 5 篇 Alex Harri Jónsson 博客文章。新增 3 概念页（web-clipboard-api、compressed-trie-pattern-matching、ascii-shape-vector-rendering）、1 人物页（alex-harri-jonsson）、3 source 摘要。跳过 2 篇（about-me 首页 + 冰岛开发者薪资/技术调研，后者地区性数据非技术主题）。"
+}

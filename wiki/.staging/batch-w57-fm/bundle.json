@@ -1,0 +1,77 @@
+{
+  "batch_id": "batch-w57-fm",
+  "agent_note": "Tom Looman / UE5 tutorials: Rider setup, Project Orion co-op roguelike, Unreal Insights counters. Skipped all-posts index page and contact page.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/tomlooman.com/2026-02-13_setting-up-rider-for-c-and-unreal-engine.md",
+      "status": "ingested",
+      "source_slug": "tomlooman-rider-ue5-setup",
+      "title": "Setting up Rider for C++ and Unreal Engine"
+    },
+    {
+      "path": "raw/articles/tomlooman.com/2026-02-27_project-orion-co-op-action-roguelike-sample-in-unreal-engine.md",
+      "status": "ingested",
+      "source_slug": "tomlooman-project-orion",
+      "title": "Project Orion: Co-op Action Roguelike Sample in Unreal Engine"
+    },
+    {
+      "path": "raw/articles/tomlooman.com/2026-03-19_adding-counters-traces-to-unreal-insights-stats-system.md",
+      "status": "ingested",
+      "source_slug": "tomlooman-unreal-insights-counters",
+      "title": "Adding Counters & Traces to Unreal Insights & Stats System"
+    },
+    {
+      "path": "raw/articles/tomlooman.com/2026-04-01_all-posts.md",
+      "status": "skip_duplicate",
+      "reason": "blog index / list page — not an article"
+    },
+    {
+      "path": "raw/articles/tomlooman.com/2026-04-01_get-in-touch.md",
+      "status": "skip_duplicate",
+      "reason": "contact / about-me page — no technical content"
+    }
+  ],
+  "concepts_created": [
+    "rider-ue5-setup",
+    "project-orion-action-roguelike",
+    "unreal-insights-counters-traces"
+  ],
+  "people_created": ["tom-looman"],
+  "source_summaries_created": [
+    "tomlooman-rider-ue5-setup",
+    "tomlooman-project-orion",
+    "tomlooman-unreal-insights-counters"
+  ],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[rider-ue5-setup]] | Tom Looman：UE5 C++ 的 Rider + VS Build Tools 搭建清单 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[project-orion-action-roguelike]] | Tom Looman 开源 UE5 合作 Roguelike 示例：Action 系统、DoD 投射物、对象池、Significance Manager |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[unreal-insights-counters-traces]] | UE Stats System 与 Unreal Insights 双路径埋点：Counter / Cycle Counter / Named Events |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[tom-looman]] | Tom Looman，前 Epic Games，UE C++ 教程与性能优化长期撰稿者 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tomlooman-rider-ue5-setup]] | Looman：Rider + UE5 C++ 开发环境搭建 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tomlooman-project-orion]] | Looman：Project Orion 合作 Roguelike 示例项目总览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/tomlooman-unreal-insights-counters]] | Looman：给 Unreal Insights 与 Stats System 加 Counters/Traces |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-57 Worker fm (tomlooman.com Tom Looman UE5 ×3)\n\n处理 Tom Looman 博客 5 篇文章：ingest 3 篇 UE5 干货（Rider 环境搭建、Project Orion 合作 Roguelike 示例、Unreal Insights Counters/Traces），skip_duplicate 2 篇（all-posts 索引页、contact 联系页）。新增 3 概念页（rider-ue5-setup、project-orion-action-roguelike、unreal-insights-counters-traces）、1 人物页（tom-looman）、3 source 摘要。"
+}

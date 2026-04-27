@@ -1,0 +1,149 @@
+{
+  "batch_id": "batch-w100-kn",
+  "agent_note": "5 posts from Ben Supnik's Hacks of Life (2015-03 to 2015-06) on GL perf + Metal intro series. All 5 ingested; 6 new rendering concepts (accumulator / state-deferral / impedance-mismatch / PSO / render-pass-descriptor / osx-memory-model). ben-supnik page already exists; patches add the new pages to Related + Sources lists.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-03-17_accumulation-to-improve-small-batch-drawing.md",
+      "status": "ingested",
+      "source_slug": "supnik-accumulation-small-batch",
+      "title": "Accumulation to Improve Small-Batch Drawing"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-04-14_opengl-state-change-is-deferred.md",
+      "status": "ingested",
+      "source_slug": "supnik-gl-state-deferred",
+      "title": "OpenGL State Change Is Deferred"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-04-14_the-opengl-impedance-mismatch.md",
+      "status": "ingested",
+      "source_slug": "supnik-gl-impedance-mismatch",
+      "title": "The OpenGL Impedance Mismatch"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-05-22_underestanding-powervr-gpus-via-metal.md",
+      "status": "ingested",
+      "source_slug": "supnik-powervr-via-metal",
+      "title": "Underestanding PowerVR GPUs via Metal"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2015-06-10_os-x-metal-raw-notes.md",
+      "status": "ingested",
+      "source_slug": "supnik-osx-metal-notes",
+      "title": "OS X Metal - Raw Notes"
+    }
+  ],
+  "concepts_created": [
+    "gl-draw-accumulator-batching",
+    "opengl-state-change-deferral",
+    "opengl-hardware-impedance-mismatch",
+    "mtl-render-pipeline-state",
+    "mtl-render-pass-descriptor",
+    "osx-metal-memory-model"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-accumulation-small-batch",
+    "supnik-gl-state-deferred",
+    "supnik-gl-impedance-mismatch",
+    "supnik-powervr-via-metal",
+    "supnik-osx-metal-notes"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gl-draw-accumulator-batching]] —— 2015-03 X-Plane 10 Mobile 的小批量累加器：合批 + draw reordering + state merging\n- [[opengl-state-change-deferral]] —— 2015-04 为什么 glDrawArrays 占 80% CPU：状态调用只记脏位，draw call 才同步硬件\n- [[opengl-hardware-impedance-mismatch]] —— 2015-04 GL 与现代 GPU 的错位：vertex fetch / MRT 映射都在 shader 里\n- [[mtl-render-pipeline-state]] —— 2015-05 PowerVR via Metal：PSO 把隐式 combination cache 锁成 immutable 对象\n- [[mtl-render-pass-descriptor]] —— 2015-05 TBDR 的 load/store action 被强制搬到 API 面\n- [[osx-metal-memory-model]] —— 2015-06 OS X Metal 四档 ResourceOptions 与 Mantle 对比"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-accumulation-small-batch]]\n- [[sources/supnik-gl-state-deferred]]\n- [[sources/supnik-gl-impedance-mismatch]]\n- [[sources/supnik-powervr-via-metal]]\n- [[sources/supnik-osx-metal-notes]]"
+    },
+    {
+      "file": "wiki/rendering/batching.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[gl-draw-accumulator-batching]] —— Supnik 的 GL 累加器：同状态合批 + 层重排 + 状态合并"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-state-change-deferral]] —— 为什么 draw call 看起来很慢：驱动在 draw 前补齐延迟的状态同步\n- [[opengl-hardware-impedance-mismatch]] —— GL 状态机与现代 GPU 真实状态的错位"
+    },
+    {
+      "file": "wiki/rendering/metal-api-overview.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mtl-render-pipeline-state]] —— PSO 为何 immutable：封住 vertex format / blending / MRT 这些「隐式 shader 代码」\n- [[mtl-render-pass-descriptor]] —— TBDR 的 load/store action 被强制搬到 API 面\n- [[osx-metal-memory-model]] —— Shared / Managed / Private / Auto 四档存储"
+    },
+    {
+      "file": "wiki/rendering/tbdr-vs-imr.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mtl-render-pass-descriptor]] —— Metal 把 TBDR 的 tile load/store 暴露到 API"
+    },
+    {
+      "file": "wiki/rendering/hsr-tbdr.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mtl-render-pass-descriptor]] —— Metal 显式 load/store action\n- [[mtl-render-pipeline-state]] —— PowerVR 上 blend 在 shader 里，所以 blend 变更 = 新 PSO"
+    },
+    {
+      "file": "wiki/rendering/vulkan-explicit-performance.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[opengl-hardware-impedance-mismatch]] —— 为什么需要显式 API：隐式 combination cache 已经不合身\n- [[mtl-render-pipeline-state]] —— Metal 的等价 PSO 设计"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gl-draw-accumulator-batching]] | GL 单三角形 API 的 CPU 侧累加器：合批 + 层重排 + 状态合并 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-state-change-deferral]] | GL 状态调用只记脏位，draw call 才真正同步硬件 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-hardware-impedance-mismatch]] | GL pipeline-and-state 与现代 GPU 的错位：vertex fetch / MRT 都在 shader 里 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mtl-render-pipeline-state]] | Metal 的 immutable PSO 把隐式 combination cache 显式化 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mtl-render-pass-descriptor]] | Metal 强制回答 TBDR tile 的 load/store action |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[osx-metal-memory-model]] | OS X Metal 的 Shared/Managed/Private/Auto 四档存储与 Mantle 对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-accumulation-small-batch]] | Supnik：X-Plane 10 Mobile 累加器，小批量 GL 的救生艇 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gl-state-deferred]] | Supnik：GL 状态切换延后到 draw call 才同步硬件 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gl-impedance-mismatch]] | Supnik：GL 与现代 GPU 的阻抗不匹配（VAO / vertex format / MRT） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-powervr-via-metal]] | Supnik：通过 Metal API 反推 PowerVR 硬件结构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-osx-metal-notes]] | Supnik：OS X Metal 桌面版 WWDC 2015 笔记，内存模型与 Mantle 对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-100 Worker KN (hacksoflife / Supnik 2015-03..06 ×5)\n\n处理 Ben Supnik 2015-03 至 2015-06 的 5 篇 Hacks of Life 博客，串起 GL 性能→GL 阻抗不匹配→Metal 的一条连贯论证线。新增 6 概念页：gl-draw-accumulator-batching（累加器合批+重排+state 合并）、opengl-state-change-deferral（GL 状态延迟同步）、opengl-hardware-impedance-mismatch（pipeline-and-state 与硬件错位）、mtl-render-pipeline-state（PSO 锁死 shader/blend/vertex format 组合）、mtl-render-pass-descriptor（TBDR 的 load/store 强制显式）、osx-metal-memory-model（Shared/Managed/Private/Auto 四档）。新增 5 source 摘要，补丁挂到 ben-supnik / batching / draw-call / metal-api-overview / tbdr-vs-imr / hsr-tbdr / vulkan-explicit-performance。"
+}

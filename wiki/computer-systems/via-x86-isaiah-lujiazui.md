@@ -44,3 +44,4 @@ Lujiazui 的目的很明确：**为了塞 8 核**，牺牲单核宽度换面积�
 - [[sources/chipsandcheese-via-isaiah]]
 - [[sources/chipsandcheese-zhaoxin-lujiazui]]
 - [[sources/chipsandcheese-zhaoxin-part3]]
+- [[sources/chipsandcheese-via-centaur-cns]]

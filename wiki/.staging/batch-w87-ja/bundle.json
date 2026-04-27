@@ -1,0 +1,100 @@
+{
+  "batch_id": "batch-w87-ja",
+  "agent_note": "5 hacksoflife / Supnik posts 2010-12 ~ 2011-01. Skip stupid-cvs-tricks (legacy VCS trivia). Merge Derivatives I+II into one source summary — same hardware mental model, same fix family. Two new concepts: glsl-compiler-optimization-reliance (RV790 compiler observations driving X-Plane shader reorg) and cas-refcount-lowbit-lock (CAS+refcount race, low-bit spin lock variant, Vyukov differential refcount from comments). Derivatives content already well covered by existing texture2dgrad-explicit-derivatives and divergent-gradient-in-branches — just add source links + enrichment.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2010-12-22_fun-with-glsl-compilers.md",
+      "status": "ingested",
+      "source_slug": "supnik-glsl-compiler-observations",
+      "title": "Fun With GLSL Compilers"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-04_cas-and-reference-counting-revisited.md",
+      "status": "ingested",
+      "source_slug": "supnik-cas-reference-counting",
+      "title": "CAS and Reference Counting Revisited"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-08_stupid-cvs-tricks.md",
+      "status": "skipped_offtopic",
+      "reason": "legacy CVS email-notification / watch flag trivia; not substantive engineering content"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-20_derivatives-i-discontinuities-and-gradients.md",
+      "status": "ingested",
+      "source_slug": "supnik-derivatives-two-parts",
+      "title": "Derivatives I: Discontinuities and Gradients (merged with Part II)"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2011-01-20_derivatives-ii-conditional-texture-fetches.md",
+      "status": "ingested",
+      "source_slug": "supnik-derivatives-two-parts",
+      "title": "Derivatives II: Conditional Texture Fetches (merged with Part I)"
+    }
+  ],
+  "concepts_created": [
+    "glsl-compiler-optimization-reliance",
+    "cas-refcount-lowbit-lock"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-glsl-compiler-observations",
+    "supnik-cas-reference-counting",
+    "supnik-derivatives-two-parts"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "replace_line",
+      "match": "sources: 27",
+      "content": "sources: 30"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[glsl-compiler-optimization-reliance]] —— 2010 ShaderAnalyzer 观察驱动对 X-Plane 10 shader 组织的反向影响\n- [[cas-refcount-lowbit-lock]] —— CAS+refcount 的低位自旋锁变体与 differential refcount 讨论"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-glsl-compiler-observations]]\n- [[sources/supnik-cas-reference-counting]]\n- [[sources/supnik-derivatives-two-parts]]"
+    },
+    {
+      "file": "wiki/rendering/texture2dgrad-explicit-derivatives.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-derivatives-two-parts]] —— Part I 是 texture2DGrad 手喂连续导数的原始讨论"
+    },
+    {
+      "file": "wiki/rendering/divergent-gradient-in-branches.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-derivatives-two-parts]] —— Supnik 2011 从 GLSL spec §8.8 角度讲「non-uniform control flow 内 derivative 未定义」，HLSL 侧的 [[divergent-gradient-in-branches]] 是同一根因在不同语言的投影"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[glsl-compiler-optimization-reliance]] | 用 ShaderAnalyzer 观察驱动编译器，反推 X-Plane 10 shader 组织策略 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cas-refcount-lowbit-lock]] | CAS + refcount 的竞态缺口、指针低位当锁的自旋变体、Vyukov differential refcount |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-glsl-compiler-observations]] | Supnik：AMD ShaderAnalyzer 看到的 GLSL 编译器做了什么没做什么 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-cas-reference-counting]] | Supnik：CAS+refcount 的低位锁变体与 Vyukov 评论区给的 differential refcount |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-derivatives-two-parts]] | Supnik：GLSL derivative 两连载，UV 不连续 + if 分支内的未定义导数 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-87 Worker JA (hacksoflife / Supnik ×5, 2010-12 ~ 2011-01)\n\n处理 5 篇 Supnik 博客：4 ingested、1 skipped（stupid-cvs-tricks 属 legacy VCS 琐事）。Derivatives I + II 合并到一篇 source summary（同一硬件模型、同一修法族）。新增 2 概念页：[[glsl-compiler-optimization-reliance]]（RV790 编译器观察驱动 X-Plane 10 shader 组织改写）、[[cas-refcount-lowbit-lock]]（CAS+refcount 的经典缺口 + 指针低位自旋锁 + Vyukov differential refcount）。3 source 摘要，Supnik 人物页 source count 27 → 30。Derivatives 内容已由 [[texture2dgrad-explicit-derivatives]] / [[divergent-gradient-in-branches]] 充分覆盖，只补 source link。"
+}

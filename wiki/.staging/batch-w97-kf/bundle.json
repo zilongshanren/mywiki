@@ -1,0 +1,138 @@
+{
+  "batch_id": "batch-w97-kf",
+  "agent_note": "5 篇 Joost 2011-10~11 全部 INGEST。(1) GPU 1 帧落后：讲同事/书都没讲明白的 CPU/GPU pipelining 与 Max Prerendered Frames 下的输入滞后，新建 cpu-gpu-pipelining-input-lag 与 frame-pipeline-latency / frames-in-flight 三角互链。(2) Bouncy Stick：PS3/Xbox360 手柄弹簧越过 0 的硬件级输入噪声 + 单帧 |Δ|>1.05 阈值解，新建 gamepad-stick-bounce-filter。(3) 原型方法 bias：Awesomenauts 跳跃蓄力无动画 ≡ 输入滞后的反思 + 音效/音乐/枪感/单位差异四类坑，新建 prototyping-method-bias。(4) HD→SD 超采样下采样：2D 在 CRT 上 1.5× SSAA 下采样而不预 resample DDS 的理由，新建 hd-to-sd-supersample-downscale。(5) Monster Truck vs Zombies 被取消项目：pitch 视频三件套 + 同视角 concept art 纪律，新建 pitch-video-concept-art。Joost 人物页 sources 从 27 条升到 32 条并追加 5 条概念交叉引用。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-10-23_what-no-one-told-you-about-the-videocard-lagging-1-frame-beh.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-gpu-one-frame-behind",
+      "title": "What no one told you about the videocard: lagging 1 frame behind"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-10-29_the-bouncy-stick-problem.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-bouncy-stick",
+      "title": "The Bouncy Stick Problem"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-11-06_how-a-lack-of-art-influences-prototyping-results.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-prototyping-no-art",
+      "title": "How a lack of art influences prototyping results"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-11-19_making-an-hd-2d-game-look-good-on-an-sd-television.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-hd-2d-on-sd",
+      "title": "Making an HD 2D game look good on an SD television"
+    },
+    {
+      "path": "raw/articles/joostdevblog.blogspot.com/2011-11-27_monster-truck-vs-zombies-a-cancelled-ronimo-project.md",
+      "status": "ingested",
+      "source_slug": "joostdevblog-monster-truck-cancelled",
+      "title": "Monster Truck VS Zombies - A cancelled Ronimo project"
+    }
+  ],
+  "concepts_created": [
+    "cpu-gpu-pipelining-input-lag",
+    "gamepad-stick-bounce-filter",
+    "prototyping-method-bias",
+    "hd-to-sd-supersample-downscale",
+    "pitch-video-concept-art"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "joostdevblog-gpu-one-frame-behind",
+    "joostdevblog-bouncy-stick",
+    "joostdevblog-prototyping-no-art",
+    "joostdevblog-hd-2d-on-sd",
+    "joostdevblog-monster-truck-cancelled"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "replace_line",
+      "match": "sources: 18",
+      "content": "sources: 32"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cpu-gpu-pipelining-input-lag]] —— Awesomenauts 优化中发现的 GPU 1 帧落后机制与输入滞后代价\n- [[gamepad-stick-bounce-filter]] —— 手柄弹簧越过 0 点的单帧 |Δ|>1.05 阈值过滤\n- [[prototyping-method-bias]] —— 无动画/无音效/离线音乐如何系统性误导原型结论\n- [[hd-to-sd-supersample-downscale]] —— 2D HD 美术在 SD CRT 上的 1.5× 超采样下采样\n- [[pitch-video-concept-art]] —— Pitch 视频三件套与同视角 concept art 纪律"
+    },
+    {
+      "file": "wiki/people/joost-van-dongen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/joostdevblog-gpu-one-frame-behind]]\n- [[sources/joostdevblog-bouncy-stick]]\n- [[sources/joostdevblog-prototyping-no-art]]\n- [[sources/joostdevblog-hd-2d-on-sd]]\n- [[sources/joostdevblog-monster-truck-cancelled]]"
+    },
+    {
+      "file": "wiki/rendering/frame-pipeline-latency.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cpu-gpu-pipelining-input-lag]] —— Joost 2011 从独立开发视角讲 Max Prerendered Frames / fence / VSync"
+    },
+    {
+      "file": "wiki/rendering/frames-in-flight.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[cpu-gpu-pipelining-input-lag]] —— 同一机制的 2011 独立开发视角版本"
+    },
+    {
+      "file": "wiki/rendering/msaa-ssaa.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[hd-to-sd-supersample-downscale]] —— 2D 项目反向使用 SSAA：HD 内部渲染下采样到 SD CRT"
+    },
+    {
+      "file": "wiki/game-development/indie-pitching-publishers.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[pitch-video-concept-art]] —— Ronimo 的 pitch 视频三件套结构（mood art + 火柴人玩法 mockup + 同视角 concept art）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[cpu-gpu-pipelining-input-lag]] | Joost 2011：GPU 永远落后 1 帧的真相与 Max Prerendered Frames 输入滞后 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[hd-to-sd-supersample-downscale]] | 2D HD 美术在 SD CRT 上的 1.5× 超采样下采样 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[gamepad-stick-bounce-filter]] | 手柄弹簧越过 0 点的单帧 \\|Δ\\|>1.05 阈值过滤（Awesomenauts） |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[prototyping-method-bias]] | 原型方法决定结论：无动画/无音效/离线音乐的系统性偏差 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[pitch-video-concept-art]] | Pitch 视频三件套与同视角 concept art 纪律（Ronimo） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-gpu-one-frame-behind]] | Joost：GPU 永远落后 1 帧 + Max Prerendered Frames 输入滞后（2011） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-bouncy-stick]] | Joost：手柄摇杆回弹越过 0 的单帧阈值解（Awesomenauts 2011） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-prototyping-no-art]] | Joost：无美术原型系统性误导结论（Awesomenauts 跳跃 2011） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-hd-2d-on-sd]] | Joost：HD 2D 在 SD CRT 上的 1.5× 超采样下采样（Swords & Soldiers / Awesomenauts 2011） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/joostdevblog-monster-truck-cancelled]] | Joost：Ronimo 取消项目 Monster Truck VS Zombies 的 pitch 与概念美术纪律（2011） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-97 Worker batch-w97-kf (joostdevblog.blogspot.com ×5)\n\n处理 Joost 2011-10~11 五篇全部 INGEST：GPU 1 帧落后 / Bouncy Stick / 无美术原型 / HD→SD 超采样 / Monster Truck 取消。新建 5 概念页（cpu-gpu-pipelining-input-lag, gamepad-stick-bounce-filter, prototyping-method-bias, hd-to-sd-supersample-downscale, pitch-video-concept-art）、5 source 摘要；Joost 人物页 sources 27→32、追加 5 条概念交叉引用；向 frame-pipeline-latency / frames-in-flight / msaa-ssaa / indie-pitching-publishers 四页各追加 1 条相关链接。"
+}

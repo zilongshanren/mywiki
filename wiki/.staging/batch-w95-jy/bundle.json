@@ -1,0 +1,123 @@
+{
+  "batch_id": "batch-w95-jy",
+  "agent_note": "hacksoflife 2012-07 + 2012-10 (2 Supnik graphics posts) + randomtower 2010-02-02 (FlashPunk shooter part 2). 3 ingested, 2 skipped because the raw files for 2010-02-01_escape-from-colors.md and 2010-02-05_escape-from-colors-progress.md do not exist under raw/articles/randomtower.blogspot.com/. 2 new concept pages (deferred-depth-reuse-tradeoffs, ogssaa-fxaa-non-square) + 3 source summaries. Patches append to ben-supnik, marte-randomtower, xplane-gbuffer-format, deferred-rendering, aa-techniques-survey-2011, flashpunk-framework.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-07-24_deferred-depth-3-ways.md",
+      "status": "ingested",
+      "source_slug": "supnik-deferred-depth-3-ways",
+      "title": "Deferred Depth: 3 Ways"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2012-10-31_non-square-ogssaa-fxaa.md",
+      "status": "ingested",
+      "source_slug": "supnik-non-square-ogssaa-fxaa",
+      "title": "Non-Square OGSSAA+FXAA"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-02-02_flashpunk-hello-world-shooter-part-2.md",
+      "status": "ingested",
+      "source_slug": "randomtower-flashpunk-shooter-part-2",
+      "title": "Flashpunk Hello World (Shooter) part 2"
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-02-01_escape-from-colors.md",
+      "status": "skipped_offtopic",
+      "reason": "Raw file does not exist under raw/articles/randomtower.blogspot.com/ (verified via directory listing). Likely never fetched by feedly-ingest. Cannot be ingested without source content."
+    },
+    {
+      "path": "raw/articles/randomtower.blogspot.com/2010-02-05_escape-from-colors-progress.md",
+      "status": "skipped_offtopic",
+      "reason": "Raw file does not exist under raw/articles/randomtower.blogspot.com/ (verified via directory listing). Likely never fetched by feedly-ingest. Cannot be ingested without source content."
+    }
+  ],
+  "concepts_created": [
+    "deferred-depth-reuse-tradeoffs",
+    "ogssaa-fxaa-non-square"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-deferred-depth-3-ways",
+    "supnik-non-square-ogssaa-fxaa",
+    "randomtower-flashpunk-shooter-part-2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-depth-reuse-tradeoffs]] —— 2012-07 延迟管线三条深度复用路线（拷贝 / NV_texture_barrier / 写眼空间 Z），X-Plane 的双 depth domain 选 C\n- [[ogssaa-fxaa-non-square]] —— 2012-10 非方形 OGSSAA（2×4 竖向偏置）× FXAA 在 SSAA 空间运行的组合"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-deferred-depth-3-ways]]\n- [[sources/supnik-non-square-ogssaa-fxaa]]"
+    },
+    {
+      "file": "wiki/people/marte-randomtower.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/people/marte-randomtower.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/randomtower-flashpunk-shooter-part-2]]"
+    },
+    {
+      "file": "wiki/rendering/xplane-gbuffer-format.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-depth-reuse-tradeoffs]] —— 2012-07 Supnik 把 X-Plane 为何必须写眼空间 Z（而非复用深度 buffer）写成三路线分类：双 depth domain 迫使 C 路线"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[deferred-depth-reuse-tradeoffs]] —— 光照 pass 复用深度 buffer 的三条路线：拷贝 / NV_texture_barrier / 往 G-Buffer 写眼空间 Z"
+    },
+    {
+      "file": "wiki/rendering/aa-techniques-survey-2011.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[ogssaa-fxaa-non-square]] —— 2012-10 Supnik 把 SSAA（Universal 档）与 FXAA（Post 档）在 X-Plane 拼起来：非方形竖向偏置 + FXAA 跑在 SSAA 空间"
+    },
+    {
+      "file": "wiki/game-engines/flashpunk-framework.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/game-engines/flashpunk-framework.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/randomtower-flashpunk-shooter-part-2]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[deferred-depth-reuse-tradeoffs]] | Supnik 2012：延迟光照读深度的三条路线（拷贝 / NV_texture_barrier / G-Buffer 写 Z），X-Plane 双 depth domain 选 C |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[ogssaa-fxaa-non-square]] | Supnik 2012：非方形 OGSSAA（2×4 竖向偏置）× FXAA 跑在 SSAA 空间的组合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-deferred-depth-3-ways]] | Supnik 2012：延迟管线深度复用的三条路线与 X-Plane 的选择 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-non-square-ogssaa-fxaa]] | Supnik 2012：非方形 OGSSAA + FXAA 跑在 SSAA 空间 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/randomtower-flashpunk-shooter-part-2]] | Marte 2010：FlashPunk Hello World Shooter 迭代更新（血量 / 多武器 / 调试键）|"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-95 Worker JY (hacksoflife 2012 Supnik ×2 + randomtower 2010 Marte ×1)\n\n处理 5 条输入：3 ingested（Supnik deferred-depth-3-ways + non-square-ogssaa-fxaa + Marte FlashPunk shooter part 2），2 skipped（escape-from-colors 两篇在 raw/ 下不存在，无源可读）。新增 2 概念页（deferred-depth-reuse-tradeoffs、ogssaa-fxaa-non-square）、3 source 摘要；xplane-gbuffer-format / deferred-rendering / aa-techniques-survey-2011 / flashpunk-framework / ben-supnik / marte-randomtower 反向补链。"
+}

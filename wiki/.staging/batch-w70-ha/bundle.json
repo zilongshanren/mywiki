@@ -1,0 +1,64 @@
+{
+  "batch_id": "batch-w70-ha",
+  "agent_note": "5 chipsandcheese early posts (2020-12 ~ 2021-01). Only 1 (Chester Lam's MCM GPU piece) passes topicality gate — the other 4 are intro post, NVIDIA leak rumor, Intel HEDT roadmap recap, and Intel CEO commentary with no engineering substance. Created 1 concept page (mcm-gpu-design) and 1 source summary. Chester Lam person page already exists; patched to add new source link and 相关 entry.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2020-12-13_welcome-to-chips-and-cheese.md",
+      "status": "skipped_offtopic",
+      "reason": "site-intro/about post; no technical content"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2020-12-27_nvidias-enterprise.md",
+      "status": "skipped_offtopic",
+      "reason": "pure rumor/leak repackaging; no technical analysis"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2020-12-28_nvidias-next-generation-gpu-mcm.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-nvidia-mcm-gpu",
+      "title": "NVIDIA's Next Generation GPU: MCM?"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-01-11_intels-hedt-roadmap.md",
+      "status": "skipped_offtopic",
+      "reason": "product roadmap / market commentary; no engineering or benchmark content"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-01-16_intel-finally-solving-the-right-problem.md",
+      "status": "skipped_offtopic",
+      "reason": "Intel CEO succession op-ed; purely business/leadership commentary"
+    }
+  ],
+  "concepts_created": ["mcm-gpu-design"],
+  "people_created": [],
+  "source_summaries_created": ["chipsandcheese-nvidia-mcm-gpu"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mcm-gpu-design]]"
+    },
+    {
+      "file": "wiki/people/chester-lam.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-nvidia-mcm-gpu]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-nvidia-mcm-gpu]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[mcm-gpu-design]] | MCM GPU：跨 die 互连代价、L1.5 缓存、CTA 调度与 first-touch 页映射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-nvidia-mcm-gpu]] | Chester Lam：从 Nvidia 2017 论文看下一代 MCM server GPU |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-70 Worker HA (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 早期文章（2020-12 ~ 2021-01）。4 篇跳过（建站介绍、Nvidia 企业部门传闻、Intel HEDT 路线图回顾、Intel CEO 更替评论）——均无技术实质。1 篇入库：Chester Lam 基于 Nvidia 2017 MCM 论文的 GPU 多 die 架构分析，新增概念页 [[mcm-gpu-design]] 与 source [[sources/chipsandcheese-nvidia-mcm-gpu]]，并补全 Chester Lam / Chips and Cheese 人物页的交叉链接。"
+}

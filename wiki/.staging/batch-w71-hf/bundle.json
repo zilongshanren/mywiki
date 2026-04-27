@@ -1,0 +1,111 @@
+{
+  "batch_id": "batch-w71-hf",
+  "agent_note": "5 chipsandcheese early-2021 posts. 3 ingested (JPEG image-codec pipeline / platform security overview AMD-Intel-Nvidia / CTR safety revisited focused on electromigration physics). 2 skipped: (1) formal retraction of Zen rumor post — author retracted himself as rumor mill; (2) first CTR review — pure product review/drama superseded by the revisited piece. Created 3 concept pages, 3 source summaries, 1 new author page (BlueSwordM). Chester Lam page untouched — none of these articles are his. Chips and Cheese collective page patched with new sources.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-01-30_modern-data-compression-in-2021-part-1-a-simple-overview-on.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-jpeg-image-compression-overview",
+      "title": "Modern Data Compression in 2021 Part 1: JPEG image encoding overview"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-05_amds-past-and-future-cpus-formal-retraction.md",
+      "status": "skipped_offtopic",
+      "reason": "formally retracted by the author himself — acknowledged as pre-Chips-and-Cheese-editorial-standard rumor-mill piece with no engineering substance"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-05_ctr-a-review-and-a-warning-updated.md",
+      "status": "skipped_offtopic",
+      "reason": "initial CTR product review + author-vs-reviewer drama; the electromigration/MTTF/static-OC-vs-PBO physics content is covered more systematically in the follow-up (2021-02-15 CTR Safety Revisited) which is ingested instead"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-07_security-and-you-an-overview.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-security-overview",
+      "title": "Security and You, an Overview (AMD / Intel / Nvidia platform security)"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2021-02-15_ctr-safety-revisited.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ctr-safety-revisited",
+      "title": "CTR Safety, Revisited (Black's Equation, static OC vs dynamic boost)"
+    }
+  ],
+  "concepts_created": [
+    "jpeg-codec-pipeline",
+    "cpu-gpu-platform-security-features",
+    "electromigration-voltage-degradation"
+  ],
+  "people_created": ["blueswordm"],
+  "source_summaries_created": [
+    "chipsandcheese-jpeg-image-compression-overview",
+    "chipsandcheese-security-overview",
+    "chipsandcheese-ctr-safety-revisited"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-jpeg-image-compression-overview]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-security-overview]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/chipsandcheese-ctr-safety-revisited]]"
+    },
+    {
+      "file": "wiki/people/chips-and-cheese.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[blueswordm]]\n- [[jpeg-codec-pipeline]]\n- [[cpu-gpu-platform-security-features]]\n- [[electromigration-voltage-degradation]]"
+    },
+    {
+      "file": "wiki/computer-systems/mttf-reliability.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[electromigration-voltage-degradation]] — 电压/电流密度如何把 MTTF 砍掉的物理模型"
+    },
+    {
+      "file": "wiki/computer-systems/intel-13th-14th-gen-clock-degradation.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[electromigration-voltage-degradation]] — 静态 OC 长时高压导致物理退化的一般机理"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[jpeg-codec-pipeline]] | JPEG 编码三段论：YCbCr+chroma 降采样、8×8 DCT 量化、Huffman 熵编码 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[cpu-gpu-platform-security-features]] | AMD/Intel/Nvidia 平台安全栈对比：SEV/SME/MxGPU vs TXT/CSME vs Falcon |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[electromigration-voltage-degradation]] | Black's Equation 与静态 OC vs 动态 Boost 的电压退化风险 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[blueswordm]] | Chips and Cheese 编解码方向撰稿人 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-jpeg-image-compression-overview]] | BlueSwordM：JPEG 编码管线与前 JPEG 时代回顾 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-security-overview]] | Chips and Cheese：AMD/Intel/Nvidia 三家平台安全栈横向对比 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ctr-safety-revisited]] | Chips and Cheese：CTR 安全追踪与电迁移物理复盘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-71 Worker HF (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 2021-01 ~ 2021-02 文章。3 篇入库：BlueSwordM 的现代数据压缩系列 part 1（JPEG 编码管线）、Chips and Cheese 集体作者的三家平台安全栈横评、以及 CTR Safety Revisited（聚焦 Black's Equation 电迁移与静态 OC vs 动态 Boost 的电压退化机理）。2 篇跳过：AMD 未来 CPU 文被作者自己 formally retracted 为传闻站立场，无技术内容；CTR 初评被同月跟进的 Safety Revisited 覆盖得更系统，不重复收录。新增概念页 [[jpeg-codec-pipeline]]、[[cpu-gpu-platform-security-features]]、[[electromigration-voltage-degradation]]，新增 [[blueswordm]] 人物页，patch 了 [[chips-and-cheese]]、[[mttf-reliability]]、[[intel-13th-14th-gen-clock-degradation]] 三处交叉链接。"
+}

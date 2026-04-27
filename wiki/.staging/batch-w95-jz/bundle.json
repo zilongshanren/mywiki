@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w95-jz",
+  "agent_note": "5 篇 nklein 2010-04 均为薄公告：CL-Growl 发布/CCL patch/幻灯片链接、Clifford 库被引用提及、Weblocks 讲稿链接。无实质技术内容（无 API 讲解、无算法、无架构分析），全部 SKIP。未新增概念/人物/source 摘要；Patrick Stein 人物页已存在，无需改动。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/nklein.com/2010-04-12_cl-growl-client-library-released-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "CL-Growl 库发布公告 + 安装问题答疑（tar 打包格式），无技术实质，主体是 Growl 通知协议的通用介绍和一段示例代码"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-04-13_c-clifford-algebra-library-getting-some-use-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "短帖：提到 Mijail Guillemard 在信号处理里用了作者的 C++ Clifford algebra 模板库，作者自己在 3D 动画里用。仅为引用反馈，无几何代数原理讲解、无 API/算法细节"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-04-24_cl-growl-slides-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "TC Lispers 聚会幻灯片链接公告，标题与内容错位（正文其实是 Weblocks 讲座预告），无技术内容"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-04-26_weblocks-slides-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "TC Lispers Weblocks 讲座幻灯片 PDF 链接公告，正文仅 2 句话，无技术内容"
+    },
+    {
+      "path": "raw/articles/nklein.com/2010-04-29_cl-growl-patched-for-ccl-nklein-software.md",
+      "status": "skipped_offtopic",
+      "reason": "致谢公告：Alexandre Paes 提交补丁让 CL-Growl 支持 CCL（Clozure CL），仅给出 tarball 和 GPG 签名链接，无代码/技术讨论"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-95 Worker JZ (nklein.com ×5, 2010-04)\n\n处理 5 篇 Patrick Stein 2010 年 4 月的博文，全部判定 SKIP：CL-Growl 发布公告/CCL patch 致谢/TC Lispers 幻灯片链接（×2）、Clifford 库被引用的反馈帖——均为 1-2 段薄公告，无几何代数原理、无 Growl 协议剖析、无 Weblocks 架构讲解，不达技术实质门槛。Patrick Stein 人物页已存在，本批次无改动。"
+}

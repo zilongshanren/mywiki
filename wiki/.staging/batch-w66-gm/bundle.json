@@ -1,0 +1,91 @@
+{
+  "batch_id": "batch-w66-gm",
+  "agent_note": "Adam Sawicki 早期 D3D12/compute 3 篇，全 ingest。人物页已存在，仅追加 sources。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/asawicki.info/2020-04-19_secrets-of-direct3d-12-resource-alignment.md",
+      "status": "ingested",
+      "source_slug": "asawicki-d3d12-resource-alignment",
+      "title": "Secrets of Direct3D 12: Resource Alignment"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2020-09-29_system-value-semantics-in-compute-shaders-cheat-sheet.md",
+      "status": "ingested",
+      "source_slug": "asawicki-compute-shader-sv-cheat-sheet",
+      "title": "System Value Semantics in Compute Shaders - Cheat Sheet"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2022-04-06_a-metric-for-memory-fragmentation.md",
+      "status": "ingested",
+      "source_slug": "asawicki-memory-fragmentation-metric",
+      "title": "A Metric for Memory Fragmentation"
+    }
+  ],
+  "concepts_created": [
+    "d3d12-resource-alignment",
+    "compute-shader-dispatch-ids",
+    "a-metric-for-memory-fragmentation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "asawicki-d3d12-resource-alignment",
+    "asawicki-compute-shader-sv-cheat-sheet",
+    "asawicki-memory-fragmentation-metric"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "replace_line",
+      "match": "sources: 4",
+      "content": "sources: 7"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/asawicki-d3d12-resource-alignment]]"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/asawicki-compute-shader-sv-cheat-sheet]]"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/asawicki-memory-fragmentation-metric]]"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[d3d12-resource-alignment]]\n- [[compute-shader-dispatch-ids]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[d3d12-resource-alignment]] | D3D12 资源对齐的秘密：small alignment、heap alignment、tight alignment |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[compute-shader-dispatch-ids]] | HLSL / GLSL compute shader 线程 ID system-value 速查 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[a-metric-for-memory-fragmentation]] | 用 √Σf² / Σf 打分的内存碎片度量公式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-d3d12-resource-alignment]] | Sawicki：D3D12 资源对齐的秘密（2020） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-compute-shader-sv-cheat-sheet]] | Sawicki：compute shader system-value 速查（2020） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-memory-fragmentation-metric]] | Sawicki：内存碎片度量公式（2022） |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-66 Worker GM (asawicki.info 早期 ×3)\n\n处理 3 篇 Adam Sawicki 早期 D3D12/compute 文章。新增 3 概念页（d3d12-resource-alignment、compute-shader-dispatch-ids、a-metric-for-memory-fragmentation）、3 source 摘要。人物页 adam-sawicki 追加 3 条 sources 与 2 条相关概念链接。全 ingest 无 skip。"
+}

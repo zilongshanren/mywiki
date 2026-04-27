@@ -1,0 +1,99 @@
+{
+  "batch_id": "batch-w79-ib",
+  "agent_note": "Niklas Frykholm / bitsquid 2011 Q1-Q2, 5 files. Skip 1 (no-content GDC placeholder + spam). 4 ingested: expression language, collaboration/merging, extreme bug hunting, universal undo/copy-paste. The merge + undo/copy-paste posts further build out the existing guid-object-database-schema concept; patched rather than duplicated.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-03-08_bitsquid-tech-benefits-of-data-driven-renderer.md",
+      "status": "skipped_offtopic",
+      "reason": "Post body is only a link to a GDC 2011 video recording plus spam comments; no extractable technical content."
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-03-13_a-tiny-expression-language.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-tiny-expression-language",
+      "title": "A Tiny Expression Language"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-03-27_collaboration-and-merging.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-collaboration-and-merging",
+      "title": "Collaboration and Merging"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-04-12_extreme-bug-hunting.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-extreme-bug-hunting",
+      "title": "Extreme Bug Hunting"
+    },
+    {
+      "path": "raw/articles/bitsquid.blogspot.com/2011-04-26_universal-undo-copy-and-paste.md",
+      "status": "ingested",
+      "source_slug": "bitsquid-universal-undo-copy-paste",
+      "title": "Universal Undo, Copy and Paste"
+    }
+  ],
+  "concepts_created": [
+    "tiny-expression-language",
+    "memory-corruption-bug-hunting"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "bitsquid-tiny-expression-language",
+    "bitsquid-collaboration-and-merging",
+    "bitsquid-extreme-bug-hunting",
+    "bitsquid-universal-undo-copy-paste"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/game-development/guid-object-database-schema.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-collaboration-and-merging]]\n- [[sources/bitsquid-universal-undo-copy-paste]]"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bitsquid-tiny-expression-language]]\n- [[sources/bitsquid-collaboration-and-merging]]\n- [[sources/bitsquid-extreme-bug-hunting]]\n- [[sources/bitsquid-universal-undo-copy-paste]]"
+    },
+    {
+      "file": "wiki/people/niklas-frykholm.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tiny-expression-language]] — 给美术用的 stack-VM 表达式求值器\n- [[memory-corruption-bug-hunting]] — 只在 release/PS3 崩的那种 bug 的系统化狩猎方法"
+    },
+    {
+      "file": "wiki/game-development/json-3-way-merge.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/bitsquid-collaboration-and-merging]] — 把同一思路再往前推一步：merging 就是协作本身"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏引擎（wiki/game-engines/）",
+      "row": "| [[memory-corruption-bug-hunting]] | Bitsquid：release-only / 平台相关 / 低复现率的内存破坏 bug 系统化狩猎流程 |"
+    },
+    {
+      "category_header": "## 编程语言与理论（wiki/programming-languages/）",
+      "row": "| [[tiny-expression-language]] | Bitsquid：给美术用的 stack-VM + RPN 表达式求值器，含 shunting-yard 编译与常量折叠 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-tiny-expression-language]] | Frykholm 2011：一个小巧的表达式语言 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-collaboration-and-merging]] | Frykholm 2011：协作的核心是合并，不是数据库 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-extreme-bug-hunting]] | Frykholm 2011：极限 bug 狩猎——只在 release / 只在 PS3 / 不同调用栈 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bitsquid-universal-undo-copy-paste]] | Frykholm 2011：基于 GUID 对象库 schema 的通用 Undo / Copy / Paste |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-79 Worker IB (bitsquid.blogspot.com 2011 Q1-Q2 x5)\n\n处理 5 篇 Niklas Frykholm / bitsquid 2011 年博客。1 篇跳过（仅 GDC 视频外链加 spam）；4 篇入库：表达式语言（新概念 tiny-expression-language）、协作与合并（patch guid-object-database-schema）、极限 bug 狩猎（新概念 memory-corruption-bug-hunting）、通用 Undo/Copy/Paste（patch guid-object-database-schema）。新增 2 概念 + 4 source 摘要。"
+}

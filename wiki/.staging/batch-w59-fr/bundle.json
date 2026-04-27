@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch-w59-fr",
+  "agent_note": "Wave-59 Worker FR: 16bpp.net 性能连载（define-private-public / Benjamin 的 PSRayTracing 性能实验）。原始文件 6 份，2 个 -2.md 月索引重复自动 skip，gotta-go-fast 作为 quicker-trig 的 5 天内 follow-up 合并进同一个 source summary（内容是 Estrin's Scheme 对同一个 asin_cg 的进一步优化）。净产出：3 ingest + 3 skip。新增 6 concept + 1 people + 3 source。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/16bpp.net/2025-01-28_16bpp-net-blog-when-greedy-algorithms-can-be-faster.md",
+      "status": "ingested",
+      "source_slug": "16bpp-greedy-vs-analytical",
+      "title": "When Greedy Algorithms Can Be Faster"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2025-11-03_the-hypothesis.md",
+      "status": "ingested",
+      "source_slug": "16bpp-free-functions-hypothesis",
+      "title": "The Hypothesis (Free Functions Don't Change Performance Much)"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2026-03-11_quicker-trig.md",
+      "status": "ingested",
+      "source_slug": "16bpp-quicker-trig-asin-cg",
+      "title": "Quicker Trig (Faster asin Was Hiding in Plain Sight)"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2025-01-28_16bpp-net-blog-when-greedy-algorithms-can-be-faster-2.md",
+      "status": "skipped_duplicate",
+      "reason": "monthly-index 重复抓取，与 2025-01-28 主文件内容一致"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2026-03-11_quicker-trig-2.md",
+      "status": "skipped_duplicate",
+      "reason": "monthly-index 重复抓取，与 2026-03-11_quicker-trig.md 内容一致"
+    },
+    {
+      "path": "raw/articles/16bpp.net/2026-03-16_gotta-go-fast.md",
+      "status": "skipped_duplicate",
+      "reason": "发布后 5 天的 follow-up，Estrin's Scheme 继续优化同一 asin_cg；内容合并进 sources/16bpp-quicker-trig-asin-cg.md 的 Part 2 与新概念 [[estrin-scheme]]，不另开 source summary"
+    }
+  ],
+  "concepts_created": [
+    "rejection-vs-analytical-sampling",
+    "benchmark-methodology-end-to-end",
+    "free-vs-member-functions-performance",
+    "asin-cg-approximation",
+    "estrin-scheme",
+    "pade-approximants",
+    "psraytracing"
+  ],
+  "people_created": ["16bpp"],
+  "source_summaries_created": [
+    "16bpp-greedy-vs-analytical",
+    "16bpp-free-functions-hypothesis",
+    "16bpp-quicker-trig-asin-cg"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/inversion-sampling-prng.md",
+      "operation": "append_to_section",
+      "section": "## 与其他采样页的关系",
+      "content": "- [[rejection-vs-analytical-sampling]] — 实测结果完全反直觉：打开 `-O1` 后拒绝采样普遍快于解析解"
+    },
+    {
+      "file": "wiki/computer-systems/faster-math-functions.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[asin-cg-approximation]] —— Nvidia Cg 文档里躺了 13 年的 Abramowitz & Stegun 4.4.45 实现，Minimax 3 阶 asin 近似\n- [[pade-approximants]] — 好于 Taylor、还不及 Minimax 的中间台阶\n- [[estrin-scheme]] — 把 Horner 多项式求值改写成可并行的 ILP 风格，Intel 老 i7 上 +17%\n- [[benchmark-methodology-end-to-end]] — 「运行时间永远比数指令更可靠」的一套方法论"
+    },
+    {
+      "file": "wiki/rendering/fp64-sincos-minimax.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[asin-cg-approximation]] — 同是 Minimax 3 阶近似，来源是 1964 年 Abramowitz-Stegun 4.4.45，Nvidia Cg 2012 年打包"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rejection-vs-analytical-sampling]] | 单位球内均匀采样：打开 -O1 后拒绝采样反超解析解 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[asin-cg-approximation]] | Nvidia Cg 文档里的 Abramowitz-Stegun 4.4.45 Minimax asin 近似 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[psraytracing]] | 16bpp.net 的 C++ 路径追踪器，各种性能实验的测试床 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[benchmark-methodology-end-to-end]] | 小 benchmark 不能代替端到端：矩阵测试、优化打开再测、2% 噪声阈值 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[estrin-scheme]] | 代数重排 Horner 以缩短依赖链，给乱序 CPU 做并行多项式求值 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[free-vs-member-functions-performance]] | 2017 年 Klaus 主张的「free function 更快」8 年后被重测：基本是噪声 |"
+    },
+    {
+      "category_header": "## 编程语言基础（wiki/programming-languages/）",
+      "row": "| [[pade-approximants]] | 有理函数逼近 Taylor 级数，介于 Taylor 与 Minimax 之间的中间台阶 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[16bpp]] | 16BPP.net 博主，PSRayTracing 作者，靠全矩阵 benchmark 重测 C++ 性能主张 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/16bpp-greedy-vs-analytical]] | 16BPP：拒绝采样 vs 解析采样，开 O1 后拒绝胜 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/16bpp-free-functions-hypothesis]] | 16BPP：重测 Klaus 2017「free function 更快」主张 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/16bpp-quicker-trig-asin-cg]] | 16BPP：从 Taylor/Padé 到 Nvidia Cg Minimax + Estrin 的 asin 近似优化历程 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-59 Worker FR (16bpp.net ×3)\n\n处理 16bpp.net 性能连载 3 篇独立文章 + 2 个月索引重复 + 1 篇 5 天内 follow-up（gotta-go-fast 合并进 quicker-trig）。新增 6 concept（rejection-vs-analytical-sampling、benchmark-methodology-end-to-end、free-vs-member-functions-performance、asin-cg-approximation、estrin-scheme、pade-approximants、psraytracing 共 7 个）+ 1 人物（16bpp）+ 3 source。核心主题：用矩阵 benchmark 重测 C++ 性能老主张，拒绝采样在 -O1 后反超解析解、Nvidia Cg 的 Abramowitz-Stegun asin_cg + Estrin 重写、Synfig 上 free function 对性能无影响。"
+}

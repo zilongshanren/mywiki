@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch-w98-kh",
+  "agent_note": "Wave-98 Worker KH: 5 hacksoflife.blogspot.com posts from Ben Supnik (May-Oct 2013). Mix of GPU perf audit, OpenGL hint-bit snark, PowerVR TDR speculation, a full BrickSmith speculative GPU-occlusion writeup, and a 3D mouse-picking coordinate-space comparison. Ben Supnik page already exists; appended 5 source links + 5 new concept links.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-05-10_moving-the-needle-a-quick-audit-of-the-7970.md",
+      "status": "ingested",
+      "source_slug": "supnik-moving-the-needle-7970",
+      "title": "Moving the Needle - a Quick Audit of the 7970"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-07-22_the-smell-of-victory.md",
+      "status": "ingested",
+      "source_slug": "supnik-smell-of-victory",
+      "title": "The Smell of Victory"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-08-25_what-does-gpus-returnguiltyforhardwarerestart-mean.md",
+      "status": "ingested",
+      "source_slug": "supnik-gpus-returnguilty-restart",
+      "title": "What Does gpus_ReturnGuiltyForHardwareRestart Mean?"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-08-31_theoretical-engineering-occlusion-culling-for-bricksmith.md",
+      "status": "ingested",
+      "source_slug": "supnik-bricksmith-speculative-occlusion",
+      "title": "Theoretical Engineering: Occlusion Culling for BrickSmith"
+    },
+    {
+      "path": "raw/articles/hacksoflife.blogspot.com/2013-10-03_3-d-mouse-testing.md",
+      "status": "ingested",
+      "source_slug": "supnik-3d-mouse-testing",
+      "title": "3-d Mouse Testing"
+    }
+  ],
+  "concepts_created": [
+    "engine-integrated-gpu-counter-probes",
+    "opengl-hint-bit-irrelevance",
+    "gpu-hang-deferred-fault-debugging",
+    "bricksmith-speculative-gpu-occlusion",
+    "mouse-picking-coordinate-spaces"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "supnik-moving-the-needle-7970",
+    "supnik-smell-of-victory",
+    "supnik-gpus-returnguilty-restart",
+    "supnik-bricksmith-speculative-occlusion",
+    "supnik-3d-mouse-testing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[engine-integrated-gpu-counter-probes]] —— 2013-05 把 GPU performance counter 织进引擎自己的 profiler\n- [[opengl-hint-bit-irrelevance]] —— 2013-07 ARB_buffer_storage 规范自嘲 hint bit 终将被驱动忽略\n- [[gpu-hang-deferred-fault-debugging]] —— 2013-08 PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 的异步越界崩溃复盘\n- [[bricksmith-speculative-gpu-occlusion]] —— 2013-08 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由\n- [[mouse-picking-coordinate-spaces]] —— 2013-10 3D 鼠标拾取三种坐标空间与近裁剪面陷阱"
+    },
+    {
+      "file": "wiki/people/ben-supnik.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/supnik-moving-the-needle-7970]]\n- [[sources/supnik-smell-of-victory]]\n- [[sources/supnik-gpus-returnguilty-restart]]\n- [[sources/supnik-bricksmith-speculative-occlusion]]\n- [[sources/supnik-3d-mouse-testing]]"
+    },
+    {
+      "file": "wiki/rendering/bricksmith-instancing-pipeline.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-speculative-gpu-occlusion]] —— 2013-08 Supnik 基于本 pipeline 推演的 GPU 遮挡剔除全方案与四条不发车理由"
+    },
+    {
+      "file": "wiki/rendering/occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-speculative-gpu-occlusion]] —— 2013 Supnik 在 vertex-bound LDraw 上的完整 GPU culling 推演（+ 四条不发车理由）"
+    },
+    {
+      "file": "wiki/rendering/gpu-based-occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-speculative-gpu-occlusion]] —— 2013 Supnik 早期 GS + transform feedback 推演版，本文 compute + prefix scan 路线正好解决其第三条 show-stopper"
+    },
+    {
+      "file": "wiki/rendering/bottleneck-analysis.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[bricksmith-speculative-gpu-occlusion]] —— 罕见的纯顶点瓶颈案例\n- [[engine-integrated-gpu-counter-probes]] —— 外部 profiler 不够用时的补位"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[engine-integrated-gpu-counter-probes]] | 把 NV/AMD GPU performance counter 织进引擎自己的子系统 profiler |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[opengl-hint-bit-irrelevance]] | ARB_buffer_storage 规范原文承认 hint bit 终将被驱动忽略 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[gpu-hang-deferred-fault-debugging]] | PowerVR SGX gpus_ReturnGuiltyForHardwareRestart 异步越界崩溃的调试范式 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[bricksmith-speculative-gpu-occlusion]] | 2013 BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由（vertex-bound 反面案例） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mouse-picking-coordinate-spaces]] | 3D 鼠标拾取三种坐标空间 + walk-through 相机下近裁剪面陷阱 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-moving-the-needle-7970]] | Supnik 2013-05：X-Plane 在 7970 上 PerfStudio 审计，仍是 CPU bound |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-smell-of-victory]] | Supnik 2013-07：ARB 自嘲 CLIENT_STORAGE_BIT 是 silly hint |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-gpus-returnguilty-restart]] | Supnik 2013-08：iOS PowerVR 异步越界崩溃 speculative engineering |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-bricksmith-speculative-occlusion]] | Supnik 2013-08：BrickSmith GPU 遮挡剔除完整推演 + 四条不发车理由 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/supnik-3d-mouse-testing]] | Supnik 2013-10：3D 鼠标拾取三种坐标空间对照 + 近裁剪面 clip fix |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-98 Worker KH (hacksoflife/Supnik 2013 ×5)\n\n处理 5 篇 Ben Supnik 2013 年 hacksoflife.blogspot.com 文章（7970 PerfStudio 审计、OpenGL hint-bit 规范自嘲、PowerVR SGX 异步崩溃、BrickSmith GPU 遮挡剔除推演、3D 鼠标拾取三空间对照）。新增 5 概念页（engine-integrated-gpu-counter-probes, opengl-hint-bit-irrelevance, gpu-hang-deferred-fault-debugging, bricksmith-speculative-gpu-occlusion, mouse-picking-coordinate-spaces）+ 5 source 摘要。ben-supnik 人物页追加 5 条相关 + 5 条 Sources；bricksmith-instancing-pipeline / occlusion-culling / gpu-based-occlusion-culling / bottleneck-analysis 各追加交叉引用。"
+}

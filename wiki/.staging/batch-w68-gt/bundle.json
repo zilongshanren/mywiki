@@ -1,0 +1,27 @@
+{
+  "batch_id": "batch-w68-gt",
+  "agent_note": "Kostas Anagnostou 博客首两篇 + Warren Moore 2015 视频公告，全部为非技术内容，整批 skip。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-01-02_about-me.md",
+      "status": "skipped_offtopic",
+      "reason": "Kostas Anagnostou 的个人 About 页，纯简历（Playground Games / Unit2Games / Radiant Worlds / Blitz / Rare / Warwick PhD），无技术内容。"
+    },
+    {
+      "path": "raw/articles/interplayoflight.wordpress.com/2013-01-02_let-there-be-light.md",
+      "status": "skipped_offtopic",
+      "reason": "Interplay of Light 博客的 hello-world 首帖，仅宣告 blog 定位为 'scratchpad for little experiments'，无任何具体技术内容。"
+    },
+    {
+      "path": "raw/articles/metalbyexample.com/2015-01-11_video-an-introduction-to-3d-graphics-with-metal-in-swift.md",
+      "status": "skipped_offtopic",
+      "reason": "Warren Moore 2014 年在 Realm Swift User Group 演讲的视频公告帖，仅含外链（现已失效）与评论区对话，博客本身不包含 transcript 或技术要点。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-19] ingest | Wave-68 Worker GT (Kostas 早期 + Warren Moore 视频)\n\n3 篇全部 skip：Kostas 的 About 页 + 博客首帖（hello-world，无技术内容），Warren Moore 2015 视频公告（外链失效，博客无 transcript）。零新增页面。"
+}

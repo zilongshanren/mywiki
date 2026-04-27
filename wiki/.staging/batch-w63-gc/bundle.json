@@ -1,0 +1,60 @@
+{
+  "batch_id": "batch-w63-gc",
+  "agent_note": "benui.ca (Ben UI) — UE5 UI expert. 2 篇 ingest（ui-as-communication、ux-opinions），3 篇 skip（ui-resources 纯链接列表、unannounced-project 简历占位、why-i-refuse-ai 观点文非技术）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/benui.ca/2026-01-01_ui-as-communication.md",
+      "status": "ingested",
+      "source_slug": "benui-ui-as-communication",
+      "title": "UI as Communication"
+    },
+    {
+      "path": "raw/articles/benui.ca/2026-01-01_ux-opinions.md",
+      "status": "ingested",
+      "source_slug": "benui-ux-opinions",
+      "title": "UX Opinions"
+    },
+    {
+      "path": "raw/articles/benui.ca/2026-01-01_ui-resources.md",
+      "status": "skipped_offtopic",
+      "reason": "纯外部链接清单（UI 资源书单、Discord），无实质技术内容"
+    },
+    {
+      "path": "raw/articles/benui.ca/2026-01-01_unannounced-project.md",
+      "status": "skipped_offtopic",
+      "reason": "个人简历占位页（Brace Yourself Games 经历），无技术展开"
+    },
+    {
+      "path": "raw/articles/benui.ca/2026-01-01_why-i-refuse-to-use-ai.md",
+      "status": "skipped_offtopic",
+      "reason": "关于 AI/LLM 的个人观点文，与图形/引擎/UE UI 领域无技术关联"
+    }
+  ],
+  "concepts_created": ["ui-as-communication", "ux-opinions-checklist"],
+  "people_created": ["ben-ui"],
+  "source_summaries_created": ["benui-ui-as-communication", "benui-ux-opinions"],
+  "existing_page_patches": [],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ui-as-communication]] | Ben UI：UI 作为把想法搬进玩家脑袋的通道，十种传达媒介与优先级 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[ux-opinions-checklist]] | Ben UI：按钮/快捷键/输入/文字/桌面软件的 RFC 2119 级 UX 清单 |"
+    },
+    {
+      "category_header": "## 人物（wiki/people/）",
+      "row": "| [[ben-ui]] | benui.ca，UE5 UI/UX 专家，前 Brace Yourself Games Lead Programmer |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/benui-ui-as-communication]] | Ben UI：UI 作为传达，十种媒介与冗余原则 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/benui-ux-opinions]] | Ben UI：must/should/may 级 UX 意见清单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-19] ingest | Wave-63 Worker GC (benui.ca ×5)\n\n处理 5 篇 benui.ca（Ben UI，UE5 UI 专家）。ingest 2 篇（ui-as-communication、ux-opinions），新增 2 概念页（ui-as-communication、ux-opinions-checklist）、1 人物页（ben-ui）、2 source 摘要。skip 3 篇：ui-resources 纯外链书单、unannounced-project 简历占位、why-i-refuse-to-use-ai 为 AI 观点文（非技术）。"
+}
