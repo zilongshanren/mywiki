@@ -36,3 +36,4 @@ sources: 1
 ## Sources
 
 - [[sources/chipsandcheese-zen2-cinebench-analysis]]
+- [[sources/chipsandcheese-zen5-hot-chips]]

@@ -585,3 +585,5 @@ advanced-table-constraints
 celtic-knots
 slige-doom-level-gen
 rectangle-subdivisions
+constrained-beam-search-llm
+maxwell-architecture

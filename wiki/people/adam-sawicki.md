@@ -34,6 +34,7 @@ sources: 7
 - [[d3d12-resource-binding]]
 - [[d3d12-resource-alignment]]
 - [[compute-shader-dispatch-ids]]
+- [[d3d12-hardware-feature-adoption]]
 
 ## Sources
 - [[sources/asawicki-graphics-apis-yesterday-today]]
@@ -46,3 +47,4 @@ sources: 7
 - [[sources/asawicki-dx12-clearuav-behavior]]
 - [[sources/asawicki-app-startup-5min-fix]]
 - [[sources/asawicki-dx12-all-sources]]
+- [[sources/asawicki-gpu-state-2025]]

@@ -1,7 +1,7 @@
 ---
 tags: [cpu, amd, zen5, microarchitecture, x86, avx512, ryzen9000]
 date: 2026-04-27
-sources: 3
+sources: 4
 ---
 
 # Zen 5 微架构
@@ -58,3 +58,4 @@ Strix Point APU 实现了 12 核 Zen 5，分为两个集群：高性能集群（
 - [[sources/chipsandcheese-zen5-clustered-decode]]
 - [[sources/chipsandcheese-zen5-avx512-freq]]
 - [[sources/chipsandcheese-zen5-gaming]]
+- [[sources/chipsandcheese-zen5-hot-chips]]

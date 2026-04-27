@@ -530,3 +530,6 @@ boris-celtic-knots
 boris-celtic-knots-twills
 boris-slige-doom-level-gen
 boris-rectangle-subdivisions
+boris-constrained-text-gen-ai
+boris-voronatorsharp
+chipsandcheese-maxwell-nvidia

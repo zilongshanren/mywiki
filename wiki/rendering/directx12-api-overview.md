@@ -37,3 +37,4 @@ DX12 还扩展至 GPGPU 领域（[[gpgpu-compute-simt-model]]）和硬件光线�
 
 - [[sources/alain-raw-dx12]]
 - [[sources/asawicki-dx12-all-sources]]
+- [[sources/asawicki-gpu-state-2025]] —— 2025 年底各 D3D12 特性实际覆盖率数据与最低需求选取策略

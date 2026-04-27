@@ -36,3 +36,4 @@ Apex 的结论简洁：AMD dGPU 在 Steam 硬件调查里约占 1/6（含集显�
 ## Sources
 
 - [[sources/chipsandcheese-gcn-eol]]
+- [[sources/asawicki-gpu-state-2025]] —— 2025 年底 D3D12 硬件覆盖率调查：AMD RDNA1/2 进入独立驱动分支，Turing EOL 暂不临近，Intel Xe 时间线最难预测

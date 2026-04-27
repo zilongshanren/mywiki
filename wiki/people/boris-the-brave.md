@@ -61,6 +61,8 @@ sources: 56
 - [[game-development/slige-doom-level-gen]]
 - [[game-development/rectangle-subdivisions]]
 - [[game-development/constrained-beam-search-llm]]
+- [[game-engines/unity-guid-fileid]]
+- [[indie-game-dev-rhythm]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -129,3 +131,6 @@ sources: 56
 - [[sources/boris-rectangle-subdivisions]]
 - [[sources/boris-constrained-text-gen-ai]]
 - [[sources/boris-voronatorsharp]]
+- [[sources/boris-lucky-fluke-postmortem]]
+- [[sources/boris-announcing-sylves]]
+- [[sources/boris-unity-guids]]

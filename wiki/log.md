@@ -1646,3 +1646,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-132 Worker OE (chipsandcheese.com ×5)
 
 处理 5 篇，1 篇入库（maxwell-architecture），4 篇重复。
+
+## [2026-04-27] ingest | Wave-133 Worker OF (chipsandcheese ×5)
+
+4 篇重复，1 篇入库（TTPoE 协议）。新建 ttpoe-protocol 概念页。
+
+## [2026-04-27] ingest | Wave-133 Worker OG (chipsandcheese hot chips 2024 ×5)
+
+2 篇重复，3 篇入库（zen5-hot-chips、ampereone、telum-ii）。新建 3 概念页（ampereone-microarchitecture、telum-ii-microarchitecture、ibm-virtual-cache-hierarchy）。
+
+## [2026-04-27] ingest | Wave-133 Worker OH (boristhebrave ×3 + asawicki ×2)
+
+4 篇入库，1 篇重复（asawicki-dx12-all-sources）。新建 d3d12-hardware-feature-adoption、unity-guid-fileid 概念页。

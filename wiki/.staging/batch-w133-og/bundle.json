@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w133-og",
+  "agent_note": "5 Chips and Cheese CPU 架构文章（Hot Chips 2024 系列）。Zen 5 Hot Chips 详解、AmpereOne 服务器密度核心、Zen 5 各变体时钟对比、IBM Telum II 大型机、Grace Hopper APU。其中 zen5-variants 与 grace-hopper 的 source 摘要页此前已存在，跳过重复创建。新建 3 个 source 摘要页和 3 个 concept 页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-09-15_discussing-amds-zen-5-at-hot-chips-2024.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-zen5-hot-chips",
+      "title": "Discussing AMD's Zen 5 at Hot Chips 2024"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-29_ampereone-at-hot-chips-2024-maximizing-density.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ampereone",
+      "title": "AmpereOne at Hot Chips 2024: Maximizing Density"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-20_zen-5-variants-and-more-clock-for-clock.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-zen5-variants.md 已存在，内容完整，无需重建"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-09-08_telum-ii-at-hot-chips-2024-mainframe-with-a-unique-caching-s.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-telum-ii",
+      "title": "Telum II at Hot Chips 2024: Mainframe with a Unique Caching Strategy"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-31_grace-hopper-nvidias-halfway-apu.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-grace-hopper.md 已存在，内容完整，无需重建"
+    }
+  ],
+  "concepts_created": [
+    "ampereone-microarchitecture",
+    "telum-ii-microarchitecture",
+    "ibm-virtual-cache-hierarchy"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-zen5-hot-chips",
+    "chipsandcheese-ampereone",
+    "chipsandcheese-telum-ii"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-hot-chips]]"
+    },
+    {
+      "file": "wiki/computer-systems/zen5-microarchitecture.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 4"
+    },
+    {
+      "file": "wiki/computer-systems/grace-hopper-cpu-gpu-system.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-grace-hopper]]"
+    },
+    {
+      "file": "wiki/computer-systems/cpu-scheduler-design.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-zen5-hot-chips]]"
+    },
+    {
+      "file": "wiki/computer-systems/branch-predictor-design.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-ampereone]]\n- [[sources/chipsandcheese-zen5-hot-chips]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/ampereone-microarchitecture]] | Ampere Computing 自研服务器核：密度优先、无 SMT、chiplet 设计 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/telum-ii-microarchitecture]] | IBM 大型机处理器 Telum II：8 核 5.5 GHz、360 MB 片上缓存、虚拟 L3/L4 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/ibm-virtual-cache-hierarchy]] | IBM 虚拟多级缓存：饱和度指标驱动的动态 L3/L4 虚拟化机制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-zen5-hot-chips]] | Chester Lam：Zen 5 Hot Chips 2024 深度报道（工程师侧谈 + 调度器 / 微操作缓存细节）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ampereone]] | Chester Lam：AmpereOne Hot Chips 2024（密度优化自研服务器核微架构）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-telum-ii]] | Chester Lam：Telum II Hot Chips 2024（IBM 大型机虚拟缓存层级）|"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-133 Worker OG (chipsandcheese.com ×5, Hot Chips 2024)\n\n处理 5 篇 chipsandcheese.com Hot Chips 2024 系列文章。跳过 2 篇（zen5-variants、grace-hopper 的 source 摘要页已存在）。新建 3 个 source 摘要页（chipsandcheese-zen5-hot-chips、chipsandcheese-ampereone、chipsandcheese-telum-ii）和 3 个 concept 页（ampereone-microarchitecture、telum-ii-microarchitecture、ibm-virtual-cache-hierarchy）。zen5-microarchitecture 追加新 source 引用。"
+}

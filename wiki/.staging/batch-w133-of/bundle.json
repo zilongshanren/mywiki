@@ -1,0 +1,58 @@
+{
+  "batch_id": "batch-w133-of",
+  "agent_note": "5 个 chipsandcheese 文章。前 4 篇中的 3 篇（Zen 5 BPU、Strix Point、9950X 桌面版）以及第 5 篇 Adreno X1 均已有对应 source 页和 concept 页存在，仅记录为已知重复并补充 add_source_link patch。唯一真正新增的是 Source 4 TTPoE（Hot Chips 2024），已新建 concept 页 ttpoe-protocol 和 source 摘要页 chipsandcheese-ttpoe。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-26_zen-5s-2-ahead-branch-predictor-unit-how-a-30-year-old-idea.md",
+      "status": "skipped_duplicate",
+      "reason": "Source page wiki/sources/chipsandcheese-zen5-branch-predictor.md 已存在，concept 页 wiki/computer-systems/zen5-2ahead-branch-predictor.md 已存在，本批次不重建",
+      "source_slug": "chipsandcheese-zen5-branch-predictor"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-10_amds-strix-point-zen-5-hits-mobile.md",
+      "status": "skipped_duplicate",
+      "reason": "Source page wiki/sources/chipsandcheese-strix-point-zen5.md 已存在，concept 页 wiki/computer-systems/strix-point-soc.md 和 wiki/computer-systems/zen5-microarchitecture.md 均已存在",
+      "source_slug": "chipsandcheese-strix-point-zen5"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-14_amds-ryzen-9950x-zen-5-on-desktop.md",
+      "status": "skipped_duplicate",
+      "reason": "Source page wiki/sources/chipsandcheese-zen5-desktop.md 已存在，涵盖桌面版 Zen 5 内容",
+      "source_slug": "chipsandcheese-zen5-desktop"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-08-27_teslas-ttpoe-at-hot-chips-2024-replacing-tcp-for-low-latency.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ttpoe",
+      "title": "Tesla's TTPoE at Hot Chips 2024: Replacing TCP for Low Latency Applications"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-04_the-snapdragon-x-elites-adreno-igpu.md",
+      "status": "skipped_duplicate",
+      "reason": "Source page wiki/sources/chipsandcheese-sde-adreno.md 已存在，concept 页 wiki/rendering/adreno-x1-igpu-architecture.md 已存在",
+      "source_slug": "chipsandcheese-sde-adreno"
+    }
+  ],
+  "concepts_created": ["ttpoe-protocol"],
+  "people_created": [],
+  "source_summaries_created": ["chipsandcheese-ttpoe"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/tesla-dojo-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-ttpoe]] — TTPoE 传输协议（Hot Chips 2024）"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/ttpoe-protocol]] | Tesla TTPoE：为超算内网替换 TCP 的低延迟以太网传输协议 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ttpoe]] | Chester Lam：Tesla TTPoE at Hot Chips 2024 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-133 Worker OF (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。4 篇已有对应 source/concept 页（Zen 5 BPU、Strix Point 移动版、9950X 桌面版、Adreno X1），标记为 skipped_duplicate。新增 1 篇：Tesla TTPoE（Hot Chips 2024），新建 concept 页 computer-systems/ttpoe-protocol 和 source 摘要 sources/chipsandcheese-ttpoe；并为 tesla-dojo-microarchitecture 追加 source 链接。"
+}

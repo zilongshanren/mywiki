@@ -89,3 +89,4 @@ Kostas 演示的 "shadowmask 三级分类"（[[culling]] → hi-z raymarch → �
 - [[sources/interplay-workgraphs-intro]]
 - [[sources/interplay-workgraphs-performance]]
 - [[sources/anteru-workgraph-spmv]]
+- [[sources/asawicki-gpu-state-2025]] —— Work Graphs 在有活跃驱动支持的 GPU 中覆盖率 74.1%（2025 年底数据）

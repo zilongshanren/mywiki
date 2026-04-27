@@ -416,6 +416,11 @@ CAQA + CSAPP 的底层视角。
 | [[cortex-x925-microarchitecture]] | Arm X925 旗舰大核：10-wide，ROB ~525，SPEC 整数追平 Zen 5 / Lion Cove |
 | [[cpp-final-keyword-performance]] | C++ final 关键字性能实测：GCC 有益，Clang 有害，总体不可信赖 |
 | [[cpp-noexcept-keyword-performance]] | C++ noexcept 性能实测：整体接近噪声，vector 场景有条件受益 |
+| [[ttpoe-protocol]] | Tesla TTPoE：去除 TIME_WAIT 和握手，硬件 MAC 乱序退休，面向 AI 训练集群 |
+| [[ampereone-microarchitecture]] | Ampere AmpereOne：TAGE 预测器、无 SMT 密度优先、chiplet 设计，服务器 CPU |
+| [[telum-ii-microarchitecture]] | IBM Telum II：8 核 360 MB 片上缓存，虚拟 L3/L4 饱和度驱动 |
+| [[ibm-virtual-cache-hierarchy]] | IBM 大型机虚拟缓存层级：饱和度指标动态分配 L3/L4 |
+| [[d3d12-hardware-feature-adoption]] | D3D12 特性覆盖率 2025：各 GPU 世代在活跃驱动下的实测支持率 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -495,6 +500,7 @@ Game Engine Architecture（Jason Gregory）的核心概念。
 | [[hot-swap-pointer-patching]] | Pesce 2011：热重载的四种替代方案与它们为什么没赢过句柄 |
 | [[blender-euler-extrinsic-xyz-export]] | Blender XYZ Euler 约定与 X-Plane OBJ 导出顺序反转 |
 | [[rendering-engine-taxonomy]] | 渲染引擎分类学：9 维度描述上下文，非平凡问题只在具体上下文中有解 |
+| [[game-engines/unity-guid-fileid]] | Unity Asset GUID 与 FileID：本地 ID 寻址、meta 文件职责、冲突根因 |
 ## 实时渲染（wiki/rendering/）
 Real-Time Rendering + Custom SRP 的渲染管线知识。
 
@@ -2248,6 +2254,9 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-rectangle-subdivisions]] | Boris：不可约矩形细分的形式化枚举与应用 |
 | [[sources/boris-constrained-text-gen-ai]] | Boris：约束 LLM 生成用于游戏对话 |
 | [[sources/boris-voronatorsharp]] | Boris：VoronatorSharp C# Voronoi/Delaunay 库 |
+| [[sources/boris-lucky-fluke-postmortem]] | Boris：Lucky Fluke 游戏 jam 开发后记 |
+| [[sources/boris-announcing-sylves]] | Boris：Sylves 程序化生成 .NET 网格库正式发布 |
+| [[sources/boris-unity-guids]] | Boris：Unity Asset GUID 与 FileID 内部寻址机制 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |
@@ -2610,6 +2619,7 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-dx12-root-signatures]] | Sawicki：D3D12 根签名的六种形式与转换 |
 | [[sources/asawicki-dx12-clearuav-behavior]] | Sawicki：ClearUAV 跨厂商行为实验记录 |
 | [[sources/asawicki-app-startup-5min-fix]] | Sawicki：Smart App Control 导致 5 分钟启动延迟的排查与修复 |
+| [[sources/asawicki-gpu-state-2025]] | Sawicki：2025 年底 D3D12 各特性硬件覆盖率调查 |
 | [[sources/c0de517e-nextgen-data]] | Pesce：渲染数据驱动本质，呼吁动画/AI借鉴 |
 | [[sources/c0de517e-push-updater-pattern]] | Pesce：Push Updater 模式，Space Marine 优化案例 |
 | [[sources/c0de517e-how-make-rendering-engine]] | Pesce：Sort-key 无状态渲染引擎架构参考汇总 |
@@ -2666,6 +2676,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-cortex-a72]] | Chester Lam：Cortex-A72 微架构，Graviton 一代集群分析 |
 | [[sources/chipsandcheese-kepler-architecture]] | Chester Lam：Kepler 架构深度解析，静态调度与 GCN 对比 |
 | [[sources/chipsandcheese-maxwell-nvidia]] | Chips and Cheese：Maxwell 架构分析，SM 精简与调度升级 |
+| [[sources/chipsandcheese-ttpoe]] | Tesla TTPoE Hot Chips 2024：专为 AI 训练集群设计的传输协议 |
+| [[sources/chipsandcheese-zen5-hot-chips]] | AMD Zen 5 Hot Chips 2024：调度器、FP 慢区、L1D 内幕 |
+| [[sources/chipsandcheese-ampereone]] | AmpereOne Hot Chips 2024：密度优化服务器核架构 |
+| [[sources/chipsandcheese-telum-ii]] | IBM Telum II Hot Chips 2024：大型机虚拟缓存 360 MB |
 | [[sources/chipsandcheese-sw26010-pro]] | Chester Lam：SW26010-Pro 超算处理器深度解析 |
 | [[sources/chipsandcheese-gcn-modernization]] | Chester Lam：GCN 架构历史与设计哲学 |
 | [[sources/chipsandcheese-cdna3]] | Chester Lam：AMD CDNA 3 计算架构全析 |

@@ -53,3 +53,4 @@ Dojo 展示了一种极端的"为特定工作负载剪裁"路线：牺牲通用�
 ## Sources
 
 - [[sources/chipsandcheese-tesla-dojo]]
+- [[sources/chipsandcheese-ttpoe]] — TTPoE 传输协议（Hot Chips 2024）
