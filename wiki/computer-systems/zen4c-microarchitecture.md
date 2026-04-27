@@ -43,3 +43,4 @@ AMD 的做法与 Intel 为 Alder Lake 设计 Gracemont 效率核心的策略截�
 
 - [[sources/chipsandcheese-ryzen-z1-rog-ally]]
 - [[sources/chipsandcheese-ps5-zen2-fpu]]
+- [[sources/chipsandcheese-bergamo-zen4c]] — Bergamo 双路系统实测

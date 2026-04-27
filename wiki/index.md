@@ -386,6 +386,11 @@ CAQA + CSAPP 的底层视角。
 | [[scoreboard-scheduling]] | Scoreboard 调度机制：CDC 6600 的依赖追踪方案，Tomasulo 算法的前身 |
 | [[npu-accelerator-design]] | NPU 加速器设计：MAC 阵列、scratchpad 内存、Intel NPU 3720 实测 |
 | [[loongson-historical-trajectory]] | 龙芯历代架构轨迹：2003-2024 年 IPC 尚可但频率长期落后 |
+| [[crestmont-microarchitecture]] | Intel Meteor Lake E-Core，Gracemont 渐进演进，6-wide 重命名，BTB 6144 条目 |
+| [[lion-cove-microarchitecture]] | Intel Lunar Lake P-Core，首次拆分整数/向量调度器，8-wide，新增 L0/L1 缓存层级 |
+| [[goldmont-plus-microarchitecture]] | Intel Atom Gemini Lake，3-wide OoO，过渡期架构，write-through L1D |
+| [[skymont-microarchitecture]] | Intel Lunar Lake E-Core，三簇解码 9-wide，ROB 416，4×128-bit 向量，Nanocode |
+| [[tegra-x1-video-engine]] | Nintendo Switch Tegra X1 专用视频引擎，HEVC 全支持 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1086,6 +1091,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[aaa-rendering-complexity]] | AAA 渲染复杂度的组织根源：技术无关，驱动力是竞争结构 |
 | [[rendering-innovation-metatechniques]] | 渲染创新元技法：Angelo Pesce 的十三条思维工具 |
 | [[adreno-640-architecture]] | Adreno 640（Snapdragon 855）：wave128 超宽向量、Tiled Rendering 低带宽优势 |
+| [[dynamic-occlusion-culling-roblox]] | Pesce/Roblox：全动态场景深度重投影 + 体素 occluder 数据库 |
+| [[remote-scene-approximation]] | Pesce：远端场景近似设计空间——从 octahedral impostor 到 Poisson 重建 |
+| [[adreno-x1-igpu-architecture]] | Qualcomm Snapdragon X Elite 的 Adreno X1 iGPU，四级缓存、GMEM 多用途复用 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2491,6 +2499,19 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-loongson-vs-west]] | Chester Lam：龙芯能否追赶西方设计——历史轨迹与结构性差距 |
 | [[sources/chipsandcheese-snapdragon855-igpu]] | Chester Lam：Snapdragon 855 Adreno 640 iGPU 微架构深度分析 |
 | [[sources/chipsandcheese-x86-doesnt-need-to-die]] | Chester Lam：x86 无需消亡——RISC vs CISC 争论为何已死 |
+| [[sources/c0de517e-dynamic-occlusion-culling]] | Pesce：Roblox 动态遮挡剔除半成品笔记 |
+| [[sources/c0de517e-ggx-parallax-correction]] | Pesce：GGX 视差修正距离—粗糙度拟合（2015 存档） |
+| [[sources/c0de517e-env-lighting-occlusion]] | Pesce：diffuse probe 驱动的 specular 光泄漏 clamping |
+| [[sources/c0de517e-remote-scene-approximation]] | Pesce：远端场景近似 R&D 日志，impostor 到 Poisson 重建 |
+| [[sources/c0de517e-well-architected-bad-code]] | Pesce：好架构 = 隔离，让坏代码能够存活 |
+| [[sources/chipsandcheese-crestmont]] | Chester Lam：Meteor Lake Crestmont E-Core 微架构测评 |
+| [[sources/chipsandcheese-lion-cove]] | George Cozma：Intel Lion Cove P-Core 架构预览 |
+| [[sources/chipsandcheese-goldmont-plus]] | Chester Lam：Intel Atom Goldmont Plus 历史评测 |
+| [[sources/chipsandcheese-skymont]] | Chester Lam & George Cozma：Intel Skymont E-Core 详解 |
+| [[sources/chipsandcheese-bergamo-zen4c]] | Chester Lam：AMD Bergamo Zen 4c 双路服务器测试 |
+| [[sources/chipsandcheese-mi300x-testing]] | Chester Lam 等：MI300X 全面微基准实测，vs H100 PCIe |
+| [[sources/chipsandcheese-sde-adreno]] | Chester Lam：Snapdragon X Elite Adreno X1 iGPU 深度评测 |
+| [[sources/chipsandcheese-tegra-x1-video]] | Chester Lam：Tegra X1 硬件视频引擎与 Maxwell NVENC 对比 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

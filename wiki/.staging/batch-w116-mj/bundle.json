@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch-w116-mj",
+  "agent_note": "5篇 chipsandcheese.com Intel Atom/P-Core 及 AMD Bergamo 文章，新增 4 概念页（crestmont、lion-cove、goldmont-plus、skymont）及 5 source 摘要。George Cozma 和 Chester Lam 均已有人物页，zen4c 也已有概念页，无需新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-05-13_meteor-lakes-e-cores-crestmont-makes-incremental-progress.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-crestmont",
+      "title": "Meteor Lake's E-Cores: Crestmont Makes Incremental Progress"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-04_intels-lion-cove-architecture-preview.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-lion-cove",
+      "title": "Intel's Lion Cove Architecture Preview"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-10_tracing-intels-atom-journey-goldmont-plus.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-goldmont-plus",
+      "title": "Tracing Intel's Atom Journey: Goldmont Plus"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-15_intel-details-skymont.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-skymont",
+      "title": "Intel Details Skymont"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-22_testing-amds-bergamo-zen-4c-spam.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-bergamo-zen4c",
+      "title": "Testing AMD's Bergamo: Zen 4c Spam"
+    }
+  ],
+  "concepts_created": [
+    "crestmont-microarchitecture",
+    "lion-cove-microarchitecture",
+    "goldmont-plus-microarchitecture",
+    "skymont-microarchitecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-crestmont",
+    "chipsandcheese-lion-cove",
+    "chipsandcheese-goldmont-plus",
+    "chipsandcheese-skymont",
+    "chipsandcheese-bergamo-zen4c"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/gracemont-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-crestmont]] — Crestmont vs Gracemont 对比测试\n- [[sources/chipsandcheese-goldmont-plus]] — Goldmont Plus 历史回顾（Tremont 前驱）\n- [[sources/chipsandcheese-skymont]] — Skymont 对 Gracemont 预测器带宽的引用"
+    },
+    {
+      "file": "wiki/computer-systems/tremont-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-goldmont-plus]] — Goldmont Plus 至 Tremont 演化分析"
+    },
+    {
+      "file": "wiki/computer-systems/clustered-decode-atom.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-crestmont]] — Crestmont 双簇实测\n- [[sources/chipsandcheese-skymont]] — Skymont 三簇 + Nanocode 扩展"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-lion-cove]] — Lion Cove（后继者）架构预览"
+    },
+    {
+      "file": "wiki/computer-systems/zen4c-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-bergamo-zen4c]] — Bergamo 双路系统实测，含单核与多核对比"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[crestmont-microarchitecture]] | Intel Meteor Lake E-Core，Gracemont 渐进演进，6-wide 重命名，BTB 6144 条目 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[lion-cove-microarchitecture]] | Intel Lunar Lake P-Core，首次拆分整数/向量调度器，8-wide，新增 L0/L1 缓存层级 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[goldmont-plus-microarchitecture]] | Intel Atom Gemini Lake，3-wide OoO，过渡期架构，write-through L1D |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[skymont-microarchitecture]] | Intel Lunar Lake E-Core，三簇解码 9-wide，ROB 416，4×128-bit 向量，Nanocode |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-crestmont]] | Chester Lam：Meteor Lake Crestmont E-Core 微架构测评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-lion-cove]] | George Cozma：Intel Lion Cove P-Core 架构预览 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-goldmont-plus]] | Chester Lam：Intel Atom Goldmont Plus 历史评测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-skymont]] | Chester Lam & George Cozma：Intel Skymont E-Core 详解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-bergamo-zen4c]] | Chester Lam：AMD Bergamo Zen 4c 双路服务器测试 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-116 Worker MJ (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 微架构文章（Crestmont、Lion Cove、Goldmont Plus、Skymont、Bergamo Zen 4c）。新增 4 概念页（crestmont-microarchitecture、lion-cove-microarchitecture、goldmont-plus-microarchitecture、skymont-microarchitecture）和 5 source 摘要。chester-lam、george-cozma、zen4c-microarchitecture 等均已存在，无重复创建。patch 覆盖 gracemont、tremont、clustered-decode-atom、golden-cove、zen4c 共 5 个现有页面。"
+}

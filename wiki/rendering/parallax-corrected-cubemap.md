@@ -58,3 +58,5 @@ ReflDirWS      *= BoxScale;
 - [[sources/interplay-parallax-corrected-cubemap]]
 - [[sources/c0de517e-envmap-wrong]] — parallax correction 与预卷积假设矛盾的分析
 - [[sources/c0de517e-parallax-corrected-followup]]
+- [[sources/c0de517e-ggx-parallax-correction]] — Pesce：GGX 波瓣距离—粗糙度修正推导（2015 存档，2023 公开）
+- [[sources/c0de517e-env-lighting-occlusion]] — Pesce：基于 diffuse probe 的 specular 上界 clamping，解决光泄漏

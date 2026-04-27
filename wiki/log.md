@@ -1450,3 +1450,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-115 Worker MH (chipsandcheese 2024-03~05 ×5)
 
 处理 5 篇 chipsandcheese.com 文章。新增 5 概念页（cdc-6600-architecture、scoreboard-scheduling、npu-accelerator-design、loongson-historical-trajectory、adreno-640-architecture）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-116 Worker MI (c0de517e 2023-2024 ×5)
+
+处理 5 篇 c0de517e 文章（含 3 篇 blogspot 迁移存根，内容来自 c0de517e.com）。新增 2 概念页（dynamic-occlusion-culling-roblox、remote-scene-approximation）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-116 Worker MJ (chipsandcheese 2024-05/06 Intel Atom + AMD ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（crestmont、lion-cove、goldmont-plus、skymont）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-116 Worker MK (chipsandcheese 2024-06/07 GPU ×3 + 2 missing)
+
+处理 5 篇 chipsandcheese.com 文章，3 篇 ingest，2 篇文件不存在。新增 2 概念页（adreno-x1-igpu-architecture、tegra-x1-video-engine）、3 source 摘要。

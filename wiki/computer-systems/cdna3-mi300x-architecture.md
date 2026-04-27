@@ -57,3 +57,4 @@ MI300A 将 6 枚 XCD + 24 个 Zen 4 核心集成在同一封装中，CPU 与 GPU
 ## Sources
 
 - [[sources/chipsandcheese-cdna3]]
+- [[sources/chipsandcheese-mi300x-testing]]

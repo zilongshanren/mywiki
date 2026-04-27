@@ -76,3 +76,4 @@ release 差不多，debug 差 57%。多数业内观察者（Elopez、Muratori、
 ## Sources
 
 - [[sources/elopezr-graphics-programmer-life]]
+- [[sources/c0de517e-well-architected-bad-code]] — Pesce：隔离才是让坏代码可以存活的真正条件

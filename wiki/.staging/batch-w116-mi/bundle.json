@@ -1,0 +1,114 @@
+{
+  "batch_id": "batch-w116-mi",
+  "agent_note": "5 篇 c0de517e.blogspot.com 文章。其中 3 篇（env-lighting-occlusion、remote-scene-approximation、well-architected-bad-code）在 blogspot 仅有迁移存根，实际内容已从 c0de517e.com 对应文件读取。所有文章均通过主题门控，全部 ingested。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-03-15_half-baked-dynamic-occlusion-culling.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-dynamic-occlusion-culling",
+      "title": "Half Baked: Dynamic Occlusion Culling"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-04-10_from-the-archive-notes-on-ggx-parallax-correction.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-ggx-parallax-correction",
+      "title": "From the Archive: Notes on GGX Parallax Correction"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-10-03_from-the-archive-notes-on-environment-lighting-occlusion.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-env-lighting-occlusion",
+      "title": "From the Archive: Notes on Environment Lighting Occlusion",
+      "note": "blogspot 存根，内容读自 raw/articles/c0de517e.com/2023-10-03_from-the-archive-notes-on-environment-lighting-occlusion.md"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-12-08_exploring-the-design-space-of-remote-scene-approximation.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-remote-scene-approximation",
+      "title": "Exploring the Design Space of Remote Scene Approximation",
+      "note": "blogspot 存根，内容读自 raw/articles/c0de517e.com/2023-09-05_exploring-the-design-space-of-remote-scene-approximation-a-w.md"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2024-01-17_the-art-and-joy-of-well-architected-bad-code.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-well-architected-bad-code",
+      "title": "The Art and Joy of Well-Architected Bad Code",
+      "note": "blogspot 存根，内容读自 raw/articles/c0de517e.com/2024-01-15_the-art-and-joy-of-well-architected-bad-code-and-a-website-u.md"
+    }
+  ],
+  "concepts_created": [
+    "dynamic-occlusion-culling-roblox",
+    "remote-scene-approximation"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-dynamic-occlusion-culling",
+    "c0de517e-ggx-parallax-correction",
+    "c0de517e-env-lighting-occlusion",
+    "c0de517e-remote-scene-approximation",
+    "c0de517e-well-architected-bad-code"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gpu-based-occlusion-culling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dynamic-occlusion-culling]] — Pesce：Roblox 全动态场景下深度重投影与体素 occluder 探索"
+    },
+    {
+      "file": "wiki/rendering/parallax-corrected-cubemap.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-ggx-parallax-correction]] — Pesce：GGX 波瓣距离—粗糙度修正推导（2015 存档，2023 公开）\n- [[sources/c0de517e-env-lighting-occlusion]] — Pesce：基于 diffuse probe 的 specular 上界 clamping，解决光泄漏"
+    },
+    {
+      "file": "wiki/software-design/clean-code-critique.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-well-architected-bad-code]] — Pesce：隔离才是让坏代码可以存活的真正条件"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[dynamic-occlusion-culling-roblox]]\n- [[remote-scene-approximation]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dynamic-occlusion-culling]]\n- [[sources/c0de517e-ggx-parallax-correction]]\n- [[sources/c0de517e-env-lighting-occlusion]]\n- [[sources/c0de517e-remote-scene-approximation]]\n- [[sources/c0de517e-well-architected-bad-code]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dynamic-occlusion-culling-roblox]] | Pesce/Roblox：全动态场景深度重投影 + 体素 occluder 数据库 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[remote-scene-approximation]] | Pesce：远端场景近似设计空间——从 octahedral impostor 到 Poisson 重建 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-dynamic-occlusion-culling]] | Pesce：Roblox 动态遮挡剔除半成品笔记 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-ggx-parallax-correction]] | Pesce：GGX 视差修正距离—粗糙度拟合（2015 存档） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-env-lighting-occlusion]] | Pesce：diffuse probe 驱动的 specular 光泄漏 clamping |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-remote-scene-approximation]] | Pesce：远端场景近似 R&D 日志，impostor 到 Poisson 重建 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-well-architected-bad-code]] | Pesce：好架构 = 隔离，让坏代码能够存活 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-116 Worker MI (c0de517e.blogspot.com ×5)\n\n处理 5 篇 c0de517e.blogspot.com 文章（3 篇为 blogspot 迁移存根，内容取自 c0de517e.com）。新增 2 概念页（dynamic-occlusion-culling-roblox、remote-scene-approximation）、0 人物页（angelo-pesce 已存在）、5 source 摘要（c0de517e-dynamic-occlusion-culling、c0de517e-ggx-parallax-correction、c0de517e-env-lighting-occlusion、c0de517e-remote-scene-approximation、c0de517e-well-architected-bad-code）。跳过 0 篇。"
+}

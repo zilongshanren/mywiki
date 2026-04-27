@@ -53,3 +53,6 @@ Chester 的比喻精准：Intel 像 300 AD 的罗马帝国——仍然强，但�
 
 - [[sources/chipsandcheese-gracemont]]
 - [[sources/chipsandcheese-alder-lake-caching-power]]
+- [[sources/chipsandcheese-crestmont]] — Crestmont vs Gracemont 对比测试
+- [[sources/chipsandcheese-goldmont-plus]] — Goldmont Plus 历史回顾
+- [[sources/chipsandcheese-skymont]] — Skymont 引用 Gracemont 预测器带宽

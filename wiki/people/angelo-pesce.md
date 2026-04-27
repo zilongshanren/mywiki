@@ -125,3 +125,8 @@ sources: 9
 - [[sources/c0de517e-cyberpunk-rendering]]
 - [[sources/c0de517e-rt-wont-simplify]]
 - [[sources/c0de517e-how-to-render]]
+- [[sources/c0de517e-dynamic-occlusion-culling]]
+- [[sources/c0de517e-ggx-parallax-correction]]
+- [[sources/c0de517e-env-lighting-occlusion]]
+- [[sources/c0de517e-remote-scene-approximation]]
+- [[sources/c0de517e-well-architected-bad-code]]

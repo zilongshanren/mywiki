@@ -35,3 +35,5 @@ AVX 场景下双簇吃亏：AVX 指令更长，fetch bandwidth 需求高。Grace
 
 - [[sources/chipsandcheese-tremont]]
 - [[sources/chipsandcheese-gracemont]]
+- [[sources/chipsandcheese-crestmont]] — Crestmont 双簇实测
+- [[sources/chipsandcheese-skymont]] — Skymont 三簇 + Nanocode 扩展

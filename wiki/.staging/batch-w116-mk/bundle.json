@@ -1,0 +1,87 @@
+{
+  "batch_id": "batch-w116-mk",
+  "agent_note": "文章4(armv9-3-hotchips)和文章5(hopper-sm-design)在raw/中均不存在，已标记missing_file跳过。有效处理3篇：MI300X实测、Adreno X1 iGPU、Tegra X1视频引擎。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-25_testing-amds-giant-mi300x.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mi300x-testing",
+      "title": "Testing AMD's Giant MI300X"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-04_the-snapdragon-x-elites-adreno-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sde-adreno",
+      "title": "The Snapdragon X Elite's Adreno iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-06-28_examining-the-nintendo-switch-tegra-x1-video-engine.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-tegra-x1-video",
+      "title": "Examining the Nintendo Switch (Tegra X1) Video Engine"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-08_arm-at-hot-chips-2024-looking-at-armv9-3.md",
+      "status": "missing_file",
+      "reason": "文件在raw/articles/chipsandcheese.com/中不存在，已列举目录确认"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-07-13_inside-nvidias-hopper-gpc-sm-design.md",
+      "status": "missing_file",
+      "reason": "文件在raw/articles/chipsandcheese.com/中不存在，已列举目录确认"
+    }
+  ],
+  "concepts_created": [
+    "adreno-x1-igpu-architecture",
+    "tegra-x1-video-engine"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-mi300x-testing",
+    "chipsandcheese-sde-adreno",
+    "chipsandcheese-tegra-x1-video"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/cdna3-mi300x-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-mi300x-testing]]"
+    },
+    {
+      "file": "wiki/rendering/adreno-640-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-sde-adreno]]"
+    },
+    {
+      "file": "wiki/computer-systems/cdna3-mi300x-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Infinity Cache：带宽优先设计",
+      "content": "\n实测数据（来自 [[sources/chipsandcheese-mi300x-testing]]）：Infinity Cache 实测带宽约 11.9 TB/s（理论 17 TB/s）；Infinity Cache 延迟约 218 ns，高于 RDNA 2 消费卡但远低于 VRAM。TLB miss 惩罚约 47.1 ns，每 XCD TLB 容量约 16384 条目（4K 页，对应 64 MB 覆盖）。MI300X 的 L2 带宽与 H100 PCIe L1 带宽同量级。LLM 推理场景中，单卡 MI300X 运行 LLaMA3-70B 优于双卡 H100 SXM5。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染与 GPU（wiki/rendering/）",
+      "row": "| [[adreno-x1-igpu-architecture]] | Qualcomm Snapdragon X Elite 的 Adreno X1 iGPU，四级缓存、GMEM 多用途复用、wave64/128 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[tegra-x1-video-engine]] | Nintendo Switch Tegra X1 专用视频引擎，HEVC 全支持，与桌面 Maxwell 视频块完全不同 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mi300x-testing]] | Chester Lam 等：MI300X 全面微基准实测，vs H100 PCIe |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sde-adreno]] | Chester Lam：Snapdragon X Elite Adreno X1 iGPU 深度评测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-tegra-x1-video]] | Chester Lam：Tegra X1 硬件视频引擎与 Maxwell NVENC 对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-116 Worker MK (chipsandcheese.com ×3 ingested, ×2 missing)\n\n处理 chipsandcheese.com 5 篇文章：3 篇成功摄入，2 篇文件不存在（armv9-3-hotchips、hopper-sm-design）。新增 2 概念页（adreno-x1-igpu-architecture、tegra-x1-video-engine）、0 人物页、3 source 摘要。MI300X 实测数据 patch 至 cdna3-mi300x-architecture；Adreno X1 评测 patch 至 adreno-640-architecture。"
+}

@@ -50,3 +50,4 @@ L1 Texture Cache 命中率达 68%，L2 捕获 >90% 的 L1 缺失，caching 效�
 ## Sources
 
 - [[sources/chipsandcheese-snapdragon855-igpu]]
+- [[sources/chipsandcheese-sde-adreno]]

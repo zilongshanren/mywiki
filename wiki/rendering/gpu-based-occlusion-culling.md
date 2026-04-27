@@ -70,3 +70,4 @@ sources: 4
 - [[sources/interplay-multidraw-indirect-occlusion]]
 - [[sources/interplay-bgfx-gpu-driven-port]]
 - [[sources/interplay-digital-dragons-gpu-driven]]
+- [[sources/c0de517e-dynamic-occlusion-culling]] — Pesce：Roblox 全动态场景下深度重投影与体素 occluder 探索
