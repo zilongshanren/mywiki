@@ -1293,6 +1293,10 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/planet-tile-assembly]] | Stålberg《Planet》的测地球面 + 类 Marching Cubes 瓦片组装系统 |
 | [[game-development/puzzlescript-rule-system]] | PuzzleScript 查找替换规则系统与「冻结运动」设计模式 |
 | [[game-engine-web-engineering-lessons]] | Pesce：引擎工程师向 web 后端学习模块化、运行时隔离的四堂课 |
+| [[game-development/advanced-table-constraints]] | AC-5 通用约束框架，WFC 的理论上层——支持任意 arity 约束 |
+| [[game-development/celtic-knots]] | 框架网格 → 3D 贝塞尔曲线的 over-under 拓扑约束生成 |
+| [[game-development/slige-doom-level-gen]] | SLIGE 栈式 Quest 锁钥系统与难度预算的早期实践 |
+| [[game-development/rectangle-subdivisions]] | 不可约矩形细分的形式化定义与枚举，程序化城市生成应用 |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2235,6 +2239,11 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-chess-piece-regex]] | Boris：正则表达式定义棋子走法（泛化到任意网格） |
 | [[sources/boris-planet-generation]] | Boris：拆解 Oskar Stålberg《Planet》的程序化地形系统 |
 | [[sources/boris-puzzlescript-rules]] | Boris：PuzzleScript 规则系统分析 |
+| [[sources/boris-advanced-table-constraints]] | Boris：AC-5 通用约束框架，WFC 约束族的理论分类 |
+| [[sources/boris-celtic-knots]] | Boris：Celtic Knot 生成算法（框架到贝塞尔曲线） |
+| [[sources/boris-celtic-knots-twills]] | Boris：Celtic Knots 1.0 斜纹扩展 |
+| [[sources/boris-slige-doom-level-gen]] | Boris：SLIGE Doom 关卡生成器逆向分析 |
+| [[sources/boris-rectangle-subdivisions]] | Boris：不可约矩形细分的形式化枚举与应用 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |

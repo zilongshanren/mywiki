@@ -513,3 +513,15 @@ boris-tessera-3d-tiles
 boris-triangle-grid-extensions
 boris-chiseled-paths-revisited
 c0de517e-cod-rendering-retrospective
+c0de517e-portals-predicated-rendering
+c0de517e-history-offline-rendering
+c0de517e-differentiable-rasterize
+c0de517e-rendering-engine-taxonomy
+c0de517e-meshblend-ue
+c0de517e-probe-warping-half-baked
+c0de517e-peaked-technologies
+c0de517e-engine-arch-languages
+c0de517e-vegetation-cod-bo4
+boris-chess-piece-regex
+boris-planet-generation
+boris-puzzlescript-rules

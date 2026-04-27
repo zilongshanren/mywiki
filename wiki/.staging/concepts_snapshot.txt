@@ -569,3 +569,15 @@ debroglie-wfc-library
 poisson-point-process-infinite-plane
 traversability-checking
 barycentric-perlin-noise
+portals-cells-predicated-rendering
+offline-rendering-history
+differentiable-rendering
+rendering-engine-taxonomy
+meshblend-ssao-material-blend
+probe-warping
+vegetation-procedural-placement
+peaked-technology
+game-engine-web-engineering-lessons
+chess-move-regex
+planet-tile-assembly
+puzzlescript-rule-system

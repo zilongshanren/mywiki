@@ -56,6 +56,10 @@ sources: 56
 - [[game-development/chess-move-regex]]
 - [[game-development/planet-tile-assembly]]
 - [[game-development/puzzlescript-rule-system]]
+- [[game-development/advanced-table-constraints]]
+- [[game-development/celtic-knots]]
+- [[game-development/slige-doom-level-gen]]
+- [[game-development/rectangle-subdivisions]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -117,3 +121,8 @@ sources: 56
 - [[sources/boris-chess-piece-regex]]
 - [[sources/boris-planet-generation]]
 - [[sources/boris-puzzlescript-rules]]
+- [[sources/boris-advanced-table-constraints]]
+- [[sources/boris-celtic-knots]]
+- [[sources/boris-celtic-knots-twills]]
+- [[sources/boris-slige-doom-level-gen]]
+- [[sources/boris-rectangle-subdivisions]]

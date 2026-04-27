@@ -1,7 +1,7 @@
 ---
 tags: [constraint-solving, algorithms, wfc, procedural-generation, game-development]
 date: 2026-04-27
-sources: 1
+sources: 2
 ---
 
 # 弧相容（Arc Consistency）
@@ -40,3 +40,4 @@ WFC 的求解流程是经典的 **Maintaining Arc Consistency（MAC）**框架�
 
 - [[sources/boris-arc-consistency]]
 - [[sources/boris-constraint-based-tile-generators]]
+- [[sources/boris-advanced-table-constraints]]

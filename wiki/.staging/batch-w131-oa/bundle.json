@@ -1,0 +1,67 @@
+{
+  "batch_id": "batch-w131-oa",
+  "agent_note": "全部 5 篇均已在前序波次中完整摄入。source 摘要页、概念页、index 条目、harry-alisavakis 人物页均已存在，无需新增任何文件或补丁。注：任务清单中部分 slug 别名（如 halisavakis-grabpass）与已有文件名（halisavakis-image-effects-grabpass）不同，但内容完全对应同一篇文章。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/halisavakis.com/2017-04-12_my-take-on-shaders-introduction-to-image-effects.md",
+      "status": "duplicate",
+      "source_slug": "halisavakis-image-effects-intro",
+      "title": "My take on shaders: Introduction to image effects",
+      "existing_pages": [
+        "wiki/sources/halisavakis-image-effects-intro.md",
+        "wiki/rendering/unity-image-effect-basics.md"
+      ],
+      "reason": "source 摘要页与概念页均已存在，index.md 已有对应条目"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-05-17_my-take-on-shaders-grabpass.md",
+      "status": "duplicate",
+      "source_slug": "halisavakis-image-effects-grabpass",
+      "title": "My take on shaders: GrabPass",
+      "existing_pages": [
+        "wiki/sources/halisavakis-image-effects-grabpass.md",
+        "wiki/rendering/unity-grabpass-blur.md"
+      ],
+      "reason": "source 摘要页与概念页均已存在，index.md 已有对应条目；任务 slug 别名为 halisavakis-grabpass"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-06-28_my-take-on-shaders-stencil-shader-antichamber-effect.md",
+      "status": "duplicate",
+      "source_slug": "halisavakis-image-effects-stencil-antichamber",
+      "title": "My take on shaders: Stencil shader (Antichamber effect)",
+      "existing_pages": [
+        "wiki/sources/halisavakis-image-effects-stencil-antichamber.md",
+        "wiki/rendering/stencil-portal-shader-antichamber.md"
+      ],
+      "reason": "source 摘要页与概念页均已存在，index.md 已有对应条目；任务 slug 别名为 halisavakis-stencil-antichamber"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-07-22_my-take-on-shaders-dissolve-shader.md",
+      "status": "duplicate",
+      "source_slug": "halisavakis-dissolve-shader",
+      "title": "My take on shaders: Dissolve shader",
+      "existing_pages": [
+        "wiki/sources/halisavakis-dissolve-shader.md",
+        "wiki/rendering/texture-dissolve.md"
+      ],
+      "reason": "source 摘要页与概念页均已存在，index.md 已有对应条目"
+    },
+    {
+      "path": "raw/articles/halisavakis.com/2017-09-23_my-take-on-shaders-glitch-image-effect.md",
+      "status": "duplicate",
+      "source_slug": "halisavakis-glitch-image-effect",
+      "title": "My take on shaders: Glitch image effect",
+      "existing_pages": [
+        "wiki/sources/halisavakis-glitch-image-effect.md",
+        "wiki/rendering/glitch-image-effect.md"
+      ],
+      "reason": "source 摘要页与概念页均已存在，index.md 已有对应条目；任务 slug 别名为 halisavakis-glitch-effect"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-131 Worker OA (halisavakis.com ×5 — 全重复)\n\n检查 5 篇 halisavakis.com 文章（image effect 入门、GrabPass、Stencil/Antichamber、Dissolve、Glitch），均已在前序波次中完整摄入。source 摘要页、对应概念页（unity-image-effect-basics、unity-grabpass-blur、stencil-portal-shader-antichamber、texture-dissolve、glitch-image-effect）、harry-alisavakis 人物页以及 index.md 条目全部已存在。本批次无新增文件，无补丁。"
+}

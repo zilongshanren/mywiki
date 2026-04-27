@@ -1,0 +1,115 @@
+{
+  "batch_id": "batch-w131-nz",
+  "agent_note": "5 boristhebrave.com articles: advanced table constraints (GAC algorithms), Celtic knots Blender plugin (x2: original + twills update), SLIGE Doom level generator analysis, rectangle subdivision irreducibility. 4 new concept pages, 5 source summaries, 0 skipped.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2021-08-30_advanced-table-constraints.md",
+      "status": "ingested",
+      "source_slug": "boris-advanced-table-constraints",
+      "title": "Advanced Table Constraints"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2014-05-07_celtic-knots.md",
+      "status": "ingested",
+      "source_slug": "boris-celtic-knots",
+      "title": "Celtic Knots"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2018-01-26_celtic-knots-1-0-now-with-twills.md",
+      "status": "ingested",
+      "source_slug": "boris-celtic-knots-twills",
+      "title": "Celtic Knots 1.0 – Now with Twills"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2020-06-24_level-generation-in-slige-doom-level-generator.md",
+      "status": "ingested",
+      "source_slug": "boris-slige-doom-level-gen",
+      "title": "Level Generation in SLIGE (Doom level generator)"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-05-03_exploring-rectangle-subdivisions.md",
+      "status": "ingested",
+      "source_slug": "boris-rectangle-subdivisions",
+      "title": "Exploring Rectangle Subdivisions"
+    }
+  ],
+  "concepts_created": [
+    "game-development/advanced-table-constraints",
+    "game-development/celtic-knots",
+    "game-development/slige-doom-level-gen",
+    "game-development/rectangle-subdivisions"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-advanced-table-constraints",
+    "boris-celtic-knots",
+    "boris-celtic-knots-twills",
+    "boris-slige-doom-level-gen",
+    "boris-rectangle-subdivisions"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/advanced-table-constraints]]\n- [[game-development/celtic-knots]]\n- [[game-development/slige-doom-level-gen]]\n- [[game-development/rectangle-subdivisions]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-advanced-table-constraints]]\n- [[sources/boris-celtic-knots]]\n- [[sources/boris-celtic-knots-twills]]\n- [[sources/boris-slige-doom-level-gen]]\n- [[sources/boris-rectangle-subdivisions]]"
+    },
+    {
+      "file": "wiki/game-development/arc-consistency.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-advanced-table-constraints]]"
+    },
+    {
+      "file": "wiki/game-development/arc-consistency.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/advanced-table-constraints]] | AC-5 框架到 STR3/MDDc 的广义弧相容算法谱系，含 Sparse Set 可逆数据结构 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/celtic-knots]] | 凯尔特编结图案的 Blender 插件生成算法：框架网格 → 3D 贝塞尔曲线 + over-under 拓扑约束 + 斜纹扩展 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/slige-doom-level-gen]] | SLIGE：1990s Doom 随机关卡生成器，栈式 Quest 锁钥系统 + 精细难度预算 + 关卡参数一次性随机化 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/rectangle-subdivisions]] | 矩形细分不可约性形式化：不可约细分是构造所有矩形细分的原子单元，5×5 枚举集已发布 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-advanced-table-constraints]] | Boris：广义弧相容算法综述，AC-5 框架 + STR3 + 可逆数据结构 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-celtic-knots]] | Boris：凯尔特编结 Blender 插件初版（2014），框架网格 → 3D 曲线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-celtic-knots-twills]] | Boris：凯尔特编结插件 1.0（2018），新增斜纹（twill）编织模式 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-slige-doom-level-gen]] | Boris：SLIGE Doom 关卡生成器逆向分析，Quest 栈 + 难度预算 + Level Settings |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-rectangle-subdivisions]] | Boris：矩形不可约细分枚举与形式化定义，程序化城市生成应用 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-131 Worker NZ (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 技术文章。新增概念页 4 个（advanced-table-constraints、celtic-knots、slige-doom-level-gen、rectangle-subdivisions）；新增 source 摘要页 5 个；无新增人物页（boris-the-brave 已存在）。全部 5 篇已摄入，0 篇跳过。主要覆盖：广义弧相容算法族（AC-5/STR3/MDDc/Sparse Set）、凯尔特编结程序化生成（含斜纹扩展）、SLIGE Doom 关卡生成器（栈式 Quest + 难度预算）、矩形细分不可约性形式化。"
+}

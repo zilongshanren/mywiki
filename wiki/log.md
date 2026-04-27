@@ -1622,3 +1622,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-130 Worker NY (c0de517e.com ×3 + danielilett ×0)
 
 3 篇 c0de517e.com 入库（peaked-technologies、engine-arch-languages、vegetation-cod-bo4）。2 篇 danielilett 文件不存在，跳过。
+
+## [2026-04-27] ingest | Wave-131 Worker NZ (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章，全部入库。新增 4 概念页（advanced-table-constraints、celtic-knots、slige-doom-level-gen、rectangle-subdivisions）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-131 Worker OA (halisavakis.com ×5)
+
+5 篇全部重复，0 篇入库。halisavakis.com 已全部处理完毕。
+
+## [2026-04-27] ingest | Wave-131 Worker OB (mini.gmshaders.com ×5)
+
+5 篇全部重复，0 篇入库。mini.gmshaders.com 已全部处理完毕。

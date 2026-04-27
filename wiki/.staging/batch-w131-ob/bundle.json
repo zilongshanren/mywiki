@@ -1,0 +1,42 @@
+{
+  "batch_id": "batch-w131-ob",
+  "agent_note": "全部 5 篇均为重复入库——source 摘要、概念页、index 条目、xor-shader-artist 人物页已在先前 wave 完整写入。本批次无新文件、无新 patch。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-10_reading-math-papers.md",
+      "status": "skipped_duplicate",
+      "source_slug": "xor-reading-math-papers",
+      "reason": "wiki/sources/xor-mini-reading-math.md 已存在且完整；概念页 reading-math-notation-for-shaders 已在 snapshot 中；index.md 条目已存在。"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-19_combining-shaders.md",
+      "status": "skipped_duplicate",
+      "source_slug": "xor-combining-shaders",
+      "reason": "wiki/sources/xor-mini-combining-shaders.md 已存在且完整；概念页 shader-combination-strategies 已在 snapshot 中；index.md 条目已存在。"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-04-26_common-shader-mistakes.md",
+      "status": "skipped_duplicate",
+      "source_slug": "xor-common-shader-mistakes",
+      "reason": "wiki/sources/xor-mini-common-mistakes.md 已存在且完整；概念页 common-shader-pitfalls 已在 snapshot 中；index.md 条目已存在。"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-08-23_volumetric-raymarching.md",
+      "status": "skipped_duplicate",
+      "source_slug": "xor-volumetric-raymarching",
+      "reason": "wiki/sources/xor-volumetric-raymarching.md 已存在且完整；概念页 density-field-volumetric 及 volumetric-raymarching-intro 已在 snapshot 中；index.md 条目已存在。"
+    },
+    {
+      "path": "raw/articles/mini.gmshaders.com/2025-09-05_dot-noise.md",
+      "status": "skipped_duplicate",
+      "source_slug": "xor-dot-noise",
+      "reason": "wiki/sources/xor-dot-noise.md 已存在且完整；概念页 dot-gyroid-noise 已在 snapshot 中；index.md 条目已存在。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-131 Worker OB (mini.gmshaders.com ×5 — Xor)\n\n处理 5 篇 mini.gmshaders.com（Xor）文章：reading-math-papers、combining-shaders、common-shader-mistakes、volumetric-raymarching、dot-noise。全部已在先前 wave 完整入库（source 摘要、概念页、index 条目、xor-shader-artist 人物页均已存在），本批次零新增、零 patch，幂等跳过。"
+}
