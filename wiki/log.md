@@ -1586,3 +1586,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-127 Worker NP (0 ingested, 5 skipped)
 
 所有 5 篇文章不存在（raphlinus/simonschreibt 目标文件在 raw/ 中缺失）。无新建文件。
+
+## [2026-04-27] ingest | Wave-128 Worker NQ (bruop.github.io ×4 + vertexfragment ×1)
+
+处理 5 篇文章，3 篇为前序波次重复（bruop IBL/culling、vertexfragment diamond-square）。新建 2 概念页（tone-mapping、luminance-histogram-exposure）、2 source 摘要。Patch：bruno-opsenica、local-tonemapping、culling。
+
+## [2026-04-27] ingest | Wave-128 Worker NR (boristhebrave.com ×5)
+
+处理 5 篇 boristhebrave.com 文章，全部 ingested。新增 5 概念页（phantomgrammar-ludoscope、quaternion-for-games、quarter-tile-autotiling、procedural-generation-taxonomy、wraparound-hex-grids）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-128 Worker NS (vertexfragment ×3 + boristhebrave ×2)
+
+3 篇 vertexfragment 已处理过，跳过。新增 2 篇 boristhebrave：DeBroglie v0.1、无限均匀点分布。新建 2 概念页（debroglie-wfc-library、poisson-point-process-infinite-plane）、2 source 摘要。

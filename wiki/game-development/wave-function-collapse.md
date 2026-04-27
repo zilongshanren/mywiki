@@ -1,7 +1,7 @@
 ---
 tags: [procedural-generation, wfc, constraint-solving, tileset, game-development]
 date: 2026-04-27
-sources: 11
+sources: 12
 ---
 
 # Wave Function Collapse（WFC）
@@ -49,3 +49,4 @@ WFC 本质上是**局部约束**求解器，不能保证大尺度结构。生成
 - [[sources/boris-quantum-wfc]]
 - [[sources/boris-model-synthesis-modifying-blocks]]
 - [[sources/boris-infinite-modifying-blocks]]
+- [[sources/boris-debroglie-v01]]

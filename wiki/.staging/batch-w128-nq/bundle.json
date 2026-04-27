@@ -1,0 +1,93 @@
+{
+  "batch_id": "batch-w128-nq",
+  "agent_note": "5 bruop/vertexfragment 文章。3 篇已有完整 source+concept（ibl-multiple-scattering、frustum-culling、diamond-square-gpu），只需追加 patch。2 篇新建 source 摘要并新建 2 个 concept（tone-mapping、luminance-histogram-exposure）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/bruop.github.io/2019-08-19_image-based-lighting-with-multiple-scattering.md",
+      "status": "ingested",
+      "source_slug": "bruop-ibl-multiple-scattering",
+      "title": "Image Based Lighting with Multiple Scattering",
+      "note": "source 摘要与 concept 均已存在（bruop-ibl-multiple-scattering, ibl-multiple-scattering, split-sum-approximation），无需新建任何文件，仅追加 index row"
+    },
+    {
+      "path": "raw/articles/bruop.github.io/2019-04-19_automatic-exposure-using-a-luminance-histogram.md",
+      "status": "ingested",
+      "source_slug": "bruop-exposure-histogram",
+      "title": "Automatic Exposure Using a Luminance Histogram"
+    },
+    {
+      "path": "raw/articles/bruop.github.io/2019-04-19_tone-mapping.md",
+      "status": "ingested",
+      "source_slug": "bruop-tone-mapping",
+      "title": "Tone Mapping"
+    },
+    {
+      "path": "raw/articles/bruop.github.io/2020-12-24_frustum-culling.md",
+      "status": "ingested",
+      "source_slug": "bruop-frustum-culling",
+      "title": "Frustum Culling",
+      "note": "source 摘要与 concept 均已存在（bruop-frustum-culling, culling, obb-frustum-sat, ispc-simd-culling），无需新建任何文件，仅追加 index row"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2022-10-31_gpu-accelerated-diamond-square-generation.md",
+      "status": "ingested",
+      "source_slug": "vertexfragment-diamond-square-gpu",
+      "title": "GPU Accelerated Diamond-Square Generation",
+      "note": "source 摘要与 concept 均已存在（vertexfragment-diamond-square-gpu, diamond-square-noise），无需新建任何文件，仅追加 index row"
+    }
+  ],
+  "concepts_created": ["tone-mapping", "luminance-histogram-exposure"],
+  "people_created": [],
+  "source_summaries_created": ["bruop-exposure-histogram", "bruop-tone-mapping"],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/bruno-opsenica.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tone-mapping]]\n- [[luminance-histogram-exposure]]"
+    },
+    {
+      "file": "wiki/people/bruno-opsenica.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bruop-exposure-histogram]]\n- [[sources/bruop-tone-mapping]]"
+    },
+    {
+      "file": "wiki/rendering/local-tonemapping.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bruop-tone-mapping]] — Bruop：全局色调曲线综述（Reinhard / ACES / GT / Lottes），逐亮度 vs 逐通道的权衡"
+    },
+    {
+      "file": "wiki/rendering/local-tonemapping.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[tone-mapping]] — 全局色调映射算子概述，与 LTM 互补"
+    },
+    {
+      "file": "wiki/rendering/culling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/bruop-frustum-culling]] — Bruop：OBB clip-space 顶点测试 + AVX2 手写 intrinsics，10k 对象从 8.2 ms 降到 3.3 ms"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[tone-mapping]] | HDR→LDR 全局色调曲线综述：Reinhard、ACES、GT、Lottes，逐亮度 vs 逐通道 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[luminance-histogram-exposure]] | Compute shader 256-bin 亮度直方图 + 并行归约自动曝光，含帧间插值防闪烁 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bruop-exposure-histogram]] | Bruop：亮度直方图两趟 compute 求均值，自动曝光实现 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/bruop-tone-mapping]] | Bruop：Reinhard / ACES / 电影曲线对比，逐亮度 vs 逐通道讨论 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-128 Worker NQ (bruop.github.io ×4 + vertexfragment ×1)\n\n处理 5 篇技术文章。3 篇（bruop-ibl-multiple-scattering、bruop-frustum-culling、vertexfragment-diamond-square-gpu）的 source 摘要与 concept 页均已在前序 wave 中建立，本次仅补 patch 和 index 行。新建 2 个 source 摘要（bruop-exposure-histogram、bruop-tone-mapping）、2 个 concept 页（tone-mapping、luminance-histogram-exposure）。Patch：bruno-opsenica 人物页追加 2 篇新 source、local-tonemapping 追加全局 tone-mapping 引用和 source 链接、culling 追加 bruop-frustum-culling source 链接。"
+}

@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w128-ns",
+  "agent_note": "Sources 1-3 (vertexfragment cloud-upsample, urp-volumetric-fog, polar-coordinates) were already ingested in a prior wave — source pages, concept pages, and author page all exist. Only sources 4-5 (DeBroglie v0.1, infinite uniform points) required new work. Two new concept pages and two new source pages created.",
+  "sources_processed": [
+    {
+      "path": "raw/articles/vertexfragment.com/2024-03-20_upsampling-to-improve-volumetric-cloud-render-performance.md",
+      "status": "skipped_duplicate",
+      "reason": "Already ingested: wiki/sources/vertexfragment-cloud-upsample.md exists with full content; concept page volumetric-cloud-quarter-res-upsample.md exists; no new information to add.",
+      "source_slug": "vertexfragment-upsampling-volumetric-clouds"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2024-04-17_rendering-volumetric-fog-using-custom-urp-render-pass.md",
+      "status": "skipped_duplicate",
+      "reason": "Already ingested: wiki/sources/vertexfragment-urp-volumetric-fog.md exists with full content; concept page urp-volumetric-fog-raymarch.md exists.",
+      "source_slug": "vertexfragment-volumetric-fog-urp"
+    },
+    {
+      "path": "raw/articles/vertexfragment.com/2024-02-28_texture-effects-with-polar-coordinates.md",
+      "status": "skipped_duplicate",
+      "reason": "Already ingested: wiki/sources/vertexfragment-polar-coordinates.md exists with full content; concept page polar-coordinate-texture-effects.md exists.",
+      "source_slug": "vertexfragment-texture-polar-coords"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2018-10-06_debroglie-v0-1.md",
+      "status": "ingested",
+      "source_slug": "boris-debroglie-v01",
+      "title": "DeBroglie v0.1"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2024-10-30_infinite-uniform-point-distributions.md",
+      "status": "ingested",
+      "source_slug": "boris-infinite-uniform-points",
+      "title": "Infinite Uniform Point Distributions"
+    }
+  ],
+  "concepts_created": [
+    "game-development/debroglie-wfc-library",
+    "game-development/poisson-point-process-infinite-plane"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-debroglie-v01",
+    "boris-infinite-uniform-points"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "replace_line",
+      "match": "sources: 44",
+      "content": "sources: 46"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/debroglie-wfc-library]]\n- [[game-development/poisson-point-process-infinite-plane]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-debroglie-v01]]\n- [[sources/boris-infinite-uniform-points]]"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "replace_line",
+      "match": "sources: 11",
+      "content": "sources: 12"
+    },
+    {
+      "file": "wiki/game-development/wave-function-collapse.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-debroglie-v01]]"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "replace_line",
+      "match": "sources: 2",
+      "content": "sources: 3"
+    },
+    {
+      "file": "wiki/rendering/poisson-disk-sampling.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-infinite-uniform-points]]"
+    },
+    {
+      "file": "wiki/rendering/poisson-rect-process.md",
+      "operation": "replace_line",
+      "match": "sources: 1",
+      "content": "sources: 2"
+    },
+    {
+      "file": "wiki/rendering/poisson-rect-process.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-infinite-uniform-points]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/debroglie-wfc-library]] | Boris The Brave 的 C# WFC 库，扩展非局部约束（路径/计数/边界）|"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/poisson-point-process-infinite-plane]] | 无限均匀点分布的正确模型：泊松点过程 vs jittered grid |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-debroglie-v01]] | Boris The Brave：DeBroglie WFC C# 库 v0.1 发布公告 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-infinite-uniform-points]] | Boris The Brave：无限平面均匀点分布与泊松点过程 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-128 Worker NS (vertexfragment.com ×3 + boristhebrave.com ×2)\n\n处理 5 篇文章。vertexfragment.com 3 篇（云 upsample、体积雾 URP、极坐标纹理效果）均已在前序 wave 完整入库，本批跳过。新增处理 2 篇 boristhebrave.com：DeBroglie v0.1 公告（WFC C# 库首版）和无限均匀点分布（泊松点过程 vs jittered grid）。新建 2 个概念页（debroglie-wfc-library、poisson-point-process-infinite-plane）、2 个 source 摘要页。patches：boris-the-brave 人物页（+2 source，+2 相关链接）、wave-function-collapse 概念页（+1 source）、poisson-disk-sampling 和 poisson-rect-process 各 +1 source 链接。"
+}

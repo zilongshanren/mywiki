@@ -488,3 +488,13 @@ bartwronski-3d-software-dccs
 16bpp-rtow-books
 16bpp-gotta-go-fast
 16bpp-methods-of-testing
+boris-triangle-grids
+boris-wang-tileset-creator
+boris-rotation-graphs
+boris-ortho-tiles
+boris-cave-glade-generator
+boris-generative-generators
+boris-substitution-tilings
+boris-infinite-quadtrees
+boris-random-path-algorithm
+boris-random-paths-chiseling

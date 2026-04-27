@@ -1,7 +1,7 @@
 ---
 tags: [人物, 作者, 程序化生成, wfc]
 date: 2026-04-19
-sources: 44
+sources: 51
 ---
 
 # Boris The Brave
@@ -44,6 +44,13 @@ sources: 44
 - [[game-development/substitution-tilings]]
 - [[game-development/infinite-quadtrees-fractal-coords]]
 - [[game-development/chiseling-random-paths]]
+- [[game-development/phantomgrammar-ludoscope]]
+- [[game-development/quaternion-for-games]]
+- [[game-development/quarter-tile-autotiling]]
+- [[game-development/procedural-generation-taxonomy]]
+- [[game-development/wraparound-hex-grids]]
+- [[game-development/debroglie-wfc-library]]
+- [[game-development/poisson-point-process-infinite-plane]]
 
 ## Sources
 - [[sources/boristhebrave-poisson-rect-process]]
@@ -90,3 +97,10 @@ sources: 44
 - [[sources/boris-infinite-quadtrees]]
 - [[sources/boris-random-path-algorithm]]
 - [[sources/boris-random-paths-chiseling]]
+- [[sources/boris-phantomgrammar-ludoscope]]
+- [[sources/boris-quaternions-game-dev]]
+- [[sources/boris-quarter-tile-autotiling]]
+- [[sources/boris-what-is-proc-gen]]
+- [[sources/boris-wraparound-hex-grids]]
+- [[sources/boris-debroglie-v01]]
+- [[sources/boris-infinite-uniform-points]]

@@ -1,7 +1,7 @@
 ---
 tags: [程序化生成, 采样, 分块算法, 无限世界]
 date: 2026-04-19
-sources: 1
+sources: 2
 ---
 
 # Poisson Rect Process（泊松矩形过程）
@@ -32,3 +32,4 @@ Boris The Brave 在 Sylves 的无限程序化生成系列里提出的一种算�
 ## Sources
 
 - [[sources/boristhebrave-poisson-rect-process]]
+- [[sources/boris-infinite-uniform-points]]

@@ -41,9 +41,11 @@ Ansel Adams 的 [Zone System / dodge & burn] 已经是手工做的 LTM；Lightro
 - [[guided-filter]]
 - [[color-space]]
 - [[bartosz-wronski]]
+- [[tone-mapping]] — 全局色调映射算子概述，与 LTM 互补
 
 ## Sources
 
 - [[sources/bartwronski-exposure-fusion]]
 - [[sources/c0de517e-tone-mapping-local]] — Pesce：用渲染器 illuminance pass 直接做局部 TM，零滤波成本
 - [[sources/c0de517e-tone-mapping-silly]] — Pesce：大半径高斯 ND 滤镜 + 胶片颗粒扩展动态范围的快速实验
+- [[sources/bruop-tone-mapping]] — Bruop：全局色调曲线综述（Reinhard / ACES / GT / Lottes），逐亮度 vs 逐通道的权衡

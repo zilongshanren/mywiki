@@ -550,3 +550,11 @@ marching-squares-ambiguities
 recursive-subdivision
 studio-dcc-standardization
 render-integration-testing
+triangle-grid
+rotation-graphs
+ortho-tiles
+seed-growth-algorithm
+generative-generators-clip-evo
+substitution-tilings
+infinite-quadtrees-fractal-coords
+chiseling-random-paths

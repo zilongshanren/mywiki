@@ -1162,6 +1162,8 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[marching-squares-multicolor]] | 多色 Marching Squares：将边界绘制扩展至 N 种颜色区域，15 种基本情形 |
 | [[marching-squares-ambiguities]] | Asymptotic Decider：用双线性插值判别量 Q 消解 Marching Squares 歧义情形 |
 | [[render-integration-testing]] | 渲染器集成测试：idiff 像素对比 + 确定性保证 + Python 测试脚本 |
+| [[tone-mapping]] | HDR→LDR 全局色调曲线综述：Reinhard、ACES、GT、Lottes，逐亮度 vs 逐通道 |
+| [[luminance-histogram-exposure]] | Compute shader 256-bin 亮度直方图 + 并行归约自动曝光，含帧间插值防闪烁 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -1271,6 +1273,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[game-development/substitution-tilings]] | 替换铺砖：惰性无限树实现非周期铺砖（Penrose 等），含 spigot 区域查询算法 |
 | [[game-development/infinite-quadtrees-fractal-coords]] | 分形坐标系：覆盖无限平面的多级格网，交替坐标保证任意区域有唯一包含正方形 |
 | [[game-development/chiseling-random-paths]] | 凿刻法随机路径：从填满区域移除非关节点格子直到路径成形 |
+| [[game-development/phantomgrammar-ludoscope]] | Dormans 的图改写引擎与 IDE，驱动 Unexplored 的 5000+ 规则生成 |
+| [[game-development/quaternion-for-games]] | 四元数游戏开发实用指南：API 语义、乘法顺序、常见陷阱 |
+| [[game-development/quarter-tile-autotiling]] | 四分之一格 autotile 方案：比 Marching Squares 切片更少，但表达力受限 |
+| [[game-development/procedural-generation-taxonomy]] | 程序化生成四大技术类别（算法/函数/模拟/生成式AI）与应用场景概述 |
+| [[game-development/wraparound-hex-grids]] | 六边形绕回网格的数学推导：六边形分块 + 坐标折叠映射 |
+| [[game-development/debroglie-wfc-library]] | Boris The Brave 的 C# WFC 库，扩展非局部约束（路径/计数/边界） |
+| [[game-development/poisson-point-process-infinite-plane]] | 无限均匀点分布的正确模型：泊松点过程 vs jittered grid |
 ## 人物（wiki/people/）
 | 文章 | 一句话描述 |
 |---|---|
@@ -2114,6 +2123,8 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/bruop-ibl-multiple-scattering]] | Bruop：BGFX 中实现 Fdez-Agüera 多次散射 IBL |
 | [[sources/bruop-frustum-culling]] | Bruop：AABB 顶点 clip-space 测试 + AVX2 手写 SIMD |
 | [[sources/bruop-more-robust-frustum-culling]] | Bruop：SAT 分离轴 + ISPC 实现，修掉 false negative |
+| [[sources/bruop-exposure-histogram]] | Bruop：亮度直方图两趟 compute 求均值，自动曝光实现 |
+| [[sources/bruop-tone-mapping]] | Bruop：Reinhard / ACES / 电影曲线对比，逐亮度 vs 逐通道讨论 |
 | [[sources/erfan-ahmadi-texture-upload-staging]] | Ahmadi：Nabla 流式 staging 纹理上传 |
 | [[sources/erfan-ahmadi-frames-in-flight]] | Ahmadi：Frames In Flight 与 timeline semaphore |
 | [[sources/erfan-ahmadi-bokeh-dof-project]] | Ahmadi：The Forge 上三种 Bokeh DoF 实现 |
@@ -2196,6 +2207,13 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/boris-infinite-quadtrees]] | Boris：分形坐标（Mawhorter 论文）——无限四叉树与交替坐标系 |
 | [[sources/boris-random-path-algorithm]] | Boris：随机路径算法速写——凿刻法前身 |
 | [[sources/boris-random-paths-chiseling]] | Boris：凿刻法随机路径——关节点检测 + 逆向移除 |
+| [[sources/boris-phantomgrammar-ludoscope]] | Boris：PhantomGrammar 图改写引擎与 Ludoscope IDE |
+| [[sources/boris-quaternions-game-dev]] | Boris：四元数游戏开发实用指南 |
+| [[sources/boris-quarter-tile-autotiling]] | Boris：四分之一格 autotiling 方案详解 |
+| [[sources/boris-what-is-proc-gen]] | Boris：程序化生成概述——受众、技术分类与入门资源 |
+| [[sources/boris-wraparound-hex-grids]] | Boris：六边形绕回网格数学推导 |
+| [[sources/boris-debroglie-v01]] | Boris The Brave：DeBroglie WFC C# 库 v0.1 发布公告 |
+| [[sources/boris-infinite-uniform-points]] | Boris The Brave：无限平面均匀点分布与泊松点过程 |
 | [[sources/bitsquid-content-repositories-vs-databases]] | Frykholm：为什么我们不把内容放数据库 |
 | [[sources/bitsquid-the-blob-and-i]] | Frykholm：用 offset 替代 pointer patching 做 blob 资源 |
 | [[sources/bitsquid-task-management-practical]] | Frykholm：Bitsquid 任务调度器的实战实现 |

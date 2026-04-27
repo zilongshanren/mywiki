@@ -43,3 +43,4 @@ Boris 本人的命名。在 Sub-blob 的基础上进一步去掉可重用子片�
 - [[sources/boristhebrave-tileset-roundup]]
 - [[sources/boris-classification-of-tilesets]]
 - [[sources/boris-beyond-basic-autotiling]]
+- [[sources/boris-quarter-tile-autotiling]]

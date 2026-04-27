@@ -44,3 +44,4 @@ UE5 Nanite 等把 culling 移到 GPU，用 compute shader 并行剔除，突破 
 ## Sources
 
 - [[sources/rtr-day02]]
+- [[sources/bruop-frustum-culling]] — Bruop：OBB clip-space 顶点测试 + AVX2 手写 intrinsics，10k 对象从 8.2 ms 降到 3.3 ms

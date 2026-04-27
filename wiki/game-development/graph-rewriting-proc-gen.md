@@ -27,3 +27,4 @@ Boris 在分析 Unexplored 生成系统的系列文章中，将图改写定位�
 ## Sources
 
 - [[sources/boris-graph-rewriting-proc-gen]]
+- [[sources/boris-phantomgrammar-ludoscope]]

@@ -1,0 +1,126 @@
+{
+  "batch_id": "batch-w128-nr",
+  "agent_note": "5 篇 boristhebrave.com 文章：PhantomGrammar/Ludoscope、四元数实用指南、Quarter-tile autotiling、程序化生成分类概述、六边形绕回网格。Boris 作者页已存在，仅追加 sources 链接和相关条目。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/boristhebrave.com/2021-04-02_phantomgrammar-and-ludoscope.md",
+      "status": "ingested",
+      "source_slug": "boris-phantomgrammar-ludoscope",
+      "title": "PhantomGrammar and Ludoscope"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2022-12-12_everything-you-need-to-know-about-quaternions-for-game-devel.md",
+      "status": "ingested",
+      "source_slug": "boris-quaternions-game-dev",
+      "title": "Everything You Need to Know About Quaternions for Game Development"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2023-05-31_quarter-tile-autotiling.md",
+      "status": "ingested",
+      "source_slug": "boris-quarter-tile-autotiling",
+      "title": "Quarter-Tile Autotiling"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2024-05-25_what-is-procedural-generation.md",
+      "status": "ingested",
+      "source_slug": "boris-what-is-proc-gen",
+      "title": "What Is Procedural Generation"
+    },
+    {
+      "path": "raw/articles/boristhebrave.com/2025-02-17_wraparound-hex-grids.md",
+      "status": "ingested",
+      "source_slug": "boris-wraparound-hex-grids",
+      "title": "Wraparound Hex Grids"
+    }
+  ],
+  "concepts_created": [
+    "game-development/phantomgrammar-ludoscope",
+    "game-development/quaternion-for-games",
+    "game-development/quarter-tile-autotiling",
+    "game-development/procedural-generation-taxonomy",
+    "game-development/wraparound-hex-grids"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "boris-phantomgrammar-ludoscope",
+    "boris-quaternions-game-dev",
+    "boris-quarter-tile-autotiling",
+    "boris-what-is-proc-gen",
+    "boris-wraparound-hex-grids"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[game-development/phantomgrammar-ludoscope]]\n- [[game-development/quaternion-for-games]]\n- [[game-development/quarter-tile-autotiling]]\n- [[game-development/procedural-generation-taxonomy]]\n- [[game-development/wraparound-hex-grids]]"
+    },
+    {
+      "file": "wiki/people/boris-the-brave.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-phantomgrammar-ludoscope]]\n- [[sources/boris-quaternions-game-dev]]\n- [[sources/boris-quarter-tile-autotiling]]\n- [[sources/boris-what-is-proc-gen]]\n- [[sources/boris-wraparound-hex-grids]]"
+    },
+    {
+      "file": "wiki/game-development/autotile-tileset-layouts.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-quarter-tile-autotiling]]"
+    },
+    {
+      "file": "wiki/game-development/graph-rewriting-proc-gen.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-phantomgrammar-ludoscope]]"
+    },
+    {
+      "file": "wiki/rendering/3d-rotation-math.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/boris-quaternions-game-dev]] — Boris 的游戏开发实用视角：不需要理解理论，掌握 API 语义即可"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/phantomgrammar-ludoscope]] | Dormans 的图改写引擎与 IDE，驱动 Unexplored 的 5000+ 规则生成 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/quaternion-for-games]] | 四元数游戏开发实用指南：API 语义、乘法顺序、常见陷阱 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/quarter-tile-autotiling]] | 四分之一格 autotile 方案：比 Marching Squares 切片更少，但表达力受限 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/procedural-generation-taxonomy]] | 程序化生成四大技术类别（算法/函数/模拟/生成式AI）与应用场景概述 |"
+    },
+    {
+      "category_header": "## 游戏开发（wiki/game-development/）",
+      "row": "| [[game-development/wraparound-hex-grids]] | 六边形绕回网格的数学推导：六边形分块 + 坐标折叠映射 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-phantomgrammar-ludoscope]] | Boris：PhantomGrammar 图改写引擎与 Ludoscope IDE |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-quaternions-game-dev]] | Boris：四元数游戏开发实用指南 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-quarter-tile-autotiling]] | Boris：四分之一格 autotiling 方案详解 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-what-is-proc-gen]] | Boris：程序化生成概述——受众、技术分类与入门资源 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/boris-wraparound-hex-grids]] | Boris：六边形绕回网格数学推导 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-128 Worker NR (boristhebrave.com ×5)\n\n处理 5 篇 boristhebrave.com 文章。新增 5 概念页（phantomgrammar-ludoscope、quaternion-for-games、quarter-tile-autotiling、procedural-generation-taxonomy、wraparound-hex-grids）、0 人物页（Boris 已存在）、5 source 摘要。跳过 0 篇。追加 Boris 作者页 sources/相关链接，为 autotile-tileset-layouts、graph-rewriting-proc-gen、3d-rotation-math 各追加一条 source 引用。"
+}

@@ -14,9 +14,13 @@ sources: 3
 - [[split-sum-approximation]]
 - [[obb-frustum-sat]]
 - [[ispc-simd-culling]]
+- [[tone-mapping]]
+- [[luminance-histogram-exposure]]
 
 ## Sources
 
 - [[sources/bruop-ibl-multiple-scattering]]
 - [[sources/bruop-frustum-culling]]
 - [[sources/bruop-more-robust-frustum-culling]]
+- [[sources/bruop-exposure-histogram]]
+- [[sources/bruop-tone-mapping]]

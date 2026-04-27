@@ -1,7 +1,7 @@
 ---
 tags: [渲染, 采样, 信号处理]
 date: 2026-04-14
-sources: 2
+sources: 3
 ---
 
 # 泊松盘采样（Poisson Disk Sampling）
@@ -59,3 +59,4 @@ sources: 2
 - [[sources/vertexfragment-list-removal]]
 - [[sources/bartwronski-poisson-gui]]
 - [[sources/c0de517e-sample-generator-3d]]
+- [[sources/boris-infinite-uniform-points]]
