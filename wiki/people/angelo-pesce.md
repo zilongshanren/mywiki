@@ -93,3 +93,8 @@ sources: 5
 - [[sources/c0de517e-bf4-graphics-review]]
 - [[sources/c0de517e-on-mantle]]
 - [[sources/c0de517e-mathematica-101]]
+- [[sources/c0de517e-nextgen-data]]
+- [[sources/c0de517e-push-updater-pattern]]
+- [[sources/c0de517e-how-make-rendering-engine]]
+- [[sources/c0de517e-rate-my-api]]
+- [[sources/c0de517e-envmap-wrong]]

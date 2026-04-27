@@ -13,3 +13,4 @@ Karis 2014（UE4 PBR）提出把镜面 IBL 积分拆成两个预计算项的乘�
 ## Sources
 
 - [[sources/bruop-ibl-multiple-scattering]]
+- [[sources/c0de517e-envmap-wrong]] — split-sum 误差分析与各近似层的系统梳理

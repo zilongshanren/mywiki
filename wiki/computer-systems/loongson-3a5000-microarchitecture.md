@@ -43,6 +43,17 @@ L1D 命中率低于预期——考虑到 64 KB 容量，其 miss 率显著高于
 
 Chips and Cheese 此前评测的 [[phytium-ftc663-microarchitecture|Phytium D2000]] 和 Zhaoxin KX-6640MA 在单核性能上弱于 3A5000。3A5000 有大缓存、合理的 OoO 设计，代表了中国自研 CPU 的阶段性高水位。但三者共同的问题是主频低且软件生态有限——一款 CPU 的性能再好，如果跑不起主流软件，价值也大打折扣。
 
+## LSX / LASX 向量扩展
+
+LoongArch 的 128-bit LSX 和 256-bit LASX 向量扩展对应 x86 的 SSE/AVX2，但文档未公开。Chester Lam 通过 Loongnix 工具链逆向分析发现若干重要特性：
+
+- 寄存器别名：F0-F31（64-bit）⊂ VR0-VR31（128-bit）⊂ XR0-XR31（256-bit）
+- **128-bit 指令会污染整个 256-bit 寄存器**（与 x86 保留上半部分的语义相反）
+- 跨页边界的部分寄存器加载产生未定义行为，表现极不可预测
+- 3A5000 原生 256-bit 执行（不拆分为两个 128-bit micro-op），两端口支持整数操作双发射
+- 浮点侧：FP add 和 FP multiply 各一个专用管道，共享单个 FMA 单元；FP 延迟 5 周期（Zen 1 为 3 周期）
+- 标量 FP 与向量混用时重命名容量下降约 32 条目
+
 ## 参见
 
 - [[phytium-ftc663-microarchitecture]] — 同期对比的另一款国产 ARM CPU
@@ -52,3 +63,4 @@ Chips and Cheese 此前评测的 [[phytium-ftc663-microarchitecture|Phytium D200
 ## Sources
 
 - [[sources/chipsandcheese-loongson-3a5000]]
+- [[sources/chipsandcheese-loongson-lsx-lasx]]

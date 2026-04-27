@@ -64,3 +64,5 @@ sources: 2
 - [[sources/outerra-opengl-perf-blocks]]
 - [[sources/tedsie-draw-call-basics]]
 - [[sources/supnik-instancing-numbers]]
+- [[sources/c0de517e-how-make-rendering-engine]] — sort-key 无状态渲染架构详解
+- [[sources/c0de517e-push-updater-pattern]] — CPU draw call 瓶颈与 push 模式优化

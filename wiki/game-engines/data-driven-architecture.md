@@ -62,3 +62,4 @@ Unity DOTS 的目标之一是**在保持数据驱动灵活性的同时恢复性�
 ## Sources
 
 - [[sources/gea-day01]]
+- [[sources/c0de517e-nextgen-data]] — 渲染天然数据驱动，呼吁动画/AI借鉴

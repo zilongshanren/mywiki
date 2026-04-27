@@ -1378,3 +1378,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-109 Worker LP (asawicki.info ×3 + 2 skip)
 
 处理 5 篇 asawicki.info 文章。跳过 2 篇重复。新增 2 概念页（d3d12-root-signature、windows-startup-dll-scan）、3 source 摘要。asawicki.info 基本处理完毕。
+
+## [2026-04-27] ingest | Wave-110 Worker LQ (c0de517e 2014 ×5)
+
+处理 5 篇 Angelo Pesce 2014 年文章，全部收录。新增 2 概念页（push-updater-pattern、envmap-ibl-approximation-errors）、5 source 摘要。Patch：draw-call、split-sum-approximation、parallax-corrected-cubemap、graphics-api-history、data-driven-architecture、angelo-pesce。
+
+## [2026-04-27] ingest | Wave-110 Worker LR (chipsandcheese 2023-02/03 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 3 概念页（rdna2-architecture、bvh-traversal-hardware、van-gogh-steam-deck-apu）、5 source 摘要。Sapphire Rapids patch 到 golden-cove-microarchitecture；LSX/LASX 新增到 loongson-3a5000；RT 对比 patch 到 rdna3。
+
+## [2026-04-27] ingest | Wave-110 Worker LS (blog.selfshadow.com ×5)
+
+本批 5 篇 selfshadow.com 文章全部 skip：2 篇重复，3 篇为公告/迁移/链接集合。blog.selfshadow.com 这批无新内容。

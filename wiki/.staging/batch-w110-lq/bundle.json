@@ -1,0 +1,101 @@
+{
+  "batch_id": "batch-w110-lq",
+  "agent_note": "5篇 c0de517e.blogspot.com（Angelo Pesce）2014年文章，全部技术性内容，全部收录。新增2个概念页（push-updater-pattern、envmap-ibl-approximation-errors）。angelo-pesce人物页已存在，不重复创建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-01-18_in-the-next-generation-everything-will-be-data-maybe.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-nextgen-data",
+      "title": "In the next-generation everything will be data (maybe)"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-02-10_design-pattern-the-push-updater.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-push-updater-pattern",
+      "title": "Design Pattern: The Push Updater"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-04-08_how-to-make-a-rendering-engine.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-how-make-rendering-engine",
+      "title": "How to make a rendering engine"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-06-03_rate-my-api.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-rate-my-api",
+      "title": "Rate my API"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2014-06-25_oh-envmap-lighting-how-do-we-get-you-wrong-let-me-count-the.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-envmap-wrong",
+      "title": "Oh envmap lighting, how do we get you wrong? Let me count the ways..."
+    }
+  ],
+  "concepts_created": [
+    "software-design/push-updater-pattern",
+    "rendering/envmap-ibl-approximation-errors"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-nextgen-data",
+    "c0de517e-push-updater-pattern",
+    "c0de517e-how-make-rendering-engine",
+    "c0de517e-rate-my-api",
+    "c0de517e-envmap-wrong"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-nextgen-data]]\n- [[sources/c0de517e-push-updater-pattern]]\n- [[sources/c0de517e-how-make-rendering-engine]]\n- [[sources/c0de517e-rate-my-api]]\n- [[sources/c0de517e-envmap-wrong]]"
+    },
+    {
+      "file": "wiki/rendering/draw-call.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-how-make-rendering-engine]] — sort-key 无状态渲染架构详解\n- [[sources/c0de517e-push-updater-pattern]] — CPU draw call 瓶颈与 push 模式优化"
+    },
+    {
+      "file": "wiki/rendering/split-sum-approximation.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-envmap-wrong]] — split-sum 误差分析与各近似层的系统梳理"
+    },
+    {
+      "file": "wiki/rendering/parallax-corrected-cubemap.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-envmap-wrong]] — parallax correction 与预卷积假设矛盾的分析"
+    },
+    {
+      "file": "wiki/rendering/graphics-api-history.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-rate-my-api]] — 2014年 Metal/Mantle/DX12/AZDO 横向评估，Working×Useful×Easy框架"
+    },
+    {
+      "file": "wiki/game-engines/data-driven-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-nextgen-data]] — 渲染天然数据驱动，呼吁动画/AI借鉴"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 软件设计（wiki/software-design/）",
+      "row": "| [[software-design/push-updater-pattern]] | Push Updater 模式：写时广播替代读时跳转，消除渲染循环间接指针 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/envmap-ibl-approximation-errors]] | 环境贴图 IBL 近似误差清单：反射向量、遮挡、视差、法线方差等七类误差与修正 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-nextgen-data]] | Pesce：渲染数据驱动本质，呼吁动画/AI借鉴 |\n| [[sources/c0de517e-push-updater-pattern]] | Pesce：Push Updater 模式，Space Marine 优化案例 |\n| [[sources/c0de517e-how-make-rendering-engine]] | Pesce：Sort-key 无状态渲染引擎架构参考汇总 |\n| [[sources/c0de517e-rate-my-api]] | Pesce：2014年图形 API（Metal/Mantle/DX12/AZDO）评估框架 |\n| [[sources/c0de517e-envmap-wrong]] | Pesce：IBL cubemap 近似误差系统清单 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-110 Worker LQ (c0de517e.blogspot.com ×5)\n\n处理5篇 Angelo Pesce（c0de517e）2014年文章，全部收录。新增2概念页：push-updater-pattern（software-design）、envmap-ibl-approximation-errors（rendering）。新增5 source 摘要。人物页 angelo-pesce 已存在，追加 source 链接。跳过0篇。"
+}

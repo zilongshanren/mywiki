@@ -55,3 +55,4 @@ ReflDirWS      *= BoxScale;
 ## Sources
 
 - [[sources/interplay-parallax-corrected-cubemap]]
+- [[sources/c0de517e-envmap-wrong]] — parallax correction 与预卷积假设矛盾的分析

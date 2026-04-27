@@ -1,0 +1,122 @@
+{
+  "batch_id": "batch-w110-lr",
+  "agent_note": "5 篇 chipsandcheese.com 文章全部 ingested。新建 rdna2-architecture、bvh-traversal-hardware、van-gogh-steam-deck-apu 3 个概念页；5 个 source 摘要页。Sapphire Rapids patch 到 golden-cove-microarchitecture；LSX/LASX patch 到 loongson-3a5000；RT 对比文章 patch 到 rdna3-architecture。无跳过文章。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-02-20_amds-rdna-2-shooting-for-the-top.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rdna2-architecture",
+      "title": "AMD's RDNA 2: Shooting For the Top"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-02-26_loongsons-lsx-and-lasx-vector-extensions.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-loongson-lsx-lasx",
+      "title": "Loongson's LSX and LASX Vector Extensions"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-03-05_van-gogh-amds-steam-deck-apu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-van-gogh-steam-deck",
+      "title": "Van Gogh, AMD's Steam Deck APU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-03-12_sapphire-rapids-golden-cove-hits-servers.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-sapphire-rapids",
+      "title": "Sapphire Rapids: Golden Cove Hits Servers"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-03-22_raytracing-on-amds-rdna-2-3-and-nvidias-turing-and-pascal.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-rt-rdna-turing",
+      "title": "Raytracing on AMD's RDNA 2/3, and Nvidia's Turing and Pascal"
+    }
+  ],
+  "concepts_created": [
+    "rendering/rdna2-architecture",
+    "rendering/bvh-traversal-hardware",
+    "computer-systems/van-gogh-steam-deck-apu"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-rdna2-architecture",
+    "chipsandcheese-loongson-lsx-lasx",
+    "chipsandcheese-van-gogh-steam-deck",
+    "chipsandcheese-sapphire-rapids",
+    "chipsandcheese-rt-rdna-turing"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 参见",
+      "content": "- [[sources/chipsandcheese-sapphire-rapids]] — Sapphire Rapids 服务器实测：L2 升至 2 MB，L3 延迟退步 33%，AMX 矩阵加速"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-sapphire-rapids]]"
+    },
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 核心架构特征",
+      "content": "\n## LSX / LASX 向量扩展\n\nLoongArch 的 128-bit LSX 和 256-bit LASX 向量扩展对应 x86 的 SSE/AVX2，但文档未公开。Chester Lam 通过 Loongnix 工具链逆向分析发现若干重要特性：\n\n- 寄存器别名：F0-F31（64-bit）⊂ VR0-VR31（128-bit）⊂ XR0-XR31（256-bit）\n- **128-bit 指令会污染整个 256-bit 寄存器**（与 x86 保留上半部分的语义相反）\n- 跨页边界的部分寄存器加载产生未定义行为，表现极不可预测\n- 3A5000 原生 256-bit 执行（不拆分为两个 128-bit micro-op），两端口支持整数操作双发射\n- 浮点侧：FP add 和 FP multiply 各一个专用管道，共享单个 FMA 单元；FP 延迟 5 周期（Zen 1 为 3 周期）\n- 标量 FP 与向量混用时重命名容量下降约 32 条目\n\n详见 [[sources/chipsandcheese-loongson-lsx-lasx]]。"
+    },
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-loongson-lsx-lasx]]"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-rt-rdna-turing]]"
+    },
+    {
+      "file": "wiki/rendering/rdna3-architecture.md",
+      "operation": "append_to_section",
+      "section": "## 与 Ada Lovelace 对比",
+      "content": "\n与 [[rendering/rdna2-architecture|RDNA 2]] 相比，RDNA 3 在光追场景的核心改进（L0/L1 翻倍、新增 LDS BVH 指令、更大向量 RF）直接对应 AMD BVH 深树策略的延迟瓶颈。实测（Cyberpunk 2077）：box test 吞吐从 28.7 Gb/s 提升至 45.2 Gb/s，占用率从 10/16 提升至 12/16。详见 [[rendering/bvh-traversal-hardware]]。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/rdna2-architecture]] | AMD RDNA 2 架构：四级缓存、Infinity Cache、硬件光追设计 |"
+    },
+    {
+      "category_header": "## 渲染（wiki/rendering/）",
+      "row": "| [[rendering/bvh-traversal-hardware]] | AMD 窄树 vs Nvidia 宽树 BVH 遍历策略对比 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/van-gogh-steam-deck-apu]] | Steam Deck APU：Zen 2 + RDNA 2 极端 CPU/GPU 权衡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rdna2-architecture]] | Chester Lam：RDNA 2 深度测评（缓存、光追、游戏帧分析）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-loongson-lsx-lasx]] | Chester Lam：龙芯 LSX/LASX 向量扩展逆向分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-van-gogh-steam-deck]] | Chester Lam：Van Gogh Steam Deck APU 测评 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-sapphire-rapids]] | Chester Lam：Sapphire Rapids 服务器微基准测试 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-rt-rdna-turing]] | Chester Lam：RDNA 2/3 vs Turing/Pascal 光追 BVH 策略对比 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-110 Worker LR (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com Chester Lam 文章。新增概念页 3 个（rdna2-architecture、bvh-traversal-hardware、van-gogh-steam-deck-apu），source 摘要 5 个。Patch：golden-cove-microarchitecture 补充 Sapphire Rapids 服务器变体数据；loongson-3a5000-microarchitecture 新增 LSX/LASX 向量扩展章节；rdna3-architecture 补充与 RDNA 2 光追对比数据及 bvh-traversal-hardware 链接。无跳过文章。"
+}

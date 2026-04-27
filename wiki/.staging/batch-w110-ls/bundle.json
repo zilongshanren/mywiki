@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w110-ls",
+  "agent_note": "5篇 selfshadow 文章全部跳过：2篇重复（已有 source 页），3篇无技术内容（公告/迁移通知/链接集合）。无新页面创建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/blog.selfshadow.com/2011-09-22_practical-dynamic-visibility-for-games.md",
+      "status": "skipped_duplicate",
+      "reason": "已处理，source 页 wiki/sources/selfshadow-practical-visibility.md 已存在"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2011-10-01_hidden-costs.md",
+      "status": "skipped_offtopic",
+      "reason": "内容为公告帖，仅宣布两篇已发布 publication 上线（practical-visibility 和 overdraw 分析），无独立技术内容，无需单独摘要页"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2012-04-11_travelling-without-moving.md",
+      "status": "skipped_offtopic",
+      "reason": "博客平台迁移通知（WordPress 迁移至 Octopress），无技术内容"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2012-07-08_blending-in-detail.md",
+      "status": "skipped_duplicate",
+      "reason": "已处理，source 页 wiki/sources/selfshadow-blending-in-detail.md 已存在"
+    },
+    {
+      "path": "raw/articles/blog.selfshadow.com/2013-07-24_siggraph-2013-links.md",
+      "status": "skipped_offtopic",
+      "reason": "纯链接集合，收录 SIGGRAPH 2013 课程/论文/演讲链接，无原创技术分析内容"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": "## [2026-04-27] ingest | Wave-110 Worker LS (selfshadow.com ×5)\n\n处理 5 篇 blog.selfshadow.com 文章。跳过 2 篇重复（selfshadow-practical-visibility、selfshadow-blending-in-detail 已有 source 页）；跳过 3 篇无技术内容（hidden-costs 为 publication 公告帖，travelling-without-moving 为博客平台迁移通知，siggraph-2013-links 为纯链接集合）。无新页面创建。"
+}

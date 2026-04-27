@@ -46,6 +46,7 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[zen2-microarchitecture]]
 - [[neoverse-n1-microarchitecture]]
 - [[via-x86-isaiah-lujiazui]] — Nano 也做过 2 周期 FP add，但频率远低
+- [[sources/chipsandcheese-sapphire-rapids]] — Sapphire Rapids 服务器实测：L2 升至 2 MB，L3 延迟退步 33%，AMX 矩阵加速
 
 ## Sources
 
@@ -59,3 +60,4 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[sources/chipsandcheese-zen4-part2]]
 - [[sources/chipsandcheese-golden-cove-vector-rf]]
 - [[sources/chipsandcheese-golden-cove-vrf-official]]
+- [[sources/chipsandcheese-sapphire-rapids]]

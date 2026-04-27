@@ -104,6 +104,7 @@ sources: 371
 | [[file-format-vs-data-model]] | 文件格式与内存数据模型的分离：两者目标不同，不该捆绑在一起 |
 | [[always-shippable-game]] | 游戏生产阶段任意时刻必须处于可发布状态；Pesce 五项「完成」标准 |
 | [[software-release-estimation]] | 软件估时难题；可复用性使每个功能都是第一次；缩减范围是唯一有效手段 |
+| [[push-updater-pattern]] | Push Updater 模式：写时广播替代读时跳转，消除渲染循环间接指针 |
 ## 编程语言基础（wiki/programming-languages/）
 SICP 及 Lambda 演算传统的核心概念。
 
@@ -360,6 +361,7 @@ CAQA + CSAPP 的底层视角。
 | [[loongson-3a5000-microarchitecture]] | 龙芯 3A5000 / LA464，LoongArch ISA，国产 CPU 阶段性高水位 |
 | [[dunnington-penryn-server]] | Intel Dunnington 六核服务器处理器，Penryn 微架构分析及早期 uncore 设计得失 |
 | [[windows-startup-dll-scan]] | Windows Smart App Control 导致的 DLL 加载延迟及排查方法 |
+| [[van-gogh-steam-deck-apu]] | Steam Deck APU：Zen 2 + RDNA 2 极端 CPU/GPU 权衡 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1037,6 +1039,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[specular-aliasing]] | 高频法线/几何在高光计算中产生的闪烁问题及缓解方案 |
 | [[frostbite-bf4-rendering-analysis]] | Pesce 2013 年对 BF4/Frostbite 渲染技术的非正式评析 |
 | [[d3d12-root-signature]] | D3D12 根签名六种表示形式及互转路径，工程权衡 |
+| [[envmap-ibl-approximation-errors]] | 环境贴图 IBL 近似误差清单：反射向量、遮挡、视差、法线方差等七类误差与修正 |
+| [[rdna2-architecture]] | AMD RDNA 2 架构：四级缓存、Infinity Cache、硬件光追设计 |
+| [[bvh-traversal-hardware]] | AMD 窄树 vs Nvidia 宽树 BVH 遍历策略对比 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2368,6 +2373,16 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/asawicki-dx12-root-signatures]] | Sawicki：D3D12 根签名的六种形式与转换 |
 | [[sources/asawicki-dx12-clearuav-behavior]] | Sawicki：ClearUAV 跨厂商行为实验记录 |
 | [[sources/asawicki-app-startup-5min-fix]] | Sawicki：Smart App Control 导致 5 分钟启动延迟的排查与修复 |
+| [[sources/c0de517e-nextgen-data]] | Pesce：渲染数据驱动本质，呼吁动画/AI借鉴 |
+| [[sources/c0de517e-push-updater-pattern]] | Pesce：Push Updater 模式，Space Marine 优化案例 |
+| [[sources/c0de517e-how-make-rendering-engine]] | Pesce：Sort-key 无状态渲染引擎架构参考汇总 |
+| [[sources/c0de517e-rate-my-api]] | Pesce：2014年图形 API（Metal/Mantle/DX12/AZDO）评估框架 |
+| [[sources/c0de517e-envmap-wrong]] | Pesce：IBL cubemap 近似误差系统清单 |
+| [[sources/chipsandcheese-rdna2-architecture]] | Chester Lam：RDNA 2 深度测评（缓存、光追、游戏帧分析）|
+| [[sources/chipsandcheese-loongson-lsx-lasx]] | Chester Lam：龙芯 LSX/LASX 向量扩展逆向分析 |
+| [[sources/chipsandcheese-van-gogh-steam-deck]] | Chester Lam：Van Gogh Steam Deck APU 测评 |
+| [[sources/chipsandcheese-sapphire-rapids]] | Chester Lam：Sapphire Rapids 服务器微基准测试 |
+| [[sources/chipsandcheese-rt-rdna-turing]] | Chester Lam：RDNA 2/3 vs Turing/Pascal 光追 BVH 策略对比 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
