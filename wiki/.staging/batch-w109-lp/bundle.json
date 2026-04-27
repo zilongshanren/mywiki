@@ -1,0 +1,81 @@
+{
+  "batch_id": "batch-w109-lp",
+  "agent_note": "5篇 asawicki.info 文章：2篇重复跳过（system-load-formula、dx12-gdc-2026-comments），3篇新增；创建2个概念页、3个source摘要。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/asawicki.info/2024-05-14_shapes-and-forms-of-dx12-root-signatures.md",
+      "status": "ingested",
+      "source_slug": "asawicki-dx12-root-signatures",
+      "title": "Shapes and Forms of DX12 Root Signatures"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2025-12-17_secrets-of-direct3d-12-the-behavior-of-clearunorderedaccessv.md",
+      "status": "ingested",
+      "source_slug": "asawicki-dx12-clearuav-behavior",
+      "title": "Secrets of D3D12: The Behavior of ClearUnorderedAccessViewUint/Float"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2025-12-22_how-i-fixed-my-app-taking-5-minutes-to-start.md",
+      "status": "ingested",
+      "source_slug": "asawicki-app-startup-5min-fix",
+      "title": "How I Fixed My App Taking 5 Minutes to Start"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2026-02-26_a-formula-for-overall-system-load.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/asawicki-system-load-formula.md 已存在，内容相同"
+    },
+    {
+      "path": "raw/articles/asawicki.info/2026-03-15_directx-12-news-from-gdc-2026-my-comments.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/asawicki-dx12-gdc-2026-comments.md 已存在，内容相同"
+    }
+  ],
+  "concepts_created": [
+    "d3d12-root-signature",
+    "windows-startup-dll-scan"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "asawicki-dx12-root-signatures",
+    "asawicki-dx12-clearuav-behavior",
+    "asawicki-app-startup-5min-fix"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/d3d12-resource-binding.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/asawicki-dx12-root-signatures]]\n- [[sources/asawicki-dx12-clearuav-behavior]]"
+    },
+    {
+      "file": "wiki/people/adam-sawicki.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/asawicki-dx12-root-signatures]]\n- [[sources/asawicki-dx12-clearuav-behavior]]\n- [[sources/asawicki-app-startup-5min-fix]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[d3d12-root-signature]] | D3D12 根签名六种表示形式及互转路径，工程权衡 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[windows-startup-dll-scan]] | Windows Smart App Control 导致的 DLL 加载延迟及排查方法 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-dx12-root-signatures]] | Sawicki：D3D12 根签名的六种形式与转换 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-dx12-clearuav-behavior]] | Sawicki：ClearUAV 跨厂商行为实验记录 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/asawicki-app-startup-5min-fix]] | Sawicki：Smart App Control 导致 5 分钟启动延迟的排查与修复 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-109 Worker LP (asawicki.info ×3 ingested, ×2 skipped)\n\n处理 5 篇 asawicki.info 文章。跳过 2 篇重复（system-load-formula、dx12-gdc-2026-comments 已在先前 wave 处理）。新增 2 概念页（d3d12-root-signature、windows-startup-dll-scan）、3 source 摘要（asawicki-dx12-root-signatures、asawicki-dx12-clearuav-behavior、asawicki-app-startup-5min-fix）。Patch：d3d12-resource-binding 和 adam-sawicki 人物页 Sources 追加新引用。"
+}

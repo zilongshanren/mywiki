@@ -1,0 +1,98 @@
+{
+  "batch_id": "batch-w109-lo",
+  "agent_note": "5 chipsandcheese.com articles: Golden Cove VRF official verification (patch to existing concept), Bulldozer 2-part deep dive (new concept page), Loongson 3A5000 (new concept page), Dunnington/Penryn server (new concept page).",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-15_golden-coves-vector-register-file-checking-with-official-spr.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-golden-cove-vrf-official",
+      "title": "Golden Cove's Vector Register File: Checking with Official (SPR) Data"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-22_bulldozer-amds-crash-modernization-frontend-and-execution-en.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-bulldozer-part1",
+      "title": "Bulldozer, AMD's Crash Modernization: Frontend and Execution Engine"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-24_bulldozer-amds-crash-modernization-caching-and-conclusion.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-bulldozer-part2",
+      "title": "Bulldozer, AMD's Crash Modernization: Caching and Conclusion"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-01-29_previewing-chinas-loongson-3a5000-with-performance-counters.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-loongson-3a5000",
+      "title": "Previewing China's Loongson 3A5000 with Performance Counters"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2023-02-05_intels-dunnington-core-2-goes-dun-dun-dun.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-dunnington",
+      "title": "Intel's Dunnington: Core 2 Goes Dun Dun Dun"
+    }
+  ],
+  "concepts_created": [
+    "bulldozer-microarchitecture",
+    "loongson-3a5000-microarchitecture",
+    "dunnington-penryn-server"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-golden-cove-vrf-official",
+    "chipsandcheese-bulldozer-part1",
+    "chipsandcheese-bulldozer-part2",
+    "chipsandcheese-loongson-3a5000",
+    "chipsandcheese-dunnington"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 向量寄存器文件：不对称设计",
+      "content": "\n**官方数据验证（2023 年 1 月）**：Intel Sapphire Rapids 官方幻灯片证实总向量 RF 约 327 条目（其中约 242 个 512-bit 宽槽），与微基准估算吻合。整数 RF 官方称 +8 条目（280→288），但推测窗口无改善，说明额外条目用于保存 SMT 体系结构状态。Load Queue 官方称 240 条目，微基准测到 192，双方定义存在分歧。详见 [[sources/chipsandcheese-golden-cove-vrf-official]]。"
+    },
+    {
+      "file": "wiki/computer-systems/golden-cove-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-golden-cove-vrf-official]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/bulldozer-microarchitecture]] | AMD Bulldozer CMT 模块化微架构，2011 年激进现代化尝试及其失败根因 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/loongson-3a5000-microarchitecture]] | 龙芯 3A5000 / LA464，LoongArch ISA，国产 CPU 阶段性高水位 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/dunnington-penryn-server]] | Intel Dunnington 六核服务器处理器，Penryn 微架构分析及早期 uncore 设计得失 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-golden-cove-vrf-official]] | Chester Lam：Golden Cove 向量 RF 与 SPR 官方数据交叉验证 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-bulldozer-part1]] | Chester Lam：Bulldozer 前端与执行引擎深度剖析（第一部分）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-bulldozer-part2]] | Chester Lam：Bulldozer 缓存子系统与综合结论（第二部分）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-loongson-3a5000]] | Chester Lam：龙芯 3A5000 性能计数器初步分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-dunnington]] | Chester Lam：Intel Dunnington 六核服务器与 Penryn 微架构 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-109 Worker LO (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。新增 3 概念页（bulldozer-microarchitecture、loongson-3a5000-microarchitecture、dunnington-penryn-server）、5 source 摘要。Golden Cove VRF 官方验证文章 patch 到已有 golden-cove-microarchitecture 页面，添加 source link。0 篇跳过。"
+}

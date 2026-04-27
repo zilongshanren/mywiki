@@ -42,3 +42,6 @@ sources: 7
 - [[sources/asawicki-d3d12-resource-alignment]]
 - [[sources/asawicki-compute-shader-sv-cheat-sheet]]
 - [[sources/asawicki-memory-fragmentation-metric]]
+- [[sources/asawicki-dx12-root-signatures]]
+- [[sources/asawicki-dx12-clearuav-behavior]]
+- [[sources/asawicki-app-startup-5min-fix]]

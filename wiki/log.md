@@ -1366,3 +1366,15 @@ Joost van Dongen 2011 年 7 至 8 月。5 篇处理 2 篇纳入：`games-as-expr
 ## [2026-04-27] ingest | Wave-108 Worker LM (chipsandcheese.com ×5)
 
 处理 5 篇 chipsandcheese.com 文章（2022-12 ~ 2023-01）。新建 3 概念页（knights-landing-microarchitecture、rocket-lake-cypress-cove、rdna3-architecture）、5 source 摘要页。向 golden-cove-microarchitecture 和 zen4-microarchitecture 发出内容扩充 patch。全部 5 篇 ingested，无跳过。
+
+## [2026-04-27] ingest | Wave-109 Worker LN (c0de517e 2013 ×4 + 1 skip)
+
+处理 5 篇 c0de517e.blogspot.com 2013 年文章。ingested 4 篇，跳过 1 篇（controlling-light，原文缺失）。新增概念页：mantle-api、dx11-driver-overhead、specular-aliasing、frostbite-bf4-rendering-analysis。新增 source 摘要 4 个。
+
+## [2026-04-27] ingest | Wave-109 Worker LO (chipsandcheese 2023-01 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 3 概念页（bulldozer-microarchitecture、loongson-3a5000-microarchitecture、dunnington-penryn-server）、5 source 摘要。Golden Cove VRF 官方验证文章 patch 到已有页面。0 篇跳过。
+
+## [2026-04-27] ingest | Wave-109 Worker LP (asawicki.info ×3 + 2 skip)
+
+处理 5 篇 asawicki.info 文章。跳过 2 篇重复。新增 2 概念页（d3d12-root-signature、windows-startup-dll-scan）、3 source 摘要。asawicki.info 基本处理完毕。

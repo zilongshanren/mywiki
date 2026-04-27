@@ -54,3 +54,5 @@ DirectX 12 相比 DirectX 11 最大的负担就是**资源绑定不再被驱动�
 
 - [[sources/3dgep-learning-directx12-lesson3]]
 - [[sources/jasper-how-to-write-a-renderer]]
+- [[sources/asawicki-dx12-root-signatures]]
+- [[sources/asawicki-dx12-clearuav-behavior]]

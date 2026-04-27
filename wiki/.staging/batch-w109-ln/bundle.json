@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch-w109-ln",
+  "agent_note": "c0de517e 2013年文章5篇：dx11 gpu printf / controlling light（跳过）/ bf4 graphics review / on mantle / mathematica 101。新增 mantle-api、dx11-driver-overhead、specular-aliasing、frostbite-bf4-rendering-analysis 概念页，4 source 摘要页。controlling-light 原文内容缺失（仅剩评论）跳过。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-07-14_dx11-gpu-printf.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-dx11-gpu-printf",
+      "title": "DX11: GPU printf"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-10-18_controlling-light.md",
+      "status": "skipped_offtopic",
+      "reason": "原文内容缺失：正文已丢失，文件仅保留了评论区对话；无实质技术内容可摘要"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-11-01_battlefield-4-review-graphics.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-bf4-graphics-review",
+      "title": "Battlefield 4 Review (graphics)"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-12-01_on-mantle.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-on-mantle",
+      "title": "On Mantle"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2013-10-06_wolfram-s-mathematica-101.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-mathematica-101",
+      "title": "Wolfram's Mathematica 101"
+    }
+  ],
+  "concepts_created": [
+    "mantle-api",
+    "dx11-driver-overhead",
+    "specular-aliasing",
+    "frostbite-bf4-rendering-analysis"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-dx11-gpu-printf",
+    "c0de517e-bf4-graphics-review",
+    "c0de517e-on-mantle",
+    "c0de517e-mathematica-101"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/gpu-printf-debugging.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dx11-gpu-printf]]"
+    },
+    {
+      "file": "wiki/rendering/graphics-api-history.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[mantle-api]] — AMD 2013 年低层 API，DX12/Vulkan 的前驱与倒逼者\n- [[dx11-driver-overhead]] — DX11 驱动开销的结构性根因分析"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-dx11-gpu-printf]]\n- [[sources/c0de517e-bf4-graphics-review]]\n- [[sources/c0de517e-on-mantle]]\n- [[sources/c0de517e-mathematica-101]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[mantle-api]] | AMD 2013 年低层图形 API，DX12/Vulkan 的先驱与倒逼者 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[dx11-driver-overhead]] | DX11 驱动 CPU 开销的三个结构性根因（延迟状态/资源生命周期/deferred context） |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[specular-aliasing]] | 高频法线/几何在高光计算中产生的闪烁问题及缓解方案 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[frostbite-bf4-rendering-analysis]] | Pesce 2013 年对 BF4/Frostbite 渲染技术的非正式评析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-dx11-gpu-printf]] | Pesce：DX11 GPU printf（append buffer + GS 字形渲染） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-bf4-graphics-review]] | Pesce：BF4 渲染技术非正式评析（specular、occlusion、DOF） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-on-mantle]] | Pesce：AMD Mantle API 分析（DX11 缺陷、百万 drawcall、倒逼效应） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-mathematica-101]] | Pesce：Mathematica 速成指南（渲染工程师数值探索工具） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-109 Worker LN (c0de517e 2013 ×5)\n\n处理 5 篇 c0de517e.blogspot.com 2013 年文章。ingested 4 篇，跳过 1 篇（controlling-light，原文内容缺失）。新增概念页：mantle-api、dx11-driver-overhead、specular-aliasing、frostbite-bf4-rendering-analysis（均在 wiki/rendering/）。新增 source 摘要：c0de517e-dx11-gpu-printf、c0de517e-bf4-graphics-review、c0de517e-on-mantle、c0de517e-mathematica-101。gpu-printf-debugging、graphics-api-history、angelo-pesce 三个已有页追加 patch。"
+}

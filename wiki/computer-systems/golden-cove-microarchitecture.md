@@ -18,6 +18,8 @@ Golden Cove 的向量寄存器文件在 512-bit 支持上刻意做了削减：�
 
 SMT 场景下，Golden Cove 采用 **watermark 机制**（而非固定对半分）：单线程最多可用 221 个 FP 寄存器（512-bit 模式为 141），保证兄弟线程至少 130 个（512-bit 模式为 106）。Ice Lake SP 已引入 watermark，Golden Cove 是第二代。Skylake 是固定对半分。相比之下，Zen 4 SMT 完全竞争共享，无 watermark，也无 512-bit 容量限制。
 
+**官方数据验证（2023 年 1 月）**：Intel Sapphire Rapids 官方幻灯片证实总向量 RF 约 327 条目（其中约 242 个 512-bit 宽槽），与微基准估算吻合。整数 RF 官方称 +8 条目（280→288），但推测窗口无改善，说明额外条目用于保存 SMT 体系结构状态。详见 [[sources/chipsandcheese-golden-cove-vrf-official]]。
+
 ## 后端：ROB +45%，但整数寄存器堆没跟上
 
 重排序缓冲扩到 **512 项**（Sunny Cove 352），FP 寄存器堆、load/store queue、superqueue 都同比例放大。Golden Cove 配 **五个 ALU 端口**（x86 史上最多）、**3 个 load AGU + 2 个 store AGU**、FP 三端口。FP add 延迟压到 **2 周期**@5 GHz+（仅 VIA Nano 做过但时钟低），vector register file 推测有 8 read + 3 write 口。
@@ -56,3 +58,4 @@ Golden Cove 的整数性能被 Chester 评为"没把管线喂饱就堆 ALU"—�
 - [[sources/chipsandcheese-zen4-part1]]
 - [[sources/chipsandcheese-zen4-part2]]
 - [[sources/chipsandcheese-golden-cove-vector-rf]]
+- [[sources/chipsandcheese-golden-cove-vrf-official]]

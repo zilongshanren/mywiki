@@ -356,6 +356,10 @@ CAQA + CSAPP 的底层视角。
 | [[cannon-lake-microarchitecture]] | Intel Cannon Lake（Palm Cove）：10nm 首代失败，iGPU 禁用的遗憾产品 |
 | [[knights-landing-microarchitecture]] | Intel Xeon Phi KNL：Silvermont 改造 + AVX-512 + SMT4 + MCDRAM，HPC 多核方案 |
 | [[rocket-lake-cypress-cove]] | Rocket Lake / Cypress Cove：Sunny Cove backport 至 14nm，效率分析 |
+| [[bulldozer-microarchitecture]] | AMD Bulldozer CMT 模块化微架构，2011 年激进现代化尝试及其失败根因 |
+| [[loongson-3a5000-microarchitecture]] | 龙芯 3A5000 / LA464，LoongArch ISA，国产 CPU 阶段性高水位 |
+| [[dunnington-penryn-server]] | Intel Dunnington 六核服务器处理器，Penryn 微架构分析及早期 uncore 设计得失 |
+| [[windows-startup-dll-scan]] | Windows Smart App Control 导致的 DLL 加载延迟及排查方法 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1028,6 +1032,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[color-blindness-accessibility]] | 色盲辅助渲染：daltonization 算法与游戏后处理集成 |
 | [[skin-rendering-practice]] | 皮肤渲染实践方法论：注意细节、参考资料、tonemapping、尺度、完整光照 |
 | [[rdna3-architecture]] | AMD RDNA 3 架构：chiplet、VOPD 双发射、缓存层次微基准 |
+| [[mantle-api]] | AMD 2013 年低层图形 API，DX12/Vulkan 的先驱与倒逼者 |
+| [[dx11-driver-overhead]] | DX11 驱动 CPU 开销的三个结构性根因（延迟状态/资源生命周期/deferred context） |
+| [[specular-aliasing]] | 高频法线/几何在高光计算中产生的闪烁问题及缓解方案 |
+| [[frostbite-bf4-rendering-analysis]] | Pesce 2013 年对 BF4/Frostbite 渲染技术的非正式评析 |
+| [[d3d12-root-signature]] | D3D12 根签名六种表示形式及互转路径，工程权衡 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2347,6 +2356,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-golden-cove-vector-rf]] | Chester Lam：Golden Cove 向量寄存器文件不对称设计 |
 | [[sources/chipsandcheese-zen4-part3]] | Chester Lam：Zen 4 Part 3——系统级与 iGPU |
 | [[sources/chipsandcheese-rdna3-architecture]] | Chester Lam：RDNA 3 微基准测试 |
+| [[sources/c0de517e-dx11-gpu-printf]] | Pesce：DX11 GPU printf（append buffer + GS 字形渲染） |
+| [[sources/c0de517e-bf4-graphics-review]] | Pesce：BF4 渲染技术非正式评析（specular、occlusion、DOF） |
+| [[sources/c0de517e-on-mantle]] | Pesce：AMD Mantle API 分析（DX11 缺陷、百万 drawcall、倒逼效应） |
+| [[sources/c0de517e-mathematica-101]] | Pesce：Mathematica 速成指南（渲染工程师数值探索工具） |
+| [[sources/chipsandcheese-golden-cove-vrf-official]] | Chester Lam：Golden Cove 向量 RF 与 SPR 官方数据交叉验证 |
+| [[sources/chipsandcheese-bulldozer-part1]] | Chester Lam：Bulldozer 前端与执行引擎深度剖析（第一部分）|
+| [[sources/chipsandcheese-bulldozer-part2]] | Chester Lam：Bulldozer 缓存子系统与综合结论（第二部分）|
+| [[sources/chipsandcheese-loongson-3a5000]] | Chester Lam：龙芯 3A5000 性能计数器初步分析 |
+| [[sources/chipsandcheese-dunnington]] | Chester Lam：Intel Dunnington 六核服务器与 Penryn 微架构 |
+| [[sources/asawicki-dx12-root-signatures]] | Sawicki：D3D12 根签名的六种形式与转换 |
+| [[sources/asawicki-dx12-clearuav-behavior]] | Sawicki：ClearUAV 跨厂商行为实验记录 |
+| [[sources/asawicki-app-startup-5min-fix]] | Sawicki：Smart App Control 导致 5 分钟启动延迟的排查与修复 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

@@ -60,3 +60,4 @@ UAV printf 是个典型的「小接口、大功能」的 [[deep-modules|深模�
 ## Sources
 
 - [[sources/bartwronski-csharprenderer-debug]]
+- [[sources/c0de517e-dx11-gpu-printf]]

@@ -30,7 +30,10 @@ sources: 1
 - [[advanced-shader-delivery]]
 - [[adam-sawicki]]
 - [[vulkan-explicit-performance]] —— Supnik 2015 年 Vulkan 公布当日的立场帖：三大卖点与未解的资源管理问题
+- [[mantle-api]] — AMD 2013 年低层 API，DX12/Vulkan 的先驱与倒逼者
+- [[dx11-driver-overhead]] — DX11 驱动 CPU 开销的三个结构性根因（延迟状态/资源生命周期/deferred context）
 
 ## Sources
 
 - [[sources/asawicki-graphics-apis-yesterday-today]]
+- [[sources/c0de517e-on-mantle]]

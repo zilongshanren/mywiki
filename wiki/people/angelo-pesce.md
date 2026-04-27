@@ -89,3 +89,7 @@ sources: 5
 - [[sources/c0de517e-color-blindness-games]]
 - [[sources/c0de517e-skin-rules-2]]
 - [[sources/c0de517e-cpp11-diet]]
+- [[sources/c0de517e-dx11-gpu-printf]]
+- [[sources/c0de517e-bf4-graphics-review]]
+- [[sources/c0de517e-on-mantle]]
+- [[sources/c0de517e-mathematica-101]]
