@@ -65,3 +65,5 @@ LoongArch 的 128-bit LSX 和 256-bit LASX 向量扩展对应 x86 的 SSE/AVX2�
 - [[sources/chipsandcheese-loongson-3a5000]]
 - [[sources/chipsandcheese-loongson-lsx-lasx]]
 - [[sources/chipsandcheese-loongson-best-shot]]
+- [[sources/chipsandcheese-loongson-3a6000]]
+- [[sources/chipsandcheese-loongson-vs-west]]

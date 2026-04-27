@@ -43,6 +43,10 @@ Kryo 的大核面积在同代移动核中最大（仅次于 Apple Hurricane）�
 
 Snapdragon 821 的继任者 835 采用定制 A73，Kryo 品牌名被沿用但实质已变质（"Kryo 280" 实为定制 A73）。直到 2021 年高通收购 Nuvia，自研 CPU 核才重新提上日程（即后来的 Oryon 核）。Kryo 证明了高通有能力设计激进的移动核，但也暴露了端到端系统协同设计（缓存、TLB、散热）的短板。
 
+## 相关
+
+- [[rendering/adreno-640-architecture]] — Adreno 640 是 Snapdragon 855 的配套 iGPU，继任 Snapdragon 821（Kryo 时代）的 Adreno 530
+
 ## Sources
 
 - [[sources/chipsandcheese-qualcomm-kryo]]

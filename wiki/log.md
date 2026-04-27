@@ -1438,3 +1438,15 @@ Ingest 2 篇，跳过 3 篇（1 重复 + 2 磁盘缺失）。新增 2 source 摘
 ## [2026-04-27] ingest | Wave-114 Worker ME (chipsandcheese 2023-11~2024-01 ×5)
 
 处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（sw26010-pro-architecture、cdna3-mi300x-architecture、gcn-architecture、rdna4-architecture）、5 source 摘要。patch：cdna2-mi200-architecture、meteor-lake-chiplet-architecture。
+
+## [2026-04-27] ingest | Wave-115 Worker MF (c0de517e 2020-2023 ×4 + 1 skip)
+
+处理 5 篇 Angelo Pesce 文章。ingested 4 篇，跳过 1 篇（私有演讲外链）。新增 3 概念页（software-rasterization-compute、aaa-rendering-complexity、rendering-innovation-metatechniques）、4 source 摘要。
+
+## [2026-04-27] ingest | Wave-115 Worker MG (chipsandcheese 2024-02/04 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 4 概念页（zen4c-microarchitecture、loongson-3a6000-microarchitecture、xe-lpg-igpu-architecture、xe-lpg-raytracing）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-115 Worker MH (chipsandcheese 2024-03~05 ×5)
+
+处理 5 篇 chipsandcheese.com 文章。新增 5 概念页（cdc-6600-architecture、scoreboard-scheduling、npu-accelerator-design、loongson-historical-trajectory、adreno-640-architecture）、5 source 摘要。

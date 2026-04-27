@@ -1,0 +1,120 @@
+{
+  "batch_id": "batch-w115-mh",
+  "agent_note": "5篇 chipsandcheese.com 文章：CDC 6600 历史大机（愚人节技术分析）、Meteor Lake NPU、龙芯追赶西方分析、Snapdragon 855 Adreno 640 iGPU、x86 无需消亡。全部收录。新增概念页5个、source页5个，无人物页（chester-lam 已存在）。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-04-01_inside-control-data-corporations-cdc-6600.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cdc-6600",
+      "title": "Inside Control Data Corporation's CDC 6600"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-04-22_intel-meteor-lakes-npu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-meteor-lake-npu",
+      "title": "Intel Meteor Lake's NPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-04-29_can-chinas-loongson-catch-western-designs-probably-not.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-loongson-vs-west",
+      "title": "Can China's Loongson Catch Western Designs? Probably Not."
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-05-01_inside-the-snapdragon-855s-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-snapdragon855-igpu",
+      "title": "Inside the Snapdragon 855's iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-27_why-x86-doesnt-need-to-die.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-x86-doesnt-need-to-die",
+      "title": "Why x86 Doesn't Need to Die"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/cdc-6600-architecture",
+    "computer-systems/scoreboard-scheduling",
+    "computer-systems/npu-accelerator-design",
+    "computer-systems/loongson-historical-trajectory",
+    "rendering/adreno-640-architecture"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-cdc-6600",
+    "chipsandcheese-meteor-lake-npu",
+    "chipsandcheese-loongson-vs-west",
+    "chipsandcheese-snapdragon855-igpu",
+    "chipsandcheese-x86-doesnt-need-to-die"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-loongson-vs-west]]"
+    },
+    {
+      "file": "wiki/computer-systems/isa-implementation-not-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-x86-doesnt-need-to-die]]"
+    },
+    {
+      "file": "wiki/computer-systems/meteor-lake-chiplet-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-npu]]"
+    },
+    {
+      "file": "wiki/computer-systems/qualcomm-kryo-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[rendering/adreno-640-architecture]] — Adreno 640 是 Snapdragon 855 的配套 iGPU，继任 Snapdragon 821（Kryo 时代）的 Adreno 530"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cdc-6600-architecture]] | CDC 6600 大型机：10 个并行功能单元、Scoreboard 调度、无分支预测、无缓存，1964 年 Seymour Cray 设计 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[scoreboard-scheduling]] | Scoreboard 调度机制：CDC 6600 的依赖追踪方案，Tomasulo 算法的前身 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[npu-accelerator-design]] | NPU 加速器设计：MAC 阵列、scratchpad 内存、Intel NPU 3720 实测，AI PC 营销与现实的落差 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[loongson-historical-trajectory]] | 龙芯历代架构轨迹：2003-2024 年 IPC 尚可但频率长期落后，制造与软件生态的结构性制约 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/adreno-640-architecture]] | Adreno 640（Snapdragon 855）：wave128 超宽向量、SP 资源共享、Tiled Rendering 低带宽优势与计算场景局限 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cdc-6600]] | Chester Lam：CDC 6600 大型机愚人节技术解析（Seymour Cray 1964） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-meteor-lake-npu]] | Chester Lam：Meteor Lake NPU 3720 微基准测试与架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-loongson-vs-west]] | Chester Lam：龙芯能否追赶西方设计——历史轨迹与结构性差距 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-snapdragon855-igpu]] | Chester Lam：Snapdragon 855 Adreno 640 iGPU 微架构深度分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-x86-doesnt-need-to-die]] | Chester Lam：x86 无需消亡——RISC vs CISC 争论为何已死 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-115 Worker MH (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。新增概念页5个（cdc-6600-architecture、scoreboard-scheduling、npu-accelerator-design、loongson-historical-trajectory、adreno-640-architecture）、source 摘要页 5 个。无新人物页（chester-lam 已存在）。跳过 0 篇。现有页 patches：loongson-3a5000-microarchitecture、isa-implementation-not-architecture、meteor-lake-chiplet-architecture、qualcomm-kryo-microarchitecture 各添加 source 链接或相关条目。"
+}

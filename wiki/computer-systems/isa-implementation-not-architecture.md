@@ -49,3 +49,4 @@ Keller 在访谈里说"如果今天要重新设计快 CPU，RISC-V 最容易"—
 
 - [[sources/chipsandcheese-isa-doesnt-matter]]
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
+- [[sources/chipsandcheese-x86-doesnt-need-to-die]]

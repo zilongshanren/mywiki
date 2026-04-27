@@ -49,3 +49,4 @@ Skylake 的 store buffer 更大，在 store 密集型负载下具有优势。Sky
 - [[sources/chipsandcheese-zen2-op-cache-performance]]
 - [[sources/chipsandcheese-neoverse-n1-vs-zen2]]
 - [[sources/chipsandcheese-skylake-architecture]]
+- [[sources/chipsandcheese-ps5-zen2-fpu]]

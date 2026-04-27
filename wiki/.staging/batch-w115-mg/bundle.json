@@ -1,0 +1,127 @@
+{
+  "batch_id": "batch-w115-mg",
+  "agent_note": "5篇 chipsandcheese.com 文章全部摄入。新增 4 个概念页（zen4c、loongson-3a6000、xe-lpg-igpu、xe-lpg-raytracing），5 个 source 页。chester-lam 和 george-cozma 人物页已存在，无需新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-02-12_amds-mild-hybrid-strategy-ryzen-z1-in-asuss-rog-ally.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ryzen-z1-rog-ally",
+      "title": "AMD's Mild Hybrid Strategy: Ryzen Z1 in ASUS's ROG Ally"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-14_loongson-3a6000-a-star-among-chinese-cpus.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-loongson-3a6000",
+      "title": "Loongson 3A6000: A Star among Chinese CPUs"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-03-20_the-nerfed-fpu-in-ps5s-zen-2-cores.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-ps5-zen2-fpu",
+      "title": "The Nerfed FPU in PS5's Zen 2 Cores"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-04-08_intels-ambitious-meteor-lake-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-meteor-lake-igpu",
+      "title": "Intel's Ambitious Meteor Lake iGPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2024-04-15_raytracing-on-meteor-lakes-igpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-meteor-lake-igpu-rt",
+      "title": "Raytracing on Meteor Lake's iGPU"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/zen4c-microarchitecture",
+    "computer-systems/loongson-3a6000-microarchitecture",
+    "computer-systems/xe-lpg-igpu-architecture",
+    "rendering/xe-lpg-raytracing"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-ryzen-z1-rog-ally",
+    "chipsandcheese-loongson-3a6000",
+    "chipsandcheese-ps5-zen2-fpu",
+    "chipsandcheese-meteor-lake-igpu",
+    "chipsandcheese-meteor-lake-igpu-rt"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/zen2-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-ps5-zen2-fpu]]"
+    },
+    {
+      "file": "wiki/computer-systems/loongson-3a5000-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-loongson-3a6000]]"
+    },
+    {
+      "file": "wiki/computer-systems/amd-phoenix-soc.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-igpu]]"
+    },
+    {
+      "file": "wiki/computer-systems/meteor-lake-chiplet-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-igpu]]\n- [[sources/chipsandcheese-meteor-lake-igpu-rt]]"
+    },
+    {
+      "file": "wiki/rendering/xe-hpg-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-igpu]]\n- [[sources/chipsandcheese-meteor-lake-igpu-rt]]"
+    },
+    {
+      "file": "wiki/rendering/bvh-traversal-hardware.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-meteor-lake-igpu-rt]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/zen4c-microarchitecture]] | AMD Zen 4 紧凑版：物理重设计缩核 35%，架构与 ISA 完全保留 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/loongson-3a6000-microarchitecture]] | 龙芯 LA664：6 宽乱序 + SMT，性能约等于 Zen 1 |"
+    },
+    {
+      "category_header": "## 计算机系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/xe-lpg-igpu-architecture]] | Intel Meteor Lake iGPU：Xe-LPG 架构，4.5 TFLOPS，静态寄存器分配 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/xe-lpg-raytracing]] | Xe-LPG 硬件光追：RTA + restart trail，对比 AMD LDS 遍历栈方案 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ryzen-z1-rog-ally]] | Chester Lam：Ryzen Z1 ROG Ally，Zen4+Zen4c 混合核心分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-loongson-3a6000]] | Cozma & Lam：龙芯 3A6000 / LA664 全面微架构分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-ps5-zen2-fpu]] | Chester Lam：PS5 Zen 2 FPU 削减分析（BC-250 微基准）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-meteor-lake-igpu]] | Chester Lam：Meteor Lake iGPU 架构分析（Xe-LPG）|"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-meteor-lake-igpu-rt]] | Chester Lam：Meteor Lake iGPU 光线追踪深度分析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-115 Worker MG (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章：Ryzen Z1 ROG Ally、龙芯 3A6000、PS5 Zen 2 FPU、Meteor Lake iGPU 架构、Meteor Lake iGPU 光追。新增 4 概念页（zen4c-microarchitecture、loongson-3a6000-microarchitecture、xe-lpg-igpu-architecture、xe-lpg-raytracing）、5 source 摘要页。人物页 chester-lam/george-cozma 已存在。跳过 0 篇。"
+}

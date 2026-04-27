@@ -38,3 +38,4 @@ Visibility Buffer 在混合渲染管线里可以 **完美替代 primary ray**：
 ## Sources
 - [[sources/gameknife-gknextrenderer-yearone]]
 - [[sources/wolfgang-engel-triangle-visibility-buffer]]
+- [[sources/c0de517e-nanite-thoughts]]

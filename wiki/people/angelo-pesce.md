@@ -121,3 +121,7 @@ sources: 9
 - [[sources/c0de517e-whole-pbs-picture]]
 - [[sources/c0de517e-misunderstanding-multiscattering]]
 - [[sources/c0de517e-coder-color-palettes]]
+- [[sources/c0de517e-nanite-thoughts]]
+- [[sources/c0de517e-cyberpunk-rendering]]
+- [[sources/c0de517e-rt-wont-simplify]]
+- [[sources/c0de517e-how-to-render]]

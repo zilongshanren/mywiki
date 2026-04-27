@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w115-mf",
+  "agent_note": "5篇 c0de517e.blogspot.com 文章。1篇跳过（2022-06-11 私有活动演讲外链，无正文内容）。4篇 ingest，新增 3 个概念页和 4 个 source 摘要。angelo-pesce 人物页已存在，无需新建。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2020-05-15_some-thoughts-on-unreal-5-s-nanite-in-way-too-many-words.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-nanite-thoughts",
+      "title": "Some Thoughts on Unreal 5's Nanite — in Way Too Many Words"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2020-12-17_hallucinations-re-the-rendering-of-cyberpunk-2077.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-cyberpunk-rendering",
+      "title": "Hallucinations Re: the Rendering of Cyberpunk 2077"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2020-12-27_why-raytracing-won-t-simplify-aaa-real-time-rendering.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-rt-wont-simplify",
+      "title": "Why Raytracing Won't Simplify AAA Real-Time Rendering"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2022-06-11_real-time-rendering-past-present-and-a-probable-future.md",
+      "status": "skipped_offtopic",
+      "reason": "私有公司活动演讲外链，正文无实质技术内容，仅含幻灯片 Dropbox URL"
+    },
+    {
+      "path": "raw/articles/c0de517e.blogspot.com/2023-02-20_how-to-render-it-ten-ideas-to-solve-computer-graphics-proble.md",
+      "status": "ingested",
+      "source_slug": "c0de517e-how-to-render",
+      "title": "How to Render It: Ten Ideas to Solve Computer Graphics Problems"
+    }
+  ],
+  "concepts_created": [
+    "software-rasterization-compute",
+    "aaa-rendering-complexity",
+    "rendering-innovation-metatechniques"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "c0de517e-nanite-thoughts",
+    "c0de517e-cyberpunk-rendering",
+    "c0de517e-rt-wont-simplify",
+    "c0de517e-how-to-render"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/visibility-buffer.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-nanite-thoughts]]"
+    },
+    {
+      "file": "wiki/rendering/nanite-reyes-comparison.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-nanite-thoughts]]"
+    },
+    {
+      "file": "wiki/rendering/hybrid-raytracing-pipeline.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-rt-wont-simplify]]"
+    },
+    {
+      "file": "wiki/people/angelo-pesce.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/c0de517e-nanite-thoughts]]\n- [[sources/c0de517e-cyberpunk-rendering]]\n- [[sources/c0de517e-rt-wont-simplify]]\n- [[sources/c0de517e-how-to-render]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/software-rasterization-compute]] | Compute 软件光栅化：绕过固定功能光栅器处理像素级三角形 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/aaa-rendering-complexity]] | AAA 渲染复杂度的组织根源：技术无关，驱动力是竞争结构 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[rendering/rendering-innovation-metatechniques]] | 渲染创新元技法：Angelo Pesce 的十三条思维工具 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-nanite-thoughts]] | Pesce：UE5 Nanite 机制的推测性分析（2020） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-cyberpunk-rendering]] | Pesce：Cyberpunk 2077 渲染管线逆向分析（2020） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-rt-wont-simplify]] | Pesce：光追不会简化 AAA 渲染的结构性论证（2020） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/c0de517e-how-to-render]] | Pesce：十三条渲染创新元技法（2023） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-115 Worker MF (c0de517e.blogspot.com ×5)\n\n处理 5 篇 Angelo Pesce (C0DE517E) 文章。ingest 4 篇，跳过 1 篇（2022-06-11 私有演讲外链无实质内容）。新增 3 概念页：software-rasterization-compute、aaa-rendering-complexity、rendering-innovation-metatechniques；4 source 摘要：c0de517e-nanite-thoughts、c0de517e-cyberpunk-rendering、c0de517e-rt-wont-simplify、c0de517e-how-to-render。angelo-pesce 人物页已存在，追加 source 链接 patch。"
+}

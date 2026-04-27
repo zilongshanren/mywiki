@@ -66,3 +66,4 @@ Karis 对"object-space shading 是历史遗迹"的断言有佐证——现代 pr
 
 - [[sources/karis-possible-approaches-tessellation]]
 - [[sources/karis-nanite-reyes]]
+- [[sources/c0de517e-nanite-thoughts]]

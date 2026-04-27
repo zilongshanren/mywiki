@@ -379,6 +379,13 @@ CAQA + CSAPP 的底层视角。
 | [[cdna3-mi300x-architecture]] | AMD CDNA 3 / MI300X：8 XCD chiplet + Infinity Cache + 跨 die 一致性 |
 | [[gcn-architecture]] | AMD GCN：从 VLIW 到线程级并行调度的 GPU 架构现代化 |
 | [[rdna4-architecture]] | AMD RDNA 4（GFX12）：ISA 预览，细粒度等待、稀疏矩阵、数据侧预取 |
+| [[zen4c-microarchitecture]] | AMD Zen 4 紧凑版：物理重设计缩核 35%，架构与 ISA 完全保留 |
+| [[loongson-3a6000-microarchitecture]] | 龙芯 LA664：6 宽乱序 + SMT，性能约等于 Zen 1 |
+| [[xe-lpg-igpu-architecture]] | Intel Meteor Lake iGPU：Xe-LPG 架构，4.5 TFLOPS，静态寄存器分配 |
+| [[cdc-6600-architecture]] | CDC 6600 大型机：10 个并行功能单元、Scoreboard 调度，1964 年 Seymour Cray |
+| [[scoreboard-scheduling]] | Scoreboard 调度机制：CDC 6600 的依赖追踪方案，Tomasulo 算法的前身 |
+| [[npu-accelerator-design]] | NPU 加速器设计：MAC 阵列、scratchpad 内存、Intel NPU 3720 实测 |
+| [[loongson-historical-trajectory]] | 龙芯历代架构轨迹：2003-2024 年 IPC 尚可但频率长期落后 |
 ## 游戏引擎（wiki/game-engines/）
 Game Engine Architecture（Jason Gregory）的核心概念。
 
@@ -1074,6 +1081,11 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[perceptual-palette-functions]] | 感知均匀 shader 调色板函数——替代「coder colors」的零依赖调试可视化 |
 | [[kepler-architecture]] | Nvidia 2012 年 28nm GPU，静态编译器调度，SMX 四分区设计 |
 | [[apple-m2-pro-igpu]] | Apple M2 Pro 19 核 iGPU，256-bit LPDDR5，主机级带宽设计 |
+| [[xe-lpg-raytracing]] | Xe-LPG 硬件光追：RTA + restart trail，对比 AMD LDS 遍历栈方案 |
+| [[software-rasterization-compute]] | Compute 软件光栅化：绕过固定功能光栅器处理像素级三角形 |
+| [[aaa-rendering-complexity]] | AAA 渲染复杂度的组织根源：技术无关，驱动力是竞争结构 |
+| [[rendering-innovation-metatechniques]] | 渲染创新元技法：Angelo Pesce 的十三条思维工具 |
+| [[adreno-640-architecture]] | Adreno 640（Snapdragon 855）：wave128 超宽向量、Tiled Rendering 低带宽优势 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2465,6 +2477,20 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-cdna3]] | Chester Lam：AMD CDNA 3 计算架构全析 |
 | [[sources/chipsandcheese-meteor-lake-ces]] | Chester Lam：Meteor Lake CES 三核缓存微基准 |
 | [[sources/chipsandcheese-rdna4-llvm]] | Chester Lam：RDNA 4 LLVM ISA 预览 |
+| [[sources/c0de517e-nanite-thoughts]] | Pesce：UE5 Nanite 机制的推测性分析（2020） |
+| [[sources/c0de517e-cyberpunk-rendering]] | Pesce：Cyberpunk 2077 渲染管线逆向分析（2020） |
+| [[sources/c0de517e-rt-wont-simplify]] | Pesce：光追不会简化 AAA 渲染的结构性论证（2020） |
+| [[sources/c0de517e-how-to-render]] | Pesce：十三条渲染创新元技法（2023） |
+| [[sources/chipsandcheese-ryzen-z1-rog-ally]] | Chester Lam：Ryzen Z1 ROG Ally，Zen4+Zen4c 混合核心分析 |
+| [[sources/chipsandcheese-loongson-3a6000]] | Cozma & Lam：龙芯 3A6000 / LA664 全面微架构分析 |
+| [[sources/chipsandcheese-ps5-zen2-fpu]] | Chester Lam：PS5 Zen 2 FPU 削减分析（BC-250 微基准）|
+| [[sources/chipsandcheese-meteor-lake-igpu]] | Chester Lam：Meteor Lake iGPU 架构分析（Xe-LPG）|
+| [[sources/chipsandcheese-meteor-lake-igpu-rt]] | Chester Lam：Meteor Lake iGPU 光线追踪深度分析 |
+| [[sources/chipsandcheese-cdc-6600]] | Chester Lam：CDC 6600 大型机愚人节技术解析（Seymour Cray 1964） |
+| [[sources/chipsandcheese-meteor-lake-npu]] | Chester Lam：Meteor Lake NPU 3720 微基准测试与架构分析 |
+| [[sources/chipsandcheese-loongson-vs-west]] | Chester Lam：龙芯能否追赶西方设计——历史轨迹与结构性差距 |
+| [[sources/chipsandcheese-snapdragon855-igpu]] | Chester Lam：Snapdragon 855 Adreno 640 iGPU 微架构深度分析 |
+| [[sources/chipsandcheese-x86-doesnt-need-to-die]] | Chester Lam：x86 无需消亡——RISC vs CISC 争论为何已死 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|
