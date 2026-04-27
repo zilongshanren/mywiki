@@ -82,3 +82,6 @@ UE3 推广 deferred rendering 成为主流。UE5 的 Lumen 在 deferred 基础�
 - [[sources/c0de517e-deferred-optimizer-notes]] —— Pesce 2012：Space Marine 延迟渲染器优化 post-mortem，出货前六个月性能翻倍
 - [[sources/c0de517e-realtime-renderer-notes]] —— 2014 年 Forward/Forward+/Deferred 四管线横向对比
 - [[sources/c0de517e-rendering-continuum]] — Pesce 2016：渲染管线连续体分类学，Forward/Deferred/VB/Texture-Space 统一框架
+- [[sources/adrian-gta-v-graphics-1]]
+- [[sources/adrian-gta-v-graphics-2]]
+- [[sources/adrian-doom-2016-graphics]]

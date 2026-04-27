@@ -1,0 +1,112 @@
+{
+  "batch_id": "batch-w121-mx",
+  "agent_note": "5 篇 2015 年 agraphicsguynotes.com 早期文章（作者 Jiayin Cao，非 Yining Karl Li）。所有核心概念已有页面，全部走 patch；无新概念页。人物页 graphics-guy-notes.md 已存在，追加 5 条 source 链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-06-16_tessellation-on-dx11.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-tessellation-dx11",
+      "title": "Tessellation on DX11"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-07-20_basics-about-path-tracing.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-path-tracing-basics",
+      "title": "Basics about Path Tracing"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-08-10_monte-carlo-integral-with-multiple-importance-sampling.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-monte-carlo-mis",
+      "title": "Monte Carlo Integral with Multiple Importance Sampling"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-10-22_derivation-of-pure-specular-reflection-brdf.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-specular-brdf-derivation",
+      "title": "Derivation of Pure Specular Reflection BRDF"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-11-01_sampling-microfacet-brdf.md",
+      "status": "ingested",
+      "source_slug": "graphics-guy-sampling-microfacet",
+      "title": "Sampling Microfacet BRDF"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "graphics-guy-tessellation-dx11",
+    "graphics-guy-path-tracing-basics",
+    "graphics-guy-monte-carlo-mis",
+    "graphics-guy-specular-brdf-derivation",
+    "graphics-guy-sampling-microfacet"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/hull-domain-tessellation-urp.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-tessellation-dx11]] — Cao 2015：DX11 tessellation 管线三阶段 + partitioning 选项 + crack 成因"
+    },
+    {
+      "file": "wiki/rendering/tessellation-approaches-overview.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-tessellation-dx11]] — Cao 2015：early DX11 hull/domain/tessellator 基础参考"
+    },
+    {
+      "file": "wiki/rendering/path-tracing-basics.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-path-tracing-basics]] — Cao 2015：渲染方程展开到 P(n) 的路径追踪推导 + 俄罗斯轮盘赌"
+    },
+    {
+      "file": "wiki/rendering/monte-carlo-integration.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-monte-carlo-mis]] — Cao 2015：无偏 vs 一致的区别 + MIS balance/power/cutoff/maximum heuristic"
+    },
+    {
+      "file": "wiki/rendering/importance-sampling-pdf-cancellation.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-monte-carlo-mis]] — Cao 2015：MIS 权重函数的四种启发式"
+    },
+    {
+      "file": "wiki/rendering/microfacet-brdf.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/graphics-guy-specular-brdf-derivation]] — Cao 2015：delta BRDF 完整推导，PBRT 勘误补全\n- [[sources/graphics-guy-sampling-microfacet]] — Cao 2015：GGX/Beckmann/Blinn isotropic NDF importance sampling"
+    },
+    {
+      "file": "wiki/people/graphics-guy-notes.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/graphics-guy-tessellation-dx11]]\n- [[sources/graphics-guy-path-tracing-basics]]\n- [[sources/graphics-guy-monte-carlo-mis]]\n- [[sources/graphics-guy-specular-brdf-derivation]]\n- [[sources/graphics-guy-sampling-microfacet]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-tessellation-dx11]] | Cao 2015：DX11 tessellation 三阶段管线与 crack 问题 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-path-tracing-basics]] | Cao 2015：路径追踪数学基础与俄罗斯轮盘赌 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-monte-carlo-mis]] | Cao 2015：MIS 四种权重启发式推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-specular-brdf-derivation]] | Cao 2015：纯镜面 delta BRDF 完整推导 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/graphics-guy-sampling-microfacet]] | Cao 2015：GGX/Beckmann/Blinn NDF importance sampling |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-121 Worker MX (agraphicsguynotes.com ×5)\n\n处理 Jiayin Cao 2015 年 5 篇离线渲染基础文章（DX11 tessellation、路径追踪入门、MC-MIS、纯镜面 BRDF 推导、微表面 NDF 采样）。全部 ingested，无新概念页（全部概念已有覆盖页面）。人物页 graphics-guy-notes 已存在。新增 5 条 source 摘要，对 hull-domain-tessellation-urp、tessellation-approaches-overview、path-tracing-basics、monte-carlo-integration、importance-sampling-pdf-cancellation、microfacet-brdf、graphics-guy-notes 共 7 个页面发出 patch。"
+}

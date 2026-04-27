@@ -1506,3 +1506,15 @@ c0de517e peaked-technologies 为空 stub，4 篇 eurogamer 为游戏新闻，全
 ## [2026-04-27] ingest | Wave-120 Worker MV (chipsandcheese 2026 final ×2 + 3 skip)
 
 处理 5 篇文章。3 篇重复跳过。新增 2 概念页（cortex-a725-microarchitecture、cortex-x925-microarchitecture）、2 source 摘要。chipsandcheese.com 全部文章已处理完毕！
+
+## [2026-04-27] ingest | Wave-121 Worker MW (adriancourreges.com ×5)
+
+处理 5 篇 Adrian Courrèges 图形学研究文章（Deus Ex HR、GTA V ×2、DOOM 2016、SupCom）。新增 3 概念页（clustered-forward-rendering、megatexture-virtual-texturing、alpha-stippling-lod-dithering）、5 source 摘要。
+
+## [2026-04-27] ingest | Wave-121 Worker MX (agraphicsguynotes.com ×5)
+
+处理 5 篇 Jiayin Cao 2015 年离线渲染基础文章。新增 5 source 摘要，全部 patch 到已有概念页。
+
+## [2026-04-27] ingest | Wave-121 Worker MY (agraphicsguynotes.com ×2 + 3 skip)
+
+处理 5 篇文章，2 篇 ingest，3 篇重复跳过。新增 2 source 摘要。

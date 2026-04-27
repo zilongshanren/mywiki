@@ -1,0 +1,128 @@
+{
+  "batch_id": "batch-w121-mw",
+  "agent_note": "Adrian Courrèges Graphics Study 系列：Deus Ex HR、GTA V Part1/2、DOOM 2016、Supreme Commander。5篇全部ingest。新增3个概念页（clustered-forward-rendering, megatexture-virtual-texturing, alpha-stippling-lod-dithering）。people/adrian-courreges 已存在，patch 添加5条新来源链接。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/adriancourreges.com/2015-03-10_deus-ex-human-revolution-graphics-study-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-deus-ex-hr-graphics",
+      "title": "Deus Ex: Human Revolution – Graphics Study"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2015-11-02_gta-v-graphics-study-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-gta-v-graphics-1",
+      "title": "GTA V – Graphics Study Part 1"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2016-09-09_doom-2016-graphics-study-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-doom-2016-graphics",
+      "title": "DOOM (2016) – Graphics Study"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2015-06-23_supreme-commander-graphics-study-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-supcom-graphics",
+      "title": "Supreme Commander – Graphics Study"
+    },
+    {
+      "path": "raw/articles/adriancourreges.com/2015-11-02_gta-v-graphics-study-part-2-adrian-courreges.md",
+      "status": "ingested",
+      "source_slug": "adrian-gta-v-graphics-2",
+      "title": "GTA V – Graphics Study Part 2"
+    }
+  ],
+  "concepts_created": [
+    "clustered-forward-rendering",
+    "megatexture-virtual-texturing",
+    "alpha-stippling-lod-dithering"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "adrian-deus-ex-hr-graphics",
+    "adrian-gta-v-graphics-1",
+    "adrian-doom-2016-graphics",
+    "adrian-supcom-graphics",
+    "adrian-gta-v-graphics-2"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/people/adrian-courreges.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/adrian-deus-ex-hr-graphics]]\n- [[sources/adrian-gta-v-graphics-1]]\n- [[sources/adrian-doom-2016-graphics]]\n- [[sources/adrian-supcom-graphics]]\n- [[sources/adrian-gta-v-graphics-2]]"
+    },
+    {
+      "file": "wiki/people/adrian-courreges.md",
+      "operation": "replace_line",
+      "match": "sources: 3",
+      "content": "sources: 8"
+    },
+    {
+      "file": "wiki/rendering/light-prepass-pipeline.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-deus-ex-hr-graphics]]"
+    },
+    {
+      "file": "wiki/rendering/cascaded-shadow-maps.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-gta-v-graphics-1]]"
+    },
+    {
+      "file": "wiki/rendering/screenspace-reflections.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-doom-2016-graphics]]"
+    },
+    {
+      "file": "wiki/rendering/taa-history-rectification.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-doom-2016-graphics]]"
+    },
+    {
+      "file": "wiki/rendering/terrain-splatmap-shader-graph.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-supcom-graphics]]"
+    },
+    {
+      "file": "wiki/rendering/deferred-rendering.md",
+      "operation": "add_source_link",
+      "content": "- [[sources/adrian-gta-v-graphics-1]]\n- [[sources/adrian-gta-v-graphics-2]]\n- [[sources/adrian-doom-2016-graphics]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[clustered-forward-rendering]] | 3D froxel 分簇管理灯光列表的前向渲染架构，DOOM 2016 工业实现 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[megatexture-virtual-texturing]] | 虚拟纹理/Mega-Texture：按 tile 流式加载超显存容量纹理集 |"
+    },
+    {
+      "category_header": "## 实时渲染（wiki/rendering/）",
+      "row": "| [[alpha-stippling-lod-dithering]] | 棋盘格半像素丢弃实现不透明几何体 LOD 平滑过渡 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-deus-ex-hr-graphics]] | Courrèges：Deus Ex HR Light Pre-Pass 帧分析 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-gta-v-graphics-1]] | Courrèges：GTA V 延迟渲染管线全解析（Part 1） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-doom-2016-graphics]] | Courrèges：DOOM 2016 Clustered Forward + Mega-Texture |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-supcom-graphics]] | Courrèges：Supreme Commander 地形渲染与 LiSPSM 阴影 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/adrian-gta-v-graphics-2]] | Courrèges：GTA V LOD 系统与水面反射细节（Part 2） |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-121 Worker MW (adriancourreges.com ×5)\n\n处理 5 篇 Adrian Courrèges 图形学研究文章：Deus Ex HR（Light Pre-Pass）、GTA V Part1（延迟渲染、双抛物面反射、alpha stippling）、GTA V Part2（LOD 极限优化、水面反射）、DOOM 2016（Clustered Forward、Mega-Texture、静态阴影缓存）、Supreme Commander（texture splatting、LiSPSM 阴影）。新增 3 概念页（clustered-forward-rendering, megatexture-virtual-texturing, alpha-stippling-lod-dithering）、5 source 摘要页。people/adrian-courreges 追加 5 条来源引用。"
+}

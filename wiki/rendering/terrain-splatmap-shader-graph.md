@@ -52,3 +52,4 @@ splat0 = Lerp(rockTexture, grassTexture, rockBlend)   // A=rock, B=grass
 ## Sources
 
 - [[sources/danielilett-shader-graph-terrains]]
+- [[sources/adrian-supcom-graphics]]

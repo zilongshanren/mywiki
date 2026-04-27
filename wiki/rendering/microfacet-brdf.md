@@ -51,3 +51,5 @@ $$f_r = \frac{D\,F\,G}{4\,(n\cdot l)\,(n\cdot v)}$$
 - [[sources/graphics-guy-anisotropic-microfacet-sampling]]
 - [[sources/c0de517e-misunderstanding-multiscattering]] —— Pesce 2019：split-sum LUT 归一化的最简多次散射补偿
 - [[sources/c0de517e-whole-pbs-picture]] —— Pesce 2019：从整体管线角度审视单次散射假设的代价
+- [[sources/graphics-guy-specular-brdf-derivation]] — Cao 2015：纯镜面 delta BRDF 完整推导
+- [[sources/graphics-guy-sampling-microfacet]] — Cao 2015：GGX/Beckmann/Blinn NDF importance sampling

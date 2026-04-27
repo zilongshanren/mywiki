@@ -72,3 +72,4 @@ float SinTheta = sqrt(1.0 - CosTheta*CosTheta);
 
 ## Sources
 - [[sources/supnik-importance-sampling-no-weights]]
+- [[sources/graphics-guy-monte-carlo-mis]] — Cao 2015：MIS 权重函数的四种启发式

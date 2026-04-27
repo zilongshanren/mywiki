@@ -138,3 +138,4 @@ Tessellation 在现代硬件上**不是免费午餐**：每个新顶点都跑一
 ## Sources
 
 - [[sources/danielilett-shader-code-vertex-tessellation]]
+- [[sources/graphics-guy-tessellation-dx11]] — Cao 2015：DX11 tessellation 管线三阶段 + partitioning 选项 + crack 成因

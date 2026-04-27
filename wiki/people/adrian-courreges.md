@@ -24,3 +24,8 @@ sources: 3
 - [[sources/adrian-transparent-pixels]]
 - [[sources/adrian-mgs-v-graphics-study]]
 - [[sources/adrian-ue4-optimized-post-effects]]
+- [[sources/adrian-deus-ex-hr-graphics]]
+- [[sources/adrian-gta-v-graphics-1]]
+- [[sources/adrian-doom-2016-graphics]]
+- [[sources/adrian-supcom-graphics]]
+- [[sources/adrian-gta-v-graphics-2]]

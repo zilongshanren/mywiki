@@ -58,3 +58,4 @@ UE4 会在即将触发 clamp 事件时**降低 blend factor**——让当前帧�
 ## Sources
 
 - [[sources/elopezr-taa-holy-trail]]
+- [[sources/adrian-doom-2016-graphics]]

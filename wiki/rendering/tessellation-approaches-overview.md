@@ -66,3 +66,4 @@ Tessellation Table 的均匀密度 dicing 只产生 D3D 拓扑均匀方案 **69%
 - [[sources/karis-nanite-tessellation-intro]]
 - [[sources/karis-possible-approaches-tessellation]]
 - [[sources/karis-how-to-tessellate]]
+- [[sources/graphics-guy-tessellation-dx11]]

@@ -25,3 +25,4 @@ Ni No Kuni 2 的选择贴合它的视觉需求：只有环境光 + 少数动态�
 ## Sources
 - [[sources/thomas-poulet-ninokuni-2-frame]]
 - [[sources/c0de517e-mythbusting-deferred]] —— Pesce 对 LPP vs DS 的 memory / bandwidth / ALU 瓶颈对比与 specular 精度缺陷讨论
+- [[sources/adrian-deus-ex-hr-graphics]]

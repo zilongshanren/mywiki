@@ -1,0 +1,79 @@
+{
+  "batch_id": "batch-w121-my",
+  "agent_note": "5篇均为 Jiayin Cao (agraphicsguynotes.com) 的图形技术文章。文章3-5（volume rendering、anisotropic microfacet、ReSTIR DI）均已有 source 页，标记为 duplicate_source。文章1-2（PBS in games、IBL）无 source 页，新建之；对应 concept 页均已存在，emit patch。人物页 graphics-guy-notes 已存在。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2015-12-05_physically-based-shading-in-games.md",
+      "status": "ingested",
+      "source_slug": "agraphicsguynotes-pbs-in-games",
+      "title": "Physically Based Shading in Games"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2016-09-07_image-based-lighting-in-offline-and-real-time-rendering.md",
+      "status": "ingested",
+      "source_slug": "agraphicsguynotes-ibl-offline-rt",
+      "title": "Image Based Lighting in Offline and Real-time Rendering"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2016-11-10_volume-rendering-in-offline-renderer.md",
+      "status": "duplicate_source",
+      "source_slug": "graphics-guy-volume-rendering-offline",
+      "note": "source 页 graphics-guy-volume-rendering-offline 已由之前 wave 创建，内容完全覆盖此原文；概念页 volume-rendering-offline 已存在。无需新建，仅 patch 人物页计数。"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2018-07-18_sampling-anisotropic-microfacet-brdf.md",
+      "status": "duplicate_source",
+      "source_slug": "graphics-guy-anisotropic-microfacet-sampling",
+      "note": "source 页 graphics-guy-anisotropic-microfacet-sampling 已存在；概念页 anisotropic-microfacet-sampling 已存在。无需重复创建。"
+    },
+    {
+      "path": "raw/articles/agraphicsguynotes.com/2022-12-05_understanding-the-math-behind-restir-di.md",
+      "status": "duplicate_source",
+      "source_slug": "graphics-guy-restir-di-math",
+      "note": "source 页 graphics-guy-restir-di-math 及概念页 restir-di-math 均已由之前 wave 完整创建。"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [
+    "agraphicsguynotes-pbs-in-games",
+    "agraphicsguynotes-ibl-offline-rt"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/physically-based-shading.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/agraphicsguynotes-pbs-in-games]]"
+    },
+    {
+      "file": "wiki/rendering/split-sum-approximation.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/agraphicsguynotes-ibl-offline-rt]]"
+    },
+    {
+      "file": "wiki/people/graphics-guy-notes.md",
+      "operation": "append_to_section",
+      "section": "## 相关",
+      "content": "- [[sources/agraphicsguynotes-pbs-in-games]]\n- [[sources/agraphicsguynotes-ibl-offline-rt]]"
+    },
+    {
+      "file": "wiki/people/graphics-guy-notes.md",
+      "operation": "append_to_section",
+      "section": "## Sources",
+      "content": "- [[sources/agraphicsguynotes-pbs-in-games]]\n- [[sources/agraphicsguynotes-ibl-offline-rt]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/agraphicsguynotes-pbs-in-games]] | A Graphics Guy：PBS 在游戏中的核心特性——能量守恒、微表面模型、菲涅耳、diffuse/specular 混合 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/agraphicsguynotes-ibl-offline-rt]] | A Graphics Guy：IBL 离线 vs 实时对比，重点解析 UE4 Split-Sum 近似的数学推导 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-121 Worker MY (agraphicsguynotes.com ×5)\n\n处理 5 篇 Jiayin Cao (agraphicsguynotes.com) 技术文章。新建 2 source 摘要页（agraphicsguynotes-pbs-in-games、agraphicsguynotes-ibl-offline-rt）；对应 concept 页均已存在（physically-based-shading、split-sum-approximation），emit patch 追加 source 链接。其余 3 篇（volume rendering offline、anisotropic microfacet sampling、ReSTIR DI math）均为 duplicate_source，source 页与 concept 页已由之前 wave 完整覆盖，不重建。人物页 graphics-guy-notes 已存在，patch 追加新 source 引用。"
+}

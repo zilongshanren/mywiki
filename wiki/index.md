@@ -1126,6 +1126,9 @@ Real-Time Rendering + Custom SRP 的渲染管线知识。
 | [[nv40-geforce6-architecture]] | NV40 GeForce 6000：MIMD 顶点 + SIMT 像素双架构，可编程 GPU 历史节点 |
 | [[arm-bifrost-mali-architecture]] | ARM Bifrost Mali-G52：标量 SIMT + clause ISA + tile 渲染 |
 | [[adreno-x2-igpu-architecture]] | Qualcomm Adreno X2：HPM 21 MB 片上帧缓冲 + Wave64 双发射 |
+| [[clustered-forward-rendering]] | 3D froxel 分簇管理灯光列表的前向渲染架构，DOOM 2016 工业实现 |
+| [[megatexture-virtual-texturing]] | 虚拟纹理/Mega-Texture：按 tile 流式加载超显存容量纹理集 |
+| [[alpha-stippling-lod-dithering]] | 棋盘格半像素丢弃实现不透明几何体 LOD 平滑过渡 |
 ## 经典案例（wiki/examples/）
 
 APoSD 中反复出现的标杆与反面案例。
@@ -2588,6 +2591,18 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-adreno-x2]] | Cozma/Demers：Adreno X2 架构专访——HPM 设计决策与 Wave64 双发射 |
 | [[sources/chipsandcheese-cortex-a725]] | Chester Lam：Cortex-A725 效率核深度剖析（2026-01） |
 | [[sources/chipsandcheese-cortex-x925]] | Chester Lam：Cortex-X925 高性能核，首次追平桌面 Zen 5 / Lion Cove（2026-03） |
+| [[sources/adrian-deus-ex-hr-graphics]] | Courrèges：Deus Ex HR Light Pre-Pass 帧分析 |
+| [[sources/adrian-gta-v-graphics-1]] | Courrèges：GTA V 延迟渲染管线全解析（Part 1） |
+| [[sources/adrian-doom-2016-graphics]] | Courrèges：DOOM 2016 Clustered Forward + Mega-Texture |
+| [[sources/adrian-supcom-graphics]] | Courrèges：Supreme Commander 地形渲染与 LiSPSM 阴影 |
+| [[sources/adrian-gta-v-graphics-2]] | Courrèges：GTA V LOD 系统与水面反射细节（Part 2） |
+| [[sources/graphics-guy-tessellation-dx11]] | Cao 2015：DX11 tessellation 三阶段管线与 crack 问题 |
+| [[sources/graphics-guy-path-tracing-basics]] | Cao 2015：路径追踪数学基础与俄罗斯轮盘赌 |
+| [[sources/graphics-guy-monte-carlo-mis]] | Cao 2015：MIS 四种权重启发式推导 |
+| [[sources/graphics-guy-specular-brdf-derivation]] | Cao 2015：纯镜面 delta BRDF 完整推导 |
+| [[sources/graphics-guy-sampling-microfacet]] | Cao 2015：GGX/Beckmann/Blinn NDF importance sampling |
+| [[sources/agraphicsguynotes-pbs-in-games]] | A Graphics Guy：PBS 在游戏中的核心特性——能量守恒、微表面模型 |
+| [[sources/agraphicsguynotes-ibl-offline-rt]] | A Graphics Guy：IBL 离线 vs 实时对比，UE4 Split-Sum 推导 |
 ## 元（wiki/meta/）
 | 文章 | 一句话描述 |
 |---|---|

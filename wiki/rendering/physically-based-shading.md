@@ -50,3 +50,4 @@ sources: 1
 - [[sources/selfshadow-pbs-siggraph-2012]]
 - [[sources/selfshadow-pbs-siggraph-2025]]
 - [[sources/c0de517e-beyond-photorealism]] — Pesce 2016：PBR 之后需要主动构建视觉语言，感知现实 ≠ 物理正确
+- [[sources/agraphicsguynotes-pbs-in-games]]
