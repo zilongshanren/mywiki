@@ -1706,3 +1706,15 @@ Outerra 文章 5 篇全部入库。新建 4 概念页（logarithmic-depth-buffer
 ## [2026-04-27] ingest | Wave-137 Worker OU (chipsandcheese 2025 GPU ×5)
 
 1 篇入库（xe3-gpu-architecture），4 篇重复。新建 xe3-gpu-architecture 概念页。
+
+## [2026-04-27] ingest | Wave-138 Worker OV (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 技术文章：Blackwell GB202 消费级深析、CDNA 4 架构发布、华为 Kunpeng 920 + TaiShan v110、AMD Magny Cours + HyperTransport、MI350 首席架构师访谈。新增 3 概念页（cdna4-architecture、kunpeng-920-taishan-architecture、hypertransport-magny-cours）、5 source 摘要页。Blackwell GB202、CDNA3、Trinity Northbridge 已有概念页仅追加 source 链接。
+
+## [2026-04-27] ingest | Wave-138 Worker OW (chipsandcheese.com ×5)
+
+处理 5 篇 chipsandcheese.com 文章。2 篇 source 页已存在（rdna4-hot-chips-2025、zen5-gaming）。新增 3 source 摘要页（clearwater-forest、condor-riscv、skymont-gaming）和 2 概念页（clearwater-forest-architecture、cuzco-riscv-core）。为 skymont-microarchitecture 补充游戏负载分析段落。
+
+## [2026-04-27] ingest | Wave-138 Worker OX (chipsandcheese.com ×5)
+
+5 篇全部为已处理重复内容，0 新增。说明 chipsandcheese 主线已基本拉通。

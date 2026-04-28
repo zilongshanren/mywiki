@@ -421,6 +421,11 @@ CAQA + CSAPP 的底层视角。
 | [[telum-ii-microarchitecture]] | IBM Telum II：8 核 360 MB 片上缓存，虚拟 L3/L4 饱和度驱动 |
 | [[ibm-virtual-cache-hierarchy]] | IBM 大型机虚拟缓存层级：饱和度指标动态分配 L3/L4 |
 | [[d3d12-hardware-feature-adoption]] | D3D12 特性覆盖率 2025：各 GPU 世代在活跃驱动下的实测支持率 |
+| [[cdna4-architecture]] | AMD CDNA 4 / MI355X：LDS 扩容 160 KB、FP6=FP4 速率、N3P XCD + N6 IO Die chiplet |
+| [[kunpeng-920-taishan-architecture]] | 华为 Kunpeng 920 CoWoS chiplet + TaiShan v110 首代自研 AArch64 核，动态三模 L3 分区 |
+| [[hypertransport-magny-cours]] | AMD HyperTransport + Magny Cours：NUMA 拓扑、带宽瓶颈、通往 Infinity Fabric 的演进 |
+| [[clearwater-forest-architecture]] | Intel Clearwater Forest E-Core 服务器：3D 叠层 Skymont 288 核 + 576 MB L3 |
+| [[cuzco-riscv-core]] | Condor Cuzco RISC-V 核：Time Resource Matrix 时基调度，poison-bit replay 机制 |
 | [[mi300a-apu-memory-subsystem]] | MI300A APU 内存子系统：Infinity Fabric 延迟层次、CPU-GPU 一致性、零拷贝原子 |
 | [[xuantie-c910-microarchitecture]] | 阿里玄铁 C910：3-wide OoO、192 entry ROB，L2 60 周期延迟为主要短板 |
 | [[rendering/xe3-gpu-architecture]] | Intel Xe3 GPU 架构前瞻：拓扑扩展、XVE 寄存器优化、STOC 子三角形裁剪 |
@@ -2814,6 +2819,14 @@ APoSD 框架在 Unity/游戏引擎开发中的应用。
 | [[sources/chipsandcheese-xuantie-c910]] | 阿里玄铁 C910 微架构：3-wide OoO，L2 高延迟短板分析 |
 | [[sources/chipsandcheese-riscv-2025]] | RISC-V 2025 进展横评：P550 vs C910 SPEC/7-Zip/x264 |
 | [[sources/chipsandcheese-xe3-gpu]] | Intel Xe3 GPU 架构前瞻分析 |
+| [[sources/chipsandcheese-blackwell-gpu]] | Chester Lam：Blackwell GeForce RTX PRO 6000 消费级实测与架构分析 |
+| [[sources/chipsandcheese-cdna4]] | AMD CDNA 4 架构公告：LDS 扩容、FP6=FP4、N3P+N6 chiplet |
+| [[sources/chipsandcheese-kunpeng-920]] | Kunpeng 920 + TaiShan v110：华为首代自研 AArch64 CPU 全测 |
+| [[sources/chipsandcheese-magny-cours]] | AMD Magny Cours + HyperTransport：多核 NUMA 历史分析 |
+| [[sources/chipsandcheese-mi350-interview]] | AMD MI350 首席架构师访谈：CDNA4 设计决策 |
+| [[sources/chipsandcheese-clearwater-forest]] | Intel Clearwater Forest：3D 叠层 Skymont 288 核服务器芯片 |
+| [[sources/chipsandcheese-condor-riscv]] | Condor Cuzco RISC-V 核：TRM 时基调度 Hot Chips 2025 |
+| [[sources/chipsandcheese-skymont-gaming]] | Chester Lam：Skymont E-Core 游戏负载 top-down 分析 |
 | [[sources/chipsandcheese-rdna4-ooo-memory]] | Chester Lam：RDNA 4 乱序内存访问实验验证 |
 | [[sources/chipsandcheese-rdna4-register-alloc]] | Chester Lam：RDNA 4 动态 VGPR 分配机制详解 |
 | [[sources/chipsandcheese-rdna4-raytracing]] | Chester Lam：RDNA 4 光追硬件改进全景 |

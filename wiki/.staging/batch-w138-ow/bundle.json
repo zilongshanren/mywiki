@@ -1,0 +1,85 @@
+{
+  "batch_id": "batch-w138-ow",
+  "agent_note": "5 chipsandcheese.com 文章。2 篇 source 页已存在（rdna4-hot-chips-2025、zen5-gaming），标记为 already_exists。其余 3 篇新建 source 页 + 2 个新概念页。skymont-gaming patch 了现有 skymont-microarchitecture 概念页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-09-13_amds-rdna4-gpu-architecture-at-hot-chips-2025.md",
+      "status": "already_exists",
+      "source_slug": "chipsandcheese-rdna4-hot-chips-2025",
+      "title": "AMD's RDNA4 GPU Architecture at Hot Chips 2025",
+      "note": "wiki/sources/chipsandcheese-rdna4-hot-chips-2025.md 已于本 wave 前存在，跳过重建。概念页 rdna4-architecture 亦已存在。"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-08-25_intel-s-clearwater-forest-e-core-server-chip-at-hot-chips-20.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-clearwater-forest",
+      "title": "Intel's Clearwater Forest E-Core Server Chip at Hot Chips 2025"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-08-29_condors-cuzco-risc-v-core-at-hot-chips-2025.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-condor-riscv",
+      "title": "Condor's Cuzco RISC-V Core at Hot Chips 2025"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-08-02_running-gaming-workloads-through-amds-zen-5.md",
+      "status": "already_exists",
+      "source_slug": "chipsandcheese-zen5-gaming",
+      "title": "Running Gaming Workloads through AMD's Zen 5",
+      "note": "wiki/sources/chipsandcheese-zen5-gaming.md 已于本 wave 前存在，跳过重建。zen5-microarchitecture 概念页亦已存在。"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-08-20_skymont-in-gaming-workloads.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-skymont-gaming",
+      "title": "Skymont in Gaming Workloads"
+    }
+  ],
+  "concepts_created": [
+    "clearwater-forest-architecture",
+    "cuzco-riscv-core"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-clearwater-forest",
+    "chipsandcheese-condor-riscv",
+    "chipsandcheese-skymont-gaming"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/computer-systems/skymont-microarchitecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-skymont-gaming]]"
+    },
+    {
+      "file": "wiki/computer-systems/skymont-microarchitecture.md",
+      "operation": "append_to_section",
+      "section": "## 与 Crestmont 及 P-Core 的定位",
+      "content": "\n游戏负载的 top-down 分析（[[sources/chipsandcheese-skymont-gaming]]）证实 Skymont 以后端内存延迟为主要瓶颈，与同平台 Lion Cove 相似，根本原因是 Arrow Lake 平台 ~14 ns 的高 L3 延迟。分布式调度器在游戏的低 IPC 场景下效率略低于 Zen 5 统一调度器，416 条目 ROB 通常在调度器或分配限制先行耗尽前尚有余量。主观测试表明将 Core Ultra 9 285K affinity 固定至 16 颗 Skymont E-Core 仍可在多款游戏中获得流畅体验，显示密度优化核心在游戏中具备实用价值。"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/clearwater-forest-architecture]] | Intel Clearwater Forest：Skymont E-Core 服务器，288 核 + 576 MB L3，3D 堆叠封装 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[computer-systems/cuzco-riscv-core]] | Condor Cuzco RISC-V 核心：时间资源矩阵（TRM）静态调度 + 指令重放机制 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-clearwater-forest]] | Chester Lam：Intel Clearwater Forest E-Core 服务器芯片 Hot Chips 2025 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-condor-riscv]] | Chester Lam：Condor Cuzco RISC-V 核心 Hot Chips 2025 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-skymont-gaming]] | Chester Lam：Skymont E-Core 游戏负载 top-down 分析 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-138 Worker OW (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 文章。2 篇 source 页已存在（chipsandcheese-rdna4-hot-chips-2025、chipsandcheese-zen5-gaming），跳过重建。新增 3 source 摘要页（clearwater-forest、condor-riscv、skymont-gaming）和 2 概念页（clearwater-forest-architecture、cuzco-riscv-core）。为 skymont-microarchitecture 概念页补充游戏负载分析段落及 source 链接。"
+}

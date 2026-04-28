@@ -1,0 +1,37 @@
+{
+  "batch_id": "batch-w138-ox",
+  "agent_note": "全部 5 篇源文件均已在此前批次中处理完毕（source summary 页面均存在，date: 2026-04-27）。无需新建任何页面，无 patch，无 index 条目，无 log 追加。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-01_inside-nvidia-s-geforce-6000-series.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-geforce-6000.md 已存在（date: 2026-04-27）"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-07-06_intels-lion-cove-p-core-and-gaming-workloads.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-lion-cove-gaming.md 已存在（date: 2026-04-27）"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-05-10_arms-bifrost-architecture-and-the-mali-g52.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-mali-g52-bifrost.md 已存在（date: 2026-04-27）"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-04-30_zhaoxins-kx-7000.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-zhaoxin-kx7000.md 已存在（date: 2026-04-27）"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-05-29_qualcomm-s-centriq-2400-and-the-falkor-architecture.md",
+      "status": "skipped_duplicate",
+      "reason": "wiki/sources/chipsandcheese-centriq-falkor.md 已存在（date: 2026-04-27）"
+    }
+  ],
+  "concepts_created": [],
+  "people_created": [],
+  "source_summaries_created": [],
+  "existing_page_patches": [],
+  "index_additions": [],
+  "log_entry": ""
+}

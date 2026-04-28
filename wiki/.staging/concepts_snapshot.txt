@@ -614,3 +614,6 @@ multi-gpu-rendering
 fp64-map-projections
 gerstner-wave-ocean-rendering
 terrain-vector-overlay-crater
+mi300a-apu-memory-subsystem
+xuantie-c910-microarchitecture
+xe3-gpu-architecture

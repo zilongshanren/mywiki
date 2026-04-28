@@ -577,3 +577,10 @@ outerra-crater-rendering
 outerra-lighting-fix
 outerra-ocean-rendering
 green-even-faster-math-2021
+chipsandcheese-mi300a-memory
+chipsandcheese-mi300a-gpu
+chipsandcheese-xuantie-c910
+chipsandcheese-riscv-2025
+chipsandcheese-xe3-gpu
+humus-graphics-demo-programming
+outerra-hacking-amd-opengl

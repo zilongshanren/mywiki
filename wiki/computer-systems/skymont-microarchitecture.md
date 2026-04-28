@@ -35,9 +35,10 @@ L1D 带宽增至 3×128-bit 读/cycle，L2 带宽从 Crestmont 的 64 B/cycle �
 
 ## 与 Crestmont 及 P-Core 的定位
 
-Intel 声称 Skymont 性能/时钟已接近 Redwood Cove P-Core，标志着 E-Core 与 P-Core 性能差距大幅缩小。这与 [[gracemont-microarchitecture|Gracemont]] 接近 Skylake 的历史进程一脉相承。尽管如此，Skymont 的绝对频率依然远低于 P-Core，Intel 的混合核策略仍然成立。AVX-512 缺席仍是 E-Core 系的持续痛点，迫使 Intel 在含 E-Core 的客户端平台上整体禁用 AVX-512。
+Intel 声称 Skymont 性能/时钟已接近 Redwood Cove P-Core，标志着 E-Core 与 P-Core 性能差距大幅缩小。游戏负载的 top-down 分析（[[sources/chipsandcheese-skymont-gaming]]）证实 Skymont 以后端内存延迟为主要瓶颈，与同平台 Lion Cove P-Core 的 IPC 差距主要来自前端宽度与 cache hierarchy，而非调度器本身。这与 [[gracemont-microarchitecture|Gracemont]] 接近 Skylake 的历史进程一脉相承。尽管如此，Skymont 的绝对频率依然远低于 P-Core，Intel 的混合核策略仍然成立。AVX-512 缺席仍是 E-Core 系的持续痛点，迫使 Intel 在含 E-Core 的客户端平台上整体禁用 AVX-512。
 
 ## Sources
 
 - [[sources/chipsandcheese-skymont]]
 - [[sources/chipsandcheese-skymont-detailed]]
+- [[sources/chipsandcheese-skymont-gaming]]

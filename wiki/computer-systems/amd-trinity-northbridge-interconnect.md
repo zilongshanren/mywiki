@@ -55,3 +55,4 @@ Trinity 的 Northbridge 是 AMD 在 APU 路线上的过渡产品。尽管 Garlic
 ## Sources
 
 - [[sources/chipsandcheese-trinity-northbridge]]
+- [[sources/chipsandcheese-magny-cours]]

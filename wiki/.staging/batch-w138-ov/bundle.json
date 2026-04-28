@@ -1,0 +1,104 @@
+{
+  "batch_id": "batch-w138-ov",
+  "agent_note": "5 chipsandcheese.com 文章：Blackwell GB202 消费级深析、CDNA 4 架构发布、华为 Kunpeng 920 + TaiShan v110、AMD Magny Cours + HyperTransport、MI350 首席架构师访谈。Blackwell 和 CDNA3 概念页已存在，仅新增 CDNA4、Kunpeng-920、HyperTransport-Magny-Cours 三个概念页，并补充 source 页。",
+  "sources_processed": [
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-06-29_blackwell-nvidias-massive-gpu.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-blackwell-gpu",
+      "title": "Blackwell: Nvidia's Massive GPU"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-06-17_amds-cdna-4-architecture-announcement.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-cdna4",
+      "title": "AMD's CDNA 4 Architecture Announcement"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-07-22_huawei-s-kunpeng-920-and-taishan-v110-cpu-architecture.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-kunpeng-920",
+      "title": "Huawei's Kunpeng 920 and TaiShan v110 CPU Architecture"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-07-11_amds-magny-cours-and-hypertransport-interconnect-a-high-core.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-magny-cours",
+      "title": "AMD's Magny Cours and HyperTransport Interconnect"
+    },
+    {
+      "path": "raw/articles/chipsandcheese.com/2025-06-20_amd-s-freshly-baked-mi350-an-interview-with-the-chief-archit.md",
+      "status": "ingested",
+      "source_slug": "chipsandcheese-mi350-interview",
+      "title": "AMD's Freshly-baked MI350: An Interview with the Chief Architect"
+    }
+  ],
+  "concepts_created": [
+    "computer-systems/cdna4-architecture",
+    "computer-systems/kunpeng-920-taishan-architecture",
+    "computer-systems/hypertransport-magny-cours"
+  ],
+  "people_created": [],
+  "source_summaries_created": [
+    "chipsandcheese-blackwell-gpu",
+    "chipsandcheese-cdna4",
+    "chipsandcheese-kunpeng-920",
+    "chipsandcheese-magny-cours",
+    "chipsandcheese-mi350-interview"
+  ],
+  "existing_page_patches": [
+    {
+      "file": "wiki/rendering/blackwell-gb202-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-blackwell-gpu]]"
+    },
+    {
+      "file": "wiki/computer-systems/cdna3-mi300x-architecture.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-cdna4]]"
+    },
+    {
+      "file": "wiki/computer-systems/amd-trinity-northbridge-interconnect.md",
+      "operation": "add_source_link",
+      "section": "## Sources",
+      "content": "- [[sources/chipsandcheese-magny-cours]]"
+    }
+  ],
+  "index_additions": [
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[cdna4-architecture]] | AMD CDNA 4 / MI350：LDS 扩容至 160 KB、FP6=FP4 速率、双 IO Die 提升 HBM3E 能效 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[kunpeng-920-taishan-architecture]] | 华为 Kunpeng 920 + TaiShan v110：CoWoS chiplet、动态三模 L3 分区、首代自研 AArch64 核 |"
+    },
+    {
+      "category_header": "## 计算机体系结构与系统（wiki/computer-systems/）",
+      "row": "| [[hypertransport-magny-cours]] | AMD HyperTransport + Magny Cours：双 die 封装 + NUMA、带宽瓶颈分析、通往 Infinity Fabric 的路线 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-blackwell-gpu]] | Chester Lam：Blackwell GB202 消费级 GPU 深度微架构分析（188 SM vs RDNA4 28 WGP） |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-cdna4]] | Chester Lam：AMD CDNA 4 架构发布——LDS 扩容、低精度矩阵吞吐翻倍、HBM3E 升级 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-kunpeng-920]] | Chester Lam：华为 Kunpeng 920 系统架构与 TaiShan v110 核心微架构全测 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-magny-cours]] | Chester Lam：AMD Magny Cours 与 HyperTransport 互联——2010 年高核心数扩展回顾 |"
+    },
+    {
+      "category_header": "## 源摘要（wiki/sources/）",
+      "row": "| [[sources/chipsandcheese-mi350-interview]] | George Cozma：AMD MI350 首席架构师 Alan Smith 访谈——CDNA 4 关键设计决策揭秘 |"
+    }
+  ],
+  "log_entry": "## [2026-04-27] ingest | Wave-138 Worker OV (chipsandcheese.com ×5)\n\n处理 5 篇 chipsandcheese.com 技术文章：Blackwell GB202 消费级深析（Chester Lam）、CDNA 4 架构发布（Chester Lam）、华为 Kunpeng 920 + TaiShan v110（Chester Lam）、AMD Magny Cours + HyperTransport（Chester Lam）、MI350 首席架构师访谈（George Cozma）。新增 3 概念页（cdna4-architecture、kunpeng-920-taishan-architecture、hypertransport-magny-cours）、5 source 摘要页。Blackwell GB202、CDNA3、Trinity Northbridge 等已有概念页仅追加 source 链接。跳过：0 篇。"
+}
